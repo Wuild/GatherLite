@@ -1,0 +1,101 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+	..\FrameXML\UI.xsd">
+
+    <Script file="Scripts/localization.lua"/>
+    <Script file="Scripts/icons.lua"/>
+    <Script file="Scripts/GatherLite.lua"/>
+    <Script file="Scripts/settings.lua"/>
+
+    <Frame name="Gatherer" parent="UIParent">
+        <Size>
+            <AbsDimension x="0" y="0"/>
+        </Size>
+        <Scripts>
+            <OnLoad>
+                    Gather_OnLoad(self)
+            </OnLoad>
+            <OnEvent>
+                    Gather_OnEvent(self, event, ...);
+            </OnEvent>
+            <OnUpdate>
+                    Gather_OnUpdate(self);
+            </OnUpdate>
+        </Scripts>
+    </Frame>
+
+    <Button name="GatherLite_MinimapButton" parent="Minimap" enableMouse="true" movable="true" hidden="false">
+        <Size>
+            <AbsDimension x="33" y="33"/>
+        </Size>
+        <Scripts>
+            <OnLoad>
+                    self:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+                    self:RegisterForDrag("LeftButton")
+                    GatherLite_MinimapButton_OnLoad(self);
+            </OnLoad>
+            <OnEvent>
+                    GatherLite_MinimapButton_OnEvent(self, event, ...);
+            </OnEvent>
+            <OnUpdate>
+                    GatherLite_MinimapButton_OnUpdate()
+            </OnUpdate>
+            <OnDragStart>
+                    self:LockHighlight()
+                    GatherLite_MinimapButton_DraggingFrame:Show()
+            </OnDragStart>
+            <OnDragStop>
+                    self:UnlockHighlight()
+                    GatherLite_MinimapButton_DraggingFrame:Hide()
+                    GatherLite_MinimapButton_OnDragStop()
+            </OnDragStop>
+            <OnClick>
+                    GatherLite_MinimapButton_OnClick(self, button, down) -- do your thing in here, arg1 is mouse button clicked
+            </OnClick>
+            <OnEnter>
+                    GatherLite_MinimapButton_OnEnter();
+            </OnEnter>
+            <OnLeave>
+                    GatherLite_MinimapButton_OnLeave();
+            </OnLeave>
+        </Scripts>
+        <Anchors>
+            <Anchor point="TOPLEFT"/>
+        </Anchors>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="GatherLite_MinimapButton_Icon" file="Interface\Icons\inv_misc_spyglass_02">
+                    <Size>
+                        <AbsDimension x="21" y="21"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT">
+                            <Offset>
+                                <AbsDimension x="7" y="-6"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture file="Interface\Minimap\MiniMap-TrackingBorder">
+                    <Size>
+                        <AbsDimension x="56" y="56"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame name="GatherLite_MinimapButton_DraggingFrame" hidden="true">
+                <Scripts>
+                    <OnUpdate>
+                            GatherLite_MinimapButton_DraggingFrame_OnUpdate()
+                    </OnUpdate>
+                </Scripts>
+            </Frame>
+        </Frames>
+        <HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+    </Button>
+</Ui>
