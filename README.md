@@ -12,7 +12,7 @@ When you view your World Map, you will also see the item locations marked on the
 * Add support for default icons if a node icon does not exists
 
 ### INSTALLATION
-Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "Gatherer" directory is a subdirectory of the "AddOns" directory.
+Extract the data to your "World of Warcraft/\_classic\_/Interface/AddOns" directory so that the "Gatherer" directory is a subdirectory of the "AddOns" directory.
 
 ### USAGE
 Just use the game as normal.
