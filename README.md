@@ -6,6 +6,11 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
+### TODO
+* Add support for other languages
+* Add configs elements to make it easier to use
+* Add support for default icons if a node icon does not exists
+
 ###INSTALLATION
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "Gatherer" directory is a subdirectory of the "AddOns" directory.
 
