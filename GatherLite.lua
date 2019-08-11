@@ -5,13 +5,12 @@ local HBD = LibStub("HereBeDragons-2.0");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local Addon = {
     name = name,
-    version = "1.0.1"
+    version = "1.0.2"
 }
 
 GatherLite.MainFrame = CreateFrame('FRAME', nil, UIParent)
 GatherLite.MainFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
 GatherLite.MainFrame:RegisterEvent('UNIT_SPELLCAST_SENT')
-GatherLite.MainFrame:RegisterEvent('CHAT_MSG_LOOT')
 GatherLite.MainFrame:RegisterEvent('ADDON_LOADED')
 
 GatherLite.GatherSpellRange = 0.0065 --this is roughly double the mining spell range HOWEVER this may need checking with time and adjusting, the idea being we can find a matching node even if player stands on opposites sides.
@@ -19,6 +18,10 @@ GatherLite.GatherSpellRange = 0.0065 --this is roughly double the mining spell r
 GatherLite.NodeUpdated = false
 GatherLite.NeedMapUpdate = false;
 
+GatherLite.Skill = {
+    Mining = nil,
+    Herbs = nil
+};
 
 GatherLite.print = function(text)
     print("|cffF0E68C[" .. Addon.name .. "]|cffFFFFFF: " .. text .. "|r")
@@ -79,6 +82,15 @@ SlashCmdList['GATHER'] = function(msg)
         GatherLite.print("|cffff0017Hiding minimap nodes");
     elseif msg == "reset" then
         GatherLiteGlobalSettings.NodesDatabase = {};
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "reset mining" then
+        GatherLiteGlobalSettings.NodesDatabase["Ore"] = {};
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "reset herbs" then
+        GatherLiteGlobalSettings.NodesDatabase["Herb"] = {};
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "reset treasures" then
+        GatherLiteGlobalSettings.NodesDatabase["Treasure"] = {};
         GatherLite.NeedMapUpdate = true
     elseif msg == "mining" then
         if (GatherLiteGlobalSettings.ShowMining) then
@@ -183,23 +195,29 @@ end
 function GatherLite.UpdateMapPins()
     Pins:RemoveAllWorldMapIcons("GathererClassic")
     GatherLite.debug("Updating map markers");
+    local count = 0;
     if GatherLiteGlobalSettings.ShowMining and GatherLiteGlobalSettings.NodesDatabase["Ore"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
         for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Ore"]) do
             spawnMarker(node);
+            count = k;
         end
+        GatherLite.debug("Showing |cff32CD32(" .. count .. ")|r mining nodes");
     end
-
+    count = 0;
     if GatherLiteGlobalSettings.ShowHerbs and GatherLiteGlobalSettings.NodesDatabase["Herb"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
         for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Herb"]) do
             spawnMarker(node);
+            count = k;
         end
+        GatherLite.debug("Showing |cff32CD32(" .. count .. ")|r herb nodes");
     end
-
-    if GatherLiteGlobalSettings.ShowTreasures and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
+    count = 0;
+    if GatherLiteGlobalSettings.ShowTreasure and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
         for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Treasure"]) do
-            print(k);
             spawnMarker(node);
+            count = k;
         end
+        GatherLite.debug("Showing |cff32CD32(" .. count .. ")|r treasure nodes");
     end
 end
 
@@ -218,7 +236,7 @@ function GatherLite.UpdateMiniMapPins()
         end
     end
 
-    if GatherLiteGlobalSettings.ShowTreasures and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
+    if GatherLiteGlobalSettings.ShowTreasure and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
         for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Treasure"]) do
             spawnMarker(node, true);
         end
@@ -333,6 +351,7 @@ function addItem(type, target, oreType, oreClass)
         GatherLite.debug("Found existing marker");
     end
 end
+
 
 GatherLite.MainFrame:SetScript('OnEvent', GatherLite.OnEvent)
 GatherLite.MainFrame:SetScript('OnUpdate', GatherLite.OnUpdate)
