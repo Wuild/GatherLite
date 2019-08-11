@@ -65,11 +65,11 @@ SlashCmdList['GATHER'] = function(msg)
     elseif msg == "map on" then
         GatherLiteGlobalSettings.UseMap = "On"
         GatherLite.NeedMapUpdate = true
-        GatherLite.print("Showing map markers");
+        GatherLite.print("Showing map nodes");
     elseif msg == "map off" then
         GatherLiteGlobalSettings.UseMap = "Off"
         GatherLite.NeedMapUpdate = true
-        GatherLite.print("|cffff0017Hiding map markers");
+        GatherLite.print("|cffff0017Hiding map nodes");
     elseif msg == "debugging on" then
         GatherLiteGlobalSettings.debugging = true
         GatherLite.NeedMapUpdate = true
@@ -81,11 +81,43 @@ SlashCmdList['GATHER'] = function(msg)
     elseif msg == "minimap on" then
         GatherLiteGlobalSettings.UseMiniMap = "On"
         GatherLite.NeedMapUpdate = true
-        GatherLite.print("Showing minimap markers");
+        GatherLite.print("Showing minimap nodes");
     elseif msg == "minimap off" then
         GatherLiteGlobalSettings.UseMiniMap = "Off"
         GatherLite.NeedMapUpdate = true
-        GatherLite.print("|cffff0017Hiding minimap markers");
+        GatherLite.print("|cffff0017Hiding minimap nodes");
+    elseif msg == "reset" then
+        GatherLiteGlobalSettings.NodesDatabase = {};
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "mining" then
+        if (GatherLiteGlobalSettings.ShowMining) then
+            GatherLiteGlobalSettings.ShowMining = false
+            GatherLite.print("|cffff0017Mining nodes disabled");
+        else
+            GatherLiteGlobalSettings.ShowMining = true
+            GatherLite.print("Mining nodes enabled");
+        end;
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "herbs" then
+        if (GatherLiteGlobalSettings.ShowHerbs) then
+            GatherLiteGlobalSettings.ShowHerbs = false
+            GatherLite.print("|cffff0017Herb nodes disabled");
+        else
+            GatherLiteGlobalSettings.ShowHerbs = true
+            GatherLite.print("Herb nodes enabled");
+        end;
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "treasures" then
+        if (GatherLiteGlobalSettings.ShowTreasure) then
+            GatherLiteGlobalSettings.ShowTreasure = false
+            GatherLite.print("|cffff0017Treasure nodes disabled");
+        else
+            GatherLiteGlobalSettings.ShowTreasure = true
+            GatherLite.print("Treasure nodes enabled");
+        end;
+        GatherLite.NeedMapUpdate = true
+    elseif msg == "help" then
+        GatherLite.help();
     end
 end
 
@@ -121,38 +153,60 @@ function GatherLite.IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY)
     end
 end
 
+function spawnMarker(node, minimap)
+    local icon = "Interface\\AddOns\\GatherLite\\Icons\\" .. node.type .. node.LootType .. ".tga";
+    local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.PosX, node.PosY, node.MapID);
+    local f = CreateFrame('FRAME', 'GatherLiteMapNodePin', WorldMapFrame.ScrollContainer.Child)
+
+    f:SetPoint("TOPLEFT", x, (y * -1)) -- convert Y axis to negative number to draw pin from top left anchor
+    f:SetSize(12, 12)
+    f:SetFrameLevel(4)
+    f:SetFrameStrata("HIGH")
+    f:EnableKeyboard(true)
+    f:SetPropagateKeyboardInput(true)
+
+    f:SetScript('OnEnter', function()
+        GatherLite.tooltip:SetOwner(UIParent, "ANCHOR_CURSOR");
+        GatherLite.tooltip:SetText(node.Target)
+        if not minimap then
+            GatherLite.tooltip:AddLine(node.VisitDate.day .. '/' .. node.VisitDate.month .. '/' .. node.VisitDate.year .. " - " .. node.VisitDate.hour .. ':' .. node.VisitDate.min .. ':' .. node.VisitDate.sec, 1, 1, 1)
+        end
+        GatherLite.tooltip:Show()
+    end)
+
+    f:SetScript('OnLeave', function()
+        GatherLite.tooltip:Hide()
+    end)
+
+    f.texture = f:CreateTexture(nil, 'ARTWORK')
+    f.texture:SetAllPoints(f)
+    f.texture:SetTexture(icon)
+
+    if minimap then
+        Pins:AddMinimapIconWorld("GathererClassic", f, instance, x, y, false);
+    else
+        Pins:AddWorldMapIconWorld("GathererClassic", f, instance, x, y);
+    end;
+end
 
 function GatherLite.UpdateMapPins()
     Pins:RemoveAllWorldMapIcons("GathererClassic")
     GatherLite.debug("Updating map markers");
-    if GatherLiteGlobalSettings.NodesDatabase ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
-        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase) do
-            local icon = GetItemIcon(node.LootItem);
-            local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.PosX, node.PosY, node.MapID);
-            local f = CreateFrame('FRAME', 'GatherLiteMapNodePin' .. k, WorldMapFrame.ScrollContainer.Child)
+    if GatherLiteGlobalSettings.ShowMining and GatherLiteGlobalSettings.NodesDatabase["Ore"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Ore"]) do
+            spawnMarker(node);
+        end
+    end
 
-            f:SetPoint("TOPLEFT", x, (y * -1)) -- convert Y axis to negative number to draw pin from top left anchor
-            f:SetSize(12, 12)
-            f:SetFrameLevel(4)
-            f:SetFrameStrata("HIGH")
-            f:EnableKeyboard(true)
-            f:SetPropagateKeyboardInput(true)
+    if GatherLiteGlobalSettings.ShowHerbs and GatherLiteGlobalSettings.NodesDatabase["Herb"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Herb"]) do
+            spawnMarker(node);
+        end
+    end
 
-            f:SetScript('OnEnter', function()
-                GatherLite.tooltip:SetOwner(WorldFrame, "ANCHOR_CURSOR");
-                GatherLite.tooltip:SetText(node.LootLink)
-                GatherLite.tooltip:Show()
-            end)
-
-            f:SetScript('OnLeave', function()
-                GatherLite.tooltip:Hide()
-            end)
-
-            f.texture = f:CreateTexture(nil, 'ARTWORK')
-            f.texture:SetAllPoints(f)
-            f.texture:SetTexture(icon)
-
-            Pins:AddWorldMapIconWorld("GathererClassic", f, instance, x, y);
+    if GatherLiteGlobalSettings.ShowTreasures and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Treasure"]) do
+            spawnMarker(node);
         end
     end
 end
@@ -160,33 +214,21 @@ end
 function GatherLite.UpdateMiniMapPins()
     Pins:RemoveAllMinimapIcons("GathererClassic")
     GatherLite.debug("Updating minimap markers");
-    if GatherLiteGlobalSettings.NodesDatabase ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
-        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase) do
-            local icon = GetItemIcon(node.LootItem);
-            local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.PosX, node.PosY, node.MapID);
-            local f = CreateFrame('FRAME', 'GatherLiteMapNodePin' .. k, WorldMapFrame.ScrollContainer.Child)
+    if GatherLiteGlobalSettings.ShowMining and GatherLiteGlobalSettings.NodesDatabase["Ore"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Ore"]) do
+            spawnMarker(node, true);
+        end
+    end
 
-            f:SetPoint("TOPLEFT", x, (y * -1)) -- convert Y axis to negative number to draw pin from top left anchor
-            f:SetSize(12, 12)
-            f:SetFrameLevel(4)
-            f:SetFrameStrata("HIGH")
-            f:EnableKeyboard(true)
-            f:SetPropagateKeyboardInput(true)
-            f.texture = f:CreateTexture(nil, 'ARTWORK')
-            f.texture:SetAllPoints(f)
-            f.texture:SetTexture(icon)
+    if GatherLiteGlobalSettings.ShowHerbs and GatherLiteGlobalSettings.NodesDatabase["Herb"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Herb"]) do
+            spawnMarker(node, true);
+        end
+    end
 
-            f:SetScript('OnEnter', function()
-                GatherLite.tooltip:SetOwner(WorldFrame, "ANCHOR_CURSOR");
-                GatherLite.tooltip:SetText(node.LootLink)
-                GatherLite.tooltip:Show()
-            end)
-
-            f:SetScript('OnLeave', function()
-                GatherLite.tooltip:Hide()
-            end)
-
-            Pins:AddMinimapIconWorld("GathererClassic", f, instance, x, y, false);
+    if GatherLiteGlobalSettings.ShowTreasures and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMiniMap == "On" then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Treasure"]) do
+            spawnMarker(node, true);
         end
     end
 end
@@ -199,80 +241,103 @@ function GatherLite.OnUpdate()
     end;
 end
 
+function trim(s)
+    -- from PiL2 20.4
+    return (s:gsub("^%s*(.-)%s*$", "%1"))
+end
+
 function GatherLite.OnEvent(self, event, ...)
     if event == 'UNIT_SPELLCAST_SENT' then
 
         GatherLite.debug("Casting spell " .. select(4, ...));
 
+        -- 3365 chests
         if select(4, ...) == 2575 then -- mining
-            GatherLite.LastLootSpell = 2575
-            GatherLite.IsForagingSpellCast = true
-            GatherLite.ForagingTarget = select(2, ...)
+            local LootItemID = select(2, ...)
+            local oreTypeClass = string.gsub(string.gsub(string.gsub(string.gsub(LootItemID, "br\195\188hschlammbedecktes ", ""), "kleines ", ""), "reiches ", ""), "br\195\188hschlammbedeckte ", "");
+            local oreType, oreClass;
+            if string.find(LootItemID, "Vein") then
+                oreType = strsub(oreTypeClass, 0, string.len(oreTypeClass) - string.len("Vein"));
+                oreClass = "Vein";
+            end
+
+            if string.find(LootItemID, "Deposite") then
+                oreType = strsub(oreTypeClass, 0, string.len(oreTypeClass) - string.len("Deposite"));
+                oreClass = "Deposite";
+            end
+            addItem("Ore", trim(LootItemID), trim(oreType), trim(oreClass));
+
         elseif select(4, ...) == 2366 then --herbs
-            GatherLite.LastLootSpell = 2366
-            GatherLite.IsForagingSpellCast = true
-            GatherLite.ForagingTarget = select(2, ...)
-        else
-            GatherLite.LastLootSpell = nil
-            GatherLite.IsForagingSpellCast = false
-            GatherLite.ForagingTarget = nil;
+            local LootItemID = select(2, ...)
+            addItem("Herb", trim(LootItemID), trim(LootItemID), nil);
+        elseif select(4, ...) == 3365 then --chests
+            local LootItemID = select(2, ...)
+            addItem("Treasure", trim(LootItemID), "Chest", nil);
         end
     end
 
     if (event == "PLAYER_ENTERING_WORLD") then
         GatherLite.NeedMapUpdate = true;
+        GatherLite.help();
     end;
-
-    if event == 'CHAT_MSG_LOOT' and GatherLite.IsForagingSpellCast == true then
-        --grab current position
-        GatherLite.CurrentMapID = C_Map.GetBestMapForUnit('player')
-        GatherLite.CurrentMapPosition = C_Map.GetPlayerMapPosition(GatherLite.CurrentMapID, 'player')
-        GatherLite.CurrentMapName = C_Map.GetMapInfo(GatherLite.CurrentMapID).name
-
-        if (GatherLiteGlobalSettings.NodesDatabase == nil) then
-            GatherLiteGlobalSettings.NodesDatabase = {};
-        end;
-
-        --variables just for ease of reading
-        local LootItemID = GatherLite.ItemIDFromLootString(select(1, ...))
-
-        --reset the bool check
-        GatherLite.NodeUpdated = false
-        GatherLite.LootUpdated = false
-
-        if GatherLiteGlobalSettings.NodesDatabase ~= nil then
-            for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase) do
-                if GatherLite.IsNodeInRange(GatherLite.CurrentMapPosition.x, GatherLite.CurrentMapPosition.y, node.PosX, node.PosY) then
-                    GatherLite.NodeUpdated = true
-                    GatherLite.debug("Found existing marker");
-                end
-            end
-        end
-
-        if GatherLite.NodeUpdated == false then
-            local node = {
-                GUID = UnitGUID('player'),
-                Target = GatherLite.ForagingTarget,
-                LootSpell = GatherLite.LastLootSpell,
-                MapName = GatherLite.CurrentMapName,
-                MapID = GatherLite.CurrentMapID,
-                PosX = GatherLite.CurrentMapPosition.x,
-                PosY = GatherLite.CurrentMapPosition.y,
-                VisitDate = date('*t'),
-                LootItem = LootItemID,
-                LootLink = select(2, GetItemInfo(LootItemID))
-            }
-            table.insert(GatherLiteGlobalSettings.NodesDatabase, node)
-            GatherLite.NeedMapUpdate = true;
-            GatherLite.debug("Adding new marker");
-        end
-    end
 
     if event == 'ADDON_LOADED' and select(1, ...) == 'GatherLite' then
         if GatherLiteGlobalSettings == nil then
-            GatherLiteGlobalSettings = { AddonName = 'GatherLite', NodesDatabase = {}, debugging = false, Enabled = "On", UseMap = "On", UseMiniMap = "On" }
+            GatherLiteGlobalSettings = { AddonName = 'GatherLite', NodesDatabase = {}, debugging = false, Enabled = "On", UseMap = "On", UseMiniMap = "On", ShowMining = true, ShowHerbs = true, ShowTreasure = true }
         end
-        print('|cff628B57' .. Addon.name .. " version " .. Addon.version .. ' Loaded')
+        GatherLite.print("Version " .. Addon.version .. ' Loaded')
+    end
+end
+
+function GatherLite.help()
+    print("|cffffffff/gather (on|off)|r - turns the gather display on and off");
+    print("|cffffffff/gather minimap (on|off)|r - turns the gather minimap display on and off");
+    print("|cffffffff/gather mining|r - toggle showing mining nodes");
+    print("|cffffffff/gather herbs|r - toggle showing herbs nodes");
+    print("|cffffffff/gather treasures|r - toggle showing treasures nodes");
+    print("|cffffffff/gather debugging (on|off)|r - show debug messages");
+    print("|cffffffff/gather reload|r - reload nodes");
+    print("|cffffffff/gather reset|r - reset gather data");
+    print("|cffffffff/gather help|r - show GatherLite commands");
+end
+
+function addItem(type, target, oreType, oreClass)
+    GatherLite.CurrentMapID = C_Map.GetBestMapForUnit('player')
+    GatherLite.CurrentMapPosition = C_Map.GetPlayerMapPosition(GatherLite.CurrentMapID, 'player')
+    GatherLite.CurrentMapName = C_Map.GetMapInfo(GatherLite.CurrentMapID).name
+
+    if (GatherLiteGlobalSettings.NodesDatabase[type] == nil) then
+        GatherLiteGlobalSettings.NodesDatabase[type] = {};
+    end;
+
+    GatherLite.NodeUpdated = false
+    GatherLite.LootUpdated = false
+
+    if GatherLiteGlobalSettings.NodesDatabase ~= nil then
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase) do
+            if GatherLite.IsNodeInRange(GatherLite.CurrentMapPosition.x, GatherLite.CurrentMapPosition.y, node.PosX, node.PosY) then
+                GatherLite.NodeUpdated = true
+                GatherLite.debug("Found existing marker");
+            end
+        end
+    end
+
+    if GatherLite.NodeUpdated == false then
+        local node = {
+            GUID = UnitGUID('player'),
+            Target = target,
+            type = type,
+            MapName = GatherLite.CurrentMapName,
+            MapID = GatherLite.CurrentMapID,
+            PosX = GatherLite.CurrentMapPosition.x,
+            PosY = GatherLite.CurrentMapPosition.y,
+            VisitDate = date('*t'),
+            LootType = oreType,
+            LootClass = oreClass
+        }
+        table.insert(GatherLiteGlobalSettings.NodesDatabase[type], node)
+        GatherLite.NeedMapUpdate = true;
+        GatherLite.debug("Adding new marker");
     end
 end
 
