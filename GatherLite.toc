@@ -1,7 +1,7 @@
 ## Interface: 11302
-## Title: GatherLite
+## Title: GatherLite |cFF00FF00 v1.0.1|r
 ## Author: Wuild, Silvessa, Darkmoon Faire
-## Version: 1.0.0
+## Version: 1.0.1
 ## Notes: GatherLite remembers where you found stuff
 ## SavedVariables: GatherLiteGlobalSettings
 

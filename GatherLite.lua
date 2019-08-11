@@ -5,10 +5,8 @@ local HBD = LibStub("HereBeDragons-2.0");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local Addon = {
     name = name,
-    version = "1.0.0"
+    version = "1.0.1"
 }
-
-GatherLite.MapNodeCache = {}
 
 GatherLite.MainFrame = CreateFrame('FRAME', nil, UIParent)
 GatherLite.MainFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
@@ -16,18 +14,11 @@ GatherLite.MainFrame:RegisterEvent('UNIT_SPELLCAST_SENT')
 GatherLite.MainFrame:RegisterEvent('CHAT_MSG_LOOT')
 GatherLite.MainFrame:RegisterEvent('ADDON_LOADED')
 
-GatherLite.CurrentMapID = nil;
-GatherLite.CurrentMapPosition = nil;
-GatherLite.CurrentMapName = nil;
-
 GatherLite.GatherSpellRange = 0.0065 --this is roughly double the mining spell range HOWEVER this may need checking with time and adjusting, the idea being we can find a matching node even if player stands on opposites sides.
 
-GatherLite.IsForagingSpellCast = false --was last cast a loot node spell
 GatherLite.NodeUpdated = false
-GatherLite.LootUpdated = false
-GatherLite.LastLootSpell = nil; -- mining or herbs
-GatherLite.ForagingTarget = nil; -- what was spell cast at (vein, herb)
 GatherLite.NeedMapUpdate = false;
+
 
 GatherLite.print = function(text)
     print("|cffF0E68C[" .. Addon.name .. "]|cffFFFFFF: " .. text .. "|r")
@@ -206,6 +197,7 @@ function GatherLite.UpdateMapPins()
 
     if GatherLiteGlobalSettings.ShowTreasures and GatherLiteGlobalSettings.NodesDatabase["Treasure"] ~= nil and GatherLiteGlobalSettings.Enabled == "On" and GatherLiteGlobalSettings.UseMap == "On" then
         for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase["Treasure"]) do
+            print(k);
             spawnMarker(node);
         end
     end
@@ -251,7 +243,6 @@ function GatherLite.OnEvent(self, event, ...)
 
         GatherLite.debug("Casting spell " .. select(4, ...));
 
-        -- 3365 chests
         if select(4, ...) == 2575 then -- mining
             local LootItemID = select(2, ...)
             local oreTypeClass = string.gsub(string.gsub(string.gsub(string.gsub(LootItemID, "br\195\188hschlammbedecktes ", ""), "kleines ", ""), "reiches ", ""), "br\195\188hschlammbedeckte ", "");
@@ -302,35 +293,35 @@ function GatherLite.help()
 end
 
 function addItem(type, target, oreType, oreClass)
-    GatherLite.CurrentMapID = C_Map.GetBestMapForUnit('player')
-    GatherLite.CurrentMapPosition = C_Map.GetPlayerMapPosition(GatherLite.CurrentMapID, 'player')
-    GatherLite.CurrentMapName = C_Map.GetMapInfo(GatherLite.CurrentMapID).name
+
+    local CurrentMapID, CurrentMapPosition, CurrentMapName, NodeUpdated;
+    CurrentMapID = C_Map.GetBestMapForUnit('player')
+    CurrentMapPosition = C_Map.GetPlayerMapPosition(CurrentMapID, 'player')
+    CurrentMapName = C_Map.GetMapInfo(CurrentMapID).name
 
     if (GatherLiteGlobalSettings.NodesDatabase[type] == nil) then
         GatherLiteGlobalSettings.NodesDatabase[type] = {};
     end;
 
-    GatherLite.NodeUpdated = false
-    GatherLite.LootUpdated = false
+    NodeUpdated = false
 
     if GatherLiteGlobalSettings.NodesDatabase ~= nil then
-        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase) do
-            if GatherLite.IsNodeInRange(GatherLite.CurrentMapPosition.x, GatherLite.CurrentMapPosition.y, node.PosX, node.PosY) then
-                GatherLite.NodeUpdated = true
-                GatherLite.debug("Found existing marker");
+        for k, node in ipairs(GatherLiteGlobalSettings.NodesDatabase[type]) do
+            if GatherLite.IsNodeInRange(CurrentMapPosition.x, CurrentMapPosition.y, node.PosX, node.PosY) then
+                NodeUpdated = true
             end
         end
     end
 
-    if GatherLite.NodeUpdated == false then
+    if not NodeUpdated then
         local node = {
             GUID = UnitGUID('player'),
             Target = target,
             type = type,
-            MapName = GatherLite.CurrentMapName,
-            MapID = GatherLite.CurrentMapID,
-            PosX = GatherLite.CurrentMapPosition.x,
-            PosY = GatherLite.CurrentMapPosition.y,
+            MapName = CurrentMapName,
+            MapID = CurrentMapID,
+            PosX = CurrentMapPosition.x,
+            PosY = CurrentMapPosition.y,
             VisitDate = date('*t'),
             LootType = oreType,
             LootClass = oreClass
@@ -338,6 +329,8 @@ function addItem(type, target, oreType, oreClass)
         table.insert(GatherLiteGlobalSettings.NodesDatabase[type], node)
         GatherLite.NeedMapUpdate = true;
         GatherLite.debug("Adding new marker");
+    else
+        GatherLite.debug("Found existing marker");
     end
 end
 
