@@ -1,4 +1,5 @@
-# GatherLite
+![GatherLite](./gatherlite-banner.png)
+
 This project is based of Forager and Gatherer and is only tested on World of Warcraft: Classic servers
 
 GathererLite is an addon for herbalists, miners and treasure hunters in World of Warcraft: Classic. It's main purpose is to track the plants, deposits and treasure locations on your map.
