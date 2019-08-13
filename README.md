@@ -5,6 +5,9 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
 ### Changelog
+* 1.0.9
+    * Changed interface version to work properly with retail wow
+
 * 1.0.5
     * Now works with all World of Warcraft versions
     * All mining and herb nodes now work correctly
