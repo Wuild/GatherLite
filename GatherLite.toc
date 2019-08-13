@@ -1,7 +1,7 @@
-## Interface: 11302
-## Title: GatherLite |cFF00FF00 v1.0.3|r
+## Interface: 90000
+## Title: GatherLite |cFF00FF00 @project-version@|r
 ## Author: Wuild, Silvessa, Darkmoon Faire
-## Version: 1.0.3
+## Version: @project-version@
 ## Notes: GatherLite remembers where you found stuff
 ## SavedVariables: GatherLiteGlobalSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
@@ -11,4 +11,5 @@ Libs\HereBeDragons\CallbackHandler-1.0\CallbackHandler-1.0.lua
 Libs\HereBeDragons\HereBeDragons-2.0.lua
 Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
 
-GatherLite.xml
+GatherLite.lua
+GatherLiteSettings.lua
