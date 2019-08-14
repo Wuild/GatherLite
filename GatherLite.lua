@@ -17,8 +17,8 @@ GatherLite.tracker.spellType = nil;
 GatherLite.tracker.spellID = nil;
 
 GatherLite.spellIDs = {
-    [GetSpellInfo(2575)] = "mining",
-    [GetSpellInfo(2366)] = "herbalism",
+    [GetSpellInfo(2575)] = "mining", -- Mining
+    [GetSpellInfo(2366)] = "herbalism", -- Herbalism
     [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
     [GetSpellInfo(1804)] = "treasure", -- Pick Lock()
     [GetSpellInfo(3365)] = "treasure", -- Opening()
