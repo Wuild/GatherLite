@@ -5,6 +5,10 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
 ### Changelog
+* 1.0.15
+    * Added artifact stats to minimap tooltip
+    * Now tracking fishing spots
+    * If node sharing is not enabled you wont get the nodes other players share.
 * 1.0.14
     * Now tracking artifacts
 * 1.0.13
