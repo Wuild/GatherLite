@@ -242,7 +242,7 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
     CurrentMapName = C_Map.GetMapInfo(CurrentMapID).name;
     NodeUpdated = false;
 
-    local newNode = {};
+    local newNode;
 
     if GatherLiteGlobalSettings.database ~= nil then
         for k, node in ipairs(GatherLiteGlobalSettings.database[spellType]) do
@@ -257,7 +257,7 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
 
                 for k, item in pairs(loot) do
                     if node.loot[k] then
-                        node.loot[k].count = item.count;
+                        node.loot[k].count = node.loot[k].count + item.count;
                     else
                         node.loot[k] = item;
                     end;
@@ -269,7 +269,7 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
     end
 
     if not NodeUpdated then
-        newNode = {
+        local node = {
             GUID = UnitGUID('player'),
             type = spellType,
             spellID = spellID,
@@ -286,12 +286,14 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
         };
 
         for k, item in pairs(loot) do
-            if newNode.loot[k] then
-                newNode.loot[k].count = item.count;
+            if node.loot[k] then
+                node.loot[k].count = item.count;
             else
-                newNode.loot[k] = item;
+                node.loot[k] = item;
             end;
         end
+
+        newNode = node;
 
         table.insert(GatherLiteGlobalSettings.database[spellType], newNode);
         GatherLite.needMapUpdate = true;

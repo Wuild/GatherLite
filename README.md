@@ -5,6 +5,8 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
 ### Changelog
+* 1.0.11
+    * Added loot list to node tooltip
 * 1.0.9
     * Changed interface version to work properly with retail wow
 
