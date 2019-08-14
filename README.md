@@ -5,6 +5,10 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
 ### Changelog
+* 1.0.12
+    * Made the tooltip look abit nicer
+    * Added icon alpha configs on minimap and worldmap
+    * Added loot table configs
 * 1.0.11
     * Added loot list to node tooltip
 * 1.0.9
