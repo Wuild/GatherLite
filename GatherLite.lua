@@ -826,7 +826,6 @@ function GatherLite.foundOreOrHerb()
 
     if (primary) then
         primary = primary:match("item:(%d+)")
-        print(GatherLite.tracker.spellType);
         if (primary) then
             if GatherLite.tracker.spellType == "fish" then
                 GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, "Fishing spot", GetItemIcon(6303), loot);
