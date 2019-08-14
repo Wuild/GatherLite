@@ -36,6 +36,8 @@ GatherLite.spellIDs = {
     [GetSpellInfo(39220)] = "treasure", -- Opening()
     [GetSpellInfo(39264)] = "treasure", -- Opening()
     [GetSpellInfo(45137)] = "treasure", -- Opening()
+    [GetSpellInfo(22810)] = "treasure", -- Opening - No Text()
+    [GetSpellInfo(73979)] = "artifacts", -- Searching for Artifacts(Apprentice)
 };
 
 GatherLite.classColours = {
@@ -58,6 +60,7 @@ GatherLite.defaultConfigs = {
     mining = true,
     herbalism = true,
     treasure = true,
+    artifacts = true,
     showOnMinimap = true,
     showOnWorldMap = true,
     minimapIconSize = 12,
@@ -135,7 +138,9 @@ end);
 
 function tablelength(T)
     local count = 0
-    for _ in pairs(T) do count = count + 1 end
+    if T then
+        for _ in pairs(T) do count = count + 1 end
+    end
     return count
 end
 
@@ -200,10 +205,7 @@ SlashCmdList['GATHER'] = function(msg)
         GatherLiteConfigCharacter.debugging = false
         GatherLite.print("debugging disabled");
     elseif msg == "reset" then
-        GatherLiteGlobalSettings.database = {
-            mining = {},
-            herbalism = {},
-        };
+        GatherLiteGlobalSettings.database = {};
         GatherLite.needMapUpdate = true
     end
 end
@@ -337,7 +339,7 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
         table.insert(GatherLiteGlobalSettings.database[spellType], newNode);
         GatherLite.needMapUpdate = true;
 
-        GatherLite.debug("Found node at " .. "|cff32CD32" .. newNode.position.x .. " " .. newNode.position.y .. "|r");
+        GatherLite.debug("Adding node at " .. "|cff32CD32" .. newNode.position.x .. " " .. newNode.position.y .. "|r");
     end
 
     local dataString = tostring('newdata' .. ':' .. UnitGUID('player') .. ":" .. newNode.type .. ":" .. newNode.spellID .. ":" .. newNode.target .. ":" .. newNode.target .. ":" .. newNode.icon .. ":" .. newNode.position.mapID .. ":" .. newNode.position.x .. ":" .. newNode.position.y)
@@ -454,9 +456,9 @@ function GatherLite.spawnMarker(node, minimap)
     end)
 
     local icon = node.icon;
-    if GetItemInfo(node.icon) then
-        icon = GetItemIcon(node.icon);
-    end
+    --    if GetItemInfo(node.icon) then
+    --        icon = GetItemIcon(node.icon);
+    --    end
 
     f.texture = f:CreateTexture(nil, 'ARTWORK')
     f.texture:SetAllPoints(f)
@@ -496,9 +498,17 @@ function GatherLite.UpdateMapNodes()
 
     --    if GatherLiteConfigCharacter.open then
     if GatherLiteConfigCharacter.treasure then
-
-        for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
-            GatherLite.spawnMarker(node);
+        if GatherLiteGlobalSettings.database["treasure"] then
+            for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+                GatherLite.spawnMarker(node);
+            end
+        end
+    end
+    if GatherLiteConfigCharacter.artifacts then
+        if GatherLiteGlobalSettings.database["artifacts"] then
+            for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
+                GatherLite.spawnMarker(node);
+            end
         end
     end
     --    end
@@ -532,6 +542,14 @@ function GatherLite.UpdateMinimapNodes()
     if GatherLiteConfigCharacter.treasure then
         if GatherLiteGlobalSettings.database["treasure"] then
             for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+                GatherLite.spawnMarker(node, true);
+            end
+        end
+    end
+
+    if GatherLiteConfigCharacter.artifacts then
+        if GatherLiteGlobalSettings.database["artifacts"] then
+            for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
                 GatherLite.spawnMarker(node, true);
             end
         end
@@ -584,6 +602,20 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.herbalism = false;
                 else
                     GatherLiteConfigCharacter.herbalism = true;
+                end;
+                GatherLite.needMapUpdate = true;
+            end
+        })
+
+        addContextItem({
+            text = "Archaeology nodes",
+            icon = 134435,
+            checked = GatherLiteConfigCharacter.artifacts,
+            callback = function()
+                if GatherLiteConfigCharacter.artifacts then
+                    GatherLiteConfigCharacter.artifacts = false;
+                else
+                    GatherLiteConfigCharacter.artifacts = true;
                 end;
                 GatherLite.needMapUpdate = true;
             end
@@ -691,7 +723,7 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
     elseif event == "LOOT_OPENED" then
         if (GatherLite.tracker.spellID and GatherLite.tracker.ended and GetTime() - GatherLite.tracker.ended < 1) then
 
-            if (GatherLite.tracker.spellType == "mining" or GatherLite.tracker.spellType == "herbalism") then
+            if (GatherLite.tracker.spellType == "mining" or GatherLite.tracker.spellType == "herbalism" or GatherLite.tracker.spellType == "artifacts") then
                 GatherLite.foundOreOrHerb();
             elseif (GatherLite.tracker.spellType == "treasure") then
                 GatherLite.foundTreasureChest();
@@ -716,20 +748,39 @@ end);
 
 function GatherLite.foundOreOrHerb()
     local primary = GetLootSlotLink(1)
+
+
+    local loot = {};
+
+    local coin;
+    local count = GetNumLootItems()
+    for i = 1, count do
+        local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i)
+        local slotType = GetLootSlotType(i)
+        local lLink = GetLootSlotLink(i)
+        if (not lLink and slotType == LOOT_SLOT_MONEY) then
+            local i, j, val
+            i, j, val = string.find(lName, COPPER_AMOUNT:gsub("%%d", "(%%d+)", 1))
+            if (i) then coin = coin + val end
+            i, j, val = string.find(lName, SILVER_AMOUNT:gsub("%%d", "(%%d+)", 1))
+            if (i) then coin = coin + (val * 100) end
+            i, j, val = string.find(lName, GOLD_AMOUNT:gsub("%%d", "(%%d+)", 1))
+            if (i) then coin = coin + (val * 10000) end
+            if (coin == 0) then
+                loot[lLink] = { name = lName, count = tonumber(lQuantity) }
+            end
+        else
+            loot[lLink] = { name = lName, count = tonumber(lQuantity) }
+        end
+    end
+
     if (primary) then
         primary = primary:match("item:(%d+)")
         if (primary) then
-            local loot = {};
-            local count = GetNumLootItems()
-            for i = 1, count do
-                local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i);
-                local slotType = GetLootSlotType(i);
-                local lLink = GetLootSlotLink(i);
-                loot[lLink] = { name = lName, count = tonumber(lQuantity) }
-            end;
-
             GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, GetItemIcon(primary), loot);
-        end
+        elseif not primary and GatherLite.tracker.spellType == "artifacts" then
+            GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, GetItemIcon(1195), loot);
+        end;
     end
 end
 
