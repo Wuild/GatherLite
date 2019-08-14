@@ -44,7 +44,11 @@ GatherLite.defaultConfigs = {
     worldmapIconSize = 12,
     MiniMapPosition = 45,
     shareGuild = false;
-    shareParty = false
+    shareParty = false,
+    minimapOpacity = 1,
+    worldmapOpacity = 1,
+    minimapLoot = true,
+    worldmapLoot = true
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -141,7 +145,7 @@ GatherLite.minimap:Show()
 -----------------------------------------------------------------------------------------------------------------------------------
 -- TOOLTIP
 -----------------------------------------------------------------------------------------------------------------------------------
-GatherLite.tooltip = CreateFrame("GameTooltip", nil, UIParent, "GameTooltipTemplate")
+GatherLite.tooltip = CreateFrame("GameTooltip", "GatherLiteTooltip", UIParent, "GameTooltipTemplate")
 GatherLite.tooltip:ClearLines()
 GatherLite.tooltip:AddFontStrings(GatherLite.tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"), GatherLite.tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText"));
 GatherLite.showingTooltip = false;
@@ -331,10 +335,17 @@ function GatherLite.updateMiniMapPosition()
     GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
 end
 
+function leadingZeros(value)
+    value = tonumber(value);
+    if (value < 10) then
+        return "0" .. value;
+    end;
+    return value;
+end
+
 function GatherLite.spawnMarker(node, minimap)
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
-    local f = CreateFrame('FRAME', nil, WorldMapFrame.ScrollContainer.Child)
-
+    local f = CreateFrame('Button', nil, UIParent)
     f:SetPoint("TOPLEFT", x, (y * -1))
 
     if minimap then
@@ -346,32 +357,58 @@ function GatherLite.spawnMarker(node, minimap)
     f:SetFrameStrata("HIGH")
     f:EnableKeyboard(true)
     f:SetPropagateKeyboardInput(true)
+    f:SetHighlightTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight");
+
+    if minimap then
+        f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
+    else
+        f:SetAlpha(GatherLiteConfigCharacter.worldmapOpacity);
+    end;
 
     GetPlayerInfoByGUID(node.GUID);
     f:SetScript('OnEnter', function()
 
         local locClass, engClass, locRace, engRace, gender, name = GetPlayerInfoByGUID(node.GUID);
         local classColor = GatherLite.classColours[engClass];
+        local addLoot = false;
 
+        if node.loot and minimap and GatherLiteConfigCharacter.minimapLoot then
+            addLoot = true;
+        end
+
+        if node.loot and not minimap and GatherLiteConfigCharacter.worldmapLoot then
+            addLoot = true;
+        end
+
+        f:SetAlpha(1);
         GatherLite.tooltip:ClearLines();
-        GatherLite.tooltip:SetOwner(UIParent, "ANCHOR_CURSOR");
+        if minimap then
+            GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
+        else
+            GatherLite.tooltip:SetOwner(f, "ANCHOR_TOPLEFT");
+        end;
         GatherLite.tooltip:SetText(GetItemInfo(node.icon));
-        GatherLite.tooltip:AddLine("|cffffffffLast visit: " .. node.date.day .. '/' .. node.date.month .. '/' .. node.date.year .. " - " .. node.date.hour .. ':' .. node.date.min .. ':' .. node.date.sec .. "|r");
+        GatherLite.tooltip:AddDoubleLine("Last visit:", "|cffffffff" .. leadingZeros(node.date.day) .. '/' .. leadingZeros(node.date.month) .. '/' .. leadingZeros(node.date.year) .. " - " .. leadingZeros(node.date.hour) .. ':' .. leadingZeros(node.date.min) .. ':' .. leadingZeros(node.date.sec) .. "|r");
 
-        if node.loot then
+        if addLoot then
             for k, item in pairs(node.loot) do
-                GatherLite.tooltip:AddLine(k .. " x" .. item.count);
+                GatherLite.tooltip:AddDoubleLine(k, "x" .. item.count);
+                GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
             end
         end
 
-        GatherLite.tooltip:AddLine("|cffffffffFound by:|r " .. classColor.fs .. name);
-
+        GatherLite.tooltip:AddDoubleLine("Found by:", classColor.fs .. name);
 
         GatherLite.tooltip:Show();
         GatherLite.showingTooltip = true;
     end)
 
     f:SetScript('OnLeave', function()
+        if minimap then
+            f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
+        else
+            f:SetAlpha(GatherLiteConfigCharacter.worldmapOpacity);
+        end;
         GatherLite.tooltip:Hide()
     end)
 
@@ -586,7 +623,11 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
                         loot[lLink] = { name = lName, count = tonumber(lQuantity) }
                     end;
 
-                    GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, primary, loot);
+                    if GatherLite.tracker.spellType == "open" then
+                        print(GatherLite.tracker.spellType);
+                    else
+                        GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, primary, loot);
+                    end
                 end
             end
 
