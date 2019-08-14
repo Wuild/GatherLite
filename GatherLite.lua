@@ -234,7 +234,7 @@ function GatherLite.IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY)
     end
 end
 
-function GatherLite.addNode(spellID, spellType, target, icon)
+function GatherLite.addNode(spellID, spellType, target, icon, loot)
     local CurrentMapID, CurrentMapPosition, CurrentMapName, NodeIcon, NodeUpdated;
 
     CurrentMapID = C_Map.GetBestMapForUnit('player');
@@ -250,6 +250,19 @@ function GatherLite.addNode(spellID, spellType, target, icon)
                 node.date = date('*t');
                 newNode = node;
                 NodeUpdated = true;
+
+                if node.loot == nil then
+                    node.loot = {};
+                end
+
+                for k, item in pairs(loot) do
+                    if node.loot[k] then
+                        node.loot[k].count = item.count;
+                    else
+                        node.loot[k] = item;
+                    end;
+                end
+
                 GatherLite.debug("Found node at " .. "|cff32CD32" .. newNode.position.x .. " " .. newNode.position.y .. "|r");
             end
         end
@@ -263,6 +276,7 @@ function GatherLite.addNode(spellID, spellType, target, icon)
             target = string.lower(target),
             name = target,
             icon = icon,
+            loot = {},
             position = {
                 mapID = CurrentMapID,
                 x = CurrentMapPosition.x,
@@ -270,6 +284,14 @@ function GatherLite.addNode(spellID, spellType, target, icon)
             },
             date = date('*t'),
         };
+
+        for k, item in pairs(loot) do
+            if newNode.loot[k] then
+                newNode.loot[k].count = item.count;
+            else
+                newNode.loot[k] = item;
+            end;
+        end
 
         table.insert(GatherLiteGlobalSettings.database[spellType], newNode);
         GatherLite.needMapUpdate = true;
@@ -329,10 +351,22 @@ function GatherLite.spawnMarker(node, minimap)
         local locClass, engClass, locRace, engRace, gender, name = GetPlayerInfoByGUID(node.GUID);
         local classColor = GatherLite.classColours[engClass];
 
-        GatherLite.showTooltip(GetItemInfo(node.icon), {
-            "|cffffffffLast visit: " .. node.date.day .. '/' .. node.date.month .. '/' .. node.date.year .. " - " .. node.date.hour .. ':' .. node.date.min .. ':' .. node.date.sec .. "|r",
-            "Found by: " .. classColor.fs .. name
-        });
+        GatherLite.tooltip:ClearLines();
+        GatherLite.tooltip:SetOwner(UIParent, "ANCHOR_CURSOR");
+        GatherLite.tooltip:SetText(GetItemInfo(node.icon));
+        GatherLite.tooltip:AddLine("|cffffffffLast visit: " .. node.date.day .. '/' .. node.date.month .. '/' .. node.date.year .. " - " .. node.date.hour .. ':' .. node.date.min .. ':' .. node.date.sec .. "|r");
+
+        if node.loot then
+            for k, item in pairs(node.loot) do
+                GatherLite.tooltip:AddLine(k .. " x" .. item.count);
+            end
+        end
+
+        GatherLite.tooltip:AddLine("|cffffffffFound by:|r " .. classColor.fs .. name);
+
+
+        GatherLite.tooltip:Show();
+        GatherLite.showingTooltip = true;
     end)
 
     f:SetScript('OnLeave', function()
@@ -502,6 +536,7 @@ function GatherLite.ParseSentData(msg, sender)
             target = data[4],
             name = data[5],
             icon = data[6],
+            loot = {},
             position = {
                 mapID = tonumber(data[7]),
                 x = tonumber(data[8]),
@@ -540,7 +575,16 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
             if (primary) then
                 primary = primary:match("item:(%d+)")
                 if (primary) then
-                    GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, primary);
+                    local loot = {};
+                    local count = GetNumLootItems()
+                    for i = 1, count do
+                        local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i);
+                        local slotType = GetLootSlotType(i);
+                        local lLink = GetLootSlotLink(i);
+                        loot[lLink] = { name = lName, count = tonumber(lQuantity) }
+                    end;
+
+                    GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, primary, loot);
                 end
             end
 
@@ -566,7 +610,7 @@ function GatherLite.handleSpell(event, spell, target)
     if (event == "UNIT_SPELLCAST_SENT") then
         local spellType = GatherLite.findSpellType(spell);
         if (spellType) then
-            GatherLite.debug("Started gathering from " .. target .. " with " .. GetSpellInfo(spell));
+            GatherLite.debug("Started gathering with " .. GetSpellInfo(spell));
             GatherLite.tracker.target = target;
             GatherLite.tracker.spellID = spell;
             GatherLite.tracker.spellType = spellType;
