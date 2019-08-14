@@ -15,7 +15,27 @@ GatherLite.tracker.spellID = nil;
 
 GatherLite.spellIDs = {
     [GetSpellInfo(2575)] = "mining",
-    [GetSpellInfo(2366)] = "herbalism"
+    [GetSpellInfo(2366)] = "herbalism",
+    [GetSpellInfo(1804)] = "treasure", -- Pick Lock()
+    [GetSpellInfo(3365)] = "treasure", -- Opening()
+    [GetSpellInfo(3366)] = "treasure", -- Opening()
+    [GetSpellInfo(6247)] = "treasure", -- Opening()
+    [GetSpellInfo(6249)] = "treasure", -- Opening()
+    [GetSpellInfo(6477)] = "treasure", -- Opening()
+    [GetSpellInfo(6478)] = "treasure", -- Opening()
+    [GetSpellInfo(6509)] = "treasure", -- Opening()
+    [GetSpellInfo(6658)] = "treasure", -- Opening()
+    [GetSpellInfo(6802)] = "treasure", -- Opening()
+    [GetSpellInfo(8917)] = "treasure", -- Opening()
+    [GetSpellInfo(21248)] = "treasure", -- Opening()
+    [GetSpellInfo(21288)] = "treasure", -- Opening()
+    [GetSpellInfo(21651)] = "treasure", -- Opening()
+    [GetSpellInfo(24390)] = "treasure", -- Opening()
+    [GetSpellInfo(24391)] = "treasure", -- Opening()
+    [GetSpellInfo(26868)] = "treasure", -- Opening()
+    [GetSpellInfo(39220)] = "treasure", -- Opening()
+    [GetSpellInfo(39264)] = "treasure", -- Opening()
+    [GetSpellInfo(45137)] = "treasure", -- Opening()
 };
 
 GatherLite.classColours = {
@@ -37,7 +57,7 @@ GatherLite.defaultConfigs = {
     debugging = true,
     mining = true,
     herbalism = true,
-    treasures = true,
+    treasure = true,
     showOnMinimap = true,
     showOnWorldMap = true,
     minimapIconSize = 12,
@@ -76,7 +96,6 @@ GatherLite.minimap:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButto
 GatherLite.minimap:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 GatherLite.minimap:RegisterForDrag("LeftButton");
 
-
 local t = GatherLite.minimap:CreateTexture(nil, "OVERLAY");
 t:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
 t:SetSize(56, 56);
@@ -114,11 +133,28 @@ GatherLite.minimap:SetScript("OnDragStop", function(self)
     end;
 end);
 
+function tablelength(T)
+    local count = 0
+    for _ in pairs(T) do count = count + 1 end
+    return count
+end
+
 GatherLite.minimap:SetScript("OnEnter", function()
-    GatherLite.showTooltip(GatherLite.name, {
-        "|cffC0C0C0Left click|r: Toggle on|off",
-        "|cffC0C0C0Right click|r: Show menu"
-    });
+    GatherLite.tooltip:ClearLines();
+    GatherLite.tooltip:SetOwner(GatherLite.minimap, "ANCHOR_LEFT");
+    GatherLite.tooltip:SetText(GatherLite.name .. " |cFF00FF00" .. GatherLite.version .. "|r");
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffMining:|r", tablelength(GatherLiteGlobalSettings.database.mining));
+    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffHerbalism:|r", tablelength(GatherLiteGlobalSettings.database.herbalism));
+    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffTreasures:|r", tablelength(GatherLiteGlobalSettings.database.treasure));
+    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
+
+    GatherLite.tooltip:Show();
+    GatherLite.showingTooltip = true;
 end);
 
 GatherLite.minimap:SetScript("OnLeave", function()
@@ -126,18 +162,9 @@ GatherLite.minimap:SetScript("OnLeave", function()
 end);
 
 GatherLite.minimap:SetScript("OnClick", function(self, button)
-    if button == "LeftButton" then
-        if GatherLiteConfigCharacter.enabled then
-            GatherLiteConfigCharacter.enabled = false;
-        else
-            GatherLiteConfigCharacter.enabled = true;
-        end
-        GatherLite.needMapUpdate = true;
-    elseif button == "RightButton" then
-        local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
-        UIDropDownMenu_Initialize(dropDown, MinimapContextMenu, "MENU")
-        ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
-    end;
+    local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
+    UIDropDownMenu_Initialize(dropDown, MinimapContextMenu, "MENU")
+    ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
 end);
 
 GatherLite.minimap:Show()
@@ -248,6 +275,14 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
 
     local newNode;
 
+    if GatherLiteGlobalSettings.database == nil then
+        GatherLiteGlobalSettings.database = {};
+    end
+
+    if GatherLiteGlobalSettings.database[spellType] == nil then
+        GatherLiteGlobalSettings.database[spellType] = {};
+    end
+
     if GatherLiteGlobalSettings.database ~= nil then
         for k, node in ipairs(GatherLiteGlobalSettings.database[spellType]) do
             if GatherLite.IsNodeInRange(CurrentMapPosition.x, CurrentMapPosition.y, node.position.x, node.position.y) then
@@ -323,7 +358,7 @@ function GatherLite.CopyDefaults(src, dst)
     if type(dst) ~= "table" then dst = {} end
     for k, v in pairs(src) do
         if type(v) == "table" then
-            dst[k] = CopyDefaults(v, dst[k])
+            dst[k] = GatherLite.CopyDefaults(v, dst[k])
         elseif type(v) ~= type(dst[k]) then
             dst[k] = v
         end
@@ -387,13 +422,19 @@ function GatherLite.spawnMarker(node, minimap)
         else
             GatherLite.tooltip:SetOwner(f, "ANCHOR_TOPLEFT");
         end;
-        GatherLite.tooltip:SetText(GetItemInfo(node.icon));
+        GatherLite.tooltip:SetText(node.name);
         GatherLite.tooltip:AddDoubleLine("Last visit:", "|cffffffff" .. leadingZeros(node.date.day) .. '/' .. leadingZeros(node.date.month) .. '/' .. leadingZeros(node.date.year) .. " - " .. leadingZeros(node.date.hour) .. ':' .. leadingZeros(node.date.min) .. ':' .. leadingZeros(node.date.sec) .. "|r");
 
         if addLoot then
             for k, item in pairs(node.loot) do
                 GatherLite.tooltip:AddDoubleLine(k, "x" .. item.count);
-                GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
+
+                if (GetItemInfo(k)) then
+                    GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
+                elseif GetCurrencyInfo(k) then
+                    local cName, cAmount, cTexture = GetCurrencyInfo(k);
+                    GatherLite.tooltip:AddTexture(cTexture, { width = 14, height = 14 })
+                end;
             end
         end
 
@@ -412,9 +453,14 @@ function GatherLite.spawnMarker(node, minimap)
         GatherLite.tooltip:Hide()
     end)
 
+    local icon = node.icon;
+    if GetItemInfo(node.icon) then
+        icon = GetItemIcon(node.icon);
+    end
+
     f.texture = f:CreateTexture(nil, 'ARTWORK')
     f.texture:SetAllPoints(f)
-    f.texture:SetTexture(GetItemIcon(node.icon))
+    f.texture:SetTexture(icon)
 
     if minimap then
         Pins:AddMinimapIconWorld("GathererClassic", f, instance, x, y, false);
@@ -447,6 +493,15 @@ function GatherLite.UpdateMapNodes()
             end
         end
     end
+
+    --    if GatherLiteConfigCharacter.open then
+    if GatherLiteConfigCharacter.treasure then
+
+        for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+            GatherLite.spawnMarker(node);
+        end
+    end
+    --    end
 end
 
 function GatherLite.UpdateMinimapNodes()
@@ -469,6 +524,14 @@ function GatherLite.UpdateMinimapNodes()
     if GatherLiteConfigCharacter.herbalism then
         if GatherLiteGlobalSettings.database["herbalism"] then
             for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
+                GatherLite.spawnMarker(node, true);
+            end
+        end
+    end
+
+    if GatherLiteConfigCharacter.treasure then
+        if GatherLiteGlobalSettings.database["treasure"] then
+            for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
                 GatherLite.spawnMarker(node, true);
             end
         end
@@ -521,6 +584,20 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.herbalism = false;
                 else
                     GatherLiteConfigCharacter.herbalism = true;
+                end;
+                GatherLite.needMapUpdate = true;
+            end
+        })
+
+        addContextItem({
+            text = "Treasure nodes",
+            icon = 132594,
+            checked = GatherLiteConfigCharacter.treasure,
+            callback = function()
+                if GatherLiteConfigCharacter.treasure then
+                    GatherLiteConfigCharacter.treasure = false;
+                else
+                    GatherLiteConfigCharacter.treasure = true;
                 end;
                 GatherLite.needMapUpdate = true;
             end
@@ -596,40 +673,29 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
                 database = {
                     mining = {},
                     herbalism = {},
-                    treasures = {}
+                    treasure = {}
                 }
             };
         end
 
         GatherLiteConfigCharacter = GatherLite.CopyDefaults(GatherLite.defaultConfigs, GatherLiteConfigCharacter);
 
-        GatherLite.print("addon is loaded");
+        GatherLite.print("GatherLite", "|cFF00FF00" .. GatherLite.version .. "|r", "has been loaded");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
         GatherLite.updateMiniMapPosition();
         C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
 
         self:UnregisterEvent("ADDON_LOADED");
     elseif event == "LOOT_OPENED" then
         if (GatherLite.tracker.spellID and GatherLite.tracker.ended and GetTime() - GatherLite.tracker.ended < 1) then
-            local primary = GetLootSlotLink(1)
-            if (primary) then
-                primary = primary:match("item:(%d+)")
-                if (primary) then
-                    local loot = {};
-                    local count = GetNumLootItems()
-                    for i = 1, count do
-                        local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i);
-                        local slotType = GetLootSlotType(i);
-                        local lLink = GetLootSlotLink(i);
-                        loot[lLink] = { name = lName, count = tonumber(lQuantity) }
-                    end;
 
-                    if GatherLite.tracker.spellType == "open" then
-                        print(GatherLite.tracker.spellType);
-                    else
-                        GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, primary, loot);
-                    end
-                end
-            end
+            if (GatherLite.tracker.spellType == "mining" or GatherLite.tracker.spellType == "herbalism") then
+                GatherLite.foundOreOrHerb();
+            elseif (GatherLite.tracker.spellType == "treasure") then
+                GatherLite.foundTreasureChest();
+            end;
 
             GatherLite.tracker.target = nil;
             GatherLite.tracker.spellID = nil;
@@ -647,6 +713,39 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         end
     end
 end);
+
+function GatherLite.foundOreOrHerb()
+    local primary = GetLootSlotLink(1)
+    if (primary) then
+        primary = primary:match("item:(%d+)")
+        if (primary) then
+            local loot = {};
+            local count = GetNumLootItems()
+            for i = 1, count do
+                local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i);
+                local slotType = GetLootSlotType(i);
+                local lLink = GetLootSlotLink(i);
+                loot[lLink] = { name = lName, count = tonumber(lQuantity) }
+            end;
+
+            GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, GetItemIcon(primary), loot);
+        end
+    end
+end
+
+function GatherLite.foundTreasureChest()
+    local loot = {};
+    local count = GetNumLootItems()
+    for i = 1, count do
+        local lIcon, lName, lQuantity, lQuality = GetLootSlotInfo(i);
+        local slotType = GetLootSlotType(i);
+        local lLink = GetLootSlotLink(i);
+        loot[lLink] = { name = lName, count = tonumber(lQuantity) }
+    end;
+    -- chest icon 132594
+
+    GatherLite.addNode(GatherLite.tracker.spellID, GatherLite.tracker.spellType, GatherLite.tracker.target, 132594, loot);
+end
 
 local isCasting = false
 function GatherLite.handleSpell(event, spell, target)
