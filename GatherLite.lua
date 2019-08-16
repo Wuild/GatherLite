@@ -1,9 +1,22 @@
 local name, GatherLite = ...;
 local HBD = LibStub("HereBeDragons-2.0");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
+local Semver = LibStub("Semver");
+
+local function IsClassic()
+    local v = GetBuildInfo();
+    return Semver.parse(v) < Semver.parse("2.0.0")
+end
+
+local function IsRetail()
+    local v = GetBuildInfo();
+    return Semver.parse(v) > Semver.parse("2.0.0")
+end
 
 GatherLite.name = name;
 GatherLite.version = "@project-version@";
+GatherLite.isClassic = IsClassic();
+GatherLite.isRetail = IsRetail();
 
 GatherLite.gatherSpellRanges = {
     default = 0.0065,
@@ -16,36 +29,53 @@ GatherLite.tracker = {};
 GatherLite.tracker.spellType = nil;
 GatherLite.tracker.spellID = nil;
 
-GatherLite.spellIDs = {
-    [GetSpellInfo(2575)] = "mining", -- Mining
-    [GetSpellInfo(2366)] = "herbalism", -- Herbalism
-    [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
-    [GetSpellInfo(1804)] = "treasure", -- Pick Lock()
-    [GetSpellInfo(3365)] = "treasure", -- Opening()
-    [GetSpellInfo(3366)] = "treasure", -- Opening()
-    [GetSpellInfo(6247)] = "treasure", -- Opening()
-    [GetSpellInfo(6249)] = "treasure", -- Opening()
-    [GetSpellInfo(6477)] = "treasure", -- Opening()
-    [GetSpellInfo(6478)] = "treasure", -- Opening()
-    [GetSpellInfo(6509)] = "treasure", -- Opening()
-    [GetSpellInfo(6658)] = "treasure", -- Opening()
-    [GetSpellInfo(6802)] = "treasure", -- Opening()
-    [GetSpellInfo(8917)] = "treasure", -- Opening()
-    [GetSpellInfo(21248)] = "treasure", -- Opening()
-    [GetSpellInfo(21288)] = "treasure", -- Opening()
-    [GetSpellInfo(21651)] = "treasure", -- Opening()
-    [GetSpellInfo(24390)] = "treasure", -- Opening()
-    [GetSpellInfo(24391)] = "treasure", -- Opening()
-    [GetSpellInfo(26868)] = "treasure", -- Opening()
-    [GetSpellInfo(39220)] = "treasure", -- Opening()
-    [GetSpellInfo(39264)] = "treasure", -- Opening()
-    [GetSpellInfo(45137)] = "treasure", -- Opening()
-    [GetSpellInfo(22810)] = "treasure", -- Opening - No Text()
-    [GetSpellInfo(73979)] = "artifacts", -- Searching for Artifacts(Apprentice)
-};
+if (GatherLite.isClassic) then
+    GatherLite.spellIDs = {
+        [GetSpellInfo(2575)] = "mining", -- Mining
+        [GetSpellInfo(2366)] = "herbalism", -- Herbalism
+        [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
+        [GetSpellInfo(1804)] = "treasure", -- Pick Lock()
+        [GetSpellInfo(3365)] = "treasure", -- Opening()
+        [GetSpellInfo(3366)] = "treasure", -- Opening()
+        [GetSpellInfo(6247)] = "treasure", -- Opening()
+        [GetSpellInfo(6249)] = "treasure", -- Opening()
+        [GetSpellInfo(6477)] = "treasure", -- Opening()
+        [GetSpellInfo(6478)] = "treasure", -- Opening()
+    };
+elseif GatherLite.isRetail then
+    GatherLite.spellIDs = {
+        [GetSpellInfo(2575)] = "mining", -- Mining
+        [GetSpellInfo(2366)] = "herbalism", -- Herbalism
+        [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
+        [GetSpellInfo(1804)] = "treasure", -- Pick Lock()
+        [GetSpellInfo(3365)] = "treasure", -- Opening()
+        [GetSpellInfo(3366)] = "treasure", -- Opening()
+        [GetSpellInfo(6247)] = "treasure", -- Opening()
+        [GetSpellInfo(6249)] = "treasure", -- Opening()
+        [GetSpellInfo(6477)] = "treasure", -- Opening()
+        [GetSpellInfo(6478)] = "treasure", -- Opening()
+        [GetSpellInfo(6509)] = "treasure", -- Opening()
+        [GetSpellInfo(6658)] = "treasure", -- Opening()
+        [GetSpellInfo(6802)] = "treasure", -- Opening()
+        [GetSpellInfo(8917)] = "treasure", -- Opening()
+        [GetSpellInfo(21248)] = "treasure", -- Opening()
+        [GetSpellInfo(21288)] = "treasure", -- Opening()
+        [GetSpellInfo(21651)] = "treasure", -- Opening()
+        [GetSpellInfo(24390)] = "treasure", -- Opening()
+        [GetSpellInfo(24391)] = "treasure", -- Opening()
+        [GetSpellInfo(26868)] = "treasure", -- Opening()
+        [GetSpellInfo(39220)] = "treasure", -- Opening()
+        [GetSpellInfo(39264)] = "treasure", -- Opening()
+        [GetSpellInfo(45137)] = "treasure", -- Opening()
+        [GetSpellInfo(22810)] = "treasure", -- Opening - No Text()
+        [GetSpellInfo(73979)] = "artifacts", -- Searching for Artifacts(Apprentice)
+    };
+end;
+
 
 GatherLite.classColours = {
     DEATHKNIGHT = { r = 0.77, g = 0.12, b = 0.23, fs = '|cffC41F3B' },
+    DEMONHUNTER = { r = 0.64, g = 0.19, b = 0.79, fs = '|cffA330C9' },
     DRUID = { r = 1.00, g = 0.49, b = 0.04, fs = '|cffFF7D0A' },
     HUNTER = { r = 0.67, g = 0.83, b = 0.45, fs = '|cffABD473' },
     MAGE = { r = 0.25, g = 0.78, b = 0.92, fs = '|cff40C7EB' },
@@ -54,8 +84,7 @@ GatherLite.classColours = {
     ROGUE = { r = 1.00, g = 0.96, b = 0.41, fs = '|cffFFF569' },
     SHAMAN = { r = 0.00, g = 0.44, b = 0.87, fs = '|cff0070DE' },
     WARLOCK = { r = 0.53, g = 0.53, b = 0.93, fs = '|cff8787ED' },
-    WARRIOR = { r = 0.78, g = 0.61, b = 0.43, fs = '|cffC79C6E' },
-    Total = { r = 1, g = 1, b = 1 }
+    WARRIOR = { r = 0.78, g = 0.61, b = 0.43, fs = '|cffC79C6E' }
 }
 
 GatherLite.defaultConfigs = {
@@ -160,9 +189,10 @@ GatherLite.minimap:SetScript("OnEnter", function()
     GatherLite.tooltip:AddDoubleLine("|cffffffffHerbalism:|r", tablelength(GatherLiteGlobalSettings.database.herbalism));
     GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
 
-    GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", tablelength(GatherLiteGlobalSettings.database.artifacts));
-    GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
-
+    if not GatherLite.isClassic then
+        GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", tablelength(GatherLiteGlobalSettings.database.artifacts));
+        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
+    end;
     GatherLite.tooltip:AddDoubleLine("|cffffffffFish:|r", tablelength(GatherLiteGlobalSettings.database.fish));
     GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
 
@@ -221,7 +251,7 @@ SlashCmdList['GATHER'] = function(msg)
     end
 end
 
-function GatherLite.findSpellType(spell)
+GatherLite.findSpellType = function(spell)
     local spellInfo = GetSpellInfo(spell);
 
     for k, s in pairs(GatherLite.spellIDs) do
@@ -233,7 +263,7 @@ function GatherLite.findSpellType(spell)
     return nil;
 end
 
-function GatherLite.findSpell(spellID)
+GatherLite.findSpell = function(spellID)
     for k, s in pairs(GatherLite.spellIDs["mining"]) do
         if s == spellID then
             return "mining", s;
@@ -249,7 +279,7 @@ function GatherLite.findSpell(spellID)
     return nil, nil;
 end
 
-function GatherLite.showTooltip(title, ...)
+GatherLite.showTooltip = function(title, ...)
     GatherLite.tooltip:ClearLines();
     GatherLite.tooltip:SetOwner(UIParent, "ANCHOR_CURSOR");
     GatherLite.tooltip:SetText(title);
@@ -263,13 +293,13 @@ function GatherLite.showTooltip(title, ...)
     GatherLite.showingTooltip = true;
 end
 
-function GatherLite.hideTooltip()
+GatherLite.hideTooltip = function()
     GatherLite.tooltip:ClearLines();
     GatherLite.tooltip:Hide();
     GatherLite.showingTooltip = false;
 end
 
-function GatherLite.IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
+GatherLite.IsNodeInRange = function(myPosX, myPosY, nodePosX, nodePosY, spellType)
     local distance = ((((myPosX - nodePosX) ^ 2) + ((myPosY - nodePosY) ^ 2)) ^ 0.5)
     if spellType == "fish" then
         return distance < GatherLite.gatherSpellRanges.fish
@@ -278,7 +308,7 @@ function GatherLite.IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
     end;
 end
 
-function GatherLite.addNode(spellID, spellType, target, icon, loot)
+GatherLite.addNode = function(spellID, spellType, target, icon, loot)
     local CurrentMapID, CurrentMapPosition, CurrentMapName, NodeIcon, NodeUpdated;
 
     CurrentMapID = C_Map.GetBestMapForUnit('player');
@@ -366,7 +396,7 @@ function GatherLite.addNode(spellID, spellType, target, icon, loot)
     end
 end
 
-function GatherLite.CopyDefaults(src, dst)
+GatherLite.CopyDefaults = function(src, dst)
     if type(src) ~= "table" then return {} end
     if type(dst) ~= "table" then dst = {} end
     for k, v in pairs(src) do
@@ -379,7 +409,7 @@ function GatherLite.CopyDefaults(src, dst)
     return dst
 end
 
-function GatherLite.updateMiniMapPosition()
+GatherLite.updateMiniMapPosition = function()
     GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
 end
 
@@ -391,7 +421,7 @@ function leadingZeros(value)
     return value;
 end
 
-function GatherLite.spawnMarker(node, minimap)
+GatherLite.spawnMarker = function(node, minimap)
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
     local f = CreateFrame('Button', nil, UIParent)
     f:SetPoint("TOPLEFT", x, (y * -1))
@@ -482,7 +512,7 @@ function GatherLite.spawnMarker(node, minimap)
     end;
 end
 
-function GatherLite.UpdateMapNodes()
+GatherLite.UpdateMapNodes = function()
     Pins:RemoveAllWorldMapIcons("GathererClassic")
 
     if not GatherLiteConfigCharacter.enabled or not GatherLiteConfigCharacter.showOnWorldMap then
@@ -515,6 +545,7 @@ function GatherLite.UpdateMapNodes()
             end
         end
     end
+
     if GatherLiteConfigCharacter.artifacts then
         if GatherLiteGlobalSettings.database["artifacts"] then
             for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
@@ -532,7 +563,7 @@ function GatherLite.UpdateMapNodes()
     end
 end
 
-function GatherLite.UpdateMinimapNodes()
+GatherLite.UpdateMinimapNodes = function()
     Pins:RemoveAllMinimapIcons("GathererClassic")
 
     if not GatherLiteConfigCharacter.enabled or not GatherLiteConfigCharacter.showOnMinimap then
@@ -633,19 +664,21 @@ function MinimapContextMenu(frame, level, menuList)
             end
         })
 
-        addContextItem({
-            text = "Archaeology",
-            icon = 134435,
-            checked = GatherLiteConfigCharacter.artifacts,
-            callback = function()
-                if GatherLiteConfigCharacter.artifacts then
-                    GatherLiteConfigCharacter.artifacts = false;
-                else
-                    GatherLiteConfigCharacter.artifacts = true;
-                end;
-                GatherLite.needMapUpdate = true;
-            end
-        })
+        if not GatherLite.isClassic then
+            addContextItem({
+                text = "Archaeology",
+                icon = 134435,
+                checked = GatherLiteConfigCharacter.artifacts,
+                callback = function()
+                    if GatherLiteConfigCharacter.artifacts then
+                        GatherLiteConfigCharacter.artifacts = false;
+                    else
+                        GatherLiteConfigCharacter.artifacts = true;
+                    end;
+                    GatherLite.needMapUpdate = true;
+                end
+            })
+        end
 
         addContextItem({
             text = "Fish",
@@ -696,7 +729,7 @@ function split(pString, pPattern)
     return Table
 end
 
-function GatherLite.ParseSentData(msg, sender)
+GatherLite.ParseSentData = function(msg, sender)
     if not GatherLiteConfigCharacter.shareGuild and not GatherLiteConfigCharacter.sharePart then
         return;
     end
@@ -742,61 +775,7 @@ function GatherLite.ParseSentData(msg, sender)
     end
 end
 
-GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
-    if event == "ADDON_LOADED" and select(1, ...) == GatherLite.name then
-        if GatherLiteGlobalSettings == nil then
-            GatherLiteGlobalSettings = {
-                database = {
-                    mining = {},
-                    herbalism = {},
-                    treasure = {}
-                }
-            };
-        end
-
-        GatherLiteConfigCharacter = GatherLite.CopyDefaults(GatherLite.defaultConfigs, GatherLiteConfigCharacter);
-
-        GatherLite.print("GatherLite", "|cFF00FF00" .. GatherLite.version .. "|r", "has been loaded");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.artifacts) .. "|r", "artifact nodes");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.fish) .. "|r", "fishing spots");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
-        GatherLite.updateMiniMapPosition();
-        C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
-
-        self:UnregisterEvent("ADDON_LOADED");
-    elseif event == "LOOT_OPENED" then
-        if (GatherLite.tracker.spellID and GatherLite.tracker.ended and GetTime() - GatherLite.tracker.ended < 1) then
-            if (GatherLite.tracker.spellType == "mining" or GatherLite.tracker.spellType == "herbalism" or GatherLite.tracker.spellType == "artifacts") then
-                GatherLite.foundOreOrHerb();
-            elseif (GatherLite.tracker.spellType == "treasure") then
-                GatherLite.foundTreasureChest();
-            end;
-            GatherLite.tracker.target = nil;
-            GatherLite.tracker.spellID = nil;
-            GatherLite.tracker.spellType = nil;
-        elseif (GatherLite.tracker.spellID and IsFishingLoot()) then
-            GatherLite.foundOreOrHerb();
-            GatherLite.tracker.target = nil;
-            GatherLite.tracker.spellID = nil;
-            GatherLite.tracker.spellType = nil;
-        end
-
-    elseif (event == "UNIT_SPELLCAST_SENT") or (event == "UNIT_SPELLCAST_SUCCEEDED") or (event == "UNIT_SPELLCAST_INTERRUPTED") or (event == "UNIT_SPELLCAST_FAILED") then
-        GatherLite.handleSpell(event, select(4, ...), select(2, ...));
-    elseif (event == "PLAYER_ENTERING_WORLD") then
-        GatherLite.needMapUpdate = true;
-    elseif event == 'CHAT_MSG_ADDON' then
-        if string.find(select(1, ...), GatherLite.name) then
-            local msg = select(2, ...)
-            local sender = select(5, ...)
-            GatherLite.ParseSentData(msg, sender)
-        end
-    end
-end);
-
-function GatherLite.foundOreOrHerb()
+GatherLite.foundOreOrHerb = function()
     local primary = GetLootSlotLink(1)
 
 
@@ -838,7 +817,7 @@ function GatherLite.foundOreOrHerb()
     end
 end
 
-function GatherLite.foundTreasureChest()
+GatherLite.foundTreasureChest = function()
     local loot = {};
     local count = GetNumLootItems()
     for i = 1, count do
@@ -853,7 +832,7 @@ function GatherLite.foundTreasureChest()
 end
 
 local isCasting = false
-function GatherLite.handleSpell(event, spell, target)
+GatherLite.handleSpell = function(event, spell, target)
     if (event == "UNIT_SPELLCAST_SENT") then
         local spellType = GatherLite.findSpellType(spell);
         if (spellType) then
@@ -881,4 +860,60 @@ GatherLite.mainFrame:SetScript('OnUpdate', function()
         GatherLite.UpdateMapNodes();
         GatherLite.needMapUpdate = false;
     end;
+end);
+
+GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
+    if event == "ADDON_LOADED" and select(1, ...) == GatherLite.name then
+        if GatherLiteGlobalSettings == nil then
+            GatherLiteGlobalSettings = {
+                database = {
+                    mining = {},
+                    herbalism = {},
+                    treasure = {}
+                }
+            };
+        end
+
+        GatherLiteConfigCharacter = GatherLite.CopyDefaults(GatherLite.defaultConfigs, GatherLiteConfigCharacter);
+
+        GatherLite.print("GatherLite", "|cFF00FF00" .. GatherLite.version .. "|r", "has been loaded");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");
+        if not GatherLite.isClassic then
+            GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.artifacts) .. "|r", "artifact nodes");
+        end
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.fish) .. "|r", "fishing spots");
+        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
+        GatherLite.updateMiniMapPosition();
+        C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
+
+        self:UnregisterEvent("ADDON_LOADED");
+    elseif event == "LOOT_OPENED" then
+        if (GatherLite.tracker.spellID and GatherLite.tracker.ended and GetTime() - GatherLite.tracker.ended < 1) then
+            if (GatherLite.tracker.spellType == "mining" or GatherLite.tracker.spellType == "herbalism" or GatherLite.tracker.spellType == "artifacts") then
+                GatherLite.foundOreOrHerb();
+            elseif (GatherLite.tracker.spellType == "treasure") then
+                GatherLite.foundTreasureChest();
+            end;
+            GatherLite.tracker.target = nil;
+            GatherLite.tracker.spellID = nil;
+            GatherLite.tracker.spellType = nil;
+        elseif (GatherLite.tracker.spellID and IsFishingLoot()) then
+            GatherLite.foundOreOrHerb();
+            GatherLite.tracker.target = nil;
+            GatherLite.tracker.spellID = nil;
+            GatherLite.tracker.spellType = nil;
+        end
+
+    elseif (event == "UNIT_SPELLCAST_SENT") or (event == "UNIT_SPELLCAST_SUCCEEDED") or (event == "UNIT_SPELLCAST_INTERRUPTED") or (event == "UNIT_SPELLCAST_FAILED") then
+        GatherLite.handleSpell(event, select(4, ...), select(2, ...));
+    elseif (event == "PLAYER_ENTERING_WORLD") then
+        GatherLite.needMapUpdate = true;
+    elseif event == 'CHAT_MSG_ADDON' then
+        if string.find(select(1, ...), GatherLite.name) then
+            local msg = select(2, ...)
+            local sender = select(5, ...)
+            GatherLite.ParseSentData(msg, sender)
+        end
+    end
 end);

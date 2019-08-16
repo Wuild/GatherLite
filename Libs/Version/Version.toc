@@ -1,0 +1,6 @@
+## Interface: 80200
+## Title: Lib: Semver
+## Author: Wuild
+## Version: 1.0
+
+Semver.lua
