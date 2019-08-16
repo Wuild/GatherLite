@@ -877,13 +877,13 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         GatherLiteConfigCharacter = GatherLite.CopyDefaults(GatherLite.defaultConfigs, GatherLiteConfigCharacter);
 
         GatherLite.print("GatherLite", "|cFF00FF00" .. GatherLite.version .. "|r", "has been loaded");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");
+        GatherLite.debug("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
+        GatherLite.debug("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");
         if not GatherLite.isClassic then
-            GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.artifacts) .. "|r", "artifact nodes");
+            GatherLite.debug("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.artifacts) .. "|r", "artifact nodes");
         end
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.fish) .. "|r", "fishing spots");
-        GatherLite.print("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
+        GatherLite.debug("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.fish) .. "|r", "fishing spots");
+        GatherLite.debug("Found", "|cFF00FF00" .. tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
         GatherLite.updateMiniMapPosition();
         C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
 
