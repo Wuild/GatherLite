@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 11302
 ## X-Min-Interface: 80200
 ## Title: GatherLite |cFF00FF00 @project-version@|r
 ## Author: Wuild, Silvessa, Darkmoon Faire
