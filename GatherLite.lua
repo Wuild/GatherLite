@@ -191,20 +191,20 @@ GatherLite.minimap:SetScript("OnEnter", function()
     GatherLite.tooltip:SetText(GatherLite.name .. " |cFF00FF00" .. GatherLite.version .. "|r");
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffMining:|r", tablelength(GatherLiteGlobalSettings.database.mining));
-    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
+--    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffHerbalism:|r", tablelength(GatherLiteGlobalSettings.database.herbalism));
-    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
+--    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
 
     if not GatherLite.isClassic then
         GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", tablelength(GatherLiteGlobalSettings.database.artifacts));
-        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
+--        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
     end;
     GatherLite.tooltip:AddDoubleLine("|cffffffffFish:|r", tablelength(GatherLiteGlobalSettings.database.fish));
-    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
+--    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffTreasures:|r", tablelength(GatherLiteGlobalSettings.database.treasure));
-    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
+--    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
 
     GatherLite.tooltip:Show();
     GatherLite.showingTooltip = true;
@@ -430,7 +430,7 @@ end
 
 GatherLite.spawnMarker = function(node, minimap)
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
-    local f = CreateFrame('Button', nil, UIParent)
+    local f = CreateFrame('Button', nil, WorldMapFrame.ScrollContainer.Child);
     f:SetPoint("TOPLEFT", x, (y * -1))
 
     if minimap then
@@ -485,10 +485,10 @@ GatherLite.spawnMarker = function(node, minimap)
                 GatherLite.tooltip:AddDoubleLine(k, "x" .. item.count);
 
                 if (GetItemInfo(k)) then
-                    GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
+--                    GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
                 elseif GetCurrencyInfo(k) then
                     local cName, cAmount, cTexture = GetCurrencyInfo(k);
-                    GatherLite.tooltip:AddTexture(cTexture, { width = 14, height = 14 })
+--                    GatherLite.tooltip:AddTexture(cTexture, { width = 14, height = 14 })
                 end;
             end
         end
