@@ -25,6 +25,13 @@ GatherLite.gatherSpellRanges = {
 GatherLite.nodeUpdated = false;
 GatherLite.needMapUpdate = false;
 
+GatherLite.TimeSinceLastUpdate = 0;
+GatherLite.UpdateInterval = 1.0;
+GatherLite.nodes = {
+    minimap = {},
+    worldmap = {}
+};
+
 GatherLite.tracker = {};
 GatherLite.tracker.spellType = nil;
 GatherLite.tracker.spellID = nil;
@@ -439,8 +446,10 @@ GatherLite.spawnMarker = function(node, minimap)
 
     if minimap then
         f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
+        table.insert(GatherLite.nodes.minimap, { frame = f, x = x, y = y })
     else
         f:SetAlpha(GatherLiteConfigCharacter.worldmapOpacity);
+        table.insert(GatherLite.nodes.worldmap, { frame = f, x = x, y = y })
     end;
 
     GetPlayerInfoByGUID(node.GUID);
@@ -462,9 +471,12 @@ GatherLite.spawnMarker = function(node, minimap)
         GatherLite.tooltip:ClearLines();
         if minimap then
             GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
+            table.insert(GatherLite.nodes.minimap, { frame = f, x = x, y = y });
         else
             GatherLite.tooltip:SetOwner(f, "ANCHOR_TOPLEFT");
+            table.insert(GatherLite.nodes.worldmap, { frame = f, x = x, y = y });
         end;
+
         GatherLite.tooltip:SetText(node.name);
         GatherLite.tooltip:AddDoubleLine("Last visit:", "|cffffffff" .. leadingZeros(node.date.day) .. '/' .. leadingZeros(node.date.month) .. '/' .. leadingZeros(node.date.year) .. " - " .. leadingZeros(node.date.hour) .. ':' .. leadingZeros(node.date.min) .. ':' .. leadingZeros(node.date.sec) .. "|r");
 
@@ -854,12 +866,27 @@ GatherLite.handleSpell = function(event, spell, target)
     end
 end
 
-GatherLite.mainFrame:SetScript('OnUpdate', function()
+GatherLite.mainFrame:SetScript('OnUpdate', function(self, elapsed)
+    GatherLite.TimeSinceLastUpdate = GatherLite.TimeSinceLastUpdate + elapsed;
+
     if GatherLite.needMapUpdate then
         GatherLite.UpdateMinimapNodes();
         GatherLite.UpdateMapNodes();
         GatherLite.needMapUpdate = false;
     end;
+
+    if (GatherLite.TimeSinceLastUpdate > GatherLite.UpdateInterval) then
+        local x, y, instance = HBD:GetPlayerWorldPosition();
+        for k, node in ipairs(GatherLite.nodes.minimap) do
+            local distance, deltax, deltay = HBD:GetWorldDistance(instance, x, y, node.x, node.y);
+            if distance < 70 then
+                node.frame:SetAlpha(0);
+            else
+                node.frame:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
+            end;
+        end
+        GatherLite.TimeSinceLastUpdate = 0;
+    end
 end);
 
 GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
