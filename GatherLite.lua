@@ -191,20 +191,20 @@ GatherLite.minimap:SetScript("OnEnter", function()
     GatherLite.tooltip:SetText(GatherLite.name .. " |cFF00FF00" .. GatherLite.version .. "|r");
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffMining:|r", tablelength(GatherLiteGlobalSettings.database.mining));
---    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffHerbalism:|r", tablelength(GatherLiteGlobalSettings.database.herbalism));
---    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
 
     if not GatherLite.isClassic then
         GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", tablelength(GatherLiteGlobalSettings.database.artifacts));
---        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
+        --        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
     end;
     GatherLite.tooltip:AddDoubleLine("|cffffffffFish:|r", tablelength(GatherLiteGlobalSettings.database.fish));
---    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
 
     GatherLite.tooltip:AddDoubleLine("|cffffffffTreasures:|r", tablelength(GatherLiteGlobalSettings.database.treasure));
---    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
+    --    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
 
     GatherLite.tooltip:Show();
     GatherLite.showingTooltip = true;
@@ -255,6 +255,9 @@ SlashCmdList['GATHER'] = function(msg)
     elseif msg == "reset" then
         GatherLiteGlobalSettings.database = {};
         GatherLite.needMapUpdate = true
+    elseif msg == "test" then
+        local x, y, mapID = HBD:GetPlayerZonePosition();
+        print(x, y, mapID);
     end
 end
 
@@ -316,11 +319,13 @@ GatherLite.IsNodeInRange = function(myPosX, myPosY, nodePosX, nodePosY, spellTyp
 end
 
 GatherLite.addNode = function(spellID, spellType, target, icon, loot)
-    local CurrentMapID, CurrentMapPosition, CurrentMapName, NodeIcon, NodeUpdated;
+    local NodeIcon, NodeUpdated;
+    local x, y, mapID = HBD:GetPlayerZonePosition();
 
-    CurrentMapID = C_Map.GetBestMapForUnit('player');
-    CurrentMapPosition = C_Map.GetPlayerMapPosition(CurrentMapID, 'player');
-    CurrentMapName = C_Map.GetMapInfo(CurrentMapID).name;
+    if not x and not y then
+        return;
+    end
+
     NodeUpdated = false;
 
     local newNode;
@@ -335,7 +340,7 @@ GatherLite.addNode = function(spellID, spellType, target, icon, loot)
 
     if GatherLiteGlobalSettings.database ~= nil then
         for k, node in ipairs(GatherLiteGlobalSettings.database[spellType]) do
-            if GatherLite.IsNodeInRange(CurrentMapPosition.x, CurrentMapPosition.y, node.position.x, node.position.y, spellType) then
+            if GatherLite.IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
                 node.date = date('*t');
                 newNode = node;
                 NodeUpdated = true;
@@ -367,9 +372,9 @@ GatherLite.addNode = function(spellID, spellType, target, icon, loot)
             icon = icon,
             loot = {},
             position = {
-                mapID = CurrentMapID,
-                x = CurrentMapPosition.x,
-                y = CurrentMapPosition.y
+                mapID = mapID,
+                x = x,
+                y = y
             },
             date = date('*t'),
         };
@@ -484,12 +489,14 @@ GatherLite.spawnMarker = function(node, minimap)
             for k, item in pairs(node.loot) do
                 GatherLite.tooltip:AddDoubleLine(k, "x" .. item.count);
 
-                if (GetItemInfo(k)) then
---                    GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
-                elseif GetCurrencyInfo(k) then
-                    local cName, cAmount, cTexture = GetCurrencyInfo(k);
---                    GatherLite.tooltip:AddTexture(cTexture, { width = 14, height = 14 })
-                end;
+            
+
+--                if (GetItemInfo(k)) then
+--                    --                    GatherLite.tooltip:AddTexture(GetItemIcon(k), { width = 14, height = 14 })
+--                elseif GetCurrencyInfo(k) then
+--                    local cName, cAmount, cTexture = GetCurrencyInfo(k);
+--                    --                    GatherLite.tooltip:AddTexture(cTexture, { width = 14, height = 14 })
+--                end;
             end
         end
 
@@ -879,11 +886,13 @@ GatherLite.mainFrame:SetScript('OnUpdate', function(self, elapsed)
         local x, y, instance = HBD:GetPlayerWorldPosition();
         for k, node in ipairs(GatherLite.nodes.minimap) do
             local distance, deltax, deltay = HBD:GetWorldDistance(instance, x, y, node.x, node.y);
-            if distance < 70 then
-                node.frame:SetAlpha(0);
-            else
-                node.frame:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
-            end;
+            if (distance) then
+                if distance < 70 then
+                    node.frame:SetAlpha(0);
+                else
+                    node.frame:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
+                end;
+            end
         end
         GatherLite.TimeSinceLastUpdate = 0;
     end
