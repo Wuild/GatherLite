@@ -4,6 +4,16 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
+#### Commands
+Use /gather or /gatherlite when using these commands
+
+Command | Arguments | description
+---:| --- | ---|
+debugging | on, off| Turn debugging mode on or off
+reload | | Reload the map and minimap nodes
+reset | | Reset the nodes database, this will remove all the nodes
+Usage example **/gatherlite debugging off**
+
 ### Changelog
 * 1.0.15
     * Added artifact stats to minimap tooltip

@@ -241,7 +241,7 @@ GatherLite.debug = function(...)
 end
 
 SLASH_GATHER1 = '/GATHER'
-SLASH_GATHER2 = '/GATHERER'
+SLASH_GATHER2 = '/GATHERLITE'
 SlashCmdList['GATHER'] = function(msg)
     if msg == 'reload' then
         GatherLite.print("Reloading map");
@@ -255,9 +255,6 @@ SlashCmdList['GATHER'] = function(msg)
     elseif msg == "reset" then
         GatherLiteGlobalSettings.database = {};
         GatherLite.needMapUpdate = true
-    elseif msg == "test" then
-        local x, y, mapID = HBD:GetPlayerZonePosition();
-        print(x, y, mapID);
     end
 end
 
@@ -439,7 +436,7 @@ GatherLite.spawnMarker = function(node, minimap)
         f = CreateFrame('Button', nil, Minimap)
     else
         f = CreateFrame('Button', nil, WorldMapFrame.ScrollContainer.Child)
-    endw
+    end
 
     local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
     f:SetPoint("TOPLEFT", x, (y * -1))
