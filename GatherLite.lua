@@ -436,13 +436,9 @@ GatherLite.minimapFrames = {};
 GatherLite.createWorldmapNode = function(node, ik)
     local f
     if (GatherLite.frames[node.type .. ik] == nil) then
-        GatherLite.frames[node.type .. ik] = CreateFrame('Button', nil, WorldMapFrame.ScrollContainer.Child)
+        GatherLite.frames[node.type .. ik] = CreateFrame('Button', "GatherLite.Worldmap." .. ik, WorldMapFrame.ScrollContainer.Child)
     end
-
     f = GatherLite.frames[node.type .. ik];
-
---    local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
---    f:SetPoint("TOPLEFT", x, (y * -1))
     f:SetSize(GatherLiteConfigCharacter.worldmapIconSize, GatherLiteConfigCharacter.worldmapIconSize)
     f:SetFrameLevel(1)
     f:SetFrameStrata("HIGH")
@@ -498,20 +494,18 @@ GatherLite.createWorldmapNode = function(node, ik)
     end)
 
     Pins:AddWorldMapIconMap("GathererClassic.Worldmap", f, node.position.mapID, node.position.x, node.position.y, HBD_PINS_WORLDMAP_SHOW_PARENT);
-    table.insert(GatherLite.nodes.worldmap, { frame = f, x = x, y = y })
+    table.insert(GatherLite.nodes.worldmap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y })
 end
 
 GatherLite.createMinimapNode = function(node, ik)
     local f;
 
     if (GatherLite.minimapFrames[node.type .. ik] == nil) then
-        GatherLite.minimapFrames[node.type .. ik] = CreateFrame('Button', nil, Minimap)
+        GatherLite.minimapFrames[node.type .. ik] = CreateFrame('Button', "GatherLite.Minimap." .. ik, Minimap)
     end
 
     f = GatherLite.minimapFrames[node.type .. ik];
 
-    local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
-    f:SetPoint("TOPLEFT", x, (y * -1))
     f:SetSize(GatherLiteConfigCharacter.minimapIconSize, GatherLiteConfigCharacter.minimapIconSize)
     f:SetFrameLevel(1)
     f:SetFrameStrata("HIGH")
@@ -535,7 +529,6 @@ GatherLite.createMinimapNode = function(node, ik)
         if node.loot and GatherLiteConfigCharacter.minimapLoot then
             addLoot = true;
         end
-
 
         f:SetAlpha(1);
         GatherLite.tooltip:ClearLines();
@@ -566,10 +559,9 @@ GatherLite.createMinimapNode = function(node, ik)
         GatherLite.tooltip:Hide()
     end)
 
-    Pins:AddMinimapIconWorld("GathererClassic", f, mapID, x, y, false);
-    table.insert(GatherLite.nodes.minimap, { frame = f, x = x, y = y });
+    Pins:AddMinimapIconMap("GathererClassic", f, node.position.mapID, node.position.x, node.position.y, true, false);
+    table.insert(GatherLite.nodes.minimap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y });
 end
-
 
 
 GatherLite.UpdateMapNodes = function()
@@ -625,6 +617,7 @@ end
 
 GatherLite.UpdateMinimapNodes = function()
     GatherLite.nodes.minimap = {};
+    Pins:RemoveAllMinimapIcons("GathererClassic");
 
     if not GatherLiteConfigCharacter.enabled or not GatherLiteConfigCharacter.showOnMinimap then
         return
@@ -939,7 +932,8 @@ GatherLite.mainFrame:SetScript('OnUpdate', function(self, elapsed)
     if (GatherLite.TimeSinceLastUpdate > GatherLite.UpdateInterval) then
         local x, y, instance = HBD:GetPlayerWorldPosition();
         for k, node in ipairs(GatherLite.nodes.minimap) do
-            local distance, deltax, deltay = HBD:GetWorldDistance(instance, x, y, node.x, node.y);
+            local x2, y2 = HBD:GetWorldCoordinatesFromZone(node.x, node.y, node.mapID);
+            local distance = HBD:GetWorldDistance(instance, x, y, x2, y2);
             if (distance) then
                 if distance < 70 then
                     node.frame:SetAlpha(0);
