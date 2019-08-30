@@ -434,7 +434,13 @@ function leadingZeros(value)
 end
 
 GatherLite.spawnMarker = function(node, minimap)
-    local f = CreateFrame('Button', nil, WorldMapFrame.ScrollContainer.Child);
+    local f;
+    if minimap then
+        f = CreateFrame('Button', nil, Minimap)
+    else
+        f = CreateFrame('Button', nil, WorldMapFrame.ScrollContainer.Child)
+    endw
+
     local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
     f:SetPoint("TOPLEFT", x, (y * -1))
 
