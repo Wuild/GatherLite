@@ -502,7 +502,8 @@ GatherLite.createWorldmapNode = function(node, ik)
 end
 
 GatherLite.createMinimapNode = function(node, ik)
-    local f
+    local f;
+
     if (GatherLite.minimapFrames[node.type .. ik] == nil) then
         GatherLite.minimapFrames[node.type .. ik] = CreateFrame('Button', nil, Minimap)
     end
@@ -640,7 +641,7 @@ GatherLite.UpdateMinimapNodes = function()
     if GatherLiteConfigCharacter.herbalism then
         if GatherLiteGlobalSettings.database["herbalism"] then
             for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
-                GatherLite.createMinimapNode(nod, k);
+                GatherLite.createMinimapNode(node, k);
             end
         end
     end
