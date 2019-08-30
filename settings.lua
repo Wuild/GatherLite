@@ -191,3 +191,192 @@ function ApplyOptions()
 end
 
 OptionsPanel:SetScript('OnEvent', OptionsPanelOnEvent);
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-- MINI MAP
+-----------------------------------------------------------------------------------------------------------------------------------
+GatherLite.minimap = CreateFrame("Button", "GatherLite_MinimapButton", Minimap);
+GatherLite.minimap:EnableMouse(true);
+GatherLite.minimap:SetMovable(true);
+GatherLite.minimap:SetSize(33, 33);
+GatherLite.minimap:SetPoint("TOPLEFT");
+GatherLite.minimap:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight");
+GatherLite.minimap:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+GatherLite.minimap:RegisterForDrag("LeftButton");
+
+local t = GatherLite.minimap:CreateTexture(nil, "OVERLAY");
+t:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+t:SetSize(56, 56);
+t:SetPoint("TOPLEFT");
+
+local t = GatherLite.minimap:CreateTexture(nil, "background");
+t:SetTexture("Interface\\Icons\\inv_misc_spyglass_02")
+t:SetSize(21, 21);
+t:SetPoint("CENTER");
+
+GatherLite.minimapFrame = CreateFrame("FRAME", nil, GatherLite.minimap);
+GatherLite.minimapFrame:SetScript("OnUpdate", function()
+    local xpos, ypos = GetCursorPosition()
+    local xmin, ymin = Minimap:GetLeft(), Minimap:GetBottom()
+
+    xpos = xmin - xpos / UIParent:GetScale() + 70 -- get coordinates as differences from the center of the minimap
+    ypos = ypos / UIParent:GetScale() - ymin - 70
+
+    GatherLiteConfigCharacter.MiniMapPosition = math.deg(math.atan2(ypos, xpos))
+    GatherLite.updateMiniMapPosition()
+end);
+GatherLite.minimapFrame:Hide();
+
+GatherLite.minimap:SetScript("OnDragStart", function(self)
+    self:LockHighlight();
+    GatherLite.minimapFrame:Show();
+    GatherLite.tooltip:Hide();
+end);
+
+GatherLite.minimap:SetScript("OnDragStop", function(self)
+    self:UnlockHighlight();
+    GatherLite.minimapFrame:Hide();
+    if (GatherLite.showingTooltip) then
+        GatherLite.tooltip:Show();
+    end;
+end);
+
+GatherLite.minimap:SetScript("OnEnter", function()
+    GatherLite.tooltip:ClearLines();
+    GatherLite.tooltip:SetOwner(GatherLite.minimap, "ANCHOR_LEFT");
+    GatherLite.tooltip:SetText(GatherLite.name .. " |cFF00FF00" .. GatherLite.version .. "|r");
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffMining:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.mining));
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffHerbalism:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.herbalism));
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
+
+    if not GatherLite.isClassic then
+        GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.artifacts));
+        --        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
+    end;
+    GatherLite.tooltip:AddDoubleLine("|cffffffffFish:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.fish));
+    --    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
+
+    GatherLite.tooltip:AddDoubleLine("|cffffffffTreasures:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.treasure));
+    --    GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
+
+    GatherLite.tooltip:Show();
+    GatherLite.showingTooltip = true;
+end);
+
+GatherLite.minimap:SetScript("OnLeave", function()
+    GatherLite.hideTooltip();
+end);
+
+GatherLite.minimap:SetScript("OnClick", function(self, button)
+    local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
+    UIDropDownMenu_Initialize(dropDown, MinimapContextMenu, "MENU")
+    ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
+end);
+
+GatherLite.updateMiniMapPosition = function()
+    GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
+end
+
+GatherLite.minimap:Show()
+
+
+function addContextItem(args)
+    local info = UIDropDownMenu_CreateInfo()
+    info.text = args.text;
+    info.checked = args.checked;
+    info.func = args.callback;
+    info.icon = args.icon;
+    info.isTitle = args.isTitle;
+    info.disabled = args.disabled;
+    info.notCheckable = args.notCheckable;
+    UIDropDownMenu_AddButton(info)
+end
+
+function MinimapContextMenu(frame, level, menuList)
+
+    if level == 1 then
+
+        addContextItem({
+            text = "GatherLite",
+            isTitle = true,
+            notCheckable = true
+        });
+
+        addContextItem({
+            text = "Mining",
+            icon = GetItemIcon(2770),
+            checked = GatherLiteConfigCharacter.mining,
+            callback = function()
+                if GatherLiteConfigCharacter.mining then
+                    GatherLiteConfigCharacter.mining = false;
+                else
+                    GatherLiteConfigCharacter.mining = true;
+                end;
+
+                GatherLite.needMapUpdate = true;
+            end
+        })
+
+        addContextItem({
+            text = "Herbalism",
+            icon = GetItemIcon(765),
+            checked = GatherLiteConfigCharacter.herbalism,
+            callback = function()
+                if GatherLiteConfigCharacter.herbalism then
+                    GatherLiteConfigCharacter.herbalism = false;
+                else
+                    GatherLiteConfigCharacter.herbalism = true;
+                end;
+                GatherLite.needMapUpdate = true;
+            end
+        })
+
+        if not GatherLite.isClassic then
+            addContextItem({
+                text = "Archaeology",
+                icon = 134435,
+                checked = GatherLiteConfigCharacter.artifacts,
+                callback = function()
+                    if GatherLiteConfigCharacter.artifacts then
+                        GatherLiteConfigCharacter.artifacts = false;
+                    else
+                        GatherLiteConfigCharacter.artifacts = true;
+                    end;
+                    GatherLite.needMapUpdate = true;
+                end
+            })
+        end
+
+        addContextItem({
+            text = "Fish",
+            icon = GetItemIcon(6303),
+            checked = GatherLiteConfigCharacter.fish,
+            callback = function()
+                if GatherLiteConfigCharacter.fish then
+                    GatherLiteConfigCharacter.fish = false;
+                else
+                    GatherLiteConfigCharacter.fish = true;
+                end;
+                GatherLite.needMapUpdate = true;
+            end
+        })
+
+        addContextItem({
+            text = "Treasure chests",
+            icon = 132594,
+            checked = GatherLiteConfigCharacter.treasure,
+            callback = function()
+                if GatherLiteConfigCharacter.treasure then
+                    GatherLiteConfigCharacter.treasure = false;
+                else
+                    GatherLiteConfigCharacter.treasure = true;
+                end;
+                GatherLite.needMapUpdate = true;
+            end
+        })
+    end
+end

@@ -17,7 +17,7 @@ HereBeDragons.callbacks        = HereBeDragons.callbacks or CBH:New(HereBeDragon
 
 local WoWClassic = select(4, GetBuildInfo()) < 20000
 
--- Data Constants
+-- Data Constantscallbacks
 local COSMIC_MAP_ID = 946
 local WORLD_MAP_ID = 947
 
