@@ -112,7 +112,8 @@ GatherLite.defaultConfigs = {
     minimapOpacity = 1,
     worldmapOpacity = 1,
     minimapLoot = true,
-    worldmapLoot = true
+    worldmapLoot = true,
+    minimapEdge = false
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -449,7 +450,7 @@ GatherLite.createWorldmapNode = function(node, ik)
     f.texture = f:CreateTexture(nil, 'ARTWORK')
     f.texture:SetAllPoints(f)
     f.texture:SetTexture(node.icon)
-
+    GetPlayerInfoByGUID(node.GUID)
     f:SetScript('OnEnter', function()
 
         if (f:GetAlpha() == 0) then
@@ -493,7 +494,9 @@ GatherLite.createWorldmapNode = function(node, ik)
         GatherLite.tooltip:Hide()
     end)
 
-    Pins:AddWorldMapIconMap("GathererClassic.Worldmap", f, node.position.mapID, node.position.x, node.position.y, HBD_PINS_WORLDMAP_SHOW_PARENT);
+    local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
+    Pins:AddWorldMapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y);
+    --    Pins:AddWorldMapIconMap("GathererClassic.Worldmap", f, node.position.mapID, node.position.x, node.position.y, HBD_PINS_WORLDMAP_SHOW_PARENT);
     table.insert(GatherLite.nodes.worldmap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y })
 end
 
@@ -517,6 +520,7 @@ GatherLite.createMinimapNode = function(node, ik)
     f.texture:SetTexture(node.icon)
     f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
 
+    GetPlayerInfoByGUID(node.GUID)
     f:SetScript('OnEnter', function()
         if (f:GetAlpha() == 0) then
             return
@@ -559,7 +563,9 @@ GatherLite.createMinimapNode = function(node, ik)
         GatherLite.tooltip:Hide()
     end)
 
-    Pins:AddMinimapIconMap("GathererClassic", f, node.position.mapID, node.position.x, node.position.y, true, false);
+    local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
+    Pins:AddMinimapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y, GatherLiteConfigCharacter.minimapEdge);
+    --    Pins:AddMinimapIconMap("GathererClassic", f, node.position.mapID, node.position.x, node.position.y, true, false);
     table.insert(GatherLite.nodes.minimap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y });
 end
 
@@ -903,7 +909,7 @@ GatherLite.handleSpell = function(event, spell, target)
     if (event == "UNIT_SPELLCAST_SENT") then
         local spellType = GatherLite.findSpellType(spell);
         if (spellType) then
-            GatherLite.debug("Started gathering with " .. GetSpellInfo(spell));
+            GatherLite.debug("Started gathering with " .. GetSpellInfo(spell), spell);
             GatherLite.tracker.target = target;
             GatherLite.tracker.spellID = spell;
             GatherLite.tracker.spellType = spellType;
