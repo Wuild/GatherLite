@@ -441,8 +441,8 @@ GatherLite.createWorldmapNode = function(node, ik)
 
     f = GatherLite.frames[node.type .. ik];
 
-    local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
-    f:SetPoint("TOPLEFT", x, (y * -1))
+--    local x, y, mapID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
+--    f:SetPoint("TOPLEFT", x, (y * -1))
     f:SetSize(GatherLiteConfigCharacter.worldmapIconSize, GatherLiteConfigCharacter.worldmapIconSize)
     f:SetFrameLevel(1)
     f:SetFrameStrata("HIGH")
@@ -497,7 +497,7 @@ GatherLite.createWorldmapNode = function(node, ik)
         GatherLite.tooltip:Hide()
     end)
 
-    Pins:AddWorldMapIconWorld("GathererClassic", f, mapID, x, y, HBD_PINS_WORLDMAP_SHOW_PARENT);
+    Pins:AddWorldMapIconMap("GathererClassic.Worldmap", f, node.position.mapID, node.position.x, node.position.y, HBD_PINS_WORLDMAP_SHOW_PARENT);
     table.insert(GatherLite.nodes.worldmap, { frame = f, x = x, y = y })
 end
 
@@ -578,6 +578,8 @@ GatherLite.UpdateMapNodes = function()
     if not GatherLiteConfigCharacter.enabled or not GatherLiteConfigCharacter.showOnWorldMap then
         return
     end
+
+    GatherLite.debug("Updating world map nodes");
 
     if GatherLiteConfigCharacter.mining then
         if GatherLiteGlobalSettings.database["mining"] then
@@ -1013,8 +1015,5 @@ end)
 
 WorldMapFrame.ScrollContainer.Child:SetScript("OnHide", function()
     GatherLite.debug("map closed");
-    for k, node in ipairs(GatherLite.nodes.worldmap) do
-        node.frame:Hide()
-        node.frame:SetParent(nil);
-    end
+    Pins:RemoveAllWorldMapIcons("GathererClassic.Worldmap");
 end)
