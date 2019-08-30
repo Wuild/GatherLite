@@ -42,6 +42,11 @@ function OnUpdate(elapsed)
 
     if GatherLite.needMapUpdate then
         GatherLite.drawMinimap();
+
+        if GatherLite.WorldMapOpen then
+            GatherLite.drawWorldmap();
+        end
+
         GatherLite.needMapUpdate = false;
     end;
 
@@ -105,12 +110,14 @@ end
 -- on world map open
 function OnMapOpen()
     GatherLite.debug("map open")
+    GatherLite.WorldMapOpen = true;
     GatherLite.drawWorldmap();
 end
 
 -- on world map closed
 function OnMapClose()
     GatherLite.debug("map closed")
+    GatherLite.WorldMapOpen = false;
     GatherLite.removeWorldmapNodes();
 end
 

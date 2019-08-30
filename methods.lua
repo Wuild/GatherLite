@@ -2,6 +2,8 @@ local name, GatherLite = ...;
 local HBD = LibStub("HereBeDragons-2.0");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 
+GatherLite.WorldMapOpen = false;
+
 -- print message
 GatherLite.print = function(...)
     print("|cffF0E68C[" .. GatherLite.name .. "]|cffFFFFFF:", ...)
@@ -258,6 +260,7 @@ end
 
 GatherLite.drawWorldmap = function()
     GatherLite.nodes.worldmap = {};
+    GatherLite.removeWorldmapNodes();
 
     if not GatherLiteConfigCharacter.enabled or not GatherLiteConfigCharacter.showOnWorldMap then
         return
@@ -502,7 +505,7 @@ GatherLite.ParseSentData = function(msg, sender)
         end
     end
 
-    if not GatherLite.findExistingNode(a, data[8], data[9]) then
+    if not GatherLite.findExistingNode(spellType, data[8], data[9]) then
         local node = {
             GUID = data[1],
             type = data[2],
