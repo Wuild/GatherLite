@@ -12,10 +12,10 @@ SlashCmdList['GATHER'] = function(msg)
         GatherLite.print("Reloading map");
         GatherLite.needMapUpdate = true;
     elseif msg == "debugging on" then
-        GatherLiteConfigCharacter.debugging = true
+        GatherLiteConfigCharacter.debugging2 = true
         GatherLite.print("debugging enabled");
     elseif msg == "debugging off" then
-        GatherLiteConfigCharacter.debugging = false
+        GatherLiteConfigCharacter.debugging2 = false
         GatherLite.print("debugging disabled");
     elseif msg == "reset" then
         GatherLiteGlobalSettings.database = {};

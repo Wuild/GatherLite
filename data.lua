@@ -78,7 +78,7 @@ GatherLite.classColours = {
 
 GatherLite.defaultConfigs = {
     enabled = true,
-    debugging = false,
+    debugging2 = false,
     mining = true,
     fish = true,
     herbalism = true,

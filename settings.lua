@@ -104,14 +104,14 @@ t:SetScript('OnClick', function(self)
     ApplyOptions()
 end)
 
-t = CreateFrame("CheckButton", "GatherLiteMinimapEdge", OptionsPanel, "ChatConfigCheckButtonTemplate");
-t:SetPoint('TOPLEFT', 380, -190);
-GatherLiteMinimapEdgeText:SetText(' |cffffffffShow on edge|r');
-t.tooltip = 'Display nodes at minimap edge.';
-t:SetScript('OnClick', function(self)
-    GatherLiteConfigCharacter.minimapEdge = self:GetChecked();
-    ApplyOptions()
-end)
+--t = CreateFrame("CheckButton", "GatherLiteMinimapEdge", OptionsPanel, "ChatConfigCheckButtonTemplate");
+--t:SetPoint('TOPLEFT', 380, -190);
+--GatherLiteMinimapEdgeText:SetText(' |cffffffffShow on edge|r');
+--t.tooltip = 'Display nodes at minimap edge.';
+--t:SetScript('OnClick', function(self)
+--    GatherLiteConfigCharacter.minimapEdge = self:GetChecked();
+--    ApplyOptions()
+--end)
 
 -- icon size world map
 t = CreateFrame("Slider", "GatherLiteMiniMapIconSize", OptionsPanel, "OptionsSliderTemplate");
@@ -178,7 +178,7 @@ function OptionsPanelOnEvent(self, event, ...)
         GatherLiteWorldmapLoot:SetChecked(GatherLiteConfigCharacter.worldmapLoot);
         GatherLiteMinimapIcons:SetChecked(GatherLiteConfigCharacter.showOnMinimap);
         GatherLiteMinimapLoot:SetChecked(GatherLiteConfigCharacter.minimapLoot);
-        GatherLiteSharingParty:SetChecked(GatherLiteConfigCharacter.minimapEdge);
+        --GatherLiteMinimapEdge:SetChecked(GatherLiteConfigCharacter.minimapEdge);
         GatherLiteSharingGuild:SetChecked(GatherLiteConfigCharacter.shareGuild);
         GatherLiteSharingParty:SetChecked(GatherLiteConfigCharacter.shareParty);
 

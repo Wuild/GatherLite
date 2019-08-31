@@ -4,23 +4,25 @@ local MAJOR, MINOR = "HereBeDragons-Pins-2.0", 6
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local pins, _oldversion = LibStub:NewLibrary(MAJOR, MINOR)
-if not pins then return end
+if not pins then
+    return
+end
 
 local HBD = LibStub("HereBeDragons-2.0")
 
-pins.updateFrame          = pins.updateFrame or CreateFrame("Frame")
+pins.updateFrame = pins.updateFrame or CreateFrame("Frame")
 
 -- storage for minimap pins
-pins.minimapPins          = pins.minimapPins or {}
-pins.activeMinimapPins    = pins.activeMinimapPins or {}
-pins.minimapPinRegistry   = pins.minimapPinRegistry or {}
+pins.minimapPins = pins.minimapPins or {}
+pins.activeMinimapPins = pins.activeMinimapPins or {}
+pins.minimapPinRegistry = pins.minimapPinRegistry or {}
 
 -- and worldmap pins
-pins.worldmapPins         = pins.worldmapPins or {}
-pins.worldmapPinRegistry  = pins.worldmapPinRegistry or {}
-pins.worldmapPinsPool     = pins.worldmapPinsPool or CreateFramePool("FRAME")
-pins.worldmapProvider     = pins.worldmapProvider or CreateFromMixins(MapCanvasDataProviderMixin)
-pins.worldmapProviderPin  = pins.worldmapProviderPin or CreateFromMixins(MapCanvasPinMixin)
+pins.worldmapPins = pins.worldmapPins or {}
+pins.worldmapPinRegistry = pins.worldmapPinRegistry or {}
+pins.worldmapPinsPool = pins.worldmapPinsPool or CreateFramePool("FRAME")
+pins.worldmapProvider = pins.worldmapProvider or CreateFromMixins(MapCanvasDataProviderMixin)
+pins.worldmapProviderPin = pins.worldmapProviderPin or CreateFromMixins(MapCanvasPinMixin)
 
 -- store a reference to the active minimap object
 pins.Minimap = pins.Minimap or Minimap
@@ -36,14 +38,14 @@ local type, pairs = type, pairs
 local GetPlayerFacing = GetPlayerFacing
 
 -- upvalue data tables
-local minimapPins         = pins.minimapPins
-local activeMinimapPins   = pins.activeMinimapPins
-local minimapPinRegistry  = pins.minimapPinRegistry
+local minimapPins = pins.minimapPins
+local activeMinimapPins = pins.activeMinimapPins
+local minimapPinRegistry = pins.minimapPinRegistry
 
-local worldmapPins        = pins.worldmapPins
+local worldmapPins = pins.worldmapPins
 local worldmapPinRegistry = pins.worldmapPinRegistry
-local worldmapPinsPool    = pins.worldmapPinsPool
-local worldmapProvider    = pins.worldmapProvider
+local worldmapPinsPool = pins.worldmapPinsPool
+local worldmapProvider = pins.worldmapProvider
 local worldmapProviderPin = pins.worldmapProviderPin
 
 local minimap_size = {
@@ -52,37 +54,37 @@ local minimap_size = {
         [1] = 240, -- 1.25
         [2] = 180, -- 5/3
         [3] = 120, -- 2.5
-        [4] = 80,  -- 3.75
-        [5] = 50,  -- 6
+        [4] = 80, -- 3.75
+        [5] = 50, -- 6
     },
     outdoor = {
-        [0] = 466 + 2/3, -- scale
-        [1] = 400,       -- 7/6
-        [2] = 333 + 1/3, -- 1.4
-        [3] = 266 + 2/6, -- 1.75
-        [4] = 200,       -- 7/3
-        [5] = 133 + 1/3, -- 3.5
+        [0] = 466 + 2 / 3, -- scale
+        [1] = 400, -- 7/6
+        [2] = 333 + 1 / 3, -- 1.4
+        [3] = 266 + 2 / 6, -- 1.75
+        [4] = 200, -- 7/3
+        [5] = 133 + 1 / 3, -- 3.5
     },
 }
 
 local minimap_shapes = {
     -- { upper-left, lower-left, upper-right, lower-right }
-    ["SQUARE"]                = { false, false, false, false },
-    ["CORNER-TOPLEFT"]        = { true,  false, false, false },
-    ["CORNER-TOPRIGHT"]       = { false, false, true,  false },
-    ["CORNER-BOTTOMLEFT"]     = { false, true,  false, false },
-    ["CORNER-BOTTOMRIGHT"]    = { false, false, false, true },
-    ["SIDE-LEFT"]             = { true,  true,  false, false },
-    ["SIDE-RIGHT"]            = { false, false, true,  true },
-    ["SIDE-TOP"]              = { true,  false, true,  false },
-    ["SIDE-BOTTOM"]           = { false, true,  false, true },
-    ["TRICORNER-TOPLEFT"]     = { true,  true,  true,  false },
-    ["TRICORNER-TOPRIGHT"]    = { true,  false, true,  true },
-    ["TRICORNER-BOTTOMLEFT"]  = { true,  true,  false, true },
-    ["TRICORNER-BOTTOMRIGHT"] = { false, true,  true,  true },
+    ["SQUARE"] = { false, false, false, false },
+    ["CORNER-TOPLEFT"] = { true, false, false, false },
+    ["CORNER-TOPRIGHT"] = { false, false, true, false },
+    ["CORNER-BOTTOMLEFT"] = { false, true, false, false },
+    ["CORNER-BOTTOMRIGHT"] = { false, false, false, true },
+    ["SIDE-LEFT"] = { true, true, false, false },
+    ["SIDE-RIGHT"] = { false, false, true, true },
+    ["SIDE-TOP"] = { true, false, true, false },
+    ["SIDE-BOTTOM"] = { false, true, false, true },
+    ["TRICORNER-TOPLEFT"] = { true, true, true, false },
+    ["TRICORNER-TOPRIGHT"] = { true, false, true, true },
+    ["TRICORNER-BOTTOMLEFT"] = { true, true, false, true },
+    ["TRICORNER-BOTTOMRIGHT"] = { false, true, true, true },
 }
 
-local tableCache = setmetatable({}, {__mode='k'})
+local tableCache = setmetatable({}, { __mode = 'k' })
 
 local function newCachedTable()
     local t = next(tableCache)
@@ -105,7 +107,7 @@ end
 local rotateMinimap = GetCVar("rotateMinimap") == "1"
 
 -- is the minimap indoors or outdoors
-local indoors = GetCVar("minimapZoom")+0 == pins.Minimap:GetZoom() and "outdoor" or "indoor"
+local indoors = GetCVar("minimapZoom") + 0 == pins.Minimap:GetZoom() and "outdoor" or "indoor"
 
 local minimapPinCount, queueFullUpdate = 0, false
 local minimapScale, minimapShape, mapRadius, minimapWidth, minimapHeight, mapSin, mapCos
@@ -117,8 +119,8 @@ local function drawMinimapPin(pin, data)
     -- handle rotation
     if rotateMinimap then
         local dx, dy = xDist, yDist
-        xDist = dx*mapCos - dy*mapSin
-        yDist = dx*mapSin + dy*mapCos
+        xDist = dx * mapCos - dy * mapSin
+        yDist = dx * mapSin + dy * mapCos
     end
 
     -- adapt delta position to the map radius
@@ -139,16 +141,16 @@ local function drawMinimapPin(pin, data)
     -- calculate distance from the center of the map
     local dist
     if isRound then
-        dist = (diffX*diffX + diffY*diffY) / 0.9^2
+        dist = (diffX * diffX + diffY * diffY) / 0.9 ^ 2
     else
-        dist = max(diffX*diffX, diffY*diffY) / 0.9^2
+        dist = max(diffX * diffX, diffY * diffY) / 0.9 ^ 2
     end
 
     -- if distance > 1, then adapt node position to slide on the border
     if dist > 1 and data.floatOnEdge then
-        dist = dist^0.5
-        diffX = diffX/dist
-        diffY = diffY/dist
+        dist = dist ^ 0.5
+        diffX = diffX / dist
+        diffY = diffY / dist
     end
 
     if dist <= 1 or data.floatOnEdge then
@@ -229,11 +231,14 @@ local function UpdateMinimapPins(force)
         end
 
         for pin, data in pairs(minimapPins) do
-            if data.instanceID == instanceID and (not data.uiMapID or data.uiMapID == mapID or (data.showInParentZone and IsParentMap(data.uiMapID, mapID))) then
-                activeMinimapPins[pin] = data
-                data.keep = true
-                -- draw the pin (this may reset data.keep if outside of the map)
-                drawMinimapPin(pin, data)
+            local distance = HBD:GetWorldDistance(instanceID, x, y, data.x, data.y);
+            if (distance < 500) then
+                if data.instanceID == instanceID and (not data.uiMapID or data.uiMapID == mapID or (data.showInParentZone and IsParentMap(data.uiMapID, mapID))) then
+                    activeMinimapPins[pin] = data
+                    data.keep = true
+                    -- draw the pin (this may reset data.keep if outside of the map)
+                    drawMinimapPin(pin, data)
+                end
             end
         end
 
@@ -262,7 +267,9 @@ local function UpdateMinimapIconPosition()
     end
 
     -- we have no active minimap pins, just return early
-    if minimapPinCount == 0 then return end
+    if minimapPinCount == 0 then
+        return
+    end
 
     local x, y = HBD:GetPlayerWorldPosition()
 
@@ -312,7 +319,7 @@ local function UpdateMinimapZoom()
     if GetCVar("minimapZoom") == GetCVar("minimapInsideZoom") then
         pins.Minimap:SetZoom(zoom < 2 and zoom + 1 or zoom - 1)
     end
-    indoors = GetCVar("minimapZoom")+0 == pins.Minimap:GetZoom() and "outdoor" or "indoor"
+    indoors = GetCVar("minimapZoom") + 0 == pins.Minimap:GetZoom() and "outdoor" or "indoor"
     pins.Minimap:SetZoom(zoom)
 end
 
@@ -370,18 +377,24 @@ function worldmapProvider:HandlePin(icon, data)
     local uiMapID = self:GetMap():GetMapID()
 
     -- check for a valid map
-    if not uiMapID then return end
+    if not uiMapID then
+        return
+    end
 
     local x, y
     if uiMapID == WORLD_MAP_ID then
         -- should this pin show on the world map?
-        if uiMapID ~= data.uiMapID and data.worldMapShowFlag ~= HBD_PINS_WORLDMAP_SHOW_WORLD then return end
+        if uiMapID ~= data.uiMapID and data.worldMapShowFlag ~= HBD_PINS_WORLDMAP_SHOW_WORLD then
+            return
+        end
 
         -- translate to the world map
         x, y = HBD:GetAzerothWorldMapCoordinatesFromWorld(data.x, data.y, data.instanceID)
     else
         -- check that it matches the instance
-        if not HBD.mapData[uiMapID] or HBD.mapData[uiMapID].instance ~= data.instanceID then return end
+        if not HBD.mapData[uiMapID] or HBD.mapData[uiMapID].instance ~= data.instanceID then
+            return
+        end
 
         if uiMapID ~= data.uiMapID then
             local mapType = HBD.mapData[uiMapID].mapType
@@ -400,11 +413,11 @@ function worldmapProvider:HandlePin(icon, data)
                         local parentMapType = HBD.mapData[parentMapID].mapType
                         -- show on any parent zones if they are normal zones
                         if data.worldMapShowFlag >= HBD_PINS_WORLDMAP_SHOW_PARENT and
-                            (parentMapType == Enum.UIMapType.Zone or parentMapType == Enum.UIMapType.Dungeon or parentMapType == Enum.UIMapType.Micro) then
+                                (parentMapType == Enum.UIMapType.Zone or parentMapType == Enum.UIMapType.Dungeon or parentMapType == Enum.UIMapType.Micro) then
                             show = true
-                        -- show on the continent
+                            -- show on the continent
                         elseif data.worldMapShowFlag >= HBD_PINS_WORLDMAP_SHOW_CONTINENT and
-                            parentMapType == Enum.UIMapType.Continent then
+                                parentMapType == Enum.UIMapType.Continent then
                             show = true
                         end
                         break
@@ -414,7 +427,9 @@ function worldmapProvider:HandlePin(icon, data)
                     end
                 end
 
-                if not show then return end
+                if not show then
+                    return
+                end
             end
         end
 
@@ -516,13 +531,13 @@ HBD.RegisterCallback(pins, "PlayerZoneChanged", UpdateMinimap)
 -- @param floatOnEdge flag if the icon should float on the edge of the minimap when going out of range, or hide immediately (default false)
 function pins:AddMinimapIconWorld(ref, icon, instanceID, x, y, floatOnEdge)
     if not ref then
-        error(MAJOR..": AddMinimapIconWorld: 'ref' must not be nil")
+        error(MAJOR .. ": AddMinimapIconWorld: 'ref' must not be nil")
     end
     if type(icon) ~= "table" or not icon.SetPoint then
-        error(MAJOR..": AddMinimapIconWorld: 'icon' must be a frame", 2)
+        error(MAJOR .. ": AddMinimapIconWorld: 'icon' must be a frame", 2)
     end
     if type(instanceID) ~= "number" or type(x) ~= "number" or type(y) ~= "number" then
-        error(MAJOR..": AddMinimapIconWorld: 'instanceID', 'x' and 'y' must be numbers", 2)
+        error(MAJOR .. ": AddMinimapIconWorld: 'instanceID', 'x' and 'y' must be numbers", 2)
     end
 
     if not minimapPinRegistry[ref] then
@@ -556,18 +571,20 @@ end
 -- @param floatOnEdge flag if the icon should float on the edge of the minimap when going out of range, or hide immediately (default false)
 function pins:AddMinimapIconMap(ref, icon, uiMapID, x, y, showInParentZone, floatOnEdge)
     if not ref then
-        error(MAJOR..": AddMinimapIconMap: 'ref' must not be nil")
+        error(MAJOR .. ": AddMinimapIconMap: 'ref' must not be nil")
     end
     if type(icon) ~= "table" or not icon.SetPoint then
-        error(MAJOR..": AddMinimapIconMap: 'icon' must be a frame")
+        error(MAJOR .. ": AddMinimapIconMap: 'icon' must be a frame")
     end
     if type(uiMapID) ~= "number" or type(x) ~= "number" or type(y) ~= "number" then
-        error(MAJOR..": AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers")
+        error(MAJOR .. ": AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers")
     end
 
     -- convert to world coordinates and use our known adding function
     local xCoord, yCoord, instanceID = HBD:GetWorldCoordinatesFromZone(x, y, uiMapID)
-    if not xCoord then return end
+    if not xCoord then
+        return
+    end
 
     self:AddMinimapIconWorld(ref, icon, instanceID, xCoord, yCoord, floatOnEdge)
 
@@ -579,9 +596,13 @@ end
 --- Check if a floating minimap icon is on the edge of the map
 -- @param icon the minimap icon
 function pins:IsMinimapIconOnEdge(icon)
-    if not icon then return false end
+    if not icon then
+        return false
+    end
     local data = minimapPins[icon]
-    if not data then return nil end
+    if not data then
+        return nil
+    end
 
     return data.onEdge
 end
@@ -590,7 +611,9 @@ end
 -- @param ref Reference to your addon to track the icon under (ie. your "self" or string identifier)
 -- @param icon Icon Frame
 function pins:RemoveMinimapIcon(ref, icon)
-    if not ref or not icon or not minimapPinRegistry[ref] then return end
+    if not ref or not icon or not minimapPinRegistry[ref] then
+        return
+    end
     minimapPinRegistry[ref][icon] = nil
     if minimapPins[icon] then
         recycle(minimapPins[icon])
@@ -603,7 +626,9 @@ end
 --- Remove all minimap icons belonging to your addon (as tracked by "ref")
 -- @param ref Reference to your addon to track the icon under (ie. your "self" or string identifier)
 function pins:RemoveAllMinimapIcons(ref)
-    if not ref or not minimapPinRegistry[ref] then return end
+    if not ref or not minimapPinRegistry[ref] then
+        return
+    end
     for icon in pairs(minimapPinRegistry[ref]) do
         recycle(minimapPins[icon])
         minimapPins[icon] = nil
@@ -625,11 +650,11 @@ end
 
 -- world map constants
 -- show worldmap pin on its parent zone map (if any)
-HBD_PINS_WORLDMAP_SHOW_PARENT    = 1
+HBD_PINS_WORLDMAP_SHOW_PARENT = 1
 -- show worldmap pin on the continent map
 HBD_PINS_WORLDMAP_SHOW_CONTINENT = 2
 -- show worldmap pin on the continent and world map
-HBD_PINS_WORLDMAP_SHOW_WORLD     = 3
+HBD_PINS_WORLDMAP_SHOW_WORLD = 3
 
 --- Add a icon to the world map (x/y world coordinate version)
 -- Note: This API does not let you specify a map to limit the pin to, it'll be shown on all maps these coordinates are valid for.
@@ -642,13 +667,13 @@ HBD_PINS_WORLDMAP_SHOW_WORLD     = 3
 -- @param frameLevel Optional Frame Level type registered with the WorldMapFrame, defaults to PIN_FRAME_LEVEL_AREA_POI
 function pins:AddWorldMapIconWorld(ref, icon, instanceID, x, y, showFlag, frameLevel)
     if not ref then
-        error(MAJOR..": AddWorldMapIconWorld: 'ref' must not be nil")
+        error(MAJOR .. ": AddWorldMapIconWorld: 'ref' must not be nil")
     end
     if type(icon) ~= "table" or not icon.SetPoint then
-        error(MAJOR..": AddWorldMapIconWorld: 'icon' must be a frame", 2)
+        error(MAJOR .. ": AddWorldMapIconWorld: 'icon' must be a frame", 2)
     end
     if type(instanceID) ~= "number" or type(x) ~= "number" or type(y) ~= "number" then
-        error(MAJOR..": AddWorldMapIconWorld: 'instanceID', 'x' and 'y' must be numbers", 2)
+        error(MAJOR .. ": AddWorldMapIconWorld: 'instanceID', 'x' and 'y' must be numbers", 2)
     end
 
     if not worldmapPinRegistry[ref] then
@@ -680,18 +705,20 @@ end
 -- @param frameLevel Optional Frame Level type registered with the WorldMapFrame, defaults to PIN_FRAME_LEVEL_AREA_POI
 function pins:AddWorldMapIconMap(ref, icon, uiMapID, x, y, showFlag, frameLevel)
     if not ref then
-        error(MAJOR..": AddWorldMapIconMap: 'ref' must not be nil")
+        error(MAJOR .. ": AddWorldMapIconMap: 'ref' must not be nil")
     end
     if type(icon) ~= "table" or not icon.SetPoint then
-        error(MAJOR..": AddWorldMapIconMap: 'icon' must be a frame")
+        error(MAJOR .. ": AddWorldMapIconMap: 'icon' must be a frame")
     end
     if type(uiMapID) ~= "number" or type(x) ~= "number" or type(y) ~= "number" then
-        error(MAJOR..": AddWorldMapIconMap: 'uiMapID', 'x' and 'y' must be numbers")
+        error(MAJOR .. ": AddWorldMapIconMap: 'uiMapID', 'x' and 'y' must be numbers")
     end
 
     -- convert to world coordinates
     local xCoord, yCoord, instanceID = HBD:GetWorldCoordinatesFromZone(x, y, uiMapID)
-    if not xCoord then return end
+    if not xCoord then
+        return
+    end
 
     if not worldmapPinRegistry[ref] then
         worldmapPinRegistry[ref] = {}
@@ -716,7 +743,9 @@ end
 -- @param ref Reference to your addon to track the icon under (ie. your "self" or string identifier)
 -- @param icon Icon Frame
 function pins:RemoveWorldMapIcon(ref, icon)
-    if not ref or not icon or not worldmapPinRegistry[ref] then return end
+    if not ref or not icon or not worldmapPinRegistry[ref] then
+        return
+    end
     worldmapPinRegistry[ref][icon] = nil
     if worldmapPins[icon] then
         recycle(worldmapPins[icon])
@@ -728,7 +757,9 @@ end
 --- Remove all worldmap icons belonging to your addon (as tracked by "ref")
 -- @param ref Reference to your addon to track the icon under (ie. your "self" or string identifier)
 function pins:RemoveAllWorldMapIcons(ref)
-    if not ref or not worldmapPinRegistry[ref] then return end
+    if not ref or not worldmapPinRegistry[ref] then
+        return
+    end
     for icon in pairs(worldmapPinRegistry[ref]) do
         recycle(worldmapPins[icon])
         worldmapPins[icon] = nil
@@ -741,12 +772,18 @@ end
 -- @param icon icon object (minimap or worldmap)
 -- @return angle, distance where angle is in radians and distance in yards
 function pins:GetVectorToIcon(icon)
-    if not icon then return nil, nil end
+    if not icon then
+        return nil, nil
+    end
     local data = minimapPins[icon] or worldmapPins[icon]
-    if not data then return nil, nil end
+    if not data then
+        return nil, nil
+    end
 
     local x, y, instance = HBD:GetPlayerWorldPosition()
-    if not x or not y or instance ~= data.instanceID then return nil end
+    if not x or not y or instance ~= data.instanceID then
+        return nil
+    end
 
     return HBD:GetWorldVector(instance, x, y, data.x, data.y)
 end
