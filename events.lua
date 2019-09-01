@@ -16,10 +16,7 @@ GatherLite.mainFrame:SetScript('OnUpdate', function(self, elapsed)
 
     if GatherLite.needMapUpdate then
         GatherLite.drawMinimap();
-
-        if GatherLite.WorldMapOpen then
-            GatherLite.drawWorldmap();
-        end
+        GatherLite.drawWorldmap();
 
         GatherLite.needMapUpdate = false;
     end ;
@@ -59,6 +56,7 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         GatherLite.debug("Found", "|cFF00FF00" .. GatherLite.tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
         GatherLite.updateMiniMapPosition();
         C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
+
         self:UnregisterEvent("ADDON_LOADED");
     end
 
@@ -117,15 +115,15 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
 end)
 
 -- bind world map event on show
-WorldMapFrame.ScrollContainer.Child:SetScript("OnShow", function()
-    GatherLite.debug("map open")
-    GatherLite.WorldMapOpen = true;
-    GatherLite.drawWorldmap();
-end)
-
--- bind world map event on hide
-WorldMapFrame.ScrollContainer.Child:SetScript("OnHide", function()
-    GatherLite.debug("map closed")
-    GatherLite.WorldMapOpen = false;
-    GatherLite.removeWorldmapNodes();
-end)
+--WorldMapFrame.ScrollContainer.Child:SetScript("OnShow", function()
+--    GatherLite.debug("map open")
+--    GatherLite.WorldMapOpen = true;
+--    GatherLite.drawWorldmap();
+--end)
+--
+---- bind world map event on hide
+--WorldMapFrame.ScrollContainer.Child:SetScript("OnHide", function()
+--    GatherLite.debug("map closed")
+--    GatherLite.WorldMapOpen = false;
+--    GatherLite.removeWorldmapNodes();
+--end)

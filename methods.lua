@@ -129,6 +129,12 @@ GatherLite.foundNode = function()
 
     local coin = 0;
     local count = GetNumLootItems()
+
+    if count == 0 then
+        GatherLite.debug("Node does not contain any items... skipping");
+        return
+    end
+
     for i = 1, count do
         local lIcon, lName, lQuantity, lQuality, locked, isQuestItem = GetLootSlotInfo(i)
         local slotType = GetLootSlotType(i)
@@ -173,6 +179,7 @@ GatherLite.foundNode = function()
                 icon = 132594
             else
                 GatherLite.debug("Treasure is quest item, do not add to database");
+                return
             end
         else
             local primary = GetLootSlotLink(1)
@@ -456,7 +463,19 @@ GatherLite.createNodeTooltip = function(f, node, opacity, lootTable)
             end
         end
 
-        GatherLite.tooltip:AddDoubleLine("Found by:", classColor.fs .. node.player.name .. " - " .. node.player.realm);
+        if not node.player.name then
+            local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(node.GUID);
+            node.player = {
+                name = pName,
+                class = engClass,
+                race = engRace,
+                realm = GetRealmName()
+            }
+        end
+
+        if node.player.name then
+            GatherLite.tooltip:AddDoubleLine("Found by:", classColor.fs .. node.player.name .. " - " .. node.player.realm);
+        end
         GatherLite.tooltip:Show();
         GatherLite.showingTooltip = true;
     end)
@@ -589,48 +608,43 @@ GatherLite.ParseSentData = function(msg, sender)
 end
 
 local function fixNodePlayer(node)
-    if not node.player then
-        local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(node.GUID);
-
-        node.player = {
-            name = pName,
-            class = engClass,
-            race = engRace,
-            realm = GetRealmName()
-        }
-
-        print("player not found")
-    end
+    --local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(node.GUID);
+    --node.player = {
+    --    name = pName,
+    --    class = engClass,
+    --    race = engRace,
+    --    realm = GetRealmName()
+    --}
 end
 
 GatherLite.migrate = function()
-    if GatherLiteGlobalSettings.database["mining"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
-            fixNodePlayer(node)
-        end
-    end
-
-    if GatherLiteGlobalSettings.database["herbalism"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
-            fixNodePlayer(node)
-        end
-    end
-
-    if GatherLiteGlobalSettings.database["treasure"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
-            fixNodePlayer(node)
-        end
-    end
-
-    if GatherLiteGlobalSettings.database["artifacts"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
-            fixNodePlayer(node)
-        end
-    end
-
-    if GatherLiteGlobalSettings.database["fish"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["fish"]) do
-            fixNodePlayer(node)
-        end
-    end
+    --if GatherLiteGlobalSettings.database["mining"] then
+    --    for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
+    --        fixNodePlayer(node)
+    --    end
+    --end
+    --
+    --if GatherLiteGlobalSettings.database["herbalism"] then
+    --    for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
+    --        fixNodePlayer(node)
+    --    end
+    --end
+    --
+    --if GatherLiteGlobalSettings.database["treasure"] then
+    --    for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+    --        fixNodePlayer(node)
+    --    end
+    --end
+    --
+    --if GatherLiteGlobalSettings.database["artifacts"] then
+    --    for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
+    --        fixNodePlayer(node)
+    --    end
+    --end
+    --
+    --if GatherLiteGlobalSettings.database["fish"] then
+    --    for k, node in ipairs(GatherLiteGlobalSettings.database["fish"]) do
+    --        fixNodePlayer(node)
+    --    end
+    --end
 end
