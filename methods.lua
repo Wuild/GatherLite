@@ -233,6 +233,8 @@ GatherLite.insertDatabaseNode = function(x, y, mapID, spellID, spellType, target
         GatherLiteGlobalSettings.database[spellType] = {};
     end
 
+    local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(UnitGUID('player'));
+
     -- node data
     local node = {
         GUID = UnitGUID('player'),
@@ -248,6 +250,12 @@ GatherLite.insertDatabaseNode = function(x, y, mapID, spellID, spellType, target
             y = y
         },
         date = date('*t'),
+        player = {
+            name = pName,
+            class = engClass,
+            race = engRace,
+            realm = GetRealmName()
+        }
     };
 
     for k, item in pairs(loot) do
@@ -428,50 +436,35 @@ GatherLite.leadingZeros = function(value)
 end
 
 -- create tooltip for map node
-GatherLite.createNodeTooltip = function(f, node)
-    GetPlayerInfoByGUID(node.GUID)
+GatherLite.createNodeTooltip = function(f, node, opacity, lootTable)
     f:SetScript('OnEnter', function()
         if (f:GetAlpha() == 0) then
             return
         end
 
-        local locClass, engClass, locRace, engRace, gender, name = GetPlayerInfoByGUID(node.GUID);
-        local classColor = GatherLite.classColours[engClass];
-        local addLoot = false;
-
-        if node.loot and GatherLiteConfigCharacter.minimapLoot then
-            addLoot = true;
-        end
+        local classColor = GatherLite.classColours[node.player.class];
 
         f:SetAlpha(1);
         GatherLite.tooltip:ClearLines();
-
         GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
-
         GatherLite.tooltip:SetText(node.name);
         GatherLite.tooltip:AddDoubleLine("Last visit:", "|cffffffff" .. GatherLite.leadingZeros(node.date.day) .. '/' .. GatherLite.leadingZeros(node.date.month) .. '/' .. GatherLite.leadingZeros(node.date.year) .. " - " .. GatherLite.leadingZeros(node.date.hour) .. ':' .. GatherLite.leadingZeros(node.date.min) .. ':' .. GatherLite.leadingZeros(node.date.sec) .. "|r");
 
-        if addLoot then
+        if node.loot and lootTable then
             for k, item in pairs(node.loot) do
                 GatherLite.tooltip:AddDoubleLine(k, "x" .. item.count);
             end
         end
 
-        GatherLite.tooltip:AddDoubleLine("Found by:", classColor.fs .. name);
-
+        GatherLite.tooltip:AddDoubleLine("Found by:", classColor.fs .. node.player.name .. " - " .. node.player.realm);
         GatherLite.tooltip:Show();
         GatherLite.showingTooltip = true;
     end)
 
     f:SetScript('OnLeave', function()
-        if minimap then
-            f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
-        else
-            f:SetAlpha(GatherLiteConfigCharacter.worldmapOpacity);
-        end ;
+        f:SetAlpha(opacity);
         GatherLite.tooltip:Hide()
     end)
-
     return f;
 end
 
@@ -499,7 +492,7 @@ GatherLite.createWorldmapNode = function(node, ik)
     f.texture = f:CreateTexture(nil, 'ARTWORK')
     f.texture:SetAllPoints(f)
     f.texture:SetTexture(node.icon)
-    GatherLite.createNodeTooltip(f, node);
+    GatherLite.createNodeTooltip(f, node, GatherLiteConfigCharacter.worldmapOpacity, GatherLiteConfigCharacter.worldmapLoot);
 
     --local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
     --Pins:AddWorldMapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y);
@@ -517,7 +510,7 @@ GatherLite.createMinimapNode = function(node, ik)
     f.texture:SetAllPoints(f)
     f.texture:SetTexture(node.icon)
     f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
-    GatherLite.createNodeTooltip(f, node);
+    GatherLite.createNodeTooltip(f, node, GatherLiteConfigCharacter.minimapOpacity, GatherLiteConfigCharacter.minimapLoot);
 
     local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
 
@@ -563,17 +556,8 @@ GatherLite.ParseSentData = function(msg, sender)
         l = l + 1
     end
 
-    local NodeUpdated = false;
     local spellType = data[2];
-
-    if GatherLiteGlobalSettings.database ~= nil then
-        for k, node in ipairs(GatherLiteGlobalSettings.database[spellType]) do
-            if GatherLite.IsNodeInRange(data[8], data[9], node.position.x, node.position.y) then
-                NodeUpdated = true;
-            end
-        end
-    end
-
+    local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(data[1]);
     if not GatherLite.findExistingNode(spellType, data[8], data[9]) then
         local node = {
             GUID = data[1],
@@ -589,10 +573,64 @@ GatherLite.ParseSentData = function(msg, sender)
                 y = tonumber(data[9])
             },
             date = date('*t'),
+
+            player = {
+                name = pName,
+                class = engClass,
+                race = engRace,
+                realm = GetRealmName()
+            }
         };
 
         table.insert(GatherLiteGlobalSettings.database[spellType], node);
         GatherLite.needMapUpdate = true;
         GatherLite.debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
+    end
+end
+
+local function fixNodePlayer(node)
+    if not node.player then
+        local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(node.GUID);
+
+        node.player = {
+            name = pName,
+            class = engClass,
+            race = engRace,
+            realm = GetRealmName()
+        }
+
+        print("player not found")
+    end
+end
+
+GatherLite.migrate = function()
+    if GatherLiteGlobalSettings.database["mining"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
+            fixNodePlayer(node)
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["herbalism"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
+            fixNodePlayer(node)
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["treasure"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+            fixNodePlayer(node)
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["artifacts"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
+            fixNodePlayer(node)
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["fish"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["fish"]) do
+            fixNodePlayer(node)
+        end
     end
 end

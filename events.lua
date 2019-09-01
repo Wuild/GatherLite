@@ -47,6 +47,8 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
 
         GatherLiteConfigCharacter = GatherLite.CopyDefaults(GatherLite.defaultConfigs, GatherLiteConfigCharacter);
 
+        GatherLite.migrate();
+
         GatherLite.print("GatherLite", "|cFF00FF00" .. GatherLite.version .. "|r", "has been loaded");
         GatherLite.debug("Found", "|cFF00FF00" .. GatherLite.tablelength(GatherLiteGlobalSettings.database.mining) .. "|r", "mining nodes");
         GatherLite.debug("Found", "|cFF00FF00" .. GatherLite.tablelength(GatherLiteGlobalSettings.database.herbalism) .. "|r", "herbalism nodes");

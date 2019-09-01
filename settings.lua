@@ -21,6 +21,14 @@ t:SetPoint("TOPLEFT", 16, -16)
 t:SetFont("Fonts\\FRIZQT__.TTF", 18)
 t:SetText("GatherLite")
 
+t = CreateFrame("CheckButton", "GatherLiteMinimap", OptionsPanel, "ChatConfigCheckButtonTemplate");
+t:SetPoint('TOPLEFT', 420, -20);
+GatherLiteMinimapText:SetText(' |cffffffffShow minimap button|r');
+t:SetScript('OnClick', function(self)
+    GatherLiteConfigCharacter.minimapButton = self:GetChecked();
+    ApplyOptions()
+end)
+
 ------------------
 --- WORLD MAP
 ------------------
@@ -181,12 +189,24 @@ function OptionsPanelOnEvent(self, event, ...)
         --GatherLiteMinimapEdge:SetChecked(GatherLiteConfigCharacter.minimapEdge);
         GatherLiteSharingGuild:SetChecked(GatherLiteConfigCharacter.shareGuild);
         GatherLiteSharingParty:SetChecked(GatherLiteConfigCharacter.shareParty);
+        GatherLiteMinimap:SetChecked(GatherLiteConfigCharacter.minimapButton);
+
+        if not GatherLiteConfigCharacter.minimapButton then
+            GatherLite.minimap:Hide();
+        else
+            GatherLite.minimap:Show();
+        end
 
         self:UnregisterEvent("ADDON_LOADED");
     end
 end
 
 function ApplyOptions()
+    if not GatherLiteConfigCharacter.minimapButton then
+        GatherLite.minimap:Hide();
+    else
+        GatherLite.minimap:Show();
+    end
     GatherLite.needMapUpdate = true;
 end
 
@@ -239,7 +259,7 @@ GatherLite.minimap:SetScript("OnDragStop", function(self)
     GatherLite.minimapFrame:Hide();
     if (GatherLite.showingTooltip) then
         GatherLite.tooltip:Show();
-    end;
+    end ;
 end);
 
 GatherLite.minimap:SetScript("OnEnter", function()
@@ -256,7 +276,7 @@ GatherLite.minimap:SetScript("OnEnter", function()
     if not GatherLite.isClassic then
         GatherLite.tooltip:AddDoubleLine("|cffffffffArtifacts:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.artifacts));
         --        GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
-    end;
+    end ;
     GatherLite.tooltip:AddDoubleLine("|cffffffffFish:|r", GatherLite.tablelength(GatherLiteGlobalSettings.database.fish));
     --    GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
 
@@ -280,9 +300,6 @@ end);
 GatherLite.updateMiniMapPosition = function()
     GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
 end
-
-GatherLite.minimap:Show()
-
 
 function addContextItem(args)
     local info = UIDropDownMenu_CreateInfo()
@@ -315,7 +332,7 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.mining = false;
                 else
                     GatherLiteConfigCharacter.mining = true;
-                end;
+                end ;
 
                 GatherLite.needMapUpdate = true;
             end
@@ -330,7 +347,7 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.herbalism = false;
                 else
                     GatherLiteConfigCharacter.herbalism = true;
-                end;
+                end ;
                 GatherLite.needMapUpdate = true;
             end
         })
@@ -345,7 +362,7 @@ function MinimapContextMenu(frame, level, menuList)
                         GatherLiteConfigCharacter.artifacts = false;
                     else
                         GatherLiteConfigCharacter.artifacts = true;
-                    end;
+                    end ;
                     GatherLite.needMapUpdate = true;
                 end
             })
@@ -360,7 +377,7 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.fish = false;
                 else
                     GatherLiteConfigCharacter.fish = true;
-                end;
+                end ;
                 GatherLite.needMapUpdate = true;
             end
         })
@@ -374,7 +391,7 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.treasure = false;
                 else
                     GatherLiteConfigCharacter.treasure = true;
-                end;
+                end ;
                 GatherLite.needMapUpdate = true;
             end
         })
