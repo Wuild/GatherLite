@@ -506,6 +506,10 @@ end
 
 -- create world map node frame
 GatherLite.createWorldmapNode = function(node, ik)
+    if not node.position.mapID and not node.position.x and not node.position.y then
+        return
+    end
+
     local f = GatherLite.createFrame(node.type .. "worldmap" .. ik, WorldMapFrame.ScrollContainer.Child);
     f:SetAlpha(GatherLiteConfigCharacter.worldmapOpacity);
     f.texture = f:CreateTexture(nil, 'ARTWORK')
@@ -521,6 +525,12 @@ end
 
 -- create mini map node frame
 GatherLite.createMinimapNode = function(node, ik)
+    local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
+
+    if not instanceID and not x and not y then
+        return
+    end
+
     local f = GatherLite.createFrame(node.type .. "minimap" .. ik, Minimap);
 
     f:SetFrameLevel(4)
@@ -531,12 +541,8 @@ GatherLite.createMinimapNode = function(node, ik)
     f:SetAlpha(GatherLiteConfigCharacter.minimapOpacity);
     GatherLite.createNodeTooltip(f, node, GatherLiteConfigCharacter.minimapOpacity, GatherLiteConfigCharacter.minimapLoot);
 
-    local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
-
-    if instanceID and x and y then
-        Pins:AddMinimapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y, GatherLiteConfigCharacter.minimapEdge);
-        table.insert(GatherLite.nodes.minimap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y });
-    end
+    Pins:AddMinimapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y, GatherLiteConfigCharacter.minimapEdge);
+    table.insert(GatherLite.nodes.minimap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y });
 end
 
 -- check if close to a node on the minimap
@@ -619,12 +625,45 @@ local function fixNodePlayer(node)
     --}
 end
 
+GatherLite.findDuplicateNode = function(tabs, spellType, mapID, x, y)
+    if tabs == nil then
+        tabs = {};
+    end
+
+    if tabs[spellType] == nil then
+        tabs[spellType] = {};
+    end
+
+    for k, node in ipairs(tabs[spellType]) do
+        print(node.position.mapID, mapID);
+        if node.position.mapID == mapID then
+
+            return node;
+        end
+    end
+
+
+    return nil;
+end
+
+local database = {}
 GatherLite.migrate = function()
-    --if GatherLiteGlobalSettings.database["mining"] then
-    --    for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
-    --        fixNodePlayer(node)
-    --    end
-    --end
+
+
+    if GatherLiteGlobalSettings.database["mining"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
+
+            if not GatherLite.findDuplicateNode(database, "mining", node.position.mapID, node.position.x, node.position.y) then
+                table.insert(database, node);
+            else
+                print("found duplicated node");
+            end
+            --fixNodePlayer(node)
+        end
+    end
+
+
+
     --
     --if GatherLiteGlobalSettings.database["herbalism"] then
     --    for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
