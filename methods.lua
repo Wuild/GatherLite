@@ -646,24 +646,7 @@ GatherLite.findDuplicateNode = function(tabs, spellType, mapID, x, y)
     return nil;
 end
 
-local database = {}
 GatherLite.migrate = function()
-
-
-    if GatherLiteGlobalSettings.database["mining"] then
-        for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
-
-            if not GatherLite.findDuplicateNode(database, "mining", node.position.mapID, node.position.x, node.position.y) then
-                table.insert(database, node);
-            else
-                print("found duplicated node");
-            end
-            --fixNodePlayer(node)
-        end
-    end
-
-
-
     --
     --if GatherLiteGlobalSettings.database["herbalism"] then
     --    for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
