@@ -651,6 +651,10 @@ end
 
 -- get random nodes and transmit to guild
 GatherLite.p2p = function()
+    if not IsInGuild() then
+        return ;
+    end
+
     local database = {};
     if GatherLiteGlobalSettings.database["mining"] then
         for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
@@ -687,7 +691,7 @@ GatherLite.p2p = function()
         local node = database[math.random(#database)];
         local dataString = tostring('newdata' .. ':' .. node.GUID .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
 
-        if IsInGuild() and GatherLiteConfigCharacter.shareGuild then
+        if GatherLiteConfigCharacter.shareGuild then
             C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'GUILD')
         end
     end
