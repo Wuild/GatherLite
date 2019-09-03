@@ -576,6 +576,10 @@ GatherLite.ParseSentData = function(msg, sender)
         return ;
     end
 
+    if (sender == UnitName("player")) then
+        return
+    end
+
     local data = {}
     local l = 0;
     for i, d in string.gmatch(msg, '[^:]+') do
@@ -642,33 +646,56 @@ GatherLite.findDuplicateNode = function(tabs, spellType, mapID, x, y)
         end
     end
 
-
     return nil;
+end
+
+-- get random nodes and transmit to guild
+GatherLite.p2p = function()
+    local database = {};
+    if GatherLiteGlobalSettings.database["mining"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["mining"]) do
+            table.insert(database, node);
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["herbalism"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
+            table.insert(database, node);
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["treasure"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
+            table.insert(database, node);
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["artifacts"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
+            table.insert(database, node);
+        end
+    end
+
+    if GatherLiteGlobalSettings.database["fish"] then
+        for k, node in ipairs(GatherLiteGlobalSettings.database["fish"]) do
+            table.insert(database, node);
+        end
+    end
+
+    -- select 2 random nodes and share them
+    for i = 5, 1, -1 do
+        local node = database[math.random(#database)];
+        local dataString = tostring('newdata' .. ':' .. node.GUID .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
+
+        if IsInGuild() and GatherLiteConfigCharacter.shareGuild then
+            C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'GUILD')
+        end
+    end
+
+    database = nil;
 end
 
 GatherLite.migrate = function()
     --
-    --if GatherLiteGlobalSettings.database["herbalism"] then
-    --    for k, node in ipairs(GatherLiteGlobalSettings.database["herbalism"]) do
-    --        fixNodePlayer(node)
-    --    end
-    --end
-    --
-    --if GatherLiteGlobalSettings.database["treasure"] then
-    --    for k, node in ipairs(GatherLiteGlobalSettings.database["treasure"]) do
-    --        fixNodePlayer(node)
-    --    end
-    --end
-    --
-    --if GatherLiteGlobalSettings.database["artifacts"] then
-    --    for k, node in ipairs(GatherLiteGlobalSettings.database["artifacts"]) do
-    --        fixNodePlayer(node)
-    --    end
-    --end
-    --
-    --if GatherLiteGlobalSettings.database["fish"] then
-    --    for k, node in ipairs(GatherLiteGlobalSettings.database["fish"]) do
-    --        fixNodePlayer(node)
-    --    end
-    --end
+
 end

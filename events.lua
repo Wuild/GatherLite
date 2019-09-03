@@ -58,6 +58,9 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         C_ChatInfo.RegisterAddonMessagePrefix(GatherLite.name);
 
         self:UnregisterEvent("ADDON_LOADED");
+
+        -- once every 2 seconds we run p2p function
+        C_Timer.NewTicker(2, GatherLite.p2p)
     end
 
     -- loot window opened
@@ -102,8 +105,8 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
 
     -- player has entered the world
     if (event == "PLAYER_ENTERING_WORLD") then
-        GatherLite.debug("player entering world")
-        GatherLite.needMapUpdate = true;
+        --GatherLite.debug("player entering world")
+        --GatherLite.needMapUpdate = true;
     end
 
     -- p2p message
