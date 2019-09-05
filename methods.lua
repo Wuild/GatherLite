@@ -699,6 +699,51 @@ GatherLite.p2p = function()
     database = nil;
 end
 
+-- get random nodes and transmit to guild
+GatherLite.send_all = function(guild,party)
+
+    if not guild then 
+        if not party then
+            return;
+        end
+    end
+
+    local database = {};
+    local skills = {};
+    local last_skill;
+
+    last_skill = nil;
+    for i, skill in pairs(GatherLite.spellIDs) do 
+        if last_skill == skill then
+
+        else
+            for k, node in ipairs(GatherLiteGlobalSettings.database[skill]) do
+                table.insert(database, node);
+            end
+        end
+        last_skill=skill;
+    end
+    last_skill = nil;
+
+    for i = 5, 1, -1 do
+       local node = database[math.random(#database)];
+        local dataString = tostring('newdata' .. ':' .. node.GUID .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
+
+        if guild then
+            if GatherLiteConfigCharacter.shareGuild then
+                C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'GUILD')
+            end
+        end
+        if party then
+            if GatherLiteConfigCharacter.shareParty then
+                C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'PARTY')
+            end
+        end
+    end
+
+    database = nil;
+end
+
 GatherLite.migrate = function()
     --
 

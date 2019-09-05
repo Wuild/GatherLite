@@ -23,6 +23,15 @@ SlashCmdList['GATHER'] = function(msg)
     elseif msg == "reset treasure" then
         GatherLiteGlobalSettings.database.treasure = {};
         GatherLite.needMapUpdate = true
+    elseif msg == "sync" then
+        GatherLite.send_all(true, true);
+        GatherLite.print("syncing my data");
+    elseif msg == "sync guild" then
+        GatherLite.send_all(true, false);
+        GatherLite.print("syncing my data with guild");
+    elseif msg == "sync party" then
+        GatherLite.send_all(false, true);
+        GatherLite.print("syncing my data with party");
     end
 end
 

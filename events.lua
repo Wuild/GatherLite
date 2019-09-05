@@ -61,6 +61,9 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
 
         -- once every 2 seconds we run p2p function
         C_Timer.NewTicker(2, GatherLite.p2p)
+        
+        -- on start send all data one
+        GatherLite.send_all(true, true);
     end
 
     -- loot window opened
