@@ -587,6 +587,11 @@ GatherLite.ParseSentData = function(msg, sender)
         l = l + 1
     end
 
+    if data[0]=='sync' then
+        GatherLite.send_all(true, true, false);
+        return;
+    end
+
     local spellType = data[2];
     local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(data[1]);
     if not GatherLite.findExistingNode(spellType, data[8], data[9]) then
@@ -700,7 +705,7 @@ GatherLite.p2p = function()
 end
 
 -- get random nodes and transmit to guild
-GatherLite.send_all = function(guild,party)
+GatherLite.send_all = function(guild,party,remote)
 
     if not guild then 
         if not party then
@@ -729,15 +734,26 @@ GatherLite.send_all = function(guild,party)
        local node = database[math.random(#database)];
         local dataString = tostring('newdata' .. ':' .. node.GUID .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
 
-        if guild then
-            if GatherLiteConfigCharacter.shareGuild then
-                C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'GUILD')
-            end
+        if guild and IsInGuild() and GatherLiteConfigCharacter.shareGuild then
+            C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'GUILD')
+            --GatherLite.debug("sharing node with guild");
         end
-        if party then
-            if GatherLiteConfigCharacter.shareParty then
-                C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'PARTY')
-            end
+        if party and IsInGroup() and GatherLiteConfigCharacter.shareParty then
+            C_ChatInfo.SendAddonMessage(GatherLite.name, dataString, 'PARTY')
+            --GatherLite.debug("sharing node with party");
+        end
+    end
+
+    -- Where to call this?
+    -- On Addon Load ?
+    -- On Joining a Group ?
+    -- On Guild Member gets Online ?
+    if remote then
+        if IsInGuild() then
+            C_ChatInfo.SendAddonMessage(GatherLite.name, 'sync', 'GUILD')
+        end
+        if IsInGroup() then
+            C_ChatInfo.SendAddonMessage(GatherLite.name, 'sync', 'PARTY')
         end
     end
 

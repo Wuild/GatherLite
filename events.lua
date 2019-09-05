@@ -63,7 +63,7 @@ GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         C_Timer.NewTicker(2, GatherLite.p2p)
         
         -- on start send all data one
-        GatherLite.send_all(true, true);
+        GatherLite.send_all(true, true, false);
     end
 
     -- loot window opened
