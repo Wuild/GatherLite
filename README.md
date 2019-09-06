@@ -9,37 +9,10 @@ Use /gather or /gatherlite when using these commands
 
 Command | Arguments | description
 ---:| --- | ---|
-debugging | on, off| Turn debugging mode on or off
+debugging | | Toggle debugging mode on or off
 reload | | Reload the map and minimap nodes
 reset | | Reset the nodes database, this will remove all the nodes
-Usage example **/gatherlite debugging off**
-
-### Changelog
-* 1.0.15
-    * Added artifact stats to minimap tooltip
-    * Now tracking fishing spots
-    * If node sharing is not enabled you wont get the nodes other players share.
-* 1.0.14
-    * Now tracking artifacts
-* 1.0.13
-    * Now tracking treasure chests
-* 1.0.12
-    * Made the tooltip look abit nicer
-    * Added icon alpha configs on minimap and worldmap
-    * Added loot table configs
-* 1.0.11
-    * Added loot list to node tooltip
-* 1.0.9
-    * Changed interface version to work properly with retail wow
-
-* 1.0.5
-    * Now works with all World of Warcraft versions
-    * All mining and herb nodes now work correctly
-    * Added p2p functions between guilds and parties
-    * Added Addon configurations in the interface settings
-    * Revamped the node detection handling
-* 1.0.4
-    * Added minimap button for enabling / disabling node locations
+Usage example **/gatherlite debugging**
 
 ### INSTALLATION
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "GathererLite" directory is a subdirectory of the "AddOns" directory.
