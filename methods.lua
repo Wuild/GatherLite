@@ -657,7 +657,7 @@ function GatherLite:p2pNode(event, msg, channel, sender)
         return
     end
 
-    if channel == "PART" and not GatherLiteConfigCharacter.shareParty then
+    if channel == "PARTY" and not GatherLiteConfigCharacter.shareParty then
         return ;
     end
 
@@ -680,7 +680,7 @@ function GatherLite:p2pSync(event, msg, channel, sender)
         return
     end
 
-    if channel == "PART" and not GatherLiteConfigCharacter.shareParty then
+    if channel == "PARTY" and not GatherLiteConfigCharacter.shareParty then
         return ;
     end
 
