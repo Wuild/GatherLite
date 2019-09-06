@@ -41,6 +41,8 @@ function GatherLite:Colorize(str, color)
         c = '|cFFFFB900';
     elseif color == 'green' then
         c = "|cFF00FF00";
+    elseif color == 'white' then
+        c = "|cffffffff"
     end
 
     return c .. str .. "|r"
@@ -486,7 +488,7 @@ function GatherLite:createNodeTooltip(f, node, opacity, lootTable)
         _GatherLite.tooltip:ClearLines();
         _GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
         _GatherLite.tooltip:SetText(node.name);
-        _GatherLite.tooltip:AddDoubleLine("Last visit:", "|cffffffff" .. GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec) .. "|r");
+        _GatherLite.tooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
 
         if node.loot and lootTable then
             for k, item in pairs(node.loot) do

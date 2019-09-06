@@ -26,6 +26,13 @@ Libs\AceConfig-3.0\AceConfig-3.0.xml
 Libs\AceComm-3.0\AceComm-3.0.xml
 Libs\AceSerializer-3.0\AceSerializer-3.0.xml
 
+Locale\enUS.lua
+Locale\deDE.lua
+Locale\esES.lua
+Locale\frFR.lua
+Locale\itIT.lua
+Locale\ruRU.lua
+
 data.lua
 GatherLite.lua
 settings.lua
