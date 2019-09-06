@@ -23,7 +23,7 @@ L["settings.minimap.loot"] = "Show loot on node tooltip *"
 L["settings.minimap.edge"] = "Keep nodes on minimap edge *"
 L["settings.minimap.size"] = "Icon size"
 L["settings.minimap.opacity"] = "Icon opacity"
-L["settings.minimap.range"] = "hide nodes closer then (*) yards"
+L["settings.minimap.range"] = "hide nodes closer then %d yards"
 
 L["settings.p2p"] = "P2P settings"
 L["settings.p2p.guild"] = "Share nodes with guild"

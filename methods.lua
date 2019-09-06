@@ -3,6 +3,14 @@ local HBD = LibStub("HereBeDragons-2.0");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
 
+function GatherLite:translate(key, ...)
+    local arg = { ... };
+    for i, v in ipairs(arg) do
+        arg[i] = tostring(v);
+    end
+    return string.format(L[key], unpack(arg))
+end
+
 -- print message
 function GatherLite:print(...)
     print("|cffF0E68C[" .. _GatherLite.name .. "]|cffFFFFFF:", ...)
@@ -485,7 +493,7 @@ function GatherLite:createNodeTooltip(f, node, opacity, lootTable)
         _GatherLite.tooltip:ClearLines();
         _GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
         _GatherLite.tooltip:SetText(node.name);
-        _GatherLite.tooltip:AddDoubleLine(L['tooltip.last_visit'], GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
+        _GatherLite.tooltip:AddDoubleLine(GatherLite:translate('tooltip.last_visit'), GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
 
         if node.loot and lootTable then
             for k, item in pairs(node.loot) do
@@ -504,7 +512,7 @@ function GatherLite:createNodeTooltip(f, node, opacity, lootTable)
         end
 
         if node.player.name and _GatherLite.classColours[node.player.class] then
-            _GatherLite.tooltip:AddDoubleLine(L['tooltip.found_by'], _GatherLite.classColours[node.player.class].fs .. node.player.name .. " - " .. node.player.realm);
+            _GatherLite.tooltip:AddDoubleLine(GatherLite:translate('tooltip.found_by'), _GatherLite.classColours[node.player.class].fs .. node.player.name .. " - " .. node.player.realm);
         end
         _GatherLite.tooltip:Show();
         _GatherLite.showingTooltip = true;
