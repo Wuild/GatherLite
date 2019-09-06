@@ -494,7 +494,7 @@ function GatherLite:createNodeTooltip(f, node, opacity, lootTable)
             end
         end
 
-        if not node.player.name then
+        if not node.player then
             local locClass, engClass, locRace, engRace, gender, pName = GetPlayerInfoByGUID(node.GUID);
             node.player = {
                 name = pName,
