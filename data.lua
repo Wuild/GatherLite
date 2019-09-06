@@ -1,26 +1,26 @@
-local name, GatherLite = ...
+local name, _GatherLite = ...
 
-GatherLite.name = name;
-GatherLite.version = "@project-version@";
+_GatherLite.name = name;
+_GatherLite.version = "@project-version@";
 
-GatherLite.isClassic = select(4, GetBuildInfo()) < 20000;
+_GatherLite.isClassic = select(4, GetBuildInfo()) < 20000;
 
-GatherLite.frames = {};
+_GatherLite.frames = {};
 
-GatherLite.gatherSpellRanges = {
+_GatherLite.gatherSpellRanges = {
     default = 0.0065,
     fish = 0.0130
 };
 
-GatherLite.TimeSinceLastUpdate = 0;
-GatherLite.UpdateInterval = 1.0;
-GatherLite.nodes = {
+_GatherLite.TimeSinceLastUpdate = 0;
+_GatherLite.UpdateInterval = 1.0;
+_GatherLite.nodes = {
     minimap = {},
     worldmap = {}
 };
 
-if (GatherLite.isClassic) then
-    GatherLite.spellIDs = {
+if (_GatherLite.isClassic) then
+    _GatherLite.spellIDs = {
         [GetSpellInfo(2575)] = "mining", -- Mining
         [GetSpellInfo(2366)] = "herbalism", -- Herbalism
         [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
@@ -33,7 +33,7 @@ if (GatherLite.isClassic) then
         [GetSpellInfo(6478)] = "treasure", -- Opening()
     };
 else
-    GatherLite.spellIDs = {
+    _GatherLite.spellIDs = {
         [GetSpellInfo(2575)] = "mining", -- Mining
         [GetSpellInfo(2366)] = "herbalism", -- Herbalism
         [GetSpellInfo(7620)] = "fish", -- Fishing(Apprentice)
@@ -62,7 +62,7 @@ else
     };
 end ;
 
-GatherLite.classColours = {
+_GatherLite.classColours = {
     DEATHKNIGHT = { r = 0.77, g = 0.12, b = 0.23, fs = '|cffC41F3B' },
     DEMONHUNTER = { r = 0.64, g = 0.19, b = 0.79, fs = '|cffA330C9' },
     DRUID = { r = 1.00, g = 0.49, b = 0.04, fs = '|cffFF7D0A' },
@@ -76,7 +76,8 @@ GatherLite.classColours = {
     WARRIOR = { r = 0.78, g = 0.61, b = 0.43, fs = '|cffC79C6E' }
 }
 
-GatherLite.defaultConfigs = {
+_GatherLite.defaultConfigs = {
+    locale = "enUS",
     enabled = true,
     minimapButton = true,
     debugging2 = false,
@@ -96,5 +97,6 @@ GatherLite.defaultConfigs = {
     worldmapOpacity = 1,
     minimapLoot = true,
     worldmapLoot = true,
-    minimapEdge = false
+    minimapEdge = false,
+    minimapHideDistance = 70
 }

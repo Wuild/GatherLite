@@ -231,14 +231,11 @@ local function UpdateMinimapPins(force)
         end
 
         for pin, data in pairs(minimapPins) do
-            local distance = HBD:GetWorldDistance(instanceID, x, y, data.x, data.y);
-            if (distance < 500) then
-                if data.instanceID == instanceID and (not data.uiMapID or data.uiMapID == mapID or (data.showInParentZone and IsParentMap(data.uiMapID, mapID))) then
-                    activeMinimapPins[pin] = data
-                    data.keep = true
-                    -- draw the pin (this may reset data.keep if outside of the map)
-                    drawMinimapPin(pin, data)
-                end
+            if data.instanceID == instanceID and (not data.uiMapID or data.uiMapID == mapID or (data.showInParentZone and IsParentMap(data.uiMapID, mapID))) then
+                activeMinimapPins[pin] = data
+                data.keep = true
+                -- draw the pin (this may reset data.keep if outside of the map)
+                drawMinimapPin(pin, data)
             end
         end
 
