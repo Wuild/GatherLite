@@ -9,10 +9,10 @@ Use /gather or /gatherlite when using these commands
 
 Command | Arguments | description
 ---:| --- | ---|
-debugging | on, off| Turn debugging mode on or off
+debugging | | Toggle debugging mode on or off
 reload | | Reload the map and minimap nodes
 reset | | Reset the nodes database, this will remove all the nodes
-Usage example **/gatherlite debugging off**
+Usage example **/gatherlite debugging**
 
 ### INSTALLATION
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "GathererLite" directory is a subdirectory of the "AddOns" directory.
