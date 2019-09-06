@@ -51,7 +51,28 @@ _GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
         GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLiteGlobalSettings.database.fish) .. "|r", "fishing spots");
         GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLiteGlobalSettings.database.treasure) .. "|r", "treasures");
         GatherLite:updateMiniMapPosition();
-        C_ChatInfo.RegisterAddonMessagePrefix(_GatherLite.name);
+
+        -- register synchronization
+        GatherLite:RegisterComm(_GatherLite.name .. "Sync", "p2pSync")
+        GatherLite:RegisterComm(_GatherLite.name .. "Node", "p2pNode")
+
+        -- start synchronization after 5 seconds to guild
+        GatherLite:ScheduleTimer(function()
+            if IsInGuild() then
+                for i, type in ipairs(GatherLiteGlobalSettings.database) do
+                    GatherLite:SendCommMessage(_GatherLite.name .. "Sync", GatherLite:Serialize(GatherLiteGlobalSettings.database[type]), "GUILD")
+                end
+            end
+        end, 5)
+
+        -- sync database with guild every 30 minutes
+        GatherLite:ScheduleRepeatingTimer(function()
+            if IsInGuild() then
+                for i, type in ipairs(GatherLiteGlobalSettings.database) do
+                    GatherLite:SendCommMessage(_GatherLite.name .. "Sync", GatherLite:Serialize(GatherLiteGlobalSettings.database[type]), "GUILD")
+                end
+            end
+        end, 1800)
 
         GatherLite:drawMinimap();
         GatherLite:drawWorldmap();
@@ -95,19 +116,6 @@ _GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
             _GatherLite.tracker.target = nil
             _GatherLite.tracker.spellID = nil
             _GatherLite.tracker.spellType = nil
-        end
-    end
-
-    -- player has entered the world
-    if (event == "PLAYER_ENTERING_WORLD") then
-        --GatherLite:debug("player entering world")
-        --_GatherLite.needMapUpdate = true;
-    end
-
-    -- p2p message
-    if event == 'CHAT_MSG_ADDON' then
-        if string.find(select(1, ...), _GatherLite.name) then
-            GatherLite:ParseSentData(select(2, ...), select(5, ...))
         end
     end
 end)

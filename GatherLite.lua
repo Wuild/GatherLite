@@ -10,9 +10,7 @@ _GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_SUCCEEDED')
 _GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_FAILED')
 _GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_INTERRUPTED')
 _GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_SENT')
-_GatherLite.mainFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
 _GatherLite.mainFrame:RegisterEvent('ADDON_LOADED')
-_GatherLite.mainFrame:RegisterEvent('CHAT_MSG_ADDON')
 _GatherLite.mainFrame:RegisterEvent('LOOT_OPENED')
 
 -----------------------------------------------------------------------------------------------------------------------------------

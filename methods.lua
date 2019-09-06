@@ -150,7 +150,6 @@ function GatherLite:findExistingNode(spellType, x, y)
     if GatherLiteGlobalSettings.database ~= nil then
         for k, node in ipairs(GatherLiteGlobalSettings.database[spellType]) do
             if GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
-                GatherLite:debug("Found node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
                 return node;
             end
         end
@@ -320,15 +319,13 @@ function GatherLite:insertDatabaseNode(x, y, mapID, spellID, spellType, target, 
     GatherLite:debug("Adding node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
     GatherLite:createNode(node)
 
-    local dataString = tostring('newdata' .. ':' .. UnitGUID('player') .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
-
     if IsInGuild() and GatherLiteConfigCharacter.shareGuild then
-        C_ChatInfo.SendAddonMessage(_GatherLite.name, dataString, 'GUILD')
+        GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD")
         GatherLite:debug("sharing node with guild");
     end
 
     if IsInGroup() and GatherLiteConfigCharacter.shareParty then
-        C_ChatInfo.SendAddonMessage(_GatherLite.name, dataString, 'PARTY')
+        GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "PARTY")
         GatherLite:debug("sharing node with party");
     end
 end
@@ -358,14 +355,13 @@ function GatherLite:updateDatabaseNode(node, loot, target, icon)
         end ;
     end
 
-    local dataString = tostring('newdata' .. ':' .. UnitGUID('player') .. ":" .. node.type .. ":" .. node.spellID .. ":" .. node.target .. ":" .. node.target .. ":" .. node.icon .. ":" .. node.position.mapID .. ":" .. node.position.x .. ":" .. node.position.y)
     if IsInGuild() and GatherLiteConfigCharacter.shareGuild then
-        C_ChatInfo.SendAddonMessage(_GatherLite.name, dataString, 'GUILD')
+        GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD")
         GatherLite:debug("sharing node with guild");
     end
 
     if IsInGroup() and GatherLiteConfigCharacter.shareParty then
-        C_ChatInfo.SendAddonMessage(_GatherLite.name, dataString, 'PARTY')
+        GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "PARTY")
         GatherLite:debug("sharing node with party");
     end
 end
@@ -649,5 +645,53 @@ function GatherLite:ParseSentData(msg, sender)
         table.insert(GatherLiteGlobalSettings.database[spellType], node);
         GatherLite:createNode(node)
         GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
+    end
+end
+
+function GatherLite:p2pNode(event, msg, channel, sender)
+    if (sender == UnitName("player")) then
+        return
+    end
+
+    if channel == "GUILD" and not GatherLiteConfigCharacter.shareGuild then
+        return
+    end
+
+    if channel == "PART" and not GatherLiteConfigCharacter.shareParty then
+        return ;
+    end
+
+    local success, node = GatherLite:Deserialize(msg);
+    if success then
+        if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
+            table.insert(GatherLiteGlobalSettings.database[node.type], node);
+            GatherLite:createNode(node)
+            GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
+        end
+    end
+end
+
+function GatherLite:p2pSync(event, msg, channel, sender)
+    if (sender == UnitName("player")) then
+        return
+    end
+
+    if channel == "GUILD" and not GatherLiteConfigCharacter.shareGuild then
+        return
+    end
+
+    if channel == "PART" and not GatherLiteConfigCharacter.shareParty then
+        return ;
+    end
+
+    local success, data = GatherLite:Deserialize(msg);
+    if success then
+        for i2, node in ipairs(data) do
+            if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
+                table.insert(GatherLiteGlobalSettings.database[node.type], node);
+                GatherLite:createNode(node)
+                GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
+            end
+        end
     end
 end
