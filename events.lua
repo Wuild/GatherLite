@@ -8,22 +8,6 @@ _GatherLite.tracker = {
     ended = nil
 };
 
--- on main frame update
-_GatherLite.mainFrame:SetScript('OnUpdate', function(self, elapsed)
-    _GatherLite.TimeSinceLastUpdate = _GatherLite.TimeSinceLastUpdate + elapsed;
-
-    if _GatherLite.needMapUpdate then
-
-
-        _GatherLite.needMapUpdate = false;
-    end ;
-
-    if (_GatherLite.TimeSinceLastUpdate > _GatherLite.UpdateInterval) then
-        GatherLite:checkNodePositions();
-        _GatherLite.TimeSinceLastUpdate = 0;
-    end
-end);
-
 -- addon events handler
 _GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
 
@@ -74,8 +58,8 @@ _GatherLite.mainFrame:SetScript('OnEvent', function(self, event, ...)
             end
         end, 1800)
 
-        GatherLite:drawMinimap();
-        GatherLite:drawWorldmap();
+        GatherLite:ScheduleRepeatingTimer("checkNodePositions", 1);
+
         self:UnregisterEvent("ADDON_LOADED");
     end
 

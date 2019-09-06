@@ -545,7 +545,8 @@ function MinimapContextMenu(frame, level, menuList)
                     GatherLiteConfigCharacter.mining = true;
                 end ;
 
-                _GatherLite.needMapUpdate = true;
+                GatherLite:drawMinimap();
+                GatherLite:drawWorldmap();
             end
         })
 
@@ -559,7 +560,8 @@ function MinimapContextMenu(frame, level, menuList)
                 else
                     GatherLiteConfigCharacter.herbalism = true;
                 end ;
-                _GatherLite.needMapUpdate = true;
+                GatherLite:drawMinimap();
+                GatherLite:drawWorldmap();
             end
         })
 
@@ -574,7 +576,8 @@ function MinimapContextMenu(frame, level, menuList)
                     else
                         GatherLiteConfigCharacter.artifacts = true;
                     end ;
-                    _GatherLite.needMapUpdate = true;
+                    GatherLite:drawMinimap();
+                    GatherLite:drawWorldmap();
                 end
             })
         end
@@ -589,7 +592,8 @@ function MinimapContextMenu(frame, level, menuList)
                 else
                     GatherLiteConfigCharacter.fish = true;
                 end ;
-                _GatherLite.needMapUpdate = true;
+                GatherLite:drawMinimap();
+                GatherLite:drawWorldmap();
             end
         })
 
@@ -603,7 +607,8 @@ function MinimapContextMenu(frame, level, menuList)
                 else
                     GatherLiteConfigCharacter.treasure = true;
                 end ;
-                _GatherLite.needMapUpdate = true;
+                GatherLite:drawMinimap();
+                GatherLite:drawWorldmap();
             end
         })
     end
