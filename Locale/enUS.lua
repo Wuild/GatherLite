@@ -33,3 +33,6 @@ L["settings.reload"] = "Reload user interface"
 L["settings.warning"] = "All options marked with * requires the user interface to be reloaded"
 
 L["confirm.reset"] = "Are you sure you wish to reset the database? All your nodes will be removed"
+
+L['tooltip.last_visit'] = "Last visit:"
+L['tooltip.found_by'] = "Found by:"
