@@ -826,7 +826,6 @@ function GatherLite:p2pDatabase()
     if IsInGuild() and GatherLite.db.char.p2p.guild then
         GatherLite:debug("Sharing database with guild")
         for i, data in pairs(GatherLite.db.global.nodes) do
-            print(i);
             for i, node in pairs(data) do
                 GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD", "NORMAL")
             end
