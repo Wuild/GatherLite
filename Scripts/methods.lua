@@ -730,9 +730,9 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
 end
 
 function GatherLite:p2pNode(event, msg, channel, sender)
-    --if (sender == UnitName("player")) then
-    --    return
-    --end
+    if (sender == UnitName("player")) then
+        return
+    end
 
     if channel == "GUILD" and not GatherLite.db.char.p2p.guild then
         return
@@ -744,12 +744,14 @@ function GatherLite:p2pNode(event, msg, channel, sender)
 
     local success, node = GatherLite:Deserialize(msg);
     if success then
-        if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
-            node.shared = true;
-            node.loot = {};
-            table.insert(GatherLite.db.global.nodes[node.type], node);
-            GatherLite:createNode(node)
-            GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
+        if node.position and node.position.mapID and node.position.x and node.position.y then
+            if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
+                node.shared = true;
+                node.loot = {};
+                table.insert(GatherLite.db.global.nodes[node.type], node);
+                GatherLite:createNode(node)
+                GatherLite:debug("received p2p " .. node.type .. " node from " .. sender);
+            end
         end
     end
 end
