@@ -805,7 +805,11 @@ end
 -- sanitize database on load
 function GatherLite:sanitizeDatabase()
 
-    if not GatherLiteGlobalSettings and not GatherLiteGlobalSettings.database then
+    if not GatherLiteGlobalSettings then
+        return
+    end
+
+    if not GatherLiteGlobalSettings.database then
         return
     end
 
