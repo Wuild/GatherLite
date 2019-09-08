@@ -3,7 +3,7 @@
 ## Title: GatherLite |cFF00FF00 @project-version@|r
 ## Author: Wuild
 ## Version: @project-version@
-## OptionalDeps: Ace3
+## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons
 ## Notes: GatherLite remembers where you found stuff
 ## SavedVariables: GatherLiteGlobalSettings GatherLiteConfig
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
