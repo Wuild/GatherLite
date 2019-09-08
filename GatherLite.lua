@@ -84,13 +84,12 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 
     -- register synchronization
-    GatherLite:RegisterComm(_GatherLite.name .. "Sync", "p2pSync")
     GatherLite:RegisterComm(_GatherLite.name .. "Node", "p2pNode")
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
 
     GatherLite:ScheduleTimer("p2pDatabase", 10)
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 5)
-    GatherLite:ScheduleRepeatingTimer("p2pDatabase", 1800)
+    GatherLite:ScheduleRepeatingTimer("p2pDatabase", 3600)
     GatherLite:ScheduleRepeatingTimer("checkNodePositions", 1);
 
     GatherLite:RegisterEvent("UNIT_SPELLCAST_SENT", "EventHandler")
