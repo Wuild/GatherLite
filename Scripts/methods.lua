@@ -820,6 +820,7 @@ end
 
 -- sanitize database on load
 function GatherLite:sanitizeDatabase()
+
     if not GatherLiteGlobalSettings.database then
         return
     end
@@ -839,51 +840,6 @@ function GatherLite:p2pDatabase()
         end
     end
 end
-
-local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinimapIcon", {
-    type = "data source",
-    text = "Gatherlite",
-    icon = "Interface\\Icons\\inv_misc_spyglass_02",
-
-    OnClick = function(self, button)
-        if button == "LeftButton" then
-            if IsShiftKeyDown() then
-                GatherLite.db.char.enabled = not GatherLite.db.char.enabled;
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
-                return ;
-            end
-
-            local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
-            UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
-            ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
-        elseif button == "RightButton" then
-            if not OptionsPanel:IsShown() then
-                PlaySound(882);
-                LibStub("AceConfigDialog-3.0"):Open("GatherLite", OptionsPanel)
-            else
-                OptionsPanel:Hide();
-            end
-        end
-    end,
-
-    OnTooltipShow = function(tooltip)
-        tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.mining));
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
-
-        if not _GatherLite.isClassic then
-            tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('archaeology'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.artifacts));
-        end
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('fish'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.fish));
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('treasures'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.treasure));
-
-        tooltip:AddLine(" ");
-        tooltip:AddLine(Questie:Colorize("Left Click", 'gray') .. ": " .. "Open tracker menu");
-        tooltip:AddLine(Questie:Colorize("Shift + Left Click", 'gray') .. ": " .. "Toggle " .. _GatherLite.name);
-        tooltip:AddLine(Questie:Colorize("Right Click", 'gray') .. ": " .. "Open settings");
-    end,
-});
 
 -- event handler
 function GatherLite:EventHandler(event, ...)
@@ -928,6 +884,3 @@ function GatherLite:EventHandler(event, ...)
     end
 end
 
-function GatherLite:OnEnable()
-    GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
-end
