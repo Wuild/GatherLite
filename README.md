@@ -4,6 +4,8 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
+[![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png "Buy Me A Coffee")](https://www.buymeacoffee.com/yuImx6KOY "Buy Me A Coffee")
+
 **please download this addon from curseforge.com or the twitch app**
 
 #### Commands
