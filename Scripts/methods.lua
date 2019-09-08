@@ -709,12 +709,14 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
         return
     end
 
-    local version = Semver:Parse(message);
+    local removeVersion = Semver:Parse(message);
     if not version then
         return
     end
+    
+    local localVersion = Semver:Parse(_GatherLite.version);
 
-    if Semver:Parse(_GatherLite.version) < Semver:Parse(version) and not GatherLite.NewVersionExists then
+    if localVersion < removeVersion and not GatherLite.NewVersionExists then
         GatherLite.NewVersionExists = true;
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
     end
