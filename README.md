@@ -4,6 +4,8 @@ The addon does not track like a tracking ability does, rather it "remembers" whe
 
 When you view your World Map, you will also see the item locations marked on the particular map you are viewing there.
 
+**please download this addon from curseforge.com or the twitch app**
+
 #### Commands
 Use /gather or /gatherlite when using these commands
 
