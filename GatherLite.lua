@@ -74,7 +74,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
     end,
 });
 
-function GatherLite:OnEnable()
+function GatherLite:OnInitialize()
     self.db = LibStub("AceDB-3.0"):New("GatherLiteConfig", _GatherLite.configsDefaults, true)
     self.minimap = LibStub("LibDBIcon-1.0");
 
@@ -99,9 +99,6 @@ function GatherLite:OnEnable()
     GatherLite:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED", "EventHandler")
     GatherLite:RegisterEvent("LOOT_OPENED", "EventHandler")
 
-    GatherLite:drawMinimap();
-    GatherLite:drawWorldmap();
-
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
     GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.mining) .. "|r", "mining nodes");
@@ -113,4 +110,8 @@ function GatherLite:OnEnable()
     GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.treasure) .. "|r", "treasures");
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
+
+    GatherLite:drawMinimap();
+    GatherLite:drawWorldmap();
+
 end

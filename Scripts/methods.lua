@@ -468,7 +468,7 @@ function GatherLite:createNodeTooltip(f, node, lootTable)
     f:SetScript('OnEnter', function()
 
         _GatherLite.tooltip:ClearLines();
-        _GatherLite.tooltip:SetOwner(f, "ANCHOR_CURSOR");
+        _GatherLite.tooltip:SetOwner(f, "TOP");
         _GatherLite.tooltip:SetText(node.name);
         _GatherLite.tooltip:AddDoubleLine(GatherLite:translate('tooltip.last_visit'), GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
 
@@ -488,9 +488,13 @@ function GatherLite:createNodeTooltip(f, node, lootTable)
             }
         end
 
+        if node.coins and node.coins > 0 then
+            SetTooltipMoney(_GatherLite.tooltip, node.coins)
+        end
         if node.player.name and _GatherLite.classColours[node.player.class] then
             _GatherLite.tooltip:AddDoubleLine(GatherLite:translate('tooltip.found_by'), _GatherLite.classColours[node.player.class].fs .. node.player.name .. " - " .. node.player.realm);
         end
+
         _GatherLite.tooltip:Show();
         _GatherLite.showingTooltip = true;
     end)
@@ -826,7 +830,7 @@ end
 -- sanitize database on load
 function GatherLite:sanitizeDatabase()
 
-    if not GatherLiteGlobalSettings.database then
+    if not GatherLiteGlobalSettings and not GatherLiteGlobalSettings.database then
         return
     end
 
@@ -835,6 +839,14 @@ function GatherLite:sanitizeDatabase()
             GatherLite:sanitizeNode(type, i)
         end
     end
+
+    --for i, node in pairs(GatherLite.db.global.nodes["treasure"]) do
+    --    for link, item in ipairs(node.loot) do
+    --        local name = select(1, GetItemInfo(item.link))
+    --        local type = select(6, GetItemInfo(item.link))
+    --        print(name, type);
+    --    end
+    --end
 end
 
 function GatherLite:p2pDatabase()
