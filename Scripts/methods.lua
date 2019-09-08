@@ -730,9 +730,9 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
 end
 
 function GatherLite:p2pNode(event, msg, channel, sender)
-    if (sender == UnitName("player")) then
-        return
-    end
+    --if (sender == UnitName("player")) then
+    --    return
+    --end
 
     if channel == "GUILD" and not GatherLite.db.char.p2p.guild then
         return
@@ -750,33 +750,6 @@ function GatherLite:p2pNode(event, msg, channel, sender)
             table.insert(GatherLite.db.global.nodes[node.type], node);
             GatherLite:createNode(node)
             GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
-        end
-    end
-end
-
-function GatherLite:p2pSync(event, msg, channel, sender)
-    if (sender == UnitName("player")) then
-        return
-    end
-
-    if channel == "GUILD" and not GatherLite.db.char.p2p.guild then
-        return
-    end
-
-    if channel == "PARTY" and not GatherLite.db.char.p2p.party then
-        return ;
-    end
-
-    local success, data = GatherLite:Deserialize(msg);
-    if success then
-        for i2, node in ipairs(data) do
-            if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
-                node.shared = true;
-                node.loot = {};
-                table.insert(GatherLite.db.global.nodes[node.type], node);
-                GatherLite:createNode(node)
-                GatherLite:debug("received p2p node at " .. "|cff32CD32" .. node.position.x .. " " .. node.position.y .. "|r");
-            end
         end
     end
 end
@@ -852,8 +825,11 @@ end
 function GatherLite:p2pDatabase()
     if IsInGuild() and GatherLite.db.char.p2p.guild then
         GatherLite:debug("Sharing database with guild")
-        for i, type in ipairs(GatherLite.db.global.nodes) do
-            GatherLite:SendCommMessage(_GatherLite.name .. "Sync", GatherLite:Serialize(GatherLite.db.global.nodes[type]), "GUILD")
+        for i, data in pairs(GatherLite.db.global.nodes) do
+            print(i);
+            for i, node in pairs(data) do
+                GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD", "NORMAL")
+            end
         end
     end
 end
