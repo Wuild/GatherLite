@@ -126,5 +126,8 @@ _GatherLite.configsDefaults = {
         }
     },
     profile = {
+        minimap = {
+            hide = false
+        }
     }
 }
