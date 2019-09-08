@@ -47,11 +47,11 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
             UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
             ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
         elseif button == "RightButton" then
-            if not OptionsPanel:IsShown() then
+            if not GatherLite.OptionsPanel:IsShown() then
                 PlaySound(882);
-                LibStub("AceConfigDialog-3.0"):Open("GatherLite", OptionsPanel)
+                LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
             else
-                OptionsPanel:Hide();
+                GatherLite.OptionsPanel:Hide();
             end
         end
     end,

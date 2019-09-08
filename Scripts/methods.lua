@@ -6,8 +6,8 @@ local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
 local Semver = LibStub("Semver");
 
 --options interface
-local OptionsPanel = AceGUI:Create("Frame");
-_G["GatherLiteOptionPanel"] = OptionsPanel.frame;
+GatherLite.OptionsPanel = AceGUI:Create("Frame");
+_G["GatherLiteOptionPanel"] = GatherLite.OptionsPanel.frame;
 table.insert(UISpecialFrames, "GatherLiteOptionPanel");
 
 GatherLite.NewVersionExists = false;
@@ -111,7 +111,7 @@ function GatherLite:CopyDefaults(src, dst)
 end
 
 function GatherLite:ShowSettings()
-    LibStub("AceConfigDialog-3.0"):Open("GatherLite", OptionsPanel)
+    LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
 end
 
 -- slash commands
@@ -718,7 +718,7 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
     if not localVersion then
         return
     end
-    
+
     if localVersion < removeVersion and not GatherLite.NewVersionExists then
         GatherLite.NewVersionExists = true;
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
