@@ -1,7 +1,10 @@
-local MAJOR, MINOR = "Semver", 9
+local MAJOR, MINOR = "Semver", 2
 assert(LibStub, MAJOR .. " requires LibStub")
-
 local Semver = LibStub:NewLibrary(MAJOR, MINOR)
+
+if not Semver then
+    return
+end
 
 local table_insert = table.insert
 local table_concat = table.concat
@@ -48,7 +51,9 @@ mt_version = {
                 self.semver = function(self2, v2)
                     if getmetatable(v2) ~= mt_version then
                         local parsed, err = Semver.parse(v2, self2.strict)
-                        if not parsed then return nil, err end
+                        if not parsed then
+                            return nil, err
+                        end
                         v2 = parsed
                     end
                     return self2 == v2
@@ -96,7 +101,7 @@ mt_version = {
     end,
 }
 
-Semver.parse = function(v, strict)
+function Semver:Parse(v, strict)
     v = tostring(v)
     if strict then
         -- edge case: do not allow trailing dot

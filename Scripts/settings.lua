@@ -1,18 +1,6 @@
 local name, _GatherLite = ...
 
-local AceGUI = LibStub("AceGUI-3.0")
-
-local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
-
---options interface
-local OptionsPanel = AceGUI:Create("Frame");
-_G["GatherLiteOptionPanel"] = OptionsPanel.frame;
-table.insert(UISpecialFrames, "GatherLiteOptionPanel");
-
 local needReload = false;
-
-GatherLite:RegisterChatCommand("gather", "GatherSlash")
-GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 
 LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
     type = "group",
@@ -40,11 +28,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "toggle",
                     order = 2,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.enabled = val;
+                        GatherLite.db.char.enabled = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.enabled
+                        return GatherLite.db.char.enabled
                     end
                 },
                 minimap = {
@@ -54,15 +42,15 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "toggle",
                     order = 3,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.minimapButton = val;
-                        if val then
-                            _GatherLite.minimap:Show();
+                        GatherLite.db.profile.minimap.hide = not val;
+                        if GatherLite.db.profile.minimap.hide then
+                            GatherLite.minimap:Hide("GatherLiteMinimapIcon");
                         else
-                            _GatherLite.minimap:Hide();
+                            GatherLite.minimap:Show("GatherLiteMinimapIcon");
                         end
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.minimapButton
+                        return not GatherLite.db.profile.minimap.hide
                     end
                 },
                 Spacer_1 = {
@@ -78,10 +66,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "toggle",
                     order = 6,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.debugging2 = val;
+                        GatherLite.db.char.debugging = val;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.debugging2
+                        return GatherLite.db.char.debugging
                     end
                 },
                 Spacer_2 = {
@@ -100,7 +88,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite:translate("confirm.reset");
                     end,
                     func = function()
-                        GatherLiteGlobalSettings.database = {}
+                        GatherLite.db.global.nodes = nil
                         ReloadUI()
                     end
                 }
@@ -128,11 +116,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     order = 2,
                     width = "full",
                     set = function(info, val)
-                        GatherLiteConfigCharacter.showOnWorldMap = val;
+                        GatherLite.db.char.worldmap.enabled = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.showOnWorldMap
+                        return GatherLite.db.char.worldmap.enabled
                     end
                 },
                 loot = {
@@ -143,11 +131,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     order = 3,
                     width = "full",
                     set = function(info, val)
-                        GatherLiteConfigCharacter.worldmapLoot = val;
+                        GatherLite.db.char.worldmap.loot = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.worldmapLoot
+                        return GatherLite.db.char.worldmap.loot
                     end
                 },
                 sliders = {
@@ -167,13 +155,13 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 5,
                             width = "full",
                             set = function(info, val)
-                                GatherLiteConfigCharacter.worldmapIconSize = val;
+                                GatherLite.db.char.worldmap.size = val;
                                 for k, node in ipairs(_GatherLite.nodes.worldmap) do
                                     node.frame:SetSize(val, val)
                                 end
                             end,
                             get = function(info)
-                                return GatherLiteConfigCharacter.worldmapIconSize
+                                return GatherLite.db.char.worldmap.size
                             end
                         },
                         iconOpacity = {
@@ -190,10 +178,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                                 for k, node in ipairs(_GatherLite.nodes.worldmap) do
                                     node.frame:SetAlpha(val)
                                 end
-                                GatherLiteConfigCharacter.worldmapOpacity = val;
+                                GatherLite.db.char.worldmap.opacity = val;
                             end,
                             get = function(info)
-                                return GatherLiteConfigCharacter.worldmapOpacity
+                                return GatherLite.db.char.worldmap.opacity
                             end
                         }
                     }
@@ -223,11 +211,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     order = 2,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.showOnMinimap = val;
+                        GatherLite.db.char.minimap.enabled = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.showOnMinimap
+                        return GatherLite.db.char.minimap.enabled
                     end
                 },
                 loot = {
@@ -238,11 +226,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     order = 3,
                     width = "full",
                     set = function(info, val)
-                        GatherLiteConfigCharacter.minimapLoot = val;
+                        GatherLite.db.char.minimap.loot = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.minimapLoot
+                        return GatherLite.db.char.minimap.loot
                     end
                 },
                 edge = {
@@ -253,11 +241,11 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     order = 4,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.minimapEdge = val;
+                        GatherLite.db.char.minimap.edge = val;
                         needReload = true;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.minimapEdge
+                        return GatherLite.db.char.minimap.edge
                     end
                 },
                 sliders = {
@@ -278,13 +266,13 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 --MyAddon.enabled = val
-                                GatherLiteConfigCharacter.minimapIconSize = val;
+                                GatherLite.db.char.minimap.size = val;
                                 for k, node in ipairs(_GatherLite.nodes.minimap) do
                                     node.frame:SetSize(val, val)
                                 end
                             end,
                             get = function(info)
-                                return GatherLiteConfigCharacter.minimapIconSize
+                                return GatherLite.db.char.minimap.size
                                 --return MyAddon.enabled
                             end
                         },
@@ -299,18 +287,18 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 6,
                             width = "full",
                             set = function(info, val)
-                                GatherLiteConfigCharacter.minimapOpacity = val;
+                                GatherLite.db.char.minimap.opacity = val;
                                 for k, node in ipairs(_GatherLite.nodes.minimap) do
                                     node.frame:SetAlpha(val)
                                 end
                             end,
                             get = function(info)
-                                return GatherLiteConfigCharacter.minimapOpacity
+                                return GatherLite.db.char.minimap.opacity
                             end
                         },
                         iconRange = {
                             name = function()
-                                return GatherLite:translate("settings.minimap.range", GatherLiteConfigCharacter.minimapHideDistance);
+                                return GatherLite:translate("settings.minimap.range", GatherLite.db.char.minimap.distance);
                             end,
                             type = "range",
                             min = 0,
@@ -319,10 +307,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 7,
                             width = "full",
                             set = function(info, val)
-                                GatherLiteConfigCharacter.minimapHideDistance = val;
+                                GatherLite.db.char.minimap.distance = val;
                             end,
                             get = function(info)
-                                return GatherLiteConfigCharacter.minimapHideDistance
+                                return GatherLite.db.char.minimap.distance
                             end
                         }
                     }
@@ -352,10 +340,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     order = 2,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.shareGuild = val;
+                        GatherLite.db.char.p2p.guild = val;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.shareGuild
+                        return GatherLite.db.char.p2p.guild
                     end
                 },
                 party = {
@@ -366,10 +354,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     order = 2,
                     set = function(info, val)
-                        GatherLiteConfigCharacter.shareParty = val;
+                        GatherLite.db.char.p2p.party = val;
                     end,
                     get = function(info)
-                        return GatherLiteConfigCharacter.shareParty
+                        return GatherLite.db.char.p2p.party
                     end
                 },
             }
@@ -409,207 +397,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
         }
     }
 })
-configFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite", "GatherLite");
+LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite", "GatherLite");
 
-function GatherLite:ShowSettings()
-    LibStub("AceConfigDialog-3.0"):Open("GatherLite", OptionsPanel)
-end
 
------------------------------------------------------------------------------------------------------------------------------------
--- MINI MAP
------------------------------------------------------------------------------------------------------------------------------------
-_GatherLite.minimap = CreateFrame("Button", "GatherLite_MinimapButton", Minimap);
-_GatherLite.minimap:EnableMouse(true);
-_GatherLite.minimap:SetMovable(true);
-_GatherLite.minimap:SetSize(33, 33);
-_GatherLite.minimap:SetPoint("TOPLEFT");
-_GatherLite.minimap:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight");
-_GatherLite.minimap:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-_GatherLite.minimap:RegisterForDrag("LeftButton");
 
-local t = _GatherLite.minimap:CreateTexture(nil, "OVERLAY");
-t:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
-t:SetSize(56, 56);
-t:SetPoint("TOPLEFT");
-
-local t = _GatherLite.minimap:CreateTexture(nil, "background");
-t:SetTexture("Interface\\Icons\\inv_misc_spyglass_02")
-t:SetSize(21, 21);
-t:SetPoint("CENTER");
-
-_GatherLite.minimapFrame = CreateFrame("FRAME", nil, _GatherLite.minimap);
-_GatherLite.minimapFrame:SetScript("OnUpdate", function()
-    local xpos, ypos = GetCursorPosition()
-    local xmin, ymin = Minimap:GetLeft(), Minimap:GetBottom()
-
-    xpos = xmin - xpos / UIParent:GetScale() + 70 -- get coordinates as differences from the center of the minimap
-    ypos = ypos / UIParent:GetScale() - ymin - 70
-
-    GatherLiteConfigCharacter.MiniMapPosition = math.deg(math.atan2(ypos, xpos))
-    GatherLite:updateMiniMapPosition()
-end);
-_GatherLite.minimapFrame:Hide();
-
-_GatherLite.minimap:SetScript("OnDragStart", function(self)
-    self:LockHighlight();
-    _GatherLite.minimapFrame:Show();
-    _GatherLite.tooltip:Hide();
-end);
-
-_GatherLite.minimap:SetScript("OnDragStop", function(self)
-    self:UnlockHighlight();
-    _GatherLite.minimapFrame:Hide();
-    if (_GatherLite.showingTooltip) then
-        _GatherLite.tooltip:Show();
-    end ;
-end);
-
-_GatherLite.minimap:SetScript("OnEnter", function()
-    _GatherLite.tooltip:ClearLines();
-    _GatherLite.tooltip:SetOwner(_GatherLite.minimap, "ANCHOR_LEFT");
-    _GatherLite.tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
-
-    _GatherLite.tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLiteGlobalSettings.database.mining));
-    --    _GatherLite.tooltip:AddTexture(GetItemIcon(2770), { width = 14, height = 14 })
-
-    _GatherLite.tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLiteGlobalSettings.database.herbalism));
-    --    _GatherLite.tooltip:AddTexture(GetItemIcon(765), { width = 14, height = 14 })
-
-    if not _GatherLite.isClassic then
-        _GatherLite.tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('archaeology'), "white"), GatherLite:tablelength(GatherLiteGlobalSettings.database.artifacts));
-        --        _GatherLite.tooltip:AddTexture(GetItemIcon(1195), { width = 14, height = 14 })
-    end ;
-    _GatherLite.tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('fish'), "white"), GatherLite:tablelength(GatherLiteGlobalSettings.database.fish));
-    --    _GatherLite.tooltip:AddTexture(GetItemIcon(6303), { width = 14, height = 14 })
-
-    _GatherLite.tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('treasures'), "white"), GatherLite:tablelength(GatherLiteGlobalSettings.database.treasure));
-    --    _GatherLite.tooltip:AddTexture(132594, { width = 14, height = 14 })
-
-    _GatherLite.tooltip:Show();
-    _GatherLite.showingTooltip = true;
-end);
-
-_GatherLite.minimap:SetScript("OnLeave", function()
-    _GatherLite.tooltip:Hide()
-end);
-
-_GatherLite.minimap:SetScript("OnClick", function(self, button)
-    if (button == "LeftButton") then
-        local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
-        UIDropDownMenu_Initialize(dropDown, MinimapContextMenu, "MENU")
-        ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
-    else
-        if not OptionsPanel:IsShown() then
-            PlaySound(882);
-            LibStub("AceConfigDialog-3.0"):Open("GatherLite", OptionsPanel)
-        else
-            OptionsPanel:Hide();
-        end
-    end
-end);
-
-function GatherLite:updateMiniMapPosition()
-    _GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
-end
-
-function addContextItem(args)
-    local info = UIDropDownMenu_CreateInfo()
-    info.text = args.text;
-    info.checked = args.checked;
-    info.func = args.callback;
-    info.icon = args.icon;
-    info.isTitle = args.isTitle;
-    info.disabled = args.disabled;
-    info.notCheckable = args.notCheckable;
-    UIDropDownMenu_AddButton(info)
-end
-
-function MinimapContextMenu(frame, level, menuList)
-
-    if level == 1 then
-
-        addContextItem({
-            text = _GatherLite.name,
-            isTitle = true,
-            notCheckable = true
-        });
-
-        addContextItem({
-            text = GatherLite:translate('mining'),
-            icon = GetItemIcon(2770),
-            checked = GatherLiteConfigCharacter.mining,
-            callback = function()
-                if GatherLiteConfigCharacter.mining then
-                    GatherLiteConfigCharacter.mining = false;
-                else
-                    GatherLiteConfigCharacter.mining = true;
-                end ;
-
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
-            end
-        })
-
-        addContextItem({
-            text = GatherLite:translate('herbalism'),
-            icon = GetItemIcon(765),
-            checked = GatherLiteConfigCharacter.herbalism,
-            callback = function()
-                if GatherLiteConfigCharacter.herbalism then
-                    GatherLiteConfigCharacter.herbalism = false;
-                else
-                    GatherLiteConfigCharacter.herbalism = true;
-                end ;
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
-            end
-        })
-
-        if not _GatherLite.isClassic then
-            addContextItem({
-                text = GatherLite:translate('archaeology'),
-                icon = 134435,
-                checked = GatherLiteConfigCharacter.artifacts,
-                callback = function()
-                    if GatherLiteConfigCharacter.artifacts then
-                        GatherLiteConfigCharacter.artifacts = false;
-                    else
-                        GatherLiteConfigCharacter.artifacts = true;
-                    end ;
-                    GatherLite:drawMinimap();
-                    GatherLite:drawWorldmap();
-                end
-            })
-        end
-
-        addContextItem({
-            text = GatherLite:translate('fish'),
-            icon = GetItemIcon(6303),
-            checked = GatherLiteConfigCharacter.fish,
-            callback = function()
-                if GatherLiteConfigCharacter.fish then
-                    GatherLiteConfigCharacter.fish = false;
-                else
-                    GatherLiteConfigCharacter.fish = true;
-                end ;
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
-            end
-        })
-
-        addContextItem({
-            text = GatherLite:translate('treasures'),
-            icon = 132594,
-            checked = GatherLiteConfigCharacter.treasure,
-            callback = function()
-                if GatherLiteConfigCharacter.treasure then
-                    GatherLiteConfigCharacter.treasure = false;
-                else
-                    GatherLiteConfigCharacter.treasure = true;
-                end ;
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
-            end
-        })
-    end
-end

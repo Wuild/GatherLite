@@ -5,37 +5,11 @@
 ## Version: @project-version@
 ## OptionalDeps: Ace3
 ## Notes: GatherLite remembers where you found stuff
-## SavedVariables: GatherLiteGlobalSettings
+## SavedVariables: GatherLiteGlobalSettings GatherLiteConfig
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
 
-Libs\LibStub\LibStub.lua
-Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+#embeds
+embeds.xml
 
-Libs\HereBeDragons\HereBeDragons-2.0.lua
-Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
-Libs\Version\Version.lua
-
-Libs\ChatThrottleLib\ChatThrottleLib.xml
-Libs\AceAddon-3.0\AceAddon-3.0.xml
-Libs\AceEvent-3.0\AceEvent-3.0.xml
-Libs\AceTimer-3.0\AceTimer-3.0.xml
-Libs\AceDB-3.0\AceDB-3.0.xml
-Libs\AceLocale-3.0\AceLocale-3.0.xml
-Libs\AceConsole-3.0\AceConsole-3.0.xml
-Libs\AceGUI-3.0\AceGUI-3.0.xml
-Libs\AceConfig-3.0\AceConfig-3.0.xml
-Libs\AceComm-3.0\AceComm-3.0.xml
-Libs\AceSerializer-3.0\AceSerializer-3.0.xml
-
-Locale\enUS.lua
-Locale\deDE.lua
-Locale\esES.lua
-Locale\frFR.lua
-Locale\itIT.lua
-Locale\ruRU.lua
-
-data.lua
+#main
 GatherLite.lua
-settings.lua
-methods.lua
-events.lua

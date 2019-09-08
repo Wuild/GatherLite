@@ -1,3 +1,4 @@
+GatherLite = LibStub("AceAddon-3.0"):NewAddon("GatherLite", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0")
 local name, _GatherLite = ...
 
 _GatherLite.name = name;
@@ -17,6 +18,14 @@ _GatherLite.UpdateInterval = 1.0;
 _GatherLite.nodes = {
     minimap = {},
     worldmap = {}
+};
+
+-- tracker data
+_GatherLite.tracker = {
+    spellType = nil,
+    spellID = nil,
+    target = nil,
+    ended = nil
 };
 
 if (_GatherLite.isClassic) then
@@ -76,27 +85,46 @@ _GatherLite.classColours = {
     WARRIOR = { r = 0.78, g = 0.61, b = 0.43, fs = '|cffC79C6E' }
 }
 
-_GatherLite.defaultConfigs = {
-    locale = "enUS",
-    enabled = true,
-    minimapButton = true,
-    debugging2 = false,
-    mining = true,
-    fish = true,
-    herbalism = true,
-    treasure = true,
-    artifacts = true,
-    showOnMinimap = true,
-    showOnWorldMap = true,
-    minimapIconSize = 12,
-    worldmapIconSize = 12,
-    MiniMapPosition = 45,
-    shareGuild = false;
-    shareParty = false,
-    minimapOpacity = 1,
-    worldmapOpacity = 1,
-    minimapLoot = true,
-    worldmapLoot = true,
-    minimapEdge = false,
-    minimapHideDistance = 70
+_GatherLite.configsDefaults = {
+    global = {
+        nodes = {
+            mining = {},
+            herbalism = {},
+            treasure = {},
+            fish = {},
+            artifacts = {}
+        }
+    },
+    char = {
+        enabled = true,
+        debugging = false,
+        tracking = {
+            mining = true,
+            herbalism = true,
+            treasures = true,
+            fish = true,
+            artifacts = true
+        },
+        minimap = {
+            enabled = true,
+            hide = false,
+            size = 12,
+            opacity = 1,
+            distance = 70,
+            loot = true,
+            edge = false
+        },
+        worldmap = {
+            enabled = true,
+            size = 12,
+            opacity = 1,
+            loot = true
+        },
+        p2p = {
+            guild = true,
+            party = false
+        }
+    },
+    profile = {
+    }
 }

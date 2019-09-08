@@ -1,17 +1,5 @@
-GatherLite = LibStub("AceAddon-3.0"):NewAddon("GatherLite", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0")
-
 local name, _GatherLite = ...;
 
------------------------------------------------------------------------------------------------------------------------------------
--- MAIN FRAME
------------------------------------------------------------------------------------------------------------------------------------
-_GatherLite.mainFrame = CreateFrame('FRAME', nil, UIParent)
-_GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_SUCCEEDED')
-_GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_FAILED')
-_GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_INTERRUPTED')
-_GatherLite.mainFrame:RegisterEvent('UNIT_SPELLCAST_SENT')
-_GatherLite.mainFrame:RegisterEvent('ADDON_LOADED')
-_GatherLite.mainFrame:RegisterEvent('LOOT_OPENED')
 
 -----------------------------------------------------------------------------------------------------------------------------------
 -- TOOLTIP
@@ -41,6 +29,42 @@ _GatherLite.hideTooltip = function()
     _GatherLite.showingTooltip = false;
 end
 
-_GatherLite.updateMiniMapPosition = function()
-    _GatherLite.minimap:SetPoint("TOPLEFT", "Minimap", "TOPLEFT", 52 - (80 * cos(GatherLiteConfigCharacter.MiniMapPosition)), (80 * sin(GatherLiteConfigCharacter.MiniMapPosition)) - 52)
+function GatherLite:OnInitialize()
+    self.db = LibStub("AceDB-3.0"):New("GatherLiteConfig", _GatherLite.configsDefaults, true)
+    self.minimap = LibStub("LibDBIcon-1.0");
+
+    GatherLite:sanitizeDatabase();
+
+    GatherLite:RegisterChatCommand("gather", "GatherSlash")
+    GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
+
+    -- register synchronization
+    GatherLite:RegisterComm(_GatherLite.name .. "Sync", "p2pSync")
+    GatherLite:RegisterComm(_GatherLite.name .. "Node", "p2pNode")
+    GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
+
+    GatherLite:ScheduleTimer("p2pDatabase", 10)
+    GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 5)
+    GatherLite:ScheduleRepeatingTimer("p2pDatabase", 1800)
+    GatherLite:ScheduleRepeatingTimer("checkNodePositions", 1);
+
+    GatherLite:RegisterEvent("UNIT_SPELLCAST_SENT", "EventHandler")
+    GatherLite:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED", "EventHandler")
+    GatherLite:RegisterEvent("UNIT_SPELLCAST_FAILED", "EventHandler")
+    GatherLite:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED", "EventHandler")
+    GatherLite:RegisterEvent("LOOT_OPENED", "EventHandler")
+
+    GatherLite:drawMinimap();
+    GatherLite:drawWorldmap();
+
+    GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
+    GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.mining) .. "|r", "mining nodes");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.herbalism) .. "|r", "herbalism nodes");
+    if not _GatherLite.isClassic then
+        GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.artifacts) .. "|r", "artifact nodes");
+    end
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.fish) .. "|r", "fishing spots");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.treasure) .. "|r", "treasures");
+
 end
