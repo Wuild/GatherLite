@@ -1,6 +1,5 @@
 local name, _GatherLite = ...;
 local HBD = LibStub("HereBeDragons-2.0");
-local HBDMigrate = LibStub("HereBeDragons-Migrate");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local AceGUI = LibStub("AceGUI-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
