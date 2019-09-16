@@ -68,9 +68,9 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
         tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('treasures'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.treasure));
 
         tooltip:AddLine(" ");
-        tooltip:AddLine(GatherLite:Colorize("Left Click", 'gray') .. ": " .. "Open tracker menu");
-        tooltip:AddLine(GatherLite:Colorize("Shift + Left Click", 'gray') .. ": " .. "Toggle " .. _GatherLite.name);
-        tooltip:AddLine(GatherLite:Colorize("Right Click", 'gray') .. ": " .. "Open settings");
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.left_click_text"));
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.shift_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.shift_click_text") .. " " .. _GatherLite.name);
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.right_click_text"));
     end,
 });
 

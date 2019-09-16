@@ -1,6 +1,6 @@
 ## Interface: 11302
 ## X-Min-Interface: 80200
-## Title: GatherLite |cFF00FF00 @project-version@|r
+## Title: GatherLite
 ## Author: Wuild
 ## Version: @project-version@
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons

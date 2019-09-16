@@ -89,7 +89,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     end,
                     func = function()
                         GatherLite.db.global.nodes = nil
-                        ReloadUI()
+                        needReload = true;
                     end
                 }
             }
@@ -138,11 +138,41 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite.db.char.worldmap.loot
                     end
                 },
+                neighbors = {
+                    name = function()
+                        return GatherLite:translate("settings.map.neighbors");
+                    end,
+                    type = "toggle",
+                    order = 4,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.char.worldmap.neighbors = val;
+                        needReload = true;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.worldmap.neighbors
+                    end
+                },
+                continent = {
+                    name = function()
+                        return GatherLite:translate("settings.map.continent");
+                    end,
+                    type = "toggle",
+                    order = 4,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.char.worldmap.continent = val;
+                        needReload = true;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.worldmap.continent
+                    end
+                },
                 sliders = {
                     type = "group",
                     name = "",
                     inline = true,
-                    order = 4,
+                    order = 5,
                     args = {
                         iconSize = {
                             name = function()
@@ -248,11 +278,26 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite.db.char.minimap.edge
                     end
                 },
+                neighbors = {
+                    name = function()
+                        return GatherLite:translate("settings.minimap.neighbors");
+                    end,
+                    type = "toggle",
+                    order = 5,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.char.minimap.neighbors = val;
+                        needReload = true;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.minimap.neighbors
+                    end
+                },
                 sliders = {
                     type = "group",
                     name = "",
                     inline = true,
-                    order = 5,
+                    order = 6,
                     args = {
                         iconSize = {
                             name = function()

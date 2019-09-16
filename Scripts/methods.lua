@@ -1,5 +1,6 @@
 local name, _GatherLite = ...;
 local HBD = LibStub("HereBeDragons-2.0");
+local HBDMigrate = LibStub("HereBeDragons-Migrate");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local AceGUI = LibStub("AceGUI-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
@@ -452,6 +453,8 @@ function GatherLite:drawMinimap()
             end
         end
     end
+
+
 end
 
 -- add leadingZeros to number
@@ -474,7 +477,11 @@ function GatherLite:createNodeTooltip(f, node, lootTable)
 
         if node.loot and lootTable then
             for k, item in pairs(node.loot) do
-                _GatherLite.tooltip:AddDoubleLine(item.link, "x" .. item.count);
+                if item.count > 0 then
+                    _GatherLite.tooltip:AddDoubleLine(item.link, "x" .. item.count);
+                else
+                    _GatherLite.tooltip:AddDoubleLine(item.link, "");
+                end
             end
         end
 
@@ -537,9 +544,23 @@ function GatherLite:createWorldmapNode(node, ik)
 
     --local x, y, instanceID = HBD:GetWorldCoordinatesFromZone(node.position.x, node.position.y, node.position.mapID);
     --Pins:AddWorldMapIconWorld("GathererClassic.Worldmap", f, instanceID, x, y);
-    Pins:AddWorldMapIconWorld("GathererClassic", f, instanceID, x, y);
+
+    local flag
+
+    if GatherLite.db.char.worldmap.continent then
+        flag = HBD_PINS_WORLDMAP_SHOW_CONTINENT
+    end
+
+    if GatherLite.db.char.worldmap.neighbors then
+        Pins:AddWorldMapIconWorld("GathererClassic", f, instanceID, x, y, flag);
+    else
+        Pins:AddWorldMapIconMap("GathererClassic", f, node.position.mapID, node.position.x, node.position.y, flag);
+    end
+
     table.insert(_GatherLite.nodes.worldmap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y })
 end
+
+GatherLite.minimapGroup = CreateFrame("FRAME", "GatherLiteGroup", Minimap)
 
 -- create mini map node frame
 function GatherLite:createMinimapNode(node, ik)
@@ -557,14 +578,23 @@ function GatherLite:createMinimapNode(node, ik)
         return
     end
 
-    local f = GatherLite:createFrame(node.type .. "minimap" .. ik, Minimap, GatherLite.db.char.minimap.size);
+    local f = GatherLite:createFrame(node.type .. "minimap" .. ik, GatherLite.minimapGroup, GatherLite.db.char.minimap.size);
+    if MBB_Ignore then
+        table.insert(MBB_Ignore, node.type .. "minimap" .. ik)
+    end
+
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
     f.texture = f:CreateTexture(nil, 'ARTWORK')
     f.texture:SetAllPoints(f)
     f.texture:SetTexture(node.icon)
     GatherLite:createNodeTooltip(f, node, GatherLite.db.char.minimap.loot);
 
-    Pins:AddMinimapIconWorld("GathererClassic", f, instanceID, x, y, GatherLite.db.char.minimap.edge);
+    if GatherLite.db.char.worldmap.neighbors then
+        Pins:AddMinimapIconWorld("GathererClassic", f, instanceID, x, y, GatherLite.db.char.minimap.edge);
+    else
+        Pins:AddMinimapIconMap("GathererClassic", f, node.position.mapID, node.position.x, node.position.y, true, GatherLite.db.char.minimap.edge)
+    end
+
     table.insert(_GatherLite.nodes.minimap, { frame = f, mapID = node.position.mapID, x = node.position.x, y = node.position.y });
 end
 
@@ -747,10 +777,25 @@ function GatherLite:p2pNode(event, msg, channel, sender)
         if node.position and node.position.mapID and node.position.x and node.position.y then
             if not GatherLite:findExistingNode(node.type, node.position.x, node.position.y) then
                 node.shared = true;
-                node.loot = {};
-                table.insert(GatherLite.db.global.nodes[node.type], node);
-                GatherLite:createNode(node)
-                GatherLite:debug("received p2p " .. node.type .. " node from " .. sender);
+                node.coins = 0;
+                local isQuest = false;
+                if node.loot and GatherLite:tablelength(node.loot) > 0 then
+                    for i, item in ipairs(node.loot) do
+                        local name = select(1, GetItemInfo(node.target));
+                        local type = select(6, GetItemInfo(node.target))
+                        if type == "Quest" then
+                            isQuest = true
+                        end
+                    end
+                else
+                    node.loot = {};
+                end
+
+                if not isQuest then
+                    table.insert(GatherLite.db.global.nodes[node.type], node);
+                    GatherLite:createNode(node)
+                    GatherLite:debug("received p2p " .. node.type .. " node from " .. sender);
+                end
             end
         end
     end
@@ -818,14 +863,6 @@ function GatherLite:sanitizeDatabase()
             GatherLite:sanitizeNode(type, i)
         end
     end
-
-    --for i, node in pairs(GatherLite.db.global.nodes["treasure"]) do
-    --    for link, item in ipairs(node.loot) do
-    --        local name = select(1, GetItemInfo(item.link))
-    --        local type = select(6, GetItemInfo(item.link))
-    --        print(name, type);
-    --    end
-    --end
 end
 
 function GatherLite:p2pDatabase()
@@ -833,7 +870,9 @@ function GatherLite:p2pDatabase()
         GatherLite:debug("Sharing database with guild")
         for i, data in pairs(GatherLite.db.global.nodes) do
             for i, node in pairs(data) do
-                GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD", "NORMAL")
+                GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD", nil, "NORMAL", function()
+                    --print("node sent")
+                end)
             end
         end
     end
