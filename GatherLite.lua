@@ -38,8 +38,6 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
         if button == "LeftButton" then
             if IsShiftKeyDown() then
                 GatherLite.db.char.enabled = not GatherLite.db.char.enabled;
-                GatherLite:drawMinimap();
-                GatherLite:drawWorldmap();
                 return ;
             end
 
@@ -47,12 +45,15 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
             UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
             ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
         elseif button == "RightButton" then
-            if not GatherLite.OptionsPanel:IsShown() then
-                PlaySound(882);
-                LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
-            else
-                GatherLite.OptionsPanel:Hide();
-            end
+            InterfaceOptionsFrame_OpenToCategory("GatherLite")
+            InterfaceOptionsFrame_OpenToCategory("GatherLite") -- run it again to set the correct tab
+
+            --if not GatherLite.OptionsPanel:IsShown() then
+            --    PlaySound(882);
+            --    LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
+            --else
+            --    GatherLite.OptionsPanel:Hide();
+            --end
         end
     end,
 
@@ -87,10 +88,10 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterComm(_GatherLite.name .. "Node", "p2pNode")
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
 
-    GatherLite:ScheduleTimer("p2pDatabase", 10)
+    GatherLite.syncTimer = GatherLite:ScheduleTimer("p2pDatabase", 5)
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 5)
-    GatherLite:ScheduleRepeatingTimer("p2pDatabase", 3600)
-    GatherLite:ScheduleRepeatingTimer("checkNodePositions", 1);
+    GatherLite:ScheduleRepeatingTimer("UpdateNodes", 1);
+    GatherLite:ScheduleRepeatingTimer("syncCheck", 10)
 
     GatherLite:RegisterEvent("UNIT_SPELLCAST_SENT", "EventHandler")
     GatherLite:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED", "EventHandler")
