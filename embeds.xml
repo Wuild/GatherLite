@@ -25,6 +25,7 @@
     <Script file="Locale\frFR.lua"/>
     <Script file="Locale\itIT.lua"/>
     <Script file="Locale\ruRU.lua"/>
+    <Script file="Locale\zhCN.lua"/>
 
     <Script file="Scripts\data.lua"/>
     <Script file="Scripts\methods.lua"/>
