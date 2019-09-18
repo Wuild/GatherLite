@@ -16,9 +16,12 @@ _GatherLite.gatherSpellRanges = {
 _GatherLite.TimeSinceLastUpdate = 0;
 _GatherLite.UpdateInterval = 1.0;
 _GatherLite.nodes = {
-    minimap = {},
-    worldmap = {}
-};
+    mining = {},
+    herbalism = {},
+    treasure = {},
+    fish = {},
+    artifacts = {}
+}
 
 -- tracker data
 _GatherLite.tracker = {

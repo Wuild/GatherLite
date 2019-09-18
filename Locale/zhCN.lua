@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "zhCN")
+local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "zhCN", true)
 L["mining"] = "矿石"
 L["herbalism"] = "草药"
 L["fish"] = "鱼群"

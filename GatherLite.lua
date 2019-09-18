@@ -59,14 +59,14 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
 
     OnTooltipShow = function(tooltip)
         tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.mining));
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(_GatherLite.nodes.mining));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(_GatherLite.nodes.herbalism));
 
         if not _GatherLite.isClassic then
-            tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('archaeology'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.artifacts));
+            tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('archaeology'), "white"), GatherLite:tablelength(_GatherLite.nodes.artifacts));
         end
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('fish'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.fish));
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('treasures'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.treasure));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('fish'), "white"), GatherLite:tablelength(_GatherLite.nodes.fish));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('treasures'), "white"), GatherLite:tablelength(_GatherLite.nodes.treasure));
 
         tooltip:AddLine(" ");
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.left_click_text"));
@@ -101,15 +101,18 @@ function GatherLite:OnInitialize()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.mining) .. "|r", "mining nodes");
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.herbalism) .. "|r", "herbalism nodes");
+    GatherLite:print("Please consider sharing your database over at our website", GatherLite:Colorize("http://gatherlite.labcake.org", "cyan"), "as we are currently building a predefined database and all contributions are appreciated");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.mining) .. "|r", "mining nodes");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.herbalism) .. "|r", "herbalism nodes");
     if not _GatherLite.isClassic then
-        GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.artifacts) .. "|r", "artifact nodes");
+        GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.artifacts) .. "|r", "artifact nodes");
     end
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.fish) .. "|r", "fishing spots");
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(GatherLite.db.global.nodes.treasure) .. "|r", "treasures");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.fish) .. "|r", "fishing spots");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.treasure) .. "|r", "treasures");
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
+
+    GatherLite:loadDatabase();
 
     GatherLite:drawMinimap();
     GatherLite:drawWorldmap();
