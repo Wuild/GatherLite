@@ -46,6 +46,8 @@ L["settings.p2p"] = "P2P settings"
 L["settings.p2p.guild"] = "Share nodes with guild"
 L["settings.p2p.party"] = "Share nodes with party"
 
+L["settings.p2p.sync.guild"] = "Guild sync %s"
+
 L["settings.reload"] = "Reload user interface"
 L["settings.warning"] = "All options marked with * requires the user interface to be reloaded"
 

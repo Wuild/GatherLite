@@ -483,7 +483,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         mining = {
                             type = "execute",
                             name = function()
-                                return "Guild sync " .. GatherLite.syncedNodes.guild .. "/" .. GatherLite.totalNodes;
+                                return GatherLite:translate("settings.p2p.sync.guild", GatherLite.syncedNodes.guild .. "/" .. GatherLite.totalNodes);
                             end,
                             order = 1,
                             disabled = function()
