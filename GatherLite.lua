@@ -101,7 +101,9 @@ function GatherLite:OnInitialize()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
-    GatherLite:print("Please consider sharing your database over at our website", GatherLite:Colorize("http://gatherlite.labcake.org", "cyan"), "as we are currently building a predefined database and all contributions are appreciated");
+    if _GatherLite.isClassic then
+        GatherLite:print("Please consider sharing your database over at our website", GatherLite:Colorize("http://gatherlite.labcake.org", "cyan"), "as we are currently building a predefined database and all contributions are appreciated");
+    end
     GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.mining) .. "|r", "mining nodes");
     GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.herbalism) .. "|r", "herbalism nodes");
     if not _GatherLite.isClassic then

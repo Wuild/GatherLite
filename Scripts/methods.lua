@@ -40,13 +40,13 @@ end
 
 -- print message
 function GatherLite:print(...)
-    print("|cffF0E68C[" .. _GatherLite.name .. "]|cffFFFFFF:", ...)
+    print(GatherLite:Colorize("<" .. _GatherLite.name .. ">", "yellow"), ...)
 end
 
 -- print debug message
 function GatherLite:debug(...)
     if (GatherLite.db.char.debugging) then
-        print("|cff008080[" .. _GatherLite.name .. " - Debugging]|cffFFFFFF:", ...)
+        print(GatherLite:Colorize("<" .. _GatherLite.name .. " - Debugging>", "blue"), ...)
     end
 end
 
@@ -1002,13 +1002,11 @@ function GatherLite:UpdateNodes()
 end
 
 function GatherLite:loadDatabase()
-    if not GatherLite_Data then
-        return
-    end
-
-    for type, arr in pairs(GatherLite_Data) do
-        for i, node in pairs(arr) do
-            table.insert(_GatherLite.nodes[type], node)
+    if GatherLite_Data then
+        for type, arr in pairs(GatherLite_Data) do
+            for i, node in pairs(arr) do
+                table.insert(_GatherLite.nodes[type], node)
+            end
         end
     end
 
