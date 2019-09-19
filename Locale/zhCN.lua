@@ -1,4 +1,7 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "zhCN", true)
+local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "zhCN")
+if not L then
+    return
+end
 L["mining"] = "矿石"
 L["herbalism"] = "草药"
 L["fish"] = "鱼群"
