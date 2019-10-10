@@ -1,4 +1,5 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "enUS", true)
+L["tracking"] = "Tracking"
 L["mining"] = "Mining"
 L["herbalism"] = "Herbalism"
 L["fish"] = "Fish"
@@ -6,6 +7,7 @@ L["treasures"] = "Treasures"
 L["archaeology"] = "Archaeology"
 
 L["settings.general"] = "General settings"
+L["settings.general.predefined"] = "Use predefined database"
 L["settings.general.enable"] = "Enable GatherLite"
 L["settings.general.minimap"] = "Show minimap button"
 L["settings.general.debugging"] = "Debugging mode"

@@ -34,6 +34,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite.db.char.enabled
                     end
                 },
+
                 minimap = {
                     name = function()
                         return GatherLite:translate("settings.general.minimap");
@@ -52,18 +53,12 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return not GatherLite.db.profile.minimap.hide
                     end
                 },
-                Spacer_1 = {
-                    type = "description",
-                    order = 5,
-                    name = " ",
-                    fontSize = "large",
-                },
                 debugging = {
                     name = function()
                         return GatherLite:translate("settings.general.debugging");
                     end,
                     type = "toggle",
-                    order = 6,
+                    order = 4,
                     set = function(info, val)
                         GatherLite.db.char.debugging = val;
                     end,
@@ -71,15 +66,94 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite.db.char.debugging
                     end
                 },
-                Spacer_2 = {
+                predefined = {
+                    name = function()
+                        return GatherLite:translate("settings.general.predefined");
+                    end,
+                    type = "toggle",
+                    order = 5,
+                    set = function(info, val)
+                        GatherLite.db.char.predefined = val;
+                        needReload = true;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.predefined
+                    end,
+                    width = "full"
+                },
+                Spacer_1 = {
                     type = "description",
-                    order = 7,
+                    order = 6,
                     name = " ",
                     fontSize = "large",
                 },
-                Spacer_3 = {
-                    type = "description",
+                tracking = {
+                    type = "group",
+                    name = GatherLite:translate('tracking'),
+                    inline = true,
                     order = 7,
+                    args = {
+                        mining = {
+                            name = function()
+                                return GatherLite:translate('mining');
+                            end,
+                            type = "toggle",
+                            order = 1,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.mining = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.mining
+                            end,
+                            width = "half"
+                        },
+                        herbalism = {
+                            name = function()
+                                return GatherLite:translate('herbalism');
+                            end,
+                            type = "toggle",
+                            order = 2,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.herbalism = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.herbalism
+                            end,
+                            width = "half"
+                        },
+                        fish = {
+                            name = function()
+                                return GatherLite:translate('fish');
+                            end,
+                            type = "toggle",
+                            order = 3,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.fish = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.fish
+                            end,
+                            width = "half"
+                        },
+                        treasure = {
+                            name = function()
+                                return GatherLite:translate('treasures');
+                            end,
+                            type = "toggle",
+                            order = 4,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.treasure = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.treasure
+                            end,
+                            width = "half"
+                        }
+                    }
+                },
+                Spacer_2 = {
+                    type = "description",
+                    order = 8,
                     name = " ",
                     fontSize = "large",
                 },

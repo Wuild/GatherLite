@@ -897,17 +897,34 @@ function GatherLite:sanitizeDatabase()
     end
 end
 
+function GatherLite:copy(obj, seen)
+    if type(obj) ~= 'table' then
+        return obj
+    end
+    if seen and seen[obj] then
+        return seen[obj]
+    end
+    local s = seen or {}
+    local res = setmetatable({}, getmetatable(obj))
+    s[obj] = res
+    for k, v in pairs(obj) do
+        res[GatherLite:copy(k, s)] = GatherLite:copy(v, s)
+    end
+    return res
+end
+
 function GatherLite:p2pDatabase()
     GatherLite:CancelTimer(GatherLite.syncTimer)
-    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 then
+    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 and GatherLite.tablelength(GatherLite.db.global.nodes) > 0 then
         GatherLite:debug("Starting synchronization with guild")
         GatherLite.synchronizing = true;
+        local totalNodes = GatherLite:copy(GatherLite.totalNodes);
         for i, data in pairs(GatherLite.db.global.nodes) do
             for i, node in pairs(data) do
                 GatherLite:SendCommMessage(_GatherLite.name .. "Node", GatherLite:Serialize(node), "GUILD", nil, "BULK", function(args, bytes, totalBytes)
                     if bytes == totalBytes then
                         GatherLite.syncedNodes.guild = GatherLite.syncedNodes.guild + 1;
-                        if GatherLite.syncedNodes.guild == GatherLite.totalNodes then
+                        if GatherLite.syncedNodes.guild == totalNodes then
                             GatherLite.syncedNodes.guild = 0;
                             GatherLite.syncTimer = GatherLite:ScheduleTimer("p2pDatabase", 3600)
                             GatherLite.synchronizing = false;
@@ -1002,10 +1019,12 @@ function GatherLite:UpdateNodes()
 end
 
 function GatherLite:loadDatabase()
-    if GatherLite_Data then
-        for type, arr in pairs(GatherLite_Data) do
-            for i, node in pairs(arr) do
-                table.insert(_GatherLite.nodes[type], node)
+    if GatherLite.db.char.predefined then
+        if _GatherLite.database then
+            for type, arr in pairs(_GatherLite.database) do
+                for i, node in pairs(arr) do
+                    table.insert(_GatherLite.nodes[type], node)
+                end
             end
         end
     end

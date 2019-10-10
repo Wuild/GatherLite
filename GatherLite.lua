@@ -104,13 +104,6 @@ function GatherLite:OnInitialize()
     if _GatherLite.isClassic then
         GatherLite:print("Please consider sharing your database over at our website", GatherLite:Colorize("http://gatherlite.labcake.org", "cyan"), "as we are currently building a predefined database and all contributions are appreciated");
     end
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.mining) .. "|r", "mining nodes");
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.herbalism) .. "|r", "herbalism nodes");
-    if not _GatherLite.isClassic then
-        GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.artifacts) .. "|r", "artifact nodes");
-    end
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.fish) .. "|r", "fishing spots");
-    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.treasure) .. "|r", "treasures");
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
 
@@ -119,4 +112,14 @@ function GatherLite:OnInitialize()
     GatherLite:drawMinimap();
     GatherLite:drawWorldmap();
 
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.mining) .. "|r", "mining nodes");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.herbalism) .. "|r", "herbalism nodes");
+    if not _GatherLite.isClassic then
+        GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.artifacts) .. "|r", "artifact nodes");
+    end
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.fish) .. "|r", "fishing spots");
+    GatherLite:debug("Found", "|cFF00FF00" .. GatherLite:tablelength(_GatherLite.nodes.treasure) .. "|r", "treasures");
+
+
+    self.db.global.classic = _GatherLite.isClassic;
 end

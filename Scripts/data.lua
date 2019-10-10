@@ -100,6 +100,7 @@ _GatherLite.configsDefaults = {
     },
     char = {
         enabled = true,
+        predefined = true,
         debugging = false,
         tracking = {
             mining = true,

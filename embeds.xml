@@ -30,4 +30,6 @@
     <Script file="Scripts\data.lua"/>
     <Script file="Scripts\methods.lua"/>
     <Script file="Scripts\settings.lua"/>
+
+    <Script file="db\classic.lua"/>
 </Ui>
