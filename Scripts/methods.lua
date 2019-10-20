@@ -915,7 +915,7 @@ end
 
 function GatherLite:p2pDatabase()
     GatherLite:CancelTimer(GatherLite.syncTimer)
-    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 and GatherLite.tablelength(GatherLite.db.global.nodes) > 0 then
+    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 and GatherLite:tablelength(GatherLite.db.global.nodes) > 0 then
         GatherLite:debug("Starting synchronization with guild")
         GatherLite.synchronizing = true;
         local totalNodes = GatherLite:copy(GatherLite.totalNodes);
