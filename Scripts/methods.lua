@@ -655,7 +655,7 @@ function GatherLite:createMinimapNode(node, ik)
     f.node = node;
     f.type = "minimap";
 
-    if GatherLite.db.char.worldmap.neighbors then
+    if GatherLite.db.char.minimap.neighbors then
         Pins:AddMinimapIconWorld(GatherLite, f, instanceID, x, y, GatherLite.db.char.minimap.edge);
     else
         Pins:AddMinimapIconMap(GatherLite, f, node.position.mapID, node.position.x, node.position.y, true, GatherLite.db.char.minimap.edge)
