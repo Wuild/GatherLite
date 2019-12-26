@@ -174,18 +174,18 @@ function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
 end
 
 -- find existing node nearby
-function GatherLite:findExistingNode(spellType, x, y)
+function GatherLite:findExistingNode(spellType, x, y, mapID)
     for k, node in pairs(_GatherLite.nodes[spellType]) do
-        if GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
+        if node.position.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
             return node;
         end
     end
     return nil;
 end
 
-function GatherLite:findExistingNodeLocal(spellType, x, y)
+function GatherLite:findExistingNodeLocal(spellType, x, y, mapID)
     for k, node in pairs(GatherLite.db.global.nodes[spellType]) do
-        if GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
+        if node.position.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
             return node;
         end
     end
@@ -252,7 +252,7 @@ function GatherLite:foundNode()
     end ;
 
     local icon, target;
-    local node = GatherLite:findExistingNodeLocal(_GatherLite.tracker.spellType, x, y);
+    local node = GatherLite:findExistingNodeLocal(_GatherLite.tracker.spellType, x, y, mapID);
     if not node then
         -- found treasure or node
         if _GatherLite.tracker.spellType == "treasure" then
@@ -806,7 +806,7 @@ function GatherLite:p2pNode(event, msg, channel, sender)
     local success, node = GatherLite:Deserialize(msg);
     if success then
         if node.position and node.position.mapID and node.position.x and node.position.y then
-            if not GatherLite:findExistingNodeLocal(node.type, node.position.x, node.position.y) then
+            if not GatherLite:findExistingNodeLocal(node.type, node.position.x, node.position.y, node.position.mapID) then
                 node.shared = true;
                 node.coins = 0;
                 local isQuest = false;
@@ -915,7 +915,7 @@ end
 
 function GatherLite:p2pDatabase()
     GatherLite:CancelTimer(GatherLite.syncTimer)
-    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 and GatherLite:tablelength(GatherLite.db.global.nodes) > 0 then
+    if IsInGuild() and GatherLite.db.char.p2p.guild and GatherLite.syncedNodes.guild == 0 and GatherLite.tablelength(GatherLite.db.global.nodes) > 0 then
         GatherLite:debug("Starting synchronization with guild")
         GatherLite.synchronizing = true;
         local totalNodes = GatherLite:copy(GatherLite.totalNodes);
@@ -1031,7 +1031,7 @@ function GatherLite:loadDatabase()
 
     for type, arr in pairs(GatherLite.db.global.nodes) do
         for i, node in pairs(arr) do
-            local pre = GatherLite:findExistingNode(node.type, node.position.x, node.position.y);
+            local pre = GatherLite:findExistingNode(node.type, node.position.x, node.position.y, node.position.mapID);
             if not pre then
                 table.insert(_GatherLite.nodes[type], node)
             else
