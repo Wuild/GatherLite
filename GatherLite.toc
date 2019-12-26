@@ -1,8 +1,8 @@
-## Interface: 11302
+## Interface: 11303
 ## X-Min-Interface: 80200
 ## Title: GatherLite
 ## Author: Wuild
-## Version: @project-version@
+## Version: 2.0.0
 ## OptionalDeps: GatherLite_Data, Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## Notes: GatherLite remembers where you found stuff
 ## SavedVariables: GatherLiteGlobalSettings GatherLiteConfig

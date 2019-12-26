@@ -173,18 +173,9 @@ function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
     end ;
 end
 
--- find existing node nearby
-function GatherLite:findExistingNode(spellType, x, y, mapID)
-    for k, node in pairs(_GatherLite.nodes[spellType]) do
-        if node.position.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
-            return node;
-        end
-    end
-    return nil;
-end
-
 function GatherLite:findExistingNodeLocal(spellType, x, y, mapID)
     for k, node in pairs(GatherLite.db.global.nodes[spellType]) do
+        GatherLite:print(mapID, node.position.mapID)
         if node.position.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
             return node;
         end
@@ -440,15 +431,14 @@ end
 
 -- draw minimap nodes
 function GatherLite:drawMinimap()
-    if not GatherLite.db.char.enabled or not GatherLite.db.char.minimap.enabled then
-        return
-    end
-
     GatherLite:debug("Updating mini map nodes");
 
     for type in pairs(_GatherLite.nodes) do
         for k, node in pairs(_GatherLite.nodes[type]) do
-            GatherLite:createMinimapNode(node, k);
+           local node = GatherLite:createMinimapNode(node, k);
+            if not GatherLite.db.char.enabled or not GatherLite.db.char.minimap.enabled then
+                node.FakeHide();
+            end
         end
     end
 
@@ -660,6 +650,8 @@ function GatherLite:createMinimapNode(node, ik)
     else
         Pins:AddMinimapIconMap(GatherLite, f, node.position.mapID, node.position.x, node.position.y, true, GatherLite.db.char.minimap.edge)
     end
+
+    return f;
 end
 
 function GatherLite:createNode(node)
@@ -713,21 +705,6 @@ function GatherLite:MinimapContextMenu()
                     end ;
                 end
             })
-
-            if not _GatherLite.isClassic then
-                GatherLite:addContextItem({
-                    text = GatherLite:translate('archaeology'),
-                    icon = 134435,
-                    checked = GatherLite.db.char.tracking.artifacts,
-                    callback = function()
-                        if GatherLite.db.char.tracking.artifacts then
-                            GatherLite.db.char.tracking.artifacts = false;
-                        else
-                            GatherLite.db.char.tracking.artifacts = true;
-                        end ;
-                    end
-                })
-            end
 
             GatherLite:addContextItem({
                 text = GatherLite:translate('fish'),
@@ -1019,26 +996,9 @@ function GatherLite:UpdateNodes()
 end
 
 function GatherLite:loadDatabase()
-    if GatherLite.db.char.predefined then
-        if _GatherLite.database then
-            for type, arr in pairs(_GatherLite.database) do
-                for i, node in pairs(arr) do
-                    table.insert(_GatherLite.nodes[type], node)
-                end
-            end
-        end
-    end
-
     for type, arr in pairs(GatherLite.db.global.nodes) do
         for i, node in pairs(arr) do
-            local pre = GatherLite:findExistingNode(node.type, node.position.x, node.position.y, node.position.mapID);
-            if not pre then
-                table.insert(_GatherLite.nodes[type], node)
-            else
-                pre.loot = node.loot;
-                pre.coins = node.coins;
-            end
-
+            table.insert(_GatherLite.nodes[type], node)
             GatherLite.totalNodes = GatherLite.totalNodes + 1;
         end
     end

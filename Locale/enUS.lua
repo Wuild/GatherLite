@@ -4,7 +4,6 @@ L["mining"] = "Mining"
 L["herbalism"] = "Herbalism"
 L["fish"] = "Fish"
 L["treasures"] = "Treasures"
-L["archaeology"] = "Archaeology"
 
 L["settings.general"] = "General settings"
 L["settings.general.predefined"] = "Use predefined database"

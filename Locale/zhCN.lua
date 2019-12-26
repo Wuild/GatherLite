@@ -6,7 +6,6 @@ L["mining"] = "矿石"
 L["herbalism"] = "草药"
 L["fish"] = "鱼群"
 L["treasures"] = "宝箱"
-L["archaeology"] = "考古"
 
 L["settings.general"] = "常规设置"
 L["settings.general.enable"] = "启用 GatherLite"
