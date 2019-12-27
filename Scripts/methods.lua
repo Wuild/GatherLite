@@ -175,7 +175,6 @@ end
 
 function GatherLite:findExistingNodeLocal(spellType, x, y, mapID)
     for k, node in pairs(GatherLite.db.global.nodes[spellType]) do
-        GatherLite:print(mapID, node.position.mapID)
         if node.position.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.position.x, node.position.y, spellType) then
             return node;
         end
