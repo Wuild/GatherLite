@@ -436,7 +436,7 @@ function GatherLite:drawMinimap()
         for k, node in pairs(_GatherLite.nodes[type]) do
            local node = GatherLite:createMinimapNode(node, k);
             if not GatherLite.db.char.enabled or not GatherLite.db.char.minimap.enabled then
-                node.FakeHide();
+                node:FakeHide();
             end
         end
     end
