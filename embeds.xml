@@ -1,33 +1,39 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
-    <Script file="Libs\LibStub\LibStub.lua"/>
-    <Include file="Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
-    <Include file="Libs\AceAddon-3.0\AceAddon-3.0.xml"/>
-    <Include file="Libs\AceEvent-3.0\AceEvent-3.0.xml"/>
-    <Include file="Libs\AceTimer-3.0\AceTimer-3.0.xml"/>
-    <Include file="Libs\AceDB-3.0\AceDB-3.0.xml"/>
-    <Include file="Libs\AceLocale-3.0\AceLocale-3.0.xml"/>
-    <Include file="Libs\AceConsole-3.0\AceConsole-3.0.xml"/>
-    <Include file="Libs\AceGUI-3.0\AceGUI-3.0.xml"/>
-    <Include file="Libs\AceConfig-3.0\AceConfig-3.0.xml"/>
-    <Include file="Libs\AceComm-3.0\AceComm-3.0.xml"/>
-    <Include file="Libs\AceSerializer-3.0\AceSerializer-3.0.xml"/>
-    <Include file="Libs\Semver\Semver.xml"/>
+    <Script file="libraries\LibStub\LibStub.lua"/>
+    <Include file="libraries\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
+    <Include file="libraries\AceAddon-3.0\AceAddon-3.0.xml"/>
+    <Include file="libraries\AceEvent-3.0\AceEvent-3.0.xml"/>
+    <Include file="libraries\AceTimer-3.0\AceTimer-3.0.xml"/>
+    <Include file="libraries\AceDB-3.0\AceDB-3.0.xml"/>
+    <Include file="libraries\AceLocale-3.0\AceLocale-3.0.xml"/>
+    <Include file="libraries\AceConsole-3.0\AceConsole-3.0.xml"/>
+    <Include file="libraries\AceGUI-3.0\AceGUI-3.0.xml"/>
+    <Include file="libraries\AceConfig-3.0\AceConfig-3.0.xml"/>
+    <Include file="libraries\AceComm-3.0\AceComm-3.0.xml"/>
+    <Include file="libraries\AceSerializer-3.0\AceSerializer-3.0.xml"/>
+    <Include file="libraries\Semver\Semver.xml"/>
 
-    <Script file="Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
-    <Script file="Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
-    <Script file="Libs\HereBeDragons\HereBeDragons-2.0.lua"/>
-    <Script file="Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua"/>
+    <Script file="libraries\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+    <Script file="libraries\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
+    <Script file="libraries\HereBeDragons\HereBeDragons-2.0.lua"/>
+    <Script file="libraries\HereBeDragons\HereBeDragons-Migrate.lua"/>
+    <Script file="libraries\HereBeDragons\HereBeDragons-Pins-2.0.lua"/>
 
+    <Script file="data/ores.lua"/>
+    <Script file="data/herbs.lua"/>
 
-    <Script file="Locale\enUS.lua"/>
-    <Script file="Locale\deDE.lua"/>
-    <Script file="Locale\esES.lua"/>
-    <Script file="Locale\frFR.lua"/>
-    <Script file="Locale\itIT.lua"/>
-    <Script file="Locale\ruRU.lua"/>
-    <Script file="Locale\zhCN.lua"/>
+    <Script file="locales\enUS.lua"/>
+    <Script file="locales\deDE.lua"/>
+    <Script file="locales\esES.lua"/>
+    <Script file="locales\frFR.lua"/>
+    <Script file="locales\itIT.lua"/>
+    <Script file="locales\ruRU.lua"/>
+    <Script file="locales\zhCN.lua"/>
 
-    <Script file="Scripts\data.lua"/>
-    <Script file="Scripts\methods.lua"/>
-    <Script file="Scripts\settings.lua"/>
+    <Script file="scripts/config.lua"/>
+    <Script file="scripts/frame.lua"/>
+    <Script file="scripts/methods.lua"/>
+    <Script file="scripts/settings.lua"/>
+    <Script file="scripts/main.lua"/>
+
 </Ui>

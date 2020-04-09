@@ -13,6 +13,7 @@ local MapMigrationData, mapFileToIdMap, uiMapIdToIdMap
 -- @return The uiMapId corresponding to this map, if any
 function HBDMigrate:GetUIMapIDFromMapAreaId(mapId, floor)
     if not mapId then return nil end
+    if not mapFileToIdMap then SetupMigrationData() end
     local data = MapMigrationData[mapId]
     if not data then return nil end
 

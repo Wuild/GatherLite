@@ -1,15 +1,10 @@
-## Interface: 11303
-## X-Min-Interface: 80200
-## Title: GatherLite
+## Interface: 11304
+## Title: GatherLite|cFF00FF00 3.0.0-alpha|r
 ## Author: Wuild
-## Version: 2.0.1
-## OptionalDeps: GatherLite_Data, Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
-## Notes: GatherLite remembers where you found stuff
-## SavedVariables: GatherLiteGlobalSettings GatherLiteConfig
+## Version: 3.0.0-alpha
+## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
+## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
 
 #embeds
 embeds.xml
-
-#main
-GatherLite.lua

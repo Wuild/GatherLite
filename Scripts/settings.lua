@@ -1,6 +1,7 @@
 local name, _GatherLite = ...
 
 local needReload = false;
+local GFrame = LibStub("GatherLiteFrame");
 
 LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
     type = "group",
@@ -20,21 +21,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "header",
                     order = 1,
                 },
-
-                enable = {
-                    name = function()
-                        return GatherLite:translate("settings.general.enable");
-                    end,
-                    type = "toggle",
-                    order = 2,
-                    set = function(info, val)
-                        GatherLite.db.char.enabled = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.enabled
-                    end
-                },
-
                 minimap = {
                     name = function()
                         return GatherLite:translate("settings.general.minimap");
@@ -66,21 +52,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return GatherLite.db.char.debugging
                     end
                 },
-                predefined = {
-                    name = function()
-                        return GatherLite:translate("settings.general.predefined");
-                    end,
-                    type = "toggle",
-                    order = 5,
-                    set = function(info, val)
-                        GatherLite.db.char.predefined = val;
-                        needReload = true;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.predefined
-                    end,
-                    width = "full"
-                },
                 Spacer_1 = {
                     type = "description",
                     order = 6,
@@ -101,6 +72,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 1,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.mining = val;
+                                GatherLite:UpdateNodes()
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.mining
@@ -115,37 +87,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 2,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.herbalism = val;
+                                GatherLite:UpdateNodes()
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.herbalism
-                            end,
-                            width = "half"
-                        },
-                        fish = {
-                            name = function()
-                                return GatherLite:translate('fish');
-                            end,
-                            type = "toggle",
-                            order = 3,
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.fish = val;
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.fish
-                            end,
-                            width = "half"
-                        },
-                        treasure = {
-                            name = function()
-                                return GatherLite:translate('treasures');
-                            end,
-                            type = "toggle",
-                            order = 4,
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.treasure = val;
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.treasure
                             end,
                             width = "half"
                         }
@@ -157,77 +102,19 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     name = " ",
                     fontSize = "large",
                 },
-                reseters = {
-                    type = "group",
-                    name = "Reset",
-                    inline = true,
-                    order = 10,
-                    args = {
-                        mining = {
-                            type = "execute",
-                            name = function()
-                                return GatherLite:translate("settings.reset.mining");
-                            end,
-                            order = 1,
-                            confirm = function()
-                                return GatherLite:translate("confirm.reset");
-                            end,
-                            func = function()
-                                GatherLite:ResetDatabaseType("mining")
-                            end
-                        },
-                        herbalism = {
-                            type = "execute",
-                            name = function()
-                                return GatherLite:translate("settings.reset.herbalism");
-                            end,
-                            order = 2,
-                            confirm = function()
-                                return GatherLite:translate("confirm.reset");
-                            end,
-                            func = function()
-                                GatherLite:ResetDatabaseType("herbalism")
-                            end
-                        },
-                        fish = {
-                            type = "execute",
-                            name = function()
-                                return GatherLite:translate("settings.reset.fish");
-                            end,
-                            order = 3,
-                            confirm = function()
-                                return GatherLite:translate("confirm.reset");
-                            end,
-                            func = function()
-                                GatherLite:ResetDatabaseType("fish")
-                            end
-                        },
-                        treasure = {
-                            type = "execute",
-                            name = function()
-                                return GatherLite:translate("settings.reset.treasure");
-                            end,
-                            order = 4,
-                            confirm = function()
-                                return GatherLite:translate("confirm.reset");
-                            end,
-                            func = function()
-                                GatherLite:ResetDatabaseType("treasure")
-                            end
-                        },
-                    }
-                },
-                reset = {
-                    type = "execute",
+                predefined = {
                     name = function()
-                        return GatherLite:translate("settings.reset.all");
+                        return GatherLite:translate("settings.general.predefined");
                     end,
-                    order = 11,
-                    confirm = function()
-                        return GatherLite:translate("confirm.reset");
+                    type = "toggle",
+                    order = 10,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.global.predefined = val;
+                        GatherLite:UpdateNodes()
                     end,
-                    func = function()
-                        GatherLite:ResetDatabase()
+                    get = function(info)
+                        return GatherLite.db.global.predefined
                     end
                 },
             }
@@ -246,20 +133,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "header",
                     order = 1,
                 },
-                enable = {
-                    name = function()
-                        return GatherLite:translate("settings.map.show");
-                    end,
-                    type = "toggle",
-                    order = 2,
-                    width = "full",
-                    set = function(info, val)
-                        GatherLite.db.char.worldmap.enabled = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.worldmap.enabled
-                    end
-                },
                 loot = {
                     name = function()
                         return GatherLite:translate("settings.map.loot");
@@ -272,36 +145,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     end,
                     get = function(info)
                         return GatherLite.db.char.worldmap.loot
-                    end
-                },
-                neighbors = {
-                    name = function()
-                        return GatherLite:translate("settings.map.neighbors");
-                    end,
-                    type = "toggle",
-                    order = 4,
-                    width = "full",
-                    set = function(info, val)
-                        GatherLite.db.char.worldmap.neighbors = val;
-                        needReload = true;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.worldmap.neighbors
-                    end
-                },
-                continent = {
-                    name = function()
-                        return GatherLite:translate("settings.map.continent");
-                    end,
-                    type = "toggle",
-                    order = 4,
-                    width = "full",
-                    set = function(info, val)
-                        GatherLite.db.char.worldmap.continent = val;
-                        needReload = true;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.worldmap.continent
                     end
                 },
                 sliders = {
@@ -322,7 +165,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.worldmap.size = val;
-                                for i, frame in ipairs(GatherLite.frames) do
+                                for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "worldmap" then
                                         frame:SetSize(val, val)
                                     end
@@ -344,7 +187,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.worldmap.opacity = val;
-                                for i, frame in ipairs(GatherLite.frames) do
+                                for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "worldmap" then
                                         frame:SetAlpha(val)
                                     end
@@ -373,20 +216,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     order = 1,
                 },
-                enable = {
-                    name = function()
-                        return GatherLite:translate("settings.minimap.show");
-                    end,
-                    type = "toggle",
-                    width = "full",
-                    order = 2,
-                    set = function(info, val)
-                        GatherLite.db.char.minimap.enabled = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.minimap.enabled
-                    end
-                },
                 loot = {
                     name = function()
                         return GatherLite:translate("settings.minimap.loot");
@@ -399,36 +228,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     end,
                     get = function(info)
                         return GatherLite.db.char.minimap.loot
-                    end
-                },
-                edge = {
-                    name = function()
-                        return GatherLite:translate("settings.minimap.edge");
-                    end,
-                    type = "toggle",
-                    width = "full",
-                    order = 4,
-                    set = function(info, val)
-                        GatherLite.db.char.minimap.edge = val;
-                        needReload = true;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.minimap.edge
-                    end
-                },
-                neighbors = {
-                    name = function()
-                        return GatherLite:translate("settings.minimap.neighbors");
-                    end,
-                    type = "toggle",
-                    order = 5,
-                    width = "full",
-                    set = function(info, val)
-                        GatherLite.db.char.minimap.neighbors = val;
-                        needReload = true;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.minimap.neighbors
                     end
                 },
                 sliders = {
@@ -450,7 +249,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             set = function(info, val)
                                 --MyAddon.enabled = val
                                 GatherLite.db.char.minimap.size = val;
-                                for i, frame in ipairs(GatherLite.frames) do
+                                for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
                                         frame:SetSize(val, val)
                                     end
@@ -473,7 +272,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.minimap.opacity = val;
-                                for i, frame in ipairs(GatherLite.frames) do
+                                for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
                                         frame:SetAlpha(val)
                                     end
@@ -501,106 +300,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             end
                         }
                     }
-                }
-            }
-        },
-        p2p = {
-            name = function()
-                return GatherLite:translate("settings.p2p");
-            end,
-            type = "group",
-            order = 4,
-            args = {
-                header = {
-                    name = function()
-                        return GatherLite:translate("settings.p2p");
-                    end,
-                    type = "header",
-                    width = "full",
-                    order = 1,
-                },
-                guild = {
-                    name = function()
-                        return GatherLite:translate("settings.p2p.guild");
-                    end,
-                    type = "toggle",
-                    width = "full",
-                    order = 2,
-                    set = function(info, val)
-                        GatherLite.db.char.p2p.guild = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.p2p.guild
-                    end
-                },
-                party = {
-                    name = function()
-                        return GatherLite:translate("settings.p2p.party");
-                    end,
-                    type = "toggle",
-                    width = "full",
-                    order = 2,
-                    set = function(info, val)
-                        GatherLite.db.char.p2p.party = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.p2p.party
-                    end
-                },
-
-                actions = {
-                    type = "group",
-                    name = "Sync actions",
-                    inline = true,
-                    order = 10,
-                    args = {
-                        mining = {
-                            type = "execute",
-                            name = function()
-                                return GatherLite:translate("settings.p2p.sync.guild", GatherLite.syncedNodes.guild .. "/" .. GatherLite.totalNodes);
-                            end,
-                            order = 1,
-                            disabled = function()
-                                return GatherLite.synchronizing or not GatherLite.db.char.p2p.guild
-                            end,
-                            func = function()
-                                GatherLite:p2pDatabase();
-                            end
-                        }
-                    }
-                }
-            }
-        },
-        actions = {
-            type = "group",
-            name = " ",
-            inline = true,
-            order = 6,
-            args = {
-                description = {
-                    type = "description",
-                    name = function()
-                        return GatherLite:translate("settings.warning");
-                    end,
-                    width = "full",
-                    order = 1,
-                },
-                reload = {
-                    type = "execute",
-                    name = function()
-                        return GatherLite:translate("settings.reload");
-                    end,
-                    order = 3,
-                    hidden = function()
-                        if needReload then
-                            return false
-                        else
-                            return true;
-                        end
-                    end,
-                    func = function()
-                        ReloadUI()
-                    end
                 }
             }
         }
