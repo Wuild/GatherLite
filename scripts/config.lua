@@ -15,9 +15,11 @@ _GatherLite.configsDefaults = {
     },
     char = {
         debugging = false,
+        ignoreOres = {},
+        ignoreHerbs = {},
         tracking = {
             mining = true,
-            herbalism = true
+            herbalism = true,
         },
         minimap = {
             enabled = true,
@@ -50,8 +52,7 @@ _GatherLite.configsDefaults = {
 
 _GatherLite.nodes = {};
 
-_GatherLite.nodes.names = {
-    -- Ores
+_GatherLite.ores = {
     ["Small Thorium Vein"] = 324,
     ["Incendicite Mineral Vein"] = 1610,
     ["Copper Vein"] = 1731,
@@ -70,8 +71,9 @@ _GatherLite.nodes.names = {
     ["Dark Iron Deposit"] = 165658,
     ["Rich Thorium Vein"] = 175404,
     ["Ooze Covered Rich Thorium Vein"] = 177388,
+}
 
-    -- Herbs
+_GatherLite.herbs = {
     ["Silverleaf"] = 1617,
     ["Peacebloom"] = 1618,
     ["Earthroot"] = 1619,
@@ -127,7 +129,18 @@ _GatherLite.nodes.names = {
     ["Heartblossom"] = 202750,
     ["Twilight Jasmine"] = 202751,
     ["Whiptail"] = 202752,
-};
+}
+
+_GatherLite.nodes.names = {};
+
+for name, id in pairs(_GatherLite.ores) do
+    _GatherLite.nodes.names[name] = id
+end
+
+for name, id in pairs(_GatherLite.herbs) do
+    _GatherLite.nodes.names[name] = id
+end
+
 
 _GatherLite.nodes.icons = {
     -- Ores

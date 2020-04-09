@@ -3,10 +3,70 @@ local name, _GatherLite = ...
 local needReload = false;
 local GFrame = LibStub("GatherLiteFrame");
 
+local tracking = {
+    header = {
+        name = function()
+            return "Mining";
+        end,
+        type = "header",
+        order = 0,
+    }
+}
+
+for name, id in pairs(_GatherLite.ores) do
+    tracking["node_" .. id] = {
+        name = function()
+            return name;
+        end,
+        type = "toggle",
+        order = 2,
+        set = function(info, val)
+            GatherLite.db.char.ignoreOres[id] = not GatherLite.db.char.ignoreOres[id]
+            GatherLite:UpdateNodes()
+        end,
+        get = function(info)
+            return not GatherLite.db.char.ignoreOres[id]
+        end
+    }
+end
+
+tracking["header2"] = {
+    name = function()
+        return "Herbalism";
+    end,
+    type = "header",
+    order = 3,
+}
+
+for name, id in pairs(_GatherLite.herbs) do
+    tracking["node_" .. id] = {
+        name = function()
+            return name;
+        end,
+        type = "toggle",
+        order = 4,
+        set = function(info, val)
+            GatherLite.db.char.ignoreHerbs[id] = not GatherLite.db.char.ignoreHerbs[id]
+            GatherLite:UpdateNodes()
+        end,
+        get = function(info)
+            return not GatherLite.db.char.ignoreHerbs[id]
+        end
+    }
+end
+
 LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
     type = "group",
     childGroups = "tab",
     args = {
+        tracking = {
+            name = function()
+                return "Tracking";
+            end,
+            type = "group",
+            order = 1,
+            args = tracking
+        },
         general = {
             name = function()
                 return GatherLite:translate("settings.general");

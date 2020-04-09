@@ -1,5 +1,5 @@
 local name, _GatherLite = ...;
-local GFrame = LibStub("GatherLiteFrame");
+
 local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinimapIcon", {
     type = "data source",
     text = "Gatherlite",
@@ -43,7 +43,6 @@ function GatherLite:GatherSlash(input)
             GatherLite:print("debugging", GatherLite:Colorize("enabled", "green"));
         end
     end
-
 end
 
 function GatherLite:OnInitialize()
@@ -52,7 +51,6 @@ function GatherLite:OnInitialize()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
-    GatherLite:print("Please consider donating a coffee so that i can keep this project alive.");
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
 
@@ -66,7 +64,7 @@ function GatherLite:OnInitialize()
         GatherLite:LoadWorldmap();
     end);
 
-    GatherLite:ScheduleRepeatingTimer("UpdateNodes", .5);
+    GatherLite:ScheduleRepeatingTimer("UpdateNodes", 2);
 
     GatherLite:RegisterChatCommand("gather", "GatherSlash")
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")

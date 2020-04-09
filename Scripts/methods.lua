@@ -368,6 +368,8 @@ function GatherLite:UpdateNodes()
     for index, frame in pairs(GFrame.allFrames) do
         if frame.node.predefined and not self.db.global.predefined then
             frame:FakeHide();
+        elseif GatherLite.db.char.ignoreOres[frame.node.object] or GatherLite.db.char.ignoreHerbs[frame.node.object] then
+            frame:FakeHide();
         else
             if (frame.type == "minimap") and frame.node.mapID == mapID then
                 local angle, distance = Pins:GetVectorToIcon(frame);
@@ -418,7 +420,9 @@ end
 
 function GatherLite:createWorldmapNode(node)
     local f = GFrame:getFrame("worldmap");
-    f:SetSize(16, 16)
+    f:SetAlpha(GatherLite.db.char.worldmap.opacity);
+    f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
+
     if _GatherLite.nodes.icons[node.object] then
         f.texture:SetTexture("Interface\\AddOns\\GatherLite\\icons\\" .. _GatherLite.nodes.icons[node.object])
     else
@@ -611,5 +615,5 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
     end
 
-    GatherLite:debug("[GatherLite:VersionCheck] from", sender)
+    GatherLite:debug("[GatherLite:VersionCheck] from", sender, message)
 end
