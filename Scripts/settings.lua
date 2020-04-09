@@ -220,7 +220,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             type = "range",
                             min = 4,
                             max = 30,
-                            step = 1,
+                            step = .1,
                             order = 5,
                             width = "full",
                             set = function(info, val)
@@ -303,7 +303,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             type = "range",
                             min = 4,
                             max = 30,
-                            step = 1,
+                            step = .1,
                             order = 5,
                             width = "full",
                             set = function(info, val)

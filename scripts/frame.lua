@@ -50,13 +50,13 @@ function GatherLiteFrame:newFrame(frameId)
         table.insert(MBB_Ignore, "GatherLite" .. newFrame:GetName())
     end
 
-    newFrame:SetFrameStrata("FULLSCREEN");
+    newFrame:SetFrameStrata("TOOLTIP");
     newFrame:SetWidth(16) -- Set these to whatever height/width is needed
     newFrame:SetHeight(16) -- for your Texture
     newFrame:SetPoint("CENTER", -8, -8)
     newFrame:EnableMouse(true)
 
-    local texture = newFrame:CreateTexture(nil, "OVERLAY", nil, 0)
+    local texture = newFrame:CreateTexture(nil, "TOOLTIP", nil, 0)
     texture:SetWidth(16)
     texture:SetHeight(16)
     texture:SetAllPoints(newFrame)
@@ -111,7 +111,7 @@ end
 function _frame:unload()
     GatherLite:debug("[_frame:unload]")
 
-    self:SetFrameStrata("FULLSCREEN");
+    self:SetFrameStrata("TOOLTIP");
     self:SetFrameLevel(0);
 
     self:SetScript("OnUpdate", nil)
