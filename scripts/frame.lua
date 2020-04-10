@@ -14,17 +14,12 @@ GatherLiteFrame.allFrames = {}
 local _frame = {}
 
 function GatherLiteFrame:getFrame(type)
-    GatherLite:debug("[GatherLiteFrame:getFrame]")
-
     local returnFrame = tremove(GatherLiteFrame.unusedFrames)
     if returnFrame and returnFrame.frameId and GatherLiteFrame.usedFrames[returnFrame.frameId] then
-        GatherLite:debug("[GatherLiteFrame:getFrame] Tried to reuse frame, but that frame is already in use")
         returnFrame = nil
     end
     if not returnFrame then
         returnFrame = GatherLiteFrame:createFrame()
-    else
-        --GatherLite:debug("[GatherLiteFrame:getFrame] Reusing frame")
     end
 
     returnFrame.type = type;
@@ -34,7 +29,6 @@ function GatherLiteFrame:getFrame(type)
 end
 
 function GatherLiteFrame:createFrame()
-    GatherLite:debug("[GatherLiteFrame:createFrame]")
     GatherLiteFrame.numberOfFrames = GatherLiteFrame.numberOfFrames + 1
 
     local newFrame = GatherLiteFrame:newFrame(GatherLiteFrame.numberOfFrames)
@@ -72,14 +66,11 @@ function GatherLiteFrame:newFrame(frameId)
 end
 
 function GatherLiteFrame:recycleFrame(frame)
-    GatherLite:debug("[GatherLiteFrame:recycleFrame]")
     GatherLiteFrame.usedFrames[frame.frameId] = nil
     tinsert(GatherLiteFrame.unusedFrames, frame)
 end
 
 function _frame:unload()
-    GatherLite:debug("[_frame:unload]")
-
     self:SetFrameStrata("TOOLTIP");
     self:SetFrameLevel(0);
 
@@ -88,14 +79,6 @@ function _frame:unload()
     self:SetScript("OnHide", nil)
     self.texture:SetVertexColor(1, 1, 1, 1)
 
-    if self ~= nil and self.hidden and self._show ~= nil and self._hide ~= nil then
-        self.hidden = false
-        self.Show = self._show;
-        self.Hide = self._hide;
-        self._show = nil
-        self._hide = nil
-    end
-    self.shouldBeShowing = nil
     self.node = {}
     self.type = nil
     self:Hide()
