@@ -22,7 +22,6 @@ for name, id in pairs(_GatherLite.ores) do
         order = 2,
         set = function(info, val)
             GatherLite.db.char.ignoreOres[id] = not GatherLite.db.char.ignoreOres[id]
-            GatherLite:UpdateNodes()
         end,
         get = function(info)
             return not GatherLite.db.char.ignoreOres[id]
@@ -47,7 +46,6 @@ for name, id in pairs(_GatherLite.herbs) do
         order = 4,
         set = function(info, val)
             GatherLite.db.char.ignoreHerbs[id] = not GatherLite.db.char.ignoreHerbs[id]
-            GatherLite:UpdateNodes()
         end,
         get = function(info)
             return not GatherLite.db.char.ignoreHerbs[id]
@@ -132,7 +130,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 1,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.mining = val;
-                                GatherLite:UpdateNodes()
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.mining
@@ -147,7 +144,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 2,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.herbalism = val;
-                                GatherLite:UpdateNodes()
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.herbalism
@@ -171,7 +167,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.global.predefined = val;
-                        GatherLite:UpdateNodes()
                     end,
                     get = function(info)
                         return GatherLite.db.global.predefined

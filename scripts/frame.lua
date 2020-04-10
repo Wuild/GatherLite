@@ -66,8 +66,6 @@ function GatherLiteFrame:newFrame(frameId)
     newFrame.texture = texture;
 
     newFrame.Unload = _frame.unload
-    newFrame.FakeHide = _frame.hide;
-    newFrame.FakeShow = _frame.show;
 
     newFrame:Hide()
     return newFrame
@@ -77,35 +75,6 @@ function GatherLiteFrame:recycleFrame(frame)
     GatherLite:debug("[GatherLiteFrame:recycleFrame]")
     GatherLiteFrame.usedFrames[frame.frameId] = nil
     tinsert(GatherLiteFrame.unusedFrames, frame)
-end
-
-function _frame:hide()
-    if not self.hidden then
-        self.shouldBeShowing = self:IsShown();
-        self._show = self.Show;
-        self.Show = function()
-            self.shouldBeShowing = true;
-        end
-        self:Hide();
-        self._hide = self.Hide;
-        self.Hide = function()
-            self.shouldBeShowing = false;
-        end
-        self.hidden = true
-    end
-end
-
-function _frame:show()
-    if self.hidden then
-        self.hidden = false
-        self.Show = self._show;
-        self.Hide = self._hide;
-        self._show = nil
-        self._hide = nil
-        if self.shouldBeShowing then
-            self:Show();
-        end
-    end
 end
 
 function _frame:unload()

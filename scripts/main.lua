@@ -64,8 +64,6 @@ function GatherLite:OnInitialize()
         GatherLite:LoadWorldmap();
     end);
 
-    GatherLite:ScheduleRepeatingTimer("UpdateNodes", 2);
-
     GatherLite:RegisterChatCommand("gather", "GatherSlash")
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 

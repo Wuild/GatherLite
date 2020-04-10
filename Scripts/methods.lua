@@ -363,35 +363,6 @@ function GatherLite:hideTooltip()
     _GatherLite.tooltip:Hide();
 end
 
-function GatherLite:UpdateNodes()
-    local x, y, mapID = HBD:GetPlayerZonePosition()
-    for index, frame in pairs(GFrame.allFrames) do
-        if frame.node.predefined and not self.db.global.predefined then
-            frame:FakeHide();
-        elseif GatherLite.db.char.ignoreOres[frame.node.object] or GatherLite.db.char.ignoreHerbs[frame.node.object] then
-            frame:FakeHide();
-        else
-            if (frame.type == "minimap") and frame.node.mapID == mapID then
-                local angle, distance = Pins:GetVectorToIcon(frame);
-                if GatherLite.db.char.tracking[frame.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
-                    frame:FakeHide();
-                elseif GatherLite.db.char.tracking[frame.node.type] then
-                    frame:FakeShow();
-                else
-                    frame:FakeHide();
-                end
-            end
-            if (frame.type == "worldmap") then
-                if GatherLite.db.char.tracking[frame.node.type] then
-                    frame:FakeShow();
-                else
-                    frame:FakeHide();
-                end
-            end
-        end
-    end
-end
-
 function GatherLite:createMinimapNode(node)
     local f = GFrame:getFrame("minimap");
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
@@ -405,6 +376,33 @@ function GatherLite:createMinimapNode(node)
 
     f.node = node;
     f.type = "minimap";
+
+    f.TimeSinceLastUpdate = 0
+    f:SetScript("OnUpdate", function(self, elapsed)
+        self.TimeSinceLastUpdate = self.TimeSinceLastUpdate + elapsed;
+        if (self.TimeSinceLastUpdate > 1) then
+            self.TimeSinceLastUpdate = 0;
+            if self.node.predefined and not GatherLite.db.global.predefined then
+                self:SetAlpha(0)
+                self:EnableMouse(false)
+            elseif GatherLite.db.char.ignoreOres[self.node.object] or GatherLite.db.char.ignoreHerbs[self.node.object] then
+                self:SetAlpha(0)
+                self:EnableMouse(false)
+            else
+                local angle, distance = Pins:GetVectorToIcon(self);
+                if GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
+                    self:SetAlpha(0)
+                    self:EnableMouse(false)
+                elseif GatherLite.db.char.tracking[self.node.type] then
+                    self:SetAlpha(GatherLite.db.char.minimap.opacity)
+                    self:EnableMouse(true)
+                else
+                    self:SetAlpha(0)
+                    self:EnableMouse(false)
+                end
+            end
+        end
+    end)
 
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
@@ -430,6 +428,28 @@ function GatherLite:createWorldmapNode(node)
     end
     f.node = node;
     f.type = "worldmap";
+    f.TimeSinceLastUpdate = 0
+    f:SetScript("OnUpdate", function(self, elapsed)
+        self.TimeSinceLastUpdate = self.TimeSinceLastUpdate + elapsed;
+        if (self.TimeSinceLastUpdate > 1) then
+            self.TimeSinceLastUpdate = 0;
+            if self.node.predefined and not GatherLite.db.global.predefined then
+                self:SetAlpha(0)
+                self:EnableMouse(false)
+            elseif GatherLite.db.char.ignoreOres[self.node.object] or GatherLite.db.char.ignoreHerbs[self.node.object] then
+                self:SetAlpha(0)
+                self:EnableMouse(false)
+            else
+                if GatherLite.db.char.tracking[self.node.type] then
+                    self:SetAlpha(GatherLite.db.char.worldmap.opacity)
+                    self:EnableMouse(true)
+                else
+                    self:SetAlpha(0)
+                    self:EnableMouse(false)
+                end
+            end
+        end
+    end)
 
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
@@ -473,8 +493,6 @@ function GatherLite:MinimapContextMenu()
                     else
                         GatherLite.db.char.tracking.mining = true;
                     end
-
-                    GatherLite:UpdateNodes()
                 end
             })
 
@@ -488,8 +506,6 @@ function GatherLite:MinimapContextMenu()
                     else
                         GatherLite.db.char.tracking.herbalism = true;
                     end
-
-                    GatherLite:UpdateNodes()
                 end
             })
         end
@@ -524,8 +540,6 @@ function GatherLite:LoadWorldmap()
             end
         end
     end
-
-    GatherLite:UpdateNodes()
 end
 
 function GatherLite:LoadMinimap()
