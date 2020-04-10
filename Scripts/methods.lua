@@ -529,7 +529,7 @@ function GatherLite:LoadWorldmap()
     end
 
     for k, node in pairs(_GatherLite.db.mining) do
-        if node.mapID == mapID then
+        if node.mapID == mapID and GatherLite.db.char.tracking.mining then
             local frame = GatherLite:createWorldmapNode(node);
 
             if frame.node.predefined and not self.db.global.predefined then
@@ -539,7 +539,7 @@ function GatherLite:LoadWorldmap()
     end
 
     for k, node in pairs(_GatherLite.db.herbalism) do
-        if node.mapID == mapID then
+        if node.mapID == mapID and GatherLite.db.char.tracking.herbalism then
             local frame = GatherLite:createWorldmapNode(node);
             if frame.node.predefined and not self.db.global.predefined then
                 frame:FakeHide();
