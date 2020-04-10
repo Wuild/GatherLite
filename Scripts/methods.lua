@@ -556,6 +556,15 @@ function GatherLite:LoadMinimap()
     local i = 0
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
+    if (IsInInstance()) then
+        for b, frame in pairs(GFrame.usedFrames) do
+            if frame.type == "minimap" and not frame.node.loaded then
+                frame:Unload()
+            end
+        end
+        return
+    end
+
     for a, nodes in pairs(_GatherLite.db) do
         for k, node in pairs(nodes) do
             if GatherLite:LoadMinimapNode(node, x, y, instanceID) then
