@@ -262,7 +262,10 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 end
 
 function GatherLite:EventHandler(event, ...)
-    if event == "LOOT_OPENED" then
+
+    if event == "PLAYER_ENTERING_WORLD" then
+        GatherLite:LoadMinimap()
+    elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then
             local x, y, mapID = HBD:GetPlayerZonePosition()
             GatherLite:UpdateNode(tracker.spellType, tracker.nodeID, mapID, x, y);
@@ -363,7 +366,7 @@ function GatherLite:hideTooltip()
     _GatherLite.tooltip:Hide();
 end
 
-function GatherLite:createMinimapNode(node)
+function GatherLite:createMinimapNode(node, id)
     local f = GFrame:getFrame("minimap");
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
     f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
@@ -390,7 +393,10 @@ function GatherLite:createMinimapNode(node)
                 self:EnableMouse(false)
             else
                 local angle, distance = Pins:GetVectorToIcon(self);
-                if GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
+                if distance >= 500 then
+                    self.node.loaded = false
+                    self:Unload();
+                elseif GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
                     self:SetAlpha(0)
                     self:EnableMouse(false)
                 elseif GatherLite.db.char.tracking[self.node.type] then
@@ -412,7 +418,7 @@ function GatherLite:createMinimapNode(node)
     end)
 
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID)
-    Pins:AddMinimapIconWorld(GatherLite, f, instance, x, y, false)
+    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, false)
     return f;
 end
 
@@ -458,7 +464,7 @@ function GatherLite:createWorldmapNode(node)
         GatherLite:hideTooltip()
     end)
 
-    Pins:AddWorldMapIconMap(GatherLite, f, node.mapID, node.posX, node.posY);
+    Pins:AddWorldMapIconMap(_GatherLite.name, f, node.mapID, node.posX, node.posY);
     return f;
 end
 
@@ -517,6 +523,7 @@ function GatherLite:LoadWorldmap()
 
     for k, frame in pairs(GFrame.allFrames) do
         if frame.type == "worldmap" then
+            Pins:RemoveAllWorldMapIcons(_GatherLite.name);
             frame:Unload();
         end
     end
@@ -534,7 +541,6 @@ function GatherLite:LoadWorldmap()
     for k, node in pairs(_GatherLite.db.herbalism) do
         if node.mapID == mapID then
             local frame = GatherLite:createWorldmapNode(node);
-
             if frame.node.predefined and not self.db.global.predefined then
                 frame:FakeHide();
             end
@@ -543,17 +549,42 @@ function GatherLite:LoadWorldmap()
 end
 
 function GatherLite:LoadMinimap()
+    local i = 0
+    local x, y, instanceID = HBD:GetPlayerWorldPosition()
+
     for k, node in pairs(_GatherLite.db.mining) do
-        if node.mapID then
-            GatherLite:createMinimapNode(node);
+        if not node.loaded then
+            local x2, y2 = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            local angle, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+            if distance < 500 then
+                node.loaded = true
+                GatherLite:createMinimapNode(node);
+                i = i + 1
+            end
         end
     end
 
     for k, node in pairs(_GatherLite.db.herbalism) do
-        if node.mapID then
-            GatherLite:createMinimapNode(node);
+        if not node.loaded then
+            local x2, y2 = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            local angle, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+            if distance < 500 then
+                node.loaded = true
+                GatherLite:createMinimapNode(node);
+                i = i + 1
+            end
         end
     end
+
+    if not WorldMapFrame:IsVisible() then
+        for k, frame in pairs(GFrame.allFrames) do
+            if frame.type == "worldmap" then
+                frame:Unload();
+            end
+        end
+    end
+
+    --GatherLite:print(i, GatherLite:tablelength(GFrame.usedFrames), GatherLite:tablelength(GFrame.unusedFrames))
 end
 
 function GatherLite:Load()
@@ -594,8 +625,6 @@ function GatherLite:Load()
             table.insert(_GatherLite.db.herbalism, node)
         end
     end
-
-    GatherLite:LoadMinimap()
 end
 
 function GatherLite:SendVersionCheck()

@@ -59,6 +59,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("UNIT_SPELLCAST_FAILED", "EventHandler")
     GatherLite:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED", "EventHandler")
     GatherLite:RegisterEvent("LOOT_OPENED", "EventHandler")
+    GatherLite:RegisterEvent("PLAYER_ENTERING_WORLD", "EventHandler")
 
     hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
         GatherLite:LoadWorldmap();
@@ -69,6 +70,7 @@ function GatherLite:OnInitialize()
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 5)
+    GatherLite:ScheduleRepeatingTimer("LoadMinimap", 2)
 
     GatherLite:SendVersionCheck()
     GatherLite:Load();
