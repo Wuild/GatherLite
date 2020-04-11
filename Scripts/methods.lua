@@ -25,6 +25,8 @@ local spellIDs = {
     [GetSpellInfo(2366)] = "herbalism" -- Herbalism
 };
 
+_GatherLite.mainFrame = CreateFrame("Frame", nil, UIParent)
+
 _GatherLite.tooltip = CreateFrame("GameTooltip", "GatherLiteTooltip", UIParent, "GameTooltipTemplate")
 _GatherLite.tooltip:ClearLines()
 _GatherLite.tooltip:AddFontStrings(_GatherLite.tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"), _GatherLite.tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText"));
@@ -504,21 +506,6 @@ function GatherLite:LoadWorldmap()
             end
         end
     end
-
-    --for k, node in pairs(_GatherLite.db.mining) do
-    --    if node.mapID == mapID then
-    --        GatherLite:createWorldmapNode(node);
-    --    end
-    --end
-    --
-    --for k, node in pairs(_GatherLite.db.herbalism) do
-    --    if node.mapID == mapID then
-    --        local frame = GatherLite:createWorldmapNode(node);
-    --        if frame.node.predefined and not self.db.global.predefined then
-    --            frame:FakeHide();
-    --        end
-    --    end
-    --end
 end
 
 function GatherLite:LoadMinimapNode(node, x, y, instanceID)
@@ -551,6 +538,8 @@ function GatherLite:LoadMinimapNode(node, x, y, instanceID)
         return false
     end
 end
+
+local worldmapOpen = false;
 
 function GatherLite:LoadMinimap()
     local i = 0
@@ -620,6 +609,25 @@ function GatherLite:Load()
             table.insert(_GatherLite.db.herbalism, node)
         end
     end
+
+    local WorldmapOpen = false;
+
+    _GatherLite.mainFrame:SetScript("OnUpdate", function()
+        if WorldMapFrame:IsVisible() and not WorldmapOpen then
+            WorldmapOpen = true;
+            GatherLite:LoadWorldmap()
+        end
+
+        if not WorldMapFrame:IsVisible() and WorldmapOpen then
+            for i, frame in pairs(GFrame.usedFrames) do
+                if frame.type == "worldmap" then
+                    frame:Unload()
+                end
+            end
+            WorldmapOpen = false;
+        end
+    end)
+
 end
 
 function GatherLite:SendVersionCheck()

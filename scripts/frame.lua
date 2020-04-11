@@ -1,3 +1,4 @@
+local name, _GatherLite = ...
 local MAJOR, MINOR = "GatherLiteFrame", 9
 assert(LibStub, MAJOR .. " requires LibStub")
 
@@ -5,6 +6,8 @@ local GatherLiteFrame, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
 if not GatherLiteFrame then
     return
 end
+
+local Pins = LibStub("HereBeDragons-Pins-2.0");
 
 GatherLiteFrame.numberOfFrames = 0;
 GatherLiteFrame.unusedFrames = {}
@@ -83,5 +86,7 @@ function _frame:unload()
     self.type = nil
     self:Hide()
 
+    Pins:RemoveMinimapIcon(_GatherLite.name, self)
+    Pins:RemoveWorldMapIcon(_GatherLite.name, self)
     GatherLiteFrame:recycleFrame(self)
 end
