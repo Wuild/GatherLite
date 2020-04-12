@@ -13,6 +13,40 @@ local tracking = {
     }
 }
 
+local function checkIgnore(table)
+    local isIgnored = false;
+
+    for name, id in pairs(table) do
+        isIgnored = table[name];
+    end
+    return isIgnored
+end
+
+--tracking["toggleOres"] = {
+--    name = function()
+--        return "Toggle all ores";
+--    end,
+--    type = "toggle",
+--    width = "full",
+--    order = 0,
+--    set = function(info, val)
+--        if checkIgnore(GatherLite.db.char.ignoreOres) then
+--            for name, id in pairs(GatherLite.db.char.ignoreOres) do
+--                GatherLite.db.char.ignoreOres[name] = false
+--            end
+--        else
+--            for name, id in pairs(GatherLite.db.char.ignoreOres) do
+--                GatherLite.db.char.ignoreOres[name] = true
+--            end
+--        end
+--
+--        GatherLite:LoadMinimap()
+--    end,
+--    get = function(info)
+--        return not checkIgnore(GatherLite.db.char.ignoreOres)
+--    end
+--}
+
 for name, id in pairs(_GatherLite.ores) do
     tracking["node_" .. id] = {
         name = function()
@@ -37,6 +71,31 @@ tracking["header2"] = {
     type = "header",
     order = 3,
 }
+
+--tracking["toggleHerbs"] = {
+--    name = function()
+--        return "Toggle all herbs";
+--    end,
+--    type = "toggle",
+--    width = "full",
+--    order = 3,
+--    set = function(info, val)
+--        if checkIgnore(GatherLite.db.char.ignoreHerbs) then
+--            for name, id in pairs(GatherLite.db.char.ignoreHerbs) do
+--                GatherLite.db.char.ignoreHerbs[name] = false
+--            end
+--        else
+--            for name, id in pairs(GatherLite.db.char.ignoreHerbs) do
+--                GatherLite.db.char.ignoreHerbs[name] = true
+--            end
+--        end
+--
+--        GatherLite:LoadMinimap()
+--    end,
+--    get = function(info)
+--        return not checkIgnore(GatherLite.db.char.ignoreHerbs)
+--    end
+--}
 
 for name, id in pairs(_GatherLite.herbs) do
     tracking["node_" .. id] = {

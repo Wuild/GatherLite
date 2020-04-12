@@ -36,7 +36,7 @@ function GatherLite:GatherSlash(input)
 
     if input == "debugging" then
         if GatherLite.db.char.debugging then
-            GGatherLite.db.char.debugging = false;
+            GatherLite.db.char.debugging = false;
             GatherLite:print("debugging", GatherLite:Colorize("disabled", "red"));
         else
             GatherLite.db.char.debugging = true;

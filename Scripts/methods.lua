@@ -568,7 +568,7 @@ function GatherLite:LoadMinimap()
         end
     end
 
-    GatherLite:debug(i, GatherLite:tablelength(GFrame.usedFrames), GatherLite:tablelength(GFrame.unusedFrames))
+    --GatherLite:debug(i, GatherLite:tablelength(GFrame.usedFrames), GatherLite:tablelength(GFrame.unusedFrames))
 end
 
 function GatherLite:Load()
@@ -661,5 +661,9 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
     end
 
-    --GatherLite:debug("[GatherLite:VersionCheck] from", sender, message)
+    GatherLite:debug("[GatherLite:VersionCheck] from", sender, message)
+end
+
+function GatherLite:ShowSettings()
+    LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
 end
