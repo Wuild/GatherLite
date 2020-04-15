@@ -158,19 +158,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         return not GatherLite.db.profile.minimap.hide
                     end
                 },
-                debugging = {
-                    name = function()
-                        return GatherLite:translate("settings.general.debugging");
-                    end,
-                    type = "toggle",
-                    order = 4,
-                    set = function(info, val)
-                        GatherLite.db.char.debugging = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.char.debugging
-                    end
-                },
                 Spacer_1 = {
                     type = "description",
                     order = 6,
@@ -229,10 +216,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     order = 10,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.global.predefined = val;
+                        GatherLite.db.global.usePredefined = val;
                     end,
                     get = function(info)
-                        return GatherLite.db.global.predefined
+                        return GatherLite.db.global.usePredefined
                     end
                 },
             }
@@ -420,7 +407,77 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     }
                 }
             }
-        }
+        },
+        debugging = {
+            name = function()
+                return GatherLite:translate("settings.debugging");
+            end,
+            type = "group",
+            order = 6,
+            args = {
+                enabled = {
+                    name = function()
+                        return "Enable debugging"
+                    end,
+                    type = "toggle",
+                    order = 3,
+                    set = function(info, val)
+                        GatherLite.db.global.debug.enabled = val;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.global.debug.enabled
+                    end
+                },
+
+                debugging = {
+                    type = "group",
+                    name = "Debugging",
+                    inline = true,
+                    order = 7,
+                    args = {
+                        nodes = {
+                            name = function()
+                                return "Nodes"
+                            end,
+                            type = "toggle",
+                            order = 3,
+                            set = function(info, val)
+                                GatherLite.db.global.debug.types[_GatherLite.DEBUG_NODE] = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.global.debug.types[_GatherLite.DEBUG_NODE]
+                            end
+                        },
+                        frames = {
+                            name = function()
+                                return "Frames"
+                            end,
+                            type = "toggle",
+                            order = 3,
+                            set = function(info, val)
+                                GatherLite.db.global.debug.types[_GatherLite.DEBUG_FRAME] = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.global.debug.types[_GatherLite.DEBUG_FRAME]
+                            end
+                        },
+                        p2p = {
+                            name = function()
+                                return "p2p"
+                            end,
+                            type = "toggle",
+                            order = 3,
+                            set = function(info, val)
+                                GatherLite.db.global.debug.types[_GatherLite.DEBUG_P2P] = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.global.debug.types[_GatherLite.DEBUG_P2P]
+                            end
+                        },
+                    }
+                },
+            }
+        },
     }
 })
 LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite", "GatherLite");

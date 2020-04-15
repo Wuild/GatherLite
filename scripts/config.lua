@@ -5,13 +5,34 @@ GatherLite = LibStub("AceAddon-3.0"):NewAddon("GatherLite", "AceConsole-3.0", "A
 _GatherLite.name = name;
 _GatherLite.version = GetAddOnMetadata(name, "version");
 
+_GatherLite.DEBUG_DEFAULT = 1;
+_GatherLite.DEBUG_NODE = 2;
+_GatherLite.DEBUG_FRAME = 3;
+_GatherLite.DEBUG_P2P = 4;
+
+_GatherLite.debug = {
+    [_GatherLite.DEBUG_DEFAULT] = "default",
+    [_GatherLite.DEBUG_NODE] = "node",
+    [_GatherLite.DEBUG_FRAME] = "frame",
+    [_GatherLite.DEBUG_P2P] = "p2p",
+}
+
 _GatherLite.configsDefaults = {
     global = {
         nodes = {
             mining = {},
             herbalism = {}
         },
-        predefined = true
+        usePredefined = true,
+        debug = {
+            enabled = false,
+            types = {
+                [_GatherLite.DEBUG_DEFAULT] = true,
+                [_GatherLite.DEBUG_NODE] = false,
+                [_GatherLite.DEBUG_FRAME] = true,
+                [_GatherLite.DEBUG_P2P] = false
+            }
+        },
     },
     char = {
         debugging = false,
@@ -52,9 +73,54 @@ _GatherLite.configsDefaults = {
 
 _GatherLite.nodes = {};
 
+_GatherLite.skillLevels = {
+
+    -- ores
+    [1731] = 1,
+    [1732] = 65,
+    [1610] = 65,
+    [1733] = 75,
+    [1735] = 125,
+    [19903] = 150,
+    [2653] = 155,
+    [1734] = 155,
+    [2040] = 175,
+    [2047] = 230,
+    [123309] = 230,
+    [324] = 245,
+    [175404] = 275,
+
+    [1617] = 1,
+    [1618] = 1,
+    [1619] = 15,
+    [1620] = 50,
+    [1621] = 70,
+    [2045] = 85,
+    [1622] = 100,
+    [1623] = 115,
+    [1628] = 120,
+    [1624] = 125,
+    [2041] = 150,
+    [2042] = 160,
+    [2046] = 170,
+    [2043] = 185,
+    [2044] = 195,
+    [2866] = 205,
+    [142140] = 210,
+    [142141] = 220,
+    [142142] = 230,
+    [142143] = 235,
+    [142144] = 245,
+    [142145] = 250,
+    [176583] = 260,
+    [176584] = 270,
+    [176586] = 280,
+    [176641] = 285,
+    [176588] = 290,
+    [176589] = 300,
+}
+
 _GatherLite.ores = {
-    ["Small Thorium Vein"] = 324,
-    ["Incendicite Mineral Vein"] = 1610,
     ["Copper Vein"] = 1731,
     ["Tin Vein"] = 1732,
     ["Silver Vein"] = 1733,
@@ -71,6 +137,8 @@ _GatherLite.ores = {
     ["Dark Iron Deposit"] = 165658,
     ["Rich Thorium Vein"] = 175404,
     ["Ooze Covered Rich Thorium Vein"] = 177388,
+    ["Small Thorium Vein"] = 324,
+    ["Incendicite Mineral Vein"] = 1610,
 }
 
 _GatherLite.herbs = {
@@ -86,7 +154,7 @@ _GatherLite.herbs = {
     ["Liferoot"] = 2041,
     ["Fadeleaf"] = 2042,
     ["Khadgar's Whisker"] = 2043,
-    ["Dragon's Teeth"] = 2044, -- Wintersbite
+    ["Wintersbite"] = 2044,
     ["Stranglekelp"] = 2045,
     ["Goldthorn"] = 2046,
     ["Firebloom"] = 2866,
@@ -99,36 +167,10 @@ _GatherLite.herbs = {
     ["Golden Sansam"] = 176583,
     ["Dreamfoil"] = 176584,
     ["Mountain Silversage"] = 176586,
-    ["Sorrowmoss"] = 176587, -- Plaguebloom
-    ["Plaguebloom"] = 176641, -- Plaguebloom
+    ["Sorrowmoss"] = 176587,
+    ["Plaguebloom"] = 176641,
     ["Icecap"] = 176588,
-    ["Black Lotus"] = 176589,
-    ["Bloodthistle"] = 181166,
-    ["Felweed"] = 181270,
-    ["Dreaming Glory"] = 181271,
-    ["Ragveil"] = 181275,
-    ["Flame Cap"] = 181276,
-    ["Terocone"] = 181277,
-    ["Ancient Lichen"] = 181278,
-    ["Netherbloom"] = 181279,
-    ["Nightmare Vine"] = 181280,
-    ["Mana Thistle"] = 181281,
-    ["Netherdust Bush"] = 185881,
-    ["Goldclover"] = 189973,
-    ["Tiger Lily"] = 190169,
-    ["Talandra's Rose"] = 190170,
-    ["Lichbloom"] = 190171,
-    ["Icethorn"] = 190172,
-    ["Frozen Herb"] = 190175,
-    ["Frost Lotus"] = 190176,
-    ["Adder's Tongue"] = 191019,
-    ["Firethorn"] = 191303,
-    ["Cinderbloom"] = 202747,
-    ["Stormvine"] = 202748,
-    ["Azshara's Veil"] = 202749,
-    ["Heartblossom"] = 202750,
-    ["Twilight Jasmine"] = 202751,
-    ["Whiptail"] = 202752,
+    ["Black Lotus"] = 176589
 }
 
 _GatherLite.nodes.names = {};
@@ -140,7 +182,6 @@ end
 for name, id in pairs(_GatherLite.herbs) do
     _GatherLite.nodes.names[name] = id
 end
-
 
 _GatherLite.nodes.icons = {
     -- Ores

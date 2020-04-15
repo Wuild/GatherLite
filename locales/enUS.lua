@@ -58,3 +58,6 @@ L['tooltip.last_visit'] = "Last visit:"
 L['tooltip.found_by'] = "Found by:"
 
 L['node.delete'] = "Delete this node"
+
+
+L["settings.debugging"] = "Debugging"

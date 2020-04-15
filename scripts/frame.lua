@@ -28,6 +28,9 @@ function GatherLiteFrame:getFrame(type)
     returnFrame.type = type;
 
     GatherLiteFrame.usedFrames[returnFrame.frameId] = returnFrame
+
+    GatherLite:debug(_GatherLite.DEBUG_FRAME, "[GatherLiteFrame:getFrame]")
+
     return returnFrame
 end
 
@@ -36,6 +39,9 @@ function GatherLiteFrame:createFrame()
 
     local newFrame = GatherLiteFrame:newFrame(GatherLiteFrame.numberOfFrames)
     tinsert(GatherLiteFrame.allFrames, newFrame)
+
+    GatherLite:debug(_GatherLite.DEBUG_FRAME, "[GatherLiteFrame:createFrame]")
+
     return newFrame
 end
 
@@ -65,12 +71,17 @@ function GatherLiteFrame:newFrame(frameId)
     newFrame.Unload = _frame.unload
 
     newFrame:Hide()
+
+    GatherLite:debug(_GatherLite.DEBUG_FRAME, "[GatherLiteFrame:newFrame]")
+
     return newFrame
 end
 
 function GatherLiteFrame:recycleFrame(frame)
     GatherLiteFrame.usedFrames[frame.frameId] = nil
     tinsert(GatherLiteFrame.unusedFrames, frame)
+
+    GatherLite:debug(_GatherLite.DEBUG_FRAME, "[GatherLiteFrame:recycleFrame]")
 end
 
 function _frame:unload()
@@ -81,6 +92,14 @@ function _frame:unload()
     self:SetScript("OnShow", nil)
     self:SetScript("OnHide", nil)
     self.texture:SetVertexColor(1, 1, 1, 1)
+
+    if self.type == "minimap" and self.node.loaded then
+        self.node.loaded = false
+    end
+
+    if self.type == "worldmap" and self.node.loadedWorldmap then
+        self.node.loadedWorldmap = false
+    end
 
     self.node = {}
     self.type = nil

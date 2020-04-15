@@ -1,5 +1,7 @@
 local name, _GatherLite = ...;
 
+local GFrame = LibStub("GatherLiteFrame");
+
 local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinimapIcon", {
     type = "data source",
     text = "Gatherlite",
@@ -20,6 +22,14 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
         tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
         tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.mining));
         tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
+
+        if GatherLite.db.global.debug.enabled then
+            tooltip:AddLine(" ");
+            tooltip:AddLine("             -- Debugging --             ");
+            tooltip:AddDoubleLine(GatherLite:Colorize("Used frames", "white"), GatherLite:tablelength(GFrame.usedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("Unused frames", "white"), GatherLite:tablelength(GFrame.unusedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(GFrame.allFrames));
+        end
 
         tooltip:AddLine(" ");
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.left_click_text"));
@@ -65,6 +75,9 @@ function GatherLite:OnInitialize()
         GatherLite:LoadWorldmap();
     end);
 
+    GameTooltip:HookScript("OnShow", GatherLite.ModifyTooltip)
+    GameTooltip:HookScript("OnUpdate", GatherLite.ModifyTooltip)
+
     GatherLite:RegisterChatCommand("gather", "GatherSlash")
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 
@@ -74,4 +87,52 @@ function GatherLite:OnInitialize()
 
     GatherLite:SendVersionCheck()
     GatherLite:Load();
+end
+
+function GatherLite.ModifyTooltip()
+    local skillname, objname, linenum, req
+
+    skillname = GameTooltipTextLeft2:GetText()
+    objname = GameTooltipTextLeft1:GetText()
+
+    if GameTooltipTextLeft2:GetText() == "Mining" then
+        req = GatherLite:GetRequiredLevelOre(objname)
+    elseif GameTooltipTextLeft2:GetText() == "Requires Herbalism" or GameTooltipTextLeft2:GetText() == "Herbalism" then
+        req = GatherLite:GetRequiredLevelHerb(objname)
+    elseif not skillname then
+        req = GatherLite:GetRequiredLevelOre(objname)
+        if req then
+            skillname = "Mining"
+        end
+        req = GatherLite:GetRequiredLevelHerb(objname)
+        if req then
+            skillname = "Herbalism"
+        end
+        if not skillname then
+            return
+        end
+        GameTooltip:AddLine(skillname)
+    else
+        return
+    end
+
+    if not req then
+        return
+    end
+
+    local newstr = _G["GameTooltipTextLeft2"]:GetText() .. " " .. req
+    local skill, tempboost = GatherLite:GetProfessionLevel(skillname)
+
+    _G["GameTooltipTextLeft2"]:SetTextColor(0.12, 1, 0)
+
+    if skill then
+        if req > skill + tempboost then
+            newstr = newstr .. " (currently " .. skill .. ")"
+            _G["GameTooltipTextLeft2"]:SetTextColor(1, 0, 0)
+
+        end
+    end
+
+    _G["GameTooltipTextLeft2"]:SetText(newstr)
+    GameTooltip:Show()
 end

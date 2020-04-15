@@ -27,18 +27,18 @@ local spellIDs = {
 
 _GatherLite.mainFrame = CreateFrame("Frame", nil, UIParent)
 
-_GatherLite.tooltip = CreateFrame("GameTooltip", "GatherLiteTooltip", UIParent, "GameTooltipTemplate")
-_GatherLite.tooltip:ClearLines()
-_GatherLite.tooltip:AddFontStrings(_GatherLite.tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"), _GatherLite.tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText"));
+local function ucfirst(str)
+    return (str:gsub("^%l", string.upper))
+end
 
 function GatherLite:print(...)
     print(GatherLite:Colorize("<" .. _GatherLite.name .. ">", "yellow"), ...)
 end
 
 -- print debug message
-function GatherLite:debug(...)
-    if (GatherLite.db.char.debugging) then
-        print(GatherLite:Colorize("<" .. _GatherLite.name .. " - Debugging>", "blue"), ...)
+function GatherLite:debug(type, ...)
+    if (GatherLite.db.global.debug.enabled) and GatherLite.db.global.debug.types[type] then
+        print(GatherLite:Colorize("<" .. _GatherLite.name .. " - " .. (_GatherLite.debug[type] or _GatherLite.debug[_GatherLite.DEBUG_DEFAULT]) .. ">", "blue"), ...)
     end
 end
 
@@ -196,7 +196,7 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
     node.date = date('*t')
 
     if count == 0 then
-        GatherLite:debug("Node does not contain any items... skipping");
+        GatherLite:debug(_GatherLite.DEBUG_NODE, "does not contain any items... skipping");
         return
     end
 
@@ -258,7 +258,7 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
         oldNode.loot = node.loot;
         oldNode.coins = node.coins;
     end
-    GatherLite:debug("Node loot updated")
+    GatherLite:debug(_GatherLite.DEBUG_NODE, "Node loot updated")
 end
 
 function GatherLite:EventHandler(event, ...)
@@ -326,12 +326,16 @@ function GatherLite:showTooltip(self)
         return
     end
 
-    _GatherLite.tooltip:ClearLines();
-    _GatherLite.tooltip:SetOwner(self, "TOP");
-    _GatherLite.tooltip:SetText(nodeName);
+    GameTooltip:ClearLines();
+    GameTooltip:SetOwner(self, "ANCHOR_CURSOR");
+    GameTooltip:AddLine(nodeName);
+    GameTooltip:AddLine(ucfirst(self.node.type), "gray")
+    GameTooltipTextLeft2:SetTextColor(190, 190, 190)
 
-    if node.date then
-        _GatherLite.tooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
+    local type = self.node.type
+
+    if type == "herb" then
+        type = "herbalism"
     end
 
     local lootTable = false
@@ -347,22 +351,26 @@ function GatherLite:showTooltip(self)
     if node.loot and lootTable then
         for k, item in pairs(node.loot) do
             if item.count > 0 then
-                _GatherLite.tooltip:AddDoubleLine(item.link, "x" .. item.count);
+                GameTooltip:AddDoubleLine(item.link, "x" .. item.count);
             else
-                _GatherLite.tooltip:AddDoubleLine(item.link, "");
+                GameTooltip:AddDoubleLine(item.link, "");
             end
         end
     end
 
-    if coins and coins > 0 then
-        SetTooltipMoney(_GatherLite.tooltip, coins)
+    if node.date then
+        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
     end
 
-    _GatherLite.tooltip:Show();
+    if coins and coins > 0 then
+        SetTooltipMoney(GameTooltip, coins)
+    end
+
+    GameTooltip:Show();
 end
 
 function GatherLite:hideTooltip()
-    _GatherLite.tooltip:Hide();
+    GameTooltip:Hide();
 end
 
 function GatherLite:createMinimapNode(node, id)
@@ -417,23 +425,6 @@ function GatherLite:createWorldmapNode(node)
     f.node = node;
     f.type = "worldmap";
     f.TimeSinceLastUpdate = 0
-    f:SetScript("OnUpdate", function(self, elapsed)
-        if self.node.predefined and not GatherLite.db.global.predefined then
-            self:SetAlpha(0)
-            self:EnableMouse(false)
-        elseif GatherLite.db.char.ignoreOres[self.node.object] or GatherLite.db.char.ignoreHerbs[self.node.object] then
-            self:SetAlpha(0)
-            self:EnableMouse(false)
-        else
-            if GatherLite.db.char.tracking[self.node.type] then
-                self:SetAlpha(GatherLite.db.char.worldmap.opacity)
-                self:EnableMouse(true)
-            else
-                self:SetAlpha(0)
-                self:EnableMouse(false)
-            end
-        end
-    end)
 
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
@@ -490,20 +481,49 @@ function GatherLite:MinimapContextMenu()
     end
 end
 
+function GatherLite:LoadWorldmapNode(node, mapID)
+    if not GatherLite.db.char.tracking[node.type] then
+        node.loadedWorldmap = false
+        return false
+    end
+
+    if node.predefined and not GatherLite.db.global.usePredefined then
+        node.loadedWorldmap = false
+        return false
+    end
+
+    if GatherLite.db.char.ignoreOres[node.object] or GatherLite.db.char.ignoreHerbs[node.object] then
+        node.loadedWorldmap = false
+        return false
+    end
+
+    if mapID == node.mapID then
+
+    else
+        node.loadedWorldmap = false
+        return false
+    end
+
+    if mapID == node.mapID and not node.loadedWorldmap then
+        node.loadedWorldmap = true
+        GatherLite:createWorldmapNode(node)
+        return true
+    end
+
+end
+
 function GatherLite:LoadWorldmap()
     local mapID = WorldMapFrame.mapID;
-
-    for k, frame in pairs(GFrame.usedFrames) do
-        if frame.type == "worldmap" then
-            frame:Unload();
+    for a, nodes in pairs(_GatherLite.db) do
+        for k, node in pairs(nodes) do
+            if GatherLite:LoadWorldmapNode(node, mapID) then
+            end
         end
     end
 
-    for a, nodes in pairs(_GatherLite.db) do
-        for k, node in pairs(nodes) do
-            if node.mapID == mapID then
-                GatherLite:createWorldmapNode(node)
-            end
+    for b, frame in pairs(GFrame.usedFrames) do
+        if frame.type == "worldmap" and not frame.node.loadedWorldmap then
+            frame:Unload()
         end
     end
 end
@@ -517,7 +537,7 @@ function GatherLite:LoadMinimapNode(node, x, y, instanceID)
         return false
     end
 
-    if node.predefined and not GatherLite.db.global.predefined then
+    if node.predefined and not GatherLite.db.global.usePredefined then
         node.loaded = false
         return false
     end
@@ -568,22 +588,32 @@ function GatherLite:LoadMinimap()
         end
     end
 
-    --GatherLite:debug(i, GatherLite:tablelength(GFrame.usedFrames), GatherLite:tablelength(GFrame.unusedFrames))
+    GatherLite:debug(_GatherLite.DEBUG_FRAME, GatherLite:tablelength(GFrame.usedFrames), "used,", GatherLite:tablelength(GFrame.unusedFrames), "unused")
 end
 
 function GatherLite:Load()
     for k, node in pairs(GatherLite_localOreNodes) do
-        node.coins = 0
-        node.loot = {}
-        node.predefined = true
-        table.insert(_GatherLite.db.mining, node)
+        local oldNode = GatherLite:findExistingNode("mining", node.mapID, node.posX, node.posY);
+        if not oldNode then
+            node.coins = 0
+            node.loot = {}
+            node.predefined = true
+            table.insert(_GatherLite.db.mining, node)
+        else
+            GatherLite:debug(_GatherLite.DEBUG_NODE, "Skipping node, to close to existing node")
+        end
     end
 
     for k, node in pairs(GatherLite_localHerbNodes) do
-        node.coins = 0
-        node.loot = {}
-        node.predefined = true
-        table.insert(_GatherLite.db.herbalism, node)
+        local oldNode = GatherLite:findExistingNode("mining", node.mapID, node.posX, node.posY);
+        if not oldNode then
+            node.coins = 0
+            node.loot = {}
+            node.predefined = true
+            table.insert(_GatherLite.db.herbalism, node)
+        else
+            GatherLite:debug(_GatherLite.DEBUG_NODE, "Skipping node, to close to existing node")
+        end
     end
 
     for k, node in pairs(self.db.global.nodes.mining) do
@@ -615,16 +645,21 @@ function GatherLite:Load()
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not WorldmapOpen then
             WorldmapOpen = true;
+            GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap")
+        end
+
+        if WorldmapOpen then
             GatherLite:LoadWorldmap()
         end
 
         if not WorldMapFrame:IsVisible() and WorldmapOpen then
-            for i, frame in pairs(GFrame.usedFrames) do
+            WorldmapOpen = false;
+            GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "unload worldmap")
+            for b, frame in pairs(GFrame.usedFrames) do
                 if frame.type == "worldmap" then
                     frame:Unload()
                 end
             end
-            WorldmapOpen = false;
         end
     end)
 
@@ -661,9 +696,43 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
     end
 
-    GatherLite:debug("[GatherLite:VersionCheck] from", sender, message)
+    GatherLite:debug(_GatherLite.DEBUG_P2P, "Version check from", sender, message)
 end
 
 function GatherLite:ShowSettings()
     LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
+end
+
+function GatherLite:GetRequiredLevel(object)
+    return _GatherLite.skillLevels[object] or 0
+end
+
+function GatherLite:GetRequiredLevelOre(oreName)
+    for name, ID in pairs(_GatherLite.ores) do
+        if oreName == name then
+            return GatherLite:GetRequiredLevel(ID)
+        end
+    end
+    return nil
+end
+
+function GatherLite:GetRequiredLevelHerb(herbName)
+    for name, ID in pairs(_GatherLite.herbs) do
+        if herbName == name then
+            return GatherLite:GetRequiredLevel(ID)
+        end
+    end
+    return nil
+end
+
+function GatherLite:GetProfessionLevel(name)
+    local numSkills = GetNumSkillLines();
+    for i = 1, numSkills do
+        local skillname, _, _, skillrank, _, skillmodifier = GetSkillLineInfo(i)
+        if skillname:lower() == name:lower() then
+            return skillrank or 0, skillmodifier or 0
+        end
+    end
+
+    return 0, 0
 end
