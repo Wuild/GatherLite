@@ -31,6 +31,7 @@
     <Script file="locales\zhCN.lua"/>
 
     <Script file="scripts/config.lua"/>
+    <Script file="scripts/nodes.lua"/>
     <Script file="scripts/frame.lua"/>
     <Script file="scripts/methods.lua"/>
     <Script file="scripts/settings.lua"/>

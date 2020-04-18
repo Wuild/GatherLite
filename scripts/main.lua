@@ -61,6 +61,7 @@ function GatherLite:OnInitialize()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
+    GatherLite:print("Keep this addon alive by donating a coffee at " .. GatherLite:Colorize("https://www.buymeacoffee.com/yuImx6KOY", "cyan"));
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
 
@@ -96,15 +97,15 @@ function GatherLite.ModifyTooltip()
     objname = GameTooltipTextLeft1:GetText()
 
     if GameTooltipTextLeft2:GetText() == "Mining" then
-        req = GatherLite:GetRequiredLevelOre(objname)
+        req = GatherLite:GetRequiredLevel(objname)
     elseif GameTooltipTextLeft2:GetText() == "Requires Herbalism" or GameTooltipTextLeft2:GetText() == "Herbalism" then
-        req = GatherLite:GetRequiredLevelHerb(objname)
+        req = GatherLite:GetRequiredLevel(objname)
     elseif not skillname then
-        req = GatherLite:GetRequiredLevelOre(objname)
+        req = GatherLite:GetRequiredLevel(objname)
         if req then
             skillname = "Mining"
         end
-        req = GatherLite:GetRequiredLevelHerb(objname)
+        req = GatherLite:GetRequiredLevel(objname)
         if req then
             skillname = "Herbalism"
         end
@@ -120,16 +121,28 @@ function GatherLite.ModifyTooltip()
         return
     end
 
-    local newstr = _G["GameTooltipTextLeft2"]:GetText() .. " " .. req
-    local skill, tempboost = GatherLite:GetProfessionLevel(skillname)
+    local newstr, required
+    newstr = _G["GameTooltipTextLeft2"]:GetText() .. " " .. req[1]
+    required = req[1]
 
-    _G["GameTooltipTextLeft2"]:SetTextColor(0.12, 1, 0)
+    local skill = GatherLite:GetProfessionLevel(skillname)
 
     if skill then
-        if req > skill + tempboost then
-            newstr = newstr .. " (currently " .. skill .. ")"
-            _G["GameTooltipTextLeft2"]:SetTextColor(1, 0, 0)
+        if skill >= req[1] then
+            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 0.5, 0)
+        end
+        if skill >= req[2] then
+            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 1.0, 0)
+        end
+        if skill >= req[3] then
+            _G["GameTooltipTextLeft2"]:SetTextColor(0.12, 1.0, 0)
+        end
+        if skill >= req[4] then
+            _G["GameTooltipTextLeft2"]:SetTextColor(0.62, 0.62, 0.62)
+        end
 
+        if skill < req[1] then
+            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 0, 0)
         end
     end
 

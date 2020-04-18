@@ -1,1 +1,4 @@
---- @TODO Create Russian translations
+local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "ruRU")
+if not L then
+    return
+end
