@@ -365,7 +365,6 @@ function GatherLite:GetNodeObject(nodeID)
         if type(node.id) == "table" then
             for idIndex, id in pairs(node.id) do
                 if id == nodeID then
-                    GatherLite:debug(_GatherLite.DEBUG_DEFAULT, dump(id))
                     return node
                 end
             end
@@ -538,7 +537,6 @@ end
 
 function GatherLite:SetIgnored(object, value)
     for i, id in pairs(object.id) do
-        GatherLite:debug(_GatherLite.DEBUG_DEFAULT, id, value)
         GatherLite.db.char.ignore[id] = value
     end
 end
@@ -715,6 +713,16 @@ function GatherLite:GetRequiredLevel(name)
     end
     return nil
 end
+
+function GatherLite:GetObject(name)
+    for index, node in pairs(_GatherLite.nodeDB) do
+        if name == GatherLite:translate("node." .. node.name) then
+            return node
+        end
+    end
+    return nil
+end
+
 
 function GatherLite:GetProfessionLevel(name)
     local numSkills = GetNumSkillLines();

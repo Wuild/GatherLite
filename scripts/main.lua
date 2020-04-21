@@ -91,27 +91,30 @@ function GatherLite:OnInitialize()
 end
 
 function GatherLite.ModifyTooltip()
-    local skillname, objname, linenum, req
+    local skillname, objname, linenum, req, object
 
     skillname = GameTooltipTextLeft2:GetText()
     objname = GameTooltipTextLeft1:GetText()
 
-    if GameTooltipTextLeft2:GetText() == "Mining" then
+    if skillname == GatherLite:translate("mining") then
         req = GatherLite:GetRequiredLevel(objname)
-    elseif GameTooltipTextLeft2:GetText() == "Requires Herbalism" or GameTooltipTextLeft2:GetText() == "Herbalism" then
+    elseif skillname == GatherLite:translate("herbalism") then
         req = GatherLite:GetRequiredLevel(objname)
     elseif not skillname then
-        req = GatherLite:GetRequiredLevel(objname)
-        if req then
-            skillname = "Mining"
+        object = GatherLite:GetObject(objname)
+
+        if object and object.type == "ore" then
+            skillname = GatherLite:translate("mining")
         end
-        req = GatherLite:GetRequiredLevel(objname)
-        if req then
-            skillname = "Herbalism"
+        if object and object.type == "herb" then
+            skillname = GatherLite:translate("herbalism")
         end
+
         if not skillname then
             return
         end
+
+        req = object.levels
         GameTooltip:AddLine(skillname)
     else
         return
