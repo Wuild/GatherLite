@@ -5,6 +5,18 @@ This addon is made for World of Warcraft:Classic
 
 [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png "Buy Me A Coffee")](https://www.buymeacoffee.com/yuImx6KOY "Buy Me A Coffee")
 
+### Changelog
+#### 3.1.1
+* Minor translation bugs fixed
+
+#### 3.1.0
+* Nodes can now have multiple ID's
+* Now shows the chance on getting a level when gathering on node tooltips
+* More optimizations on the worldmap now not rendering nodes that should not be visible.
+* Updated wowhead database
+* Removed and/or modified code that wasnt beeing used.
+* Added toggle all to the tracker settings
+
 #### Commands
 Use /gather or /gatherlite when using these commands
 
