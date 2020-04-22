@@ -1,4 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+.gitattributes export-ignore
+.gitignore export-ignore
+
 gatherlite-banner.jpg export-ignore
 gatherlite-elwyn.jpg export-ignore
+
+*.lua text
