@@ -670,9 +670,6 @@ function GatherLite:Load()
 end
 
 function GatherLite:SendVersionCheck()
-    GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "CHANNEL", "1")
-    GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "CHANNEL", "2")
-
     if IsInGuild() then
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "GUILD")
     end
