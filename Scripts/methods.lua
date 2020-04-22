@@ -316,7 +316,9 @@ function GatherLite:showTooltip(self)
     GameTooltip:ClearLines();
     GameTooltip:SetOwner(self, "ANCHOR_CURSOR");
     GameTooltip:AddLine(GatherLite:translate("node." .. object.name));
-    GameTooltip:AddLine(ucfirst(self.node.type), "gray")
+    if self.node.type then
+        GameTooltip:AddLine(ucfirst(self.node.type), "gray")
+    end
     GameTooltipTextLeft2:SetTextColor(190, 190, 190)
 
     local type = self.node.type
@@ -668,12 +670,19 @@ function GatherLite:Load()
 end
 
 function GatherLite:SendVersionCheck()
+    GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "CHANNEL", "1")
+    GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "CHANNEL", "2")
+
     if IsInGuild() then
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "GUILD")
     end
 
-    if IsInGroup() then
+    if IsInGroup() and not IsInRaid() then
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "PARTY")
+    end
+
+    if IsInRaid() then
+        GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "RAID")
     end
 end
 
@@ -698,7 +707,7 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
         GatherLite:print("A new version of", _GatherLite.name, "has been detected, please visit curseforge.com to download the latest version, or use the twitch app to keep you addons updated")
     end
 
-    GatherLite:debug(_GatherLite.DEBUG_P2P, "Version check from", sender, message)
+    GatherLite:debug(_GatherLite.DEBUG_P2P, "Version check from", channel, sender, message)
 end
 
 function GatherLite:ShowSettings()
@@ -722,7 +731,6 @@ function GatherLite:GetObject(name)
     end
     return nil
 end
-
 
 function GatherLite:GetProfessionLevel(name)
     local numSkills = GetNumSkillLines();

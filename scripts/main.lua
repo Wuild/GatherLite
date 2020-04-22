@@ -83,7 +83,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
-    GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 5)
+    GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
     GatherLite:ScheduleRepeatingTimer("LoadMinimap", 2)
 
     GatherLite:SendVersionCheck()

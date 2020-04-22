@@ -50,7 +50,7 @@ function GatherLiteFrame:newFrame(frameId)
     newFrame.frameId = frameId;
 
     if MBB_Ignore then
-        table.insert(MBB_Ignore, "GatherLite" .. newFrame:GetName())
+        table.insert(MBB_Ignore, "GatherLite" .. frameId)
     end
 
     newFrame:SetFrameStrata("TOOLTIP");
