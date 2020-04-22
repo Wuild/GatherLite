@@ -674,11 +674,11 @@ function GatherLite:SendVersionCheck()
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "GUILD")
     end
 
-    if IsInGroup() and not IsInRaid() then
+    if IsInGroup() and not IsInRaid() and not IsActiveBattlefieldArena() then
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "PARTY")
     end
 
-    if IsInRaid() then
+    if IsInRaid() and not IsActiveBattlefieldArena() then
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "RAID")
     end
 end
