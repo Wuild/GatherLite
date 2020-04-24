@@ -125,7 +125,7 @@ _GatherLite.nodeDB = {
         id = { 1620, 3727 },
         name = "mageroyal",
         icon = _GatherLite.iconPath .. "Herb\\Mageroyal",
-        levels = { 15, 40, 65, 115 }
+        levels = { 50, 75, 100, 150 }
     },
     {
         type = "herb",
