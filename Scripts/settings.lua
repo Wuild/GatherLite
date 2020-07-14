@@ -6,7 +6,7 @@ local GFrame = LibStub("GatherLiteFrame");
 local tracking = {
     header = {
         name = function()
-            return "Mining";
+            return GatherLite:translate("mining");
         end,
         type = "header",
         order = 0,
@@ -25,7 +25,7 @@ end
 
 tracking["toggleOres"] = {
     name = function()
-        return "Toggle all ores";
+        return GatherLite:translate("settings.tracking.toggle_all_ores");
     end,
     type = "toggle",
     width = "full",
@@ -67,7 +67,7 @@ end
 
 tracking["header2"] = {
     name = function()
-        return "Herbalism";
+        return GatherLite:translate("herbalism");
     end,
     type = "header",
     order = 3,
@@ -75,7 +75,7 @@ tracking["header2"] = {
 
 tracking["toggleHerbs"] = {
     name = function()
-        return "Toggle all herbs";
+        return GatherLite:translate("settings.tracking.toggle_all_herbs");
     end,
     type = "toggle",
     width = "full",
@@ -121,7 +121,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
     args = {
         tracking = {
             name = function()
-                return "Tracking";
+                return GatherLite:translate("settings.tracking");
             end,
             type = "group",
             order = 1,
