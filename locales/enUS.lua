@@ -6,6 +6,9 @@ L["herbalism"] = "Herbalism"
 L["fish"] = "Fish"
 L["treasures"] = "Treasures"
 
+L["worldmap.show"] = "Show GatherLite"
+L["worldmap.hide"] = "Hide GatherLite"
+
 L["settings.node"] = "Node settings"
 L["settings.node.predefined"] = "Use predefined database"
 L["settings.node.minimap"] = "Show nodes on the minimap"

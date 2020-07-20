@@ -348,7 +348,9 @@ function GatherLite:showTooltip(self)
     end
 
     if node.date then
-        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
+        --GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
+
+        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(date(nil, time(node.date)), "white"));
     end
 
     if coins and coins > 0 then
@@ -635,12 +637,12 @@ function GatherLite:LoadMinimap()
         end
     end
 
-    --for b, frame in pairs(GFrame.usedFrames) do
-    --    -- if the frame is loaded and is marked as unused we unload it
-    --    if frame.type == "minimap" and not frame.node.loaded then
-    --        frame:Unload()
-    --    end
-    --end
+    for b, frame in pairs(GFrame.usedFrames) do
+        -- if the frame is loaded and is marked as unused we unload it
+        if frame.type == "minimap" and not frame.node.loaded then
+            frame:Unload()
+        end
+    end
 
     GatherLite:debug(_GatherLite.DEBUG_FRAME, GatherLite:tablelength(GFrame.usedFrames), "used,", GatherLite:tablelength(GFrame.unusedFrames), "unused")
 end
@@ -684,12 +686,37 @@ function GatherLite:Load()
         end
     end
 
+    GatherLiteToggle:SetScript("OnClick", function()
+        GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
+        GatherLite:LoadWorldmap();
+
+        if(GatherLite.db.char.worldmap.enabled) then
+            GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
+        else
+            GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
+        end
+    end);
+
     local WorldmapOpen = false;
 
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not WorldmapOpen then
             WorldmapOpen = true;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap")
+
+            if not WorldMapContinentDropDown:IsShown() then
+                GatherLiteToggle:SetPoint('RIGHT', WorldMapFrameCloseButton, 'LEFT', 0, 0);
+            end
+
+            if Questie_Toggle then
+                GatherLiteToggle:SetPoint('RIGHT', Questie_Toggle, 'LEFT', 0, 0);
+            end
+
+            if(GatherLite.db.char.worldmap.enabled) then
+                GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
+            else
+                GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
+            end
         end
 
         if WorldmapOpen then
