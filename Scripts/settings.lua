@@ -134,19 +134,74 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
             type = "group",
             order = 1,
             args = {
+
+                nodeheader = {
+                    name = function()
+                        return GatherLite:translate("settings.node");
+                    end,
+                    type = "header",
+                    order = 1,
+                },
+
+                predefined = {
+                    name = function()
+                        return GatherLite:translate("settings.node.predefined");
+                    end,
+                    type = "toggle",
+                    order = 4,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.global.usePredefined = val;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.global.usePredefined
+                    end
+                },
+
+                nodeMinimap = {
+                    name = function()
+                        return GatherLite:translate("settings.node.minimap");
+                    end,
+                    type = "toggle",
+                    order = 2,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.char.minimap.enabled = val;
+                        GatherLite:LoadMinimap();
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.minimap.enabled;
+                    end
+                },
+
+                nodeWorldmap = {
+                    name = function()
+                        return GatherLite:translate("settings.node.worldmap");
+                    end,
+                    type = "toggle",
+                    order = 2,
+                    width = "full",
+                    set = function(info, val)
+                        GatherLite.db.char.worldmap.enabled = val;
+                    end,
+                    get = function(info)
+                        return GatherLite.db.char.worldmap.enabled;
+                    end
+                },
+
                 header = {
                     name = function()
                         return GatherLite:translate("settings.general");
                     end,
                     type = "header",
-                    order = 1,
+                    order = 5,
                 },
                 minimap = {
                     name = function()
                         return GatherLite:translate("settings.general.minimap");
                     end,
                     type = "toggle",
-                    order = 3,
+                    order = 6,
                     set = function(info, val)
                         GatherLite.db.profile.minimap.hide = not val;
                         if GatherLite.db.profile.minimap.hide then
@@ -161,7 +216,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                 },
                 Spacer_1 = {
                     type = "description",
-                    order = 6,
+                    order = 7,
                     name = " ",
                     fontSize = "large",
                 },
@@ -169,7 +224,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     type = "group",
                     name = GatherLite:translate('tracking'),
                     inline = true,
-                    order = 7,
+                    order = 8,
                     args = {
                         mining = {
                             name = function()
@@ -177,6 +232,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             end,
                             type = "toggle",
                             order = 1,
+
                             set = function(info, val)
                                 GatherLite.db.char.tracking.mining = val;
                                 GatherLite:LoadMinimap()
@@ -184,7 +240,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             get = function(info)
                                 return GatherLite.db.char.tracking.mining
                             end,
-                            width = "half"
+                            width = "full",
                         },
                         herbalism = {
                             name = function()
@@ -199,30 +255,10 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             get = function(info)
                                 return GatherLite.db.char.tracking.herbalism
                             end,
-                            width = "half"
+                            width = "full",
                         }
                     }
-                },
-                Spacer_2 = {
-                    type = "description",
-                    order = 8,
-                    name = " ",
-                    fontSize = "large",
-                },
-                predefined = {
-                    name = function()
-                        return GatherLite:translate("settings.general.predefined");
-                    end,
-                    type = "toggle",
-                    order = 10,
-                    width = "full",
-                    set = function(info, val)
-                        GatherLite.db.global.usePredefined = val;
-                    end,
-                    get = function(info)
-                        return GatherLite.db.global.usePredefined
-                    end
-                },
+                }
             }
         },
         worldmap = {

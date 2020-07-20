@@ -1,7 +1,7 @@
 ## Interface: 11305
-## Title: GatherLite|cFF00FF00 3.1.5|r
+## Title: GatherLite|cFF00FF00 3.1.6|r
 ## Author: Wuild
-## Version: 3.1.5
+## Version: 3.1.6
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter

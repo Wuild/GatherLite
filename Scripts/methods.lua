@@ -380,6 +380,8 @@ function GatherLite:createMinimapNode(node, id)
         return nil
     end
 
+    GatherLite:debug(_GatherLite.DEBUG_NODE, "Create node of type", node.type);
+
     local f = GFrame:getFrame("minimap");
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
     f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
@@ -392,13 +394,29 @@ function GatherLite:createMinimapNode(node, id)
     f.TimeSinceLastUpdate = 0
 
     f:SetScript("OnUpdate", function(self, elapsed)
-        local angle, distance = Pins:GetVectorToIcon(self);
+        --local angle, distance = Pins:GetVectorToIcon(self);
+
+
+        local x, y, instanceID = HBD:GetPlayerWorldPosition();
+        local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(self.node.posX, self.node.posY, self.node.mapID);
+        local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+
         if GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
             self:SetAlpha(0)
             self:EnableMouse(false)
         else
             self:SetAlpha(GatherLite.db.char.minimap.opacity)
             self:EnableMouse(true)
+        end
+
+        --GatherLite:print(distance);
+
+        -- check if the node is marked as loaded and the distance is greater then 500 units
+        if self.node.loaded and distance >= 500 then
+            GatherLite:debug(_GatherLite.DEBUG_NODE, "Node is to far away, unload node");
+            self.node.loaded = false
+            self:Unload()
+            return false
         end
     end)
 
@@ -410,7 +428,7 @@ function GatherLite:createMinimapNode(node, id)
     end)
 
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID)
-    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, false)
+    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, true)
     return f;
 end
 
@@ -487,6 +505,12 @@ function GatherLite:MinimapContextMenu()
 end
 
 function GatherLite:LoadWorldmapNode(node, mapID)
+
+    if not GatherLite.db.char.worldmap.enabled then
+        node.loadedWorldmap = false
+        return false
+    end
+
     if not GatherLite.db.char.tracking[node.type] then
         node.loadedWorldmap = false
         return false
@@ -544,44 +568,59 @@ function GatherLite:SetIgnored(object, value)
 end
 
 function GatherLite:LoadMinimapNode(node, x, y, instanceID)
-    local x2, y2 = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-    local angle, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+    local x2, y2, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
 
+    -- Check if the node is on the same instance
+    if (instance ~= instanceID) then
+        return false;
+    end
+
+    if not GatherLite.db.char.minimap.enabled then
+        node.loaded = false
+        return false
+    end
+
+    -- check if were tracking the type of node
     if not GatherLite.db.char.tracking[node.type] then
         node.loaded = false
         return false
     end
 
+    -- check if were using the predefined database
     if node.predefined and not GatherLite.db.global.usePredefined then
         node.loaded = false
         return false
     end
 
+    -- check if the node type is should be ignored.
     if GatherLite:IsIgnored(node.object) then
         node.loaded = false
         return false
     end
 
+    -- get the distance between the player and the node
+    local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
     if distance < 500 and not node.loaded then
         node.loaded = true
         GatherLite:createMinimapNode(node)
         return true
     end
 
-    if node.loaded and distance >= 500 then
-        node.loaded = false
-        return false
-    end
+    -- check if the node is marked as loaded and the distance is greater then 500 units
+    --if node.loaded and distance >= 500 then
+    --    node.loaded = false
+    --    return false
+    --end
 end
 
 local worldmapOpen = false;
 
 function GatherLite:LoadMinimap()
-    local i = 0
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
     if (IsInInstance()) then
         for b, frame in pairs(GFrame.usedFrames) do
+            -- if the frame is loaded and is marked as unused we unload it
             if frame.type == "minimap" and not frame.node.loaded then
                 frame:Unload()
             end
@@ -589,19 +628,19 @@ function GatherLite:LoadMinimap()
         return
     end
 
+    -- run through the node database
     for a, nodes in pairs(_GatherLite.db) do
         for k, node in pairs(nodes) do
-            if GatherLite:LoadMinimapNode(node, x, y, instanceID) then
-                i = i + 1
-            end
+            GatherLite:LoadMinimapNode(node, x, y, instanceID)
         end
     end
 
-    for b, frame in pairs(GFrame.usedFrames) do
-        if frame.type == "minimap" and not frame.node.loaded then
-            frame:Unload()
-        end
-    end
+    --for b, frame in pairs(GFrame.usedFrames) do
+    --    -- if the frame is loaded and is marked as unused we unload it
+    --    if frame.type == "minimap" and not frame.node.loaded then
+    --        frame:Unload()
+    --    end
+    --end
 
     GatherLite:debug(_GatherLite.DEBUG_FRAME, GatherLite:tablelength(GFrame.usedFrames), "used,", GatherLite:tablelength(GFrame.unusedFrames), "unused")
 end
@@ -681,6 +720,8 @@ function GatherLite:SendVersionCheck()
             GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "PARTY")
         end
     end
+
+    GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "YELL")
 end
 
 function GatherLite:VersionCheck(event, msg, channel, sender)

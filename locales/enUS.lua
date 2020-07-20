@@ -6,8 +6,13 @@ L["herbalism"] = "Herbalism"
 L["fish"] = "Fish"
 L["treasures"] = "Treasures"
 
+L["settings.node"] = "Node settings"
+L["settings.node.predefined"] = "Use predefined database"
+L["settings.node.minimap"] = "Show nodes on the minimap"
+L["settings.node.worldmap"] = "Show nodes on the worldmap"
+
 L["settings.general"] = "General settings"
-L["settings.general.predefined"] = "Use predefined database"
+
 L["settings.general.minimap"] = "Show minimap button"
 L["settings.map"] = "Map settings"
 L["settings.map.loot"] = "Show loot on node tooltip"
