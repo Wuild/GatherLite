@@ -428,7 +428,7 @@ function GatherLite:createMinimapNode(node, id)
     end)
 
     local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID)
-    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, true)
+    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, false)
     return f;
 end
 
