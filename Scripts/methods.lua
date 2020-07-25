@@ -291,8 +291,6 @@ function GatherLite:EventHandler(event, ...)
         local target = select(2, ...)
         local spellType = GatherLite:findSpellType(spell)
 
-        print(spell);
-
         if (event == "UNIT_SPELLCAST_SENT" and target and spellType) then
             local nodeID = GatherLite:findNodeType(target)
             if (nodeID) then

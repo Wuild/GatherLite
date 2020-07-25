@@ -642,7 +642,9 @@ for (const type in ObjectIDS) {
                     // console.log(rows[arr][i]);
                     let row = rows[arr][i];
                     if (row !== undefined) {
-                        nodes.push(row)
+                        if(!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes)){
+                            nodes.push(row)
+                        }
                     }
                 }
             }
