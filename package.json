@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Wuild/GatherLite#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "jsdom": "^16.2.2",
     "three": "^0.118.3"
   }
 }

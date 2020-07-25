@@ -16,7 +16,8 @@ local tracker = {
 _GatherLite.db = {
     mining = {},
     herbalism = {},
-    containers = {}
+    containers = {},
+    fishing = {}
 };
 
 _GatherLite.WorldmapOpen = false;
@@ -186,7 +187,6 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
     };
 
     table.insert(GatherLite.db.global.nodes[type], node);
-
 
     GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 
@@ -416,7 +416,7 @@ function GatherLite:createMinimapNode(node, id)
         local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(self.node.posX, self.node.posY, self.node.mapID);
         local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
 
-        if self.node.type ~= "containers" then
+        if self.node.type ~= "containers" and self.node.type ~= "fishing" then
             if GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
                 self:SetAlpha(0)
                 self:EnableMouse(false)
@@ -560,6 +560,17 @@ function GatherLite:MinimapContextMenu()
                     GatherLite:LoadWorldmap()
                 end
             })
+
+            GatherLite:addContextItem({
+                text = GatherLite:translate('fish'),
+                icon = _GatherLite.iconPath .. "Fish/Fishhook",
+                checked = GatherLite.db.char.tracking.fishing,
+                callback = function()
+                    GatherLite.db.char.tracking.fishing = not GatherLite.db.char.tracking.fishing
+                    GatherLite:LoadMinimap()
+                    GatherLite:LoadWorldmap()
+                end
+            })
         end
     end
 end
@@ -615,6 +626,10 @@ function GatherLite:LoadWorldmap()
     end);
 
     GatherLite:forEach(_GatherLite.db["containers"], function(node)
+        GatherLite:LoadWorldmapNode(node, mapID)
+    end);
+
+    GatherLite:forEach(_GatherLite.db["fishing"], function(node)
         GatherLite:LoadWorldmapNode(node, mapID)
     end);
 
@@ -693,9 +708,11 @@ function GatherLite:ResetWorldmap()
 end
 
 function GatherLite:forEach(table, cb)
-    for o = 1, #table do
-        if table[o] then
-            cb(table[o]);
+    if (GatherLite:tablelength(table) > 0) then
+        for o = 1, #table do
+            if table[o] then
+                cb(table[o]);
+            end
         end
     end
 end
@@ -744,8 +761,22 @@ function GatherLite:LoadMinimap()
         end
     end)
 
-
     GatherLite:forEach(_GatherLite.db["containers"], function(node)
+        if not node.instance then
+            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            node.instance = instance;
+        end
+
+        if instanceID == node.instance then
+            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+            if distance and distance < _GatherLite.minimapThreshold and not node.loaded then
+                GatherLite:LoadMinimapNode(node, x, y, instanceID);
+            end
+        end
+    end)
+
+    GatherLite:forEach(_GatherLite.db["fishing"], function(node)
         if not node.instance then
             local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
             node.instance = instance;
@@ -798,6 +829,15 @@ function GatherLite:Load()
         end);
     end
 
+    if GatherLite_localFishingNodes then
+        GatherLite:forEach(GatherLite_localFishingNodes, function(node)
+            node.coins = 0
+            node.loot = {}
+            node.predefined = true
+            table.insert(_GatherLite.db.fishing, node)
+        end);
+    end
+
     GatherLite:forEach(self.db.global.nodes.mining, function(node)
         local oldNode = GatherLite:findExistingNode("mining", node.mapID, node.posX, node.posY);
         if oldNode then
@@ -819,18 +859,6 @@ function GatherLite:Load()
             oldNode.predefined = false;
         else
             table.insert(_GatherLite.db.herbalism, node)
-        end
-    end);
-
-    GatherLite:forEach(self.db.global.nodes.containers, function(node)
-        local oldNode = GatherLite:findExistingNode("containers", node.mapID, node.posX, node.posY);
-        if oldNode then
-            oldNode.loot = node.loot
-            oldNode.coins = 0
-            oldNode.date = node.date
-            oldNode.predefined = false;
-        else
-            table.insert(_GatherLite.db.containers, node)
         end
     end);
 

@@ -91,3 +91,10 @@ L['node.solid_chest'] = "Solid chest"
 L['node.large_solid_chest'] = "Large solid chest"
 L['node.giant_clam'] = "Giant Clam"
 L['node.ungoro_dirt_pile'] = "Un'Goro Soil"
+
+-- Fish
+L['node.fish_pool_firefin'] = "Firefin Snapper School"
+L['node.fish_pool_debris'] = "Floating Debris"
+L['node.fish_pool_wreckage'] = "Floating Wreckage"
+L['node.fish_pool_oily_blackmouth'] = "Oily Blackmouth School"
+L['node.fish_pool_sagefish'] = "Sagefish School"

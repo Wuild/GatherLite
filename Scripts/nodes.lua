@@ -330,7 +330,40 @@ _GatherLite.nodeDB = {
     {
         type = "container",
         id = { 157936 },
-        icon = _GatherLite.iconPath .. "Open\\Chest",
+        icon = _GatherLite.iconPath .. "Soil",
         name = "ungoro_dirt_pile"
+    },
+
+    -- Fishing
+    {
+        type = "fishing",
+        id = { 180902, 180683, 180657, 180752 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "fish_pool_firefin"
+    },
+    {
+        type = "fishing",
+        id = { 180655 },
+        icon = _GatherLite.iconPath .. "Fish\\Treasure",
+        name = "fish_pool_debris"
+    },
+    {
+        type = "fishing",
+        id = { 180685, 180662, 180901, 180751 },
+        icon = _GatherLite.iconPath .. "Fish\\Treasure",
+        name = "fish_pool_wreckage"
+    },
+    {
+        type = "fishing",
+        id = { 180750, 180900, 180682, 180664, 180582 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "fish_pool_oily_blackmouth"
+    },
+    {
+        type = "fishing",
+        id = { 180656, 180663 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "fish_pool_sagefish"
     }
+
 }

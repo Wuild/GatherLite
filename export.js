@@ -2,6 +2,9 @@ const axios = require("axios");
 const Three = require("three");
 const fs = require("fs");
 const path = require("path");
+const jsdom = require("jsdom");
+const {VirtualConsole} = require("jsdom");
+const {JSDOM} = jsdom;
 
 const idChanges = {
     3724: 1618,
@@ -149,6 +152,33 @@ const ObjectIDS = {
         153462,
         153461,
         157936
+    ],
+    fishing: [
+        // Firefin
+        180902,
+        180683,
+        180657,
+        180752,
+
+        // Blackmouth
+        180750,
+        180900,
+        180682,
+        180664,
+        180582,
+
+        // Sagefish
+        180656,
+        180663,
+
+        // Debris
+        180655,
+
+        // Wreckage
+        180685,
+        180662,
+        180901,
+        180751,
     ]
 };
 
@@ -326,27 +356,48 @@ function node(type, object, incoming) {
     return data;
 }
 
-function GetData(type) {
+function GetData(type, site = "wowhead") {
     return new Promise(resolve => {
         let jobs = [];
         for (let i = 0; i < ObjectIDS[type].length; i++) {
             let url = `https://classic.wowhead.com/object=${ObjectIDS[type][i]}`;
+
+            if (site === "twinstar") {
+                url = `https://vanilla-twinhead.twinstar.cz/?object=${ObjectIDS[type][i]}`;
+            }
+
             jobs.push(axios.get(url).then(res => {
                 return new Promise(pr => {
-                    let matches = res.data.match(/g_mapperData = (.*?);/i);
-                    if (matches) {
-                        let data = JSON.parse(matches[1]);
 
-                        let t = "containers";
-                        if (type === "ores") {
-                            t = "mining";
-                        } else if (type === "herbs") {
-                            t = "herbalism";
+                    const dom = new JSDOM(res.data);
+                    dom.window.document.querySelectorAll("script").forEach(link => {
+                        if (link.innerHTML.match(/g_mapperData/i)) {
+                            let test = new JSDOM("<script>" + link.innerHTML + "</script>", {
+                                runScripts: "dangerously", virtualConsole: new VirtualConsole().sendTo(
+                                    // options.console || console,
+                                    {
+                                        log: () => {
+
+                                        },
+                                        error: () => {
+
+                                        }
+                                    }
+                                ),
+                            });
+                            let t = "containers";
+                            if (type === "ores") {
+                                t = "mining";
+                            } else if (type === "herbs") {
+                                t = "herbalism";
+                            } else if (type === "fishing") {
+                                t = "fishing";
+                            }
+
+                            let d = node(t, ObjectIDS[type][i], test.window.g_mapperData);
+                            pr(d);
                         }
-
-                        let d = node(t, ObjectIDS[type][i], data);
-                        pr(d);
-                    }
+                    });
                     pr([]);
                 });
             }));
@@ -615,12 +666,19 @@ function Objects2Lua(data = [], indent = "", top = false) {
     return out;
 }
 
-function CheckDistance(x, y, mapID, object, rows) {
+function CheckDistance(x, y, mapID, object, rows, unique) {
     let a = new Three.Vector2(x, y);
     for (let i = 0; i < rows.length; i++) {
         if (rows[i].mapID === mapID) {
-            if (object === rows[i].object && a.distanceTo(new Three.Vector2(rows[i].posX, rows[i].posY)) < 0.0065) {
-                return true;
+
+            if (unique) {
+                if (object === rows[i].object && a.distanceTo(new Three.Vector2(rows[i].posX, rows[i].posY)) < 0.0065) {
+                    return true;
+                }
+            } else {
+                if (a.distanceTo(new Three.Vector2(rows[i].posX, rows[i].posY)) < 0.0065) {
+                    return true;
+                }
             }
         }
     }
@@ -631,7 +689,8 @@ let objects = [];
 for (const type in ObjectIDS) {
     objects.push(new Promise(resolve => {
         console.log("Downloading", type)
-        GetData(type).then(rows => {
+
+        GetData(type, type === "fishing" ? "twinstar" : undefined).then(rows => {
             console.log(type, "data complete")
             let nodes = [];
 
@@ -642,7 +701,7 @@ for (const type in ObjectIDS) {
                     // console.log(rows[arr][i]);
                     let row = rows[arr][i];
                     if (row !== undefined) {
-                        if(!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes)){
+                        if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
                             nodes.push(row)
                         }
                     }
@@ -660,6 +719,10 @@ for (const type in ObjectIDS) {
 
                 case "herbs":
                     out = Objects2Lua({GatherLite_localHerbNodes: nodes});
+                    break;
+
+                case "fishing":
+                    out = Objects2Lua({GatherLite_localFishingNodes: nodes});
                     break;
             }
 

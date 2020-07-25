@@ -22,7 +22,8 @@ _GatherLite.configsDefaults = {
         nodes = {
             mining = {},
             herbalism = {},
-            containers = {}
+            containers = {},
+            fishing = {}
         },
         usePredefined = true,
         debug = {
@@ -42,6 +43,7 @@ _GatherLite.configsDefaults = {
             mining = true,
             herbalism = true,
             containers = true,
+            fishing = true
         },
         minimap = {
             enabled = true,
