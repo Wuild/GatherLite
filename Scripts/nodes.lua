@@ -294,5 +294,43 @@ _GatherLite.nodeDB = {
         name = "black_lotus",
         icon = _GatherLite.iconPath .. "Herb\\BlackLotus",
         levels = { 300, 325, 350, 400 }
+    },
+
+    -- containers
+    {
+        type = "container",
+        id = { 106319, 2843, 106318, 2849 },
+        icon = _GatherLite.iconPath .. "Open\\Chest",
+        name = "battered_chest"
+    },
+    {
+        type = "container",
+        id = { 75293 },
+        icon = _GatherLite.iconPath .. "Open\\Chest",
+        name = "large_battered_chest"
+    },
+    {
+        type = "container",
+        id = { 2850, 153453, 153454, 2855, 153451, 2852, 2857, 4149 },
+        icon = _GatherLite.iconPath .. "Open\\Chest",
+        name = "solid_chest"
+    },
+    {
+        type = "container",
+        id = { 74448, 153464, 75300, 153463, 75299, 75298, 153462, 153461 },
+        icon = _GatherLite.iconPath .. "Open\\Chest",
+        name = "large_solid_chest"
+    },
+    {
+        type = "container",
+        id = { 2744, 19018, 19017 },
+        icon = _GatherLite.iconPath .. "Open\\Clam",
+        name = "giant_clam"
+    },
+    {
+        type = "container",
+        id = { 157936 },
+        icon = _GatherLite.iconPath .. "Open\\Chest",
+        name = "ungoro_dirt_pile"
     }
 }

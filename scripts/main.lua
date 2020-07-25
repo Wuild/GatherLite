@@ -73,7 +73,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("PLAYER_ENTERING_WORLD", "EventHandler")
 
     hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
-        GatherLite:LoadWorldmap();
+        GatherLite:ResetWorldmap();
     end);
 
     GameTooltip:HookScript("OnShow", GatherLite.ModifyTooltip)

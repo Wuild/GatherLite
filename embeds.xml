@@ -21,6 +21,7 @@
 
     <Script file="data/ores.lua"/>
     <Script file="data/herbs.lua"/>
+    <Script file="data/containers.lua"/>
 
     <Script file="locales\enUS.lua"/>
     <Script file="locales\deDE.lua"/>

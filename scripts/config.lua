@@ -21,7 +21,8 @@ _GatherLite.configsDefaults = {
     global = {
         nodes = {
             mining = {},
-            herbalism = {}
+            herbalism = {},
+            containers = {}
         },
         usePredefined = true,
         debug = {
@@ -40,6 +41,7 @@ _GatherLite.configsDefaults = {
         tracking = {
             mining = true,
             herbalism = true,
+            containers = true,
         },
         minimap = {
             enabled = true,
