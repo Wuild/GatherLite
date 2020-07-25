@@ -9,8 +9,16 @@ L["herbalism"] = "草药"
 L["fish"] = "鱼群"
 L["treasures"] = "宝箱"
 
+L["worldmap.show"] = "显示 GatherLite"
+L["worldmap.hide"] = "隐藏 GatherLite"
+
+L["settings.node"] = "采集点设置"
+L["settings.node.predefined"] = "使用预设数据库"
+L["settings.node.minimap"] = "在小地图显示采集点"
+L["settings.node.worldmap"] = "在世界地图显示采集点"
+
 L["settings.general"] = "常规设置"
-L["settings.general.predefined"] = "使用预设数据库"
+
 L["settings.general.minimap"] = "显示小地图按钮"
 L["settings.map"] = "世界地图设置"
 L["settings.map.loot"] = "显示采集点提示框中的拾取记录"
