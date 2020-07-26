@@ -31,6 +31,8 @@ function GatherLiteFrame:getFrame(type)
 
     GatherLite:debug(_GatherLite.DEBUG_FRAME, "[GatherLiteFrame:getFrame]")
 
+    returnFrame:FakeShow();
+
     return returnFrame
 end
 
@@ -53,11 +55,40 @@ function GatherLiteFrame:newFrame(frameId)
         table.insert(MBB_Ignore, "GatherLite" .. frameId)
     end
 
-    newFrame:SetFrameStrata("TOOLTIP");
+    --newFrame:SetFrameStrata("TOOLTIP");
     newFrame:SetWidth(16) -- Set these to whatever height/width is needed
     newFrame:SetHeight(16) -- for your Texture
     newFrame:SetPoint("CENTER", -8, -8)
     newFrame:EnableMouse(true)
+
+    function newFrame:FakeHide()
+        if not self.hidden then
+            self.shouldBeShowing = self:IsShown();
+            self._show = self.Show;
+            self.Show = function()
+                self.shouldBeShowing = true;
+            end
+            self:Hide();
+            self._hide = self.Hide;
+            self.Hide = function()
+                self.shouldBeShowing = false;
+            end
+            self.hidden = true
+        end
+    end
+
+    function newFrame:FakeShow()
+        if self.hidden then
+            self.hidden = false
+            self.Show = self._show;
+            self.Hide = self._hide;
+            self._show = nil
+            self._hide = nil
+            if self.shouldBeShowing then
+                self:Show();
+            end
+        end
+    end
 
     local texture = newFrame:CreateTexture(nil, "TOOLTIP", nil, 0)
     texture:SetWidth(16)
@@ -85,8 +116,8 @@ function GatherLiteFrame:recycleFrame(frame)
 end
 
 function _frame:unload()
-    self:SetFrameStrata("TOOLTIP");
-    self:SetFrameLevel(0);
+    --self:SetFrameStrata("TOOLTIP");
+    --self:SetFrameLevel(0);
 
     self:SetScript("OnUpdate", nil)
     self:SetScript("OnShow", nil)

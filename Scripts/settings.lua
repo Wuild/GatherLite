@@ -208,6 +208,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.global.usePredefined = val;
+                        needReload = true;
                     end,
                     get = function(info)
                         return GatherLite.db.global.usePredefined
@@ -245,6 +246,20 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     end,
                     get = function(info)
                         return GatherLite.db.char.worldmap.enabled;
+                    end
+                },
+
+                reloadUI = {
+                    name = function()
+                        return "reload ui";
+                    end,
+                    type = "execute",
+                    order = 4,
+                    hidden = function()
+                        return not needReload
+                    end,
+                    func = function()
+                        ReloadUI();
                     end
                 },
 
@@ -456,6 +471,23 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     inline = true,
                     order = 6,
                     args = {
+                        nodeRange = {
+                            name = function()
+                                return GatherLite:translate("settings.minimap.threshold", GatherLite.db.char.minimap.range);
+                            end,
+                            type = "range",
+                            min = 200,
+                            max = 1000,
+                            step = 1,
+                            order = 4,
+                            width = "full",
+                            set = function(info, val)
+                                GatherLite.db.char.minimap.range = val;
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.minimap.range
+                            end
+                        },
                         iconSize = {
                             name = function()
                                 return GatherLite:translate("settings.minimap.size");

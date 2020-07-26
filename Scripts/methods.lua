@@ -13,12 +13,7 @@ local tracker = {
     ended = nil
 };
 
-_GatherLite.db = {
-    mining = {},
-    herbalism = {},
-    containers = {},
-    fishing = {}
-};
+_GatherLite.db = {};
 
 _GatherLite.WorldmapOpen = false;
 
@@ -31,7 +26,6 @@ local spellIDs = {
 };
 
 _GatherLite.mainFrame = CreateFrame("Frame", nil, UIParent)
-_GatherLite.minimapThreshold = 300;
 
 local function ucfirst(str)
     return (str:gsub("^%l", string.upper))
@@ -146,10 +140,8 @@ function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
 end
 
 function GatherLite:findExistingNode(type, mapID, x, y)
-
-    for k = 1, #_GatherLite.nodeDB do
-        local node = _GatherLite.db[type];
-        if node.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
+    for key, node in pairs(GatherLite.db.global.nodes[type]) do
+        if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
         end
     end
@@ -157,9 +149,8 @@ function GatherLite:findExistingNode(type, mapID, x, y)
 end
 
 function GatherLite:findExistingLocalNode(type, mapID, x, y)
-    print(type);
-    for k, node in pairs(self.db.global.nodes[type]) do
-        if node.mapID == mapID and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
+    for k, node in pairs(_GatherLite.db) do
+        if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
         end
     end
@@ -186,7 +177,7 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
         date = date('*t')
     };
 
-    table.insert(GatherLite.db.global.nodes[type], node);
+    table.insert(GatherLite.db.global.nodes, node);
 
     GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 
@@ -316,7 +307,7 @@ function GatherLite:leadingZeros(value)
     value = tonumber(value);
     if (value < 10) then
         return "0" .. value;
-    end ;
+    end
     return value;
 end
 
@@ -346,22 +337,28 @@ function GatherLite:showTooltip(self)
         lootTable = GatherLite.db.char.worldmap.loot;
     end
 
-    local coins = node.coins
+    local coins = 0;
+    local lastvisit;
 
-    if node.loot and lootTable then
-        for k, item in pairs(node.loot) do
-            if item.count > 0 then
-                GameTooltip:AddDoubleLine(item.link, "x" .. item.count);
-            else
-                GameTooltip:AddDoubleLine(item.link, "");
+    local existingNode = GatherLite:findExistingNode(self.node.type, self.node.mapID, self.node.posX, self.node.posY);
+
+    if existingNode then
+        coins = existingNode.coins;
+        lastvisit = existingNode.date;
+
+        if existingNode.loot and lootTable then
+            for k, item in pairs(existingNode.loot) do
+                if item.count > 0 then
+                    GameTooltip:AddDoubleLine(item.link, "x" .. item.count);
+                else
+                    GameTooltip:AddDoubleLine(item.link, "");
+                end
             end
         end
     end
 
-    if node.date then
-        --GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(GatherLite:leadingZeros(node.date.day) .. '/' .. GatherLite:leadingZeros(node.date.month) .. '/' .. GatherLite:leadingZeros(node.date.year) .. " - " .. GatherLite:leadingZeros(node.date.hour) .. ':' .. GatherLite:leadingZeros(node.date.min) .. ':' .. GatherLite:leadingZeros(node.date.sec), "white"));
-
-        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(date(nil, time(node.date)), "white"));
+    if lastvisit then
+        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(date(nil, time(lastvisit)), "white"));
     end
 
     if coins and coins > 0 then
@@ -389,7 +386,7 @@ function GatherLite:GetNodeObject(nodeID)
     end
 end
 
-function GatherLite:createMinimapNode(node, id)
+function GatherLite:createMinimapNode(node)
     local object = GatherLite:GetNodeObject(node.object)
     if not object then
         return nil
@@ -400,70 +397,14 @@ function GatherLite:createMinimapNode(node, id)
     local f = GFrame:getFrame("minimap");
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
     f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
-    f.texture:SetTexture(object.icon)
 
+    f.texture:SetTexture(object.icon)
     f.node = node;
     f.object = object
     f.type = "minimap";
 
-    f.TimeSinceLastUpdate = 0
-
-    f:SetScript("OnUpdate", function(self, elapsed)
-        --local angle, distance = Pins:GetVectorToIcon(self);
-
-
-        local x, y, instanceID = HBD:GetPlayerWorldPosition();
-        local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(self.node.posX, self.node.posY, self.node.mapID);
-        local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
-
-        if self.node.type ~= "containers" and self.node.type ~= "fishing" then
-            if GatherLite.db.char.tracking[self.node.type] and distance and distance < GatherLite.db.char.minimap.distance then
-                self:SetAlpha(0)
-                self:EnableMouse(false)
-            else
-                self:SetAlpha(GatherLite.db.char.minimap.opacity)
-                self:EnableMouse(true)
-            end
-        end
-
-        --GatherLite:print(distance);
-
-        -- check if the node is marked as loaded and the distance is greater then 500 units
-        if self.node.loaded and distance >= _GatherLite.minimapThreshold then
-            GatherLite:debug(_GatherLite.DEBUG_NODE, "Node is to far away, unload node");
-            self.node.loaded = false
-            self:Unload()
-            return false
-        end
-
-        if not GatherLite.db.char.minimap.enabled then
-            self.node.loaded = false
-            self:Unload()
-            return false
-        end
-
-        -- check if were tracking the type of node
-        if not GatherLite.db.char.tracking[node.type] then
-            self.node.loaded = false
-            self:Unload()
-            return false
-        end
-
-        -- check if were using the predefined database
-        if self.node.predefined and not GatherLite.db.global.usePredefined then
-            self.node.loaded = false
-            self:Unload()
-            return false
-        end
-
-        -- check if the node type is should be ignored.
-        if GatherLite:IsIgnored(self.node.object) then
-            self.node.loaded = false
-            self:Unload()
-            return false
-        end
-
-    end)
+    f:SetFrameStrata(Minimap:GetFrameStrata());
+    --f:SetFrameLevel(Minimap:GetFrameLevel() + 5);
 
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
@@ -487,12 +428,16 @@ function GatherLite:createWorldmapNode(node)
     f:SetAlpha(GatherLite.db.char.worldmap.opacity);
     f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
     f.texture:SetTexture(object.icon)
+    f.texture:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
     f:SetBackdropColor(1, 0, 0, 1);
 
     f.node = node;
     f.object = object
     f.type = "worldmap";
     f.TimeSinceLastUpdate = 0
+
+    f:SetFrameStrata("TOOLTIP");
+    --f:SetFrameLevel(0);
 
     f:SetScript("OnUpdate", nil)
 
@@ -534,8 +479,8 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.mining,
                 callback = function()
                     GatherLite.db.char.tracking.mining = not GatherLite.db.char.tracking.mining
-                    GatherLite:LoadMinimap()
-                    GatherLite:LoadWorldmap()
+                    GatherLite:ResetMinimap()
+                    GatherLite:ResetWorldmap()
                 end
             })
 
@@ -545,8 +490,8 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.herbalism,
                 callback = function()
                     GatherLite.db.char.tracking.herbalism = not GatherLite.db.char.tracking.herbalism
-                    GatherLite:LoadMinimap()
-                    GatherLite:LoadWorldmap()
+                    GatherLite:ResetMinimap()
+                    GatherLite:ResetWorldmap()
                 end
             })
 
@@ -556,8 +501,8 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.containers,
                 callback = function()
                     GatherLite.db.char.tracking.containers = not GatherLite.db.char.tracking.containers
-                    GatherLite:LoadMinimap()
-                    GatherLite:LoadWorldmap()
+                    GatherLite:ResetMinimap()
+                    GatherLite:ResetWorldmap()
                 end
             })
 
@@ -567,77 +512,16 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.fishing,
                 callback = function()
                     GatherLite.db.char.tracking.fishing = not GatherLite.db.char.tracking.fishing
-                    GatherLite:LoadMinimap()
-                    GatherLite:LoadWorldmap()
+                    GatherLite:ResetMinimap()
+                    GatherLite:ResetWorldmap()
                 end
             })
         end
     end
 end
 
-function GatherLite:LoadWorldmapNode(node, mapID)
-
-    if not GatherLite.db.char.worldmap.enabled then
-        node.loadedWorldmap = false
-        return false
-    end
-
-    if not GatherLite.db.char.tracking[node.type] then
-        node.loadedWorldmap = false
-        return false
-    end
-
-    if node.predefined and not GatherLite.db.global.usePredefined then
-        node.loadedWorldmap = false
-        return false
-    end
-
-    if GatherLite:IsIgnored(node.object) then
-        node.loadedWorldmap = false
-        return false
-    end
-
-    if mapID ~= node.mapID then
-        node.loadedWorldmap = false
-        return false
-    end
-
-    if mapID == node.mapID and not node.loadedWorldmap then
-        node.loadedWorldmap = true
-        GatherLite:createWorldmapNode(node)
-        return true
-    end
-
-end
-
 function GatherLite:LoadWorldmap()
-    if not _GatherLite.WorldmapOpen then
-        return
-    end
-
-    local mapID = WorldMapFrame.mapID;
-
-    GatherLite:forEach(_GatherLite.db["mining"], function(node)
-        GatherLite:LoadWorldmapNode(node, mapID)
-    end);
-
-    GatherLite:forEach(_GatherLite.db["herbalism"], function(node)
-        GatherLite:LoadWorldmapNode(node, mapID)
-    end);
-
-    GatherLite:forEach(_GatherLite.db["containers"], function(node)
-        GatherLite:LoadWorldmapNode(node, mapID)
-    end);
-
-    GatherLite:forEach(_GatherLite.db["fishing"], function(node)
-        GatherLite:LoadWorldmapNode(node, mapID)
-    end);
-
-    GatherLite:forEach(GFrame.usedFrames, function(frame)
-        if frame.type == "worldmap" and not frame.node.loadedWorldmap then
-            frame:Unload()
-        end
-    end);
+    GatherLite:Trigger("worldmap:update")
 end
 
 function GatherLite:IsIgnored(objectID)
@@ -648,41 +532,6 @@ function GatherLite:SetIgnored(object, value)
     for i, id in pairs(object.id) do
         GatherLite.db.char.ignore[id] = value
     end
-end
-
-function GatherLite:LoadMinimapNode(node, x, y, instanceID)
-    if not GatherLite.db.char.minimap.enabled then
-        node.loaded = false;
-        return false
-    end
-
-    -- check if were tracking the type of node
-    if not GatherLite.db.char.tracking[node.type] then
-        node.loaded = false;
-        return false
-    end
-
-    -- check if were using the predefined database
-    if node.predefined and not GatherLite.db.global.usePredefined then
-        node.loaded = false;
-        return false
-    end
-
-    -- check if the node type is should be ignored.
-    if GatherLite:IsIgnored(node.object) then
-        node.loaded = false;
-        return false
-    end
-
-    GatherLite:createMinimapNode(node)
-    node.loaded = true;
-    return true
-
-    -- check if the node is marked as loaded and the distance is greater then 500 units
-    --if node.loaded and distance >= 500 then
-    --    node.loaded = false
-    --    return false
-    --end
 end
 
 function GatherLite:ResetMinimap()
@@ -704,163 +553,63 @@ function GatherLite:ResetWorldmap()
         end
     end)
 
-    GatherLite:LoadWorldmap();
+    GatherLiteTracker:Worldmap()
 end
 
 function GatherLite:forEach(table, cb)
     if (GatherLite:tablelength(table) > 0) then
-        for o = 1, #table do
-            if table[o] then
-                cb(table[o]);
-            end
+        for key in pairs(table) do
+            cb(table[key]);
         end
     end
 end
 
 function GatherLite:LoadMinimap()
+    GatherLiteTracker:Minimap(0, true);
+end
 
-    if (IsInInstance()) then
-        GatherLite:forEach(GFrame.usedFrames, function(frame)
-            if frame.type == "minimap" and not frame.node.loaded then
-                frame:Unload()
-            end
-        end)
-        return
+local function loadDatabase(type)
+    GatherLite:forEach(GatherLite.db.global.nodes[type], function(node)
+        local oldNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
+        if not oldNode then
+            node.predefined = false;
+            table.insert(_GatherLite.db, node)
+        end
+    end);
+end
+
+local function LoadTable(type, data)
+    if data then
+        GatherLite:forEach(data, function(node)
+            node.type = type;
+            node.coins = 0
+            node.loot = {}
+            node.predefined = true
+
+            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            node.instance = instance;
+
+            table.insert(_GatherLite.db, node)
+        end);
     end
-
-    -- run through the node database
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-
-    GatherLite:forEach(_GatherLite.db["mining"], function(node)
-        if not node.instance then
-            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            node.instance = instance;
-        end
-
-        if instanceID == node.instance then
-            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
-            if distance < _GatherLite.minimapThreshold and not node.loaded then
-                GatherLite:LoadMinimapNode(node, x, y, instanceID);
-            end
-        end
-    end)
-
-    GatherLite:forEach(_GatherLite.db["herbalism"], function(node)
-        if not node.instance then
-            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            node.instance = instance;
-        end
-
-        if instanceID == node.instance then
-            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
-            if distance < _GatherLite.minimapThreshold and not node.loaded then
-                GatherLite:LoadMinimapNode(node, x, y, instanceID);
-            end
-        end
-    end)
-
-    GatherLite:forEach(_GatherLite.db["containers"], function(node)
-        if not node.instance then
-            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            node.instance = instance;
-        end
-
-        if instanceID == node.instance then
-            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
-            if distance and distance < _GatherLite.minimapThreshold and not node.loaded then
-                GatherLite:LoadMinimapNode(node, x, y, instanceID);
-            end
-        end
-    end)
-
-    GatherLite:forEach(_GatherLite.db["fishing"], function(node)
-        if not node.instance then
-            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            node.instance = instance;
-        end
-
-        if instanceID == node.instance then
-            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
-            if distance < _GatherLite.minimapThreshold and not node.loaded then
-                GatherLite:LoadMinimapNode(node, x, y, instanceID);
-            end
-        end
-    end)
-
-    GatherLite:forEach(GFrame.usedFrames, function(frame)
-        if frame.type == "minimap" and not frame.node.loaded then
-            frame:Unload()
-        end
-    end)
-
-    GatherLite:debug(_GatherLite.DEBUG_FRAME, GatherLite:tablelength(GFrame.usedFrames), "used,", GatherLite:tablelength(GFrame.unusedFrames), "unused")
 end
 
 function GatherLite:Load()
 
-    if GatherLite_localOreNodes then
-        GatherLite:forEach(GatherLite_localOreNodes, function(node)
-            node.coins = 0
-            node.loot = {}
-            node.predefined = true
-            table.insert(_GatherLite.db.mining, node)
-        end);
+    if GatherLite.db.global.usePredefined then
+        LoadTable("mining", GatherLite_localOreNodes);
+        LoadTable("herbalism", GatherLite_localHerbNodes);
+        LoadTable("containers", GatherLite_localContainerNodes);
+        LoadTable("fishing", GatherLite_localFishingNodes);
     end
 
-    if GatherLite_localHerbNodes then
-        GatherLite:forEach(GatherLite_localHerbNodes, function(node)
-            node.coins = 0
-            node.loot = {}
-            node.predefined = true
-            table.insert(_GatherLite.db.herbalism, node)
-        end);
-    end
+    loadDatabase("mining");
+    loadDatabase("herbalism");
+    loadDatabase("containers");
+    loadDatabase("fishing");
 
-    if GatherLite_localContainerNodes then
-        GatherLite:forEach(GatherLite_localContainerNodes, function(node)
-            node.coins = 0
-            node.loot = {}
-            node.predefined = true
-            table.insert(_GatherLite.db.containers, node)
-        end);
-    end
-
-    if GatherLite_localFishingNodes then
-        GatherLite:forEach(GatherLite_localFishingNodes, function(node)
-            node.coins = 0
-            node.loot = {}
-            node.predefined = true
-            table.insert(_GatherLite.db.fishing, node)
-        end);
-    end
-
-    GatherLite:forEach(self.db.global.nodes.mining, function(node)
-        local oldNode = GatherLite:findExistingNode("mining", node.mapID, node.posX, node.posY);
-        if oldNode then
-            oldNode.loot = node.loot
-            oldNode.coins = 0
-            oldNode.date = node.date
-            oldNode.predefined = false;
-        else
-            table.insert(_GatherLite.db.mining, node)
-        end
-    end);
-
-    GatherLite:forEach(self.db.global.nodes.herbalism, function(node)
-        local oldNode = GatherLite:findExistingNode("herbalism", node.mapID, node.posX, node.posY);
-        if oldNode then
-            oldNode.loot = node.loot
-            oldNode.coins = 0
-            oldNode.date = node.date
-            oldNode.predefined = false;
-        else
-            table.insert(_GatherLite.db.herbalism, node)
-        end
-    end);
+    GatherLite:ResetMinimap();
+    GatherLite:ResetWorldmap();
 
     GatherLiteToggle:SetScript("OnClick", function()
         GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
@@ -868,8 +617,10 @@ function GatherLite:Load()
 
         if (GatherLite.db.char.worldmap.enabled) then
             GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
+            GatherLite:ResetWorldmap()
         else
             GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
+            GatherLite:ResetWorldmap()
         end
     end);
 
@@ -891,25 +642,13 @@ function GatherLite:Load()
             else
                 GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
             end
-
-            GatherLite:LoadWorldmap()
         end
 
         if not WorldMapFrame:IsVisible() and _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = false;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "unload worldmap")
-
-            GatherLite:forEach(GFrame.usedFrames, function(frame)
-                if frame.type == "worldmap" then
-                    frame:Unload()
-                end
-            end);
-
         end
-
-        --GatherLite:LoadMinimap()
     end)
-    GatherLite:LoadMinimap();
 end
 
 function GatherLite:SendVersionCheck()

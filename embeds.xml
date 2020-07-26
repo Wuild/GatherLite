@@ -39,6 +39,17 @@
     <Script file="scripts/settings.lua"/>
     <Script file="scripts/main.lua"/>
 
+    <Script file="scripts/Tracker.lua"/>
+
+    <Frame name="GatherLiteTracker" mixin="GatherLiteTracker">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+            <OnUpdate>
+                GatherLiteTracker:OnUpdate(elapsed)
+            </OnUpdate>
+        </Scripts>
+    </Frame>
+
     <Button name="GatherLiteToggle" parent="WorldMapFrame" inherits="UIPanelButtonTemplate" text="Hide GatherLite">
         <Size>
             <AbsDimension x="140" y="20"/>
