@@ -122,6 +122,12 @@ function GatherLiteTracker:Minimap(timeDelta, force)
         local x, y, instanceID = HBD:GetPlayerWorldPosition()
         GatherLite:forEach(GFrame.usedFrames, function(frame)
             if frame.type == "minimap" and frame.node.loaded then
+                if IsInInstance() then
+                    frame.node.loaded = false;
+                    frame:Unload();
+                    return
+                end
+
                 local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(frame.node.posX, frame.node.posY, frame.node.mapID);
                 local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
 

@@ -332,6 +332,38 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                                 return GatherLite.db.char.tracking.herbalism
                             end,
                             width = "full",
+                        },
+                        containers = {
+                            name = function()
+                                return GatherLite:translate('containers');
+                            end,
+                            type = "toggle",
+                            order = 2,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.containers = val;
+                                GatherLite:ResetMinimap();
+                                GatherLite:ResetWorldmap();
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.containers
+                            end,
+                            width = "full",
+                        },
+                        fishing = {
+                            name = function()
+                                return GatherLite:translate('fish');
+                            end,
+                            type = "toggle",
+                            order = 2,
+                            set = function(info, val)
+                                GatherLite.db.char.tracking.fishing = val;
+                                GatherLite:ResetMinimap();
+                                GatherLite:ResetWorldmap();
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.tracking.fishing
+                            end,
+                            width = "full",
                         }
                     }
                 }
