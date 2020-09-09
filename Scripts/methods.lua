@@ -190,6 +190,10 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
     local coin = 0;
     local count = GetNumLootItems()
 
+    if (IsInInstance()) then
+        return
+    end
+
     local node = GatherLite:findExistingLocalNode(type, mapID, posX, posY);
 
     if not node then
@@ -270,6 +274,10 @@ function GatherLite:EventHandler(event, ...)
         GatherLite:LoadMinimap()
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then
+            if (IsInInstance()) then
+                return
+            end
+
             local x, y, mapID = HBD:GetPlayerZonePosition()
             GatherLite:UpdateNode(tracker.spellType, tracker.nodeID, mapID, x, y);
             tracker.nodeID = nil;
