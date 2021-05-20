@@ -437,7 +437,6 @@ function GatherLite:createWorldmapNode(node)
     f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
     f.texture:SetTexture(object.icon)
     f.texture:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
-    f:SetBackdropColor(1, 0, 0, 1);
 
     f.node = node;
     f.object = object
