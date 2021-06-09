@@ -6,6 +6,13 @@ This addon is made for World of Warcraft:Classic
 [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png "Buy Me A Coffee")](https://www.buymeacoffee.com/yuImx6KOY "Buy Me A Coffee")
 
 ### Changelog
+
+#### 4.0.0
+* Added outlands nodes
+* Fixed several errors and bugs
+* Updated ACE library
+* Updated node icons
+
 #### 3.1.1
 * Minor translation bugs fixed
 
@@ -29,7 +36,7 @@ Usage example **/gatherlite debugging**
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "GathererLite" directory is a subdirectory of the "AddOns" directory.
 
 ### EXAMPLE
-![GatherLite](./gatherlite-elwyn.jpg)
+![GatherLite](./gatherlite-outlands.jpg)
 
 ### CONTRIBUTING
 GatherLite is an open source project, and is built upon support of the community. 

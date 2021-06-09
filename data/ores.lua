@@ -178,8 +178,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1422,
-		["posX"] = 0.473,
-		["posY"] = 0.383,
+		["posX"] = 0.472,
+		["posY"] = 0.385,
 	},
 	[26] = {
 		["type"] = "mining",
@@ -403,7 +403,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1428,
 		["posX"] = 0.472,
-		["posY"] = 0.594,
+		["posY"] = 0.593,
 	},
 	[58] = {
 		["type"] = "mining",
@@ -417,7 +417,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1428,
 		["posX"] = 0.574,
-		["posY"] = 0.38,
+		["posY"] = 0.381,
 	},
 	[60] = {
 		["type"] = "mining",
@@ -508,7 +508,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1428,
 		["posX"] = 0.803,
-		["posY"] = 0.427,
+		["posY"] = 0.428,
 	},
 	[73] = {
 		["type"] = "mining",
@@ -564,14 +564,14 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1428,
 		["posX"] = 0.914,
-		["posY"] = 0.613,
+		["posY"] = 0.277,
 	},
 	[81] = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1428,
-		["posX"] = 0.916,
-		["posY"] = 0.276,
+		["posX"] = 0.914,
+		["posY"] = 0.613,
 	},
 	[82] = {
 		["type"] = "mining",
@@ -710,8 +710,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1427,
-		["posX"] = 0.225,
-		["posY"] = 0.308,
+		["posX"] = 0.224,
+		["posY"] = 0.311,
 	},
 	[102] = {
 		["type"] = "mining",
@@ -829,8 +829,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1423,
-		["posX"] = 0.331,
-		["posY"] = 0.323,
+		["posX"] = 0.33,
+		["posY"] = 0.325,
 	},
 	[119] = {
 		["type"] = "mining",
@@ -851,7 +851,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1423,
 		["posX"] = 0.391,
-		["posY"] = 0.395,
+		["posY"] = 0.393,
 	},
 	[122] = {
 		["type"] = "mining",
@@ -914,7 +914,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1423,
 		["posX"] = 0.577,
-		["posY"] = 0.494,
+		["posY"] = 0.495,
 	},
 	[131] = {
 		["type"] = "mining",
@@ -1060,7 +1060,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1446,
-		["posX"] = 0.309,
+		["posX"] = 0.31,
 		["posY"] = 0.457,
 	},
 	[152] = {
@@ -1235,8 +1235,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1449,
-		["posX"] = 0.555,
-		["posY"] = 0.925,
+		["posX"] = 0.554,
+		["posY"] = 0.926,
 	},
 	[177] = {
 		["type"] = "mining",
@@ -1739,7 +1739,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.23,
+		["posX"] = 0.231,
 		["posY"] = 0.693,
 	},
 	[249] = {
@@ -1747,7 +1747,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1451,
 		["posX"] = 0.232,
-		["posY"] = 0.408,
+		["posY"] = 0.407,
 	},
 	[250] = {
 		["type"] = "mining",
@@ -1760,8 +1760,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.312,
-		["posY"] = 0.201,
+		["posX"] = 0.313,
+		["posY"] = 0.2,
 	},
 	[252] = {
 		["type"] = "mining",
@@ -1781,8 +1781,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.37,
-		["posY"] = 0.711,
+		["posX"] = 0.369,
+		["posY"] = 0.71,
 	},
 	[255] = {
 		["type"] = "mining",
@@ -1831,7 +1831,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1451,
 		["posX"] = 0.442,
-		["posY"] = 0.778,
+		["posY"] = 0.779,
 	},
 	[262] = {
 		["type"] = "mining",
@@ -1872,7 +1872,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.533,
+		["posX"] = 0.532,
 		["posY"] = 0.908,
 	},
 	[268] = {
@@ -1886,8 +1886,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.548,
-		["posY"] = 0.604,
+		["posX"] = 0.547,
+		["posY"] = 0.605,
 	},
 	[270] = {
 		["type"] = "mining",
@@ -1956,8 +1956,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.659,
-		["posY"] = 0.711,
+		["posX"] = 0.658,
+		["posY"] = 0.709,
 	},
 	[280] = {
 		["type"] = "mining",
@@ -1970,14 +1970,14 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.671,
+		["posX"] = 0.672,
 		["posY"] = 0.402,
 	},
 	[282] = {
 		["type"] = "mining",
 		["object"] = 324,
 		["mapID"] = 1451,
-		["posX"] = 0.7,
+		["posX"] = 0.701,
 		["posY"] = 0.298,
 	},
 	[283] = {
@@ -2069,7 +2069,7 @@ GatherLite_localOreNodes = {
 		["object"] = 324,
 		["mapID"] = 1448,
 		["posX"] = 0.388,
-		["posY"] = 0.475,
+		["posY"] = 0.474,
 	},
 	[296] = {
 		["type"] = "mining",
@@ -2264,8 +2264,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1610,
 		["mapID"] = 1437,
-		["posX"] = 0.484,
-		["posY"] = 0.6,
+		["posX"] = 0.483,
+		["posY"] = 0.599,
 	},
 	[324] = {
 		["type"] = "mining",
@@ -2572,8 +2572,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1426,
-		["posX"] = 0.391,
-		["posY"] = 0.465,
+		["posX"] = 0.392,
+		["posY"] = 0.47,
 	},
 	[368] = {
 		["type"] = "mining",
@@ -2607,7 +2607,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1426,
-		["posX"] = 0.403,
+		["posX"] = 0.402,
 		["posY"] = 0.483,
 	},
 	[373] = {
@@ -2727,21 +2727,21 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1426,
 		["posX"] = 0.428,
-		["posY"] = 0.449,
+		["posY"] = 0.473,
 	},
 	[390] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1426,
 		["posX"] = 0.428,
-		["posY"] = 0.473,
+		["posY"] = 0.635,
 	},
 	[391] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1426,
-		["posX"] = 0.428,
-		["posY"] = 0.635,
+		["posX"] = 0.429,
+		["posY"] = 0.449,
 	},
 	[392] = {
 		["type"] = "mining",
@@ -3000,7 +3000,7 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1426,
 		["posX"] = 0.67,
-		["posY"] = 0.503,
+		["posY"] = 0.502,
 	},
 	[429] = {
 		["type"] = "mining",
@@ -3272,7 +3272,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1431,
-		["posX"] = 0.057,
+		["posX"] = 0.058,
 		["posY"] = 0.444,
 	},
 	[468] = {
@@ -3707,7 +3707,7 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1429,
 		["posX"] = 0.208,
-		["posY"] = 0.777,
+		["posY"] = 0.776,
 	},
 	[530] = {
 		["type"] = "mining",
@@ -3749,7 +3749,7 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1429,
 		["posX"] = 0.277,
-		["posY"] = 0.7,
+		["posY"] = 0.698,
 	},
 	[536] = {
 		["type"] = "mining",
@@ -3853,8 +3853,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1429,
-		["posX"] = 0.383,
-		["posY"] = 0.82,
+		["posX"] = 0.382,
+		["posY"] = 0.819,
 	},
 	[551] = {
 		["type"] = "mining",
@@ -4127,14 +4127,14 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1429,
 		["posX"] = 0.594,
-		["posY"] = 0.788,
+		["posY"] = 0.787,
 	},
 	[590] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1429,
-		["posX"] = 0.598,
-		["posY"] = 0.773,
+		["posX"] = 0.597,
+		["posY"] = 0.775,
 	},
 	[591] = {
 		["type"] = "mining",
@@ -4204,7 +4204,7 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1429,
 		["posX"] = 0.613,
-		["posY"] = 0.519,
+		["posY"] = 0.518,
 	},
 	[601] = {
 		["type"] = "mining",
@@ -4420,8 +4420,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1429,
-		["posX"] = 0.786,
-		["posY"] = 0.495,
+		["posX"] = 0.787,
+		["posY"] = 0.494,
 	},
 	[632] = {
 		["type"] = "mining",
@@ -4449,7 +4449,7 @@ GatherLite_localOreNodes = {
 		["object"] = 1731,
 		["mapID"] = 1429,
 		["posX"] = 0.809,
-		["posY"] = 0.425,
+		["posY"] = 0.426,
 	},
 	[636] = {
 		["type"] = "mining",
@@ -4623,8 +4623,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
-		["posX"] = 0.396,
-		["posY"] = 0.145,
+		["posX"] = 0.395,
+		["posY"] = 0.144,
 	},
 	[661] = {
 		["type"] = "mining",
@@ -4763,7 +4763,7 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
-		["posX"] = 0.45,
+		["posX"] = 0.451,
 		["posY"] = 0.504,
 	},
 	[681] = {
@@ -4896,22 +4896,22 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
-		["posX"] = 0.498,
-		["posY"] = 0.168,
+		["posX"] = 0.497,
+		["posY"] = 0.481,
 	},
 	[700] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
 		["posX"] = 0.498,
-		["posY"] = 0.482,
+		["posY"] = 0.168,
 	},
 	[701] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
 		["posX"] = 0.498,
-		["posY"] = 0.544,
+		["posY"] = 0.545,
 	},
 	[702] = {
 		["type"] = "mining",
@@ -5050,8 +5050,8 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1411,
-		["posX"] = 0.524,
-		["posY"] = 0.217,
+		["posX"] = 0.523,
+		["posY"] = 0.218,
 	},
 	[722] = {
 		["type"] = "mining",
@@ -6261,1093 +6261,1093 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
+		["posX"] = 0.587,
+		["posY"] = 0.478,
+	},
+	[895] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1413,
 		["posX"] = 0.588,
 		["posY"] = 0.293,
 	},
-	[895] = {
+	[896] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.589,
 		["posY"] = 0.414,
 	},
-	[896] = {
+	[897] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.59,
 		["posY"] = 0.512,
 	},
-	[897] = {
+	[898] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.594,
 		["posY"] = 0.144,
 	},
-	[898] = {
+	[899] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.595,
 		["posY"] = 0.437,
 	},
-	[899] = {
+	[900] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.596,
 		["posY"] = 0.462,
 	},
-	[900] = {
+	[901] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.598,
 		["posY"] = 0.029,
 	},
-	[901] = {
+	[902] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.599,
 		["posY"] = 0.366,
 	},
-	[902] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1413,
-		["posX"] = 0.601,
-		["posY"] = 0.164,
-	},
 	[903] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.601,
-		["posY"] = 0.492,
+		["posY"] = 0.164,
 	},
 	[904] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.601,
-		["posY"] = 0.541,
+		["posY"] = 0.492,
 	},
 	[905] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1413,
+		["posX"] = 0.601,
+		["posY"] = 0.541,
+	},
+	[906] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.602,
 		["posY"] = 0.11,
 	},
-	[906] = {
+	[907] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.605,
 		["posY"] = 0.459,
 	},
-	[907] = {
+	[908] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.605,
 		["posY"] = 0.475,
 	},
-	[908] = {
+	[909] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.607,
 		["posY"] = 0.138,
 	},
-	[909] = {
+	[910] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.609,
 		["posY"] = 0.036,
 	},
-	[910] = {
+	[911] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.61,
 		["posY"] = 0.176,
 	},
-	[911] = {
+	[912] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.611,
 		["posY"] = 0.442,
 	},
-	[912] = {
+	[913] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.612,
 		["posY"] = 0.264,
 	},
-	[913] = {
+	[914] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.613,
 		["posY"] = 0.403,
 	},
-	[914] = {
+	[915] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.615,
 		["posY"] = 0.454,
 	},
-	[915] = {
+	[916] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.617,
 		["posY"] = 0.021,
 	},
-	[916] = {
+	[917] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.617,
 		["posY"] = 0.348,
 	},
-	[917] = {
+	[918] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.619,
 		["posY"] = 0.314,
 	},
-	[918] = {
+	[919] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.62,
 		["posY"] = 0.147,
 	},
-	[919] = {
+	[920] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.621,
 		["posY"] = 0.114,
 	},
-	[920] = {
+	[921] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.293,
 	},
-	[921] = {
+	[922] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.468,
 	},
-	[922] = {
+	[923] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.623,
 		["posY"] = 0.097,
 	},
-	[923] = {
+	[924] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.624,
 		["posY"] = 0.491,
 	},
-	[924] = {
+	[925] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.63,
 		["posY"] = 0.44,
 	},
-	[925] = {
+	[926] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.633,
 		["posY"] = 0.456,
 	},
-	[926] = {
+	[927] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.634,
 		["posY"] = 0.427,
 	},
-	[927] = {
+	[928] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.647,
 		["posY"] = 0.444,
 	},
-	[928] = {
+	[929] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1413,
 		["posX"] = 0.647,
 		["posY"] = 0.465,
 	},
-	[929] = {
+	[930] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1416,
-		["posX"] = 0.176,
-		["posY"] = 0.961,
+		["posX"] = 0.174,
+		["posY"] = 0.96,
 	},
-	[930] = {
+	[931] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.232,
 		["posY"] = 0.244,
 	},
-	[931] = {
+	[932] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.238,
-		["posY"] = 0.368,
+		["posY"] = 0.367,
 	},
-	[932] = {
+	[933] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.253,
 		["posY"] = 0.423,
 	},
-	[933] = {
+	[934] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.254,
 		["posY"] = 0.301,
 	},
-	[934] = {
+	[935] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.256,
 		["posY"] = 0.444,
 	},
-	[935] = {
+	[936] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.26,
 		["posY"] = 0.51,
 	},
-	[936] = {
+	[937] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.261,
 		["posY"] = 0.57,
 	},
-	[937] = {
+	[938] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.263,
 		["posY"] = 0.471,
 	},
-	[938] = {
+	[939] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.264,
 		["posY"] = 0.317,
 	},
-	[939] = {
+	[940] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.268,
 		["posY"] = 0.559,
 	},
-	[940] = {
+	[941] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.285,
 		["posY"] = 0.802,
 	},
-	[941] = {
+	[942] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.308,
 		["posY"] = 0.096,
 	},
-	[942] = {
+	[943] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.31,
 		["posY"] = 0.774,
 	},
-	[943] = {
+	[944] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.313,
 		["posY"] = 0.823,
 	},
-	[944] = {
+	[945] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.314,
 		["posY"] = 0.692,
 	},
-	[945] = {
+	[946] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.321,
 		["posY"] = 0.199,
 	},
-	[946] = {
+	[947] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.333,
 		["posY"] = 0.263,
 	},
-	[947] = {
+	[948] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.337,
 		["posY"] = 0.885,
 	},
-	[948] = {
+	[949] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.338,
 		["posY"] = 0.616,
 	},
-	[949] = {
+	[950] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.34,
 		["posY"] = 0.576,
 	},
-	[950] = {
+	[951] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.34,
 		["posY"] = 0.802,
 	},
-	[951] = {
+	[952] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.345,
 		["posY"] = 0.896,
 	},
-	[952] = {
+	[953] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.347,
 		["posY"] = 0.71,
 	},
-	[953] = {
+	[954] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.349,
 		["posY"] = 0.852,
 	},
-	[954] = {
+	[955] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.349,
 		["posY"] = 0.868,
 	},
-	[955] = {
+	[956] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.351,
 		["posY"] = 0.272,
 	},
-	[956] = {
+	[957] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.351,
 		["posY"] = 0.888,
 	},
-	[957] = {
+	[958] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.353,
 		["posY"] = 0.237,
 	},
-	[958] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1432,
-		["posX"] = 0.353,
-		["posY"] = 0.836,
-	},
 	[959] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
-		["posX"] = 0.354,
-		["posY"] = 0.228,
+		["posX"] = 0.353,
+		["posY"] = 0.835,
 	},
 	[960] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.354,
-		["posY"] = 0.25,
+		["posY"] = 0.228,
 	},
 	[961] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.354,
-		["posY"] = 0.767,
+		["posY"] = 0.25,
 	},
 	[962] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
-		["posX"] = 0.356,
-		["posY"] = 0.205,
+		["posX"] = 0.354,
+		["posY"] = 0.767,
 	},
 	[963] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.356,
-		["posY"] = 0.897,
+		["posY"] = 0.205,
 	},
 	[964] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1432,
+		["posX"] = 0.356,
+		["posY"] = 0.897,
+	},
+	[965] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.358,
 		["posY"] = 0.876,
 	},
-	[965] = {
+	[966] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.359,
 		["posY"] = 0.257,
 	},
-	[966] = {
+	[967] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.359,
-		["posY"] = 0.848,
+		["posY"] = 0.847,
 	},
-	[967] = {
+	[968] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.36,
 		["posY"] = 0.887,
 	},
-	[968] = {
+	[969] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.361,
 		["posY"] = 0.564,
 	},
-	[969] = {
+	[970] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.364,
 		["posY"] = 0.103,
 	},
-	[970] = {
+	[971] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.365,
-		["posY"] = 0.205,
+		["posY"] = 0.204,
 	},
-	[971] = {
+	[972] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.368,
 		["posY"] = 0.164,
 	},
-	[972] = {
+	[973] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.369,
 		["posY"] = 0.837,
 	},
-	[973] = {
+	[974] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.373,
 		["posY"] = 0.889,
 	},
-	[974] = {
+	[975] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.374,
 		["posY"] = 0.909,
 	},
-	[975] = {
+	[976] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.38,
 		["posY"] = 0.224,
 	},
-	[976] = {
+	[977] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.381,
 		["posY"] = 0.881,
 	},
-	[977] = {
+	[978] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.382,
 		["posY"] = 0.874,
 	},
-	[978] = {
+	[979] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.398,
 		["posY"] = 0.757,
 	},
-	[979] = {
+	[980] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.408,
 		["posY"] = 0.338,
 	},
-	[980] = {
+	[981] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.409,
 		["posY"] = 0.091,
 	},
-	[981] = {
+	[982] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.411,
 		["posY"] = 0.654,
 	},
-	[982] = {
+	[983] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.414,
 		["posY"] = 0.191,
 	},
-	[983] = {
+	[984] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.415,
 		["posY"] = 0.479,
 	},
-	[984] = {
+	[985] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.416,
 		["posY"] = 0.132,
 	},
-	[985] = {
+	[986] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.417,
 		["posY"] = 0.264,
 	},
-	[986] = {
+	[987] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.42,
 		["posY"] = 0.618,
 	},
-	[987] = {
+	[988] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.429,
 		["posY"] = 0.664,
 	},
-	[988] = {
+	[989] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.433,
 		["posY"] = 0.531,
 	},
-	[989] = {
+	[990] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.443,
 		["posY"] = 0.704,
 	},
-	[990] = {
+	[991] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.45,
 		["posY"] = 0.475,
 	},
-	[991] = {
+	[992] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.457,
 		["posY"] = 0.628,
 	},
-	[992] = {
+	[993] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.458,
 		["posY"] = 0.602,
 	},
-	[993] = {
+	[994] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.47,
 		["posY"] = 0.375,
 	},
-	[994] = {
+	[995] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.476,
 		["posY"] = 0.434,
 	},
-	[995] = {
+	[996] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.479,
 		["posY"] = 0.55,
 	},
-	[996] = {
+	[997] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.483,
 		["posY"] = 0.327,
 	},
-	[997] = {
+	[998] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.496,
 		["posY"] = 0.355,
 	},
-	[998] = {
+	[999] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.501,
 		["posY"] = 0.443,
 	},
-	[999] = {
+	[1000] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.503,
-		["posY"] = 0.233,
+		["posY"] = 0.23,
 	},
-	[1000] = {
+	[1001] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.518,
 		["posY"] = 0.499,
 	},
-	[1001] = {
+	[1002] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.52,
 		["posY"] = 0.135,
 	},
-	[1002] = {
+	[1003] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.538,
 		["posY"] = 0.721,
 	},
-	[1003] = {
+	[1004] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.558,
 		["posY"] = 0.682,
 	},
-	[1004] = {
+	[1005] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.562,
 		["posY"] = 0.596,
 	},
-	[1005] = {
+	[1006] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.565,
-		["posY"] = 0.475,
+		["posY"] = 0.476,
 	},
-	[1006] = {
+	[1007] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.569,
 		["posY"] = 0.444,
 	},
-	[1007] = {
+	[1008] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.577,
 		["posY"] = 0.142,
 	},
-	[1008] = {
+	[1009] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.577,
 		["posY"] = 0.708,
 	},
-	[1009] = {
+	[1010] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.585,
 		["posY"] = 0.723,
 	},
-	[1010] = {
+	[1011] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.586,
 		["posY"] = 0.783,
 	},
-	[1011] = {
+	[1012] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.592,
 		["posY"] = 0.668,
 	},
-	[1012] = {
+	[1013] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.624,
 		["posY"] = 0.67,
 	},
-	[1013] = {
+	[1014] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.639,
 		["posY"] = 0.746,
 	},
-	[1014] = {
+	[1015] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.642,
 		["posY"] = 0.238,
 	},
-	[1015] = {
+	[1016] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.656,
 		["posY"] = 0.287,
 	},
-	[1016] = {
+	[1017] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.673,
 		["posY"] = 0.77,
 	},
-	[1017] = {
+	[1018] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.679,
 		["posY"] = 0.536,
 	},
-	[1018] = {
+	[1019] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.68,
 		["posY"] = 0.269,
 	},
-	[1019] = {
+	[1020] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.7,
 		["posY"] = 0.349,
 	},
-	[1020] = {
+	[1021] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.704,
 		["posY"] = 0.684,
 	},
-	[1021] = {
+	[1022] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.712,
 		["posY"] = 0.183,
 	},
-	[1022] = {
+	[1023] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.719,
 		["posY"] = 0.343,
 	},
-	[1023] = {
+	[1024] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.733,
 		["posY"] = 0.573,
 	},
-	[1024] = {
+	[1025] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.736,
 		["posY"] = 0.484,
 	},
-	[1025] = {
+	[1026] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.741,
 		["posY"] = 0.22,
 	},
-	[1026] = {
+	[1027] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.753,
 		["posY"] = 0.752,
 	},
-	[1027] = {
+	[1028] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.766,
 		["posY"] = 0.608,
 	},
-	[1028] = {
+	[1029] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.778,
 		["posY"] = 0.381,
 	},
-	[1029] = {
+	[1030] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.778,
 		["posY"] = 0.537,
 	},
-	[1030] = {
+	[1031] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.78,
 		["posY"] = 0.778,
 	},
-	[1031] = {
+	[1032] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.781,
 		["posY"] = 0.329,
 	},
-	[1032] = {
+	[1033] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.786,
 		["posY"] = 0.564,
 	},
-	[1033] = {
+	[1034] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.787,
-		["posY"] = 0.645,
+		["posY"] = 0.644,
 	},
-	[1034] = {
+	[1035] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1432,
 		["posX"] = 0.841,
 		["posY"] = 0.574,
 	},
-	[1035] = {
+	[1036] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.237,
 		["posY"] = 0.573,
 	},
-	[1036] = {
+	[1037] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.262,
 		["posY"] = 0.645,
 	},
-	[1037] = {
+	[1038] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.269,
 		["posY"] = 0.723,
 	},
-	[1038] = {
+	[1039] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.285,
 		["posY"] = 0.269,
 	},
-	[1039] = {
+	[1040] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.287,
 		["posY"] = 0.604,
 	},
-	[1040] = {
+	[1041] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.288,
 		["posY"] = 0.498,
 	},
-	[1041] = {
+	[1042] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.29,
 		["posY"] = 0.549,
 	},
-	[1042] = {
+	[1043] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.291,
 		["posY"] = 0.491,
 	},
-	[1043] = {
+	[1044] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.293,
 		["posY"] = 0.462,
 	},
-	[1044] = {
+	[1045] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.293,
 		["posY"] = 0.511,
 	},
-	[1045] = {
+	[1046] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.297,
 		["posY"] = 0.857,
 	},
-	[1046] = {
+	[1047] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.299,
 		["posY"] = 0.76,
 	},
-	[1047] = {
+	[1048] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.301,
 		["posY"] = 0.477,
 	},
-	[1048] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1436,
-		["posX"] = 0.304,
-		["posY"] = 0.344,
-	},
 	[1049] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.304,
-		["posY"] = 0.46,
+		["posY"] = 0.344,
 	},
 	[1050] = {
 		["type"] = "mining",
@@ -7360,39053 +7360,46410 @@ GatherLite_localOreNodes = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
+		["posX"] = 0.305,
+		["posY"] = 0.46,
+	},
+	[1052] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1436,
 		["posX"] = 0.306,
 		["posY"] = 0.433,
 	},
-	[1052] = {
+	[1053] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.307,
 		["posY"] = 0.383,
 	},
-	[1053] = {
+	[1054] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.31,
 		["posY"] = 0.441,
 	},
-	[1054] = {
+	[1055] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.311,
 		["posY"] = 0.448,
 	},
-	[1055] = {
+	[1056] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.314,
 		["posY"] = 0.468,
 	},
-	[1056] = {
+	[1057] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.316,
 		["posY"] = 0.893,
 	},
-	[1057] = {
+	[1058] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.33,
 		["posY"] = 0.261,
 	},
-	[1058] = {
+	[1059] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.332,
 		["posY"] = 0.819,
 	},
-	[1059] = {
+	[1060] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.344,
 		["posY"] = 0.154,
 	},
-	[1060] = {
+	[1061] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.345,
 		["posY"] = 0.345,
 	},
-	[1061] = {
+	[1062] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.346,
 		["posY"] = 0.43,
 	},
-	[1062] = {
+	[1063] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.35,
 		["posY"] = 0.243,
 	},
-	[1063] = {
+	[1064] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.363,
 		["posY"] = 0.209,
 	},
-	[1064] = {
+	[1065] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.368,
 		["posY"] = 0.294,
 	},
-	[1065] = {
+	[1066] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.37,
 		["posY"] = 0.877,
 	},
-	[1066] = {
+	[1067] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.378,
 		["posY"] = 0.77,
 	},
-	[1067] = {
+	[1068] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.392,
 		["posY"] = 0.852,
 	},
-	[1068] = {
+	[1069] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.394,
 		["posY"] = 0.814,
 	},
-	[1069] = {
+	[1070] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.409,
 		["posY"] = 0.221,
 	},
-	[1070] = {
+	[1071] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.411,
 		["posY"] = 0.924,
 	},
-	[1071] = {
+	[1072] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.441,
 		["posY"] = 0.232,
 	},
-	[1072] = {
+	[1073] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1436,
+		["posX"] = 0.444,
+		["posY"] = 0.196,
+	},
+	[1074] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.448,
 		["posY"] = 0.234,
 	},
-	[1073] = {
+	[1075] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.45,
 		["posY"] = 0.743,
 	},
-	[1074] = {
+	[1076] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.45,
 		["posY"] = 0.769,
 	},
-	[1075] = {
+	[1077] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.451,
 		["posY"] = 0.218,
 	},
-	[1076] = {
+	[1078] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.452,
 		["posY"] = 0.397,
 	},
-	[1077] = {
+	[1079] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.454,
 		["posY"] = 0.208,
 	},
-	[1078] = {
+	[1080] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.462,
 		["posY"] = 0.184,
 	},
-	[1079] = {
+	[1081] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.462,
 		["posY"] = 0.592,
 	},
-	[1080] = {
+	[1082] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.465,
 		["posY"] = 0.264,
 	},
-	[1081] = {
+	[1083] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.466,
-		["posY"] = 0.195,
+		["posY"] = 0.194,
 	},
-	[1082] = {
+	[1084] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.477,
 		["posY"] = 0.707,
 	},
-	[1083] = {
+	[1085] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.478,
 		["posY"] = 0.458,
 	},
-	[1084] = {
+	[1086] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.486,
 		["posY"] = 0.36,
 	},
-	[1085] = {
+	[1087] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.494,
 		["posY"] = 0.147,
 	},
-	[1086] = {
+	[1088] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.497,
 		["posY"] = 0.391,
 	},
-	[1087] = {
+	[1089] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.501,
 		["posY"] = 0.598,
 	},
-	[1088] = {
+	[1090] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.514,
 		["posY"] = 0.789,
 	},
-	[1089] = {
+	[1091] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.536,
 		["posY"] = 0.804,
 	},
-	[1090] = {
+	[1092] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.543,
 		["posY"] = 0.733,
 	},
-	[1091] = {
+	[1093] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.544,
-		["posY"] = 0.22,
+		["posY"] = 0.219,
 	},
-	[1092] = {
+	[1094] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.554,
 		["posY"] = 0.144,
 	},
-	[1093] = {
+	[1095] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
-		["posX"] = 0.561,
-		["posY"] = 0.795,
+		["posX"] = 0.56,
+		["posY"] = 0.797,
 	},
-	[1094] = {
+	[1096] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.571,
 		["posY"] = 0.75,
 	},
-	[1095] = {
+	[1097] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.574,
 		["posY"] = 0.154,
 	},
-	[1096] = {
+	[1098] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.575,
 		["posY"] = 0.457,
 	},
-	[1097] = {
+	[1099] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.584,
 		["posY"] = 0.088,
 	},
-	[1098] = {
+	[1100] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.587,
 		["posY"] = 0.693,
 	},
-	[1099] = {
+	[1101] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.6,
 		["posY"] = 0.123,
 	},
-	[1100] = {
+	[1102] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.609,
 		["posY"] = 0.221,
 	},
-	[1101] = {
+	[1103] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.61,
 		["posY"] = 0.262,
 	},
-	[1102] = {
+	[1104] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.614,
 		["posY"] = 0.547,
 	},
-	[1103] = {
+	[1105] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.623,
 		["posY"] = 0.688,
 	},
-	[1104] = {
+	[1106] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.624,
 		["posY"] = 0.787,
 	},
-	[1105] = {
+	[1107] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.634,
 		["posY"] = 0.314,
 	},
-	[1106] = {
+	[1108] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.64,
 		["posY"] = 0.404,
 	},
-	[1107] = {
+	[1109] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.664,
 		["posY"] = 0.544,
 	},
-	[1108] = {
+	[1110] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1436,
 		["posX"] = 0.667,
 		["posY"] = 0.769,
 	},
-	[1109] = {
+	[1111] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.084,
-		["posY"] = 0.772,
+		["posY"] = 0.774,
 	},
-	[1110] = {
+	[1112] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.122,
 		["posY"] = 0.685,
 	},
-	[1111] = {
+	[1113] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.158,
 		["posY"] = 0.581,
 	},
-	[1112] = {
+	[1114] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.16,
 		["posY"] = 0.55,
 	},
-	[1113] = {
+	[1115] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.187,
 		["posY"] = 0.627,
 	},
-	[1114] = {
+	[1116] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.207,
 		["posY"] = 0.744,
 	},
-	[1115] = {
+	[1117] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.227,
 		["posY"] = 0.328,
 	},
-	[1116] = {
+	[1118] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.244,
 		["posY"] = 0.654,
 	},
-	[1117] = {
+	[1119] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.244,
 		["posY"] = 0.803,
 	},
-	[1118] = {
+	[1120] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.254,
 		["posY"] = 0.138,
 	},
-	[1119] = {
+	[1121] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.261,
 		["posY"] = 0.161,
 	},
-	[1120] = {
+	[1122] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.27,
 		["posY"] = 0.086,
 	},
-	[1121] = {
+	[1123] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.27,
 		["posY"] = 0.723,
 	},
-	[1122] = {
+	[1124] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.272,
 		["posY"] = 0.125,
 	},
-	[1123] = {
+	[1125] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.276,
 		["posY"] = 0.08,
 	},
-	[1124] = {
+	[1126] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.276,
 		["posY"] = 0.17,
 	},
-	[1125] = {
+	[1127] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.289,
 		["posY"] = 0.182,
 	},
-	[1126] = {
+	[1128] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.292,
 		["posY"] = 0.084,
 	},
-	[1127] = {
+	[1129] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.311,
 		["posY"] = 0.848,
 	},
-	[1128] = {
+	[1130] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.312,
 		["posY"] = 0.077,
 	},
-	[1129] = {
+	[1131] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.313,
 		["posY"] = 0.061,
 	},
-	[1130] = {
+	[1132] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.318,
 		["posY"] = 0.141,
 	},
-	[1131] = {
+	[1133] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
-		["posX"] = 0.326,
-		["posY"] = 0.066,
+		["posX"] = 0.327,
+		["posY"] = 0.065,
 	},
-	[1132] = {
+	[1134] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.334,
 		["posY"] = 0.279,
 	},
-	[1133] = {
+	[1135] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.343,
 		["posY"] = 0.824,
 	},
-	[1134] = {
+	[1136] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.382,
 		["posY"] = 0.703,
 	},
-	[1135] = {
+	[1137] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.401,
 		["posY"] = 0.801,
 	},
-	[1136] = {
+	[1138] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.418,
 		["posY"] = 0.294,
 	},
-	[1137] = {
+	[1139] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.421,
 		["posY"] = 0.576,
 	},
-	[1138] = {
+	[1140] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
-		["posX"] = 0.443,
-		["posY"] = 0.182,
+		["posX"] = 0.441,
+		["posY"] = 0.18,
 	},
-	[1139] = {
+	[1141] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.472,
 		["posY"] = 0.091,
 	},
-	[1140] = {
+	[1142] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.499,
 		["posY"] = 0.792,
 	},
-	[1141] = {
+	[1143] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.51,
 		["posY"] = 0.33,
 	},
-	[1142] = {
+	[1144] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.533,
 		["posY"] = 0.554,
 	},
-	[1143] = {
+	[1145] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.534,
 		["posY"] = 0.701,
 	},
-	[1144] = {
+	[1146] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.559,
 		["posY"] = 0.375,
 	},
-	[1145] = {
+	[1147] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.571,
 		["posY"] = 0.733,
 	},
-	[1146] = {
+	[1148] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.603,
 		["posY"] = 0.6,
 	},
-	[1147] = {
+	[1149] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.619,
 		["posY"] = 0.422,
 	},
-	[1148] = {
+	[1150] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.624,
 		["posY"] = 0.801,
 	},
-	[1149] = {
+	[1151] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.626,
 		["posY"] = 0.53,
 	},
-	[1150] = {
+	[1152] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.672,
 		["posY"] = 0.736,
 	},
-	[1151] = {
+	[1153] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.694,
 		["posY"] = 0.389,
 	},
-	[1152] = {
+	[1154] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.704,
 		["posY"] = 0.469,
 	},
-	[1153] = {
+	[1155] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.717,
 		["posY"] = 0.869,
 	},
-	[1154] = {
+	[1156] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.719,
 		["posY"] = 0.567,
 	},
-	[1155] = {
+	[1157] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.744,
 		["posY"] = 0.39,
 	},
-	[1156] = {
+	[1158] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.744,
 		["posY"] = 0.761,
 	},
-	[1157] = {
+	[1159] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.749,
 		["posY"] = 0.528,
 	},
-	[1158] = {
+	[1160] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.759,
 		["posY"] = 0.859,
 	},
-	[1159] = {
+	[1161] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.768,
 		["posY"] = 0.687,
 	},
-	[1160] = {
+	[1162] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.782,
 		["posY"] = 0.354,
 	},
-	[1161] = {
+	[1163] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
-		["posX"] = 0.79,
-		["posY"] = 0.453,
+		["posX"] = 0.789,
+		["posY"] = 0.452,
 	},
-	[1162] = {
+	[1164] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.821,
 		["posY"] = 0.359,
 	},
-	[1163] = {
+	[1165] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.841,
 		["posY"] = 0.596,
 	},
-	[1164] = {
+	[1166] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1433,
 		["posX"] = 0.851,
 		["posY"] = 0.492,
 	},
-	[1165] = {
+	[1167] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.282,
 		["posY"] = 0.47,
 	},
-	[1166] = {
+	[1168] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
-		["posX"] = 0.298,
-		["posY"] = 0.425,
+		["posX"] = 0.297,
+		["posY"] = 0.424,
 	},
-	[1167] = {
+	[1169] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.307,
 		["posY"] = 0.455,
 	},
-	[1168] = {
+	[1170] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.335,
 		["posY"] = 0.528,
 	},
-	[1169] = {
+	[1171] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.343,
 		["posY"] = 0.447,
 	},
-	[1170] = {
+	[1172] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.346,
 		["posY"] = 0.472,
 	},
-	[1171] = {
+	[1173] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.35,
 		["posY"] = 0.403,
 	},
-	[1172] = {
+	[1174] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.359,
 		["posY"] = 0.366,
 	},
-	[1173] = {
+	[1175] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.372,
 		["posY"] = 0.396,
 	},
-	[1174] = {
+	[1176] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.375,
 		["posY"] = 0.375,
 	},
-	[1175] = {
+	[1177] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.377,
 		["posY"] = 0.528,
 	},
-	[1176] = {
+	[1178] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.387,
 		["posY"] = 0.534,
 	},
-	[1177] = {
+	[1179] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.392,
 		["posY"] = 0.372,
 	},
-	[1178] = {
+	[1180] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.403,
 		["posY"] = 0.571,
 	},
-	[1179] = {
+	[1181] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.407,
 		["posY"] = 0.392,
 	},
-	[1180] = {
+	[1182] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.414,
 		["posY"] = 0.694,
 	},
-	[1181] = {
+	[1183] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.421,
 		["posY"] = 0.289,
 	},
-	[1182] = {
+	[1184] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.421,
 		["posY"] = 0.662,
 	},
-	[1183] = {
+	[1185] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.424,
 		["posY"] = 0.699,
 	},
-	[1184] = {
+	[1186] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.427,
 		["posY"] = 0.315,
 	},
-	[1185] = {
+	[1187] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.433,
-		["posY"] = 0.359,
+		["posY"] = 0.358,
 	},
-	[1186] = {
+	[1188] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.433,
 		["posY"] = 0.641,
 	},
-	[1187] = {
+	[1189] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.434,
 		["posY"] = 0.387,
 	},
-	[1188] = {
+	[1190] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.452,
 		["posY"] = 0.699,
 	},
-	[1189] = {
+	[1191] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.454,
 		["posY"] = 0.647,
 	},
-	[1190] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1420,
-		["posX"] = 0.472,
-		["posY"] = 0.698,
-	},
-	[1191] = {
+	[1192] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.473,
 		["posY"] = 0.277,
 	},
-	[1192] = {
+	[1193] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1420,
+		["posX"] = 0.473,
+		["posY"] = 0.699,
+	},
+	[1194] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.476,
 		["posY"] = 0.679,
 	},
-	[1193] = {
+	[1195] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.484,
 		["posY"] = 0.474,
 	},
-	[1194] = {
+	[1196] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.486,
 		["posY"] = 0.46,
 	},
-	[1195] = {
+	[1197] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.487,
 		["posY"] = 0.437,
 	},
-	[1196] = {
+	[1198] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.492,
 		["posY"] = 0.701,
 	},
-	[1197] = {
+	[1199] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.493,
-		["posY"] = 0.392,
+		["posY"] = 0.391,
 	},
-	[1198] = {
+	[1200] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.493,
 		["posY"] = 0.486,
 	},
-	[1199] = {
+	[1201] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.496,
 		["posY"] = 0.271,
 	},
-	[1200] = {
+	[1202] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.5,
 		["posY"] = 0.661,
 	},
-	[1201] = {
+	[1203] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.501,
 		["posY"] = 0.708,
 	},
-	[1202] = {
+	[1204] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.503,
 		["posY"] = 0.35,
 	},
-	[1203] = {
+	[1205] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.504,
 		["posY"] = 0.453,
 	},
-	[1204] = {
+	[1206] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.507,
 		["posY"] = 0.342,
 	},
-	[1205] = {
+	[1207] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.507,
 		["posY"] = 0.442,
 	},
-	[1206] = {
+	[1208] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.514,
 		["posY"] = 0.272,
 	},
-	[1207] = {
+	[1209] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.522,
 		["posY"] = 0.462,
 	},
-	[1208] = {
+	[1210] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.524,
 		["posY"] = 0.402,
 	},
-	[1209] = {
+	[1211] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.528,
 		["posY"] = 0.52,
 	},
-	[1210] = {
+	[1212] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.529,
 		["posY"] = 0.42,
 	},
-	[1211] = {
+	[1213] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.534,
 		["posY"] = 0.264,
 	},
-	[1212] = {
+	[1214] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.534,
 		["posY"] = 0.321,
 	},
-	[1213] = {
+	[1215] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.535,
 		["posY"] = 0.537,
 	},
-	[1214] = {
+	[1216] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.542,
 		["posY"] = 0.449,
 	},
-	[1215] = {
+	[1217] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.543,
 		["posY"] = 0.379,
 	},
-	[1216] = {
+	[1218] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.544,
 		["posY"] = 0.477,
 	},
-	[1217] = {
+	[1219] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.546,
 		["posY"] = 0.406,
 	},
-	[1218] = {
+	[1220] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.549,
 		["posY"] = 0.54,
 	},
-	[1219] = {
+	[1221] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.551,
 		["posY"] = 0.312,
 	},
-	[1220] = {
+	[1222] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.551,
 		["posY"] = 0.435,
 	},
-	[1221] = {
+	[1223] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.559,
 		["posY"] = 0.38,
 	},
-	[1222] = {
+	[1224] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.56,
 		["posY"] = 0.35,
 	},
-	[1223] = {
+	[1225] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.564,
 		["posY"] = 0.451,
 	},
-	[1224] = {
+	[1226] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.568,
 		["posY"] = 0.33,
 	},
-	[1225] = {
+	[1227] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.569,
 		["posY"] = 0.258,
 	},
-	[1226] = {
+	[1228] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.573,
 		["posY"] = 0.303,
 	},
-	[1227] = {
+	[1229] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.576,
-		["posY"] = 0.439,
+		["posY"] = 0.438,
 	},
-	[1228] = {
+	[1230] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.58,
 		["posY"] = 0.293,
 	},
-	[1229] = {
+	[1231] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.601,
 		["posY"] = 0.306,
 	},
-	[1230] = {
+	[1232] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.612,
 		["posY"] = 0.464,
 	},
-	[1231] = {
+	[1233] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.636,
 		["posY"] = 0.271,
 	},
-	[1232] = {
+	[1234] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.659,
 		["posY"] = 0.452,
 	},
-	[1233] = {
+	[1235] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.685,
 		["posY"] = 0.441,
 	},
-	[1234] = {
+	[1236] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.686,
 		["posY"] = 0.544,
 	},
-	[1235] = {
+	[1237] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.693,
 		["posY"] = 0.411,
 	},
-	[1236] = {
+	[1238] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.697,
 		["posY"] = 0.427,
 	},
-	[1237] = {
+	[1239] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.703,
 		["posY"] = 0.671,
 	},
-	[1238] = {
+	[1240] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.733,
 		["posY"] = 0.723,
 	},
-	[1239] = {
+	[1241] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.735,
 		["posY"] = 0.683,
 	},
-	[1240] = {
+	[1242] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.739,
 		["posY"] = 0.415,
 	},
-	[1241] = {
+	[1243] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.741,
 		["posY"] = 0.564,
 	},
-	[1242] = {
+	[1244] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.742,
 		["posY"] = 0.577,
 	},
-	[1243] = {
+	[1245] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.743,
 		["posY"] = 0.316,
 	},
-	[1244] = {
+	[1246] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.744,
 		["posY"] = 0.536,
 	},
-	[1245] = {
+	[1247] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.748,
 		["posY"] = 0.288,
 	},
-	[1246] = {
+	[1248] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.754,
 		["posY"] = 0.441,
 	},
-	[1247] = {
+	[1249] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.754,
 		["posY"] = 0.746,
 	},
-	[1248] = {
+	[1250] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.756,
 		["posY"] = 0.362,
 	},
-	[1249] = {
+	[1251] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.76,
 		["posY"] = 0.312,
 	},
-	[1250] = {
+	[1252] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.765,
 		["posY"] = 0.484,
 	},
-	[1251] = {
+	[1253] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.765,
 		["posY"] = 0.582,
 	},
-	[1252] = {
+	[1254] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.768,
 		["posY"] = 0.263,
 	},
-	[1253] = {
+	[1255] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.772,
 		["posY"] = 0.564,
 	},
-	[1254] = {
+	[1256] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.773,
 		["posY"] = 0.328,
 	},
-	[1255] = {
+	[1257] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.776,
 		["posY"] = 0.283,
 	},
-	[1256] = {
+	[1258] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.776,
 		["posY"] = 0.453,
 	},
-	[1257] = {
+	[1259] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.781,
 		["posY"] = 0.323,
 	},
-	[1258] = {
+	[1260] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.782,
 		["posY"] = 0.545,
 	},
-	[1259] = {
+	[1261] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.783,
 		["posY"] = 0.407,
 	},
-	[1260] = {
+	[1262] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.786,
 		["posY"] = 0.288,
 	},
-	[1261] = {
+	[1263] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.791,
 		["posY"] = 0.373,
 	},
-	[1262] = {
+	[1264] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.796,
 		["posY"] = 0.736,
 	},
-	[1263] = {
+	[1265] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.797,
 		["posY"] = 0.284,
 	},
-	[1264] = {
+	[1266] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.801,
 		["posY"] = 0.436,
 	},
-	[1265] = {
+	[1267] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1420,
+		["posX"] = 0.802,
+		["posY"] = 0.246,
+	},
+	[1268] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1420,
+		["posX"] = 0.802,
+		["posY"] = 0.574,
+	},
+	[1269] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.81,
-		["posY"] = 0.604,
+		["posY"] = 0.603,
 	},
-	[1266] = {
+	[1270] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.811,
 		["posY"] = 0.486,
 	},
-	[1267] = {
+	[1271] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.812,
 		["posY"] = 0.527,
 	},
-	[1268] = {
+	[1272] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.817,
 		["posY"] = 0.398,
 	},
-	[1269] = {
+	[1273] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.818,
 		["posY"] = 0.571,
 	},
-	[1270] = {
+	[1274] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.82,
 		["posY"] = 0.414,
 	},
-	[1271] = {
+	[1275] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.822,
 		["posY"] = 0.646,
 	},
-	[1272] = {
+	[1276] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.823,
 		["posY"] = 0.731,
 	},
-	[1273] = {
+	[1277] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.823,
 		["posY"] = 0.752,
 	},
-	[1274] = {
+	[1278] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.829,
 		["posY"] = 0.314,
 	},
-	[1275] = {
+	[1279] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.836,
 		["posY"] = 0.683,
 	},
-	[1276] = {
+	[1280] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.842,
 		["posY"] = 0.386,
 	},
-	[1277] = {
+	[1281] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
-		["posX"] = 0.85,
+		["posX"] = 0.849,
+		["posY"] = 0.641,
+	},
+	[1282] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1420,
+		["posX"] = 0.851,
 		["posY"] = 0.558,
 	},
-	[1278] = {
+	[1283] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.855,
 		["posY"] = 0.35,
 	},
-	[1279] = {
+	[1284] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.855,
 		["posY"] = 0.575,
 	},
-	[1280] = {
+	[1285] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.859,
 		["posY"] = 0.378,
 	},
-	[1281] = {
+	[1286] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.868,
 		["posY"] = 0.556,
 	},
-	[1282] = {
+	[1287] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1420,
+		["posX"] = 0.877,
+		["posY"] = 0.371,
+	},
+	[1288] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1420,
 		["posX"] = 0.911,
 		["posY"] = 0.515,
 	},
-	[1283] = {
+	[1289] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.331,
 		["posY"] = 0.204,
 	},
-	[1284] = {
+	[1290] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.332,
 		["posY"] = 0.154,
 	},
-	[1285] = {
+	[1291] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.344,
 		["posY"] = 0.092,
 	},
-	[1286] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1421,
-		["posX"] = 0.346,
-		["posY"] = 0.078,
-	},
-	[1287] = {
+	[1292] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.347,
 		["posY"] = 0.126,
 	},
-	[1288] = {
+	[1293] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.349,
 		["posY"] = 0.184,
 	},
-	[1289] = {
+	[1294] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1421,
+		["posX"] = 0.35,
+		["posY"] = 0.08,
+	},
+	[1295] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.351,
 		["posY"] = 0.102,
 	},
-	[1290] = {
+	[1296] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.353,
 		["posY"] = 0.112,
 	},
-	[1291] = {
+	[1297] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.353,
 		["posY"] = 0.123,
 	},
-	[1292] = {
+	[1298] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.353,
 		["posY"] = 0.206,
 	},
-	[1293] = {
+	[1299] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.354,
 		["posY"] = 0.14,
 	},
-	[1294] = {
+	[1300] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.357,
 		["posY"] = 0.077,
 	},
-	[1295] = {
+	[1301] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
-		["posX"] = 0.359,
-		["posY"] = 0.085,
+		["posX"] = 0.36,
+		["posY"] = 0.089,
 	},
-	[1296] = {
+	[1302] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.369,
 		["posY"] = 0.19,
 	},
-	[1297] = {
+	[1303] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.383,
 		["posY"] = 0.172,
 	},
-	[1298] = {
+	[1304] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.397,
 		["posY"] = 0.229,
 	},
-	[1299] = {
+	[1305] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.405,
 		["posY"] = 0.194,
 	},
-	[1300] = {
+	[1306] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.414,
 		["posY"] = 0.803,
 	},
-	[1301] = {
+	[1307] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.416,
 		["posY"] = 0.274,
 	},
-	[1302] = {
+	[1308] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.418,
 		["posY"] = 0.315,
 	},
-	[1303] = {
+	[1309] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.424,
 		["posY"] = 0.717,
 	},
-	[1304] = {
+	[1310] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.432,
 		["posY"] = 0.224,
 	},
-	[1305] = {
+	[1311] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.443,
 		["posY"] = 0.264,
 	},
-	[1306] = {
+	[1312] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
-		["posX"] = 0.444,
-		["posY"] = 0.764,
+		["posX"] = 0.443,
+		["posY"] = 0.765,
 	},
-	[1307] = {
+	[1313] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.446,
 		["posY"] = 0.159,
 	},
-	[1308] = {
+	[1314] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.451,
 		["posY"] = 0.485,
 	},
-	[1309] = {
+	[1315] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.454,
 		["posY"] = 0.342,
 	},
-	[1310] = {
+	[1316] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.463,
 		["posY"] = 0.303,
 	},
-	[1311] = {
+	[1317] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.473,
 		["posY"] = 0.763,
 	},
-	[1312] = {
+	[1318] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.476,
 		["posY"] = 0.168,
 	},
-	[1313] = {
+	[1319] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.481,
 		["posY"] = 0.375,
 	},
-	[1314] = {
+	[1320] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.481,
 		["posY"] = 0.684,
 	},
-	[1315] = {
+	[1321] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.486,
 		["posY"] = 0.482,
 	},
-	[1316] = {
+	[1322] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.486,
 		["posY"] = 0.862,
 	},
-	[1317] = {
+	[1323] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.489,
 		["posY"] = 0.584,
 	},
-	[1318] = {
+	[1324] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.494,
 		["posY"] = 0.134,
 	},
-	[1319] = {
+	[1325] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.499,
 		["posY"] = 0.413,
 	},
-	[1320] = {
+	[1326] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.502,
 		["posY"] = 0.459,
 	},
-	[1321] = {
+	[1327] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.509,
 		["posY"] = 0.272,
 	},
-	[1322] = {
+	[1328] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.516,
 		["posY"] = 0.645,
 	},
-	[1323] = {
+	[1329] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.519,
 		["posY"] = 0.323,
 	},
-	[1324] = {
+	[1330] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.521,
 		["posY"] = 0.169,
 	},
-	[1325] = {
+	[1331] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.524,
 		["posY"] = 0.782,
 	},
-	[1326] = {
+	[1332] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.525,
 		["posY"] = 0.112,
 	},
-	[1327] = {
+	[1333] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.53,
 		["posY"] = 0.368,
 	},
-	[1328] = {
+	[1334] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.534,
 		["posY"] = 0.848,
 	},
-	[1329] = {
+	[1335] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.539,
 		["posY"] = 0.234,
 	},
-	[1330] = {
+	[1336] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.544,
 		["posY"] = 0.309,
 	},
-	[1331] = {
+	[1337] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.553,
 		["posY"] = 0.336,
 	},
-	[1332] = {
+	[1338] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.554,
 		["posY"] = 0.079,
 	},
-	[1333] = {
+	[1339] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.56,
 		["posY"] = 0.802,
 	},
-	[1334] = {
+	[1340] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.561,
 		["posY"] = 0.549,
 	},
-	[1335] = {
+	[1341] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.564,
 		["posY"] = 0.484,
 	},
-	[1336] = {
+	[1342] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.567,
 		["posY"] = 0.272,
 	},
-	[1337] = {
+	[1343] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.567,
 		["posY"] = 0.467,
 	},
-	[1338] = {
+	[1344] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.57,
 		["posY"] = 0.459,
 	},
-	[1339] = {
+	[1345] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.571,
 		["posY"] = 0.413,
 	},
-	[1340] = {
+	[1346] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.574,
 		["posY"] = 0.448,
 	},
-	[1341] = {
+	[1347] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.576,
 		["posY"] = 0.33,
 	},
-	[1342] = {
+	[1348] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.58,
 		["posY"] = 0.453,
 	},
-	[1343] = {
+	[1349] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.589,
 		["posY"] = 0.706,
 	},
-	[1344] = {
+	[1350] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.597,
 		["posY"] = 0.715,
 	},
-	[1345] = {
+	[1351] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1421,
+		["posX"] = 0.607,
+		["posY"] = 0.724,
+	},
+	[1352] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.633,
 		["posY"] = 0.826,
 	},
-	[1346] = {
+	[1353] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.645,
 		["posY"] = 0.22,
 	},
-	[1347] = {
+	[1354] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.673,
 		["posY"] = 0.299,
 	},
-	[1348] = {
+	[1355] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1421,
+		["posX"] = 0.706,
+		["posY"] = 0.364,
+	},
+	[1356] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.728,
 		["posY"] = 0.179,
 	},
-	[1349] = {
+	[1357] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
 		["posX"] = 0.734,
 		["posY"] = 0.293,
 	},
-	[1350] = {
+	[1358] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1421,
-		["posX"] = 0.766,
+		["posX"] = 0.767,
 		["posY"] = 0.204,
 	},
-	[1351] = {
+	[1359] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.301,
 		["posY"] = 0.912,
 	},
-	[1352] = {
+	[1360] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.311,
 		["posY"] = 0.87,
 	},
-	[1353] = {
+	[1361] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.317,
 		["posY"] = 0.841,
 	},
-	[1354] = {
+	[1362] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.323,
 		["posY"] = 0.896,
 	},
-	[1355] = {
+	[1363] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.324,
 		["posY"] = 0.863,
 	},
-	[1356] = {
+	[1364] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.33,
 		["posY"] = 0.895,
 	},
-	[1357] = {
+	[1365] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.332,
 		["posY"] = 0.812,
 	},
-	[1358] = {
+	[1366] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.332,
 		["posY"] = 0.84,
 	},
-	[1359] = {
+	[1367] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.335,
 		["posY"] = 0.884,
 	},
-	[1360] = {
+	[1368] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.339,
 		["posY"] = 0.797,
 	},
-	[1361] = {
+	[1369] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.341,
-		["posY"] = 0.859,
+		["posY"] = 0.86,
 	},
-	[1362] = {
+	[1370] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.352,
 		["posY"] = 0.851,
 	},
-	[1363] = {
+	[1371] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.354,
 		["posY"] = 0.556,
 	},
-	[1364] = {
+	[1372] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.363,
 		["posY"] = 0.906,
 	},
-	[1365] = {
+	[1373] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.367,
 		["posY"] = 0.796,
 	},
-	[1366] = {
+	[1374] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.378,
 		["posY"] = 0.493,
 	},
-	[1367] = {
+	[1375] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.379,
 		["posY"] = 0.728,
 	},
-	[1368] = {
+	[1376] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.386,
 		["posY"] = 0.889,
 	},
-	[1369] = {
+	[1377] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.388,
 		["posY"] = 0.33,
 	},
-	[1370] = {
+	[1378] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.391,
 		["posY"] = 0.814,
 	},
-	[1371] = {
+	[1379] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.395,
 		["posY"] = 0.611,
 	},
-	[1372] = {
+	[1380] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.395,
 		["posY"] = 0.735,
 	},
-	[1373] = {
+	[1381] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.401,
 		["posY"] = 0.714,
 	},
-	[1374] = {
+	[1382] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.404,
 		["posY"] = 0.293,
 	},
-	[1375] = {
+	[1383] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.404,
 		["posY"] = 0.4,
 	},
-	[1376] = {
+	[1384] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.413,
 		["posY"] = 0.394,
 	},
-	[1377] = {
+	[1385] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.414,
 		["posY"] = 0.352,
 	},
-	[1378] = {
+	[1386] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.422,
 		["posY"] = 0.583,
 	},
-	[1379] = {
+	[1387] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.425,
 		["posY"] = 0.527,
 	},
-	[1380] = {
+	[1388] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.426,
-		["posY"] = 0.25,
+		["posY"] = 0.249,
 	},
-	[1381] = {
+	[1389] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.426,
 		["posY"] = 0.471,
 	},
-	[1382] = {
+	[1390] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.427,
 		["posY"] = 0.734,
 	},
-	[1383] = {
+	[1391] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.429,
 		["posY"] = 0.866,
 	},
-	[1384] = {
+	[1392] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.431,
 		["posY"] = 0.223,
 	},
-	[1385] = {
+	[1393] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.431,
 		["posY"] = 0.453,
 	},
-	[1386] = {
+	[1394] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.431,
 		["posY"] = 0.717,
 	},
-	[1387] = {
+	[1395] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.432,
 		["posY"] = 0.492,
 	},
-	[1388] = {
+	[1396] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.435,
 		["posY"] = 0.384,
 	},
-	[1389] = {
+	[1397] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.435,
 		["posY"] = 0.52,
 	},
-	[1390] = {
+	[1398] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.435,
 		["posY"] = 0.853,
 	},
-	[1391] = {
+	[1399] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.436,
 		["posY"] = 0.463,
 	},
-	[1392] = {
+	[1400] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.44,
 		["posY"] = 0.505,
 	},
-	[1393] = {
+	[1401] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.441,
 		["posY"] = 0.873,
 	},
-	[1394] = {
+	[1402] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.442,
 		["posY"] = 0.271,
 	},
-	[1395] = {
+	[1403] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.442,
 		["posY"] = 0.787,
 	},
-	[1396] = {
+	[1404] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.443,
 		["posY"] = 0.708,
 	},
-	[1397] = {
+	[1405] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.444,
 		["posY"] = 0.726,
 	},
-	[1398] = {
+	[1406] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.444,
 		["posY"] = 0.811,
 	},
-	[1399] = {
+	[1407] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.445,
 		["posY"] = 0.855,
 	},
-	[1400] = {
+	[1408] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1439,
+		["posX"] = 0.447,
+		["posY"] = 0.503,
+	},
+	[1409] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.447,
 		["posY"] = 0.865,
 	},
-	[1401] = {
+	[1410] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.449,
 		["posY"] = 0.358,
 	},
-	[1402] = {
+	[1411] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.45,
 		["posY"] = 0.896,
 	},
-	[1403] = {
+	[1412] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.454,
 		["posY"] = 0.226,
 	},
-	[1404] = {
+	[1413] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.456,
 		["posY"] = 0.533,
 	},
-	[1405] = {
+	[1414] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
-		["posX"] = 0.461,
+		["posX"] = 0.46,
 		["posY"] = 0.502,
 	},
-	[1406] = {
+	[1415] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.462,
 		["posY"] = 0.388,
 	},
-	[1407] = {
+	[1416] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.463,
 		["posY"] = 0.453,
 	},
-	[1408] = {
+	[1417] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.467,
 		["posY"] = 0.534,
 	},
-	[1409] = {
+	[1418] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.468,
 		["posY"] = 0.502,
 	},
-	[1410] = {
+	[1419] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.474,
 		["posY"] = 0.457,
 	},
-	[1411] = {
+	[1420] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.482,
 		["posY"] = 0.403,
 	},
-	[1412] = {
+	[1421] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.488,
 		["posY"] = 0.208,
 	},
-	[1413] = {
+	[1422] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.492,
 		["posY"] = 0.271,
 	},
-	[1414] = {
+	[1423] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.494,
 		["posY"] = 0.343,
 	},
-	[1415] = {
+	[1424] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.5,
 		["posY"] = 0.279,
 	},
-	[1416] = {
+	[1425] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.504,
 		["posY"] = 0.37,
 	},
-	[1417] = {
+	[1426] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.515,
 		["posY"] = 0.373,
 	},
-	[1418] = {
+	[1427] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.519,
 		["posY"] = 0.284,
 	},
-	[1419] = {
+	[1428] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.519,
 		["posY"] = 0.331,
 	},
-	[1420] = {
+	[1429] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.525,
 		["posY"] = 0.187,
 	},
-	[1421] = {
+	[1430] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.527,
 		["posY"] = 0.302,
 	},
-	[1422] = {
+	[1431] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.529,
 		["posY"] = 0.231,
 	},
-	[1423] = {
+	[1432] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.532,
 		["posY"] = 0.348,
 	},
-	[1424] = {
+	[1433] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.537,
 		["posY"] = 0.188,
 	},
-	[1425] = {
+	[1434] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.539,
 		["posY"] = 0.329,
 	},
-	[1426] = {
+	[1435] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.545,
 		["posY"] = 0.334,
 	},
-	[1427] = {
+	[1436] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.547,
 		["posY"] = 0.311,
 	},
-	[1428] = {
+	[1437] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.548,
 		["posY"] = 0.355,
 	},
-	[1429] = {
+	[1438] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.55,
 		["posY"] = 0.346,
 	},
-	[1430] = {
+	[1439] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.553,
 		["posY"] = 0.285,
 	},
-	[1431] = {
+	[1440] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.554,
 		["posY"] = 0.196,
 	},
-	[1432] = {
+	[1441] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.555,
 		["posY"] = 0.362,
 	},
-	[1433] = {
+	[1442] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.559,
 		["posY"] = 0.343,
 	},
-	[1434] = {
+	[1443] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.56,
 		["posY"] = 0.186,
 	},
-	[1435] = {
+	[1444] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.561,
 		["posY"] = 0.254,
 	},
-	[1436] = {
+	[1445] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.561,
 		["posY"] = 0.274,
 	},
-	[1437] = {
+	[1446] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.569,
 		["posY"] = 0.277,
 	},
-	[1438] = {
+	[1447] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.573,
 		["posY"] = 0.147,
 	},
-	[1439] = {
+	[1448] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.578,
 		["posY"] = 0.242,
 	},
-	[1440] = {
+	[1449] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.58,
 		["posY"] = 0.126,
 	},
-	[1441] = {
+	[1450] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.592,
 		["posY"] = 0.272,
 	},
-	[1442] = {
+	[1451] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.595,
 		["posY"] = 0.134,
 	},
-	[1443] = {
+	[1452] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.603,
 		["posY"] = 0.086,
 	},
-	[1444] = {
+	[1453] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.606,
 		["posY"] = 0.166,
 	},
-	[1445] = {
+	[1454] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.606,
 		["posY"] = 0.254,
 	},
-	[1446] = {
+	[1455] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.607,
 		["posY"] = 0.198,
 	},
-	[1447] = {
+	[1456] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.611,
 		["posY"] = 0.098,
 	},
-	[1448] = {
+	[1457] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.617,
 		["posY"] = 0.227,
 	},
-	[1449] = {
+	[1458] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.618,
 		["posY"] = 0.157,
 	},
-	[1450] = {
+	[1459] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.624,
 		["posY"] = 0.088,
 	},
-	[1451] = {
+	[1460] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.626,
 		["posY"] = 0.065,
 	},
-	[1452] = {
+	[1461] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1439,
 		["posX"] = 0.629,
 		["posY"] = 0.094,
 	},
-	[1453] = {
+	[1462] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.28,
 		["posY"] = 0.261,
 	},
-	[1454] = {
+	[1463] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
-		["posX"] = 0.292,
-		["posY"] = 0.191,
+		["posX"] = 0.291,
+		["posY"] = 0.192,
 	},
-	[1455] = {
+	[1464] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.298,
 		["posY"] = 0.196,
 	},
-	[1456] = {
+	[1465] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.301,
 		["posY"] = 0.625,
 	},
-	[1457] = {
+	[1466] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.304,
 		["posY"] = 0.286,
 	},
-	[1458] = {
+	[1467] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
-		["posX"] = 0.307,
-		["posY"] = 0.603,
+		["posX"] = 0.304,
+		["posY"] = 0.604,
 	},
-	[1459] = {
+	[1468] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.308,
 		["posY"] = 0.594,
 	},
-	[1460] = {
+	[1469] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.31,
 		["posY"] = 0.619,
 	},
-	[1461] = {
+	[1470] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.311,
 		["posY"] = 0.64,
 	},
-	[1462] = {
+	[1471] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.312,
 		["posY"] = 0.425,
 	},
-	[1463] = {
+	[1472] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.317,
 		["posY"] = 0.503,
 	},
-	[1464] = {
+	[1473] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.317,
 		["posY"] = 0.631,
 	},
-	[1465] = {
+	[1474] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.319,
 		["posY"] = 0.476,
 	},
-	[1466] = {
+	[1475] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.323,
 		["posY"] = 0.614,
 	},
-	[1467] = {
+	[1476] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.325,
-		["posY"] = 0.598,
+		["posY"] = 0.599,
 	},
-	[1468] = {
+	[1477] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.326,
 		["posY"] = 0.359,
 	},
-	[1469] = {
+	[1478] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.329,
 		["posY"] = 0.406,
 	},
-	[1470] = {
+	[1479] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.33,
 		["posY"] = 0.761,
 	},
-	[1471] = {
+	[1480] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.331,
 		["posY"] = 0.61,
 	},
-	[1472] = {
+	[1481] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.331,
 		["posY"] = 0.625,
 	},
-	[1473] = {
+	[1482] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.332,
 		["posY"] = 0.542,
 	},
-	[1474] = {
+	[1483] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.332,
 		["posY"] = 0.7,
 	},
-	[1475] = {
+	[1484] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.334,
 		["posY"] = 0.472,
 	},
-	[1476] = {
+	[1485] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.336,
 		["posY"] = 0.324,
 	},
-	[1477] = {
+	[1486] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.336,
 		["posY"] = 0.348,
 	},
-	[1478] = {
+	[1487] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.336,
 		["posY"] = 0.581,
 	},
-	[1479] = {
+	[1488] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.338,
 		["posY"] = 0.811,
 	},
-	[1480] = {
+	[1489] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.341,
 		["posY"] = 0.516,
 	},
-	[1481] = {
+	[1490] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.342,
 		["posY"] = 0.62,
 	},
-	[1482] = {
+	[1491] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.343,
 		["posY"] = 0.669,
 	},
-	[1483] = {
+	[1492] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.345,
 		["posY"] = 0.382,
 	},
-	[1484] = {
+	[1493] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.345,
 		["posY"] = 0.798,
 	},
-	[1485] = {
+	[1494] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.348,
 		["posY"] = 0.588,
 	},
-	[1486] = {
+	[1495] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.348,
 		["posY"] = 0.696,
 	},
-	[1487] = {
+	[1496] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.35,
 		["posY"] = 0.551,
 	},
-	[1488] = {
+	[1497] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.364,
 		["posY"] = 0.166,
 	},
-	[1489] = {
+	[1498] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.369,
 		["posY"] = 0.141,
 	},
-	[1490] = {
+	[1499] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.374,
 		["posY"] = 0.089,
 	},
-	[1491] = {
+	[1500] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.384,
 		["posY"] = 0.07,
 	},
-	[1492] = {
+	[1501] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.411,
 		["posY"] = 0.066,
 	},
-	[1493] = {
+	[1502] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.438,
 		["posY"] = 0.728,
 	},
-	[1494] = {
+	[1503] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.446,
 		["posY"] = 0.12,
 	},
-	[1495] = {
+	[1504] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.484,
 		["posY"] = 0.743,
 	},
-	[1496] = {
+	[1505] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.485,
 		["posY"] = 0.066,
 	},
-	[1497] = {
+	[1506] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.493,
 		["posY"] = 0.246,
 	},
-	[1498] = {
+	[1507] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.502,
 		["posY"] = 0.067,
 	},
-	[1499] = {
+	[1508] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.522,
 		["posY"] = 0.049,
 	},
-	[1500] = {
+	[1509] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.522,
 		["posY"] = 0.726,
 	},
-	[1501] = {
+	[1510] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.528,
 		["posY"] = 0.064,
 	},
-	[1502] = {
+	[1511] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.539,
 		["posY"] = 0.747,
 	},
-	[1503] = {
+	[1512] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.54,
 		["posY"] = 0.089,
 	},
-	[1504] = {
+	[1513] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.544,
 		["posY"] = 0.141,
 	},
-	[1505] = {
+	[1514] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.548,
 		["posY"] = 0.128,
 	},
-	[1506] = {
+	[1515] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.55,
 		["posY"] = 0.1,
 	},
-	[1507] = {
+	[1516] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.559,
 		["posY"] = 0.135,
 	},
-	[1508] = {
+	[1517] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.559,
 		["posY"] = 0.747,
 	},
-	[1509] = {
+	[1518] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.566,
 		["posY"] = 0.404,
 	},
-	[1510] = {
+	[1519] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.567,
 		["posY"] = 0.297,
 	},
-	[1511] = {
+	[1520] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.568,
 		["posY"] = 0.159,
 	},
-	[1512] = {
+	[1521] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.568,
 		["posY"] = 0.386,
 	},
-	[1513] = {
+	[1522] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.574,
 		["posY"] = 0.351,
 	},
-	[1514] = {
+	[1523] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.576,
 		["posY"] = 0.429,
 	},
-	[1515] = {
+	[1524] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.583,
 		["posY"] = 0.313,
 	},
-	[1516] = {
+	[1525] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.585,
 		["posY"] = 0.357,
 	},
-	[1517] = {
+	[1526] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.588,
 		["posY"] = 0.18,
 	},
-	[1518] = {
+	[1527] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.592,
 		["posY"] = 0.37,
 	},
-	[1519] = {
+	[1528] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.594,
 		["posY"] = 0.459,
 	},
-	[1520] = {
+	[1529] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1412,
+		["posX"] = 0.598,
+		["posY"] = 0.334,
+	},
+	[1530] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.6,
 		["posY"] = 0.429,
 	},
-	[1521] = {
+	[1531] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.601,
 		["posY"] = 0.3,
 	},
-	[1522] = {
+	[1532] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1412,
+		["posX"] = 0.605,
+		["posY"] = 0.356,
+	},
+	[1533] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.607,
 		["posY"] = 0.292,
 	},
-	[1523] = {
+	[1534] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.609,
 		["posY"] = 0.188,
 	},
-	[1524] = {
+	[1535] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.609,
 		["posY"] = 0.326,
 	},
-	[1525] = {
+	[1536] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.611,
 		["posY"] = 0.402,
 	},
-	[1526] = {
+	[1537] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.613,
-		["posY"] = 0.222,
+		["posY"] = 0.223,
 	},
-	[1527] = {
+	[1538] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.613,
 		["posY"] = 0.514,
 	},
-	[1528] = {
+	[1539] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.613,
 		["posY"] = 0.722,
 	},
-	[1529] = {
+	[1540] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.615,
 		["posY"] = 0.534,
 	},
-	[1530] = {
+	[1541] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.616,
 		["posY"] = 0.504,
 	},
-	[1531] = {
+	[1542] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.623,
 		["posY"] = 0.196,
 	},
-	[1532] = {
+	[1543] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.624,
 		["posY"] = 0.173,
 	},
-	[1533] = {
+	[1544] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.624,
 		["posY"] = 0.442,
 	},
-	[1534] = {
+	[1545] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.626,
 		["posY"] = 0.423,
 	},
-	[1535] = {
+	[1546] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.629,
 		["posY"] = 0.554,
 	},
-	[1536] = {
+	[1547] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.63,
 		["posY"] = 0.237,
 	},
-	[1537] = {
+	[1548] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.63,
-		["posY"] = 0.26,
+		["posY"] = 0.259,
 	},
-	[1538] = {
+	[1549] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.633,
 		["posY"] = 0.205,
 	},
-	[1539] = {
+	[1550] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1412,
+		["posX"] = 0.633,
+		["posY"] = 0.4,
+	},
+	[1551] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.634,
 		["posY"] = 0.414,
 	},
-	[1540] = {
+	[1552] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.635,
 		["posY"] = 0.448,
 	},
-	[1541] = {
+	[1553] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.643,
 		["posY"] = 0.422,
 	},
-	[1542] = {
+	[1554] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.646,
 		["posY"] = 0.428,
 	},
-	[1543] = {
+	[1555] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.647,
 		["posY"] = 0.711,
 	},
-	[1544] = {
+	[1556] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
-		["posX"] = 0.648,
+		["posX"] = 0.649,
 		["posY"] = 0.447,
 	},
-	[1545] = {
+	[1557] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.658,
 		["posY"] = 0.434,
 	},
-	[1546] = {
+	[1558] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.661,
 		["posY"] = 0.713,
 	},
-	[1547] = {
+	[1559] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.67,
 		["posY"] = 0.727,
 	},
-	[1548] = {
+	[1560] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.684,
 		["posY"] = 0.696,
 	},
-	[1549] = {
+	[1561] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.687,
 		["posY"] = 0.653,
 	},
-	[1550] = {
+	[1562] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1412,
 		["posX"] = 0.688,
 		["posY"] = 0.631,
 	},
-	[1551] = {
+	[1563] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.153,
 		["posY"] = 0.536,
 	},
-	[1552] = {
+	[1564] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.172,
 		["posY"] = 0.562,
 	},
-	[1553] = {
+	[1565] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.181,
 		["posY"] = 0.498,
 	},
-	[1554] = {
+	[1566] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.181,
 		["posY"] = 0.521,
 	},
-	[1555] = {
+	[1567] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.183,
 		["posY"] = 0.435,
 	},
-	[1556] = {
+	[1568] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.213,
 		["posY"] = 0.565,
 	},
-	[1557] = {
+	[1569] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.218,
 		["posY"] = 0.41,
 	},
-	[1558] = {
+	[1570] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.237,
-		["posY"] = 0.607,
+		["posY"] = 0.606,
 	},
-	[1559] = {
+	[1571] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.239,
 		["posY"] = 0.392,
 	},
-	[1560] = {
+	[1572] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.252,
 		["posY"] = 0.37,
 	},
-	[1561] = {
+	[1573] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.257,
 		["posY"] = 0.694,
 	},
-	[1562] = {
+	[1574] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.262,
 		["posY"] = 0.318,
 	},
-	[1563] = {
+	[1575] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.298,
 		["posY"] = 0.726,
 	},
-	[1564] = {
+	[1576] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.326,
 		["posY"] = 0.566,
 	},
-	[1565] = {
+	[1577] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.338,
 		["posY"] = 0.678,
 	},
-	[1566] = {
+	[1578] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.364,
 		["posY"] = 0.536,
 	},
-	[1567] = {
+	[1579] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.391,
-		["posY"] = 0.366,
+		["posY"] = 0.367,
 	},
-	[1568] = {
+	[1580] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.409,
 		["posY"] = 0.414,
 	},
-	[1569] = {
+	[1581] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.409,
 		["posY"] = 0.537,
 	},
-	[1570] = {
+	[1582] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.439,
 		["posY"] = 0.659,
 	},
-	[1571] = {
+	[1583] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.475,
 		["posY"] = 0.355,
 	},
-	[1572] = {
-		["type"] = "mining",
-		["object"] = 1731,
-		["mapID"] = 1424,
-		["posX"] = 0.592,
-		["posY"] = 0.705,
-	},
-	[1573] = {
+	[1584] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.593,
 		["posY"] = 0.422,
 	},
-	[1574] = {
+	[1585] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1424,
+		["posX"] = 0.593,
+		["posY"] = 0.705,
+	},
+	[1586] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.596,
 		["posY"] = 0.334,
 	},
-	[1575] = {
+	[1587] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.6,
 		["posY"] = 0.478,
 	},
-	[1576] = {
+	[1588] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.673,
 		["posY"] = 0.872,
 	},
-	[1577] = {
+	[1589] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
 		["posX"] = 0.758,
 		["posY"] = 0.489,
 	},
-	[1578] = {
+	[1590] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1424,
-		["posX"] = 0.812,
+		["posX"] = 0.811,
 		["posY"] = 0.397,
 	},
-	[1579] = {
+	[1591] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.141,
 		["posY"] = 0.329,
 	},
-	[1580] = {
+	[1592] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.187,
 		["posY"] = 0.239,
 	},
-	[1581] = {
+	[1593] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.214,
 		["posY"] = 0.439,
 	},
-	[1582] = {
+	[1594] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.228,
 		["posY"] = 0.586,
 	},
-	[1583] = {
+	[1595] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.253,
 		["posY"] = 0.189,
 	},
-	[1584] = {
+	[1596] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.273,
 		["posY"] = 0.554,
 	},
-	[1585] = {
+	[1597] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.274,
 		["posY"] = 0.167,
 	},
-	[1586] = {
+	[1598] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.277,
 		["posY"] = 0.381,
 	},
-	[1587] = {
+	[1599] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.28,
 		["posY"] = 0.538,
 	},
-	[1588] = {
+	[1600] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.299,
 		["posY"] = 0.328,
 	},
-	[1589] = {
+	[1601] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
-		["posX"] = 0.312,
+		["posX"] = 0.313,
 		["posY"] = 0.58,
 	},
-	[1590] = {
+	[1602] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.316,
 		["posY"] = 0.384,
 	},
-	[1591] = {
+	[1603] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.327,
 		["posY"] = 0.258,
 	},
-	[1592] = {
+	[1604] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.334,
 		["posY"] = 0.422,
 	},
-	[1593] = {
+	[1605] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.336,
 		["posY"] = 0.216,
 	},
-	[1594] = {
+	[1606] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.34,
 		["posY"] = 0.598,
 	},
-	[1595] = {
+	[1607] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.351,
 		["posY"] = 0.57,
 	},
-	[1596] = {
+	[1608] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.354,
 		["posY"] = 0.316,
 	},
-	[1597] = {
+	[1609] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.356,
 		["posY"] = 0.405,
 	},
-	[1598] = {
+	[1610] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.38,
 		["posY"] = 0.301,
 	},
-	[1599] = {
+	[1611] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.382,
 		["posY"] = 0.599,
 	},
-	[1600] = {
+	[1612] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.401,
 		["posY"] = 0.398,
 	},
-	[1601] = {
+	[1613] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.416,
 		["posY"] = 0.449,
 	},
-	[1602] = {
+	[1614] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.417,
 		["posY"] = 0.591,
 	},
-	[1603] = {
+	[1615] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.433,
 		["posY"] = 0.464,
 	},
-	[1604] = {
+	[1616] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.443,
 		["posY"] = 0.589,
 	},
-	[1605] = {
+	[1617] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.447,
 		["posY"] = 0.505,
 	},
-	[1606] = {
+	[1618] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.463,
 		["posY"] = 0.533,
 	},
-	[1607] = {
+	[1619] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.468,
 		["posY"] = 0.578,
 	},
-	[1608] = {
+	[1620] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.481,
 		["posY"] = 0.543,
 	},
-	[1609] = {
+	[1621] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.514,
-		["posY"] = 0.506,
+		["posY"] = 0.504,
 	},
-	[1610] = {
+	[1622] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
-		["posX"] = 0.527,
+		["posX"] = 0.526,
 		["posY"] = 0.553,
 	},
-	[1611] = {
+	[1623] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.577,
 		["posY"] = 0.749,
 	},
-	[1612] = {
+	[1624] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.646,
 		["posY"] = 0.827,
 	},
-	[1613] = {
+	[1625] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.713,
 		["posY"] = 0.626,
 	},
-	[1614] = {
+	[1626] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.789,
 		["posY"] = 0.502,
 	},
-	[1615] = {
+	[1627] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.81,
 		["posY"] = 0.443,
 	},
-	[1616] = {
+	[1628] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1440,
 		["posX"] = 0.825,
 		["posY"] = 0.498,
 	},
-	[1617] = {
+	[1629] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.094,
 		["posY"] = 0.166,
 	},
-	[1618] = {
+	[1630] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.106,
 		["posY"] = 0.087,
 	},
-	[1619] = {
+	[1631] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.112,
 		["posY"] = 0.143,
 	},
-	[1620] = {
+	[1632] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.143,
 		["posY"] = 0.272,
 	},
-	[1621] = {
+	[1633] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.152,
 		["posY"] = 0.309,
 	},
-	[1622] = {
+	[1634] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.163,
 		["posY"] = 0.179,
 	},
-	[1623] = {
+	[1635] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.174,
 		["posY"] = 0.206,
 	},
-	[1624] = {
+	[1636] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.174,
 		["posY"] = 0.308,
 	},
-	[1625] = {
+	[1637] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.177,
 		["posY"] = 0.347,
 	},
-	[1626] = {
+	[1638] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.194,
 		["posY"] = 0.323,
 	},
-	[1627] = {
+	[1639] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.196,
 		["posY"] = 0.232,
 	},
-	[1628] = {
+	[1640] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.199,
 		["posY"] = 0.401,
 	},
-	[1629] = {
+	[1641] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.216,
 		["posY"] = 0.234,
 	},
-	[1630] = {
+	[1642] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.254,
 		["posY"] = 0.452,
 	},
-	[1631] = {
+	[1643] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.259,
 		["posY"] = 0.242,
 	},
-	[1632] = {
+	[1644] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.261,
 		["posY"] = 0.423,
 	},
-	[1633] = {
+	[1645] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.262,
 		["posY"] = 0.383,
 	},
-	[1634] = {
+	[1646] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.286,
 		["posY"] = 0.3,
 	},
-	[1635] = {
+	[1647] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.291,
 		["posY"] = 0.487,
 	},
-	[1636] = {
+	[1648] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.292,
 		["posY"] = 0.223,
 	},
-	[1637] = {
+	[1649] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.294,
 		["posY"] = 0.279,
 	},
-	[1638] = {
+	[1650] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.324,
 		["posY"] = 0.307,
 	},
-	[1639] = {
+	[1651] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.324,
 		["posY"] = 0.344,
 	},
-	[1640] = {
+	[1652] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.36,
 		["posY"] = 0.364,
 	},
-	[1641] = {
+	[1653] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.374,
 		["posY"] = 0.541,
 	},
-	[1642] = {
+	[1654] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.404,
 		["posY"] = 0.569,
 	},
-	[1643] = {
+	[1655] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.449,
 		["posY"] = 0.414,
 	},
-	[1644] = {
+	[1656] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.451,
 		["posY"] = 0.591,
 	},
-	[1645] = {
+	[1657] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.591,
 		["posY"] = 0.476,
 	},
-	[1646] = {
+	[1658] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.619,
 		["posY"] = 0.597,
 	},
-	[1647] = {
+	[1659] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.674,
 		["posY"] = 0.586,
 	},
-	[1648] = {
+	[1660] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1441,
 		["posX"] = 0.689,
 		["posY"] = 0.55,
 	},
-	[1649] = {
+	[1661] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.5,
 		["posY"] = 0.093,
 	},
-	[1650] = {
+	[1662] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.535,
 		["posY"] = 0.141,
 	},
-	[1651] = {
+	[1663] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.588,
 		["posY"] = 0.08,
 	},
-	[1652] = {
+	[1664] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.594,
 		["posY"] = 0.132,
 	},
-	[1653] = {
+	[1665] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.616,
 		["posY"] = 0.201,
 	},
-	[1654] = {
+	[1666] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.653,
 		["posY"] = 0.189,
 	},
-	[1655] = {
+	[1667] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.657,
 		["posY"] = 0.214,
 	},
-	[1656] = {
+	[1668] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.679,
 		["posY"] = 0.218,
 	},
-	[1657] = {
+	[1669] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.697,
 		["posY"] = 0.258,
 	},
-	[1658] = {
+	[1670] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.726,
 		["posY"] = 0.243,
 	},
-	[1659] = {
+	[1671] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1443,
 		["posX"] = 0.734,
-		["posY"] = 0.334,
+		["posY"] = 0.332,
 	},
-	[1660] = {
+	[1672] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.349,
 		["posY"] = 0.479,
 	},
-	[1661] = {
+	[1673] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.36,
 		["posY"] = 0.612,
 	},
-	[1662] = {
+	[1674] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.367,
 		["posY"] = 0.642,
 	},
-	[1663] = {
+	[1675] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.368,
 		["posY"] = 0.194,
 	},
-	[1664] = {
+	[1676] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.375,
 		["posY"] = 0.412,
 	},
-	[1665] = {
+	[1677] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.385,
 		["posY"] = 0.662,
 	},
-	[1666] = {
+	[1678] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.386,
 		["posY"] = 0.496,
 	},
-	[1667] = {
+	[1679] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.435,
 		["posY"] = 0.262,
 	},
-	[1668] = {
+	[1680] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
-		["posX"] = 0.437,
-		["posY"] = 0.179,
+		["posX"] = 0.438,
+		["posY"] = 0.18,
 	},
-	[1669] = {
+	[1681] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.44,
 		["posY"] = 0.144,
 	},
-	[1670] = {
+	[1682] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.444,
 		["posY"] = 0.344,
 	},
-	[1671] = {
+	[1683] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.454,
 		["posY"] = 0.253,
 	},
-	[1672] = {
+	[1684] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.478,
 		["posY"] = 0.488,
 	},
-	[1673] = {
+	[1685] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.49,
 		["posY"] = 0.323,
 	},
-	[1674] = {
+	[1686] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.512,
 		["posY"] = 0.394,
 	},
-	[1675] = {
+	[1687] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.513,
 		["posY"] = 0.321,
 	},
-	[1676] = {
+	[1688] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.519,
 		["posY"] = 0.342,
 	},
-	[1677] = {
+	[1689] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.538,
 		["posY"] = 0.476,
 	},
-	[1678] = {
+	[1690] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.559,
 		["posY"] = 0.413,
 	},
-	[1679] = {
+	[1691] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.576,
 		["posY"] = 0.593,
 	},
-	[1680] = {
+	[1692] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.577,
 		["posY"] = 0.718,
 	},
-	[1681] = {
+	[1693] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.589,
 		["posY"] = 0.514,
 	},
-	[1682] = {
+	[1694] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.591,
-		["posY"] = 0.822,
+		["posY"] = 0.82,
 	},
-	[1683] = {
+	[1695] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.596,
 		["posY"] = 0.604,
 	},
-	[1684] = {
+	[1696] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.615,
 		["posY"] = 0.466,
 	},
-	[1685] = {
+	[1697] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.632,
 		["posY"] = 0.648,
 	},
-	[1686] = {
+	[1698] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.634,
 		["posY"] = 0.516,
 	},
-	[1687] = {
+	[1699] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.65,
 		["posY"] = 0.411,
 	},
-	[1688] = {
+	[1700] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
-		["posX"] = 0.655,
-		["posY"] = 0.504,
+		["posX"] = 0.654,
+		["posY"] = 0.505,
 	},
-	[1689] = {
+	[1701] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.661,
 		["posY"] = 0.898,
 	},
-	[1690] = {
+	[1702] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.682,
 		["posY"] = 0.447,
 	},
-	[1691] = {
+	[1703] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.688,
 		["posY"] = 0.533,
 	},
-	[1692] = {
+	[1704] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.709,
 		["posY"] = 0.586,
 	},
-	[1693] = {
+	[1705] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.72,
 		["posY"] = 0.399,
 	},
-	[1694] = {
+	[1706] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.722,
 		["posY"] = 0.437,
 	},
-	[1695] = {
+	[1707] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.759,
 		["posY"] = 0.842,
 	},
-	[1696] = {
+	[1708] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.767,
 		["posY"] = 0.527,
 	},
-	[1697] = {
+	[1709] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.767,
 		["posY"] = 0.595,
 	},
-	[1698] = {
+	[1710] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.769,
 		["posY"] = 0.874,
 	},
-	[1699] = {
+	[1711] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.769,
 		["posY"] = 0.887,
 	},
-	[1700] = {
+	[1712] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.775,
 		["posY"] = 0.956,
 	},
-	[1701] = {
+	[1713] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.782,
 		["posY"] = 0.927,
 	},
-	[1702] = {
+	[1714] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1442,
 		["posX"] = 0.846,
 		["posY"] = 0.835,
 	},
-	[1703] = {
+	[1715] = {
 		["type"] = "mining",
 		["object"] = 1731,
 		["mapID"] = 1456,
 		["posX"] = 0.675,
 		["posY"] = 0.159,
 	},
-	[1704] = {
+	[1716] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.268,
+		["posY"] = 0.738,
+	},
+	[1717] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.273,
+		["posY"] = 0.69,
+	},
+	[1718] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.281,
+		["posY"] = 0.68,
+	},
+	[1719] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.295,
+		["posY"] = 0.728,
+	},
+	[1720] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.3,
+		["posY"] = 0.622,
+	},
+	[1721] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.315,
+		["posY"] = 0.738,
+	},
+	[1722] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.316,
+		["posY"] = 0.713,
+	},
+	[1723] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.319,
+		["posY"] = 0.596,
+	},
+	[1724] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.322,
+		["posY"] = 0.641,
+	},
+	[1725] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.331,
+		["posY"] = 0.553,
+	},
+	[1726] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.344,
+		["posY"] = 0.734,
+	},
+	[1727] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.351,
+		["posY"] = 0.713,
+	},
+	[1728] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.368,
+		["posY"] = 0.755,
+	},
+	[1729] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.369,
+		["posY"] = 0.808,
+	},
+	[1730] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.369,
+		["posY"] = 0.826,
+	},
+	[1731] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.37,
+		["posY"] = 0.696,
+	},
+	[1732] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.384,
+		["posY"] = 0.762,
+	},
+	[1733] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.387,
+		["posY"] = 0.667,
+	},
+	[1734] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.397,
+		["posY"] = 0.544,
+	},
+	[1735] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.409,
+		["posY"] = 0.634,
+	},
+	[1736] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.414,
+		["posY"] = 0.568,
+	},
+	[1737] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.425,
+		["posY"] = 0.645,
+	},
+	[1738] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.433,
+		["posY"] = 0.617,
+	},
+	[1739] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.448,
+		["posY"] = 0.684,
+	},
+	[1740] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.455,
+		["posY"] = 0.626,
+	},
+	[1741] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.461,
+		["posY"] = 0.602,
+	},
+	[1742] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.467,
+		["posY"] = 0.58,
+	},
+	[1743] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.467,
+		["posY"] = 0.776,
+	},
+	[1744] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.481,
+		["posY"] = 0.695,
+	},
+	[1745] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.491,
+		["posY"] = 0.722,
+	},
+	[1746] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.497,
+		["posY"] = 0.849,
+	},
+	[1747] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.503,
+		["posY"] = 0.833,
+	},
+	[1748] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.504,
+		["posY"] = 0.599,
+	},
+	[1749] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.51,
+		["posY"] = 0.81,
+	},
+	[1750] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.552,
+		["posY"] = 0.697,
+	},
+	[1751] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.584,
+		["posY"] = 0.699,
+	},
+	[1752] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.592,
+		["posY"] = 0.664,
+	},
+	[1753] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.644,
+		["posY"] = 0.718,
+	},
+	[1754] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.653,
+		["posY"] = 0.815,
+	},
+	[1755] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.658,
+		["posY"] = 0.494,
+	},
+	[1756] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1941,
+		["posX"] = 0.674,
+		["posY"] = 0.532,
+	},
+	[1757] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.174,
+		["posY"] = 0.599,
+	},
+	[1758] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.249,
+		["posY"] = 0.349,
+	},
+	[1759] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.308,
+		["posY"] = 0.219,
+	},
+	[1760] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.346,
+		["posY"] = 0.15,
+	},
+	[1761] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.367,
+		["posY"] = 0.187,
+	},
+	[1762] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.378,
+		["posY"] = 0.469,
+	},
+	[1763] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.403,
+		["posY"] = 0.478,
+	},
+	[1764] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.432,
+		["posY"] = 0.388,
+	},
+	[1765] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.452,
+		["posY"] = 0.232,
+	},
+	[1766] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.489,
+		["posY"] = 0.484,
+	},
+	[1767] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.502,
+		["posY"] = 0.172,
+	},
+	[1768] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.531,
+		["posY"] = 0.64,
+	},
+	[1769] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.54,
+		["posY"] = 0.233,
+	},
+	[1770] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.582,
+		["posY"] = 0.437,
+	},
+	[1771] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.597,
+		["posY"] = 0.214,
+	},
+	[1772] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.657,
+		["posY"] = 0.448,
+	},
+	[1773] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.659,
+		["posY"] = 0.393,
+	},
+	[1774] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.678,
+		["posY"] = 0.598,
+	},
+	[1775] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.699,
+		["posY"] = 0.358,
+	},
+	[1776] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.73,
+		["posY"] = 0.433,
+	},
+	[1777] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.751,
+		["posY"] = 0.414,
+	},
+	[1778] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.768,
+		["posY"] = 0.225,
+	},
+	[1779] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.784,
+		["posY"] = 0.118,
+	},
+	[1780] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.784,
+		["posY"] = 0.342,
+	},
+	[1781] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1942,
+		["posX"] = 0.803,
+		["posY"] = 0.181,
+	},
+	[1782] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.132,
+		["posY"] = 0.874,
+	},
+	[1783] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.165,
+		["posY"] = 0.894,
+	},
+	[1784] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.18,
+		["posY"] = 0.902,
+	},
+	[1785] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.192,
+		["posY"] = 0.768,
+	},
+	[1786] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.217,
+		["posY"] = 0.712,
+	},
+	[1787] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.224,
+		["posY"] = 0.692,
+	},
+	[1788] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.238,
+		["posY"] = 0.728,
+	},
+	[1789] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.24,
+		["posY"] = 0.658,
+	},
+	[1790] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.253,
+		["posY"] = 0.731,
+	},
+	[1791] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.254,
+		["posY"] = 0.689,
+	},
+	[1792] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.268,
+		["posY"] = 0.48,
+	},
+	[1793] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.301,
+		["posY"] = 0.799,
+	},
+	[1794] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.321,
+		["posY"] = 0.785,
+	},
+	[1795] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.327,
+		["posY"] = 0.291,
+	},
+	[1796] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.361,
+		["posY"] = 0.843,
+	},
+	[1797] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.379,
+		["posY"] = 0.773,
+	},
+	[1798] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.402,
+		["posY"] = 0.761,
+	},
+	[1799] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.403,
+		["posY"] = 0.647,
+	},
+	[1800] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.411,
+		["posY"] = 0.173,
+	},
+	[1801] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.412,
+		["posY"] = 0.209,
+	},
+	[1802] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.412,
+		["posY"] = 0.731,
+	},
+	[1803] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.444,
+		["posY"] = 0.728,
+	},
+	[1804] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.454,
+		["posY"] = 0.487,
+	},
+	[1805] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.457,
+		["posY"] = 0.149,
+	},
+	[1806] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.458,
+		["posY"] = 0.414,
+	},
+	[1807] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.471,
+		["posY"] = 0.151,
+	},
+	[1808] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.476,
+		["posY"] = 0.168,
+	},
+	[1809] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.485,
+		["posY"] = 0.679,
+	},
+	[1810] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.491,
+		["posY"] = 0.154,
+	},
+	[1811] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.492,
+		["posY"] = 0.233,
+	},
+	[1812] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.492,
+		["posY"] = 0.388,
+	},
+	[1813] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.497,
+		["posY"] = 0.134,
+	},
+	[1814] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.509,
+		["posY"] = 0.172,
+	},
+	[1815] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.509,
+		["posY"] = 0.206,
+	},
+	[1816] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.534,
+		["posY"] = 0.375,
+	},
+	[1817] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.538,
+		["posY"] = 0.469,
+	},
+	[1818] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.539,
+		["posY"] = 0.404,
+	},
+	[1819] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.543,
+		["posY"] = 0.43,
+	},
+	[1820] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.549,
+		["posY"] = 0.554,
+	},
+	[1821] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.557,
+		["posY"] = 0.434,
+	},
+	[1822] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.577,
+		["posY"] = 0.563,
+	},
+	[1823] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.592,
+		["posY"] = 0.509,
+	},
+	[1824] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1943,
+		["posX"] = 0.596,
+		["posY"] = 0.555,
+	},
+	[1825] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.172,
+		["posY"] = 0.337,
+	},
+	[1826] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.199,
+		["posY"] = 0.301,
+	},
+	[1827] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.288,
+		["posY"] = 0.553,
+	},
+	[1828] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.296,
+		["posY"] = 0.603,
+	},
+	[1829] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.3,
+		["posY"] = 0.497,
+	},
+	[1830] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.308,
+		["posY"] = 0.403,
+	},
+	[1831] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.32,
+		["posY"] = 0.706,
+	},
+	[1832] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.342,
+		["posY"] = 0.371,
+	},
+	[1833] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.351,
+		["posY"] = 0.529,
+	},
+	[1834] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.357,
+		["posY"] = 0.592,
+	},
+	[1835] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.359,
+		["posY"] = 0.347,
+	},
+	[1836] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.372,
+		["posY"] = 0.53,
+	},
+	[1837] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.4,
+		["posY"] = 0.515,
+	},
+	[1838] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.413,
+		["posY"] = 0.241,
+	},
+	[1839] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.413,
+		["posY"] = 0.611,
+	},
+	[1840] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.424,
+		["posY"] = 0.458,
+	},
+	[1841] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.428,
+		["posY"] = 0.517,
+	},
+	[1842] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.429,
+		["posY"] = 0.36,
+	},
+	[1843] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.435,
+		["posY"] = 0.62,
+	},
+	[1844] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.439,
+		["posY"] = 0.742,
+	},
+	[1845] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.452,
+		["posY"] = 0.322,
+	},
+	[1846] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.457,
+		["posY"] = 0.513,
+	},
+	[1847] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.469,
+		["posY"] = 0.267,
+	},
+	[1848] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.482,
+		["posY"] = 0.64,
+	},
+	[1849] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.483,
+		["posY"] = 0.536,
+	},
+	[1850] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.488,
+		["posY"] = 0.526,
+	},
+	[1851] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.5,
+		["posY"] = 0.341,
+	},
+	[1852] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.501,
+		["posY"] = 0.444,
+	},
+	[1853] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.559,
+		["posY"] = 0.867,
+	},
+	[1854] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.565,
+		["posY"] = 0.82,
+	},
+	[1855] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.606,
+		["posY"] = 0.434,
+	},
+	[1856] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.619,
+		["posY"] = 0.517,
+	},
+	[1857] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.628,
+		["posY"] = 0.486,
+	},
+	[1858] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.634,
+		["posY"] = 0.764,
+	},
+	[1859] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.648,
+		["posY"] = 0.854,
+	},
+	[1860] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.687,
+		["posY"] = 0.79,
+	},
+	[1861] = {
+		["type"] = "mining",
+		["object"] = 1731,
+		["mapID"] = 1950,
+		["posX"] = 0.744,
+		["posY"] = 0.241,
+	},
+	[1862] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.238,
 		["posY"] = 0.804,
 	},
-	[1705] = {
+	[1863] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.251,
 		["posY"] = 0.804,
 	},
-	[1706] = {
+	[1864] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.265,
-		["posY"] = 0.797,
+		["posY"] = 0.799,
 	},
-	[1707] = {
+	[1865] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.284,
-		["posY"] = 0.774,
+		["posY"] = 0.773,
 	},
-	[1708] = {
+	[1866] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.304,
 		["posY"] = 0.713,
 	},
-	[1709] = {
+	[1867] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.304,
 		["posY"] = 0.76,
 	},
-	[1710] = {
+	[1868] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.32,
 		["posY"] = 0.764,
 	},
-	[1711] = {
+	[1869] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.347,
 		["posY"] = 0.777,
 	},
-	[1712] = {
+	[1870] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.348,
 		["posY"] = 0.814,
 	},
-	[1713] = {
+	[1871] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.352,
 		["posY"] = 0.416,
 	},
-	[1714] = {
+	[1872] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
-		["posX"] = 0.356,
-		["posY"] = 0.677,
+		["posX"] = 0.357,
+		["posY"] = 0.678,
 	},
-	[1715] = {
+	[1873] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.357,
 		["posY"] = 0.803,
 	},
-	[1716] = {
+	[1874] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.359,
 		["posY"] = 0.318,
 	},
-	[1717] = {
+	[1875] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.359,
 		["posY"] = 0.766,
 	},
-	[1718] = {
+	[1876] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.363,
 		["posY"] = 0.491,
 	},
-	[1719] = {
+	[1877] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.366,
 		["posY"] = 0.811,
 	},
-	[1720] = {
+	[1878] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.367,
 		["posY"] = 0.769,
 	},
-	[1721] = {
+	[1879] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.369,
 		["posY"] = 0.788,
 	},
-	[1722] = {
+	[1880] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.373,
 		["posY"] = 0.848,
 	},
-	[1723] = {
+	[1881] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1431,
+		["posX"] = 0.38,
+		["posY"] = 0.841,
+	},
+	[1882] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.404,
 		["posY"] = 0.765,
 	},
-	[1724] = {
+	[1883] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.415,
 		["posY"] = 0.245,
 	},
-	[1725] = {
+	[1884] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.464,
 		["posY"] = 0.603,
 	},
-	[1726] = {
+	[1885] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.499,
 		["posY"] = 0.794,
 	},
-	[1727] = {
+	[1886] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.506,
 		["posY"] = 0.631,
 	},
-	[1728] = {
+	[1887] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.509,
 		["posY"] = 0.711,
 	},
-	[1729] = {
+	[1888] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.511,
 		["posY"] = 0.223,
 	},
-	[1730] = {
+	[1889] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.526,
 		["posY"] = 0.556,
 	},
-	[1731] = {
+	[1890] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.567,
 		["posY"] = 0.769,
 	},
-	[1732] = {
+	[1891] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
-		["posX"] = 0.578,
-		["posY"] = 0.615,
+		["posX"] = 0.579,
+		["posY"] = 0.614,
 	},
-	[1733] = {
+	[1892] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.589,
 		["posY"] = 0.814,
 	},
-	[1734] = {
+	[1893] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.6,
 		["posY"] = 0.562,
 	},
-	[1735] = {
+	[1894] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.616,
 		["posY"] = 0.823,
 	},
-	[1736] = {
+	[1895] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.622,
 		["posY"] = 0.79,
 	},
-	[1737] = {
+	[1896] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
-		["posX"] = 0.622,
+		["posX"] = 0.623,
 		["posY"] = 0.798,
 	},
-	[1738] = {
+	[1897] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.634,
 		["posY"] = 0.82,
 	},
-	[1739] = {
+	[1898] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.634,
 		["posY"] = 0.843,
 	},
-	[1740] = {
+	[1899] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.673,
 		["posY"] = 0.513,
 	},
-	[1741] = {
+	[1900] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.68,
 		["posY"] = 0.426,
 	},
-	[1742] = {
+	[1901] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.681,
 		["posY"] = 0.477,
 	},
-	[1743] = {
+	[1902] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.686,
 		["posY"] = 0.407,
 	},
-	[1744] = {
+	[1903] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.711,
 		["posY"] = 0.772,
 	},
-	[1745] = {
+	[1904] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1431,
+		["posX"] = 0.724,
+		["posY"] = 0.753,
+	},
+	[1905] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1431,
+		["posX"] = 0.737,
+		["posY"] = 0.785,
+	},
+	[1906] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.738,
 		["posY"] = 0.762,
 	},
-	[1746] = {
+	[1907] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.741,
-		["posY"] = 0.771,
+		["posY"] = 0.772,
 	},
-	[1747] = {
+	[1908] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.779,
 		["posY"] = 0.729,
 	},
-	[1748] = {
+	[1909] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.8,
 		["posY"] = 0.762,
 	},
-	[1749] = {
+	[1910] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.817,
 		["posY"] = 0.628,
 	},
-	[1750] = {
+	[1911] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.826,
 		["posY"] = 0.707,
 	},
-	[1751] = {
+	[1912] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.827,
 		["posY"] = 0.529,
 	},
-	[1752] = {
+	[1913] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.841,
 		["posY"] = 0.582,
 	},
-	[1753] = {
+	[1914] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.849,
 		["posY"] = 0.509,
 	},
-	[1754] = {
+	[1915] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.855,
 		["posY"] = 0.54,
 	},
-	[1755] = {
+	[1916] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.859,
 		["posY"] = 0.492,
 	},
-	[1756] = {
+	[1917] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1431,
 		["posX"] = 0.866,
 		["posY"] = 0.473,
 	},
-	[1757] = {
+	[1918] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.325,
 		["posY"] = 0.475,
 	},
-	[1758] = {
+	[1919] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.326,
 		["posY"] = 0.442,
 	},
-	[1759] = {
+	[1920] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.333,
 		["posY"] = 0.512,
 	},
-	[1760] = {
+	[1921] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.341,
 		["posY"] = 0.152,
 	},
-	[1761] = {
+	[1922] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.36,
 		["posY"] = 0.454,
 	},
-	[1762] = {
+	[1923] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.366,
 		["posY"] = 0.488,
 	},
-	[1763] = {
+	[1924] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.368,
 		["posY"] = 0.244,
 	},
-	[1764] = {
+	[1925] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.377,
 		["posY"] = 0.433,
 	},
-	[1765] = {
+	[1926] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.379,
 		["posY"] = 0.176,
 	},
-	[1766] = {
+	[1927] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
-		["posX"] = 0.392,
+		["posX"] = 0.393,
 		["posY"] = 0.185,
 	},
-	[1767] = {
+	[1928] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.436,
 		["posY"] = 0.225,
 	},
-	[1768] = {
+	[1929] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.454,
 		["posY"] = 0.477,
 	},
-	[1769] = {
+	[1930] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.456,
 		["posY"] = 0.643,
 	},
-	[1770] = {
+	[1931] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.457,
 		["posY"] = 0.601,
 	},
-	[1771] = {
+	[1932] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.459,
 		["posY"] = 0.651,
 	},
-	[1772] = {
+	[1933] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.469,
 		["posY"] = 0.616,
 	},
-	[1773] = {
+	[1934] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.471,
 		["posY"] = 0.626,
 	},
-	[1774] = {
+	[1935] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.473,
 		["posY"] = 0.431,
 	},
-	[1775] = {
+	[1936] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.475,
 		["posY"] = 0.599,
 	},
-	[1776] = {
+	[1937] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.484,
 		["posY"] = 0.433,
 	},
-	[1777] = {
+	[1938] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.485,
 		["posY"] = 0.603,
 	},
-	[1778] = {
+	[1939] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.486,
 		["posY"] = 0.449,
 	},
-	[1779] = {
+	[1940] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.486,
 		["posY"] = 0.63,
 	},
-	[1780] = {
+	[1941] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.491,
 		["posY"] = 0.588,
 	},
-	[1781] = {
+	[1942] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.491,
 		["posY"] = 0.611,
 	},
-	[1782] = {
+	[1943] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.497,
 		["posY"] = 0.579,
 	},
-	[1783] = {
+	[1944] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.498,
 		["posY"] = 0.628,
 	},
-	[1784] = {
+	[1945] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.505,
 		["posY"] = 0.584,
 	},
-	[1785] = {
+	[1946] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.505,
 		["posY"] = 0.612,
 	},
-	[1786] = {
+	[1947] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.507,
 		["posY"] = 0.626,
 	},
-	[1787] = {
+	[1948] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.51,
 		["posY"] = 0.593,
 	},
-	[1788] = {
+	[1949] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.515,
 		["posY"] = 0.631,
 	},
-	[1789] = {
+	[1950] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.517,
 		["posY"] = 0.465,
 	},
-	[1790] = {
+	[1951] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.518,
 		["posY"] = 0.503,
 	},
-	[1791] = {
+	[1952] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.532,
 		["posY"] = 0.628,
 	},
-	[1792] = {
+	[1953] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.533,
 		["posY"] = 0.558,
 	},
-	[1793] = {
+	[1954] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.534,
 		["posY"] = 0.669,
 	},
-	[1794] = {
+	[1955] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.54,
 		["posY"] = 0.576,
 	},
-	[1795] = {
+	[1956] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.541,
 		["posY"] = 0.621,
 	},
-	[1796] = {
+	[1957] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.541,
 		["posY"] = 0.761,
 	},
-	[1797] = {
+	[1958] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.542,
 		["posY"] = 0.589,
 	},
-	[1798] = {
+	[1959] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.554,
 		["posY"] = 0.78,
 	},
-	[1799] = {
+	[1960] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.559,
 		["posY"] = 0.587,
 	},
-	[1800] = {
+	[1961] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.574,
 		["posY"] = 0.757,
 	},
-	[1801] = {
+	[1962] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.6,
 		["posY"] = 0.742,
 	},
-	[1802] = {
+	[1963] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.615,
 		["posY"] = 0.8,
 	},
-	[1803] = {
+	[1964] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.629,
 		["posY"] = 0.777,
 	},
-	[1804] = {
+	[1965] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.638,
 		["posY"] = 0.786,
 	},
-	[1805] = {
+	[1966] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.646,
 		["posY"] = 0.762,
 	},
-	[1806] = {
+	[1967] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.651,
 		["posY"] = 0.751,
 	},
-	[1807] = {
+	[1968] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
-		["posX"] = 0.653,
+		["posX"] = 0.652,
 		["posY"] = 0.348,
 	},
-	[1808] = {
+	[1969] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.66,
 		["posY"] = 0.339,
 	},
-	[1809] = {
+	[1970] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.66,
 		["posY"] = 0.394,
 	},
-	[1810] = {
+	[1971] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.665,
 		["posY"] = 0.664,
 	},
-	[1811] = {
+	[1972] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.666,
 		["posY"] = 0.621,
 	},
-	[1812] = {
+	[1973] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.666,
 		["posY"] = 0.747,
 	},
-	[1813] = {
+	[1974] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.676,
 		["posY"] = 0.563,
 	},
-	[1814] = {
+	[1975] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.678,
 		["posY"] = 0.695,
 	},
-	[1815] = {
+	[1976] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.679,
 		["posY"] = 0.376,
 	},
-	[1816] = {
+	[1977] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.68,
 		["posY"] = 0.748,
 	},
-	[1817] = {
+	[1978] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.684,
 		["posY"] = 0.333,
 	},
-	[1818] = {
+	[1979] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.687,
 		["posY"] = 0.432,
 	},
-	[1819] = {
+	[1980] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.693,
 		["posY"] = 0.31,
 	},
-	[1820] = {
+	[1981] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.693,
 		["posY"] = 0.317,
 	},
-	[1821] = {
+	[1982] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.693,
 		["posY"] = 0.33,
 	},
-	[1822] = {
+	[1983] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.694,
 		["posY"] = 0.352,
 	},
-	[1823] = {
+	[1984] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.699,
 		["posY"] = 0.516,
 	},
-	[1824] = {
+	[1985] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.703,
 		["posY"] = 0.319,
 	},
-	[1825] = {
+	[1986] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1437,
 		["posX"] = 0.711,
 		["posY"] = 0.454,
 	},
-	[1826] = {
+	[1987] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.346,
 		["posY"] = 0.201,
 	},
-	[1827] = {
+	[1988] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.356,
 		["posY"] = 0.138,
 	},
-	[1828] = {
+	[1989] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.417,
 		["posY"] = 0.093,
 	},
-	[1829] = {
+	[1990] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
-		["posX"] = 0.494,
+		["posX"] = 0.493,
 		["posY"] = 0.45,
 	},
-	[1830] = {
+	[1991] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.509,
 		["posY"] = 0.171,
 	},
-	[1831] = {
+	[1992] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.522,
 		["posY"] = 0.496,
 	},
-	[1832] = {
+	[1993] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.524,
 		["posY"] = 0.621,
 	},
-	[1833] = {
+	[1994] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.542,
 		["posY"] = 0.509,
 	},
-	[1834] = {
+	[1995] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.544,
 		["posY"] = 0.594,
 	},
-	[1835] = {
+	[1996] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.554,
 		["posY"] = 0.527,
 	},
-	[1836] = {
+	[1997] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1445,
 		["posX"] = 0.58,
 		["posY"] = 0.204,
 	},
-	[1837] = {
+	[1998] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.395,
 		["posY"] = 0.236,
 	},
-	[1838] = {
+	[1999] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.398,
 		["posY"] = 0.194,
 	},
-	[1839] = {
+	[2000] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.4,
 		["posY"] = 0.206,
 	},
-	[1840] = {
+	[2001] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.401,
 		["posY"] = 0.221,
 	},
-	[1841] = {
+	[2002] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.416,
 		["posY"] = 0.297,
 	},
-	[1842] = {
+	[2003] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.417,
 		["posY"] = 0.181,
 	},
-	[1843] = {
+	[2004] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.421,
 		["posY"] = 0.778,
 	},
-	[1844] = {
+	[2005] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.427,
 		["posY"] = 0.137,
 	},
-	[1845] = {
+	[2006] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.427,
 		["posY"] = 0.41,
 	},
-	[1846] = {
+	[2007] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.427,
 		["posY"] = 0.42,
 	},
-	[1847] = {
+	[2008] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.428,
 		["posY"] = 0.4,
 	},
-	[1848] = {
+	[2009] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.43,
 		["posY"] = 0.431,
 	},
-	[1849] = {
+	[2010] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.434,
 		["posY"] = 0.746,
 	},
-	[1850] = {
+	[2011] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.435,
 		["posY"] = 0.136,
 	},
-	[1851] = {
+	[2012] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.436,
 		["posY"] = 0.768,
 	},
-	[1852] = {
+	[2013] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.437,
 		["posY"] = 0.121,
 	},
-	[1853] = {
+	[2014] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.438,
 		["posY"] = 0.275,
 	},
-	[1854] = {
+	[2015] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.439,
 		["posY"] = 0.783,
 	},
-	[1855] = {
+	[2016] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.44,
 		["posY"] = 0.266,
 	},
-	[1856] = {
+	[2017] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.447,
 		["posY"] = 0.421,
 	},
-	[1857] = {
+	[2018] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.449,
 		["posY"] = 0.251,
 	},
-	[1858] = {
+	[2019] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.452,
 		["posY"] = 0.122,
 	},
-	[1859] = {
+	[2020] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.452,
 		["posY"] = 0.687,
 	},
-	[1860] = {
+	[2021] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.461,
 		["posY"] = 0.45,
 	},
-	[1861] = {
+	[2022] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.464,
 		["posY"] = 0.128,
 	},
-	[1862] = {
+	[2023] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.465,
-		["posY"] = 0.155,
+		["posY"] = 0.154,
 	},
-	[1863] = {
+	[2024] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.471,
 		["posY"] = 0.306,
 	},
-	[1864] = {
+	[2025] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.472,
 		["posY"] = 0.12,
 	},
-	[1865] = {
+	[2026] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.474,
 		["posY"] = 0.687,
 	},
-	[1866] = {
+	[2027] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.479,
 		["posY"] = 0.159,
 	},
-	[1867] = {
+	[2028] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.48,
 		["posY"] = 0.667,
 	},
-	[1868] = {
+	[2029] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.485,
 		["posY"] = 0.484,
 	},
-	[1869] = {
+	[2030] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.485,
 		["posY"] = 0.715,
 	},
-	[1870] = {
+	[2031] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.486,
 		["posY"] = 0.148,
 	},
-	[1871] = {
+	[2032] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.486,
 		["posY"] = 0.495,
 	},
-	[1872] = {
+	[2033] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.804,
 	},
-	[1873] = {
+	[2034] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.823,
 	},
-	[1874] = {
+	[2035] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.833,
 	},
-	[1875] = {
+	[2036] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.879,
 	},
-	[1876] = {
+	[2037] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.489,
 		["posY"] = 0.641,
 	},
-	[1877] = {
+	[2038] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.491,
 		["posY"] = 0.158,
 	},
-	[1878] = {
+	[2039] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.492,
 		["posY"] = 0.688,
 	},
-	[1879] = {
+	[2040] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.492,
 		["posY"] = 0.866,
 	},
-	[1880] = {
+	[2041] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.497,
 		["posY"] = 0.487,
 	},
-	[1881] = {
+	[2042] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.501,
 		["posY"] = 0.119,
 	},
-	[1882] = {
+	[2043] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.509,
 		["posY"] = 0.116,
 	},
-	[1883] = {
+	[2044] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.514,
 		["posY"] = 0.526,
 	},
-	[1884] = {
+	[2045] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.516,
 		["posY"] = 0.513,
 	},
-	[1885] = {
+	[2046] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.517,
 		["posY"] = 0.482,
 	},
-	[1886] = {
+	[2047] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.538,
 		["posY"] = 0.191,
 	},
-	[1887] = {
+	[2048] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.543,
 		["posY"] = 0.172,
 	},
-	[1888] = {
+	[2049] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.547,
 		["posY"] = 0.072,
 	},
-	[1889] = {
+	[2050] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.554,
 		["posY"] = 0.173,
 	},
-	[1890] = {
+	[2051] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.56,
 		["posY"] = 0.04,
 	},
-	[1891] = {
+	[2052] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
-		["posX"] = 0.575,
-		["posY"] = 0.061,
+		["posX"] = 0.574,
+		["posY"] = 0.06,
 	},
-	[1892] = {
+	[2053] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.578,
 		["posY"] = 0.162,
 	},
-	[1893] = {
+	[2054] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.578,
 		["posY"] = 0.186,
 	},
-	[1894] = {
+	[2055] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.592,
 		["posY"] = 0.087,
 	},
-	[1895] = {
+	[2056] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.611,
 		["posY"] = 0.514,
 	},
-	[1896] = {
+	[2057] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.51,
 	},
-	[1897] = {
+	[2058] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.551,
 	},
-	[1898] = {
+	[2059] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.631,
 		["posY"] = 0.508,
 	},
-	[1899] = {
+	[2060] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1413,
 		["posX"] = 0.642,
 		["posY"] = 0.494,
 	},
-	[1900] = {
+	[2061] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.331,
 		["posY"] = 0.065,
 	},
-	[1901] = {
+	[2062] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.344,
 		["posY"] = 0.064,
 	},
-	[1902] = {
+	[2063] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.363,
 		["posY"] = 0.07,
 	},
-	[1903] = {
+	[2064] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.37,
 		["posY"] = 0.129,
 	},
-	[1904] = {
+	[2065] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.376,
 		["posY"] = 0.138,
 	},
-	[1905] = {
+	[2066] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.378,
 		["posY"] = 0.078,
 	},
-	[1906] = {
+	[2067] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.388,
 		["posY"] = 0.139,
 	},
-	[1907] = {
+	[2068] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.398,
 		["posY"] = 0.066,
 	},
-	[1908] = {
+	[2069] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.424,
 		["posY"] = 0.084,
 	},
-	[1909] = {
+	[2070] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.434,
 		["posY"] = 0.114,
 	},
-	[1910] = {
+	[2071] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.449,
 		["posY"] = 0.128,
 	},
-	[1911] = {
+	[2072] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1434,
 		["posX"] = 0.455,
 		["posY"] = 0.132,
 	},
-	[1912] = {
+	[2073] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.114,
 		["posY"] = 0.811,
 	},
-	[1913] = {
+	[2074] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.12,
 		["posY"] = 0.864,
 	},
-	[1914] = {
+	[2075] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.128,
 		["posY"] = 0.523,
 	},
-	[1915] = {
+	[2076] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.132,
 		["posY"] = 0.827,
 	},
-	[1916] = {
+	[2077] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.138,
 		["posY"] = 0.89,
 	},
-	[1917] = {
+	[2078] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.145,
 		["posY"] = 0.94,
 	},
-	[1918] = {
+	[2079] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.146,
 		["posY"] = 0.904,
 	},
-	[1919] = {
+	[2080] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.271,
 		["posY"] = 0.847,
 	},
-	[1920] = {
+	[2081] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.284,
 		["posY"] = 0.672,
 	},
-	[1921] = {
+	[2082] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
-		["posX"] = 0.292,
-		["posY"] = 0.813,
+		["posX"] = 0.291,
+		["posY"] = 0.814,
 	},
-	[1922] = {
+	[2083] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.306,
 		["posY"] = 0.684,
 	},
-	[1923] = {
+	[2084] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.307,
 		["posY"] = 0.763,
 	},
-	[1924] = {
+	[2085] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
-		["posX"] = 0.332,
+		["posX"] = 0.333,
 		["posY"] = 0.798,
 	},
-	[1925] = {
+	[2086] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1416,
 		["posX"] = 0.334,
 		["posY"] = 0.873,
 	},
-	[1926] = {
+	[2087] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.226,
 		["posY"] = 0.314,
 	},
-	[1927] = {
+	[2088] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.253,
 		["posY"] = 0.475,
 	},
-	[1928] = {
+	[2089] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.271,
 		["posY"] = 0.856,
 	},
-	[1929] = {
+	[2090] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.274,
 		["posY"] = 0.59,
 	},
-	[1930] = {
+	[2091] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.294,
 		["posY"] = 0.724,
 	},
-	[1931] = {
+	[2092] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.297,
 		["posY"] = 0.874,
 	},
-	[1932] = {
+	[2093] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.333,
 		["posY"] = 0.871,
 	},
-	[1933] = {
+	[2094] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.344,
 		["posY"] = 0.917,
 	},
-	[1934] = {
+	[2095] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.346,
 		["posY"] = 0.942,
 	},
-	[1935] = {
+	[2096] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.351,
 		["posY"] = 0.15,
 	},
-	[1936] = {
+	[2097] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.357,
 		["posY"] = 0.853,
 	},
-	[1937] = {
+	[2098] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
-		["posX"] = 0.364,
-		["posY"] = 0.93,
+		["posX"] = 0.357,
+		["posY"] = 0.929,
 	},
-	[1938] = {
+	[2099] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.364,
 		["posY"] = 0.943,
 	},
-	[1939] = {
+	[2100] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.374,
 		["posY"] = 0.931,
 	},
-	[1940] = {
+	[2101] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.573,
 		["posY"] = 0.694,
 	},
-	[1941] = {
+	[2102] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.596,
 		["posY"] = 0.138,
 	},
-	[1942] = {
+	[2103] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.618,
 		["posY"] = 0.156,
 	},
-	[1943] = {
+	[2104] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.634,
 		["posY"] = 0.714,
 	},
-	[1944] = {
+	[2105] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.653,
 		["posY"] = 0.193,
 	},
-	[1945] = {
+	[2106] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.668,
 		["posY"] = 0.309,
 	},
-	[1946] = {
+	[2107] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
-		["posX"] = 0.685,
+		["posX"] = 0.684,
 		["posY"] = 0.186,
 	},
-	[1947] = {
+	[2108] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.685,
 		["posY"] = 0.21,
 	},
-	[1948] = {
+	[2109] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.687,
 		["posY"] = 0.322,
 	},
-	[1949] = {
+	[2110] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
-		["posX"] = 0.689,
-		["posY"] = 0.466,
+		["posX"] = 0.69,
+		["posY"] = 0.467,
 	},
-	[1950] = {
+	[2111] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
-		["posX"] = 0.693,
+		["posX"] = 0.692,
 		["posY"] = 0.627,
 	},
-	[1951] = {
+	[2112] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.696,
 		["posY"] = 0.208,
 	},
-	[1952] = {
+	[2113] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.699,
 		["posY"] = 0.633,
 	},
-	[1953] = {
+	[2114] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.702,
 		["posY"] = 0.768,
 	},
-	[1954] = {
+	[2115] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.709,
 		["posY"] = 0.656,
 	},
-	[1955] = {
+	[2116] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.716,
 		["posY"] = 0.501,
 	},
-	[1956] = {
+	[2117] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.717,
 		["posY"] = 0.639,
 	},
-	[1957] = {
+	[2118] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.718,
 		["posY"] = 0.443,
 	},
-	[1958] = {
+	[2119] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.722,
 		["posY"] = 0.281,
 	},
-	[1959] = {
+	[2120] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.724,
 		["posY"] = 0.532,
 	},
-	[1960] = {
+	[2121] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.724,
-		["posY"] = 0.649,
+		["posY"] = 0.652,
 	},
-	[1961] = {
+	[2122] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.729,
 		["posY"] = 0.688,
 	},
-	[1962] = {
+	[2123] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
-		["posX"] = 0.729,
+		["posX"] = 0.73,
 		["posY"] = 0.736,
 	},
-	[1963] = {
+	[2124] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.74,
 		["posY"] = 0.257,
 	},
-	[1964] = {
+	[2125] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.745,
 		["posY"] = 0.202,
 	},
-	[1965] = {
+	[2126] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.751,
 		["posY"] = 0.252,
 	},
-	[1966] = {
+	[2127] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.751,
 		["posY"] = 0.644,
 	},
-	[1967] = {
+	[2128] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.762,
 		["posY"] = 0.184,
 	},
-	[1968] = {
+	[2129] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.764,
 		["posY"] = 0.653,
 	},
-	[1969] = {
+	[2130] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.767,
 		["posY"] = 0.163,
 	},
-	[1970] = {
+	[2131] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.768,
 		["posY"] = 0.139,
 	},
-	[1971] = {
+	[2132] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.775,
 		["posY"] = 0.676,
 	},
-	[1972] = {
+	[2133] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.776,
 		["posY"] = 0.706,
 	},
-	[1973] = {
+	[2134] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.777,
 		["posY"] = 0.172,
 	},
-	[1974] = {
+	[2135] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.78,
 		["posY"] = 0.273,
 	},
-	[1975] = {
+	[2136] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.786,
 		["posY"] = 0.744,
 	},
-	[1976] = {
+	[2137] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.788,
 		["posY"] = 0.468,
 	},
-	[1977] = {
+	[2138] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.791,
 		["posY"] = 0.162,
 	},
-	[1978] = {
+	[2139] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.8,
 		["posY"] = 0.398,
 	},
-	[1979] = {
+	[2140] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1432,
 		["posX"] = 0.801,
 		["posY"] = 0.738,
 	},
-	[1980] = {
+	[2141] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.28,
 		["posY"] = 0.33,
 	},
-	[1981] = {
+	[2142] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.29,
 		["posY"] = 0.485,
 	},
-	[1982] = {
+	[2143] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.292,
 		["posY"] = 0.457,
 	},
-	[1983] = {
+	[2144] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.294,
 		["posY"] = 0.41,
 	},
-	[1984] = {
-		["type"] = "mining",
-		["object"] = 1732,
-		["mapID"] = 1436,
-		["posX"] = 0.296,
-		["posY"] = 0.464,
-	},
-	[1985] = {
+	[2145] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.296,
 		["posY"] = 0.684,
 	},
-	[1986] = {
+	[2146] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1436,
+		["posX"] = 0.297,
+		["posY"] = 0.464,
+	},
+	[2147] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.298,
 		["posY"] = 0.506,
 	},
-	[1987] = {
+	[2148] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.308,
 		["posY"] = 0.465,
 	},
-	[1988] = {
+	[2149] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.308,
 		["posY"] = 0.484,
 	},
-	[1989] = {
+	[2150] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.316,
 		["posY"] = 0.45,
 	},
-	[1990] = {
+	[2151] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.319,
 		["posY"] = 0.419,
 	},
-	[1991] = {
+	[2152] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.32,
 		["posY"] = 0.31,
 	},
-	[1992] = {
+	[2153] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.322,
 		["posY"] = 0.6,
 	},
-	[1993] = {
+	[2154] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.33,
 		["posY"] = 0.455,
 	},
-	[1994] = {
+	[2155] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.377,
 		["posY"] = 0.837,
 	},
-	[1995] = {
+	[2156] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.384,
 		["posY"] = 0.419,
 	},
-	[1996] = {
+	[2157] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.387,
 		["posY"] = 0.824,
 	},
-	[1997] = {
+	[2158] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.396,
 		["posY"] = 0.743,
 	},
-	[1998] = {
+	[2159] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.414,
 		["posY"] = 0.789,
 	},
-	[1999] = {
+	[2160] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.44,
 		["posY"] = 0.814,
 	},
-	[2000] = {
+	[2161] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.446,
 		["posY"] = 0.204,
 	},
-	[2001] = {
+	[2162] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.446,
 		["posY"] = 0.224,
 	},
-	[2002] = {
+	[2163] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.446,
 		["posY"] = 0.24,
 	},
-	[2003] = {
+	[2164] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.454,
 		["posY"] = 0.181,
 	},
-	[2004] = {
+	[2165] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.458,
 		["posY"] = 0.205,
 	},
-	[2005] = {
+	[2166] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.463,
 		["posY"] = 0.196,
 	},
-	[2006] = {
+	[2167] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.494,
 		["posY"] = 0.76,
 	},
-	[2007] = {
+	[2168] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.53,
 		["posY"] = 0.725,
 	},
-	[2008] = {
+	[2169] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.581,
 		["posY"] = 0.754,
 	},
-	[2009] = {
+	[2170] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.637,
 		["posY"] = 0.792,
 	},
-	[2010] = {
+	[2171] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1436,
 		["posX"] = 0.674,
 		["posY"] = 0.76,
 	},
-	[2011] = {
+	[2172] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.186,
 		["posY"] = 0.332,
 	},
-	[2012] = {
+	[2173] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.211,
 		["posY"] = 0.389,
 	},
-	[2013] = {
+	[2174] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.234,
 		["posY"] = 0.244,
 	},
-	[2014] = {
+	[2175] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1433,
+		["posX"] = 0.264,
+		["posY"] = 0.123,
+	},
+	[2176] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.264,
 		["posY"] = 0.157,
 	},
-	[2015] = {
-		["type"] = "mining",
-		["object"] = 1732,
-		["mapID"] = 1433,
-		["posX"] = 0.266,
-		["posY"] = 0.122,
-	},
-	[2016] = {
+	[2177] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.267,
-		["posY"] = 0.1,
+		["posY"] = 0.099,
 	},
-	[2017] = {
+	[2178] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.272,
 		["posY"] = 0.296,
 	},
-	[2018] = {
+	[2179] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.277,
 		["posY"] = 0.107,
 	},
-	[2019] = {
+	[2180] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.278,
 		["posY"] = 0.087,
 	},
-	[2020] = {
+	[2181] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.279,
 		["posY"] = 0.163,
 	},
-	[2021] = {
+	[2182] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.28,
 		["posY"] = 0.205,
 	},
-	[2022] = {
+	[2183] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.282,
 		["posY"] = 0.12,
 	},
-	[2023] = {
+	[2184] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.284,
 		["posY"] = 0.128,
 	},
-	[2024] = {
+	[2185] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.284,
 		["posY"] = 0.173,
 	},
-	[2025] = {
+	[2186] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.284,
 		["posY"] = 0.251,
 	},
-	[2026] = {
+	[2187] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.285,
 		["posY"] = 0.09,
 	},
-	[2027] = {
+	[2188] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.286,
-		["posY"] = 0.373,
+		["posX"] = 0.288,
+		["posY"] = 0.374,
 	},
-	[2028] = {
+	[2189] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.291,
+		["posX"] = 0.289,
+		["posY"] = 0.123,
+	},
+	[2190] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1433,
+		["posX"] = 0.292,
 		["posY"] = 0.105,
 	},
-	[2029] = {
+	[2191] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.303,
 		["posY"] = 0.091,
 	},
-	[2030] = {
+	[2192] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.307,
-		["posY"] = 0.077,
+		["posX"] = 0.308,
+		["posY"] = 0.075,
 	},
-	[2031] = {
+	[2193] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.309,
 		["posY"] = 0.102,
 	},
-	[2032] = {
+	[2194] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.309,
 		["posY"] = 0.124,
 	},
-	[2033] = {
+	[2195] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.315,
-		["posY"] = 0.139,
+		["posX"] = 0.314,
+		["posY"] = 0.14,
 	},
-	[2034] = {
+	[2196] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.316,
+		["posX"] = 0.317,
 		["posY"] = 0.053,
 	},
-	[2035] = {
+	[2197] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.322,
 		["posY"] = 0.073,
 	},
-	[2036] = {
+	[2198] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.329,
 		["posY"] = 0.211,
 	},
-	[2037] = {
+	[2199] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.341,
 		["posY"] = 0.089,
 	},
-	[2038] = {
+	[2200] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.359,
 		["posY"] = 0.248,
 	},
-	[2039] = {
+	[2201] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.36,
 		["posY"] = 0.068,
 	},
-	[2040] = {
+	[2202] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.369,
 		["posY"] = 0.301,
 	},
-	[2041] = {
+	[2203] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.373,
 		["posY"] = 0.132,
 	},
-	[2042] = {
+	[2204] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.394,
 		["posY"] = 0.35,
 	},
-	[2043] = {
+	[2205] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.401,
 		["posY"] = 0.416,
 	},
-	[2044] = {
+	[2206] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.407,
 		["posY"] = 0.137,
 	},
-	[2045] = {
+	[2207] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.437,
 		["posY"] = 0.103,
 	},
-	[2046] = {
+	[2208] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.528,
 		["posY"] = 0.776,
 	},
-	[2047] = {
+	[2209] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.534,
 		["posY"] = 0.469,
 	},
-	[2048] = {
+	[2210] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.592,
 		["posY"] = 0.714,
 	},
-	[2049] = {
+	[2211] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.597,
-		["posY"] = 0.47,
+		["posX"] = 0.598,
+		["posY"] = 0.469,
 	},
-	[2050] = {
+	[2212] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.623,
-		["posY"] = 0.661,
+		["posY"] = 0.662,
 	},
-	[2051] = {
+	[2213] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.642,
 		["posY"] = 0.731,
 	},
-	[2052] = {
+	[2214] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.649,
 		["posY"] = 0.79,
 	},
-	[2053] = {
+	[2215] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.652,
 		["posY"] = 0.588,
 	},
-	[2054] = {
+	[2216] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.654,
 		["posY"] = 0.539,
 	},
-	[2055] = {
+	[2217] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.664,
 		["posY"] = 0.63,
 	},
-	[2056] = {
+	[2218] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.674,
 		["posY"] = 0.478,
 	},
-	[2057] = {
+	[2219] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.703,
 		["posY"] = 0.712,
 	},
-	[2058] = {
+	[2220] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.711,
 		["posY"] = 0.766,
 	},
-	[2059] = {
+	[2221] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.723,
 		["posY"] = 0.512,
 	},
-	[2060] = {
+	[2222] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.73,
 		["posY"] = 0.836,
 	},
-	[2061] = {
+	[2223] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.742,
-		["posY"] = 0.349,
+		["posY"] = 0.348,
 	},
-	[2062] = {
+	[2224] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.761,
 		["posY"] = 0.845,
 	},
-	[2063] = {
+	[2225] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.762,
 		["posY"] = 0.762,
 	},
-	[2064] = {
+	[2226] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.768,
 		["posY"] = 0.633,
 	},
-	[2065] = {
+	[2227] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.777,
 		["posY"] = 0.35,
 	},
-	[2066] = {
+	[2228] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.779,
 		["posY"] = 0.458,
 	},
-	[2067] = {
+	[2229] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.796,
 		["posY"] = 0.674,
 	},
-	[2068] = {
+	[2230] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
-		["posX"] = 0.809,
-		["posY"] = 0.515,
+		["posX"] = 0.81,
+		["posY"] = 0.517,
 	},
-	[2069] = {
+	[2231] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.826,
 		["posY"] = 0.43,
 	},
-	[2070] = {
+	[2232] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.833,
 		["posY"] = 0.418,
 	},
-	[2071] = {
+	[2233] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.863,
-		["posY"] = 0.619,
+		["posY"] = 0.62,
 	},
-	[2072] = {
+	[2234] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1433,
 		["posX"] = 0.876,
 		["posY"] = 0.511,
 	},
-	[2073] = {
+	[2235] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.172,
 		["posY"] = 0.478,
 	},
-	[2074] = {
+	[2236] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.172,
 		["posY"] = 0.528,
 	},
-	[2075] = {
+	[2237] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.184,
 		["posY"] = 0.563,
 	},
-	[2076] = {
+	[2238] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.207,
 		["posY"] = 0.394,
 	},
-	[2077] = {
+	[2239] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.223,
-		["posY"] = 0.436,
+		["posY"] = 0.437,
 	},
-	[2078] = {
+	[2240] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.236,
 		["posY"] = 0.545,
 	},
-	[2079] = {
+	[2241] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.238,
 		["posY"] = 0.295,
 	},
-	[2080] = {
+	[2242] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.284,
 		["posY"] = 0.324,
 	},
-	[2081] = {
+	[2243] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.31,
 		["posY"] = 0.442,
 	},
-	[2082] = {
+	[2244] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.313,
 		["posY"] = 0.618,
 	},
-	[2083] = {
+	[2245] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.334,
 		["posY"] = 0.598,
 	},
-	[2084] = {
+	[2246] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.342,
 		["posY"] = 0.232,
 	},
-	[2085] = {
+	[2247] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.353,
 		["posY"] = 0.658,
 	},
-	[2086] = {
+	[2248] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.363,
 		["posY"] = 0.544,
 	},
-	[2087] = {
+	[2249] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.378,
 		["posY"] = 0.688,
 	},
-	[2088] = {
+	[2250] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.391,
 		["posY"] = 0.586,
 	},
-	[2089] = {
+	[2251] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.396,
 		["posY"] = 0.73,
 	},
-	[2090] = {
+	[2252] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.401,
 		["posY"] = 0.491,
 	},
-	[2091] = {
+	[2253] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
-		["posX"] = 0.406,
+		["posX"] = 0.407,
 		["posY"] = 0.604,
 	},
-	[2092] = {
+	[2254] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.414,
 		["posY"] = 0.409,
 	},
-	[2093] = {
+	[2255] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.474,
 		["posY"] = 0.524,
 	},
-	[2094] = {
+	[2256] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.482,
 		["posY"] = 0.413,
 	},
-	[2095] = {
+	[2257] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.482,
 		["posY"] = 0.644,
 	},
-	[2096] = {
+	[2258] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.512,
 		["posY"] = 0.364,
 	},
-	[2097] = {
+	[2259] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.531,
 		["posY"] = 0.451,
 	},
-	[2098] = {
+	[2260] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.584,
 		["posY"] = 0.343,
 	},
-	[2099] = {
+	[2261] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.621,
 		["posY"] = 0.666,
 	},
-	[2100] = {
+	[2262] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.628,
 		["posY"] = 0.709,
 	},
-	[2101] = {
+	[2263] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.714,
 		["posY"] = 0.667,
 	},
-	[2102] = {
+	[2264] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1417,
 		["posX"] = 0.723,
 		["posY"] = 0.6,
 	},
-	[2103] = {
+	[2265] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.368,
 		["posY"] = 0.131,
 	},
-	[2104] = {
+	[2266] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.397,
 		["posY"] = 0.326,
 	},
-	[2105] = {
+	[2267] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.401,
 		["posY"] = 0.692,
 	},
-	[2106] = {
+	[2268] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.41,
 		["posY"] = 0.159,
 	},
-	[2107] = {
+	[2269] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.421,
 		["posY"] = 0.52,
 	},
-	[2108] = {
+	[2270] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.459,
 		["posY"] = 0.567,
 	},
-	[2109] = {
+	[2271] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.474,
-		["posY"] = 0.519,
+		["posY"] = 0.517,
 	},
-	[2110] = {
+	[2272] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.479,
 		["posY"] = 0.23,
 	},
-	[2111] = {
+	[2273] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.481,
 		["posY"] = 0.336,
 	},
-	[2112] = {
+	[2274] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.496,
 		["posY"] = 0.244,
 	},
-	[2113] = {
+	[2275] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.549,
 		["posY"] = 0.594,
 	},
-	[2114] = {
+	[2276] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
-		["posX"] = 0.553,
+		["posX"] = 0.552,
 		["posY"] = 0.46,
 	},
-	[2115] = {
+	[2277] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1421,
+		["posX"] = 0.56,
+		["posY"] = 0.503,
+	},
+	[2278] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.565,
 		["posY"] = 0.755,
 	},
-	[2116] = {
+	[2279] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1421,
+		["posX"] = 0.568,
+		["posY"] = 0.704,
+	},
+	[2280] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.574,
 		["posY"] = 0.708,
 	},
-	[2117] = {
+	[2281] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.575,
 		["posY"] = 0.697,
 	},
-	[2118] = {
+	[2282] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.577,
 		["posY"] = 0.446,
 	},
-	[2119] = {
+	[2283] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.578,
 		["posY"] = 0.605,
 	},
-	[2120] = {
+	[2284] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.579,
 		["posY"] = 0.791,
 	},
-	[2121] = {
+	[2285] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.581,
 		["posY"] = 0.718,
 	},
-	[2122] = {
+	[2286] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1421,
+		["posX"] = 0.584,
+		["posY"] = 0.431,
+	},
+	[2287] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.586,
 		["posY"] = 0.449,
 	},
-	[2123] = {
+	[2288] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.588,
 		["posY"] = 0.713,
 	},
-	[2124] = {
+	[2289] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.593,
 		["posY"] = 0.756,
 	},
-	[2125] = {
+	[2290] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.594,
 		["posY"] = 0.703,
 	},
-	[2126] = {
+	[2291] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.596,
 		["posY"] = 0.721,
 	},
-	[2127] = {
+	[2292] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.597,
 		["posY"] = 0.402,
 	},
-	[2128] = {
+	[2293] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.599,
 		["posY"] = 0.61,
 	},
-	[2129] = {
+	[2294] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.6,
 		["posY"] = 0.712,
 	},
-	[2130] = {
+	[2295] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.604,
 		["posY"] = 0.727,
 	},
-	[2131] = {
+	[2296] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.608,
 		["posY"] = 0.808,
 	},
-	[2132] = {
+	[2297] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.609,
 		["posY"] = 0.677,
 	},
-	[2133] = {
+	[2298] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.613,
 		["posY"] = 0.371,
 	},
-	[2134] = {
+	[2299] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.618,
 		["posY"] = 0.708,
 	},
-	[2135] = {
+	[2300] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.621,
 		["posY"] = 0.074,
 	},
-	[2136] = {
+	[2301] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.628,
 		["posY"] = 0.797,
 	},
-	[2137] = {
+	[2302] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.629,
 		["posY"] = 0.59,
 	},
-	[2138] = {
+	[2303] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.638,
 		["posY"] = 0.421,
 	},
-	[2139] = {
+	[2304] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.638,
 		["posY"] = 0.716,
 	},
-	[2140] = {
+	[2305] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.638,
 		["posY"] = 0.731,
 	},
-	[2141] = {
+	[2306] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.641,
 		["posY"] = 0.557,
 	},
-	[2142] = {
+	[2307] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.659,
 		["posY"] = 0.613,
 	},
-	[2143] = {
+	[2308] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.662,
 		["posY"] = 0.772,
 	},
-	[2144] = {
+	[2309] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.677,
 		["posY"] = 0.463,
 	},
-	[2145] = {
+	[2310] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.678,
 		["posY"] = 0.526,
 	},
-	[2146] = {
+	[2311] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1421,
 		["posX"] = 0.693,
 		["posY"] = 0.546,
 	},
-	[2147] = {
+	[2312] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.323,
 		["posY"] = 0.787,
 	},
-	[2148] = {
+	[2313] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.34,
 		["posY"] = 0.726,
 	},
-	[2149] = {
+	[2314] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.348,
 		["posY"] = 0.56,
 	},
-	[2150] = {
+	[2315] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.373,
 		["posY"] = 0.594,
 	},
-	[2151] = {
+	[2316] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.378,
 		["posY"] = 0.632,
 	},
-	[2152] = {
+	[2317] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.398,
 		["posY"] = 0.854,
 	},
-	[2153] = {
+	[2318] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.427,
 		["posY"] = 0.674,
 	},
-	[2154] = {
+	[2319] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.442,
 		["posY"] = 0.586,
 	},
-	[2155] = {
+	[2320] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.444,
 		["posY"] = 0.636,
 	},
-	[2156] = {
+	[2321] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.447,
 		["posY"] = 0.843,
 	},
-	[2157] = {
+	[2322] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.448,
 		["posY"] = 0.612,
 	},
-	[2158] = {
+	[2323] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.45,
 		["posY"] = 0.856,
 	},
-	[2159] = {
+	[2324] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.45,
 		["posY"] = 0.881,
 	},
-	[2160] = {
+	[2325] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.458,
 		["posY"] = 0.544,
 	},
-	[2161] = {
+	[2326] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.459,
 		["posY"] = 0.572,
 	},
-	[2162] = {
+	[2327] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.462,
 		["posY"] = 0.273,
 	},
-	[2163] = {
+	[2328] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.47,
 		["posY"] = 0.203,
 	},
-	[2164] = {
+	[2329] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.478,
 		["posY"] = 0.329,
 	},
-	[2165] = {
+	[2330] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.481,
 		["posY"] = 0.291,
 	},
-	[2166] = {
+	[2331] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.481,
 		["posY"] = 0.424,
 	},
-	[2167] = {
+	[2332] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.491,
 		["posY"] = 0.379,
 	},
-	[2168] = {
+	[2333] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.506,
 		["posY"] = 0.217,
 	},
-	[2169] = {
+	[2334] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.507,
 		["posY"] = 0.262,
 	},
-	[2170] = {
+	[2335] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.513,
 		["posY"] = 0.277,
 	},
-	[2171] = {
+	[2336] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.513,
 		["posY"] = 0.303,
 	},
-	[2172] = {
+	[2337] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.522,
 		["posY"] = 0.26,
 	},
-	[2173] = {
+	[2338] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.524,
 		["posY"] = 0.363,
 	},
-	[2174] = {
+	[2339] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.537,
 		["posY"] = 0.261,
 	},
-	[2175] = {
+	[2340] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.546,
 		["posY"] = 0.369,
 	},
-	[2176] = {
+	[2341] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.557,
 		["posY"] = 0.363,
 	},
-	[2177] = {
+	[2342] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.564,
 		["posY"] = 0.226,
 	},
-	[2178] = {
+	[2343] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.564,
 		["posY"] = 0.353,
 	},
-	[2179] = {
+	[2344] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.566,
 		["posY"] = 0.334,
 	},
-	[2180] = {
+	[2345] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.569,
 		["posY"] = 0.209,
 	},
-	[2181] = {
+	[2346] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.577,
 		["posY"] = 0.227,
 	},
-	[2182] = {
+	[2347] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.592,
 		["posY"] = 0.196,
 	},
-	[2183] = {
+	[2348] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.598,
 		["posY"] = 0.246,
 	},
-	[2184] = {
+	[2349] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.6,
 		["posY"] = 0.149,
 	},
-	[2185] = {
+	[2350] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.602,
 		["posY"] = 0.207,
 	},
-	[2186] = {
+	[2351] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.615,
 		["posY"] = 0.084,
 	},
-	[2187] = {
+	[2352] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.615,
 		["posY"] = 0.215,
 	},
-	[2188] = {
+	[2353] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.617,
 		["posY"] = 0.164,
 	},
-	[2189] = {
+	[2354] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.618,
 		["posY"] = 0.189,
 	},
-	[2190] = {
+	[2355] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1439,
 		["posX"] = 0.621,
 		["posY"] = 0.123,
 	},
-	[2191] = {
+	[2356] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.324,
 		["posY"] = 0.658,
 	},
-	[2192] = {
+	[2357] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.326,
 		["posY"] = 0.271,
 	},
-	[2193] = {
+	[2358] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.363,
 		["posY"] = 0.283,
 	},
-	[2194] = {
+	[2359] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.389,
 		["posY"] = 0.643,
 	},
-	[2195] = {
+	[2360] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.401,
 		["posY"] = 0.314,
 	},
-	[2196] = {
+	[2361] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.409,
 		["posY"] = 0.635,
 	},
-	[2197] = {
+	[2362] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.434,
 		["posY"] = 0.347,
 	},
-	[2198] = {
+	[2363] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.448,
 		["posY"] = 0.337,
 	},
-	[2199] = {
+	[2364] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.451,
 		["posY"] = 0.622,
 	},
-	[2200] = {
+	[2365] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.508,
 		["posY"] = 0.294,
 	},
-	[2201] = {
+	[2366] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.533,
 		["posY"] = 0.132,
 	},
-	[2202] = {
+	[2367] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.534,
 		["posY"] = 0.164,
 	},
-	[2203] = {
+	[2368] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.539,
 		["posY"] = 0.28,
 	},
-	[2204] = {
+	[2369] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.546,
 		["posY"] = 0.199,
 	},
-	[2205] = {
+	[2370] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.549,
 		["posY"] = 0.238,
 	},
-	[2206] = {
+	[2371] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.569,
 		["posY"] = 0.084,
 	},
-	[2207] = {
+	[2372] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.571,
 		["posY"] = 0.612,
 	},
-	[2208] = {
+	[2373] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.579,
 		["posY"] = 0.12,
 	},
-	[2209] = {
+	[2374] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.582,
 		["posY"] = 0.57,
 	},
-	[2210] = {
+	[2375] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.594,
 		["posY"] = 0.134,
 	},
-	[2211] = {
+	[2376] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
-		["posX"] = 0.611,
-		["posY"] = 0.731,
+		["posX"] = 0.612,
+		["posY"] = 0.73,
 	},
-	[2212] = {
+	[2377] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.619,
 		["posY"] = 0.694,
 	},
-	[2213] = {
+	[2378] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.623,
 		["posY"] = 0.121,
 	},
-	[2214] = {
+	[2379] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.628,
 		["posY"] = 0.073,
 	},
-	[2215] = {
+	[2380] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.63,
 		["posY"] = 0.094,
 	},
-	[2216] = {
+	[2381] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.639,
 		["posY"] = 0.518,
 	},
-	[2217] = {
+	[2382] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.64,
 		["posY"] = 0.552,
 	},
-	[2218] = {
+	[2383] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.644,
 		["posY"] = 0.259,
 	},
-	[2219] = {
+	[2384] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.646,
 		["posY"] = 0.154,
 	},
-	[2220] = {
+	[2385] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.647,
 		["posY"] = 0.114,
 	},
-	[2221] = {
+	[2386] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.65,
 		["posY"] = 0.479,
 	},
-	[2222] = {
+	[2387] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.652,
 		["posY"] = 0.319,
 	},
-	[2223] = {
+	[2388] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.666,
 		["posY"] = 0.098,
 	},
-	[2224] = {
+	[2389] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.667,
 		["posY"] = 0.147,
 	},
-	[2225] = {
+	[2390] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.667,
 		["posY"] = 0.7,
 	},
-	[2226] = {
+	[2391] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.668,
 		["posY"] = 0.304,
 	},
-	[2227] = {
+	[2392] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.671,
 		["posY"] = 0.044,
 	},
-	[2228] = {
+	[2393] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.677,
 		["posY"] = 0.619,
 	},
-	[2229] = {
+	[2394] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.68,
 		["posY"] = 0.084,
 	},
-	[2230] = {
+	[2395] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.682,
 		["posY"] = 0.655,
 	},
-	[2231] = {
+	[2396] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.684,
 		["posY"] = 0.377,
 	},
-	[2232] = {
+	[2397] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.698,
 		["posY"] = 0.428,
 	},
-	[2233] = {
+	[2398] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.699,
 		["posY"] = 0.292,
 	},
-	[2234] = {
+	[2399] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.699,
 		["posY"] = 0.382,
 	},
-	[2235] = {
+	[2400] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.704,
-		["posY"] = 0.406,
+		["posY"] = 0.407,
 	},
-	[2236] = {
+	[2401] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.707,
 		["posY"] = 0.328,
 	},
-	[2237] = {
+	[2402] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.712,
 		["posY"] = 0.572,
 	},
-	[2238] = {
+	[2403] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.718,
 		["posY"] = 0.162,
 	},
-	[2239] = {
+	[2404] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.721,
 		["posY"] = 0.331,
 	},
-	[2240] = {
+	[2405] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.723,
 		["posY"] = 0.182,
 	},
-	[2241] = {
+	[2406] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.729,
 		["posY"] = 0.712,
 	},
-	[2242] = {
+	[2407] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.758,
 		["posY"] = 0.229,
 	},
-	[2243] = {
+	[2408] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.788,
 		["posY"] = 0.619,
 	},
-	[2244] = {
+	[2409] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1424,
 		["posX"] = 0.789,
 		["posY"] = 0.281,
 	},
-	[2245] = {
+	[2410] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.056,
 		["posY"] = 0.146,
 	},
-	[2246] = {
+	[2411] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.08,
 		["posY"] = 0.136,
 	},
-	[2247] = {
+	[2412] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.082,
-		["posY"] = 0.155,
+		["posY"] = 0.154,
 	},
-	[2248] = {
+	[2413] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.096,
 		["posY"] = 0.238,
 	},
-	[2249] = {
+	[2414] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.103,
 		["posY"] = 0.128,
 	},
-	[2250] = {
+	[2415] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.116,
 		["posY"] = 0.27,
 	},
-	[2251] = {
+	[2416] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.15,
 		["posY"] = 0.446,
 	},
-	[2252] = {
+	[2417] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.165,
+		["posY"] = 0.31,
+	},
+	[2418] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.174,
 		["posY"] = 0.398,
 	},
-	[2253] = {
+	[2419] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.204,
 		["posY"] = 0.419,
 	},
-	[2254] = {
+	[2420] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.209,
+		["posY"] = 0.299,
+	},
+	[2421] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.226,
 		["posY"] = 0.408,
 	},
-	[2255] = {
+	[2422] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.229,
 		["posY"] = 0.276,
 	},
-	[2256] = {
+	[2423] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.229,
 		["posY"] = 0.362,
 	},
-	[2257] = {
+	[2424] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.234,
 		["posY"] = 0.339,
 	},
-	[2258] = {
+	[2425] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.246,
 		["posY"] = 0.424,
 	},
-	[2259] = {
+	[2426] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.253,
 		["posY"] = 0.22,
 	},
-	[2260] = {
+	[2427] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.259,
 		["posY"] = 0.142,
 	},
-	[2261] = {
+	[2428] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.261,
+		["posY"] = 0.18,
+	},
+	[2429] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.262,
 		["posY"] = 0.54,
 	},
-	[2262] = {
+	[2430] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.267,
 		["posY"] = 0.306,
 	},
-	[2263] = {
+	[2431] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.287,
 		["posY"] = 0.346,
 	},
-	[2264] = {
+	[2432] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.299,
 		["posY"] = 0.414,
 	},
-	[2265] = {
+	[2433] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.302,
 		["posY"] = 0.197,
 	},
-	[2266] = {
+	[2434] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.303,
 		["posY"] = 0.297,
 	},
-	[2267] = {
+	[2435] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.307,
+		["posY"] = 0.696,
+	},
+	[2436] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.308,
 		["posY"] = 0.554,
 	},
-	[2268] = {
+	[2437] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.314,
 		["posY"] = 0.651,
 	},
-	[2269] = {
+	[2438] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.326,
 		["posY"] = 0.711,
 	},
-	[2270] = {
+	[2439] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.331,
 		["posY"] = 0.359,
 	},
-	[2271] = {
+	[2440] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.337,
 		["posY"] = 0.279,
 	},
-	[2272] = {
+	[2441] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.347,
 		["posY"] = 0.654,
 	},
-	[2273] = {
+	[2442] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.352,
 		["posY"] = 0.684,
 	},
-	[2274] = {
+	[2443] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.354,
 		["posY"] = 0.372,
 	},
-	[2275] = {
+	[2444] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.364,
 		["posY"] = 0.721,
 	},
-	[2276] = {
+	[2445] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.382,
 		["posY"] = 0.308,
 	},
-	[2277] = {
+	[2446] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.396,
 		["posY"] = 0.339,
 	},
-	[2278] = {
+	[2447] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.397,
 		["posY"] = 0.323,
 	},
-	[2279] = {
+	[2448] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.404,
 		["posY"] = 0.409,
 	},
-	[2280] = {
+	[2449] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.408,
 		["posY"] = 0.313,
 	},
-	[2281] = {
+	[2450] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.409,
 		["posY"] = 0.363,
 	},
-	[2282] = {
+	[2451] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.412,
 		["posY"] = 0.354,
 	},
-	[2283] = {
+	[2452] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.414,
 		["posY"] = 0.409,
 	},
-	[2284] = {
+	[2453] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.419,
 		["posY"] = 0.332,
 	},
-	[2285] = {
+	[2454] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.419,
 		["posY"] = 0.375,
 	},
-	[2286] = {
+	[2455] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.424,
 		["posY"] = 0.364,
 	},
-	[2287] = {
+	[2456] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.43,
 		["posY"] = 0.338,
 	},
-	[2288] = {
+	[2457] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
-		["posX"] = 0.438,
+		["posX"] = 0.437,
 		["posY"] = 0.409,
 	},
-	[2289] = {
+	[2458] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.45,
 		["posY"] = 0.444,
 	},
-	[2290] = {
+	[2459] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.451,
 		["posY"] = 0.697,
 	},
-	[2291] = {
+	[2460] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.462,
 		["posY"] = 0.427,
 	},
-	[2292] = {
+	[2461] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.469,
 		["posY"] = 0.491,
 	},
-	[2293] = {
+	[2462] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.471,
 		["posY"] = 0.458,
 	},
-	[2294] = {
+	[2463] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.485,
 		["posY"] = 0.626,
 	},
-	[2295] = {
+	[2464] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.491,
 		["posY"] = 0.714,
 	},
-	[2296] = {
+	[2465] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.497,
 		["posY"] = 0.528,
 	},
-	[2297] = {
+	[2466] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.507,
 		["posY"] = 0.443,
 	},
-	[2298] = {
+	[2467] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.519,
 		["posY"] = 0.767,
 	},
-	[2299] = {
+	[2468] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.521,
 		["posY"] = 0.704,
 	},
-	[2300] = {
+	[2469] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.521,
 		["posY"] = 0.732,
 	},
-	[2301] = {
+	[2470] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.543,
 		["posY"] = 0.534,
 	},
-	[2302] = {
+	[2471] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.546,
 		["posY"] = 0.563,
 	},
-	[2303] = {
+	[2472] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.549,
 		["posY"] = 0.615,
 	},
-	[2304] = {
+	[2473] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.551,
 		["posY"] = 0.684,
 	},
-	[2305] = {
+	[2474] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.647,
 		["posY"] = 0.684,
 	},
-	[2306] = {
+	[2475] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.673,
 		["posY"] = 0.647,
 	},
-	[2307] = {
+	[2476] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.705,
 		["posY"] = 0.583,
 	},
-	[2308] = {
+	[2477] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.741,
 		["posY"] = 0.514,
 	},
-	[2309] = {
+	[2478] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.76,
 		["posY"] = 0.473,
 	},
-	[2310] = {
+	[2479] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
-		["posX"] = 0.796,
+		["posX"] = 0.786,
+		["posY"] = 0.823,
+	},
+	[2480] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.795,
 		["posY"] = 0.732,
 	},
-	[2311] = {
+	[2481] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.8,
 		["posY"] = 0.671,
 	},
-	[2312] = {
+	[2482] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.805,
 		["posY"] = 0.629,
 	},
-	[2313] = {
+	[2483] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.814,
+		["posY"] = 0.801,
+	},
+	[2484] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.839,
+		["posY"] = 0.789,
+	},
+	[2485] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.844,
 		["posY"] = 0.738,
 	},
-	[2314] = {
+	[2486] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.852,
 		["posY"] = 0.689,
 	},
-	[2315] = {
+	[2487] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.885,
 		["posY"] = 0.694,
 	},
-	[2316] = {
+	[2488] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.906,
 		["posY"] = 0.61,
 	},
-	[2317] = {
+	[2489] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.912,
 		["posY"] = 0.509,
 	},
-	[2318] = {
+	[2490] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.912,
 		["posY"] = 0.664,
 	},
-	[2319] = {
+	[2491] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1440,
+		["posX"] = 0.928,
+		["posY"] = 0.557,
+	},
+	[2492] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1440,
 		["posX"] = 0.936,
 		["posY"] = 0.505,
 	},
-	[2320] = {
+	[2493] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.112,
 		["posY"] = 0.215,
 	},
-	[2321] = {
+	[2494] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.137,
 		["posY"] = 0.151,
 	},
-	[2322] = {
+	[2495] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.145,
 		["posY"] = 0.255,
 	},
-	[2323] = {
+	[2496] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.176,
 		["posY"] = 0.384,
 	},
-	[2324] = {
+	[2497] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.18,
 		["posY"] = 0.328,
 	},
-	[2325] = {
+	[2498] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.181,
 		["posY"] = 0.228,
 	},
-	[2326] = {
+	[2499] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.196,
 		["posY"] = 0.26,
 	},
-	[2327] = {
+	[2500] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.214,
 		["posY"] = 0.26,
 	},
-	[2328] = {
+	[2501] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.231,
 		["posY"] = 0.388,
 	},
-	[2329] = {
+	[2502] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.246,
 		["posY"] = 0.29,
 	},
-	[2330] = {
+	[2503] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.263,
 		["posY"] = 0.399,
 	},
-	[2331] = {
+	[2504] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.273,
 		["posY"] = 0.49,
 	},
-	[2332] = {
+	[2505] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.274,
-		["posY"] = 0.418,
+		["posY"] = 0.419,
 	},
-	[2333] = {
+	[2506] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.313,
 		["posY"] = 0.506,
 	},
-	[2334] = {
+	[2507] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.321,
 		["posY"] = 0.464,
 	},
-	[2335] = {
+	[2508] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.343,
-		["posY"] = 0.448,
+		["posY"] = 0.449,
 	},
-	[2336] = {
+	[2509] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.346,
 		["posY"] = 0.26,
 	},
-	[2337] = {
+	[2510] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.352,
 		["posY"] = 0.508,
 	},
-	[2338] = {
+	[2511] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.358,
 		["posY"] = 0.334,
 	},
-	[2339] = {
+	[2512] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.363,
 		["posY"] = 0.307,
 	},
-	[2340] = {
+	[2513] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.37,
 		["posY"] = 0.484,
 	},
-	[2341] = {
+	[2514] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.371,
 		["posY"] = 0.304,
 	},
-	[2342] = {
+	[2515] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.378,
 		["posY"] = 0.512,
 	},
-	[2343] = {
+	[2516] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.382,
 		["posY"] = 0.553,
 	},
-	[2344] = {
+	[2517] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.385,
 		["posY"] = 0.519,
 	},
-	[2345] = {
+	[2518] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.392,
 		["posY"] = 0.338,
 	},
-	[2346] = {
+	[2519] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.403,
 		["posY"] = 0.388,
 	},
-	[2347] = {
+	[2520] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.405,
 		["posY"] = 0.411,
 	},
-	[2348] = {
+	[2521] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.411,
 		["posY"] = 0.548,
 	},
-	[2349] = {
+	[2522] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.412,
-		["posY"] = 0.419,
+		["posY"] = 0.418,
 	},
-	[2350] = {
+	[2523] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.418,
 		["posY"] = 0.368,
 	},
-	[2351] = {
+	[2524] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
-		["posX"] = 0.424,
+		["posX"] = 0.423,
 		["posY"] = 0.361,
 	},
-	[2352] = {
+	[2525] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.424,
 		["posY"] = 0.586,
 	},
-	[2353] = {
+	[2526] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.441,
 		["posY"] = 0.394,
 	},
-	[2354] = {
+	[2527] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.463,
 		["posY"] = 0.41,
 	},
-	[2355] = {
+	[2528] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.473,
 		["posY"] = 0.423,
 	},
-	[2356] = {
+	[2529] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.481,
 		["posY"] = 0.588,
 	},
-	[2357] = {
+	[2530] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.499,
 		["posY"] = 0.424,
 	},
-	[2358] = {
+	[2531] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.506,
 		["posY"] = 0.463,
 	},
-	[2359] = {
+	[2532] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.519,
 		["posY"] = 0.427,
 	},
-	[2360] = {
+	[2533] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.541,
 		["posY"] = 0.444,
 	},
-	[2361] = {
+	[2534] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
-		["posX"] = 0.552,
+		["posX"] = 0.553,
 		["posY"] = 0.494,
 	},
-	[2362] = {
+	[2535] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.561,
 		["posY"] = 0.479,
 	},
-	[2363] = {
+	[2536] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.574,
 		["posY"] = 0.574,
 	},
-	[2364] = {
+	[2537] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.583,
 		["posY"] = 0.519,
 	},
-	[2365] = {
+	[2538] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.601,
 		["posY"] = 0.469,
 	},
-	[2366] = {
+	[2539] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.628,
 		["posY"] = 0.457,
 	},
-	[2367] = {
+	[2540] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.628,
 		["posY"] = 0.607,
 	},
-	[2368] = {
+	[2541] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.63,
 		["posY"] = 0.534,
 	},
-	[2369] = {
+	[2542] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.631,
 		["posY"] = 0.491,
 	},
-	[2370] = {
+	[2543] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.647,
 		["posY"] = 0.499,
 	},
-	[2371] = {
+	[2544] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.66,
 		["posY"] = 0.493,
 	},
-	[2372] = {
+	[2545] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.672,
 		["posY"] = 0.633,
 	},
-	[2373] = {
+	[2546] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.797,
 		["posY"] = 0.503,
 	},
-	[2374] = {
+	[2547] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.808,
 		["posY"] = 0.902,
 	},
-	[2375] = {
+	[2548] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.861,
 		["posY"] = 0.564,
 	},
-	[2376] = {
+	[2549] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.885,
 		["posY"] = 0.726,
 	},
-	[2377] = {
+	[2550] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.886,
 		["posY"] = 0.807,
 	},
-	[2378] = {
+	[2551] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1441,
 		["posX"] = 0.892,
 		["posY"] = 0.681,
 	},
-	[2379] = {
+	[2552] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
-		["posX"] = 0.308,
+		["posX"] = 0.309,
 		["posY"] = 0.367,
 	},
-	[2380] = {
+	[2553] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.342,
 		["posY"] = 0.381,
 	},
-	[2381] = {
+	[2554] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.354,
 		["posY"] = 0.318,
 	},
-	[2382] = {
+	[2555] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.362,
 		["posY"] = 0.798,
 	},
-	[2383] = {
+	[2556] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.384,
 		["posY"] = 0.382,
 	},
-	[2384] = {
+	[2557] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.394,
-		["posY"] = 0.746,
+		["posY"] = 0.748,
 	},
-	[2385] = {
+	[2558] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.4,
 		["posY"] = 0.723,
 	},
-	[2386] = {
+	[2559] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.401,
 		["posY"] = 0.222,
 	},
-	[2387] = {
+	[2560] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.401,
 		["posY"] = 0.679,
 	},
-	[2388] = {
+	[2561] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.407,
 		["posY"] = 0.303,
 	},
-	[2389] = {
+	[2562] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.423,
 		["posY"] = 0.656,
 	},
-	[2390] = {
+	[2563] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.431,
 		["posY"] = 0.224,
 	},
-	[2391] = {
+	[2564] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.434,
 		["posY"] = 0.838,
 	},
-	[2392] = {
+	[2565] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.441,
 		["posY"] = 0.298,
 	},
-	[2393] = {
+	[2566] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.456,
 		["posY"] = 0.775,
 	},
-	[2394] = {
+	[2567] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.459,
 		["posY"] = 0.731,
 	},
-	[2395] = {
+	[2568] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.46,
 		["posY"] = 0.577,
 	},
-	[2396] = {
+	[2569] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.464,
 		["posY"] = 0.631,
 	},
-	[2397] = {
+	[2570] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.472,
 		["posY"] = 0.525,
 	},
-	[2398] = {
+	[2571] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.504,
 		["posY"] = 0.658,
 	},
-	[2399] = {
+	[2572] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.525,
 		["posY"] = 0.924,
 	},
-	[2400] = {
+	[2573] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.528,
 		["posY"] = 0.052,
 	},
-	[2401] = {
+	[2574] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.544,
 		["posY"] = 0.207,
 	},
-	[2402] = {
+	[2575] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.544,
 		["posY"] = 0.317,
 	},
-	[2403] = {
+	[2576] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.548,
 		["posY"] = 0.84,
 	},
-	[2404] = {
+	[2577] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.563,
 		["posY"] = 0.08,
 	},
-	[2405] = {
+	[2578] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.573,
 		["posY"] = 0.798,
 	},
-	[2406] = {
+	[2579] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.594,
 		["posY"] = 0.109,
 	},
-	[2407] = {
+	[2580] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.614,
 		["posY"] = 0.693,
 	},
-	[2408] = {
+	[2581] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.616,
 		["posY"] = 0.766,
 	},
-	[2409] = {
+	[2582] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.623,
 		["posY"] = 0.244,
 	},
-	[2410] = {
+	[2583] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.638,
 		["posY"] = 0.144,
 	},
-	[2411] = {
+	[2584] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.642,
 		["posY"] = 0.386,
 	},
-	[2412] = {
+	[2585] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.642,
 		["posY"] = 0.915,
 	},
-	[2413] = {
+	[2586] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.658,
 		["posY"] = 0.533,
 	},
-	[2414] = {
+	[2587] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.693,
 		["posY"] = 0.339,
 	},
-	[2415] = {
+	[2588] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.696,
 		["posY"] = 0.161,
 	},
-	[2416] = {
+	[2589] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.721,
-		["posY"] = 0.633,
+		["posY"] = 0.632,
 	},
-	[2417] = {
+	[2590] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.722,
 		["posY"] = 0.57,
 	},
-	[2418] = {
+	[2591] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.75,
 		["posY"] = 0.321,
 	},
-	[2419] = {
+	[2592] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.754,
 		["posY"] = 0.224,
 	},
-	[2420] = {
+	[2593] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.773,
 		["posY"] = 0.29,
 	},
-	[2421] = {
+	[2594] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.808,
 		["posY"] = 0.169,
 	},
-	[2422] = {
+	[2595] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1443,
 		["posX"] = 0.812,
 		["posY"] = 0.373,
 	},
-	[2423] = {
+	[2596] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.279,
 		["posY"] = 0.686,
 	},
-	[2424] = {
+	[2597] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.298,
-		["posY"] = 0.649,
+		["posY"] = 0.648,
 	},
-	[2425] = {
+	[2598] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.304,
 		["posY"] = 0.119,
 	},
-	[2426] = {
+	[2599] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.326,
 		["posY"] = 0.621,
 	},
-	[2427] = {
+	[2600] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.327,
 		["posY"] = 0.192,
 	},
-	[2428] = {
+	[2601] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.345,
 		["posY"] = 0.112,
 	},
-	[2429] = {
+	[2602] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.345,
 		["posY"] = 0.143,
 	},
-	[2430] = {
+	[2603] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.348,
 		["posY"] = 0.652,
 	},
-	[2431] = {
+	[2604] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.351,
 		["posY"] = 0.172,
 	},
-	[2432] = {
+	[2605] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.356,
 		["posY"] = 0.207,
 	},
-	[2433] = {
+	[2606] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.358,
 		["posY"] = 0.521,
 	},
-	[2434] = {
+	[2607] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.381,
 		["posY"] = 0.532,
 	},
-	[2435] = {
+	[2608] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.384,
 		["posY"] = 0.21,
 	},
-	[2436] = {
+	[2609] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.402,
 		["posY"] = 0.177,
 	},
-	[2437] = {
+	[2610] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.407,
 		["posY"] = 0.09,
 	},
-	[2438] = {
+	[2611] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.411,
 		["posY"] = 0.136,
 	},
-	[2439] = {
+	[2612] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.418,
 		["posY"] = 0.069,
 	},
-	[2440] = {
+	[2613] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.443,
 		["posY"] = 0.151,
 	},
-	[2441] = {
+	[2614] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.443,
 		["posY"] = 0.349,
 	},
-	[2442] = {
+	[2615] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.444,
 		["posY"] = 0.459,
 	},
-	[2443] = {
+	[2616] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.448,
 		["posY"] = 0.186,
 	},
-	[2444] = {
+	[2617] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.454,
 		["posY"] = 0.253,
 	},
-	[2445] = {
+	[2618] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.469,
 		["posY"] = 0.213,
 	},
-	[2446] = {
+	[2619] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.47,
 		["posY"] = 0.399,
 	},
-	[2447] = {
+	[2620] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.483,
 		["posY"] = 0.372,
 	},
-	[2448] = {
+	[2621] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.492,
 		["posY"] = 0.354,
 	},
-	[2449] = {
+	[2622] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.493,
 		["posY"] = 0.307,
 	},
-	[2450] = {
+	[2623] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.504,
 		["posY"] = 0.386,
 	},
-	[2451] = {
+	[2624] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.516,
 		["posY"] = 0.331,
 	},
-	[2452] = {
+	[2625] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.517,
 		["posY"] = 0.441,
 	},
-	[2453] = {
+	[2626] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.529,
 		["posY"] = 0.359,
 	},
-	[2454] = {
+	[2627] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.538,
 		["posY"] = 0.392,
 	},
-	[2455] = {
+	[2628] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.542,
 		["posY"] = 0.419,
 	},
-	[2456] = {
+	[2629] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.549,
 		["posY"] = 0.443,
 	},
-	[2457] = {
+	[2630] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.573,
 		["posY"] = 0.901,
 	},
-	[2458] = {
+	[2631] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.589,
 		["posY"] = 0.908,
 	},
-	[2459] = {
+	[2632] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.594,
 		["posY"] = 0.918,
 	},
-	[2460] = {
+	[2633] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.596,
 		["posY"] = 0.891,
 	},
-	[2461] = {
+	[2634] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
-		["posX"] = 0.601,
+		["posX"] = 0.6,
 		["posY"] = 0.9,
 	},
-	[2462] = {
+	[2635] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.602,
 		["posY"] = 0.917,
 	},
-	[2463] = {
+	[2636] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.614,
 		["posY"] = 0.909,
 	},
-	[2464] = {
+	[2637] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.616,
 		["posY"] = 0.935,
 	},
-	[2465] = {
+	[2638] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.64,
 		["posY"] = 0.386,
 	},
-	[2466] = {
+	[2639] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.666,
 		["posY"] = 0.596,
 	},
-	[2467] = {
+	[2640] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.678,
 		["posY"] = 0.396,
 	},
-	[2468] = {
+	[2641] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.709,
 		["posY"] = 0.858,
 	},
-	[2469] = {
+	[2642] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.719,
 		["posY"] = 0.609,
 	},
-	[2470] = {
+	[2643] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.72,
 		["posY"] = 0.6,
 	},
-	[2471] = {
+	[2644] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.722,
 		["posY"] = 0.617,
 	},
-	[2472] = {
+	[2645] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.723,
 		["posY"] = 0.518,
 	},
-	[2473] = {
+	[2646] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
-		["posX"] = 0.725,
+		["posX"] = 0.724,
 		["posY"] = 0.873,
 	},
-	[2474] = {
+	[2647] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.73,
 		["posY"] = 0.626,
 	},
-	[2475] = {
+	[2648] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1442,
+		["posX"] = 0.731,
+		["posY"] = 0.591,
+	},
+	[2649] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.732,
 		["posY"] = 0.598,
 	},
-	[2476] = {
+	[2650] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.734,
 		["posY"] = 0.615,
 	},
-	[2477] = {
+	[2651] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.739,
 		["posY"] = 0.607,
 	},
-	[2478] = {
+	[2652] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.742,
 		["posY"] = 0.897,
 	},
-	[2479] = {
+	[2653] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.753,
 		["posY"] = 0.941,
 	},
-	[2480] = {
+	[2654] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.761,
 		["posY"] = 0.486,
 	},
-	[2481] = {
+	[2655] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.765,
 		["posY"] = 0.444,
 	},
-	[2482] = {
+	[2656] = {
 		["type"] = "mining",
 		["object"] = 1732,
 		["mapID"] = 1442,
 		["posX"] = 0.802,
 		["posY"] = 0.846,
 	},
-	[2483] = {
+	[2657] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1942,
+		["posX"] = 0.375,
+		["posY"] = 0.689,
+	},
+	[2658] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1942,
+		["posX"] = 0.404,
+		["posY"] = 0.514,
+	},
+	[2659] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1942,
+		["posX"] = 0.653,
+		["posY"] = 0.672,
+	},
+	[2660] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1942,
+		["posX"] = 0.688,
+		["posY"] = 0.538,
+	},
+	[2661] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.185,
+		["posY"] = 0.643,
+	},
+	[2662] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.232,
+		["posY"] = 0.566,
+	},
+	[2663] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.391,
+		["posY"] = 0.283,
+	},
+	[2664] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.512,
+		["posY"] = 0.256,
+	},
+	[2665] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.623,
+		["posY"] = 0.459,
+	},
+	[2666] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.72,
+		["posY"] = 0.203,
+	},
+	[2667] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.736,
+		["posY"] = 0.262,
+	},
+	[2668] = {
+		["type"] = "mining",
+		["object"] = 1732,
+		["mapID"] = 1950,
+		["posX"] = 0.74,
+		["posY"] = 0.204,
+	},
+	[2669] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.074,
 		["posY"] = 0.915,
 	},
-	[2484] = {
+	[2670] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.075,
 		["posY"] = 0.872,
 	},
-	[2485] = {
+	[2671] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.107,
-		["posY"] = 0.553,
+		["posY"] = 0.554,
 	},
-	[2486] = {
+	[2672] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.148,
 		["posY"] = 0.344,
 	},
-	[2487] = {
+	[2673] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.148,
 		["posY"] = 0.487,
 	},
-	[2488] = {
+	[2674] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
-		["posX"] = 0.154,
-		["posY"] = 0.354,
+		["posX"] = 0.149,
+		["posY"] = 0.546,
 	},
-	[2489] = {
+	[2675] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.164,
 		["posY"] = 0.345,
 	},
-	[2490] = {
+	[2676] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.181,
 		["posY"] = 0.702,
 	},
-	[2491] = {
+	[2677] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.185,
 		["posY"] = 0.746,
 	},
-	[2492] = {
+	[2678] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.202,
 		["posY"] = 0.644,
 	},
-	[2493] = {
+	[2679] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
-		["posX"] = 0.225,
-		["posY"] = 0.732,
+		["posX"] = 0.224,
+		["posY"] = 0.733,
 	},
-	[2494] = {
+	[2680] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.238,
 		["posY"] = 0.613,
 	},
-	[2495] = {
+	[2681] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.247,
 		["posY"] = 0.716,
 	},
-	[2496] = {
+	[2682] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.253,
 		["posY"] = 0.78,
 	},
-	[2497] = {
+	[2683] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.267,
 		["posY"] = 0.668,
 	},
-	[2498] = {
+	[2684] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.288,
 		["posY"] = 0.607,
 	},
-	[2499] = {
+	[2685] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.307,
 		["posY"] = 0.531,
 	},
-	[2500] = {
+	[2686] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.321,
 		["posY"] = 0.764,
 	},
-	[2501] = {
+	[2687] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.323,
+		["posY"] = 0.441,
+	},
+	[2688] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.343,
 		["posY"] = 0.517,
 	},
-	[2502] = {
+	[2689] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.357,
-		["posY"] = 0.54,
+		["posY"] = 0.543,
 	},
-	[2503] = {
+	[2690] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
-		["posX"] = 0.375,
+		["posX"] = 0.367,
+		["posY"] = 0.754,
+	},
+	[2691] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.376,
 		["posY"] = 0.476,
 	},
-	[2504] = {
+	[2692] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.408,
 		["posY"] = 0.513,
 	},
-	[2505] = {
+	[2693] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.413,
 		["posY"] = 0.655,
 	},
-	[2506] = {
+	[2694] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
-		["posY"] = 0.778,
+		["posY"] = 0.779,
 	},
-	[2507] = {
+	[2695] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.424,
+		["posY"] = 0.59,
+	},
+	[2696] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.443,
 		["posY"] = 0.494,
 	},
-	[2508] = {
+	[2697] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.451,
+		["posY"] = 0.763,
+	},
+	[2698] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.457,
 		["posY"] = 0.547,
 	},
-	[2509] = {
+	[2699] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.493,
 		["posY"] = 0.583,
 	},
-	[2510] = {
+	[2700] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.511,
+		["posY"] = 0.776,
+	},
+	[2701] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1418,
+		["posX"] = 0.52,
+		["posY"] = 0.462,
+	},
+	[2702] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.524,
 		["posY"] = 0.168,
 	},
-	[2511] = {
+	[2703] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.524,
 		["posY"] = 0.36,
 	},
-	[2512] = {
+	[2704] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.542,
 		["posY"] = 0.134,
 	},
-	[2513] = {
+	[2705] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.561,
 		["posY"] = 0.209,
 	},
-	[2514] = {
+	[2706] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.569,
 		["posY"] = 0.759,
 	},
-	[2515] = {
+	[2707] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.588,
 		["posY"] = 0.458,
 	},
-	[2516] = {
+	[2708] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.594,
 		["posY"] = 0.248,
 	},
-	[2517] = {
+	[2709] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.616,
 		["posY"] = 0.737,
 	},
-	[2518] = {
+	[2710] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.634,
 		["posY"] = 0.635,
 	},
-	[2519] = {
+	[2711] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.646,
 		["posY"] = 0.722,
 	},
-	[2520] = {
+	[2712] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1418,
 		["posX"] = 0.653,
 		["posY"] = 0.43,
 	},
-	[2521] = {
+	[2713] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1435,
 		["posX"] = 0.13,
 		["posY"] = 0.691,
 	},
-	[2522] = {
+	[2714] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1435,
 		["posX"] = 0.177,
 		["posY"] = 0.577,
 	},
-	[2523] = {
+	[2715] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1435,
 		["posX"] = 0.278,
 		["posY"] = 0.653,
 	},
-	[2524] = {
+	[2716] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1435,
+		["posX"] = 0.578,
+		["posY"] = 0.655,
+	},
+	[2717] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1435,
+		["posX"] = 0.61,
+		["posY"] = 0.191,
+	},
+	[2718] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1435,
 		["posX"] = 0.664,
 		["posY"] = 0.787,
 	},
-	[2525] = {
+	[2719] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1435,
 		["posX"] = 0.688,
 		["posY"] = 0.817,
 	},
-	[2526] = {
+	[2720] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1431,
+		["posX"] = 0.267,
+		["posY"] = 0.376,
+	},
+	[2721] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.305,
 		["posY"] = 0.712,
 	},
-	[2527] = {
+	[2722] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.32,
 		["posY"] = 0.765,
 	},
-	[2528] = {
+	[2723] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.347,
 		["posY"] = 0.777,
 	},
-	[2529] = {
+	[2724] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.348,
 		["posY"] = 0.815,
 	},
-	[2530] = {
+	[2725] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.352,
 		["posY"] = 0.416,
 	},
-	[2531] = {
+	[2726] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1431,
+		["posX"] = 0.359,
+		["posY"] = 0.318,
+	},
+	[2727] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.359,
 		["posY"] = 0.766,
 	},
-	[2532] = {
+	[2728] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.363,
 		["posY"] = 0.49,
 	},
-	[2533] = {
+	[2729] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.415,
 		["posY"] = 0.245,
 	},
-	[2534] = {
+	[2730] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.465,
 		["posY"] = 0.603,
 	},
-	[2535] = {
+	[2731] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.499,
 		["posY"] = 0.794,
 	},
-	[2536] = {
+	[2732] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.512,
 		["posY"] = 0.223,
 	},
-	[2537] = {
+	[2733] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.526,
 		["posY"] = 0.556,
 	},
-	[2538] = {
+	[2734] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.579,
 		["posY"] = 0.614,
 	},
-	[2539] = {
+	[2735] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.6,
 		["posY"] = 0.563,
 	},
-	[2540] = {
+	[2736] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.622,
 		["posY"] = 0.789,
 	},
-	[2541] = {
+	[2737] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.633,
 		["posY"] = 0.845,
 	},
-	[2542] = {
+	[2738] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.674,
 		["posY"] = 0.516,
 	},
-	[2543] = {
+	[2739] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.675,
 		["posY"] = 0.717,
 	},
-	[2544] = {
+	[2740] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.678,
 		["posY"] = 0.427,
 	},
-	[2545] = {
+	[2741] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.681,
 		["posY"] = 0.477,
 	},
-	[2546] = {
+	[2742] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.686,
 		["posY"] = 0.407,
 	},
-	[2547] = {
+	[2743] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.711,
 		["posY"] = 0.771,
 	},
-	[2548] = {
+	[2744] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.737,
 		["posY"] = 0.785,
 	},
-	[2549] = {
+	[2745] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.779,
 		["posY"] = 0.729,
 	},
-	[2550] = {
+	[2746] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.8,
 		["posY"] = 0.762,
 	},
-	[2551] = {
+	[2747] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.817,
 		["posY"] = 0.628,
 	},
-	[2552] = {
+	[2748] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.827,
 		["posY"] = 0.529,
 	},
-	[2553] = {
+	[2749] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
-		["posX"] = 0.842,
-		["posY"] = 0.583,
+		["posX"] = 0.827,
+		["posY"] = 0.706,
 	},
-	[2554] = {
+	[2750] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1431,
+		["posX"] = 0.841,
+		["posY"] = 0.582,
+	},
+	[2751] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.856,
 		["posY"] = 0.541,
 	},
-	[2555] = {
+	[2752] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1431,
 		["posX"] = 0.859,
 		["posY"] = 0.492,
 	},
-	[2556] = {
+	[2753] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.325,
 		["posY"] = 0.473,
 	},
-	[2557] = {
+	[2754] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.326,
 		["posY"] = 0.443,
 	},
-	[2558] = {
+	[2755] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.333,
 		["posY"] = 0.512,
 	},
-	[2559] = {
+	[2756] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.36,
 		["posY"] = 0.454,
 	},
-	[2560] = {
+	[2757] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.366,
 		["posY"] = 0.487,
 	},
-	[2561] = {
+	[2758] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.377,
 		["posY"] = 0.433,
 	},
-	[2562] = {
+	[2759] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.392,
 		["posY"] = 0.185,
 	},
-	[2563] = {
+	[2760] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.459,
 		["posY"] = 0.65,
 	},
-	[2564] = {
+	[2761] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1437,
+		["posX"] = 0.469,
+		["posY"] = 0.616,
+	},
+	[2762] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.471,
 		["posY"] = 0.626,
 	},
-	[2565] = {
+	[2763] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.473,
 		["posY"] = 0.431,
 	},
-	[2566] = {
+	[2764] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1437,
+		["posX"] = 0.484,
+		["posY"] = 0.433,
+	},
+	[2765] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.485,
-		["posY"] = 0.604,
+		["posY"] = 0.603,
 	},
-	[2567] = {
+	[2766] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.491,
 		["posY"] = 0.588,
 	},
-	[2568] = {
+	[2767] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.491,
 		["posY"] = 0.611,
 	},
-	[2569] = {
+	[2768] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.497,
 		["posY"] = 0.579,
 	},
-	[2570] = {
+	[2769] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.505,
 		["posY"] = 0.584,
 	},
-	[2571] = {
+	[2770] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.51,
 		["posY"] = 0.593,
 	},
-	[2572] = {
+	[2771] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.511,
 		["posY"] = 0.61,
 	},
-	[2573] = {
+	[2772] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1437,
+		["posX"] = 0.515,
+		["posY"] = 0.631,
+	},
+	[2773] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.518,
-		["posY"] = 0.504,
+		["posY"] = 0.503,
 	},
-	[2574] = {
+	[2774] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.531,
 		["posY"] = 0.627,
 	},
-	[2575] = {
+	[2775] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.533,
 		["posY"] = 0.558,
 	},
-	[2576] = {
+	[2776] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.54,
 		["posY"] = 0.577,
 	},
-	[2577] = {
+	[2777] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.541,
 		["posY"] = 0.621,
 	},
-	[2578] = {
+	[2778] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.542,
 		["posY"] = 0.588,
 	},
-	[2579] = {
+	[2779] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1437,
+		["posX"] = 0.659,
+		["posY"] = 0.339,
+	},
+	[2780] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1437,
 		["posX"] = 0.679,
 		["posY"] = 0.377,
 	},
-	[2580] = {
+	[2781] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1445,
+		["posX"] = 0.385,
+		["posY"] = 0.672,
+	},
+	[2782] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1445,
 		["posX"] = 0.387,
 		["posY"] = 0.66,
 	},
-	[2581] = {
+	[2783] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.368,
+		["posY"] = 0.158,
+	},
+	[2784] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.371,
 		["posY"] = 0.169,
 	},
-	[2582] = {
+	[2785] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.376,
 		["posY"] = 0.149,
 	},
-	[2583] = {
+	[2786] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.38,
 		["posY"] = 0.169,
 	},
-	[2584] = {
+	[2787] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.383,
 		["posY"] = 0.118,
 	},
-	[2585] = {
+	[2788] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.385,
 		["posY"] = 0.125,
 	},
-	[2586] = {
+	[2789] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.385,
+		["posY"] = 0.144,
+	},
+	[2790] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.389,
 		["posY"] = 0.108,
 	},
-	[2587] = {
+	[2791] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.395,
 		["posY"] = 0.236,
 	},
-	[2588] = {
+	[2792] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.398,
 		["posY"] = 0.122,
 	},
-	[2589] = {
+	[2793] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.398,
 		["posY"] = 0.194,
 	},
-	[2590] = {
+	[2794] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.4,
 		["posY"] = 0.206,
 	},
-	[2591] = {
+	[2795] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.401,
 		["posY"] = 0.221,
 	},
-	[2592] = {
+	[2796] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.404,
 		["posY"] = 0.803,
 	},
-	[2593] = {
+	[2797] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.406,
 		["posY"] = 0.455,
 	},
-	[2594] = {
+	[2798] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.409,
 		["posY"] = 0.786,
 	},
-	[2595] = {
+	[2799] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.412,
 		["posY"] = 0.815,
 	},
-	[2596] = {
+	[2800] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.416,
 		["posY"] = 0.297,
 	},
-	[2597] = {
+	[2801] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.417,
 		["posY"] = 0.181,
 	},
-	[2598] = {
+	[2802] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.421,
 		["posY"] = 0.778,
 	},
-	[2599] = {
+	[2803] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.425,
 		["posY"] = 0.832,
 	},
-	[2600] = {
+	[2804] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.427,
 		["posY"] = 0.137,
 	},
-	[2601] = {
+	[2805] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.427,
+		["posY"] = 0.41,
+	},
+	[2806] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.427,
 		["posY"] = 0.421,
 	},
-	[2602] = {
+	[2807] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.431,
 		["posY"] = 0.525,
 	},
-	[2603] = {
+	[2808] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.431,
-		["posY"] = 0.548,
+		["posY"] = 0.547,
 	},
-	[2604] = {
+	[2809] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.434,
 		["posY"] = 0.746,
 	},
-	[2605] = {
+	[2810] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.434,
 		["posY"] = 0.842,
 	},
-	[2606] = {
+	[2811] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.435,
 		["posY"] = 0.136,
 	},
-	[2607] = {
-		["type"] = "mining",
-		["object"] = 1733,
-		["mapID"] = 1413,
-		["posX"] = 0.436,
-		["posY"] = 0.121,
-	},
-	[2608] = {
+	[2812] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.436,
 		["posY"] = 0.768,
 	},
-	[2609] = {
+	[2813] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.437,
+		["posY"] = 0.121,
+	},
+	[2814] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.438,
 		["posY"] = 0.275,
 	},
-	[2610] = {
+	[2815] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.439,
 		["posY"] = 0.783,
 	},
-	[2611] = {
+	[2816] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.44,
 		["posY"] = 0.266,
 	},
-	[2612] = {
+	[2817] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.447,
 		["posY"] = 0.235,
 	},
-	[2613] = {
+	[2818] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.449,
 		["posY"] = 0.225,
 	},
-	[2614] = {
+	[2819] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.449,
 		["posY"] = 0.251,
 	},
-	[2615] = {
+	[2820] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.449,
 		["posY"] = 0.512,
 	},
-	[2616] = {
+	[2821] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.451,
 		["posY"] = 0.544,
 	},
-	[2617] = {
+	[2822] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.452,
 		["posY"] = 0.122,
 	},
-	[2618] = {
+	[2823] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.452,
 		["posY"] = 0.687,
 	},
-	[2619] = {
+	[2824] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.461,
 		["posY"] = 0.394,
 	},
-	[2620] = {
+	[2825] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.462,
 		["posY"] = 0.376,
 	},
-	[2621] = {
+	[2826] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.464,
-		["posY"] = 0.129,
+		["posY"] = 0.128,
 	},
-	[2622] = {
+	[2827] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.464,
 		["posY"] = 0.4,
 	},
-	[2623] = {
+	[2828] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.465,
 		["posY"] = 0.155,
 	},
-	[2624] = {
+	[2829] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.471,
 		["posY"] = 0.305,
 	},
-	[2625] = {
+	[2830] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.474,
 		["posY"] = 0.399,
 	},
-	[2626] = {
+	[2831] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.474,
 		["posY"] = 0.687,
 	},
-	[2627] = {
+	[2832] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.478,
 		["posY"] = 0.159,
 	},
-	[2628] = {
+	[2833] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.48,
+		["posY"] = 0.667,
+	},
+	[2834] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.485,
 		["posY"] = 0.484,
 	},
-	[2629] = {
+	[2835] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.485,
 		["posY"] = 0.715,
 	},
-	[2630] = {
+	[2836] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.486,
 		["posY"] = 0.148,
 	},
-	[2631] = {
+	[2837] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.804,
 	},
-	[2632] = {
+	[2838] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.487,
 		["posY"] = 0.879,
 	},
-	[2633] = {
+	[2839] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.489,
 		["posY"] = 0.64,
 	},
-	[2634] = {
+	[2840] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.491,
+		["posY"] = 0.158,
+	},
+	[2841] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.492,
 		["posY"] = 0.688,
 	},
-	[2635] = {
+	[2842] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.492,
 		["posY"] = 0.866,
 	},
-	[2636] = {
+	[2843] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.497,
+		["posY"] = 0.486,
+	},
+	[2844] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.505,
 		["posY"] = 0.581,
 	},
-	[2637] = {
+	[2845] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.509,
 		["posY"] = 0.116,
 	},
-	[2638] = {
+	[2846] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.509,
 		["posY"] = 0.574,
 	},
-	[2639] = {
+	[2847] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.514,
 		["posY"] = 0.547,
 	},
-	[2640] = {
+	[2848] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.516,
 		["posY"] = 0.513,
 	},
-	[2641] = {
+	[2849] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.517,
 		["posY"] = 0.482,
 	},
-	[2642] = {
+	[2850] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.517,
 		["posY"] = 0.581,
 	},
-	[2643] = {
+	[2851] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.524,
+		["posY"] = 0.527,
+	},
+	[2852] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.526,
 		["posY"] = 0.518,
 	},
-	[2644] = {
+	[2853] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.535,
-		["posY"] = 0.544,
+		["posY"] = 0.543,
 	},
-	[2645] = {
+	[2854] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.535,
 		["posY"] = 0.552,
 	},
-	[2646] = {
+	[2855] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.538,
 		["posY"] = 0.191,
 	},
-	[2647] = {
+	[2856] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.543,
 		["posY"] = 0.173,
 	},
-	[2648] = {
+	[2857] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.547,
 		["posY"] = 0.072,
 	},
-	[2649] = {
+	[2858] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.553,
 		["posY"] = 0.429,
 	},
-	[2650] = {
+	[2859] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.554,
 		["posY"] = 0.277,
 	},
-	[2651] = {
+	[2860] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.554,
 		["posY"] = 0.421,
 	},
-	[2652] = {
+	[2861] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.559,
 		["posY"] = 0.433,
 	},
-	[2653] = {
+	[2862] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.56,
 		["posY"] = 0.04,
 	},
-	[2654] = {
+	[2863] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.561,
 		["posY"] = 0.27,
 	},
-	[2655] = {
+	[2864] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1413,
+		["posX"] = 0.57,
+		["posY"] = 0.255,
+	},
+	[2865] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.571,
 		["posY"] = 0.436,
 	},
-	[2656] = {
+	[2866] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.575,
 		["posY"] = 0.061,
 	},
-	[2657] = {
+	[2867] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.578,
 		["posY"] = 0.162,
 	},
-	[2658] = {
+	[2868] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.578,
 		["posY"] = 0.186,
 	},
-	[2659] = {
+	[2869] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.583,
 		["posY"] = 0.271,
 	},
-	[2660] = {
+	[2870] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.592,
 		["posY"] = 0.087,
 	},
-	[2661] = {
+	[2871] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.594,
 		["posY"] = 0.244,
 	},
-	[2662] = {
+	[2872] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.596,
 		["posY"] = 0.03,
 	},
-	[2663] = {
+	[2873] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.596,
 		["posY"] = 0.037,
 	},
-	[2664] = {
+	[2874] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.611,
 		["posY"] = 0.514,
 	},
-	[2665] = {
+	[2875] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.51,
 	},
-	[2666] = {
+	[2876] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.622,
 		["posY"] = 0.551,
 	},
-	[2667] = {
+	[2877] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.631,
 		["posY"] = 0.508,
 	},
-	[2668] = {
+	[2878] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1413,
 		["posX"] = 0.642,
 		["posY"] = 0.494,
 	},
-	[2669] = {
+	[2879] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.247,
+		["posY"] = 0.554,
+	},
+	[2880] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.258,
 		["posY"] = 0.154,
 	},
-	[2670] = {
+	[2881] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.263,
 		["posY"] = 0.18,
 	},
-	[2671] = {
+	[2882] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.27,
 		["posY"] = 0.102,
 	},
-	[2672] = {
+	[2883] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.274,
 		["posY"] = 0.136,
 	},
-	[2673] = {
+	[2884] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.276,
 		["posY"] = 0.179,
 	},
-	[2674] = {
+	[2885] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.3,
 		["posY"] = 0.177,
 	},
-	[2675] = {
+	[2886] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.305,
 		["posY"] = 0.075,
 	},
-	[2676] = {
+	[2887] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.095,
 	},
-	[2677] = {
+	[2888] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.138,
 	},
-	[2678] = {
+	[2889] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.653,
 	},
-	[2679] = {
+	[2890] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.32,
+		["posY"] = 0.176,
+	},
+	[2891] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.321,
+		["posY"] = 0.124,
+	},
+	[2892] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.321,
 		["posY"] = 0.656,
 	},
-	[2680] = {
+	[2893] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.328,
 		["posY"] = 0.683,
 	},
-	[2681] = {
+	[2894] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.331,
+		["posY"] = 0.426,
+	},
+	[2895] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.332,
 		["posY"] = 0.064,
 	},
-	[2682] = {
+	[2896] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.342,
 		["posY"] = 0.142,
 	},
-	[2683] = {
+	[2897] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.343,
 		["posY"] = 0.666,
 	},
-	[2684] = {
+	[2898] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.344,
 		["posY"] = 0.064,
 	},
-	[2685] = {
+	[2899] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.348,
+		["posY"] = 0.617,
+	},
+	[2900] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.348,
+		["posY"] = 0.641,
+	},
+	[2901] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.362,
 		["posY"] = 0.07,
 	},
-	[2686] = {
+	[2902] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.365,
 		["posY"] = 0.538,
 	},
-	[2687] = {
+	[2903] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.369,
 		["posY"] = 0.639,
 	},
-	[2688] = {
+	[2904] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.37,
 		["posY"] = 0.129,
 	},
-	[2689] = {
+	[2905] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.37,
+		["posY"] = 0.564,
+	},
+	[2906] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.376,
 		["posY"] = 0.138,
 	},
-	[2690] = {
+	[2907] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.376,
 		["posY"] = 0.355,
 	},
-	[2691] = {
+	[2908] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.378,
 		["posY"] = 0.078,
 	},
-	[2692] = {
+	[2909] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.38,
+		["posY"] = 0.567,
+	},
+	[2910] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.382,
 		["posY"] = 0.575,
 	},
-	[2693] = {
+	[2911] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.388,
 		["posY"] = 0.139,
 	},
-	[2694] = {
+	[2912] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.398,
 		["posY"] = 0.066,
 	},
-	[2695] = {
+	[2913] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.399,
 		["posY"] = 0.456,
 	},
-	[2696] = {
+	[2914] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.404,
+		["posY"] = 0.438,
+	},
+	[2915] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.413,
 		["posY"] = 0.424,
 	},
-	[2697] = {
+	[2916] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.414,
 		["posY"] = 0.438,
 	},
-	[2698] = {
+	[2917] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.415,
 		["posY"] = 0.143,
 	},
-	[2699] = {
+	[2918] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.416,
 		["posY"] = 0.414,
 	},
-	[2700] = {
+	[2919] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.416,
 		["posY"] = 0.43,
 	},
-	[2701] = {
+	[2920] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.419,
 		["posY"] = 0.37,
 	},
-	[2702] = {
+	[2921] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.424,
 		["posY"] = 0.084,
 	},
-	[2703] = {
+	[2922] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.428,
 		["posY"] = 0.1,
 	},
-	[2704] = {
+	[2923] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.434,
 		["posY"] = 0.114,
 	},
-	[2705] = {
+	[2924] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.434,
 		["posY"] = 0.137,
 	},
-	[2706] = {
+	[2925] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.446,
 		["posY"] = 0.26,
 	},
-	[2707] = {
+	[2926] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.449,
 		["posY"] = 0.128,
 	},
-	[2708] = {
+	[2927] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.455,
 		["posY"] = 0.132,
 	},
-	[2709] = {
+	[2928] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1434,
+		["posX"] = 0.461,
+		["posY"] = 0.065,
+	},
+	[2929] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.462,
 		["posY"] = 0.172,
 	},
-	[2710] = {
+	[2930] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.47,
 		["posY"] = 0.226,
 	},
-	[2711] = {
+	[2931] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.479,
 		["posY"] = 0.285,
 	},
-	[2712] = {
+	[2932] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.496,
 		["posY"] = 0.056,
 	},
-	[2713] = {
+	[2933] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.497,
 		["posY"] = 0.357,
 	},
-	[2714] = {
+	[2934] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.499,
 		["posY"] = 0.304,
 	},
-	[2715] = {
+	[2935] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1434,
 		["posX"] = 0.51,
 		["posY"] = 0.365,
 	},
-	[2716] = {
+	[2936] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.284,
+		["posY"] = 0.671,
+	},
+	[2937] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.292,
 		["posY"] = 0.815,
 	},
-	[2717] = {
+	[2938] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.296,
 		["posY"] = 0.66,
 	},
-	[2718] = {
+	[2939] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.306,
 		["posY"] = 0.684,
 	},
-	[2719] = {
+	[2940] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.319,
 		["posY"] = 0.535,
 	},
-	[2720] = {
+	[2941] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.326,
 		["posY"] = 0.614,
 	},
-	[2721] = {
+	[2942] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.33,
+		["posY"] = 0.399,
+	},
+	[2943] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.333,
 		["posY"] = 0.472,
 	},
-	[2722] = {
+	[2944] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.333,
 		["posY"] = 0.798,
 	},
-	[2723] = {
+	[2945] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.334,
 		["posY"] = 0.873,
 	},
-	[2724] = {
+	[2946] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.371,
 		["posY"] = 0.682,
 	},
-	[2725] = {
+	[2947] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.373,
 		["posY"] = 0.659,
 	},
-	[2726] = {
+	[2948] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.382,
-		["posY"] = 0.678,
+		["posY"] = 0.672,
 	},
-	[2727] = {
+	[2949] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.384,
 		["posY"] = 0.107,
 	},
-	[2728] = {
+	[2950] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.403,
 		["posY"] = 0.306,
 	},
-	[2729] = {
+	[2951] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.404,
+		["posY"] = 0.387,
+	},
+	[2952] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.419,
 		["posY"] = 0.248,
 	},
-	[2730] = {
+	[2953] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.442,
 		["posY"] = 0.383,
 	},
-	[2731] = {
+	[2954] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.444,
+		["posY"] = 0.843,
+	},
+	[2955] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.461,
 		["posY"] = 0.66,
 	},
-	[2732] = {
+	[2956] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.471,
+		["posY"] = 0.338,
+	},
+	[2957] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.473,
 		["posY"] = 0.322,
 	},
-	[2733] = {
+	[2958] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.476,
 		["posY"] = 0.344,
 	},
-	[2734] = {
+	[2959] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.486,
 		["posY"] = 0.328,
 	},
-	[2735] = {
+	[2960] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.487,
+		["posY"] = 0.344,
+	},
+	[2961] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.49,
 		["posY"] = 0.448,
 	},
-	[2736] = {
+	[2962] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.49,
 		["posY"] = 0.456,
 	},
-	[2737] = {
+	[2963] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.499,
 		["posY"] = 0.437,
 	},
-	[2738] = {
+	[2964] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.506,
 		["posY"] = 0.272,
 	},
-	[2739] = {
+	[2965] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.512,
+		["posY"] = 0.42,
+	},
+	[2966] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.512,
 		["posY"] = 0.457,
 	},
-	[2740] = {
+	[2967] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.513,
 		["posY"] = 0.441,
 	},
-	[2741] = {
+	[2968] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.516,
 		["posY"] = 0.509,
 	},
-	[2742] = {
+	[2969] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.52,
 		["posY"] = 0.582,
 	},
-	[2743] = {
+	[2970] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1416,
+		["posX"] = 0.532,
+		["posY"] = 0.493,
+	},
+	[2971] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.604,
 		["posY"] = 0.566,
 	},
-	[2744] = {
+	[2972] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1416,
 		["posX"] = 0.671,
 		["posY"] = 0.518,
 	},
-	[2745] = {
+	[2973] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.226,
 		["posY"] = 0.315,
 	},
-	[2746] = {
+	[2974] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.271,
 		["posY"] = 0.856,
 	},
-	[2747] = {
+	[2975] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.275,
 		["posY"] = 0.592,
 	},
-	[2748] = {
+	[2976] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1432,
+		["posX"] = 0.297,
+		["posY"] = 0.875,
+	},
+	[2977] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.333,
 		["posY"] = 0.87,
 	},
-	[2749] = {
+	[2978] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.351,
 		["posY"] = 0.15,
 	},
-	[2750] = {
+	[2979] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.573,
 		["posY"] = 0.697,
 	},
-	[2751] = {
+	[2980] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.634,
 		["posY"] = 0.714,
 	},
-	[2752] = {
+	[2981] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.653,
 		["posY"] = 0.193,
 	},
-	[2753] = {
+	[2982] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
-		["posX"] = 0.693,
+		["posX"] = 0.692,
 		["posY"] = 0.627,
 	},
-	[2754] = {
+	[2983] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.709,
 		["posY"] = 0.656,
 	},
-	[2755] = {
+	[2984] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.715,
 		["posY"] = 0.64,
 	},
-	[2756] = {
+	[2985] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.717,
 		["posY"] = 0.501,
 	},
-	[2757] = {
+	[2986] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.721,
 		["posY"] = 0.28,
 	},
-	[2758] = {
+	[2987] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.725,
 		["posY"] = 0.533,
 	},
-	[2759] = {
+	[2988] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.764,
 		["posY"] = 0.653,
 	},
-	[2760] = {
+	[2989] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.776,
 		["posY"] = 0.676,
 	},
-	[2761] = {
+	[2990] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.776,
 		["posY"] = 0.706,
 	},
-	[2762] = {
+	[2991] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.788,
 		["posY"] = 0.468,
 	},
-	[2763] = {
+	[2992] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1432,
 		["posX"] = 0.801,
 		["posY"] = 0.737,
 	},
-	[2764] = {
+	[2993] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.294,
 		["posY"] = 0.41,
 	},
-	[2765] = {
+	[2994] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.296,
 		["posY"] = 0.685,
 	},
-	[2766] = {
+	[2995] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.297,
 		["posY"] = 0.464,
 	},
-	[2767] = {
+	[2996] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.308,
 		["posY"] = 0.485,
 	},
-	[2768] = {
+	[2997] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.319,
 		["posY"] = 0.419,
 	},
-	[2769] = {
+	[2998] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.331,
 		["posY"] = 0.454,
 	},
-	[2770] = {
+	[2999] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.377,
 		["posY"] = 0.837,
 	},
-	[2771] = {
+	[3000] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.384,
 		["posY"] = 0.419,
 	},
-	[2772] = {
+	[3001] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.388,
 		["posY"] = 0.824,
 	},
-	[2773] = {
+	[3002] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.396,
 		["posY"] = 0.743,
 	},
-	[2774] = {
+	[3003] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.415,
 		["posY"] = 0.789,
 	},
-	[2775] = {
+	[3004] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.458,
 		["posY"] = 0.205,
 	},
-	[2776] = {
+	[3005] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1436,
 		["posX"] = 0.637,
 		["posY"] = 0.792,
 	},
-	[2777] = {
+	[3006] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.183,
 		["posY"] = 0.25,
 	},
-	[2778] = {
+	[3007] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.186,
 		["posY"] = 0.332,
 	},
-	[2779] = {
+	[3008] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.188,
 		["posY"] = 0.201,
 	},
-	[2780] = {
+	[3009] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
-		["posX"] = 0.202,
+		["posX"] = 0.189,
+		["posY"] = 0.149,
+	},
+	[3010] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.195,
+		["posY"] = 0.267,
+	},
+	[3011] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.203,
 		["posY"] = 0.206,
 	},
-	[2781] = {
+	[3012] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.204,
-		["posY"] = 0.225,
+		["posY"] = 0.224,
 	},
-	[2782] = {
+	[3013] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.207,
 		["posY"] = 0.278,
 	},
-	[2783] = {
+	[3014] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.281,
 		["posY"] = 0.202,
 	},
-	[2784] = {
+	[3015] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
-		["posX"] = 0.285,
-		["posY"] = 0.251,
+		["posX"] = 0.284,
+		["posY"] = 0.25,
 	},
-	[2785] = {
+	[3016] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.286,
+		["posY"] = 0.09,
+	},
+	[3017] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.287,
 		["posY"] = 0.374,
 	},
-	[2786] = {
+	[3018] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.317,
 		["posY"] = 0.053,
 	},
-	[2787] = {
+	[3019] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.329,
-		["posY"] = 0.21,
+		["posY"] = 0.211,
 	},
-	[2788] = {
+	[3020] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.341,
 		["posY"] = 0.089,
 	},
-	[2789] = {
+	[3021] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.359,
 		["posY"] = 0.248,
 	},
-	[2790] = {
+	[3022] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.36,
 		["posY"] = 0.068,
 	},
-	[2791] = {
+	[3023] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.369,
 		["posY"] = 0.301,
 	},
-	[2792] = {
+	[3024] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.372,
+		["posY"] = 0.132,
+	},
+	[3025] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.403,
 		["posY"] = 0.416,
 	},
-	[2793] = {
+	[3026] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.407,
 		["posY"] = 0.137,
 	},
-	[2794] = {
+	[3027] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.437,
+		["posY"] = 0.103,
+	},
+	[3028] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.53,
+		["posY"] = 0.779,
+	},
+	[3029] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.536,
+		["posY"] = 0.468,
+	},
+	[3030] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.643,
 		["posY"] = 0.732,
 	},
-	[2795] = {
+	[3031] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.649,
 		["posY"] = 0.79,
 	},
-	[2796] = {
+	[3032] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.674,
 		["posY"] = 0.479,
 	},
-	[2797] = {
+	[3033] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.731,
 		["posY"] = 0.836,
 	},
-	[2798] = {
+	[3034] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.767,
 		["posY"] = 0.633,
 	},
-	[2799] = {
+	[3035] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.777,
+		["posY"] = 0.349,
+	},
+	[3036] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.779,
 		["posY"] = 0.458,
 	},
-	[2800] = {
+	[3037] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.833,
 		["posY"] = 0.418,
 	},
-	[2801] = {
+	[3038] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1433,
+		["posX"] = 0.863,
+		["posY"] = 0.62,
+	},
+	[3039] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1433,
 		["posX"] = 0.875,
 		["posY"] = 0.511,
 	},
-	[2802] = {
+	[3040] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.172,
 		["posY"] = 0.528,
 	},
-	[2803] = {
+	[3041] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.192,
 		["posY"] = 0.334,
 	},
-	[2804] = {
+	[3042] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.207,
+		["posY"] = 0.393,
+	},
+	[3043] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.213,
+		["posY"] = 0.828,
+	},
+	[3044] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.215,
 		["posY"] = 0.878,
 	},
-	[2805] = {
+	[3045] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.238,
 		["posY"] = 0.295,
 	},
-	[2806] = {
+	[3046] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.246,
 		["posY"] = 0.365,
 	},
-	[2807] = {
+	[3047] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.247,
 		["posY"] = 0.927,
 	},
-	[2808] = {
+	[3048] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.263,
 		["posY"] = 0.303,
 	},
-	[2809] = {
+	[3049] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.271,
 		["posY"] = 0.186,
 	},
-	[2810] = {
+	[3050] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.284,
 		["posY"] = 0.325,
 	},
-	[2811] = {
+	[3051] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.302,
 		["posY"] = 0.44,
 	},
-	[2812] = {
+	[3052] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.307,
 		["posY"] = 0.325,
 	},
-	[2813] = {
+	[3053] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.308,
 		["posY"] = 0.181,
 	},
-	[2814] = {
+	[3054] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.31,
 		["posY"] = 0.441,
 	},
-	[2815] = {
+	[3055] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.313,
 		["posY"] = 0.618,
 	},
-	[2816] = {
+	[3056] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.314,
 		["posY"] = 0.457,
 	},
-	[2817] = {
+	[3057] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.319,
 		["posY"] = 0.227,
 	},
-	[2818] = {
+	[3058] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.327,
+		["posY"] = 0.43,
+	},
+	[3059] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.33,
 		["posY"] = 0.465,
 	},
-	[2819] = {
+	[3060] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.331,
 		["posY"] = 0.444,
 	},
-	[2820] = {
+	[3061] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.336,
 		["posY"] = 0.598,
 	},
-	[2821] = {
+	[3062] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.421,
 	},
-	[2822] = {
+	[3063] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.447,
 	},
-	[2823] = {
+	[3064] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.341,
 		["posY"] = 0.674,
 	},
-	[2824] = {
+	[3065] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.343,
 		["posY"] = 0.213,
 	},
-	[2825] = {
+	[3066] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.343,
 		["posY"] = 0.233,
 	},
-	[2826] = {
+	[3067] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.349,
 		["posY"] = 0.618,
 	},
-	[2827] = {
+	[3068] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.354,
 		["posY"] = 0.658,
 	},
-	[2828] = {
+	[3069] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.361,
 		["posY"] = 0.253,
 	},
-	[2829] = {
+	[3070] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.364,
-		["posY"] = 0.544,
+		["posX"] = 0.363,
+		["posY"] = 0.546,
 	},
-	[2830] = {
+	[3071] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.378,
 		["posY"] = 0.688,
 	},
-	[2831] = {
+	[3072] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.38,
 		["posY"] = 0.344,
 	},
-	[2832] = {
+	[3073] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.382,
 		["posY"] = 0.232,
 	},
-	[2833] = {
+	[3074] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.386,
+		["posX"] = 0.387,
 		["posY"] = 0.431,
 	},
-	[2834] = {
+	[3075] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.391,
 		["posY"] = 0.586,
 	},
-	[2835] = {
+	[3076] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.396,
 		["posY"] = 0.73,
 	},
-	[2836] = {
+	[3077] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.401,
-		["posY"] = 0.491,
+		["posY"] = 0.489,
 	},
-	[2837] = {
+	[3078] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.407,
 		["posY"] = 0.282,
 	},
-	[2838] = {
+	[3079] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.407,
 		["posY"] = 0.605,
 	},
-	[2839] = {
+	[3080] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.411,
 		["posY"] = 0.763,
 	},
-	[2840] = {
+	[3081] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.414,
 		["posY"] = 0.409,
 	},
-	[2841] = {
+	[3082] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.417,
 		["posY"] = 0.314,
 	},
-	[2842] = {
+	[3083] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.434,
 		["posY"] = 0.315,
 	},
-	[2843] = {
+	[3084] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.474,
 		["posY"] = 0.525,
 	},
-	[2844] = {
+	[3085] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.478,
 		["posY"] = 0.356,
 	},
-	[2845] = {
+	[3086] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.482,
-		["posY"] = 0.414,
+		["posY"] = 0.413,
 	},
-	[2846] = {
+	[3087] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.482,
 		["posY"] = 0.644,
 	},
-	[2847] = {
+	[3088] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.503,
-		["posY"] = 0.479,
+		["posX"] = 0.502,
+		["posY"] = 0.478,
 	},
-	[2848] = {
+	[3089] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.509,
-		["posY"] = 0.777,
+		["posX"] = 0.51,
+		["posY"] = 0.776,
 	},
-	[2849] = {
+	[3090] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.513,
+		["posX"] = 0.512,
 		["posY"] = 0.364,
 	},
-	[2850] = {
+	[3091] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.527,
 		["posY"] = 0.767,
 	},
-	[2851] = {
+	[3092] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.53,
 		["posY"] = 0.331,
 	},
-	[2852] = {
+	[3093] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.531,
 		["posY"] = 0.451,
 	},
-	[2853] = {
+	[3094] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.534,
 		["posY"] = 0.802,
 	},
-	[2854] = {
+	[3095] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.536,
 		["posY"] = 0.75,
 	},
-	[2855] = {
+	[3096] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.537,
 		["posY"] = 0.713,
 	},
-	[2856] = {
+	[3097] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.539,
-		["posY"] = 0.769,
+		["posY"] = 0.77,
 	},
-	[2857] = {
+	[3098] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.542,
 		["posY"] = 0.779,
 	},
-	[2858] = {
+	[3099] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.544,
 		["posY"] = 0.49,
 	},
-	[2859] = {
+	[3100] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.545,
 		["posY"] = 0.819,
 	},
-	[2860] = {
+	[3101] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.547,
+		["posY"] = 0.645,
+	},
+	[3102] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.548,
+		["posY"] = 0.789,
+	},
+	[3103] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.555,
 		["posY"] = 0.733,
 	},
-	[2861] = {
+	[3104] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.558,
 		["posY"] = 0.763,
 	},
-	[2862] = {
+	[3105] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.57,
 		["posY"] = 0.767,
 	},
-	[2863] = {
+	[3106] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.573,
 		["posY"] = 0.711,
 	},
-	[2864] = {
+	[3107] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.575,
 		["posY"] = 0.468,
 	},
-	[2865] = {
+	[3108] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.585,
 		["posY"] = 0.343,
 	},
-	[2866] = {
+	[3109] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.604,
 		["posY"] = 0.739,
 	},
-	[2867] = {
+	[3110] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.616,
-		["posY"] = 0.315,
+		["posY"] = 0.314,
 	},
-	[2868] = {
+	[3111] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.616,
 		["posY"] = 0.439,
 	},
-	[2869] = {
+	[3112] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.621,
 		["posY"] = 0.666,
 	},
-	[2870] = {
+	[3113] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.628,
 		["posY"] = 0.709,
 	},
-	[2871] = {
+	[3114] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.633,
 		["posY"] = 0.737,
 	},
-	[2872] = {
+	[3115] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.643,
 		["posY"] = 0.349,
 	},
-	[2873] = {
-		["type"] = "mining",
-		["object"] = 1733,
-		["mapID"] = 1417,
-		["posX"] = 0.652,
-		["posY"] = 0.753,
-	},
-	[2874] = {
+	[3116] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.653,
 		["posY"] = 0.656,
 	},
-	[2875] = {
+	[3117] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.653,
+		["posY"] = 0.753,
+	},
+	[3118] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.659,
 		["posY"] = 0.263,
 	},
-	[2876] = {
+	[3119] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.661,
 		["posY"] = 0.812,
 	},
-	[2877] = {
+	[3120] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.668,
 		["posY"] = 0.739,
 	},
-	[2878] = {
+	[3121] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.674,
 		["posY"] = 0.696,
 	},
-	[2879] = {
+	[3122] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.678,
+		["posY"] = 0.789,
+	},
+	[3123] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.692,
 		["posY"] = 0.277,
 	},
-	[2880] = {
+	[3124] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.696,
+		["posY"] = 0.801,
+	},
+	[3125] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.699,
-		["posY"] = 0.676,
+		["posY"] = 0.675,
 	},
-	[2881] = {
+	[3126] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.699,
 		["posY"] = 0.737,
 	},
-	[2882] = {
+	[3127] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.701,
 		["posY"] = 0.782,
 	},
-	[2883] = {
+	[3128] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
-		["posX"] = 0.703,
-		["posY"] = 0.575,
+		["posX"] = 0.702,
+		["posY"] = 0.576,
 	},
-	[2884] = {
+	[3129] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.706,
 		["posY"] = 0.525,
 	},
-	[2885] = {
+	[3130] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.307,
 	},
-	[2886] = {
+	[3131] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.494,
 	},
-	[2887] = {
+	[3132] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.713,
 	},
-	[2888] = {
+	[3133] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.714,
 		["posY"] = 0.667,
 	},
-	[2889] = {
+	[3134] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.723,
 		["posY"] = 0.519,
 	},
-	[2890] = {
+	[3135] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.723,
 		["posY"] = 0.6,
 	},
-	[2891] = {
+	[3136] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.726,
 		["posY"] = 0.669,
 	},
-	[2892] = {
+	[3137] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.733,
 		["posY"] = 0.591,
 	},
-	[2893] = {
+	[3138] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.737,
-		["posY"] = 0.638,
+		["posY"] = 0.636,
 	},
-	[2894] = {
+	[3139] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.741,
 		["posY"] = 0.476,
 	},
-	[2895] = {
+	[3140] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.767,
 		["posY"] = 0.326,
 	},
-	[2896] = {
+	[3141] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.771,
-		["posY"] = 0.288,
+		["posY"] = 0.287,
 	},
-	[2897] = {
+	[3142] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.774,
 		["posY"] = 0.436,
 	},
-	[2898] = {
+	[3143] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.79,
 		["posY"] = 0.365,
 	},
-	[2899] = {
+	[3144] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.797,
 		["posY"] = 0.43,
 	},
-	[2900] = {
+	[3145] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.823,
 		["posY"] = 0.358,
 	},
-	[2901] = {
+	[3146] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.826,
 		["posY"] = 0.332,
 	},
-	[2902] = {
+	[3147] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.839,
 		["posY"] = 0.289,
 	},
-	[2903] = {
+	[3148] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.842,
 		["posY"] = 0.276,
 	},
-	[2904] = {
+	[3149] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.845,
 		["posY"] = 0.307,
 	},
-	[2905] = {
+	[3150] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.845,
+		["posY"] = 0.341,
+	},
+	[3151] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.857,
 		["posY"] = 0.338,
 	},
-	[2906] = {
+	[3152] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.86,
+		["posY"] = 0.298,
+	},
+	[3153] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1417,
+		["posX"] = 0.861,
+		["posY"] = 0.311,
+	},
+	[3154] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1417,
 		["posX"] = 0.865,
 		["posY"] = 0.304,
 	},
-	[2907] = {
+	[3155] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1425,
+		["posX"] = 0.213,
+		["posY"] = 0.587,
+	},
+	[3156] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.243,
 		["posY"] = 0.507,
 	},
-	[2908] = {
+	[3157] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.246,
 		["posY"] = 0.683,
 	},
-	[2909] = {
+	[3158] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.281,
 		["posY"] = 0.588,
 	},
-	[2910] = {
+	[3159] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.356,
 		["posY"] = 0.422,
 	},
-	[2911] = {
+	[3160] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.433,
 		["posY"] = 0.695,
 	},
-	[2912] = {
+	[3161] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.525,
 		["posY"] = 0.598,
 	},
-	[2913] = {
+	[3162] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1425,
 		["posX"] = 0.628,
 		["posY"] = 0.592,
 	},
-	[2914] = {
+	[3163] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.766,
 	},
-	[2915] = {
+	[3164] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1427,
+		["posX"] = 0.646,
+		["posY"] = 0.491,
+	},
+	[3165] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.368,
 		["posY"] = 0.131,
 	},
-	[2916] = {
+	[3166] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.397,
 		["posY"] = 0.326,
 	},
-	[2917] = {
+	[3167] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1421,
+		["posX"] = 0.549,
+		["posY"] = 0.593,
+	},
+	[3168] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1421,
+		["posX"] = 0.593,
+		["posY"] = 0.755,
+	},
+	[3169] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.596,
 		["posY"] = 0.705,
 	},
-	[2918] = {
+	[3170] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.608,
 		["posY"] = 0.808,
 	},
-	[2919] = {
+	[3171] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.628,
 		["posY"] = 0.797,
 	},
-	[2920] = {
+	[3172] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.638,
 		["posY"] = 0.731,
 	},
-	[2921] = {
+	[3173] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1421,
 		["posX"] = 0.662,
 		["posY"] = 0.772,
 	},
-	[2922] = {
+	[3174] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.373,
 		["posY"] = 0.594,
 	},
-	[2923] = {
+	[3175] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.378,
 		["posY"] = 0.632,
 	},
-	[2924] = {
+	[3176] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.444,
 		["posY"] = 0.635,
 	},
-	[2925] = {
+	[3177] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1439,
+		["posX"] = 0.447,
+		["posY"] = 0.843,
+	},
+	[3178] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.45,
 		["posY"] = 0.856,
 	},
-	[2926] = {
+	[3179] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.462,
 		["posY"] = 0.273,
 	},
-	[2927] = {
+	[3180] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.471,
 		["posY"] = 0.203,
 	},
-	[2928] = {
+	[3181] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1439,
+		["posX"] = 0.478,
+		["posY"] = 0.328,
+	},
+	[3182] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.481,
 		["posY"] = 0.291,
 	},
-	[2929] = {
+	[3183] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1439,
+		["posX"] = 0.481,
+		["posY"] = 0.425,
+	},
+	[3184] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.491,
 		["posY"] = 0.379,
 	},
-	[2930] = {
+	[3185] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.506,
 		["posY"] = 0.217,
 	},
-	[2931] = {
+	[3186] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.507,
 		["posY"] = 0.262,
 	},
-	[2932] = {
+	[3187] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.513,
 		["posY"] = 0.277,
 	},
-	[2933] = {
+	[3188] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1439,
+		["posX"] = 0.514,
+		["posY"] = 0.302,
+	},
+	[3189] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.524,
 		["posY"] = 0.363,
 	},
-	[2934] = {
+	[3190] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.557,
 		["posY"] = 0.363,
 	},
-	[2935] = {
+	[3191] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.564,
 		["posY"] = 0.226,
 	},
-	[2936] = {
+	[3192] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.603,
 		["posY"] = 0.204,
 	},
-	[2937] = {
+	[3193] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1439,
 		["posX"] = 0.621,
 		["posY"] = 0.123,
 	},
-	[2938] = {
+	[3194] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
-		["posX"] = 0.325,
-		["posY"] = 0.656,
+		["posX"] = 0.324,
+		["posY"] = 0.658,
 	},
-	[2939] = {
+	[3195] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.326,
-		["posY"] = 0.271,
+		["posY"] = 0.27,
 	},
-	[2940] = {
+	[3196] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.363,
 		["posY"] = 0.283,
 	},
-	[2941] = {
+	[3197] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.376,
 		["posY"] = 0.26,
 	},
-	[2942] = {
+	[3198] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.389,
 		["posY"] = 0.646,
 	},
-	[2943] = {
+	[3199] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
-		["posX"] = 0.4,
+		["posX"] = 0.401,
 		["posY"] = 0.314,
 	},
-	[2944] = {
+	[3200] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.41,
 		["posY"] = 0.633,
 	},
-	[2945] = {
+	[3201] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.418,
 		["posY"] = 0.314,
 	},
-	[2946] = {
+	[3202] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1424,
+		["posX"] = 0.428,
+		["posY"] = 0.335,
+	},
+	[3203] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.434,
 		["posY"] = 0.347,
 	},
-	[2947] = {
+	[3204] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.438,
 		["posY"] = 0.301,
 	},
-	[2948] = {
+	[3205] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.44,
 		["posY"] = 0.315,
 	},
-	[2949] = {
+	[3206] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.444,
 		["posY"] = 0.275,
 	},
-	[2950] = {
+	[3207] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.448,
 		["posY"] = 0.338,
 	},
-	[2951] = {
+	[3208] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.451,
 		["posY"] = 0.305,
 	},
-	[2952] = {
+	[3209] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.451,
 		["posY"] = 0.621,
 	},
-	[2953] = {
+	[3210] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1424,
+		["posX"] = 0.46,
+		["posY"] = 0.259,
+	},
+	[3211] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1424,
+		["posX"] = 0.463,
+		["posY"] = 0.318,
+	},
+	[3212] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1424,
+		["posX"] = 0.488,
+		["posY"] = 0.265,
+	},
+	[3213] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.508,
 		["posY"] = 0.294,
 	},
-	[2954] = {
+	[3214] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.533,
 		["posY"] = 0.133,
 	},
-	[2955] = {
+	[3215] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.535,
 		["posY"] = 0.166,
 	},
-	[2956] = {
+	[3216] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.539,
 		["posY"] = 0.28,
 	},
-	[2957] = {
+	[3217] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.546,
-		["posY"] = 0.199,
+		["posY"] = 0.198,
 	},
-	[2958] = {
+	[3218] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.549,
 		["posY"] = 0.238,
 	},
-	[2959] = {
+	[3219] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.57,
 		["posY"] = 0.086,
 	},
-	[2960] = {
+	[3220] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.579,
 		["posY"] = 0.119,
 	},
-	[2961] = {
+	[3221] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.582,
 		["posY"] = 0.57,
 	},
-	[2962] = {
+	[3222] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.594,
 		["posY"] = 0.135,
 	},
-	[2963] = {
+	[3223] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.623,
 		["posY"] = 0.121,
 	},
-	[2964] = {
+	[3224] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.628,
 		["posY"] = 0.071,
 	},
-	[2965] = {
+	[3225] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.63,
 		["posY"] = 0.097,
 	},
-	[2966] = {
+	[3226] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.639,
 		["posY"] = 0.518,
 	},
-	[2967] = {
+	[3227] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.644,
 		["posY"] = 0.259,
 	},
-	[2968] = {
+	[3228] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.646,
 		["posY"] = 0.116,
 	},
-	[2969] = {
+	[3229] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.646,
 		["posY"] = 0.154,
 	},
-	[2970] = {
+	[3230] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.65,
 		["posY"] = 0.479,
 	},
-	[2971] = {
+	[3231] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.652,
 		["posY"] = 0.319,
 	},
-	[2972] = {
+	[3232] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.664,
 		["posY"] = 0.036,
 	},
-	[2973] = {
+	[3233] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.666,
 		["posY"] = 0.099,
 	},
-	[2974] = {
+	[3234] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.667,
 		["posY"] = 0.147,
 	},
-	[2975] = {
+	[3235] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.668,
 		["posY"] = 0.304,
 	},
-	[2976] = {
+	[3236] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.671,
 		["posY"] = 0.044,
 	},
-	[2977] = {
+	[3237] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.68,
 		["posY"] = 0.084,
 	},
-	[2978] = {
+	[3238] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.684,
 		["posY"] = 0.377,
 	},
-	[2979] = {
+	[3239] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.699,
 		["posY"] = 0.293,
 	},
-	[2980] = {
+	[3240] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.7,
 		["posY"] = 0.383,
 	},
-	[2981] = {
+	[3241] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1424,
+		["posX"] = 0.71,
+		["posY"] = 0.838,
+	},
+	[3242] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.712,
 		["posY"] = 0.572,
 	},
-	[2982] = {
+	[3243] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.718,
 		["posY"] = 0.162,
 	},
-	[2983] = {
+	[3244] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.72,
 		["posY"] = 0.33,
 	},
-	[2984] = {
+	[3245] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.724,
 		["posY"] = 0.181,
 	},
-	[2985] = {
+	[3246] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.727,
 		["posY"] = 0.712,
 	},
-	[2986] = {
+	[3247] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.758,
 		["posY"] = 0.229,
 	},
-	[2987] = {
+	[3248] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.789,
 		["posY"] = 0.281,
 	},
-	[2988] = {
+	[3249] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1424,
 		["posX"] = 0.8,
 		["posY"] = 0.309,
 	},
-	[2989] = {
+	[3250] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.082,
+		["posY"] = 0.155,
+	},
+	[3251] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.234,
+		["posY"] = 0.339,
+	},
+	[3252] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.246,
+		["posY"] = 0.424,
+	},
+	[3253] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.262,
+		["posY"] = 0.54,
+	},
+	[3254] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.287,
+		["posY"] = 0.346,
+	},
+	[3255] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1440,
+		["posX"] = 0.303,
+		["posY"] = 0.298,
+	},
+	[3256] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.331,
 		["posY"] = 0.359,
 	},
-	[2990] = {
+	[3257] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.382,
 		["posY"] = 0.308,
 	},
-	[2991] = {
+	[3258] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.419,
 		["posY"] = 0.332,
 	},
-	[2992] = {
+	[3259] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.485,
 		["posY"] = 0.626,
 	},
-	[2993] = {
+	[3260] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.507,
 		["posY"] = 0.443,
 	},
-	[2994] = {
+	[3261] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.546,
 		["posY"] = 0.563,
 	},
-	[2995] = {
+	[3262] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.55,
 		["posY"] = 0.614,
 	},
-	[2996] = {
+	[3263] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.713,
 		["posY"] = 0.652,
 	},
-	[2997] = {
+	[3264] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1440,
 		["posX"] = 0.741,
 		["posY"] = 0.514,
 	},
-	[2998] = {
+	[3265] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.509,
 		["posY"] = 0.588,
 	},
-	[2999] = {
+	[3266] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.518,
 		["posY"] = 0.57,
 	},
-	[3000] = {
+	[3267] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.52,
 		["posY"] = 0.581,
 	},
-	[3001] = {
+	[3268] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.526,
 		["posY"] = 0.577,
 	},
-	[3002] = {
+	[3269] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.528,
 		["posY"] = 0.593,
 	},
-	[3003] = {
+	[3270] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.531,
 		["posY"] = 0.562,
 	},
-	[3004] = {
+	[3271] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.557,
 	},
-	[3005] = {
+	[3272] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.552,
 		["posY"] = 0.56,
 	},
-	[3006] = {
+	[3273] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1444,
 		["posX"] = 0.613,
 		["posY"] = 0.58,
 	},
-	[3007] = {
+	[3274] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1444,
+		["posX"] = 0.803,
+		["posY"] = 0.473,
+	},
+	[3275] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.104,
 		["posY"] = 0.411,
 	},
-	[3008] = {
+	[3276] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.112,
-		["posY"] = 0.215,
+		["posY"] = 0.216,
 	},
-	[3009] = {
+	[3277] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.117,
 		["posY"] = 0.381,
 	},
-	[3010] = {
+	[3278] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.126,
+		["posY"] = 0.253,
+	},
+	[3279] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.145,
 		["posY"] = 0.255,
 	},
-	[3011] = {
+	[3280] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.147,
 		["posY"] = 0.343,
 	},
-	[3012] = {
+	[3281] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.166,
 		["posY"] = 0.41,
 	},
-	[3013] = {
+	[3282] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.176,
 		["posY"] = 0.384,
 	},
-	[3014] = {
+	[3283] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.18,
 		["posY"] = 0.328,
 	},
-	[3015] = {
+	[3284] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.182,
+		["posY"] = 0.229,
+	},
+	[3285] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.196,
 		["posY"] = 0.26,
 	},
-	[3016] = {
+	[3286] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.214,
 		["posY"] = 0.26,
 	},
-	[3017] = {
+	[3287] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.231,
 		["posY"] = 0.389,
 	},
-	[3018] = {
+	[3288] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.238,
+		["posY"] = 0.225,
+	},
+	[3289] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.238,
+		["posY"] = 0.447,
+	},
+	[3290] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.246,
 		["posY"] = 0.29,
 	},
-	[3019] = {
+	[3291] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
-		["posX"] = 0.264,
-		["posY"] = 0.397,
+		["posX"] = 0.263,
+		["posY"] = 0.399,
 	},
-	[3020] = {
+	[3292] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.273,
 		["posY"] = 0.49,
 	},
-	[3021] = {
+	[3293] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.274,
 		["posY"] = 0.419,
 	},
-	[3022] = {
+	[3294] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.288,
+		["posY"] = 0.491,
+	},
+	[3295] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.313,
 		["posY"] = 0.506,
 	},
-	[3023] = {
+	[3296] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.321,
+		["posY"] = 0.464,
+	},
+	[3297] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.33,
 		["posY"] = 0.513,
 	},
-	[3024] = {
+	[3298] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.343,
 		["posY"] = 0.449,
 	},
-	[3025] = {
+	[3299] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.346,
 		["posY"] = 0.26,
 	},
-	[3026] = {
+	[3300] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.352,
 		["posY"] = 0.508,
 	},
-	[3027] = {
+	[3301] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.358,
 		["posY"] = 0.335,
 	},
-	[3028] = {
+	[3302] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.363,
 		["posY"] = 0.307,
 	},
-	[3029] = {
+	[3303] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.369,
 		["posY"] = 0.544,
 	},
-	[3030] = {
+	[3304] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.372,
 		["posY"] = 0.304,
 	},
-	[3031] = {
+	[3305] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.379,
 		["posY"] = 0.512,
 	},
-	[3032] = {
+	[3306] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.382,
 		["posY"] = 0.552,
 	},
-	[3033] = {
+	[3307] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.385,
 		["posY"] = 0.519,
 	},
-	[3034] = {
+	[3308] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.386,
 		["posY"] = 0.327,
 	},
-	[3035] = {
+	[3309] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.392,
 		["posY"] = 0.338,
 	},
-	[3036] = {
+	[3310] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.403,
 		["posY"] = 0.388,
 	},
-	[3037] = {
+	[3311] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.405,
+		["posY"] = 0.41,
+	},
+	[3312] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.411,
 		["posY"] = 0.548,
 	},
-	[3038] = {
+	[3313] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.412,
 		["posY"] = 0.418,
 	},
-	[3039] = {
+	[3314] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.418,
 		["posY"] = 0.368,
 	},
-	[3040] = {
+	[3315] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.423,
 		["posY"] = 0.36,
 	},
-	[3041] = {
+	[3316] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.424,
 		["posY"] = 0.335,
 	},
-	[3042] = {
+	[3317] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.424,
 		["posY"] = 0.586,
 	},
-	[3043] = {
+	[3318] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
-		["posX"] = 0.44,
+		["posX"] = 0.441,
 		["posY"] = 0.394,
 	},
-	[3044] = {
+	[3319] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.463,
 		["posY"] = 0.41,
 	},
-	[3045] = {
+	[3320] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.473,
 		["posY"] = 0.423,
 	},
-	[3046] = {
+	[3321] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.481,
 		["posY"] = 0.588,
 	},
-	[3047] = {
+	[3322] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.483,
+		["posY"] = 0.402,
+	},
+	[3323] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.506,
 		["posY"] = 0.463,
 	},
-	[3048] = {
+	[3324] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.519,
-		["posY"] = 0.428,
+		["posY"] = 0.427,
 	},
-	[3049] = {
+	[3325] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.537,
 		["posY"] = 0.462,
 	},
-	[3050] = {
+	[3326] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.541,
 		["posY"] = 0.445,
 	},
-	[3051] = {
+	[3327] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.552,
 		["posY"] = 0.494,
 	},
-	[3052] = {
+	[3328] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.554,
 		["posY"] = 0.511,
 	},
-	[3053] = {
+	[3329] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.561,
 		["posY"] = 0.479,
 	},
-	[3054] = {
+	[3330] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.574,
 		["posY"] = 0.574,
 	},
-	[3055] = {
+	[3331] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.583,
 		["posY"] = 0.519,
 	},
-	[3056] = {
+	[3332] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.591,
 		["posY"] = 0.494,
 	},
-	[3057] = {
+	[3333] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.601,
 		["posY"] = 0.469,
 	},
-	[3058] = {
+	[3334] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.62,
+		["posY"] = 0.479,
+	},
+	[3335] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.628,
 		["posY"] = 0.457,
 	},
-	[3059] = {
+	[3336] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.628,
 		["posY"] = 0.607,
 	},
-	[3060] = {
+	[3337] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.63,
 		["posY"] = 0.533,
 	},
-	[3061] = {
+	[3338] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
-		["posX"] = 0.631,
+		["posX"] = 0.632,
 		["posY"] = 0.491,
 	},
-	[3062] = {
+	[3339] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.638,
 		["posY"] = 0.59,
 	},
-	[3063] = {
+	[3340] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.647,
 		["posY"] = 0.499,
 	},
-	[3064] = {
+	[3341] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
-		["posX"] = 0.66,
-		["posY"] = 0.492,
+		["posX"] = 0.659,
+		["posY"] = 0.517,
 	},
-	[3065] = {
+	[3342] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.661,
+		["posY"] = 0.493,
+	},
+	[3343] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.669,
+		["posY"] = 0.606,
+	},
+	[3344] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.671,
 		["posY"] = 0.632,
 	},
-	[3066] = {
+	[3345] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.7,
 		["posY"] = 0.921,
 	},
-	[3067] = {
+	[3346] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.763,
 		["posY"] = 0.938,
 	},
-	[3068] = {
+	[3347] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.772,
+		["posY"] = 0.871,
+	},
+	[3348] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.797,
 		["posY"] = 0.503,
 	},
-	[3069] = {
+	[3349] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.801,
 		["posY"] = 0.635,
 	},
-	[3070] = {
+	[3350] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.808,
 		["posY"] = 0.902,
 	},
-	[3071] = {
+	[3351] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.861,
 		["posY"] = 0.564,
 	},
-	[3072] = {
+	[3352] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.865,
 		["posY"] = 0.844,
 	},
-	[3073] = {
+	[3353] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.885,
-		["posY"] = 0.725,
+		["posY"] = 0.726,
 	},
-	[3074] = {
+	[3354] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.886,
 		["posY"] = 0.807,
 	},
-	[3075] = {
+	[3355] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.889,
 		["posY"] = 0.624,
 	},
-	[3076] = {
+	[3356] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1441,
 		["posX"] = 0.892,
 		["posY"] = 0.681,
 	},
-	[3077] = {
+	[3357] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1441,
+		["posX"] = 0.894,
+		["posY"] = 0.769,
+	},
+	[3358] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.321,
 		["posY"] = 0.716,
 	},
-	[3078] = {
+	[3359] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.355,
+		["posY"] = 0.565,
+	},
+	[3360] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.362,
 		["posY"] = 0.798,
 	},
-	[3079] = {
+	[3361] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.387,
+		["posY"] = 0.683,
+	},
+	[3362] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.395,
 		["posY"] = 0.747,
 	},
-	[3080] = {
+	[3363] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.401,
 		["posY"] = 0.679,
 	},
-	[3081] = {
+	[3364] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.423,
 		["posY"] = 0.657,
 	},
-	[3082] = {
+	[3365] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.456,
 		["posY"] = 0.775,
 	},
-	[3083] = {
+	[3366] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.459,
 		["posY"] = 0.731,
 	},
-	[3084] = {
+	[3367] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.46,
 		["posY"] = 0.576,
 	},
-	[3085] = {
+	[3368] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.472,
 		["posY"] = 0.525,
 	},
-	[3086] = {
+	[3369] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.498,
+		["posY"] = 0.83,
+	},
+	[3370] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.504,
+		["posY"] = 0.657,
+	},
+	[3371] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.528,
 		["posY"] = 0.052,
 	},
-	[3087] = {
+	[3372] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
-		["posX"] = 0.54,
-		["posY"] = 0.877,
+		["posX"] = 0.541,
+		["posY"] = 0.876,
 	},
-	[3088] = {
+	[3373] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.544,
 		["posY"] = 0.207,
 	},
-	[3089] = {
+	[3374] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.563,
 		["posY"] = 0.08,
 	},
-	[3090] = {
+	[3375] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.588,
+		["posY"] = 0.657,
+	},
+	[3376] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.609,
 		["posY"] = 0.822,
 	},
-	[3091] = {
+	[3377] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.638,
+		["posY"] = 0.146,
+	},
+	[3378] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.663,
+		["posY"] = 0.47,
+	},
+	[3379] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.665,
 		["posY"] = 0.832,
 	},
-	[3092] = {
+	[3380] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.69,
+		["posY"] = 0.632,
+	},
+	[3381] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.706,
 		["posY"] = 0.581,
 	},
-	[3093] = {
+	[3382] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1443,
 		["posX"] = 0.741,
 		["posY"] = 0.37,
 	},
-	[3094] = {
+	[3383] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1443,
+		["posX"] = 0.751,
+		["posY"] = 0.47,
+	},
+	[3384] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.275,
 		["posY"] = 0.714,
 	},
-	[3095] = {
+	[3385] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.279,
 		["posY"] = 0.687,
 	},
-	[3096] = {
+	[3386] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.286,
 		["posY"] = 0.621,
 	},
-	[3097] = {
+	[3387] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.298,
 		["posY"] = 0.647,
 	},
-	[3098] = {
+	[3388] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.318,
 		["posY"] = 0.751,
 	},
-	[3099] = {
+	[3389] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.326,
 		["posY"] = 0.621,
 	},
-	[3100] = {
+	[3390] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.327,
+		["posY"] = 0.192,
+	},
+	[3391] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.348,
 		["posY"] = 0.652,
 	},
-	[3101] = {
+	[3392] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.353,
 		["posY"] = 0.752,
 	},
-	[3102] = {
+	[3393] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.356,
 		["posY"] = 0.208,
 	},
-	[3103] = {
+	[3394] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.358,
 		["posY"] = 0.521,
 	},
-	[3104] = {
+	[3395] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.375,
 		["posY"] = 0.698,
 	},
-	[3105] = {
+	[3396] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.381,
 		["posY"] = 0.532,
 	},
-	[3106] = {
+	[3397] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.384,
 		["posY"] = 0.21,
 	},
-	[3107] = {
+	[3398] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.402,
 		["posY"] = 0.177,
 	},
-	[3108] = {
+	[3399] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.411,
 		["posY"] = 0.136,
 	},
-	[3109] = {
+	[3400] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.418,
+		["posY"] = 0.069,
+	},
+	[3401] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.443,
 		["posY"] = 0.151,
 	},
-	[3110] = {
+	[3402] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.443,
 		["posY"] = 0.349,
 	},
-	[3111] = {
+	[3403] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.448,
 		["posY"] = 0.186,
 	},
-	[3112] = {
+	[3404] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.454,
-		["posY"] = 0.251,
+		["posY"] = 0.253,
 	},
-	[3113] = {
+	[3405] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.469,
 		["posY"] = 0.213,
 	},
-	[3114] = {
+	[3406] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.492,
 		["posY"] = 0.355,
 	},
-	[3115] = {
+	[3407] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.504,
+		["posY"] = 0.386,
+	},
+	[3408] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.516,
 		["posY"] = 0.331,
 	},
-	[3116] = {
+	[3409] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.529,
 		["posY"] = 0.359,
 	},
-	[3117] = {
+	[3410] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.538,
+		["posY"] = 0.392,
+	},
+	[3411] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.542,
 		["posY"] = 0.419,
 	},
-	[3118] = {
+	[3412] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.589,
 		["posY"] = 0.908,
 	},
-	[3119] = {
+	[3413] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.601,
+		["posY"] = 0.901,
+	},
+	[3414] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.602,
+		["posY"] = 0.917,
+	},
+	[3415] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.614,
 		["posY"] = 0.909,
 	},
-	[3120] = {
+	[3416] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.616,
 		["posY"] = 0.935,
 	},
-	[3121] = {
+	[3417] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.666,
+		["posY"] = 0.596,
+	},
+	[3418] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.678,
 		["posY"] = 0.396,
 	},
-	[3122] = {
+	[3419] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.709,
 		["posY"] = 0.858,
 	},
-	[3123] = {
+	[3420] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.724,
 		["posY"] = 0.61,
 	},
-	[3124] = {
-		["type"] = "mining",
-		["object"] = 1733,
-		["mapID"] = 1442,
-		["posX"] = 0.726,
-		["posY"] = 0.63,
-	},
-	[3125] = {
+	[3421] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.726,
 		["posY"] = 0.873,
 	},
-	[3126] = {
+	[3422] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1442,
+		["posX"] = 0.73,
+		["posY"] = 0.626,
+	},
+	[3423] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.732,
 		["posY"] = 0.598,
 	},
-	[3127] = {
+	[3424] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.739,
 		["posY"] = 0.607,
 	},
-	[3128] = {
+	[3425] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.753,
 		["posY"] = 0.941,
 	},
-	[3129] = {
+	[3426] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.761,
 		["posY"] = 0.486,
 	},
-	[3130] = {
+	[3427] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1442,
 		["posX"] = 0.802,
 		["posY"] = 0.846,
 	},
-	[3131] = {
+	[3428] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1446,
+		["posX"] = 0.495,
+		["posY"] = 0.668,
+	},
+	[3429] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.534,
 		["posY"] = 0.348,
 	},
-	[3132] = {
+	[3430] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.55,
 		["posY"] = 0.264,
 	},
-	[3133] = {
+	[3431] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.562,
 		["posY"] = 0.373,
 	},
-	[3134] = {
+	[3432] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1446,
+		["posX"] = 0.573,
+		["posY"] = 0.385,
+	},
+	[3433] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.583,
 		["posY"] = 0.3,
 	},
-	[3135] = {
+	[3434] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1446,
+		["posX"] = 0.59,
+		["posY"] = 0.325,
+	},
+	[3435] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.591,
 		["posY"] = 0.482,
 	},
-	[3136] = {
+	[3436] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.357,
 	},
-	[3137] = {
+	[3437] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.618,
 		["posY"] = 0.328,
 	},
-	[3138] = {
+	[3438] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.618,
 		["posY"] = 0.412,
 	},
-	[3139] = {
+	[3439] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1446,
+		["posX"] = 0.627,
+		["posY"] = 0.4,
+	},
+	[3440] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.653,
 		["posY"] = 0.358,
 	},
-	[3140] = {
+	[3441] = {
+		["type"] = "mining",
+		["object"] = 1733,
+		["mapID"] = 1446,
+		["posX"] = 0.665,
+		["posY"] = 0.423,
+	},
+	[3442] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.693,
 		["posY"] = 0.435,
 	},
-	[3141] = {
+	[3443] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.705,
-		["posY"] = 0.455,
+		["posY"] = 0.454,
 	},
-	[3142] = {
+	[3444] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.721,
 		["posY"] = 0.488,
 	},
-	[3143] = {
+	[3445] = {
 		["type"] = "mining",
 		["object"] = 1733,
 		["mapID"] = 1446,
 		["posX"] = 0.737,
 		["posY"] = 0.46,
 	},
-	[3144] = {
+	[3446] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.039,
+		["posY"] = 0.806,
+	},
+	[3447] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.062,
 		["posY"] = 0.773,
 	},
-	[3145] = {
+	[3448] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.068,
 		["posY"] = 0.954,
 	},
-	[3146] = {
+	[3449] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.074,
+		["posY"] = 0.733,
+	},
+	[3450] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.075,
+		["posY"] = 0.872,
+	},
+	[3451] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.091,
 		["posY"] = 0.901,
 	},
-	[3147] = {
+	[3452] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.092,
 		["posY"] = 0.654,
 	},
-	[3148] = {
+	[3453] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.101,
 		["posY"] = 0.896,
 	},
-	[3149] = {
+	[3454] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.101,
-		["posY"] = 0.926,
+		["posY"] = 0.927,
 	},
-	[3150] = {
+	[3455] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.108,
+		["posY"] = 0.554,
+	},
+	[3456] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.117,
 		["posY"] = 0.779,
 	},
-	[3151] = {
+	[3457] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.122,
 		["posY"] = 0.35,
 	},
-	[3152] = {
+	[3458] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.13,
 		["posY"] = 0.59,
 	},
-	[3153] = {
+	[3459] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.143,
 		["posY"] = 0.396,
 	},
-	[3154] = {
+	[3460] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.148,
 		["posY"] = 0.487,
 	},
-	[3155] = {
+	[3461] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.149,
+		["posY"] = 0.344,
+	},
+	[3462] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.149,
 		["posY"] = 0.545,
 	},
-	[3156] = {
+	[3463] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.15,
 		["posY"] = 0.818,
 	},
-	[3157] = {
+	[3464] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.151,
 		["posY"] = 0.859,
 	},
-	[3158] = {
+	[3465] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.151,
 		["posY"] = 0.922,
 	},
-	[3159] = {
+	[3466] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.152,
-		["posY"] = 0.379,
+		["posY"] = 0.378,
 	},
-	[3160] = {
+	[3467] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.154,
 		["posY"] = 0.354,
 	},
-	[3161] = {
+	[3468] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.158,
 		["posY"] = 0.328,
 	},
-	[3162] = {
+	[3469] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
-		["posX"] = 0.163,
-		["posY"] = 0.879,
+		["posX"] = 0.162,
+		["posY"] = 0.883,
 	},
-	[3163] = {
+	[3470] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.164,
 		["posY"] = 0.345,
 	},
-	[3164] = {
+	[3471] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.181,
 		["posY"] = 0.702,
 	},
-	[3165] = {
+	[3472] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.185,
+		["posY"] = 0.747,
+	},
+	[3473] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.202,
 		["posY"] = 0.612,
 	},
-	[3166] = {
+	[3474] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.202,
 		["posY"] = 0.644,
 	},
-	[3167] = {
+	[3475] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.208,
-		["posY"] = 0.822,
+		["posY"] = 0.823,
 	},
-	[3168] = {
+	[3476] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.225,
 		["posY"] = 0.731,
 	},
-	[3169] = {
+	[3477] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.237,
 		["posY"] = 0.611,
 	},
-	[3170] = {
+	[3478] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.238,
 		["posY"] = 0.664,
 	},
-	[3171] = {
+	[3479] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.248,
 		["posY"] = 0.714,
 	},
-	[3172] = {
+	[3480] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.253,
 		["posY"] = 0.78,
 	},
-	[3173] = {
+	[3481] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.268,
+		["posY"] = 0.671,
+	},
+	[3482] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.288,
 		["posY"] = 0.607,
 	},
-	[3174] = {
+	[3483] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.317,
 		["posY"] = 0.728,
 	},
-	[3175] = {
+	[3484] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.32,
 		["posY"] = 0.764,
 	},
-	[3176] = {
+	[3485] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.323,
 		["posY"] = 0.44,
 	},
-	[3177] = {
+	[3486] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.343,
 		["posY"] = 0.518,
 	},
-	[3178] = {
+	[3487] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.354,
 		["posY"] = 0.39,
 	},
-	[3179] = {
+	[3488] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.357,
 		["posY"] = 0.543,
 	},
-	[3180] = {
+	[3489] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.367,
 		["posY"] = 0.754,
 	},
-	[3181] = {
+	[3490] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.408,
 		["posY"] = 0.513,
 	},
-	[3182] = {
+	[3491] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.414,
 		["posY"] = 0.653,
 	},
-	[3183] = {
+	[3492] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.42,
-		["posY"] = 0.789,
+		["posY"] = 0.788,
 	},
-	[3184] = {
+	[3493] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
 		["posY"] = 0.778,
 	},
-	[3185] = {
+	[3494] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
 		["posY"] = 0.822,
 	},
-	[3186] = {
+	[3495] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.426,
 		["posY"] = 0.593,
 	},
-	[3187] = {
+	[3496] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.435,
 		["posY"] = 0.742,
 	},
-	[3188] = {
+	[3497] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.443,
 		["posY"] = 0.494,
 	},
-	[3189] = {
+	[3498] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.452,
 		["posY"] = 0.764,
 	},
-	[3190] = {
+	[3499] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.453,
 		["posY"] = 0.847,
 	},
-	[3191] = {
+	[3500] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.459,
 		["posY"] = 0.545,
 	},
-	[3192] = {
+	[3501] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.493,
 		["posY"] = 0.583,
 	},
-	[3193] = {
+	[3502] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.509,
+		["posY"] = 0.775,
+	},
+	[3503] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.514,
 		["posY"] = 0.529,
 	},
-	[3194] = {
+	[3504] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.522,
+		["posY"] = 0.462,
+	},
+	[3505] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.523,
 		["posY"] = 0.359,
 	},
-	[3195] = {
+	[3506] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.524,
 		["posY"] = 0.168,
 	},
-	[3196] = {
+	[3507] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.541,
 		["posY"] = 0.134,
 	},
-	[3197] = {
+	[3508] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.559,
 		["posY"] = 0.82,
 	},
-	[3198] = {
+	[3509] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.561,
 		["posY"] = 0.209,
 	},
-	[3199] = {
+	[3510] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.562,
 		["posY"] = 0.876,
 	},
-	[3200] = {
+	[3511] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.569,
 		["posY"] = 0.759,
 	},
-	[3201] = {
+	[3512] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
-		["posX"] = 0.595,
-		["posY"] = 0.249,
+		["posX"] = 0.588,
+		["posY"] = 0.459,
 	},
-	[3202] = {
+	[3513] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.594,
+		["posY"] = 0.248,
+	},
+	[3514] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.613,
+		["posY"] = 0.641,
+	},
+	[3515] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.63,
 		["posY"] = 0.561,
 	},
-	[3203] = {
+	[3516] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.634,
+		["posY"] = 0.635,
+	},
+	[3517] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.64,
+		["posY"] = 0.687,
+	},
+	[3518] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.646,
 		["posY"] = 0.721,
 	},
-	[3204] = {
+	[3519] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.653,
 		["posY"] = 0.43,
 	},
-	[3205] = {
+	[3520] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.688,
+		["posY"] = 0.511,
+	},
+	[3521] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.718,
 		["posY"] = 0.671,
 	},
-	[3206] = {
+	[3522] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.723,
+		["posY"] = 0.347,
+	},
+	[3523] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.728,
 		["posY"] = 0.611,
 	},
-	[3207] = {
+	[3524] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.761,
 		["posY"] = 0.661,
 	},
-	[3208] = {
+	[3525] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.78,
-		["posY"] = 0.486,
+		["posY"] = 0.484,
 	},
-	[3209] = {
+	[3526] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.782,
 		["posY"] = 0.439,
 	},
-	[3210] = {
+	[3527] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.785,
 		["posY"] = 0.46,
 	},
-	[3211] = {
+	[3528] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.788,
 		["posY"] = 0.556,
 	},
-	[3212] = {
+	[3529] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.797,
 		["posY"] = 0.332,
 	},
-	[3213] = {
+	[3530] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.806,
 		["posY"] = 0.657,
 	},
-	[3214] = {
+	[3531] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.826,
 		["posY"] = 0.448,
 	},
-	[3215] = {
+	[3532] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.829,
 		["posY"] = 0.599,
 	},
-	[3216] = {
+	[3533] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.836,
 		["posY"] = 0.398,
 	},
-	[3217] = {
-		["type"] = "mining",
-		["object"] = 1734,
-		["mapID"] = 1418,
-		["posX"] = 0.838,
-		["posY"] = 0.331,
-	},
-	[3218] = {
+	[3534] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1418,
 		["posX"] = 0.838,
 		["posY"] = 0.548,
 	},
-	[3219] = {
+	[3535] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1418,
+		["posX"] = 0.84,
+		["posY"] = 0.332,
+	},
+	[3536] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.435,
 		["posY"] = 0.306,
 	},
-	[3220] = {
+	[3537] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.451,
 		["posY"] = 0.509,
 	},
-	[3221] = {
+	[3538] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.472,
 		["posY"] = 0.167,
 	},
-	[3222] = {
+	[3539] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.489,
 		["posY"] = 0.35,
 	},
-	[3223] = {
+	[3540] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.498,
 		["posY"] = 0.274,
 	},
-	[3224] = {
+	[3541] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.5,
 		["posY"] = 0.437,
 	},
-	[3225] = {
+	[3542] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1419,
+		["posX"] = 0.559,
+		["posY"] = 0.444,
+	},
+	[3543] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1419,
+		["posX"] = 0.575,
+		["posY"] = 0.523,
+	},
+	[3544] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.584,
 		["posY"] = 0.404,
 	},
-	[3226] = {
+	[3545] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.585,
 		["posY"] = 0.329,
 	},
-	[3227] = {
+	[3546] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.634,
 		["posY"] = 0.25,
 	},
-	[3228] = {
+	[3547] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1419,
 		["posX"] = 0.647,
 		["posY"] = 0.412,
 	},
-	[3229] = {
+	[3548] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1435,
 		["posX"] = 0.059,
 		["posY"] = 0.513,
 	},
-	[3230] = {
+	[3549] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1435,
+		["posX"] = 0.183,
+		["posY"] = 0.365,
+	},
+	[3550] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1435,
+		["posX"] = 0.236,
+		["posY"] = 0.66,
+	},
+	[3551] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1435,
 		["posX"] = 0.578,
 		["posY"] = 0.655,
 	},
-	[3231] = {
+	[3552] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1435,
 		["posX"] = 0.61,
 		["posY"] = 0.191,
 	},
-	[3232] = {
+	[3553] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1435,
+		["posX"] = 0.646,
+		["posY"] = 0.733,
+	},
+	[3554] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1435,
+		["posX"] = 0.761,
+		["posY"] = 0.891,
+	},
+	[3555] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1431,
 		["posX"] = 0.639,
 		["posY"] = 0.525,
 	},
-	[3233] = {
+	[3556] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1431,
+		["posX"] = 0.741,
+		["posY"] = 0.801,
+	},
+	[3557] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1437,
+		["posX"] = 0.418,
+		["posY"] = 0.462,
+	},
+	[3558] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1445,
 		["posX"] = 0.314,
 		["posY"] = 0.217,
 	},
-	[3234] = {
+	[3559] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1445,
 		["posX"] = 0.368,
 		["posY"] = 0.687,
 	},
-	[3235] = {
+	[3560] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1445,
 		["posX"] = 0.371,
 		["posY"] = 0.671,
 	},
-	[3236] = {
+	[3561] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1445,
+		["posX"] = 0.376,
+		["posY"] = 0.678,
+	},
+	[3562] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.142,
 		["posY"] = 0.744,
 	},
-	[3237] = {
+	[3563] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.154,
 		["posY"] = 0.682,
 	},
-	[3238] = {
+	[3564] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.155,
 		["posY"] = 0.713,
 	},
-	[3239] = {
+	[3565] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.194,
 		["posY"] = 0.61,
 	},
-	[3240] = {
+	[3566] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.216,
 		["posY"] = 0.617,
 	},
-	[3241] = {
+	[3567] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.308,
 		["posY"] = 0.456,
 	},
-	[3242] = {
+	[3568] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.326,
 		["posY"] = 0.417,
 	},
-	[3243] = {
+	[3569] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.344,
 		["posY"] = 0.396,
 	},
-	[3244] = {
+	[3570] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.366,
 		["posY"] = 0.364,
 	},
-	[3245] = {
+	[3571] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.378,
+		["posY"] = 0.858,
+	},
+	[3572] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.421,
 		["posY"] = 0.404,
 	},
-	[3246] = {
+	[3573] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.433,
 		["posY"] = 0.177,
 	},
-	[3247] = {
+	[3574] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.435,
 		["posY"] = 0.531,
 	},
-	[3248] = {
+	[3575] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.439,
+		["posY"] = 0.748,
+	},
+	[3576] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.451,
 		["posY"] = 0.454,
 	},
-	[3249] = {
+	[3577] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.451,
 		["posY"] = 0.629,
 	},
-	[3250] = {
+	[3578] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.494,
+		["posY"] = 0.597,
+	},
+	[3579] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.519,
 		["posY"] = 0.204,
 	},
-	[3251] = {
+	[3580] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.545,
 		["posY"] = 0.492,
 	},
-	[3252] = {
+	[3581] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.548,
 		["posY"] = 0.77,
 	},
-	[3253] = {
+	[3582] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.571,
 		["posY"] = 0.31,
 	},
-	[3254] = {
+	[3583] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.598,
 		["posY"] = 0.287,
 	},
-	[3255] = {
+	[3584] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.611,
 		["posY"] = 0.893,
 	},
-	[3256] = {
+	[3585] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.637,
 		["posY"] = 0.194,
 	},
-	[3257] = {
+	[3586] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.645,
 		["posY"] = 0.144,
 	},
-	[3258] = {
+	[3587] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.703,
 		["posY"] = 0.188,
 	},
-	[3259] = {
+	[3588] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.705,
-		["posY"] = 0.223,
+		["posY"] = 0.222,
 	},
-	[3260] = {
+	[3589] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.77,
 		["posY"] = 0.201,
 	},
-	[3261] = {
+	[3590] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.785,
 		["posY"] = 0.231,
 	},
-	[3262] = {
+	[3591] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.793,
+		["posY"] = 0.313,
+	},
+	[3592] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.82,
+		["posY"] = 0.156,
+	},
+	[3593] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1447,
+		["posX"] = 0.838,
+		["posY"] = 0.221,
+	},
+	[3594] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1447,
 		["posX"] = 0.874,
 		["posY"] = 0.264,
 	},
-	[3263] = {
+	[3595] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1422,
+		["posX"] = 0.298,
+		["posY"] = 0.657,
+	},
+	[3596] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.306,
 		["posY"] = 0.714,
 	},
-	[3264] = {
+	[3597] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.329,
 		["posY"] = 0.746,
 	},
-	[3265] = {
+	[3598] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.33,
 		["posY"] = 0.673,
 	},
-	[3266] = {
+	[3599] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.331,
 		["posY"] = 0.587,
 	},
-	[3267] = {
+	[3600] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.342,
 		["posY"] = 0.517,
 	},
-	[3268] = {
+	[3601] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1422,
+		["posX"] = 0.348,
+		["posY"] = 0.796,
+	},
+	[3602] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.381,
 		["posY"] = 0.675,
 	},
-	[3269] = {
+	[3603] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.385,
 		["posY"] = 0.828,
 	},
-	[3270] = {
+	[3604] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.399,
 		["posY"] = 0.733,
 	},
-	[3271] = {
+	[3605] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1422,
+		["posX"] = 0.402,
+		["posY"] = 0.488,
+	},
+	[3606] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.411,
 		["posY"] = 0.653,
 	},
-	[3272] = {
+	[3607] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.425,
 		["posY"] = 0.47,
 	},
-	[3273] = {
+	[3608] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.441,
 		["posY"] = 0.791,
 	},
-	[3274] = {
+	[3609] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.48,
 		["posY"] = 0.798,
 	},
-	[3275] = {
+	[3610] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.49,
 		["posY"] = 0.762,
 	},
-	[3276] = {
+	[3611] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.492,
 		["posY"] = 0.638,
 	},
-	[3277] = {
+	[3612] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.498,
 		["posY"] = 0.691,
 	},
-	[3278] = {
+	[3613] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1422,
+		["posX"] = 0.511,
+		["posY"] = 0.704,
+	},
+	[3614] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.511,
 		["posY"] = 0.743,
 	},
-	[3279] = {
+	[3615] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.531,
-		["posY"] = 0.769,
+		["posY"] = 0.768,
 	},
-	[3280] = {
+	[3616] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.534,
 		["posY"] = 0.711,
 	},
-	[3281] = {
+	[3617] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.552,
 		["posY"] = 0.804,
 	},
-	[3282] = {
+	[3618] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1422,
 		["posX"] = 0.556,
 		["posY"] = 0.678,
 	},
-	[3283] = {
+	[3619] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.253,
 		["posY"] = 0.618,
 	},
-	[3284] = {
+	[3620] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.256,
 		["posY"] = 0.603,
 	},
-	[3285] = {
+	[3621] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.258,
 		["posY"] = 0.154,
 	},
-	[3286] = {
+	[3622] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.263,
 		["posY"] = 0.18,
 	},
-	[3287] = {
+	[3623] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.265,
+		["posY"] = 0.626,
+	},
+	[3624] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.273,
+		["posY"] = 0.079,
+	},
+	[3625] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.273,
 		["posY"] = 0.817,
 	},
-	[3288] = {
+	[3626] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.274,
 		["posY"] = 0.136,
 	},
-	[3289] = {
+	[3627] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.276,
 		["posY"] = 0.63,
 	},
-	[3290] = {
+	[3628] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.277,
 		["posY"] = 0.179,
 	},
-	[3291] = {
+	[3629] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.277,
 		["posY"] = 0.613,
 	},
-	[3292] = {
+	[3630] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.277,
+		["posY"] = 0.641,
+	},
+	[3631] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.288,
 		["posY"] = 0.07,
 	},
-	[3293] = {
+	[3632] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.288,
+		["posY"] = 0.409,
+	},
+	[3633] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.293,
+		["posY"] = 0.153,
+	},
+	[3634] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.294,
 		["posY"] = 0.804,
 	},
-	[3294] = {
+	[3635] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.298,
 		["posY"] = 0.12,
 	},
-	[3295] = {
+	[3636] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.299,
 		["posY"] = 0.523,
 	},
-	[3296] = {
+	[3637] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.3,
 		["posY"] = 0.177,
 	},
-	[3297] = {
+	[3638] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.306,
+		["posY"] = 0.396,
+	},
+	[3639] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.138,
 	},
-	[3298] = {
+	[3640] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.653,
 	},
-	[3299] = {
+	[3641] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.314,
 		["posY"] = 0.096,
 	},
-	[3300] = {
+	[3642] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.32,
 		["posY"] = 0.176,
 	},
-	[3301] = {
+	[3643] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.321,
 		["posY"] = 0.124,
 	},
-	[3302] = {
+	[3644] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.321,
 		["posY"] = 0.656,
 	},
-	[3303] = {
+	[3645] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.322,
 		["posY"] = 0.458,
 	},
-	[3304] = {
+	[3646] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.324,
 		["posY"] = 0.75,
 	},
-	[3305] = {
+	[3647] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.331,
+		["posY"] = 0.426,
+	},
+	[3648] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.336,
 		["posY"] = 0.418,
 	},
-	[3306] = {
+	[3649] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.336,
-		["posY"] = 0.619,
+		["posY"] = 0.62,
 	},
-	[3307] = {
+	[3650] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.343,
 		["posY"] = 0.141,
 	},
-	[3308] = {
+	[3651] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.343,
 		["posY"] = 0.665,
 	},
-	[3309] = {
+	[3652] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.347,
 		["posY"] = 0.726,
 	},
-	[3310] = {
+	[3653] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.348,
 		["posY"] = 0.617,
 	},
-	[3311] = {
+	[3654] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.348,
 		["posY"] = 0.641,
 	},
-	[3312] = {
+	[3655] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.357,
 		["posY"] = 0.589,
 	},
-	[3313] = {
+	[3656] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.364,
 		["posY"] = 0.687,
 	},
-	[3314] = {
+	[3657] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
-		["posX"] = 0.377,
-		["posY"] = 0.354,
+		["posX"] = 0.365,
+		["posY"] = 0.538,
 	},
-	[3315] = {
+	[3658] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.367,
+		["posY"] = 0.619,
+	},
+	[3659] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.376,
+		["posY"] = 0.355,
+	},
+	[3660] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.38,
 		["posY"] = 0.567,
 	},
-	[3316] = {
+	[3661] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.385,
 		["posY"] = 0.611,
 	},
-	[3317] = {
+	[3662] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.393,
 		["posY"] = 0.36,
 	},
-	[3318] = {
+	[3663] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.404,
 		["posY"] = 0.438,
 	},
-	[3319] = {
+	[3664] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.407,
 		["posY"] = 0.572,
 	},
-	[3320] = {
+	[3665] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.413,
 		["posY"] = 0.424,
 	},
-	[3321] = {
+	[3666] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.414,
 		["posY"] = 0.438,
 	},
-	[3322] = {
+	[3667] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.415,
 		["posY"] = 0.143,
 	},
-	[3323] = {
+	[3668] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.416,
 		["posY"] = 0.414,
 	},
-	[3324] = {
+	[3669] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.419,
 		["posY"] = 0.369,
 	},
-	[3325] = {
+	[3670] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.428,
 		["posY"] = 0.1,
 	},
-	[3326] = {
+	[3671] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.434,
 		["posY"] = 0.137,
 	},
-	[3327] = {
+	[3672] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.446,
 		["posY"] = 0.26,
 	},
-	[3328] = {
+	[3673] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.45,
+		["posY"] = 0.386,
+	},
+	[3674] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.462,
 		["posY"] = 0.171,
 	},
-	[3329] = {
+	[3675] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.47,
-		["posY"] = 0.225,
+		["posY"] = 0.226,
 	},
-	[3330] = {
+	[3676] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.472,
 		["posY"] = 0.203,
 	},
-	[3331] = {
+	[3677] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.479,
 		["posY"] = 0.285,
 	},
-	[3332] = {
+	[3678] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.482,
 		["posY"] = 0.105,
 	},
-	[3333] = {
+	[3679] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.486,
 		["posY"] = 0.127,
 	},
-	[3334] = {
+	[3680] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.489,
 		["posY"] = 0.064,
 	},
-	[3335] = {
+	[3681] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.496,
 		["posY"] = 0.056,
 	},
-	[3336] = {
+	[3682] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1434,
 		["posX"] = 0.497,
 		["posY"] = 0.357,
 	},
-	[3337] = {
+	[3683] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1434,
+		["posX"] = 0.503,
+		["posY"] = 0.272,
+	},
+	[3684] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.278,
+		["posY"] = 0.562,
+	},
+	[3685] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.296,
+		["posY"] = 0.661,
+	},
+	[3686] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.323,
+		["posY"] = 0.652,
+	},
+	[3687] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.326,
 		["posY"] = 0.614,
 	},
-	[3338] = {
+	[3688] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.33,
 		["posY"] = 0.398,
 	},
-	[3339] = {
+	[3689] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.336,
 		["posY"] = 0.552,
 	},
-	[3340] = {
+	[3690] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.358,
 		["posY"] = 0.821,
 	},
-	[3341] = {
+	[3691] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.367,
+		["posY"] = 0.672,
+	},
+	[3692] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.371,
 		["posY"] = 0.682,
 	},
-	[3342] = {
+	[3693] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.373,
 		["posY"] = 0.659,
 	},
-	[3343] = {
+	[3694] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.376,
+		["posY"] = 0.611,
+	},
+	[3695] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.382,
 		["posY"] = 0.672,
 	},
-	[3344] = {
+	[3696] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.403,
 		["posY"] = 0.306,
 	},
-	[3345] = {
+	[3697] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.41,
 		["posY"] = 0.15,
 	},
-	[3346] = {
+	[3698] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.411,
 		["posY"] = 0.727,
 	},
-	[3347] = {
+	[3699] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.415,
+		["posY"] = 0.523,
+	},
+	[3700] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.42,
 		["posY"] = 0.248,
 	},
-	[3348] = {
+	[3701] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.442,
 		["posY"] = 0.383,
 	},
-	[3349] = {
+	[3702] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.455,
 		["posY"] = 0.286,
 	},
-	[3350] = {
+	[3703] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.46,
 		["posY"] = 0.419,
 	},
-	[3351] = {
+	[3704] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.461,
 		["posY"] = 0.66,
 	},
-	[3352] = {
+	[3705] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.473,
+		["posY"] = 0.322,
+	},
+	[3706] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.476,
+		["posY"] = 0.344,
+	},
+	[3707] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.479,
-		["posY"] = 0.322,
+		["posY"] = 0.327,
 	},
-	[3353] = {
+	[3708] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.486,
+		["posY"] = 0.328,
+	},
+	[3709] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.49,
+		["posY"] = 0.447,
+	},
+	[3710] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.49,
 		["posY"] = 0.456,
 	},
-	[3354] = {
+	[3711] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.494,
 		["posY"] = 0.32,
 	},
-	[3355] = {
+	[3712] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.512,
+		["posY"] = 0.42,
+	},
+	[3713] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.512,
+		["posY"] = 0.457,
+	},
+	[3714] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.512,
+		["posY"] = 0.484,
+	},
+	[3715] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.515,
 		["posY"] = 0.508,
 	},
-	[3356] = {
+	[3716] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.52,
 		["posY"] = 0.582,
 	},
-	[3357] = {
+	[3717] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.527,
+		["posY"] = 0.369,
+	},
+	[3718] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.528,
+		["posY"] = 0.464,
+	},
+	[3719] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.532,
 		["posY"] = 0.493,
 	},
-	[3358] = {
+	[3720] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.536,
+		["posY"] = 0.504,
+	},
+	[3721] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.541,
 		["posY"] = 0.46,
 	},
-	[3359] = {
+	[3722] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.546,
 		["posY"] = 0.492,
 	},
-	[3360] = {
+	[3723] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1416,
 		["posX"] = 0.644,
 		["posY"] = 0.35,
 	},
-	[3361] = {
+	[3724] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1416,
+		["posX"] = 0.671,
+		["posY"] = 0.518,
+	},
+	[3725] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.157,
 		["posY"] = 0.677,
 	},
-	[3362] = {
+	[3726] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.192,
+		["posY"] = 0.334,
+	},
+	[3727] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.224,
 		["posY"] = 0.744,
 	},
-	[3363] = {
+	[3728] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.226,
+		["posY"] = 0.898,
+	},
+	[3729] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.247,
 		["posY"] = 0.365,
 	},
-	[3364] = {
+	[3730] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.263,
 		["posY"] = 0.304,
 	},
-	[3365] = {
+	[3731] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.269,
 		["posY"] = 0.878,
 	},
-	[3366] = {
+	[3732] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.271,
 		["posY"] = 0.186,
 	},
-	[3367] = {
+	[3733] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.302,
 		["posY"] = 0.441,
 	},
-	[3368] = {
+	[3734] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.307,
 		["posY"] = 0.326,
 	},
-	[3369] = {
+	[3735] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.308,
 		["posY"] = 0.181,
 	},
-	[3370] = {
+	[3736] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.314,
 		["posY"] = 0.457,
 	},
-	[3371] = {
+	[3737] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.318,
+		["posY"] = 0.702,
+	},
+	[3738] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.326,
 		["posY"] = 0.453,
 	},
-	[3372] = {
+	[3739] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.328,
 		["posY"] = 0.429,
 	},
-	[3373] = {
+	[3740] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.33,
 		["posY"] = 0.465,
 	},
-	[3374] = {
+	[3741] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.331,
+		["posY"] = 0.444,
+	},
+	[3742] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.421,
 	},
-	[3375] = {
+	[3743] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.447,
 	},
-	[3376] = {
+	[3744] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.341,
-		["posY"] = 0.674,
+		["posY"] = 0.673,
 	},
-	[3377] = {
+	[3745] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.344,
+		["posY"] = 0.214,
+	},
+	[3746] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.349,
 		["posY"] = 0.619,
 	},
-	[3378] = {
+	[3747] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.375,
 		["posY"] = 0.634,
 	},
-	[3379] = {
+	[3748] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.381,
 		["posY"] = 0.345,
 	},
-	[3380] = {
+	[3749] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.382,
 		["posY"] = 0.232,
 	},
-	[3381] = {
+	[3750] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.386,
 		["posY"] = 0.431,
 	},
-	[3382] = {
+	[3751] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.408,
 		["posY"] = 0.282,
 	},
-	[3383] = {
+	[3752] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.411,
 		["posY"] = 0.763,
 	},
-	[3384] = {
+	[3753] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.417,
 		["posY"] = 0.314,
 	},
-	[3385] = {
+	[3754] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.465,
 		["posY"] = 0.712,
 	},
-	[3386] = {
+	[3755] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.478,
 		["posY"] = 0.356,
 	},
-	[3387] = {
+	[3756] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.503,
 		["posY"] = 0.48,
 	},
-	[3388] = {
+	[3757] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.503,
+		["posY"] = 0.805,
+	},
+	[3758] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.51,
 		["posY"] = 0.776,
 	},
-	[3389] = {
+	[3759] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.527,
 		["posY"] = 0.767,
 	},
-	[3390] = {
+	[3760] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.534,
 		["posY"] = 0.802,
 	},
-	[3391] = {
+	[3761] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.535,
+		["posY"] = 0.75,
+	},
+	[3762] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.539,
 		["posY"] = 0.77,
 	},
-	[3392] = {
+	[3763] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.542,
 		["posY"] = 0.779,
 	},
-	[3393] = {
+	[3764] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
-		["posX"] = 0.547,
-		["posY"] = 0.645,
+		["posX"] = 0.544,
+		["posY"] = 0.49,
 	},
-	[3394] = {
+	[3765] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.548,
+		["posY"] = 0.647,
+	},
+	[3766] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.548,
 		["posY"] = 0.789,
 	},
-	[3395] = {
+	[3767] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.55,
 		["posY"] = 0.816,
 	},
-	[3396] = {
+	[3768] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.555,
+		["posY"] = 0.734,
+	},
+	[3769] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.57,
 		["posY"] = 0.766,
 	},
-	[3397] = {
+	[3770] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.573,
+		["posY"] = 0.712,
+	},
+	[3771] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.576,
 		["posY"] = 0.469,
 	},
-	[3398] = {
+	[3772] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.604,
 		["posY"] = 0.739,
 	},
-	[3399] = {
+	[3773] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.616,
 		["posY"] = 0.315,
 	},
-	[3400] = {
+	[3774] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
-		["posX"] = 0.617,
+		["posX"] = 0.616,
 		["posY"] = 0.439,
 	},
-	[3401] = {
+	[3775] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.633,
+		["posY"] = 0.74,
+	},
+	[3776] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.643,
+		["posY"] = 0.349,
+	},
+	[3777] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.653,
 		["posY"] = 0.656,
 	},
-	[3402] = {
+	[3778] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.653,
 		["posY"] = 0.753,
 	},
-	[3403] = {
+	[3779] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.659,
 		["posY"] = 0.263,
 	},
-	[3404] = {
+	[3780] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.661,
 		["posY"] = 0.812,
 	},
-	[3405] = {
+	[3781] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.674,
 		["posY"] = 0.696,
 	},
-	[3406] = {
+	[3782] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.789,
 	},
-	[3407] = {
+	[3783] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.818,
 	},
-	[3408] = {
+	[3784] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.682,
 		["posY"] = 0.751,
 	},
-	[3409] = {
+	[3785] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
-		["posX"] = 0.693,
+		["posX"] = 0.692,
 		["posY"] = 0.277,
 	},
-	[3410] = {
+	[3786] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.696,
 		["posY"] = 0.825,
 	},
-	[3411] = {
+	[3787] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.699,
 		["posY"] = 0.737,
 	},
-	[3412] = {
+	[3788] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.701,
+		["posY"] = 0.782,
+	},
+	[3789] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.702,
 		["posY"] = 0.576,
 	},
-	[3413] = {
+	[3790] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.706,
 		["posY"] = 0.525,
 	},
-	[3414] = {
+	[3791] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.707,
+		["posY"] = 0.495,
+	},
+	[3792] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.307,
 	},
-	[3415] = {
-		["type"] = "mining",
-		["object"] = 1734,
-		["mapID"] = 1417,
-		["posX"] = 0.708,
-		["posY"] = 0.494,
-	},
-	[3416] = {
+	[3793] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.713,
 	},
-	[3417] = {
+	[3794] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.723,
 		["posY"] = 0.519,
 	},
-	[3418] = {
+	[3795] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.726,
 		["posY"] = 0.669,
 	},
-	[3419] = {
+	[3796] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.733,
 		["posY"] = 0.591,
 	},
-	[3420] = {
+	[3797] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.737,
 		["posY"] = 0.637,
 	},
-	[3421] = {
+	[3798] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.741,
 		["posY"] = 0.476,
 	},
-	[3422] = {
+	[3799] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.767,
 		["posY"] = 0.326,
 	},
-	[3423] = {
+	[3800] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.771,
-		["posY"] = 0.288,
+		["posY"] = 0.287,
 	},
-	[3424] = {
+	[3801] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.775,
 		["posY"] = 0.436,
 	},
-	[3425] = {
+	[3802] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.791,
 		["posY"] = 0.364,
 	},
-	[3426] = {
+	[3803] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.797,
 		["posY"] = 0.43,
 	},
-	[3427] = {
+	[3804] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.823,
 		["posY"] = 0.358,
 	},
-	[3428] = {
+	[3805] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.827,
+		["posY"] = 0.332,
+	},
+	[3806] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.835,
 		["posY"] = 0.316,
 	},
-	[3429] = {
+	[3807] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.839,
 		["posY"] = 0.289,
 	},
-	[3430] = {
+	[3808] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.839,
 		["posY"] = 0.354,
 	},
-	[3431] = {
+	[3809] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.842,
 		["posY"] = 0.276,
 	},
-	[3432] = {
+	[3810] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.845,
 		["posY"] = 0.307,
 	},
-	[3433] = {
+	[3811] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.845,
 		["posY"] = 0.341,
 	},
-	[3434] = {
+	[3812] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.847,
 		["posY"] = 0.288,
 	},
-	[3435] = {
+	[3813] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.852,
 		["posY"] = 0.302,
 	},
-	[3436] = {
+	[3814] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.857,
 		["posY"] = 0.338,
 	},
-	[3437] = {
+	[3815] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.86,
+		["posY"] = 0.298,
+	},
+	[3816] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1417,
+		["posX"] = 0.861,
+		["posY"] = 0.311,
+	},
+	[3817] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.861,
 		["posY"] = 0.318,
 	},
-	[3438] = {
+	[3818] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.865,
 		["posY"] = 0.304,
 	},
-	[3439] = {
+	[3819] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1417,
 		["posX"] = 0.874,
 		["posY"] = 0.309,
 	},
-	[3440] = {
+	[3820] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.256,
+		["posY"] = 0.699,
+	},
+	[3821] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.454,
+		["posY"] = 0.536,
+	},
+	[3822] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.522,
+		["posY"] = 0.532,
+	},
+	[3823] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.551,
 		["posY"] = 0.332,
 	},
-	[3441] = {
+	[3824] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.558,
 		["posY"] = 0.676,
 	},
-	[3442] = {
+	[3825] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.566,
 		["posY"] = 0.592,
 	},
-	[3443] = {
+	[3826] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.588,
 		["posY"] = 0.453,
 	},
-	[3444] = {
+	[3827] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.622,
 	},
-	[3445] = {
+	[3828] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.632,
 	},
-	[3446] = {
+	[3829] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.714,
 		["posY"] = 0.392,
 	},
-	[3447] = {
+	[3830] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.762,
 		["posY"] = 0.632,
 	},
-	[3448] = {
+	[3831] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.764,
+		["posY"] = 0.441,
+	},
+	[3832] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.767,
+		["posY"] = 0.475,
+	},
+	[3833] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.777,
 		["posY"] = 0.422,
 	},
-	[3449] = {
+	[3834] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.791,
 		["posY"] = 0.252,
 	},
-	[3450] = {
+	[3835] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.792,
+		["posY"] = 0.441,
+	},
+	[3836] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.801,
 		["posY"] = 0.355,
 	},
-	[3451] = {
+	[3837] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.441,
 	},
-	[3452] = {
+	[3838] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.817,
 		["posY"] = 0.466,
 	},
-	[3453] = {
+	[3839] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1428,
+		["posX"] = 0.847,
+		["posY"] = 0.488,
+	},
+	[3840] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.858,
 		["posY"] = 0.612,
 	},
-	[3454] = {
+	[3841] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.86,
 		["posY"] = 0.37,
 	},
-	[3455] = {
+	[3842] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.872,
 		["posY"] = 0.258,
 	},
-	[3456] = {
+	[3843] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.368,
 	},
-	[3457] = {
+	[3844] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.519,
 	},
-	[3458] = {
+	[3845] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.213,
+		["posY"] = 0.587,
+	},
+	[3846] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.233,
 		["posY"] = 0.599,
 	},
-	[3459] = {
+	[3847] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.243,
 		["posY"] = 0.506,
 	},
-	[3460] = {
+	[3848] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.245,
 		["posY"] = 0.683,
 	},
-	[3461] = {
+	[3849] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.256,
+		["posY"] = 0.632,
+	},
+	[3850] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.256,
 		["posY"] = 0.658,
 	},
-	[3462] = {
+	[3851] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.273,
 		["posY"] = 0.691,
 	},
-	[3463] = {
+	[3852] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.281,
 		["posY"] = 0.588,
 	},
-	[3464] = {
+	[3853] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.3,
 		["posY"] = 0.682,
 	},
-	[3465] = {
+	[3854] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.301,
 		["posY"] = 0.551,
 	},
-	[3466] = {
+	[3855] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.308,
 		["posY"] = 0.746,
 	},
-	[3467] = {
+	[3856] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.311,
 		["posY"] = 0.609,
 	},
-	[3468] = {
+	[3857] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.313,
+		["posY"] = 0.593,
+	},
+	[3858] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.314,
 		["posY"] = 0.425,
 	},
-	[3469] = {
+	[3859] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.334,
 		["posY"] = 0.761,
 	},
-	[3470] = {
+	[3860] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.335,
 		["posY"] = 0.411,
 	},
-	[3471] = {
+	[3861] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.335,
 		["posY"] = 0.658,
 	},
-	[3472] = {
+	[3862] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.34,
 		["posY"] = 0.641,
 	},
-	[3473] = {
+	[3863] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.355,
+		["posY"] = 0.75,
+	},
+	[3864] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.356,
 		["posY"] = 0.422,
 	},
-	[3474] = {
+	[3865] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.367,
 		["posY"] = 0.667,
 	},
-	[3475] = {
+	[3866] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.374,
 		["posY"] = 0.683,
 	},
-	[3476] = {
+	[3867] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.39,
 		["posY"] = 0.499,
 	},
-	[3477] = {
+	[3868] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.406,
 		["posY"] = 0.66,
 	},
-	[3478] = {
+	[3869] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.412,
-		["posY"] = 0.592,
+		["posY"] = 0.593,
 	},
-	[3479] = {
+	[3870] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.425,
 		["posY"] = 0.416,
 	},
-	[3480] = {
+	[3871] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.433,
 		["posY"] = 0.695,
 	},
-	[3481] = {
+	[3872] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.45,
 		["posY"] = 0.395,
 	},
-	[3482] = {
+	[3873] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.46,
 		["posY"] = 0.69,
 	},
-	[3483] = {
+	[3874] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.464,
 		["posY"] = 0.378,
 	},
-	[3484] = {
+	[3875] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.474,
 		["posY"] = 0.706,
 	},
-	[3485] = {
+	[3876] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.486,
+		["posY"] = 0.421,
+	},
+	[3877] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.498,
 		["posY"] = 0.652,
 	},
-	[3486] = {
+	[3878] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.5,
 		["posY"] = 0.481,
 	},
-	[3487] = {
+	[3879] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.605,
 	},
-	[3488] = {
+	[3880] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.692,
 	},
-	[3489] = {
+	[3881] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.518,
 		["posY"] = 0.652,
 	},
-	[3490] = {
+	[3882] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.525,
 		["posY"] = 0.597,
 	},
-	[3491] = {
+	[3883] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.542,
 		["posY"] = 0.543,
 	},
-	[3492] = {
+	[3884] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.56,
 		["posY"] = 0.543,
 	},
-	[3493] = {
+	[3885] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.567,
 		["posY"] = 0.424,
 	},
-	[3494] = {
+	[3886] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.571,
 		["posY"] = 0.735,
 	},
-	[3495] = {
+	[3887] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.572,
+		["posY"] = 0.414,
+	},
+	[3888] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.573,
-		["posY"] = 0.446,
+		["posY"] = 0.445,
 	},
-	[3496] = {
+	[3889] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.576,
 		["posY"] = 0.407,
 	},
-	[3497] = {
+	[3890] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.581,
+		["posY"] = 0.494,
+	},
+	[3891] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.595,
-		["posY"] = 0.436,
+		["posY"] = 0.435,
 	},
-	[3498] = {
+	[3892] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.601,
 		["posY"] = 0.41,
 	},
-	[3499] = {
+	[3893] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.607,
+		["posY"] = 0.343,
+	},
+	[3894] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.607,
 		["posY"] = 0.579,
 	},
-	[3500] = {
+	[3895] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.628,
 		["posY"] = 0.591,
 	},
-	[3501] = {
+	[3896] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.634,
+		["posY"] = 0.437,
+	},
+	[3897] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.637,
+		["posY"] = 0.168,
+	},
+	[3898] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.642,
 		["posY"] = 0.367,
 	},
-	[3502] = {
+	[3899] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.651,
 		["posY"] = 0.523,
 	},
-	[3503] = {
+	[3900] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.671,
 		["posY"] = 0.621,
 	},
-	[3504] = {
+	[3901] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.679,
 		["posY"] = 0.381,
 	},
-	[3505] = {
+	[3902] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.68,
 		["posY"] = 0.556,
 	},
-	[3506] = {
+	[3903] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.683,
 		["posY"] = 0.198,
 	},
-	[3507] = {
+	[3904] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.687,
 		["posY"] = 0.345,
 	},
-	[3508] = {
+	[3905] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.693,
 		["posY"] = 0.644,
 	},
-	[3509] = {
+	[3906] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.723,
 		["posY"] = 0.523,
 	},
-	[3510] = {
+	[3907] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.726,
 		["posY"] = 0.665,
 	},
-	[3511] = {
+	[3908] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1425,
+		["posX"] = 0.773,
+		["posY"] = 0.596,
+	},
+	[3909] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.787,
 		["posY"] = 0.481,
 	},
-	[3512] = {
+	[3910] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1425,
 		["posX"] = 0.797,
 		["posY"] = 0.635,
 	},
-	[3513] = {
+	[3911] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1427,
+		["posX"] = 0.206,
+		["posY"] = 0.743,
+	},
+	[3912] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1427,
+		["posX"] = 0.252,
+		["posY"] = 0.379,
+	},
+	[3913] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.298,
 		["posY"] = 0.492,
 	},
-	[3514] = {
+	[3914] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.303,
 		["posY"] = 0.66,
 	},
-	[3515] = {
+	[3915] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.312,
 		["posY"] = 0.389,
 	},
-	[3516] = {
+	[3916] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.368,
 		["posY"] = 0.779,
 	},
-	[3517] = {
+	[3917] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.376,
 		["posY"] = 0.708,
 	},
-	[3518] = {
+	[3918] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1427,
+		["posX"] = 0.379,
+		["posY"] = 0.457,
+	},
+	[3919] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.392,
-		["posY"] = 0.249,
+		["posY"] = 0.25,
 	},
-	[3519] = {
+	[3920] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.425,
 		["posY"] = 0.374,
 	},
-	[3520] = {
+	[3921] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.436,
 		["posY"] = 0.658,
 	},
-	[3521] = {
+	[3922] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.468,
 		["posY"] = 0.441,
 	},
-	[3522] = {
+	[3923] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.487,
 		["posY"] = 0.516,
 	},
-	[3523] = {
+	[3924] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.504,
 		["posY"] = 0.363,
 	},
-	[3524] = {
+	[3925] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1427,
+		["posX"] = 0.522,
+		["posY"] = 0.495,
+	},
+	[3926] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.551,
 		["posY"] = 0.514,
 	},
-	[3525] = {
+	[3927] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.304,
 	},
-	[3526] = {
+	[3928] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.766,
 	},
-	[3527] = {
+	[3929] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.413,
 	},
-	[3528] = {
+	[3930] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.816,
 	},
-	[3529] = {
+	[3931] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.576,
 		["posY"] = 0.684,
 	},
-	[3530] = {
+	[3932] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.608,
 		["posY"] = 0.259,
 	},
-	[3531] = {
+	[3933] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.611,
 		["posY"] = 0.426,
 	},
-	[3532] = {
+	[3934] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.599,
 	},
-	[3533] = {
+	[3935] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.633,
 	},
-	[3534] = {
+	[3936] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.643,
 		["posY"] = 0.823,
 	},
-	[3535] = {
+	[3937] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.647,
 		["posY"] = 0.493,
 	},
-	[3536] = {
+	[3938] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.661,
 		["posY"] = 0.379,
 	},
-	[3537] = {
+	[3939] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.678,
 		["posY"] = 0.324,
 	},
-	[3538] = {
+	[3940] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.681,
-		["posY"] = 0.754,
+		["posY"] = 0.751,
 	},
-	[3539] = {
+	[3941] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1427,
 		["posX"] = 0.732,
 		["posY"] = 0.731,
 	},
-	[3540] = {
+	[3942] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.138,
 		["posY"] = 0.779,
 	},
-	[3541] = {
+	[3943] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.146,
 		["posY"] = 0.61,
 	},
-	[3542] = {
+	[3944] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.207,
 		["posY"] = 0.671,
 	},
-	[3543] = {
+	[3945] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.221,
-		["posY"] = 0.615,
+		["posY"] = 0.616,
 	},
-	[3544] = {
+	[3946] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.246,
 		["posY"] = 0.735,
 	},
-	[3545] = {
+	[3947] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.303,
-		["posY"] = 0.755,
+		["posY"] = 0.756,
 	},
-	[3546] = {
+	[3948] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.358,
 		["posY"] = 0.831,
 	},
-	[3547] = {
+	[3949] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.377,
 		["posY"] = 0.737,
 	},
-	[3548] = {
+	[3950] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1423,
+		["posX"] = 0.415,
+		["posY"] = 0.754,
+	},
+	[3951] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1423,
 		["posX"] = 0.439,
 		["posY"] = 0.88,
 	},
-	[3549] = {
+	[3952] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1424,
+		["posX"] = 0.376,
+		["posY"] = 0.26,
+	},
+	[3953] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.395,
 		["posY"] = 0.266,
 	},
-	[3550] = {
+	[3954] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.418,
 		["posY"] = 0.313,
 	},
-	[3551] = {
+	[3955] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.428,
 		["posY"] = 0.336,
 	},
-	[3552] = {
+	[3956] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.432,
 		["posY"] = 0.277,
 	},
-	[3553] = {
+	[3957] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1424,
+		["posX"] = 0.438,
+		["posY"] = 0.301,
+	},
+	[3958] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1424,
+		["posX"] = 0.44,
+		["posY"] = 0.314,
+	},
+	[3959] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.444,
 		["posY"] = 0.275,
 	},
-	[3554] = {
+	[3960] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.451,
 		["posY"] = 0.306,
 	},
-	[3555] = {
+	[3961] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.459,
 		["posY"] = 0.258,
 	},
-	[3556] = {
+	[3962] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.463,
 		["posY"] = 0.317,
 	},
-	[3557] = {
+	[3963] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1424,
 		["posX"] = 0.664,
 		["posY"] = 0.036,
 	},
-	[3558] = {
+	[3964] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1424,
+		["posX"] = 0.886,
+		["posY"] = 0.31,
+	},
+	[3965] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1440,
 		["posX"] = 0.531,
 		["posY"] = 0.469,
 	},
-	[3559] = {
+	[3966] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.26,
+		["posY"] = 0.688,
+	},
+	[3967] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.262,
 		["posY"] = 0.679,
 	},
-	[3560] = {
+	[3968] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.265,
 		["posY"] = 0.694,
 	},
-	[3561] = {
+	[3969] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.277,
+		["posY"] = 0.693,
+	},
+	[3970] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.442,
 		["posY"] = 0.256,
 	},
-	[3562] = {
+	[3971] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.509,
 		["posY"] = 0.587,
 	},
-	[3563] = {
+	[3972] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.518,
 		["posY"] = 0.57,
 	},
-	[3564] = {
+	[3973] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.522,
+		["posY"] = 0.615,
+	},
+	[3974] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.523,
-		["posY"] = 0.599,
+		["posY"] = 0.598,
 	},
-	[3565] = {
+	[3975] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.526,
+		["posY"] = 0.577,
+	},
+	[3976] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.528,
 		["posY"] = 0.593,
 	},
-	[3566] = {
+	[3977] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.531,
-		["posY"] = 0.563,
+		["posY"] = 0.562,
 	},
-	[3567] = {
+	[3978] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.532,
+		["posY"] = 0.602,
+	},
+	[3979] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.533,
 		["posY"] = 0.319,
 	},
-	[3568] = {
+	[3980] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.54,
 		["posY"] = 0.646,
 	},
-	[3569] = {
+	[3981] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.557,
 	},
-	[3570] = {
+	[3982] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.544,
 		["posY"] = 0.341,
 	},
-	[3571] = {
+	[3983] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.546,
 		["posY"] = 0.318,
 	},
-	[3572] = {
+	[3984] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.552,
 		["posY"] = 0.56,
 	},
-	[3573] = {
+	[3985] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.554,
 		["posY"] = 0.336,
 	},
-	[3574] = {
+	[3986] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.557,
 		["posY"] = 0.328,
 	},
-	[3575] = {
+	[3987] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.613,
 		["posY"] = 0.58,
 	},
-	[3576] = {
+	[3988] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.685,
+		["posY"] = 0.39,
+	},
+	[3989] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1444,
+		["posX"] = 0.743,
+		["posY"] = 0.289,
+	},
+	[3990] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1444,
 		["posX"] = 0.803,
 		["posY"] = 0.473,
 	},
-	[3577] = {
+	[3991] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.106,
+		["posY"] = 0.383,
+	},
+	[3992] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.108,
 		["posY"] = 0.399,
 	},
-	[3578] = {
+	[3993] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.117,
 		["posY"] = 0.381,
 	},
-	[3579] = {
+	[3994] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.13,
+		["posY"] = 0.348,
+	},
+	[3995] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.147,
 		["posY"] = 0.343,
 	},
-	[3580] = {
+	[3996] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.158,
+		["posY"] = 0.189,
+	},
+	[3997] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.166,
 		["posY"] = 0.41,
 	},
-	[3581] = {
+	[3998] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.181,
 		["posY"] = 0.36,
 	},
-	[3582] = {
+	[3999] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.208,
 		["posY"] = 0.379,
 	},
-	[3583] = {
+	[4000] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.218,
 		["posY"] = 0.412,
 	},
-	[3584] = {
+	[4001] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.238,
 		["posY"] = 0.225,
 	},
-	[3585] = {
+	[4002] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.238,
+		["posY"] = 0.447,
+	},
+	[4003] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.258,
 		["posY"] = 0.553,
 	},
-	[3586] = {
+	[4004] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.263,
 		["posY"] = 0.538,
 	},
-	[3587] = {
+	[4005] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.288,
 		["posY"] = 0.491,
 	},
-	[3588] = {
+	[4006] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.33,
 		["posY"] = 0.513,
 	},
-	[3589] = {
+	[4007] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.386,
 		["posY"] = 0.327,
 	},
-	[3590] = {
+	[4008] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.443,
 		["posY"] = 0.336,
 	},
-	[3591] = {
+	[4009] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.591,
 		["posY"] = 0.494,
 	},
-	[3592] = {
+	[4010] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.638,
+		["posY"] = 0.59,
+	},
+	[4011] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.684,
 		["posY"] = 0.78,
 	},
-	[3593] = {
+	[4012] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.699,
 		["posY"] = 0.921,
 	},
-	[3594] = {
+	[4013] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.753,
 		["posY"] = 0.51,
 	},
-	[3595] = {
+	[4014] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.763,
 		["posY"] = 0.938,
 	},
-	[3596] = {
+	[4015] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.771,
 		["posY"] = 0.871,
 	},
-	[3597] = {
+	[4016] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.777,
 		["posY"] = 0.641,
 	},
-	[3598] = {
+	[4017] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.796,
 		["posY"] = 0.902,
 	},
-	[3599] = {
+	[4018] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.798,
 		["posY"] = 0.611,
 	},
-	[3600] = {
+	[4019] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1441,
+		["posX"] = 0.801,
+		["posY"] = 0.635,
+	},
+	[4020] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.834,
 		["posY"] = 0.53,
 	},
-	[3601] = {
+	[4021] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.865,
 		["posY"] = 0.844,
 	},
-	[3602] = {
+	[4022] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.889,
 		["posY"] = 0.624,
 	},
-	[3603] = {
+	[4023] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1441,
 		["posX"] = 0.894,
 		["posY"] = 0.769,
 	},
-	[3604] = {
+	[4024] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.295,
 		["posY"] = 0.712,
 	},
-	[3605] = {
+	[4025] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.298,
 		["posY"] = 0.566,
 	},
-	[3606] = {
+	[4026] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.312,
 		["posY"] = 0.66,
 	},
-	[3607] = {
+	[4027] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.318,
 		["posY"] = 0.518,
 	},
-	[3608] = {
+	[4028] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.322,
 		["posY"] = 0.716,
 	},
-	[3609] = {
+	[4029] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.323,
 		["posY"] = 0.63,
 	},
-	[3610] = {
+	[4030] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.329,
 		["posY"] = 0.616,
 	},
-	[3611] = {
+	[4031] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.343,
+		["posY"] = 0.515,
+	},
+	[4032] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.35,
+		["posY"] = 0.52,
+	},
+	[4033] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.368,
 		["posY"] = 0.593,
 	},
-	[3612] = {
+	[4034] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
-		["posX"] = 0.386,
+		["posX"] = 0.387,
 		["posY"] = 0.683,
 	},
-	[3613] = {
+	[4035] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.458,
 		["posY"] = 0.652,
 	},
-	[3614] = {
+	[4036] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.463,
 		["posY"] = 0.824,
 	},
-	[3615] = {
+	[4037] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.471,
+		["posY"] = 0.43,
+	},
+	[4038] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.477,
 		["posY"] = 0.765,
 	},
-	[3616] = {
+	[4039] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.48,
 		["posY"] = 0.789,
 	},
-	[3617] = {
+	[4040] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.482,
 		["posY"] = 0.697,
 	},
-	[3618] = {
+	[4041] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.484,
+		["posY"] = 0.843,
+	},
+	[4042] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.5,
+		["posY"] = 0.058,
+	},
+	[4043] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.503,
 		["posY"] = 0.822,
 	},
-	[3619] = {
+	[4044] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1443,
+		["posX"] = 0.549,
+		["posY"] = 0.743,
+	},
+	[4045] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.572,
 		["posY"] = 0.437,
 	},
-	[3620] = {
+	[4046] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.665,
 		["posY"] = 0.832,
 	},
-	[3621] = {
+	[4047] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.69,
 		["posY"] = 0.632,
 	},
-	[3622] = {
+	[4048] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1443,
 		["posX"] = 0.741,
 		["posY"] = 0.37,
 	},
-	[3623] = {
+	[4049] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1442,
+		["posX"] = 0.259,
+		["posY"] = 0.709,
+	},
+	[4050] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.275,
 		["posY"] = 0.714,
 	},
-	[3624] = {
+	[4051] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.302,
 		["posY"] = 0.14,
 	},
-	[3625] = {
+	[4052] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.311,
 		["posY"] = 0.643,
 	},
-	[3626] = {
+	[4053] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.318,
 		["posY"] = 0.751,
 	},
-	[3627] = {
+	[4054] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.326,
 		["posY"] = 0.588,
 	},
-	[3628] = {
+	[4055] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.353,
 		["posY"] = 0.752,
 	},
-	[3629] = {
+	[4056] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1442,
 		["posX"] = 0.375,
 		["posY"] = 0.698,
 	},
-	[3630] = {
+	[4057] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.535,
 	},
-	[3631] = {
+	[4058] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.621,
 	},
-	[3632] = {
+	[4059] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.744,
 	},
-	[3633] = {
+	[4060] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.283,
 		["posY"] = 0.723,
 	},
-	[3634] = {
+	[4061] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.288,
 		["posY"] = 0.707,
 	},
-	[3635] = {
+	[4062] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.289,
 		["posY"] = 0.771,
 	},
-	[3636] = {
+	[4063] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.476,
 	},
-	[3637] = {
+	[4064] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.688,
 	},
-	[3638] = {
+	[4065] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.302,
 		["posY"] = 0.788,
 	},
-	[3639] = {
+	[4066] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.309,
 		["posY"] = 0.634,
 	},
-	[3640] = {
+	[4067] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.319,
 		["posY"] = 0.484,
 	},
-	[3641] = {
+	[4068] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.319,
 		["posY"] = 0.668,
 	},
-	[3642] = {
+	[4069] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.32,
 		["posY"] = 0.791,
 	},
-	[3643] = {
+	[4070] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.33,
+		["posY"] = 0.443,
+	},
+	[4071] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.334,
 		["posY"] = 0.376,
 	},
-	[3644] = {
+	[4072] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.335,
 		["posY"] = 0.466,
 	},
-	[3645] = {
+	[4073] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.336,
+		["posY"] = 0.459,
+	},
+	[4074] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.342,
 		["posY"] = 0.326,
 	},
-	[3646] = {
+	[4075] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.343,
 		["posY"] = 0.268,
 	},
-	[3647] = {
+	[4076] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.345,
+		["posY"] = 0.779,
+	},
+	[4077] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.347,
-		["posY"] = 0.803,
+		["posY"] = 0.802,
 	},
-	[3648] = {
+	[4078] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.367,
 		["posY"] = 0.333,
 	},
-	[3649] = {
+	[4079] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.37,
 		["posY"] = 0.282,
 	},
-	[3650] = {
+	[4080] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.37,
 		["posY"] = 0.513,
 	},
-	[3651] = {
+	[4081] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.376,
 		["posY"] = 0.454,
 	},
-	[3652] = {
+	[4082] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.378,
 		["posY"] = 0.404,
 	},
-	[3653] = {
+	[4083] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.382,
 		["posY"] = 0.272,
 	},
-	[3654] = {
+	[4084] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.382,
 		["posY"] = 0.775,
 	},
-	[3655] = {
+	[4085] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.4,
 		["posY"] = 0.337,
 	},
-	[3656] = {
+	[4086] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.407,
 		["posY"] = 0.789,
 	},
-	[3657] = {
+	[4087] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.412,
+		["posY"] = 0.761,
+	},
+	[4088] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.414,
 		["posY"] = 0.58,
 	},
-	[3658] = {
+	[4089] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.438,
 		["posY"] = 0.776,
 	},
-	[3659] = {
+	[4090] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.454,
 		["posY"] = 0.551,
 	},
-	[3660] = {
+	[4091] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.467,
+		["posY"] = 0.298,
+	},
+	[4092] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.47,
 		["posY"] = 0.562,
 	},
-	[3661] = {
+	[4093] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.472,
+		["posY"] = 0.237,
+	},
+	[4094] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.478,
 		["posY"] = 0.785,
 	},
-	[3662] = {
+	[4095] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.486,
 		["posY"] = 0.238,
 	},
-	[3663] = {
+	[4096] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.498,
 		["posY"] = 0.788,
 	},
-	[3664] = {
+	[4097] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.507,
 		["posY"] = 0.794,
 	},
-	[3665] = {
+	[4098] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.534,
-		["posY"] = 0.347,
+		["posY"] = 0.348,
 	},
-	[3666] = {
+	[4099] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.722,
 	},
-	[3667] = {
+	[4100] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.77,
 	},
-	[3668] = {
+	[4101] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.542,
 		["posY"] = 0.245,
 	},
-	[3669] = {
+	[4102] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
-		["posX"] = 0.551,
-		["posY"] = 0.265,
+		["posX"] = 0.55,
+		["posY"] = 0.264,
 	},
-	[3670] = {
+	[4103] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.551,
 		["posY"] = 0.612,
 	},
-	[3671] = {
+	[4104] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.552,
 		["posY"] = 0.759,
 	},
-	[3672] = {
+	[4105] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.56,
 		["posY"] = 0.714,
 	},
-	[3673] = {
+	[4106] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.562,
 		["posY"] = 0.373,
 	},
-	[3674] = {
+	[4107] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.571,
 		["posY"] = 0.682,
 	},
-	[3675] = {
+	[4108] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.572,
 		["posY"] = 0.703,
 	},
-	[3676] = {
+	[4109] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.574,
 		["posY"] = 0.263,
 	},
-	[3677] = {
+	[4110] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.578,
 		["posY"] = 0.719,
 	},
-	[3678] = {
+	[4111] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.583,
 		["posY"] = 0.3,
 	},
-	[3679] = {
+	[4112] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.584,
 		["posY"] = 0.753,
 	},
-	[3680] = {
+	[4113] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.59,
 		["posY"] = 0.325,
 	},
-	[3681] = {
+	[4114] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.591,
 		["posY"] = 0.482,
 	},
-	[3682] = {
+	[4115] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.592,
+		["posY"] = 0.678,
+	},
+	[4116] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.598,
 		["posY"] = 0.538,
 	},
-	[3683] = {
+	[4117] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.357,
 	},
-	[3684] = {
+	[4118] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.632,
 	},
-	[3685] = {
+	[4119] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.618,
 		["posY"] = 0.328,
 	},
-	[3686] = {
+	[4120] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.618,
+		["posY"] = 0.412,
+	},
+	[4121] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.619,
 		["posY"] = 0.632,
 	},
-	[3687] = {
+	[4122] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.624,
 		["posY"] = 0.573,
 	},
-	[3688] = {
+	[4123] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.627,
 		["posY"] = 0.4,
 	},
-	[3689] = {
+	[4124] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.631,
 		["posY"] = 0.59,
 	},
-	[3690] = {
+	[4125] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.637,
 		["posY"] = 0.624,
 	},
-	[3691] = {
+	[4126] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.653,
+		["posY"] = 0.358,
+	},
+	[4127] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1446,
+		["posX"] = 0.656,
+		["posY"] = 0.586,
+	},
+	[4128] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.665,
 		["posY"] = 0.423,
 	},
-	[3692] = {
+	[4129] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.673,
 		["posY"] = 0.553,
 	},
-	[3693] = {
+	[4130] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.675,
 		["posY"] = 0.319,
 	},
-	[3694] = {
+	[4131] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.693,
 		["posY"] = 0.435,
 	},
-	[3695] = {
+	[4132] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.696,
 		["posY"] = 0.528,
 	},
-	[3696] = {
+	[4133] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.705,
 		["posY"] = 0.455,
 	},
-	[3697] = {
+	[4134] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.71,
 		["posY"] = 0.473,
 	},
-	[3698] = {
+	[4135] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.719,
 		["posY"] = 0.47,
 	},
-	[3699] = {
+	[4136] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.721,
 		["posY"] = 0.488,
 	},
-	[3700] = {
+	[4137] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1446,
 		["posX"] = 0.737,
 		["posY"] = 0.46,
 	},
-	[3701] = {
+	[4138] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.33,
 		["posY"] = 0.492,
 	},
-	[3702] = {
+	[4139] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.348,
 		["posY"] = 0.21,
 	},
-	[3703] = {
+	[4140] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.379,
 		["posY"] = 0.646,
 	},
-	[3704] = {
+	[4141] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.379,
 		["posY"] = 0.812,
 	},
-	[3705] = {
+	[4142] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
-		["posX"] = 0.41,
+		["posX"] = 0.409,
 		["posY"] = 0.352,
 	},
-	[3706] = {
+	[4143] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.434,
 		["posY"] = 0.156,
 	},
-	[3707] = {
+	[4144] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.443,
 		["posY"] = 0.884,
 	},
-	[3708] = {
+	[4145] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.504,
 		["posY"] = 0.712,
 	},
-	[3709] = {
+	[4146] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.523,
 		["posY"] = 0.65,
 	},
-	[3710] = {
+	[4147] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.573,
-		["posY"] = 0.155,
+		["posY"] = 0.153,
 	},
-	[3711] = {
+	[4148] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
-		["posX"] = 0.599,
+		["posX"] = 0.6,
 		["posY"] = 0.349,
 	},
-	[3712] = {
+	[4149] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.611,
 		["posY"] = 0.66,
 	},
-	[3713] = {
+	[4150] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.627,
 		["posY"] = 0.182,
 	},
-	[3714] = {
+	[4151] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.717,
 		["posY"] = 0.244,
 	},
-	[3715] = {
+	[4152] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.788,
 		["posY"] = 0.578,
 	},
-	[3716] = {
+	[4153] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1449,
 		["posX"] = 0.806,
 		["posY"] = 0.419,
 	},
-	[3717] = {
+	[4154] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.296,
 		["posY"] = 0.471,
 	},
-	[3718] = {
+	[4155] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.309,
 		["posY"] = 0.355,
 	},
-	[3719] = {
+	[4156] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.315,
 		["posY"] = 0.388,
 	},
-	[3720] = {
+	[4157] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.325,
 		["posY"] = 0.451,
 	},
-	[3721] = {
+	[4158] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.335,
 		["posY"] = 0.366,
 	},
-	[3722] = {
+	[4159] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.349,
 		["posY"] = 0.443,
 	},
-	[3723] = {
+	[4160] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.37,
 		["posY"] = 0.39,
 	},
-	[3724] = {
+	[4161] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.374,
 		["posY"] = 0.353,
 	},
-	[3725] = {
+	[4162] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.404,
 		["posY"] = 0.364,
 	},
-	[3726] = {
+	[4163] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.405,
 		["posY"] = 0.446,
 	},
-	[3727] = {
+	[4164] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.419,
 		["posY"] = 0.438,
 	},
-	[3728] = {
+	[4165] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.454,
 		["posY"] = 0.349,
 	},
-	[3729] = {
+	[4166] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1452,
+		["posX"] = 0.464,
+		["posY"] = 0.446,
+	},
+	[4167] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.477,
 		["posY"] = 0.358,
 	},
-	[3730] = {
+	[4168] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.479,
 		["posY"] = 0.43,
 	},
-	[3731] = {
+	[4169] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.524,
 		["posY"] = 0.246,
 	},
-	[3732] = {
+	[4170] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.536,
 		["posY"] = 0.364,
 	},
-	[3733] = {
+	[4171] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1452,
 		["posX"] = 0.55,
 		["posY"] = 0.271,
 	},
-	[3734] = {
+	[4172] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1451,
 		["posX"] = 0.158,
 		["posY"] = 0.884,
 	},
-	[3735] = {
+	[4173] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1451,
 		["posX"] = 0.194,
 		["posY"] = 0.11,
 	},
-	[3736] = {
+	[4174] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.231,
+		["posY"] = 0.759,
+	},
+	[4175] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1451,
 		["posX"] = 0.249,
 		["posY"] = 0.256,
 	},
-	[3737] = {
+	[4176] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.269,
+		["posY"] = 0.721,
+	},
+	[4177] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.369,
+		["posY"] = 0.136,
+	},
+	[4178] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1451,
 		["posX"] = 0.502,
 		["posY"] = 0.134,
 	},
-	[3738] = {
+	[4179] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1451,
 		["posX"] = 0.562,
 		["posY"] = 0.193,
 	},
-	[3739] = {
+	[4180] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.587,
+		["posY"] = 0.513,
+	},
+	[4181] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.624,
+		["posY"] = 0.331,
+	},
+	[4182] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1451,
+		["posX"] = 0.684,
+		["posY"] = 0.49,
+	},
+	[4183] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.365,
 		["posY"] = 0.519,
 	},
-	[3740] = {
+	[4184] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.365,
-		["posY"] = 0.626,
+		["posY"] = 0.627,
 	},
-	[3741] = {
+	[4185] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1448,
+		["posX"] = 0.367,
+		["posY"] = 0.56,
+	},
+	[4186] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.368,
-		["posY"] = 0.398,
+		["posY"] = 0.397,
 	},
-	[3742] = {
+	[4187] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.372,
 		["posY"] = 0.53,
 	},
-	[3743] = {
+	[4188] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.377,
 		["posY"] = 0.516,
 	},
-	[3744] = {
+	[4189] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.379,
 		["posY"] = 0.614,
 	},
-	[3745] = {
+	[4190] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.383,
 		["posY"] = 0.547,
 	},
-	[3746] = {
+	[4191] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.388,
 		["posY"] = 0.621,
 	},
-	[3747] = {
+	[4192] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.398,
 		["posY"] = 0.81,
 	},
-	[3748] = {
+	[4193] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.401,
 		["posY"] = 0.741,
 	},
-	[3749] = {
+	[4194] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1448,
+		["posX"] = 0.43,
+		["posY"] = 0.441,
+	},
+	[4195] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.431,
-		["posY"] = 0.368,
+		["posY"] = 0.369,
 	},
-	[3750] = {
+	[4196] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.434,
 		["posY"] = 0.182,
 	},
-	[3751] = {
+	[4197] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.442,
 		["posY"] = 0.485,
 	},
-	[3752] = {
+	[4198] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.449,
 		["posY"] = 0.854,
 	},
-	[3753] = {
+	[4199] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.452,
 		["posY"] = 0.666,
 	},
-	[3754] = {
+	[4200] = {
+		["type"] = "mining",
+		["object"] = 1734,
+		["mapID"] = 1448,
+		["posX"] = 0.457,
+		["posY"] = 0.342,
+	},
+	[4201] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.464,
 		["posY"] = 0.431,
 	},
-	[3755] = {
+	[4202] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.47,
 		["posY"] = 0.724,
 	},
-	[3756] = {
+	[4203] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.474,
 		["posY"] = 0.923,
 	},
-	[3757] = {
+	[4204] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.48,
 		["posY"] = 0.947,
 	},
-	[3758] = {
+	[4205] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.481,
 		["posY"] = 0.9,
 	},
-	[3759] = {
+	[4206] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.496,
 		["posY"] = 0.91,
 	},
-	[3760] = {
+	[4207] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.504,
 		["posY"] = 0.798,
 	},
-	[3761] = {
+	[4208] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.525,
-		["posY"] = 0.185,
+		["posY"] = 0.186,
 	},
-	[3762] = {
+	[4209] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.529,
 		["posY"] = 0.305,
 	},
-	[3763] = {
+	[4210] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.556,
 		["posY"] = 0.074,
 	},
-	[3764] = {
+	[4211] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.575,
 		["posY"] = 0.224,
 	},
-	[3765] = {
+	[4212] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.576,
 		["posY"] = 0.214,
 	},
-	[3766] = {
+	[4213] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.577,
 		["posY"] = 0.191,
 	},
-	[3767] = {
+	[4214] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.582,
 		["posY"] = 0.204,
 	},
-	[3768] = {
+	[4215] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.583,
 		["posY"] = 0.879,
 	},
-	[3769] = {
+	[4216] = {
 		["type"] = "mining",
 		["object"] = 1734,
 		["mapID"] = 1448,
 		["posX"] = 0.596,
 		["posY"] = 0.211,
 	},
-	[3770] = {
+	[4217] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.074,
 		["posY"] = 0.915,
 	},
-	[3771] = {
+	[4218] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.075,
 		["posY"] = 0.872,
 	},
-	[3772] = {
+	[4219] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.078,
 		["posY"] = 0.937,
 	},
-	[3773] = {
+	[4220] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.09,
 		["posY"] = 0.902,
 	},
-	[3774] = {
+	[4221] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.107,
 		["posY"] = 0.554,
 	},
-	[3775] = {
+	[4222] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.13,
 		["posY"] = 0.59,
 	},
-	[3776] = {
+	[4223] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
-		["posX"] = 0.147,
+		["posX"] = 0.148,
 		["posY"] = 0.484,
 	},
-	[3777] = {
+	[4224] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.149,
 		["posY"] = 0.344,
 	},
-	[3778] = {
+	[4225] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.149,
 		["posY"] = 0.545,
 	},
-	[3779] = {
+	[4226] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.154,
 		["posY"] = 0.354,
 	},
-	[3780] = {
+	[4227] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.164,
 		["posY"] = 0.344,
 	},
-	[3781] = {
+	[4228] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.181,
 		["posY"] = 0.702,
 	},
-	[3782] = {
+	[4229] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.184,
 		["posY"] = 0.747,
 	},
-	[3783] = {
+	[4230] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.201,
 		["posY"] = 0.613,
 	},
-	[3784] = {
+	[4231] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.201,
 		["posY"] = 0.646,
 	},
-	[3785] = {
+	[4232] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.224,
 		["posY"] = 0.733,
 	},
-	[3786] = {
+	[4233] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.237,
 		["posY"] = 0.611,
 	},
-	[3787] = {
+	[4234] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.249,
 		["posY"] = 0.714,
 	},
-	[3788] = {
+	[4235] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.253,
 		["posY"] = 0.78,
 	},
-	[3789] = {
+	[4236] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.268,
 		["posY"] = 0.667,
 	},
-	[3790] = {
+	[4237] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.288,
 		["posY"] = 0.604,
 	},
-	[3791] = {
+	[4238] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.307,
 		["posY"] = 0.531,
 	},
-	[3792] = {
+	[4239] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.32,
 		["posY"] = 0.764,
 	},
-	[3793] = {
+	[4240] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.323,
 		["posY"] = 0.442,
 	},
-	[3794] = {
+	[4241] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.343,
 		["posY"] = 0.517,
 	},
-	[3795] = {
+	[4242] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.357,
-		["posY"] = 0.541,
+		["posY"] = 0.542,
 	},
-	[3796] = {
+	[4243] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.367,
 		["posY"] = 0.754,
 	},
-	[3797] = {
+	[4244] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.374,
 		["posY"] = 0.478,
 	},
-	[3798] = {
+	[4245] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.408,
 		["posY"] = 0.513,
 	},
-	[3799] = {
+	[4246] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.414,
 		["posY"] = 0.654,
 	},
-	[3800] = {
+	[4247] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
-		["posY"] = 0.778,
+		["posY"] = 0.779,
 	},
-	[3801] = {
+	[4248] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.424,
-		["posY"] = 0.59,
+		["posY"] = 0.593,
 	},
-	[3802] = {
+	[4249] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.443,
 		["posY"] = 0.494,
 	},
-	[3803] = {
+	[4250] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.451,
 		["posY"] = 0.763,
 	},
-	[3804] = {
+	[4251] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.458,
 		["posY"] = 0.547,
 	},
-	[3805] = {
+	[4252] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.493,
 		["posY"] = 0.584,
 	},
-	[3806] = {
+	[4253] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
-		["posX"] = 0.511,
-		["posY"] = 0.776,
+		["posX"] = 0.51,
+		["posY"] = 0.774,
 	},
-	[3807] = {
+	[4254] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.521,
 		["posY"] = 0.461,
 	},
-	[3808] = {
+	[4255] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1418,
+		["posX"] = 0.523,
+		["posY"] = 0.359,
+	},
+	[4256] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.524,
 		["posY"] = 0.168,
 	},
-	[3809] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1418,
-		["posX"] = 0.524,
-		["posY"] = 0.358,
-	},
-	[3810] = {
+	[4257] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.542,
 		["posY"] = 0.134,
 	},
-	[3811] = {
+	[4258] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.561,
 		["posY"] = 0.209,
 	},
-	[3812] = {
+	[4259] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.569,
 		["posY"] = 0.76,
 	},
-	[3813] = {
+	[4260] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.588,
 		["posY"] = 0.459,
 	},
-	[3814] = {
+	[4261] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.594,
 		["posY"] = 0.248,
 	},
-	[3815] = {
+	[4262] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.616,
 		["posY"] = 0.737,
 	},
-	[3816] = {
+	[4263] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.634,
 		["posY"] = 0.635,
 	},
-	[3817] = {
+	[4264] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.646,
 		["posY"] = 0.722,
 	},
-	[3818] = {
+	[4265] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1418,
 		["posX"] = 0.653,
 		["posY"] = 0.43,
 	},
-	[3819] = {
+	[4266] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.054,
 		["posY"] = 0.31,
 	},
-	[3820] = {
+	[4267] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.06,
-		["posY"] = 0.512,
+		["posY"] = 0.513,
 	},
-	[3821] = {
+	[4268] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.071,
 		["posY"] = 0.347,
 	},
-	[3822] = {
+	[4269] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.104,
-		["posY"] = 0.662,
+		["posY"] = 0.661,
 	},
-	[3823] = {
+	[4270] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.105,
 		["posY"] = 0.584,
 	},
-	[3824] = {
+	[4271] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.13,
 		["posY"] = 0.691,
 	},
-	[3825] = {
+	[4272] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.132,
 		["posY"] = 0.291,
 	},
-	[3826] = {
+	[4273] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.148,
 		["posY"] = 0.343,
 	},
-	[3827] = {
+	[4274] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
-		["posX"] = 0.157,
+		["posX"] = 0.158,
 		["posY"] = 0.424,
 	},
-	[3828] = {
+	[4275] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.177,
 		["posY"] = 0.577,
 	},
-	[3829] = {
+	[4276] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.177,
 		["posY"] = 0.652,
 	},
-	[3830] = {
+	[4277] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.183,
 		["posY"] = 0.364,
 	},
-	[3831] = {
+	[4278] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.214,
 		["posY"] = 0.574,
 	},
-	[3832] = {
+	[4279] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.234,
 		["posY"] = 0.354,
 	},
-	[3833] = {
+	[4280] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.236,
 		["posY"] = 0.659,
 	},
-	[3834] = {
+	[4281] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.278,
 		["posY"] = 0.653,
 	},
-	[3835] = {
+	[4282] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.288,
 		["posY"] = 0.433,
 	},
-	[3836] = {
+	[4283] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.301,
 		["posY"] = 0.629,
 	},
-	[3837] = {
+	[4284] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.388,
 		["posY"] = 0.283,
 	},
-	[3838] = {
+	[4285] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.52,
-		["posY"] = 0.273,
+		["posY"] = 0.274,
 	},
-	[3839] = {
+	[4286] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.578,
 		["posY"] = 0.654,
 	},
-	[3840] = {
+	[4287] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.61,
 		["posY"] = 0.19,
 	},
-	[3841] = {
+	[4288] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.616,
 		["posY"] = 0.804,
 	},
-	[3842] = {
+	[4289] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.634,
 		["posY"] = 0.876,
 	},
-	[3843] = {
+	[4290] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.644,
 		["posY"] = 0.732,
 	},
-	[3844] = {
+	[4291] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.664,
 		["posY"] = 0.788,
 	},
-	[3845] = {
+	[4292] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.664,
 		["posY"] = 0.863,
 	},
-	[3846] = {
+	[4293] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.688,
 		["posY"] = 0.817,
 	},
-	[3847] = {
+	[4294] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.718,
 		["posY"] = 0.885,
 	},
-	[3848] = {
+	[4295] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.722,
 		["posY"] = 0.07,
 	},
-	[3849] = {
+	[4296] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1435,
 		["posX"] = 0.76,
 		["posY"] = 0.892,
 	},
-	[3850] = {
+	[4297] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.259,
 		["posY"] = 0.341,
 	},
-	[3851] = {
+	[4298] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.267,
 		["posY"] = 0.376,
 	},
-	[3852] = {
+	[4299] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.328,
 		["posY"] = 0.736,
 	},
-	[3853] = {
+	[4300] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.359,
 		["posY"] = 0.813,
 	},
-	[3854] = {
+	[4301] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.36,
 		["posY"] = 0.773,
 	},
-	[3855] = {
+	[4302] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.364,
 		["posY"] = 0.799,
 	},
-	[3856] = {
+	[4303] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.364,
 		["posY"] = 0.836,
 	},
-	[3857] = {
+	[4304] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.372,
 		["posY"] = 0.83,
 	},
-	[3858] = {
+	[4305] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.383,
 		["posY"] = 0.802,
 	},
-	[3859] = {
+	[4306] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.572,
 		["posY"] = 0.314,
 	},
-	[3860] = {
+	[4307] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.577,
 		["posY"] = 0.469,
 	},
-	[3861] = {
+	[4308] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.587,
 		["posY"] = 0.378,
 	},
-	[3862] = {
+	[4309] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.593,
 		["posY"] = 0.426,
 	},
-	[3863] = {
+	[4310] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.597,
 		["posY"] = 0.399,
 	},
-	[3864] = {
+	[4311] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.622,
 		["posY"] = 0.83,
 	},
-	[3865] = {
+	[4312] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.63,
 		["posY"] = 0.79,
 	},
-	[3866] = {
+	[4313] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.637,
 		["posY"] = 0.837,
 	},
-	[3867] = {
+	[4314] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.639,
 		["posY"] = 0.525,
 	},
-	[3868] = {
+	[4315] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.646,
 		["posY"] = 0.535,
 	},
-	[3869] = {
+	[4316] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
-		["posX"] = 0.655,
+		["posX"] = 0.656,
 		["posY"] = 0.776,
 	},
-	[3870] = {
+	[4317] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.674,
 		["posY"] = 0.718,
 	},
-	[3871] = {
+	[4318] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.72,
 		["posY"] = 0.757,
 	},
-	[3872] = {
+	[4319] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.735,
 		["posY"] = 0.768,
 	},
-	[3873] = {
+	[4320] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.741,
 		["posY"] = 0.782,
 	},
-	[3874] = {
+	[4321] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.741,
 		["posY"] = 0.801,
 	},
-	[3875] = {
+	[4322] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
-		["posX"] = 0.773,
-		["posY"] = 0.389,
+		["posX"] = 0.774,
+		["posY"] = 0.388,
 	},
-	[3876] = {
+	[4323] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.787,
 		["posY"] = 0.291,
 	},
-	[3877] = {
+	[4324] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.794,
 		["posY"] = 0.405,
 	},
-	[3878] = {
+	[4325] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.812,
 		["posY"] = 0.288,
 	},
-	[3879] = {
+	[4326] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.829,
 		["posY"] = 0.358,
 	},
-	[3880] = {
+	[4327] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.851,
 		["posY"] = 0.326,
 	},
-	[3881] = {
+	[4328] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.859,
 		["posY"] = 0.471,
 	},
-	[3882] = {
+	[4329] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.872,
 		["posY"] = 0.492,
 	},
-	[3883] = {
+	[4330] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1431,
 		["posX"] = 0.881,
 		["posY"] = 0.518,
 	},
-	[3884] = {
+	[4331] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.381,
 		["posY"] = 0.454,
 	},
-	[3885] = {
+	[4332] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.418,
 		["posY"] = 0.462,
 	},
-	[3886] = {
+	[4333] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.486,
 		["posY"] = 0.502,
 	},
-	[3887] = {
+	[4334] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.493,
 		["posY"] = 0.523,
 	},
-	[3888] = {
+	[4335] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.531,
 		["posY"] = 0.521,
 	},
-	[3889] = {
+	[4336] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.605,
 		["posY"] = 0.212,
 	},
-	[3890] = {
+	[4337] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.615,
 		["posY"] = 0.241,
 	},
-	[3891] = {
+	[4338] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.63,
 		["posY"] = 0.253,
 	},
-	[3892] = {
+	[4339] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.643,
 		["posY"] = 0.268,
 	},
-	[3893] = {
+	[4340] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.65,
 		["posY"] = 0.308,
 	},
-	[3894] = {
+	[4341] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.678,
 		["posY"] = 0.322,
 	},
-	[3895] = {
+	[4342] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.686,
 		["posY"] = 0.311,
 	},
-	[3896] = {
+	[4343] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.69,
 		["posY"] = 0.285,
 	},
-	[3897] = {
+	[4344] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.695,
 		["posY"] = 0.341,
 	},
-	[3898] = {
+	[4345] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1437,
+		["posX"] = 0.697,
+		["posY"] = 0.287,
+	},
+	[4346] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1437,
 		["posX"] = 0.711,
 		["posY"] = 0.298,
 	},
-	[3899] = {
+	[4347] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.303,
 		["posY"] = 0.217,
 	},
-	[3900] = {
+	[4348] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
-		["posX"] = 0.311,
+		["posX"] = 0.31,
 		["posY"] = 0.658,
 	},
-	[3901] = {
+	[4349] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.312,
 		["posY"] = 0.216,
 	},
-	[3902] = {
+	[4350] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.312,
 		["posY"] = 0.225,
 	},
-	[3903] = {
+	[4351] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.313,
 		["posY"] = 0.204,
 	},
-	[3904] = {
+	[4352] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1445,
+		["posX"] = 0.317,
+		["posY"] = 0.656,
+	},
+	[4353] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.325,
 		["posY"] = 0.223,
 	},
-	[3905] = {
+	[4354] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.325,
 		["posY"] = 0.232,
 	},
-	[3906] = {
+	[4355] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.332,
 		["posY"] = 0.5,
 	},
-	[3907] = {
+	[4356] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.335,
 		["posY"] = 0.724,
 	},
-	[3908] = {
+	[4357] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.367,
 		["posY"] = 0.211,
 	},
-	[3909] = {
+	[4358] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.373,
 		["posY"] = 0.124,
 	},
-	[3910] = {
+	[4359] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.374,
 		["posY"] = 0.646,
 	},
-	[3911] = {
+	[4360] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.375,
 		["posY"] = 0.682,
 	},
-	[3912] = {
+	[4361] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.379,
 		["posY"] = 0.667,
 	},
-	[3913] = {
+	[4362] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1445,
+		["posX"] = 0.384,
+		["posY"] = 0.685,
+	},
+	[4363] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.385,
 		["posY"] = 0.671,
 	},
-	[3914] = {
+	[4364] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.387,
 		["posY"] = 0.66,
 	},
-	[3915] = {
+	[4365] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.399,
 		["posY"] = 0.273,
 	},
-	[3916] = {
+	[4366] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.41,
 		["posY"] = 0.131,
 	},
-	[3917] = {
+	[4367] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.446,
 		["posY"] = 0.291,
 	},
-	[3918] = {
+	[4368] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.456,
 		["posY"] = 0.407,
 	},
-	[3919] = {
+	[4369] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.463,
 		["posY"] = 0.331,
 	},
-	[3920] = {
+	[4370] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.465,
 		["posY"] = 0.158,
 	},
-	[3921] = {
+	[4371] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.474,
 		["posY"] = 0.45,
 	},
-	[3922] = {
+	[4372] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.481,
 		["posY"] = 0.345,
 	},
-	[3923] = {
+	[4373] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.482,
 		["posY"] = 0.269,
 	},
-	[3924] = {
+	[4374] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.483,
 		["posY"] = 0.141,
 	},
-	[3925] = {
+	[4375] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.491,
 		["posY"] = 0.394,
 	},
-	[3926] = {
+	[4376] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.505,
 		["posY"] = 0.472,
 	},
-	[3927] = {
+	[4377] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.517,
 		["posY"] = 0.399,
 	},
-	[3928] = {
+	[4378] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.536,
 		["posY"] = 0.15,
 	},
-	[3929] = {
+	[4379] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.544,
 		["posY"] = 0.465,
 	},
-	[3930] = {
+	[4380] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.546,
 		["posY"] = 0.356,
 	},
-	[3931] = {
+	[4381] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.558,
 		["posY"] = 0.194,
 	},
-	[3932] = {
+	[4382] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.568,
-		["posY"] = 0.16,
+		["posY"] = 0.161,
 	},
-	[3933] = {
+	[4383] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.586,
 		["posY"] = 0.48,
 	},
-	[3934] = {
+	[4384] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.598,
 		["posY"] = 0.224,
 	},
-	[3935] = {
+	[4385] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.599,
 		["posY"] = 0.084,
 	},
-	[3936] = {
+	[4386] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.621,
 		["posY"] = 0.181,
 	},
-	[3937] = {
+	[4387] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.632,
-		["posY"] = 0.19,
+		["posY"] = 0.189,
 	},
-	[3938] = {
+	[4388] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1445,
 		["posX"] = 0.633,
 		["posY"] = 0.068,
 	},
-	[3939] = {
+	[4389] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.247,
 		["posY"] = 0.554,
 	},
-	[3940] = {
+	[4390] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.252,
 		["posY"] = 0.524,
 	},
-	[3941] = {
+	[4391] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.258,
 		["posY"] = 0.154,
 	},
-	[3942] = {
+	[4392] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.263,
 		["posY"] = 0.18,
 	},
-	[3943] = {
+	[4393] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.27,
 		["posY"] = 0.102,
 	},
-	[3944] = {
+	[4394] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.272,
 		["posY"] = 0.08,
 	},
-	[3945] = {
+	[4395] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.274,
 		["posY"] = 0.136,
 	},
-	[3946] = {
+	[4396] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.276,
 		["posY"] = 0.179,
 	},
-	[3947] = {
+	[4397] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.287,
 		["posY"] = 0.408,
 	},
-	[3948] = {
+	[4398] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.288,
 		["posY"] = 0.07,
 	},
-	[3949] = {
+	[4399] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.293,
 		["posY"] = 0.154,
 	},
-	[3950] = {
+	[4400] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.294,
 		["posY"] = 0.601,
 	},
-	[3951] = {
+	[4401] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.298,
 		["posY"] = 0.12,
 	},
-	[3952] = {
+	[4402] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.298,
 		["posY"] = 0.688,
 	},
-	[3953] = {
+	[4403] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.299,
 		["posY"] = 0.523,
 	},
-	[3954] = {
+	[4404] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.3,
 		["posY"] = 0.177,
 	},
-	[3955] = {
+	[4405] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.304,
 		["posY"] = 0.076,
 	},
-	[3956] = {
+	[4406] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.095,
 	},
-	[3957] = {
+	[4407] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.138,
 	},
-	[3958] = {
+	[4408] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.313,
 		["posY"] = 0.653,
 	},
-	[3959] = {
+	[4409] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.32,
 		["posY"] = 0.176,
 	},
-	[3960] = {
+	[4410] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.321,
 		["posY"] = 0.124,
 	},
-	[3961] = {
+	[4411] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.321,
 		["posY"] = 0.656,
 	},
-	[3962] = {
+	[4412] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.328,
 		["posY"] = 0.682,
 	},
-	[3963] = {
+	[4413] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.331,
 		["posY"] = 0.426,
 	},
-	[3964] = {
+	[4414] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.336,
 		["posY"] = 0.62,
 	},
-	[3965] = {
+	[4415] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.343,
 		["posY"] = 0.141,
 	},
-	[3966] = {
+	[4416] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.343,
 		["posY"] = 0.665,
 	},
-	[3967] = {
+	[4417] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.348,
 		["posY"] = 0.616,
 	},
-	[3968] = {
+	[4418] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.348,
 		["posY"] = 0.641,
 	},
-	[3969] = {
+	[4419] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.351,
 		["posY"] = 0.564,
 	},
-	[3970] = {
+	[4420] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.354,
 		["posY"] = 0.346,
 	},
-	[3971] = {
+	[4421] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.355,
 		["posY"] = 0.643,
 	},
-	[3972] = {
+	[4422] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.357,
 		["posY"] = 0.589,
 	},
-	[3973] = {
+	[4423] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.364,
 		["posY"] = 0.582,
 	},
-	[3974] = {
+	[4424] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.365,
 		["posY"] = 0.538,
 	},
-	[3975] = {
+	[4425] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.367,
 		["posY"] = 0.619,
 	},
-	[3976] = {
+	[4426] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.369,
 		["posY"] = 0.639,
 	},
-	[3977] = {
+	[4427] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.37,
 		["posY"] = 0.564,
 	},
-	[3978] = {
+	[4428] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.376,
 		["posY"] = 0.355,
 	},
-	[3979] = {
+	[4429] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.38,
 		["posY"] = 0.567,
 	},
-	[3980] = {
+	[4430] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.381,
 		["posY"] = 0.575,
 	},
-	[3981] = {
+	[4431] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.393,
 		["posY"] = 0.36,
 	},
-	[3982] = {
+	[4432] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.399,
 		["posY"] = 0.456,
 	},
-	[3983] = {
+	[4433] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.404,
 		["posY"] = 0.438,
 	},
-	[3984] = {
+	[4434] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.407,
 		["posY"] = 0.572,
 	},
-	[3985] = {
+	[4435] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.413,
 		["posY"] = 0.424,
 	},
-	[3986] = {
+	[4436] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.414,
 		["posY"] = 0.438,
 	},
-	[3987] = {
+	[4437] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.415,
 		["posY"] = 0.143,
 	},
-	[3988] = {
+	[4438] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.416,
 		["posY"] = 0.414,
 	},
-	[3989] = {
+	[4439] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.419,
-		["posY"] = 0.37,
+		["posY"] = 0.369,
 	},
-	[3990] = {
+	[4440] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.423,
 		["posY"] = 0.461,
 	},
-	[3991] = {
+	[4441] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.423,
 		["posY"] = 0.47,
 	},
-	[3992] = {
+	[4442] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.424,
 		["posY"] = 0.485,
 	},
-	[3993] = {
+	[4443] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.428,
 		["posY"] = 0.1,
 	},
-	[3994] = {
+	[4444] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.43,
 		["posY"] = 0.459,
 	},
-	[3995] = {
+	[4445] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.431,
 		["posY"] = 0.494,
 	},
-	[3996] = {
+	[4446] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.434,
 		["posY"] = 0.137,
 	},
-	[3997] = {
+	[4447] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.437,
 		["posY"] = 0.461,
 	},
-	[3998] = {
+	[4448] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.438,
 		["posY"] = 0.476,
 	},
-	[3999] = {
+	[4449] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.438,
 		["posY"] = 0.494,
 	},
-	[4000] = {
+	[4450] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.446,
 		["posY"] = 0.26,
 	},
-	[4001] = {
+	[4451] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.45,
-		["posY"] = 0.386,
+		["posY"] = 0.385,
 	},
-	[4002] = {
+	[4452] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.461,
 		["posY"] = 0.065,
 	},
-	[4003] = {
+	[4453] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.462,
 		["posY"] = 0.171,
 	},
-	[4004] = {
+	[4454] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.464,
 		["posY"] = 0.075,
 	},
-	[4005] = {
+	[4455] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.464,
 		["posY"] = 0.086,
 	},
-	[4006] = {
+	[4456] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.468,
 		["posY"] = 0.057,
 	},
-	[4007] = {
+	[4457] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.47,
 		["posY"] = 0.226,
 	},
-	[4008] = {
+	[4458] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.472,
 		["posY"] = 0.203,
 	},
-	[4009] = {
+	[4459] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.473,
 		["posY"] = 0.069,
 	},
-	[4010] = {
+	[4460] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.476,
 		["posY"] = 0.382,
 	},
-	[4011] = {
+	[4461] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.477,
 		["posY"] = 0.054,
 	},
-	[4012] = {
+	[4462] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.479,
 		["posY"] = 0.285,
 	},
-	[4013] = {
+	[4463] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.482,
 		["posY"] = 0.105,
 	},
-	[4014] = {
+	[4464] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.483,
 		["posY"] = 0.082,
 	},
-	[4015] = {
+	[4465] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.484,
 		["posY"] = 0.07,
 	},
-	[4016] = {
+	[4466] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.486,
 		["posY"] = 0.127,
 	},
-	[4017] = {
+	[4467] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.489,
 		["posY"] = 0.064,
 	},
-	[4018] = {
+	[4468] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.49,
 		["posY"] = 0.08,
 	},
-	[4019] = {
+	[4469] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.492,
 		["posY"] = 0.09,
 	},
-	[4020] = {
+	[4470] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.496,
 		["posY"] = 0.056,
 	},
-	[4021] = {
+	[4471] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.496,
 		["posY"] = 0.135,
 	},
-	[4022] = {
+	[4472] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.497,
 		["posY"] = 0.072,
 	},
-	[4023] = {
+	[4473] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.497,
 		["posY"] = 0.357,
 	},
-	[4024] = {
+	[4474] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.498,
 		["posY"] = 0.207,
 	},
-	[4025] = {
+	[4475] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.499,
 		["posY"] = 0.304,
 	},
-	[4026] = {
+	[4476] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.499,
 		["posY"] = 0.339,
 	},
-	[4027] = {
+	[4477] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.5,
 		["posY"] = 0.285,
 	},
-	[4028] = {
+	[4478] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.502,
 		["posY"] = 0.275,
 	},
-	[4029] = {
+	[4479] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.506,
 		["posY"] = 0.149,
 	},
-	[4030] = {
+	[4480] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.508,
 		["posY"] = 0.278,
 	},
-	[4031] = {
+	[4481] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.509,
 		["posY"] = 0.269,
 	},
-	[4032] = {
+	[4482] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.51,
 		["posY"] = 0.25,
 	},
-	[4033] = {
+	[4483] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.51,
 		["posY"] = 0.365,
 	},
-	[4034] = {
+	[4484] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.511,
 		["posY"] = 0.313,
 	},
-	[4035] = {
+	[4485] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.515,
 		["posY"] = 0.273,
 	},
-	[4036] = {
+	[4486] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.52,
 		["posY"] = 0.264,
 	},
-	[4037] = {
+	[4487] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1434,
 		["posX"] = 0.529,
 		["posY"] = 0.281,
 	},
-	[4038] = {
+	[4488] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.271,
 		["posY"] = 0.512,
 	},
-	[4039] = {
+	[4489] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.278,
 		["posY"] = 0.562,
 	},
-	[4040] = {
+	[4490] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.296,
 		["posY"] = 0.66,
 	},
-	[4041] = {
+	[4491] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.317,
 		["posY"] = 0.535,
 	},
-	[4042] = {
+	[4492] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.326,
 		["posY"] = 0.614,
 	},
-	[4043] = {
+	[4493] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.327,
 		["posY"] = 0.887,
 	},
-	[4044] = {
+	[4494] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.33,
 		["posY"] = 0.399,
 	},
-	[4045] = {
+	[4495] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
-		["posX"] = 0.332,
-		["posY"] = 0.473,
+		["posX"] = 0.333,
+		["posY"] = 0.471,
 	},
-	[4046] = {
+	[4496] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.337,
 		["posY"] = 0.554,
 	},
-	[4047] = {
+	[4497] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.351,
 		["posY"] = 0.892,
 	},
-	[4048] = {
+	[4498] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.358,
 		["posY"] = 0.821,
 	},
-	[4049] = {
+	[4499] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.367,
 		["posY"] = 0.673,
 	},
-	[4050] = {
+	[4500] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.371,
 		["posY"] = 0.682,
 	},
-	[4051] = {
+	[4501] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.373,
 		["posY"] = 0.659,
 	},
-	[4052] = {
+	[4502] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.376,
 		["posY"] = 0.611,
 	},
-	[4053] = {
+	[4503] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.382,
 		["posY"] = 0.678,
 	},
-	[4054] = {
+	[4504] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.383,
 		["posY"] = 0.104,
 	},
-	[4055] = {
+	[4505] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.386,
 		["posY"] = 0.374,
 	},
-	[4056] = {
+	[4506] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.402,
 		["posY"] = 0.306,
 	},
-	[4057] = {
+	[4507] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
-		["posX"] = 0.404,
+		["posX"] = 0.403,
 		["posY"] = 0.387,
 	},
-	[4058] = {
+	[4508] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.41,
 		["posY"] = 0.15,
 	},
-	[4059] = {
+	[4509] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.411,
 		["posY"] = 0.729,
 	},
-	[4060] = {
+	[4510] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.414,
 		["posY"] = 0.523,
 	},
-	[4061] = {
+	[4511] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.419,
 		["posY"] = 0.248,
 	},
-	[4062] = {
+	[4512] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.428,
 		["posY"] = 0.444,
 	},
-	[4063] = {
+	[4513] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.437,
-		["posY"] = 0.508,
+		["posY"] = 0.509,
 	},
-	[4064] = {
+	[4514] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.442,
 		["posY"] = 0.383,
 	},
-	[4065] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1416,
-		["posX"] = 0.443,
-		["posY"] = 0.842,
-	},
-	[4066] = {
+	[4515] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.444,
 		["posY"] = 0.153,
 	},
-	[4067] = {
+	[4516] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1416,
+		["posX"] = 0.444,
+		["posY"] = 0.843,
+	},
+	[4517] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.455,
 		["posY"] = 0.285,
 	},
-	[4068] = {
+	[4518] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.46,
 		["posY"] = 0.391,
 	},
-	[4069] = {
+	[4519] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.461,
 		["posY"] = 0.66,
 	},
-	[4070] = {
+	[4520] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.47,
 		["posY"] = 0.339,
 	},
-	[4071] = {
+	[4521] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.471,
 		["posY"] = 0.16,
 	},
-	[4072] = {
+	[4522] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.473,
 		["posY"] = 0.322,
 	},
-	[4073] = {
+	[4523] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.475,
 		["posY"] = 0.345,
 	},
-	[4074] = {
+	[4524] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.486,
 		["posY"] = 0.328,
 	},
-	[4075] = {
+	[4525] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.487,
 		["posY"] = 0.344,
 	},
-	[4076] = {
+	[4526] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.49,
 		["posY"] = 0.447,
 	},
-	[4077] = {
+	[4527] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.49,
 		["posY"] = 0.456,
 	},
-	[4078] = {
+	[4528] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.499,
 		["posY"] = 0.437,
 	},
-	[4079] = {
+	[4529] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.504,
 		["posY"] = 0.184,
 	},
-	[4080] = {
+	[4530] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.506,
 		["posY"] = 0.272,
 	},
-	[4081] = {
+	[4531] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.511,
 		["posY"] = 0.457,
 	},
-	[4082] = {
+	[4532] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1416,
+		["posX"] = 0.511,
+		["posY"] = 0.485,
+	},
+	[4533] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.512,
 		["posY"] = 0.419,
 	},
-	[4083] = {
+	[4534] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.512,
 		["posY"] = 0.472,
 	},
-	[4084] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1416,
-		["posX"] = 0.512,
-		["posY"] = 0.484,
-	},
-	[4085] = {
+	[4535] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.513,
 		["posY"] = 0.441,
 	},
-	[4086] = {
+	[4536] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.515,
 		["posY"] = 0.508,
 	},
-	[4087] = {
+	[4537] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.52,
 		["posY"] = 0.582,
 	},
-	[4088] = {
+	[4538] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.524,
 		["posY"] = 0.472,
 	},
-	[4089] = {
+	[4539] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.528,
 		["posY"] = 0.448,
 	},
-	[4090] = {
+	[4540] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.528,
 		["posY"] = 0.464,
 	},
-	[4091] = {
+	[4541] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.532,
 		["posY"] = 0.493,
 	},
-	[4092] = {
+	[4542] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.539,
 		["posY"] = 0.469,
 	},
-	[4093] = {
+	[4543] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.541,
 		["posY"] = 0.46,
 	},
-	[4094] = {
+	[4544] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.544,
 		["posY"] = 0.2,
 	},
-	[4095] = {
+	[4545] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.568,
 		["posY"] = 0.297,
 	},
-	[4096] = {
+	[4546] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.587,
 		["posY"] = 0.243,
 	},
-	[4097] = {
+	[4547] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.604,
 		["posY"] = 0.563,
 	},
-	[4098] = {
+	[4548] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.607,
 		["posY"] = 0.285,
 	},
-	[4099] = {
+	[4549] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.633,
 		["posY"] = 0.551,
 	},
-	[4100] = {
+	[4550] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.634,
 		["posY"] = 0.492,
 	},
-	[4101] = {
+	[4551] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.644,
 		["posY"] = 0.35,
 	},
-	[4102] = {
+	[4552] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.663,
 		["posY"] = 0.414,
 	},
-	[4103] = {
+	[4553] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.671,
 		["posY"] = 0.518,
 	},
-	[4104] = {
+	[4554] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.752,
 		["posY"] = 0.547,
 	},
-	[4105] = {
+	[4555] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.769,
 		["posY"] = 0.435,
 	},
-	[4106] = {
+	[4556] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.777,
 		["posY"] = 0.533,
 	},
-	[4107] = {
+	[4557] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.811,
 		["posY"] = 0.682,
 	},
-	[4108] = {
+	[4558] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.852,
 		["posY"] = 0.565,
 	},
-	[4109] = {
+	[4559] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1416,
 		["posX"] = 0.882,
 		["posY"] = 0.511,
 	},
-	[4110] = {
+	[4560] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.183,
 		["posY"] = 0.893,
 	},
-	[4111] = {
+	[4561] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.192,
 		["posY"] = 0.334,
 	},
-	[4112] = {
+	[4562] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.192,
 		["posY"] = 0.932,
 	},
-	[4113] = {
+	[4563] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.193,
 		["posY"] = 0.839,
 	},
-	[4114] = {
+	[4564] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.213,
 		["posY"] = 0.828,
 	},
-	[4115] = {
+	[4565] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.214,
 		["posY"] = 0.878,
 	},
-	[4116] = {
+	[4566] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.226,
 		["posY"] = 0.899,
 	},
-	[4117] = {
+	[4567] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.24,
 		["posY"] = 0.854,
 	},
-	[4118] = {
+	[4568] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.246,
-		["posY"] = 0.365,
+		["posY"] = 0.364,
 	},
-	[4119] = {
+	[4569] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.247,
 		["posY"] = 0.927,
 	},
-	[4120] = {
+	[4570] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.263,
 		["posY"] = 0.304,
 	},
-	[4121] = {
+	[4571] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.271,
 		["posY"] = 0.184,
 	},
-	[4122] = {
+	[4572] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.284,
 		["posY"] = 0.88,
 	},
-	[4123] = {
+	[4573] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.303,
 		["posY"] = 0.44,
 	},
-	[4124] = {
+	[4574] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.307,
 		["posY"] = 0.326,
 	},
-	[4125] = {
+	[4575] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.308,
 		["posY"] = 0.181,
 	},
-	[4126] = {
+	[4576] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.314,
 		["posY"] = 0.457,
 	},
-	[4127] = {
+	[4577] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.319,
 		["posY"] = 0.227,
 	},
-	[4128] = {
+	[4578] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.327,
 		["posY"] = 0.43,
 	},
-	[4129] = {
+	[4579] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.327,
 		["posY"] = 0.454,
 	},
-	[4130] = {
+	[4580] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.33,
 		["posY"] = 0.465,
 	},
-	[4131] = {
+	[4581] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.331,
 		["posY"] = 0.444,
 	},
-	[4132] = {
+	[4582] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.42,
 	},
-	[4133] = {
+	[4583] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.34,
 		["posY"] = 0.447,
 	},
-	[4134] = {
+	[4584] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.341,
 		["posY"] = 0.674,
 	},
-	[4135] = {
+	[4585] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.343,
-		["posY"] = 0.213,
+		["posY"] = 0.214,
 	},
-	[4136] = {
+	[4586] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.349,
 		["posY"] = 0.618,
 	},
-	[4137] = {
+	[4587] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.361,
 		["posY"] = 0.253,
 	},
-	[4138] = {
+	[4588] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.38,
 		["posY"] = 0.344,
 	},
-	[4139] = {
+	[4589] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.382,
 		["posY"] = 0.232,
 	},
-	[4140] = {
+	[4590] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.386,
 		["posY"] = 0.431,
 	},
-	[4141] = {
+	[4591] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.408,
-		["posY"] = 0.283,
+		["posY"] = 0.282,
 	},
-	[4142] = {
+	[4592] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.411,
 		["posY"] = 0.764,
 	},
-	[4143] = {
+	[4593] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.417,
 		["posY"] = 0.314,
 	},
-	[4144] = {
+	[4594] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.434,
 		["posY"] = 0.315,
 	},
-	[4145] = {
+	[4595] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.478,
 		["posY"] = 0.356,
 	},
-	[4146] = {
+	[4596] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.503,
 		["posY"] = 0.479,
 	},
-	[4147] = {
+	[4597] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.509,
 		["posY"] = 0.777,
 	},
-	[4148] = {
+	[4598] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.527,
 		["posY"] = 0.767,
 	},
-	[4149] = {
+	[4599] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
-		["posX"] = 0.529,
-		["posY"] = 0.33,
+		["posX"] = 0.53,
+		["posY"] = 0.331,
 	},
-	[4150] = {
+	[4600] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.534,
 		["posY"] = 0.802,
 	},
-	[4151] = {
+	[4601] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1417,
+		["posX"] = 0.536,
+		["posY"] = 0.712,
+	},
+	[4602] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.536,
 		["posY"] = 0.752,
 	},
-	[4152] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1417,
-		["posX"] = 0.537,
-		["posY"] = 0.713,
-	},
-	[4153] = {
+	[4603] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.539,
 		["posY"] = 0.77,
 	},
-	[4154] = {
+	[4604] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.542,
 		["posY"] = 0.779,
 	},
-	[4155] = {
+	[4605] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.542,
 		["posY"] = 0.807,
 	},
-	[4156] = {
+	[4606] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.544,
 		["posY"] = 0.488,
 	},
-	[4157] = {
+	[4607] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
-		["posX"] = 0.545,
+		["posX"] = 0.544,
 		["posY"] = 0.819,
 	},
-	[4158] = {
+	[4608] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.548,
 		["posY"] = 0.647,
 	},
-	[4159] = {
+	[4609] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.548,
 		["posY"] = 0.789,
 	},
-	[4160] = {
+	[4610] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.554,
 		["posY"] = 0.732,
 	},
-	[4161] = {
+	[4611] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.558,
 		["posY"] = 0.763,
 	},
-	[4162] = {
+	[4612] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.57,
 		["posY"] = 0.767,
 	},
-	[4163] = {
+	[4613] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.573,
-		["posY"] = 0.713,
+		["posY"] = 0.712,
 	},
-	[4164] = {
+	[4614] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.574,
 		["posY"] = 0.47,
 	},
-	[4165] = {
+	[4615] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.604,
 		["posY"] = 0.739,
 	},
-	[4166] = {
+	[4616] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.616,
 		["posY"] = 0.314,
 	},
-	[4167] = {
+	[4617] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.616,
 		["posY"] = 0.439,
 	},
-	[4168] = {
+	[4618] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.633,
 		["posY"] = 0.738,
 	},
-	[4169] = {
+	[4619] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.643,
 		["posY"] = 0.349,
 	},
-	[4170] = {
+	[4620] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.652,
 		["posY"] = 0.753,
 	},
-	[4171] = {
+	[4621] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.653,
 		["posY"] = 0.656,
 	},
-	[4172] = {
+	[4622] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.659,
 		["posY"] = 0.263,
 	},
-	[4173] = {
+	[4623] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.661,
-		["posY"] = 0.812,
+		["posY"] = 0.813,
 	},
-	[4174] = {
+	[4624] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
-		["posX"] = 0.666,
+		["posX"] = 0.667,
 		["posY"] = 0.74,
 	},
-	[4175] = {
+	[4625] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.667,
 		["posY"] = 0.819,
 	},
-	[4176] = {
+	[4626] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.673,
 		["posY"] = 0.694,
 	},
-	[4177] = {
+	[4627] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.764,
 	},
-	[4178] = {
+	[4628] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.789,
 	},
-	[4179] = {
+	[4629] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.818,
 	},
-	[4180] = {
+	[4630] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.682,
 		["posY"] = 0.751,
 	},
-	[4181] = {
+	[4631] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.692,
 		["posY"] = 0.277,
 	},
-	[4182] = {
+	[4632] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.694,
 		["posY"] = 0.8,
 	},
-	[4183] = {
+	[4633] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.696,
 		["posY"] = 0.825,
 	},
-	[4184] = {
+	[4634] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.698,
 		["posY"] = 0.674,
 	},
-	[4185] = {
+	[4635] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.699,
 		["posY"] = 0.737,
 	},
-	[4186] = {
+	[4636] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.701,
 		["posY"] = 0.782,
 	},
-	[4187] = {
+	[4637] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.702,
 		["posY"] = 0.576,
 	},
-	[4188] = {
+	[4638] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.706,
 		["posY"] = 0.525,
 	},
-	[4189] = {
+	[4639] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.307,
 	},
-	[4190] = {
+	[4640] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.494,
 	},
-	[4191] = {
+	[4641] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.708,
 		["posY"] = 0.713,
 	},
-	[4192] = {
+	[4642] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.723,
 		["posY"] = 0.519,
 	},
-	[4193] = {
+	[4643] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.726,
 		["posY"] = 0.669,
 	},
-	[4194] = {
+	[4644] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.733,
 		["posY"] = 0.591,
 	},
-	[4195] = {
+	[4645] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.737,
 		["posY"] = 0.636,
 	},
-	[4196] = {
+	[4646] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.741,
 		["posY"] = 0.476,
 	},
-	[4197] = {
+	[4647] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.767,
 		["posY"] = 0.324,
 	},
-	[4198] = {
+	[4648] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.771,
 		["posY"] = 0.288,
 	},
-	[4199] = {
+	[4649] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.774,
 		["posY"] = 0.436,
 	},
-	[4200] = {
+	[4650] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.791,
 		["posY"] = 0.364,
 	},
-	[4201] = {
+	[4651] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.797,
 		["posY"] = 0.43,
 	},
-	[4202] = {
+	[4652] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.823,
 		["posY"] = 0.358,
 	},
-	[4203] = {
+	[4653] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.826,
 		["posY"] = 0.332,
 	},
-	[4204] = {
+	[4654] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.836,
 		["posY"] = 0.324,
 	},
-	[4205] = {
+	[4655] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.839,
 		["posY"] = 0.289,
 	},
-	[4206] = {
+	[4656] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.842,
 		["posY"] = 0.276,
 	},
-	[4207] = {
+	[4657] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1417,
+		["posX"] = 0.844,
+		["posY"] = 0.307,
+	},
+	[4658] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.844,
 		["posY"] = 0.341,
 	},
-	[4208] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1417,
-		["posX"] = 0.845,
-		["posY"] = 0.307,
-	},
-	[4209] = {
+	[4659] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.857,
 		["posY"] = 0.338,
 	},
-	[4210] = {
+	[4660] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.86,
 		["posY"] = 0.298,
 	},
-	[4211] = {
+	[4661] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.861,
 		["posY"] = 0.311,
 	},
-	[4212] = {
+	[4662] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1417,
 		["posX"] = 0.865,
 		["posY"] = 0.304,
 	},
-	[4213] = {
+	[4663] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.213,
 		["posY"] = 0.587,
 	},
-	[4214] = {
+	[4664] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.243,
 		["posY"] = 0.507,
 	},
-	[4215] = {
+	[4665] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.246,
 		["posY"] = 0.681,
 	},
-	[4216] = {
+	[4666] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.281,
 		["posY"] = 0.588,
 	},
-	[4217] = {
+	[4667] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.357,
 		["posY"] = 0.423,
 	},
-	[4218] = {
+	[4668] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.39,
 		["posY"] = 0.499,
 	},
-	[4219] = {
+	[4669] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.433,
 		["posY"] = 0.694,
 	},
-	[4220] = {
+	[4670] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
-		["posX"] = 0.439,
-		["posY"] = 0.435,
+		["posX"] = 0.44,
+		["posY"] = 0.434,
 	},
-	[4221] = {
+	[4671] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.524,
 		["posY"] = 0.596,
 	},
-	[4222] = {
+	[4672] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1425,
 		["posX"] = 0.628,
 		["posY"] = 0.591,
 	},
-	[4223] = {
+	[4673] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.766,
 	},
-	[4224] = {
+	[4674] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1427,
 		["posX"] = 0.646,
 		["posY"] = 0.491,
 	},
-	[4225] = {
+	[4675] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1427,
 		["posX"] = 0.662,
 		["posY"] = 0.376,
 	},
-	[4226] = {
+	[4676] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1427,
 		["posX"] = 0.681,
 		["posY"] = 0.754,
 	},
-	[4227] = {
+	[4677] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.376,
 		["posY"] = 0.26,
 	},
-	[4228] = {
+	[4678] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.394,
-		["posY"] = 0.265,
+		["posY"] = 0.264,
 	},
-	[4229] = {
+	[4679] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.418,
 		["posY"] = 0.314,
 	},
-	[4230] = {
+	[4680] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.427,
 		["posY"] = 0.334,
 	},
-	[4231] = {
+	[4681] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.432,
 		["posY"] = 0.262,
 	},
-	[4232] = {
+	[4682] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.432,
 		["posY"] = 0.277,
 	},
-	[4233] = {
+	[4683] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.438,
 		["posY"] = 0.301,
 	},
-	[4234] = {
+	[4684] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.439,
 		["posY"] = 0.285,
 	},
-	[4235] = {
+	[4685] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.44,
 		["posY"] = 0.314,
 	},
-	[4236] = {
+	[4686] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.444,
 		["posY"] = 0.274,
 	},
-	[4237] = {
+	[4687] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.451,
 		["posY"] = 0.305,
 	},
-	[4238] = {
+	[4688] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.453,
 		["posY"] = 0.27,
 	},
-	[4239] = {
+	[4689] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.46,
 		["posY"] = 0.259,
 	},
-	[4240] = {
+	[4690] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.463,
 		["posY"] = 0.317,
 	},
-	[4241] = {
+	[4691] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.488,
 		["posY"] = 0.264,
 	},
-	[4242] = {
+	[4692] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.642,
 		["posY"] = 0.766,
 	},
-	[4243] = {
+	[4693] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.664,
 		["posY"] = 0.036,
 	},
-	[4244] = {
+	[4694] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.669,
 		["posY"] = 0.831,
 	},
-	[4245] = {
+	[4695] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.694,
 		["posY"] = 0.804,
 	},
-	[4246] = {
+	[4696] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
-		["posX"] = 0.704,
-		["posY"] = 0.661,
+		["posX"] = 0.703,
+		["posY"] = 0.663,
 	},
-	[4247] = {
+	[4697] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.71,
 		["posY"] = 0.839,
 	},
-	[4248] = {
+	[4698] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.723,
 		["posY"] = 0.754,
 	},
-	[4249] = {
+	[4699] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.727,
 		["posY"] = 0.741,
 	},
-	[4250] = {
+	[4700] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.74,
 		["posY"] = 0.707,
 	},
-	[4251] = {
+	[4701] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.741,
 		["posY"] = 0.736,
 	},
-	[4252] = {
+	[4702] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.754,
 		["posY"] = 0.728,
 	},
-	[4253] = {
+	[4703] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.8,
 		["posY"] = 0.309,
 	},
-	[4254] = {
+	[4704] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
-		["posX"] = 0.83,
-		["posY"] = 0.321,
+		["posX"] = 0.831,
+		["posY"] = 0.322,
 	},
-	[4255] = {
+	[4705] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.851,
 		["posY"] = 0.42,
 	},
-	[4256] = {
+	[4706] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.866,
 		["posY"] = 0.354,
 	},
-	[4257] = {
+	[4707] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.876,
 		["posY"] = 0.45,
 	},
-	[4258] = {
+	[4708] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.886,
 		["posY"] = 0.31,
 	},
-	[4259] = {
+	[4709] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.887,
 		["posY"] = 0.377,
 	},
-	[4260] = {
+	[4710] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1424,
 		["posX"] = 0.904,
 		["posY"] = 0.393,
 	},
-	[4261] = {
+	[4711] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.532,
 		["posY"] = 0.468,
 	},
-	[4262] = {
+	[4712] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.552,
 		["posY"] = 0.399,
 	},
-	[4263] = {
+	[4713] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.58,
 		["posY"] = 0.432,
 	},
-	[4264] = {
+	[4714] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.583,
 		["posY"] = 0.312,
 	},
-	[4265] = {
+	[4715] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.609,
 		["posY"] = 0.38,
 	},
-	[4266] = {
+	[4716] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
-		["posX"] = 0.612,
-		["posY"] = 0.803,
+		["posX"] = 0.611,
+		["posY"] = 0.804,
 	},
-	[4267] = {
+	[4717] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.622,
 		["posY"] = 0.485,
 	},
-	[4268] = {
+	[4718] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.627,
 		["posY"] = 0.603,
 	},
-	[4269] = {
+	[4719] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.627,
 		["posY"] = 0.648,
 	},
-	[4270] = {
+	[4720] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
-		["posX"] = 0.631,
-		["posY"] = 0.427,
+		["posX"] = 0.63,
+		["posY"] = 0.426,
 	},
-	[4271] = {
+	[4721] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.644,
 		["posY"] = 0.555,
 	},
-	[4272] = {
+	[4722] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.645,
 		["posY"] = 0.516,
 	},
-	[4273] = {
+	[4723] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.646,
 		["posY"] = 0.473,
 	},
-	[4274] = {
+	[4724] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1440,
+		["posX"] = 0.646,
+		["posY"] = 0.736,
+	},
+	[4725] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.649,
 		["posY"] = 0.763,
 	},
-	[4275] = {
+	[4726] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.654,
 		["posY"] = 0.632,
 	},
-	[4276] = {
+	[4727] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.658,
-		["posY"] = 0.599,
+		["posY"] = 0.6,
 	},
-	[4277] = {
+	[4728] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.66,
 		["posY"] = 0.833,
 	},
-	[4278] = {
+	[4729] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.664,
-		["posY"] = 0.783,
+		["posY"] = 0.782,
 	},
-	[4279] = {
+	[4730] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.674,
 		["posY"] = 0.661,
 	},
-	[4280] = {
+	[4731] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.677,
 		["posY"] = 0.685,
 	},
-	[4281] = {
+	[4732] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.689,
 		["posY"] = 0.583,
 	},
-	[4282] = {
+	[4733] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.697,
 		["posY"] = 0.738,
 	},
-	[4283] = {
+	[4734] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.704,
 		["posY"] = 0.815,
 	},
-	[4284] = {
+	[4735] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.707,
 		["posY"] = 0.514,
 	},
-	[4285] = {
+	[4736] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.708,
 		["posY"] = 0.6,
 	},
-	[4286] = {
+	[4737] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.713,
 		["posY"] = 0.531,
 	},
-	[4287] = {
+	[4738] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.713,
 		["posY"] = 0.652,
 	},
-	[4288] = {
+	[4739] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.716,
 		["posY"] = 0.848,
 	},
-	[4289] = {
+	[4740] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.724,
 		["posY"] = 0.51,
 	},
-	[4290] = {
+	[4741] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.725,
 		["posY"] = 0.571,
 	},
-	[4291] = {
+	[4742] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.736,
 		["posY"] = 0.459,
 	},
-	[4292] = {
+	[4743] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.738,
 		["posY"] = 0.804,
 	},
-	[4293] = {
+	[4744] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.747,
 		["posY"] = 0.573,
 	},
-	[4294] = {
+	[4745] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.752,
 		["posY"] = 0.694,
 	},
-	[4295] = {
+	[4746] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.754,
 		["posY"] = 0.528,
 	},
-	[4296] = {
+	[4747] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.756,
 		["posY"] = 0.764,
 	},
-	[4297] = {
+	[4748] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.772,
 		["posY"] = 0.522,
 	},
-	[4298] = {
+	[4749] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.781,
-		["posY"] = 0.647,
+		["posY"] = 0.648,
 	},
-	[4299] = {
+	[4750] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1440,
+		["posX"] = 0.785,
+		["posY"] = 0.801,
+	},
+	[4751] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.791,
 		["posY"] = 0.633,
 	},
-	[4300] = {
+	[4752] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.798,
 		["posY"] = 0.704,
 	},
-	[4301] = {
+	[4753] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.811,
 		["posY"] = 0.732,
 	},
-	[4302] = {
+	[4754] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.822,
 		["posY"] = 0.648,
 	},
-	[4303] = {
+	[4755] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.831,
 		["posY"] = 0.773,
 	},
-	[4304] = {
+	[4756] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.848,
 		["posY"] = 0.767,
 	},
-	[4305] = {
+	[4757] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.851,
 		["posY"] = 0.714,
 	},
-	[4306] = {
+	[4758] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.851,
 		["posY"] = 0.789,
 	},
-	[4307] = {
+	[4759] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.869,
 		["posY"] = 0.692,
 	},
-	[4308] = {
+	[4760] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.889,
 		["posY"] = 0.791,
 	},
-	[4309] = {
+	[4761] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1440,
+		["posX"] = 0.902,
+		["posY"] = 0.764,
+	},
+	[4762] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.909,
 		["posY"] = 0.685,
 	},
-	[4310] = {
+	[4763] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.914,
 		["posY"] = 0.494,
 	},
-	[4311] = {
+	[4764] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1440,
 		["posX"] = 0.933,
-		["posY"] = 0.565,
+		["posY"] = 0.564,
 	},
-	[4312] = {
+	[4765] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.509,
 		["posY"] = 0.588,
 	},
-	[4313] = {
+	[4766] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.518,
 		["posY"] = 0.57,
 	},
-	[4314] = {
+	[4767] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.52,
 		["posY"] = 0.581,
 	},
-	[4315] = {
+	[4768] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.526,
 		["posY"] = 0.577,
 	},
-	[4316] = {
+	[4769] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.528,
 		["posY"] = 0.593,
 	},
-	[4317] = {
+	[4770] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.531,
 		["posY"] = 0.562,
 	},
-	[4318] = {
+	[4771] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.54,
 		["posY"] = 0.646,
 	},
-	[4319] = {
+	[4772] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.557,
 	},
-	[4320] = {
+	[4773] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.543,
 		["posY"] = 0.501,
 	},
-	[4321] = {
+	[4774] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.552,
 		["posY"] = 0.56,
 	},
-	[4322] = {
+	[4775] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.614,
 		["posY"] = 0.58,
 	},
-	[4323] = {
+	[4776] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.673,
 		["posY"] = 0.459,
 	},
-	[4324] = {
+	[4777] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.678,
 		["posY"] = 0.438,
 	},
-	[4325] = {
+	[4778] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.685,
 		["posY"] = 0.39,
 	},
-	[4326] = {
+	[4779] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.706,
 		["posY"] = 0.356,
 	},
-	[4327] = {
+	[4780] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.743,
 		["posY"] = 0.289,
 	},
-	[4328] = {
+	[4781] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.751,
 		["posY"] = 0.326,
 	},
-	[4329] = {
+	[4782] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.803,
 		["posY"] = 0.473,
 	},
-	[4330] = {
+	[4783] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1444,
 		["posX"] = 0.811,
 		["posY"] = 0.385,
 	},
-	[4331] = {
+	[4784] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.102,
 		["posY"] = 0.328,
 	},
-	[4332] = {
+	[4785] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.104,
 		["posY"] = 0.309,
 	},
-	[4333] = {
+	[4786] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.104,
 		["posY"] = 0.363,
 	},
-	[4334] = {
+	[4787] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.104,
 		["posY"] = 0.411,
 	},
-	[4335] = {
+	[4788] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.106,
 		["posY"] = 0.382,
 	},
-	[4336] = {
+	[4789] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.118,
 		["posY"] = 0.381,
 	},
-	[4337] = {
+	[4790] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.121,
 		["posY"] = 0.331,
 	},
-	[4338] = {
+	[4791] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.126,
 		["posY"] = 0.253,
 	},
-	[4339] = {
+	[4792] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.13,
 		["posY"] = 0.347,
 	},
-	[4340] = {
+	[4793] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.132,
 		["posY"] = 0.114,
 	},
-	[4341] = {
+	[4794] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.133,
-		["posY"] = 0.369,
+		["posY"] = 0.37,
 	},
-	[4342] = {
+	[4795] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.147,
 		["posY"] = 0.343,
 	},
-	[4343] = {
+	[4796] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.153,
 		["posY"] = 0.402,
 	},
-	[4344] = {
+	[4797] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.156,
 		["posY"] = 0.312,
 	},
-	[4345] = {
+	[4798] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.158,
 		["posY"] = 0.188,
 	},
-	[4346] = {
+	[4799] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.166,
 		["posY"] = 0.41,
 	},
-	[4347] = {
+	[4800] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.181,
 		["posY"] = 0.36,
 	},
-	[4348] = {
+	[4801] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.208,
 		["posY"] = 0.379,
 	},
-	[4349] = {
+	[4802] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.212,
 		["posY"] = 0.334,
 	},
-	[4350] = {
+	[4803] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.218,
 		["posY"] = 0.412,
 	},
-	[4351] = {
+	[4804] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.238,
 		["posY"] = 0.224,
 	},
-	[4352] = {
+	[4805] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.238,
 		["posY"] = 0.447,
 	},
-	[4353] = {
+	[4806] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.239,
 		["posY"] = 0.245,
 	},
-	[4354] = {
+	[4807] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.258,
 		["posY"] = 0.526,
 	},
-	[4355] = {
+	[4808] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.258,
 		["posY"] = 0.553,
 	},
-	[4356] = {
+	[4809] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.263,
 		["posY"] = 0.538,
 	},
-	[4357] = {
+	[4810] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.264,
 		["posY"] = 0.469,
 	},
-	[4358] = {
+	[4811] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.268,
 		["posY"] = 0.561,
 	},
-	[4359] = {
+	[4812] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.272,
 		["posY"] = 0.524,
 	},
-	[4360] = {
+	[4813] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.272,
 		["posY"] = 0.545,
 	},
-	[4361] = {
+	[4814] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.273,
 		["posY"] = 0.514,
 	},
-	[4362] = {
+	[4815] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.276,
 		["posY"] = 0.292,
 	},
-	[4363] = {
+	[4816] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.281,
 		["posY"] = 0.28,
 	},
-	[4364] = {
+	[4817] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.288,
 		["posY"] = 0.491,
 	},
-	[4365] = {
+	[4818] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.301,
 		["posY"] = 0.459,
 	},
-	[4366] = {
+	[4819] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.33,
 		["posY"] = 0.513,
 	},
-	[4367] = {
+	[4820] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.343,
 		["posY"] = 0.533,
 	},
-	[4368] = {
+	[4821] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.345,
 		["posY"] = 0.274,
 	},
-	[4369] = {
+	[4822] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.353,
 		["posY"] = 0.287,
 	},
-	[4370] = {
+	[4823] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.364,
 		["posY"] = 0.506,
 	},
-	[4371] = {
+	[4824] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.37,
 		["posY"] = 0.544,
 	},
-	[4372] = {
+	[4825] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.38,
 		["posY"] = 0.372,
 	},
-	[4373] = {
+	[4826] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.386,
 		["posY"] = 0.327,
 	},
-	[4374] = {
+	[4827] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.402,
 		["posY"] = 0.509,
 	},
-	[4375] = {
+	[4828] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.416,
 		["posY"] = 0.329,
 	},
-	[4376] = {
+	[4829] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.422,
 		["posY"] = 0.349,
 	},
-	[4377] = {
+	[4830] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.424,
 		["posY"] = 0.335,
 	},
-	[4378] = {
+	[4831] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.424,
 		["posY"] = 0.397,
 	},
-	[4379] = {
+	[4832] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.426,
 		["posY"] = 0.31,
 	},
-	[4380] = {
+	[4833] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.426,
 		["posY"] = 0.324,
 	},
-	[4381] = {
+	[4834] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.43,
 		["posY"] = 0.347,
 	},
-	[4382] = {
+	[4835] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.433,
 		["posY"] = 0.33,
 	},
-	[4383] = {
+	[4836] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.439,
 		["posY"] = 0.602,
 	},
-	[4384] = {
+	[4837] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.441,
 		["posY"] = 0.365,
 	},
-	[4385] = {
+	[4838] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.443,
 		["posY"] = 0.336,
 	},
-	[4386] = {
+	[4839] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.445,
 		["posY"] = 0.378,
 	},
-	[4387] = {
+	[4840] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.448,
 		["posY"] = 0.365,
 	},
-	[4388] = {
+	[4841] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.451,
 		["posY"] = 0.391,
 	},
-	[4389] = {
+	[4842] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.483,
 		["posY"] = 0.402,
 	},
-	[4390] = {
+	[4843] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.502,
 		["posY"] = 0.571,
 	},
-	[4391] = {
+	[4844] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.537,
 		["posY"] = 0.462,
 	},
-	[4392] = {
+	[4845] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.554,
 		["posY"] = 0.511,
 	},
-	[4393] = {
+	[4846] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.59,
 		["posY"] = 0.495,
 	},
-	[4394] = {
+	[4847] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.594,
 		["posY"] = 0.581,
 	},
-	[4395] = {
+	[4848] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.62,
 		["posY"] = 0.479,
 	},
-	[4396] = {
+	[4849] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.638,
 		["posY"] = 0.589,
 	},
-	[4397] = {
+	[4850] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.658,
 		["posY"] = 0.519,
 	},
-	[4398] = {
+	[4851] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.669,
 		["posY"] = 0.606,
 	},
-	[4399] = {
+	[4852] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.678,
 		["posY"] = 0.519,
 	},
-	[4400] = {
+	[4853] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.684,
-		["posY"] = 0.78,
+		["posY"] = 0.779,
 	},
-	[4401] = {
+	[4854] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.698,
 		["posY"] = 0.692,
 	},
-	[4402] = {
+	[4855] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.699,
 		["posY"] = 0.921,
 	},
-	[4403] = {
+	[4856] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.753,
 		["posY"] = 0.51,
 	},
-	[4404] = {
+	[4857] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.763,
 		["posY"] = 0.938,
 	},
-	[4405] = {
+	[4858] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.771,
 		["posY"] = 0.871,
 	},
-	[4406] = {
+	[4859] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.776,
 		["posY"] = 0.64,
 	},
-	[4407] = {
+	[4860] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.784,
 		["posY"] = 0.621,
 	},
-	[4408] = {
+	[4861] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.796,
 		["posY"] = 0.902,
 	},
-	[4409] = {
+	[4862] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.798,
 		["posY"] = 0.611,
 	},
-	[4410] = {
+	[4863] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.801,
 		["posY"] = 0.634,
 	},
-	[4411] = {
+	[4864] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.834,
 		["posY"] = 0.53,
 	},
-	[4412] = {
+	[4865] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.84,
 		["posY"] = 0.874,
 	},
-	[4413] = {
+	[4866] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.865,
 		["posY"] = 0.843,
 	},
-	[4414] = {
+	[4867] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.889,
 		["posY"] = 0.624,
 	},
-	[4415] = {
+	[4868] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1441,
 		["posX"] = 0.894,
 		["posY"] = 0.769,
 	},
-	[4416] = {
+	[4869] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.292,
 		["posY"] = 0.081,
 	},
-	[4417] = {
+	[4870] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.294,
 		["posY"] = 0.712,
 	},
-	[4418] = {
+	[4871] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.298,
 		["posY"] = 0.566,
 	},
-	[4419] = {
+	[4872] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.304,
 		["posY"] = 0.604,
 	},
-	[4420] = {
+	[4873] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.306,
 		["posY"] = 0.511,
 	},
-	[4421] = {
+	[4874] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.322,
 		["posY"] = 0.716,
 	},
-	[4422] = {
+	[4875] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.323,
 		["posY"] = 0.63,
 	},
-	[4423] = {
+	[4876] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.343,
 		["posY"] = 0.515,
 	},
-	[4424] = {
+	[4877] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.347,
 		["posY"] = 0.106,
 	},
-	[4425] = {
+	[4878] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.35,
 		["posY"] = 0.52,
 	},
-	[4426] = {
+	[4879] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.354,
 		["posY"] = 0.564,
 	},
-	[4427] = {
+	[4880] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.368,
 		["posY"] = 0.593,
 	},
-	[4428] = {
+	[4881] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.372,
 		["posY"] = 0.07,
 	},
-	[4429] = {
+	[4882] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
-		["posX"] = 0.379,
-		["posY"] = 0.114,
+		["posX"] = 0.378,
+		["posY"] = 0.113,
 	},
-	[4430] = {
+	[4883] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.386,
 		["posY"] = 0.134,
 	},
-	[4431] = {
+	[4884] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.387,
 		["posY"] = 0.169,
 	},
-	[4432] = {
+	[4885] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.387,
 		["posY"] = 0.683,
 	},
-	[4433] = {
+	[4886] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.389,
 		["posY"] = 0.401,
 	},
-	[4434] = {
+	[4887] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.401,
 		["posY"] = 0.438,
 	},
-	[4435] = {
+	[4888] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.402,
 		["posY"] = 0.554,
 	},
-	[4436] = {
+	[4889] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.408,
 		["posY"] = 0.484,
 	},
-	[4437] = {
+	[4890] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.422,
 		["posY"] = 0.745,
 	},
-	[4438] = {
+	[4891] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.438,
 		["posY"] = 0.155,
 	},
-	[4439] = {
+	[4892] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.452,
 		["posY"] = 0.541,
 	},
-	[4440] = {
+	[4893] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.453,
 		["posY"] = 0.245,
 	},
-	[4441] = {
+	[4894] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.458,
 		["posY"] = 0.619,
 	},
-	[4442] = {
+	[4895] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.458,
 		["posY"] = 0.652,
 	},
-	[4443] = {
+	[4896] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.464,
 		["posY"] = 0.176,
 	},
-	[4444] = {
+	[4897] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1443,
+		["posX"] = 0.467,
+		["posY"] = 0.133,
+	},
+	[4898] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.467,
 		["posY"] = 0.345,
 	},
-	[4445] = {
+	[4899] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.471,
 		["posY"] = 0.43,
 	},
-	[4446] = {
+	[4900] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.472,
 		["posY"] = 0.881,
 	},
-	[4447] = {
+	[4901] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.474,
 		["posY"] = 0.21,
 	},
-	[4448] = {
+	[4902] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.474,
 		["posY"] = 0.556,
 	},
-	[4449] = {
+	[4903] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.482,
 		["posY"] = 0.697,
 	},
-	[4450] = {
+	[4904] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.485,
 		["posY"] = 0.295,
 	},
-	[4451] = {
+	[4905] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.489,
 		["posY"] = 0.924,
 	},
-	[4452] = {
+	[4906] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.498,
 		["posY"] = 0.83,
 	},
-	[4453] = {
+	[4907] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.5,
 		["posY"] = 0.058,
 	},
-	[4454] = {
+	[4908] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
-		["posX"] = 0.503,
+		["posX"] = 0.502,
 		["posY"] = 0.236,
 	},
-	[4455] = {
+	[4909] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.503,
 		["posY"] = 0.331,
 	},
-	[4456] = {
+	[4910] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.504,
 		["posY"] = 0.464,
 	},
-	[4457] = {
+	[4911] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.512,
 		["posY"] = 0.9,
 	},
-	[4458] = {
+	[4912] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.52,
 		["posY"] = 0.086,
 	},
-	[4459] = {
+	[4913] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.53,
 		["posY"] = 0.241,
 	},
-	[4460] = {
+	[4914] = {
+		["type"] = "mining",
+		["object"] = 1735,
+		["mapID"] = 1443,
+		["posX"] = 0.541,
+		["posY"] = 0.444,
+	},
+	[4915] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.541,
 		["posY"] = 0.876,
 	},
-	[4461] = {
-		["type"] = "mining",
-		["object"] = 1735,
-		["mapID"] = 1443,
-		["posX"] = 0.542,
-		["posY"] = 0.445,
-	},
-	[4462] = {
+	[4916] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.551,
 		["posY"] = 0.46,
 	},
-	[4463] = {
+	[4917] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
-		["posX"] = 0.572,
+		["posX"] = 0.571,
 		["posY"] = 0.437,
 	},
-	[4464] = {
+	[4918] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.572,
 		["posY"] = 0.82,
 	},
-	[4465] = {
+	[4919] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.582,
 		["posY"] = 0.744,
 	},
-	[4466] = {
+	[4920] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.584,
 		["posY"] = 0.693,
 	},
-	[4467] = {
+	[4921] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.588,
 		["posY"] = 0.657,
 	},
-	[4468] = {
+	[4922] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.589,
 		["posY"] = 0.32,
 	},
-	[4469] = {
+	[4923] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.592,
 		["posY"] = 0.906,
 	},
-	[4470] = {
+	[4924] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.596,
 		["posY"] = 0.209,
 	},
-	[4471] = {
+	[4925] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.596,
 		["posY"] = 0.452,
 	},
-	[4472] = {
+	[4926] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.605,
 		["posY"] = 0.884,
 	},
-	[4473] = {
+	[4927] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.609,
 		["posY"] = 0.512,
 	},
-	[4474] = {
+	[4928] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.609,
 		["posY"] = 0.822,
 	},
-	[4475] = {
+	[4929] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.614,
 		["posY"] = 0.122,
 	},
-	[4476] = {
+	[4930] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.623,
-		["posY"] = 0.477,
+		["posY"] = 0.476,
 	},
-	[4477] = {
+	[4931] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.624,
 		["posY"] = 0.603,
 	},
-	[4478] = {
+	[4932] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.638,
 		["posY"] = 0.436,
 	},
-	[4479] = {
+	[4933] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.642,
 		["posY"] = 0.551,
 	},
-	[4480] = {
+	[4934] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.643,
 		["posY"] = 0.512,
 	},
-	[4481] = {
+	[4935] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.647,
 		["posY"] = 0.874,
 	},
-	[4482] = {
+	[4936] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.648,
 		["posY"] = 0.692,
 	},
-	[4483] = {
+	[4937] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.649,
 		["posY"] = 0.449,
 	},
-	[4484] = {
+	[4938] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.658,
 		["posY"] = 0.607,
 	},
-	[4485] = {
+	[4939] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.658,
 		["posY"] = 0.901,
 	},
-	[4486] = {
+	[4940] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.662,
 		["posY"] = 0.47,
 	},
-	[4487] = {
+	[4941] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.664,
 		["posY"] = 0.831,
 	},
-	[4488] = {
+	[4942] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.665,
 		["posY"] = 0.421,
 	},
-	[4489] = {
+	[4943] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.678,
 		["posY"] = 0.775,
 	},
-	[4490] = {
+	[4944] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.69,
 		["posY"] = 0.632,
 	},
-	[4491] = {
+	[4945] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.706,
 		["posY"] = 0.581,
 	},
-	[4492] = {
+	[4946] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.711,
 		["posY"] = 0.454,
 	},
-	[4493] = {
+	[4947] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.719,
 		["posY"] = 0.804,
 	},
-	[4494] = {
+	[4948] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.727,
 		["posY"] = 0.413,
 	},
-	[4495] = {
+	[4949] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.741,
 		["posY"] = 0.37,
 	},
-	[4496] = {
+	[4950] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.743,
 		["posY"] = 0.2,
 	},
-	[4497] = {
+	[4951] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.743,
 		["posY"] = 0.602,
 	},
-	[4498] = {
+	[4952] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.744,
 		["posY"] = 0.571,
 	},
-	[4499] = {
+	[4953] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.751,
 		["posY"] = 0.47,
 	},
-	[4500] = {
+	[4954] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.754,
 		["posY"] = 0.533,
 	},
-	[4501] = {
+	[4955] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.762,
 		["posY"] = 0.704,
 	},
-	[4502] = {
+	[4956] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.769,
 		["posY"] = 0.323,
 	},
-	[4503] = {
+	[4957] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.771,
 		["posY"] = 0.366,
 	},
-	[4504] = {
+	[4958] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.778,
 		["posY"] = 0.194,
 	},
-	[4505] = {
+	[4959] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.789,
 		["posY"] = 0.362,
 	},
-	[4506] = {
+	[4960] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.789,
 		["posY"] = 0.543,
 	},
-	[4507] = {
+	[4961] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1443,
 		["posX"] = 0.796,
 		["posY"] = 0.244,
 	},
-	[4508] = {
+	[4962] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.274,
 		["posY"] = 0.714,
 	},
-	[4509] = {
+	[4963] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.286,
 		["posY"] = 0.621,
 	},
-	[4510] = {
+	[4964] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.302,
 		["posY"] = 0.14,
 	},
-	[4511] = {
+	[4965] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.311,
 		["posY"] = 0.643,
 	},
-	[4512] = {
+	[4966] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.318,
 		["posY"] = 0.751,
 	},
-	[4513] = {
+	[4967] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.341,
 		["posY"] = 0.054,
 	},
-	[4514] = {
+	[4968] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.345,
 		["posY"] = 0.144,
 	},
-	[4515] = {
+	[4969] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.353,
 		["posY"] = 0.752,
 	},
-	[4516] = {
+	[4970] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.354,
 		["posY"] = 0.093,
 	},
-	[4517] = {
+	[4971] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.374,
 		["posY"] = 0.699,
 	},
-	[4518] = {
+	[4972] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.387,
 		["posY"] = 0.21,
 	},
-	[4519] = {
+	[4973] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1442,
 		["posX"] = 0.402,
 		["posY"] = 0.192,
 	},
-	[4520] = {
+	[4974] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.312,
 		["posY"] = 0.522,
 	},
-	[4521] = {
+	[4975] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.35,
 		["posY"] = 0.512,
 	},
-	[4522] = {
+	[4976] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.364,
 		["posY"] = 0.479,
 	},
-	[4523] = {
+	[4977] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.376,
 		["posY"] = 0.454,
 	},
-	[4524] = {
+	[4978] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.378,
 		["posY"] = 0.404,
 	},
-	[4525] = {
+	[4979] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.488,
 		["posY"] = 0.71,
 	},
-	[4526] = {
+	[4980] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.495,
 		["posY"] = 0.668,
 	},
-	[4527] = {
+	[4981] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.522,
 		["posY"] = 0.638,
 	},
-	[4528] = {
+	[4982] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.534,
-		["posY"] = 0.347,
+		["posY"] = 0.348,
 	},
-	[4529] = {
+	[4983] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.55,
 		["posY"] = 0.264,
 	},
-	[4530] = {
+	[4984] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.551,
 		["posY"] = 0.612,
 	},
-	[4531] = {
+	[4985] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.562,
 		["posY"] = 0.373,
 	},
-	[4532] = {
+	[4986] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.573,
 		["posY"] = 0.385,
 	},
-	[4533] = {
+	[4987] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.579,
 		["posY"] = 0.626,
 	},
-	[4534] = {
+	[4988] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.583,
 		["posY"] = 0.3,
 	},
-	[4535] = {
+	[4989] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.59,
 		["posY"] = 0.325,
 	},
-	[4536] = {
+	[4990] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.591,
 		["posY"] = 0.482,
 	},
-	[4537] = {
+	[4991] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.357,
 	},
-	[4538] = {
+	[4992] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.618,
 		["posY"] = 0.328,
 	},
-	[4539] = {
+	[4993] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.618,
 		["posY"] = 0.412,
 	},
-	[4540] = {
+	[4994] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.627,
 		["posY"] = 0.4,
 	},
-	[4541] = {
+	[4995] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.653,
 		["posY"] = 0.358,
 	},
-	[4542] = {
+	[4996] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.665,
 		["posY"] = 0.423,
 	},
-	[4543] = {
+	[4997] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.693,
 		["posY"] = 0.435,
 	},
-	[4544] = {
+	[4998] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.705,
 		["posY"] = 0.454,
 	},
-	[4545] = {
+	[4999] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.71,
 		["posY"] = 0.474,
 	},
-	[4546] = {
+	[5000] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.721,
 		["posY"] = 0.488,
 	},
-	[4547] = {
+	[5001] = {
 		["type"] = "mining",
 		["object"] = 1735,
 		["mapID"] = 1446,
 		["posX"] = 0.737,
 		["posY"] = 0.46,
 	},
-	[4548] = {
+	[5002] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
-		["posX"] = 0.039,
-		["posY"] = 0.806,
+		["posX"] = 0.04,
+		["posY"] = 0.803,
 	},
-	[4549] = {
+	[5003] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.061,
 		["posY"] = 0.775,
 	},
-	[4550] = {
+	[5004] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.064,
 		["posY"] = 0.903,
 	},
-	[4551] = {
+	[5005] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.068,
 		["posY"] = 0.954,
 	},
-	[4552] = {
+	[5006] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.074,
 		["posY"] = 0.733,
 	},
-	[4553] = {
+	[5007] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.076,
 		["posY"] = 0.895,
 	},
-	[4554] = {
+	[5008] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.082,
 		["posY"] = 0.959,
 	},
-	[4555] = {
+	[5009] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.084,
 		["posY"] = 0.906,
 	},
-	[4556] = {
+	[5010] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.092,
 		["posY"] = 0.654,
 	},
-	[4557] = {
+	[5011] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.093,
 		["posY"] = 0.88,
 	},
-	[4558] = {
+	[5012] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.101,
-		["posY"] = 0.897,
+		["posY"] = 0.896,
 	},
-	[4559] = {
+	[5013] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.101,
 		["posY"] = 0.927,
 	},
-	[4560] = {
+	[5014] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.114,
 		["posY"] = 0.777,
 	},
-	[4561] = {
+	[5015] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.122,
 		["posY"] = 0.35,
 	},
-	[4562] = {
+	[5016] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.143,
 		["posY"] = 0.399,
 	},
-	[4563] = {
+	[5017] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.15,
 		["posY"] = 0.818,
 	},
-	[4564] = {
-		["type"] = "mining",
-		["object"] = 2040,
-		["mapID"] = 1418,
-		["posX"] = 0.151,
-		["posY"] = 0.859,
-	},
-	[4565] = {
+	[5018] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.151,
 		["posY"] = 0.922,
 	},
-	[4566] = {
+	[5019] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.152,
 		["posY"] = 0.379,
 	},
-	[4567] = {
+	[5020] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1418,
+		["posX"] = 0.152,
+		["posY"] = 0.859,
+	},
+	[5021] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.158,
 		["posY"] = 0.328,
 	},
-	[4568] = {
+	[5022] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.163,
 		["posY"] = 0.879,
 	},
-	[4569] = {
+	[5023] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.208,
 		["posY"] = 0.823,
 	},
-	[4570] = {
+	[5024] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.238,
 		["posY"] = 0.664,
 	},
-	[4571] = {
+	[5025] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.317,
 		["posY"] = 0.724,
 	},
-	[4572] = {
+	[5026] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.354,
 		["posY"] = 0.391,
 	},
-	[4573] = {
+	[5027] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.42,
 		["posY"] = 0.789,
 	},
-	[4574] = {
+	[5028] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
 		["posY"] = 0.822,
 	},
-	[4575] = {
+	[5029] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.435,
 		["posY"] = 0.742,
 	},
-	[4576] = {
+	[5030] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.453,
 		["posY"] = 0.846,
 	},
-	[4577] = {
+	[5031] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.514,
 		["posY"] = 0.529,
 	},
-	[4578] = {
+	[5032] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.56,
 		["posY"] = 0.821,
 	},
-	[4579] = {
+	[5033] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.562,
 		["posY"] = 0.876,
 	},
-	[4580] = {
+	[5034] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.613,
 		["posY"] = 0.64,
 	},
-	[4581] = {
+	[5035] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.63,
 		["posY"] = 0.561,
 	},
-	[4582] = {
+	[5036] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.64,
 		["posY"] = 0.687,
 	},
-	[4583] = {
+	[5037] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.688,
-		["posY"] = 0.512,
+		["posY"] = 0.511,
 	},
-	[4584] = {
+	[5038] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.718,
 		["posY"] = 0.671,
 	},
-	[4585] = {
+	[5039] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.723,
 		["posY"] = 0.347,
 	},
-	[4586] = {
+	[5040] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.727,
 		["posY"] = 0.611,
 	},
-	[4587] = {
+	[5041] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.761,
 		["posY"] = 0.661,
 	},
-	[4588] = {
+	[5042] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.78,
-		["posY"] = 0.486,
+		["posY"] = 0.484,
 	},
-	[4589] = {
+	[5043] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.783,
 		["posY"] = 0.439,
 	},
-	[4590] = {
+	[5044] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.784,
 		["posY"] = 0.462,
 	},
-	[4591] = {
+	[5045] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.788,
 		["posY"] = 0.555,
 	},
-	[4592] = {
+	[5046] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.797,
 		["posY"] = 0.332,
 	},
-	[4593] = {
+	[5047] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.807,
 		["posY"] = 0.657,
 	},
-	[4594] = {
+	[5048] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.826,
 		["posY"] = 0.448,
 	},
-	[4595] = {
+	[5049] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.829,
 		["posY"] = 0.599,
 	},
-	[4596] = {
+	[5050] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.836,
 		["posY"] = 0.398,
 	},
-	[4597] = {
+	[5051] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.839,
 		["posY"] = 0.332,
 	},
-	[4598] = {
+	[5052] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1418,
 		["posX"] = 0.839,
-		["posY"] = 0.549,
+		["posY"] = 0.547,
 	},
-	[4599] = {
+	[5053] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.427,
 		["posY"] = 0.431,
 	},
-	[4600] = {
+	[5054] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.434,
 		["posY"] = 0.307,
 	},
-	[4601] = {
+	[5055] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.451,
 		["posY"] = 0.509,
 	},
-	[4602] = {
+	[5056] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.472,
 		["posY"] = 0.167,
 	},
-	[4603] = {
+	[5057] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.489,
 		["posY"] = 0.35,
 	},
-	[4604] = {
+	[5058] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.498,
 		["posY"] = 0.274,
 	},
-	[4605] = {
+	[5059] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.5,
 		["posY"] = 0.437,
 	},
-	[4606] = {
+	[5060] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.508,
 		["posY"] = 0.574,
 	},
-	[4607] = {
+	[5061] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.559,
 		["posY"] = 0.444,
 	},
-	[4608] = {
+	[5062] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.576,
 		["posY"] = 0.523,
 	},
-	[4609] = {
+	[5063] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.584,
 		["posY"] = 0.404,
 	},
-	[4610] = {
+	[5064] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.585,
 		["posY"] = 0.329,
 	},
-	[4611] = {
+	[5065] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.628,
 		["posY"] = 0.368,
 	},
-	[4612] = {
+	[5066] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.63,
 		["posY"] = 0.58,
 	},
-	[4613] = {
+	[5067] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.634,
 		["posY"] = 0.25,
 	},
-	[4614] = {
+	[5068] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.647,
-		["posY"] = 0.412,
+		["posY"] = 0.413,
 	},
-	[4615] = {
+	[5069] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
-		["posX"] = 0.651,
+		["posX"] = 0.65,
 		["posY"] = 0.322,
 	},
-	[4616] = {
+	[5070] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.667,
-		["posY"] = 0.318,
+		["posY"] = 0.319,
 	},
-	[4617] = {
+	[5071] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.68,
 		["posY"] = 0.289,
 	},
-	[4618] = {
+	[5072] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1419,
 		["posX"] = 0.696,
 		["posY"] = 0.308,
 	},
-	[4619] = {
+	[5073] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.212,
 		["posY"] = 0.357,
 	},
-	[4620] = {
+	[5074] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.315,
-		["posY"] = 0.285,
+		["posY"] = 0.284,
 	},
-	[4621] = {
+	[5075] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.356,
 		["posY"] = 0.291,
 	},
-	[4622] = {
+	[5076] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.43,
 		["posY"] = 0.272,
 	},
-	[4623] = {
+	[5077] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.486,
 		["posY"] = 0.265,
 	},
-	[4624] = {
+	[5078] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.609,
 		["posY"] = 0.832,
 	},
-	[4625] = {
+	[5079] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.619,
-		["posY"] = 0.866,
+		["posY"] = 0.865,
 	},
-	[4626] = {
+	[5080] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.623,
 		["posY"] = 0.844,
 	},
-	[4627] = {
+	[5081] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.632,
 		["posY"] = 0.896,
 	},
-	[4628] = {
+	[5082] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.641,
 		["posY"] = 0.793,
 	},
-	[4629] = {
+	[5083] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.642,
 		["posY"] = 0.871,
 	},
-	[4630] = {
+	[5084] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.645,
 		["posY"] = 0.909,
 	},
-	[4631] = {
+	[5085] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.654,
 		["posY"] = 0.82,
 	},
-	[4632] = {
+	[5086] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.657,
 		["posY"] = 0.494,
 	},
-	[4633] = {
+	[5087] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.659,
 		["posY"] = 0.1,
 	},
-	[4634] = {
+	[5088] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1435,
 		["posX"] = 0.692,
 		["posY"] = 0.613,
 	},
-	[4635] = {
+	[5089] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.305,
 		["posY"] = 0.203,
 	},
-	[4636] = {
+	[5090] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.308,
 		["posY"] = 0.224,
 	},
-	[4637] = {
+	[5091] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.311,
 		["posY"] = 0.21,
 	},
-	[4638] = {
+	[5092] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.318,
 		["posY"] = 0.215,
 	},
-	[4639] = {
+	[5093] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.364,
 		["posY"] = 0.694,
 	},
-	[4640] = {
+	[5094] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.368,
 		["posY"] = 0.687,
 	},
-	[4641] = {
+	[5095] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.371,
 		["posY"] = 0.671,
 	},
-	[4642] = {
+	[5096] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.374,
 		["posY"] = 0.744,
 	},
-	[4643] = {
+	[5097] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.377,
 		["posY"] = 0.678,
 	},
-	[4644] = {
+	[5098] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.378,
 		["posY"] = 0.67,
 	},
-	[4645] = {
+	[5099] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.378,
 		["posY"] = 0.685,
 	},
-	[4646] = {
+	[5100] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.38,
 		["posY"] = 0.696,
 	},
-	[4647] = {
+	[5101] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.388,
 		["posY"] = 0.676,
 	},
-	[4648] = {
+	[5102] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.398,
 		["posY"] = 0.749,
 	},
-	[4649] = {
+	[5103] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.408,
 		["posY"] = 0.777,
 	},
-	[4650] = {
+	[5104] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.42,
 		["posY"] = 0.82,
 	},
-	[4651] = {
+	[5105] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.443,
 		["posY"] = 0.823,
 	},
-	[4652] = {
+	[5106] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.497,
 		["posY"] = 0.841,
 	},
-	[4653] = {
+	[5107] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.526,
 		["posY"] = 0.854,
 	},
-	[4654] = {
+	[5108] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.546,
-		["posY"] = 0.689,
+		["posY"] = 0.688,
 	},
-	[4655] = {
+	[5109] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.553,
 		["posY"] = 0.839,
 	},
-	[4656] = {
+	[5110] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.572,
 		["posY"] = 0.717,
 	},
-	[4657] = {
+	[5111] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.577,
 		["posY"] = 0.8,
 	},
-	[4658] = {
+	[5112] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1445,
 		["posX"] = 0.581,
 		["posY"] = 0.756,
 	},
-	[4659] = {
+	[5113] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.142,
 		["posY"] = 0.744,
 	},
-	[4660] = {
+	[5114] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.154,
 		["posY"] = 0.682,
 	},
-	[4661] = {
+	[5115] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.154,
 		["posY"] = 0.714,
 	},
-	[4662] = {
+	[5116] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.194,
 		["posY"] = 0.609,
 	},
-	[4663] = {
+	[5117] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.216,
 		["posY"] = 0.617,
 	},
-	[4664] = {
+	[5118] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
-		["posX"] = 0.308,
-		["posY"] = 0.456,
+		["posX"] = 0.309,
+		["posY"] = 0.455,
 	},
-	[4665] = {
+	[5119] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.327,
 		["posY"] = 0.417,
 	},
-	[4666] = {
+	[5120] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.344,
 		["posY"] = 0.396,
 	},
-	[4667] = {
+	[5121] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.36,
 		["posY"] = 0.735,
 	},
-	[4668] = {
+	[5122] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
-		["posX"] = 0.366,
-		["posY"] = 0.365,
+		["posX"] = 0.367,
+		["posY"] = 0.363,
 	},
-	[4669] = {
+	[5123] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.378,
 		["posY"] = 0.858,
 	},
-	[4670] = {
+	[5124] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.387,
 		["posY"] = 0.784,
 	},
-	[4671] = {
+	[5125] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.418,
 		["posY"] = 0.845,
 	},
-	[4672] = {
+	[5126] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.421,
 		["posY"] = 0.404,
 	},
-	[4673] = {
+	[5127] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.433,
 		["posY"] = 0.177,
 	},
-	[4674] = {
+	[5128] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.434,
 		["posY"] = 0.531,
 	},
-	[4675] = {
+	[5129] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.439,
 		["posY"] = 0.748,
 	},
-	[4676] = {
+	[5130] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.451,
 		["posY"] = 0.454,
 	},
-	[4677] = {
+	[5131] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.451,
 		["posY"] = 0.629,
 	},
-	[4678] = {
+	[5132] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.491,
 		["posY"] = 0.914,
 	},
-	[4679] = {
+	[5133] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.494,
 		["posY"] = 0.599,
 	},
-	[4680] = {
+	[5134] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1447,
+		["posX"] = 0.516,
+		["posY"] = 0.987,
+	},
+	[5135] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.519,
 		["posY"] = 0.204,
 	},
-	[4681] = {
+	[5136] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.531,
 		["posY"] = 0.906,
 	},
-	[4682] = {
+	[5137] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.542,
 		["posY"] = 0.884,
 	},
-	[4683] = {
+	[5138] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.545,
 		["posY"] = 0.492,
 	},
-	[4684] = {
+	[5139] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.548,
 		["posY"] = 0.75,
 	},
-	[4685] = {
+	[5140] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.548,
 		["posY"] = 0.77,
 	},
-	[4686] = {
+	[5141] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.554,
 		["posY"] = 0.827,
 	},
-	[4687] = {
+	[5142] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.571,
 		["posY"] = 0.31,
 	},
-	[4688] = {
+	[5143] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.598,
 		["posY"] = 0.286,
 	},
-	[4689] = {
+	[5144] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.603,
 		["posY"] = 0.144,
 	},
-	[4690] = {
+	[5145] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.606,
 		["posY"] = 0.784,
 	},
-	[4691] = {
+	[5146] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.611,
 		["posY"] = 0.893,
 	},
-	[4692] = {
+	[5147] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.614,
-		["posY"] = 0.916,
+		["posY"] = 0.917,
 	},
-	[4693] = {
+	[5148] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.624,
 		["posY"] = 0.986,
 	},
-	[4694] = {
+	[5149] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.627,
 		["posY"] = 0.744,
 	},
-	[4695] = {
+	[5150] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.636,
 		["posY"] = 0.194,
 	},
-	[4696] = {
+	[5151] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.644,
 		["posY"] = 0.868,
 	},
-	[4697] = {
+	[5152] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.645,
 		["posY"] = 0.144,
 	},
-	[4698] = {
+	[5153] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.679,
 		["posY"] = 0.787,
 	},
-	[4699] = {
+	[5154] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1447,
+		["posX"] = 0.682,
+		["posY"] = 0.897,
+	},
+	[5155] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.703,
 		["posY"] = 0.188,
 	},
-	[4700] = {
+	[5156] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.704,
 		["posY"] = 0.222,
 	},
-	[4701] = {
+	[5157] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.704,
 		["posY"] = 0.762,
 	},
-	[4702] = {
+	[5158] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.738,
-		["posY"] = 0.126,
+		["posY"] = 0.127,
 	},
-	[4703] = {
+	[5159] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.756,
 		["posY"] = 0.316,
 	},
-	[4704] = {
+	[5160] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.77,
 		["posY"] = 0.201,
 	},
-	[4705] = {
+	[5161] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.784,
 		["posY"] = 0.231,
 	},
-	[4706] = {
+	[5162] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.792,
 		["posY"] = 0.313,
 	},
-	[4707] = {
+	[5163] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.82,
 		["posY"] = 0.155,
 	},
-	[4708] = {
+	[5164] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.838,
 		["posY"] = 0.221,
 	},
-	[4709] = {
+	[5165] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.867,
 		["posY"] = 0.194,
 	},
-	[4710] = {
+	[5166] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.874,
 		["posY"] = 0.264,
 	},
-	[4711] = {
+	[5167] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1447,
 		["posX"] = 0.881,
 		["posY"] = 0.32,
 	},
-	[4712] = {
+	[5168] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.299,
 		["posY"] = 0.658,
 	},
-	[4713] = {
+	[5169] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.306,
 		["posY"] = 0.714,
 	},
-	[4714] = {
+	[5170] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.329,
 		["posY"] = 0.746,
 	},
-	[4715] = {
+	[5171] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.33,
 		["posY"] = 0.672,
 	},
-	[4716] = {
+	[5172] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.331,
 		["posY"] = 0.588,
 	},
-	[4717] = {
+	[5173] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.336,
 		["posY"] = 0.536,
 	},
-	[4718] = {
+	[5174] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.342,
 		["posY"] = 0.517,
 	},
-	[4719] = {
+	[5175] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.348,
 		["posY"] = 0.796,
 	},
-	[4720] = {
+	[5176] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.353,
 		["posY"] = 0.684,
 	},
-	[4721] = {
+	[5177] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.381,
 		["posY"] = 0.674,
 	},
-	[4722] = {
+	[5178] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.384,
 		["posY"] = 0.828,
 	},
-	[4723] = {
+	[5179] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.399,
 		["posY"] = 0.733,
 	},
-	[4724] = {
+	[5180] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.402,
 		["posY"] = 0.488,
 	},
-	[4725] = {
+	[5181] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.411,
 		["posY"] = 0.653,
 	},
-	[4726] = {
+	[5182] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.424,
 		["posY"] = 0.47,
 	},
-	[4727] = {
+	[5183] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.441,
 		["posY"] = 0.791,
 	},
-	[4728] = {
+	[5184] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.446,
 		["posY"] = 0.624,
 	},
-	[4729] = {
+	[5185] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.479,
 		["posY"] = 0.797,
 	},
-	[4730] = {
+	[5186] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.49,
 		["posY"] = 0.762,
 	},
-	[4731] = {
+	[5187] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.492,
 		["posY"] = 0.638,
 	},
-	[4732] = {
+	[5188] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.498,
 		["posY"] = 0.691,
 	},
-	[4733] = {
+	[5189] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.511,
 		["posY"] = 0.702,
 	},
-	[4734] = {
+	[5190] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.511,
 		["posY"] = 0.742,
 	},
-	[4735] = {
+	[5191] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.531,
 		["posY"] = 0.768,
 	},
-	[4736] = {
+	[5192] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.534,
 		["posY"] = 0.711,
 	},
-	[4737] = {
+	[5193] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.552,
 		["posY"] = 0.804,
 	},
-	[4738] = {
+	[5194] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1422,
 		["posX"] = 0.555,
 		["posY"] = 0.679,
 	},
-	[4739] = {
+	[5195] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.253,
 		["posY"] = 0.618,
 	},
-	[4740] = {
+	[5196] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.256,
 		["posY"] = 0.603,
 	},
-	[4741] = {
+	[5197] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.264,
 		["posY"] = 0.626,
 	},
-	[4742] = {
+	[5198] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.273,
 		["posY"] = 0.817,
 	},
-	[4743] = {
+	[5199] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.276,
 		["posY"] = 0.631,
 	},
-	[4744] = {
+	[5200] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.276,
 		["posY"] = 0.641,
 	},
-	[4745] = {
+	[5201] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.277,
 		["posY"] = 0.613,
 	},
-	[4746] = {
+	[5202] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.294,
 		["posY"] = 0.804,
 	},
-	[4747] = {
+	[5203] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.299,
 		["posY"] = 0.414,
 	},
-	[4748] = {
+	[5204] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.306,
 		["posY"] = 0.396,
 	},
-	[4749] = {
+	[5205] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.314,
 		["posY"] = 0.381,
 	},
-	[4750] = {
+	[5206] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.322,
 		["posY"] = 0.458,
 	},
-	[4751] = {
+	[5207] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.324,
 		["posY"] = 0.75,
 	},
-	[4752] = {
+	[5208] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.336,
 		["posY"] = 0.418,
 	},
-	[4753] = {
+	[5209] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.347,
 		["posY"] = 0.414,
 	},
-	[4754] = {
+	[5210] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.347,
 		["posY"] = 0.726,
 	},
-	[4755] = {
+	[5211] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.364,
 		["posY"] = 0.687,
 	},
-	[4756] = {
+	[5212] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.372,
 		["posY"] = 0.494,
 	},
-	[4757] = {
+	[5213] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.381,
 		["posY"] = 0.491,
 	},
-	[4758] = {
+	[5214] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.383,
 		["posY"] = 0.499,
 	},
-	[4759] = {
+	[5215] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.385,
 		["posY"] = 0.611,
 	},
-	[4760] = {
+	[5216] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.386,
 		["posY"] = 0.801,
 	},
-	[4761] = {
+	[5217] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.387,
 		["posY"] = 0.828,
 	},
-	[4762] = {
+	[5218] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.388,
 		["posY"] = 0.522,
 	},
-	[4763] = {
+	[5219] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.395,
 		["posY"] = 0.817,
 	},
-	[4764] = {
+	[5220] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.396,
 		["posY"] = 0.494,
 	},
-	[4765] = {
+	[5221] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.402,
 		["posY"] = 0.853,
 	},
-	[4766] = {
+	[5222] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.406,
 		["posY"] = 0.519,
 	},
-	[4767] = {
+	[5223] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.419,
 		["posY"] = 0.478,
 	},
-	[4768] = {
+	[5224] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.427,
 		["posY"] = 0.456,
 	},
-	[4769] = {
+	[5225] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.429,
 		["posY"] = 0.49,
 	},
-	[4770] = {
+	[5226] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.433,
 		["posY"] = 0.424,
 	},
-	[4771] = {
+	[5227] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.433,
 		["posY"] = 0.484,
 	},
-	[4772] = {
+	[5228] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.435,
 		["posY"] = 0.467,
 	},
-	[4773] = {
+	[5229] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.444,
 		["posY"] = 0.393,
 	},
-	[4774] = {
+	[5230] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.444,
 		["posY"] = 0.481,
 	},
-	[4775] = {
+	[5231] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.453,
 		["posY"] = 0.454,
 	},
-	[4776] = {
+	[5232] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.466,
 		["posY"] = 0.451,
 	},
-	[4777] = {
+	[5233] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.467,
 		["posY"] = 0.431,
 	},
-	[4778] = {
+	[5234] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.48,
 		["posY"] = 0.065,
 	},
-	[4779] = {
+	[5235] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.486,
 		["posY"] = 0.053,
 	},
-	[4780] = {
+	[5236] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.487,
 		["posY"] = 0.416,
 	},
-	[4781] = {
+	[5237] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.492,
 		["posY"] = 0.057,
 	},
-	[4782] = {
+	[5238] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.494,
 		["posY"] = 0.065,
 	},
-	[4783] = {
+	[5239] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
-		["posX"] = 0.499,
-		["posY"] = 0.041,
+		["posX"] = 0.504,
+		["posY"] = 0.04,
 	},
-	[4784] = {
+	[5240] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.515,
 		["posY"] = 0.286,
 	},
-	[4785] = {
+	[5241] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.522,
 		["posY"] = 0.267,
 	},
-	[4786] = {
+	[5242] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.524,
 		["posY"] = 0.281,
 	},
-	[4787] = {
+	[5243] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1434,
 		["posX"] = 0.529,
 		["posY"] = 0.275,
 	},
-	[4788] = {
+	[5244] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.308,
 		["posY"] = 0.564,
 	},
-	[4789] = {
+	[5245] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.323,
 		["posY"] = 0.652,
 	},
-	[4790] = {
+	[5246] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.333,
 		["posY"] = 0.44,
 	},
-	[4791] = {
+	[5247] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.356,
 		["posY"] = 0.396,
 	},
-	[4792] = {
+	[5248] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.37,
 		["posY"] = 0.736,
 	},
-	[4793] = {
+	[5249] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.379,
 		["posY"] = 0.324,
 	},
-	[4794] = {
+	[5250] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.429,
 		["posY"] = 0.347,
 	},
-	[4795] = {
+	[5251] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.46,
 		["posY"] = 0.42,
 	},
-	[4796] = {
+	[5252] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
-		["posX"] = 0.479,
-		["posY"] = 0.327,
+		["posX"] = 0.474,
+		["posY"] = 0.329,
 	},
-	[4797] = {
+	[5253] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.483,
 		["posY"] = 0.344,
 	},
-	[4798] = {
+	[5254] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.494,
 		["posY"] = 0.32,
 	},
-	[4799] = {
+	[5255] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.495,
 		["posY"] = 0.444,
 	},
-	[4800] = {
+	[5256] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.502,
 		["posY"] = 0.433,
 	},
-	[4801] = {
+	[5257] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.506,
 		["posY"] = 0.454,
 	},
-	[4802] = {
+	[5258] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.514,
 		["posY"] = 0.416,
 	},
-	[4803] = {
+	[5259] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.522,
 		["posY"] = 0.462,
 	},
-	[4804] = {
+	[5260] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.527,
 		["posY"] = 0.369,
 	},
-	[4805] = {
+	[5261] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.536,
 		["posY"] = 0.504,
 	},
-	[4806] = {
+	[5262] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
-		["posX"] = 0.537,
-		["posY"] = 0.487,
+		["posX"] = 0.538,
+		["posY"] = 0.486,
 	},
-	[4807] = {
+	[5263] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.54,
 		["posY"] = 0.454,
 	},
-	[4808] = {
+	[5264] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.541,
 		["posY"] = 0.464,
 	},
-	[4809] = {
+	[5265] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.546,
 		["posY"] = 0.492,
 	},
-	[4810] = {
+	[5266] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1416,
 		["posX"] = 0.55,
-		["posY"] = 0.405,
+		["posY"] = 0.406,
 	},
-	[4811] = {
+	[5267] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.157,
 		["posY"] = 0.677,
 	},
-	[4812] = {
+	[5268] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.16,
 		["posY"] = 0.707,
 	},
-	[4813] = {
+	[5269] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.161,
 		["posY"] = 0.643,
 	},
-	[4814] = {
+	[5270] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.175,
 		["posY"] = 0.717,
 	},
-	[4815] = {
+	[5271] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.186,
 		["posY"] = 0.715,
 	},
-	[4816] = {
+	[5272] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.217,
 		["posY"] = 0.753,
 	},
-	[4817] = {
+	[5273] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.217,
 		["posY"] = 0.919,
 	},
-	[4818] = {
+	[5274] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.222,
 		["posY"] = 0.854,
 	},
-	[4819] = {
+	[5275] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.224,
 		["posY"] = 0.744,
 	},
-	[4820] = {
+	[5276] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.248,
 		["posY"] = 0.715,
 	},
-	[4821] = {
+	[5277] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1417,
+		["posX"] = 0.256,
+		["posY"] = 0.905,
+	},
+	[5278] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.257,
 		["posY"] = 0.853,
 	},
-	[4822] = {
-		["type"] = "mining",
-		["object"] = 2040,
-		["mapID"] = 1417,
-		["posX"] = 0.257,
-		["posY"] = 0.904,
-	},
-	[4823] = {
+	[5279] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.26,
 		["posY"] = 0.704,
 	},
-	[4824] = {
+	[5280] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.269,
 		["posY"] = 0.878,
 	},
-	[4825] = {
+	[5281] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.318,
 		["posY"] = 0.702,
 	},
-	[4826] = {
+	[5282] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.374,
 		["posY"] = 0.634,
 	},
-	[4827] = {
+	[5283] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.464,
 		["posY"] = 0.713,
 	},
-	[4828] = {
+	[5284] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.493,
 		["posY"] = 0.707,
 	},
-	[4829] = {
+	[5285] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.503,
 		["posY"] = 0.804,
 	},
-	[4830] = {
+	[5286] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.673,
 		["posY"] = 0.664,
 	},
-	[4831] = {
+	[5287] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.678,
 		["posY"] = 0.806,
 	},
-	[4832] = {
+	[5288] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.684,
-		["posY"] = 0.795,
+		["posY"] = 0.796,
 	},
-	[4833] = {
+	[5289] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.691,
 		["posY"] = 0.821,
 	},
-	[4834] = {
+	[5290] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.834,
 		["posY"] = 0.317,
 	},
-	[4835] = {
+	[5291] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.839,
 		["posY"] = 0.354,
 	},
-	[4836] = {
+	[5292] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.842,
 		["posY"] = 0.33,
 	},
-	[4837] = {
+	[5293] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.846,
 		["posY"] = 0.31,
 	},
-	[4838] = {
+	[5294] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.847,
 		["posY"] = 0.288,
 	},
-	[4839] = {
+	[5295] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.852,
 		["posY"] = 0.302,
 	},
-	[4840] = {
+	[5296] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.854,
 		["posY"] = 0.328,
 	},
-	[4841] = {
+	[5297] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.861,
 		["posY"] = 0.318,
 	},
-	[4842] = {
+	[5298] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1417,
 		["posX"] = 0.874,
 		["posY"] = 0.309,
 	},
-	[4843] = {
+	[5299] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.254,
 		["posY"] = 0.7,
 	},
-	[4844] = {
+	[5300] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.453,
 		["posY"] = 0.535,
 	},
-	[4845] = {
+	[5301] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.522,
 		["posY"] = 0.532,
 	},
-	[4846] = {
+	[5302] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.551,
 		["posY"] = 0.332,
 	},
-	[4847] = {
+	[5303] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.558,
 		["posY"] = 0.677,
 	},
-	[4848] = {
+	[5304] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.566,
 		["posY"] = 0.593,
 	},
-	[4849] = {
+	[5305] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.588,
 		["posY"] = 0.453,
 	},
-	[4850] = {
+	[5306] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.622,
 	},
-	[4851] = {
+	[5307] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.632,
 	},
-	[4852] = {
+	[5308] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.714,
 		["posY"] = 0.392,
 	},
-	[4853] = {
+	[5309] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.762,
 		["posY"] = 0.632,
 	},
-	[4854] = {
+	[5310] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.764,
 		["posY"] = 0.441,
 	},
-	[4855] = {
+	[5311] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.767,
 		["posY"] = 0.474,
 	},
-	[4856] = {
+	[5312] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.777,
 		["posY"] = 0.422,
 	},
-	[4857] = {
+	[5313] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.791,
 		["posY"] = 0.252,
 	},
-	[4858] = {
+	[5314] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.792,
-		["posY"] = 0.44,
+		["posY"] = 0.441,
 	},
-	[4859] = {
+	[5315] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
-		["posX"] = 0.8,
+		["posX"] = 0.801,
 		["posY"] = 0.354,
 	},
-	[4860] = {
+	[5316] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.804,
 		["posY"] = 0.407,
 	},
-	[4861] = {
+	[5317] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.441,
 	},
-	[4862] = {
+	[5318] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.813,
 		["posY"] = 0.399,
 	},
-	[4863] = {
+	[5319] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
-		["posX"] = 0.817,
-		["posY"] = 0.465,
+		["posX"] = 0.816,
+		["posY"] = 0.466,
 	},
-	[4864] = {
+	[5320] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.832,
 		["posY"] = 0.392,
 	},
-	[4865] = {
+	[5321] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.836,
 		["posY"] = 0.46,
 	},
-	[4866] = {
+	[5322] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.847,
 		["posY"] = 0.489,
 	},
-	[4867] = {
+	[5323] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.858,
 		["posY"] = 0.612,
 	},
-	[4868] = {
+	[5324] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.86,
 		["posY"] = 0.37,
 	},
-	[4869] = {
+	[5325] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.873,
 		["posY"] = 0.259,
 	},
-	[4870] = {
+	[5326] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.369,
 	},
-	[4871] = {
+	[5327] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.519,
 	},
-	[4872] = {
+	[5328] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.233,
 		["posY"] = 0.599,
 	},
-	[4873] = {
+	[5329] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.255,
 		["posY"] = 0.631,
 	},
-	[4874] = {
+	[5330] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.256,
 		["posY"] = 0.658,
 	},
-	[4875] = {
+	[5331] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.273,
 		["posY"] = 0.69,
 	},
-	[4876] = {
+	[5332] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.3,
 		["posY"] = 0.682,
 	},
-	[4877] = {
+	[5333] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.302,
 		["posY"] = 0.55,
 	},
-	[4878] = {
+	[5334] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.303,
 		["posY"] = 0.708,
 	},
-	[4879] = {
+	[5335] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.308,
 		["posY"] = 0.746,
 	},
-	[4880] = {
+	[5336] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.312,
 		["posY"] = 0.609,
 	},
-	[4881] = {
+	[5337] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.313,
 		["posY"] = 0.424,
 	},
-	[4882] = {
+	[5338] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.313,
 		["posY"] = 0.593,
 	},
-	[4883] = {
+	[5339] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.334,
 		["posY"] = 0.412,
 	},
-	[4884] = {
+	[5340] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.334,
 		["posY"] = 0.659,
 	},
-	[4885] = {
+	[5341] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.334,
 		["posY"] = 0.761,
 	},
-	[4886] = {
+	[5342] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.34,
 		["posY"] = 0.641,
 	},
-	[4887] = {
+	[5343] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.356,
 		["posY"] = 0.747,
 	},
-	[4888] = {
+	[5344] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.367,
 		["posY"] = 0.667,
 	},
-	[4889] = {
+	[5345] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.374,
 		["posY"] = 0.683,
 	},
-	[4890] = {
+	[5346] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.399,
 		["posY"] = 0.437,
 	},
-	[4891] = {
+	[5347] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.406,
 		["posY"] = 0.66,
 	},
-	[4892] = {
+	[5348] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.412,
 		["posY"] = 0.593,
 	},
-	[4893] = {
+	[5349] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.424,
 		["posY"] = 0.415,
 	},
-	[4894] = {
+	[5350] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.45,
 		["posY"] = 0.394,
 	},
-	[4895] = {
+	[5351] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.46,
-		["posY"] = 0.689,
+		["posY"] = 0.69,
 	},
-	[4896] = {
+	[5352] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.464,
 		["posY"] = 0.378,
 	},
-	[4897] = {
+	[5353] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.469,
 		["posY"] = 0.334,
 	},
-	[4898] = {
+	[5354] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.474,
 		["posY"] = 0.706,
 	},
-	[4899] = {
+	[5355] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.487,
 		["posY"] = 0.422,
 	},
-	[4900] = {
+	[5356] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
-		["posX"] = 0.497,
-		["posY"] = 0.653,
+		["posX"] = 0.498,
+		["posY"] = 0.652,
 	},
-	[4901] = {
+	[5357] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
-		["posX"] = 0.501,
+		["posX"] = 0.5,
 		["posY"] = 0.481,
 	},
-	[4902] = {
+	[5358] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.605,
 	},
-	[4903] = {
+	[5359] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.692,
 	},
-	[4904] = {
+	[5360] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.518,
 		["posY"] = 0.652,
 	},
-	[4905] = {
+	[5361] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.542,
 		["posY"] = 0.543,
 	},
-	[4906] = {
+	[5362] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.555,
 		["posY"] = 0.448,
 	},
-	[4907] = {
+	[5363] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.56,
 		["posY"] = 0.543,
 	},
-	[4908] = {
+	[5364] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.567,
 		["posY"] = 0.356,
 	},
-	[4909] = {
+	[5365] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.567,
 		["posY"] = 0.424,
 	},
-	[4910] = {
+	[5366] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.569,
 		["posY"] = 0.435,
 	},
-	[4911] = {
+	[5367] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.571,
 		["posY"] = 0.734,
 	},
-	[4912] = {
+	[5368] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.572,
 		["posY"] = 0.414,
 	},
-	[4913] = {
+	[5369] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.573,
 		["posY"] = 0.446,
 	},
-	[4914] = {
+	[5370] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.576,
 		["posY"] = 0.407,
 	},
-	[4915] = {
+	[5371] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.579,
 		["posY"] = 0.197,
 	},
-	[4916] = {
+	[5372] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.581,
 		["posY"] = 0.494,
 	},
-	[4917] = {
+	[5373] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.585,
 		["posY"] = 0.417,
 	},
-	[4918] = {
+	[5374] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.586,
 		["posY"] = 0.276,
 	},
-	[4919] = {
+	[5375] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.589,
 		["posY"] = 0.231,
 	},
-	[4920] = {
+	[5376] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.595,
 		["posY"] = 0.436,
 	},
-	[4921] = {
+	[5377] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.601,
-		["posY"] = 0.411,
+		["posY"] = 0.41,
 	},
-	[4922] = {
+	[5378] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.607,
 		["posY"] = 0.343,
 	},
-	[4923] = {
+	[5379] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.607,
 		["posY"] = 0.578,
 	},
-	[4924] = {
+	[5380] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.609,
 		["posY"] = 0.831,
 	},
-	[4925] = {
+	[5381] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.623,
 		["posY"] = 0.724,
 	},
-	[4926] = {
+	[5382] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.625,
 		["posY"] = 0.642,
 	},
-	[4927] = {
+	[5383] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.634,
 		["posY"] = 0.437,
 	},
-	[4928] = {
+	[5384] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.637,
 		["posY"] = 0.168,
 	},
-	[4929] = {
+	[5385] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1425,
+		["posX"] = 0.641,
+		["posY"] = 0.65,
+	},
+	[5386] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.642,
 		["posY"] = 0.365,
 	},
-	[4930] = {
-		["type"] = "mining",
-		["object"] = 2040,
-		["mapID"] = 1425,
-		["posX"] = 0.642,
-		["posY"] = 0.65,
-	},
-	[4931] = {
+	[5387] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.644,
 		["posY"] = 0.222,
 	},
-	[4932] = {
+	[5388] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.647,
-		["posY"] = 0.153,
+		["posY"] = 0.155,
 	},
-	[4933] = {
+	[5389] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.651,
 		["posY"] = 0.523,
 	},
-	[4934] = {
+	[5390] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.652,
 		["posY"] = 0.833,
 	},
-	[4935] = {
+	[5391] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.658,
-		["posY"] = 0.693,
+		["posY"] = 0.694,
 	},
-	[4936] = {
+	[5392] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.671,
 		["posY"] = 0.621,
 	},
-	[4937] = {
+	[5393] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.673,
-		["posY"] = 0.145,
+		["posY"] = 0.144,
 	},
-	[4938] = {
+	[5394] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.679,
 		["posY"] = 0.381,
 	},
-	[4939] = {
+	[5395] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.679,
 		["posY"] = 0.554,
 	},
-	[4940] = {
+	[5396] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.683,
 		["posY"] = 0.198,
 	},
-	[4941] = {
+	[5397] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.683,
 		["posY"] = 0.77,
 	},
-	[4942] = {
+	[5398] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.684,
 		["posY"] = 0.749,
 	},
-	[4943] = {
+	[5399] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.687,
 		["posY"] = 0.345,
 	},
-	[4944] = {
+	[5400] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.689,
 		["posY"] = 0.723,
 	},
-	[4945] = {
+	[5401] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.693,
 		["posY"] = 0.644,
 	},
-	[4946] = {
+	[5402] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.696,
 		["posY"] = 0.122,
 	},
-	[4947] = {
+	[5403] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.699,
 		["posY"] = 0.271,
 	},
-	[4948] = {
+	[5404] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.722,
 		["posY"] = 0.523,
 	},
-	[4949] = {
+	[5405] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.726,
 		["posY"] = 0.665,
 	},
-	[4950] = {
+	[5406] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.739,
 		["posY"] = 0.874,
 	},
-	[4951] = {
+	[5407] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.744,
 		["posY"] = 0.662,
 	},
-	[4952] = {
+	[5408] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.746,
 		["posY"] = 0.746,
 	},
-	[4953] = {
+	[5409] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
-		["posX"] = 0.751,
+		["posX"] = 0.752,
 		["posY"] = 0.57,
 	},
-	[4954] = {
+	[5410] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.773,
 		["posY"] = 0.596,
 	},
-	[4955] = {
+	[5411] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.787,
 		["posY"] = 0.481,
 	},
-	[4956] = {
+	[5412] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
-		["posX"] = 0.795,
+		["posX"] = 0.794,
 		["posY"] = 0.741,
 	},
-	[4957] = {
+	[5413] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.797,
 		["posY"] = 0.634,
 	},
-	[4958] = {
+	[5414] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.807,
 		["posY"] = 0.424,
 	},
-	[4959] = {
+	[5415] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.827,
 		["posY"] = 0.814,
 	},
-	[4960] = {
+	[5416] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1425,
 		["posX"] = 0.829,
 		["posY"] = 0.504,
 	},
-	[4961] = {
+	[5417] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.169,
 		["posY"] = 0.419,
 	},
-	[4962] = {
+	[5418] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.179,
 		["posY"] = 0.346,
 	},
-	[4963] = {
+	[5419] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
-		["posX"] = 0.18,
-		["posY"] = 0.373,
+		["posX"] = 0.179,
+		["posY"] = 0.375,
 	},
-	[4964] = {
+	[5420] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.205,
 		["posY"] = 0.745,
 	},
-	[4965] = {
+	[5421] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
-		["posX"] = 0.218,
-		["posY"] = 0.365,
+		["posX"] = 0.217,
+		["posY"] = 0.364,
 	},
-	[4966] = {
+	[5422] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.25,
 		["posY"] = 0.759,
 	},
-	[4967] = {
+	[5423] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.252,
 		["posY"] = 0.379,
 	},
-	[4968] = {
+	[5424] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.299,
 		["posY"] = 0.494,
 	},
-	[4969] = {
+	[5425] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.303,
 		["posY"] = 0.66,
 	},
-	[4970] = {
+	[5426] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.313,
 		["posY"] = 0.388,
 	},
-	[4971] = {
+	[5427] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.367,
 		["posY"] = 0.779,
 	},
-	[4972] = {
+	[5428] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.376,
 		["posY"] = 0.708,
 	},
-	[4973] = {
+	[5429] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.379,
 		["posY"] = 0.461,
 	},
-	[4974] = {
+	[5430] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.389,
 		["posY"] = 0.513,
 	},
-	[4975] = {
+	[5431] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.392,
 		["posY"] = 0.25,
 	},
-	[4976] = {
+	[5432] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.394,
 		["posY"] = 0.561,
 	},
-	[4977] = {
+	[5433] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.406,
 		["posY"] = 0.39,
 	},
-	[4978] = {
+	[5434] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.424,
 		["posY"] = 0.375,
 	},
-	[4979] = {
+	[5435] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.427,
 		["posY"] = 0.285,
 	},
-	[4980] = {
+	[5436] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.437,
 		["posY"] = 0.658,
 	},
-	[4981] = {
+	[5437] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.464,
 		["posY"] = 0.479,
 	},
-	[4982] = {
+	[5438] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.468,
 		["posY"] = 0.441,
 	},
-	[4983] = {
+	[5439] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.479,
 		["posY"] = 0.248,
 	},
-	[4984] = {
+	[5440] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.484,
 		["posY"] = 0.42,
 	},
-	[4985] = {
+	[5441] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.487,
 		["posY"] = 0.514,
 	},
-	[4986] = {
+	[5442] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.494,
 		["posY"] = 0.759,
 	},
-	[4987] = {
+	[5443] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.498,
 		["posY"] = 0.334,
 	},
-	[4988] = {
+	[5444] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.504,
-		["posY"] = 0.362,
+		["posY"] = 0.361,
 	},
-	[4989] = {
+	[5445] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.521,
 		["posY"] = 0.496,
 	},
-	[4990] = {
+	[5446] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.55,
 		["posY"] = 0.515,
 	},
-	[4991] = {
+	[5447] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.304,
 	},
-	[4992] = {
+	[5448] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
-		["posX"] = 0.57,
-		["posY"] = 0.413,
+		["posX"] = 0.569,
+		["posY"] = 0.415,
 	},
-	[4993] = {
+	[5449] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.816,
 	},
-	[4994] = {
+	[5450] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.574,
 		["posY"] = 0.684,
 	},
-	[4995] = {
+	[5451] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.608,
-		["posY"] = 0.258,
+		["posY"] = 0.259,
 	},
-	[4996] = {
+	[5452] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.611,
 		["posY"] = 0.426,
 	},
-	[4997] = {
+	[5453] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.599,
 	},
-	[4998] = {
+	[5454] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.633,
 	},
-	[4999] = {
+	[5455] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.642,
 		["posY"] = 0.822,
 	},
-	[5000] = {
+	[5456] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.678,
 		["posY"] = 0.324,
 	},
-	[5001] = {
+	[5457] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1427,
 		["posX"] = 0.732,
 		["posY"] = 0.731,
 	},
-	[5002] = {
+	[5458] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.138,
 		["posY"] = 0.779,
 	},
-	[5003] = {
+	[5459] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.146,
 		["posY"] = 0.61,
 	},
-	[5004] = {
+	[5460] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
-		["posX"] = 0.207,
-		["posY"] = 0.671,
+		["posX"] = 0.206,
+		["posY"] = 0.67,
 	},
-	[5005] = {
+	[5461] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.208,
 		["posY"] = 0.841,
 	},
-	[5006] = {
+	[5462] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.221,
 		["posY"] = 0.614,
 	},
-	[5007] = {
+	[5463] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.245,
 		["posY"] = 0.734,
 	},
-	[5008] = {
+	[5464] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.304,
 		["posY"] = 0.755,
 	},
-	[5009] = {
+	[5465] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.358,
 		["posY"] = 0.831,
 	},
-	[5010] = {
+	[5466] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.377,
 		["posY"] = 0.737,
 	},
-	[5011] = {
+	[5467] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.414,
 		["posY"] = 0.754,
 	},
-	[5012] = {
+	[5468] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1423,
 		["posX"] = 0.439,
 		["posY"] = 0.88,
 	},
-	[5013] = {
+	[5469] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.425,
 		["posY"] = 0.323,
 	},
-	[5014] = {
+	[5470] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.428,
 		["posY"] = 0.305,
 	},
-	[5015] = {
+	[5471] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.433,
 		["posY"] = 0.289,
 	},
-	[5016] = {
+	[5472] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.442,
 		["posY"] = 0.26,
 	},
-	[5017] = {
+	[5473] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.447,
 		["posY"] = 0.246,
 	},
-	[5018] = {
+	[5474] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1424,
 		["posX"] = 0.454,
-		["posY"] = 0.315,
+		["posY"] = 0.316,
 	},
-	[5019] = {
+	[5475] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.254,
 		["posY"] = 0.731,
 	},
-	[5020] = {
+	[5476] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
-		["posX"] = 0.259,
-		["posY"] = 0.673,
+		["posX"] = 0.258,
+		["posY"] = 0.672,
 	},
-	[5021] = {
+	[5477] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.26,
 		["posY"] = 0.688,
 	},
-	[5022] = {
+	[5478] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.262,
 		["posY"] = 0.679,
 	},
-	[5023] = {
+	[5479] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.262,
 		["posY"] = 0.712,
 	},
-	[5024] = {
+	[5480] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.265,
 		["posY"] = 0.694,
 	},
-	[5025] = {
+	[5481] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.267,
 		["posY"] = 0.684,
 	},
-	[5026] = {
+	[5482] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.273,
 		["posY"] = 0.695,
 	},
-	[5027] = {
+	[5483] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.279,
 		["posY"] = 0.684,
 	},
-	[5028] = {
+	[5484] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.28,
 		["posY"] = 0.71,
 	},
-	[5029] = {
+	[5485] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1444,
+		["posX"] = 0.285,
+		["posY"] = 0.68,
+	},
+	[5486] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.286,
 		["posY"] = 0.702,
 	},
-	[5030] = {
+	[5487] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.369,
 		["posY"] = 0.136,
 	},
-	[5031] = {
+	[5488] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.377,
 		["posY"] = 0.204,
 	},
-	[5032] = {
+	[5489] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.387,
 		["posY"] = 0.249,
 	},
-	[5033] = {
+	[5490] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.394,
 		["posY"] = 0.086,
 	},
-	[5034] = {
+	[5491] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.422,
 		["posY"] = 0.162,
 	},
-	[5035] = {
+	[5492] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.442,
 		["posY"] = 0.256,
 	},
-	[5036] = {
+	[5493] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.502,
 		["posY"] = 0.584,
 	},
-	[5037] = {
+	[5494] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.508,
 		["posY"] = 0.306,
 	},
-	[5038] = {
+	[5495] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.515,
 		["posY"] = 0.589,
 	},
-	[5039] = {
+	[5496] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1444,
+		["posX"] = 0.521,
+		["posY"] = 0.164,
+	},
+	[5497] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.522,
-		["posY"] = 0.615,
+		["posY"] = 0.614,
 	},
-	[5040] = {
+	[5498] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.523,
 		["posY"] = 0.598,
 	},
-	[5041] = {
+	[5499] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.526,
 		["posY"] = 0.587,
 	},
-	[5042] = {
+	[5500] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.528,
 		["posY"] = 0.608,
 	},
-	[5043] = {
+	[5501] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.532,
 		["posY"] = 0.602,
 	},
-	[5044] = {
+	[5502] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.533,
 		["posY"] = 0.319,
 	},
-	[5045] = {
+	[5503] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.534,
 		["posY"] = 0.476,
 	},
-	[5046] = {
+	[5504] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.54,
 		["posY"] = 0.324,
 	},
-	[5047] = {
+	[5505] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.73,
 	},
-	[5048] = {
+	[5506] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.544,
 		["posY"] = 0.341,
 	},
-	[5049] = {
+	[5507] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.546,
 		["posY"] = 0.318,
 	},
-	[5050] = {
+	[5508] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.549,
 		["posY"] = 0.33,
 	},
-	[5051] = {
+	[5509] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.554,
 		["posY"] = 0.336,
 	},
-	[5052] = {
+	[5510] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.557,
 		["posY"] = 0.329,
 	},
-	[5053] = {
+	[5511] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.574,
 		["posY"] = 0.469,
 	},
-	[5054] = {
+	[5512] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.59,
 		["posY"] = 0.558,
 	},
-	[5055] = {
+	[5513] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.594,
 		["posY"] = 0.742,
 	},
-	[5056] = {
+	[5514] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.606,
 		["posY"] = 0.657,
 	},
-	[5057] = {
+	[5515] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.649,
 		["posY"] = 0.52,
 	},
-	[5058] = {
+	[5516] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.692,
 		["posY"] = 0.622,
 	},
-	[5059] = {
+	[5517] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.693,
 		["posY"] = 0.56,
 	},
-	[5060] = {
+	[5518] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.719,
 		["posY"] = 0.529,
 	},
-	[5061] = {
+	[5519] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.73,
 		["posY"] = 0.564,
 	},
-	[5062] = {
+	[5520] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1444,
 		["posX"] = 0.758,
 		["posY"] = 0.557,
 	},
-	[5063] = {
+	[5521] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.096,
 		["posY"] = 0.352,
 	},
-	[5064] = {
+	[5522] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.108,
 		["posY"] = 0.399,
 	},
-	[5065] = {
+	[5523] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.111,
 		["posY"] = 0.321,
 	},
-	[5066] = {
+	[5524] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.118,
 		["posY"] = 0.369,
 	},
-	[5067] = {
+	[5525] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.14,
 		["posY"] = 0.397,
 	},
-	[5068] = {
+	[5526] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.178,
 		["posY"] = 0.423,
 	},
-	[5069] = {
+	[5527] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.417,
 		["posY"] = 0.319,
 	},
-	[5070] = {
+	[5528] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.422,
 		["posY"] = 0.334,
 	},
-	[5071] = {
+	[5529] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.433,
 		["posY"] = 0.332,
 	},
-	[5072] = {
+	[5530] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.437,
 		["posY"] = 0.309,
 	},
-	[5073] = {
+	[5531] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1441,
 		["posX"] = 0.447,
 		["posY"] = 0.323,
 	},
-	[5074] = {
+	[5532] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.248,
 		["posY"] = 0.824,
 	},
-	[5075] = {
+	[5533] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.272,
 		["posY"] = 0.581,
 	},
-	[5076] = {
+	[5534] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.272,
 		["posY"] = 0.786,
 	},
-	[5077] = {
+	[5535] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.279,
 		["posY"] = 0.742,
 	},
-	[5078] = {
+	[5536] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.281,
 		["posY"] = 0.542,
 	},
-	[5079] = {
+	[5537] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.284,
 		["posY"] = 0.568,
 	},
-	[5080] = {
+	[5538] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.285,
 		["posY"] = 0.585,
 	},
-	[5081] = {
+	[5539] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.297,
 		["posY"] = 0.801,
 	},
-	[5082] = {
+	[5540] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.302,
 		["posY"] = 0.078,
 	},
-	[5083] = {
+	[5541] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.304,
 		["posY"] = 0.74,
 	},
-	[5084] = {
+	[5542] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.307,
 		["posY"] = 0.102,
 	},
-	[5085] = {
+	[5543] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.312,
 		["posY"] = 0.66,
 	},
-	[5086] = {
+	[5544] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.318,
 		["posY"] = 0.518,
 	},
-	[5087] = {
+	[5545] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.321,
 		["posY"] = 0.21,
 	},
-	[5088] = {
+	[5546] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.321,
 		["posY"] = 0.588,
 	},
-	[5089] = {
+	[5547] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.322,
 		["posY"] = 0.154,
 	},
-	[5090] = {
+	[5548] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.324,
 		["posY"] = 0.82,
 	},
-	[5091] = {
+	[5549] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.329,
 		["posY"] = 0.53,
 	},
-	[5092] = {
+	[5550] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.329,
 		["posY"] = 0.616,
 	},
-	[5093] = {
+	[5551] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.333,
 		["posY"] = 0.08,
 	},
-	[5094] = {
+	[5552] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.34,
 		["posY"] = 0.147,
 	},
-	[5095] = {
+	[5553] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.348,
 		["posY"] = 0.085,
 	},
-	[5096] = {
+	[5554] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
-		["posX"] = 0.349,
-		["posY"] = 0.167,
+		["posX"] = 0.348,
+		["posY"] = 0.168,
 	},
-	[5097] = {
+	[5555] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.351,
 		["posY"] = 0.806,
 	},
-	[5098] = {
+	[5556] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.356,
 		["posY"] = 0.062,
 	},
-	[5099] = {
+	[5557] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.356,
 		["posY"] = 0.317,
 	},
-	[5100] = {
+	[5558] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.358,
 		["posY"] = 0.372,
 	},
-	[5101] = {
+	[5559] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.361,
 		["posY"] = 0.865,
 	},
-	[5102] = {
+	[5560] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.362,
 		["posY"] = 0.924,
 	},
-	[5103] = {
+	[5561] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.367,
-		["posY"] = 0.093,
+		["posY"] = 0.094,
 	},
-	[5104] = {
+	[5562] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.368,
 		["posY"] = 0.159,
 	},
-	[5105] = {
+	[5563] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.384,
 		["posY"] = 0.91,
 	},
-	[5106] = {
+	[5564] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.387,
 		["posY"] = 0.465,
 	},
-	[5107] = {
+	[5565] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.394,
 		["posY"] = 0.164,
 	},
-	[5108] = {
+	[5566] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.394,
 		["posY"] = 0.853,
 	},
-	[5109] = {
+	[5567] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.396,
 		["posY"] = 0.107,
 	},
-	[5110] = {
+	[5568] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.412,
 		["posY"] = 0.164,
 	},
-	[5111] = {
+	[5569] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.463,
 		["posY"] = 0.824,
 	},
-	[5112] = {
+	[5570] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.477,
 		["posY"] = 0.764,
 	},
-	[5113] = {
+	[5571] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.481,
 		["posY"] = 0.79,
 	},
-	[5114] = {
+	[5572] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.484,
 		["posY"] = 0.843,
 	},
-	[5115] = {
+	[5573] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.494,
 		["posY"] = 0.743,
 	},
-	[5116] = {
+	[5574] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.503,
 		["posY"] = 0.822,
 	},
-	[5117] = {
+	[5575] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.507,
 		["posY"] = 0.858,
 	},
-	[5118] = {
+	[5576] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.549,
 		["posY"] = 0.744,
 	},
-	[5119] = {
+	[5577] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.549,
 		["posY"] = 0.794,
 	},
-	[5120] = {
+	[5578] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.558,
 		["posY"] = 0.732,
 	},
-	[5121] = {
+	[5579] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.573,
 		["posY"] = 0.735,
 	},
-	[5122] = {
+	[5580] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.65,
 		["posY"] = 0.796,
 	},
-	[5123] = {
+	[5581] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.679,
 		["posY"] = 0.844,
 	},
-	[5124] = {
+	[5582] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.714,
 		["posY"] = 0.763,
 	},
-	[5125] = {
+	[5583] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.733,
 		["posY"] = 0.121,
 	},
-	[5126] = {
+	[5584] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.746,
 		["posY"] = 0.765,
 	},
-	[5127] = {
+	[5585] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
-		["posX"] = 0.749,
+		["posX"] = 0.75,
 		["posY"] = 0.182,
 	},
-	[5128] = {
+	[5586] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.75,
 		["posY"] = 0.677,
 	},
-	[5129] = {
+	[5587] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.752,
 		["posY"] = 0.108,
 	},
-	[5130] = {
+	[5588] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.752,
 		["posY"] = 0.14,
 	},
-	[5131] = {
+	[5589] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.766,
 		["posY"] = 0.752,
 	},
-	[5132] = {
+	[5590] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.782,
 		["posY"] = 0.266,
 	},
-	[5133] = {
+	[5591] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1443,
 		["posX"] = 0.799,
 		["posY"] = 0.201,
 	},
-	[5134] = {
+	[5592] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.259,
 		["posY"] = 0.709,
 	},
-	[5135] = {
+	[5593] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.269,
 		["posY"] = 0.67,
 	},
-	[5136] = {
+	[5594] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.271,
 		["posY"] = 0.632,
 	},
-	[5137] = {
+	[5595] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.29,
 		["posY"] = 0.737,
 	},
-	[5138] = {
+	[5596] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.297,
 		["posY"] = 0.662,
 	},
-	[5139] = {
+	[5597] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.301,
 		["posY"] = 0.599,
 	},
-	[5140] = {
+	[5598] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.326,
 		["posY"] = 0.588,
 	},
-	[5141] = {
+	[5599] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.336,
 		["posY"] = 0.758,
 	},
-	[5142] = {
+	[5600] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.349,
 		["posY"] = 0.667,
 	},
-	[5143] = {
+	[5601] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.354,
 		["posY"] = 0.469,
 	},
-	[5144] = {
+	[5602] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.359,
 		["posY"] = 0.613,
 	},
-	[5145] = {
+	[5603] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.363,
 		["posY"] = 0.762,
 	},
-	[5146] = {
+	[5604] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.376,
 		["posY"] = 0.73,
 	},
-	[5147] = {
+	[5605] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.378,
 		["posY"] = 0.691,
 	},
-	[5148] = {
+	[5606] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1442,
 		["posX"] = 0.38,
 		["posY"] = 0.652,
 	},
-	[5149] = {
+	[5607] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
-		["posY"] = 0.534,
+		["posY"] = 0.535,
 	},
-	[5150] = {
+	[5608] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.622,
 	},
-	[5151] = {
+	[5609] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.744,
 	},
-	[5152] = {
+	[5610] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.283,
 		["posY"] = 0.723,
 	},
-	[5153] = {
+	[5611] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.288,
 		["posY"] = 0.707,
 	},
-	[5154] = {
+	[5612] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.289,
 		["posY"] = 0.771,
 	},
-	[5155] = {
+	[5613] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.477,
 	},
-	[5156] = {
+	[5614] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.688,
 	},
-	[5157] = {
+	[5615] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.302,
 		["posY"] = 0.788,
 	},
-	[5158] = {
+	[5616] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.309,
 		["posY"] = 0.634,
 	},
-	[5159] = {
-		["type"] = "mining",
-		["object"] = 2040,
-		["mapID"] = 1446,
-		["posX"] = 0.315,
-		["posY"] = 0.461,
-	},
-	[5160] = {
+	[5617] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.319,
 		["posY"] = 0.484,
 	},
-	[5161] = {
+	[5618] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.319,
 		["posY"] = 0.668,
 	},
-	[5162] = {
+	[5619] = {
+		["type"] = "mining",
+		["object"] = 2040,
+		["mapID"] = 1446,
+		["posX"] = 0.32,
+		["posY"] = 0.458,
+	},
+	[5620] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.32,
 		["posY"] = 0.791,
 	},
-	[5163] = {
+	[5621] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.33,
 		["posY"] = 0.443,
 	},
-	[5164] = {
+	[5622] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.332,
 		["posY"] = 0.427,
 	},
-	[5165] = {
+	[5623] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.333,
 		["posY"] = 0.457,
 	},
-	[5166] = {
+	[5624] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.334,
 		["posY"] = 0.376,
 	},
-	[5167] = {
+	[5625] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.334,
 		["posY"] = 0.416,
 	},
-	[5168] = {
+	[5626] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.334,
 		["posY"] = 0.48,
 	},
-	[5169] = {
+	[5627] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.335,
 		["posY"] = 0.466,
 	},
-	[5170] = {
+	[5628] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.342,
 		["posY"] = 0.326,
 	},
-	[5171] = {
+	[5629] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.343,
 		["posY"] = 0.268,
 	},
-	[5172] = {
+	[5630] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.344,
 		["posY"] = 0.779,
 	},
-	[5173] = {
+	[5631] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.345,
 		["posY"] = 0.403,
 	},
-	[5174] = {
+	[5632] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.347,
 		["posY"] = 0.803,
 	},
-	[5175] = {
+	[5633] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.35,
 		["posY"] = 0.423,
 	},
-	[5176] = {
+	[5634] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.353,
 		["posY"] = 0.433,
 	},
-	[5177] = {
+	[5635] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.367,
 		["posY"] = 0.333,
 	},
-	[5178] = {
+	[5636] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.37,
 		["posY"] = 0.282,
 	},
-	[5179] = {
+	[5637] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.37,
 		["posY"] = 0.513,
 	},
-	[5180] = {
+	[5638] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.382,
 		["posY"] = 0.272,
 	},
-	[5181] = {
+	[5639] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.382,
 		["posY"] = 0.774,
 	},
-	[5182] = {
+	[5640] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.4,
 		["posY"] = 0.337,
 	},
-	[5183] = {
+	[5641] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.407,
 		["posY"] = 0.789,
 	},
-	[5184] = {
+	[5642] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.412,
 		["posY"] = 0.761,
 	},
-	[5185] = {
+	[5643] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.414,
 		["posY"] = 0.544,
 	},
-	[5186] = {
+	[5644] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.414,
 		["posY"] = 0.58,
 	},
-	[5187] = {
+	[5645] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.417,
 		["posY"] = 0.571,
 	},
-	[5188] = {
+	[5646] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.438,
 		["posY"] = 0.776,
 	},
-	[5189] = {
+	[5647] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.439,
 		["posY"] = 0.259,
 	},
-	[5190] = {
+	[5648] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.454,
 		["posY"] = 0.551,
 	},
-	[5191] = {
+	[5649] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.466,
 		["posY"] = 0.298,
 	},
-	[5192] = {
+	[5650] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.47,
 		["posY"] = 0.562,
 	},
-	[5193] = {
+	[5651] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
-		["posX"] = 0.471,
+		["posX"] = 0.472,
 		["posY"] = 0.237,
 	},
-	[5194] = {
+	[5652] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.479,
 		["posY"] = 0.784,
 	},
-	[5195] = {
+	[5653] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.486,
 		["posY"] = 0.238,
 	},
-	[5196] = {
+	[5654] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.497,
 		["posY"] = 0.788,
 	},
-	[5197] = {
+	[5655] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.507,
 		["posY"] = 0.794,
 	},
-	[5198] = {
+	[5656] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.722,
 	},
-	[5199] = {
+	[5657] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.73,
 	},
-	[5200] = {
+	[5658] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.77,
 	},
-	[5201] = {
+	[5659] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.542,
 		["posY"] = 0.244,
 	},
-	[5202] = {
+	[5660] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.547,
 		["posY"] = 0.774,
 	},
-	[5203] = {
+	[5661] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.552,
 		["posY"] = 0.759,
 	},
-	[5204] = {
+	[5662] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.555,
 		["posY"] = 0.699,
 	},
-	[5205] = {
+	[5663] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.556,
 		["posY"] = 0.777,
 	},
-	[5206] = {
+	[5664] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.56,
 		["posY"] = 0.714,
 	},
-	[5207] = {
+	[5665] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.568,
 		["posY"] = 0.696,
 	},
-	[5208] = {
+	[5666] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.571,
 		["posY"] = 0.683,
 	},
-	[5209] = {
+	[5667] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.574,
 		["posY"] = 0.263,
 	},
-	[5210] = {
+	[5668] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.576,
 		["posY"] = 0.704,
 	},
-	[5211] = {
+	[5669] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.578,
 		["posY"] = 0.719,
 	},
-	[5212] = {
+	[5670] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.579,
 		["posY"] = 0.748,
 	},
-	[5213] = {
+	[5671] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.592,
 		["posY"] = 0.678,
 	},
-	[5214] = {
+	[5672] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.598,
 		["posY"] = 0.538,
 	},
-	[5215] = {
+	[5673] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.632,
 	},
-	[5216] = {
+	[5674] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.619,
 		["posY"] = 0.632,
 	},
-	[5217] = {
+	[5675] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.624,
 		["posY"] = 0.573,
 	},
-	[5218] = {
+	[5676] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.631,
 		["posY"] = 0.591,
 	},
-	[5219] = {
+	[5677] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.637,
 		["posY"] = 0.624,
 	},
-	[5220] = {
+	[5678] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.656,
 		["posY"] = 0.586,
 	},
-	[5221] = {
+	[5679] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.673,
 		["posY"] = 0.553,
 	},
-	[5222] = {
+	[5680] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.675,
 		["posY"] = 0.319,
 	},
-	[5223] = {
+	[5681] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.696,
 		["posY"] = 0.528,
 	},
-	[5224] = {
+	[5682] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1446,
 		["posX"] = 0.719,
 		["posY"] = 0.47,
 	},
-	[5225] = {
+	[5683] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.33,
 		["posY"] = 0.492,
 	},
-	[5226] = {
+	[5684] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.347,
 		["posY"] = 0.21,
 	},
-	[5227] = {
+	[5685] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.379,
 		["posY"] = 0.644,
 	},
-	[5228] = {
+	[5686] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.379,
 		["posY"] = 0.812,
 	},
-	[5229] = {
+	[5687] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
-		["posX"] = 0.41,
+		["posX"] = 0.409,
 		["posY"] = 0.352,
 	},
-	[5230] = {
+	[5688] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.434,
 		["posY"] = 0.156,
 	},
-	[5231] = {
+	[5689] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.443,
 		["posY"] = 0.884,
 	},
-	[5232] = {
+	[5690] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.504,
 		["posY"] = 0.712,
 	},
-	[5233] = {
+	[5691] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.523,
 		["posY"] = 0.65,
 	},
-	[5234] = {
+	[5692] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.573,
 		["posY"] = 0.153,
 	},
-	[5235] = {
+	[5693] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.599,
 		["posY"] = 0.349,
 	},
-	[5236] = {
+	[5694] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.61,
 		["posY"] = 0.66,
 	},
-	[5237] = {
+	[5695] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.627,
 		["posY"] = 0.181,
 	},
-	[5238] = {
+	[5696] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.717,
 		["posY"] = 0.244,
 	},
-	[5239] = {
+	[5697] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.788,
 		["posY"] = 0.578,
 	},
-	[5240] = {
+	[5698] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1449,
 		["posX"] = 0.806,
 		["posY"] = 0.419,
 	},
-	[5241] = {
+	[5699] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.296,
 		["posY"] = 0.471,
 	},
-	[5242] = {
+	[5700] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.309,
 		["posY"] = 0.355,
 	},
-	[5243] = {
+	[5701] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.314,
-		["posY"] = 0.389,
+		["posY"] = 0.388,
 	},
-	[5244] = {
+	[5702] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.325,
 		["posY"] = 0.451,
 	},
-	[5245] = {
+	[5703] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.334,
 		["posY"] = 0.366,
 	},
-	[5246] = {
+	[5704] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.349,
 		["posY"] = 0.443,
 	},
-	[5247] = {
+	[5705] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.37,
 		["posY"] = 0.39,
 	},
-	[5248] = {
+	[5706] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.374,
 		["posY"] = 0.353,
 	},
-	[5249] = {
+	[5707] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.404,
 		["posY"] = 0.364,
 	},
-	[5250] = {
+	[5708] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
-		["posX"] = 0.405,
-		["posY"] = 0.445,
+		["posX"] = 0.404,
+		["posY"] = 0.446,
 	},
-	[5251] = {
+	[5709] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.419,
 		["posY"] = 0.438,
 	},
-	[5252] = {
+	[5710] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.428,
 		["posY"] = 0.336,
 	},
-	[5253] = {
+	[5711] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.442,
 		["posY"] = 0.378,
 	},
-	[5254] = {
+	[5712] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.448,
 		["posY"] = 0.443,
 	},
-	[5255] = {
+	[5713] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.454,
 		["posY"] = 0.349,
 	},
-	[5256] = {
+	[5714] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.464,
 		["posY"] = 0.446,
 	},
-	[5257] = {
+	[5715] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.477,
 		["posY"] = 0.358,
 	},
-	[5258] = {
+	[5716] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.479,
 		["posY"] = 0.43,
 	},
-	[5259] = {
+	[5717] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.524,
 		["posY"] = 0.246,
 	},
-	[5260] = {
+	[5718] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.536,
 		["posY"] = 0.364,
 	},
-	[5261] = {
+	[5719] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1452,
 		["posX"] = 0.55,
 		["posY"] = 0.271,
 	},
-	[5262] = {
+	[5720] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.158,
 		["posY"] = 0.884,
 	},
-	[5263] = {
+	[5721] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.176,
 		["posY"] = 0.224,
 	},
-	[5264] = {
+	[5722] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.176,
 		["posY"] = 0.783,
 	},
-	[5265] = {
+	[5723] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.194,
-		["posY"] = 0.111,
+		["posY"] = 0.11,
 	},
-	[5266] = {
+	[5724] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.222,
 		["posY"] = 0.902,
 	},
-	[5267] = {
+	[5725] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.231,
 		["posY"] = 0.759,
 	},
-	[5268] = {
+	[5726] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.249,
 		["posY"] = 0.256,
 	},
-	[5269] = {
+	[5727] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.261,
 		["posY"] = 0.158,
 	},
-	[5270] = {
+	[5728] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.269,
 		["posY"] = 0.721,
 	},
-	[5271] = {
+	[5729] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.274,
 		["posY"] = 0.108,
 	},
-	[5272] = {
+	[5730] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.369,
 		["posY"] = 0.136,
 	},
-	[5273] = {
+	[5731] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.502,
 		["posY"] = 0.134,
 	},
-	[5274] = {
+	[5732] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.551,
 		["posY"] = 0.465,
 	},
-	[5275] = {
+	[5733] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.562,
 		["posY"] = 0.192,
 	},
-	[5276] = {
+	[5734] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.587,
 		["posY"] = 0.513,
 	},
-	[5277] = {
+	[5735] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.62,
 		["posY"] = 0.587,
 	},
-	[5278] = {
+	[5736] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.624,
 		["posY"] = 0.332,
 	},
-	[5279] = {
+	[5737] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.627,
 		["posY"] = 0.122,
 	},
-	[5280] = {
+	[5738] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.671,
 		["posY"] = 0.247,
 	},
-	[5281] = {
+	[5739] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.684,
 		["posY"] = 0.49,
 	},
-	[5282] = {
+	[5740] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1451,
 		["posX"] = 0.724,
 		["posY"] = 0.403,
 	},
-	[5283] = {
+	[5741] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.365,
 		["posY"] = 0.627,
 	},
-	[5284] = {
+	[5742] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.366,
 		["posY"] = 0.52,
 	},
-	[5285] = {
+	[5743] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.367,
 		["posY"] = 0.56,
 	},
-	[5286] = {
+	[5744] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.368,
 		["posY"] = 0.398,
 	},
-	[5287] = {
+	[5745] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.372,
 		["posY"] = 0.53,
 	},
-	[5288] = {
+	[5746] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.377,
 		["posY"] = 0.516,
 	},
-	[5289] = {
+	[5747] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.38,
 		["posY"] = 0.484,
 	},
-	[5290] = {
+	[5748] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.381,
 		["posY"] = 0.618,
 	},
-	[5291] = {
+	[5749] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.382,
 		["posY"] = 0.608,
 	},
-	[5292] = {
+	[5750] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.383,
 		["posY"] = 0.547,
 	},
-	[5293] = {
+	[5751] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.388,
 		["posY"] = 0.621,
 	},
-	[5294] = {
+	[5752] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.398,
 		["posY"] = 0.81,
 	},
-	[5295] = {
+	[5753] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.401,
 		["posY"] = 0.741,
 	},
-	[5296] = {
+	[5754] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.429,
 		["posY"] = 0.442,
 	},
-	[5297] = {
+	[5755] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.431,
 		["posY"] = 0.369,
 	},
-	[5298] = {
+	[5756] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.434,
 		["posY"] = 0.182,
 	},
-	[5299] = {
+	[5757] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.442,
 		["posY"] = 0.484,
 	},
-	[5300] = {
+	[5758] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.449,
 		["posY"] = 0.854,
 	},
-	[5301] = {
+	[5759] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.452,
 		["posY"] = 0.665,
 	},
-	[5302] = {
+	[5760] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.457,
 		["posY"] = 0.342,
 	},
-	[5303] = {
+	[5761] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.464,
 		["posY"] = 0.431,
 	},
-	[5304] = {
+	[5762] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.47,
 		["posY"] = 0.724,
 	},
-	[5305] = {
+	[5763] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.474,
 		["posY"] = 0.923,
 	},
-	[5306] = {
+	[5764] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
-		["posX"] = 0.48,
+		["posX"] = 0.479,
 		["posY"] = 0.948,
 	},
-	[5307] = {
+	[5765] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.481,
 		["posY"] = 0.9,
 	},
-	[5308] = {
+	[5766] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.495,
 		["posY"] = 0.909,
 	},
-	[5309] = {
+	[5767] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.504,
 		["posY"] = 0.798,
 	},
-	[5310] = {
+	[5768] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.524,
 		["posY"] = 0.186,
 	},
-	[5311] = {
+	[5769] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.529,
 		["posY"] = 0.304,
 	},
-	[5312] = {
+	[5770] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.556,
 		["posY"] = 0.074,
 	},
-	[5313] = {
+	[5771] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.574,
 		["posY"] = 0.224,
 	},
-	[5314] = {
+	[5772] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.576,
 		["posY"] = 0.214,
 	},
-	[5315] = {
+	[5773] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.577,
 		["posY"] = 0.191,
 	},
-	[5316] = {
+	[5774] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.582,
 		["posY"] = 0.204,
 	},
-	[5317] = {
+	[5775] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.584,
 		["posY"] = 0.879,
 	},
-	[5318] = {
+	[5776] = {
 		["type"] = "mining",
 		["object"] = 2040,
 		["mapID"] = 1448,
 		["posX"] = 0.596,
 		["posY"] = 0.211,
 	},
-	[5319] = {
+	[5777] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.04,
 		["posY"] = 0.806,
 	},
-	[5320] = {
+	[5778] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.062,
 		["posY"] = 0.773,
 	},
-	[5321] = {
+	[5779] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.068,
 		["posY"] = 0.954,
 	},
-	[5322] = {
+	[5780] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.074,
 		["posY"] = 0.734,
 	},
-	[5323] = {
+	[5781] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1418,
+		["posX"] = 0.082,
+		["posY"] = 0.959,
+	},
+	[5782] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.084,
 		["posY"] = 0.906,
 	},
-	[5324] = {
+	[5783] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.092,
 		["posY"] = 0.654,
 	},
-	[5325] = {
+	[5784] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.094,
 		["posY"] = 0.881,
 	},
-	[5326] = {
+	[5785] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1418,
+		["posX"] = 0.101,
+		["posY"] = 0.896,
+	},
+	[5786] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.101,
 		["posY"] = 0.927,
 	},
-	[5327] = {
+	[5787] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.116,
 		["posY"] = 0.78,
 	},
-	[5328] = {
+	[5788] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.122,
 		["posY"] = 0.35,
 	},
-	[5329] = {
+	[5789] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.143,
 		["posY"] = 0.399,
 	},
-	[5330] = {
+	[5790] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.151,
-		["posY"] = 0.86,
+		["posY"] = 0.859,
 	},
-	[5331] = {
+	[5791] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.151,
 		["posY"] = 0.922,
 	},
-	[5332] = {
+	[5792] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.152,
 		["posY"] = 0.816,
 	},
-	[5333] = {
+	[5793] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.153,
 		["posY"] = 0.378,
 	},
-	[5334] = {
+	[5794] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.158,
 		["posY"] = 0.328,
 	},
-	[5335] = {
+	[5795] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.163,
 		["posY"] = 0.879,
 	},
-	[5336] = {
+	[5796] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.208,
 		["posY"] = 0.823,
 	},
-	[5337] = {
+	[5797] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.238,
 		["posY"] = 0.664,
 	},
-	[5338] = {
+	[5798] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.317,
 		["posY"] = 0.728,
 	},
-	[5339] = {
+	[5799] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1418,
+		["posX"] = 0.356,
+		["posY"] = 0.39,
+	},
+	[5800] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.42,
 		["posY"] = 0.788,
 	},
-	[5340] = {
+	[5801] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.422,
-		["posY"] = 0.821,
+		["posY"] = 0.822,
 	},
-	[5341] = {
+	[5802] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.435,
 		["posY"] = 0.742,
 	},
-	[5342] = {
+	[5803] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.453,
 		["posY"] = 0.846,
 	},
-	[5343] = {
+	[5804] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.514,
 		["posY"] = 0.529,
 	},
-	[5344] = {
+	[5805] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.56,
 		["posY"] = 0.821,
 	},
-	[5345] = {
+	[5806] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.562,
 		["posY"] = 0.876,
 	},
-	[5346] = {
+	[5807] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1418,
+		["posX"] = 0.613,
+		["posY"] = 0.64,
+	},
+	[5808] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.63,
 		["posY"] = 0.561,
 	},
-	[5347] = {
+	[5809] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1418,
+		["posX"] = 0.64,
+		["posY"] = 0.687,
+	},
+	[5810] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.688,
 		["posY"] = 0.511,
 	},
-	[5348] = {
+	[5811] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.718,
 		["posY"] = 0.671,
 	},
-	[5349] = {
+	[5812] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.723,
 		["posY"] = 0.347,
 	},
-	[5350] = {
+	[5813] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.728,
 		["posY"] = 0.611,
 	},
-	[5351] = {
+	[5814] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.761,
 		["posY"] = 0.661,
 	},
-	[5352] = {
+	[5815] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.78,
 		["posY"] = 0.485,
 	},
-	[5353] = {
+	[5816] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.783,
 		["posY"] = 0.439,
 	},
-	[5354] = {
+	[5817] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.788,
 		["posY"] = 0.556,
 	},
-	[5355] = {
+	[5818] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.797,
-		["posY"] = 0.335,
+		["posY"] = 0.334,
 	},
-	[5356] = {
+	[5819] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.807,
 		["posY"] = 0.658,
 	},
-	[5357] = {
+	[5820] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.826,
 		["posY"] = 0.448,
 	},
-	[5358] = {
+	[5821] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.828,
 		["posY"] = 0.599,
 	},
-	[5359] = {
+	[5822] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.836,
 		["posY"] = 0.398,
 	},
-	[5360] = {
+	[5823] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1418,
 		["posX"] = 0.839,
 		["posY"] = 0.332,
 	},
-	[5361] = {
+	[5824] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.427,
 		["posY"] = 0.429,
 	},
-	[5362] = {
+	[5825] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.432,
 		["posY"] = 0.21,
 	},
-	[5363] = {
+	[5826] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.432,
 		["posY"] = 0.362,
 	},
-	[5364] = {
+	[5827] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.435,
 		["posY"] = 0.306,
 	},
-	[5365] = {
+	[5828] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.443,
 		["posY"] = 0.138,
 	},
-	[5366] = {
+	[5829] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.46,
 		["posY"] = 0.294,
 	},
-	[5367] = {
+	[5830] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.472,
 		["posY"] = 0.167,
 	},
-	[5368] = {
+	[5831] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.489,
 		["posY"] = 0.35,
 	},
-	[5369] = {
+	[5832] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
-		["posX"] = 0.499,
+		["posX"] = 0.498,
 		["posY"] = 0.274,
 	},
-	[5370] = {
+	[5833] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.5,
 		["posY"] = 0.437,
 	},
-	[5371] = {
+	[5834] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.511,
 		["posY"] = 0.334,
 	},
-	[5372] = {
+	[5835] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.514,
 		["posY"] = 0.423,
 	},
-	[5373] = {
+	[5836] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.551,
 		["posY"] = 0.589,
 	},
-	[5374] = {
+	[5837] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.558,
 		["posY"] = 0.443,
 	},
-	[5375] = {
+	[5838] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1419,
+		["posX"] = 0.574,
+		["posY"] = 0.366,
+	},
+	[5839] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.584,
 		["posY"] = 0.404,
 	},
-	[5376] = {
+	[5840] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.586,
 		["posY"] = 0.329,
 	},
-	[5377] = {
+	[5841] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.617,
 		["posY"] = 0.316,
 	},
-	[5378] = {
+	[5842] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.634,
 		["posY"] = 0.25,
 	},
-	[5379] = {
+	[5843] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.642,
 		["posY"] = 0.291,
 	},
-	[5380] = {
+	[5844] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.647,
 		["posY"] = 0.413,
 	},
-	[5381] = {
+	[5845] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1419,
 		["posX"] = 0.648,
 		["posY"] = 0.502,
 	},
-	[5382] = {
+	[5846] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1419,
+		["posX"] = 0.691,
+		["posY"] = 0.302,
+	},
+	[5847] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1435,
+		["posX"] = 0.315,
+		["posY"] = 0.285,
+	},
+	[5848] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1435,
 		["posX"] = 0.623,
 		["posY"] = 0.845,
 	},
-	[5383] = {
+	[5849] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1445,
+		["posX"] = 0.308,
+		["posY"] = 0.224,
+	},
+	[5850] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1445,
+		["posX"] = 0.368,
+		["posY"] = 0.687,
+	},
+	[5851] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1445,
 		["posX"] = 0.371,
 		["posY"] = 0.671,
 	},
-	[5384] = {
+	[5852] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1445,
 		["posX"] = 0.388,
 		["posY"] = 0.676,
 	},
-	[5385] = {
+	[5853] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.142,
 		["posY"] = 0.744,
 	},
-	[5386] = {
+	[5854] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.154,
 		["posY"] = 0.682,
 	},
-	[5387] = {
+	[5855] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.155,
 		["posY"] = 0.714,
 	},
-	[5388] = {
+	[5856] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.195,
 		["posY"] = 0.608,
 	},
-	[5389] = {
+	[5857] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.216,
+		["posY"] = 0.617,
+	},
+	[5858] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.309,
 		["posY"] = 0.455,
 	},
-	[5390] = {
+	[5859] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.326,
 		["posY"] = 0.417,
 	},
-	[5391] = {
+	[5860] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.344,
 		["posY"] = 0.396,
 	},
-	[5392] = {
+	[5861] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.366,
 		["posY"] = 0.364,
 	},
-	[5393] = {
+	[5862] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.371,
 		["posY"] = 0.616,
 	},
-	[5394] = {
+	[5863] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.378,
+		["posY"] = 0.858,
+	},
+	[5864] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.382,
 		["posY"] = 0.334,
 	},
-	[5395] = {
+	[5865] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.41,
 		["posY"] = 0.569,
 	},
-	[5396] = {
+	[5866] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.412,
 		["posY"] = 0.473,
 	},
-	[5397] = {
+	[5867] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.413,
 		["posY"] = 0.193,
 	},
-	[5398] = {
+	[5868] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.421,
 		["posY"] = 0.404,
 	},
-	[5399] = {
+	[5869] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.421,
 		["posY"] = 0.515,
 	},
-	[5400] = {
+	[5870] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.429,
 		["posY"] = 0.629,
 	},
-	[5401] = {
+	[5871] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.433,
 		["posY"] = 0.177,
 	},
-	[5402] = {
+	[5872] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.435,
+		["posY"] = 0.531,
+	},
+	[5873] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.448,
 		["posY"] = 0.26,
 	},
-	[5403] = {
+	[5874] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.449,
 		["posY"] = 0.215,
 	},
-	[5404] = {
+	[5875] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.451,
 		["posY"] = 0.454,
 	},
-	[5405] = {
+	[5876] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.451,
+		["posY"] = 0.629,
+	},
+	[5877] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.489,
-		["posY"] = 0.306,
+		["posY"] = 0.307,
 	},
-	[5406] = {
+	[5878] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.493,
 		["posY"] = 0.67,
 	},
-	[5407] = {
+	[5879] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.494,
+		["posY"] = 0.597,
+	},
+	[5880] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.519,
 		["posY"] = 0.204,
 	},
-	[5408] = {
+	[5881] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.535,
 		["posY"] = 0.191,
 	},
-	[5409] = {
+	[5882] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.545,
 		["posY"] = 0.491,
 	},
-	[5410] = {
+	[5883] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.545,
 		["posY"] = 0.647,
 	},
-	[5411] = {
+	[5884] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.548,
 		["posY"] = 0.77,
 	},
-	[5412] = {
+	[5885] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.561,
-		["posY"] = 0.284,
+		["posY"] = 0.283,
 	},
-	[5413] = {
+	[5886] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.567,
 		["posY"] = 0.447,
 	},
-	[5414] = {
+	[5887] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.571,
 		["posY"] = 0.31,
 	},
-	[5415] = {
+	[5888] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.582,
 		["posY"] = 0.577,
 	},
-	[5416] = {
+	[5889] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.592,
 		["posY"] = 0.403,
 	},
-	[5417] = {
+	[5890] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.598,
 		["posY"] = 0.287,
 	},
-	[5418] = {
+	[5891] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.598,
 		["posY"] = 0.739,
 	},
-	[5419] = {
+	[5892] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.611,
 		["posY"] = 0.893,
 	},
-	[5420] = {
+	[5893] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.612,
 		["posY"] = 0.501,
 	},
-	[5421] = {
+	[5894] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.618,
 		["posY"] = 0.321,
 	},
-	[5422] = {
+	[5895] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.627,
 		["posY"] = 0.263,
 	},
-	[5423] = {
+	[5896] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.636,
 		["posY"] = 0.194,
 	},
-	[5424] = {
+	[5897] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.641,
 		["posY"] = 0.854,
 	},
-	[5425] = {
+	[5898] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.644,
 		["posY"] = 0.423,
 	},
-	[5426] = {
+	[5899] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.644,
+		["posY"] = 0.522,
+	},
+	[5900] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.645,
 		["posY"] = 0.144,
 	},
-	[5427] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1447,
-		["posX"] = 0.645,
-		["posY"] = 0.522,
-	},
-	[5428] = {
+	[5901] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.652,
 		["posY"] = 0.774,
 	},
-	[5429] = {
+	[5902] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.654,
 		["posY"] = 0.788,
 	},
-	[5430] = {
+	[5903] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.671,
 		["posY"] = 0.918,
 	},
-	[5431] = {
+	[5904] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.679,
 		["posY"] = 0.787,
 	},
-	[5432] = {
+	[5905] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.681,
 		["posY"] = 0.189,
 	},
-	[5433] = {
+	[5906] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.685,
 		["posY"] = 0.279,
 	},
-	[5434] = {
+	[5907] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.69,
 		["posY"] = 0.822,
 	},
-	[5435] = {
+	[5908] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.692,
 		["posY"] = 0.573,
 	},
-	[5436] = {
+	[5909] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.703,
 		["posY"] = 0.188,
 	},
-	[5437] = {
+	[5910] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.734,
 		["posY"] = 0.864,
 	},
-	[5438] = {
+	[5911] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.738,
 		["posY"] = 0.127,
 	},
-	[5439] = {
+	[5912] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.74,
 		["posY"] = 0.567,
 	},
-	[5440] = {
+	[5913] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.743,
 		["posY"] = 0.403,
 	},
-	[5441] = {
+	[5914] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.746,
 		["posY"] = 0.459,
 	},
-	[5442] = {
+	[5915] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.77,
 		["posY"] = 0.201,
 	},
-	[5443] = {
+	[5916] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
-		["posX"] = 0.778,
+		["posX"] = 0.777,
 		["posY"] = 0.156,
 	},
-	[5444] = {
+	[5917] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.785,
 		["posY"] = 0.231,
 	},
-	[5445] = {
+	[5918] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.791,
 		["posY"] = 0.278,
 	},
-	[5446] = {
+	[5919] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.791,
 		["posY"] = 0.373,
 	},
-	[5447] = {
+	[5920] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.793,
+		["posY"] = 0.313,
+	},
+	[5921] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1447,
+		["posX"] = 0.82,
+		["posY"] = 0.155,
+	},
+	[5922] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.838,
 		["posY"] = 0.221,
 	},
-	[5448] = {
+	[5923] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1447,
 		["posX"] = 0.888,
 		["posY"] = 0.342,
 	},
-	[5449] = {
+	[5924] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.298,
 		["posY"] = 0.657,
 	},
-	[5450] = {
+	[5925] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.306,
 		["posY"] = 0.714,
 	},
-	[5451] = {
+	[5926] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.329,
 		["posY"] = 0.746,
 	},
-	[5452] = {
+	[5927] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.33,
 		["posY"] = 0.672,
 	},
-	[5453] = {
+	[5928] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.331,
 		["posY"] = 0.588,
 	},
-	[5454] = {
+	[5929] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.342,
 		["posY"] = 0.516,
 	},
-	[5455] = {
+	[5930] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.348,
 		["posY"] = 0.796,
 	},
-	[5456] = {
+	[5931] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.353,
+		["posY"] = 0.684,
+	},
+	[5932] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.381,
 		["posY"] = 0.675,
 	},
-	[5457] = {
+	[5933] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.385,
 		["posY"] = 0.828,
 	},
-	[5458] = {
+	[5934] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.399,
 		["posY"] = 0.733,
 	},
-	[5459] = {
+	[5935] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
-		["posX"] = 0.41,
+		["posX"] = 0.402,
+		["posY"] = 0.487,
+	},
+	[5936] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.409,
 		["posY"] = 0.143,
 	},
-	[5460] = {
+	[5937] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.411,
 		["posY"] = 0.653,
 	},
-	[5461] = {
+	[5938] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.42,
 		["posY"] = 0.204,
 	},
-	[5462] = {
+	[5939] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.425,
 		["posY"] = 0.47,
 	},
-	[5463] = {
+	[5940] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.435,
 		["posY"] = 0.334,
 	},
-	[5464] = {
+	[5941] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.441,
 		["posY"] = 0.79,
 	},
-	[5465] = {
+	[5942] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.446,
 		["posY"] = 0.426,
 	},
-	[5466] = {
+	[5943] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.446,
 		["posY"] = 0.626,
 	},
-	[5467] = {
+	[5944] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
-		["posX"] = 0.457,
-		["posY"] = 0.109,
+		["posX"] = 0.451,
+		["posY"] = 0.111,
 	},
-	[5468] = {
+	[5945] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.453,
+		["posY"] = 0.101,
+	},
+	[5946] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.473,
+		["posY"] = 0.383,
+	},
+	[5947] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.479,
+		["posY"] = 0.797,
+	},
+	[5948] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.483,
 		["posY"] = 0.135,
 	},
-	[5469] = {
+	[5949] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
-		["posX"] = 0.485,
-		["posY"] = 0.205,
+		["posX"] = 0.486,
+		["posY"] = 0.206,
 	},
-	[5470] = {
+	[5950] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.49,
 		["posY"] = 0.762,
 	},
-	[5471] = {
+	[5951] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.492,
+		["posY"] = 0.638,
+	},
+	[5952] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.496,
 		["posY"] = 0.404,
 	},
-	[5472] = {
+	[5953] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.498,
 		["posY"] = 0.691,
 	},
-	[5473] = {
+	[5954] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.502,
 		["posY"] = 0.247,
 	},
-	[5474] = {
+	[5955] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.511,
 		["posY"] = 0.742,
 	},
-	[5475] = {
+	[5956] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.519,
 		["posY"] = 0.579,
 	},
-	[5476] = {
+	[5957] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.529,
 		["posY"] = 0.219,
 	},
-	[5477] = {
+	[5958] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.531,
 		["posY"] = 0.768,
 	},
-	[5478] = {
+	[5959] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.532,
 		["posY"] = 0.411,
 	},
-	[5479] = {
+	[5960] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.533,
 		["posY"] = 0.276,
 	},
-	[5480] = {
+	[5961] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.542,
 		["posY"] = 0.525,
 	},
-	[5481] = {
+	[5962] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.547,
 		["posY"] = 0.362,
 	},
-	[5482] = {
+	[5963] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.552,
 		["posY"] = 0.605,
 	},
-	[5483] = {
+	[5964] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.552,
-		["posY"] = 0.805,
+		["posY"] = 0.804,
 	},
-	[5484] = {
+	[5965] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.595,
+		["posY"] = 0.508,
+	},
+	[5966] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.612,
 		["posY"] = 0.618,
 	},
-	[5485] = {
+	[5967] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1422,
+		["posX"] = 0.615,
+		["posY"] = 0.377,
+	},
+	[5968] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.618,
 		["posY"] = 0.333,
 	},
-	[5486] = {
+	[5969] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.625,
 		["posY"] = 0.347,
 	},
-	[5487] = {
+	[5970] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.632,
 		["posY"] = 0.444,
 	},
-	[5488] = {
+	[5971] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.636,
 		["posY"] = 0.356,
 	},
-	[5489] = {
+	[5972] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.64,
 		["posY"] = 0.378,
 	},
-	[5490] = {
+	[5973] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.643,
 		["posY"] = 0.335,
 	},
-	[5491] = {
+	[5974] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.651,
 		["posY"] = 0.384,
 	},
-	[5492] = {
+	[5975] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.652,
 		["posY"] = 0.606,
 	},
-	[5493] = {
+	[5976] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1422,
 		["posX"] = 0.669,
 		["posY"] = 0.541,
 	},
-	[5494] = {
+	[5977] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.253,
 		["posY"] = 0.618,
 	},
-	[5495] = {
+	[5978] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.265,
 		["posY"] = 0.626,
 	},
-	[5496] = {
+	[5979] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.273,
 		["posY"] = 0.817,
 	},
-	[5497] = {
+	[5980] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1434,
+		["posX"] = 0.276,
+		["posY"] = 0.63,
+	},
+	[5981] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1434,
+		["posX"] = 0.276,
+		["posY"] = 0.641,
+	},
+	[5982] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.277,
 		["posY"] = 0.613,
 	},
-	[5498] = {
+	[5983] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.294,
 		["posY"] = 0.804,
 	},
-	[5499] = {
+	[5984] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.306,
 		["posY"] = 0.396,
 	},
-	[5500] = {
+	[5985] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.322,
 		["posY"] = 0.458,
 	},
-	[5501] = {
+	[5986] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.324,
 		["posY"] = 0.75,
 	},
-	[5502] = {
+	[5987] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.336,
 		["posY"] = 0.418,
 	},
-	[5503] = {
+	[5988] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.347,
 		["posY"] = 0.726,
 	},
-	[5504] = {
+	[5989] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.364,
 		["posY"] = 0.687,
 	},
-	[5505] = {
+	[5990] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.372,
 		["posY"] = 0.495,
 	},
-	[5506] = {
+	[5991] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.383,
 		["posY"] = 0.499,
 	},
-	[5507] = {
+	[5992] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.385,
 		["posY"] = 0.611,
 	},
-	[5508] = {
+	[5993] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.396,
 		["posY"] = 0.494,
 	},
-	[5509] = {
+	[5994] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.402,
 		["posY"] = 0.853,
 	},
-	[5510] = {
+	[5995] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1434,
+		["posX"] = 0.406,
+		["posY"] = 0.519,
+	},
+	[5996] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.433,
 		["posY"] = 0.425,
 	},
-	[5511] = {
+	[5997] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.444,
 		["posY"] = 0.393,
 	},
-	[5512] = {
+	[5998] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1434,
 		["posX"] = 0.467,
 		["posY"] = 0.432,
 	},
-	[5513] = {
+	[5999] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.323,
 		["posY"] = 0.652,
 	},
-	[5514] = {
+	[6000] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1416,
+		["posX"] = 0.428,
+		["posY"] = 0.347,
+	},
+	[6001] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.46,
 		["posY"] = 0.419,
 	},
-	[5515] = {
+	[6002] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
-		["posX"] = 0.475,
-		["posY"] = 0.329,
+		["posX"] = 0.479,
+		["posY"] = 0.327,
 	},
-	[5516] = {
+	[6003] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1416,
+		["posX"] = 0.494,
+		["posY"] = 0.32,
+	},
+	[6004] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.522,
 		["posY"] = 0.462,
 	},
-	[5517] = {
+	[6005] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.527,
 		["posY"] = 0.369,
 	},
-	[5518] = {
+	[6006] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1416,
+		["posX"] = 0.539,
+		["posY"] = 0.454,
+	},
+	[6007] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.541,
 		["posY"] = 0.464,
 	},
-	[5519] = {
+	[6008] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.546,
 		["posY"] = 0.492,
 	},
-	[5520] = {
+	[6009] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1416,
 		["posX"] = 0.55,
 		["posY"] = 0.406,
 	},
-	[5521] = {
+	[6010] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.217,
 		["posY"] = 0.753,
 	},
-	[5522] = {
+	[6011] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.224,
 		["posY"] = 0.744,
 	},
-	[5523] = {
+	[6012] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.248,
 		["posY"] = 0.715,
 	},
-	[5524] = {
+	[6013] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.257,
+		["posY"] = 0.905,
+	},
+	[6014] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.26,
 		["posY"] = 0.704,
 	},
-	[5525] = {
+	[6015] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.269,
 		["posY"] = 0.878,
 	},
-	[5526] = {
+	[6016] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.318,
+		["posY"] = 0.702,
+	},
+	[6017] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.375,
 		["posY"] = 0.634,
 	},
-	[5527] = {
+	[6018] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.464,
+		["posY"] = 0.713,
+	},
+	[6019] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.493,
 		["posY"] = 0.707,
 	},
-	[5528] = {
+	[6020] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.503,
+		["posY"] = 0.805,
+	},
+	[6021] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.839,
+		["posY"] = 0.354,
+	},
+	[6022] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1417,
+		["posX"] = 0.842,
+		["posY"] = 0.33,
+	},
+	[6023] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.846,
 		["posY"] = 0.31,
 	},
-	[5529] = {
+	[6024] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.847,
 		["posY"] = 0.288,
 	},
-	[5530] = {
+	[6025] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.852,
 		["posY"] = 0.301,
 	},
-	[5531] = {
+	[6026] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1417,
 		["posX"] = 0.861,
 		["posY"] = 0.318,
 	},
-	[5532] = {
+	[6027] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.15,
 		["posY"] = 0.302,
 	},
-	[5533] = {
+	[6028] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.162,
 		["posY"] = 0.507,
 	},
-	[5534] = {
+	[6029] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.169,
 		["posY"] = 0.579,
 	},
-	[5535] = {
+	[6030] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.207,
 		["posY"] = 0.427,
 	},
-	[5536] = {
+	[6031] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.221,
 		["posY"] = 0.631,
 	},
-	[5537] = {
+	[6032] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
-		["posX"] = 0.266,
+		["posX"] = 0.254,
+		["posY"] = 0.463,
+	},
+	[6033] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.254,
+		["posY"] = 0.699,
+	},
+	[6034] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.264,
 		["posY"] = 0.547,
 	},
-	[5538] = {
+	[6035] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.271,
 		["posY"] = 0.641,
 	},
-	[5539] = {
+	[6036] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.299,
 		["posY"] = 0.706,
 	},
-	[5540] = {
+	[6037] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.303,
 		["posY"] = 0.587,
 	},
-	[5541] = {
+	[6038] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.314,
 		["posY"] = 0.709,
 	},
-	[5542] = {
+	[6039] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.346,
 		["posY"] = 0.539,
 	},
-	[5543] = {
+	[6040] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.349,
 		["posY"] = 0.668,
 	},
-	[5544] = {
+	[6041] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.364,
 		["posY"] = 0.583,
 	},
-	[5545] = {
+	[6042] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.374,
 		["posY"] = 0.643,
 	},
-	[5546] = {
+	[6043] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.38,
 		["posY"] = 0.411,
 	},
-	[5547] = {
+	[6044] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.389,
 		["posY"] = 0.281,
 	},
-	[5548] = {
+	[6045] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
-		["posX"] = 0.402,
+		["posX"] = 0.403,
 		["posY"] = 0.566,
 	},
-	[5549] = {
+	[6046] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.418,
 		["posY"] = 0.449,
 	},
-	[5550] = {
+	[6047] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.426,
-		["posY"] = 0.375,
+		["posY"] = 0.373,
 	},
-	[5551] = {
+	[6048] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.428,
 		["posY"] = 0.602,
 	},
-	[5552] = {
+	[6049] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.454,
+		["posY"] = 0.535,
+	},
+	[6050] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.463,
 		["posY"] = 0.403,
 	},
-	[5553] = {
+	[6051] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.472,
 		["posY"] = 0.595,
 	},
-	[5554] = {
+	[6052] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.473,
 		["posY"] = 0.334,
 	},
-	[5555] = {
+	[6053] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.487,
 		["posY"] = 0.627,
 	},
-	[5556] = {
+	[6054] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.49,
 		["posY"] = 0.438,
 	},
-	[5557] = {
+	[6055] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.522,
 		["posY"] = 0.532,
 	},
-	[5558] = {
+	[6056] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.544,
 		["posY"] = 0.601,
 	},
-	[5559] = {
+	[6057] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.551,
 		["posY"] = 0.332,
 	},
-	[5560] = {
+	[6058] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.558,
 		["posY"] = 0.677,
 	},
-	[5561] = {
+	[6059] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.568,
 		["posY"] = 0.593,
 	},
-	[5562] = {
+	[6060] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.573,
 		["posY"] = 0.239,
 	},
-	[5563] = {
+	[6061] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.575,
 		["posY"] = 0.38,
 	},
-	[5564] = {
+	[6062] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.588,
 		["posY"] = 0.454,
 	},
-	[5565] = {
+	[6063] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.61,
 		["posY"] = 0.386,
 	},
-	[5566] = {
+	[6064] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.547,
 	},
-	[5567] = {
+	[6065] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.622,
 	},
-	[5568] = {
+	[6066] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.638,
 		["posY"] = 0.239,
 	},
-	[5569] = {
+	[6067] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
-		["posX"] = 0.645,
-		["posY"] = 0.291,
+		["posX"] = 0.644,
+		["posY"] = 0.292,
 	},
-	[5570] = {
+	[6068] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
-		["posX"] = 0.648,
+		["posX"] = 0.647,
 		["posY"] = 0.44,
 	},
-	[5571] = {
+	[6069] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.651,
+		["posY"] = 0.578,
+	},
+	[6070] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.657,
 		["posY"] = 0.329,
 	},
-	[5572] = {
+	[6071] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.66,
-		["posY"] = 0.215,
+		["posY"] = 0.216,
 	},
-	[5573] = {
+	[6072] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.361,
 	},
-	[5574] = {
+	[6073] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.632,
 	},
-	[5575] = {
+	[6074] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.714,
 		["posY"] = 0.391,
 	},
-	[5576] = {
+	[6075] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.72,
 		["posY"] = 0.643,
 	},
-	[5577] = {
+	[6076] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.723,
 		["posY"] = 0.298,
 	},
-	[5578] = {
+	[6077] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.725,
 		["posY"] = 0.243,
 	},
-	[5579] = {
+	[6078] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.729,
 		["posY"] = 0.364,
 	},
-	[5580] = {
+	[6079] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.749,
 		["posY"] = 0.559,
 	},
-	[5581] = {
+	[6080] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.762,
 		["posY"] = 0.632,
 	},
-	[5582] = {
+	[6081] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.764,
+		["posY"] = 0.442,
+	},
+	[6082] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.775,
 		["posY"] = 0.439,
 	},
-	[5583] = {
+	[6083] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.777,
 		["posY"] = 0.422,
 	},
-	[5584] = {
+	[6084] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.791,
 		["posY"] = 0.252,
 	},
-	[5585] = {
+	[6085] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.796,
+		["posY"] = 0.456,
+	},
+	[6086] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.801,
 		["posY"] = 0.356,
 	},
-	[5586] = {
+	[6087] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.441,
 	},
-	[5587] = {
+	[6088] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.449,
 	},
-	[5588] = {
+	[6089] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.812,
 		["posY"] = 0.402,
 	},
-	[5589] = {
+	[6090] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.827,
 		["posY"] = 0.424,
 	},
-	[5590] = {
+	[6091] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.835,
 		["posY"] = 0.416,
 	},
-	[5591] = {
+	[6092] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.836,
 		["posY"] = 0.46,
 	},
-	[5592] = {
+	[6093] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.847,
 		["posY"] = 0.489,
 	},
-	[5593] = {
+	[6094] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.858,
 		["posY"] = 0.612,
 	},
-	[5594] = {
+	[6095] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.86,
 		["posY"] = 0.37,
 	},
-	[5595] = {
+	[6096] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.871,
 		["posY"] = 0.693,
 	},
-	[5596] = {
+	[6097] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.873,
 		["posY"] = 0.259,
 	},
-	[5597] = {
+	[6098] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1428,
+		["posX"] = 0.915,
+		["posY"] = 0.615,
+	},
+	[6099] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.916,
 		["posY"] = 0.275,
 	},
-	[5598] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1428,
-		["posX"] = 0.916,
-		["posY"] = 0.613,
-	},
-	[5599] = {
+	[6100] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.926,
 		["posY"] = 0.436,
 	},
-	[5600] = {
+	[6101] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.368,
 	},
-	[5601] = {
+	[6102] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.519,
 	},
-	[5602] = {
+	[6103] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1428,
 		["posX"] = 0.954,
 		["posY"] = 0.317,
 	},
-	[5603] = {
+	[6104] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.233,
 		["posY"] = 0.599,
 	},
-	[5604] = {
+	[6105] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.256,
-		["posY"] = 0.633,
+		["posY"] = 0.631,
 	},
-	[5605] = {
+	[6106] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.256,
 		["posY"] = 0.657,
 	},
-	[5606] = {
+	[6107] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
-		["posX"] = 0.273,
-		["posY"] = 0.691,
+		["posX"] = 0.272,
+		["posY"] = 0.69,
 	},
-	[5607] = {
+	[6108] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.3,
 		["posY"] = 0.682,
 	},
-	[5608] = {
+	[6109] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.301,
-		["posY"] = 0.551,
+		["posY"] = 0.55,
 	},
-	[5609] = {
+	[6110] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.308,
 		["posY"] = 0.746,
 	},
-	[5610] = {
+	[6111] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.312,
 		["posY"] = 0.609,
 	},
-	[5611] = {
+	[6112] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.313,
 		["posY"] = 0.593,
 	},
-	[5612] = {
+	[6113] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.335,
 		["posY"] = 0.658,
 	},
-	[5613] = {
+	[6114] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.336,
 		["posY"] = 0.411,
 	},
-	[5614] = {
+	[6115] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.336,
 		["posY"] = 0.76,
 	},
-	[5615] = {
+	[6116] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.34,
+		["posY"] = 0.641,
+	},
+	[6117] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.355,
 		["posY"] = 0.75,
 	},
-	[5616] = {
+	[6118] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.367,
 		["posY"] = 0.667,
 	},
-	[5617] = {
+	[6119] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.374,
 		["posY"] = 0.683,
 	},
-	[5618] = {
+	[6120] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.399,
 		["posY"] = 0.438,
 	},
-	[5619] = {
+	[6121] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.406,
 		["posY"] = 0.66,
 	},
-	[5620] = {
+	[6122] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.412,
 		["posY"] = 0.593,
 	},
-	[5621] = {
+	[6123] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.425,
 		["posY"] = 0.416,
 	},
-	[5622] = {
+	[6124] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.45,
 		["posY"] = 0.394,
 	},
-	[5623] = {
+	[6125] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.464,
 		["posY"] = 0.378,
 	},
-	[5624] = {
+	[6126] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.469,
 		["posY"] = 0.335,
 	},
-	[5625] = {
+	[6127] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.474,
 		["posY"] = 0.706,
 	},
-	[5626] = {
+	[6128] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.487,
 		["posY"] = 0.421,
 	},
-	[5627] = {
+	[6129] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.498,
+		["posY"] = 0.652,
+	},
+	[6130] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.605,
 	},
-	[5628] = {
+	[6131] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.509,
 		["posY"] = 0.692,
 	},
-	[5629] = {
+	[6132] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.518,
 		["posY"] = 0.652,
 	},
-	[5630] = {
+	[6133] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.528,
 		["posY"] = 0.659,
 	},
-	[5631] = {
+	[6134] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.542,
 		["posY"] = 0.543,
 	},
-	[5632] = {
+	[6135] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.544,
 		["posY"] = 0.672,
 	},
-	[5633] = {
+	[6136] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.544,
 		["posY"] = 0.835,
 	},
-	[5634] = {
+	[6137] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.553,
 		["posY"] = 0.674,
 	},
-	[5635] = {
+	[6138] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.555,
+		["posY"] = 0.448,
+	},
+	[6139] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.56,
 		["posY"] = 0.543,
 	},
-	[5636] = {
+	[6140] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.564,
 		["posY"] = 0.807,
 	},
-	[5637] = {
+	[6141] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.566,
 		["posY"] = 0.684,
 	},
-	[5638] = {
+	[6142] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.567,
+		["posY"] = 0.424,
+	},
+	[6143] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.567,
 		["posY"] = 0.431,
 	},
-	[5639] = {
+	[6144] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.571,
 		["posY"] = 0.735,
 	},
-	[5640] = {
+	[6145] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.573,
 		["posY"] = 0.446,
 	},
-	[5641] = {
+	[6146] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.575,
 		["posY"] = 0.849,
 	},
-	[5642] = {
+	[6147] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.577,
 		["posY"] = 0.407,
 	},
-	[5643] = {
+	[6148] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.581,
+		["posY"] = 0.494,
+	},
+	[6149] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.581,
 		["posY"] = 0.832,
 	},
-	[5644] = {
+	[6150] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.585,
 		["posY"] = 0.417,
 	},
-	[5645] = {
+	[6151] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.595,
 		["posY"] = 0.436,
 	},
-	[5646] = {
+	[6152] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.601,
 		["posY"] = 0.411,
 	},
-	[5647] = {
+	[6153] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.607,
 		["posY"] = 0.343,
 	},
-	[5648] = {
+	[6154] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.607,
 		["posY"] = 0.579,
 	},
-	[5649] = {
+	[6155] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.633,
 		["posY"] = 0.437,
 	},
-	[5650] = {
+	[6156] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.644,
 		["posY"] = 0.222,
 	},
-	[5651] = {
+	[6157] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.65,
 		["posY"] = 0.632,
 	},
-	[5652] = {
+	[6158] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.651,
 		["posY"] = 0.523,
 	},
-	[5653] = {
+	[6159] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.654,
 		["posY"] = 0.413,
 	},
-	[5654] = {
+	[6160] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.667,
 		["posY"] = 0.524,
 	},
-	[5655] = {
+	[6161] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.671,
 		["posY"] = 0.622,
 	},
-	[5656] = {
+	[6162] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.673,
+		["posY"] = 0.145,
+	},
+	[6163] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.679,
+		["posY"] = 0.381,
+	},
+	[6164] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.68,
 		["posY"] = 0.556,
 	},
-	[5657] = {
+	[6165] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.683,
+		["posY"] = 0.198,
+	},
+	[6166] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.693,
 		["posY"] = 0.644,
 	},
-	[5658] = {
+	[6167] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.722,
 		["posY"] = 0.523,
 	},
-	[5659] = {
+	[6168] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.726,
 		["posY"] = 0.618,
 	},
-	[5660] = {
+	[6169] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.726,
+		["posY"] = 0.665,
+	},
+	[6170] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.746,
 		["posY"] = 0.746,
 	},
-	[5661] = {
+	[6171] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.752,
 		["posY"] = 0.57,
 	},
-	[5662] = {
+	[6172] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.773,
+		["posY"] = 0.596,
+	},
+	[6173] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.777,
 		["posY"] = 0.53,
 	},
-	[5663] = {
+	[6174] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.787,
 		["posY"] = 0.481,
 	},
-	[5664] = {
+	[6175] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.795,
+		["posY"] = 0.741,
+	},
+	[6176] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.797,
 		["posY"] = 0.635,
 	},
-	[5665] = {
+	[6177] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1425,
+		["posX"] = 0.807,
+		["posY"] = 0.425,
+	},
+	[6178] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1425,
 		["posX"] = 0.829,
 		["posY"] = 0.504,
 	},
-	[5666] = {
+	[6179] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.206,
 		["posY"] = 0.743,
 	},
-	[5667] = {
+	[6180] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.215,
 		["posY"] = 0.795,
 	},
-	[5668] = {
+	[6181] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.252,
 		["posY"] = 0.378,
 	},
-	[5669] = {
+	[6182] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.265,
-		["posY"] = 0.664,
+		["posY"] = 0.663,
 	},
-	[5670] = {
+	[6183] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.299,
 		["posY"] = 0.495,
 	},
-	[5671] = {
+	[6184] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.303,
 		["posY"] = 0.659,
 	},
-	[5672] = {
+	[6185] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.312,
 		["posY"] = 0.389,
 	},
-	[5673] = {
+	[6186] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.322,
 		["posY"] = 0.271,
 	},
-	[5674] = {
+	[6187] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.368,
 		["posY"] = 0.779,
 	},
-	[5675] = {
+	[6188] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.376,
 		["posY"] = 0.708,
 	},
-	[5676] = {
+	[6189] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1427,
+		["posX"] = 0.379,
+		["posY"] = 0.456,
+	},
+	[6190] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1427,
+		["posX"] = 0.386,
+		["posY"] = 0.633,
+	},
+	[6191] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.392,
 		["posY"] = 0.25,
 	},
-	[5677] = {
+	[6192] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.416,
 		["posY"] = 0.417,
 	},
-	[5678] = {
+	[6193] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.425,
 		["posY"] = 0.374,
 	},
-	[5679] = {
+	[6194] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.437,
 		["posY"] = 0.658,
 	},
-	[5680] = {
+	[6195] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.487,
 		["posY"] = 0.515,
 	},
-	[5681] = {
+	[6196] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.499,
 		["posY"] = 0.336,
 	},
-	[5682] = {
+	[6197] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.522,
 		["posY"] = 0.495,
 	},
-	[5683] = {
+	[6198] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.552,
-		["posY"] = 0.512,
+		["posY"] = 0.513,
 	},
-	[5684] = {
+	[6199] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.304,
 	},
-	[5685] = {
+	[6200] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1427,
+		["posX"] = 0.57,
+		["posY"] = 0.413,
+	},
+	[6201] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.816,
 	},
-	[5686] = {
+	[6202] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1427,
+		["posX"] = 0.576,
+		["posY"] = 0.683,
+	},
+	[6203] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.608,
 		["posY"] = 0.258,
 	},
-	[5687] = {
+	[6204] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.599,
 	},
-	[5688] = {
+	[6205] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.633,
 	},
-	[5689] = {
+	[6206] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.678,
 		["posY"] = 0.322,
 	},
-	[5690] = {
+	[6207] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1427,
 		["posX"] = 0.732,
 		["posY"] = 0.731,
 	},
-	[5691] = {
+	[6208] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.138,
-		["posY"] = 0.779,
+		["posY"] = 0.78,
 	},
-	[5692] = {
+	[6209] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.146,
 		["posY"] = 0.61,
 	},
-	[5693] = {
+	[6210] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.207,
 		["posY"] = 0.67,
 	},
-	[5694] = {
+	[6211] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.208,
+		["posY"] = 0.841,
+	},
+	[6212] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.222,
 		["posY"] = 0.616,
 	},
-	[5695] = {
+	[6213] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.227,
 		["posY"] = 0.387,
 	},
-	[5696] = {
+	[6214] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.246,
-		["posY"] = 0.736,
+		["posY"] = 0.735,
 	},
-	[5697] = {
+	[6215] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.25,
 		["posY"] = 0.626,
 	},
-	[5698] = {
+	[6216] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.304,
+		["posY"] = 0.642,
+	},
+	[6217] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.304,
 		["posY"] = 0.755,
 	},
-	[5699] = {
+	[6218] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.331,
+		["posY"] = 0.324,
+	},
+	[6219] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.358,
 		["posY"] = 0.831,
 	},
-	[5700] = {
+	[6220] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.362,
+		["posY"] = 0.229,
+	},
+	[6221] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.363,
 		["posY"] = 0.56,
 	},
-	[5701] = {
+	[6222] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.369,
 		["posY"] = 0.508,
 	},
-	[5702] = {
+	[6223] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.376,
+		["posY"] = 0.738,
+	},
+	[6224] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.377,
-		["posY"] = 0.656,
+		["posY"] = 0.657,
 	},
-	[5703] = {
+	[6225] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.402,
 		["posY"] = 0.471,
 	},
-	[5704] = {
+	[6226] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.414,
+		["posY"] = 0.754,
+	},
+	[6227] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.416,
 		["posY"] = 0.554,
 	},
-	[5705] = {
+	[6228] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.433,
 		["posY"] = 0.51,
 	},
-	[5706] = {
+	[6229] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.437,
+		["posY"] = 0.22,
+	},
+	[6230] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.439,
 		["posY"] = 0.88,
 	},
-	[5707] = {
+	[6231] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.449,
 		["posY"] = 0.437,
 	},
-	[5708] = {
+	[6232] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.466,
 		["posY"] = 0.844,
 	},
-	[5709] = {
+	[6233] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.467,
 		["posY"] = 0.716,
 	},
-	[5710] = {
+	[6234] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.513,
-		["posY"] = 0.809,
+		["posY"] = 0.81,
 	},
-	[5711] = {
+	[6235] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.517,
 		["posY"] = 0.591,
 	},
-	[5712] = {
+	[6236] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.523,
 		["posY"] = 0.437,
 	},
-	[5713] = {
+	[6237] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.538,
 		["posY"] = 0.658,
 	},
-	[5714] = {
+	[6238] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.549,
 		["posY"] = 0.273,
 	},
-	[5715] = {
+	[6239] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.549,
 		["posY"] = 0.641,
 	},
-	[5716] = {
+	[6240] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.551,
 		["posY"] = 0.713,
 	},
-	[5717] = {
+	[6241] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.557,
 		["posY"] = 0.775,
 	},
-	[5718] = {
+	[6242] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.569,
 		["posY"] = 0.691,
 	},
-	[5719] = {
+	[6243] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.572,
 		["posY"] = 0.648,
 	},
-	[5720] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1423,
-		["posX"] = 0.577,
-		["posY"] = 0.494,
-	},
-	[5721] = {
+	[6244] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.577,
 		["posY"] = 0.67,
 	},
-	[5722] = {
+	[6245] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1423,
+		["posX"] = 0.578,
+		["posY"] = 0.493,
+	},
+	[6246] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.584,
 		["posY"] = 0.609,
 	},
-	[5723] = {
+	[6247] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.59,
 		["posY"] = 0.821,
 	},
-	[5724] = {
+	[6248] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.617,
 		["posY"] = 0.254,
 	},
-	[5725] = {
+	[6249] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.618,
 		["posY"] = 0.299,
 	},
-	[5726] = {
+	[6250] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.646,
 		["posY"] = 0.32,
 	},
-	[5727] = {
+	[6251] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.654,
 		["posY"] = 0.226,
 	},
-	[5728] = {
+	[6252] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.662,
 		["posY"] = 0.847,
 	},
-	[5729] = {
+	[6253] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.666,
 		["posY"] = 0.386,
 	},
-	[5730] = {
+	[6254] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.673,
 		["posY"] = 0.61,
 	},
-	[5731] = {
+	[6255] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.684,
 		["posY"] = 0.263,
 	},
-	[5732] = {
+	[6256] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.688,
 		["posY"] = 0.408,
 	},
-	[5733] = {
+	[6257] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.69,
 		["posY"] = 0.713,
 	},
-	[5734] = {
+	[6258] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.699,
 		["posY"] = 0.124,
 	},
-	[5735] = {
+	[6259] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.702,
 		["posY"] = 0.2,
 	},
-	[5736] = {
+	[6260] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
-		["posX"] = 0.714,
+		["posX"] = 0.713,
 		["posY"] = 0.454,
 	},
-	[5737] = {
+	[6261] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.724,
 		["posY"] = 0.634,
 	},
-	[5738] = {
+	[6262] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.734,
 		["posY"] = 0.181,
 	},
-	[5739] = {
+	[6263] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.734,
 		["posY"] = 0.287,
 	},
-	[5740] = {
+	[6264] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.737,
 		["posY"] = 0.606,
 	},
-	[5741] = {
+	[6265] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.74,
 		["posY"] = 0.671,
 	},
-	[5742] = {
+	[6266] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.748,
 		["posY"] = 0.5,
 	},
-	[5743] = {
+	[6267] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.755,
 		["posY"] = 0.801,
 	},
-	[5744] = {
+	[6268] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.756,
 		["posY"] = 0.698,
 	},
-	[5745] = {
+	[6269] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.763,
 		["posY"] = 0.58,
 	},
-	[5746] = {
+	[6270] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.764,
 		["posY"] = 0.351,
 	},
-	[5747] = {
+	[6271] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.767,
 		["posY"] = 0.642,
 	},
-	[5748] = {
+	[6272] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
-		["posX"] = 0.772,
-		["posY"] = 0.614,
+		["posX"] = 0.771,
+		["posY"] = 0.615,
 	},
-	[5749] = {
+	[6273] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.788,
 		["posY"] = 0.783,
 	},
-	[5750] = {
+	[6274] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.809,
 		["posY"] = 0.451,
 	},
-	[5751] = {
+	[6275] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.812,
 		["posY"] = 0.413,
 	},
-	[5752] = {
+	[6276] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.834,
 		["posY"] = 0.878,
 	},
-	[5753] = {
+	[6277] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.837,
 		["posY"] = 0.362,
 	},
-	[5754] = {
+	[6278] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.844,
 		["posY"] = 0.472,
 	},
-	[5755] = {
+	[6279] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.845,
 		["posY"] = 0.857,
 	},
-	[5756] = {
+	[6280] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.846,
-		["posY"] = 0.744,
+		["posY"] = 0.743,
 	},
-	[5757] = {
+	[6281] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.872,
 		["posY"] = 0.798,
 	},
-	[5758] = {
+	[6282] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1423,
 		["posX"] = 0.879,
 		["posY"] = 0.438,
 	},
-	[5759] = {
+	[6283] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1424,
 		["posX"] = 0.425,
 		["posY"] = 0.323,
 	},
-	[5760] = {
+	[6284] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1424,
+		["posX"] = 0.442,
+		["posY"] = 0.26,
+	},
+	[6285] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1424,
+		["posX"] = 0.454,
+		["posY"] = 0.316,
+	},
+	[6286] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.259,
 		["posY"] = 0.673,
 	},
-	[5761] = {
+	[6287] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.26,
 		["posY"] = 0.688,
 	},
-	[5762] = {
+	[6288] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.262,
 		["posY"] = 0.679,
 	},
-	[5763] = {
+	[6289] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1444,
+		["posX"] = 0.269,
+		["posY"] = 0.681,
+	},
+	[6290] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.273,
 		["posY"] = 0.695,
 	},
-	[5764] = {
+	[6291] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.279,
 		["posY"] = 0.684,
 	},
-	[5765] = {
+	[6292] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1444,
+		["posX"] = 0.286,
+		["posY"] = 0.702,
+	},
+	[6293] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.442,
 		["posY"] = 0.256,
 	},
-	[5766] = {
+	[6294] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.454,
 		["posY"] = 0.694,
 	},
-	[5767] = {
+	[6295] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.502,
 		["posY"] = 0.584,
 	},
-	[5768] = {
+	[6296] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.522,
 		["posY"] = 0.615,
 	},
-	[5769] = {
+	[6297] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1444,
+		["posX"] = 0.523,
+		["posY"] = 0.599,
+	},
+	[6298] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.526,
 		["posY"] = 0.587,
 	},
-	[5770] = {
+	[6299] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.532,
 		["posY"] = 0.602,
 	},
-	[5771] = {
+	[6300] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.533,
 		["posY"] = 0.319,
 	},
-	[5772] = {
+	[6301] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.325,
 	},
-	[5773] = {
+	[6302] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.541,
 		["posY"] = 0.73,
 	},
-	[5774] = {
+	[6303] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.544,
 		["posY"] = 0.341,
 	},
-	[5775] = {
+	[6304] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.546,
-		["posY"] = 0.319,
+		["posY"] = 0.318,
 	},
-	[5776] = {
+	[6305] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.554,
 		["posY"] = 0.336,
 	},
-	[5777] = {
+	[6306] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1444,
+		["posX"] = 0.557,
+		["posY"] = 0.329,
+	},
+	[6307] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1444,
 		["posX"] = 0.594,
 		["posY"] = 0.742,
 	},
-	[5778] = {
+	[6308] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1444,
+		["posX"] = 0.606,
+		["posY"] = 0.657,
+	},
+	[6309] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1443,
+		["posX"] = 0.248,
+		["posY"] = 0.825,
+	},
+	[6310] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.272,
 		["posY"] = 0.786,
 	},
-	[5779] = {
+	[6311] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1443,
+		["posX"] = 0.307,
+		["posY"] = 0.102,
+	},
+	[6312] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.312,
 		["posY"] = 0.66,
 	},
-	[5780] = {
+	[6313] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.318,
 		["posY"] = 0.518,
 	},
-	[5781] = {
+	[6314] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.321,
 		["posY"] = 0.588,
 	},
-	[5782] = {
+	[6315] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1443,
+		["posX"] = 0.324,
+		["posY"] = 0.82,
+	},
+	[6316] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.329,
 		["posY"] = 0.616,
 	},
-	[5783] = {
+	[6317] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.384,
 		["posY"] = 0.91,
 	},
-	[5784] = {
+	[6318] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1443,
+		["posX"] = 0.463,
+		["posY"] = 0.824,
+	},
+	[6319] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.477,
 		["posY"] = 0.765,
 	},
-	[5785] = {
+	[6320] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1443,
 		["posX"] = 0.549,
 		["posY"] = 0.743,
 	},
-	[5786] = {
+	[6321] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1443,
+		["posX"] = 0.75,
+		["posY"] = 0.677,
+	},
+	[6322] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1442,
 		["posX"] = 0.271,
 		["posY"] = 0.632,
 	},
-	[5787] = {
+	[6323] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.269,
 		["posY"] = 0.656,
 	},
-	[5788] = {
+	[6324] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.273,
 		["posY"] = 0.701,
 	},
-	[5789] = {
+	[6325] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.282,
+		["posY"] = 0.535,
+	},
+	[6326] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.622,
 	},
-	[5790] = {
+	[6327] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.282,
+		["posY"] = 0.722,
+	},
+	[6328] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.282,
 		["posY"] = 0.744,
 	},
-	[5791] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1446,
-		["posX"] = 0.283,
-		["posY"] = 0.535,
-	},
-	[5792] = {
+	[6329] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.288,
 		["posY"] = 0.708,
 	},
-	[5793] = {
+	[6330] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.289,
 		["posY"] = 0.771,
 	},
-	[5794] = {
+	[6331] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.477,
 	},
-	[5795] = {
+	[6332] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.679,
 	},
-	[5796] = {
+	[6333] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.297,
 		["posY"] = 0.688,
 	},
-	[5797] = {
+	[6334] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.302,
 		["posY"] = 0.787,
 	},
-	[5798] = {
+	[6335] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.309,
 		["posY"] = 0.634,
 	},
-	[5799] = {
+	[6336] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.312,
 		["posY"] = 0.646,
 	},
-	[5800] = {
+	[6337] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.316,
 		["posY"] = 0.794,
 	},
-	[5801] = {
+	[6338] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.319,
 		["posY"] = 0.668,
 	},
-	[5802] = {
+	[6339] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.334,
+		["posY"] = 0.375,
+	},
+	[6340] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.334,
+		["posY"] = 0.416,
+	},
+	[6341] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.334,
+		["posY"] = 0.48,
+	},
+	[6342] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.335,
 		["posY"] = 0.466,
 	},
-	[5803] = {
+	[6343] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.342,
 		["posY"] = 0.326,
 	},
-	[5804] = {
+	[6344] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.343,
 		["posY"] = 0.267,
 	},
-	[5805] = {
+	[6345] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.345,
 		["posY"] = 0.779,
 	},
-	[5806] = {
+	[6346] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.347,
 		["posY"] = 0.803,
 	},
-	[5807] = {
+	[6347] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.367,
 		["posY"] = 0.333,
 	},
-	[5808] = {
+	[6348] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.37,
+		["posY"] = 0.282,
+	},
+	[6349] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.37,
 		["posY"] = 0.513,
 	},
-	[5809] = {
+	[6350] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.382,
 		["posY"] = 0.272,
 	},
-	[5810] = {
+	[6351] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.382,
+		["posY"] = 0.775,
+	},
+	[6352] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.4,
 		["posY"] = 0.336,
 	},
-	[5811] = {
+	[6353] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.407,
 		["posY"] = 0.789,
 	},
-	[5812] = {
+	[6354] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.412,
 		["posY"] = 0.761,
 	},
-	[5813] = {
+	[6355] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.414,
 		["posY"] = 0.544,
 	},
-	[5814] = {
+	[6356] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.414,
 		["posY"] = 0.58,
 	},
-	[5815] = {
+	[6357] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.417,
 		["posY"] = 0.571,
 	},
-	[5816] = {
+	[6358] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.438,
 		["posY"] = 0.776,
 	},
-	[5817] = {
+	[6359] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.439,
 		["posY"] = 0.259,
 	},
-	[5818] = {
+	[6360] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.454,
+		["posY"] = 0.551,
+	},
+	[6361] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.47,
 		["posY"] = 0.562,
 	},
-	[5819] = {
+	[6362] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.471,
 		["posY"] = 0.237,
 	},
-	[5820] = {
+	[6363] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.478,
 		["posY"] = 0.785,
 	},
-	[5821] = {
+	[6364] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.486,
 		["posY"] = 0.238,
 	},
-	[5822] = {
+	[6365] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.498,
+		["posY"] = 0.788,
+	},
+	[6366] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.507,
+		["posY"] = 0.794,
+	},
+	[6367] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.722,
 	},
-	[5823] = {
+	[6368] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.536,
 		["posY"] = 0.77,
 	},
-	[5824] = {
+	[6369] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.542,
 		["posY"] = 0.245,
 	},
-	[5825] = {
+	[6370] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.547,
+		["posY"] = 0.774,
+	},
+	[6371] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.552,
+		["posY"] = 0.759,
+	},
+	[6372] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.56,
 		["posY"] = 0.714,
 	},
-	[5826] = {
+	[6373] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.568,
 		["posY"] = 0.697,
 	},
-	[5827] = {
+	[6374] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
-		["posX"] = 0.573,
-		["posY"] = 0.687,
+		["posX"] = 0.571,
+		["posY"] = 0.683,
 	},
-	[5828] = {
+	[6375] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.574,
 		["posY"] = 0.263,
 	},
-	[5829] = {
+	[6376] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.576,
 		["posY"] = 0.704,
 	},
-	[5830] = {
+	[6377] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.584,
 		["posY"] = 0.752,
 	},
-	[5831] = {
+	[6378] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.592,
 		["posY"] = 0.678,
 	},
-	[5832] = {
+	[6379] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.598,
 		["posY"] = 0.538,
 	},
-	[5833] = {
+	[6380] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.6,
 		["posY"] = 0.632,
 	},
-	[5834] = {
+	[6381] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.619,
 		["posY"] = 0.632,
 	},
-	[5835] = {
+	[6382] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.624,
 		["posY"] = 0.573,
 	},
-	[5836] = {
+	[6383] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.627,
 		["posY"] = 0.485,
 	},
-	[5837] = {
+	[6384] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.631,
 		["posY"] = 0.59,
 	},
-	[5838] = {
+	[6385] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.637,
+		["posY"] = 0.624,
+	},
+	[6386] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.644,
 		["posY"] = 0.472,
 	},
-	[5839] = {
+	[6387] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.655,
 		["posY"] = 0.523,
 	},
-	[5840] = {
+	[6388] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.656,
 		["posY"] = 0.586,
 	},
-	[5841] = {
+	[6389] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.672,
 		["posY"] = 0.553,
 	},
-	[5842] = {
+	[6390] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.675,
 		["posY"] = 0.319,
 	},
-	[5843] = {
+	[6391] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1446,
 		["posX"] = 0.696,
 		["posY"] = 0.528,
 	},
-	[5844] = {
+	[6392] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1446,
+		["posX"] = 0.719,
+		["posY"] = 0.47,
+	},
+	[6393] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.208,
 		["posY"] = 0.424,
 	},
-	[5845] = {
+	[6394] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.218,
+		["posX"] = 0.219,
 		["posY"] = 0.61,
 	},
-	[5846] = {
+	[6395] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.254,
 		["posY"] = 0.398,
 	},
-	[5847] = {
+	[6396] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.284,
 		["posY"] = 0.704,
 	},
-	[5848] = {
+	[6397] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.307,
-		["posY"] = 0.746,
+		["posY"] = 0.747,
 	},
-	[5849] = {
+	[6398] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.311,
 		["posY"] = 0.809,
 	},
-	[5850] = {
+	[6399] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.33,
 		["posY"] = 0.492,
 	},
-	[5851] = {
+	[6400] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.341,
 		["posY"] = 0.694,
 	},
-	[5852] = {
+	[6401] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.347,
 		["posY"] = 0.21,
 	},
-	[5853] = {
+	[6402] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.378,
 		["posY"] = 0.352,
 	},
-	[5854] = {
+	[6403] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.379,
 		["posY"] = 0.646,
 	},
-	[5855] = {
+	[6404] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1449,
+		["posX"] = 0.379,
+		["posY"] = 0.811,
+	},
+	[6405] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1449,
+		["posX"] = 0.39,
+		["posY"] = 0.154,
+	},
+	[6406] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.39,
 		["posY"] = 0.703,
 	},
-	[5856] = {
+	[6407] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.39,
 		["posY"] = 0.774,
 	},
-	[5857] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1449,
-		["posX"] = 0.391,
-		["posY"] = 0.155,
-	},
-	[5858] = {
+	[6408] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.409,
 		["posY"] = 0.352,
 	},
-	[5859] = {
+	[6409] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.409,
 		["posY"] = 0.648,
 	},
-	[5860] = {
+	[6410] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.435,
-		["posY"] = 0.157,
+		["posX"] = 0.434,
+		["posY"] = 0.156,
 	},
-	[5861] = {
+	[6411] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.443,
 		["posY"] = 0.884,
 	},
-	[5862] = {
+	[6412] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.454,
 		["posY"] = 0.351,
 	},
-	[5863] = {
+	[6413] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1449,
+		["posX"] = 0.454,
+		["posY"] = 0.649,
+	},
+	[6414] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.46,
 		["posY"] = 0.529,
 	},
-	[5864] = {
+	[6415] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.465,
 		["posY"] = 0.449,
 	},
-	[5865] = {
+	[6416] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.487,
 		["posY"] = 0.664,
 	},
-	[5866] = {
+	[6417] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.491,
 		["posY"] = 0.869,
 	},
-	[5867] = {
+	[6418] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.5,
 		["posY"] = 0.133,
 	},
-	[5868] = {
+	[6419] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.504,
-		["posY"] = 0.71,
+		["posY"] = 0.711,
 	},
-	[5869] = {
+	[6420] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.505,
 		["posY"] = 0.76,
 	},
-	[5870] = {
+	[6421] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.507,
 		["posY"] = 0.898,
 	},
-	[5871] = {
+	[6422] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.513,
 		["posY"] = 0.481,
 	},
-	[5872] = {
+	[6423] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.522,
 		["posY"] = 0.321,
 	},
-	[5873] = {
+	[6424] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.523,
+		["posX"] = 0.522,
 		["posY"] = 0.65,
 	},
-	[5874] = {
+	[6425] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.538,
 		["posY"] = 0.518,
 	},
-	[5875] = {
+	[6426] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.54,
 		["posY"] = 0.464,
 	},
-	[5876] = {
+	[6427] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1449,
+		["posX"] = 0.544,
+		["posY"] = 0.868,
+	},
+	[6428] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.555,
 		["posY"] = 0.351,
 	},
-	[5877] = {
+	[6429] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.555,
 		["posY"] = 0.925,
 	},
-	[5878] = {
+	[6430] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.566,
 		["posY"] = 0.118,
 	},
-	[5879] = {
+	[6431] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.573,
 		["posY"] = 0.153,
 	},
-	[5880] = {
+	[6432] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.594,
 		["posY"] = 0.655,
 	},
-	[5881] = {
+	[6433] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.6,
 		["posY"] = 0.349,
 	},
-	[5882] = {
+	[6434] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.61,
 		["posY"] = 0.66,
 	},
-	[5883] = {
+	[6435] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.618,
 		["posY"] = 0.848,
 	},
-	[5884] = {
+	[6436] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.627,
 		["posY"] = 0.181,
 	},
-	[5885] = {
+	[6437] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.631,
-		["posY"] = 0.334,
+		["posX"] = 0.63,
+		["posY"] = 0.335,
 	},
-	[5886] = {
+	[6438] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.631,
 		["posY"] = 0.664,
 	},
-	[5887] = {
+	[6439] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.639,
 		["posY"] = 0.163,
 	},
-	[5888] = {
+	[6440] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.648,
 		["posY"] = 0.804,
 	},
-	[5889] = {
+	[6441] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.653,
 		["posY"] = 0.143,
 	},
-	[5890] = {
+	[6442] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.661,
 		["posY"] = 0.176,
 	},
-	[5891] = {
+	[6443] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.662,
 		["posY"] = 0.138,
 	},
-	[5892] = {
+	[6444] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.666,
 		["posY"] = 0.156,
 	},
-	[5893] = {
+	[6445] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.675,
 		["posY"] = 0.136,
 	},
-	[5894] = {
+	[6446] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.685,
 		["posY"] = 0.159,
 	},
-	[5895] = {
+	[6447] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.69,
 		["posY"] = 0.177,
 	},
-	[5896] = {
+	[6448] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.698,
 		["posY"] = 0.192,
 	},
-	[5897] = {
+	[6449] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.717,
 		["posY"] = 0.244,
 	},
-	[5898] = {
+	[6450] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.736,
 		["posY"] = 0.703,
 	},
-	[5899] = {
+	[6451] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.753,
 		["posY"] = 0.395,
 	},
-	[5900] = {
+	[6452] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.755,
+		["posX"] = 0.756,
 		["posY"] = 0.331,
 	},
-	[5901] = {
+	[6453] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
-		["posX"] = 0.765,
-		["posY"] = 0.616,
+		["posX"] = 0.764,
+		["posY"] = 0.617,
 	},
-	[5902] = {
+	[6454] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.769,
 		["posY"] = 0.495,
 	},
-	[5903] = {
+	[6455] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.788,
 		["posY"] = 0.578,
 	},
-	[5904] = {
+	[6456] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1449,
+		["posX"] = 0.79,
+		["posY"] = 0.389,
+	},
+	[6457] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.806,
 		["posY"] = 0.419,
 	},
-	[5905] = {
+	[6458] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1449,
 		["posX"] = 0.814,
 		["posY"] = 0.612,
 	},
-	[5906] = {
+	[6459] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.296,
 		["posY"] = 0.471,
 	},
-	[5907] = {
+	[6460] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.309,
 		["posY"] = 0.355,
 	},
-	[5908] = {
+	[6461] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.315,
 		["posY"] = 0.388,
 	},
-	[5909] = {
+	[6462] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.325,
 		["posY"] = 0.451,
 	},
-	[5910] = {
+	[6463] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.335,
+		["posY"] = 0.365,
+	},
+	[6464] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.349,
 		["posY"] = 0.443,
 	},
-	[5911] = {
+	[6465] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.37,
 		["posY"] = 0.39,
 	},
-	[5912] = {
+	[6466] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.374,
 		["posY"] = 0.353,
 	},
-	[5913] = {
+	[6467] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.404,
 		["posY"] = 0.364,
 	},
-	[5914] = {
+	[6468] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.405,
 		["posY"] = 0.445,
 	},
-	[5915] = {
+	[6469] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.419,
 		["posY"] = 0.438,
 	},
-	[5916] = {
+	[6470] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.448,
+		["posY"] = 0.443,
+	},
+	[6471] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.454,
 		["posY"] = 0.349,
 	},
-	[5917] = {
+	[6472] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.464,
+		["posY"] = 0.446,
+	},
+	[6473] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.477,
 		["posY"] = 0.358,
 	},
-	[5918] = {
+	[6474] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.482,
 		["posY"] = 0.088,
 	},
-	[5919] = {
+	[6475] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.491,
 		["posY"] = 0.443,
 	},
-	[5920] = {
+	[6476] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.493,
 		["posY"] = 0.143,
 	},
-	[5921] = {
+	[6477] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.494,
 		["posY"] = 0.202,
 	},
-	[5922] = {
+	[6478] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.503,
 		["posY"] = 0.437,
 	},
-	[5923] = {
+	[6479] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.504,
 		["posY"] = 0.167,
 	},
-	[5924] = {
+	[6480] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.506,
+		["posY"] = 0.237,
+	},
+	[6481] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.509,
 		["posY"] = 0.904,
 	},
-	[5925] = {
+	[6482] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.512,
-		["posY"] = 0.079,
+		["posY"] = 0.078,
 	},
-	[5926] = {
+	[6483] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.52,
 		["posY"] = 0.857,
 	},
-	[5927] = {
+	[6484] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.521,
 		["posY"] = 0.395,
 	},
-	[5928] = {
+	[6485] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.524,
 		["posY"] = 0.246,
 	},
-	[5929] = {
+	[6486] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.525,
+		["posY"] = 0.543,
+	},
+	[6487] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.529,
 		["posY"] = 0.834,
 	},
-	[5930] = {
+	[6488] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.533,
 		["posY"] = 0.444,
 	},
-	[5931] = {
+	[6489] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.535,
 		["posY"] = 0.891,
 	},
-	[5932] = {
+	[6490] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.536,
 		["posY"] = 0.364,
 	},
-	[5933] = {
+	[6491] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.537,
 		["posY"] = 0.573,
 	},
-	[5934] = {
+	[6492] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.54,
 		["posY"] = 0.39,
 	},
-	[5935] = {
+	[6493] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.542,
 		["posY"] = 0.554,
 	},
-	[5936] = {
+	[6494] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.544,
 		["posY"] = 0.797,
 	},
-	[5937] = {
+	[6495] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.544,
 		["posY"] = 0.872,
 	},
-	[5938] = {
+	[6496] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.548,
 		["posY"] = 0.105,
 	},
-	[5939] = {
+	[6497] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.549,
+		["posY"] = 0.53,
+	},
+	[6498] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.55,
 		["posY"] = 0.271,
 	},
-	[5940] = {
+	[6499] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.551,
 		["posY"] = 0.209,
 	},
-	[5941] = {
+	[6500] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.557,
 		["posY"] = 0.49,
 	},
-	[5942] = {
+	[6501] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.557,
 		["posY"] = 0.506,
 	},
-	[5943] = {
+	[6502] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.559,
 		["posY"] = 0.146,
 	},
-	[5944] = {
+	[6503] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.559,
 		["posY"] = 0.158,
 	},
-	[5945] = {
+	[6504] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.56,
 		["posY"] = 0.538,
 	},
-	[5946] = {
+	[6505] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.56,
 		["posY"] = 0.86,
 	},
-	[5947] = {
+	[6506] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.563,
 		["posY"] = 0.256,
 	},
-	[5948] = {
+	[6507] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.564,
 		["posY"] = 0.894,
 	},
-	[5949] = {
+	[6508] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.566,
 		["posY"] = 0.775,
 	},
-	[5950] = {
+	[6509] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.567,
 		["posY"] = 0.437,
 	},
-	[5951] = {
+	[6510] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.567,
 		["posY"] = 0.809,
 	},
-	[5952] = {
+	[6511] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.569,
+		["posY"] = 0.673,
+	},
+	[6512] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.573,
 		["posY"] = 0.328,
 	},
-	[5953] = {
+	[6513] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.573,
+		["posY"] = 0.725,
+	},
+	[6514] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.577,
 		["posY"] = 0.83,
 	},
-	[5954] = {
+	[6515] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.578,
 		["posY"] = 0.611,
 	},
-	[5955] = {
+	[6516] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.582,
 		["posY"] = 0.672,
 	},
-	[5956] = {
+	[6517] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.582,
 		["posY"] = 0.891,
 	},
-	[5957] = {
+	[6518] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.584,
 		["posY"] = 0.466,
 	},
-	[5958] = {
+	[6519] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.584,
 		["posY"] = 0.86,
 	},
-	[5959] = {
+	[6520] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.59,
 		["posY"] = 0.751,
 	},
-	[5960] = {
+	[6521] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.594,
 		["posY"] = 0.677,
 	},
-	[5961] = {
+	[6522] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.595,
 		["posY"] = 0.776,
 	},
-	[5962] = {
+	[6523] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.597,
 		["posY"] = 0.883,
 	},
-	[5963] = {
+	[6524] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.601,
 		["posY"] = 0.624,
 	},
-	[5964] = {
+	[6525] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.606,
 		["posY"] = 0.159,
 	},
-	[5965] = {
+	[6526] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.606,
 		["posY"] = 0.82,
 	},
-	[5966] = {
+	[6527] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.607,
 		["posY"] = 0.541,
 	},
-	[5967] = {
+	[6528] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.613,
 		["posY"] = 0.689,
 	},
-	[5968] = {
+	[6529] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.613,
 		["posY"] = 0.797,
 	},
-	[5969] = {
+	[6530] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.621,
 		["posY"] = 0.853,
 	},
-	[5970] = {
+	[6531] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.625,
 		["posY"] = 0.827,
 	},
-	[5971] = {
+	[6532] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.628,
 		["posY"] = 0.711,
 	},
-	[5972] = {
+	[6533] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.632,
 		["posY"] = 0.677,
 	},
-	[5973] = {
+	[6534] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.635,
 		["posY"] = 0.779,
 	},
-	[5974] = {
+	[6535] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.636,
 		["posY"] = 0.257,
 	},
-	[5975] = {
+	[6536] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.637,
 		["posY"] = 0.749,
 	},
-	[5976] = {
+	[6537] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.645,
 		["posY"] = 0.704,
 	},
-	[5977] = {
+	[6538] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1452,
+		["posX"] = 0.646,
+		["posY"] = 0.345,
+	},
+	[6539] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.647,
 		["posY"] = 0.297,
 	},
-	[5978] = {
+	[6540] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.647,
 		["posY"] = 0.608,
 	},
-	[5979] = {
+	[6541] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.647,
 		["posY"] = 0.681,
 	},
-	[5980] = {
+	[6542] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.651,
 		["posY"] = 0.809,
 	},
-	[5981] = {
+	[6543] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.654,
 		["posY"] = 0.795,
 	},
-	[5982] = {
+	[6544] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.655,
 		["posY"] = 0.553,
 	},
-	[5983] = {
+	[6545] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.657,
 		["posY"] = 0.589,
 	},
-	[5984] = {
+	[6546] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.662,
 		["posY"] = 0.186,
 	},
-	[5985] = {
+	[6547] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.663,
 		["posY"] = 0.615,
 	},
-	[5986] = {
+	[6548] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.665,
 		["posY"] = 0.375,
 	},
-	[5987] = {
+	[6549] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.667,
 		["posY"] = 0.282,
 	},
-	[5988] = {
+	[6550] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.667,
 		["posY"] = 0.601,
 	},
-	[5989] = {
+	[6551] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.676,
 		["posY"] = 0.386,
 	},
-	[5990] = {
+	[6552] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.677,
 		["posY"] = 0.416,
 	},
-	[5991] = {
+	[6553] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.68,
 		["posY"] = 0.356,
 	},
-	[5992] = {
+	[6554] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.688,
 		["posY"] = 0.373,
 	},
-	[5993] = {
+	[6555] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.69,
 		["posY"] = 0.418,
 	},
-	[5994] = {
+	[6556] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.692,
 		["posY"] = 0.399,
 	},
-	[5995] = {
+	[6557] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.694,
 		["posY"] = 0.384,
 	},
-	[5996] = {
+	[6558] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.7,
 		["posY"] = 0.41,
 	},
-	[5997] = {
+	[6559] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.701,
 		["posY"] = 0.398,
 	},
-	[5998] = {
+	[6560] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.707,
 		["posY"] = 0.373,
 	},
-	[5999] = {
+	[6561] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.708,
 		["posY"] = 0.397,
 	},
-	[6000] = {
+	[6562] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1452,
 		["posX"] = 0.709,
 		["posY"] = 0.405,
 	},
-	[6001] = {
+	[6563] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.158,
 		["posY"] = 0.884,
 	},
-	[6002] = {
+	[6564] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.174,
+		["posY"] = 0.668,
+	},
+	[6565] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.192,
 		["posY"] = 0.47,
 	},
-	[6003] = {
+	[6566] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.194,
 		["posY"] = 0.11,
 	},
-	[6004] = {
+	[6567] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.212,
+		["posY"] = 0.279,
+	},
+	[6568] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.249,
 		["posY"] = 0.256,
 	},
-	[6005] = {
+	[6569] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.269,
 		["posY"] = 0.721,
 	},
-	[6006] = {
+	[6570] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.287,
 		["posY"] = 0.226,
 	},
-	[6007] = {
+	[6571] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
-		["posX"] = 0.334,
-		["posY"] = 0.419,
+		["posX"] = 0.333,
+		["posY"] = 0.417,
 	},
-	[6008] = {
+	[6572] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.403,
 		["posY"] = 0.907,
 	},
-	[6009] = {
+	[6573] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.427,
+		["posY"] = 0.37,
+	},
+	[6574] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.441,
 		["posY"] = 0.931,
 	},
-	[6010] = {
+	[6575] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.502,
 		["posY"] = 0.134,
 	},
-	[6011] = {
+	[6576] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.519,
+		["posY"] = 0.123,
+	},
+	[6577] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.553,
+		["posY"] = 0.158,
+	},
+	[6578] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.562,
 		["posY"] = 0.38,
 	},
-	[6012] = {
+	[6579] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.584,
+		["posY"] = 0.212,
+	},
+	[6580] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.624,
 		["posY"] = 0.332,
 	},
-	[6013] = {
+	[6581] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.627,
 		["posY"] = 0.122,
 	},
-	[6014] = {
+	[6582] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.636,
 		["posY"] = 0.925,
 	},
-	[6015] = {
+	[6583] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.649,
 		["posY"] = 0.583,
 	},
-	[6016] = {
+	[6584] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.652,
 		["posY"] = 0.154,
 	},
-	[6017] = {
+	[6585] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.659,
 		["posY"] = 0.711,
 	},
-	[6018] = {
+	[6586] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1451,
+		["posX"] = 0.668,
+		["posY"] = 0.816,
+	},
+	[6587] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1451,
 		["posX"] = 0.671,
 		["posY"] = 0.247,
 	},
-	[6019] = {
+	[6588] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.339,
 		["posY"] = 0.512,
 	},
-	[6020] = {
+	[6589] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.342,
 		["posY"] = 0.596,
 	},
-	[6021] = {
+	[6590] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.344,
 		["posY"] = 0.666,
 	},
-	[6022] = {
+	[6591] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.36,
 		["posY"] = 0.523,
 	},
-	[6023] = {
+	[6592] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.362,
 		["posY"] = 0.689,
 	},
-	[6024] = {
+	[6593] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.363,
 		["posY"] = 0.555,
 	},
-	[6025] = {
+	[6594] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.365,
 		["posY"] = 0.627,
 	},
-	[6026] = {
+	[6595] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.366,
 		["posY"] = 0.519,
 	},
-	[6027] = {
+	[6596] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.368,
 		["posY"] = 0.398,
 	},
-	[6028] = {
+	[6597] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.375,
 		["posY"] = 0.658,
 	},
-	[6029] = {
+	[6598] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.377,
 		["posY"] = 0.516,
 	},
-	[6030] = {
+	[6599] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.379,
 		["posY"] = 0.539,
 	},
-	[6031] = {
+	[6600] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.379,
 		["posY"] = 0.68,
 	},
-	[6032] = {
+	[6601] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.38,
 		["posY"] = 0.484,
 	},
-	[6033] = {
+	[6602] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.381,
 		["posY"] = 0.322,
 	},
-	[6034] = {
+	[6603] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.381,
 		["posY"] = 0.618,
 	},
-	[6035] = {
+	[6604] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.382,
 		["posY"] = 0.456,
 	},
-	[6036] = {
+	[6605] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.382,
 		["posY"] = 0.608,
 	},
-	[6037] = {
+	[6606] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.383,
 		["posY"] = 0.547,
 	},
-	[6038] = {
+	[6607] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.383,
 		["posY"] = 0.705,
 	},
-	[6039] = {
+	[6608] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1448,
+		["posX"] = 0.388,
+		["posY"] = 0.475,
+	},
+	[6609] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.388,
 		["posY"] = 0.621,
 	},
-	[6040] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1448,
-		["posX"] = 0.389,
-		["posY"] = 0.474,
-	},
-	[6041] = {
+	[6610] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.398,
 		["posY"] = 0.223,
 	},
-	[6042] = {
+	[6611] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.398,
 		["posY"] = 0.81,
 	},
-	[6043] = {
+	[6612] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.401,
 		["posY"] = 0.742,
 	},
-	[6044] = {
+	[6613] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.421,
 		["posY"] = 0.784,
 	},
-	[6045] = {
+	[6614] = {
+		["type"] = "mining",
+		["object"] = 2047,
+		["mapID"] = 1448,
+		["posX"] = 0.428,
+		["posY"] = 0.84,
+	},
+	[6615] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.429,
 		["posY"] = 0.442,
 	},
-	[6046] = {
-		["type"] = "mining",
-		["object"] = 2047,
-		["mapID"] = 1448,
-		["posX"] = 0.429,
-		["posY"] = 0.841,
-	},
-	[6047] = {
+	[6616] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.431,
 		["posY"] = 0.369,
 	},
-	[6048] = {
+	[6617] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.432,
 		["posY"] = 0.467,
 	},
-	[6049] = {
+	[6618] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.434,
 		["posY"] = 0.182,
 	},
-	[6050] = {
+	[6619] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.434,
 		["posY"] = 0.412,
 	},
-	[6051] = {
+	[6620] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.439,
 		["posY"] = 0.622,
 	},
-	[6052] = {
+	[6621] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.442,
 		["posY"] = 0.485,
 	},
-	[6053] = {
+	[6622] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.444,
 		["posY"] = 0.917,
 	},
-	[6054] = {
+	[6623] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.449,
 		["posY"] = 0.854,
 	},
-	[6055] = {
+	[6624] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.452,
 		["posY"] = 0.665,
 	},
-	[6056] = {
+	[6625] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.457,
 		["posY"] = 0.342,
 	},
-	[6057] = {
+	[6626] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.462,
 		["posY"] = 0.134,
 	},
-	[6058] = {
+	[6627] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.464,
-		["posY"] = 0.432,
+		["posY"] = 0.431,
 	},
-	[6059] = {
+	[6628] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.47,
 		["posY"] = 0.724,
 	},
-	[6060] = {
+	[6629] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.474,
 		["posY"] = 0.761,
 	},
-	[6061] = {
+	[6630] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.474,
 		["posY"] = 0.923,
 	},
-	[6062] = {
+	[6631] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.479,
 		["posY"] = 0.948,
 	},
-	[6063] = {
+	[6632] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.482,
 		["posY"] = 0.901,
 	},
-	[6064] = {
+	[6633] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.486,
 		["posY"] = 0.239,
 	},
-	[6065] = {
+	[6634] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.495,
 		["posY"] = 0.909,
 	},
-	[6066] = {
+	[6635] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.501,
 		["posY"] = 0.314,
 	},
-	[6067] = {
+	[6636] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.504,
-		["posY"] = 0.799,
+		["posY"] = 0.798,
 	},
-	[6068] = {
+	[6637] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.525,
 		["posY"] = 0.186,
 	},
-	[6069] = {
+	[6638] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.529,
 		["posY"] = 0.304,
 	},
-	[6070] = {
+	[6639] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.556,
 		["posY"] = 0.074,
 	},
-	[6071] = {
+	[6640] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.575,
 		["posY"] = 0.224,
 	},
-	[6072] = {
+	[6641] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.576,
 		["posY"] = 0.173,
 	},
-	[6073] = {
+	[6642] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.576,
 		["posY"] = 0.214,
 	},
-	[6074] = {
+	[6643] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.577,
 		["posY"] = 0.191,
 	},
-	[6075] = {
+	[6644] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.582,
 		["posY"] = 0.204,
 	},
-	[6076] = {
+	[6645] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.584,
 		["posY"] = 0.879,
 	},
-	[6077] = {
+	[6646] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.586,
 		["posY"] = 0.227,
 	},
-	[6078] = {
+	[6647] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.595,
 		["posY"] = 0.06,
 	},
-	[6079] = {
+	[6648] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.597,
 		["posY"] = 0.211,
 	},
-	[6080] = {
+	[6649] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.612,
 		["posY"] = 0.212,
 	},
-	[6081] = {
+	[6650] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
-		["posX"] = 0.614,
-		["posY"] = 0.068,
+		["posX"] = 0.613,
+		["posY"] = 0.069,
 	},
-	[6082] = {
+	[6651] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.631,
 		["posY"] = 0.102,
 	},
-	[6083] = {
+	[6652] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.632,
 		["posY"] = 0.078,
 	},
-	[6084] = {
+	[6653] = {
 		["type"] = "mining",
 		["object"] = 2047,
 		["mapID"] = 1448,
 		["posX"] = 0.632,
 		["posY"] = 0.246,
 	},
-	[6085] = {
+	[6654] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.832,
 		["posY"] = 0.334,
 	},
-	[6086] = {
+	[6655] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.838,
 		["posY"] = 0.313,
 	},
-	[6087] = {
+	[6656] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.84,
-		["posY"] = 0.3,
+		["posY"] = 0.301,
 	},
-	[6088] = {
+	[6657] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.845,
 		["posY"] = 0.323,
 	},
-	[6089] = {
+	[6658] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.85,
 		["posY"] = 0.34,
 	},
-	[6090] = {
+	[6659] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.854,
 		["posY"] = 0.296,
 	},
-	[6091] = {
+	[6660] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.856,
 		["posY"] = 0.324,
 	},
-	[6092] = {
+	[6661] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.858,
 		["posY"] = 0.308,
 	},
-	[6093] = {
+	[6662] = {
 		["type"] = "mining",
 		["object"] = 2653,
 		["mapID"] = 1417,
 		["posX"] = 0.873,
 		["posY"] = 0.314,
 	},
-	[6094] = {
+	[6663] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.637,
 		["posY"] = 0.864,
 	},
-	[6095] = {
+	[6664] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.645,
 		["posY"] = 0.858,
 	},
-	[6096] = {
+	[6665] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.649,
 		["posY"] = 0.845,
 	},
-	[6097] = {
+	[6666] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.653,
 		["posY"] = 0.869,
 	},
-	[6098] = {
+	[6667] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.663,
 		["posY"] = 0.863,
 	},
-	[6099] = {
+	[6668] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.69,
 		["posY"] = 0.869,
 	},
-	[6100] = {
+	[6669] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.693,
 		["posY"] = 0.829,
 	},
-	[6101] = {
+	[6670] = {
 		["type"] = "mining",
 		["object"] = 73940,
 		["mapID"] = 1441,
 		["posX"] = 0.694,
 		["posY"] = 0.85,
 	},
-	[6102] = {
+	[6671] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.726,
 		["posY"] = 0.645,
 	},
-	[6103] = {
+	[6672] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.624,
 	},
-	[6104] = {
+	[6673] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.64,
 	},
-	[6105] = {
+	[6674] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.74,
 		["posY"] = 0.646,
 	},
-	[6106] = {
+	[6675] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.766,
 		["posY"] = 0.667,
 	},
-	[6107] = {
+	[6676] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.769,
 		["posY"] = 0.616,
 	},
-	[6108] = {
+	[6677] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.773,
 		["posY"] = 0.657,
 	},
-	[6109] = {
+	[6678] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.789,
 		["posY"] = 0.628,
 	},
-	[6110] = {
+	[6679] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1444,
 		["posX"] = 0.792,
 		["posY"] = 0.654,
 	},
-	[6111] = {
+	[6680] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.637,
 		["posY"] = 0.864,
 	},
-	[6112] = {
+	[6681] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.645,
 		["posY"] = 0.857,
 	},
-	[6113] = {
+	[6682] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.649,
 		["posY"] = 0.845,
 	},
-	[6114] = {
+	[6683] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.653,
 		["posY"] = 0.869,
 	},
-	[6115] = {
+	[6684] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.656,
 		["posY"] = 0.857,
 	},
-	[6116] = {
+	[6685] = {
+		["type"] = "mining",
+		["object"] = 73941,
+		["mapID"] = 1441,
+		["posX"] = 0.69,
+		["posY"] = 0.869,
+	},
+	[6686] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.693,
 		["posY"] = 0.829,
 	},
-	[6117] = {
+	[6687] = {
 		["type"] = "mining",
 		["object"] = 73941,
 		["mapID"] = 1441,
 		["posX"] = 0.694,
 		["posY"] = 0.85,
 	},
-	[6118] = {
+	[6688] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.718,
 		["posY"] = 0.637,
 	},
-	[6119] = {
+	[6689] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.726,
 		["posY"] = 0.645,
 	},
-	[6120] = {
+	[6690] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.624,
 	},
-	[6121] = {
+	[6691] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.64,
 	},
-	[6122] = {
+	[6692] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.74,
 		["posY"] = 0.646,
 	},
-	[6123] = {
+	[6693] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.745,
 		["posY"] = 0.653,
 	},
-	[6124] = {
+	[6694] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.769,
 		["posY"] = 0.629,
 	},
-	[6125] = {
+	[6695] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.773,
 		["posY"] = 0.657,
 	},
-	[6126] = {
+	[6696] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1444,
 		["posX"] = 0.792,
 		["posY"] = 0.654,
 	},
-	[6127] = {
+	[6697] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.434,
 		["posY"] = 0.811,
 	},
-	[6128] = {
+	[6698] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
-		["posX"] = 0.45,
+		["posX"] = 0.449,
 		["posY"] = 0.835,
 	},
-	[6129] = {
+	[6699] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.464,
 		["posY"] = 0.846,
 	},
-	[6130] = {
+	[6700] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.467,
 		["posY"] = 0.828,
 	},
-	[6131] = {
+	[6701] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.478,
 		["posY"] = 0.871,
 	},
-	[6132] = {
+	[6702] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.482,
-		["posY"] = 0.85,
+		["posY"] = 0.849,
 	},
-	[6133] = {
+	[6703] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.483,
 		["posY"] = 0.818,
 	},
-	[6134] = {
+	[6704] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.491,
 		["posY"] = 0.803,
 	},
-	[6135] = {
+	[6705] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.495,
 		["posY"] = 0.829,
 	},
-	[6136] = {
+	[6706] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1449,
 		["posX"] = 0.499,
 		["posY"] = 0.811,
 	},
-	[6137] = {
+	[6707] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.167,
 		["posY"] = 0.666,
 	},
-	[6138] = {
+	[6708] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.175,
 		["posY"] = 0.697,
 	},
-	[6139] = {
+	[6709] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.189,
-		["posY"] = 0.577,
+		["posY"] = 0.576,
 	},
-	[6140] = {
+	[6710] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
-		["posX"] = 0.195,
+		["posX"] = 0.194,
 		["posY"] = 0.552,
 	},
-	[6141] = {
+	[6711] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.196,
 		["posY"] = 0.655,
 	},
-	[6142] = {
+	[6712] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
-		["posX"] = 0.202,
+		["posX"] = 0.201,
 		["posY"] = 0.696,
 	},
-	[6143] = {
+	[6713] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
-		["posX"] = 0.205,
-		["posY"] = 0.644,
+		["posX"] = 0.206,
+		["posY"] = 0.643,
 	},
-	[6144] = {
+	[6714] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.211,
 		["posY"] = 0.506,
 	},
-	[6145] = {
+	[6715] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.224,
 		["posY"] = 0.696,
 	},
-	[6146] = {
+	[6716] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.226,
 		["posY"] = 0.719,
 	},
-	[6147] = {
+	[6717] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.231,
 		["posY"] = 0.639,
 	},
-	[6148] = {
+	[6718] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.232,
 		["posY"] = 0.658,
 	},
-	[6149] = {
+	[6719] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.239,
 		["posY"] = 0.567,
 	},
-	[6150] = {
+	[6720] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.239,
 		["posY"] = 0.715,
 	},
-	[6151] = {
+	[6721] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.273,
 		["posY"] = 0.698,
 	},
-	[6152] = {
+	[6722] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.287,
 		["posY"] = 0.557,
 	},
-	[6153] = {
+	[6723] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.288,
 		["posY"] = 0.671,
 	},
-	[6154] = {
+	[6724] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.304,
 		["posY"] = 0.684,
 	},
-	[6155] = {
+	[6725] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.317,
 		["posY"] = 0.664,
 	},
-	[6156] = {
+	[6726] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.322,
 		["posY"] = 0.632,
 	},
-	[6157] = {
+	[6727] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.324,
 		["posY"] = 0.685,
 	},
-	[6158] = {
+	[6728] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.331,
 		["posY"] = 0.647,
 	},
-	[6159] = {
+	[6729] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.344,
-		["posY"] = 0.627,
+		["posY"] = 0.626,
 	},
-	[6160] = {
+	[6730] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.359,
 		["posY"] = 0.652,
 	},
-	[6161] = {
+	[6731] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.363,
 		["posY"] = 0.602,
 	},
-	[6162] = {
+	[6732] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.388,
 		["posY"] = 0.164,
 	},
-	[6163] = {
+	[6733] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
-		["posX"] = 0.397,
+		["posX"] = 0.392,
 		["posY"] = 0.13,
 	},
-	[6164] = {
+	[6734] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.404,
 		["posY"] = 0.163,
 	},
-	[6165] = {
+	[6735] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.404,
 		["posY"] = 0.272,
 	},
-	[6166] = {
+	[6736] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.408,
 		["posY"] = 0.139,
 	},
-	[6167] = {
+	[6737] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.421,
 		["posY"] = 0.302,
 	},
-	[6168] = {
+	[6738] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.424,
 		["posY"] = 0.189,
 	},
-	[6169] = {
+	[6739] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.424,
 		["posY"] = 0.269,
 	},
-	[6170] = {
+	[6740] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.429,
 		["posY"] = 0.119,
 	},
-	[6171] = {
+	[6741] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.43,
 		["posY"] = 0.178,
 	},
-	[6172] = {
+	[6742] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.437,
 		["posY"] = 0.266,
 	},
-	[6173] = {
+	[6743] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.441,
 		["posY"] = 0.157,
 	},
-	[6174] = {
+	[6744] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.446,
 		["posY"] = 0.128,
 	},
-	[6175] = {
+	[6745] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.453,
-		["posY"] = 0.158,
+		["posY"] = 0.159,
 	},
-	[6176] = {
+	[6746] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.454,
 		["posY"] = 0.324,
 	},
-	[6177] = {
+	[6747] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.456,
 		["posY"] = 0.291,
 	},
-	[6178] = {
+	[6748] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.458,
 		["posY"] = 0.102,
 	},
-	[6179] = {
+	[6749] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.464,
 		["posY"] = 0.22,
 	},
-	[6180] = {
+	[6750] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.476,
 		["posY"] = 0.283,
 	},
-	[6181] = {
+	[6751] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
-		["posX"] = 0.481,
-		["posY"] = 0.227,
+		["posX"] = 0.482,
+		["posY"] = 0.228,
 	},
-	[6182] = {
+	[6752] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.483,
 		["posY"] = 0.268,
 	},
-	[6183] = {
+	[6753] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.497,
 		["posY"] = 0.243,
 	},
-	[6184] = {
+	[6754] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.503,
 		["posY"] = 0.935,
 	},
-	[6185] = {
+	[6755] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.51,
 		["posY"] = 0.276,
 	},
-	[6186] = {
+	[6756] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.527,
 		["posY"] = 0.959,
 	},
-	[6187] = {
+	[6757] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.529,
 		["posY"] = 0.93,
 	},
-	[6188] = {
+	[6758] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.53,
 		["posY"] = 0.891,
 	},
-	[6189] = {
+	[6759] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.533,
 		["posY"] = 0.849,
 	},
-	[6190] = {
+	[6760] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.534,
 		["posY"] = 0.988,
 	},
-	[6191] = {
+	[6761] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.541,
 		["posY"] = 0.951,
 	},
-	[6192] = {
+	[6762] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.592,
 		["posY"] = 0.993,
 	},
-	[6193] = {
+	[6763] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.603,
 		["posY"] = 0.809,
 	},
-	[6194] = {
+	[6764] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.61,
 		["posY"] = 0.96,
 	},
-	[6195] = {
+	[6765] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.62,
 		["posY"] = 0.938,
 	},
-	[6196] = {
+	[6766] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.624,
 		["posY"] = 0.804,
 	},
-	[6197] = {
+	[6767] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.624,
 		["posY"] = 0.984,
 	},
-	[6198] = {
+	[6768] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.629,
 		["posY"] = 0.767,
 	},
-	[6199] = {
+	[6769] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.642,
 		["posY"] = 0.732,
 	},
-	[6200] = {
+	[6770] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.661,
 		["posY"] = 0.816,
 	},
-	[6201] = {
+	[6771] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.662,
 		["posY"] = 0.757,
 	},
-	[6202] = {
+	[6772] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.662,
 		["posY"] = 0.849,
 	},
-	[6203] = {
+	[6773] = {
 		["type"] = "mining",
 		["object"] = 123309,
 		["mapID"] = 1451,
 		["posX"] = 0.663,
 		["posY"] = 0.799,
 	},
-	[6204] = {
+	[6774] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.725,
 		["posY"] = 0.644,
 	},
-	[6205] = {
+	[6775] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.624,
 	},
-	[6206] = {
+	[6776] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.736,
 		["posY"] = 0.64,
 	},
-	[6207] = {
+	[6777] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.74,
 		["posY"] = 0.646,
 	},
-	[6208] = {
+	[6778] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.766,
 		["posY"] = 0.667,
 	},
-	[6209] = {
+	[6779] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.769,
 		["posY"] = 0.616,
 	},
-	[6210] = {
+	[6780] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.772,
 		["posY"] = 0.628,
 	},
-	[6211] = {
+	[6781] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.773,
 		["posY"] = 0.657,
 	},
-	[6212] = {
+	[6782] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.778,
 		["posY"] = 0.652,
 	},
-	[6213] = {
+	[6783] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.785,
 		["posY"] = 0.63,
 	},
-	[6214] = {
+	[6784] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1444,
 		["posX"] = 0.792,
 		["posY"] = 0.654,
 	},
-	[6215] = {
+	[6785] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.637,
 		["posY"] = 0.864,
 	},
-	[6216] = {
+	[6786] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.645,
 		["posY"] = 0.857,
 	},
-	[6217] = {
+	[6787] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.649,
 		["posY"] = 0.845,
 	},
-	[6218] = {
+	[6788] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.653,
 		["posY"] = 0.869,
 	},
-	[6219] = {
+	[6789] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.656,
 		["posY"] = 0.857,
 	},
-	[6220] = {
+	[6790] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.691,
 		["posY"] = 0.868,
 	},
-	[6221] = {
+	[6791] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.693,
 		["posY"] = 0.829,
 	},
-	[6222] = {
+	[6792] = {
 		["type"] = "mining",
 		["object"] = 123310,
 		["mapID"] = 1441,
 		["posX"] = 0.694,
 		["posY"] = 0.85,
 	},
-	[6223] = {
+	[6793] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1444,
 		["posX"] = 0.718,
 		["posY"] = 0.637,
 	},
-	[6224] = {
+	[6794] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1444,
 		["posX"] = 0.742,
 		["posY"] = 0.618,
 	},
-	[6225] = {
+	[6795] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1444,
 		["posX"] = 0.745,
 		["posY"] = 0.653,
 	},
-	[6226] = {
+	[6796] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.434,
 		["posY"] = 0.811,
 	},
-	[6227] = {
+	[6797] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.45,
 		["posY"] = 0.834,
 	},
-	[6228] = {
+	[6798] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.464,
 		["posY"] = 0.846,
 	},
-	[6229] = {
+	[6799] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.467,
 		["posY"] = 0.828,
 	},
-	[6230] = {
+	[6800] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.478,
 		["posY"] = 0.871,
 	},
-	[6231] = {
+	[6801] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.482,
 		["posY"] = 0.85,
 	},
-	[6232] = {
+	[6802] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.483,
 		["posY"] = 0.818,
 	},
-	[6233] = {
+	[6803] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.491,
 		["posY"] = 0.803,
 	},
-	[6234] = {
+	[6804] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.495,
 		["posY"] = 0.829,
 	},
-	[6235] = {
+	[6805] = {
 		["type"] = "mining",
 		["object"] = 123848,
 		["mapID"] = 1449,
 		["posX"] = 0.499,
 		["posY"] = 0.812,
 	},
-	[6236] = {
+	[6806] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.15,
 		["posY"] = 0.301,
 	},
-	[6237] = {
+	[6807] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.162,
 		["posY"] = 0.507,
 	},
-	[6238] = {
+	[6808] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.169,
 		["posY"] = 0.58,
 	},
-	[6239] = {
+	[6809] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.207,
 		["posY"] = 0.427,
 	},
-	[6240] = {
+	[6810] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.221,
 		["posY"] = 0.631,
 	},
-	[6241] = {
+	[6811] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.254,
 		["posY"] = 0.462,
 	},
-	[6242] = {
+	[6812] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.254,
-		["posY"] = 0.7,
+		["posY"] = 0.699,
 	},
-	[6243] = {
+	[6813] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.264,
 		["posY"] = 0.547,
 	},
-	[6244] = {
+	[6814] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.271,
 		["posY"] = 0.641,
 	},
-	[6245] = {
+	[6815] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.298,
 		["posY"] = 0.706,
 	},
-	[6246] = {
+	[6816] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
-		["posX"] = 0.304,
-		["posY"] = 0.586,
+		["posX"] = 0.303,
+		["posY"] = 0.587,
 	},
-	[6247] = {
+	[6817] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.314,
 		["posY"] = 0.709,
 	},
-	[6248] = {
+	[6818] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.346,
-		["posY"] = 0.538,
+		["posY"] = 0.539,
 	},
-	[6249] = {
+	[6819] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.349,
 		["posY"] = 0.668,
 	},
-	[6250] = {
+	[6820] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.364,
 		["posY"] = 0.582,
 	},
-	[6251] = {
+	[6821] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.374,
 		["posY"] = 0.643,
 	},
-	[6252] = {
+	[6822] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.38,
 		["posY"] = 0.411,
 	},
-	[6253] = {
+	[6823] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.389,
 		["posY"] = 0.281,
 	},
-	[6254] = {
+	[6824] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.403,
 		["posY"] = 0.566,
 	},
-	[6255] = {
+	[6825] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.417,
 		["posY"] = 0.449,
 	},
-	[6256] = {
+	[6826] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
-		["posX"] = 0.426,
+		["posX"] = 0.425,
 		["posY"] = 0.374,
 	},
-	[6257] = {
+	[6827] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.428,
 		["posY"] = 0.602,
 	},
-	[6258] = {
+	[6828] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
-		["posX"] = 0.453,
-		["posY"] = 0.535,
+		["posX"] = 0.454,
+		["posY"] = 0.534,
 	},
-	[6259] = {
+	[6829] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.463,
 		["posY"] = 0.403,
 	},
-	[6260] = {
+	[6830] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.472,
 		["posY"] = 0.593,
 	},
-	[6261] = {
+	[6831] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.473,
 		["posY"] = 0.334,
 	},
-	[6262] = {
+	[6832] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.487,
 		["posY"] = 0.627,
 	},
-	[6263] = {
+	[6833] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.49,
 		["posY"] = 0.438,
 	},
-	[6264] = {
+	[6834] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.522,
 		["posY"] = 0.531,
 	},
-	[6265] = {
+	[6835] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.544,
 		["posY"] = 0.601,
 	},
-	[6266] = {
+	[6836] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.551,
 		["posY"] = 0.332,
 	},
-	[6267] = {
+	[6837] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
-		["posX"] = 0.557,
+		["posX"] = 0.556,
 		["posY"] = 0.677,
 	},
-	[6268] = {
+	[6838] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.566,
 		["posY"] = 0.593,
 	},
-	[6269] = {
+	[6839] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.573,
 		["posY"] = 0.239,
 	},
-	[6270] = {
+	[6840] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.574,
 		["posY"] = 0.38,
 	},
-	[6271] = {
+	[6841] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.588,
-		["posY"] = 0.454,
+		["posY"] = 0.453,
 	},
-	[6272] = {
+	[6842] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.61,
 		["posY"] = 0.385,
 	},
-	[6273] = {
+	[6843] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.548,
 	},
-	[6274] = {
+	[6844] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.621,
 		["posY"] = 0.622,
 	},
-	[6275] = {
+	[6845] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.638,
 		["posY"] = 0.239,
 	},
-	[6276] = {
+	[6846] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.644,
 		["posY"] = 0.292,
 	},
-	[6277] = {
+	[6847] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.647,
 		["posY"] = 0.44,
 	},
-	[6278] = {
+	[6848] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.65,
 		["posY"] = 0.578,
 	},
-	[6279] = {
+	[6849] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.657,
 		["posY"] = 0.329,
 	},
-	[6280] = {
+	[6850] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.66,
 		["posY"] = 0.216,
 	},
-	[6281] = {
+	[6851] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.361,
 	},
-	[6282] = {
+	[6852] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.632,
 	},
-	[6283] = {
+	[6853] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.714,
 		["posY"] = 0.392,
 	},
-	[6284] = {
+	[6854] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.72,
 		["posY"] = 0.643,
 	},
-	[6285] = {
+	[6855] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.723,
 		["posY"] = 0.298,
 	},
-	[6286] = {
+	[6856] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.724,
 		["posY"] = 0.243,
 	},
-	[6287] = {
+	[6857] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.728,
 		["posY"] = 0.364,
 	},
-	[6288] = {
+	[6858] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.749,
 		["posY"] = 0.559,
 	},
-	[6289] = {
+	[6859] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.762,
 		["posY"] = 0.632,
 	},
-	[6290] = {
+	[6860] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.764,
 		["posY"] = 0.441,
 	},
-	[6291] = {
+	[6861] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.767,
-		["posY"] = 0.472,
+		["posY"] = 0.474,
 	},
-	[6292] = {
+	[6862] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.775,
 		["posY"] = 0.439,
 	},
-	[6293] = {
+	[6863] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.777,
 		["posY"] = 0.422,
 	},
-	[6294] = {
+	[6864] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.783,
 		["posY"] = 0.412,
 	},
-	[6295] = {
+	[6865] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.791,
 		["posY"] = 0.252,
 	},
-	[6296] = {
+	[6866] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.792,
 		["posY"] = 0.441,
 	},
-	[6297] = {
+	[6867] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.796,
 		["posY"] = 0.456,
 	},
-	[6298] = {
+	[6868] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.801,
 		["posY"] = 0.354,
 	},
-	[6299] = {
+	[6869] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.803,
 		["posY"] = 0.407,
 	},
-	[6300] = {
+	[6870] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.803,
 		["posY"] = 0.428,
 	},
-	[6301] = {
+	[6871] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.808,
 		["posY"] = 0.485,
 	},
-	[6302] = {
+	[6872] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.441,
 	},
-	[6303] = {
+	[6873] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.81,
 		["posY"] = 0.449,
 	},
-	[6304] = {
+	[6874] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.812,
 		["posY"] = 0.402,
 	},
-	[6305] = {
+	[6875] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.814,
 		["posY"] = 0.458,
 	},
-	[6306] = {
+	[6876] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.817,
-		["posY"] = 0.465,
+		["posY"] = 0.466,
 	},
-	[6307] = {
+	[6877] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.827,
 		["posY"] = 0.424,
 	},
-	[6308] = {
+	[6878] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.832,
 		["posY"] = 0.393,
 	},
-	[6309] = {
+	[6879] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.835,
 		["posY"] = 0.416,
 	},
-	[6310] = {
+	[6880] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.836,
 		["posY"] = 0.46,
 	},
-	[6311] = {
+	[6881] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.847,
 		["posY"] = 0.489,
 	},
-	[6312] = {
+	[6882] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.858,
 		["posY"] = 0.612,
 	},
-	[6313] = {
+	[6883] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.86,
 		["posY"] = 0.37,
 	},
-	[6314] = {
+	[6884] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.871,
 		["posY"] = 0.693,
 	},
-	[6315] = {
+	[6885] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.873,
 		["posY"] = 0.259,
 	},
-	[6316] = {
+	[6886] = {
+		["type"] = "mining",
+		["object"] = 165658,
+		["mapID"] = 1428,
+		["posX"] = 0.915,
+		["posY"] = 0.615,
+	},
+	[6887] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.916,
 		["posY"] = 0.276,
 	},
-	[6317] = {
-		["type"] = "mining",
-		["object"] = 165658,
-		["mapID"] = 1428,
-		["posX"] = 0.916,
-		["posY"] = 0.613,
-	},
-	[6318] = {
+	[6888] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.926,
 		["posY"] = 0.436,
 	},
-	[6319] = {
+	[6889] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
-		["posY"] = 0.368,
+		["posY"] = 0.369,
 	},
-	[6320] = {
+	[6890] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.93,
 		["posY"] = 0.519,
 	},
-	[6321] = {
+	[6891] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1428,
 		["posX"] = 0.954,
 		["posY"] = 0.317,
 	},
-	[6322] = {
+	[6892] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
-		["posX"] = 0.157,
-		["posY"] = 0.326,
+		["posX"] = 0.156,
+		["posY"] = 0.324,
 	},
-	[6323] = {
+	[6893] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.169,
 		["posY"] = 0.37,
 	},
-	[6324] = {
+	[6894] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.18,
 		["posY"] = 0.344,
 	},
-	[6325] = {
+	[6895] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.205,
 		["posY"] = 0.745,
 	},
-	[6326] = {
+	[6896] = {
+		["type"] = "mining",
+		["object"] = 165658,
+		["mapID"] = 1427,
+		["posX"] = 0.214,
+		["posY"] = 0.796,
+	},
+	[6897] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.215,
-		["posY"] = 0.794,
+		["posY"] = 0.364,
 	},
-	[6327] = {
+	[6898] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.224,
 		["posY"] = 0.244,
 	},
-	[6328] = {
+	[6899] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.224,
 		["posY"] = 0.312,
 	},
-	[6329] = {
+	[6900] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.232,
 		["posY"] = 0.436,
 	},
-	[6330] = {
+	[6901] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.237,
 		["posY"] = 0.534,
 	},
-	[6331] = {
+	[6902] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.242,
 		["posY"] = 0.366,
 	},
-	[6332] = {
+	[6903] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
-		["posX"] = 0.25,
+		["posX"] = 0.249,
 		["posY"] = 0.76,
 	},
-	[6333] = {
+	[6904] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.252,
 		["posY"] = 0.379,
 	},
-	[6334] = {
+	[6905] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.264,
 		["posY"] = 0.663,
 	},
-	[6335] = {
+	[6906] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.299,
 		["posY"] = 0.494,
 	},
-	[6336] = {
+	[6907] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.303,
 		["posY"] = 0.66,
 	},
-	[6337] = {
+	[6908] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.313,
 		["posY"] = 0.388,
 	},
-	[6338] = {
+	[6909] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.321,
 		["posY"] = 0.269,
 	},
-	[6339] = {
+	[6910] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.343,
 		["posY"] = 0.422,
 	},
-	[6340] = {
+	[6911] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.367,
 		["posY"] = 0.779,
 	},
-	[6341] = {
+	[6912] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.376,
 		["posY"] = 0.708,
 	},
-	[6342] = {
+	[6913] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.38,
 		["posY"] = 0.461,
 	},
-	[6343] = {
+	[6914] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.385,
 		["posY"] = 0.633,
 	},
-	[6344] = {
+	[6915] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
-		["posX"] = 0.389,
-		["posY"] = 0.513,
+		["posX"] = 0.39,
+		["posY"] = 0.514,
 	},
-	[6345] = {
+	[6916] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.392,
 		["posY"] = 0.25,
 	},
-	[6346] = {
+	[6917] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.394,
 		["posY"] = 0.561,
 	},
-	[6347] = {
+	[6918] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.406,
 		["posY"] = 0.39,
 	},
-	[6348] = {
+	[6919] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.416,
 		["posY"] = 0.417,
 	},
-	[6349] = {
+	[6920] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.42,
 		["posY"] = 0.309,
 	},
-	[6350] = {
+	[6921] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.425,
 		["posY"] = 0.374,
 	},
-	[6351] = {
+	[6922] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.426,
 		["posY"] = 0.287,
 	},
-	[6352] = {
+	[6923] = {
+		["type"] = "mining",
+		["object"] = 165658,
+		["mapID"] = 1427,
+		["posX"] = 0.437,
+		["posY"] = 0.218,
+	},
+	[6924] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.437,
 		["posY"] = 0.658,
 	},
-	[6353] = {
-		["type"] = "mining",
-		["object"] = 165658,
-		["mapID"] = 1427,
-		["posX"] = 0.438,
-		["posY"] = 0.218,
-	},
-	[6354] = {
+	[6925] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.464,
 		["posY"] = 0.479,
 	},
-	[6355] = {
+	[6926] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.468,
 		["posY"] = 0.44,
 	},
-	[6356] = {
+	[6927] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.479,
 		["posY"] = 0.248,
 	},
-	[6357] = {
+	[6928] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.484,
 		["posY"] = 0.42,
 	},
-	[6358] = {
+	[6929] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.487,
 		["posY"] = 0.515,
 	},
-	[6359] = {
+	[6930] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.494,
-		["posY"] = 0.759,
+		["posY"] = 0.758,
 	},
-	[6360] = {
+	[6931] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.498,
 		["posY"] = 0.334,
 	},
-	[6361] = {
+	[6932] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
-		["posX"] = 0.505,
-		["posY"] = 0.363,
+		["posX"] = 0.504,
+		["posY"] = 0.362,
 	},
-	[6362] = {
+	[6933] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.521,
 		["posY"] = 0.496,
 	},
-	[6363] = {
+	[6934] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
-		["posX"] = 0.552,
-		["posY"] = 0.513,
+		["posX"] = 0.551,
+		["posY"] = 0.515,
 	},
-	[6364] = {
+	[6935] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.56,
 		["posY"] = 0.304,
 	},
-	[6365] = {
+	[6936] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.413,
 	},
-	[6366] = {
+	[6937] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.57,
 		["posY"] = 0.816,
 	},
-	[6367] = {
+	[6938] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.574,
 		["posY"] = 0.684,
 	},
-	[6368] = {
+	[6939] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.607,
 		["posY"] = 0.258,
 	},
-	[6369] = {
+	[6940] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.611,
 		["posY"] = 0.426,
 	},
-	[6370] = {
+	[6941] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.599,
 	},
-	[6371] = {
+	[6942] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.64,
 		["posY"] = 0.633,
 	},
-	[6372] = {
+	[6943] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.642,
 		["posY"] = 0.822,
 	},
-	[6373] = {
+	[6944] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.678,
 		["posY"] = 0.322,
 	},
-	[6374] = {
+	[6945] = {
 		["type"] = "mining",
 		["object"] = 165658,
 		["mapID"] = 1427,
 		["posX"] = 0.731,
 		["posY"] = 0.73,
 	},
-	[6375] = {
+	[6946] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.371,
 		["posY"] = 0.616,
 	},
-	[6376] = {
+	[6947] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.382,
 		["posY"] = 0.334,
 	},
-	[6377] = {
+	[6948] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.41,
 		["posY"] = 0.569,
 	},
-	[6378] = {
+	[6949] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.412,
 		["posY"] = 0.473,
 	},
-	[6379] = {
+	[6950] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.413,
 		["posY"] = 0.193,
 	},
-	[6380] = {
+	[6951] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.421,
 		["posY"] = 0.514,
 	},
-	[6381] = {
+	[6952] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.429,
 		["posY"] = 0.628,
 	},
-	[6382] = {
+	[6953] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.448,
 		["posY"] = 0.26,
 	},
-	[6383] = {
+	[6954] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.449,
 		["posY"] = 0.214,
 	},
-	[6384] = {
+	[6955] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
-		["posX"] = 0.455,
-		["posY"] = 0.96,
+		["posX"] = 0.456,
+		["posY"] = 0.961,
 	},
-	[6385] = {
+	[6956] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.489,
 		["posY"] = 0.306,
 	},
-	[6386] = {
+	[6957] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.493,
 		["posY"] = 0.67,
 	},
-	[6387] = {
+	[6958] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.534,
 		["posY"] = 0.191,
 	},
-	[6388] = {
+	[6959] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.544,
 		["posY"] = 0.647,
 	},
-	[6389] = {
+	[6960] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.561,
 		["posY"] = 0.284,
 	},
-	[6390] = {
+	[6961] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.567,
 		["posY"] = 0.447,
 	},
-	[6391] = {
+	[6962] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.582,
 		["posY"] = 0.577,
 	},
-	[6392] = {
+	[6963] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.592,
 		["posY"] = 0.403,
 	},
-	[6393] = {
+	[6964] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.598,
 		["posY"] = 0.739,
 	},
-	[6394] = {
+	[6965] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.612,
 		["posY"] = 0.501,
 	},
-	[6395] = {
+	[6966] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
-		["posX"] = 0.619,
+		["posX"] = 0.618,
 		["posY"] = 0.321,
 	},
-	[6396] = {
+	[6967] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.627,
 		["posY"] = 0.263,
 	},
-	[6397] = {
+	[6968] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.641,
 		["posY"] = 0.854,
 	},
-	[6398] = {
+	[6969] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.644,
 		["posY"] = 0.422,
 	},
-	[6399] = {
+	[6970] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.644,
 		["posY"] = 0.522,
 	},
-	[6400] = {
+	[6971] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.652,
 		["posY"] = 0.774,
 	},
-	[6401] = {
+	[6972] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.654,
 		["posY"] = 0.788,
 	},
-	[6402] = {
+	[6973] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.671,
 		["posY"] = 0.918,
 	},
-	[6403] = {
+	[6974] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.681,
 		["posY"] = 0.189,
 	},
-	[6404] = {
+	[6975] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.684,
 		["posY"] = 0.279,
 	},
-	[6405] = {
+	[6976] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.69,
 		["posY"] = 0.822,
 	},
-	[6406] = {
+	[6977] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.692,
 		["posY"] = 0.573,
 	},
-	[6407] = {
+	[6978] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.692,
 		["posY"] = 0.943,
 	},
-	[6408] = {
+	[6979] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.721,
 		["posY"] = 0.978,
 	},
-	[6409] = {
+	[6980] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.734,
 		["posY"] = 0.864,
 	},
-	[6410] = {
+	[6981] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.739,
 		["posY"] = 0.567,
 	},
-	[6411] = {
+	[6982] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.743,
 		["posY"] = 0.403,
 	},
-	[6412] = {
+	[6983] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.746,
 		["posY"] = 0.459,
 	},
-	[6413] = {
+	[6984] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.777,
 		["posY"] = 0.927,
 	},
-	[6414] = {
+	[6985] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.778,
 		["posY"] = 0.156,
 	},
-	[6415] = {
+	[6986] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.791,
 		["posY"] = 0.278,
 	},
-	[6416] = {
+	[6987] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.791,
 		["posY"] = 0.373,
 	},
-	[6417] = {
+	[6988] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1447,
 		["posX"] = 0.888,
 		["posY"] = 0.342,
 	},
-	[6418] = {
+	[6989] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.409,
 		["posY"] = 0.144,
 	},
-	[6419] = {
+	[6990] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.42,
 		["posY"] = 0.204,
 	},
-	[6420] = {
+	[6991] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.451,
 		["posY"] = 0.111,
 	},
-	[6421] = {
+	[6992] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.453,
 		["posY"] = 0.101,
 	},
-	[6422] = {
+	[6993] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.455,
 		["posY"] = 0.088,
 	},
-	[6423] = {
+	[6994] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.462,
 		["posY"] = 0.12,
 	},
-	[6424] = {
+	[6995] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.483,
 		["posY"] = 0.134,
 	},
-	[6425] = {
+	[6996] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.614,
 		["posY"] = 0.377,
 	},
-	[6426] = {
+	[6997] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.626,
 		["posY"] = 0.347,
 	},
-	[6427] = {
+	[6998] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.64,
 		["posY"] = 0.378,
 	},
-	[6428] = {
+	[6999] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1422,
 		["posX"] = 0.643,
 		["posY"] = 0.334,
 	},
-	[6429] = {
+	[7000] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.15,
 		["posY"] = 0.302,
 	},
-	[6430] = {
+	[7001] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.162,
 		["posY"] = 0.507,
 	},
-	[6431] = {
+	[7002] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.221,
 		["posY"] = 0.631,
 	},
-	[6432] = {
+	[7003] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.254,
 		["posY"] = 0.463,
 	},
-	[6433] = {
+	[7004] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.264,
 		["posY"] = 0.547,
 	},
-	[6434] = {
+	[7005] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.298,
 		["posY"] = 0.706,
 	},
-	[6435] = {
+	[7006] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.303,
 		["posY"] = 0.587,
 	},
-	[6436] = {
+	[7007] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.349,
 		["posY"] = 0.668,
 	},
-	[6437] = {
+	[7008] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.364,
 		["posY"] = 0.583,
 	},
-	[6438] = {
+	[7009] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.38,
 		["posY"] = 0.412,
 	},
-	[6439] = {
+	[7010] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.389,
 		["posY"] = 0.281,
 	},
-	[6440] = {
+	[7011] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.417,
 		["posY"] = 0.449,
 	},
-	[6441] = {
+	[7012] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.428,
 		["posY"] = 0.602,
 	},
-	[6442] = {
+	[7013] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.463,
 		["posY"] = 0.403,
 	},
-	[6443] = {
+	[7014] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.473,
 		["posY"] = 0.334,
 	},
-	[6444] = {
+	[7015] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.487,
 		["posY"] = 0.627,
 	},
-	[6445] = {
+	[7016] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.544,
 		["posY"] = 0.601,
 	},
-	[6446] = {
+	[7017] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.573,
 		["posY"] = 0.239,
 	},
-	[6447] = {
+	[7018] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.61,
 		["posY"] = 0.385,
 	},
-	[6448] = {
+	[7019] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.657,
 		["posY"] = 0.329,
 	},
-	[6449] = {
+	[7020] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.66,
 		["posY"] = 0.216,
 	},
-	[6450] = {
+	[7021] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.696,
 		["posY"] = 0.361,
 	},
-	[6451] = {
+	[7022] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
-		["posX"] = 0.723,
+		["posX"] = 0.724,
 		["posY"] = 0.298,
 	},
-	[6452] = {
+	[7023] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1428,
 		["posX"] = 0.954,
 		["posY"] = 0.317,
 	},
-	[6453] = {
+	[7024] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.363,
 		["posY"] = 0.56,
 	},
-	[6454] = {
+	[7025] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.369,
 		["posY"] = 0.508,
 	},
-	[6455] = {
+	[7026] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.402,
 		["posY"] = 0.471,
 	},
-	[6456] = {
+	[7027] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.416,
 		["posY"] = 0.554,
 	},
-	[6457] = {
+	[7028] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.433,
 		["posY"] = 0.51,
 	},
-	[6458] = {
+	[7029] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.537,
 		["posY"] = 0.658,
 	},
-	[6459] = {
+	[7030] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.549,
 		["posY"] = 0.273,
 	},
-	[6460] = {
+	[7031] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.549,
 		["posY"] = 0.641,
 	},
-	[6461] = {
+	[7032] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.552,
 		["posY"] = 0.713,
 	},
-	[6462] = {
+	[7033] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.569,
 		["posY"] = 0.691,
 	},
-	[6463] = {
+	[7034] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.572,
 		["posY"] = 0.648,
 	},
-	[6464] = {
+	[7035] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.576,
 		["posY"] = 0.671,
 	},
-	[6465] = {
+	[7036] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.617,
 		["posY"] = 0.254,
 	},
-	[6466] = {
+	[7037] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.618,
 		["posY"] = 0.298,
 	},
-	[6467] = {
+	[7038] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.646,
 		["posY"] = 0.32,
 	},
-	[6468] = {
+	[7039] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.654,
 		["posY"] = 0.226,
 	},
-	[6469] = {
+	[7040] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.666,
 		["posY"] = 0.384,
 	},
-	[6470] = {
+	[7041] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.684,
 		["posY"] = 0.263,
 	},
-	[6471] = {
+	[7042] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.688,
 		["posY"] = 0.408,
 	},
-	[6472] = {
+	[7043] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.699,
 		["posY"] = 0.124,
 	},
-	[6473] = {
+	[7044] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.702,
 		["posY"] = 0.2,
 	},
-	[6474] = {
+	[7045] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.713,
 		["posY"] = 0.454,
 	},
-	[6475] = {
+	[7046] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.724,
 		["posY"] = 0.634,
 	},
-	[6476] = {
+	[7047] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.734,
 		["posY"] = 0.181,
 	},
-	[6477] = {
+	[7048] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.734,
 		["posY"] = 0.287,
 	},
-	[6478] = {
+	[7049] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.737,
 		["posY"] = 0.606,
 	},
-	[6479] = {
+	[7050] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.74,
 		["posY"] = 0.671,
 	},
-	[6480] = {
+	[7051] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.749,
 		["posY"] = 0.5,
 	},
-	[6481] = {
+	[7052] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.763,
 		["posY"] = 0.58,
 	},
-	[6482] = {
+	[7053] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.764,
 		["posY"] = 0.351,
 	},
-	[6483] = {
+	[7054] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.767,
 		["posY"] = 0.643,
 	},
-	[6484] = {
+	[7055] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.771,
 		["posY"] = 0.615,
 	},
-	[6485] = {
+	[7056] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.788,
 		["posY"] = 0.783,
 	},
-	[6486] = {
+	[7057] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.809,
 		["posY"] = 0.451,
 	},
-	[6487] = {
+	[7058] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.812,
 		["posY"] = 0.413,
 	},
-	[6488] = {
+	[7059] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.834,
 		["posY"] = 0.878,
 	},
-	[6489] = {
+	[7060] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.836,
 		["posY"] = 0.362,
 	},
-	[6490] = {
+	[7061] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.844,
 		["posY"] = 0.472,
 	},
-	[6491] = {
+	[7062] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.845,
 		["posY"] = 0.857,
 	},
-	[6492] = {
+	[7063] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.846,
 		["posY"] = 0.743,
 	},
-	[6493] = {
+	[7064] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.872,
 		["posY"] = 0.798,
 	},
-	[6494] = {
+	[7065] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1423,
 		["posX"] = 0.879,
 		["posY"] = 0.438,
 	},
-	[6495] = {
+	[7066] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.208,
 		["posY"] = 0.424,
 	},
-	[6496] = {
+	[7067] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.219,
 		["posY"] = 0.61,
 	},
-	[6497] = {
+	[7068] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.254,
 		["posY"] = 0.398,
 	},
-	[6498] = {
+	[7069] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.284,
 		["posY"] = 0.704,
 	},
-	[6499] = {
+	[7070] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
-		["posX"] = 0.307,
-		["posY"] = 0.746,
+		["posX"] = 0.308,
+		["posY"] = 0.748,
 	},
-	[6500] = {
+	[7071] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.311,
 		["posY"] = 0.809,
 	},
-	[6501] = {
+	[7072] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.341,
 		["posY"] = 0.694,
 	},
-	[6502] = {
+	[7073] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.39,
 		["posY"] = 0.703,
 	},
-	[6503] = {
+	[7074] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.39,
 		["posY"] = 0.774,
 	},
-	[6504] = {
+	[7075] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.41,
 		["posY"] = 0.649,
 	},
-	[6505] = {
+	[7076] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.46,
 		["posY"] = 0.529,
 	},
-	[6506] = {
+	[7077] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.465,
 		["posY"] = 0.449,
 	},
-	[6507] = {
+	[7078] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.513,
 		["posY"] = 0.481,
 	},
-	[6508] = {
+	[7079] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.538,
 		["posY"] = 0.518,
 	},
-	[6509] = {
+	[7080] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1449,
 		["posX"] = 0.54,
 		["posY"] = 0.464,
 	},
-	[6510] = {
+	[7081] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.482,
 		["posY"] = 0.089,
 	},
-	[6511] = {
+	[7082] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.491,
 		["posY"] = 0.443,
 	},
-	[6512] = {
+	[7083] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.493,
 		["posY"] = 0.143,
 	},
-	[6513] = {
+	[7084] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.503,
 		["posY"] = 0.437,
 	},
-	[6514] = {
+	[7085] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.504,
 		["posY"] = 0.167,
 	},
-	[6515] = {
+	[7086] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.509,
 		["posY"] = 0.904,
 	},
-	[6516] = {
+	[7087] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.512,
 		["posY"] = 0.078,
 	},
-	[6517] = {
+	[7088] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.52,
 		["posY"] = 0.857,
 	},
-	[6518] = {
+	[7089] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.521,
 		["posY"] = 0.394,
 	},
-	[6519] = {
+	[7090] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.523,
 		["posY"] = 0.556,
 	},
-	[6520] = {
+	[7091] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.524,
 		["posY"] = 0.543,
 	},
-	[6521] = {
+	[7092] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.529,
 		["posY"] = 0.834,
 	},
-	[6522] = {
+	[7093] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.533,
 		["posY"] = 0.444,
 	},
-	[6523] = {
+	[7094] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.535,
 		["posY"] = 0.891,
 	},
-	[6524] = {
+	[7095] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.537,
 		["posY"] = 0.573,
 	},
-	[6525] = {
+	[7096] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.54,
 		["posY"] = 0.39,
 	},
-	[6526] = {
+	[7097] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.542,
 		["posY"] = 0.554,
 	},
-	[6527] = {
+	[7098] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.544,
-		["posY"] = 0.797,
+		["posY"] = 0.796,
 	},
-	[6528] = {
+	[7099] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.548,
 		["posY"] = 0.104,
 	},
-	[6529] = {
+	[7100] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.549,
 		["posY"] = 0.529,
 	},
-	[6530] = {
+	[7101] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.559,
 		["posY"] = 0.146,
 	},
-	[6531] = {
+	[7102] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.56,
 		["posY"] = 0.86,
 	},
-	[6532] = {
+	[7103] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.564,
 		["posY"] = 0.894,
 	},
-	[6533] = {
+	[7104] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.566,
 		["posY"] = 0.775,
 	},
-	[6534] = {
+	[7105] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.567,
 		["posY"] = 0.437,
 	},
-	[6535] = {
+	[7106] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.567,
 		["posY"] = 0.809,
 	},
-	[6536] = {
+	[7107] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.577,
 		["posY"] = 0.83,
 	},
-	[6537] = {
+	[7108] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.584,
 		["posY"] = 0.86,
 	},
-	[6538] = {
+	[7109] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.594,
 		["posY"] = 0.677,
 	},
-	[6539] = {
+	[7110] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.594,
 		["posY"] = 0.776,
 	},
-	[6540] = {
+	[7111] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.597,
 		["posY"] = 0.883,
 	},
-	[6541] = {
+	[7112] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.613,
 		["posY"] = 0.689,
 	},
-	[6542] = {
+	[7113] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.613,
 		["posY"] = 0.796,
 	},
-	[6543] = {
+	[7114] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.621,
 		["posY"] = 0.853,
 	},
-	[6544] = {
+	[7115] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.625,
 		["posY"] = 0.827,
 	},
-	[6545] = {
+	[7116] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.628,
 		["posY"] = 0.711,
 	},
-	[6546] = {
+	[7117] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
-		["posX"] = 0.633,
-		["posY"] = 0.677,
+		["posX"] = 0.632,
+		["posY"] = 0.678,
 	},
-	[6547] = {
+	[7118] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.635,
 		["posY"] = 0.779,
 	},
-	[6548] = {
+	[7119] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.645,
 		["posY"] = 0.704,
 	},
-	[6549] = {
+	[7120] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.647,
 		["posY"] = 0.608,
 	},
-	[6550] = {
+	[7121] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.648,
 		["posY"] = 0.681,
 	},
-	[6551] = {
+	[7122] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.654,
 		["posY"] = 0.795,
 	},
-	[6552] = {
+	[7123] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.657,
 		["posY"] = 0.589,
 	},
-	[6553] = {
+	[7124] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.663,
 		["posY"] = 0.614,
 	},
-	[6554] = {
+	[7125] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.665,
 		["posY"] = 0.375,
 	},
-	[6555] = {
+	[7126] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.667,
 		["posY"] = 0.601,
 	},
-	[6556] = {
+	[7127] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.676,
 		["posY"] = 0.386,
 	},
-	[6557] = {
+	[7128] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.68,
 		["posY"] = 0.356,
 	},
-	[6558] = {
+	[7129] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.688,
 		["posY"] = 0.373,
 	},
-	[6559] = {
+	[7130] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.694,
 		["posY"] = 0.384,
 	},
-	[6560] = {
+	[7131] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.696,
 		["posY"] = 0.417,
 	},
-	[6561] = {
+	[7132] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.707,
 		["posY"] = 0.373,
 	},
-	[6562] = {
+	[7133] = {
 		["type"] = "mining",
 		["object"] = 175404,
 		["mapID"] = 1452,
 		["posX"] = 0.708,
 		["posY"] = 0.396,
 	},
-	[6563] = {
+	[7134] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.167,
 		["posY"] = 0.666,
 	},
-	[6564] = {
+	[7135] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.175,
 		["posY"] = 0.697,
 	},
-	[6565] = {
+	[7136] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.189,
 		["posY"] = 0.576,
 	},
-	[6566] = {
+	[7137] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.194,
-		["posY"] = 0.553,
+		["posY"] = 0.551,
 	},
-	[6567] = {
+	[7138] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.196,
 		["posY"] = 0.655,
 	},
-	[6568] = {
+	[7139] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.201,
 		["posY"] = 0.696,
 	},
-	[6569] = {
+	[7140] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.206,
 		["posY"] = 0.643,
 	},
-	[6570] = {
+	[7141] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.211,
 		["posY"] = 0.506,
 	},
-	[6571] = {
+	[7142] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.224,
 		["posY"] = 0.696,
 	},
-	[6572] = {
+	[7143] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.226,
 		["posY"] = 0.719,
 	},
-	[6573] = {
+	[7144] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.231,
 		["posY"] = 0.639,
 	},
-	[6574] = {
+	[7145] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.232,
 		["posY"] = 0.658,
 	},
-	[6575] = {
+	[7146] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.239,
 		["posY"] = 0.567,
 	},
-	[6576] = {
+	[7147] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.239,
 		["posY"] = 0.715,
 	},
-	[6577] = {
+	[7148] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.274,
 		["posY"] = 0.699,
 	},
-	[6578] = {
+	[7149] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
-		["posX"] = 0.288,
-		["posY"] = 0.558,
+		["posX"] = 0.287,
+		["posY"] = 0.556,
 	},
-	[6579] = {
+	[7150] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.288,
 		["posY"] = 0.671,
 	},
-	[6580] = {
+	[7151] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.304,
 		["posY"] = 0.684,
 	},
-	[6581] = {
+	[7152] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.317,
 		["posY"] = 0.664,
 	},
-	[6582] = {
+	[7153] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.322,
 		["posY"] = 0.632,
 	},
-	[6583] = {
+	[7154] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.324,
 		["posY"] = 0.684,
 	},
-	[6584] = {
+	[7155] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.332,
 		["posY"] = 0.65,
 	},
-	[6585] = {
+	[7156] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.344,
 		["posY"] = 0.627,
 	},
-	[6586] = {
+	[7157] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.359,
 		["posY"] = 0.652,
 	},
-	[6587] = {
+	[7158] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.363,
 		["posY"] = 0.602,
 	},
-	[6588] = {
+	[7159] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.388,
 		["posY"] = 0.164,
 	},
-	[6589] = {
+	[7160] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.392,
 		["posY"] = 0.131,
 	},
-	[6590] = {
+	[7161] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.404,
 		["posY"] = 0.163,
 	},
-	[6591] = {
+	[7162] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.404,
 		["posY"] = 0.272,
 	},
-	[6592] = {
+	[7163] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.407,
 		["posY"] = 0.139,
 	},
-	[6593] = {
+	[7164] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.421,
 		["posY"] = 0.302,
 	},
-	[6594] = {
+	[7165] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.424,
 		["posY"] = 0.19,
 	},
-	[6595] = {
+	[7166] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.424,
 		["posY"] = 0.269,
 	},
-	[6596] = {
+	[7167] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.429,
 		["posY"] = 0.119,
 	},
-	[6597] = {
+	[7168] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.43,
 		["posY"] = 0.178,
 	},
-	[6598] = {
+	[7169] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.437,
 		["posY"] = 0.266,
 	},
-	[6599] = {
+	[7170] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.442,
 		["posY"] = 0.157,
 	},
-	[6600] = {
+	[7171] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.447,
 		["posY"] = 0.127,
 	},
-	[6601] = {
+	[7172] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.453,
-		["posY"] = 0.158,
+		["posY"] = 0.159,
 	},
-	[6602] = {
+	[7173] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.454,
 		["posY"] = 0.324,
 	},
-	[6603] = {
+	[7174] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.456,
 		["posY"] = 0.291,
 	},
-	[6604] = {
+	[7175] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.457,
 		["posY"] = 0.105,
 	},
-	[6605] = {
+	[7176] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.464,
 		["posY"] = 0.22,
 	},
-	[6606] = {
+	[7177] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.476,
 		["posY"] = 0.283,
 	},
-	[6607] = {
+	[7178] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.483,
 		["posY"] = 0.228,
 	},
-	[6608] = {
+	[7179] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.483,
 		["posY"] = 0.268,
 	},
-	[6609] = {
+	[7180] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.497,
 		["posY"] = 0.244,
 	},
-	[6610] = {
+	[7181] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.503,
-		["posY"] = 0.934,
+		["posY"] = 0.935,
 	},
-	[6611] = {
+	[7182] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.51,
 		["posY"] = 0.276,
 	},
-	[6612] = {
+	[7183] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.526,
 		["posY"] = 0.959,
 	},
-	[6613] = {
+	[7184] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.529,
 		["posY"] = 0.93,
 	},
-	[6614] = {
+	[7185] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.53,
 		["posY"] = 0.891,
 	},
-	[6615] = {
+	[7186] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.533,
 		["posY"] = 0.849,
 	},
-	[6616] = {
+	[7187] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.534,
 		["posY"] = 0.988,
 	},
-	[6617] = {
+	[7188] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.541,
 		["posY"] = 0.951,
 	},
-	[6618] = {
+	[7189] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.591,
-		["posY"] = 0.993,
+		["posY"] = 0.994,
 	},
-	[6619] = {
+	[7190] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.603,
 		["posY"] = 0.809,
 	},
-	[6620] = {
+	[7191] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.61,
 		["posY"] = 0.96,
 	},
-	[6621] = {
+	[7192] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.62,
 		["posY"] = 0.938,
 	},
-	[6622] = {
+	[7193] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.623,
 		["posY"] = 0.983,
 	},
-	[6623] = {
+	[7194] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.624,
 		["posY"] = 0.804,
 	},
-	[6624] = {
+	[7195] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.629,
 		["posY"] = 0.767,
 	},
-	[6625] = {
+	[7196] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.642,
 		["posY"] = 0.732,
 	},
-	[6626] = {
+	[7197] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.661,
 		["posY"] = 0.754,
 	},
-	[6627] = {
+	[7198] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.661,
 		["posY"] = 0.816,
 	},
-	[6628] = {
+	[7199] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.662,
 		["posY"] = 0.849,
 	},
-	[6629] = {
+	[7200] = {
 		["type"] = "mining",
 		["object"] = 177388,
 		["mapID"] = 1451,
 		["posX"] = 0.663,
 		["posY"] = 0.799,
+	},
+	[7201] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.063,
+		["posY"] = 0.494,
+	},
+	[7202] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.079,
+		["posY"] = 0.529,
+	},
+	[7203] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.102,
+		["posY"] = 0.553,
+	},
+	[7204] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.108,
+		["posY"] = 0.479,
+	},
+	[7205] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.118,
+		["posY"] = 0.419,
+	},
+	[7206] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.119,
+		["posY"] = 0.471,
+	},
+	[7207] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.122,
+		["posY"] = 0.587,
+	},
+	[7208] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.123,
+		["posY"] = 0.387,
+	},
+	[7209] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.124,
+		["posY"] = 0.446,
+	},
+	[7210] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.126,
+		["posY"] = 0.537,
+	},
+	[7211] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.134,
+		["posY"] = 0.404,
+	},
+	[7212] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.147,
+		["posY"] = 0.374,
+	},
+	[7213] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.153,
+		["posY"] = 0.625,
+	},
+	[7214] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.154,
+		["posY"] = 0.408,
+	},
+	[7215] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.154,
+		["posY"] = 0.44,
+	},
+	[7216] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.159,
+		["posY"] = 0.594,
+	},
+	[7217] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.18,
+		["posY"] = 0.383,
+	},
+	[7218] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.18,
+		["posY"] = 0.463,
+	},
+	[7219] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.181,
+		["posY"] = 0.424,
+	},
+	[7220] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.192,
+		["posY"] = 0.573,
+	},
+	[7221] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.194,
+		["posY"] = 0.545,
+	},
+	[7222] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.203,
+		["posY"] = 0.529,
+	},
+	[7223] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.212,
+		["posY"] = 0.628,
+	},
+	[7224] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.214,
+		["posY"] = 0.655,
+	},
+	[7225] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.217,
+		["posY"] = 0.678,
+	},
+	[7226] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.221,
+		["posY"] = 0.57,
+	},
+	[7227] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.223,
+		["posY"] = 0.701,
+	},
+	[7228] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.224,
+		["posY"] = 0.615,
+	},
+	[7229] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.226,
+		["posY"] = 0.452,
+	},
+	[7230] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.228,
+		["posY"] = 0.657,
+	},
+	[7231] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.23,
+		["posY"] = 0.534,
+	},
+	[7232] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.24,
+		["posY"] = 0.611,
+	},
+	[7233] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.24,
+		["posY"] = 0.682,
+	},
+	[7234] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.244,
+		["posY"] = 0.582,
+	},
+	[7235] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.25,
+		["posY"] = 0.754,
+	},
+	[7236] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.253,
+		["posY"] = 0.71,
+	},
+	[7237] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.255,
+		["posY"] = 0.785,
+	},
+	[7238] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.262,
+		["posY"] = 0.657,
+	},
+	[7239] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.262,
+		["posY"] = 0.73,
+	},
+	[7240] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.263,
+		["posY"] = 0.761,
+	},
+	[7241] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.264,
+		["posY"] = 0.453,
+	},
+	[7242] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.273,
+		["posY"] = 0.783,
+	},
+	[7243] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.277,
+		["posY"] = 0.695,
+	},
+	[7244] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.281,
+		["posY"] = 0.808,
+	},
+	[7245] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.282,
+		["posY"] = 0.541,
+	},
+	[7246] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.285,
+		["posY"] = 0.394,
+	},
+	[7247] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.285,
+		["posY"] = 0.717,
+	},
+	[7248] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.297,
+		["posY"] = 0.65,
+	},
+	[7249] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.303,
+		["posY"] = 0.486,
+	},
+	[7250] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.303,
+		["posY"] = 0.598,
+	},
+	[7251] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.304,
+		["posY"] = 0.728,
+	},
+	[7252] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.305,
+		["posY"] = 0.662,
+	},
+	[7253] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.312,
+		["posY"] = 0.63,
+	},
+	[7254] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.313,
+		["posY"] = 0.414,
+	},
+	[7255] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.316,
+		["posY"] = 0.708,
+	},
+	[7256] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.32,
+		["posY"] = 0.345,
+	},
+	[7257] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.321,
+		["posY"] = 0.601,
+	},
+	[7258] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.323,
+		["posY"] = 0.433,
+	},
+	[7259] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.326,
+		["posY"] = 0.321,
+	},
+	[7260] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.329,
+		["posY"] = 0.634,
+	},
+	[7261] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.331,
+		["posY"] = 0.925,
+	},
+	[7262] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.333,
+		["posY"] = 0.652,
+	},
+	[7263] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.334,
+		["posY"] = 0.361,
+	},
+	[7264] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.334,
+		["posY"] = 0.498,
+	},
+	[7265] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.336,
+		["posY"] = 0.896,
+	},
+	[7266] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.341,
+		["posY"] = 0.291,
+	},
+	[7267] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.342,
+		["posY"] = 0.641,
+	},
+	[7268] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.343,
+		["posY"] = 0.587,
+	},
+	[7269] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.348,
+		["posY"] = 0.666,
+	},
+	[7270] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.348,
+		["posY"] = 0.924,
+	},
+	[7271] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.353,
+		["posY"] = 0.884,
+	},
+	[7272] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.357,
+		["posY"] = 0.408,
+	},
+	[7273] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.362,
+		["posY"] = 0.583,
+	},
+	[7274] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.362,
+		["posY"] = 0.649,
+	},
+	[7275] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.368,
+		["posY"] = 0.603,
+	},
+	[7276] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.371,
+		["posY"] = 0.385,
+	},
+	[7277] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.374,
+		["posY"] = 0.481,
+	},
+	[7278] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.377,
+		["posY"] = 0.533,
+	},
+	[7279] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.378,
+		["posY"] = 0.284,
+	},
+	[7280] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.378,
+		["posY"] = 0.324,
+	},
+	[7281] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.379,
+		["posY"] = 0.704,
+	},
+	[7282] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.382,
+		["posY"] = 0.857,
+	},
+	[7283] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.384,
+		["posY"] = 0.383,
+	},
+	[7284] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.391,
+		["posY"] = 0.885,
+	},
+	[7285] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.401,
+		["posY"] = 0.835,
+	},
+	[7286] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.402,
+		["posY"] = 0.409,
+	},
+	[7287] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.408,
+		["posY"] = 0.626,
+	},
+	[7288] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.412,
+		["posY"] = 0.346,
+	},
+	[7289] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.414,
+		["posY"] = 0.539,
+	},
+	[7290] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.414,
+		["posY"] = 0.854,
+	},
+	[7291] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.419,
+		["posY"] = 0.294,
+	},
+	[7292] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.422,
+		["posY"] = 0.768,
+	},
+	[7293] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.425,
+		["posY"] = 0.49,
+	},
+	[7294] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.427,
+		["posY"] = 0.802,
+	},
+	[7295] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.432,
+		["posY"] = 0.336,
+	},
+	[7296] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.439,
+		["posY"] = 0.567,
+	},
+	[7297] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.439,
+		["posY"] = 0.688,
+	},
+	[7298] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.446,
+		["posY"] = 0.74,
+	},
+	[7299] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.446,
+		["posY"] = 0.862,
+	},
+	[7300] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.45,
+		["posY"] = 0.829,
+	},
+	[7301] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.459,
+		["posY"] = 0.754,
+	},
+	[7302] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.46,
+		["posY"] = 0.292,
+	},
+	[7303] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.46,
+		["posY"] = 0.623,
+	},
+	[7304] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.462,
+		["posY"] = 0.422,
+	},
+	[7305] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.465,
+		["posY"] = 0.654,
+	},
+	[7306] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.467,
+		["posY"] = 0.804,
+	},
+	[7307] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.469,
+		["posY"] = 0.462,
+	},
+	[7308] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.472,
+		["posY"] = 0.577,
+	},
+	[7309] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.473,
+		["posY"] = 0.353,
+	},
+	[7310] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.473,
+		["posY"] = 0.709,
+	},
+	[7311] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.474,
+		["posY"] = 0.839,
+	},
+	[7312] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.476,
+		["posY"] = 0.478,
+	},
+	[7313] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.479,
+		["posY"] = 0.287,
+	},
+	[7314] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.48,
+		["posY"] = 0.567,
+	},
+	[7315] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.482,
+		["posY"] = 0.721,
+	},
+	[7316] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.483,
+		["posY"] = 0.409,
+	},
+	[7317] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.486,
+		["posY"] = 0.655,
+	},
+	[7318] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.49,
+		["posY"] = 0.288,
+	},
+	[7319] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.49,
+		["posY"] = 0.34,
+	},
+	[7320] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.49,
+		["posY"] = 0.774,
+	},
+	[7321] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.493,
+		["posY"] = 0.494,
+	},
+	[7322] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.494,
+		["posY"] = 0.836,
+	},
+	[7323] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.501,
+		["posY"] = 0.54,
+	},
+	[7324] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.511,
+		["posY"] = 0.489,
+	},
+	[7325] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.512,
+		["posY"] = 0.698,
+	},
+	[7326] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.513,
+		["posY"] = 0.276,
+	},
+	[7327] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.517,
+		["posY"] = 0.22,
+	},
+	[7328] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.521,
+		["posY"] = 0.527,
+	},
+	[7329] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.522,
+		["posY"] = 0.85,
+	},
+	[7330] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.523,
+		["posY"] = 0.476,
+	},
+	[7331] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.528,
+		["posY"] = 0.581,
+	},
+	[7332] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.535,
+		["posY"] = 0.301,
+	},
+	[7333] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.538,
+		["posY"] = 0.832,
+	},
+	[7334] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.54,
+		["posY"] = 0.267,
+	},
+	[7335] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.55,
+		["posY"] = 0.493,
+	},
+	[7336] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.552,
+		["posY"] = 0.48,
+	},
+	[7337] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.552,
+		["posY"] = 0.523,
+	},
+	[7338] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.553,
+		["posY"] = 0.288,
+	},
+	[7339] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.554,
+		["posY"] = 0.561,
+	},
+	[7340] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.554,
+		["posY"] = 0.853,
+	},
+	[7341] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.555,
+		["posY"] = 0.827,
+	},
+	[7342] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.564,
+		["posY"] = 0.513,
+	},
+	[7343] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.566,
+		["posY"] = 0.723,
+	},
+	[7344] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.576,
+		["posY"] = 0.751,
+	},
+	[7345] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.58,
+		["posY"] = 0.328,
+	},
+	[7346] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.581,
+		["posY"] = 0.479,
+	},
+	[7347] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.581,
+		["posY"] = 0.761,
+	},
+	[7348] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.584,
+		["posY"] = 0.696,
+	},
+	[7349] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.585,
+		["posY"] = 0.526,
+	},
+	[7350] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.587,
+		["posY"] = 0.788,
+	},
+	[7351] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.596,
+		["posY"] = 0.328,
+	},
+	[7352] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.602,
+		["posY"] = 0.462,
+	},
+	[7353] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.603,
+		["posY"] = 0.485,
+	},
+	[7354] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.608,
+		["posY"] = 0.527,
+	},
+	[7355] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.612,
+		["posY"] = 0.387,
+	},
+	[7356] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.614,
+		["posY"] = 0.508,
+	},
+	[7357] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.62,
+		["posY"] = 0.309,
+	},
+	[7358] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.62,
+		["posY"] = 0.675,
+	},
+	[7359] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.63,
+		["posY"] = 0.733,
+	},
+	[7360] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.631,
+		["posY"] = 0.796,
+	},
+	[7361] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.635,
+		["posY"] = 0.327,
+	},
+	[7362] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.636,
+		["posY"] = 0.667,
+	},
+	[7363] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.636,
+		["posY"] = 0.745,
+	},
+	[7364] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.637,
+		["posY"] = 0.64,
+	},
+	[7365] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.639,
+		["posY"] = 0.37,
+	},
+	[7366] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.648,
+		["posY"] = 0.284,
+	},
+	[7367] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.65,
+		["posY"] = 0.598,
+	},
+	[7368] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.653,
+		["posY"] = 0.718,
+	},
+	[7369] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.654,
+		["posY"] = 0.579,
+	},
+	[7370] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.654,
+		["posY"] = 0.758,
+	},
+	[7371] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.656,
+		["posY"] = 0.56,
+	},
+	[7372] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.657,
+		["posY"] = 0.331,
+	},
+	[7373] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.657,
+		["posY"] = 0.636,
+	},
+	[7374] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.657,
+		["posY"] = 0.779,
+	},
+	[7375] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.658,
+		["posY"] = 0.342,
+	},
+	[7376] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.664,
+		["posY"] = 0.361,
+	},
+	[7377] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.67,
+		["posY"] = 0.717,
+	},
+	[7378] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.67,
+		["posY"] = 0.777,
+	},
+	[7379] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.672,
+		["posY"] = 0.566,
+	},
+	[7380] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.675,
+		["posY"] = 0.633,
+	},
+	[7381] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.676,
+		["posY"] = 0.665,
+	},
+	[7382] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.679,
+		["posY"] = 0.454,
+	},
+	[7383] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.68,
+		["posY"] = 0.333,
+	},
+	[7384] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.681,
+		["posY"] = 0.377,
+	},
+	[7385] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.683,
+		["posY"] = 0.52,
+	},
+	[7386] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.687,
+		["posY"] = 0.681,
+	},
+	[7387] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.687,
+		["posY"] = 0.776,
+	},
+	[7388] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.688,
+		["posY"] = 0.594,
+	},
+	[7389] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.692,
+		["posY"] = 0.472,
+	},
+	[7390] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.693,
+		["posY"] = 0.751,
+	},
+	[7391] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.702,
+		["posY"] = 0.686,
+	},
+	[7392] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.707,
+		["posY"] = 0.429,
+	},
+	[7393] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.71,
+		["posY"] = 0.716,
+	},
+	[7394] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.711,
+		["posY"] = 0.549,
+	},
+	[7395] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.714,
+		["posY"] = 0.53,
+	},
+	[7396] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.719,
+		["posY"] = 0.579,
+	},
+	[7397] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.727,
+		["posY"] = 0.602,
+	},
+	[7398] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.729,
+		["posY"] = 0.376,
+	},
+	[7399] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.732,
+		["posY"] = 0.413,
+	},
+	[7400] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.746,
+		["posY"] = 0.387,
+	},
+	[7401] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.75,
+		["posY"] = 0.639,
+	},
+	[7402] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.751,
+		["posY"] = 0.677,
+	},
+	[7403] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.773,
+		["posY"] = 0.637,
+	},
+	[7404] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.777,
+		["posY"] = 0.746,
+	},
+	[7405] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.784,
+		["posY"] = 0.801,
+	},
+	[7406] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.786,
+		["posY"] = 0.735,
+	},
+	[7407] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.789,
+		["posY"] = 0.702,
+	},
+	[7408] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.8,
+		["posY"] = 0.793,
+	},
+	[7409] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1944,
+		["posX"] = 0.807,
+		["posY"] = 0.775,
+	},
+	[7410] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.262,
+		["posY"] = 0.717,
+	},
+	[7411] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.286,
+		["posY"] = 0.681,
+	},
+	[7412] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.308,
+		["posY"] = 0.718,
+	},
+	[7413] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.383,
+		["posY"] = 0.228,
+	},
+	[7414] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.418,
+		["posY"] = 0.207,
+	},
+	[7415] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.424,
+		["posY"] = 0.772,
+	},
+	[7416] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.442,
+		["posY"] = 0.42,
+	},
+	[7417] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.444,
+		["posY"] = 0.276,
+	},
+	[7418] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.45,
+		["posY"] = 0.302,
+	},
+	[7419] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.46,
+		["posY"] = 0.723,
+	},
+	[7420] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.494,
+		["posY"] = 0.728,
+	},
+	[7421] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.497,
+		["posY"] = 0.269,
+	},
+	[7422] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.506,
+		["posY"] = 0.202,
+	},
+	[7423] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.518,
+		["posY"] = 0.392,
+	},
+	[7424] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.52,
+		["posY"] = 0.534,
+	},
+	[7425] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.526,
+		["posY"] = 0.204,
+	},
+	[7426] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.54,
+		["posY"] = 0.203,
+	},
+	[7427] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.56,
+		["posY"] = 0.593,
+	},
+	[7428] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.568,
+		["posY"] = 0.169,
+	},
+	[7429] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.593,
+		["posY"] = 0.52,
+	},
+	[7430] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.623,
+		["posY"] = 0.765,
+	},
+	[7431] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.632,
+		["posY"] = 0.516,
+	},
+	[7432] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.659,
+		["posY"] = 0.402,
+	},
+	[7433] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.666,
+		["posY"] = 0.456,
+	},
+	[7434] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.671,
+		["posY"] = 0.736,
+	},
+	[7435] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.685,
+		["posY"] = 0.656,
+	},
+	[7436] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.696,
+		["posY"] = 0.432,
+	},
+	[7437] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.725,
+		["posY"] = 0.697,
+	},
+	[7438] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.728,
+		["posY"] = 0.671,
+	},
+	[7439] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.73,
+		["posY"] = 0.414,
+	},
+	[7440] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.741,
+		["posY"] = 0.617,
+	},
+	[7441] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1951,
+		["posX"] = 0.758,
+		["posY"] = 0.678,
+	},
+	[7442] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.245,
+		["posY"] = 0.781,
+	},
+	[7443] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.299,
+		["posY"] = 0.422,
+	},
+	[7444] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.302,
+		["posY"] = 0.362,
+	},
+	[7445] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.302,
+		["posY"] = 0.448,
+	},
+	[7446] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.308,
+		["posY"] = 0.679,
+	},
+	[7447] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.332,
+		["posY"] = 0.087,
+	},
+	[7448] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.353,
+		["posY"] = 0.062,
+	},
+	[7449] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.393,
+		["posY"] = 0.424,
+	},
+	[7450] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.414,
+		["posY"] = 0.477,
+	},
+	[7451] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.422,
+		["posY"] = 0.203,
+	},
+	[7452] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.427,
+		["posY"] = 0.157,
+	},
+	[7453] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.429,
+		["posY"] = 0.234,
+	},
+	[7454] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.434,
+		["posY"] = 0.087,
+	},
+	[7455] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.45,
+		["posY"] = 0.79,
+	},
+	[7456] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.47,
+		["posY"] = 0.359,
+	},
+	[7457] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.487,
+		["posY"] = 0.355,
+	},
+	[7458] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.502,
+		["posY"] = 0.204,
+	},
+	[7459] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.523,
+		["posY"] = 0.166,
+	},
+	[7460] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.554,
+		["posY"] = 0.399,
+	},
+	[7461] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.572,
+		["posY"] = 0.602,
+	},
+	[7462] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.576,
+		["posY"] = 0.339,
+	},
+	[7463] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.586,
+		["posY"] = 0.474,
+	},
+	[7464] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.605,
+		["posY"] = 0.229,
+	},
+	[7465] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.651,
+		["posY"] = 0.295,
+	},
+	[7466] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.655,
+		["posY"] = 0.56,
+	},
+	[7467] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.668,
+		["posY"] = 0.531,
+	},
+	[7468] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1952,
+		["posX"] = 0.72,
+		["posY"] = 0.295,
+	},
+	[7469] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1948,
+		["posX"] = 0.256,
+		["posY"] = 0.422,
+	},
+	[7470] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1948,
+		["posX"] = 0.484,
+		["posY"] = 0.534,
+	},
+	[7471] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.07,
+		["posY"] = 0.498,
+	},
+	[7472] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.079,
+		["posY"] = 0.558,
+	},
+	[7473] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.104,
+		["posY"] = 0.639,
+	},
+	[7474] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.129,
+		["posY"] = 0.652,
+	},
+	[7475] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.154,
+		["posY"] = 0.22,
+	},
+	[7476] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.16,
+		["posY"] = 0.646,
+	},
+	[7477] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.163,
+		["posY"] = 0.146,
+	},
+	[7478] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.165,
+		["posY"] = 0.058,
+	},
+	[7479] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.176,
+		["posY"] = 0.7,
+	},
+	[7480] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.185,
+		["posY"] = 0.09,
+	},
+	[7481] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.202,
+		["posY"] = 0.061,
+	},
+	[7482] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.202,
+		["posY"] = 0.089,
+	},
+	[7483] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.207,
+		["posY"] = 0.167,
+	},
+	[7484] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.208,
+		["posY"] = 0.04,
+	},
+	[7485] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.212,
+		["posY"] = 0.451,
+	},
+	[7486] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.25,
+		["posY"] = 0.191,
+	},
+	[7487] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.255,
+		["posY"] = 0.691,
+	},
+	[7488] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.277,
+		["posY"] = 0.601,
+	},
+	[7489] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.291,
+		["posY"] = 0.63,
+	},
+	[7490] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.316,
+		["posY"] = 0.589,
+	},
+	[7491] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.316,
+		["posY"] = 0.678,
+	},
+	[7492] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.318,
+		["posY"] = 0.627,
+	},
+	[7493] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.346,
+		["posY"] = 0.148,
+	},
+	[7494] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.346,
+		["posY"] = 0.638,
+	},
+	[7495] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.368,
+		["posY"] = 0.669,
+	},
+	[7496] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.419,
+		["posY"] = 0.648,
+	},
+	[7497] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.458,
+		["posY"] = 0.674,
+	},
+	[7498] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.462,
+		["posY"] = 0.293,
+	},
+	[7499] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.494,
+		["posY"] = 0.669,
+	},
+	[7500] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.506,
+		["posY"] = 0.29,
+	},
+	[7501] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.536,
+		["posY"] = 0.694,
+	},
+	[7502] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.547,
+		["posY"] = 0.33,
+	},
+	[7503] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.56,
+		["posY"] = 0.379,
+	},
+	[7504] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.569,
+		["posY"] = 0.458,
+	},
+	[7505] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.588,
+		["posY"] = 0.705,
+	},
+	[7506] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.594,
+		["posY"] = 0.333,
+	},
+	[7507] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.624,
+		["posY"] = 0.738,
+	},
+	[7508] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.639,
+		["posY"] = 0.331,
+	},
+	[7509] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.665,
+		["posY"] = 0.748,
+	},
+	[7510] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.666,
+		["posY"] = 0.813,
+	},
+	[7511] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.691,
+		["posY"] = 0.869,
+	},
+	[7512] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.706,
+		["posY"] = 0.981,
+	},
+	[7513] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.716,
+		["posY"] = 0.942,
+	},
+	[7514] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.721,
+		["posY"] = 0.329,
+	},
+	[7515] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.731,
+		["posY"] = 0.981,
+	},
+	[7516] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.732,
+		["posY"] = 0.945,
+	},
+	[7517] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.737,
+		["posY"] = 0.965,
+	},
+	[7518] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.741,
+		["posY"] = 0.897,
+	},
+	[7519] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.748,
+		["posY"] = 0.918,
+	},
+	[7520] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.761,
+		["posY"] = 0.776,
+	},
+	[7521] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.776,
+		["posY"] = 0.296,
+	},
+	[7522] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.779,
+		["posY"] = 0.895,
+	},
+	[7523] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.822,
+		["posY"] = 0.694,
+	},
+	[7524] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.833,
+		["posY"] = 0.588,
+	},
+	[7525] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.833,
+		["posY"] = 0.758,
+	},
+	[7526] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.854,
+		["posY"] = 0.278,
+	},
+	[7527] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.857,
+		["posY"] = 0.79,
+	},
+	[7528] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.863,
+		["posY"] = 0.907,
+	},
+	[7529] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.87,
+		["posY"] = 0.462,
+	},
+	[7530] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1946,
+		["posX"] = 0.883,
+		["posY"] = 0.368,
+	},
+	[7531] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1949,
+		["posX"] = 0.537,
+		["posY"] = 0.746,
+	},
+	[7532] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1953,
+		["posX"] = 0.298,
+		["posY"] = 0.755,
+	},
+	[7533] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1953,
+		["posX"] = 0.311,
+		["posY"] = 0.713,
+	},
+	[7534] = {
+		["type"] = "mining",
+		["object"] = 181555,
+		["mapID"] = 1953,
+		["posX"] = 0.613,
+		["posY"] = 0.617,
+	},
+	[7535] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1951,
+		["posX"] = 0.593,
+		["posY"] = 0.476,
+	},
+	[7536] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1951,
+		["posX"] = 0.727,
+		["posY"] = 0.647,
+	},
+	[7537] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1951,
+		["posX"] = 0.743,
+		["posY"] = 0.604,
+	},
+	[7538] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1952,
+		["posX"] = 0.307,
+		["posY"] = 0.087,
+	},
+	[7539] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1952,
+		["posX"] = 0.411,
+		["posY"] = 0.212,
+	},
+	[7540] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1952,
+		["posX"] = 0.511,
+		["posY"] = 0.149,
+	},
+	[7541] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1952,
+		["posX"] = 0.724,
+		["posY"] = 0.453,
+	},
+	[7542] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.28,
+		["posY"] = 0.201,
+	},
+	[7543] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.524,
+		["posY"] = 0.384,
+	},
+	[7544] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.661,
+		["posY"] = 0.771,
+	},
+	[7545] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.791,
+		["posY"] = 0.389,
+	},
+	[7546] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.831,
+		["posY"] = 0.72,
+	},
+	[7547] = {
+		["type"] = "mining",
+		["object"] = 181556,
+		["mapID"] = 1946,
+		["posX"] = 0.868,
+		["posY"] = 0.516,
+	},
+	[7548] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.122,
+		["posY"] = 0.385,
+	},
+	[7549] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.126,
+		["posY"] = 0.539,
+	},
+	[7550] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.134,
+		["posY"] = 0.403,
+	},
+	[7551] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.153,
+		["posY"] = 0.409,
+	},
+	[7552] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.159,
+		["posY"] = 0.594,
+	},
+	[7553] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.342,
+		["posY"] = 0.29,
+	},
+	[7554] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.378,
+		["posY"] = 0.704,
+	},
+	[7555] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.446,
+		["posY"] = 0.739,
+	},
+	[7556] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.462,
+		["posY"] = 0.423,
+	},
+	[7557] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.476,
+		["posY"] = 0.478,
+	},
+	[7558] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.49,
+		["posY"] = 0.288,
+	},
+	[7559] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.49,
+		["posY"] = 0.338,
+	},
+	[7560] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.539,
+		["posY"] = 0.267,
+	},
+	[7561] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.581,
+		["posY"] = 0.481,
+	},
+	[7562] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.602,
+		["posY"] = 0.46,
+	},
+	[7563] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.65,
+		["posY"] = 0.599,
+	},
+	[7564] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.654,
+		["posY"] = 0.718,
+	},
+	[7565] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.671,
+		["posY"] = 0.778,
+	},
+	[7566] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.785,
+		["posY"] = 0.736,
+	},
+	[7567] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1944,
+		["posX"] = 0.807,
+		["posY"] = 0.774,
+	},
+	[7568] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.233,
+		["posY"] = 0.278,
+	},
+	[7569] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.242,
+		["posY"] = 0.485,
+	},
+	[7570] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.243,
+		["posY"] = 0.712,
+	},
+	[7571] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.251,
+		["posY"] = 0.61,
+	},
+	[7572] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.255,
+		["posY"] = 0.159,
+	},
+	[7573] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.265,
+		["posY"] = 0.15,
+	},
+	[7574] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.278,
+		["posY"] = 0.763,
+	},
+	[7575] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.282,
+		["posY"] = 0.123,
+	},
+	[7576] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.283,
+		["posY"] = 0.718,
+	},
+	[7577] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.285,
+		["posY"] = 0.237,
+	},
+	[7578] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.292,
+		["posY"] = 0.541,
+	},
+	[7579] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.323,
+		["posY"] = 0.601,
+	},
+	[7580] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.336,
+		["posY"] = 0.501,
+	},
+	[7581] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.389,
+		["posY"] = 0.368,
+	},
+	[7582] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.396,
+		["posY"] = 0.204,
+	},
+	[7583] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.423,
+		["posY"] = 0.232,
+	},
+	[7584] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.429,
+		["posY"] = 0.196,
+	},
+	[7585] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.43,
+		["posY"] = 0.623,
+	},
+	[7586] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.436,
+		["posY"] = 0.397,
+	},
+	[7587] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.449,
+		["posY"] = 0.476,
+	},
+	[7588] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.452,
+		["posY"] = 0.197,
+	},
+	[7589] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.455,
+		["posY"] = 0.439,
+	},
+	[7590] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.466,
+		["posY"] = 0.516,
+	},
+	[7591] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.48,
+		["posY"] = 0.573,
+	},
+	[7592] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.485,
+		["posY"] = 0.513,
+	},
+	[7593] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.494,
+		["posY"] = 0.728,
+	},
+	[7594] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.504,
+		["posY"] = 0.772,
+	},
+	[7595] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.511,
+		["posY"] = 0.677,
+	},
+	[7596] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.513,
+		["posY"] = 0.569,
+	},
+	[7597] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.529,
+		["posY"] = 0.543,
+	},
+	[7598] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.535,
+		["posY"] = 0.822,
+	},
+	[7599] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.56,
+		["posY"] = 0.547,
+	},
+	[7600] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.573,
+		["posY"] = 0.783,
+	},
+	[7601] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.577,
+		["posY"] = 0.309,
+	},
+	[7602] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.581,
+		["posY"] = 0.559,
+	},
+	[7603] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.593,
+		["posY"] = 0.476,
+	},
+	[7604] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.606,
+		["posY"] = 0.315,
+	},
+	[7605] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.606,
+		["posY"] = 0.569,
+	},
+	[7606] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.63,
+		["posY"] = 0.731,
+	},
+	[7607] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.633,
+		["posY"] = 0.515,
+	},
+	[7608] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.649,
+		["posY"] = 0.358,
+	},
+	[7609] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.661,
+		["posY"] = 0.519,
+	},
+	[7610] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.662,
+		["posY"] = 0.322,
+	},
+	[7611] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.675,
+		["posY"] = 0.354,
+	},
+	[7612] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.691,
+		["posY"] = 0.485,
+	},
+	[7613] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.7,
+		["posY"] = 0.521,
+	},
+	[7614] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.716,
+		["posY"] = 0.564,
+	},
+	[7615] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.727,
+		["posY"] = 0.647,
+	},
+	[7616] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.734,
+		["posY"] = 0.449,
+	},
+	[7617] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.743,
+		["posY"] = 0.604,
+	},
+	[7618] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.757,
+		["posY"] = 0.678,
+	},
+	[7619] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.761,
+		["posY"] = 0.605,
+	},
+	[7620] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.763,
+		["posY"] = 0.622,
+	},
+	[7621] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.769,
+		["posY"] = 0.59,
+	},
+	[7622] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1951,
+		["posX"] = 0.78,
+		["posY"] = 0.599,
+	},
+	[7623] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.209,
+		["posY"] = 0.117,
+	},
+	[7624] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.272,
+		["posY"] = 0.744,
+	},
+	[7625] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.308,
+		["posY"] = 0.087,
+	},
+	[7626] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.319,
+		["posY"] = 0.79,
+	},
+	[7627] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.41,
+		["posY"] = 0.212,
+	},
+	[7628] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.419,
+		["posY"] = 0.796,
+	},
+	[7629] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.429,
+		["posY"] = 0.473,
+	},
+	[7630] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.53,
+		["posY"] = 0.272,
+	},
+	[7631] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.544,
+		["posY"] = 0.328,
+	},
+	[7632] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.549,
+		["posY"] = 0.381,
+	},
+	[7633] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.562,
+		["posY"] = 0.615,
+	},
+	[7634] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.632,
+		["posY"] = 0.847,
+	},
+	[7635] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.684,
+		["posY"] = 0.545,
+	},
+	[7636] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.714,
+		["posY"] = 0.326,
+	},
+	[7637] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1952,
+		["posX"] = 0.729,
+		["posY"] = 0.87,
+	},
+	[7638] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.288,
+		["posY"] = 0.445,
+	},
+	[7639] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.332,
+		["posY"] = 0.339,
+	},
+	[7640] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.342,
+		["posY"] = 0.428,
+	},
+	[7641] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.394,
+		["posY"] = 0.69,
+	},
+	[7642] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.456,
+		["posY"] = 0.304,
+	},
+	[7643] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.543,
+		["posY"] = 0.183,
+	},
+	[7644] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.621,
+		["posY"] = 0.853,
+	},
+	[7645] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.649,
+		["posY"] = 0.521,
+	},
+	[7646] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.662,
+		["posY"] = 0.884,
+	},
+	[7647] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.703,
+		["posY"] = 0.898,
+	},
+	[7648] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.743,
+		["posY"] = 0.288,
+	},
+	[7649] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1948,
+		["posX"] = 0.768,
+		["posY"] = 0.885,
+	},
+	[7650] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.225,
+		["posY"] = 0.434,
+	},
+	[7651] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.281,
+		["posY"] = 0.2,
+	},
+	[7652] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.469,
+		["posY"] = 0.666,
+	},
+	[7653] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.725,
+		["posY"] = 0.929,
+	},
+	[7654] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.742,
+		["posY"] = 0.97,
+	},
+	[7655] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1946,
+		["posX"] = 0.868,
+		["posY"] = 0.516,
+	},
+	[7656] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.341,
+		["posY"] = 0.34,
+	},
+	[7657] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.345,
+		["posY"] = 0.795,
+	},
+	[7658] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.371,
+		["posY"] = 0.417,
+	},
+	[7659] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.403,
+		["posY"] = 0.715,
+	},
+	[7660] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.422,
+		["posY"] = 0.209,
+	},
+	[7661] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.439,
+		["posY"] = 0.539,
+	},
+	[7662] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.505,
+		["posY"] = 0.399,
+	},
+	[7663] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.535,
+		["posY"] = 0.621,
+	},
+	[7664] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.574,
+		["posY"] = 0.611,
+	},
+	[7665] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.58,
+		["posY"] = 0.591,
+	},
+	[7666] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.584,
+		["posY"] = 0.242,
+	},
+	[7667] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.637,
+		["posY"] = 0.545,
+	},
+	[7668] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.655,
+		["posY"] = 0.495,
+	},
+	[7669] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.656,
+		["posY"] = 0.784,
+	},
+	[7670] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.681,
+		["posY"] = 0.34,
+	},
+	[7671] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.702,
+		["posY"] = 0.282,
+	},
+	[7672] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1949,
+		["posX"] = 0.769,
+		["posY"] = 0.676,
+	},
+	[7673] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.281,
+		["posY"] = 0.15,
+	},
+	[7674] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.3,
+		["posY"] = 0.413,
+	},
+	[7675] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.362,
+		["posY"] = 0.566,
+	},
+	[7676] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.539,
+		["posY"] = 0.682,
+	},
+	[7677] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.567,
+		["posY"] = 0.356,
+	},
+	[7678] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.595,
+		["posY"] = 0.437,
+	},
+	[7679] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.659,
+		["posY"] = 0.606,
+	},
+	[7680] = {
+		["type"] = "mining",
+		["object"] = 181557,
+		["mapID"] = 1953,
+		["posX"] = 0.717,
+		["posY"] = 0.358,
 	},
 }

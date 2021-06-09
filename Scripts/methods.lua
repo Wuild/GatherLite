@@ -437,7 +437,7 @@ function GatherLite:createWorldmapNode(node)
     f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
     f.texture:SetTexture(object.icon)
     f.texture:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
-    f:SetBackdropColor(1, 0, 0, 1);
+    --f:SetBackdropColor(1, 0, 0, 1);
 
     f.node = node;
     f.object = object
@@ -637,9 +637,7 @@ function GatherLite:Load()
             _GatherLite.WorldmapOpen = true;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap")
 
-            if not WorldMapContinentDropDown:IsShown() then
-                GatherLiteToggle:SetPoint('RIGHT', WorldMapFrameCloseButton, 'LEFT', 0, 0);
-            end
+            GatherLiteToggle:SetPoint('RIGHT', WorldMapFrameCloseButton, 'LEFT', -20, 0);
 
             if Questie_Toggle then
                 GatherLiteToggle:SetPoint('RIGHT', Questie_Toggle, 'LEFT', 0, 0);

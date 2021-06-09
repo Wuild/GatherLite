@@ -55,6 +55,7 @@ L['node.dark_iron_deposit'] = "Dark Iron Deposit"
 L['node.small_thorium_vein'] = "Small Thorium Vein"
 L['node.rich_thorium_vein'] = "Rich Thorium Vein"
 
+
 -- Herbs
 L['node.silverleaf'] = "Silverleaf"
 L['node.peacebloom'] = "Peacebloom"
@@ -99,3 +100,20 @@ L['node.fish_pool_debris'] = "Floating Debris"
 L['node.fish_pool_wreckage'] = "Floating Wreckage"
 L['node.fish_pool_oily_blackmouth'] = "Oily Blackmouth School"
 L['node.fish_pool_sagefish'] = "Sagefish School"
+
+
+-- TBC Ores
+L['node.fel_iron_deposit'] = "Fel Iron Deposit"
+L['node.adamantite_deposit'] = "Adamantite Deposit"
+L['node.rich_adamantite_deposit'] = "Rich Adamantite Deposit"
+L['node.khorium_vein'] = "Khorium Vein"
+
+-- TBC Herbs
+L['node.felweed'] = "Felweed"
+L['node.dreaming_glory'] = "Dreaming Glory"
+L['node.ragveil'] = "Ragveil"
+L['node.terocone'] = "Terocone"
+L['node.ancient_lichen'] = "Ancient Lichen"
+L['node.netherbloom'] = "Netherbloom"
+L['node.nightmare_vine'] = "Nightmare Vine"
+L['node.mana_thistle'] = "Mana Thistle"
