@@ -102,6 +102,8 @@ module.exports = {
         // TBC
         181270, // Felweed
         181271, // Dreaming Glory
+        183045, // Dreaming Glory
+        183046, // Blindweed
         181275, // Ragveil
         181277, // Terocone
         181278, // Ancient Lichen
@@ -140,7 +142,7 @@ module.exports = {
         75298,
         153462,
         153461,
-        157936
+        157936,
     ],
     fishing: [
         // Firefin

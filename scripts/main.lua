@@ -71,6 +71,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED", "EventHandler")
     GatherLite:RegisterEvent("LOOT_OPENED", "EventHandler")
     GatherLite:RegisterEvent("PLAYER_ENTERING_WORLD", "EventHandler")
+    GatherLite:RegisterEvent("ZONE_CHANGED", "EventHandler")
 
     hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
         GatherLite:ResetWorldmap();

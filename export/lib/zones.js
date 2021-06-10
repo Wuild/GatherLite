@@ -74,9 +74,9 @@ const ZoneData = {
     "Arathi Basin": [1461, 947],
 
     //TBC
-    "Eversong Woods" : [1941],
-    "Ghostlands" : [1942],
-    "Azuremyst Isle" : [1943],
+    "Eversong Woods": [1941],
+    "Ghostlands": [1942],
+    "Azuremyst Isle": [1943],
     "Hellfire Peninsula": [1944],
     "Outland": [1945],
     "Zangarmarsh": [1946],

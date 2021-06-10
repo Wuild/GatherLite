@@ -270,7 +270,7 @@ end
 
 function GatherLite:EventHandler(event, ...)
 
-    if event == "PLAYER_ENTERING_WORLD" then
+    if event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED" then
         GatherLite:LoadMinimap()
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then

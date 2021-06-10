@@ -270,7 +270,7 @@ _GatherLite.nodeDB = {
     },
     {
         type = "herb",
-        id = { 142143 },
+        id = { 142143, 183046 },
         name = "blindweed",
         icon = _GatherLite.iconPath .. "Herb\\Blindweed",
         levels = { 235, 260, 285, 335 }
@@ -345,7 +345,7 @@ _GatherLite.nodeDB = {
 
     {
         type = "herb",
-        id = { 181271 },
+        id = { 181271, 183045 },
         name = "dreaming_glory",
         icon = _GatherLite.iconPath .. "Herb\\DreamingGlory",
         levels = { 300, 325, 350, 400 }
@@ -398,6 +398,24 @@ _GatherLite.nodeDB = {
         icon = _GatherLite.iconPath .. "Herb\\ManaThistle",
         levels = { 300, 325, 350, 400 }
     },
+
+    {
+        type = "herb",
+        id = { 181276 },
+        name = "flame_cap",
+        icon = _GatherLite.iconPath .. "Herb\\FlameCap",
+        levels = { 300, 325, 350, 400 }
+    },
+
+
+    {
+        type = "herb",
+        id = { 181166 },
+        name = "bloodthistle",
+        icon = _GatherLite.iconPath .. "Herb\\Stranglekelp",
+        levels = { 0, 0, 0, 0 }
+    },
+
 
     -- containers
     {
