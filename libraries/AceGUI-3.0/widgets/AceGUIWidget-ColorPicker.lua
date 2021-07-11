@@ -36,7 +36,7 @@ local function ColorCallback(self, r, g, b, a, isAlpha)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Control_OnEnter(frame)
 	frame.obj:Fire("OnEnter")

@@ -32,7 +32,7 @@ local function AlignImage(self)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Control_OnEnter(frame)
 	frame.obj:Fire("OnEnter")

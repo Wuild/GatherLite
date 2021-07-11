@@ -18,7 +18,7 @@ local CreateFrame, UIParent = CreateFrame, UIParent
 -- GLOBALS: CLOSE
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Button_OnClick(frame)
 	PlaySound(799) -- SOUNDKIT.GS_TITLE_OPTION_EXIT

@@ -13,7 +13,7 @@ local pairs = pairs
 local CreateFrame = CreateFrame
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 
 local function OnShow(frame)

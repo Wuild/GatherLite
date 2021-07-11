@@ -13,7 +13,12 @@ local tracker = {
     ended = nil
 };
 
-_GatherLite.db = {};
+_GatherLite.nodes = {
+    mining = {},
+    herbalism = {},
+    containers = {},
+    fishing = {},
+};
 
 _GatherLite.WorldmapOpen = false;
 
@@ -149,7 +154,7 @@ function GatherLite:findExistingNode(type, mapID, x, y)
 end
 
 function GatherLite:findExistingLocalNode(type, mapID, x, y)
-    for k, node in pairs(_GatherLite.db) do
+    for k, node in pairs(_GatherLite.nodes[type]) do
         if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
         end
@@ -177,12 +182,14 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
         date = date('*t')
     };
 
-    table.insert(GatherLite.db.global.nodes, node);
+    table.insert(GatherLite.db.global.nodes[type], node);
+
+    local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+    node.instance = instance;
+    table.insert(_GatherLite.nodes[type], node)
 
     GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 
-    GatherLite:createMinimapNode(node);
-    GatherLite:createWorldmapNode(node);
 end
 
 function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
@@ -271,7 +278,7 @@ end
 function GatherLite:EventHandler(event, ...)
 
     if event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED" then
-        GatherLite:LoadMinimap()
+        --GatherLite:ResetMinimap()
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then
             if (IsInInstance()) then
@@ -580,8 +587,15 @@ local function loadDatabase(type)
     GatherLite:forEach(GatherLite.db.global.nodes[type], function(node)
         local oldNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
         if not oldNode then
+            node.type = type;
+            node.coins = 0
+            node.loot = {}
             node.predefined = false;
-            table.insert(_GatherLite.db, node)
+            node.loaded = false;
+
+            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            node.instance = instance;
+            table.insert(_GatherLite.nodes[type], node)
         end
     end);
 end
@@ -593,17 +607,17 @@ local function LoadTable(type, data)
             node.coins = 0
             node.loot = {}
             node.predefined = true
+            node.loaded = false;
 
             local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
             node.instance = instance;
 
-            table.insert(_GatherLite.db, node)
+            table.insert(_GatherLite.nodes[type], node)
         end);
     end
 end
 
 function GatherLite:Load()
-
     if GatherLite.db.global.usePredefined then
         LoadTable("mining", GatherLite_localOreNodes);
         LoadTable("herbalism", GatherLite_localHerbNodes);
@@ -662,7 +676,7 @@ function GatherLite:SendVersionCheck()
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "GUILD")
     end
 
-    if IsInGroup() then
+    if IsInGroup() and not IsActiveBattlefieldArena() then
         if IsInRaid() then
             GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "RAID")
         else

@@ -13,7 +13,7 @@ local assert, pairs, type = assert, pairs, type
 local CreateFrame = CreateFrame
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function SelectedGroup(self, event, value)
 	local group = self.parentgroup

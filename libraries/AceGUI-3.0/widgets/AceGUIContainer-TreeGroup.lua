@@ -172,7 +172,7 @@ local function BuildUniqueValue(...)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Expand_OnClick(frame)
 	local button = frame.button

@@ -515,6 +515,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.minimap.range = val;
+                                GatherLite:ResetMinimap()
                             end,
                             get = function(info)
                                 return GatherLite.db.char.minimap.range
@@ -531,7 +532,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 5,
                             width = "full",
                             set = function(info, val)
-                                --MyAddon.enabled = val
                                 GatherLite.db.char.minimap.size = val;
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
@@ -541,7 +541,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             end,
                             get = function(info)
                                 return GatherLite.db.char.minimap.size
-                                --return MyAddon.enabled
                             end
                         },
                         iconOpacity = {

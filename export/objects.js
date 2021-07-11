@@ -1,5 +1,5 @@
 module.exports = {
-    ores: [
+    mining: [
         324,
         176643,
         1610,
@@ -30,7 +30,7 @@ module.exports = {
         181569,
         181557
     ],
-    herbs: [
+    herbalism: [
         1617,
         1618,
         1619,

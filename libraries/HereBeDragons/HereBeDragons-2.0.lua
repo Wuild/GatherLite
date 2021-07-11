@@ -90,7 +90,7 @@ if not oldversion or oldversion < 16 then
         wipe(transforms)
     end
 
-    -- map transform data extracted from UIMapAssignment.db2 (see HereBeDragons-Scripts on GitHub)
+    -- map transform data extracted from UIMapAssignment.db2 (see HereBeDragons-scripts on GitHub)
     -- format: instanceID, newInstanceID, minY, maxY, minX, maxX, offsetY, offsetX
     local transformData
     if WoWBC then

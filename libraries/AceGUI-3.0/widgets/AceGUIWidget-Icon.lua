@@ -12,7 +12,7 @@ local select, pairs, print = select, pairs, print
 local CreateFrame, UIParent = CreateFrame, UIParent
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Control_OnEnter(frame)
 	frame.obj:Fire("OnEnter")

@@ -85,7 +85,6 @@ function GatherLite:OnInitialize()
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
-    --GatherLite:ScheduleRepeatingTimer("LoadMinimap", 2)
 
     GatherLite:SendVersionCheck()
     GatherLite:Load();

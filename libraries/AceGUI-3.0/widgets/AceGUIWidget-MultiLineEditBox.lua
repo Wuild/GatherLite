@@ -53,7 +53,7 @@ local function Layout(self)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function OnClick(self)                                                     -- Button
 	self = self.obj

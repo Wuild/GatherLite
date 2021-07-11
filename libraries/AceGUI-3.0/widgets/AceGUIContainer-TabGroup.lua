@@ -59,7 +59,7 @@ local function BuildTabsOnUpdate(frame)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Tab_OnClick(frame)
 	if not (frame.selected or frame.disabled) then

@@ -18,7 +18,7 @@ local CreateFrame, UIParent = CreateFrame, UIParent
 -- GLOBALS: NOT_BOUND
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 
 local function Control_OnEnter(frame)

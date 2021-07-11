@@ -49,7 +49,7 @@ local function HideButton(self)
 end
 
 --[[-----------------------------------------------------------------------------
-Scripts
+scripts
 -------------------------------------------------------------------------------]]
 local function Control_OnEnter(frame)
 	frame.obj:Fire("OnEnter")

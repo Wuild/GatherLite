@@ -104,7 +104,7 @@ _GatherLite.nodeDB = {
         id = { 181555 },
         name = "fel_iron_deposit",
         icon = _GatherLite.iconPath .. "Ore\\FelIron",
-        levels = { 275, 290, 300, 350 }
+        levels = { 300, 325, 350, 400 }
     },
 
     {
@@ -112,7 +112,7 @@ _GatherLite.nodeDB = {
         id = { 181556 },
         name = "adamantite_deposit",
         icon = _GatherLite.iconPath .. "Ore\\Adamantite",
-        levels = { 275, 290, 300, 350 }
+        levels = { 325, 350, 375, 425 }
     },
 
     {
@@ -120,7 +120,7 @@ _GatherLite.nodeDB = {
         id = { 181569 },
         name = "rich_adamantite_deposit",
         icon = _GatherLite.iconPath .. "Ore\\Adamantite",
-        levels = { 275, 290, 300, 350 }
+        levels = { 350, 375, 400, 450 }
     },
 
 
@@ -129,7 +129,7 @@ _GatherLite.nodeDB = {
         id = { 181557 },
         name = "khorium_vein",
         icon = _GatherLite.iconPath .. "Ore\\Khorium",
-        levels = { 275, 290, 300, 350 }
+        levels = { 375, 400, 425, 475 }
     },
 
 
@@ -348,7 +348,7 @@ _GatherLite.nodeDB = {
         id = { 181271, 183045 },
         name = "dreaming_glory",
         icon = _GatherLite.iconPath .. "Herb\\DreamingGlory",
-        levels = { 300, 325, 350, 400 }
+        levels = { 315, 340, 365, 415 }
     },
 
     {
@@ -356,7 +356,7 @@ _GatherLite.nodeDB = {
         id = { 181275 },
         name = "ragveil",
         icon = _GatherLite.iconPath .. "Herb\\Ragveil",
-        levels = { 300, 325, 350, 400 }
+        levels = { 325, 350, 375, 425 }
     },
 
     {
@@ -364,7 +364,7 @@ _GatherLite.nodeDB = {
         id = { 181277 },
         name = "terocone",
         icon = _GatherLite.iconPath .. "Herb\\Terocone",
-        levels = { 300, 325, 350, 400 }
+        levels = { 325, 350, 375, 425 }
     },
 
     {
@@ -372,7 +372,7 @@ _GatherLite.nodeDB = {
         id = { 181278 },
         name = "ancient_lichen",
         icon = _GatherLite.iconPath .. "Herb\\AncientLichen",
-        levels = { 300, 325, 350, 400 }
+        levels = { 340, 365, 390, 440 }
     },
 
     {
@@ -380,7 +380,7 @@ _GatherLite.nodeDB = {
         id = { 181279 },
         name = "netherbloom",
         icon = _GatherLite.iconPath .. "Herb\\Netherbloom",
-        levels = { 300, 325, 350, 400 }
+        levels = { 350, 375, 400, 450 }
     },
 
     {
@@ -388,7 +388,7 @@ _GatherLite.nodeDB = {
         id = { 181280 },
         name = "nightmare_vine",
         icon = _GatherLite.iconPath .. "Herb\\NightmareVine",
-        levels = { 300, 325, 350, 400 }
+        levels = { 365, 390, 415, 465 }
     },
 
     {
@@ -396,7 +396,7 @@ _GatherLite.nodeDB = {
         id = { 181281 },
         name = "mana_thistle",
         icon = _GatherLite.iconPath .. "Herb\\ManaThistle",
-        levels = { 300, 325, 350, 400 }
+        levels = { 375, 400, 425, 475 }
     },
 
     {
@@ -404,7 +404,7 @@ _GatherLite.nodeDB = {
         id = { 181276 },
         name = "flame_cap",
         icon = _GatherLite.iconPath .. "Herb\\FlameCap",
-        levels = { 300, 325, 350, 400 }
+        levels = { 335, 360, 385, 435 }
     },
 
 

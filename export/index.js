@@ -130,9 +130,9 @@ function getExpansion(exp = "vanilla", data = {}) {
                             let row = rows[arr][i];
                             if (row !== undefined) {
                                 nodes.push(row)
-                                // if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
-                                //     nodes.push(row)
-                                // }
+                                if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
+                                    nodes.push(row)
+                                }
                             }
                         }
                     }
@@ -142,11 +142,11 @@ function getExpansion(exp = "vanilla", data = {}) {
                         case "containers":
                             out = Objects2Lua({GatherLite_localContainerNodes: nodes});
                             break;
-                        case "ores":
+                        case "mining":
                             out = Objects2Lua({GatherLite_localOreNodes: nodes});
                             break;
 
-                        case "herbs":
+                        case "herbalism":
                             out = Objects2Lua({GatherLite_localHerbNodes: nodes});
                             break;
 
