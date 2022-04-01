@@ -80,7 +80,7 @@ function GatherLiteTracker:ClosestNodes(type, posX, posY, instanceID, maxDist, f
 
         local x, y, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
         local _, distance = HBD:GetWorldVector(instanceID, posX, posY, x, y)
-        return distance and distance < 200;
+        return distance and distance < maxDist;
     end)
 
     return t;
@@ -162,62 +162,80 @@ local function minimapIconThread()
     local i = 0;
     local i2 = 0
 
-    local tableCount = GatherLite:tablelength(GFrame.usedFrames);
-    for key, iframe in ipairs(GFrame.usedFrames) do
-        local frame = GFrame.usedFrames[key]
+    local frames = table.filter(GFrame.usedFrames, function(frame)
+        return frame.type == "minimap"
+    end);
 
-        if frame.type == "minimap" and frame.node.loaded then
-            if IsInInstance() then
-                frame.node.loaded = false;
-                frame:Unload();
-                return
-            end
+    local tableCount = table.length(frames);
 
-            local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(frame.node.posX, frame.node.posY, frame.node.mapID);
-            local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+    for key, frame in pairs(frames) do
 
-            if not distance then
-                frame.node.loaded = false;
-                frame:Unload();
-                return
-            end
-
-            if distance >= 200 then
-                frame.node.loaded = false;
-                frame:Unload();
-                return
-            end
-
-            if not GatherLiteTracker.MinimapFilter(frame.node) then
-                frame.node.loaded = false;
-                frame:Unload();
-                return
-            end
-
-            if distance < GatherLite.db.char.minimap.distance and frame:IsVisible() then
-                frame:FakeHide();
-            elseif distance >= GatherLite.db.char.minimap.distance and not frame:IsVisible() then
-                frame:FakeShow();
-            end
-
-        elseif frame.type == "minimap" and not frame.node.loaded then
+        if IsInInstance() then
             frame.node.loaded = false;
             frame:Unload();
+            return
         end
 
-        i = i + 1
-        i2 = i2 + 1
+        local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(frame.node.posX, frame.node.posY, frame.node.mapID);
+        local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
 
-        --GatherLite:print(i, i2, tableCount)
-
-        if (i < tableCount) then
-            if (i2 == 15) then
-                coroutine.yield()
-                i2 = 0
-            end
+        --if not distance then
+        --    frame.node.loaded = false;
+        --    frame:Unload();
+        --    return
+        --end
+        --
+        if distance >= GatherLite.db.char.minimap.range then
+            frame.node.loaded = false;
+            frame:Unload();
+            return
         end
 
+        if not GatherLiteTracker.MinimapFilter(frame.node) then
+            frame.node.loaded = false;
+            frame:Unload();
+            return
+        end
+
+        if distance < GatherLite.db.char.minimap.distance and frame:IsVisible() then
+            frame:FakeHide();
+        elseif distance >= GatherLite.db.char.minimap.distance and not frame:IsVisible() then
+            frame:FakeShow();
+        end
+
+        --if (i < tableCount) then
+        --    if (i2 == 10) then
+        --        coroutine.yield()
+        --        i2 = 0
+        --    end
+        --end
     end
+
+    --for key, iframe in ipairs(GFrame.usedFrames) do
+    --    local frame = GFrame.usedFrames[key]
+
+    --    if frame.type == "minimap" then
+
+    --    --
+
+    --    --
+
+    --    --
+
+    --    --
+    --    --elseif frame.type == "minimap" and not frame.node.loaded then
+    --    --    frame.node.loaded = false;
+    --    --    frame:Unload();
+    --    --end
+    --    --
+    --    --i = i + 1
+    --    --i2 = i2 + 1
+    --    --
+    --    ----GatherLite:print(i, i2, tableCount)
+    --    --
+
+    --
+    --end
 end
 
 local threadMining = coroutine.create(miningThread)
@@ -277,10 +295,8 @@ function GatherLiteTracker:Minimap(timeDelta, force)
 
     end
 
-    if (updateIcons) then
-        if coroutine.status(threadIcon) == "dead" then
-            threadIcon = coroutine.create(minimapIconThread)
-        end
+    if coroutine.status(threadIcon) == "dead" then
+        threadIcon = coroutine.create(minimapIconThread)
     end
 
     coroutine.resume(threadMining)
