@@ -7,6 +7,11 @@ This addon is made for World of Warcraft:Classic
 
 ### Changelog
 
+#### 5.0.0
+* Fixed several bugs and performance issues
+* Restructured the codebase
+* Updated the predefined database
+
 #### 4.0.0
 * Added outlands nodes
 * Fixed several errors and bugs

@@ -80,7 +80,7 @@ function GatherLiteTracker:ClosestNodes(type, posX, posY, instanceID, maxDist, f
 
         local x, y, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
         local _, distance = HBD:GetWorldVector(instanceID, posX, posY, x, y)
-        return distance and distance < maxDist;
+        return distance and distance < 200;
     end)
 
     return t;
@@ -90,6 +90,18 @@ function GatherLiteTracker:WorldmapNodes(list, mapID, filter)
     return table.filter(list, function(node)
         return node.mapID == mapID and filter(node);
     end);
+end
+
+table.iFilter = function(t, filterIter)
+    local out = {}
+
+    for k, v in ipairs(t) do
+        if filterIter(v, k, t) then
+            out[k] = v;
+        end
+    end
+
+    return out
 end
 
 table.filter = function(t, filterIter)
@@ -114,69 +126,44 @@ table.length = function(T)
     return count
 end
 
-local function miningThread()
+local function createNodeThread(type)
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
-    local t = GatherLiteTracker:ClosestNodes("mining", x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
+    local t = GatherLiteTracker:ClosestNodes(type, x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
     for key, node in pairs(t) do
-        if not _GatherLite.nodes["mining"][key].loaded then
-            GatherLite:createMinimapNode(_GatherLite.nodes["mining"][key])
-            _GatherLite.nodes["mining"][key].loaded = true;
+        if not _GatherLite.nodes[type][key].loaded then
+            GatherLite:createMinimapNode(_GatherLite.nodes[type][key])
+            _GatherLite.nodes[type][key].loaded = true;
         end
         --print(key)
         coroutine.yield()
     end
 end
 
+local function miningThread()
+    createNodeThread("mining")
+end
+
 local function herbalismThread()
-
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-    local t = GatherLiteTracker:ClosestNodes("herbalism", x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
-
-    for key, node in pairs(t) do
-        if not _GatherLite.nodes["herbalism"][key].loaded then
-            GatherLite:createMinimapNode(_GatherLite.nodes["herbalism"][key])
-            _GatherLite.nodes["herbalism"][key].loaded = true;
-        end
-
-        coroutine.yield()
-    end
+    createNodeThread("herbalism")
 end
 
 local function containerThread()
-
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-    local t = GatherLiteTracker:ClosestNodes("containers", x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
-
-    for key, node in pairs(t) do
-        if not _GatherLite.nodes["containers"][key].loaded then
-            GatherLite:createMinimapNode(_GatherLite.nodes["containers"][key])
-            _GatherLite.nodes["containers"][key].loaded = true;
-        end
-
-        coroutine.yield()
-    end
+    createNodeThread("containers")
 end
 
 local function fishingThread()
-
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-    local t = GatherLiteTracker:ClosestNodes("fishing", x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
-
-    for key, node in pairs(t) do
-        if not _GatherLite.nodes["fishing"][key].loaded then
-            GatherLite:createMinimapNode(_GatherLite.nodes["fishing"][key])
-            _GatherLite.nodes["fishing"][key].loaded = true;
-        end
-
-        coroutine.yield()
-    end
+    createNodeThread("fishing")
 end
 
 local function minimapIconThread()
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
-    for key, iframe in pairs(GFrame.usedFrames) do
+    local i = 0;
+    local i2 = 0
+
+    local tableCount = GatherLite:tablelength(GFrame.usedFrames);
+    for key, iframe in ipairs(GFrame.usedFrames) do
         local frame = GFrame.usedFrames[key]
 
         if frame.type == "minimap" and frame.node.loaded then
@@ -195,7 +182,7 @@ local function minimapIconThread()
                 return
             end
 
-            if distance >= GatherLite.db.char.minimap.range then
+            if distance >= 200 then
                 frame.node.loaded = false;
                 frame:Unload();
                 return
@@ -207,19 +194,29 @@ local function minimapIconThread()
                 return
             end
 
-            if frame.node.type ~= "containers" and frame.node.type ~= "fishing" then
-                if distance < GatherLite.db.char.minimap.distance and frame:IsVisible() then
-                    frame:FakeHide();
-                elseif distance >= GatherLite.db.char.minimap.distance and not frame:IsVisible() then
-                    frame:FakeShow();
-                end
+            if distance < GatherLite.db.char.minimap.distance and frame:IsVisible() then
+                frame:FakeHide();
+            elseif distance >= GatherLite.db.char.minimap.distance and not frame:IsVisible() then
+                frame:FakeShow();
             end
 
         elseif frame.type == "minimap" and not frame.node.loaded then
             frame.node.loaded = false;
             frame:Unload();
         end
-        coroutine.yield()
+
+        i = i + 1
+        i2 = i2 + 1
+
+        --GatherLite:print(i, i2, tableCount)
+
+        if (i < tableCount) then
+            if (i2 == 15) then
+                coroutine.yield()
+                i2 = 0
+            end
+        end
+
     end
 end
 
@@ -232,6 +229,10 @@ local threadIcon = coroutine.create(minimapIconThread)
 
 function GatherLiteTracker:Minimap(timeDelta, force)
 
+    if not GatherLite:isLoaded() then
+        return
+    end
+
     local updateIcons = false
     local updateNodes = false
 
@@ -241,7 +242,7 @@ function GatherLiteTracker:Minimap(timeDelta, force)
 
         threadMining = coroutine.create(miningThread)
         threadHerbalism = coroutine.create(herbalismThread)
-        threadContainer = coroutine.create(herbalismThread)
+        threadContainer = coroutine.create(containerThread)
         threadFishing = coroutine.create(fishingThread)
 
         threadIcon = coroutine.create(minimapIconThread)
@@ -251,10 +252,7 @@ function GatherLiteTracker:Minimap(timeDelta, force)
         if (checkDiff > 5) then
             updateNodes = true
             checkDiff = 0
-            updateIcons = true
-            timeDiff = 0
-
-        elseif (timeDiff > 0.5) then
+        elseif (timeDiff > 1) then
             updateIcons = true
             timeDiff = 0
         end
@@ -294,6 +292,11 @@ function GatherLiteTracker:Minimap(timeDelta, force)
 end
 
 function GatherLiteTracker:Worldmap()
+
+    if not GatherLite:isLoaded() then
+        return
+    end
+
     GatherLite:forEach(GFrame.usedFrames, function(frame)
         if frame.type == "worldmap" and frame.node.loadedWorldmap then
             frame.node.loadedWorldmap = false;
@@ -325,6 +328,10 @@ function GatherLiteTracker:Worldmap()
 end
 
 function GatherLiteTracker:OnUpdate(timeDelta)
+    if not GatherLite:isLoaded() then
+        return
+    end
+
     if _GatherLite.WorldmapOpen and not worldmapOpen then
         worldmapOpen = true;
     elseif not _GatherLite.WorldmapOpen and worldmapOpen then

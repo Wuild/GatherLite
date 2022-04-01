@@ -155,10 +155,10 @@ function getExpansion(exp = "vanilla", data = {}) {
                             break;
                     }
 
-                    if (!fs.existsSync(path.resolve(__dirname, '..', 'data')))
-                        fs.mkdirSync(path.resolve(__dirname, '..', 'data'));
+                    if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'db')))
+                        fs.mkdirSync(path.resolve(__dirname, '..', '..', 'db'));
 
-                    fs.writeFileSync(path.resolve(__dirname, '..', 'data', `${type}.lua`), out, {
+                    fs.writeFileSync(path.resolve(__dirname, '..', '..', 'db', `${type}.lua`), out, {
                         encoding: 'utf8',
                         flag: 'w'
                     });
