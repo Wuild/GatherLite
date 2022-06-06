@@ -4,6 +4,7 @@ local Pins = LibStub("HereBeDragons-Pins-2.0");
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
 local GFrame = LibStub("GatherLiteFrame");
 local Semver = LibStub("Semver");
+local Throttler = LibStub("Throttler");
 
 local tracker = {
     nodeID = nil,
@@ -261,6 +262,10 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
                 link = item.link
             })
         else
+            if node.loot[exists].count == nil then
+                node.loot[exists].count = 0;
+            end
+
             node.loot[exists].count = node.loot[exists].count + item.count;
         end
     end
@@ -277,8 +282,12 @@ end
 
 function GatherLite:EventHandler(event, ...)
 
-    if event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED" then
+    if event == "PLAYER_LOGIN" then
         --GatherLite:ResetMinimap()
+
+        GatherLite:SendVersionCheck()
+        GatherLite:Load();
+
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then
             if (IsInInstance()) then
@@ -597,117 +606,48 @@ end
 
 local function loadDatabase(type)
     GatherLite:forEach(GatherLite.db.global.nodes[type], function(node)
-        node.type = type;
-        node.coins = 0
-        node.loot = {}
-        node.predefined = false;
-        node.loaded = false;
 
-        local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-        node.instance = instance;
-        table.insert(_GatherLite.nodes[type], node)
+        --local localNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
+        local existingNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
+
+        if existingNode then
+            existingNode.loot = node.loot;
+            existingNode.coins = node.coins;
+            existingNode.lastvisit = node.lastvisit;
+        else
+            GatherLite:print("Local node not found")
+            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            node.predefined = false;
+            node.loaded = false;
+            node.instance = instance;
+            table.insert(_GatherLite.nodes[type], node)
+        end
+        
     end);
 end
-
-local function LoadTable(type, data)
-    if data then
-
-        --local tableCount = GatherLite:tablelength(data);
-
-        --local i = 0;
-        --local i2 = 0
-
-        GatherLite:forEach(data, function(node)
-            local localNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
-            local existingNode = GatherLite:findExistingNode(type, node.mapID, node.posX, node.posY);
-            if not localNode and not existingNode then
-                node.type = type;
-                node.coins = 0
-                node.loot = {}
-                node.predefined = true
-                node.loaded = false;
-
-                local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-                node.instance = instance;
-
-                table.insert(_GatherLite.nodes[type], node)
-            end
-
-            --i = i + 1
-            --i2 = i2 + 1
-            --
-            --if (i < tableCount) then
-            --    if (i2 == 50) then
-            --        coroutine.yield()
-            --        i2 = 0
-            --    end
-            --else
-
-            --    GatherLite:ResetMinimap();
-            --    GatherLite:ResetWorldmap();
-            --end
-        end)
-        GatherLite:print("Loaded", type, "nodes")
-    end
-end
-
-local tableMiningThread
-local tableHerbThread
-local tableContainerThread
-local tableFishingThread
 
 local isLoaded = false;
 
 function GatherLite:isLoaded()
-    --if coroutine.status(tableMiningThread) == "dead" and coroutine.status(tableHerbThread) == "dead" and coroutine.status(tableContainerThread) == "dead" and coroutine.status(tableFishingThread) == "dead" then
-    --    return true
-    --end
-    --
-    --return false
-    
     return isLoaded;
 end
 
 function GatherLite:Load()
 
+
+    if GatherLite.db.global.usePredefined then
+        GatherLite:print("Loading predefined database, this may cause the game to lag for a few seconds!")
+
+        _GatherLite.nodes["mining"] = GatherLite_localOreNodes
+        _GatherLite.nodes["herbalism"] = GatherLite_localHerbNodes
+        _GatherLite.nodes["containers"] = GatherLite_localContainerNodes
+        _GatherLite.nodes["fishing"] = GatherLite_localFishingNodes
+    end
+
     loadDatabase("mining");
     loadDatabase("herbalism");
     loadDatabase("containers");
     loadDatabase("fishing");
-
-    if GatherLite.db.global.usePredefined then
-
-        GatherLite:print("Loading predefined database, this may cause the game to lag for a few seconds!")
-
-        --tableMiningThread = coroutine.create(function()
-        --    GatherLite:print("Loading mining nodes!")
-        --    LoadTable("mining", GatherLite_localOreNodes)
-        --end)
-        --coroutine.resume(tableMiningThread);
-        --
-        --tableHerbThread = coroutine.create(function()
-        --    GatherLite:print("Loading herbalism nodes!")
-        --    LoadTable("herbalism", GatherLite_localHerbNodes);
-        --end)
-        --coroutine.resume(tableHerbThread);
-        --
-        --tableContainerThread = coroutine.create(function()
-        --    GatherLite:print("Loading container nodes!")
-        --    LoadTable("containers", GatherLite_localContainerNodes);
-        --end)
-        --coroutine.resume(tableHerbThread);
-        --
-        --tableFishingThread = coroutine.create(function()
-        --    GatherLite:print("Loading fishing nodes!")
-        --    LoadTable("fishing", GatherLite_localFishingNodes);
-        --end)
-        --coroutine.resume(tableHerbThread);
-
-        LoadTable("mining", GatherLite_localOreNodes)
-        LoadTable("herbalism", GatherLite_localHerbNodes);
-        LoadTable("containers", GatherLite_localContainerNodes);
-        LoadTable("fishing", GatherLite_localFishingNodes);
-    end
 
     GatherLite:ResetMinimap();
     GatherLite:ResetWorldmap();
@@ -728,11 +668,6 @@ function GatherLite:Load()
     end);
 
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
-        --coroutine.resume(tableMiningThread);
-        --coroutine.resume(tableHerbThread);
-        --coroutine.resume(tableContainerThread);
-        --coroutine.resume(tableFishingThread);
-
         if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = true;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap")

@@ -1,3 +1,5 @@
+const zoneData = require("./zoneData");
+
 const idChanges = {
     3724: 1618,
     3725: 1617,
@@ -193,6 +195,17 @@ const ZoneDataClassic = {
     4080: 'Isle of Quel\'Danas',
 };
 
+function MapID2Instance(mapID) {
+
+    for (let i = 0; i < zoneData.zones.length; i++) {
+        if (parseInt(zoneData.zones[i].id) === parseInt(mapID)) {
+            return "" + zoneData.zones[i].category + "";
+        }
+    }
+
+    return "nil";
+}
+
 function ConvertMapID2UIMapID(old) {
     if (!ZoneDataClassic[old])
         return null;
@@ -217,5 +230,6 @@ module.exports = {
     ZoneData,
     ZoneDataClassic,
     ConvertMapID2UIMapID,
-    CheckIDS
+    CheckIDS,
+    MapID2Instance
 }

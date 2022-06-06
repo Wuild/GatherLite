@@ -6,7 +6,7 @@ const jsdom = require("jsdom");
 const {VirtualConsole} = require("jsdom");
 const {JSDOM} = jsdom;
 
-const {CheckIDS, ConvertMapID2UIMapID} = require("./lib/zones")
+const {CheckIDS, ConvertMapID2UIMapID, MapID2Instance} = require("./lib/zones")
 const {Objects2Lua} = require("./lib/lua");
 
 function node(type, object, incoming) {
@@ -18,10 +18,15 @@ function node(type, object, incoming) {
                 data.push({
                     type: type,
                     object: CheckIDS(object),
+                    predefined: true,
+                    loot: [],
+                    coins: "0",
                     mapID: mapId,
                     posX: parseFloat((incoming[id][0]["coords"][coord][0] / 100).toFixed(3)),
                     posY: parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3)),
+                    instance: MapID2Instance(id)
                 });
+            
         }
     }
     return data;
@@ -111,72 +116,68 @@ function CheckDistance(x, y, mapID, object, rows, unique) {
 
 
 function getExpansion(exp = "vanilla", data = {}) {
-    console.log(data);
-    return new Promise((resolve) => {
-        let objects = [];
-        for (const type in data) {
-            objects.push(new Promise(res => {
-                console.log("Downloading", type)
+    let objects = [];
+    for (const type in data) {
+        objects.push(new Promise(res => {
+            console.log("Downloading", type)
 
-                GetData(data, type, type === "fishing" ? "twinstar" : undefined).then(rows => {
-                    console.log(type, "data complete")
-                    let nodes = [];
+            GetData(data, type, type === "fishing" ? "twinstar" : undefined).then(rows => {
 
-                    for (const arr in rows) {
-                        // nodes = nodes.concat(rows[arr]);
+                let nodes = [];
 
-                        for (let i = 0; i < rows[arr].length; i++) {
-                            // console.log(rows[arr][i]);
-                            let row = rows[arr][i];
-                            if (row !== undefined) {
+                for (const arr in rows) {
+                    // nodes = nodes.concat(rows[arr]);
+
+                    for (let i = 0; i < rows[arr].length; i++) {
+                        // console.log(rows[arr][i]);
+                        let row = rows[arr][i];
+                        if (row !== undefined) {
+                            row.type = type;
+                            nodes.push(row)
+                            if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
                                 nodes.push(row)
-                                if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
-                                    nodes.push(row)
-                                }
                             }
                         }
                     }
+                }
 
-                    let out = "";
-                    switch (type) {
-                        case "containers":
-                            out = Objects2Lua({GatherLite_localContainerNodes: nodes});
-                            break;
-                        case "mining":
-                            out = Objects2Lua({GatherLite_localOreNodes: nodes});
-                            break;
+                let out = "";
+                switch (type) {
+                    case "containers":
+                        out = Objects2Lua({GatherLite_localContainerNodes: nodes});
+                        break;
+                    case "mining":
+                        out = Objects2Lua({GatherLite_localOreNodes: nodes});
+                        break;
 
-                        case "herbalism":
-                            out = Objects2Lua({GatherLite_localHerbNodes: nodes});
-                            break;
+                    case "herbalism":
+                        out = Objects2Lua({GatherLite_localHerbNodes: nodes});
+                        break;
 
-                        case "fishing":
-                            out = Objects2Lua({GatherLite_localFishingNodes: nodes});
-                            break;
-                    }
+                    case "fishing":
+                        out = Objects2Lua({GatherLite_localFishingNodes: nodes});
+                        break;
+                }
 
-                    if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db')))
-                        fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db'));
+                if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db')))
+                    fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db'));
 
-                    fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', `${type}.lua`), out, {
-                        encoding: 'utf8',
-                        flag: 'w'
-                    });
-                    res();
-                })
-            }));
-        }
+                fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', `${type}.lua`), out, {
+                    encoding: 'utf8',
+                    flag: 'w'
+                });
+                console.log(type, "data complete")
+                res();
+            })
+        }));
+    }
 
-        Promise.all(objects).then(() => {
-            console.log("All data downloaded!")
-            resolve();
-        })
-    });
+    Promise.all(objects).then(() => {
+        console.log("All data downloaded!")
+    })
 }
 
 const vanilla = require("./objects");
 
 
-getExpansion("vanilla", vanilla).then(() => {
-    console.log("complete")
-});
+getExpansion("vanilla", vanilla)

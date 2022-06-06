@@ -70,7 +70,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("UNIT_SPELLCAST_FAILED", "EventHandler")
     GatherLite:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED", "EventHandler")
     GatherLite:RegisterEvent("LOOT_OPENED", "EventHandler")
-    GatherLite:RegisterEvent("PLAYER_ENTERING_WORLD", "EventHandler")
+    GatherLite:RegisterEvent("PLAYER_LOGIN", "EventHandler")
     GatherLite:RegisterEvent("ZONE_CHANGED", "EventHandler")
 
     hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
@@ -85,9 +85,6 @@ function GatherLite:OnInitialize()
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
-
-    GatherLite:SendVersionCheck()
-    GatherLite:Load();
 end
 
 function GatherLite.ModifyTooltip()
