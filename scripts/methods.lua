@@ -4,7 +4,6 @@ local Pins = LibStub("HereBeDragons-Pins-2.0");
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
 local GFrame = LibStub("GatherLiteFrame");
 local Semver = LibStub("Semver");
-local Throttler = LibStub("Throttler");
 
 local tracker = {
     nodeID = nil,
@@ -615,7 +614,6 @@ local function loadDatabase(type)
             existingNode.coins = node.coins;
             existingNode.lastvisit = node.lastvisit;
         else
-            GatherLite:print("Local node not found")
             local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
             node.predefined = false;
             node.loaded = false;
