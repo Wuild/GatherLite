@@ -409,7 +409,7 @@ const outland = [{
     "territory": 2,
     "popularity": 597
 }, {
-    "category": 530,
+    "category": 0,
     "expansion": 1,
     "id": 3433,
     "maxlevel": 20,
@@ -418,7 +418,7 @@ const outland = [{
     "territory": 1,
     "popularity": 345
 }, {
-    "category": 530,
+    "category": 0,
     "expansion": 1,
     "id": 3430,
     "maxlevel": 10,
@@ -427,7 +427,7 @@ const outland = [{
     "territory": 1,
     "popularity": 323
 }, {
-    "category": 530,
+    "category": 1,
     "expansion": 1,
     "id": 3525,
     "maxlevel": 19,
@@ -436,7 +436,7 @@ const outland = [{
     "territory": 0,
     "popularity": 282
 }, {
-    "category": 530,
+    "category": 1,
     "expansion": 1,
     "id": 3524,
     "maxlevel": 10,

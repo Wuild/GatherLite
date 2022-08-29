@@ -1412,7 +1412,7 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1436,
 		["posX"] = 0.531,
-		["posY"] = 0.622,
+		["posY"] = 0.624,
 		["instance"] = 0,
 	},
 	[118] = {
@@ -1484,10 +1484,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1436,
 		["posX"] = 0.565,
-		["posY"] = 0.192,
+		["posY"] = 0.135,
 		["instance"] = 0,
 	},
 	[124] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1436,
+		["posX"] = 0.565,
+		["posY"] = 0.192,
+		["instance"] = 0,
+	},
+	[125] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1499,7 +1511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.583,
 		["instance"] = 0,
 	},
-	[125] = {
+	[126] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1511,18 +1523,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.502,
 		["instance"] = 0,
 	},
-	[126] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1421,
-		["posX"] = 0.364,
-		["posY"] = 0.293,
-		["instance"] = 0,
-	},
 	[127] = {
 		["type"] = "containers",
 		["object"] = 106319,
@@ -1531,7 +1531,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1421,
-		["posX"] = 0.365,
+		["posX"] = 0.364,
 		["posY"] = 0.293,
 		["instance"] = 0,
 	},
@@ -1543,8 +1543,8 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1421,
-		["posX"] = 0.435,
-		["posY"] = 0.225,
+		["posX"] = 0.365,
+		["posY"] = 0.293,
 		["instance"] = 0,
 	},
 	[129] = {
@@ -1556,7 +1556,7 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.435,
-		["posY"] = 0.317,
+		["posY"] = 0.225,
 		["instance"] = 0,
 	},
 	[130] = {
@@ -1567,8 +1567,8 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1421,
-		["posX"] = 0.441,
-		["posY"] = 0.218,
+		["posX"] = 0.435,
+		["posY"] = 0.317,
 		["instance"] = 0,
 	},
 	[131] = {
@@ -1580,7 +1580,7 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.441,
-		["posY"] = 0.717,
+		["posY"] = 0.218,
 		["instance"] = 0,
 	},
 	[132] = {
@@ -1591,8 +1591,8 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1421,
-		["posX"] = 0.447,
-		["posY"] = 0.204,
+		["posX"] = 0.441,
+		["posY"] = 0.717,
 		["instance"] = 0,
 	},
 	[133] = {
@@ -1604,7 +1604,7 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.447,
-		["posY"] = 0.205,
+		["posY"] = 0.204,
 		["instance"] = 0,
 	},
 	[134] = {
@@ -1616,10 +1616,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.447,
-		["posY"] = 0.24,
+		["posY"] = 0.205,
 		["instance"] = 0,
 	},
 	[135] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.447,
+		["posY"] = 0.24,
+		["instance"] = 0,
+	},
+	[136] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1631,7 +1643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.234,
 		["instance"] = 0,
 	},
-	[136] = {
+	[137] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1643,7 +1655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.75,
 		["instance"] = 0,
 	},
-	[137] = {
+	[138] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1653,18 +1665,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1421,
 		["posX"] = 0.454,
 		["posY"] = 0.542,
-		["instance"] = 0,
-	},
-	[138] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1421,
-		["posX"] = 0.46,
-		["posY"] = 0.714,
 		["instance"] = 0,
 	},
 	[139] = {
@@ -1676,10 +1676,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.46,
-		["posY"] = 0.716,
+		["posY"] = 0.714,
 		["instance"] = 0,
 	},
 	[140] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.46,
+		["posY"] = 0.716,
+		["instance"] = 0,
+	},
+	[141] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1691,7 +1703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.548,
 		["instance"] = 0,
 	},
-	[141] = {
+	[142] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1703,7 +1715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.738,
 		["instance"] = 0,
 	},
-	[142] = {
+	[143] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1713,18 +1725,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1421,
 		["posX"] = 0.477,
 		["posY"] = 0.555,
-		["instance"] = 0,
-	},
-	[143] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1421,
-		["posX"] = 0.483,
-		["posY"] = 0.244,
 		["instance"] = 0,
 	},
 	[144] = {
@@ -1736,10 +1736,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.483,
-		["posY"] = 0.245,
+		["posY"] = 0.244,
 		["instance"] = 0,
 	},
 	[145] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.483,
+		["posY"] = 0.245,
+		["instance"] = 0,
+	},
+	[146] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1751,7 +1763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.283,
 		["instance"] = 0,
 	},
-	[146] = {
+	[147] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1763,7 +1775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 0,
 	},
-	[147] = {
+	[148] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1775,7 +1787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.244,
 		["instance"] = 0,
 	},
-	[148] = {
+	[149] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1785,18 +1797,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1421,
 		["posX"] = 0.536,
 		["posY"] = 0.245,
-		["instance"] = 0,
-	},
-	[149] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1421,
-		["posX"] = 0.545,
-		["posY"] = 0.344,
 		["instance"] = 0,
 	},
 	[150] = {
@@ -1808,10 +1808,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.545,
-		["posY"] = 0.346,
+		["posY"] = 0.344,
 		["instance"] = 0,
 	},
 	[151] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.545,
+		["posY"] = 0.346,
+		["instance"] = 0,
+	},
+	[152] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1823,7 +1835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.196,
 		["instance"] = 0,
 	},
-	[152] = {
+	[153] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1835,7 +1847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.274,
 		["instance"] = 0,
 	},
-	[153] = {
+	[154] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1847,7 +1859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.276,
 		["instance"] = 0,
 	},
-	[154] = {
+	[155] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1857,18 +1869,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1421,
 		["posX"] = 0.591,
 		["posY"] = 0.181,
-		["instance"] = 0,
-	},
-	[155] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1421,
-		["posX"] = 0.599,
-		["posY"] = 0.174,
 		["instance"] = 0,
 	},
 	[156] = {
@@ -1880,10 +1880,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1421,
 		["posX"] = 0.599,
-		["posY"] = 0.175,
+		["posY"] = 0.174,
 		["instance"] = 0,
 	},
 	[157] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.599,
+		["posY"] = 0.175,
+		["instance"] = 0,
+	},
+	[158] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1895,7 +1907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.163,
 		["instance"] = 0,
 	},
-	[158] = {
+	[159] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1907,7 +1919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.121,
 		["instance"] = 0,
 	},
-	[159] = {
+	[160] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1919,7 +1931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.13,
 		["instance"] = 0,
 	},
-	[160] = {
+	[161] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1931,7 +1943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.274,
 		["instance"] = 1,
 	},
-	[161] = {
+	[162] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1943,7 +1955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.783,
 		["instance"] = 1,
 	},
-	[162] = {
+	[163] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1955,7 +1967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.582,
 		["instance"] = 1,
 	},
-	[163] = {
+	[164] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -1967,18 +1979,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.312,
 		["instance"] = 1,
 	},
-	[164] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.424,
-		["posY"] = 0.62,
-		["instance"] = 1,
-	},
 	[165] = {
 		["type"] = "containers",
 		["object"] = 106319,
@@ -1987,7 +1987,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1439,
-		["posX"] = 0.425,
+		["posX"] = 0.424,
 		["posY"] = 0.62,
 		["instance"] = 1,
 	},
@@ -1999,11 +1999,23 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1439,
+		["posX"] = 0.425,
+		["posY"] = 0.62,
+		["instance"] = 1,
+	},
+	[167] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
 		["posX"] = 0.43,
 		["posY"] = 0.587,
 		["instance"] = 1,
 	},
-	[167] = {
+	[168] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2015,7 +2027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.373,
 		["instance"] = 1,
 	},
-	[168] = {
+	[169] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2027,7 +2039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.377,
 		["instance"] = 1,
 	},
-	[169] = {
+	[170] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2039,7 +2051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.37,
 		["instance"] = 1,
 	},
-	[170] = {
+	[171] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2051,7 +2063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 1,
 	},
-	[171] = {
+	[172] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2063,7 +2075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[172] = {
+	[173] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2075,7 +2087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.256,
 		["instance"] = 1,
 	},
-	[173] = {
+	[174] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2087,7 +2099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.369,
 		["instance"] = 1,
 	},
-	[174] = {
+	[175] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2097,18 +2109,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1439,
 		["posX"] = 0.555,
 		["posY"] = 0.362,
-		["instance"] = 1,
-	},
-	[175] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.556,
-		["posY"] = 0.344,
 		["instance"] = 1,
 	},
 	[176] = {
@@ -2120,10 +2120,22 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1439,
 		["posX"] = 0.556,
-		["posY"] = 0.345,
+		["posY"] = 0.344,
 		["instance"] = 1,
 	},
 	[177] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.556,
+		["posY"] = 0.345,
+		["instance"] = 1,
+	},
+	[178] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2135,7 +2147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.351,
 		["instance"] = 1,
 	},
-	[178] = {
+	[179] = {
 		["type"] = "containers",
 		["object"] = 106319,
 		["predefined"] = True,
@@ -2145,19 +2157,7 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.124,
 		["posY"] = 0.568,
-		["instance"] = 530,
-	},
-	[179] = {
-		["type"] = "containers",
-		["object"] = 106319,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1942,
-		["posX"] = 0.126,
-		["posY"] = 0.571,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
 	[180] = {
 		["type"] = "containers",
@@ -2167,9 +2167,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.134,
-		["posY"] = 0.58,
-		["instance"] = 530,
+		["posX"] = 0.126,
+		["posY"] = 0.571,
+		["instance"] = 0,
 	},
 	[181] = {
 		["type"] = "containers",
@@ -2179,9 +2179,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.137,
-		["posY"] = 0.551,
-		["instance"] = 530,
+		["posX"] = 0.134,
+		["posY"] = 0.58,
+		["instance"] = 0,
 	},
 	[182] = {
 		["type"] = "containers",
@@ -2191,9 +2191,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.173,
-		["posY"] = 0.432,
-		["instance"] = 530,
+		["posX"] = 0.137,
+		["posY"] = 0.551,
+		["instance"] = 0,
 	},
 	[183] = {
 		["type"] = "containers",
@@ -2203,9 +2203,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.175,
-		["posY"] = 0.491,
-		["instance"] = 530,
+		["posX"] = 0.173,
+		["posY"] = 0.432,
+		["instance"] = 0,
 	},
 	[184] = {
 		["type"] = "containers",
@@ -2215,9 +2215,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.204,
-		["posY"] = 0.42,
-		["instance"] = 530,
+		["posX"] = 0.175,
+		["posY"] = 0.492,
+		["instance"] = 0,
 	},
 	[185] = {
 		["type"] = "containers",
@@ -2227,9 +2227,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.205,
-		["posY"] = 0.487,
-		["instance"] = 530,
+		["posX"] = 0.204,
+		["posY"] = 0.42,
+		["instance"] = 0,
 	},
 	[186] = {
 		["type"] = "containers",
@@ -2239,9 +2239,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.247,
-		["posY"] = 0.128,
-		["instance"] = 530,
+		["posX"] = 0.205,
+		["posY"] = 0.487,
+		["instance"] = 0,
 	},
 	[187] = {
 		["type"] = "containers",
@@ -2251,9 +2251,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.276,
-		["posY"] = 0.512,
-		["instance"] = 530,
+		["posX"] = 0.247,
+		["posY"] = 0.128,
+		["instance"] = 0,
 	},
 	[188] = {
 		["type"] = "containers",
@@ -2263,9 +2263,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.285,
-		["posY"] = 0.463,
-		["instance"] = 530,
+		["posX"] = 0.276,
+		["posY"] = 0.512,
+		["instance"] = 0,
 	},
 	[189] = {
 		["type"] = "containers",
@@ -2275,9 +2275,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.291,
-		["posY"] = 0.506,
-		["instance"] = 530,
+		["posX"] = 0.285,
+		["posY"] = 0.463,
+		["instance"] = 0,
 	},
 	[190] = {
 		["type"] = "containers",
@@ -2287,9 +2287,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.295,
-		["posY"] = 0.16,
-		["instance"] = 530,
+		["posX"] = 0.291,
+		["posY"] = 0.506,
+		["instance"] = 0,
 	},
 	[191] = {
 		["type"] = "containers",
@@ -2299,9 +2299,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.305,
-		["posY"] = 0.45,
-		["instance"] = 530,
+		["posX"] = 0.295,
+		["posY"] = 0.16,
+		["instance"] = 0,
 	},
 	[192] = {
 		["type"] = "containers",
@@ -2311,9 +2311,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.565,
-		["posY"] = 0.279,
-		["instance"] = 530,
+		["posX"] = 0.305,
+		["posY"] = 0.451,
+		["instance"] = 0,
 	},
 	[193] = {
 		["type"] = "containers",
@@ -2323,9 +2323,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.605,
-		["posY"] = 0.305,
-		["instance"] = 530,
+		["posX"] = 0.565,
+		["posY"] = 0.279,
+		["instance"] = 0,
 	},
 	[194] = {
 		["type"] = "containers",
@@ -2335,9 +2335,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.644,
-		["posY"] = 0.304,
-		["instance"] = 530,
+		["posX"] = 0.604,
+		["posY"] = 0.305,
+		["instance"] = 0,
 	},
 	[195] = {
 		["type"] = "containers",
@@ -2347,11 +2347,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.665,
-		["posY"] = 0.29,
-		["instance"] = 530,
+		["posX"] = 0.605,
+		["posY"] = 0.305,
+		["instance"] = 0,
 	},
 	[196] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1942,
+		["posX"] = 0.644,
+		["posY"] = 0.303,
+		["instance"] = 0,
+	},
+	[197] = {
+		["type"] = "containers",
+		["object"] = 106319,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1942,
+		["posX"] = 0.665,
+		["posY"] = 0.29,
+		["instance"] = 0,
+	},
+	[198] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2363,7 +2387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.766,
 		["instance"] = 0,
 	},
-	[197] = {
+	[199] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2375,7 +2399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.8,
 		["instance"] = 0,
 	},
-	[198] = {
+	[200] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2387,7 +2411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.795,
 		["instance"] = 0,
 	},
-	[199] = {
+	[201] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2399,7 +2423,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.807,
 		["instance"] = 0,
 	},
-	[200] = {
+	[202] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2411,7 +2435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.815,
 		["instance"] = 0,
 	},
-	[201] = {
+	[203] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2423,7 +2447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.815,
 		["instance"] = 0,
 	},
-	[202] = {
+	[204] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2435,7 +2459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.806,
 		["instance"] = 0,
 	},
-	[203] = {
+	[205] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2447,7 +2471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.794,
 		["instance"] = 0,
 	},
-	[204] = {
+	[206] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2459,7 +2483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.795,
 		["instance"] = 0,
 	},
-	[205] = {
+	[207] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2471,7 +2495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.283,
 		["instance"] = 0,
 	},
-	[206] = {
+	[208] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2483,7 +2507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.266,
 		["instance"] = 0,
 	},
-	[207] = {
+	[209] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2495,7 +2519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.519,
 		["instance"] = 0,
 	},
-	[208] = {
+	[210] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2507,7 +2531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.518,
 		["instance"] = 0,
 	},
-	[209] = {
+	[211] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2519,7 +2543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.474,
 		["instance"] = 0,
 	},
-	[210] = {
+	[212] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2531,7 +2555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.475,
 		["instance"] = 0,
 	},
-	[211] = {
+	[213] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2543,7 +2567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.44,
 		["instance"] = 0,
 	},
-	[212] = {
+	[214] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2555,7 +2579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.484,
 		["instance"] = 0,
 	},
-	[213] = {
+	[215] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2567,7 +2591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 0,
 	},
-	[214] = {
+	[216] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2579,7 +2603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.583,
 		["instance"] = 0,
 	},
-	[215] = {
+	[217] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2591,7 +2615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.596,
 		["instance"] = 0,
 	},
-	[216] = {
+	[218] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2603,7 +2627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.603,
 		["instance"] = 0,
 	},
-	[217] = {
+	[219] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2615,7 +2639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.622,
 		["instance"] = 0,
 	},
-	[218] = {
+	[220] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2627,7 +2651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.643,
 		["instance"] = 0,
 	},
-	[219] = {
+	[221] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2639,7 +2663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.623,
 		["instance"] = 0,
 	},
-	[220] = {
+	[222] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2651,7 +2675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.622,
 		["instance"] = 0,
 	},
-	[221] = {
+	[223] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2663,7 +2687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.68,
 		["instance"] = 0,
 	},
-	[222] = {
+	[224] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2675,7 +2699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.391,
 		["instance"] = 1,
 	},
-	[223] = {
+	[225] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2687,7 +2711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.396,
 		["instance"] = 1,
 	},
-	[224] = {
+	[226] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2699,7 +2723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.443,
 		["instance"] = 1,
 	},
-	[225] = {
+	[227] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2711,7 +2735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 1,
 	},
-	[226] = {
+	[228] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2723,7 +2747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.462,
 		["instance"] = 1,
 	},
-	[227] = {
+	[229] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2735,7 +2759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.258,
 		["instance"] = 1,
 	},
-	[228] = {
+	[230] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2747,7 +2771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.298,
 		["instance"] = 1,
 	},
-	[229] = {
+	[231] = {
 		["type"] = "containers",
 		["object"] = 2843,
 		["predefined"] = True,
@@ -2759,7 +2783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.271,
 		["instance"] = 1,
 	},
-	[230] = {
+	[232] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2771,7 +2795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.52,
 		["instance"] = 0,
 	},
-	[231] = {
+	[233] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2783,7 +2807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.52,
 		["instance"] = 0,
 	},
-	[232] = {
+	[234] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2795,7 +2819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.542,
 		["instance"] = 0,
 	},
-	[233] = {
+	[235] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2807,7 +2831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.525,
 		["instance"] = 0,
 	},
-	[234] = {
+	[236] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2819,7 +2843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.524,
 		["instance"] = 0,
 	},
-	[235] = {
+	[237] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2831,7 +2855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.512,
 		["instance"] = 0,
 	},
-	[236] = {
+	[238] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2843,7 +2867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.412,
 		["instance"] = 0,
 	},
-	[237] = {
+	[239] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2855,7 +2879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 0,
 	},
-	[238] = {
+	[240] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2867,7 +2891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[239] = {
+	[241] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2879,7 +2903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.511,
 		["instance"] = 0,
 	},
-	[240] = {
+	[242] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2891,7 +2915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.401,
 		["instance"] = 0,
 	},
-	[241] = {
+	[243] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2903,7 +2927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.433,
 		["instance"] = 0,
 	},
-	[242] = {
+	[244] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2915,7 +2939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 0,
 	},
-	[243] = {
+	[245] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2927,7 +2951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.48,
 		["instance"] = 0,
 	},
-	[244] = {
+	[246] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -2939,30 +2963,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.489,
 		["instance"] = 0,
 	},
-	[245] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1426,
-		["posX"] = 0.414,
-		["posY"] = 0.444,
-		["instance"] = 0,
-	},
-	[246] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1426,
-		["posX"] = 0.414,
-		["posY"] = 0.445,
-		["instance"] = 0,
-	},
 	[247] = {
 		["type"] = "containers",
 		["object"] = 106318,
@@ -2971,7 +2971,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1426,
-		["posX"] = 0.415,
+		["posX"] = 0.414,
 		["posY"] = 0.444,
 		["instance"] = 0,
 	},
@@ -2983,7 +2983,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1426,
-		["posX"] = 0.415,
+		["posX"] = 0.414,
 		["posY"] = 0.445,
 		["instance"] = 0,
 	},
@@ -2995,11 +2995,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1426,
+		["posX"] = 0.415,
+		["posY"] = 0.444,
+		["instance"] = 0,
+	},
+	[250] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1426,
+		["posX"] = 0.415,
+		["posY"] = 0.445,
+		["instance"] = 0,
+	},
+	[251] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1426,
 		["posX"] = 0.42,
 		["posY"] = 0.359,
 		["instance"] = 0,
 	},
-	[250] = {
+	[252] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3011,7 +3035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.471,
 		["instance"] = 0,
 	},
-	[251] = {
+	[253] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3023,7 +3047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.492,
 		["instance"] = 0,
 	},
-	[252] = {
+	[254] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3035,7 +3059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.596,
 		["instance"] = 0,
 	},
-	[253] = {
+	[255] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3047,7 +3071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.607,
 		["instance"] = 0,
 	},
-	[254] = {
+	[256] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3059,7 +3083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.594,
 		["instance"] = 0,
 	},
-	[255] = {
+	[257] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3071,7 +3095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.59,
 		["instance"] = 0,
 	},
-	[256] = {
+	[258] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3083,7 +3107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.504,
 		["instance"] = 0,
 	},
-	[257] = {
+	[259] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3095,7 +3119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.505,
 		["instance"] = 0,
 	},
-	[258] = {
+	[260] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3107,7 +3131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.518,
 		["instance"] = 0,
 	},
-	[259] = {
+	[261] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3119,7 +3143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.499,
 		["instance"] = 0,
 	},
-	[260] = {
+	[262] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3131,7 +3155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.534,
 		["instance"] = 0,
 	},
-	[261] = {
+	[263] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3143,7 +3167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.535,
 		["instance"] = 0,
 	},
-	[262] = {
+	[264] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3152,10 +3176,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1426,
 		["posX"] = 0.746,
-		["posY"] = 0.618,
+		["posY"] = 0.617,
 		["instance"] = 0,
 	},
-	[263] = {
+	[265] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3167,7 +3191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.564,
 		["instance"] = 0,
 	},
-	[264] = {
+	[266] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3179,7 +3203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.565,
 		["instance"] = 0,
 	},
-	[265] = {
+	[267] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3191,7 +3215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.581,
 		["instance"] = 0,
 	},
-	[266] = {
+	[268] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3203,7 +3227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.619,
 		["instance"] = 0,
 	},
-	[267] = {
+	[269] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3215,7 +3239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[268] = {
+	[270] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3227,7 +3251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 0,
 	},
-	[269] = {
+	[271] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3239,30 +3263,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 0,
 	},
-	[270] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.244,
-		["posY"] = 0.934,
-		["instance"] = 0,
-	},
-	[271] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.244,
-		["posY"] = 0.936,
-		["instance"] = 0,
-	},
 	[272] = {
 		["type"] = "containers",
 		["object"] = 106318,
@@ -3271,7 +3271,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1429,
-		["posX"] = 0.245,
+		["posX"] = 0.244,
 		["posY"] = 0.934,
 		["instance"] = 0,
 	},
@@ -3283,11 +3283,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1429,
+		["posX"] = 0.244,
+		["posY"] = 0.936,
+		["instance"] = 0,
+	},
+	[274] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
+		["posX"] = 0.245,
+		["posY"] = 0.934,
+		["instance"] = 0,
+	},
+	[275] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
 		["posX"] = 0.245,
 		["posY"] = 0.935,
 		["instance"] = 0,
 	},
-	[274] = {
+	[276] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3299,7 +3323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.92,
 		["instance"] = 0,
 	},
-	[275] = {
+	[277] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3311,7 +3335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.883,
 		["instance"] = 0,
 	},
-	[276] = {
+	[278] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3323,7 +3347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.885,
 		["instance"] = 0,
 	},
-	[277] = {
+	[279] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3335,7 +3359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.648,
 		["instance"] = 0,
 	},
-	[278] = {
+	[280] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3347,7 +3371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.658,
 		["instance"] = 0,
 	},
-	[279] = {
+	[281] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3359,7 +3383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.835,
 		["instance"] = 0,
 	},
-	[280] = {
+	[282] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3371,7 +3395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.833,
 		["instance"] = 0,
 	},
-	[281] = {
+	[283] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3383,7 +3407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.82,
 		["instance"] = 0,
 	},
-	[282] = {
+	[284] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3395,7 +3419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.774,
 		["instance"] = 0,
 	},
-	[283] = {
+	[285] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3407,7 +3431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.776,
 		["instance"] = 0,
 	},
-	[284] = {
+	[286] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3419,7 +3443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.776,
 		["instance"] = 0,
 	},
-	[285] = {
+	[287] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3429,30 +3453,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1429,
 		["posX"] = 0.416,
 		["posY"] = 0.528,
-		["instance"] = 0,
-	},
-	[286] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.418,
-		["posY"] = 0.78,
-		["instance"] = 0,
-	},
-	[287] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.418,
-		["posY"] = 0.814,
 		["instance"] = 0,
 	},
 	[288] = {
@@ -3464,10 +3464,34 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1429,
 		["posX"] = 0.418,
-		["posY"] = 0.815,
+		["posY"] = 0.78,
 		["instance"] = 0,
 	},
 	[289] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
+		["posX"] = 0.418,
+		["posY"] = 0.814,
+		["instance"] = 0,
+	},
+	[290] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
+		["posX"] = 0.418,
+		["posY"] = 0.815,
+		["instance"] = 0,
+	},
+	[291] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3479,7 +3503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.864,
 		["instance"] = 0,
 	},
-	[290] = {
+	[292] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3491,7 +3515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.871,
 		["instance"] = 0,
 	},
-	[291] = {
+	[293] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3503,7 +3527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.879,
 		["instance"] = 0,
 	},
-	[292] = {
+	[294] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3515,7 +3539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.59,
 		["instance"] = 0,
 	},
-	[293] = {
+	[295] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3527,7 +3551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.59,
 		["instance"] = 0,
 	},
-	[294] = {
+	[296] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3539,7 +3563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.667,
 		["instance"] = 0,
 	},
-	[295] = {
+	[297] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3551,7 +3575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.67,
 		["instance"] = 0,
 	},
-	[296] = {
+	[298] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3563,7 +3587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.668,
 		["instance"] = 0,
 	},
-	[297] = {
+	[299] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3575,7 +3599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.491,
 		["instance"] = 0,
 	},
-	[298] = {
+	[300] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3587,7 +3611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.497,
 		["instance"] = 0,
 	},
-	[299] = {
+	[301] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3595,11 +3619,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1429,
-		["posX"] = 0.616,
+		["posX"] = 0.617,
 		["posY"] = 0.468,
 		["instance"] = 0,
 	},
-	[300] = {
+	[302] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3611,7 +3635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.48,
 		["instance"] = 0,
 	},
-	[301] = {
+	[303] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3623,7 +3647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.573,
 		["instance"] = 0,
 	},
-	[302] = {
+	[304] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3635,7 +3659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.413,
 		["instance"] = 0,
 	},
-	[303] = {
+	[305] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3647,7 +3671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.563,
 		["instance"] = 0,
 	},
-	[304] = {
+	[306] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3659,7 +3683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.407,
 		["instance"] = 0,
 	},
-	[305] = {
+	[307] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3671,7 +3695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.447,
 		["instance"] = 0,
 	},
-	[306] = {
+	[308] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3683,7 +3707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.446,
 		["instance"] = 0,
 	},
-	[307] = {
+	[309] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3695,7 +3719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.388,
 		["instance"] = 0,
 	},
-	[308] = {
+	[310] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3707,7 +3731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.777,
 		["instance"] = 0,
 	},
-	[309] = {
+	[311] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3719,7 +3743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.801,
 		["instance"] = 0,
 	},
-	[310] = {
+	[312] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3731,7 +3755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.806,
 		["instance"] = 0,
 	},
-	[311] = {
+	[313] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3743,7 +3767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.767,
 		["instance"] = 0,
 	},
-	[312] = {
+	[314] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3755,7 +3779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.767,
 		["instance"] = 0,
 	},
-	[313] = {
+	[315] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3767,7 +3791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.5,
 		["instance"] = 0,
 	},
-	[314] = {
+	[316] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3779,7 +3803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.852,
 		["instance"] = 0,
 	},
-	[315] = {
+	[317] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3791,7 +3815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.852,
 		["instance"] = 0,
 	},
-	[316] = {
+	[318] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3803,30 +3827,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.856,
 		["instance"] = 0,
 	},
-	[317] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.764,
-		["posY"] = 0.865,
-		["instance"] = 0,
-	},
-	[318] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1429,
-		["posX"] = 0.765,
-		["posY"] = 0.863,
-		["instance"] = 0,
-	},
 	[319] = {
 		["type"] = "containers",
 		["object"] = 106318,
@@ -3835,7 +3835,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1429,
-		["posX"] = 0.765,
+		["posX"] = 0.764,
 		["posY"] = 0.865,
 		["instance"] = 0,
 	},
@@ -3847,11 +3847,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1429,
+		["posX"] = 0.765,
+		["posY"] = 0.863,
+		["instance"] = 0,
+	},
+	[321] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
+		["posX"] = 0.765,
+		["posY"] = 0.865,
+		["instance"] = 0,
+	},
+	[322] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1429,
 		["posX"] = 0.773,
 		["posY"] = 0.852,
 		["instance"] = 0,
 	},
-	[321] = {
+	[323] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3863,7 +3887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.574,
 		["instance"] = 0,
 	},
-	[322] = {
+	[324] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3875,7 +3899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.575,
 		["instance"] = 0,
 	},
-	[323] = {
+	[325] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3887,7 +3911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.571,
 		["instance"] = 0,
 	},
-	[324] = {
+	[326] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3899,7 +3923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 0,
 	},
-	[325] = {
+	[327] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3911,7 +3935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 0,
 	},
-	[326] = {
+	[328] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3923,7 +3947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.553,
 		["instance"] = 0,
 	},
-	[327] = {
+	[329] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3935,7 +3959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.538,
 		["instance"] = 1,
 	},
-	[328] = {
+	[330] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3947,7 +3971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 1,
 	},
-	[329] = {
+	[331] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3959,7 +3983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.305,
 		["instance"] = 1,
 	},
-	[330] = {
+	[332] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3971,7 +3995,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.271,
 		["instance"] = 1,
 	},
-	[331] = {
+	[333] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3983,7 +4007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.269,
 		["instance"] = 1,
 	},
-	[332] = {
+	[334] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -3995,7 +4019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.394,
 		["instance"] = 1,
 	},
-	[333] = {
+	[335] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4007,7 +4031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.356,
 		["instance"] = 1,
 	},
-	[334] = {
+	[336] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4019,7 +4043,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.507,
 		["instance"] = 1,
 	},
-	[335] = {
+	[337] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4031,7 +4055,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.392,
 		["instance"] = 1,
 	},
-	[336] = {
+	[338] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4043,7 +4067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.24,
 		["instance"] = 1,
 	},
-	[337] = {
+	[339] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4055,7 +4079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.503,
 		["instance"] = 1,
 	},
-	[338] = {
+	[340] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4067,7 +4091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.79,
 		["instance"] = 1,
 	},
-	[339] = {
+	[341] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4079,7 +4103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.498,
 		["instance"] = 1,
 	},
-	[340] = {
+	[342] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4091,7 +4115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.309,
 		["instance"] = 1,
 	},
-	[341] = {
+	[343] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4103,7 +4127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.31,
 		["instance"] = 1,
 	},
-	[342] = {
+	[344] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4115,7 +4139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.498,
 		["instance"] = 1,
 	},
-	[343] = {
+	[345] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4127,7 +4151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.333,
 		["instance"] = 1,
 	},
-	[344] = {
+	[346] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4139,7 +4163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.772,
 		["instance"] = 1,
 	},
-	[345] = {
+	[347] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4151,7 +4175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.487,
 		["instance"] = 1,
 	},
-	[346] = {
+	[348] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4163,7 +4187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.481,
 		["instance"] = 1,
 	},
-	[347] = {
+	[349] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4175,7 +4199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.243,
 		["instance"] = 1,
 	},
-	[348] = {
+	[350] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4187,7 +4211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.807,
 		["instance"] = 1,
 	},
-	[349] = {
+	[351] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4199,7 +4223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.259,
 		["instance"] = 1,
 	},
-	[350] = {
+	[352] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4211,7 +4235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.19,
 		["instance"] = 1,
 	},
-	[351] = {
+	[353] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4223,7 +4247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.236,
 		["instance"] = 1,
 	},
-	[352] = {
+	[354] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4235,30 +4259,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.21,
 		["instance"] = 1,
 	},
-	[353] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1411,
-		["posX"] = 0.514,
-		["posY"] = 0.098,
-		["instance"] = 1,
-	},
-	[354] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1411,
-		["posX"] = 0.514,
-		["posY"] = 0.108,
-		["instance"] = 1,
-	},
 	[355] = {
 		["type"] = "containers",
 		["object"] = 106318,
@@ -4267,7 +4267,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1411,
-		["posX"] = 0.515,
+		["posX"] = 0.514,
 		["posY"] = 0.098,
 		["instance"] = 1,
 	},
@@ -4279,7 +4279,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1411,
-		["posX"] = 0.515,
+		["posX"] = 0.514,
 		["posY"] = 0.108,
 		["instance"] = 1,
 	},
@@ -4291,11 +4291,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1411,
+		["posX"] = 0.515,
+		["posY"] = 0.098,
+		["instance"] = 1,
+	},
+	[358] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1411,
+		["posX"] = 0.515,
+		["posY"] = 0.108,
+		["instance"] = 1,
+	},
+	[359] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1411,
 		["posX"] = 0.519,
 		["posY"] = 0.2,
 		["instance"] = 1,
 	},
-	[358] = {
+	[360] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4307,7 +4331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.253,
 		["instance"] = 1,
 	},
-	[359] = {
+	[361] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4319,7 +4343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.092,
 		["instance"] = 1,
 	},
-	[360] = {
+	[362] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4331,7 +4355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.092,
 		["instance"] = 1,
 	},
-	[361] = {
+	[363] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4343,7 +4367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.264,
 		["instance"] = 1,
 	},
-	[362] = {
+	[364] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4355,7 +4379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.075,
 		["instance"] = 1,
 	},
-	[363] = {
+	[365] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4367,7 +4391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.074,
 		["instance"] = 1,
 	},
-	[364] = {
+	[366] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4379,7 +4403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.249,
 		["instance"] = 1,
 	},
-	[365] = {
+	[367] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4391,7 +4415,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.241,
 		["instance"] = 1,
 	},
-	[366] = {
+	[368] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4403,7 +4427,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.269,
 		["instance"] = 1,
 	},
-	[367] = {
+	[369] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4415,7 +4439,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.282,
 		["instance"] = 1,
 	},
-	[368] = {
+	[370] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4427,7 +4451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.222,
 		["instance"] = 1,
 	},
-	[369] = {
+	[371] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4439,7 +4463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 1,
 	},
-	[370] = {
+	[372] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4451,7 +4475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.581,
 		["instance"] = 1,
 	},
-	[371] = {
+	[373] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4463,7 +4487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.581,
 		["instance"] = 1,
 	},
-	[372] = {
+	[374] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4475,7 +4499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.563,
 		["instance"] = 1,
 	},
-	[373] = {
+	[375] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4485,30 +4509,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1411,
 		["posX"] = 0.599,
 		["posY"] = 0.589,
-		["instance"] = 1,
-	},
-	[374] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1411,
-		["posX"] = 0.618,
-		["posY"] = 0.454,
-		["instance"] = 1,
-	},
-	[375] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1411,
-		["posX"] = 0.618,
-		["posY"] = 0.455,
 		["instance"] = 1,
 	},
 	[376] = {
@@ -4520,10 +4520,34 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1411,
 		["posX"] = 0.618,
-		["posY"] = 0.511,
+		["posY"] = 0.454,
 		["instance"] = 1,
 	},
 	[377] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1411,
+		["posX"] = 0.618,
+		["posY"] = 0.455,
+		["instance"] = 1,
+	},
+	[378] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1411,
+		["posX"] = 0.618,
+		["posY"] = 0.511,
+		["instance"] = 1,
+	},
+	[379] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4535,7 +4559,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.559,
 		["instance"] = 1,
 	},
-	[378] = {
+	[380] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4547,7 +4571,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.422,
 		["instance"] = 1,
 	},
-	[379] = {
+	[381] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4559,7 +4583,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.606,
 		["instance"] = 1,
 	},
-	[380] = {
+	[382] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4571,7 +4595,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.421,
 		["instance"] = 1,
 	},
-	[381] = {
+	[383] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4583,7 +4607,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.605,
 		["instance"] = 1,
 	},
-	[382] = {
+	[384] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4595,7 +4619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.568,
 		["instance"] = 1,
 	},
-	[383] = {
+	[385] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4607,7 +4631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.504,
 		["instance"] = 1,
 	},
-	[384] = {
+	[386] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4619,7 +4643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.505,
 		["instance"] = 1,
 	},
-	[385] = {
+	[387] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4631,7 +4655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.531,
 		["instance"] = 1,
 	},
-	[386] = {
+	[388] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4643,7 +4667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.531,
 		["instance"] = 1,
 	},
-	[387] = {
+	[389] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4655,7 +4679,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.832,
 		["instance"] = 1,
 	},
-	[388] = {
+	[390] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4667,7 +4691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.833,
 		["instance"] = 1,
 	},
-	[389] = {
+	[391] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4679,7 +4703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.867,
 		["instance"] = 1,
 	},
-	[390] = {
+	[392] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4691,7 +4715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.851,
 		["instance"] = 1,
 	},
-	[391] = {
+	[393] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4703,7 +4727,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.714,
 		["instance"] = 1,
 	},
-	[392] = {
+	[394] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4715,7 +4739,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.715,
 		["instance"] = 1,
 	},
-	[393] = {
+	[395] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4727,7 +4751,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.487,
 		["instance"] = 0,
 	},
-	[394] = {
+	[396] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4739,7 +4763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.461,
 		["instance"] = 0,
 	},
-	[395] = {
+	[397] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4751,7 +4775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.41,
 		["instance"] = 0,
 	},
-	[396] = {
+	[398] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4763,7 +4787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.497,
 		["instance"] = 0,
 	},
-	[397] = {
+	[399] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4775,7 +4799,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.336,
 		["instance"] = 0,
 	},
-	[398] = {
+	[400] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4787,7 +4811,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.357,
 		["instance"] = 0,
 	},
-	[399] = {
+	[401] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4799,7 +4823,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.428,
 		["instance"] = 0,
 	},
-	[400] = {
+	[402] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4811,7 +4835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.674,
 		["instance"] = 0,
 	},
-	[401] = {
+	[403] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4823,7 +4847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.675,
 		["instance"] = 0,
 	},
-	[402] = {
+	[404] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4835,7 +4859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.26,
 		["instance"] = 0,
 	},
-	[403] = {
+	[405] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4847,7 +4871,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.421,
 		["instance"] = 0,
 	},
-	[404] = {
+	[406] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4859,7 +4883,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.329,
 		["instance"] = 0,
 	},
-	[405] = {
+	[407] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4871,7 +4895,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.307,
 		["instance"] = 0,
 	},
-	[406] = {
+	[408] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4883,7 +4907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[407] = {
+	[409] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4895,7 +4919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.258,
 		["instance"] = 0,
 	},
-	[408] = {
+	[410] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4907,7 +4931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.598,
 		["instance"] = 0,
 	},
-	[409] = {
+	[411] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4919,7 +4943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.558,
 		["instance"] = 0,
 	},
-	[410] = {
+	[412] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4931,7 +4955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.559,
 		["instance"] = 0,
 	},
-	[411] = {
+	[413] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4943,7 +4967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.317,
 		["instance"] = 1,
 	},
-	[412] = {
+	[414] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4955,7 +4979,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 1,
 	},
-	[413] = {
+	[415] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4967,7 +4991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.286,
 		["instance"] = 1,
 	},
-	[414] = {
+	[416] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4979,7 +5003,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.284,
 		["instance"] = 1,
 	},
-	[415] = {
+	[417] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -4989,30 +5013,6 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1438,
 		["posX"] = 0.339,
 		["posY"] = 0.356,
-		["instance"] = 1,
-	},
-	[416] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1438,
-		["posX"] = 0.342,
-		["posY"] = 0.282,
-		["instance"] = 1,
-	},
-	[417] = {
-		["type"] = "containers",
-		["object"] = 106318,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1438,
-		["posX"] = 0.342,
-		["posY"] = 0.343,
 		["instance"] = 1,
 	},
 	[418] = {
@@ -5024,10 +5024,34 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1438,
 		["posX"] = 0.342,
-		["posY"] = 0.345,
+		["posY"] = 0.282,
 		["instance"] = 1,
 	},
 	[419] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1438,
+		["posX"] = 0.342,
+		["posY"] = 0.343,
+		["instance"] = 1,
+	},
+	[420] = {
+		["type"] = "containers",
+		["object"] = 106318,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1438,
+		["posX"] = 0.342,
+		["posY"] = 0.345,
+		["instance"] = 1,
+	},
+	[421] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5039,7 +5063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.348,
 		["instance"] = 1,
 	},
-	[420] = {
+	[422] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5051,7 +5075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.388,
 		["instance"] = 1,
 	},
-	[421] = {
+	[423] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5063,7 +5087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.277,
 		["instance"] = 1,
 	},
-	[422] = {
+	[424] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5075,7 +5099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.379,
 		["instance"] = 1,
 	},
-	[423] = {
+	[425] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5087,7 +5111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.429,
 		["instance"] = 1,
 	},
-	[424] = {
+	[426] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5099,7 +5123,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[425] = {
+	[427] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5111,7 +5135,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 1,
 	},
-	[426] = {
+	[428] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5123,7 +5147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.613,
 		["instance"] = 1,
 	},
-	[427] = {
+	[429] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5135,7 +5159,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.599,
 		["instance"] = 1,
 	},
-	[428] = {
+	[430] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5147,7 +5171,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.619,
 		["instance"] = 1,
 	},
-	[429] = {
+	[431] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5159,7 +5183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.604,
 		["instance"] = 1,
 	},
-	[430] = {
+	[432] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5171,7 +5195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.605,
 		["instance"] = 1,
 	},
-	[431] = {
+	[433] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5183,7 +5207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.626,
 		["instance"] = 1,
 	},
-	[432] = {
+	[434] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5195,7 +5219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 1,
 	},
-	[433] = {
+	[435] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5207,7 +5231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.779,
 		["instance"] = 1,
 	},
-	[434] = {
+	[436] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5216,10 +5240,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1438,
 		["posX"] = 0.479,
-		["posY"] = 0.779,
+		["posY"] = 0.78,
 		["instance"] = 1,
 	},
-	[435] = {
+	[437] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5231,7 +5255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.63,
 		["instance"] = 1,
 	},
-	[436] = {
+	[438] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5243,7 +5267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.5,
 		["instance"] = 1,
 	},
-	[437] = {
+	[439] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5255,7 +5279,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 1,
 	},
-	[438] = {
+	[440] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5267,7 +5291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.513,
 		["instance"] = 1,
 	},
-	[439] = {
+	[441] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5279,7 +5303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.502,
 		["instance"] = 1,
 	},
-	[440] = {
+	[442] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5291,7 +5315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.756,
 		["instance"] = 1,
 	},
-	[441] = {
+	[443] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5303,7 +5327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.648,
 		["instance"] = 1,
 	},
-	[442] = {
+	[444] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5315,7 +5339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.635,
 		["instance"] = 1,
 	},
-	[443] = {
+	[445] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5327,7 +5351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.519,
 		["instance"] = 1,
 	},
-	[444] = {
+	[446] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5339,7 +5363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.532,
 		["instance"] = 1,
 	},
-	[445] = {
+	[447] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5351,7 +5375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.212,
 		["instance"] = 1,
 	},
-	[446] = {
+	[448] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5363,7 +5387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.212,
 		["instance"] = 1,
 	},
-	[447] = {
+	[449] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5375,7 +5399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.234,
 		["instance"] = 1,
 	},
-	[448] = {
+	[450] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5387,7 +5411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 1,
 	},
-	[449] = {
+	[451] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5399,7 +5423,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.259,
 		["instance"] = 1,
 	},
-	[450] = {
+	[452] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5411,7 +5435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.229,
 		["instance"] = 1,
 	},
-	[451] = {
+	[453] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5423,7 +5447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.608,
 		["instance"] = 1,
 	},
-	[452] = {
+	[454] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5435,7 +5459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.618,
 		["instance"] = 1,
 	},
-	[453] = {
+	[455] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5447,7 +5471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.634,
 		["instance"] = 1,
 	},
-	[454] = {
+	[456] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5459,7 +5483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.42,
 		["instance"] = 1,
 	},
-	[455] = {
+	[457] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5471,7 +5495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.42,
 		["instance"] = 1,
 	},
-	[456] = {
+	[458] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5483,7 +5507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.427,
 		["instance"] = 1,
 	},
-	[457] = {
+	[459] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5495,7 +5519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 1,
 	},
-	[458] = {
+	[460] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5507,7 +5531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 1,
 	},
-	[459] = {
+	[461] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5519,7 +5543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.473,
 		["instance"] = 1,
 	},
-	[460] = {
+	[462] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5531,7 +5555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.475,
 		["instance"] = 1,
 	},
-	[461] = {
+	[463] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5543,7 +5567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.622,
 		["instance"] = 1,
 	},
-	[462] = {
+	[464] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5555,7 +5579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 1,
 	},
-	[463] = {
+	[465] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5567,7 +5591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 1,
 	},
-	[464] = {
+	[466] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5579,7 +5603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.112,
 		["instance"] = 1,
 	},
-	[465] = {
+	[467] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5591,7 +5615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.129,
 		["instance"] = 1,
 	},
-	[466] = {
+	[468] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5603,7 +5627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.104,
 		["instance"] = 1,
 	},
-	[467] = {
+	[469] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5615,7 +5639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.105,
 		["instance"] = 1,
 	},
-	[468] = {
+	[470] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5627,7 +5651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.079,
 		["instance"] = 1,
 	},
-	[469] = {
+	[471] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5639,7 +5663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.152,
 		["instance"] = 1,
 	},
-	[470] = {
+	[472] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5651,7 +5675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.161,
 		["instance"] = 1,
 	},
-	[471] = {
+	[473] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5663,7 +5687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.724,
 		["instance"] = 1,
 	},
-	[472] = {
+	[474] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5675,7 +5699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.722,
 		["instance"] = 1,
 	},
-	[473] = {
+	[475] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5687,7 +5711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.093,
 		["instance"] = 1,
 	},
-	[474] = {
+	[476] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5699,7 +5723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.481,
 		["instance"] = 1,
 	},
-	[475] = {
+	[477] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5711,7 +5735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.731,
 		["instance"] = 1,
 	},
-	[476] = {
+	[478] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5723,7 +5747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.732,
 		["instance"] = 1,
 	},
-	[477] = {
+	[479] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5735,7 +5759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.484,
 		["instance"] = 1,
 	},
-	[478] = {
+	[480] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5747,7 +5771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 1,
 	},
-	[479] = {
+	[481] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5759,7 +5783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.161,
 		["instance"] = 1,
 	},
-	[480] = {
+	[482] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5771,7 +5795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.114,
 		["instance"] = 1,
 	},
-	[481] = {
+	[483] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5783,7 +5807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.115,
 		["instance"] = 1,
 	},
-	[482] = {
+	[484] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5795,7 +5819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.148,
 		["instance"] = 1,
 	},
-	[483] = {
+	[485] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5807,7 +5831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.481,
 		["instance"] = 1,
 	},
-	[484] = {
+	[486] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5819,7 +5843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.379,
 		["instance"] = 1,
 	},
-	[485] = {
+	[487] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5831,7 +5855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.473,
 		["instance"] = 1,
 	},
-	[486] = {
+	[488] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5843,7 +5867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.383,
 		["instance"] = 1,
 	},
-	[487] = {
+	[489] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5855,7 +5879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.714,
 		["instance"] = 1,
 	},
-	[488] = {
+	[490] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5867,7 +5891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.715,
 		["instance"] = 1,
 	},
-	[489] = {
+	[491] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5879,7 +5903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.411,
 		["instance"] = 1,
 	},
-	[490] = {
+	[492] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5891,7 +5915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[491] = {
+	[493] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5903,7 +5927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.692,
 		["instance"] = 1,
 	},
-	[492] = {
+	[494] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5915,7 +5939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.409,
 		["instance"] = 1,
 	},
-	[493] = {
+	[495] = {
 		["type"] = "containers",
 		["object"] = 106318,
 		["predefined"] = True,
@@ -5927,7 +5951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.686,
 		["instance"] = 1,
 	},
-	[494] = {
+	[496] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5939,7 +5963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.163,
 		["instance"] = 1,
 	},
-	[495] = {
+	[497] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5951,7 +5975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.131,
 		["instance"] = 1,
 	},
-	[496] = {
+	[498] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5963,7 +5987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.119,
 		["instance"] = 1,
 	},
-	[497] = {
+	[499] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5975,7 +5999,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.16,
 		["instance"] = 1,
 	},
-	[498] = {
+	[500] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5987,7 +6011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.551,
 		["instance"] = 1,
 	},
-	[499] = {
+	[501] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -5999,7 +6023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.483,
 		["instance"] = 1,
 	},
-	[500] = {
+	[502] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6011,7 +6035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.522,
 		["instance"] = 1,
 	},
-	[501] = {
+	[503] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6023,7 +6047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.514,
 		["instance"] = 1,
 	},
-	[502] = {
+	[504] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6035,7 +6059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.543,
 		["instance"] = 1,
 	},
-	[503] = {
+	[505] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6047,7 +6071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.536,
 		["instance"] = 1,
 	},
-	[504] = {
+	[506] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6059,7 +6083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.575,
 		["instance"] = 1,
 	},
-	[505] = {
+	[507] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6071,7 +6095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.549,
 		["instance"] = 1,
 	},
-	[506] = {
+	[508] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6083,7 +6107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.523,
 		["instance"] = 1,
 	},
-	[507] = {
+	[509] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6095,7 +6119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.54,
 		["instance"] = 1,
 	},
-	[508] = {
+	[510] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6107,7 +6131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.028,
 		["instance"] = 1,
 	},
-	[509] = {
+	[511] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6119,7 +6143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.035,
 		["instance"] = 1,
 	},
-	[510] = {
+	[512] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6131,7 +6155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.052,
 		["instance"] = 1,
 	},
-	[511] = {
+	[513] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6143,7 +6167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.042,
 		["instance"] = 1,
 	},
-	[512] = {
+	[514] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6155,7 +6179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.136,
 		["instance"] = 0,
 	},
-	[513] = {
+	[515] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6167,7 +6191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.659,
 		["instance"] = 0,
 	},
-	[514] = {
+	[516] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6176,10 +6200,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1432,
 		["posX"] = 0.683,
-		["posY"] = 0.186,
+		["posY"] = 0.185,
 		["instance"] = 0,
 	},
-	[515] = {
+	[517] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6191,7 +6215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 0,
 	},
-	[516] = {
+	[518] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6203,7 +6227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 0,
 	},
-	[517] = {
+	[519] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6215,7 +6239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.228,
 		["instance"] = 0,
 	},
-	[518] = {
+	[520] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6227,7 +6251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.663,
 		["instance"] = 0,
 	},
-	[519] = {
+	[521] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6239,7 +6263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.644,
 		["instance"] = 0,
 	},
-	[520] = {
+	[522] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6251,7 +6275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.645,
 		["instance"] = 0,
 	},
-	[521] = {
+	[523] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6263,7 +6287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 0,
 	},
-	[522] = {
+	[524] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6275,7 +6299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.145,
 		["instance"] = 0,
 	},
-	[523] = {
+	[525] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6287,7 +6311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.144,
 		["instance"] = 0,
 	},
-	[524] = {
+	[526] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6299,7 +6323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.183,
 		["instance"] = 0,
 	},
-	[525] = {
+	[527] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6311,7 +6335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.185,
 		["instance"] = 0,
 	},
-	[526] = {
+	[528] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6323,7 +6347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.161,
 		["instance"] = 0,
 	},
-	[527] = {
+	[529] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6335,7 +6359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.857,
 		["instance"] = 0,
 	},
-	[528] = {
+	[530] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6347,7 +6371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.828,
 		["instance"] = 0,
 	},
-	[529] = {
+	[531] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6359,7 +6383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.789,
 		["instance"] = 0,
 	},
-	[530] = {
+	[532] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6371,30 +6395,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.744,
 		["instance"] = 0,
 	},
-	[531] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1436,
-		["posX"] = 0.563,
-		["posY"] = 0.745,
-		["instance"] = 0,
-	},
-	[532] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1436,
-		["posX"] = 0.565,
-		["posY"] = 0.699,
-		["instance"] = 0,
-	},
 	[533] = {
 		["type"] = "containers",
 		["object"] = 2849,
@@ -6403,7 +6403,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1436,
-		["posX"] = 0.606,
+		["posX"] = 0.563,
 		["posY"] = 0.745,
 		["instance"] = 0,
 	},
@@ -6415,11 +6415,35 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1436,
+		["posX"] = 0.565,
+		["posY"] = 0.699,
+		["instance"] = 0,
+	},
+	[535] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1436,
 		["posX"] = 0.607,
 		["posY"] = 0.743,
 		["instance"] = 0,
 	},
-	[535] = {
+	[536] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1436,
+		["posX"] = 0.607,
+		["posY"] = 0.745,
+		["instance"] = 0,
+	},
+	[537] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6431,7 +6455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.702,
 		["instance"] = 0,
 	},
-	[536] = {
+	[538] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6443,7 +6467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.751,
 		["instance"] = 0,
 	},
-	[537] = {
+	[539] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6455,7 +6479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.617,
 		["instance"] = 0,
 	},
-	[538] = {
+	[540] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6467,7 +6491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.617,
 		["instance"] = 0,
 	},
-	[539] = {
+	[541] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6479,7 +6503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.643,
 		["instance"] = 0,
 	},
-	[540] = {
+	[542] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6491,7 +6515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.637,
 		["instance"] = 0,
 	},
-	[541] = {
+	[543] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6503,7 +6527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.634,
 		["instance"] = 0,
 	},
-	[542] = {
+	[544] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6515,7 +6539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.18,
 		["instance"] = 0,
 	},
-	[543] = {
+	[545] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6527,7 +6551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.214,
 		["instance"] = 0,
 	},
-	[544] = {
+	[546] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6539,7 +6563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.215,
 		["instance"] = 0,
 	},
-	[545] = {
+	[547] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6551,7 +6575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.139,
 		["instance"] = 0,
 	},
-	[546] = {
+	[548] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6563,7 +6587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.14,
 		["instance"] = 0,
 	},
-	[547] = {
+	[549] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6575,7 +6599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.362,
 		["instance"] = 0,
 	},
-	[548] = {
+	[550] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6587,7 +6611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.191,
 		["instance"] = 0,
 	},
-	[549] = {
+	[551] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6599,7 +6623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.195,
 		["instance"] = 0,
 	},
-	[550] = {
+	[552] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6611,7 +6635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[551] = {
+	[553] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6623,7 +6647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[552] = {
+	[554] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6635,7 +6659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.215,
 		["instance"] = 0,
 	},
-	[553] = {
+	[555] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6647,7 +6671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.212,
 		["instance"] = 0,
 	},
-	[554] = {
+	[556] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6659,7 +6683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.285,
 		["instance"] = 0,
 	},
-	[555] = {
+	[557] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6671,7 +6695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.841,
 		["instance"] = 0,
 	},
-	[556] = {
+	[558] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6679,11 +6703,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1433,
-		["posX"] = 0.281,
+		["posX"] = 0.282,
 		["posY"] = 0.284,
 		["instance"] = 0,
 	},
-	[557] = {
+	[559] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6695,7 +6719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.844,
 		["instance"] = 0,
 	},
-	[558] = {
+	[560] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6707,7 +6731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.845,
 		["instance"] = 0,
 	},
-	[559] = {
+	[561] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6719,7 +6743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.83,
 		["instance"] = 0,
 	},
-	[560] = {
+	[562] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6731,7 +6755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.257,
 		["instance"] = 0,
 	},
-	[561] = {
+	[563] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6743,7 +6767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 0,
 	},
-	[562] = {
+	[564] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6755,7 +6779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.709,
 		["instance"] = 0,
 	},
-	[563] = {
+	[565] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6767,7 +6791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[564] = {
+	[566] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6779,7 +6803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[565] = {
+	[567] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6791,7 +6815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.708,
 		["instance"] = 0,
 	},
-	[566] = {
+	[568] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6803,7 +6827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.467,
 		["instance"] = 0,
 	},
-	[567] = {
+	[569] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6815,7 +6839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.467,
 		["instance"] = 0,
 	},
-	[568] = {
+	[570] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6827,7 +6851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.575,
 		["instance"] = 0,
 	},
-	[569] = {
+	[571] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6839,7 +6863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.573,
 		["instance"] = 0,
 	},
-	[570] = {
+	[572] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6851,7 +6875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.497,
 		["instance"] = 0,
 	},
-	[571] = {
+	[573] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6863,7 +6887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.42,
 		["instance"] = 0,
 	},
-	[572] = {
+	[574] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6875,7 +6899,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.232,
 		["instance"] = 0,
 	},
-	[573] = {
+	[575] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1421,
+		["posX"] = 0.656,
+		["posY"] = 0.234,
+		["instance"] = 0,
+	},
+	[576] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6887,7 +6923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 0,
 	},
-	[574] = {
+	[577] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6899,7 +6935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 0,
 	},
-	[575] = {
+	[578] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6911,7 +6947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.254,
 		["instance"] = 0,
 	},
-	[576] = {
+	[579] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6923,7 +6959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.254,
 		["instance"] = 0,
 	},
-	[577] = {
+	[580] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6935,7 +6971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.255,
 		["instance"] = 0,
 	},
-	[578] = {
+	[581] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6947,7 +6983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.242,
 		["instance"] = 0,
 	},
-	[579] = {
+	[582] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6955,11 +6991,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1421,
-		["posX"] = 0.776,
-		["posY"] = 0.31,
+		["posX"] = 0.783,
+		["posY"] = 0.308,
 		["instance"] = 0,
 	},
-	[580] = {
+	[583] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6971,7 +7007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.284,
 		["instance"] = 0,
 	},
-	[581] = {
+	[584] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6983,7 +7019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.848,
 		["instance"] = 1,
 	},
-	[582] = {
+	[585] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -6995,7 +7031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.865,
 		["instance"] = 1,
 	},
-	[583] = {
+	[586] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7007,7 +7043,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.293,
 		["instance"] = 1,
 	},
-	[584] = {
+	[587] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7019,7 +7055,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.867,
 		["instance"] = 1,
 	},
-	[585] = {
+	[588] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7031,7 +7067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.868,
 		["instance"] = 1,
 	},
-	[586] = {
+	[589] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7043,7 +7079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.868,
 		["instance"] = 1,
 	},
-	[587] = {
+	[590] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7055,7 +7091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.844,
 		["instance"] = 1,
 	},
-	[588] = {
+	[591] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7067,7 +7103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.845,
 		["instance"] = 1,
 	},
-	[589] = {
+	[592] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7079,7 +7115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.204,
 		["instance"] = 1,
 	},
-	[590] = {
+	[593] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7091,7 +7127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.85,
 		["instance"] = 1,
 	},
-	[591] = {
+	[594] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7103,7 +7139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.869,
 		["instance"] = 1,
 	},
-	[592] = {
+	[595] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7115,7 +7151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.262,
 		["instance"] = 1,
 	},
-	[593] = {
+	[596] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7127,7 +7163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.263,
 		["instance"] = 1,
 	},
-	[594] = {
+	[597] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7139,7 +7175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.224,
 		["instance"] = 1,
 	},
-	[595] = {
+	[598] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7151,7 +7187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.225,
 		["instance"] = 1,
 	},
-	[596] = {
+	[599] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7163,7 +7199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.2,
 		["instance"] = 1,
 	},
-	[597] = {
+	[600] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7175,7 +7211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.177,
 		["instance"] = 1,
 	},
-	[598] = {
+	[601] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7187,7 +7223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.074,
 		["instance"] = 1,
 	},
-	[599] = {
+	[602] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7199,7 +7235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.075,
 		["instance"] = 1,
 	},
-	[600] = {
+	[603] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7211,7 +7247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.158,
 		["instance"] = 1,
 	},
-	[601] = {
+	[604] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7223,7 +7259,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.184,
 		["instance"] = 1,
 	},
-	[602] = {
+	[605] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7235,7 +7271,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.185,
 		["instance"] = 1,
 	},
-	[603] = {
+	[606] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7247,7 +7283,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.223,
 		["instance"] = 1,
 	},
-	[604] = {
+	[607] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7259,7 +7295,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.224,
 		["instance"] = 1,
 	},
-	[605] = {
+	[608] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7271,7 +7307,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.193,
 		["instance"] = 1,
 	},
-	[606] = {
+	[609] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7283,7 +7319,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.216,
 		["instance"] = 1,
 	},
-	[607] = {
+	[610] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7295,7 +7331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.123,
 		["instance"] = 1,
 	},
-	[608] = {
+	[611] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7307,7 +7343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.226,
 		["instance"] = 1,
 	},
-	[609] = {
+	[612] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7319,7 +7355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.269,
 		["instance"] = 1,
 	},
-	[610] = {
+	[613] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7331,7 +7367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 1,
 	},
-	[611] = {
+	[614] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7343,7 +7379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.206,
 		["instance"] = 1,
 	},
-	[612] = {
+	[615] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7355,7 +7391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.316,
 		["instance"] = 1,
 	},
-	[613] = {
+	[616] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7367,7 +7403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.316,
 		["instance"] = 1,
 	},
-	[614] = {
+	[617] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7379,7 +7415,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 1,
 	},
-	[615] = {
+	[618] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7391,7 +7427,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 1,
 	},
-	[616] = {
+	[619] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7400,10 +7436,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1440,
 		["posX"] = 0.319,
-		["posY"] = 0.232,
+		["posY"] = 0.233,
 		["instance"] = 1,
 	},
-	[617] = {
+	[620] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7415,7 +7451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.312,
 		["instance"] = 1,
 	},
-	[618] = {
+	[621] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7427,7 +7463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.388,
 		["instance"] = 1,
 	},
-	[619] = {
+	[622] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7439,7 +7475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.46,
 		["instance"] = 1,
 	},
-	[620] = {
+	[623] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7451,7 +7487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.438,
 		["instance"] = 1,
 	},
-	[621] = {
+	[624] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7463,7 +7499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.358,
 		["instance"] = 1,
 	},
-	[622] = {
+	[625] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7475,7 +7511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.402,
 		["instance"] = 1,
 	},
-	[623] = {
+	[626] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7487,7 +7523,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.454,
 		["instance"] = 1,
 	},
-	[624] = {
+	[627] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7499,7 +7535,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 1,
 	},
-	[625] = {
+	[628] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7511,42 +7547,6 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.508,
 		["instance"] = 1,
 	},
-	[626] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1442,
-		["posX"] = 0.717,
-		["posY"] = 0.6,
-		["instance"] = 1,
-	},
-	[627] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1442,
-		["posX"] = 0.719,
-		["posY"] = 0.627,
-		["instance"] = 1,
-	},
-	[628] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1442,
-		["posX"] = 0.729,
-		["posY"] = 0.614,
-		["instance"] = 1,
-	},
 	[629] = {
 		["type"] = "containers",
 		["object"] = 2849,
@@ -7555,7 +7555,7 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1442,
-		["posX"] = 0.73,
+		["posX"] = 0.717,
 		["posY"] = 0.6,
 		["instance"] = 1,
 	},
@@ -7567,11 +7567,47 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1442,
+		["posX"] = 0.719,
+		["posY"] = 0.626,
+		["instance"] = 1,
+	},
+	[631] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1442,
+		["posX"] = 0.729,
+		["posY"] = 0.614,
+		["instance"] = 1,
+	},
+	[632] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1442,
+		["posX"] = 0.73,
+		["posY"] = 0.6,
+		["instance"] = 1,
+	},
+	[633] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1442,
 		["posX"] = 0.73,
 		["posY"] = 0.615,
 		["instance"] = 1,
 	},
-	[631] = {
+	[634] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7583,7 +7619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.628,
 		["instance"] = 1,
 	},
-	[632] = {
+	[635] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7595,7 +7631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.59,
 		["instance"] = 1,
 	},
-	[633] = {
+	[636] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7607,7 +7643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.856,
 		["instance"] = 1,
 	},
-	[634] = {
+	[637] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7619,7 +7655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.593,
 		["instance"] = 1,
 	},
-	[635] = {
+	[638] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7631,7 +7667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.915,
 		["instance"] = 1,
 	},
-	[636] = {
+	[639] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7643,7 +7679,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.894,
 		["instance"] = 1,
 	},
-	[637] = {
+	[640] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7655,7 +7691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.895,
 		["instance"] = 1,
 	},
-	[638] = {
+	[641] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7667,7 +7703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.842,
 		["instance"] = 1,
 	},
-	[639] = {
+	[642] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7677,43 +7713,7 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.642,
 		["posY"] = 0.731,
-		["instance"] = 530,
-	},
-	[640] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1942,
-		["posX"] = 0.649,
-		["posY"] = 0.664,
-		["instance"] = 530,
-	},
-	[641] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1942,
-		["posX"] = 0.649,
-		["posY"] = 0.665,
-		["instance"] = 530,
-	},
-	[642] = {
-		["type"] = "containers",
-		["object"] = 2849,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1942,
-		["posX"] = 0.679,
-		["posY"] = 0.574,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
 	[643] = {
 		["type"] = "containers",
@@ -7723,9 +7723,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.679,
-		["posY"] = 0.575,
-		["instance"] = 530,
+		["posX"] = 0.649,
+		["posY"] = 0.664,
+		["instance"] = 0,
 	},
 	[644] = {
 		["type"] = "containers",
@@ -7735,9 +7735,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.694,
-		["posY"] = 0.504,
-		["instance"] = 530,
+		["posX"] = 0.649,
+		["posY"] = 0.665,
+		["instance"] = 0,
 	},
 	[645] = {
 		["type"] = "containers",
@@ -7747,9 +7747,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.694,
-		["posY"] = 0.507,
-		["instance"] = 530,
+		["posX"] = 0.679,
+		["posY"] = 0.574,
+		["instance"] = 0,
 	},
 	[646] = {
 		["type"] = "containers",
@@ -7759,9 +7759,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.75,
-		["posY"] = 0.452,
-		["instance"] = 530,
+		["posX"] = 0.679,
+		["posY"] = 0.575,
+		["instance"] = 0,
 	},
 	[647] = {
 		["type"] = "containers",
@@ -7771,9 +7771,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.769,
-		["posY"] = 0.416,
-		["instance"] = 530,
+		["posX"] = 0.694,
+		["posY"] = 0.504,
+		["instance"] = 0,
 	},
 	[648] = {
 		["type"] = "containers",
@@ -7783,9 +7783,9 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.791,
-		["posY"] = 0.361,
-		["instance"] = 530,
+		["posX"] = 0.694,
+		["posY"] = 0.507,
+		["instance"] = 0,
 	},
 	[649] = {
 		["type"] = "containers",
@@ -7795,11 +7795,59 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1942,
-		["posX"] = 0.816,
-		["posY"] = 0.389,
-		["instance"] = 530,
+		["posX"] = 0.75,
+		["posY"] = 0.452,
+		["instance"] = 0,
 	},
 	[650] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1942,
+		["posX"] = 0.769,
+		["posY"] = 0.416,
+		["instance"] = 0,
+	},
+	[651] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1942,
+		["posX"] = 0.791,
+		["posY"] = 0.361,
+		["instance"] = 0,
+	},
+	[652] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1942,
+		["posX"] = 0.816,
+		["posY"] = 0.389,
+		["instance"] = 0,
+	},
+	[653] = {
+		["type"] = "containers",
+		["object"] = 2849,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1950,
+		["posX"] = 0.213,
+		["posY"] = 0.605,
+		["instance"] = 1,
+	},
+	[654] = {
 		["type"] = "containers",
 		["object"] = 2849,
 		["predefined"] = True,
@@ -7809,9 +7857,9 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1950,
 		["posX"] = 0.242,
 		["posY"] = 0.502,
-		["instance"] = 530,
+		["instance"] = 1,
 	},
-	[651] = {
+	[655] = {
 		["type"] = "containers",
 		["object"] = 75293,
 		["predefined"] = True,
@@ -7821,9 +7869,9 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.318,
 		["posY"] = 0.737,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
-	[652] = {
+	[656] = {
 		["type"] = "containers",
 		["object"] = 75293,
 		["predefined"] = True,
@@ -7833,9 +7881,9 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.323,
 		["posY"] = 0.905,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
-	[653] = {
+	[657] = {
 		["type"] = "containers",
 		["object"] = 75293,
 		["predefined"] = True,
@@ -7845,9 +7893,9 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.372,
 		["posY"] = 0.79,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
-	[654] = {
+	[658] = {
 		["type"] = "containers",
 		["object"] = 75293,
 		["predefined"] = True,
@@ -7857,9 +7905,21 @@ GatherLite_localContainerNodes = {
 		["mapID"] = 1942,
 		["posX"] = 0.416,
 		["posY"] = 0.829,
-		["instance"] = 530,
+		["instance"] = 0,
 	},
-	[655] = {
+	[659] = {
+		["type"] = "containers",
+		["object"] = 75293,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1950,
+		["posX"] = 0.183,
+		["posY"] = 0.548,
+		["instance"] = 1,
+	},
+	[660] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7871,7 +7931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.234,
 		["instance"] = 0,
 	},
-	[656] = {
+	[661] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7883,7 +7943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 0,
 	},
-	[657] = {
+	[662] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7895,7 +7955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.272,
 		["instance"] = 0,
 	},
-	[658] = {
+	[663] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7907,7 +7967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.297,
 		["instance"] = 0,
 	},
-	[659] = {
+	[664] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7919,7 +7979,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.291,
 		["instance"] = 0,
 	},
-	[660] = {
+	[665] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7931,7 +7991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.261,
 		["instance"] = 0,
 	},
-	[661] = {
+	[666] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7943,7 +8003,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.254,
 		["instance"] = 0,
 	},
-	[662] = {
+	[667] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7955,7 +8015,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.28,
 		["instance"] = 0,
 	},
-	[663] = {
+	[668] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7967,7 +8027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 0,
 	},
-	[664] = {
+	[669] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7979,7 +8039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.295,
 		["instance"] = 0,
 	},
-	[665] = {
+	[670] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -7991,7 +8051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.291,
 		["instance"] = 0,
 	},
-	[666] = {
+	[671] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8003,7 +8063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 0,
 	},
-	[667] = {
+	[672] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8015,7 +8075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.264,
 		["instance"] = 0,
 	},
-	[668] = {
+	[673] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8027,7 +8087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.275,
 		["instance"] = 0,
 	},
-	[669] = {
+	[674] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8039,7 +8099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.227,
 		["instance"] = 0,
 	},
-	[670] = {
+	[675] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8051,7 +8111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.241,
 		["instance"] = 0,
 	},
-	[671] = {
+	[676] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8063,7 +8123,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.306,
 		["instance"] = 0,
 	},
-	[672] = {
+	[677] = {
+		["type"] = "containers",
+		["object"] = 2744,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1434,
+		["posX"] = 0.255,
+		["posY"] = 0.306,
+		["instance"] = 0,
+	},
+	[678] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8075,7 +8147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.229,
 		["instance"] = 0,
 	},
-	[673] = {
+	[679] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8087,7 +8159,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.253,
 		["instance"] = 0,
 	},
-	[674] = {
+	[680] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8099,7 +8171,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.297,
 		["instance"] = 0,
 	},
-	[675] = {
+	[681] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8111,7 +8183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.237,
 		["instance"] = 0,
 	},
-	[676] = {
+	[682] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8123,7 +8195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.283,
 		["instance"] = 0,
 	},
-	[677] = {
+	[683] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8135,19 +8207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.294,
 		["instance"] = 0,
 	},
-	[678] = {
-		["type"] = "containers",
-		["object"] = 2744,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1434,
-		["posX"] = 0.261,
-		["posY"] = 0.306,
-		["instance"] = 0,
-	},
-	[679] = {
+	[684] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8159,7 +8219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.261,
 		["instance"] = 0,
 	},
-	[680] = {
+	[685] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8171,7 +8231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.271,
 		["instance"] = 0,
 	},
-	[681] = {
+	[686] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8183,7 +8243,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.294,
 		["instance"] = 0,
 	},
-	[682] = {
+	[687] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8195,7 +8255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.295,
 		["instance"] = 0,
 	},
-	[683] = {
+	[688] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8207,7 +8267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.245,
 		["instance"] = 0,
 	},
-	[684] = {
+	[689] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8219,7 +8279,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.308,
 		["instance"] = 0,
 	},
-	[685] = {
+	[690] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8231,7 +8291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.224,
 		["instance"] = 0,
 	},
-	[686] = {
+	[691] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8243,7 +8303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.265,
 		["instance"] = 0,
 	},
-	[687] = {
+	[692] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8255,7 +8315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.255,
 		["instance"] = 0,
 	},
-	[688] = {
+	[693] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8267,7 +8327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.234,
 		["instance"] = 0,
 	},
-	[689] = {
+	[694] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8279,7 +8339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.24,
 		["instance"] = 0,
 	},
-	[690] = {
+	[695] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8291,7 +8351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.279,
 		["instance"] = 0,
 	},
-	[691] = {
+	[696] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8303,7 +8363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.242,
 		["instance"] = 0,
 	},
-	[692] = {
+	[697] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8315,7 +8375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.256,
 		["instance"] = 0,
 	},
-	[693] = {
+	[698] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8327,7 +8387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.292,
 		["instance"] = 0,
 	},
-	[694] = {
+	[699] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8339,7 +8399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[695] = {
+	[700] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8351,7 +8411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.23,
 		["instance"] = 0,
 	},
-	[696] = {
+	[701] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8360,10 +8420,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1434,
 		["posX"] = 0.278,
-		["posY"] = 0.253,
+		["posY"] = 0.254,
 		["instance"] = 0,
 	},
-	[697] = {
+	[702] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8375,7 +8435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.277,
 		["instance"] = 0,
 	},
-	[698] = {
+	[703] = {
 		["type"] = "containers",
 		["object"] = 2744,
 		["predefined"] = True,
@@ -8387,7 +8447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.267,
 		["instance"] = 0,
 	},
-	[699] = {
+	[704] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8399,7 +8459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.49,
 		["instance"] = 0,
 	},
-	[700] = {
+	[705] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8411,7 +8471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.41,
 		["instance"] = 0,
 	},
-	[701] = {
+	[706] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8419,11 +8479,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1437,
-		["posX"] = 0.068,
+		["posX"] = 0.067,
 		["posY"] = 0.719,
 		["instance"] = 0,
 	},
-	[702] = {
+	[707] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8435,7 +8495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.466,
 		["instance"] = 0,
 	},
-	[703] = {
+	[708] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8447,7 +8507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.719,
 		["instance"] = 0,
 	},
-	[704] = {
+	[709] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8459,7 +8519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.26,
 		["instance"] = 0,
 	},
-	[705] = {
+	[710] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8471,7 +8531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.684,
 		["instance"] = 0,
 	},
-	[706] = {
+	[711] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8483,7 +8543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[707] = {
+	[712] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8495,7 +8555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.393,
 		["instance"] = 0,
 	},
-	[708] = {
+	[713] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8507,7 +8567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.3,
 		["instance"] = 0,
 	},
-	[709] = {
+	[714] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8519,7 +8579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.66,
 		["instance"] = 0,
 	},
-	[710] = {
+	[715] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8531,7 +8591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 0,
 	},
-	[711] = {
+	[716] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8543,7 +8603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.329,
 		["instance"] = 0,
 	},
-	[712] = {
+	[717] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8555,7 +8615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 0,
 	},
-	[713] = {
+	[718] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8567,7 +8627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.41,
 		["instance"] = 0,
 	},
-	[714] = {
+	[719] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8579,7 +8639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[715] = {
+	[720] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8591,7 +8651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.257,
 		["instance"] = 0,
 	},
-	[716] = {
+	[721] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8603,7 +8663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.307,
 		["instance"] = 0,
 	},
-	[717] = {
+	[722] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8615,7 +8675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.306,
 		["instance"] = 0,
 	},
-	[718] = {
+	[723] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8627,7 +8687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.632,
 		["instance"] = 0,
 	},
-	[719] = {
+	[724] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8639,7 +8699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.222,
 		["instance"] = 0,
 	},
-	[720] = {
+	[725] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8651,7 +8711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.265,
 		["instance"] = 0,
 	},
-	[721] = {
+	[726] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8660,10 +8720,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1437,
 		["posX"] = 0.154,
-		["posY"] = 0.607,
+		["posY"] = 0.606,
 		["instance"] = 0,
 	},
-	[722] = {
+	[727] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8675,7 +8735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.233,
 		["instance"] = 0,
 	},
-	[723] = {
+	[728] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8687,7 +8747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.197,
 		["instance"] = 0,
 	},
-	[724] = {
+	[729] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8699,7 +8759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 0,
 	},
-	[725] = {
+	[730] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8711,7 +8771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.181,
 		["instance"] = 0,
 	},
-	[726] = {
+	[731] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8723,7 +8783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.134,
 		["instance"] = 0,
 	},
-	[727] = {
+	[732] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8735,7 +8795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.134,
 		["instance"] = 0,
 	},
-	[728] = {
+	[733] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8747,7 +8807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.176,
 		["instance"] = 0,
 	},
-	[729] = {
+	[734] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8755,11 +8815,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1437,
-		["posX"] = 0.237,
-		["posY"] = 0.137,
+		["posX"] = 0.238,
+		["posY"] = 0.138,
 		["instance"] = 0,
 	},
-	[730] = {
+	[735] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8771,7 +8831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.13,
 		["instance"] = 0,
 	},
-	[731] = {
+	[736] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8783,7 +8843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.169,
 		["instance"] = 0,
 	},
-	[732] = {
+	[737] = {
 		["type"] = "containers",
 		["object"] = 19018,
 		["predefined"] = True,
@@ -8795,7 +8855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.169,
 		["instance"] = 0,
 	},
-	[733] = {
+	[738] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8807,7 +8867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.504,
 		["instance"] = 1,
 	},
-	[734] = {
+	[739] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8819,7 +8879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.542,
 		["instance"] = 1,
 	},
-	[735] = {
+	[740] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8831,7 +8891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.52,
 		["instance"] = 1,
 	},
-	[736] = {
+	[741] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8843,7 +8903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.405,
 		["instance"] = 1,
 	},
-	[737] = {
+	[742] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8855,7 +8915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.507,
 		["instance"] = 1,
 	},
-	[738] = {
+	[743] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8867,7 +8927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.382,
 		["instance"] = 1,
 	},
-	[739] = {
+	[744] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8879,7 +8939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.558,
 		["instance"] = 1,
 	},
-	[740] = {
+	[745] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8891,7 +8951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.405,
 		["instance"] = 1,
 	},
-	[741] = {
+	[746] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8903,7 +8963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.494,
 		["instance"] = 1,
 	},
-	[742] = {
+	[747] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8915,7 +8975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.422,
 		["instance"] = 1,
 	},
-	[743] = {
+	[748] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8927,7 +8987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.375,
 		["instance"] = 1,
 	},
-	[744] = {
+	[749] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8939,7 +8999,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.477,
 		["instance"] = 1,
 	},
-	[745] = {
+	[750] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8951,7 +9011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.375,
 		["instance"] = 1,
 	},
-	[746] = {
+	[751] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8963,7 +9023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.477,
 		["instance"] = 1,
 	},
-	[747] = {
+	[752] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8975,7 +9035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.458,
 		["instance"] = 1,
 	},
-	[748] = {
+	[753] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8987,7 +9047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.443,
 		["instance"] = 1,
 	},
-	[749] = {
+	[754] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -8999,7 +9059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.414,
 		["instance"] = 1,
 	},
-	[750] = {
+	[755] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9011,7 +9071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 1,
 	},
-	[751] = {
+	[756] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9023,7 +9083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.399,
 		["instance"] = 1,
 	},
-	[752] = {
+	[757] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9035,7 +9095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.377,
 		["instance"] = 0,
 	},
-	[753] = {
+	[758] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9047,7 +9107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 0,
 	},
-	[754] = {
+	[759] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9059,7 +9119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.935,
 		["instance"] = 0,
 	},
-	[755] = {
+	[760] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9071,7 +9131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 1,
 	},
-	[756] = {
+	[761] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9083,7 +9143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.499,
 		["instance"] = 1,
 	},
-	[757] = {
+	[762] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9095,7 +9155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.35,
 		["instance"] = 1,
 	},
-	[758] = {
+	[763] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9107,7 +9167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.409,
 		["instance"] = 1,
 	},
-	[759] = {
+	[764] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9119,7 +9179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 1,
 	},
-	[760] = {
+	[765] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9131,7 +9191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.489,
 		["instance"] = 1,
 	},
-	[761] = {
+	[766] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9143,7 +9203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[762] = {
+	[767] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9155,7 +9215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.381,
 		["instance"] = 1,
 	},
-	[763] = {
+	[768] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9167,7 +9227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.489,
 		["instance"] = 1,
 	},
-	[764] = {
+	[769] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9179,7 +9239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 1,
 	},
-	[765] = {
+	[770] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9191,7 +9251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.393,
 		["instance"] = 1,
 	},
-	[766] = {
+	[771] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9203,7 +9263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.321,
 		["instance"] = 1,
 	},
-	[767] = {
+	[772] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9215,7 +9275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.263,
 		["instance"] = 1,
 	},
-	[768] = {
+	[773] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9227,7 +9287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.129,
 		["instance"] = 1,
 	},
-	[769] = {
+	[774] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9239,7 +9299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.281,
 		["instance"] = 1,
 	},
-	[770] = {
+	[775] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9251,7 +9311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.174,
 		["instance"] = 1,
 	},
-	[771] = {
+	[776] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9263,7 +9323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.251,
 		["instance"] = 1,
 	},
-	[772] = {
+	[777] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9275,7 +9335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.3,
 		["instance"] = 1,
 	},
-	[773] = {
+	[778] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9287,7 +9347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.17,
 		["instance"] = 1,
 	},
-	[774] = {
+	[779] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9299,7 +9359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.209,
 		["instance"] = 1,
 	},
-	[775] = {
+	[780] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9311,7 +9371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.283,
 		["instance"] = 1,
 	},
-	[776] = {
+	[781] = {
 		["type"] = "containers",
 		["object"] = 19017,
 		["predefined"] = True,
@@ -9323,7 +9383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.255,
 		["instance"] = 1,
 	},
-	[777] = {
+	[782] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9335,7 +9395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.405,
 		["instance"] = 1,
 	},
-	[778] = {
+	[783] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9347,7 +9407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.404,
 		["instance"] = 1,
 	},
-	[779] = {
+	[784] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9359,7 +9419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.441,
 		["instance"] = 1,
 	},
-	[780] = {
+	[785] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9371,7 +9431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[781] = {
+	[786] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9383,7 +9443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[782] = {
+	[787] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9395,7 +9455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.389,
 		["instance"] = 1,
 	},
-	[783] = {
+	[788] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9407,7 +9467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.366,
 		["instance"] = 1,
 	},
-	[784] = {
+	[789] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9419,7 +9479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.411,
 		["instance"] = 1,
 	},
-	[785] = {
+	[790] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9431,7 +9491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.411,
 		["instance"] = 1,
 	},
-	[786] = {
+	[791] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9443,7 +9503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.374,
 		["instance"] = 1,
 	},
-	[787] = {
+	[792] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9455,7 +9515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.375,
 		["instance"] = 1,
 	},
-	[788] = {
+	[793] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9467,7 +9527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[789] = {
+	[794] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9479,7 +9539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.366,
 		["instance"] = 1,
 	},
-	[790] = {
+	[795] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9491,7 +9551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.262,
 		["instance"] = 1,
 	},
-	[791] = {
+	[796] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9503,7 +9563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.292,
 		["instance"] = 1,
 	},
-	[792] = {
+	[797] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9515,7 +9575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.343,
 		["instance"] = 1,
 	},
-	[793] = {
+	[798] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9527,7 +9587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.32,
 		["instance"] = 1,
 	},
-	[794] = {
+	[799] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9539,7 +9599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.343,
 		["instance"] = 1,
 	},
-	[795] = {
+	[800] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9551,7 +9611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.275,
 		["instance"] = 1,
 	},
-	[796] = {
+	[801] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9563,7 +9623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.244,
 		["instance"] = 1,
 	},
-	[797] = {
+	[802] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9575,7 +9635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 1,
 	},
-	[798] = {
+	[803] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9587,7 +9647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 1,
 	},
-	[799] = {
+	[804] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9599,7 +9659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.305,
 		["instance"] = 1,
 	},
-	[800] = {
+	[805] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9611,7 +9671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.254,
 		["instance"] = 1,
 	},
-	[801] = {
+	[806] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9623,7 +9683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.352,
 		["instance"] = 1,
 	},
-	[802] = {
+	[807] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9635,7 +9695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.284,
 		["instance"] = 1,
 	},
-	[803] = {
+	[808] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9647,7 +9707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.286,
 		["instance"] = 1,
 	},
-	[804] = {
+	[809] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9659,7 +9719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.332,
 		["instance"] = 1,
 	},
-	[805] = {
+	[810] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9671,7 +9731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 1,
 	},
-	[806] = {
+	[811] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9683,7 +9743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.275,
 		["instance"] = 1,
 	},
-	[807] = {
+	[812] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9695,7 +9755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.308,
 		["instance"] = 1,
 	},
-	[808] = {
+	[813] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9707,7 +9767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.274,
 		["instance"] = 1,
 	},
-	[809] = {
+	[814] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9719,7 +9779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.232,
 		["instance"] = 1,
 	},
-	[810] = {
+	[815] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9731,7 +9791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.347,
 		["instance"] = 1,
 	},
-	[811] = {
+	[816] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9743,7 +9803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.251,
 		["instance"] = 1,
 	},
-	[812] = {
+	[817] = {
 		["type"] = "containers",
 		["object"] = 177784,
 		["predefined"] = True,
@@ -9755,7 +9815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 1,
 	},
-	[813] = {
+	[818] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9767,7 +9827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.272,
 		["instance"] = 0,
 	},
-	[814] = {
+	[819] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9779,7 +9839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.443,
 		["instance"] = 0,
 	},
-	[815] = {
+	[820] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9791,7 +9851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.445,
 		["instance"] = 0,
 	},
-	[816] = {
+	[821] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9803,7 +9863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.734,
 		["instance"] = 0,
 	},
-	[817] = {
+	[822] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9815,7 +9875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.735,
 		["instance"] = 0,
 	},
-	[818] = {
+	[823] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9827,7 +9887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.734,
 		["instance"] = 0,
 	},
-	[819] = {
+	[824] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9839,7 +9899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.735,
 		["instance"] = 0,
 	},
-	[820] = {
+	[825] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9851,7 +9911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.72,
 		["instance"] = 0,
 	},
-	[821] = {
+	[826] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9863,7 +9923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.72,
 		["instance"] = 0,
 	},
-	[822] = {
+	[827] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9875,7 +9935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.272,
 		["instance"] = 0,
 	},
-	[823] = {
+	[828] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9887,7 +9947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 0,
 	},
-	[824] = {
+	[829] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9899,7 +9959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.324,
 		["instance"] = 0,
 	},
-	[825] = {
+	[830] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9911,7 +9971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 0,
 	},
-	[826] = {
+	[831] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9923,7 +9983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.324,
 		["instance"] = 0,
 	},
-	[827] = {
+	[832] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9935,7 +9995,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 0,
 	},
-	[828] = {
+	[833] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9947,7 +10007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.397,
 		["instance"] = 0,
 	},
-	[829] = {
+	[834] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9959,7 +10019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.282,
 		["instance"] = 0,
 	},
-	[830] = {
+	[835] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9971,7 +10031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.479,
 		["instance"] = 0,
 	},
-	[831] = {
+	[836] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9983,7 +10043,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 0,
 	},
-	[832] = {
+	[837] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -9995,7 +10055,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 0,
 	},
-	[833] = {
+	[838] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10007,7 +10067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.275,
 		["instance"] = 0,
 	},
-	[834] = {
+	[839] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10019,7 +10079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 0,
 	},
-	[835] = {
+	[840] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10031,7 +10091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.621,
 		["instance"] = 0,
 	},
-	[836] = {
+	[841] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10043,7 +10103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.592,
 		["instance"] = 0,
 	},
-	[837] = {
+	[842] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10055,7 +10115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.595,
 		["instance"] = 0,
 	},
-	[838] = {
+	[843] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10067,7 +10127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.579,
 		["instance"] = 0,
 	},
-	[839] = {
+	[844] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10079,7 +10139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.251,
 		["instance"] = 0,
 	},
-	[840] = {
+	[845] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10091,7 +10151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.253,
 		["instance"] = 0,
 	},
-	[841] = {
+	[846] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10103,7 +10163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.255,
 		["instance"] = 0,
 	},
-	[842] = {
+	[847] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10115,7 +10175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.256,
 		["instance"] = 0,
 	},
-	[843] = {
+	[848] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10127,7 +10187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[844] = {
+	[849] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10139,7 +10199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.598,
 		["instance"] = 0,
 	},
-	[845] = {
+	[850] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10151,7 +10211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.614,
 		["instance"] = 0,
 	},
-	[846] = {
+	[851] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10163,7 +10223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.615,
 		["instance"] = 0,
 	},
-	[847] = {
+	[852] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10175,7 +10235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.414,
 		["instance"] = 0,
 	},
-	[848] = {
+	[853] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10187,7 +10247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[849] = {
+	[854] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10199,7 +10259,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.414,
 		["instance"] = 0,
 	},
-	[850] = {
+	[855] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10211,7 +10271,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[851] = {
+	[856] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10223,7 +10283,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.381,
 		["instance"] = 0,
 	},
-	[852] = {
+	[857] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10235,7 +10295,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.302,
 		["instance"] = 0,
 	},
-	[853] = {
+	[858] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10247,7 +10307,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.349,
 		["instance"] = 0,
 	},
-	[854] = {
+	[859] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10259,7 +10319,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.328,
 		["instance"] = 0,
 	},
-	[855] = {
+	[860] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10271,7 +10331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.237,
 		["instance"] = 0,
 	},
-	[856] = {
+	[861] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10283,7 +10343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.385,
 		["instance"] = 0,
 	},
-	[857] = {
+	[862] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10295,7 +10355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.306,
 		["instance"] = 0,
 	},
-	[858] = {
+	[863] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10307,7 +10367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.361,
 		["instance"] = 0,
 	},
-	[859] = {
+	[864] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10319,7 +10379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.397,
 		["instance"] = 0,
 	},
-	[860] = {
+	[865] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10331,7 +10391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 0,
 	},
-	[861] = {
+	[866] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10343,7 +10403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.324,
 		["instance"] = 0,
 	},
-	[862] = {
+	[867] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10355,7 +10415,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.298,
 		["instance"] = 0,
 	},
-	[863] = {
+	[868] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10367,7 +10427,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.276,
 		["instance"] = 0,
 	},
-	[864] = {
+	[869] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10379,7 +10439,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.301,
 		["instance"] = 0,
 	},
-	[865] = {
+	[870] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10391,7 +10451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.344,
 		["instance"] = 0,
 	},
-	[866] = {
+	[871] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10403,7 +10463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 0,
 	},
-	[867] = {
+	[872] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10415,7 +10475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.323,
 		["instance"] = 0,
 	},
-	[868] = {
+	[873] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10427,7 +10487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.348,
 		["instance"] = 0,
 	},
-	[869] = {
+	[874] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10439,7 +10499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.32,
 		["instance"] = 0,
 	},
-	[870] = {
+	[875] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10451,7 +10511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.347,
 		["instance"] = 0,
 	},
-	[871] = {
+	[876] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10463,7 +10523,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.347,
 		["instance"] = 0,
 	},
-	[872] = {
+	[877] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10475,7 +10535,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.762,
 		["instance"] = 0,
 	},
-	[873] = {
+	[878] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10487,7 +10547,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.66,
 		["instance"] = 0,
 	},
-	[874] = {
+	[879] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10499,7 +10559,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 0,
 	},
-	[875] = {
+	[880] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10511,7 +10571,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.742,
 		["instance"] = 0,
 	},
-	[876] = {
+	[881] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10523,7 +10583,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.784,
 		["instance"] = 0,
 	},
-	[877] = {
+	[882] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10535,7 +10595,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.785,
 		["instance"] = 0,
 	},
-	[878] = {
+	[883] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10547,7 +10607,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.602,
 		["instance"] = 0,
 	},
-	[879] = {
+	[884] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10559,7 +10619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.597,
 		["instance"] = 0,
 	},
-	[880] = {
+	[885] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10571,7 +10631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.609,
 		["instance"] = 0,
 	},
-	[881] = {
+	[886] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10583,7 +10643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 0,
 	},
-	[882] = {
+	[887] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10595,7 +10655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.308,
 		["instance"] = 0,
 	},
-	[883] = {
+	[888] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10607,7 +10667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.273,
 		["instance"] = 0,
 	},
-	[884] = {
+	[889] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10619,7 +10679,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.755,
 		["instance"] = 0,
 	},
-	[885] = {
+	[890] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10631,7 +10691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.753,
 		["instance"] = 0,
 	},
-	[886] = {
+	[891] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10643,7 +10703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.583,
 		["instance"] = 0,
 	},
-	[887] = {
+	[892] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10655,7 +10715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.723,
 		["instance"] = 0,
 	},
-	[888] = {
+	[893] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10667,7 +10727,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.725,
 		["instance"] = 0,
 	},
-	[889] = {
+	[894] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10679,7 +10739,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.698,
 		["instance"] = 0,
 	},
-	[890] = {
+	[895] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10691,7 +10751,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.591,
 		["instance"] = 0,
 	},
-	[891] = {
+	[896] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10703,7 +10763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.629,
 		["instance"] = 0,
 	},
-	[892] = {
+	[897] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10715,7 +10775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.782,
 		["instance"] = 0,
 	},
-	[893] = {
+	[898] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10727,7 +10787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.559,
 		["instance"] = 0,
 	},
-	[894] = {
+	[899] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10739,7 +10799,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.787,
 		["instance"] = 1,
 	},
-	[895] = {
+	[900] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10751,7 +10811,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.817,
 		["instance"] = 1,
 	},
-	[896] = {
+	[901] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10763,7 +10823,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.832,
 		["instance"] = 1,
 	},
-	[897] = {
+	[902] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10775,7 +10835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.829,
 		["instance"] = 1,
 	},
-	[898] = {
+	[903] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10787,7 +10847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.15,
 		["instance"] = 0,
 	},
-	[899] = {
+	[904] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10799,7 +10859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.082,
 		["instance"] = 0,
 	},
-	[900] = {
+	[905] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10811,7 +10871,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.085,
 		["instance"] = 0,
 	},
-	[901] = {
+	[906] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10823,7 +10883,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.082,
 		["instance"] = 0,
 	},
-	[902] = {
+	[907] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10835,7 +10895,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.15,
 		["instance"] = 0,
 	},
-	[903] = {
+	[908] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10847,7 +10907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.176,
 		["instance"] = 0,
 	},
-	[904] = {
+	[909] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10859,7 +10919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.076,
 		["instance"] = 0,
 	},
-	[905] = {
+	[910] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10871,7 +10931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.098,
 		["instance"] = 0,
 	},
-	[906] = {
+	[911] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10883,7 +10943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.1,
 		["instance"] = 0,
 	},
-	[907] = {
+	[912] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10895,7 +10955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.079,
 		["instance"] = 0,
 	},
-	[908] = {
+	[913] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10907,7 +10967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.079,
 		["instance"] = 0,
 	},
-	[909] = {
+	[914] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10919,7 +10979,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.074,
 		["instance"] = 0,
 	},
-	[910] = {
+	[915] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10931,7 +10991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.106,
 		["instance"] = 0,
 	},
-	[911] = {
+	[916] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10943,7 +11003,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.104,
 		["instance"] = 0,
 	},
-	[912] = {
+	[917] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10955,7 +11015,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.106,
 		["instance"] = 0,
 	},
-	[913] = {
+	[918] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10967,7 +11027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.516,
 		["instance"] = 0,
 	},
-	[914] = {
+	[919] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10979,7 +11039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.437,
 		["instance"] = 0,
 	},
-	[915] = {
+	[920] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -10991,7 +11051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.498,
 		["instance"] = 0,
 	},
-	[916] = {
+	[921] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11003,7 +11063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.573,
 		["instance"] = 0,
 	},
-	[917] = {
+	[922] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11015,7 +11075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.538,
 		["instance"] = 0,
 	},
-	[918] = {
+	[923] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11027,7 +11087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 0,
 	},
-	[919] = {
+	[924] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11039,7 +11099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.599,
 		["instance"] = 0,
 	},
-	[920] = {
+	[925] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11051,7 +11111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.553,
 		["instance"] = 0,
 	},
-	[921] = {
+	[926] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11063,7 +11123,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.553,
 		["instance"] = 0,
 	},
-	[922] = {
+	[927] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11075,7 +11135,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.575,
 		["instance"] = 0,
 	},
-	[923] = {
+	[928] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11087,7 +11147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.574,
 		["instance"] = 0,
 	},
-	[924] = {
+	[929] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11099,7 +11159,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.55,
 		["instance"] = 0,
 	},
-	[925] = {
+	[930] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11111,7 +11171,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.803,
 		["instance"] = 0,
 	},
-	[926] = {
+	[931] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11123,7 +11183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.503,
 		["instance"] = 0,
 	},
-	[927] = {
+	[932] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11135,7 +11195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.3,
 		["instance"] = 0,
 	},
-	[928] = {
+	[933] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11147,7 +11207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.472,
 		["instance"] = 0,
 	},
-	[929] = {
+	[934] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11159,7 +11219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.475,
 		["instance"] = 0,
 	},
-	[930] = {
+	[935] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11171,7 +11231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.373,
 		["instance"] = 0,
 	},
-	[931] = {
+	[936] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11183,7 +11243,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.376,
 		["instance"] = 0,
 	},
-	[932] = {
+	[937] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11195,7 +11255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.67,
 		["instance"] = 0,
 	},
-	[933] = {
+	[938] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11207,7 +11267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.404,
 		["instance"] = 0,
 	},
-	[934] = {
+	[939] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11215,11 +11275,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1433,
-		["posX"] = 0.792,
+		["posX"] = 0.791,
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[935] = {
+	[940] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11231,7 +11291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.447,
 		["instance"] = 0,
 	},
-	[936] = {
+	[941] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11243,7 +11303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.487,
 		["instance"] = 0,
 	},
-	[937] = {
+	[942] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11255,7 +11315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 0,
 	},
-	[938] = {
+	[943] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11267,7 +11327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.604,
 		["instance"] = 0,
 	},
-	[939] = {
+	[944] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11279,7 +11339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.607,
 		["instance"] = 0,
 	},
-	[940] = {
+	[945] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11291,7 +11351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.604,
 		["instance"] = 0,
 	},
-	[941] = {
+	[946] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11303,7 +11363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.605,
 		["instance"] = 0,
 	},
-	[942] = {
+	[947] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11315,7 +11375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.58,
 		["instance"] = 0,
 	},
-	[943] = {
+	[948] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11327,7 +11387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 0,
 	},
-	[944] = {
+	[949] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11339,7 +11399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.466,
 		["instance"] = 0,
 	},
-	[945] = {
+	[950] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11351,7 +11411,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.378,
 		["instance"] = 0,
 	},
-	[946] = {
+	[951] = {
+		["type"] = "containers",
+		["object"] = 2850,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1424,
+		["posX"] = 0.753,
+		["posY"] = 0.414,
+		["instance"] = 0,
+	},
+	[952] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11363,7 +11435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[947] = {
+	[953] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11375,7 +11447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.389,
 		["instance"] = 0,
 	},
-	[948] = {
+	[954] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11387,7 +11459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.394,
 		["instance"] = 0,
 	},
-	[949] = {
+	[955] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11399,7 +11471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.395,
 		["instance"] = 0,
 	},
-	[950] = {
+	[956] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11411,7 +11483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.635,
 		["instance"] = 1,
 	},
-	[951] = {
+	[957] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11423,7 +11495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.606,
 		["instance"] = 1,
 	},
-	[952] = {
+	[958] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11435,7 +11507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.609,
 		["instance"] = 1,
 	},
-	[953] = {
+	[959] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11447,7 +11519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.674,
 		["instance"] = 1,
 	},
-	[954] = {
+	[960] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11459,7 +11531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.676,
 		["instance"] = 1,
 	},
-	[955] = {
+	[961] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11471,7 +11543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.676,
 		["instance"] = 1,
 	},
-	[956] = {
+	[962] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11483,7 +11555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.383,
 		["instance"] = 1,
 	},
-	[957] = {
+	[963] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11495,7 +11567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[958] = {
+	[964] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11507,7 +11579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.366,
 		["instance"] = 1,
 	},
-	[959] = {
+	[965] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11519,7 +11591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.317,
 		["instance"] = 1,
 	},
-	[960] = {
+	[966] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11531,7 +11603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.339,
 		["instance"] = 1,
 	},
-	[961] = {
+	[967] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11543,7 +11615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.36,
 		["instance"] = 1,
 	},
-	[962] = {
+	[968] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11555,7 +11627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.344,
 		["instance"] = 1,
 	},
-	[963] = {
+	[969] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11567,7 +11639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.345,
 		["instance"] = 1,
 	},
-	[964] = {
+	[970] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11579,7 +11651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.332,
 		["instance"] = 1,
 	},
-	[965] = {
+	[971] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11591,7 +11663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 1,
 	},
-	[966] = {
+	[972] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11603,7 +11675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 1,
 	},
-	[967] = {
+	[973] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11615,7 +11687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.349,
 		["instance"] = 1,
 	},
-	[968] = {
+	[974] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11627,7 +11699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.334,
 		["instance"] = 1,
 	},
-	[969] = {
+	[975] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11639,7 +11711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 1,
 	},
-	[970] = {
+	[976] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11651,7 +11723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.334,
 		["instance"] = 1,
 	},
-	[971] = {
+	[977] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11663,7 +11735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 1,
 	},
-	[972] = {
+	[978] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11675,7 +11747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.699,
 		["instance"] = 1,
 	},
-	[973] = {
+	[979] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11687,7 +11759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.697,
 		["instance"] = 1,
 	},
-	[974] = {
+	[980] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11699,7 +11771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.597,
 		["instance"] = 1,
 	},
-	[975] = {
+	[981] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11711,7 +11783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.697,
 		["instance"] = 1,
 	},
-	[976] = {
+	[982] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11723,7 +11795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.754,
 		["instance"] = 1,
 	},
-	[977] = {
+	[983] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11735,7 +11807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.755,
 		["instance"] = 1,
 	},
-	[978] = {
+	[984] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11747,7 +11819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.611,
 		["instance"] = 1,
 	},
-	[979] = {
+	[985] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11759,7 +11831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.642,
 		["instance"] = 1,
 	},
-	[980] = {
+	[986] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11771,7 +11843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.632,
 		["instance"] = 1,
 	},
-	[981] = {
+	[987] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11783,7 +11855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.694,
 		["instance"] = 1,
 	},
-	[982] = {
+	[988] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11795,7 +11867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.696,
 		["instance"] = 1,
 	},
-	[983] = {
+	[989] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11807,7 +11879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.642,
 		["instance"] = 1,
 	},
-	[984] = {
+	[990] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11819,7 +11891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.703,
 		["instance"] = 1,
 	},
-	[985] = {
+	[991] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11831,7 +11903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 1,
 	},
-	[986] = {
+	[992] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11843,7 +11915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.659,
 		["instance"] = 1,
 	},
-	[987] = {
+	[993] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11855,7 +11927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.62,
 		["instance"] = 1,
 	},
-	[988] = {
+	[994] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11867,7 +11939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.62,
 		["instance"] = 1,
 	},
-	[989] = {
+	[995] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11879,7 +11951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[990] = {
+	[996] = {
 		["type"] = "containers",
 		["object"] = 2850,
 		["predefined"] = True,
@@ -11891,7 +11963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[991] = {
+	[997] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11903,7 +11975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.802,
 		["instance"] = 1,
 	},
-	[992] = {
+	[998] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11915,7 +11987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.849,
 		["instance"] = 1,
 	},
-	[993] = {
+	[999] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11927,7 +11999,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.202,
 		["instance"] = 1,
 	},
-	[994] = {
+	[1000] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11939,7 +12011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.203,
 		["instance"] = 1,
 	},
-	[995] = {
+	[1001] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11951,7 +12023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.765,
 		["instance"] = 1,
 	},
-	[996] = {
+	[1002] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11963,7 +12035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.819,
 		["instance"] = 1,
 	},
-	[997] = {
+	[1003] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11975,7 +12047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.261,
 		["instance"] = 1,
 	},
-	[998] = {
+	[1004] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11987,7 +12059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.219,
 		["instance"] = 1,
 	},
-	[999] = {
+	[1005] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -11999,7 +12071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.651,
 		["instance"] = 1,
 	},
-	[1000] = {
+	[1006] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12011,7 +12083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.301,
 		["instance"] = 1,
 	},
-	[1001] = {
+	[1007] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12023,7 +12095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.189,
 		["instance"] = 1,
 	},
-	[1002] = {
+	[1008] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12035,7 +12107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.704,
 		["instance"] = 1,
 	},
-	[1003] = {
+	[1009] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12044,10 +12116,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1447,
 		["posX"] = 0.546,
-		["posY"] = 0.705,
+		["posY"] = 0.706,
 		["instance"] = 1,
 	},
-	[1004] = {
+	[1010] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12059,7 +12131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.284,
 		["instance"] = 1,
 	},
-	[1005] = {
+	[1011] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12071,7 +12143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.285,
 		["instance"] = 1,
 	},
-	[1006] = {
+	[1012] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12083,7 +12155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 1,
 	},
-	[1007] = {
+	[1013] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12095,7 +12167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.936,
 		["instance"] = 1,
 	},
-	[1008] = {
+	[1014] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12107,7 +12179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.916,
 		["instance"] = 1,
 	},
-	[1009] = {
+	[1015] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12119,7 +12191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.77,
 		["instance"] = 1,
 	},
-	[1010] = {
+	[1016] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12131,7 +12203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.195,
 		["instance"] = 1,
 	},
-	[1011] = {
+	[1017] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12143,7 +12215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.193,
 		["instance"] = 1,
 	},
-	[1012] = {
+	[1018] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12155,7 +12227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.814,
 		["instance"] = 1,
 	},
-	[1013] = {
+	[1019] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12167,7 +12239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.815,
 		["instance"] = 1,
 	},
-	[1014] = {
+	[1020] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12179,7 +12251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.894,
 		["instance"] = 1,
 	},
-	[1015] = {
+	[1021] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12191,7 +12263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.895,
 		["instance"] = 1,
 	},
-	[1016] = {
+	[1022] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12203,7 +12275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.413,
 		["instance"] = 1,
 	},
-	[1017] = {
+	[1023] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12215,7 +12287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.459,
 		["instance"] = 1,
 	},
-	[1018] = {
+	[1024] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12227,7 +12299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.307,
 		["instance"] = 1,
 	},
-	[1019] = {
+	[1025] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12239,7 +12311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.331,
 		["instance"] = 1,
 	},
-	[1020] = {
+	[1026] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12251,7 +12323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 0,
 	},
-	[1021] = {
+	[1027] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12263,7 +12335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 0,
 	},
-	[1022] = {
+	[1028] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12275,7 +12347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.668,
 		["instance"] = 0,
 	},
-	[1023] = {
+	[1029] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12287,7 +12359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.52,
 		["instance"] = 0,
 	},
-	[1024] = {
+	[1030] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12299,7 +12371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.732,
 		["instance"] = 0,
 	},
-	[1025] = {
+	[1031] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12311,7 +12383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.729,
 		["instance"] = 0,
 	},
-	[1026] = {
+	[1032] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12323,7 +12395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.341,
 		["instance"] = 0,
 	},
-	[1027] = {
+	[1033] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12335,7 +12407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.653,
 		["instance"] = 0,
 	},
-	[1028] = {
+	[1034] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12347,7 +12419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.664,
 		["instance"] = 0,
 	},
-	[1029] = {
+	[1035] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12359,7 +12431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.665,
 		["instance"] = 0,
 	},
-	[1030] = {
+	[1036] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12371,7 +12443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.497,
 		["instance"] = 0,
 	},
-	[1031] = {
+	[1037] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12383,7 +12455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.497,
 		["instance"] = 0,
 	},
-	[1032] = {
+	[1038] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12395,7 +12467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.677,
 		["instance"] = 0,
 	},
-	[1033] = {
+	[1039] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12407,7 +12479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.406,
 		["instance"] = 0,
 	},
-	[1034] = {
+	[1040] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12419,7 +12491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.28,
 		["instance"] = 0,
 	},
-	[1035] = {
+	[1041] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12431,7 +12503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.651,
 		["instance"] = 0,
 	},
-	[1036] = {
+	[1042] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12443,7 +12515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.232,
 		["instance"] = 0,
 	},
-	[1037] = {
+	[1043] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12455,7 +12527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.593,
 		["instance"] = 0,
 	},
-	[1038] = {
+	[1044] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12467,7 +12539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.474,
 		["instance"] = 0,
 	},
-	[1039] = {
+	[1045] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12479,7 +12551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.476,
 		["instance"] = 0,
 	},
-	[1040] = {
+	[1046] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12491,7 +12563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 0,
 	},
-	[1041] = {
+	[1047] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12503,7 +12575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.626,
 		["instance"] = 0,
 	},
-	[1042] = {
+	[1048] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12515,7 +12587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.48,
 		["instance"] = 0,
 	},
-	[1043] = {
+	[1049] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12527,7 +12599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 0,
 	},
-	[1044] = {
+	[1050] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12539,7 +12611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 0,
 	},
-	[1045] = {
+	[1051] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12551,7 +12623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.343,
 		["instance"] = 0,
 	},
-	[1046] = {
+	[1052] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12563,7 +12635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.345,
 		["instance"] = 0,
 	},
-	[1047] = {
+	[1053] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12575,7 +12647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.374,
 		["instance"] = 0,
 	},
-	[1048] = {
+	[1054] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12587,7 +12659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.375,
 		["instance"] = 0,
 	},
-	[1049] = {
+	[1055] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12599,7 +12671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.339,
 		["instance"] = 0,
 	},
-	[1050] = {
+	[1056] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12611,7 +12683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.584,
 		["instance"] = 0,
 	},
-	[1051] = {
+	[1057] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12623,7 +12695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.585,
 		["instance"] = 0,
 	},
-	[1052] = {
+	[1058] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12635,7 +12707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.53,
 		["instance"] = 0,
 	},
-	[1053] = {
+	[1059] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12647,7 +12719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.538,
 		["instance"] = 0,
 	},
-	[1054] = {
+	[1060] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12659,7 +12731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.538,
 		["instance"] = 0,
 	},
-	[1055] = {
+	[1061] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12671,7 +12743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 0,
 	},
-	[1056] = {
+	[1062] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12683,7 +12755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.559,
 		["instance"] = 0,
 	},
-	[1057] = {
+	[1063] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12695,7 +12767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.617,
 		["instance"] = 0,
 	},
-	[1058] = {
+	[1064] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12707,7 +12779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.488,
 		["instance"] = 0,
 	},
-	[1059] = {
+	[1065] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12719,7 +12791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.447,
 		["instance"] = 0,
 	},
-	[1060] = {
+	[1066] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12731,7 +12803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.462,
 		["instance"] = 0,
 	},
-	[1061] = {
+	[1067] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12743,7 +12815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.264,
 		["instance"] = 0,
 	},
-	[1062] = {
+	[1068] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12755,7 +12827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.267,
 		["instance"] = 0,
 	},
-	[1063] = {
+	[1069] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12767,7 +12839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.264,
 		["instance"] = 0,
 	},
-	[1064] = {
+	[1070] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12779,7 +12851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.267,
 		["instance"] = 0,
 	},
-	[1065] = {
+	[1071] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12791,7 +12863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.377,
 		["instance"] = 0,
 	},
-	[1066] = {
+	[1072] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12803,7 +12875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.532,
 		["instance"] = 0,
 	},
-	[1067] = {
+	[1073] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12815,7 +12887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.535,
 		["instance"] = 0,
 	},
-	[1068] = {
+	[1074] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12827,7 +12899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.299,
 		["instance"] = 0,
 	},
-	[1069] = {
+	[1075] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12839,7 +12911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.852,
 		["instance"] = 0,
 	},
-	[1070] = {
+	[1076] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12851,7 +12923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.924,
 		["instance"] = 0,
 	},
-	[1071] = {
+	[1077] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12863,7 +12935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.756,
 		["instance"] = 0,
 	},
-	[1072] = {
+	[1078] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12875,7 +12947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.337,
 		["instance"] = 0,
 	},
-	[1073] = {
+	[1079] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12887,7 +12959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.67,
 		["instance"] = 0,
 	},
-	[1074] = {
+	[1080] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12899,7 +12971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.71,
 		["instance"] = 0,
 	},
-	[1075] = {
+	[1081] = {
 		["type"] = "containers",
 		["object"] = 153453,
 		["predefined"] = True,
@@ -12911,7 +12983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.688,
 		["instance"] = 0,
 	},
-	[1076] = {
+	[1082] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12923,7 +12995,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.487,
 		["instance"] = 0,
 	},
-	[1077] = {
+	[1083] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12935,7 +13007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.536,
 		["instance"] = 0,
 	},
-	[1078] = {
+	[1084] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12947,7 +13019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.536,
 		["instance"] = 0,
 	},
-	[1079] = {
+	[1085] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12959,7 +13031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.501,
 		["instance"] = 0,
 	},
-	[1080] = {
+	[1086] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12971,7 +13043,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 0,
 	},
-	[1081] = {
+	[1087] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12983,7 +13055,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.236,
 		["instance"] = 0,
 	},
-	[1082] = {
+	[1088] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -12995,7 +13067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.479,
 		["instance"] = 0,
 	},
-	[1083] = {
+	[1089] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13007,7 +13079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.31,
 		["instance"] = 0,
 	},
-	[1084] = {
+	[1090] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13019,7 +13091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.131,
 		["instance"] = 0,
 	},
-	[1085] = {
+	[1091] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13031,7 +13103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.302,
 		["instance"] = 0,
 	},
-	[1086] = {
+	[1092] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13043,7 +13115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.181,
 		["instance"] = 0,
 	},
-	[1087] = {
+	[1093] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13055,7 +13127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.764,
 		["instance"] = 0,
 	},
-	[1088] = {
+	[1094] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13067,7 +13139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.765,
 		["instance"] = 0,
 	},
-	[1089] = {
+	[1095] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13079,7 +13151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.853,
 		["instance"] = 0,
 	},
-	[1090] = {
+	[1096] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13091,7 +13163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.39,
 		["instance"] = 0,
 	},
-	[1091] = {
+	[1097] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13103,7 +13175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.792,
 		["instance"] = 0,
 	},
-	[1092] = {
+	[1098] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13115,7 +13187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.849,
 		["instance"] = 0,
 	},
-	[1093] = {
+	[1099] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13127,7 +13199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.867,
 		["instance"] = 0,
 	},
-	[1094] = {
+	[1100] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13139,7 +13211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 0,
 	},
-	[1095] = {
+	[1101] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13151,7 +13223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 0,
 	},
-	[1096] = {
+	[1102] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13163,7 +13235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.394,
 		["instance"] = 0,
 	},
-	[1097] = {
+	[1103] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13175,7 +13247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.395,
 		["instance"] = 0,
 	},
-	[1098] = {
+	[1104] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13187,7 +13259,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.869,
 		["instance"] = 0,
 	},
-	[1099] = {
+	[1105] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13199,7 +13271,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.469,
 		["instance"] = 1,
 	},
-	[1100] = {
+	[1106] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13211,7 +13283,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.357,
 		["instance"] = 1,
 	},
-	[1101] = {
+	[1107] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13223,7 +13295,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.357,
 		["instance"] = 1,
 	},
-	[1102] = {
+	[1108] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13235,7 +13307,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.367,
 		["instance"] = 1,
 	},
-	[1103] = {
+	[1109] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13247,7 +13319,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.432,
 		["instance"] = 1,
 	},
-	[1104] = {
+	[1110] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13259,7 +13331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.424,
 		["instance"] = 1,
 	},
-	[1105] = {
+	[1111] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13271,7 +13343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.426,
 		["instance"] = 1,
 	},
-	[1106] = {
+	[1112] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13283,7 +13355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.36,
 		["instance"] = 1,
 	},
-	[1107] = {
+	[1113] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13295,7 +13367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.461,
 		["instance"] = 1,
 	},
-	[1108] = {
+	[1114] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13307,7 +13379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.404,
 		["instance"] = 1,
 	},
-	[1109] = {
+	[1115] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13319,7 +13391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.405,
 		["instance"] = 1,
 	},
-	[1110] = {
+	[1116] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13331,7 +13403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.447,
 		["instance"] = 1,
 	},
-	[1111] = {
+	[1117] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13343,7 +13415,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.359,
 		["instance"] = 1,
 	},
-	[1112] = {
+	[1118] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13355,7 +13427,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.371,
 		["instance"] = 1,
 	},
-	[1113] = {
+	[1119] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13367,7 +13439,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.353,
 		["instance"] = 1,
 	},
-	[1114] = {
+	[1120] = {
 		["type"] = "containers",
 		["object"] = 153454,
 		["predefined"] = True,
@@ -13379,7 +13451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.367,
 		["instance"] = 1,
 	},
-	[1115] = {
+	[1121] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13391,7 +13463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.126,
 		["instance"] = 0,
 	},
-	[1116] = {
+	[1122] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13403,7 +13475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.248,
 		["instance"] = 0,
 	},
-	[1117] = {
+	[1123] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13415,7 +13487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.23,
 		["instance"] = 0,
 	},
-	[1118] = {
+	[1124] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13427,7 +13499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.297,
 		["instance"] = 0,
 	},
-	[1119] = {
+	[1125] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13439,7 +13511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.294,
 		["instance"] = 0,
 	},
-	[1120] = {
+	[1126] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13451,7 +13523,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.295,
 		["instance"] = 0,
 	},
-	[1121] = {
+	[1127] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13463,7 +13535,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.198,
 		["instance"] = 0,
 	},
-	[1122] = {
+	[1128] = {
+		["type"] = "containers",
+		["object"] = 2855,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1434,
+		["posX"] = 0.334,
+		["posY"] = 0.155,
+		["instance"] = 0,
+	},
+	[1129] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13475,7 +13559,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.154,
 		["instance"] = 0,
 	},
-	[1123] = {
+	[1130] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13487,7 +13571,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[1124] = {
+	[1131] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13499,7 +13583,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.187,
 		["instance"] = 0,
 	},
-	[1125] = {
+	[1132] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13511,7 +13595,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.195,
 		["instance"] = 0,
 	},
-	[1126] = {
+	[1133] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13523,7 +13607,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.094,
 		["instance"] = 0,
 	},
-	[1127] = {
+	[1134] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13535,7 +13619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.183,
 		["instance"] = 0,
 	},
-	[1128] = {
+	[1135] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13547,7 +13631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.1,
 		["instance"] = 0,
 	},
-	[1129] = {
+	[1136] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13559,7 +13643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.1,
 		["instance"] = 0,
 	},
-	[1130] = {
+	[1137] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13571,7 +13655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.11,
 		["instance"] = 0,
 	},
-	[1131] = {
+	[1138] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13583,7 +13667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.098,
 		["instance"] = 0,
 	},
-	[1132] = {
+	[1139] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13595,7 +13679,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.471,
 		["instance"] = 0,
 	},
-	[1133] = {
+	[1140] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13607,7 +13691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.529,
 		["instance"] = 0,
 	},
-	[1134] = {
+	[1141] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13619,7 +13703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.401,
 		["instance"] = 0,
 	},
-	[1135] = {
+	[1142] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13631,7 +13715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.48,
 		["instance"] = 0,
 	},
-	[1136] = {
+	[1143] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13643,7 +13727,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.478,
 		["instance"] = 0,
 	},
-	[1137] = {
+	[1144] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13655,7 +13739,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.349,
 		["instance"] = 0,
 	},
-	[1138] = {
+	[1145] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13667,7 +13751,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.349,
 		["instance"] = 0,
 	},
-	[1139] = {
+	[1146] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13679,7 +13763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.434,
 		["instance"] = 0,
 	},
-	[1140] = {
+	[1147] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13691,7 +13775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.435,
 		["instance"] = 0,
 	},
-	[1141] = {
+	[1148] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13703,7 +13787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.439,
 		["instance"] = 0,
 	},
-	[1142] = {
+	[1149] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13715,7 +13799,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.431,
 		["instance"] = 0,
 	},
-	[1143] = {
+	[1150] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13727,7 +13811,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.404,
 		["instance"] = 0,
 	},
-	[1144] = {
+	[1151] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13739,7 +13823,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[1145] = {
+	[1152] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13751,7 +13835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.457,
 		["instance"] = 0,
 	},
-	[1146] = {
+	[1153] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13763,7 +13847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.406,
 		["instance"] = 0,
 	},
-	[1147] = {
+	[1154] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13775,7 +13859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.434,
 		["instance"] = 0,
 	},
-	[1148] = {
+	[1155] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13787,7 +13871,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.441,
 		["instance"] = 0,
 	},
-	[1149] = {
+	[1156] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13799,7 +13883,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.452,
 		["instance"] = 0,
 	},
-	[1150] = {
+	[1157] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13811,7 +13895,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.452,
 		["instance"] = 0,
 	},
-	[1151] = {
+	[1158] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13823,7 +13907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.436,
 		["instance"] = 0,
 	},
-	[1152] = {
+	[1159] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13835,7 +13919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.26,
 		["instance"] = 0,
 	},
-	[1153] = {
+	[1160] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13847,7 +13931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.267,
 		["instance"] = 0,
 	},
-	[1154] = {
+	[1161] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13859,7 +13943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.309,
 		["instance"] = 0,
 	},
-	[1155] = {
+	[1162] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13871,7 +13955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.309,
 		["instance"] = 0,
 	},
-	[1156] = {
+	[1163] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13883,7 +13967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.274,
 		["instance"] = 0,
 	},
-	[1157] = {
+	[1164] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13892,10 +13976,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1417,
 		["posX"] = 0.612,
-		["posY"] = 0.728,
+		["posY"] = 0.73,
 		["instance"] = 0,
 	},
-	[1158] = {
+	[1165] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13907,7 +13991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.678,
 		["instance"] = 0,
 	},
-	[1159] = {
+	[1166] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13915,11 +13999,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1417,
-		["posX"] = 0.646,
+		["posX"] = 0.647,
 		["posY"] = 0.738,
 		["instance"] = 0,
 	},
-	[1160] = {
+	[1167] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13931,7 +14015,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.638,
 		["instance"] = 0,
 	},
-	[1161] = {
+	[1168] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13943,7 +14027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.782,
 		["instance"] = 0,
 	},
-	[1162] = {
+	[1169] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13955,7 +14039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.7,
 		["instance"] = 0,
 	},
-	[1163] = {
+	[1170] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13967,7 +14051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.651,
 		["instance"] = 0,
 	},
-	[1164] = {
+	[1171] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13979,7 +14063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.725,
 		["instance"] = 0,
 	},
-	[1165] = {
+	[1172] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -13991,7 +14075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.723,
 		["instance"] = 0,
 	},
-	[1166] = {
+	[1173] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14003,7 +14087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.722,
 		["instance"] = 0,
 	},
-	[1167] = {
+	[1174] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14015,7 +14099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.687,
 		["instance"] = 0,
 	},
-	[1168] = {
+	[1175] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14027,7 +14111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.691,
 		["instance"] = 0,
 	},
-	[1169] = {
+	[1176] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14039,7 +14123,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.317,
 		["instance"] = 0,
 	},
-	[1170] = {
+	[1177] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14051,7 +14135,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 0,
 	},
-	[1171] = {
+	[1178] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14063,7 +14147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.281,
 		["instance"] = 0,
 	},
-	[1172] = {
+	[1179] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14075,7 +14159,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.675,
 		["instance"] = 0,
 	},
-	[1173] = {
+	[1180] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14087,7 +14171,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[1174] = {
+	[1181] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14099,7 +14183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.301,
 		["instance"] = 0,
 	},
-	[1175] = {
+	[1182] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14111,7 +14195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.869,
 		["instance"] = 1,
 	},
-	[1176] = {
+	[1183] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14123,7 +14207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.829,
 		["instance"] = 1,
 	},
-	[1177] = {
+	[1184] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14135,7 +14219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.829,
 		["instance"] = 1,
 	},
-	[1178] = {
+	[1185] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14147,7 +14231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.857,
 		["instance"] = 1,
 	},
-	[1179] = {
+	[1186] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14159,7 +14243,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.851,
 		["instance"] = 1,
 	},
-	[1180] = {
+	[1187] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14171,7 +14255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.286,
 		["instance"] = 1,
 	},
-	[1181] = {
+	[1188] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14183,7 +14267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.284,
 		["instance"] = 1,
 	},
-	[1182] = {
+	[1189] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14195,7 +14279,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.285,
 		["instance"] = 1,
 	},
-	[1183] = {
+	[1190] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14207,7 +14291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.282,
 		["instance"] = 1,
 	},
-	[1184] = {
+	[1191] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14219,7 +14303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.262,
 		["instance"] = 1,
 	},
-	[1185] = {
+	[1192] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14231,7 +14315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.301,
 		["instance"] = 1,
 	},
-	[1186] = {
+	[1193] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14243,7 +14327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.503,
 		["instance"] = 1,
 	},
-	[1187] = {
+	[1194] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14255,7 +14339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[1188] = {
+	[1195] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14267,7 +14351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.472,
 		["instance"] = 1,
 	},
-	[1189] = {
+	[1196] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14279,7 +14363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.49,
 		["instance"] = 1,
 	},
-	[1190] = {
+	[1197] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14291,7 +14375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.194,
 		["instance"] = 1,
 	},
-	[1191] = {
+	[1198] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14303,7 +14387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.195,
 		["instance"] = 1,
 	},
-	[1192] = {
+	[1199] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14315,7 +14399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.265,
 		["instance"] = 1,
 	},
-	[1193] = {
+	[1200] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14327,7 +14411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.264,
 		["instance"] = 1,
 	},
-	[1194] = {
+	[1201] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14339,7 +14423,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.18,
 		["instance"] = 1,
 	},
-	[1195] = {
+	[1202] = {
 		["type"] = "containers",
 		["object"] = 2855,
 		["predefined"] = True,
@@ -14351,7 +14435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.233,
 		["instance"] = 1,
 	},
-	[1196] = {
+	[1203] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14363,7 +14447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.132,
 		["instance"] = 0,
 	},
-	[1197] = {
+	[1204] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14375,7 +14459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.144,
 		["instance"] = 0,
 	},
-	[1198] = {
+	[1205] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14387,7 +14471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.145,
 		["instance"] = 0,
 	},
-	[1199] = {
+	[1206] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14399,7 +14483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.144,
 		["instance"] = 0,
 	},
-	[1200] = {
+	[1207] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14411,7 +14495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.145,
 		["instance"] = 0,
 	},
-	[1201] = {
+	[1208] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14423,7 +14507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.121,
 		["instance"] = 0,
 	},
-	[1202] = {
+	[1209] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14435,7 +14519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.342,
 		["instance"] = 0,
 	},
-	[1203] = {
+	[1210] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14447,7 +14531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.342,
 		["instance"] = 0,
 	},
-	[1204] = {
+	[1211] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14459,7 +14543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.334,
 		["instance"] = 0,
 	},
-	[1205] = {
+	[1212] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14471,7 +14555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 0,
 	},
-	[1206] = {
+	[1213] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14483,7 +14567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.334,
 		["instance"] = 0,
 	},
-	[1207] = {
+	[1214] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14495,7 +14579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 0,
 	},
-	[1208] = {
+	[1215] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14507,7 +14591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[1209] = {
+	[1216] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14519,7 +14603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.731,
 		["instance"] = 1,
 	},
-	[1210] = {
+	[1217] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14531,7 +14615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[1211] = {
+	[1218] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14543,7 +14627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 1,
 	},
-	[1212] = {
+	[1219] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14555,7 +14639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 1,
 	},
-	[1213] = {
+	[1220] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14567,7 +14651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 1,
 	},
-	[1214] = {
+	[1221] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14579,7 +14663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 1,
 	},
-	[1215] = {
+	[1222] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14591,7 +14675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.615,
 		["instance"] = 1,
 	},
-	[1216] = {
+	[1223] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14603,7 +14687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.614,
 		["instance"] = 1,
 	},
-	[1217] = {
+	[1224] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14615,7 +14699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.56,
 		["instance"] = 1,
 	},
-	[1218] = {
+	[1225] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14627,7 +14711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.53,
 		["instance"] = 1,
 	},
-	[1219] = {
+	[1226] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14639,7 +14723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.514,
 		["instance"] = 1,
 	},
-	[1220] = {
+	[1227] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14651,7 +14735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.515,
 		["instance"] = 1,
 	},
-	[1221] = {
+	[1228] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14663,7 +14747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.453,
 		["instance"] = 1,
 	},
-	[1222] = {
+	[1229] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14675,7 +14759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.453,
 		["instance"] = 1,
 	},
-	[1223] = {
+	[1230] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14687,7 +14771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.406,
 		["instance"] = 1,
 	},
-	[1224] = {
+	[1231] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14699,7 +14783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.359,
 		["instance"] = 1,
 	},
-	[1225] = {
+	[1232] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14711,7 +14795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.359,
 		["instance"] = 1,
 	},
-	[1226] = {
+	[1233] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14723,7 +14807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.525,
 		["instance"] = 1,
 	},
-	[1227] = {
+	[1234] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14735,7 +14819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.524,
 		["instance"] = 1,
 	},
-	[1228] = {
+	[1235] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14747,7 +14831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.594,
 		["instance"] = 1,
 	},
-	[1229] = {
+	[1236] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14759,7 +14843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.596,
 		["instance"] = 1,
 	},
-	[1230] = {
+	[1237] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14771,7 +14855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[1231] = {
+	[1238] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14783,7 +14867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.479,
 		["instance"] = 1,
 	},
-	[1232] = {
+	[1239] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14795,7 +14879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.499,
 		["instance"] = 1,
 	},
-	[1233] = {
+	[1240] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14807,7 +14891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.643,
 		["instance"] = 1,
 	},
-	[1234] = {
+	[1241] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14819,7 +14903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.645,
 		["instance"] = 1,
 	},
-	[1235] = {
+	[1242] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14831,7 +14915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.398,
 		["instance"] = 0,
 	},
-	[1236] = {
+	[1243] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14843,7 +14927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.398,
 		["instance"] = 0,
 	},
-	[1237] = {
+	[1244] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14855,7 +14939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.532,
 		["instance"] = 0,
 	},
-	[1238] = {
+	[1245] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14867,7 +14951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.535,
 		["instance"] = 0,
 	},
-	[1239] = {
+	[1246] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14879,7 +14963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.387,
 		["instance"] = 0,
 	},
-	[1240] = {
+	[1247] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14891,7 +14975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.422,
 		["instance"] = 0,
 	},
-	[1241] = {
+	[1248] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14903,7 +14987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.634,
 		["instance"] = 0,
 	},
-	[1242] = {
+	[1249] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14915,7 +14999,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.635,
 		["instance"] = 0,
 	},
-	[1243] = {
+	[1250] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14927,7 +15011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.424,
 		["instance"] = 0,
 	},
-	[1244] = {
+	[1251] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14939,7 +15023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.425,
 		["instance"] = 0,
 	},
-	[1245] = {
+	[1252] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14951,7 +15035,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.635,
 		["instance"] = 0,
 	},
-	[1246] = {
+	[1253] = {
+		["type"] = "containers",
+		["object"] = 153451,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1425,
+		["posX"] = 0.583,
+		["posY"] = 0.728,
+		["instance"] = 0,
+	},
+	[1254] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14963,19 +15059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[1247] = {
-		["type"] = "containers",
-		["object"] = 153451,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1425,
-		["posX"] = 0.584,
-		["posY"] = 0.728,
-		["instance"] = 0,
-	},
-	[1248] = {
+	[1255] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14987,7 +15071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[1249] = {
+	[1256] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -14999,7 +15083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.646,
 		["instance"] = 0,
 	},
-	[1250] = {
+	[1257] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15011,7 +15095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.682,
 		["instance"] = 0,
 	},
-	[1251] = {
+	[1258] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15023,7 +15107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.652,
 		["instance"] = 0,
 	},
-	[1252] = {
+	[1259] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15035,7 +15119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.733,
 		["instance"] = 0,
 	},
-	[1253] = {
+	[1260] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15047,7 +15131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.734,
 		["instance"] = 0,
 	},
-	[1254] = {
+	[1261] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15059,7 +15143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.835,
 		["instance"] = 0,
 	},
-	[1255] = {
+	[1262] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15071,7 +15155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.65,
 		["instance"] = 0,
 	},
-	[1256] = {
+	[1263] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15083,7 +15167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.71,
 		["instance"] = 0,
 	},
-	[1257] = {
+	[1264] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15095,7 +15179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.446,
 		["instance"] = 0,
 	},
-	[1258] = {
+	[1265] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15107,7 +15191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.446,
 		["instance"] = 0,
 	},
-	[1259] = {
+	[1266] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15119,7 +15203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.8,
 		["instance"] = 0,
 	},
-	[1260] = {
+	[1267] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15131,7 +15215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.8,
 		["instance"] = 0,
 	},
-	[1261] = {
+	[1268] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15143,7 +15227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.775,
 		["instance"] = 0,
 	},
-	[1262] = {
+	[1269] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15155,7 +15239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.666,
 		["instance"] = 0,
 	},
-	[1263] = {
+	[1270] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15167,7 +15251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.774,
 		["instance"] = 0,
 	},
-	[1264] = {
+	[1271] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15179,7 +15263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.75,
 		["instance"] = 0,
 	},
-	[1265] = {
+	[1272] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15191,7 +15275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.733,
 		["instance"] = 0,
 	},
-	[1266] = {
+	[1273] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15203,7 +15287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[1267] = {
+	[1274] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15215,7 +15299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.706,
 		["instance"] = 0,
 	},
-	[1268] = {
+	[1275] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15227,7 +15311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.487,
 		["instance"] = 0,
 	},
-	[1269] = {
+	[1276] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15239,7 +15323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.568,
 		["instance"] = 1,
 	},
-	[1270] = {
+	[1277] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15251,7 +15335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.543,
 		["instance"] = 1,
 	},
-	[1271] = {
+	[1278] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15263,7 +15347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.57,
 		["instance"] = 1,
 	},
-	[1272] = {
+	[1279] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15275,7 +15359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 1,
 	},
-	[1273] = {
+	[1280] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15287,7 +15371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.532,
 		["instance"] = 1,
 	},
-	[1274] = {
+	[1281] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15299,7 +15383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.433,
 		["instance"] = 1,
 	},
-	[1275] = {
+	[1282] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15311,7 +15395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.457,
 		["instance"] = 1,
 	},
-	[1276] = {
+	[1283] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15323,7 +15407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.441,
 		["instance"] = 1,
 	},
-	[1277] = {
+	[1284] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15335,7 +15419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.467,
 		["instance"] = 1,
 	},
-	[1278] = {
+	[1285] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15347,7 +15431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.453,
 		["instance"] = 1,
 	},
-	[1279] = {
+	[1286] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15359,7 +15443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.479,
 		["instance"] = 1,
 	},
-	[1280] = {
+	[1287] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15371,7 +15455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.482,
 		["instance"] = 1,
 	},
-	[1281] = {
+	[1288] = {
 		["type"] = "containers",
 		["object"] = 153451,
 		["predefined"] = True,
@@ -15383,7 +15467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.461,
 		["instance"] = 1,
 	},
-	[1282] = {
+	[1289] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15395,7 +15479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.337,
 		["instance"] = 0,
 	},
-	[1283] = {
+	[1290] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15407,7 +15491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.289,
 		["instance"] = 0,
 	},
-	[1284] = {
+	[1291] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15419,7 +15503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.288,
 		["instance"] = 0,
 	},
-	[1285] = {
+	[1292] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15431,7 +15515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.361,
 		["instance"] = 0,
 	},
-	[1286] = {
+	[1293] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15443,7 +15527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 0,
 	},
-	[1287] = {
+	[1294] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15455,7 +15539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[1288] = {
+	[1295] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15467,7 +15551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.695,
 		["instance"] = 0,
 	},
-	[1289] = {
+	[1296] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15479,7 +15563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.693,
 		["instance"] = 0,
 	},
-	[1290] = {
+	[1297] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15491,7 +15575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.762,
 		["instance"] = 0,
 	},
-	[1291] = {
+	[1298] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15503,7 +15587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.76,
 		["instance"] = 0,
 	},
-	[1292] = {
+	[1299] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15515,7 +15599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.758,
 		["instance"] = 0,
 	},
-	[1293] = {
+	[1300] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15527,7 +15611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.813,
 		["instance"] = 0,
 	},
-	[1294] = {
+	[1301] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15539,7 +15623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.803,
 		["instance"] = 0,
 	},
-	[1295] = {
+	[1302] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15547,11 +15631,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1431,
-		["posX"] = 0.356,
-		["posY"] = 0.803,
+		["posX"] = 0.355,
+		["posY"] = 0.804,
 		["instance"] = 0,
 	},
-	[1296] = {
+	[1303] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15563,7 +15647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.836,
 		["instance"] = 0,
 	},
-	[1297] = {
+	[1304] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15575,7 +15659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.804,
 		["instance"] = 0,
 	},
-	[1298] = {
+	[1305] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15587,7 +15671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.805,
 		["instance"] = 0,
 	},
-	[1299] = {
+	[1306] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15599,7 +15683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.779,
 		["instance"] = 0,
 	},
-	[1300] = {
+	[1307] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15611,7 +15695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.801,
 		["instance"] = 0,
 	},
-	[1301] = {
+	[1308] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15623,7 +15707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.754,
 		["instance"] = 0,
 	},
-	[1302] = {
+	[1309] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15632,10 +15716,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1431,
 		["posX"] = 0.403,
-		["posY"] = 0.755,
+		["posY"] = 0.756,
 		["instance"] = 0,
 	},
-	[1303] = {
+	[1310] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15647,7 +15731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.775,
 		["instance"] = 0,
 	},
-	[1304] = {
+	[1311] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15659,7 +15743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.772,
 		["instance"] = 0,
 	},
-	[1305] = {
+	[1312] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15671,7 +15755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.771,
 		["instance"] = 0,
 	},
-	[1306] = {
+	[1313] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15683,7 +15767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.308,
 		["instance"] = 0,
 	},
-	[1307] = {
+	[1314] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15695,7 +15779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.409,
 		["instance"] = 0,
 	},
-	[1308] = {
+	[1315] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15707,7 +15791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.414,
 		["instance"] = 0,
 	},
-	[1309] = {
+	[1316] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15719,7 +15803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[1310] = {
+	[1317] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15731,7 +15815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.754,
 		["instance"] = 0,
 	},
-	[1311] = {
+	[1318] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15743,7 +15827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.756,
 		["instance"] = 0,
 	},
-	[1312] = {
+	[1319] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15755,7 +15839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.73,
 		["instance"] = 0,
 	},
-	[1313] = {
+	[1320] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15767,7 +15851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.516,
 		["instance"] = 0,
 	},
-	[1314] = {
+	[1321] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15779,7 +15863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.518,
 		["instance"] = 0,
 	},
-	[1315] = {
+	[1322] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15791,7 +15875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.674,
 		["instance"] = 0,
 	},
-	[1316] = {
+	[1323] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15803,7 +15887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.693,
 		["instance"] = 0,
 	},
-	[1317] = {
+	[1324] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15815,7 +15899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.764,
 		["instance"] = 0,
 	},
-	[1318] = {
+	[1325] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15827,7 +15911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.724,
 		["instance"] = 0,
 	},
-	[1319] = {
+	[1326] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15839,7 +15923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.725,
 		["instance"] = 0,
 	},
-	[1320] = {
+	[1327] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15851,7 +15935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.719,
 		["instance"] = 0,
 	},
-	[1321] = {
+	[1328] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15863,7 +15947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.722,
 		["instance"] = 0,
 	},
-	[1322] = {
+	[1329] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15875,7 +15959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.354,
 		["instance"] = 0,
 	},
-	[1323] = {
+	[1330] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15887,7 +15971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 0,
 	},
-	[1324] = {
+	[1331] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15899,7 +15983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[1325] = {
+	[1332] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15911,7 +15995,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.324,
 		["instance"] = 0,
 	},
-	[1326] = {
+	[1333] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15923,7 +16007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 0,
 	},
-	[1327] = {
+	[1334] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15935,7 +16019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.713,
 		["instance"] = 0,
 	},
-	[1328] = {
+	[1335] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15947,7 +16031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.459,
 		["instance"] = 0,
 	},
-	[1329] = {
+	[1336] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15959,7 +16043,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.46,
 		["instance"] = 0,
 	},
-	[1330] = {
+	[1337] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15971,7 +16055,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.431,
 		["instance"] = 0,
 	},
-	[1331] = {
+	[1338] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15983,7 +16067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.462,
 		["instance"] = 0,
 	},
-	[1332] = {
+	[1339] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -15995,7 +16079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.424,
 		["instance"] = 0,
 	},
-	[1333] = {
+	[1340] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16007,7 +16091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.425,
 		["instance"] = 0,
 	},
-	[1334] = {
+	[1341] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16019,7 +16103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.162,
 		["instance"] = 0,
 	},
-	[1335] = {
+	[1342] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16031,7 +16115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 0,
 	},
-	[1336] = {
+	[1343] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16043,7 +16127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.15,
 		["instance"] = 0,
 	},
-	[1337] = {
+	[1344] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16055,7 +16139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.16,
 		["instance"] = 0,
 	},
-	[1338] = {
+	[1345] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16067,7 +16151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.177,
 		["instance"] = 0,
 	},
-	[1339] = {
+	[1346] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16079,7 +16163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.459,
 		["instance"] = 0,
 	},
-	[1340] = {
+	[1347] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16091,7 +16175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.462,
 		["instance"] = 0,
 	},
-	[1341] = {
+	[1348] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16103,7 +16187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.546,
 		["instance"] = 0,
 	},
-	[1342] = {
+	[1349] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16115,7 +16199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.246,
 		["instance"] = 0,
 	},
-	[1343] = {
+	[1350] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16127,7 +16211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.268,
 		["instance"] = 0,
 	},
-	[1344] = {
+	[1351] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16139,7 +16223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.287,
 		["instance"] = 0,
 	},
-	[1345] = {
+	[1352] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16151,7 +16235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.312,
 		["instance"] = 0,
 	},
-	[1346] = {
+	[1353] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16163,7 +16247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.32,
 		["instance"] = 0,
 	},
-	[1347] = {
+	[1354] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16175,7 +16259,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.29,
 		["instance"] = 0,
 	},
-	[1348] = {
+	[1355] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16187,7 +16271,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 0,
 	},
-	[1349] = {
+	[1356] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16199,7 +16283,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.642,
 		["instance"] = 0,
 	},
-	[1350] = {
+	[1357] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16211,7 +16295,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.708,
 		["instance"] = 0,
 	},
-	[1351] = {
+	[1358] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16220,10 +16304,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1424,
 		["posX"] = 0.255,
-		["posY"] = 0.71,
+		["posY"] = 0.709,
 		["instance"] = 0,
 	},
-	[1352] = {
+	[1359] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16235,7 +16319,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.728,
 		["instance"] = 0,
 	},
-	[1353] = {
+	[1360] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16247,7 +16331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[1354] = {
+	[1361] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16259,7 +16343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.631,
 		["instance"] = 0,
 	},
-	[1355] = {
+	[1362] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16271,7 +16355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.631,
 		["instance"] = 0,
 	},
-	[1356] = {
+	[1363] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16283,7 +16367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.616,
 		["instance"] = 0,
 	},
-	[1357] = {
+	[1364] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16295,7 +16379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.604,
 		["instance"] = 0,
 	},
-	[1358] = {
+	[1365] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16307,7 +16391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.605,
 		["instance"] = 0,
 	},
-	[1359] = {
+	[1366] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16319,7 +16403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.565,
 		["instance"] = 1,
 	},
-	[1360] = {
+	[1367] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16331,7 +16415,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.564,
 		["instance"] = 1,
 	},
-	[1361] = {
+	[1368] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16343,7 +16427,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.539,
 		["instance"] = 1,
 	},
-	[1362] = {
+	[1369] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16355,7 +16439,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.539,
 		["instance"] = 1,
 	},
-	[1363] = {
+	[1370] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16367,7 +16451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.571,
 		["instance"] = 1,
 	},
-	[1364] = {
+	[1371] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16379,7 +16463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.496,
 		["instance"] = 1,
 	},
-	[1365] = {
+	[1372] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16391,7 +16475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.744,
 		["instance"] = 1,
 	},
-	[1366] = {
+	[1373] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16403,7 +16487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.464,
 		["instance"] = 1,
 	},
-	[1367] = {
+	[1374] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16415,7 +16499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 1,
 	},
-	[1368] = {
+	[1375] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16427,7 +16511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.747,
 		["instance"] = 1,
 	},
-	[1369] = {
+	[1376] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16439,7 +16523,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.729,
 		["instance"] = 1,
 	},
-	[1370] = {
+	[1377] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16451,7 +16535,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.728,
 		["instance"] = 1,
 	},
-	[1371] = {
+	[1378] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16463,7 +16547,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.451,
 		["instance"] = 1,
 	},
-	[1372] = {
+	[1379] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16475,7 +16559,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 1,
 	},
-	[1373] = {
+	[1380] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16487,7 +16571,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.452,
 		["instance"] = 1,
 	},
-	[1374] = {
+	[1381] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16499,7 +16583,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.496,
 		["instance"] = 1,
 	},
-	[1375] = {
+	[1382] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16508,10 +16592,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1440,
 		["posX"] = 0.804,
-		["posY"] = 0.497,
+		["posY"] = 0.498,
 		["instance"] = 1,
 	},
-	[1376] = {
+	[1383] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16523,7 +16607,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.498,
 		["instance"] = 1,
 	},
-	[1377] = {
+	[1384] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16535,7 +16619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.494,
 		["instance"] = 1,
 	},
-	[1378] = {
+	[1385] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16547,7 +16631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.495,
 		["instance"] = 1,
 	},
-	[1379] = {
+	[1386] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16559,7 +16643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.342,
 		["instance"] = 1,
 	},
-	[1380] = {
+	[1387] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16571,7 +16655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.37,
 		["instance"] = 1,
 	},
-	[1381] = {
+	[1388] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16583,7 +16667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.389,
 		["instance"] = 1,
 	},
-	[1382] = {
+	[1389] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16595,7 +16679,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.417,
 		["instance"] = 1,
 	},
-	[1383] = {
+	[1390] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16607,7 +16691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.212,
 		["instance"] = 1,
 	},
-	[1384] = {
+	[1391] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16619,7 +16703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.21,
 		["instance"] = 1,
 	},
-	[1385] = {
+	[1392] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16631,7 +16715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.232,
 		["instance"] = 1,
 	},
-	[1386] = {
+	[1393] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16643,7 +16727,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.217,
 		["instance"] = 1,
 	},
-	[1387] = {
+	[1394] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16655,7 +16739,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.554,
 		["instance"] = 1,
 	},
-	[1388] = {
+	[1395] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16667,7 +16751,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.555,
 		["instance"] = 1,
 	},
-	[1389] = {
+	[1396] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16679,7 +16763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.54,
 		["instance"] = 1,
 	},
-	[1390] = {
+	[1397] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16691,7 +16775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.552,
 		["instance"] = 1,
 	},
-	[1391] = {
+	[1398] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16703,7 +16787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.524,
 		["instance"] = 1,
 	},
-	[1392] = {
+	[1399] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16715,7 +16799,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.525,
 		["instance"] = 1,
 	},
-	[1393] = {
+	[1400] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16727,7 +16811,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.316,
 		["instance"] = 1,
 	},
-	[1394] = {
+	[1401] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16739,7 +16823,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.374,
 		["instance"] = 1,
 	},
-	[1395] = {
+	[1402] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16751,7 +16835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.375,
 		["instance"] = 1,
 	},
-	[1396] = {
+	[1403] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16763,7 +16847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.337,
 		["instance"] = 1,
 	},
-	[1397] = {
+	[1404] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16775,7 +16859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.393,
 		["instance"] = 1,
 	},
-	[1398] = {
+	[1405] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16787,7 +16871,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.368,
 		["instance"] = 1,
 	},
-	[1399] = {
+	[1406] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16799,7 +16883,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.332,
 		["instance"] = 1,
 	},
-	[1400] = {
+	[1407] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16811,7 +16895,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.377,
 		["instance"] = 1,
 	},
-	[1401] = {
+	[1408] = {
 		["type"] = "containers",
 		["object"] = 2852,
 		["predefined"] = True,
@@ -16823,7 +16907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.323,
 		["instance"] = 1,
 	},
-	[1402] = {
+	[1409] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16835,7 +16919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.75,
 		["instance"] = 0,
 	},
-	[1403] = {
+	[1410] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16847,7 +16931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.564,
 		["instance"] = 0,
 	},
-	[1404] = {
+	[1411] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16859,7 +16943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.565,
 		["instance"] = 0,
 	},
-	[1405] = {
+	[1412] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16871,7 +16955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.565,
 		["instance"] = 0,
 	},
-	[1406] = {
+	[1413] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16883,7 +16967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.564,
 		["instance"] = 0,
 	},
-	[1407] = {
+	[1414] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16895,7 +16979,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.259,
 		["instance"] = 0,
 	},
-	[1408] = {
+	[1415] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16907,7 +16991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.281,
 		["instance"] = 0,
 	},
-	[1409] = {
+	[1416] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16915,11 +16999,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1418,
-		["posX"] = 0.415,
-		["posY"] = 0.263,
+		["posX"] = 0.416,
+		["posY"] = 0.264,
 		["instance"] = 0,
 	},
-	[1410] = {
+	[1417] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16931,7 +17015,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.265,
 		["instance"] = 0,
 	},
-	[1411] = {
+	[1418] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16943,7 +17027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.288,
 		["instance"] = 0,
 	},
-	[1412] = {
+	[1419] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16955,7 +17039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.682,
 		["instance"] = 0,
 	},
-	[1413] = {
+	[1420] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16967,7 +17051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.349,
 		["instance"] = 0,
 	},
-	[1414] = {
+	[1421] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16979,7 +17063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.294,
 		["instance"] = 0,
 	},
-	[1415] = {
+	[1422] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -16991,7 +17075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.295,
 		["instance"] = 0,
 	},
-	[1416] = {
+	[1423] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17003,7 +17087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.705,
 		["instance"] = 0,
 	},
-	[1417] = {
+	[1424] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17015,7 +17099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.703,
 		["instance"] = 0,
 	},
-	[1418] = {
+	[1425] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17027,7 +17111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.316,
 		["instance"] = 0,
 	},
-	[1419] = {
+	[1426] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17039,7 +17123,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.341,
 		["instance"] = 0,
 	},
-	[1420] = {
+	[1427] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17051,7 +17135,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.715,
 		["instance"] = 0,
 	},
-	[1421] = {
+	[1428] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17063,7 +17147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.714,
 		["instance"] = 0,
 	},
-	[1422] = {
+	[1429] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17075,7 +17159,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.561,
 		["instance"] = 0,
 	},
-	[1423] = {
+	[1430] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17087,7 +17171,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[1424] = {
+	[1431] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17099,7 +17183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.251,
 		["instance"] = 0,
 	},
-	[1425] = {
+	[1432] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17111,7 +17195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.222,
 		["instance"] = 0,
 	},
-	[1426] = {
+	[1433] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17123,7 +17207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.239,
 		["instance"] = 0,
 	},
-	[1427] = {
+	[1434] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17135,7 +17219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.211,
 		["instance"] = 0,
 	},
-	[1428] = {
+	[1435] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17147,7 +17231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.233,
 		["instance"] = 0,
 	},
-	[1429] = {
+	[1436] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17159,7 +17243,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.234,
 		["instance"] = 0,
 	},
-	[1430] = {
+	[1437] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17171,7 +17255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.235,
 		["instance"] = 0,
 	},
-	[1431] = {
+	[1438] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17183,7 +17267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.224,
 		["instance"] = 0,
 	},
-	[1432] = {
+	[1439] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17195,7 +17279,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.225,
 		["instance"] = 0,
 	},
-	[1433] = {
+	[1440] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17207,7 +17291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.184,
 		["instance"] = 0,
 	},
-	[1434] = {
+	[1441] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17219,7 +17303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.185,
 		["instance"] = 0,
 	},
-	[1435] = {
+	[1442] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17231,7 +17315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.224,
 		["instance"] = 1,
 	},
-	[1436] = {
+	[1443] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17243,7 +17327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.225,
 		["instance"] = 1,
 	},
-	[1437] = {
+	[1444] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17255,7 +17339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.206,
 		["instance"] = 1,
 	},
-	[1438] = {
+	[1445] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17267,7 +17351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.216,
 		["instance"] = 1,
 	},
-	[1439] = {
+	[1446] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17279,7 +17363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.221,
 		["instance"] = 1,
 	},
-	[1440] = {
+	[1447] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17291,7 +17375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.15,
 		["instance"] = 1,
 	},
-	[1441] = {
+	[1448] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17303,7 +17387,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.151,
 		["instance"] = 1,
 	},
-	[1442] = {
+	[1449] = {
+		["type"] = "containers",
+		["object"] = 2857,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1445,
+		["posX"] = 0.576,
+		["posY"] = 0.164,
+		["instance"] = 1,
+	},
+	[1450] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17315,19 +17411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.165,
 		["instance"] = 1,
 	},
-	[1443] = {
-		["type"] = "containers",
-		["object"] = 2857,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1445,
-		["posX"] = 0.577,
-		["posY"] = 0.164,
-		["instance"] = 1,
-	},
-	[1444] = {
+	[1451] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17339,7 +17423,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.134,
 		["instance"] = 1,
 	},
-	[1445] = {
+	[1452] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17351,7 +17435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.098,
 		["instance"] = 1,
 	},
-	[1446] = {
+	[1453] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17363,7 +17447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.182,
 		["instance"] = 1,
 	},
-	[1447] = {
+	[1454] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17375,7 +17459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.092,
 		["instance"] = 1,
 	},
-	[1448] = {
+	[1455] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17387,7 +17471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.19,
 		["instance"] = 1,
 	},
-	[1449] = {
+	[1456] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17399,7 +17483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.072,
 		["instance"] = 1,
 	},
-	[1450] = {
+	[1457] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17411,7 +17495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.272,
 		["instance"] = 1,
 	},
-	[1451] = {
+	[1458] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17423,7 +17507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.268,
 		["instance"] = 1,
 	},
-	[1452] = {
+	[1459] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17435,7 +17519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.269,
 		["instance"] = 1,
 	},
-	[1453] = {
+	[1460] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17447,7 +17531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.118,
 		["instance"] = 0,
 	},
-	[1454] = {
+	[1461] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17459,7 +17543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.08,
 		["instance"] = 0,
 	},
-	[1455] = {
+	[1462] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17471,7 +17555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.096,
 		["instance"] = 0,
 	},
-	[1456] = {
+	[1463] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17483,7 +17567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.086,
 		["instance"] = 0,
 	},
-	[1457] = {
+	[1464] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17495,7 +17579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.238,
 		["instance"] = 0,
 	},
-	[1458] = {
+	[1465] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17507,7 +17591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.313,
 		["instance"] = 0,
 	},
-	[1459] = {
+	[1466] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17519,7 +17603,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.309,
 		["instance"] = 0,
 	},
-	[1460] = {
+	[1467] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17531,7 +17615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.229,
 		["instance"] = 0,
 	},
-	[1461] = {
+	[1468] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17543,7 +17627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.356,
 		["instance"] = 0,
 	},
-	[1462] = {
+	[1469] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17555,7 +17639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.318,
 		["instance"] = 0,
 	},
-	[1463] = {
+	[1470] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17567,7 +17651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.055,
 		["instance"] = 0,
 	},
-	[1464] = {
+	[1471] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17579,7 +17663,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.054,
 		["instance"] = 0,
 	},
-	[1465] = {
+	[1472] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17591,7 +17675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.4,
 		["instance"] = 0,
 	},
-	[1466] = {
+	[1473] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17603,7 +17687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.071,
 		["instance"] = 0,
 	},
-	[1467] = {
+	[1474] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17615,7 +17699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.06,
 		["instance"] = 0,
 	},
-	[1468] = {
+	[1475] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17627,7 +17711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.079,
 		["instance"] = 0,
 	},
-	[1469] = {
+	[1476] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17639,7 +17723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.534,
 		["instance"] = 0,
 	},
-	[1470] = {
+	[1477] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17651,7 +17735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.54,
 		["instance"] = 0,
 	},
-	[1471] = {
+	[1478] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17663,7 +17747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.53,
 		["instance"] = 0,
 	},
-	[1472] = {
+	[1479] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17675,7 +17759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.541,
 		["instance"] = 0,
 	},
-	[1473] = {
+	[1480] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17687,7 +17771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.557,
 		["instance"] = 0,
 	},
-	[1474] = {
+	[1481] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17699,7 +17783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.55,
 		["instance"] = 0,
 	},
-	[1475] = {
+	[1482] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17711,7 +17795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.153,
 		["instance"] = 0,
 	},
-	[1476] = {
+	[1483] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17723,7 +17807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.152,
 		["instance"] = 0,
 	},
-	[1477] = {
+	[1484] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17735,7 +17819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.149,
 		["instance"] = 0,
 	},
-	[1478] = {
+	[1485] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17747,7 +17831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.152,
 		["instance"] = 0,
 	},
-	[1479] = {
+	[1486] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17759,7 +17843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.204,
 		["instance"] = 0,
 	},
-	[1480] = {
+	[1487] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17771,7 +17855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.205,
 		["instance"] = 0,
 	},
-	[1481] = {
+	[1488] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17783,7 +17867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.17,
 		["instance"] = 0,
 	},
-	[1482] = {
+	[1489] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17795,7 +17879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.171,
 		["instance"] = 0,
 	},
-	[1483] = {
+	[1490] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17804,10 +17888,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1416,
 		["posX"] = 0.536,
-		["posY"] = 0.211,
+		["posY"] = 0.21,
 		["instance"] = 0,
 	},
-	[1484] = {
+	[1491] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17819,7 +17903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[1485] = {
+	[1492] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17831,7 +17915,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.27,
 		["instance"] = 0,
 	},
-	[1486] = {
+	[1493] = {
+		["type"] = "containers",
+		["object"] = 2857,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1416,
+		["posX"] = 0.583,
+		["posY"] = 0.305,
+		["instance"] = 0,
+	},
+	[1494] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17843,19 +17939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 0,
 	},
-	[1487] = {
-		["type"] = "containers",
-		["object"] = 2857,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1416,
-		["posX"] = 0.584,
-		["posY"] = 0.305,
-		["instance"] = 0,
-	},
-	[1488] = {
+	[1495] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17867,7 +17951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 0,
 	},
-	[1489] = {
+	[1496] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17879,7 +17963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.874,
 		["instance"] = 0,
 	},
-	[1490] = {
+	[1497] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17891,7 +17975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.875,
 		["instance"] = 0,
 	},
-	[1491] = {
+	[1498] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17903,7 +17987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.665,
 		["instance"] = 0,
 	},
-	[1492] = {
+	[1499] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17915,7 +17999,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.65,
 		["instance"] = 0,
 	},
-	[1493] = {
+	[1500] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17927,7 +18011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 0,
 	},
-	[1494] = {
+	[1501] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17939,7 +18023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.896,
 		["instance"] = 0,
 	},
-	[1495] = {
+	[1502] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17951,7 +18035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.849,
 		["instance"] = 0,
 	},
-	[1496] = {
+	[1503] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17963,7 +18047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.649,
 		["instance"] = 0,
 	},
-	[1497] = {
+	[1504] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17975,7 +18059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[1498] = {
+	[1505] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17987,7 +18071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.675,
 		["instance"] = 0,
 	},
-	[1499] = {
+	[1506] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -17999,7 +18083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.849,
 		["instance"] = 0,
 	},
-	[1500] = {
+	[1507] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18011,7 +18095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.848,
 		["instance"] = 0,
 	},
-	[1501] = {
+	[1508] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18023,7 +18107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.642,
 		["instance"] = 0,
 	},
-	[1502] = {
+	[1509] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18035,7 +18119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.645,
 		["instance"] = 0,
 	},
-	[1503] = {
+	[1510] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18047,7 +18131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.657,
 		["instance"] = 0,
 	},
-	[1504] = {
+	[1511] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18059,7 +18143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.657,
 		["instance"] = 0,
 	},
-	[1505] = {
+	[1512] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18071,7 +18155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.628,
 		["instance"] = 0,
 	},
-	[1506] = {
+	[1513] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18083,7 +18167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.629,
 		["instance"] = 0,
 	},
-	[1507] = {
+	[1514] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18095,7 +18179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.771,
 		["instance"] = 0,
 	},
-	[1508] = {
+	[1515] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18107,7 +18191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.743,
 		["instance"] = 0,
 	},
-	[1509] = {
+	[1516] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18119,7 +18203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.745,
 		["instance"] = 0,
 	},
-	[1510] = {
+	[1517] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18131,7 +18215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.743,
 		["instance"] = 0,
 	},
-	[1511] = {
+	[1518] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18143,7 +18227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.745,
 		["instance"] = 0,
 	},
-	[1512] = {
+	[1519] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18155,7 +18239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.799,
 		["instance"] = 0,
 	},
-	[1513] = {
+	[1520] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18167,7 +18251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.757,
 		["instance"] = 0,
 	},
-	[1514] = {
+	[1521] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18179,7 +18263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.814,
 		["instance"] = 0,
 	},
-	[1515] = {
+	[1522] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18191,7 +18275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.815,
 		["instance"] = 0,
 	},
-	[1516] = {
+	[1523] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18203,7 +18287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.333,
 		["instance"] = 0,
 	},
-	[1517] = {
+	[1524] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18215,7 +18299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 0,
 	},
-	[1518] = {
+	[1525] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18227,7 +18311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.288,
 		["instance"] = 0,
 	},
-	[1519] = {
+	[1526] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18239,7 +18323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[1520] = {
+	[1527] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18251,7 +18335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.324,
 		["instance"] = 0,
 	},
-	[1521] = {
+	[1528] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18263,7 +18347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 0,
 	},
-	[1522] = {
+	[1529] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18275,7 +18359,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.606,
 		["instance"] = 1,
 	},
-	[1523] = {
+	[1530] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18287,7 +18371,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.581,
 		["instance"] = 1,
 	},
-	[1524] = {
+	[1531] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18299,7 +18383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.547,
 		["instance"] = 1,
 	},
-	[1525] = {
+	[1532] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18311,7 +18395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.611,
 		["instance"] = 1,
 	},
-	[1526] = {
+	[1533] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18323,7 +18407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.551,
 		["instance"] = 1,
 	},
-	[1527] = {
+	[1534] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18335,7 +18419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.596,
 		["instance"] = 1,
 	},
-	[1528] = {
+	[1535] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18347,7 +18431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.53,
 		["instance"] = 1,
 	},
-	[1529] = {
+	[1536] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18359,7 +18443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.614,
 		["instance"] = 1,
 	},
-	[1530] = {
+	[1537] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18371,7 +18455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.615,
 		["instance"] = 1,
 	},
-	[1531] = {
+	[1538] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18383,7 +18467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.921,
 		["instance"] = 1,
 	},
-	[1532] = {
+	[1539] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18395,7 +18479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.953,
 		["instance"] = 1,
 	},
-	[1533] = {
+	[1540] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18407,7 +18491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.942,
 		["instance"] = 1,
 	},
-	[1534] = {
+	[1541] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18419,7 +18503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.947,
 		["instance"] = 1,
 	},
-	[1535] = {
+	[1542] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18431,7 +18515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.807,
 		["instance"] = 1,
 	},
-	[1536] = {
+	[1543] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18443,7 +18527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.786,
 		["instance"] = 1,
 	},
-	[1537] = {
+	[1544] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18455,7 +18539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.784,
 		["instance"] = 1,
 	},
-	[1538] = {
+	[1545] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18467,7 +18551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.785,
 		["instance"] = 1,
 	},
-	[1539] = {
+	[1546] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18479,7 +18563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.718,
 		["instance"] = 1,
 	},
-	[1540] = {
+	[1547] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18491,7 +18575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.717,
 		["instance"] = 1,
 	},
-	[1541] = {
+	[1548] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18503,7 +18587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.785,
 		["instance"] = 1,
 	},
-	[1542] = {
+	[1549] = {
 		["type"] = "containers",
 		["object"] = 2857,
 		["predefined"] = True,
@@ -18515,7 +18599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.737,
 		["instance"] = 1,
 	},
-	[1543] = {
+	[1550] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18527,7 +18611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.904,
 		["instance"] = 0,
 	},
-	[1544] = {
+	[1551] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18539,7 +18623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.905,
 		["instance"] = 0,
 	},
-	[1545] = {
+	[1552] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18551,7 +18635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.904,
 		["instance"] = 0,
 	},
-	[1546] = {
+	[1553] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18563,7 +18647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.905,
 		["instance"] = 0,
 	},
-	[1547] = {
+	[1554] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18575,7 +18659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.96,
 		["instance"] = 0,
 	},
-	[1548] = {
+	[1555] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18587,7 +18671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.857,
 		["instance"] = 0,
 	},
-	[1549] = {
+	[1556] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18599,7 +18683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.933,
 		["instance"] = 0,
 	},
-	[1550] = {
+	[1557] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18611,7 +18695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 0,
 	},
-	[1551] = {
+	[1558] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18623,7 +18707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.968,
 		["instance"] = 0,
 	},
-	[1552] = {
+	[1559] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18635,7 +18719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.934,
 		["instance"] = 0,
 	},
-	[1553] = {
+	[1560] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18647,7 +18731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.935,
 		["instance"] = 0,
 	},
-	[1554] = {
+	[1561] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18659,7 +18743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.84,
 		["instance"] = 0,
 	},
-	[1555] = {
+	[1562] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18671,7 +18755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.839,
 		["instance"] = 0,
 	},
-	[1556] = {
+	[1563] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18683,7 +18767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.785,
 		["instance"] = 0,
 	},
-	[1557] = {
+	[1564] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18695,7 +18779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.257,
 		["instance"] = 0,
 	},
-	[1558] = {
+	[1565] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18707,7 +18791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.274,
 		["instance"] = 0,
 	},
-	[1559] = {
+	[1566] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18719,7 +18803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.275,
 		["instance"] = 0,
 	},
-	[1560] = {
+	[1567] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18731,7 +18815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.682,
 		["instance"] = 0,
 	},
-	[1561] = {
+	[1568] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18743,7 +18827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.524,
 		["instance"] = 0,
 	},
-	[1562] = {
+	[1569] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18755,7 +18839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.525,
 		["instance"] = 0,
 	},
-	[1563] = {
+	[1570] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18767,7 +18851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.526,
 		["instance"] = 0,
 	},
-	[1564] = {
+	[1571] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18779,7 +18863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.506,
 		["instance"] = 0,
 	},
-	[1565] = {
+	[1572] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18791,7 +18875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.453,
 		["instance"] = 0,
 	},
-	[1566] = {
+	[1573] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18803,7 +18887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 0,
 	},
-	[1567] = {
+	[1574] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18815,7 +18899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.61,
 		["instance"] = 0,
 	},
-	[1568] = {
+	[1575] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18827,7 +18911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.688,
 		["instance"] = 1,
 	},
-	[1569] = {
+	[1576] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18839,7 +18923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.676,
 		["instance"] = 1,
 	},
-	[1570] = {
+	[1577] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18851,7 +18935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.696,
 		["instance"] = 1,
 	},
-	[1571] = {
+	[1578] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18863,7 +18947,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.646,
 		["instance"] = 1,
 	},
-	[1572] = {
+	[1579] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18875,7 +18959,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.656,
 		["instance"] = 1,
 	},
-	[1573] = {
+	[1580] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18887,7 +18971,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.65,
 		["instance"] = 1,
 	},
-	[1574] = {
+	[1581] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18899,7 +18983,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.654,
 		["instance"] = 1,
 	},
-	[1575] = {
+	[1582] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18911,7 +18995,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.655,
 		["instance"] = 1,
 	},
-	[1576] = {
+	[1583] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18923,7 +19007,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.668,
 		["instance"] = 1,
 	},
-	[1577] = {
+	[1584] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18935,7 +19019,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.737,
 		["instance"] = 1,
 	},
-	[1578] = {
+	[1585] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18947,7 +19031,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.639,
 		["instance"] = 1,
 	},
-	[1579] = {
+	[1586] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18959,7 +19043,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.632,
 		["instance"] = 1,
 	},
-	[1580] = {
+	[1587] = {
+		["type"] = "containers",
+		["object"] = 4149,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1445,
+		["posX"] = 0.57,
+		["posY"] = 0.874,
+		["instance"] = 1,
+	},
+	[1588] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18971,7 +19067,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.875,
 		["instance"] = 1,
 	},
-	[1581] = {
+	[1589] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18983,7 +19079,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.462,
 		["instance"] = 1,
 	},
-	[1582] = {
+	[1590] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -18995,7 +19091,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.68,
 		["instance"] = 1,
 	},
-	[1583] = {
+	[1591] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19007,7 +19103,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[1584] = {
+	[1592] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19019,7 +19115,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.827,
 		["instance"] = 0,
 	},
-	[1585] = {
+	[1593] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19031,7 +19127,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.694,
 		["instance"] = 0,
 	},
-	[1586] = {
+	[1594] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19043,7 +19139,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.695,
 		["instance"] = 0,
 	},
-	[1587] = {
+	[1595] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19055,7 +19151,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 0,
 	},
-	[1588] = {
+	[1596] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19067,7 +19163,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 0,
 	},
-	[1589] = {
+	[1597] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19079,7 +19175,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.636,
 		["instance"] = 0,
 	},
-	[1590] = {
+	[1598] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19091,7 +19187,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.894,
 		["instance"] = 0,
 	},
-	[1591] = {
+	[1599] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19103,7 +19199,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.895,
 		["instance"] = 0,
 	},
-	[1592] = {
+	[1600] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19115,7 +19211,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.808,
 		["instance"] = 0,
 	},
-	[1593] = {
+	[1601] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19127,7 +19223,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.871,
 		["instance"] = 0,
 	},
-	[1594] = {
+	[1602] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19139,7 +19235,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.894,
 		["instance"] = 0,
 	},
-	[1595] = {
+	[1603] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19151,7 +19247,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.895,
 		["instance"] = 0,
 	},
-	[1596] = {
+	[1604] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19163,7 +19259,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.895,
 		["instance"] = 0,
 	},
-	[1597] = {
+	[1605] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19175,7 +19271,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.881,
 		["instance"] = 0,
 	},
-	[1598] = {
+	[1606] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19187,7 +19283,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.867,
 		["instance"] = 0,
 	},
-	[1599] = {
+	[1607] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19199,7 +19295,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.882,
 		["instance"] = 0,
 	},
-	[1600] = {
+	[1608] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19211,7 +19307,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.516,
 		["instance"] = 0,
 	},
-	[1601] = {
+	[1609] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19223,7 +19319,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.508,
 		["instance"] = 0,
 	},
-	[1602] = {
+	[1610] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19235,7 +19331,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.822,
 		["instance"] = 0,
 	},
-	[1603] = {
+	[1611] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19247,7 +19343,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.806,
 		["instance"] = 0,
 	},
-	[1604] = {
+	[1612] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19259,7 +19355,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[1605] = {
+	[1613] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19271,7 +19367,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.577,
 		["instance"] = 0,
 	},
-	[1606] = {
+	[1614] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19283,7 +19379,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.808,
 		["instance"] = 0,
 	},
-	[1607] = {
+	[1615] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19295,7 +19391,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.857,
 		["instance"] = 0,
 	},
-	[1608] = {
+	[1616] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19307,7 +19403,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.496,
 		["instance"] = 0,
 	},
-	[1609] = {
+	[1617] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19319,7 +19415,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.423,
 		["instance"] = 0,
 	},
-	[1610] = {
+	[1618] = {
+		["type"] = "containers",
+		["object"] = 4149,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1434,
+		["posX"] = 0.421,
+		["posY"] = 0.444,
+		["instance"] = 0,
+	},
+	[1619] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19331,7 +19439,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.445,
 		["instance"] = 0,
 	},
-	[1611] = {
+	[1620] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19343,7 +19451,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 0,
 	},
-	[1612] = {
+	[1621] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19355,7 +19463,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.481,
 		["instance"] = 0,
 	},
-	[1613] = {
+	[1622] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19367,7 +19475,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.464,
 		["instance"] = 0,
 	},
-	[1614] = {
+	[1623] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19379,7 +19487,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 0,
 	},
-	[1615] = {
+	[1624] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19391,7 +19499,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.481,
 		["instance"] = 0,
 	},
-	[1616] = {
+	[1625] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19403,7 +19511,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.491,
 		["instance"] = 0,
 	},
-	[1617] = {
+	[1626] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19415,7 +19523,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.45,
 		["instance"] = 0,
 	},
-	[1618] = {
+	[1627] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19427,7 +19535,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.416,
 		["instance"] = 0,
 	},
-	[1619] = {
+	[1628] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19439,7 +19547,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.429,
 		["instance"] = 0,
 	},
-	[1620] = {
+	[1629] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19451,7 +19559,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.424,
 		["instance"] = 0,
 	},
-	[1621] = {
+	[1630] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19463,7 +19571,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.425,
 		["instance"] = 0,
 	},
-	[1622] = {
+	[1631] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19475,7 +19583,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.307,
 		["instance"] = 0,
 	},
-	[1623] = {
+	[1632] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19487,7 +19595,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.306,
 		["instance"] = 0,
 	},
-	[1624] = {
+	[1633] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19499,7 +19607,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.286,
 		["instance"] = 0,
 	},
-	[1625] = {
+	[1634] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19511,7 +19619,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.276,
 		["instance"] = 0,
 	},
-	[1626] = {
+	[1635] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19523,7 +19631,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.283,
 		["instance"] = 0,
 	},
-	[1627] = {
+	[1636] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19535,7 +19643,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[1628] = {
+	[1637] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19547,7 +19655,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[1629] = {
+	[1638] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19559,7 +19667,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.668,
 		["instance"] = 0,
 	},
-	[1630] = {
+	[1639] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19568,10 +19676,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1425,
 		["posX"] = 0.255,
-		["posY"] = 0.669,
+		["posY"] = 0.668,
 		["instance"] = 0,
 	},
-	[1631] = {
+	[1640] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19583,7 +19691,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.677,
 		["instance"] = 0,
 	},
-	[1632] = {
+	[1641] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19595,7 +19703,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.587,
 		["instance"] = 0,
 	},
-	[1633] = {
+	[1642] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19607,7 +19715,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.757,
 		["instance"] = 0,
 	},
-	[1634] = {
+	[1643] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19619,7 +19727,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.72,
 		["instance"] = 0,
 	},
-	[1635] = {
+	[1644] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19631,7 +19739,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.663,
 		["instance"] = 0,
 	},
-	[1636] = {
+	[1645] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19643,7 +19751,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.593,
 		["instance"] = 0,
 	},
-	[1637] = {
+	[1646] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19655,7 +19763,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.595,
 		["instance"] = 0,
 	},
-	[1638] = {
+	[1647] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19667,7 +19775,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.691,
 		["instance"] = 0,
 	},
-	[1639] = {
+	[1648] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19679,7 +19787,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.692,
 		["instance"] = 0,
 	},
-	[1640] = {
+	[1649] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19691,7 +19799,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.686,
 		["instance"] = 0,
 	},
-	[1641] = {
+	[1650] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19703,7 +19811,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.363,
 		["instance"] = 0,
 	},
-	[1642] = {
+	[1651] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19715,7 +19823,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.38,
 		["instance"] = 0,
 	},
-	[1643] = {
+	[1652] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19727,7 +19835,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.249,
 		["instance"] = 0,
 	},
-	[1644] = {
+	[1653] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19739,7 +19847,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.25,
 		["instance"] = 0,
 	},
-	[1645] = {
+	[1654] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19751,7 +19859,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.589,
 		["instance"] = 0,
 	},
-	[1646] = {
+	[1655] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19763,7 +19871,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.493,
 		["instance"] = 0,
 	},
-	[1647] = {
+	[1656] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19775,7 +19883,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.492,
 		["instance"] = 0,
 	},
-	[1648] = {
+	[1657] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19787,7 +19895,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.495,
 		["instance"] = 0,
 	},
-	[1649] = {
+	[1658] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19799,7 +19907,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.391,
 		["instance"] = 0,
 	},
-	[1650] = {
+	[1659] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19811,7 +19919,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.417,
 		["instance"] = 0,
 	},
-	[1651] = {
+	[1660] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19823,7 +19931,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.414,
 		["instance"] = 0,
 	},
-	[1652] = {
+	[1661] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19835,7 +19943,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.213,
 		["instance"] = 0,
 	},
-	[1653] = {
+	[1662] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19847,7 +19955,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.339,
 		["instance"] = 0,
 	},
-	[1654] = {
+	[1663] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19859,7 +19967,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.627,
 		["instance"] = 0,
 	},
-	[1655] = {
+	[1664] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19871,7 +19979,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.519,
 		["instance"] = 0,
 	},
-	[1656] = {
+	[1665] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19883,7 +19991,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.386,
 		["instance"] = 0,
 	},
-	[1657] = {
+	[1666] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19895,7 +20003,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.386,
 		["instance"] = 0,
 	},
-	[1658] = {
+	[1667] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19903,11 +20011,11 @@ GatherLite_localContainerNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1427,
-		["posX"] = 0.468,
+		["posX"] = 0.467,
 		["posY"] = 0.25,
 		["instance"] = 0,
 	},
-	[1659] = {
+	[1668] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19919,7 +20027,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.552,
 		["instance"] = 0,
 	},
-	[1660] = {
+	[1669] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19931,7 +20039,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.624,
 		["instance"] = 0,
 	},
-	[1661] = {
+	[1670] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19943,7 +20051,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.625,
 		["instance"] = 0,
 	},
-	[1662] = {
+	[1671] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19955,7 +20063,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.242,
 		["instance"] = 1,
 	},
-	[1663] = {
+	[1672] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19967,7 +20075,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.287,
 		["instance"] = 1,
 	},
-	[1664] = {
+	[1673] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19979,7 +20087,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.226,
 		["instance"] = 1,
 	},
-	[1665] = {
+	[1674] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -19991,7 +20099,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 1,
 	},
-	[1666] = {
+	[1675] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20003,7 +20111,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[1667] = {
+	[1676] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20015,7 +20123,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.394,
 		["instance"] = 1,
 	},
-	[1668] = {
+	[1677] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20027,7 +20135,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.395,
 		["instance"] = 1,
 	},
-	[1669] = {
+	[1678] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20039,7 +20147,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.327,
 		["instance"] = 1,
 	},
-	[1670] = {
+	[1679] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20051,7 +20159,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.391,
 		["instance"] = 1,
 	},
-	[1671] = {
+	[1680] = {
+		["type"] = "containers",
+		["object"] = 4149,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1446,
+		["posX"] = 0.627,
+		["posY"] = 0.304,
+		["instance"] = 1,
+	},
+	[1681] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20063,7 +20183,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.306,
 		["instance"] = 1,
 	},
-	[1672] = {
+	[1682] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20075,7 +20195,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.334,
 		["instance"] = 1,
 	},
-	[1673] = {
+	[1683] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20087,7 +20207,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.335,
 		["instance"] = 1,
 	},
-	[1674] = {
+	[1684] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20099,7 +20219,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.29,
 		["instance"] = 1,
 	},
-	[1675] = {
+	[1685] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20111,7 +20231,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.402,
 		["instance"] = 1,
 	},
-	[1676] = {
+	[1686] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20123,7 +20243,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.399,
 		["instance"] = 1,
 	},
-	[1677] = {
+	[1687] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20135,7 +20255,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.328,
 		["instance"] = 1,
 	},
-	[1678] = {
+	[1688] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20147,7 +20267,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 1,
 	},
-	[1679] = {
+	[1689] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20159,7 +20279,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[1680] = {
+	[1690] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20171,7 +20291,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.328,
 		["instance"] = 1,
 	},
-	[1681] = {
+	[1691] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20183,7 +20303,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.364,
 		["instance"] = 1,
 	},
-	[1682] = {
+	[1692] = {
 		["type"] = "containers",
 		["object"] = 4149,
 		["predefined"] = True,
@@ -20195,7 +20315,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[1683] = {
+	[1693] = {
 		["type"] = "containers",
 		["object"] = 153463,
 		["predefined"] = True,
@@ -20207,7 +20327,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.149,
 		["instance"] = 0,
 	},
-	[1684] = {
+	[1694] = {
 		["type"] = "containers",
 		["object"] = 153463,
 		["predefined"] = True,
@@ -20219,7 +20339,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.18,
 		["instance"] = 0,
 	},
-	[1685] = {
+	[1695] = {
 		["type"] = "containers",
 		["object"] = 153463,
 		["predefined"] = True,
@@ -20231,7 +20351,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.132,
 		["instance"] = 0,
 	},
-	[1686] = {
+	[1696] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20243,7 +20363,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.421,
 		["instance"] = 1,
 	},
-	[1687] = {
+	[1697] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20255,7 +20375,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[1688] = {
+	[1698] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20267,7 +20387,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 1,
 	},
-	[1689] = {
+	[1699] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20279,7 +20399,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.463,
 		["instance"] = 1,
 	},
-	[1690] = {
+	[1700] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20291,7 +20411,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.465,
 		["instance"] = 1,
 	},
-	[1691] = {
+	[1701] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20303,7 +20423,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.542,
 		["instance"] = 1,
 	},
-	[1692] = {
+	[1702] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20315,7 +20435,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 1,
 	},
-	[1693] = {
+	[1703] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20327,7 +20447,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.33,
 		["instance"] = 1,
 	},
-	[1694] = {
+	[1704] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20339,7 +20459,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.401,
 		["instance"] = 1,
 	},
-	[1695] = {
+	[1705] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20351,7 +20471,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.628,
 		["instance"] = 1,
 	},
-	[1696] = {
+	[1706] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20363,7 +20483,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.308,
 		["instance"] = 1,
 	},
-	[1697] = {
+	[1707] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20375,7 +20495,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.304,
 		["instance"] = 1,
 	},
-	[1698] = {
+	[1708] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20387,7 +20507,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.701,
 		["instance"] = 1,
 	},
-	[1699] = {
+	[1709] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20399,7 +20519,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.701,
 		["instance"] = 1,
 	},
-	[1700] = {
+	[1710] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20411,7 +20531,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.567,
 		["instance"] = 1,
 	},
-	[1701] = {
+	[1711] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20423,7 +20543,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.79,
 		["instance"] = 1,
 	},
-	[1702] = {
+	[1712] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20435,7 +20555,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[1703] = {
+	[1713] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20447,7 +20567,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.23,
 		["instance"] = 1,
 	},
-	[1704] = {
+	[1714] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20459,7 +20579,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.654,
 		["instance"] = 1,
 	},
-	[1705] = {
+	[1715] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20471,7 +20591,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.655,
 		["instance"] = 1,
 	},
-	[1706] = {
+	[1716] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20480,10 +20600,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1449,
 		["posX"] = 0.358,
-		["posY"] = 0.463,
+		["posY"] = 0.462,
 		["instance"] = 1,
 	},
-	[1707] = {
+	[1717] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20495,7 +20615,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.699,
 		["instance"] = 1,
 	},
-	[1708] = {
+	[1718] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20507,7 +20627,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.764,
 		["instance"] = 1,
 	},
-	[1709] = {
+	[1719] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20519,7 +20639,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.765,
 		["instance"] = 1,
 	},
-	[1710] = {
+	[1720] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20531,7 +20651,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.698,
 		["instance"] = 1,
 	},
-	[1711] = {
+	[1721] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20540,10 +20660,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1449,
 		["posX"] = 0.365,
-		["posY"] = 0.764,
+		["posY"] = 0.763,
 		["instance"] = 1,
 	},
-	[1712] = {
+	[1722] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20555,7 +20675,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.765,
 		["instance"] = 1,
 	},
-	[1713] = {
+	[1723] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20567,7 +20687,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.232,
 		["instance"] = 1,
 	},
-	[1714] = {
+	[1724] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20579,7 +20699,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.534,
 		["instance"] = 1,
 	},
-	[1715] = {
+	[1725] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20591,7 +20711,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.536,
 		["instance"] = 1,
 	},
-	[1716] = {
+	[1726] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20603,7 +20723,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.394,
 		["instance"] = 1,
 	},
-	[1717] = {
+	[1727] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20615,7 +20735,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.395,
 		["instance"] = 1,
 	},
-	[1718] = {
+	[1728] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20627,7 +20747,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.657,
 		["instance"] = 1,
 	},
-	[1719] = {
+	[1729] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20639,7 +20759,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.268,
 		["instance"] = 1,
 	},
-	[1720] = {
+	[1730] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20651,7 +20771,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.269,
 		["instance"] = 1,
 	},
-	[1721] = {
+	[1731] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20663,7 +20783,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.596,
 		["instance"] = 1,
 	},
-	[1722] = {
+	[1732] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20675,7 +20795,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.673,
 		["instance"] = 1,
 	},
-	[1723] = {
+	[1733] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20687,7 +20807,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.798,
 		["instance"] = 1,
 	},
-	[1724] = {
+	[1734] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20699,7 +20819,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.533,
 		["instance"] = 1,
 	},
-	[1725] = {
+	[1735] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20711,7 +20831,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.454,
 		["instance"] = 1,
 	},
-	[1726] = {
+	[1736] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20723,7 +20843,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 1,
 	},
-	[1727] = {
+	[1737] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20735,7 +20855,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.162,
 		["instance"] = 1,
 	},
-	[1728] = {
+	[1738] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20747,7 +20867,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.162,
 		["instance"] = 1,
 	},
-	[1729] = {
+	[1739] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20759,7 +20879,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.522,
 		["instance"] = 1,
 	},
-	[1730] = {
+	[1740] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20771,7 +20891,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.726,
 		["instance"] = 1,
 	},
-	[1731] = {
+	[1741] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20783,7 +20903,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.338,
 		["instance"] = 1,
 	},
-	[1732] = {
+	[1742] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20795,7 +20915,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.831,
 		["instance"] = 1,
 	},
-	[1733] = {
+	[1743] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20807,7 +20927,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.831,
 		["instance"] = 1,
 	},
-	[1734] = {
+	[1744] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20819,7 +20939,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 1,
 	},
-	[1735] = {
+	[1745] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20831,7 +20951,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 1,
 	},
-	[1736] = {
+	[1746] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20843,7 +20963,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.142,
 		["instance"] = 1,
 	},
-	[1737] = {
+	[1747] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20855,7 +20975,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.243,
 		["instance"] = 1,
 	},
-	[1738] = {
+	[1748] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20867,7 +20987,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.245,
 		["instance"] = 1,
 	},
-	[1739] = {
+	[1749] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20876,10 +20996,10 @@ GatherLite_localContainerNodes = {
 		["coins"] = 0,
 		["mapID"] = 1449,
 		["posX"] = 0.455,
-		["posY"] = 0.244,
+		["posY"] = 0.243,
 		["instance"] = 1,
 	},
-	[1740] = {
+	[1750] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20891,7 +21011,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.245,
 		["instance"] = 1,
 	},
-	[1741] = {
+	[1751] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20903,7 +21023,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.142,
 		["instance"] = 1,
 	},
-	[1742] = {
+	[1752] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20915,7 +21035,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.528,
 		["instance"] = 1,
 	},
-	[1743] = {
+	[1753] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20927,7 +21047,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.579,
 		["instance"] = 1,
 	},
-	[1744] = {
+	[1754] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20939,7 +21059,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.484,
 		["instance"] = 1,
 	},
-	[1745] = {
+	[1755] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20951,7 +21071,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 1,
 	},
-	[1746] = {
+	[1756] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20963,7 +21083,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.834,
 		["instance"] = 1,
 	},
-	[1747] = {
+	[1757] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20975,7 +21095,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.836,
 		["instance"] = 1,
 	},
-	[1748] = {
+	[1758] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20987,7 +21107,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.483,
 		["instance"] = 1,
 	},
-	[1749] = {
+	[1759] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -20999,7 +21119,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 1,
 	},
-	[1750] = {
+	[1760] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21011,7 +21131,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.834,
 		["instance"] = 1,
 	},
-	[1751] = {
+	[1761] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21023,7 +21143,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.836,
 		["instance"] = 1,
 	},
-	[1752] = {
+	[1762] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21035,7 +21155,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.16,
 		["instance"] = 1,
 	},
-	[1753] = {
+	[1763] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21047,7 +21167,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.344,
 		["instance"] = 1,
 	},
-	[1754] = {
+	[1764] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21059,7 +21179,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.345,
 		["instance"] = 1,
 	},
-	[1755] = {
+	[1765] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21071,7 +21191,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.902,
 		["instance"] = 1,
 	},
-	[1756] = {
+	[1766] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21083,7 +21203,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.9,
 		["instance"] = 1,
 	},
-	[1757] = {
+	[1767] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21095,7 +21215,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.314,
 		["instance"] = 1,
 	},
-	[1758] = {
+	[1768] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21107,7 +21227,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.315,
 		["instance"] = 1,
 	},
-	[1759] = {
+	[1769] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21119,7 +21239,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.47,
 		["instance"] = 1,
 	},
-	[1760] = {
+	[1770] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21131,7 +21251,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.789,
 		["instance"] = 1,
 	},
-	[1761] = {
+	[1771] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21143,7 +21263,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.79,
 		["instance"] = 1,
 	},
-	[1762] = {
+	[1772] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21155,7 +21275,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.864,
 		["instance"] = 1,
 	},
-	[1763] = {
+	[1773] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21167,7 +21287,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.453,
 		["instance"] = 1,
 	},
-	[1764] = {
+	[1774] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21179,7 +21299,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.455,
 		["instance"] = 1,
 	},
-	[1765] = {
+	[1775] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21191,7 +21311,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.867,
 		["instance"] = 1,
 	},
-	[1766] = {
+	[1776] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21203,7 +21323,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.56,
 		["instance"] = 1,
 	},
-	[1767] = {
+	[1777] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21215,7 +21335,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.39,
 		["instance"] = 1,
 	},
-	[1768] = {
+	[1778] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21227,7 +21347,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.471,
 		["instance"] = 1,
 	},
-	[1769] = {
+	[1779] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21239,7 +21359,19 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.163,
 		["instance"] = 1,
 	},
-	[1770] = {
+	[1780] = {
+		["type"] = "containers",
+		["object"] = 157936,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1449,
+		["posX"] = 0.554,
+		["posY"] = 0.287,
+		["instance"] = 1,
+	},
+	[1781] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21251,7 +21383,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.288,
 		["instance"] = 1,
 	},
-	[1771] = {
+	[1782] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21263,7 +21395,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.567,
 		["instance"] = 1,
 	},
-	[1772] = {
+	[1783] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21275,7 +21407,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.1,
 		["instance"] = 1,
 	},
-	[1773] = {
+	[1784] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21287,7 +21419,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.834,
 		["instance"] = 1,
 	},
-	[1774] = {
+	[1785] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21299,7 +21431,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.835,
 		["instance"] = 1,
 	},
-	[1775] = {
+	[1786] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21311,7 +21443,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.833,
 		["instance"] = 1,
 	},
-	[1776] = {
+	[1787] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21323,7 +21455,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.835,
 		["instance"] = 1,
 	},
-	[1777] = {
+	[1788] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21335,7 +21467,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.442,
 		["instance"] = 1,
 	},
-	[1778] = {
+	[1789] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21347,7 +21479,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.1,
 		["instance"] = 1,
 	},
-	[1779] = {
+	[1790] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21359,7 +21491,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.362,
 		["instance"] = 1,
 	},
-	[1780] = {
+	[1791] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21371,7 +21503,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.365,
 		["instance"] = 1,
 	},
-	[1781] = {
+	[1792] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21383,7 +21515,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.484,
 		["instance"] = 1,
 	},
-	[1782] = {
+	[1793] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21395,7 +21527,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.485,
 		["instance"] = 1,
 	},
-	[1783] = {
+	[1794] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21407,7 +21539,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.82,
 		["instance"] = 1,
 	},
-	[1784] = {
+	[1795] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21419,7 +21551,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.689,
 		["instance"] = 1,
 	},
-	[1785] = {
+	[1796] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21431,7 +21563,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.175,
 		["instance"] = 1,
 	},
-	[1786] = {
+	[1797] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21443,7 +21575,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.174,
 		["instance"] = 1,
 	},
-	[1787] = {
+	[1798] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21455,7 +21587,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.64,
 		["instance"] = 1,
 	},
-	[1788] = {
+	[1799] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21467,7 +21599,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.641,
 		["instance"] = 1,
 	},
-	[1789] = {
+	[1800] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21479,7 +21611,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.479,
 		["instance"] = 1,
 	},
-	[1790] = {
+	[1801] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21491,7 +21623,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.294,
 		["instance"] = 1,
 	},
-	[1791] = {
+	[1802] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21503,7 +21635,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.295,
 		["instance"] = 1,
 	},
-	[1792] = {
+	[1803] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21515,7 +21647,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.411,
 		["instance"] = 1,
 	},
-	[1793] = {
+	[1804] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21527,7 +21659,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.544,
 		["instance"] = 1,
 	},
-	[1794] = {
+	[1805] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21539,7 +21671,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.545,
 		["instance"] = 1,
 	},
-	[1795] = {
+	[1806] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21551,7 +21683,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.784,
 		["instance"] = 1,
 	},
-	[1796] = {
+	[1807] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21563,7 +21695,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.785,
 		["instance"] = 1,
 	},
-	[1797] = {
+	[1808] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21575,7 +21707,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.229,
 		["instance"] = 1,
 	},
-	[1798] = {
+	[1809] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21587,7 +21719,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.791,
 		["instance"] = 1,
 	},
-	[1799] = {
+	[1810] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21599,7 +21731,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.597,
 		["instance"] = 1,
 	},
-	[1800] = {
+	[1811] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21611,7 +21743,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.598,
 		["instance"] = 1,
 	},
-	[1801] = {
+	[1812] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21623,7 +21755,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.763,
 		["instance"] = 1,
 	},
-	[1802] = {
+	[1813] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21635,7 +21767,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.765,
 		["instance"] = 1,
 	},
-	[1803] = {
+	[1814] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21647,7 +21779,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.763,
 		["instance"] = 1,
 	},
-	[1804] = {
+	[1815] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21659,7 +21791,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.711,
 		["instance"] = 1,
 	},
-	[1805] = {
+	[1816] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21671,7 +21803,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.76,
 		["instance"] = 1,
 	},
-	[1806] = {
+	[1817] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21683,7 +21815,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.325,
 		["instance"] = 1,
 	},
-	[1807] = {
+	[1818] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21695,7 +21827,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.323,
 		["instance"] = 1,
 	},
-	[1808] = {
+	[1819] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21707,7 +21839,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.654,
 		["instance"] = 1,
 	},
-	[1809] = {
+	[1820] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21719,7 +21851,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.655,
 		["instance"] = 1,
 	},
-	[1810] = {
+	[1821] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21731,7 +21863,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.584,
 		["instance"] = 1,
 	},
-	[1811] = {
+	[1822] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21743,7 +21875,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.585,
 		["instance"] = 1,
 	},
-	[1812] = {
+	[1823] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21755,7 +21887,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.584,
 		["instance"] = 1,
 	},
-	[1813] = {
+	[1824] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21767,7 +21899,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.585,
 		["instance"] = 1,
 	},
-	[1814] = {
+	[1825] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21779,7 +21911,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.511,
 		["instance"] = 1,
 	},
-	[1815] = {
+	[1826] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21791,7 +21923,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.391,
 		["instance"] = 1,
 	},
-	[1816] = {
+	[1827] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,
@@ -21803,7 +21935,7 @@ GatherLite_localContainerNodes = {
 		["posY"] = 0.584,
 		["instance"] = 1,
 	},
-	[1817] = {
+	[1828] = {
 		["type"] = "containers",
 		["object"] = 157936,
 		["predefined"] = True,

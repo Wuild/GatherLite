@@ -49,9 +49,6 @@ GatherLiteTracker.MinimapFilter = function(node)
 
 
     -- check if were using the predefined database
-
-    --GatherLite:print(node.predefined)
-
     if node.predefined then
         if not GatherLite.db.global.usePredefined then
             return false
@@ -80,6 +77,7 @@ function GatherLiteTracker:ClosestNodes(type, posX, posY, instanceID, maxDist, f
 
         local x, y, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
         local _, distance = HBD:GetWorldVector(instanceID, posX, posY, x, y)
+
         return distance and distance < maxDist;
     end)
 
@@ -130,6 +128,7 @@ local function createNodeThread(type)
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
     local t = GatherLiteTracker:ClosestNodes(type, x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
+
     for key, node in pairs(t) do
         if not _GatherLite.nodes[type][key].loaded then
             GatherLite:createMinimapNode(_GatherLite.nodes[type][key])

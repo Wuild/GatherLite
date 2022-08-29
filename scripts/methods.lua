@@ -474,6 +474,7 @@ function GatherLite:createWorldmapNode(node)
 
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
+        --GatherLite:debug(_GatherLite.DEBUG_NODE, self.node.instance)
     end)
     f:SetScript("OnLeave", function()
         GatherLite:hideTooltip()
