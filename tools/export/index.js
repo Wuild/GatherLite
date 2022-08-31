@@ -9,11 +9,18 @@ const {JSDOM} = jsdom;
 const {CheckIDS, ConvertMapID2UIMapID, MapID2Instance} = require("./lib/zones")
 const {Objects2Lua} = require("./lib/lua");
 
+const expansions = {
+    "vanilla": require("./data/vanilla"),
+    "tbc": require("./data/tbc"),
+    "wotlk": require("./data/wotlk")
+};
+
 function node(type, object, incoming) {
     let data = [];
     for (let id in incoming) {
         for (let coord in incoming[id][0]["coords"]) {
             let mapId = ConvertMapID2UIMapID(id);
+
             if (mapId)
                 data.push({
                     type: type,
@@ -26,25 +33,25 @@ function node(type, object, incoming) {
                     posY: parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3)),
                     instance: MapID2Instance(id)
                 });
-            
+
         }
     }
     return data;
 }
 
-function GetData(data, type, site = "wowhead") {
+function GetData(exp, data, type, site = "wowhead") {
     return new Promise(resolve => {
         let jobs = [];
-        for (let i = 0; i < data[type].length; i++) {
+        for (let i = 0; i < data.length; i++) {
             let url;
 
             switch (site) {
                 default:
-                    url = `https://tbc.wowhead.com/object=${data[type][i]}`;
+                    url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
                     break;
 
                 case "twinstar":
-                    url = `https://vanilla-twinhead.twinstar.cz/?object=${data[type][i]}`;
+                    url = `https://vanilla-twinhead.twinstar.cz/?object=${data[i]}`;
                     break;
             }
 
@@ -76,7 +83,7 @@ function GetData(data, type, site = "wowhead") {
                                 t = "fishing";
                             }
 
-                            let d = node(t, data[type][i], test.window.g_mapperData);
+                            let d = node(t, data[i], test.window.g_mapperData);
                             pr(d);
                         }
                     });
@@ -115,7 +122,7 @@ function CheckDistance(x, y, mapID, object, rows, unique) {
 }
 
 
-function getExpansion(exp = "vanilla", data = {}) {
+function getExpansion(data = {}) {
     let objects = [];
     for (const type in data) {
         objects.push(new Promise(res => {
@@ -142,9 +149,11 @@ function getExpansion(exp = "vanilla", data = {}) {
                 }
 
                 let out = "";
+
+
                 switch (type) {
                     case "containers":
-                        out = Objects2Lua({GatherLite_localContainerNodes: nodes});
+                        out = Objects2Lua({GatherLite_localNodes: {container: Container}});
                         break;
                     case "mining":
                         out = Objects2Lua({GatherLite_localOreNodes: nodes});
@@ -159,10 +168,10 @@ function getExpansion(exp = "vanilla", data = {}) {
                         break;
                 }
 
-                if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db')))
-                    fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db'));
+                if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp)))
+                    fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp));
 
-                fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', `${type}.lua`), out, {
+                fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp, `${type}.lua`), out, {
                     encoding: 'utf8',
                     flag: 'w'
                 });
@@ -177,7 +186,86 @@ function getExpansion(exp = "vanilla", data = {}) {
     })
 }
 
-const vanilla = require("./objects");
+function getTypeData(type) {
+    let promises = [];
+
+    let keys = Object.keys(expansions);
+
+    for (const index in keys) {
+        let exp = keys[index];
+        let data = expansions[exp][type];
+
+        // console.log(data.length);
+
+        if (data)
+            promises.push(new Promise((resolve) => {
+                GetData(exp, data, type, type === "fishing" ? "twinstar" : undefined).then(rows => {
+                    let nodes = [];
+                    for (const arr in rows) {
+                        for (let i = 0; i < rows[arr].length; i++) {
+                            let row = rows[arr][i];
+                            if (row !== undefined) {
+                                row.type = type;
+                                nodes.push(row)
+                                if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
+                                    nodes.push(row)
+                                }
+                            }
+                        }
+                    }
+
+                    resolve(nodes);
+                });
+            }));
+    }
+
+    return Promise.all(promises);
+}
 
 
-getExpansion("vanilla", vanilla)
+function writeDBFile(name, data) {
+
+
+    if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db')))
+        fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db'));
+
+    fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', `${name}.lua`), data, {
+        encoding: 'utf8',
+        flag: 'w'
+    });
+}
+
+getTypeData("mining").then((nodes) => {
+    console.log("mining done!")
+    let out = "";
+    out = Objects2Lua({GatherLite_localOreNodes: nodes.flat()});
+    writeDBFile("mining", out)
+});
+
+getTypeData("herbalism").then((nodes) => {
+    console.log("herbalism done!")
+    let out = "";
+    out = Objects2Lua({GatherLite_localHerbNodes: nodes.flat()});
+    writeDBFile("herbalism", out)
+});
+
+getTypeData("containers").then((nodes) => {
+    console.log("containers done!")
+    let out = "";
+    out = Objects2Lua({GatherLite_localContainerNodes: nodes.flat()});
+    writeDBFile("containers", out)
+});
+
+getTypeData("fishing").then((nodes) => {
+    console.log("fishing done!")
+    let out = "";
+    out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
+    writeDBFile("fishing", out)
+});
+
+
+// console.log(Object.keys(expansions))
+
+// getExpansion("mining", )
+// getExpansion("tbc", require("./data/tbc"))
+// getExpansion("wotlk", require("./data/wotlk"))

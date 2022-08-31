@@ -621,7 +621,7 @@ local function loadDatabase(type)
             node.instance = instance;
             table.insert(_GatherLite.nodes[type], node)
         end
-        
+
     end);
 end
 
@@ -631,13 +631,20 @@ function GatherLite:isLoaded()
     return isLoaded;
 end
 
+function TableConcat(t1, t2)
+    for i = 1, #t2 do
+        t1[#t1 + 1] = t2[i]
+    end
+    return t1
+end
+
 function GatherLite:Load()
 
 
     if GatherLite.db.global.usePredefined then
         GatherLite:print("Loading predefined database, this may cause the game to lag for a few seconds!")
 
-        _GatherLite.nodes["mining"] = GatherLite_localOreNodes
+        _GatherLite.nodes["mining"] = TableConcat(_GatherLite.nodes["mining"], GatherLite_localOreNodes)
         _GatherLite.nodes["herbalism"] = GatherLite_localHerbNodes
         _GatherLite.nodes["containers"] = GatherLite_localContainerNodes
         _GatherLite.nodes["fishing"] = GatherLite_localFishingNodes
@@ -669,8 +676,6 @@ function GatherLite:Load()
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = true;
-            GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap")
-
             GatherLiteToggle:SetPoint('RIGHT', WorldMapFrameCloseButton, 'LEFT', -20, 0);
 
             if Questie_Toggle then

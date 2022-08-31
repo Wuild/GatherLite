@@ -22,14 +22,9 @@ module.exports = {
         123848,
         165658,
         175404,
-        177388,
-
-        // TBC
-        181555,
-        181556,
-        181569,
-        181557
+        177388
     ],
+
     herbalism: [
         1617,
         1618,
@@ -96,22 +91,9 @@ module.exports = {
         202750,
         202751,
         202752,
-        176642,
-
-
-        // TBC
-        181270, // Felweed
-        181271, // Dreaming Glory
-        183045, // Dreaming Glory
-        183046, // Blindweed
-        181275, // Ragveil
-        181277, // Terocone
-        181278, // Ancient Lichen
-        181279, // Netherbloom
-        181280, // Nightmare Vine
-        181281, // Mana Thistle
-
+        176642
     ],
+
     containers: [
         106319,
         2843,
@@ -171,6 +153,4 @@ module.exports = {
         180901,
         180751,
     ]
-};
-
-
+}

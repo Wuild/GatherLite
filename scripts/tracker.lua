@@ -320,6 +320,9 @@ function GatherLiteTracker:Worldmap()
     end);
 
     if worldmapOpen and worldmapID then
+
+        GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "load worldmap", worldmapID)
+
         for key, node in pairs(GatherLiteTracker:WorldmapNodes(_GatherLite.nodes["mining"], worldmapID, GatherLiteTracker.WorldmapFilter)) do
             _GatherLite.nodes["mining"][key].loadedWorldmap = true
             GatherLite:createWorldmapNode(_GatherLite.nodes["mining"][key])

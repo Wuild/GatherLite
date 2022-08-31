@@ -7,27 +7,13 @@ This addon is made for World of Warcraft:Classic
 
 ### Changelog
 
+#### 6.0.0
+* Added the first pass off northrend nodes
+
 #### 5.0.0
 * Fixed several bugs and performance issues
 * Restructured the codebase
 * Updated the predefined database
-
-#### 4.0.0
-* Added outlands nodes
-* Fixed several errors and bugs
-* Updated ACE library
-* Updated node icons
-
-#### 3.1.1
-* Minor translation bugs fixed
-
-#### 3.1.0
-* Nodes can now have multiple ID's
-* Now shows the chance on getting a level when gathering on node tooltips
-* More optimizations on the worldmap now not rendering nodes that should not be visible.
-* Updated wowhead database
-* Removed and/or modified code that wasnt beeing used.
-* Added toggle all to the tracker settings
 
 #### Commands
 Use /gather or /gatherlite when using these commands

@@ -453,7 +453,137 @@ const outland = [{
     "popularity": 12
 }, {"category": 530, "expansion": 1, "id": 3540, "name": "Twisting Nether", "territory": 2, "popularity": 5}];
 
+const northrend = [
+    {
+        "category": 10,
+        "expansion": 1,
+        "id": 3537,
+        "maxlevel": 72,
+        "minlevel": 70,
+        "name": "Borean Tundra",
+        "territory": 2,
+        "popularity": 348
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4197,
+        "maxlevel": 80,
+        "minlevel": 80,
+        "name": "Wintergrasp",
+        "territory": 5,
+        "worldpvp": 1,
+        "popularity": 345
+    }, {
+        "category": 10,
+        "id": 495,
+        "maxlevel": 72,
+        "minlevel": 68,
+        "name": "Howling Fjord",
+        "territory": 2,
+        "popularity": 276
+    }, {
+        "category": 10,
+        "id": 65,
+        "maxlevel": 80,
+        "minlevel": 71,
+        "name": "Dragonblight",
+        "territory": 2,
+        "popularity": 229
+    }, {
+        "category": 10,
+        "id": 67,
+        "maxlevel": 80,
+        "minlevel": 77,
+        "name": "The Storm Peaks",
+        "territory": 2,
+        "popularity": 227
+    }, {
+        "category": 10,
+        "id": 66,
+        "maxlevel": 77,
+        "minlevel": 73,
+        "name": "Zul'Drak",
+        "territory": 2,
+        "popularity": 171
+    }, {
+        "category": 10,
+        "expansion": 1,
+        "id": 3711,
+        "maxlevel": 80,
+        "minlevel": 75,
+        "name": "Sholazar Basin",
+        "territory": 2,
+        "popularity": 144
+    }, {
+        "category": 10,
+        "id": 210,
+        "maxlevel": 80,
+        "minlevel": 77,
+        "name": "Icecrown",
+        "territory": 2,
+        "popularity": 143
+    }, {
+        "category": 10,
+        "id": 394,
+        "maxlevel": 75,
+        "minlevel": 73,
+        "name": "Grizzly Hills",
+        "territory": 2,
+        "popularity": 118
+    }, {
+        "category": 10,
+        "id": 2817,
+        "maxlevel": 80,
+        "minlevel": 80,
+        "name": "Crystalsong Forest",
+        "territory": 2,
+        "popularity": 50
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4742,
+        "name": "Hrothgar's Landing",
+        "territory": 2,
+        "popularity": 20
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4201,
+        "name": "Vordrassil's Tears",
+        "territory": 2,
+        "popularity": 9
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 3979,
+        "name": "The Frozen Sea",
+        "territory": 2,
+        "popularity": 7
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4630,
+        "name": "The North Sea",
+        "territory": 2,
+        "popularity": 7
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4602,
+        "name": "Force Interior",
+        "territory": 2,
+        "popularity": 4
+    }, {
+        "category": 10,
+        "expansion": 2,
+        "id": 4258,
+        "name": "The North Sea",
+        "territory": 2,
+        "popularity": 4
+    }, {"category": 10, "expansion": 1, "id": 3477, "name": "Azjol-Nerub", "territory": 2, "popularity": 0}
+];
+
 module.exports = {
-    zones: [...EasternKingdoms, ...Kalimdor, ...outland]
+    zones: [...EasternKingdoms, ...Kalimdor, ...outland, ...northrend]
 }
 

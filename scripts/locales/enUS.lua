@@ -119,3 +119,21 @@ L['node.nightmare_vine'] = "Nightmare Vine"
 L['node.mana_thistle'] = "Mana Thistle"
 L['node.flame_cap'] = "Flame Cap"
 L['node.bloodthistle'] = "Bloodthistle"
+
+
+
+-- WOTLK Ores
+L['node.saronite_deposit'] = "Saronite Deposit"
+L['node.rich_saronite_deposit'] = "Rich Saronite Deposit"
+L['node.cobalt_deposit'] = "Cobalt Deposit"
+L['node.rich_cobalt_deposit'] = "Rich Cobalt Deposit"
+
+-- WOTLK Herbs
+L['node.goldclover'] = "Goldclover"
+L['node.firethorn'] = "Firethorn"
+L['node.tiger_lily'] = "Tiger Lily"
+L['node.talandras_rose'] = "Talandra's Rose"
+L['node.frozen_herb'] = "Frozen Herb"
+L['node.adders_tongue'] = "Adder's Tongue"
+L['node.lichbloom'] = "Lichbloom"
+L['node.icethorn'] = "Icethorn"

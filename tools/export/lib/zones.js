@@ -91,7 +91,23 @@ const ZoneData = {
     "Netherstorm": [1953],
     "Silvermoon City": [1954],
     "Shattrath City": [1955],
-    "Isle of Quel\'Danas": [1957]
+    "Isle of Quel\'Danas": [1957],
+
+    //WOTLK
+    "Borean Tundra": [114],
+    "Wintergrasp" : [123],
+    "Howling Fjord": [117],
+
+    "Dragonblight": [115],
+    "The Storm Peaks": [120],
+    "Zul'Drak": [121],
+
+    "Sholazar Basin": [119],
+    "Icecrown": [118],
+    "Grizzly Hills": [116],
+
+    "Crystalsong Forest": [127],
+    "Hrothgar's Landing": [170]
 };
 
 const ZoneDataClassic = {
@@ -193,7 +209,35 @@ const ZoneDataClassic = {
     3487: 'Silvermoon City',
     3703: 'Shattrath City',
     4080: 'Isle of Quel\'Danas',
+
+    //WOTLK
+    3537: "Borean Tundra",
+    4197: "Wintergrasp",
+    495: "Howling Fjord",
+
+    65: "Dragonblight",
+    67: "The Storm Peaks",
+    66: "Zul'Drak",
+
+    3711: "Sholazar Basin",
+    210: "Icecrown",
+    394: "Grizzly Hills",
+
+    2817: "Crystalsong Forest",
+    4742: "Hrothgar's Landing",
 };
+
+// "Wintergrasp" : [4197],
+//     "Borean Tundra": [3537],
+//     "Howling Fjord": [495],
+//     "The Storm Peaks": [67],
+//     "Dragonblight": [65],
+//     "Icecrown": [210],
+//     "Zul'Drak": [66],
+//     "Sholazar Basin": [3711],
+//     "Grizzly Hills": [394],
+//     "Crystalsong Forest": [2817],
+//     "Hrothgar's Landing": [4742]
 
 function MapID2Instance(mapID) {
 

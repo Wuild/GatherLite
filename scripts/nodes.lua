@@ -132,6 +132,37 @@ _GatherLite.nodeDB = {
         levels = { 375, 400, 425, 475 }
     },
 
+    -- Wrath of the lich king
+    {
+        type = "ore",
+        id = { 189980 },
+        name = "saronite_deposit",
+        icon = _GatherLite.iconPath .. "Ore\\Saronite",
+        levels = { 400, 400, 400, 400 }
+    },
+    {
+        type = "ore",
+        id = { 189981 },
+        name = "rich_saronite_deposit",
+        icon = _GatherLite.iconPath .. "Ore\\Saronite",
+        levels = { 425, 425, 425, 425 }
+    },
+    {
+        type = "ore",
+        id = { 189978 },
+        name = "cobalt_deposit",
+        icon = _GatherLite.iconPath .. "Ore\\Cobalt",
+        levels = { 350, 400, 400, 400 }
+    },
+
+    {
+        type = "ore",
+        id = { 189979 },
+        name = "rich_cobalt_deposit",
+        icon = _GatherLite.iconPath .. "Ore\\Cobalt",
+        levels = { 375, 400, 400, 400 }
+    },
+
 
     -- Herbalism
 
@@ -415,6 +446,72 @@ _GatherLite.nodeDB = {
         icon = _GatherLite.iconPath .. "Herb\\Stranglekelp",
         levels = { 0, 0, 0, 0 }
     },
+
+    -- WOTLK
+    {
+        type = "herb",
+        id = { 189973 },
+        name = "goldclover",
+        icon = _GatherLite.iconPath .. "Herb\\GoldClover",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 191303 },
+        name = "firethorn",
+        icon = _GatherLite.iconPath .. "Herb\\FlameCap",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 190169 },
+        name = "tiger_lily",
+        icon = _GatherLite.iconPath .. "Herb\\TigerLily",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 190170 },
+        name = "talandras_rose",
+        icon = _GatherLite.iconPath .. "Herb\\TalandrasRose",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 190173 },
+        name = "frozen_herb",
+        icon = _GatherLite.iconPath .. "Herb\\FrostLotus",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 191019 },
+        name = "adders_tongue",
+        icon = _GatherLite.iconPath .. "Herb\\AddersTongue",
+        levels = { 335, 360, 385, 435 }
+    },
+
+    {
+        type = "herb",
+        id = { 190171 },
+        name = "lichbloom",
+        icon = _GatherLite.iconPath .. "Herb\\Lichbloom",
+        levels = { 335, 360, 385, 435 }
+    },
+    {
+        type = "herb",
+        id = { 190172 },
+        name = "icethorn",
+        icon = _GatherLite.iconPath .. "Herb\\Icethorn",
+        levels = { 335, 360, 385, 435 }
+    },
+
+
 
 
     -- containers
