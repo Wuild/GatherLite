@@ -1,7 +1,7 @@
 ## Interface: 30400
 ## Title: GatherLite
 ## Author: Wuild
-## Version: 6.0.0
+## Version: 6.0.1
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter

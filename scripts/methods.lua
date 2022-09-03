@@ -480,7 +480,12 @@ function GatherLite:createWorldmapNode(node)
         GatherLite:hideTooltip()
     end)
 
-    Pins:AddWorldMapIconMap(_GatherLite.name, f, node.mapID, node.posX, node.posY);
+    if not node.posX and not node.posY then
+        GatherLite:debug(_GatherLite.DEBUG_NODE, node.object, node.posX, node.posY)
+    else
+        Pins:AddWorldMapIconMap(_GatherLite.name, f, node.mapID, node.posX, node.posY);
+    end
+
     return f;
 end
 

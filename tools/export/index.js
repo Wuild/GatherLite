@@ -18,23 +18,24 @@ const expansions = {
 function node(type, object, incoming) {
     let data = [];
     for (let id in incoming) {
-        for (let coord in incoming[id][0]["coords"]) {
-            let mapId = ConvertMapID2UIMapID(id);
+        if (incoming[id][0])
+            for (let coord in incoming[id][0]["coords"]) {
+                let mapId = ConvertMapID2UIMapID(id);
 
-            if (mapId)
-                data.push({
-                    type: type,
-                    object: CheckIDS(object),
-                    predefined: true,
-                    loot: [],
-                    coins: "0",
-                    mapID: mapId,
-                    posX: parseFloat((incoming[id][0]["coords"][coord][0] / 100).toFixed(3)),
-                    posY: parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3)),
-                    instance: MapID2Instance(id)
-                });
+                if (mapId)
+                    data.push({
+                        type: type,
+                        object: CheckIDS(object),
+                        predefined: true,
+                        loot: [],
+                        coins: "0",
+                        mapID: mapId,
+                        posX: parseFloat((incoming[id][0]["coords"][coord][0] / 100).toFixed(3)),
+                        posY: parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3)),
+                        instance: MapID2Instance(id)
+                    });
 
-        }
+            }
     }
     return data;
 }
@@ -47,7 +48,8 @@ function GetData(exp, data, type, site = "wowhead") {
 
             switch (site) {
                 default:
-                    url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
+                    // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
+                    url = `https://wotlk-twinhead.twinstar.cz/?object=${data[i]}`;
                     break;
 
                 case "twinstar":
@@ -57,7 +59,6 @@ function GetData(exp, data, type, site = "wowhead") {
 
             jobs.push(axios.get(url).then(res => {
                 return new Promise(pr => {
-
                     const dom = new JSDOM(res.data);
                     dom.window.document.querySelectorAll("script").forEach(link => {
                         if (link.innerHTML.match(/g_mapperData/i)) {
@@ -82,6 +83,8 @@ function GetData(exp, data, type, site = "wowhead") {
                             } else if (type === "fishing") {
                                 t = "fishing";
                             }
+
+                            // console.log(data[i])
 
                             let d = node(t, data[i], test.window.g_mapperData);
                             pr(d);
