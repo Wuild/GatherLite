@@ -153141,7 +153141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.648,
 		["posY"] = 0.771,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12762] = {
 		["type"] = "herbalism",
@@ -153153,7 +153153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.656,
 		["posY"] = 0.746,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12763] = {
 		["type"] = "herbalism",
@@ -153165,7 +153165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.651,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12764] = {
 		["type"] = "herbalism",
@@ -153177,7 +153177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.636,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12765] = {
 		["type"] = "herbalism",
@@ -153189,7 +153189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.459,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12766] = {
 		["type"] = "herbalism",
@@ -153201,7 +153201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.113,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12767] = {
 		["type"] = "herbalism",
@@ -153213,7 +153213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.147,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12768] = {
 		["type"] = "herbalism",
@@ -153225,7 +153225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12769] = {
 		["type"] = "herbalism",
@@ -153237,7 +153237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.822,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12770] = {
 		["type"] = "herbalism",
@@ -153249,7 +153249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.123,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12771] = {
 		["type"] = "herbalism",
@@ -153261,7 +153261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.142,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12772] = {
 		["type"] = "herbalism",
@@ -153273,7 +153273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.15,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12773] = {
 		["type"] = "herbalism",
@@ -153285,7 +153285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.759,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12774] = {
 		["type"] = "herbalism",
@@ -153297,7 +153297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12775] = {
 		["type"] = "herbalism",
@@ -153309,7 +153309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.8,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12776] = {
 		["type"] = "herbalism",
@@ -153321,7 +153321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.782,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12777] = {
 		["type"] = "herbalism",
@@ -153333,7 +153333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.091,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12778] = {
 		["type"] = "herbalism",
@@ -153345,7 +153345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.271,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12779] = {
 		["type"] = "herbalism",
@@ -153357,7 +153357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.759,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12780] = {
 		["type"] = "herbalism",
@@ -153369,7 +153369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.249,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12781] = {
 		["type"] = "herbalism",
@@ -153381,7 +153381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.322,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12782] = {
 		["type"] = "herbalism",
@@ -153393,7 +153393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.122,
 		["posY"] = 0.363,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12783] = {
 		["type"] = "herbalism",
@@ -153405,7 +153405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.558,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12784] = {
 		["type"] = "herbalism",
@@ -153417,7 +153417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.727,
 		["posY"] = 0.349,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12785] = {
 		["type"] = "herbalism",
@@ -153429,7 +153429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.303,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12786] = {
 		["type"] = "herbalism",
@@ -153441,7 +153441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.107,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12787] = {
 		["type"] = "herbalism",
@@ -153453,7 +153453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.244,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12788] = {
 		["type"] = "herbalism",
@@ -153465,7 +153465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.252,
 		["posY"] = 0.313,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12789] = {
 		["type"] = "herbalism",
@@ -153477,7 +153477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.707,
 		["posY"] = 0.313,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12790] = {
 		["type"] = "herbalism",
@@ -153489,7 +153489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.458,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12791] = {
 		["type"] = "herbalism",
@@ -153501,7 +153501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.598,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12792] = {
 		["type"] = "herbalism",
@@ -153513,7 +153513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.242,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12793] = {
 		["type"] = "herbalism",
@@ -153525,7 +153525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.627,
 		["posY"] = 0.275,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12794] = {
 		["type"] = "herbalism",
@@ -153537,7 +153537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.472,
 		["posY"] = 0.274,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12795] = {
 		["type"] = "herbalism",
@@ -153549,7 +153549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.492,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12796] = {
 		["type"] = "herbalism",
@@ -153561,7 +153561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.647,
 		["posY"] = 0.265,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12797] = {
 		["type"] = "herbalism",
@@ -153573,7 +153573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.219,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12798] = {
 		["type"] = "herbalism",
@@ -153585,7 +153585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.738,
 		["posY"] = 0.234,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12799] = {
 		["type"] = "herbalism",
@@ -153597,7 +153597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.685,
 		["posY"] = 0.215,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12800] = {
 		["type"] = "herbalism",
@@ -153609,7 +153609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.604,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12801] = {
 		["type"] = "herbalism",
@@ -153621,7 +153621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.339,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12802] = {
 		["type"] = "herbalism",
@@ -153633,7 +153633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.356,
 		["posY"] = 0.778,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12803] = {
 		["type"] = "herbalism",
@@ -153645,7 +153645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.334,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12804] = {
 		["type"] = "herbalism",
@@ -153657,7 +153657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.344,
 		["posY"] = 0.761,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12805] = {
 		["type"] = "herbalism",
@@ -153669,7 +153669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.671,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12806] = {
 		["type"] = "herbalism",
@@ -153681,7 +153681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.658,
 		["posY"] = 0.725,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12807] = {
 		["type"] = "herbalism",
@@ -153693,7 +153693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.701,
 		["posY"] = 0.72,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12808] = {
 		["type"] = "herbalism",
@@ -153705,7 +153705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.468,
 		["posY"] = 0.716,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12809] = {
 		["type"] = "herbalism",
@@ -153717,7 +153717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.528,
 		["posY"] = 0.714,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12810] = {
 		["type"] = "herbalism",
@@ -153729,7 +153729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.697,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12811] = {
 		["type"] = "herbalism",
@@ -153741,7 +153741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.3,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12812] = {
 		["type"] = "herbalism",
@@ -153753,7 +153753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.764,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12813] = {
 		["type"] = "herbalism",
@@ -153765,7 +153765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.57,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12814] = {
 		["type"] = "herbalism",
@@ -153777,7 +153777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12815] = {
 		["type"] = "herbalism",
@@ -153789,7 +153789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.706,
 		["posY"] = 0.66,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12816] = {
 		["type"] = "herbalism",
@@ -153801,7 +153801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.547,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12817] = {
 		["type"] = "herbalism",
@@ -153813,7 +153813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.332,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12818] = {
 		["type"] = "herbalism",
@@ -153825,7 +153825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.308,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12819] = {
 		["type"] = "herbalism",
@@ -153837,7 +153837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.487,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12820] = {
 		["type"] = "herbalism",
@@ -153849,7 +153849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.267,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12821] = {
 		["type"] = "herbalism",
@@ -153861,7 +153861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.755,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12822] = {
 		["type"] = "herbalism",
@@ -153873,7 +153873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.525,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12823] = {
 		["type"] = "herbalism",
@@ -153885,7 +153885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.45,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12824] = {
 		["type"] = "herbalism",
@@ -153897,7 +153897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.48,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12825] = {
 		["type"] = "herbalism",
@@ -153909,7 +153909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.572,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12826] = {
 		["type"] = "herbalism",
@@ -153921,7 +153921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.59,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12827] = {
 		["type"] = "herbalism",
@@ -153933,7 +153933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.464,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12828] = {
 		["type"] = "herbalism",
@@ -153945,7 +153945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.39,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12829] = {
 		["type"] = "herbalism",
@@ -153957,7 +153957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.595,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12830] = {
 		["type"] = "herbalism",
@@ -153969,7 +153969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.699,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12831] = {
 		["type"] = "herbalism",
@@ -153981,7 +153981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.754,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12832] = {
 		["type"] = "herbalism",
@@ -153993,7 +153993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.346,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12833] = {
 		["type"] = "herbalism",
@@ -154005,7 +154005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.592,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12834] = {
 		["type"] = "herbalism",
@@ -154017,7 +154017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.459,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12835] = {
 		["type"] = "herbalism",
@@ -154029,7 +154029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.792,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12836] = {
 		["type"] = "herbalism",
@@ -154041,7 +154041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.736,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12837] = {
 		["type"] = "herbalism",
@@ -154053,7 +154053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.349,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12838] = {
 		["type"] = "herbalism",
@@ -154065,7 +154065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.37,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12839] = {
 		["type"] = "herbalism",
@@ -154077,7 +154077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.741,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12840] = {
 		["type"] = "herbalism",
@@ -154089,7 +154089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.783,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12841] = {
 		["type"] = "herbalism",
@@ -154101,7 +154101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.763,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12842] = {
 		["type"] = "herbalism",
@@ -154113,7 +154113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.49,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12843] = {
 		["type"] = "herbalism",
@@ -154125,7 +154125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.511,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12844] = {
 		["type"] = "herbalism",
@@ -154137,7 +154137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.584,
 		["posY"] = 0.401,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12845] = {
 		["type"] = "herbalism",
@@ -154149,7 +154149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.417,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12846] = {
 		["type"] = "herbalism",
@@ -154161,7 +154161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.51,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12847] = {
 		["type"] = "herbalism",
@@ -154173,7 +154173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.349,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12848] = {
 		["type"] = "herbalism",
@@ -154185,7 +154185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.665,
 		["posY"] = 0.334,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12849] = {
 		["type"] = "herbalism",
@@ -154197,7 +154197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.313,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12850] = {
 		["type"] = "herbalism",
@@ -154209,7 +154209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.327,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12851] = {
 		["type"] = "herbalism",
@@ -154221,7 +154221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.704,
 		["posY"] = 0.324,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12852] = {
 		["type"] = "herbalism",
@@ -154233,7 +154233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.294,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12853] = {
 		["type"] = "herbalism",
@@ -154245,7 +154245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.463,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12854] = {
 		["type"] = "herbalism",
@@ -154257,7 +154257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.486,
 		["posY"] = 0.3,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12855] = {
 		["type"] = "herbalism",
@@ -154269,7 +154269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.446,
 		["posY"] = 0.297,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12856] = {
 		["type"] = "herbalism",
@@ -154281,7 +154281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.271,
 		["posY"] = 0.296,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12857] = {
 		["type"] = "herbalism",
@@ -154293,7 +154293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.471,
 		["posY"] = 0.289,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12858] = {
 		["type"] = "herbalism",
@@ -154305,7 +154305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.421,
 		["posY"] = 0.277,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12859] = {
 		["type"] = "herbalism",
@@ -154317,7 +154317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.658,
 		["posY"] = 0.268,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12860] = {
 		["type"] = "herbalism",
@@ -154329,7 +154329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.283,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12861] = {
 		["type"] = "herbalism",
@@ -154341,7 +154341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.712,
 		["posY"] = 0.25,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12862] = {
 		["type"] = "herbalism",
@@ -154353,7 +154353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.694,
 		["posY"] = 0.246,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12863] = {
 		["type"] = "herbalism",
@@ -154365,7 +154365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.672,
 		["posY"] = 0.244,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12864] = {
 		["type"] = "herbalism",
@@ -154377,7 +154377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.585,
 		["posY"] = 0.228,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12865] = {
 		["type"] = "herbalism",
@@ -154389,7 +154389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.29,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12866] = {
 		["type"] = "herbalism",
@@ -154401,7 +154401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.7,
 		["posY"] = 0.221,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12867] = {
 		["type"] = "herbalism",
@@ -154413,7 +154413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.682,
 		["posY"] = 0.22,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12868] = {
 		["type"] = "herbalism",
@@ -154425,7 +154425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.565,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12869] = {
 		["type"] = "herbalism",
@@ -154437,7 +154437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.487,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12870] = {
 		["type"] = "herbalism",
@@ -154449,7 +154449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.271,
 		["posY"] = 0.207,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12871] = {
 		["type"] = "herbalism",
@@ -154461,7 +154461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.549,
 		["posY"] = 0.197,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12872] = {
 		["type"] = "herbalism",
@@ -154473,7 +154473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.698,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12873] = {
 		["type"] = "herbalism",
@@ -154485,7 +154485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.187,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12874] = {
 		["type"] = "herbalism",
@@ -154497,7 +154497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.724,
 		["posY"] = 0.185,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12875] = {
 		["type"] = "herbalism",
@@ -154509,7 +154509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.286,
 		["posY"] = 0.181,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12876] = {
 		["type"] = "herbalism",
@@ -154521,7 +154521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.523,
 		["posY"] = 0.178,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12877] = {
 		["type"] = "herbalism",
@@ -154533,7 +154533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.502,
 		["posY"] = 0.166,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12878] = {
 		["type"] = "herbalism",
@@ -154545,7 +154545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.269,
 		["posY"] = 0.146,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12879] = {
 		["type"] = "herbalism",
@@ -154557,7 +154557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.238,
 		["posY"] = 0.14,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12880] = {
 		["type"] = "herbalism",
@@ -154569,7 +154569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.292,
 		["posY"] = 0.12,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12881] = {
 		["type"] = "herbalism",
@@ -154581,7 +154581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.252,
 		["posY"] = 0.118,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12882] = {
 		["type"] = "herbalism",
@@ -154593,7 +154593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.281,
 		["posY"] = 0.091,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12883] = {
 		["type"] = "herbalism",
@@ -154605,7 +154605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.264,
 		["posY"] = 0.079,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12884] = {
 		["type"] = "herbalism",
@@ -154617,7 +154617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.5,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12885] = {
 		["type"] = "herbalism",
@@ -154629,7 +154629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.43,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12886] = {
 		["type"] = "herbalism",
@@ -154641,7 +154641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.397,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12887] = {
 		["type"] = "herbalism",
@@ -154653,7 +154653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.516,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12888] = {
 		["type"] = "herbalism",
@@ -154665,7 +154665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.608,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12889] = {
 		["type"] = "herbalism",
@@ -154677,7 +154677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.55,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12890] = {
 		["type"] = "herbalism",
@@ -154689,7 +154689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.591,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12891] = {
 		["type"] = "herbalism",
@@ -154701,7 +154701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.577,
 		["posY"] = 0.521,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12892] = {
 		["type"] = "herbalism",
@@ -154713,7 +154713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.6,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12893] = {
 		["type"] = "herbalism",
@@ -154725,7 +154725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.347,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12894] = {
 		["type"] = "herbalism",
@@ -154737,7 +154737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.484,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12895] = {
 		["type"] = "herbalism",
@@ -154749,7 +154749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12896] = {
 		["type"] = "herbalism",
@@ -154761,7 +154761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.578,
 		["posY"] = 0.472,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12897] = {
 		["type"] = "herbalism",
@@ -154773,7 +154773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.618,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12898] = {
 		["type"] = "herbalism",
@@ -154785,7 +154785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.41,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12899] = {
 		["type"] = "herbalism",
@@ -154797,7 +154797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.472,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12900] = {
 		["type"] = "herbalism",
@@ -154809,7 +154809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.697,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12901] = {
 		["type"] = "herbalism",
@@ -154821,7 +154821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.547,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12902] = {
 		["type"] = "herbalism",
@@ -154833,7 +154833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.765,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12903] = {
 		["type"] = "herbalism",
@@ -154845,7 +154845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.435,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12904] = {
 		["type"] = "herbalism",
@@ -154857,7 +154857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.624,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12905] = {
 		["type"] = "herbalism",
@@ -154869,7 +154869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.792,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12906] = {
 		["type"] = "herbalism",
@@ -154881,7 +154881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12907] = {
 		["type"] = "herbalism",
@@ -154893,7 +154893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.66,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12908] = {
 		["type"] = "herbalism",
@@ -154905,7 +154905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.419,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12909] = {
 		["type"] = "herbalism",
@@ -154917,7 +154917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.57,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12910] = {
 		["type"] = "herbalism",
@@ -154929,7 +154929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.799,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12911] = {
 		["type"] = "herbalism",
@@ -154941,7 +154941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.768,
 		["posY"] = 0.32,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12912] = {
 		["type"] = "herbalism",
@@ -154953,7 +154953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.589,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12913] = {
 		["type"] = "herbalism",
@@ -154965,7 +154965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.558,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12914] = {
 		["type"] = "herbalism",
@@ -154977,7 +154977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.756,
 		["posY"] = 0.289,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12915] = {
 		["type"] = "herbalism",
@@ -154989,7 +154989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12916] = {
 		["type"] = "herbalism",
@@ -155001,7 +155001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.748,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12917] = {
 		["type"] = "herbalism",
@@ -155013,7 +155013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.224,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12918] = {
 		["type"] = "herbalism",
@@ -155025,7 +155025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.477,
 		["posY"] = 0.218,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12919] = {
 		["type"] = "herbalism",
@@ -155037,7 +155037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.503,
 		["posY"] = 0.213,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12920] = {
 		["type"] = "herbalism",
@@ -155049,7 +155049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.724,
 		["posY"] = 0.205,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12921] = {
 		["type"] = "herbalism",
@@ -155061,7 +155061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12922] = {
 		["type"] = "herbalism",
@@ -155073,7 +155073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.655,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12923] = {
 		["type"] = "herbalism",
@@ -155085,7 +155085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.626,
 		["posY"] = 0.135,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12924] = {
 		["type"] = "herbalism",
@@ -155097,7 +155097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.647,
 		["posY"] = 0.115,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12925] = {
 		["type"] = "herbalism",
@@ -155109,7 +155109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.482,
 		["posY"] = 0.075,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12926] = {
 		["type"] = "herbalism",
@@ -155121,7 +155121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.328,
 		["posY"] = 0.835,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12927] = {
 		["type"] = "herbalism",
@@ -155133,7 +155133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.599,
 		["posY"] = 0.812,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12928] = {
 		["type"] = "herbalism",
@@ -155145,7 +155145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.804,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12929] = {
 		["type"] = "herbalism",
@@ -155157,7 +155157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.321,
 		["posY"] = 0.797,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12930] = {
 		["type"] = "herbalism",
@@ -155169,7 +155169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.796,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12931] = {
 		["type"] = "herbalism",
@@ -155181,7 +155181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.57,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12932] = {
 		["type"] = "herbalism",
@@ -155193,7 +155193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.271,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12933] = {
 		["type"] = "herbalism",
@@ -155205,7 +155205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.704,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12934] = {
 		["type"] = "herbalism",
@@ -155217,7 +155217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.673,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12935] = {
 		["type"] = "herbalism",
@@ -155229,7 +155229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.713,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12936] = {
 		["type"] = "herbalism",
@@ -155241,7 +155241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.29,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12937] = {
 		["type"] = "herbalism",
@@ -155253,7 +155253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.307,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12938] = {
 		["type"] = "herbalism",
@@ -155265,7 +155265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.312,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12939] = {
 		["type"] = "herbalism",
@@ -155277,7 +155277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.247,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12940] = {
 		["type"] = "herbalism",
@@ -155289,7 +155289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.319,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12941] = {
 		["type"] = "herbalism",
@@ -155301,7 +155301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.242,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12942] = {
 		["type"] = "herbalism",
@@ -155313,7 +155313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.494,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12943] = {
 		["type"] = "herbalism",
@@ -155325,7 +155325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.472,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12944] = {
 		["type"] = "herbalism",
@@ -155337,7 +155337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.503,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12945] = {
 		["type"] = "herbalism",
@@ -155349,7 +155349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12946] = {
 		["type"] = "herbalism",
@@ -155361,7 +155361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.445,
 		["posY"] = 0.421,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12947] = {
 		["type"] = "herbalism",
@@ -155373,7 +155373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.439,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12948] = {
 		["type"] = "herbalism",
@@ -155385,7 +155385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.327,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12949] = {
 		["type"] = "herbalism",
@@ -155397,7 +155397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.444,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12950] = {
 		["type"] = "herbalism",
@@ -155409,7 +155409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.592,
 		["posY"] = 0.344,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12951] = {
 		["type"] = "herbalism",
@@ -155421,7 +155421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.562,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12952] = {
 		["type"] = "herbalism",
@@ -155433,7 +155433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.539,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12953] = {
 		["type"] = "herbalism",
@@ -155445,7 +155445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12954] = {
 		["type"] = "herbalism",
@@ -155457,7 +155457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.4,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12955] = {
 		["type"] = "herbalism",
@@ -155469,7 +155469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.537,
 		["posY"] = 0.269,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12956] = {
 		["type"] = "herbalism",
@@ -155481,7 +155481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.588,
 		["posY"] = 0.259,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12957] = {
 		["type"] = "herbalism",
@@ -155493,7 +155493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.251,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12958] = {
 		["type"] = "herbalism",
@@ -155505,7 +155505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.276,
 		["posY"] = 0.698,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12959] = {
 		["type"] = "herbalism",
@@ -155517,7 +155517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.274,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12960] = {
 		["type"] = "herbalism",
@@ -155529,7 +155529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.292,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12961] = {
 		["type"] = "herbalism",
@@ -155541,7 +155541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.275,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12962] = {
 		["type"] = "herbalism",
@@ -155553,7 +155553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.291,
 		["posY"] = 0.589,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12963] = {
 		["type"] = "herbalism",
@@ -155565,7 +155565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.292,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12964] = {
 		["type"] = "herbalism",
@@ -155577,7 +155577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.609,
 		["posY"] = 0.53,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12965] = {
 		["type"] = "herbalism",
@@ -155589,7 +155589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.649,
 		["posY"] = 0.528,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12966] = {
 		["type"] = "herbalism",
@@ -155601,7 +155601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.629,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12967] = {
 		["type"] = "herbalism",
@@ -155613,7 +155613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.293,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12968] = {
 		["type"] = "herbalism",
@@ -155625,7 +155625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.561,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12969] = {
 		["type"] = "herbalism",
@@ -155637,7 +155637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.628,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12970] = {
 		["type"] = "herbalism",
@@ -155649,7 +155649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.627,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12971] = {
 		["type"] = "herbalism",
@@ -155661,7 +155661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.613,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12972] = {
 		["type"] = "herbalism",
@@ -155673,7 +155673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.532,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12973] = {
 		["type"] = "herbalism",
@@ -155685,7 +155685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.311,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12974] = {
 		["type"] = "herbalism",
@@ -155697,7 +155697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.542,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12975] = {
 		["type"] = "herbalism",
@@ -155709,7 +155709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.323,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12976] = {
 		["type"] = "herbalism",
@@ -155721,7 +155721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.345,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12977] = {
 		["type"] = "herbalism",
@@ -155733,7 +155733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.221,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12978] = {
 		["type"] = "herbalism",
@@ -155745,7 +155745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.372,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12979] = {
 		["type"] = "herbalism",
@@ -155757,7 +155757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.28,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12980] = {
 		["type"] = "herbalism",
@@ -155769,7 +155769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12981] = {
 		["type"] = "herbalism",
@@ -155781,7 +155781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.097,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12982] = {
 		["type"] = "herbalism",
@@ -155793,7 +155793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.201,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12983] = {
 		["type"] = "herbalism",
@@ -155805,7 +155805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.168,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12984] = {
 		["type"] = "herbalism",
@@ -155817,7 +155817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.258,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12985] = {
 		["type"] = "herbalism",
@@ -155829,7 +155829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.302,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12986] = {
 		["type"] = "herbalism",
@@ -155841,7 +155841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.118,
 		["posY"] = 0.393,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12987] = {
 		["type"] = "herbalism",
@@ -155853,7 +155853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.103,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12988] = {
 		["type"] = "herbalism",
@@ -155865,7 +155865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.155,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12989] = {
 		["type"] = "herbalism",
@@ -155877,7 +155877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.085,
 		["posY"] = 0.371,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12990] = {
 		["type"] = "herbalism",
@@ -155889,7 +155889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.42,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12991] = {
 		["type"] = "herbalism",
@@ -155901,7 +155901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.381,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12992] = {
 		["type"] = "herbalism",
@@ -155913,7 +155913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.087,
 		["posY"] = 0.35,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12993] = {
 		["type"] = "herbalism",
@@ -155925,7 +155925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.4,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12994] = {
 		["type"] = "herbalism",
@@ -155937,7 +155937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.361,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12995] = {
 		["type"] = "herbalism",
@@ -155949,7 +155949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.546,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12996] = {
 		["type"] = "herbalism",
@@ -155961,7 +155961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12997] = {
 		["type"] = "herbalism",
@@ -155973,7 +155973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.597,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12998] = {
 		["type"] = "herbalism",
@@ -155985,7 +155985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.534,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12999] = {
 		["type"] = "herbalism",
@@ -155997,7 +155997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.596,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13000] = {
 		["type"] = "herbalism",
@@ -156009,7 +156009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.527,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13001] = {
 		["type"] = "herbalism",
@@ -156021,7 +156021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.602,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13002] = {
 		["type"] = "herbalism",
@@ -156033,7 +156033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.525,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13003] = {
 		["type"] = "herbalism",
@@ -156045,7 +156045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.551,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13004] = {
 		["type"] = "herbalism",
@@ -156057,7 +156057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.555,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13005] = {
 		["type"] = "herbalism",
@@ -156069,7 +156069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.528,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13006] = {
 		["type"] = "herbalism",
@@ -156081,7 +156081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.472,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13007] = {
 		["type"] = "herbalism",
@@ -156093,7 +156093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.493,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13008] = {
 		["type"] = "herbalism",
@@ -156105,7 +156105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.424,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13009] = {
 		["type"] = "herbalism",
@@ -156117,7 +156117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.602,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13010] = {
 		["type"] = "herbalism",
@@ -156129,7 +156129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.6,
 		["posY"] = 0.324,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13011] = {
 		["type"] = "herbalism",
@@ -156141,7 +156141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.264,
 		["posY"] = 0.274,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13012] = {
 		["type"] = "herbalism",
@@ -156153,7 +156153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.227,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13013] = {
 		["type"] = "herbalism",
@@ -156165,7 +156165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.222,
 		["posY"] = 0.26,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13014] = {
 		["type"] = "herbalism",
@@ -156177,7 +156177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.326,
 		["posY"] = 0.258,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13015] = {
 		["type"] = "herbalism",
@@ -156189,7 +156189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.317,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13016] = {
 		["type"] = "herbalism",
@@ -156201,7 +156201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.303,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13017] = {
 		["type"] = "herbalism",
@@ -156213,7 +156213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.42,
 		["posY"] = 0.243,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13018] = {
 		["type"] = "herbalism",
@@ -156225,7 +156225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.351,
 		["posY"] = 0.239,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13019] = {
 		["type"] = "herbalism",
@@ -156237,7 +156237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.438,
 		["posY"] = 0.236,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13020] = {
 		["type"] = "herbalism",
@@ -156249,7 +156249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.671,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13021] = {
 		["type"] = "herbalism",
@@ -156261,7 +156261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.403,
 		["posY"] = 0.218,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13022] = {
 		["type"] = "herbalism",
@@ -156273,7 +156273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.684,
 		["posY"] = 0.207,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13023] = {
 		["type"] = "herbalism",
@@ -156285,7 +156285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.392,
 		["posY"] = 0.199,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13024] = {
 		["type"] = "herbalism",
@@ -156297,7 +156297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13025] = {
 		["type"] = "herbalism",
@@ -156309,7 +156309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.679,
 		["posY"] = 0.189,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13026] = {
 		["type"] = "herbalism",
@@ -156321,7 +156321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13027] = {
 		["type"] = "herbalism",
@@ -156333,7 +156333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.527,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13028] = {
 		["type"] = "herbalism",
@@ -156345,7 +156345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.541,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13029] = {
 		["type"] = "herbalism",
@@ -156357,7 +156357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.542,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13030] = {
 		["type"] = "herbalism",
@@ -156369,7 +156369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.522,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13031] = {
 		["type"] = "herbalism",
@@ -156381,7 +156381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.521,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13032] = {
 		["type"] = "herbalism",
@@ -156393,7 +156393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.523,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13033] = {
 		["type"] = "herbalism",
@@ -156405,7 +156405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.523,
 		["posY"] = 0.459,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13034] = {
 		["type"] = "herbalism",
@@ -156417,7 +156417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.536,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13035] = {
 		["type"] = "herbalism",
@@ -156429,7 +156429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13036] = {
 		["type"] = "herbalism",
@@ -156441,7 +156441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.496,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13037] = {
 		["type"] = "herbalism",
@@ -156453,7 +156453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13038] = {
 		["type"] = "herbalism",
@@ -156465,7 +156465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13039] = {
 		["type"] = "herbalism",
@@ -156477,7 +156477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13040] = {
 		["type"] = "herbalism",
@@ -156489,7 +156489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.493,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13041] = {
 		["type"] = "herbalism",
@@ -156501,7 +156501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.494,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13042] = {
 		["type"] = "herbalism",
@@ -156513,7 +156513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.54,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13043] = {
 		["type"] = "herbalism",
@@ -156525,7 +156525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.539,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13044] = {
 		["type"] = "herbalism",
@@ -156537,7 +156537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.527,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13045] = {
 		["type"] = "herbalism",
@@ -156549,7 +156549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.528,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13046] = {
 		["type"] = "herbalism",
@@ -156561,7 +156561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.535,
 		["posY"] = 0.868,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13047] = {
 		["type"] = "herbalism",
@@ -156573,7 +156573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.867,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13048] = {
 		["type"] = "herbalism",
@@ -156585,7 +156585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.597,
 		["posY"] = 0.864,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13049] = {
 		["type"] = "herbalism",
@@ -156597,7 +156597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.545,
 		["posY"] = 0.856,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13050] = {
 		["type"] = "herbalism",
@@ -156609,7 +156609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.601,
 		["posY"] = 0.853,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13051] = {
 		["type"] = "herbalism",
@@ -156621,7 +156621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.532,
 		["posY"] = 0.852,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13052] = {
 		["type"] = "herbalism",
@@ -156633,7 +156633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.563,
 		["posY"] = 0.848,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13053] = {
 		["type"] = "herbalism",
@@ -156645,7 +156645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.575,
 		["posY"] = 0.832,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13054] = {
 		["type"] = "herbalism",
@@ -156657,7 +156657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13055] = {
 		["type"] = "herbalism",
@@ -156669,7 +156669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.471,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13056] = {
 		["type"] = "herbalism",
@@ -156681,7 +156681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.741,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13057] = {
 		["type"] = "herbalism",
@@ -156693,7 +156693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13058] = {
 		["type"] = "herbalism",
@@ -156705,7 +156705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.494,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13059] = {
 		["type"] = "herbalism",
@@ -156717,7 +156717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.481,
 		["posY"] = 0.705,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13060] = {
 		["type"] = "herbalism",
@@ -156729,7 +156729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.495,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13061] = {
 		["type"] = "herbalism",
@@ -156741,7 +156741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.688,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13062] = {
 		["type"] = "herbalism",
@@ -156753,7 +156753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.693,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13063] = {
 		["type"] = "herbalism",
@@ -156765,7 +156765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.695,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13064] = {
 		["type"] = "herbalism",
@@ -156777,7 +156777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.686,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13065] = {
 		["type"] = "herbalism",
@@ -156789,7 +156789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.496,
 		["posY"] = 0.657,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13066] = {
 		["type"] = "herbalism",
@@ -156801,7 +156801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.469,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13067] = {
 		["type"] = "herbalism",
@@ -156813,7 +156813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13068] = {
 		["type"] = "herbalism",
@@ -156825,7 +156825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.467,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13069] = {
 		["type"] = "herbalism",
@@ -156837,7 +156837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.307,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13070] = {
 		["type"] = "herbalism",
@@ -156849,7 +156849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.327,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13071] = {
 		["type"] = "herbalism",
@@ -156861,7 +156861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13072] = {
 		["type"] = "herbalism",
@@ -156873,7 +156873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.464,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13073] = {
 		["type"] = "herbalism",
@@ -156885,7 +156885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13074] = {
 		["type"] = "herbalism",
@@ -156897,7 +156897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.505,
 		["posY"] = 0.626,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13075] = {
 		["type"] = "herbalism",
@@ -156909,7 +156909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.328,
 		["posY"] = 0.615,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13076] = {
 		["type"] = "herbalism",
@@ -156921,7 +156921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.227,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13077] = {
 		["type"] = "herbalism",
@@ -156933,7 +156933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.471,
 		["posY"] = 0.611,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13078] = {
 		["type"] = "herbalism",
@@ -156945,7 +156945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.495,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13079] = {
 		["type"] = "herbalism",
@@ -156957,7 +156957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.487,
 		["posY"] = 0.603,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13080] = {
 		["type"] = "herbalism",
@@ -156969,7 +156969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.479,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13081] = {
 		["type"] = "herbalism",
@@ -156981,7 +156981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13082] = {
 		["type"] = "herbalism",
@@ -156993,7 +156993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.253,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13083] = {
 		["type"] = "herbalism",
@@ -157005,7 +157005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13084] = {
 		["type"] = "herbalism",
@@ -157017,7 +157017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.486,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13085] = {
 		["type"] = "herbalism",
@@ -157029,7 +157029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.485,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13086] = {
 		["type"] = "herbalism",
@@ -157041,7 +157041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.476,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13087] = {
 		["type"] = "herbalism",
@@ -157053,7 +157053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.638,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13088] = {
 		["type"] = "herbalism",
@@ -157065,7 +157065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.642,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13089] = {
 		["type"] = "herbalism",
@@ -157077,7 +157077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.968,
 		["posY"] = 0.242,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13090] = {
 		["type"] = "herbalism",
@@ -157089,7 +157089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.383,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13091] = {
 		["type"] = "herbalism",
@@ -157101,7 +157101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.394,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13092] = {
 		["type"] = "herbalism",
@@ -157113,7 +157113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.393,
 		["posY"] = 0.862,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13093] = {
 		["type"] = "herbalism",
@@ -157125,7 +157125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.311,
 		["posY"] = 0.854,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13094] = {
 		["type"] = "herbalism",
@@ -157137,7 +157137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.299,
 		["posY"] = 0.851,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13095] = {
 		["type"] = "herbalism",
@@ -157149,7 +157149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.203,
 		["posY"] = 0.851,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13096] = {
 		["type"] = "herbalism",
@@ -157161,7 +157161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.258,
 		["posY"] = 0.841,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13097] = {
 		["type"] = "herbalism",
@@ -157173,7 +157173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.529,
 		["posY"] = 0.826,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13098] = {
 		["type"] = "herbalism",
@@ -157185,7 +157185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.242,
 		["posY"] = 0.822,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13099] = {
 		["type"] = "herbalism",
@@ -157197,7 +157197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.45,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13100] = {
 		["type"] = "herbalism",
@@ -157209,7 +157209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.542,
 		["posY"] = 0.808,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13101] = {
 		["type"] = "herbalism",
@@ -157221,7 +157221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.226,
 		["posY"] = 0.787,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13102] = {
 		["type"] = "herbalism",
@@ -157233,7 +157233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.22,
 		["posY"] = 0.781,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13103] = {
 		["type"] = "herbalism",
@@ -157245,7 +157245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.271,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13104] = {
 		["type"] = "herbalism",
@@ -157257,7 +157257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.561,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13105] = {
 		["type"] = "herbalism",
@@ -157269,7 +157269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.266,
 		["posY"] = 0.757,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13106] = {
 		["type"] = "herbalism",
@@ -157281,7 +157281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.527,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13107] = {
 		["type"] = "herbalism",
@@ -157293,7 +157293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.516,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13108] = {
 		["type"] = "herbalism",
@@ -157305,7 +157305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.359,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13109] = {
 		["type"] = "herbalism",
@@ -157317,7 +157317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.326,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13110] = {
 		["type"] = "herbalism",
@@ -157329,7 +157329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.582,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13111] = {
 		["type"] = "herbalism",
@@ -157341,7 +157341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.385,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13112] = {
 		["type"] = "herbalism",
@@ -157353,7 +157353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.428,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13113] = {
 		["type"] = "herbalism",
@@ -157365,7 +157365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.302,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13114] = {
 		["type"] = "herbalism",
@@ -157377,7 +157377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.315,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13115] = {
 		["type"] = "herbalism",
@@ -157389,7 +157389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.352,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13116] = {
 		["type"] = "herbalism",
@@ -157401,7 +157401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.286,
 		["posY"] = 0.688,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13117] = {
 		["type"] = "herbalism",
@@ -157413,7 +157413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.312,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13118] = {
 		["type"] = "herbalism",
@@ -157425,7 +157425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.333,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13119] = {
 		["type"] = "herbalism",
@@ -157437,7 +157437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.444,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13120] = {
 		["type"] = "herbalism",
@@ -157449,7 +157449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.496,
 		["posY"] = 0.647,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13121] = {
 		["type"] = "herbalism",
@@ -157461,7 +157461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.294,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13122] = {
 		["type"] = "herbalism",
@@ -157473,7 +157473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.38,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13123] = {
 		["type"] = "herbalism",
@@ -157485,7 +157485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.393,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13124] = {
 		["type"] = "herbalism",
@@ -157497,7 +157497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.353,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13125] = {
 		["type"] = "herbalism",
@@ -157509,7 +157509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.491,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13126] = {
 		["type"] = "herbalism",
@@ -157521,7 +157521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.506,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13127] = {
 		["type"] = "herbalism",
@@ -157533,7 +157533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.371,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13128] = {
 		["type"] = "herbalism",
@@ -157545,7 +157545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.489,
 		["posY"] = 0.615,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13129] = {
 		["type"] = "herbalism",
@@ -157557,7 +157557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.427,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13130] = {
 		["type"] = "herbalism",
@@ -157569,7 +157569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.398,
 		["posY"] = 0.603,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13131] = {
 		["type"] = "herbalism",
@@ -157581,7 +157581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.372,
 		["posY"] = 0.586,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13132] = {
 		["type"] = "herbalism",
@@ -157593,7 +157593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.297,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13133] = {
 		["type"] = "herbalism",
@@ -157605,7 +157605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.307,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13134] = {
 		["type"] = "herbalism",
@@ -157617,7 +157617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.31,
 		["posY"] = 0.528,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13135] = {
 		["type"] = "herbalism",
@@ -157629,7 +157629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.297,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13136] = {
 		["type"] = "herbalism",
@@ -157641,7 +157641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.444,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13137] = {
 		["type"] = "herbalism",
@@ -157653,7 +157653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.446,
 		["posY"] = 0.509,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13138] = {
 		["type"] = "herbalism",
@@ -157665,7 +157665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.257,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13139] = {
 		["type"] = "herbalism",
@@ -157677,7 +157677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.439,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13140] = {
 		["type"] = "herbalism",
@@ -157689,7 +157689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.218,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13141] = {
 		["type"] = "herbalism",
@@ -157701,7 +157701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.335,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13142] = {
 		["type"] = "herbalism",
@@ -157713,7 +157713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.23,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13143] = {
 		["type"] = "herbalism",
@@ -157725,7 +157725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.343,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13144] = {
 		["type"] = "herbalism",
@@ -157737,7 +157737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13145] = {
 		["type"] = "herbalism",
@@ -157749,7 +157749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.435,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13146] = {
 		["type"] = "herbalism",
@@ -157761,7 +157761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.421,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13147] = {
 		["type"] = "herbalism",
@@ -157773,7 +157773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.347,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13148] = {
 		["type"] = "herbalism",
@@ -157785,7 +157785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.344,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13149] = {
 		["type"] = "herbalism",
@@ -157797,7 +157797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.398,
 		["posY"] = 0.446,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13150] = {
 		["type"] = "herbalism",
@@ -157809,7 +157809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.399,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13151] = {
 		["type"] = "herbalism",
@@ -157821,7 +157821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13152] = {
 		["type"] = "herbalism",
@@ -157833,7 +157833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.314,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13153] = {
 		["type"] = "herbalism",
@@ -157845,7 +157845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.41,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13154] = {
 		["type"] = "herbalism",
@@ -157857,7 +157857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.298,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13155] = {
 		["type"] = "herbalism",
@@ -157869,7 +157869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.371,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13156] = {
 		["type"] = "herbalism",
@@ -157881,7 +157881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.197,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13157] = {
 		["type"] = "herbalism",
@@ -157893,7 +157893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.33,
 		["posY"] = 0.939,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13158] = {
 		["type"] = "herbalism",
@@ -157905,7 +157905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.387,
 		["posY"] = 0.926,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13159] = {
 		["type"] = "herbalism",
@@ -157917,7 +157917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.861,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13160] = {
 		["type"] = "herbalism",
@@ -157929,7 +157929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.329,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13161] = {
 		["type"] = "herbalism",
@@ -157941,7 +157941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.4,
 		["posY"] = 0.823,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13162] = {
 		["type"] = "herbalism",
@@ -157953,7 +157953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.348,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13163] = {
 		["type"] = "herbalism",
@@ -157965,7 +157965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.294,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13164] = {
 		["type"] = "herbalism",
@@ -157977,7 +157977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.362,
 		["posY"] = 0.817,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13165] = {
 		["type"] = "herbalism",
@@ -157989,7 +157989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.394,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13166] = {
 		["type"] = "herbalism",
@@ -158001,7 +158001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.425,
 		["posY"] = 0.784,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13167] = {
 		["type"] = "herbalism",
@@ -158013,7 +158013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.444,
 		["posY"] = 0.774,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13168] = {
 		["type"] = "herbalism",
@@ -158025,7 +158025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13169] = {
 		["type"] = "herbalism",
@@ -158037,7 +158037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13170] = {
 		["type"] = "herbalism",
@@ -158049,7 +158049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.426,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13171] = {
 		["type"] = "herbalism",
@@ -158061,7 +158061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.389,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13172] = {
 		["type"] = "herbalism",
@@ -158073,7 +158073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.806,
 		["posY"] = 0.739,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13173] = {
 		["type"] = "herbalism",
@@ -158085,7 +158085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.353,
 		["posY"] = 0.736,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13174] = {
 		["type"] = "herbalism",
@@ -158097,7 +158097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.27,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13175] = {
 		["type"] = "herbalism",
@@ -158109,7 +158109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.284,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13176] = {
 		["type"] = "herbalism",
@@ -158121,7 +158121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.312,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13177] = {
 		["type"] = "herbalism",
@@ -158133,7 +158133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.255,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13178] = {
 		["type"] = "herbalism",
@@ -158145,7 +158145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.344,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13179] = {
 		["type"] = "herbalism",
@@ -158157,7 +158157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.439,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13180] = {
 		["type"] = "herbalism",
@@ -158169,7 +158169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.257,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13181] = {
 		["type"] = "herbalism",
@@ -158181,7 +158181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.261,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13182] = {
 		["type"] = "herbalism",
@@ -158193,7 +158193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.3,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13183] = {
 		["type"] = "herbalism",
@@ -158205,7 +158205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.549,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13184] = {
 		["type"] = "herbalism",
@@ -158217,7 +158217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.351,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13185] = {
 		["type"] = "herbalism",
@@ -158229,7 +158229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.543,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13186] = {
 		["type"] = "herbalism",
@@ -158241,7 +158241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.495,
 		["posY"] = 0.656,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13187] = {
 		["type"] = "herbalism",
@@ -158253,7 +158253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.571,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13188] = {
 		["type"] = "herbalism",
@@ -158265,7 +158265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13189] = {
 		["type"] = "herbalism",
@@ -158277,7 +158277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.656,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13190] = {
 		["type"] = "herbalism",
@@ -158289,7 +158289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.582,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13191] = {
 		["type"] = "herbalism",
@@ -158301,7 +158301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.373,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13192] = {
 		["type"] = "herbalism",
@@ -158313,7 +158313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.661,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13193] = {
 		["type"] = "herbalism",
@@ -158325,7 +158325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.594,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13194] = {
 		["type"] = "herbalism",
@@ -158337,7 +158337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13195] = {
 		["type"] = "herbalism",
@@ -158349,7 +158349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.601,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13196] = {
 		["type"] = "herbalism",
@@ -158361,7 +158361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.465,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13197] = {
 		["type"] = "herbalism",
@@ -158373,7 +158373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.717,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13198] = {
 		["type"] = "herbalism",
@@ -158385,7 +158385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.22,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13199] = {
 		["type"] = "herbalism",
@@ -158397,7 +158397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.577,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13200] = {
 		["type"] = "herbalism",
@@ -158409,7 +158409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.65,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13201] = {
 		["type"] = "herbalism",
@@ -158421,7 +158421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.698,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13202] = {
 		["type"] = "herbalism",
@@ -158433,7 +158433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.461,
 		["posY"] = 0.569,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13203] = {
 		["type"] = "herbalism",
@@ -158445,7 +158445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.268,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13204] = {
 		["type"] = "herbalism",
@@ -158457,7 +158457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.216,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13205] = {
 		["type"] = "herbalism",
@@ -158469,7 +158469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.24,
 		["posY"] = 0.554,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13206] = {
 		["type"] = "herbalism",
@@ -158481,7 +158481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.229,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13207] = {
 		["type"] = "herbalism",
@@ -158493,7 +158493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.447,
 		["posY"] = 0.547,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13208] = {
 		["type"] = "herbalism",
@@ -158505,7 +158505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.624,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13209] = {
 		["type"] = "herbalism",
@@ -158517,7 +158517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.563,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13210] = {
 		["type"] = "herbalism",
@@ -158529,7 +158529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.724,
 		["posY"] = 0.522,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13211] = {
 		["type"] = "herbalism",
@@ -158541,7 +158541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.249,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13212] = {
 		["type"] = "herbalism",
@@ -158553,7 +158553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.506,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13213] = {
 		["type"] = "herbalism",
@@ -158565,7 +158565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.74,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13214] = {
 		["type"] = "herbalism",
@@ -158577,7 +158577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.272,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13215] = {
 		["type"] = "herbalism",
@@ -158589,7 +158589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.511,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13216] = {
 		["type"] = "herbalism",
@@ -158601,7 +158601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.274,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13217] = {
 		["type"] = "herbalism",
@@ -158613,7 +158613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.427,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13218] = {
 		["type"] = "herbalism",
@@ -158625,7 +158625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.58,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13219] = {
 		["type"] = "herbalism",
@@ -158637,7 +158637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.44,
 		["posY"] = 0.42,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13220] = {
 		["type"] = "herbalism",
@@ -158649,7 +158649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.631,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13221] = {
 		["type"] = "herbalism",
@@ -158661,7 +158661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.284,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13222] = {
 		["type"] = "herbalism",
@@ -158673,7 +158673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13223] = {
 		["type"] = "herbalism",
@@ -158685,7 +158685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.291,
 		["posY"] = 0.374,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13224] = {
 		["type"] = "herbalism",
@@ -158697,7 +158697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.222,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13225] = {
 		["type"] = "herbalism",
@@ -158709,7 +158709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.493,
 		["posY"] = 0.865,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13226] = {
 		["type"] = "herbalism",
@@ -158721,7 +158721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.786,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13227] = {
 		["type"] = "herbalism",
@@ -158733,7 +158733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.839,
 		["posY"] = 0.778,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13228] = {
 		["type"] = "herbalism",
@@ -158745,7 +158745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.589,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13229] = {
 		["type"] = "herbalism",
@@ -158757,7 +158757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.587,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13230] = {
 		["type"] = "herbalism",
@@ -158769,7 +158769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13231] = {
 		["type"] = "herbalism",
@@ -158781,7 +158781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.831,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13232] = {
 		["type"] = "herbalism",
@@ -158793,7 +158793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13233] = {
 		["type"] = "herbalism",
@@ -158805,7 +158805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.83,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13234] = {
 		["type"] = "herbalism",
@@ -158817,7 +158817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.516,
 		["posY"] = 0.702,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13235] = {
 		["type"] = "herbalism",
@@ -158829,7 +158829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.699,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13236] = {
 		["type"] = "herbalism",
@@ -158841,7 +158841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.461,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13237] = {
 		["type"] = "herbalism",
@@ -158853,7 +158853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.489,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13238] = {
 		["type"] = "herbalism",
@@ -158865,7 +158865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.53,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13239] = {
 		["type"] = "herbalism",
@@ -158877,7 +158877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.485,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13240] = {
 		["type"] = "herbalism",
@@ -158889,7 +158889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.429,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13241] = {
 		["type"] = "herbalism",
@@ -158901,7 +158901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.435,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13242] = {
 		["type"] = "herbalism",
@@ -158913,7 +158913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13243] = {
 		["type"] = "herbalism",
@@ -158925,7 +158925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13244] = {
 		["type"] = "herbalism",
@@ -158937,7 +158937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.481,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13245] = {
 		["type"] = "herbalism",
@@ -158949,7 +158949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13246] = {
 		["type"] = "herbalism",
@@ -158961,7 +158961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13247] = {
 		["type"] = "herbalism",
@@ -158973,7 +158973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.469,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13248] = {
 		["type"] = "herbalism",
@@ -158985,7 +158985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.682,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13249] = {
 		["type"] = "herbalism",
@@ -158997,7 +158997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.667,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13250] = {
 		["type"] = "herbalism",
@@ -159009,7 +159009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.699,
 		["posY"] = 0.593,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13251] = {
 		["type"] = "herbalism",
@@ -159021,7 +159021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.457,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13252] = {
 		["type"] = "herbalism",
@@ -159033,7 +159033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.42,
 		["posY"] = 0.586,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13253] = {
 		["type"] = "herbalism",
@@ -159045,7 +159045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.476,
 		["posY"] = 0.572,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13254] = {
 		["type"] = "herbalism",
@@ -159057,7 +159057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13255] = {
 		["type"] = "herbalism",
@@ -159069,7 +159069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.691,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13256] = {
 		["type"] = "herbalism",
@@ -159081,7 +159081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.413,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13257] = {
 		["type"] = "herbalism",
@@ -159093,7 +159093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.227,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13258] = {
 		["type"] = "herbalism",
@@ -159105,7 +159105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.792,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13259] = {
 		["type"] = "herbalism",
@@ -159117,7 +159117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.722,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13260] = {
 		["type"] = "herbalism",
@@ -159129,7 +159129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13261] = {
 		["type"] = "herbalism",
@@ -159141,7 +159141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.406,
 		["posY"] = 0.52,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13262] = {
 		["type"] = "herbalism",
@@ -159153,7 +159153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.208,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13263] = {
 		["type"] = "herbalism",
@@ -159165,7 +159165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.774,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13264] = {
 		["type"] = "herbalism",
@@ -159177,7 +159177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13265] = {
 		["type"] = "herbalism",
@@ -159189,7 +159189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.436,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13266] = {
 		["type"] = "herbalism",
@@ -159201,7 +159201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.453,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13267] = {
 		["type"] = "herbalism",
@@ -159213,7 +159213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.442,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13268] = {
 		["type"] = "herbalism",
@@ -159225,7 +159225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.695,
 		["posY"] = 0.486,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13269] = {
 		["type"] = "herbalism",
@@ -159237,7 +159237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.286,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13270] = {
 		["type"] = "herbalism",
@@ -159249,7 +159249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13271] = {
 		["type"] = "herbalism",
@@ -159261,7 +159261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.655,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13272] = {
 		["type"] = "herbalism",
@@ -159273,7 +159273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.605,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13273] = {
 		["type"] = "herbalism",
@@ -159285,7 +159285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.755,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13274] = {
 		["type"] = "herbalism",
@@ -159297,7 +159297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.748,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13275] = {
 		["type"] = "herbalism",
@@ -159309,7 +159309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.498,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13276] = {
 		["type"] = "herbalism",
@@ -159321,7 +159321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.753,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13277] = {
 		["type"] = "herbalism",
@@ -159333,7 +159333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.744,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13278] = {
 		["type"] = "herbalism",
@@ -159345,7 +159345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.631,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13279] = {
 		["type"] = "herbalism",
@@ -159357,7 +159357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.618,
 		["posY"] = 0.434,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13280] = {
 		["type"] = "herbalism",
@@ -159369,7 +159369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.512,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13281] = {
 		["type"] = "herbalism",
@@ -159381,7 +159381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.313,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13282] = {
 		["type"] = "herbalism",
@@ -159393,7 +159393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.742,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13283] = {
 		["type"] = "herbalism",
@@ -159405,7 +159405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.773,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13284] = {
 		["type"] = "herbalism",
@@ -159417,7 +159417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.74,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13285] = {
 		["type"] = "herbalism",
@@ -159429,7 +159429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.73,
 		["posY"] = 0.409,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13286] = {
 		["type"] = "herbalism",
@@ -159441,7 +159441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.63,
 		["posY"] = 0.409,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13287] = {
 		["type"] = "herbalism",
@@ -159453,7 +159453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.417,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13288] = {
 		["type"] = "herbalism",
@@ -159465,7 +159465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.277,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13289] = {
 		["type"] = "herbalism",
@@ -159477,7 +159477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.272,
 		["posY"] = 0.392,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13290] = {
 		["type"] = "herbalism",
@@ -159489,7 +159489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.279,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13291] = {
 		["type"] = "herbalism",
@@ -159501,7 +159501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.688,
 		["posY"] = 0.388,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13292] = {
 		["type"] = "herbalism",
@@ -159513,7 +159513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.7,
 		["posY"] = 0.387,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13293] = {
 		["type"] = "herbalism",
@@ -159525,7 +159525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13294] = {
 		["type"] = "herbalism",
@@ -159537,7 +159537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.274,
 		["posY"] = 0.385,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13295] = {
 		["type"] = "herbalism",
@@ -159549,7 +159549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.733,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13296] = {
 		["type"] = "herbalism",
@@ -159561,7 +159561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.649,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13297] = {
 		["type"] = "herbalism",
@@ -159573,7 +159573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.559,
 		["posY"] = 0.379,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13298] = {
 		["type"] = "herbalism",
@@ -159585,7 +159585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.611,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13299] = {
 		["type"] = "herbalism",
@@ -159597,7 +159597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.694,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13300] = {
 		["type"] = "herbalism",
@@ -159609,7 +159609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.717,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13301] = {
 		["type"] = "herbalism",
@@ -159621,7 +159621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.75,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13302] = {
 		["type"] = "herbalism",
@@ -159633,7 +159633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.366,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13303] = {
 		["type"] = "herbalism",
@@ -159645,7 +159645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.416,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13304] = {
 		["type"] = "herbalism",
@@ -159657,7 +159657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13305] = {
 		["type"] = "herbalism",
@@ -159669,7 +159669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.73,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13306] = {
 		["type"] = "herbalism",
@@ -159681,7 +159681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.395,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13307] = {
 		["type"] = "herbalism",
@@ -159693,7 +159693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.297,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13308] = {
 		["type"] = "herbalism",
@@ -159705,7 +159705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.465,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13309] = {
 		["type"] = "herbalism",
@@ -159717,7 +159717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.415,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13310] = {
 		["type"] = "herbalism",
@@ -159729,7 +159729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.283,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13311] = {
 		["type"] = "herbalism",
@@ -159741,7 +159741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.62,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13312] = {
 		["type"] = "herbalism",
@@ -159753,7 +159753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.751,
 		["posY"] = 0.331,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13313] = {
 		["type"] = "herbalism",
@@ -159765,7 +159765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.729,
 		["posY"] = 0.312,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13314] = {
 		["type"] = "herbalism",
@@ -159777,7 +159777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.474,
 		["posY"] = 0.309,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13315] = {
 		["type"] = "herbalism",
@@ -159789,7 +159789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.751,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13316] = {
 		["type"] = "herbalism",
@@ -159801,7 +159801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.74,
 		["posY"] = 0.291,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13317] = {
 		["type"] = "herbalism",
@@ -159813,7 +159813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.329,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13318] = {
 		["type"] = "herbalism",
@@ -159825,7 +159825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.462,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13319] = {
 		["type"] = "herbalism",
@@ -159837,7 +159837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.61,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13320] = {
 		["type"] = "herbalism",
@@ -159849,7 +159849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.577,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13321] = {
 		["type"] = "herbalism",
@@ -159861,7 +159861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.749,
 		["posY"] = 0.471,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13322] = {
 		["type"] = "herbalism",
@@ -159873,7 +159873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.812,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13323] = {
 		["type"] = "herbalism",
@@ -159885,7 +159885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.208,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13324] = {
 		["type"] = "herbalism",
@@ -159897,7 +159897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.717,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13325] = {
 		["type"] = "herbalism",
@@ -159909,7 +159909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.74,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13326] = {
 		["type"] = "herbalism",
@@ -159921,7 +159921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.47,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13327] = {
 		["type"] = "herbalism",
@@ -159933,7 +159933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.661,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13328] = {
 		["type"] = "herbalism",
@@ -159945,7 +159945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.32,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13329] = {
 		["type"] = "herbalism",
@@ -159957,7 +159957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.632,
 		["posY"] = 0.245,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13330] = {
 		["type"] = "herbalism",
@@ -159969,7 +159969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.377,
 		["posY"] = 0.944,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13331] = {
 		["type"] = "herbalism",
@@ -159981,7 +159981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.334,
 		["posY"] = 0.895,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13332] = {
 		["type"] = "herbalism",
@@ -159993,7 +159993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.356,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13333] = {
 		["type"] = "herbalism",
@@ -160005,7 +160005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.823,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13334] = {
 		["type"] = "herbalism",
@@ -160017,7 +160017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.266,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13335] = {
 		["type"] = "herbalism",
@@ -160029,7 +160029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.258,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13336] = {
 		["type"] = "herbalism",
@@ -160041,7 +160041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.246,
 		["posY"] = 0.725,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13337] = {
 		["type"] = "herbalism",
@@ -160053,7 +160053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.268,
 		["posY"] = 0.715,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13338] = {
 		["type"] = "herbalism",
@@ -160065,7 +160065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.573,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13339] = {
 		["type"] = "herbalism",
@@ -160077,7 +160077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.272,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13340] = {
 		["type"] = "herbalism",
@@ -160089,7 +160089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.256,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13341] = {
 		["type"] = "herbalism",
@@ -160101,7 +160101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.291,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13342] = {
 		["type"] = "herbalism",
@@ -160113,7 +160113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.37,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13343] = {
 		["type"] = "herbalism",
@@ -160125,7 +160125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.267,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13344] = {
 		["type"] = "herbalism",
@@ -160137,7 +160137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.329,
 		["posY"] = 0.669,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13345] = {
 		["type"] = "herbalism",
@@ -160149,7 +160149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.459,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13346] = {
 		["type"] = "herbalism",
@@ -160161,7 +160161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.751,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13347] = {
 		["type"] = "herbalism",
@@ -160173,7 +160173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.76,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13348] = {
 		["type"] = "herbalism",
@@ -160185,7 +160185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.555,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13349] = {
 		["type"] = "herbalism",
@@ -160197,7 +160197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.579,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13350] = {
 		["type"] = "herbalism",
@@ -160209,7 +160209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.359,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13351] = {
 		["type"] = "herbalism",
@@ -160221,7 +160221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.715,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13352] = {
 		["type"] = "herbalism",
@@ -160233,7 +160233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.39,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13353] = {
 		["type"] = "herbalism",
@@ -160245,7 +160245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.477,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13354] = {
 		["type"] = "herbalism",
@@ -160257,7 +160257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.244,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13355] = {
 		["type"] = "herbalism",
@@ -160269,7 +160269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.571,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13356] = {
 		["type"] = "herbalism",
@@ -160281,7 +160281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13357] = {
 		["type"] = "herbalism",
@@ -160293,7 +160293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.375,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13358] = {
 		["type"] = "herbalism",
@@ -160305,7 +160305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.48,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13359] = {
 		["type"] = "herbalism",
@@ -160317,7 +160317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.278,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13360] = {
 		["type"] = "herbalism",
@@ -160329,7 +160329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.473,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13361] = {
 		["type"] = "herbalism",
@@ -160341,7 +160341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.664,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13362] = {
 		["type"] = "herbalism",
@@ -160353,7 +160353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.584,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13363] = {
 		["type"] = "herbalism",
@@ -160365,7 +160365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.273,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13364] = {
 		["type"] = "herbalism",
@@ -160377,7 +160377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.453,
 		["posY"] = 0.55,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13365] = {
 		["type"] = "herbalism",
@@ -160389,7 +160389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.721,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13366] = {
 		["type"] = "herbalism",
@@ -160401,7 +160401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.42,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13367] = {
 		["type"] = "herbalism",
@@ -160413,7 +160413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.703,
 		["posY"] = 0.541,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13368] = {
 		["type"] = "herbalism",
@@ -160425,7 +160425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.709,
 		["posY"] = 0.53,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13369] = {
 		["type"] = "herbalism",
@@ -160437,7 +160437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.638,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13370] = {
 		["type"] = "herbalism",
@@ -160449,7 +160449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.28,
 		["posY"] = 0.513,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13371] = {
 		["type"] = "herbalism",
@@ -160461,7 +160461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.56,
 		["posY"] = 0.509,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13372] = {
 		["type"] = "herbalism",
@@ -160473,7 +160473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.7,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13373] = {
 		["type"] = "herbalism",
@@ -160485,7 +160485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.598,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13374] = {
 		["type"] = "herbalism",
@@ -160497,7 +160497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.642,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13375] = {
 		["type"] = "herbalism",
@@ -160509,7 +160509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13376] = {
 		["type"] = "herbalism",
@@ -160521,7 +160521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.671,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13377] = {
 		["type"] = "herbalism",
@@ -160533,7 +160533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.597,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13378] = {
 		["type"] = "herbalism",
@@ -160545,7 +160545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.321,
 		["posY"] = 0.471,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13379] = {
 		["type"] = "herbalism",
@@ -160557,7 +160557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.25,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13380] = {
 		["type"] = "herbalism",
@@ -160569,7 +160569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.65,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13381] = {
 		["type"] = "herbalism",
@@ -160581,7 +160581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.396,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13382] = {
 		["type"] = "herbalism",
@@ -160593,7 +160593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.37,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13383] = {
 		["type"] = "herbalism",
@@ -160605,7 +160605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.417,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13384] = {
 		["type"] = "herbalism",
@@ -160617,7 +160617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.422,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13385] = {
 		["type"] = "herbalism",
@@ -160629,7 +160629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.341,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13386] = {
 		["type"] = "herbalism",
@@ -160641,7 +160641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.256,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13387] = {
 		["type"] = "herbalism",
@@ -160653,7 +160653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.353,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13388] = {
 		["type"] = "herbalism",
@@ -160665,7 +160665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.346,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13389] = {
 		["type"] = "herbalism",
@@ -160677,7 +160677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.34,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13390] = {
 		["type"] = "herbalism",
@@ -160689,7 +160689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.449,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13391] = {
 		["type"] = "herbalism",
@@ -160701,7 +160701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.811,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13392] = {
 		["type"] = "herbalism",
@@ -160713,7 +160713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.786,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13393] = {
 		["type"] = "herbalism",
@@ -160725,7 +160725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.829,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13394] = {
 		["type"] = "herbalism",
@@ -160737,7 +160737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.584,
 		["posY"] = 0.768,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13395] = {
 		["type"] = "herbalism",
@@ -160749,7 +160749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.594,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13396] = {
 		["type"] = "herbalism",
@@ -160761,7 +160761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.695,
 		["posY"] = 0.741,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13397] = {
 		["type"] = "herbalism",
@@ -160773,7 +160773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.518,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13398] = {
 		["type"] = "herbalism",
@@ -160785,7 +160785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.734,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13399] = {
 		["type"] = "herbalism",
@@ -160797,7 +160797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.856,
 		["posY"] = 0.733,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13400] = {
 		["type"] = "herbalism",
@@ -160809,7 +160809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.726,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13401] = {
 		["type"] = "herbalism",
@@ -160821,7 +160821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.85,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13402] = {
 		["type"] = "herbalism",
@@ -160833,7 +160833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.5,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13403] = {
 		["type"] = "herbalism",
@@ -160845,7 +160845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.465,
 		["posY"] = 0.713,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13404] = {
 		["type"] = "herbalism",
@@ -160857,7 +160857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13405] = {
 		["type"] = "herbalism",
@@ -160869,7 +160869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.698,
 		["posY"] = 0.66,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13406] = {
 		["type"] = "herbalism",
@@ -160881,7 +160881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.396,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13407] = {
 		["type"] = "herbalism",
@@ -160893,7 +160893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.447,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13408] = {
 		["type"] = "herbalism",
@@ -160905,7 +160905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13409] = {
 		["type"] = "herbalism",
@@ -160917,7 +160917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13410] = {
 		["type"] = "herbalism",
@@ -160929,7 +160929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.236,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13411] = {
 		["type"] = "herbalism",
@@ -160941,7 +160941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.7,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13412] = {
 		["type"] = "herbalism",
@@ -160953,7 +160953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13413] = {
 		["type"] = "herbalism",
@@ -160965,7 +160965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.692,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13414] = {
 		["type"] = "herbalism",
@@ -160977,7 +160977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.675,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13415] = {
 		["type"] = "herbalism",
@@ -160989,7 +160989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.477,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13416] = {
 		["type"] = "herbalism",
@@ -161001,7 +161001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.684,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13417] = {
 		["type"] = "herbalism",
@@ -161013,7 +161013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.199,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13418] = {
 		["type"] = "herbalism",
@@ -161025,7 +161025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.473,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13419] = {
 		["type"] = "herbalism",
@@ -161037,7 +161037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.369,
 		["posY"] = 0.579,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13420] = {
 		["type"] = "herbalism",
@@ -161049,7 +161049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.463,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13421] = {
 		["type"] = "herbalism",
@@ -161061,7 +161061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13422] = {
 		["type"] = "herbalism",
@@ -161073,7 +161073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.683,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13423] = {
 		["type"] = "herbalism",
@@ -161085,7 +161085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.456,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13424] = {
 		["type"] = "herbalism",
@@ -161097,7 +161097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.705,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13425] = {
 		["type"] = "herbalism",
@@ -161109,7 +161109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.405,
 		["posY"] = 0.505,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13426] = {
 		["type"] = "herbalism",
@@ -161121,7 +161121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.726,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13427] = {
 		["type"] = "herbalism",
@@ -161133,7 +161133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.472,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13428] = {
 		["type"] = "herbalism",
@@ -161145,7 +161145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.636,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13429] = {
 		["type"] = "herbalism",
@@ -161157,7 +161157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.279,
 		["posY"] = 0.444,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13430] = {
 		["type"] = "herbalism",
@@ -161169,7 +161169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.599,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13431] = {
 		["type"] = "herbalism",
@@ -161181,7 +161181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.303,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13432] = {
 		["type"] = "herbalism",
@@ -161193,7 +161193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.558,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13433] = {
 		["type"] = "herbalism",
@@ -161205,7 +161205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.735,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13434] = {
 		["type"] = "herbalism",
@@ -161217,7 +161217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.308,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13435] = {
 		["type"] = "herbalism",
@@ -161229,7 +161229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.716,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13436] = {
 		["type"] = "herbalism",
@@ -161241,7 +161241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.311,
 		["posY"] = 0.42,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13437] = {
 		["type"] = "herbalism",
@@ -161253,7 +161253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.28,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13438] = {
 		["type"] = "herbalism",
@@ -161265,7 +161265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.57,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13439] = {
 		["type"] = "herbalism",
@@ -161277,7 +161277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.613,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13440] = {
 		["type"] = "herbalism",
@@ -161289,7 +161289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13441] = {
 		["type"] = "herbalism",
@@ -161301,7 +161301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.298,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13442] = {
 		["type"] = "herbalism",
@@ -161313,7 +161313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13443] = {
 		["type"] = "herbalism",
@@ -161325,7 +161325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.721,
 		["posY"] = 0.392,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13444] = {
 		["type"] = "herbalism",
@@ -161337,7 +161337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.693,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13445] = {
 		["type"] = "herbalism",
@@ -161349,7 +161349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.744,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13446] = {
 		["type"] = "herbalism",
@@ -161361,7 +161361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13447] = {
 		["type"] = "herbalism",
@@ -161373,7 +161373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.734,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13448] = {
 		["type"] = "herbalism",
@@ -161385,7 +161385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.615,
 		["posY"] = 0.359,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13449] = {
 		["type"] = "herbalism",
@@ -161397,7 +161397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13450] = {
 		["type"] = "herbalism",
@@ -161409,7 +161409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.354,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13451] = {
 		["type"] = "herbalism",
@@ -161421,7 +161421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.352,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13452] = {
 		["type"] = "herbalism",
@@ -161433,7 +161433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.404,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13453] = {
 		["type"] = "herbalism",
@@ -161445,7 +161445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.729,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13454] = {
 		["type"] = "herbalism",
@@ -161457,7 +161457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.459,
 		["posY"] = 0.334,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13455] = {
 		["type"] = "herbalism",
@@ -161469,7 +161469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.803,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13456] = {
 		["type"] = "herbalism",
@@ -161481,7 +161481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.449,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13457] = {
 		["type"] = "herbalism",
@@ -161493,7 +161493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.351,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13458] = {
 		["type"] = "herbalism",
@@ -161505,7 +161505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.799,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13459] = {
 		["type"] = "herbalism",
@@ -161517,7 +161517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.318,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13460] = {
 		["type"] = "herbalism",
@@ -161529,7 +161529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.334,
 		["posY"] = 0.249,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13461] = {
 		["type"] = "herbalism",
@@ -161541,7 +161541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.596,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13462] = {
 		["type"] = "herbalism",
@@ -161553,7 +161553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.398,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13463] = {
 		["type"] = "herbalism",
@@ -161565,7 +161565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.804,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13464] = {
 		["type"] = "herbalism",
@@ -161577,7 +161577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.668,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13465] = {
 		["type"] = "herbalism",
@@ -161589,7 +161589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.619,
 		["posY"] = 0.382,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13466] = {
 		["type"] = "herbalism",
@@ -161601,7 +161601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.261,
 		["posY"] = 0.349,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13467] = {
 		["type"] = "herbalism",
@@ -161613,7 +161613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.615,
 		["posY"] = 0.175,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13468] = {
 		["type"] = "herbalism",
@@ -161625,7 +161625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.656,
 		["posY"] = 0.784,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13469] = {
 		["type"] = "herbalism",
@@ -161637,7 +161637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.645,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13470] = {
 		["type"] = "herbalism",
@@ -161649,7 +161649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.617,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13471] = {
 		["type"] = "herbalism",
@@ -161661,7 +161661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.772,
 		["posY"] = 0.716,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13472] = {
 		["type"] = "herbalism",
@@ -161673,7 +161673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.729,
 		["posY"] = 0.705,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13473] = {
 		["type"] = "herbalism",
@@ -161685,7 +161685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.625,
 		["posY"] = 0.703,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13474] = {
 		["type"] = "herbalism",
@@ -161697,7 +161697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.707,
 		["posY"] = 0.7,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13475] = {
 		["type"] = "herbalism",
@@ -161709,7 +161709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.581,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13476] = {
 		["type"] = "herbalism",
@@ -161721,7 +161721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.715,
 		["posY"] = 0.615,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13477] = {
 		["type"] = "herbalism",
@@ -161733,7 +161733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.543,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13478] = {
 		["type"] = "herbalism",
@@ -161745,7 +161745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.701,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13479] = {
 		["type"] = "herbalism",
@@ -161757,7 +161757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.782,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13480] = {
 		["type"] = "herbalism",
@@ -161769,7 +161769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.518,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13481] = {
 		["type"] = "herbalism",
@@ -161781,7 +161781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.527,
 		["posY"] = 0.602,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13482] = {
 		["type"] = "herbalism",
@@ -161793,7 +161793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.735,
 		["posY"] = 0.593,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13483] = {
 		["type"] = "herbalism",
@@ -161805,7 +161805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.539,
 		["posY"] = 0.582,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13484] = {
 		["type"] = "herbalism",
@@ -161817,7 +161817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.702,
 		["posY"] = 0.58,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13485] = {
 		["type"] = "herbalism",
@@ -161829,7 +161829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.735,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13486] = {
 		["type"] = "herbalism",
@@ -161841,7 +161841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.707,
 		["posY"] = 0.56,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13487] = {
 		["type"] = "herbalism",
@@ -161853,7 +161853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.551,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13488] = {
 		["type"] = "herbalism",
@@ -161865,7 +161865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.588,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13489] = {
 		["type"] = "herbalism",
@@ -161877,7 +161877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.709,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13490] = {
 		["type"] = "herbalism",
@@ -161889,7 +161889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.65,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13491] = {
 		["type"] = "herbalism",
@@ -161901,7 +161901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.751,
 		["posY"] = 0.446,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13492] = {
 		["type"] = "herbalism",
@@ -161913,7 +161913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.749,
 		["posY"] = 0.442,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13493] = {
 		["type"] = "herbalism",
@@ -161925,7 +161925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.719,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13494] = {
 		["type"] = "herbalism",
@@ -161937,7 +161937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.579,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13495] = {
 		["type"] = "herbalism",
@@ -161949,7 +161949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.793,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13496] = {
 		["type"] = "herbalism",
@@ -161961,7 +161961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.563,
 		["posY"] = 0.429,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13497] = {
 		["type"] = "herbalism",
@@ -161973,7 +161973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.588,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13498] = {
 		["type"] = "herbalism",
@@ -161985,7 +161985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.706,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13499] = {
 		["type"] = "herbalism",
@@ -161997,7 +161997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.599,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13500] = {
 		["type"] = "herbalism",
@@ -162009,7 +162009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.67,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13501] = {
 		["type"] = "herbalism",
@@ -162021,7 +162021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.75,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13502] = {
 		["type"] = "herbalism",
@@ -162033,7 +162033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.682,
 		["posY"] = 0.409,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13503] = {
 		["type"] = "herbalism",
@@ -162045,7 +162045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.583,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13504] = {
 		["type"] = "herbalism",
@@ -162057,7 +162057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.69,
 		["posY"] = 0.387,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13505] = {
 		["type"] = "herbalism",
@@ -162069,7 +162069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.44,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13506] = {
 		["type"] = "herbalism",
@@ -162081,7 +162081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.651,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13507] = {
 		["type"] = "herbalism",
@@ -162093,7 +162093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.671,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13508] = {
 		["type"] = "herbalism",
@@ -162105,7 +162105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.421,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13509] = {
 		["type"] = "herbalism",
@@ -162117,7 +162117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.437,
 		["posY"] = 0.368,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13510] = {
 		["type"] = "herbalism",
@@ -162129,7 +162129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.742,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13511] = {
 		["type"] = "herbalism",
@@ -162141,7 +162141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.688,
 		["posY"] = 0.366,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13512] = {
 		["type"] = "herbalism",
@@ -162153,7 +162153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.648,
 		["posY"] = 0.365,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13513] = {
 		["type"] = "herbalism",
@@ -162165,7 +162165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.496,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13514] = {
 		["type"] = "herbalism",
@@ -162177,7 +162177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.562,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13515] = {
 		["type"] = "herbalism",
@@ -162189,7 +162189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.506,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13516] = {
 		["type"] = "herbalism",
@@ -162201,7 +162201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.701,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13517] = {
 		["type"] = "herbalism",
@@ -162213,7 +162213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.551,
 		["posY"] = 0.36,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13518] = {
 		["type"] = "herbalism",
@@ -162225,7 +162225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.722,
 		["posY"] = 0.359,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13519] = {
 		["type"] = "herbalism",
@@ -162237,7 +162237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.573,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13520] = {
 		["type"] = "herbalism",
@@ -162249,7 +162249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.735,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13521] = {
 		["type"] = "herbalism",
@@ -162261,7 +162261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.741,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13522] = {
 		["type"] = "herbalism",
@@ -162273,7 +162273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.52,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13523] = {
 		["type"] = "herbalism",
@@ -162285,7 +162285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.573,
 		["posY"] = 0.35,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13524] = {
 		["type"] = "herbalism",
@@ -162297,7 +162297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.688,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13525] = {
 		["type"] = "herbalism",
@@ -162309,7 +162309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.565,
 		["posY"] = 0.343,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13526] = {
 		["type"] = "herbalism",
@@ -162321,7 +162321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.525,
 		["posY"] = 0.343,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13527] = {
 		["type"] = "herbalism",
@@ -162333,7 +162333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.703,
 		["posY"] = 0.343,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13528] = {
 		["type"] = "herbalism",
@@ -162345,7 +162345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.681,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13529] = {
 		["type"] = "herbalism",
@@ -162357,7 +162357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.65,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13530] = {
 		["type"] = "herbalism",
@@ -162369,7 +162369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.804,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13531] = {
 		["type"] = "herbalism",
@@ -162381,7 +162381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.719,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13532] = {
 		["type"] = "herbalism",
@@ -162393,7 +162393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.794,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13533] = {
 		["type"] = "herbalism",
@@ -162405,7 +162405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.744,
 		["posY"] = 0.335,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13534] = {
 		["type"] = "herbalism",
@@ -162417,7 +162417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.538,
 		["posY"] = 0.334,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13535] = {
 		["type"] = "herbalism",
@@ -162429,7 +162429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.819,
 		["posY"] = 0.331,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13536] = {
 		["type"] = "herbalism",
@@ -162441,7 +162441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.828,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13537] = {
 		["type"] = "herbalism",
@@ -162453,7 +162453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.724,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13538] = {
 		["type"] = "herbalism",
@@ -162465,7 +162465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.824,
 		["posY"] = 0.313,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13539] = {
 		["type"] = "herbalism",
@@ -162477,7 +162477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.728,
 		["posY"] = 0.304,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13540] = {
 		["type"] = "herbalism",
@@ -162489,7 +162489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.725,
 		["posY"] = 0.304,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13541] = {
 		["type"] = "herbalism",
@@ -162501,7 +162501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.731,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13542] = {
 		["type"] = "herbalism",
@@ -162513,7 +162513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.767,
 		["posY"] = 0.295,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13543] = {
 		["type"] = "herbalism",
@@ -162525,7 +162525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.724,
 		["posY"] = 0.294,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13544] = {
 		["type"] = "herbalism",
@@ -162537,7 +162537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.858,
 		["posY"] = 0.294,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13545] = {
 		["type"] = "herbalism",
@@ -162549,7 +162549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.734,
 		["posY"] = 0.294,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13546] = {
 		["type"] = "herbalism",
@@ -162561,7 +162561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.831,
 		["posY"] = 0.292,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13547] = {
 		["type"] = "herbalism",
@@ -162573,7 +162573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.717,
 		["posY"] = 0.268,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13548] = {
 		["type"] = "herbalism",
@@ -162585,7 +162585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.711,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13549] = {
 		["type"] = "herbalism",
@@ -162597,7 +162597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.769,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13550] = {
 		["type"] = "herbalism",
@@ -162609,7 +162609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.718,
 		["posY"] = 0.254,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13551] = {
 		["type"] = "herbalism",
@@ -162621,7 +162621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.768,
 		["posY"] = 0.242,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13552] = {
 		["type"] = "herbalism",
@@ -162633,7 +162633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.776,
 		["posY"] = 0.228,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13553] = {
 		["type"] = "herbalism",
@@ -162645,7 +162645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.789,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13554] = {
 		["type"] = "herbalism",
@@ -162657,7 +162657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.802,
 		["posY"] = 0.207,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13555] = {
 		["type"] = "herbalism",
@@ -162669,7 +162669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.724,
 		["posY"] = 0.199,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13556] = {
 		["type"] = "herbalism",
@@ -162681,7 +162681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.714,
 		["posY"] = 0.197,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13557] = {
 		["type"] = "herbalism",
@@ -162693,7 +162693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.719,
 		["posY"] = 0.194,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13558] = {
 		["type"] = "herbalism",
@@ -162705,7 +162705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.778,
 		["posY"] = 0.187,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13559] = {
 		["type"] = "herbalism",
@@ -162717,7 +162717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.731,
 		["posY"] = 0.182,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13560] = {
 		["type"] = "herbalism",
@@ -162729,7 +162729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.752,
 		["posY"] = 0.178,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13561] = {
 		["type"] = "herbalism",
@@ -162741,7 +162741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.757,
 		["posY"] = 0.174,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13562] = {
 		["type"] = "herbalism",
@@ -162753,7 +162753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.8,
 		["posY"] = 0.16,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13563] = {
 		["type"] = "herbalism",
@@ -162765,7 +162765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.562,
 		["posY"] = 0.823,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13564] = {
 		["type"] = "herbalism",
@@ -162777,7 +162777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.558,
 		["posY"] = 0.816,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13565] = {
 		["type"] = "herbalism",
@@ -162789,7 +162789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.511,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13566] = {
 		["type"] = "herbalism",
@@ -162801,7 +162801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.317,
 		["posY"] = 0.722,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13567] = {
 		["type"] = "herbalism",
@@ -162813,7 +162813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.73,
 		["posY"] = 0.682,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13568] = {
 		["type"] = "herbalism",
@@ -162825,7 +162825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.228,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13569] = {
 		["type"] = "herbalism",
@@ -162837,7 +162837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.303,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13570] = {
 		["type"] = "herbalism",
@@ -162849,7 +162849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.732,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13571] = {
 		["type"] = "herbalism",
@@ -162861,7 +162861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.137,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13572] = {
 		["type"] = "herbalism",
@@ -162873,7 +162873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.719,
 		["posY"] = 0.507,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13573] = {
 		["type"] = "herbalism",
@@ -162885,7 +162885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.204,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13574] = {
 		["type"] = "herbalism",
@@ -162897,7 +162897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.251,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13575] = {
 		["type"] = "herbalism",
@@ -162909,7 +162909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.549,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13576] = {
 		["type"] = "herbalism",
@@ -162921,7 +162921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.227,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13577] = {
 		["type"] = "herbalism",
@@ -162933,7 +162933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.538,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13578] = {
 		["type"] = "herbalism",
@@ -162945,7 +162945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.4,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13579] = {
 		["type"] = "herbalism",
@@ -162957,7 +162957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.432,
 		["posY"] = 0.374,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13580] = {
 		["type"] = "herbalism",
@@ -162969,7 +162969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.236,
 		["posY"] = 0.348,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13581] = {
 		["type"] = "herbalism",
@@ -162981,7 +162981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.715,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13582] = {
 		["type"] = "herbalism",
@@ -162993,7 +162993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.458,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13583] = {
 		["type"] = "herbalism",
@@ -163005,7 +163005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.62,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13584] = {
 		["type"] = "herbalism",
@@ -163017,7 +163017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.555,
 		["posY"] = 0.315,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13585] = {
 		["type"] = "herbalism",
@@ -163029,7 +163029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.69,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13586] = {
 		["type"] = "herbalism",
@@ -163041,7 +163041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.664,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13587] = {
 		["type"] = "herbalism",
@@ -163053,7 +163053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.382,
 		["posY"] = 0.198,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13588] = {
 		["type"] = "herbalism",
@@ -163065,7 +163065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.67,
 		["posY"] = 0.183,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13589] = {
 		["type"] = "herbalism",
@@ -163077,7 +163077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.338,
 		["posY"] = 0.171,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13590] = {
 		["type"] = "herbalism",
@@ -163089,7 +163089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.453,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13591] = {
 		["type"] = "herbalism",
@@ -163101,7 +163101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.598,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13592] = {
 		["type"] = "herbalism",
@@ -163113,7 +163113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.338,
 		["posY"] = 0.171,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13593] = {
 		["type"] = "herbalism",
@@ -163125,7 +163125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.407,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13594] = {
 		["type"] = "herbalism",
@@ -163137,7 +163137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.396,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13595] = {
 		["type"] = "herbalism",
@@ -163149,7 +163149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.35,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13596] = {
 		["type"] = "herbalism",
@@ -163161,7 +163161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.41,
 		["posY"] = 0.839,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13597] = {
 		["type"] = "herbalism",
@@ -163173,7 +163173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.352,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13598] = {
 		["type"] = "herbalism",
@@ -163185,7 +163185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.62,
 		["posY"] = 0.831,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13599] = {
 		["type"] = "herbalism",
@@ -163197,7 +163197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.425,
 		["posY"] = 0.83,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13600] = {
 		["type"] = "herbalism",
@@ -163209,7 +163209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.635,
 		["posY"] = 0.824,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13601] = {
 		["type"] = "herbalism",
@@ -163221,7 +163221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.651,
 		["posY"] = 0.796,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13602] = {
 		["type"] = "herbalism",
@@ -163233,7 +163233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.594,
 		["posY"] = 0.795,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13603] = {
 		["type"] = "herbalism",
@@ -163245,7 +163245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.284,
 		["posY"] = 0.795,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13604] = {
 		["type"] = "herbalism",
@@ -163257,7 +163257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.431,
 		["posY"] = 0.78,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13605] = {
 		["type"] = "herbalism",
@@ -163269,7 +163269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.266,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13606] = {
 		["type"] = "herbalism",
@@ -163281,7 +163281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.401,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13607] = {
 		["type"] = "herbalism",
@@ -163293,7 +163293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.313,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13608] = {
 		["type"] = "herbalism",
@@ -163305,7 +163305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.59,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13609] = {
 		["type"] = "herbalism",
@@ -163317,7 +163317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.653,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13610] = {
 		["type"] = "herbalism",
@@ -163329,7 +163329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.285,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13611] = {
 		["type"] = "herbalism",
@@ -163341,7 +163341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.413,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13612] = {
 		["type"] = "herbalism",
@@ -163353,7 +163353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.671,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13613] = {
 		["type"] = "herbalism",
@@ -163365,7 +163365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.6,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13614] = {
 		["type"] = "herbalism",
@@ -163377,7 +163377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.691,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13615] = {
 		["type"] = "herbalism",
@@ -163389,7 +163389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.638,
 		["posY"] = 0.729,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13616] = {
 		["type"] = "herbalism",
@@ -163401,7 +163401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.41,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13617] = {
 		["type"] = "herbalism",
@@ -163413,7 +163413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.592,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13618] = {
 		["type"] = "herbalism",
@@ -163425,7 +163425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.416,
 		["posY"] = 0.723,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13619] = {
 		["type"] = "herbalism",
@@ -163437,7 +163437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.614,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13620] = {
 		["type"] = "herbalism",
@@ -163449,7 +163449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.438,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13621] = {
 		["type"] = "herbalism",
@@ -163461,7 +163461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.356,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13622] = {
 		["type"] = "herbalism",
@@ -163473,7 +163473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.653,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13623] = {
 		["type"] = "herbalism",
@@ -163485,7 +163485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.711,
 		["posY"] = 0.703,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13624] = {
 		["type"] = "herbalism",
@@ -163497,7 +163497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.682,
 		["posY"] = 0.701,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13625] = {
 		["type"] = "herbalism",
@@ -163509,7 +163509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.66,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13626] = {
 		["type"] = "herbalism",
@@ -163521,7 +163521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.709,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13627] = {
 		["type"] = "herbalism",
@@ -163533,7 +163533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.314,
 		["posY"] = 0.689,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13628] = {
 		["type"] = "herbalism",
@@ -163545,7 +163545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.415,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13629] = {
 		["type"] = "herbalism",
@@ -163557,7 +163557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.346,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13630] = {
 		["type"] = "herbalism",
@@ -163569,7 +163569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.377,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13631] = {
 		["type"] = "herbalism",
@@ -163581,7 +163581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.375,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13632] = {
 		["type"] = "herbalism",
@@ -163593,7 +163593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.432,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13633] = {
 		["type"] = "herbalism",
@@ -163605,7 +163605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.379,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13634] = {
 		["type"] = "herbalism",
@@ -163617,7 +163617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.226,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13635] = {
 		["type"] = "herbalism",
@@ -163629,7 +163629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13636] = {
 		["type"] = "herbalism",
@@ -163641,7 +163641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.354,
 		["posY"] = 0.587,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13637] = {
 		["type"] = "herbalism",
@@ -163653,7 +163653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.459,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13638] = {
 		["type"] = "herbalism",
@@ -163665,7 +163665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.244,
 		["posY"] = 0.573,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13639] = {
 		["type"] = "herbalism",
@@ -163677,7 +163677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.523,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13640] = {
 		["type"] = "herbalism",
@@ -163689,7 +163689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.416,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13641] = {
 		["type"] = "herbalism",
@@ -163701,7 +163701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13642] = {
 		["type"] = "herbalism",
@@ -163713,7 +163713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.566,
 		["posY"] = 0.544,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13643] = {
 		["type"] = "herbalism",
@@ -163725,7 +163725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.477,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13644] = {
 		["type"] = "herbalism",
@@ -163737,7 +163737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.505,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13645] = {
 		["type"] = "herbalism",
@@ -163749,7 +163749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13646] = {
 		["type"] = "herbalism",
@@ -163761,7 +163761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.508,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13647] = {
 		["type"] = "herbalism",
@@ -163773,7 +163773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.467,
 		["posY"] = 0.52,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13648] = {
 		["type"] = "herbalism",
@@ -163785,7 +163785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.262,
 		["posY"] = 0.513,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13649] = {
 		["type"] = "herbalism",
@@ -163797,7 +163797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13650] = {
 		["type"] = "herbalism",
@@ -163809,7 +163809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.556,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13651] = {
 		["type"] = "herbalism",
@@ -163821,7 +163821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13652] = {
 		["type"] = "herbalism",
@@ -163833,7 +163833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.465,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13653] = {
 		["type"] = "herbalism",
@@ -163845,7 +163845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.522,
 		["posY"] = 0.49,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13654] = {
 		["type"] = "herbalism",
@@ -163857,7 +163857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.479,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13655] = {
 		["type"] = "herbalism",
@@ -163869,7 +163869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13656] = {
 		["type"] = "herbalism",
@@ -163881,7 +163881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.301,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13657] = {
 		["type"] = "herbalism",
@@ -163893,7 +163893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13658] = {
 		["type"] = "herbalism",
@@ -163905,7 +163905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.396,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13659] = {
 		["type"] = "herbalism",
@@ -163917,7 +163917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13660] = {
 		["type"] = "herbalism",
@@ -163929,7 +163929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.629,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13661] = {
 		["type"] = "herbalism",
@@ -163941,7 +163941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.59,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13662] = {
 		["type"] = "herbalism",
@@ -163953,7 +163953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.359,
 		["posY"] = 0.315,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13663] = {
 		["type"] = "herbalism",
@@ -163965,7 +163965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13664] = {
 		["type"] = "herbalism",
@@ -163977,7 +163977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.296,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13665] = {
 		["type"] = "herbalism",
@@ -163989,7 +163989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.338,
 		["posY"] = 0.245,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13666] = {
 		["type"] = "herbalism",
@@ -164001,7 +164001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.409,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13667] = {
 		["type"] = "herbalism",
@@ -164013,7 +164013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.595,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13668] = {
 		["type"] = "herbalism",
@@ -164025,7 +164025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.723,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13669] = {
 		["type"] = "herbalism",
@@ -164037,7 +164037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.621,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13670] = {
 		["type"] = "herbalism",
@@ -164049,7 +164049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.75,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13671] = {
 		["type"] = "herbalism",
@@ -164061,7 +164061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.625,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13672] = {
 		["type"] = "herbalism",
@@ -164073,7 +164073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.74,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13673] = {
 		["type"] = "herbalism",
@@ -164085,7 +164085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.656,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13674] = {
 		["type"] = "herbalism",
@@ -164097,7 +164097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.718,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13675] = {
 		["type"] = "herbalism",
@@ -164109,7 +164109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.615,
 		["posY"] = 0.336,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13676] = {
 		["type"] = "herbalism",
@@ -164121,7 +164121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.706,
 		["posY"] = 0.315,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13677] = {
 		["type"] = "herbalism",
@@ -164133,7 +164133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.603,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13678] = {
 		["type"] = "herbalism",
@@ -164145,7 +164145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.698,
 		["posY"] = 0.297,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13679] = {
 		["type"] = "herbalism",
@@ -164157,7 +164157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.721,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13680] = {
 		["type"] = "herbalism",
@@ -164169,7 +164169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.587,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13681] = {
 		["type"] = "herbalism",
@@ -164181,7 +164181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.624,
 		["posY"] = 0.268,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13682] = {
 		["type"] = "herbalism",
@@ -164193,7 +164193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.712,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13683] = {
 		["type"] = "herbalism",
@@ -164205,7 +164205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.662,
 		["posY"] = 0.19,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13684] = {
 		["type"] = "herbalism",
@@ -164217,7 +164217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.648,
 		["posY"] = 0.159,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13685] = {
 		["type"] = "herbalism",
@@ -164229,7 +164229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.582,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13686] = {
 		["type"] = "herbalism",
@@ -164241,7 +164241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.672,
 		["posY"] = 0.154,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13687] = {
 		["type"] = "herbalism",
@@ -164253,7 +164253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.608,
 		["posY"] = 0.141,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13688] = {
 		["type"] = "herbalism",
@@ -176961,7 +176961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.648,
 		["posY"] = 0.771,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14747] = {
 		["type"] = "herbalism",
@@ -176973,7 +176973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.656,
 		["posY"] = 0.746,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14748] = {
 		["type"] = "herbalism",
@@ -176985,7 +176985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.651,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14749] = {
 		["type"] = "herbalism",
@@ -176997,7 +176997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.636,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14750] = {
 		["type"] = "herbalism",
@@ -177009,7 +177009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.459,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14751] = {
 		["type"] = "herbalism",
@@ -177021,7 +177021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.113,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14752] = {
 		["type"] = "herbalism",
@@ -177033,7 +177033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.147,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14753] = {
 		["type"] = "herbalism",
@@ -177045,7 +177045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14754] = {
 		["type"] = "herbalism",
@@ -177057,7 +177057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.822,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14755] = {
 		["type"] = "herbalism",
@@ -177069,7 +177069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.123,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14756] = {
 		["type"] = "herbalism",
@@ -177081,7 +177081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.142,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14757] = {
 		["type"] = "herbalism",
@@ -177093,7 +177093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.15,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14758] = {
 		["type"] = "herbalism",
@@ -177105,7 +177105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.759,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14759] = {
 		["type"] = "herbalism",
@@ -177117,7 +177117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14760] = {
 		["type"] = "herbalism",
@@ -177129,7 +177129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.8,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14761] = {
 		["type"] = "herbalism",
@@ -177141,7 +177141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.782,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14762] = {
 		["type"] = "herbalism",
@@ -177153,7 +177153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.091,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14763] = {
 		["type"] = "herbalism",
@@ -177165,7 +177165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.271,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14764] = {
 		["type"] = "herbalism",
@@ -177177,7 +177177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.759,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14765] = {
 		["type"] = "herbalism",
@@ -177189,7 +177189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.249,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14766] = {
 		["type"] = "herbalism",
@@ -177201,7 +177201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.322,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14767] = {
 		["type"] = "herbalism",
@@ -177213,7 +177213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.122,
 		["posY"] = 0.363,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14768] = {
 		["type"] = "herbalism",
@@ -177225,7 +177225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.558,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14769] = {
 		["type"] = "herbalism",
@@ -177237,7 +177237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.727,
 		["posY"] = 0.349,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14770] = {
 		["type"] = "herbalism",
@@ -177249,7 +177249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.303,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14771] = {
 		["type"] = "herbalism",
@@ -177261,7 +177261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.107,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14772] = {
 		["type"] = "herbalism",
@@ -177273,7 +177273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.244,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14773] = {
 		["type"] = "herbalism",
@@ -177285,7 +177285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.252,
 		["posY"] = 0.313,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14774] = {
 		["type"] = "herbalism",
@@ -177297,7 +177297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.707,
 		["posY"] = 0.313,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14775] = {
 		["type"] = "herbalism",
@@ -177309,7 +177309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.458,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14776] = {
 		["type"] = "herbalism",
@@ -177321,7 +177321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.598,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14777] = {
 		["type"] = "herbalism",
@@ -177333,7 +177333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.242,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14778] = {
 		["type"] = "herbalism",
@@ -177345,7 +177345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.627,
 		["posY"] = 0.275,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14779] = {
 		["type"] = "herbalism",
@@ -177357,7 +177357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.472,
 		["posY"] = 0.274,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14780] = {
 		["type"] = "herbalism",
@@ -177369,7 +177369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.492,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14781] = {
 		["type"] = "herbalism",
@@ -177381,7 +177381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.647,
 		["posY"] = 0.265,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14782] = {
 		["type"] = "herbalism",
@@ -177393,7 +177393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.219,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14783] = {
 		["type"] = "herbalism",
@@ -177405,7 +177405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.738,
 		["posY"] = 0.234,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14784] = {
 		["type"] = "herbalism",
@@ -177417,7 +177417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.685,
 		["posY"] = 0.215,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14785] = {
 		["type"] = "herbalism",
@@ -177429,7 +177429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.604,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14786] = {
 		["type"] = "herbalism",
@@ -177441,7 +177441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.339,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14787] = {
 		["type"] = "herbalism",
@@ -177453,7 +177453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.356,
 		["posY"] = 0.778,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14788] = {
 		["type"] = "herbalism",
@@ -177465,7 +177465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.334,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14789] = {
 		["type"] = "herbalism",
@@ -177477,7 +177477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.344,
 		["posY"] = 0.761,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14790] = {
 		["type"] = "herbalism",
@@ -177489,7 +177489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.671,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14791] = {
 		["type"] = "herbalism",
@@ -177501,7 +177501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.658,
 		["posY"] = 0.725,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14792] = {
 		["type"] = "herbalism",
@@ -177513,7 +177513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.701,
 		["posY"] = 0.72,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14793] = {
 		["type"] = "herbalism",
@@ -177525,7 +177525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.468,
 		["posY"] = 0.716,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14794] = {
 		["type"] = "herbalism",
@@ -177537,7 +177537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.528,
 		["posY"] = 0.714,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14795] = {
 		["type"] = "herbalism",
@@ -177549,7 +177549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.697,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14796] = {
 		["type"] = "herbalism",
@@ -177561,7 +177561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.3,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14797] = {
 		["type"] = "herbalism",
@@ -177573,7 +177573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.764,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14798] = {
 		["type"] = "herbalism",
@@ -177585,7 +177585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.57,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14799] = {
 		["type"] = "herbalism",
@@ -177597,7 +177597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14800] = {
 		["type"] = "herbalism",
@@ -177609,7 +177609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.706,
 		["posY"] = 0.66,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14801] = {
 		["type"] = "herbalism",
@@ -177621,7 +177621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.547,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14802] = {
 		["type"] = "herbalism",
@@ -177633,7 +177633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.332,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14803] = {
 		["type"] = "herbalism",
@@ -177645,7 +177645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.308,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14804] = {
 		["type"] = "herbalism",
@@ -177657,7 +177657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.487,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14805] = {
 		["type"] = "herbalism",
@@ -177669,7 +177669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.267,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14806] = {
 		["type"] = "herbalism",
@@ -177681,7 +177681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.755,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14807] = {
 		["type"] = "herbalism",
@@ -177693,7 +177693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.525,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14808] = {
 		["type"] = "herbalism",
@@ -177705,7 +177705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.45,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14809] = {
 		["type"] = "herbalism",
@@ -177717,7 +177717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.48,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14810] = {
 		["type"] = "herbalism",
@@ -177729,7 +177729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.572,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14811] = {
 		["type"] = "herbalism",
@@ -177741,7 +177741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.59,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14812] = {
 		["type"] = "herbalism",
@@ -177753,7 +177753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.464,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14813] = {
 		["type"] = "herbalism",
@@ -177765,7 +177765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.39,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14814] = {
 		["type"] = "herbalism",
@@ -177777,7 +177777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.595,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14815] = {
 		["type"] = "herbalism",
@@ -177789,7 +177789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.699,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14816] = {
 		["type"] = "herbalism",
@@ -177801,7 +177801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.754,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14817] = {
 		["type"] = "herbalism",
@@ -177813,7 +177813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.346,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14818] = {
 		["type"] = "herbalism",
@@ -177825,7 +177825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.592,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14819] = {
 		["type"] = "herbalism",
@@ -177837,7 +177837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.459,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14820] = {
 		["type"] = "herbalism",
@@ -177849,7 +177849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.792,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14821] = {
 		["type"] = "herbalism",
@@ -177861,7 +177861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.736,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14822] = {
 		["type"] = "herbalism",
@@ -177873,7 +177873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.349,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14823] = {
 		["type"] = "herbalism",
@@ -177885,7 +177885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.37,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14824] = {
 		["type"] = "herbalism",
@@ -177897,7 +177897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.741,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14825] = {
 		["type"] = "herbalism",
@@ -177909,7 +177909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.783,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14826] = {
 		["type"] = "herbalism",
@@ -177921,7 +177921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.763,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14827] = {
 		["type"] = "herbalism",
@@ -177933,7 +177933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.49,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14828] = {
 		["type"] = "herbalism",
@@ -177945,7 +177945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.511,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14829] = {
 		["type"] = "herbalism",
@@ -177957,7 +177957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.584,
 		["posY"] = 0.401,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14830] = {
 		["type"] = "herbalism",
@@ -177969,7 +177969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.417,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14831] = {
 		["type"] = "herbalism",
@@ -177981,7 +177981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.51,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14832] = {
 		["type"] = "herbalism",
@@ -177993,7 +177993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.349,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14833] = {
 		["type"] = "herbalism",
@@ -178005,7 +178005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.665,
 		["posY"] = 0.334,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14834] = {
 		["type"] = "herbalism",
@@ -178017,7 +178017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.313,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14835] = {
 		["type"] = "herbalism",
@@ -178029,7 +178029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.327,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14836] = {
 		["type"] = "herbalism",
@@ -178041,7 +178041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.704,
 		["posY"] = 0.324,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14837] = {
 		["type"] = "herbalism",
@@ -178053,7 +178053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.294,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14838] = {
 		["type"] = "herbalism",
@@ -178065,7 +178065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.463,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14839] = {
 		["type"] = "herbalism",
@@ -178077,7 +178077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.486,
 		["posY"] = 0.3,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14840] = {
 		["type"] = "herbalism",
@@ -178089,7 +178089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.446,
 		["posY"] = 0.297,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14841] = {
 		["type"] = "herbalism",
@@ -178101,7 +178101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.271,
 		["posY"] = 0.296,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14842] = {
 		["type"] = "herbalism",
@@ -178113,7 +178113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.471,
 		["posY"] = 0.289,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14843] = {
 		["type"] = "herbalism",
@@ -178125,7 +178125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.421,
 		["posY"] = 0.277,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14844] = {
 		["type"] = "herbalism",
@@ -178137,7 +178137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.658,
 		["posY"] = 0.268,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14845] = {
 		["type"] = "herbalism",
@@ -178149,7 +178149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.283,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14846] = {
 		["type"] = "herbalism",
@@ -178161,7 +178161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.712,
 		["posY"] = 0.25,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14847] = {
 		["type"] = "herbalism",
@@ -178173,7 +178173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.694,
 		["posY"] = 0.246,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14848] = {
 		["type"] = "herbalism",
@@ -178185,7 +178185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.672,
 		["posY"] = 0.244,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14849] = {
 		["type"] = "herbalism",
@@ -178197,7 +178197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.585,
 		["posY"] = 0.228,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14850] = {
 		["type"] = "herbalism",
@@ -178209,7 +178209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.29,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14851] = {
 		["type"] = "herbalism",
@@ -178221,7 +178221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.7,
 		["posY"] = 0.221,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14852] = {
 		["type"] = "herbalism",
@@ -178233,7 +178233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.682,
 		["posY"] = 0.22,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14853] = {
 		["type"] = "herbalism",
@@ -178245,7 +178245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.565,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14854] = {
 		["type"] = "herbalism",
@@ -178257,7 +178257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.487,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14855] = {
 		["type"] = "herbalism",
@@ -178269,7 +178269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.271,
 		["posY"] = 0.207,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14856] = {
 		["type"] = "herbalism",
@@ -178281,7 +178281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.549,
 		["posY"] = 0.197,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14857] = {
 		["type"] = "herbalism",
@@ -178293,7 +178293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.698,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14858] = {
 		["type"] = "herbalism",
@@ -178305,7 +178305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.187,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14859] = {
 		["type"] = "herbalism",
@@ -178317,7 +178317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.724,
 		["posY"] = 0.185,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14860] = {
 		["type"] = "herbalism",
@@ -178329,7 +178329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.286,
 		["posY"] = 0.181,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14861] = {
 		["type"] = "herbalism",
@@ -178341,7 +178341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.523,
 		["posY"] = 0.178,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14862] = {
 		["type"] = "herbalism",
@@ -178353,7 +178353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.502,
 		["posY"] = 0.166,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14863] = {
 		["type"] = "herbalism",
@@ -178365,7 +178365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.269,
 		["posY"] = 0.146,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14864] = {
 		["type"] = "herbalism",
@@ -178377,7 +178377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.238,
 		["posY"] = 0.14,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14865] = {
 		["type"] = "herbalism",
@@ -178389,7 +178389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.292,
 		["posY"] = 0.12,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14866] = {
 		["type"] = "herbalism",
@@ -178401,7 +178401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.252,
 		["posY"] = 0.118,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14867] = {
 		["type"] = "herbalism",
@@ -178413,7 +178413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.281,
 		["posY"] = 0.091,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14868] = {
 		["type"] = "herbalism",
@@ -178425,7 +178425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.264,
 		["posY"] = 0.079,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14869] = {
 		["type"] = "herbalism",
@@ -178437,7 +178437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.5,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14870] = {
 		["type"] = "herbalism",
@@ -178449,7 +178449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.43,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14871] = {
 		["type"] = "herbalism",
@@ -178461,7 +178461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.397,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14872] = {
 		["type"] = "herbalism",
@@ -178473,7 +178473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.516,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14873] = {
 		["type"] = "herbalism",
@@ -178485,7 +178485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.608,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14874] = {
 		["type"] = "herbalism",
@@ -178497,7 +178497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.55,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14875] = {
 		["type"] = "herbalism",
@@ -178509,7 +178509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.591,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14876] = {
 		["type"] = "herbalism",
@@ -178521,7 +178521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.577,
 		["posY"] = 0.521,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14877] = {
 		["type"] = "herbalism",
@@ -178533,7 +178533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.6,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14878] = {
 		["type"] = "herbalism",
@@ -178545,7 +178545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.347,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14879] = {
 		["type"] = "herbalism",
@@ -178557,7 +178557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.484,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14880] = {
 		["type"] = "herbalism",
@@ -178569,7 +178569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14881] = {
 		["type"] = "herbalism",
@@ -178581,7 +178581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.578,
 		["posY"] = 0.472,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14882] = {
 		["type"] = "herbalism",
@@ -178593,7 +178593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.618,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14883] = {
 		["type"] = "herbalism",
@@ -178605,7 +178605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.41,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14884] = {
 		["type"] = "herbalism",
@@ -178617,7 +178617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.472,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14885] = {
 		["type"] = "herbalism",
@@ -178629,7 +178629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.697,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14886] = {
 		["type"] = "herbalism",
@@ -178641,7 +178641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.547,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14887] = {
 		["type"] = "herbalism",
@@ -178653,7 +178653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.765,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14888] = {
 		["type"] = "herbalism",
@@ -178665,7 +178665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.435,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14889] = {
 		["type"] = "herbalism",
@@ -178677,7 +178677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.624,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14890] = {
 		["type"] = "herbalism",
@@ -178689,7 +178689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.792,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14891] = {
 		["type"] = "herbalism",
@@ -178701,7 +178701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14892] = {
 		["type"] = "herbalism",
@@ -178713,7 +178713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.66,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14893] = {
 		["type"] = "herbalism",
@@ -178725,7 +178725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.419,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14894] = {
 		["type"] = "herbalism",
@@ -178737,7 +178737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.57,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14895] = {
 		["type"] = "herbalism",
@@ -178749,7 +178749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.799,
 		["posY"] = 0.326,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14896] = {
 		["type"] = "herbalism",
@@ -178761,7 +178761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.768,
 		["posY"] = 0.32,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14897] = {
 		["type"] = "herbalism",
@@ -178773,7 +178773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.589,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14898] = {
 		["type"] = "herbalism",
@@ -178785,7 +178785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.558,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14899] = {
 		["type"] = "herbalism",
@@ -178797,7 +178797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.756,
 		["posY"] = 0.289,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14900] = {
 		["type"] = "herbalism",
@@ -178809,7 +178809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14901] = {
 		["type"] = "herbalism",
@@ -178821,7 +178821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.748,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14902] = {
 		["type"] = "herbalism",
@@ -178833,7 +178833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.224,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14903] = {
 		["type"] = "herbalism",
@@ -178845,7 +178845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.477,
 		["posY"] = 0.218,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14904] = {
 		["type"] = "herbalism",
@@ -178857,7 +178857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.503,
 		["posY"] = 0.213,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14905] = {
 		["type"] = "herbalism",
@@ -178869,7 +178869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.724,
 		["posY"] = 0.205,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14906] = {
 		["type"] = "herbalism",
@@ -178881,7 +178881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14907] = {
 		["type"] = "herbalism",
@@ -178893,7 +178893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.655,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14908] = {
 		["type"] = "herbalism",
@@ -178905,7 +178905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.626,
 		["posY"] = 0.135,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14909] = {
 		["type"] = "herbalism",
@@ -178917,7 +178917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.647,
 		["posY"] = 0.115,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14910] = {
 		["type"] = "herbalism",
@@ -178929,7 +178929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.482,
 		["posY"] = 0.075,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14911] = {
 		["type"] = "herbalism",
@@ -178941,7 +178941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.328,
 		["posY"] = 0.835,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14912] = {
 		["type"] = "herbalism",
@@ -178953,7 +178953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.599,
 		["posY"] = 0.812,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14913] = {
 		["type"] = "herbalism",
@@ -178965,7 +178965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.804,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14914] = {
 		["type"] = "herbalism",
@@ -178977,7 +178977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.321,
 		["posY"] = 0.797,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14915] = {
 		["type"] = "herbalism",
@@ -178989,7 +178989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.796,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14916] = {
 		["type"] = "herbalism",
@@ -179001,7 +179001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.57,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14917] = {
 		["type"] = "herbalism",
@@ -179013,7 +179013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.271,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14918] = {
 		["type"] = "herbalism",
@@ -179025,7 +179025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.704,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14919] = {
 		["type"] = "herbalism",
@@ -179037,7 +179037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.673,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14920] = {
 		["type"] = "herbalism",
@@ -179049,7 +179049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.713,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14921] = {
 		["type"] = "herbalism",
@@ -179061,7 +179061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.29,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14922] = {
 		["type"] = "herbalism",
@@ -179073,7 +179073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.307,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14923] = {
 		["type"] = "herbalism",
@@ -179085,7 +179085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.312,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14924] = {
 		["type"] = "herbalism",
@@ -179097,7 +179097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.247,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14925] = {
 		["type"] = "herbalism",
@@ -179109,7 +179109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.319,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14926] = {
 		["type"] = "herbalism",
@@ -179121,7 +179121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.242,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14927] = {
 		["type"] = "herbalism",
@@ -179133,7 +179133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.494,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14928] = {
 		["type"] = "herbalism",
@@ -179145,7 +179145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.472,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14929] = {
 		["type"] = "herbalism",
@@ -179157,7 +179157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.503,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14930] = {
 		["type"] = "herbalism",
@@ -179169,7 +179169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14931] = {
 		["type"] = "herbalism",
@@ -179181,7 +179181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.445,
 		["posY"] = 0.421,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14932] = {
 		["type"] = "herbalism",
@@ -179193,7 +179193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.439,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14933] = {
 		["type"] = "herbalism",
@@ -179205,7 +179205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.327,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14934] = {
 		["type"] = "herbalism",
@@ -179217,7 +179217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.444,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14935] = {
 		["type"] = "herbalism",
@@ -179229,7 +179229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.592,
 		["posY"] = 0.344,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14936] = {
 		["type"] = "herbalism",
@@ -179241,7 +179241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.562,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14937] = {
 		["type"] = "herbalism",
@@ -179253,7 +179253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.539,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14938] = {
 		["type"] = "herbalism",
@@ -179265,7 +179265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14939] = {
 		["type"] = "herbalism",
@@ -179277,7 +179277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.4,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14940] = {
 		["type"] = "herbalism",
@@ -179289,7 +179289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.537,
 		["posY"] = 0.269,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14941] = {
 		["type"] = "herbalism",
@@ -179301,7 +179301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.588,
 		["posY"] = 0.259,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14942] = {
 		["type"] = "herbalism",
@@ -179313,7 +179313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.595,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14943] = {
 		["type"] = "herbalism",
@@ -179325,7 +179325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.723,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14944] = {
 		["type"] = "herbalism",
@@ -179337,7 +179337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.621,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14945] = {
 		["type"] = "herbalism",
@@ -179349,7 +179349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.75,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14946] = {
 		["type"] = "herbalism",
@@ -179361,7 +179361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.625,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14947] = {
 		["type"] = "herbalism",
@@ -179373,7 +179373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.74,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14948] = {
 		["type"] = "herbalism",
@@ -179385,7 +179385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.656,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14949] = {
 		["type"] = "herbalism",
@@ -179397,7 +179397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.718,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14950] = {
 		["type"] = "herbalism",
@@ -179409,7 +179409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.615,
 		["posY"] = 0.336,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14951] = {
 		["type"] = "herbalism",
@@ -179421,7 +179421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.706,
 		["posY"] = 0.315,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14952] = {
 		["type"] = "herbalism",
@@ -179433,7 +179433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.603,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14953] = {
 		["type"] = "herbalism",
@@ -179445,7 +179445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.698,
 		["posY"] = 0.297,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14954] = {
 		["type"] = "herbalism",
@@ -179457,7 +179457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.721,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14955] = {
 		["type"] = "herbalism",
@@ -179469,7 +179469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.587,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14956] = {
 		["type"] = "herbalism",
@@ -179481,7 +179481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.624,
 		["posY"] = 0.268,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14957] = {
 		["type"] = "herbalism",
@@ -179493,7 +179493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.712,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14958] = {
 		["type"] = "herbalism",
@@ -179505,7 +179505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.662,
 		["posY"] = 0.19,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14959] = {
 		["type"] = "herbalism",
@@ -179517,7 +179517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.648,
 		["posY"] = 0.159,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14960] = {
 		["type"] = "herbalism",
@@ -179529,7 +179529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.582,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14961] = {
 		["type"] = "herbalism",
@@ -179541,7 +179541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.672,
 		["posY"] = 0.154,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14962] = {
 		["type"] = "herbalism",
@@ -179553,7 +179553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.608,
 		["posY"] = 0.141,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14963] = {
 		["type"] = "herbalism",
@@ -179565,7 +179565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.251,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14964] = {
 		["type"] = "herbalism",
@@ -179577,7 +179577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.276,
 		["posY"] = 0.698,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14965] = {
 		["type"] = "herbalism",
@@ -179589,7 +179589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.274,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14966] = {
 		["type"] = "herbalism",
@@ -179601,7 +179601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.292,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14967] = {
 		["type"] = "herbalism",
@@ -179613,7 +179613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.275,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14968] = {
 		["type"] = "herbalism",
@@ -179625,7 +179625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.291,
 		["posY"] = 0.589,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14969] = {
 		["type"] = "herbalism",
@@ -179637,7 +179637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.292,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14970] = {
 		["type"] = "herbalism",
@@ -179649,7 +179649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.609,
 		["posY"] = 0.53,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14971] = {
 		["type"] = "herbalism",
@@ -179661,7 +179661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.649,
 		["posY"] = 0.528,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14972] = {
 		["type"] = "herbalism",
@@ -179673,7 +179673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.629,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14973] = {
 		["type"] = "herbalism",
@@ -179685,7 +179685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.293,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14974] = {
 		["type"] = "herbalism",
@@ -179697,7 +179697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.561,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14975] = {
 		["type"] = "herbalism",
@@ -179709,7 +179709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.628,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14976] = {
 		["type"] = "herbalism",
@@ -179721,7 +179721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.627,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14977] = {
 		["type"] = "herbalism",
@@ -179733,7 +179733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.613,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14978] = {
 		["type"] = "herbalism",
@@ -179745,7 +179745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.532,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14979] = {
 		["type"] = "herbalism",
@@ -179757,7 +179757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.311,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14980] = {
 		["type"] = "herbalism",
@@ -179769,7 +179769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.542,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14981] = {
 		["type"] = "herbalism",
@@ -179781,7 +179781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.323,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14982] = {
 		["type"] = "herbalism",
@@ -179793,7 +179793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.345,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14983] = {
 		["type"] = "herbalism",
@@ -179805,7 +179805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.221,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14984] = {
 		["type"] = "herbalism",
@@ -179817,7 +179817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.372,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14985] = {
 		["type"] = "herbalism",
@@ -179829,7 +179829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.28,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14986] = {
 		["type"] = "herbalism",
@@ -179841,7 +179841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14987] = {
 		["type"] = "herbalism",
@@ -179853,7 +179853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.097,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14988] = {
 		["type"] = "herbalism",
@@ -179865,7 +179865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.201,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14989] = {
 		["type"] = "herbalism",
@@ -179877,7 +179877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.168,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14990] = {
 		["type"] = "herbalism",
@@ -179889,7 +179889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.258,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14991] = {
 		["type"] = "herbalism",
@@ -179901,7 +179901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.302,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14992] = {
 		["type"] = "herbalism",
@@ -179913,7 +179913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.118,
 		["posY"] = 0.393,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14993] = {
 		["type"] = "herbalism",
@@ -179925,7 +179925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.103,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14994] = {
 		["type"] = "herbalism",
@@ -179937,7 +179937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.155,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14995] = {
 		["type"] = "herbalism",
@@ -179949,7 +179949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.085,
 		["posY"] = 0.371,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14996] = {
 		["type"] = "herbalism",
@@ -179961,7 +179961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.42,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14997] = {
 		["type"] = "herbalism",
@@ -179973,7 +179973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.381,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14998] = {
 		["type"] = "herbalism",
@@ -179985,7 +179985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.087,
 		["posY"] = 0.35,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[14999] = {
 		["type"] = "herbalism",
@@ -179997,7 +179997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.4,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15000] = {
 		["type"] = "herbalism",
@@ -180009,7 +180009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.361,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15001] = {
 		["type"] = "herbalism",
@@ -180021,7 +180021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.546,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15002] = {
 		["type"] = "herbalism",
@@ -180033,7 +180033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15003] = {
 		["type"] = "herbalism",
@@ -180045,7 +180045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.597,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15004] = {
 		["type"] = "herbalism",
@@ -180057,7 +180057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.534,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15005] = {
 		["type"] = "herbalism",
@@ -180069,7 +180069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.596,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15006] = {
 		["type"] = "herbalism",
@@ -180081,7 +180081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.527,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15007] = {
 		["type"] = "herbalism",
@@ -180093,7 +180093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.602,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15008] = {
 		["type"] = "herbalism",
@@ -180105,7 +180105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.525,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15009] = {
 		["type"] = "herbalism",
@@ -180117,7 +180117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.551,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15010] = {
 		["type"] = "herbalism",
@@ -180129,7 +180129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.555,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15011] = {
 		["type"] = "herbalism",
@@ -180141,7 +180141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.528,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15012] = {
 		["type"] = "herbalism",
@@ -180153,7 +180153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.472,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15013] = {
 		["type"] = "herbalism",
@@ -180165,7 +180165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.493,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15014] = {
 		["type"] = "herbalism",
@@ -180177,7 +180177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.424,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15015] = {
 		["type"] = "herbalism",
@@ -180189,7 +180189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.602,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15016] = {
 		["type"] = "herbalism",
@@ -180201,7 +180201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.6,
 		["posY"] = 0.324,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15017] = {
 		["type"] = "herbalism",
@@ -180213,7 +180213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.264,
 		["posY"] = 0.274,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15018] = {
 		["type"] = "herbalism",
@@ -180225,7 +180225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.227,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15019] = {
 		["type"] = "herbalism",
@@ -180237,7 +180237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.222,
 		["posY"] = 0.26,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15020] = {
 		["type"] = "herbalism",
@@ -180249,7 +180249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.326,
 		["posY"] = 0.258,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15021] = {
 		["type"] = "herbalism",
@@ -180261,7 +180261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.317,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15022] = {
 		["type"] = "herbalism",
@@ -180273,7 +180273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.303,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15023] = {
 		["type"] = "herbalism",
@@ -180285,7 +180285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.42,
 		["posY"] = 0.243,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15024] = {
 		["type"] = "herbalism",
@@ -180297,7 +180297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.351,
 		["posY"] = 0.239,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15025] = {
 		["type"] = "herbalism",
@@ -180309,7 +180309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.438,
 		["posY"] = 0.236,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15026] = {
 		["type"] = "herbalism",
@@ -180321,7 +180321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.671,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15027] = {
 		["type"] = "herbalism",
@@ -180333,7 +180333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.403,
 		["posY"] = 0.218,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15028] = {
 		["type"] = "herbalism",
@@ -180345,7 +180345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.684,
 		["posY"] = 0.207,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15029] = {
 		["type"] = "herbalism",
@@ -180357,7 +180357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.392,
 		["posY"] = 0.199,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15030] = {
 		["type"] = "herbalism",
@@ -180369,7 +180369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.192,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15031] = {
 		["type"] = "herbalism",
@@ -180381,7 +180381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.679,
 		["posY"] = 0.189,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15032] = {
 		["type"] = "herbalism",
@@ -180393,7 +180393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15033] = {
 		["type"] = "herbalism",
@@ -180405,7 +180405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.527,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15034] = {
 		["type"] = "herbalism",
@@ -180417,7 +180417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.541,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15035] = {
 		["type"] = "herbalism",
@@ -180429,7 +180429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.542,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15036] = {
 		["type"] = "herbalism",
@@ -180441,7 +180441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.522,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15037] = {
 		["type"] = "herbalism",
@@ -180453,7 +180453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.521,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15038] = {
 		["type"] = "herbalism",
@@ -180465,7 +180465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.523,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15039] = {
 		["type"] = "herbalism",
@@ -180477,7 +180477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.523,
 		["posY"] = 0.459,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15040] = {
 		["type"] = "herbalism",
@@ -180489,7 +180489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.536,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15041] = {
 		["type"] = "herbalism",
@@ -180501,7 +180501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15042] = {
 		["type"] = "herbalism",
@@ -180513,7 +180513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.496,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15043] = {
 		["type"] = "herbalism",
@@ -180525,7 +180525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15044] = {
 		["type"] = "herbalism",
@@ -180537,7 +180537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.532,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15045] = {
 		["type"] = "herbalism",
@@ -180549,7 +180549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.533,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15046] = {
 		["type"] = "herbalism",
@@ -180561,7 +180561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.493,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15047] = {
 		["type"] = "herbalism",
@@ -180573,7 +180573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.494,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15048] = {
 		["type"] = "herbalism",
@@ -180585,7 +180585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.54,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15049] = {
 		["type"] = "herbalism",
@@ -180597,7 +180597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.539,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15050] = {
 		["type"] = "herbalism",
@@ -180609,7 +180609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.527,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15051] = {
 		["type"] = "herbalism",
@@ -180621,7 +180621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.528,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15052] = {
 		["type"] = "herbalism",
@@ -180633,7 +180633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.535,
 		["posY"] = 0.868,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15053] = {
 		["type"] = "herbalism",
@@ -180645,7 +180645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.867,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15054] = {
 		["type"] = "herbalism",
@@ -180657,7 +180657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.597,
 		["posY"] = 0.864,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15055] = {
 		["type"] = "herbalism",
@@ -180669,7 +180669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.545,
 		["posY"] = 0.856,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15056] = {
 		["type"] = "herbalism",
@@ -180681,7 +180681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.601,
 		["posY"] = 0.853,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15057] = {
 		["type"] = "herbalism",
@@ -180693,7 +180693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.532,
 		["posY"] = 0.852,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15058] = {
 		["type"] = "herbalism",
@@ -180705,7 +180705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.563,
 		["posY"] = 0.848,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15059] = {
 		["type"] = "herbalism",
@@ -180717,7 +180717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.575,
 		["posY"] = 0.832,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15060] = {
 		["type"] = "herbalism",
@@ -180729,7 +180729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15061] = {
 		["type"] = "herbalism",
@@ -180741,7 +180741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.471,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15062] = {
 		["type"] = "herbalism",
@@ -180753,7 +180753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.741,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15063] = {
 		["type"] = "herbalism",
@@ -180765,7 +180765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15064] = {
 		["type"] = "herbalism",
@@ -180777,7 +180777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.494,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15065] = {
 		["type"] = "herbalism",
@@ -180789,7 +180789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.481,
 		["posY"] = 0.705,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15066] = {
 		["type"] = "herbalism",
@@ -180801,7 +180801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.495,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15067] = {
 		["type"] = "herbalism",
@@ -180813,7 +180813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.688,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15068] = {
 		["type"] = "herbalism",
@@ -180825,7 +180825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.693,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15069] = {
 		["type"] = "herbalism",
@@ -180837,7 +180837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.695,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15070] = {
 		["type"] = "herbalism",
@@ -180849,7 +180849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.686,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15071] = {
 		["type"] = "herbalism",
@@ -180861,7 +180861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.496,
 		["posY"] = 0.657,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15072] = {
 		["type"] = "herbalism",
@@ -180873,7 +180873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.469,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15073] = {
 		["type"] = "herbalism",
@@ -180885,7 +180885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15074] = {
 		["type"] = "herbalism",
@@ -180897,7 +180897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.467,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15075] = {
 		["type"] = "herbalism",
@@ -180909,7 +180909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.307,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15076] = {
 		["type"] = "herbalism",
@@ -180921,7 +180921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.327,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15077] = {
 		["type"] = "herbalism",
@@ -180933,7 +180933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15078] = {
 		["type"] = "herbalism",
@@ -180945,7 +180945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.464,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15079] = {
 		["type"] = "herbalism",
@@ -180957,7 +180957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15080] = {
 		["type"] = "herbalism",
@@ -180969,7 +180969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.505,
 		["posY"] = 0.626,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15081] = {
 		["type"] = "herbalism",
@@ -180981,7 +180981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.328,
 		["posY"] = 0.615,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15082] = {
 		["type"] = "herbalism",
@@ -180993,7 +180993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.227,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15083] = {
 		["type"] = "herbalism",
@@ -181005,7 +181005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.471,
 		["posY"] = 0.611,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15084] = {
 		["type"] = "herbalism",
@@ -181017,7 +181017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.495,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15085] = {
 		["type"] = "herbalism",
@@ -181029,7 +181029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.487,
 		["posY"] = 0.603,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15086] = {
 		["type"] = "herbalism",
@@ -181041,7 +181041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.479,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15087] = {
 		["type"] = "herbalism",
@@ -181053,7 +181053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15088] = {
 		["type"] = "herbalism",
@@ -181065,7 +181065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.253,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15089] = {
 		["type"] = "herbalism",
@@ -181077,7 +181077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.502,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15090] = {
 		["type"] = "herbalism",
@@ -181089,7 +181089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.486,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15091] = {
 		["type"] = "herbalism",
@@ -181101,7 +181101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.485,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15092] = {
 		["type"] = "herbalism",
@@ -181113,7 +181113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.476,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15093] = {
 		["type"] = "herbalism",
@@ -181125,7 +181125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.638,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15094] = {
 		["type"] = "herbalism",
@@ -181137,7 +181137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.642,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15095] = {
 		["type"] = "herbalism",
@@ -181149,7 +181149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.968,
 		["posY"] = 0.242,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15096] = {
 		["type"] = "herbalism",
@@ -181161,7 +181161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.383,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15097] = {
 		["type"] = "herbalism",
@@ -181173,7 +181173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.394,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15098] = {
 		["type"] = "herbalism",
@@ -181185,7 +181185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.393,
 		["posY"] = 0.862,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15099] = {
 		["type"] = "herbalism",
@@ -181197,7 +181197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.311,
 		["posY"] = 0.854,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15100] = {
 		["type"] = "herbalism",
@@ -181209,7 +181209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.299,
 		["posY"] = 0.851,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15101] = {
 		["type"] = "herbalism",
@@ -181221,7 +181221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.203,
 		["posY"] = 0.851,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15102] = {
 		["type"] = "herbalism",
@@ -181233,7 +181233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.258,
 		["posY"] = 0.841,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15103] = {
 		["type"] = "herbalism",
@@ -181245,7 +181245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.529,
 		["posY"] = 0.826,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15104] = {
 		["type"] = "herbalism",
@@ -181257,7 +181257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.242,
 		["posY"] = 0.822,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15105] = {
 		["type"] = "herbalism",
@@ -181269,7 +181269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.45,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15106] = {
 		["type"] = "herbalism",
@@ -181281,7 +181281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.542,
 		["posY"] = 0.808,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15107] = {
 		["type"] = "herbalism",
@@ -181293,7 +181293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.226,
 		["posY"] = 0.787,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15108] = {
 		["type"] = "herbalism",
@@ -181305,7 +181305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.22,
 		["posY"] = 0.781,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15109] = {
 		["type"] = "herbalism",
@@ -181317,7 +181317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.271,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15110] = {
 		["type"] = "herbalism",
@@ -181329,7 +181329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.561,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15111] = {
 		["type"] = "herbalism",
@@ -181341,7 +181341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.266,
 		["posY"] = 0.757,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15112] = {
 		["type"] = "herbalism",
@@ -181353,7 +181353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.527,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15113] = {
 		["type"] = "herbalism",
@@ -181365,7 +181365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.516,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15114] = {
 		["type"] = "herbalism",
@@ -181377,7 +181377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.359,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15115] = {
 		["type"] = "herbalism",
@@ -181389,7 +181389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.326,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15116] = {
 		["type"] = "herbalism",
@@ -181401,7 +181401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.582,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15117] = {
 		["type"] = "herbalism",
@@ -181413,7 +181413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.385,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15118] = {
 		["type"] = "herbalism",
@@ -181425,7 +181425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.428,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15119] = {
 		["type"] = "herbalism",
@@ -181437,7 +181437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.302,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15120] = {
 		["type"] = "herbalism",
@@ -181449,7 +181449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.315,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15121] = {
 		["type"] = "herbalism",
@@ -181461,7 +181461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.352,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15122] = {
 		["type"] = "herbalism",
@@ -181473,7 +181473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.286,
 		["posY"] = 0.688,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15123] = {
 		["type"] = "herbalism",
@@ -181485,7 +181485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.312,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15124] = {
 		["type"] = "herbalism",
@@ -181497,7 +181497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.333,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15125] = {
 		["type"] = "herbalism",
@@ -181509,7 +181509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.444,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15126] = {
 		["type"] = "herbalism",
@@ -181521,7 +181521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.496,
 		["posY"] = 0.647,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15127] = {
 		["type"] = "herbalism",
@@ -181533,7 +181533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.294,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15128] = {
 		["type"] = "herbalism",
@@ -181545,7 +181545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.38,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15129] = {
 		["type"] = "herbalism",
@@ -181557,7 +181557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.393,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15130] = {
 		["type"] = "herbalism",
@@ -181569,7 +181569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.353,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15131] = {
 		["type"] = "herbalism",
@@ -181581,7 +181581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.491,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15132] = {
 		["type"] = "herbalism",
@@ -181593,7 +181593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.506,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15133] = {
 		["type"] = "herbalism",
@@ -181605,7 +181605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.371,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15134] = {
 		["type"] = "herbalism",
@@ -181617,7 +181617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.489,
 		["posY"] = 0.615,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15135] = {
 		["type"] = "herbalism",
@@ -181629,7 +181629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.427,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15136] = {
 		["type"] = "herbalism",
@@ -181641,7 +181641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.398,
 		["posY"] = 0.603,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15137] = {
 		["type"] = "herbalism",
@@ -181653,7 +181653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.372,
 		["posY"] = 0.586,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15138] = {
 		["type"] = "herbalism",
@@ -181665,7 +181665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.297,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15139] = {
 		["type"] = "herbalism",
@@ -181677,7 +181677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.307,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15140] = {
 		["type"] = "herbalism",
@@ -181689,7 +181689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.31,
 		["posY"] = 0.528,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15141] = {
 		["type"] = "herbalism",
@@ -181701,7 +181701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.297,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15142] = {
 		["type"] = "herbalism",
@@ -181713,7 +181713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.444,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15143] = {
 		["type"] = "herbalism",
@@ -181725,7 +181725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.446,
 		["posY"] = 0.509,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15144] = {
 		["type"] = "herbalism",
@@ -181737,7 +181737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.257,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15145] = {
 		["type"] = "herbalism",
@@ -181749,7 +181749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.439,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15146] = {
 		["type"] = "herbalism",
@@ -181761,7 +181761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.218,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15147] = {
 		["type"] = "herbalism",
@@ -181773,7 +181773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.335,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15148] = {
 		["type"] = "herbalism",
@@ -181785,7 +181785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.23,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15149] = {
 		["type"] = "herbalism",
@@ -181797,7 +181797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.343,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15150] = {
 		["type"] = "herbalism",
@@ -181809,7 +181809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15151] = {
 		["type"] = "herbalism",
@@ -181821,7 +181821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.435,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15152] = {
 		["type"] = "herbalism",
@@ -181833,7 +181833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.421,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15153] = {
 		["type"] = "herbalism",
@@ -181845,7 +181845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.347,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15154] = {
 		["type"] = "herbalism",
@@ -181857,7 +181857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.344,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15155] = {
 		["type"] = "herbalism",
@@ -181869,7 +181869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.398,
 		["posY"] = 0.446,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15156] = {
 		["type"] = "herbalism",
@@ -181881,7 +181881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.399,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15157] = {
 		["type"] = "herbalism",
@@ -181893,7 +181893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15158] = {
 		["type"] = "herbalism",
@@ -181905,7 +181905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.314,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15159] = {
 		["type"] = "herbalism",
@@ -181917,7 +181917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.41,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15160] = {
 		["type"] = "herbalism",
@@ -181929,7 +181929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.298,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15161] = {
 		["type"] = "herbalism",
@@ -181941,7 +181941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.371,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15162] = {
 		["type"] = "herbalism",
@@ -181953,7 +181953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.197,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15163] = {
 		["type"] = "herbalism",
@@ -181965,7 +181965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.901,
 		["posY"] = 0.761,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15164] = {
 		["type"] = "herbalism",
@@ -181977,7 +181977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.765,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15165] = {
 		["type"] = "herbalism",
@@ -181989,7 +181989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.365,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15166] = {
 		["type"] = "herbalism",
@@ -182001,7 +182001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.905,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15167] = {
 		["type"] = "herbalism",
@@ -182013,7 +182013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.438,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15168] = {
 		["type"] = "herbalism",
@@ -182025,7 +182025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.428,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15169] = {
 		["type"] = "herbalism",
@@ -182037,7 +182037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.461,
 		["posY"] = 0.738,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15170] = {
 		["type"] = "herbalism",
@@ -182049,7 +182049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.745,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15171] = {
 		["type"] = "herbalism",
@@ -182061,7 +182061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.379,
 		["posY"] = 0.736,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15172] = {
 		["type"] = "herbalism",
@@ -182073,7 +182073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.47,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15173] = {
 		["type"] = "herbalism",
@@ -182085,7 +182085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.431,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15174] = {
 		["type"] = "herbalism",
@@ -182097,7 +182097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.442,
 		["posY"] = 0.729,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15175] = {
 		["type"] = "herbalism",
@@ -182109,7 +182109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.894,
 		["posY"] = 0.721,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15176] = {
 		["type"] = "herbalism",
@@ -182121,7 +182121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.473,
 		["posY"] = 0.721,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15177] = {
 		["type"] = "herbalism",
@@ -182133,7 +182133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.563,
 		["posY"] = 0.713,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15178] = {
 		["type"] = "herbalism",
@@ -182145,7 +182145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.469,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15179] = {
 		["type"] = "herbalism",
@@ -182157,7 +182157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.527,
 		["posY"] = 0.697,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15180] = {
 		["type"] = "herbalism",
@@ -182169,7 +182169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.741,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15181] = {
 		["type"] = "herbalism",
@@ -182181,7 +182181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.519,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15182] = {
 		["type"] = "herbalism",
@@ -182193,7 +182193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.447,
 		["posY"] = 0.687,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15183] = {
 		["type"] = "herbalism",
@@ -182205,7 +182205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.75,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15184] = {
 		["type"] = "herbalism",
@@ -182217,7 +182217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.338,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15185] = {
 		["type"] = "herbalism",
@@ -182229,7 +182229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.351,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15186] = {
 		["type"] = "herbalism",
@@ -182241,7 +182241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.355,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15187] = {
 		["type"] = "herbalism",
@@ -182253,7 +182253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.449,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15188] = {
 		["type"] = "herbalism",
@@ -182265,7 +182265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.431,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15189] = {
 		["type"] = "herbalism",
@@ -182277,7 +182277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.35,
 		["posY"] = 0.656,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15190] = {
 		["type"] = "herbalism",
@@ -182289,7 +182289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.437,
 		["posY"] = 0.652,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15191] = {
 		["type"] = "herbalism",
@@ -182301,7 +182301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.817,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15192] = {
 		["type"] = "herbalism",
@@ -182313,7 +182313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.805,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15193] = {
 		["type"] = "herbalism",
@@ -182325,7 +182325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.481,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15194] = {
 		["type"] = "herbalism",
@@ -182337,7 +182337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.915,
 		["posY"] = 0.642,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15195] = {
 		["type"] = "herbalism",
@@ -182349,7 +182349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.821,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15196] = {
 		["type"] = "herbalism",
@@ -182361,7 +182361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.496,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15197] = {
 		["type"] = "herbalism",
@@ -182373,7 +182373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.44,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15198] = {
 		["type"] = "herbalism",
@@ -182385,7 +182385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.917,
 		["posY"] = 0.628,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15199] = {
 		["type"] = "herbalism",
@@ -182397,7 +182397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.488,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15200] = {
 		["type"] = "herbalism",
@@ -182409,7 +182409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.441,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15201] = {
 		["type"] = "herbalism",
@@ -182421,7 +182421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.236,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15202] = {
 		["type"] = "herbalism",
@@ -182433,7 +182433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.861,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15203] = {
 		["type"] = "herbalism",
@@ -182445,7 +182445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.461,
 		["posY"] = 0.614,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15204] = {
 		["type"] = "herbalism",
@@ -182457,7 +182457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.488,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15205] = {
 		["type"] = "herbalism",
@@ -182469,7 +182469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.91,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15206] = {
 		["type"] = "herbalism",
@@ -182481,7 +182481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.248,
 		["posY"] = 0.61,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15207] = {
 		["type"] = "herbalism",
@@ -182493,7 +182493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.895,
 		["posY"] = 0.61,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15208] = {
 		["type"] = "herbalism",
@@ -182505,7 +182505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.23,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15209] = {
 		["type"] = "herbalism",
@@ -182517,7 +182517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.269,
 		["posY"] = 0.607,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15210] = {
 		["type"] = "herbalism",
@@ -182529,7 +182529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.421,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15211] = {
 		["type"] = "herbalism",
@@ -182541,7 +182541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.449,
 		["posY"] = 0.603,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15212] = {
 		["type"] = "herbalism",
@@ -182553,7 +182553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.276,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15213] = {
 		["type"] = "herbalism",
@@ -182565,7 +182565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.333,
 		["posY"] = 0.599,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15214] = {
 		["type"] = "herbalism",
@@ -182577,7 +182577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.425,
 		["posY"] = 0.599,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15215] = {
 		["type"] = "herbalism",
@@ -182589,7 +182589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.719,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15216] = {
 		["type"] = "herbalism",
@@ -182601,7 +182601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.843,
 		["posY"] = 0.593,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15217] = {
 		["type"] = "herbalism",
@@ -182613,7 +182613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.269,
 		["posY"] = 0.593,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15218] = {
 		["type"] = "herbalism",
@@ -182625,7 +182625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.857,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15219] = {
 		["type"] = "herbalism",
@@ -182637,7 +182637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.151,
 		["posY"] = 0.589,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15220] = {
 		["type"] = "herbalism",
@@ -182649,7 +182649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.331,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15221] = {
 		["type"] = "herbalism",
@@ -182661,7 +182661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.87,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15222] = {
 		["type"] = "herbalism",
@@ -182673,7 +182673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.242,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15223] = {
 		["type"] = "herbalism",
@@ -182685,7 +182685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.921,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15224] = {
 		["type"] = "herbalism",
@@ -182697,7 +182697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.152,
 		["posY"] = 0.577,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15225] = {
 		["type"] = "herbalism",
@@ -182709,7 +182709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.907,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15226] = {
 		["type"] = "herbalism",
@@ -182721,7 +182721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.143,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15227] = {
 		["type"] = "herbalism",
@@ -182733,7 +182733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.903,
 		["posY"] = 0.569,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15228] = {
 		["type"] = "herbalism",
@@ -182745,7 +182745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.894,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15229] = {
 		["type"] = "herbalism",
@@ -182757,7 +182757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.419,
 		["posY"] = 0.566,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15230] = {
 		["type"] = "herbalism",
@@ -182769,7 +182769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.167,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15231] = {
 		["type"] = "herbalism",
@@ -182781,7 +182781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.211,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15232] = {
 		["type"] = "herbalism",
@@ -182793,7 +182793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.196,
 		["posY"] = 0.55,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15233] = {
 		["type"] = "herbalism",
@@ -182805,7 +182805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.431,
 		["posY"] = 0.55,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15234] = {
 		["type"] = "herbalism",
@@ -182817,7 +182817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.16,
 		["posY"] = 0.549,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15235] = {
 		["type"] = "herbalism",
@@ -182829,7 +182829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.272,
 		["posY"] = 0.544,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15236] = {
 		["type"] = "herbalism",
@@ -182841,7 +182841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.168,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15237] = {
 		["type"] = "herbalism",
@@ -182853,7 +182853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.264,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15238] = {
 		["type"] = "herbalism",
@@ -182865,7 +182865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.198,
 		["posY"] = 0.541,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15239] = {
 		["type"] = "herbalism",
@@ -182877,7 +182877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.21,
 		["posY"] = 0.539,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15240] = {
 		["type"] = "herbalism",
@@ -182889,7 +182889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.399,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15241] = {
 		["type"] = "herbalism",
@@ -182901,7 +182901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.283,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15242] = {
 		["type"] = "herbalism",
@@ -182913,7 +182913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.25,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15243] = {
 		["type"] = "herbalism",
@@ -182925,7 +182925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.913,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15244] = {
 		["type"] = "herbalism",
@@ -182937,7 +182937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.918,
 		["posY"] = 0.502,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15245] = {
 		["type"] = "herbalism",
@@ -182949,7 +182949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.165,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15246] = {
 		["type"] = "herbalism",
@@ -182961,7 +182961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.308,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15247] = {
 		["type"] = "herbalism",
@@ -182973,7 +182973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.201,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15248] = {
 		["type"] = "herbalism",
@@ -182985,7 +182985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.293,
 		["posY"] = 0.493,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15249] = {
 		["type"] = "herbalism",
@@ -182997,7 +182997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.159,
 		["posY"] = 0.486,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15250] = {
 		["type"] = "herbalism",
@@ -183009,7 +183009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.44,
 		["posY"] = 0.486,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15251] = {
 		["type"] = "herbalism",
@@ -183021,7 +183021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.309,
 		["posY"] = 0.486,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15252] = {
 		["type"] = "herbalism",
@@ -183033,7 +183033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.289,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15253] = {
 		["type"] = "herbalism",
@@ -183045,7 +183045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.205,
 		["posY"] = 0.479,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15254] = {
 		["type"] = "herbalism",
@@ -183057,7 +183057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.426,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15255] = {
 		["type"] = "herbalism",
@@ -183069,7 +183069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.148,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15256] = {
 		["type"] = "herbalism",
@@ -183081,7 +183081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.437,
 		["posY"] = 0.471,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15257] = {
 		["type"] = "herbalism",
@@ -183093,7 +183093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.911,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15258] = {
 		["type"] = "herbalism",
@@ -183105,7 +183105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.198,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15259] = {
 		["type"] = "herbalism",
@@ -183117,7 +183117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.156,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15260] = {
 		["type"] = "herbalism",
@@ -183129,7 +183129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.313,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15261] = {
 		["type"] = "herbalism",
@@ -183141,7 +183141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.91,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15262] = {
 		["type"] = "herbalism",
@@ -183153,7 +183153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.338,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15263] = {
 		["type"] = "herbalism",
@@ -183165,7 +183165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.887,
 		["posY"] = 0.434,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15264] = {
 		["type"] = "herbalism",
@@ -183177,7 +183177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.855,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15265] = {
 		["type"] = "herbalism",
@@ -183189,7 +183189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.354,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15266] = {
 		["type"] = "herbalism",
@@ -183201,7 +183201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.89,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15267] = {
 		["type"] = "herbalism",
@@ -183213,7 +183213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.377,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15268] = {
 		["type"] = "herbalism",
@@ -183225,7 +183225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.873,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15269] = {
 		["type"] = "herbalism",
@@ -183237,7 +183237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.827,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15270] = {
 		["type"] = "herbalism",
@@ -183249,7 +183249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.425,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15271] = {
 		["type"] = "herbalism",
@@ -183261,7 +183261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.441,
 		["posY"] = 0.363,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15272] = {
 		["type"] = "herbalism",
@@ -183273,7 +183273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.449,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15273] = {
 		["type"] = "herbalism",
@@ -183285,7 +183285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.86,
 		["posY"] = 0.352,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15274] = {
 		["type"] = "herbalism",
@@ -183297,7 +183297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.837,
 		["posY"] = 0.345,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15275] = {
 		["type"] = "herbalism",
@@ -183309,7 +183309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.819,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15276] = {
 		["type"] = "herbalism",
@@ -183321,7 +183321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.888,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15277] = {
 		["type"] = "herbalism",
@@ -183333,7 +183333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.759,
 		["posY"] = 0.322,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15278] = {
 		["type"] = "herbalism",
@@ -183345,7 +183345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.902,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15279] = {
 		["type"] = "herbalism",
@@ -183357,7 +183357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.897,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15280] = {
 		["type"] = "herbalism",
@@ -183369,7 +183369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.814,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15281] = {
 		["type"] = "herbalism",
@@ -183381,7 +183381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.766,
 		["posY"] = 0.304,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15282] = {
 		["type"] = "herbalism",
@@ -183393,7 +183393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.756,
 		["posY"] = 0.304,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15283] = {
 		["type"] = "herbalism",
@@ -183405,7 +183405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.759,
 		["posY"] = 0.289,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15284] = {
 		["type"] = "herbalism",
@@ -183417,7 +183417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.817,
 		["posY"] = 0.288,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15285] = {
 		["type"] = "herbalism",
@@ -183429,7 +183429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.866,
 		["posY"] = 0.262,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15286] = {
 		["type"] = "herbalism",
@@ -183441,7 +183441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.816,
 		["posY"] = 0.259,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15287] = {
 		["type"] = "herbalism",
@@ -183453,7 +183453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.832,
 		["posY"] = 0.235,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15288] = {
 		["type"] = "herbalism",
@@ -183465,7 +183465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.852,
 		["posY"] = 0.22,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15289] = {
 		["type"] = "herbalism",
@@ -183477,7 +183477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.491,
 		["posY"] = 0.204,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15290] = {
 		["type"] = "herbalism",
@@ -183489,7 +183489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.505,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15291] = {
 		["type"] = "herbalism",
@@ -183501,7 +183501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.864,
 		["posY"] = 0.202,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15292] = {
 		["type"] = "herbalism",
@@ -183513,7 +183513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.502,
 		["posY"] = 0.197,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15293] = {
 		["type"] = "herbalism",
@@ -183525,7 +183525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.495,
 		["posY"] = 0.169,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15294] = {
 		["type"] = "herbalism",
@@ -183537,7 +183537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.458,
 		["posY"] = 0.122,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15295] = {
 		["type"] = "herbalism",
@@ -183549,7 +183549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.467,
 		["posY"] = 0.105,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15296] = {
 		["type"] = "herbalism",
@@ -183561,7 +183561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.452,
 		["posY"] = 0.104,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15297] = {
 		["type"] = "herbalism",
@@ -183573,7 +183573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.453,
 		["posY"] = 0.083,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15298] = {
 		["type"] = "herbalism",
@@ -183585,7 +183585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.407,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15299] = {
 		["type"] = "herbalism",
@@ -183597,7 +183597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.396,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15300] = {
 		["type"] = "herbalism",
@@ -183609,7 +183609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.35,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15301] = {
 		["type"] = "herbalism",
@@ -183621,7 +183621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.41,
 		["posY"] = 0.839,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15302] = {
 		["type"] = "herbalism",
@@ -183633,7 +183633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.352,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15303] = {
 		["type"] = "herbalism",
@@ -183645,7 +183645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.62,
 		["posY"] = 0.831,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15304] = {
 		["type"] = "herbalism",
@@ -183657,7 +183657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.425,
 		["posY"] = 0.83,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15305] = {
 		["type"] = "herbalism",
@@ -183669,7 +183669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.635,
 		["posY"] = 0.824,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15306] = {
 		["type"] = "herbalism",
@@ -183681,7 +183681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.651,
 		["posY"] = 0.796,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15307] = {
 		["type"] = "herbalism",
@@ -183693,7 +183693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.594,
 		["posY"] = 0.795,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15308] = {
 		["type"] = "herbalism",
@@ -183705,7 +183705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.284,
 		["posY"] = 0.795,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15309] = {
 		["type"] = "herbalism",
@@ -183717,7 +183717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.431,
 		["posY"] = 0.78,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15310] = {
 		["type"] = "herbalism",
@@ -183729,7 +183729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.266,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15311] = {
 		["type"] = "herbalism",
@@ -183741,7 +183741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.401,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15312] = {
 		["type"] = "herbalism",
@@ -183753,7 +183753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.313,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15313] = {
 		["type"] = "herbalism",
@@ -183765,7 +183765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.59,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15314] = {
 		["type"] = "herbalism",
@@ -183777,7 +183777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.653,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15315] = {
 		["type"] = "herbalism",
@@ -183789,7 +183789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.285,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15316] = {
 		["type"] = "herbalism",
@@ -183801,7 +183801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.413,
 		["posY"] = 0.753,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15317] = {
 		["type"] = "herbalism",
@@ -183813,7 +183813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.671,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15318] = {
 		["type"] = "herbalism",
@@ -183825,7 +183825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.6,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15319] = {
 		["type"] = "herbalism",
@@ -183837,7 +183837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.691,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15320] = {
 		["type"] = "herbalism",
@@ -183849,7 +183849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.638,
 		["posY"] = 0.729,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15321] = {
 		["type"] = "herbalism",
@@ -183861,7 +183861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.41,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15322] = {
 		["type"] = "herbalism",
@@ -183873,7 +183873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.592,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15323] = {
 		["type"] = "herbalism",
@@ -183885,7 +183885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.416,
 		["posY"] = 0.723,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15324] = {
 		["type"] = "herbalism",
@@ -183897,7 +183897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.614,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15325] = {
 		["type"] = "herbalism",
@@ -183909,7 +183909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.438,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15326] = {
 		["type"] = "herbalism",
@@ -183921,7 +183921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.356,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15327] = {
 		["type"] = "herbalism",
@@ -183933,7 +183933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.653,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15328] = {
 		["type"] = "herbalism",
@@ -183945,7 +183945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.711,
 		["posY"] = 0.703,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15329] = {
 		["type"] = "herbalism",
@@ -183957,7 +183957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.682,
 		["posY"] = 0.701,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15330] = {
 		["type"] = "herbalism",
@@ -183969,7 +183969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.66,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15331] = {
 		["type"] = "herbalism",
@@ -183981,7 +183981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.709,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15332] = {
 		["type"] = "herbalism",
@@ -183993,7 +183993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.314,
 		["posY"] = 0.689,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15333] = {
 		["type"] = "herbalism",
@@ -184005,7 +184005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.415,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15334] = {
 		["type"] = "herbalism",
@@ -184017,7 +184017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.346,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15335] = {
 		["type"] = "herbalism",
@@ -184029,7 +184029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.377,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15336] = {
 		["type"] = "herbalism",
@@ -184041,7 +184041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.375,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15337] = {
 		["type"] = "herbalism",
@@ -184053,7 +184053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.432,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15338] = {
 		["type"] = "herbalism",
@@ -184065,7 +184065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.379,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15339] = {
 		["type"] = "herbalism",
@@ -184077,7 +184077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.226,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15340] = {
 		["type"] = "herbalism",
@@ -184089,7 +184089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15341] = {
 		["type"] = "herbalism",
@@ -184101,7 +184101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.354,
 		["posY"] = 0.587,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15342] = {
 		["type"] = "herbalism",
@@ -184113,7 +184113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.459,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15343] = {
 		["type"] = "herbalism",
@@ -184125,7 +184125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.244,
 		["posY"] = 0.573,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15344] = {
 		["type"] = "herbalism",
@@ -184137,7 +184137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.523,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15345] = {
 		["type"] = "herbalism",
@@ -184149,7 +184149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.416,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15346] = {
 		["type"] = "herbalism",
@@ -184161,7 +184161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15347] = {
 		["type"] = "herbalism",
@@ -184173,7 +184173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.566,
 		["posY"] = 0.544,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15348] = {
 		["type"] = "herbalism",
@@ -184185,7 +184185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.477,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15349] = {
 		["type"] = "herbalism",
@@ -184197,7 +184197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.505,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15350] = {
 		["type"] = "herbalism",
@@ -184209,7 +184209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15351] = {
 		["type"] = "herbalism",
@@ -184221,7 +184221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.508,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15352] = {
 		["type"] = "herbalism",
@@ -184233,7 +184233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.467,
 		["posY"] = 0.52,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15353] = {
 		["type"] = "herbalism",
@@ -184245,7 +184245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.262,
 		["posY"] = 0.513,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15354] = {
 		["type"] = "herbalism",
@@ -184257,7 +184257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.508,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15355] = {
 		["type"] = "herbalism",
@@ -184269,7 +184269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.556,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15356] = {
 		["type"] = "herbalism",
@@ -184281,7 +184281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15357] = {
 		["type"] = "herbalism",
@@ -184293,7 +184293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.465,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15358] = {
 		["type"] = "herbalism",
@@ -184305,7 +184305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.522,
 		["posY"] = 0.49,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15359] = {
 		["type"] = "herbalism",
@@ -184317,7 +184317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.479,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15360] = {
 		["type"] = "herbalism",
@@ -184329,7 +184329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.293,
 		["posY"] = 0.474,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15361] = {
 		["type"] = "herbalism",
@@ -184341,7 +184341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.301,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15362] = {
 		["type"] = "herbalism",
@@ -184353,7 +184353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15363] = {
 		["type"] = "herbalism",
@@ -184365,7 +184365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.396,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15364] = {
 		["type"] = "herbalism",
@@ -184377,7 +184377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15365] = {
 		["type"] = "herbalism",
@@ -184389,7 +184389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.629,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15366] = {
 		["type"] = "herbalism",
@@ -184401,7 +184401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.59,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15367] = {
 		["type"] = "herbalism",
@@ -184413,7 +184413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.359,
 		["posY"] = 0.315,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15368] = {
 		["type"] = "herbalism",
@@ -184425,7 +184425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.564,
 		["posY"] = 0.314,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15369] = {
 		["type"] = "herbalism",
@@ -184437,7 +184437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.296,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15370] = {
 		["type"] = "herbalism",
@@ -184449,7 +184449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.338,
 		["posY"] = 0.245,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15371] = {
 		["type"] = "herbalism",
@@ -184461,7 +184461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.409,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15372] = {
 		["type"] = "herbalism",
@@ -184473,7 +184473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.33,
 		["posY"] = 0.939,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15373] = {
 		["type"] = "herbalism",
@@ -184485,7 +184485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.387,
 		["posY"] = 0.926,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15374] = {
 		["type"] = "herbalism",
@@ -184497,7 +184497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.861,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15375] = {
 		["type"] = "herbalism",
@@ -184509,7 +184509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.329,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15376] = {
 		["type"] = "herbalism",
@@ -184521,7 +184521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.4,
 		["posY"] = 0.823,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15377] = {
 		["type"] = "herbalism",
@@ -184533,7 +184533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.348,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15378] = {
 		["type"] = "herbalism",
@@ -184545,7 +184545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.294,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15379] = {
 		["type"] = "herbalism",
@@ -184557,7 +184557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.362,
 		["posY"] = 0.817,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15380] = {
 		["type"] = "herbalism",
@@ -184569,7 +184569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.394,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15381] = {
 		["type"] = "herbalism",
@@ -184581,7 +184581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.425,
 		["posY"] = 0.784,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15382] = {
 		["type"] = "herbalism",
@@ -184593,7 +184593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.444,
 		["posY"] = 0.774,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15383] = {
 		["type"] = "herbalism",
@@ -184605,7 +184605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15384] = {
 		["type"] = "herbalism",
@@ -184617,7 +184617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15385] = {
 		["type"] = "herbalism",
@@ -184629,7 +184629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.426,
 		["posY"] = 0.756,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15386] = {
 		["type"] = "herbalism",
@@ -184641,7 +184641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.389,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15387] = {
 		["type"] = "herbalism",
@@ -184653,7 +184653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.806,
 		["posY"] = 0.739,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15388] = {
 		["type"] = "herbalism",
@@ -184665,7 +184665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.353,
 		["posY"] = 0.736,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15389] = {
 		["type"] = "herbalism",
@@ -184677,7 +184677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.27,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15390] = {
 		["type"] = "herbalism",
@@ -184689,7 +184689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.284,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15391] = {
 		["type"] = "herbalism",
@@ -184701,7 +184701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.312,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15392] = {
 		["type"] = "herbalism",
@@ -184713,7 +184713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.255,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15393] = {
 		["type"] = "herbalism",
@@ -184725,7 +184725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.344,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15394] = {
 		["type"] = "herbalism",
@@ -184737,7 +184737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.439,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15395] = {
 		["type"] = "herbalism",
@@ -184749,7 +184749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.257,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15396] = {
 		["type"] = "herbalism",
@@ -184761,7 +184761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.261,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15397] = {
 		["type"] = "herbalism",
@@ -184773,7 +184773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.3,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15398] = {
 		["type"] = "herbalism",
@@ -184785,7 +184785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.549,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15399] = {
 		["type"] = "herbalism",
@@ -184797,7 +184797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.351,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15400] = {
 		["type"] = "herbalism",
@@ -184809,7 +184809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.543,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15401] = {
 		["type"] = "herbalism",
@@ -184821,7 +184821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.495,
 		["posY"] = 0.656,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15402] = {
 		["type"] = "herbalism",
@@ -184833,7 +184833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.571,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15403] = {
 		["type"] = "herbalism",
@@ -184845,7 +184845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15404] = {
 		["type"] = "herbalism",
@@ -184857,7 +184857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.656,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15405] = {
 		["type"] = "herbalism",
@@ -184869,7 +184869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.582,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15406] = {
 		["type"] = "herbalism",
@@ -184881,7 +184881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.373,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15407] = {
 		["type"] = "herbalism",
@@ -184893,7 +184893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.661,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15408] = {
 		["type"] = "herbalism",
@@ -184905,7 +184905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.594,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15409] = {
 		["type"] = "herbalism",
@@ -184917,7 +184917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15410] = {
 		["type"] = "herbalism",
@@ -184929,7 +184929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.601,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15411] = {
 		["type"] = "herbalism",
@@ -184941,7 +184941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.465,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15412] = {
 		["type"] = "herbalism",
@@ -184953,7 +184953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.717,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15413] = {
 		["type"] = "herbalism",
@@ -184965,7 +184965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.22,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15414] = {
 		["type"] = "herbalism",
@@ -184977,7 +184977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.577,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15415] = {
 		["type"] = "herbalism",
@@ -184989,7 +184989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.65,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15416] = {
 		["type"] = "herbalism",
@@ -185001,7 +185001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.698,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15417] = {
 		["type"] = "herbalism",
@@ -185013,7 +185013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.461,
 		["posY"] = 0.569,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15418] = {
 		["type"] = "herbalism",
@@ -185025,7 +185025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.268,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15419] = {
 		["type"] = "herbalism",
@@ -185037,7 +185037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.216,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15420] = {
 		["type"] = "herbalism",
@@ -185049,7 +185049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.24,
 		["posY"] = 0.554,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15421] = {
 		["type"] = "herbalism",
@@ -185061,7 +185061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.229,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15422] = {
 		["type"] = "herbalism",
@@ -185073,7 +185073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.447,
 		["posY"] = 0.547,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15423] = {
 		["type"] = "herbalism",
@@ -185085,7 +185085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.624,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15424] = {
 		["type"] = "herbalism",
@@ -185097,7 +185097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.563,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15425] = {
 		["type"] = "herbalism",
@@ -185109,7 +185109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.724,
 		["posY"] = 0.522,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15426] = {
 		["type"] = "herbalism",
@@ -185121,7 +185121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.249,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15427] = {
 		["type"] = "herbalism",
@@ -185133,7 +185133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.506,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15428] = {
 		["type"] = "herbalism",
@@ -185145,7 +185145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.74,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15429] = {
 		["type"] = "herbalism",
@@ -185157,7 +185157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.272,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15430] = {
 		["type"] = "herbalism",
@@ -185169,7 +185169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.511,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15431] = {
 		["type"] = "herbalism",
@@ -185181,7 +185181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.274,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15432] = {
 		["type"] = "herbalism",
@@ -185193,7 +185193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.427,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15433] = {
 		["type"] = "herbalism",
@@ -185205,7 +185205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.58,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15434] = {
 		["type"] = "herbalism",
@@ -185217,7 +185217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.44,
 		["posY"] = 0.42,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15435] = {
 		["type"] = "herbalism",
@@ -185229,7 +185229,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.631,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15436] = {
 		["type"] = "herbalism",
@@ -185241,7 +185241,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.284,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15437] = {
 		["type"] = "herbalism",
@@ -185253,7 +185253,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15438] = {
 		["type"] = "herbalism",
@@ -185265,7 +185265,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.291,
 		["posY"] = 0.374,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15439] = {
 		["type"] = "herbalism",
@@ -185277,7 +185277,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.222,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15440] = {
 		["type"] = "herbalism",
@@ -185289,7 +185289,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.493,
 		["posY"] = 0.865,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15441] = {
 		["type"] = "herbalism",
@@ -185301,7 +185301,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.786,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15442] = {
 		["type"] = "herbalism",
@@ -185313,7 +185313,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.839,
 		["posY"] = 0.778,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15443] = {
 		["type"] = "herbalism",
@@ -185325,7 +185325,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.589,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15444] = {
 		["type"] = "herbalism",
@@ -185337,7 +185337,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.587,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15445] = {
 		["type"] = "herbalism",
@@ -185349,7 +185349,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15446] = {
 		["type"] = "herbalism",
@@ -185361,7 +185361,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.831,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15447] = {
 		["type"] = "herbalism",
@@ -185373,7 +185373,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15448] = {
 		["type"] = "herbalism",
@@ -185385,7 +185385,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.83,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15449] = {
 		["type"] = "herbalism",
@@ -185397,7 +185397,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.516,
 		["posY"] = 0.702,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15450] = {
 		["type"] = "herbalism",
@@ -185409,7 +185409,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.699,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15451] = {
 		["type"] = "herbalism",
@@ -185421,7 +185421,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.461,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15452] = {
 		["type"] = "herbalism",
@@ -185433,7 +185433,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.489,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15453] = {
 		["type"] = "herbalism",
@@ -185445,7 +185445,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.53,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15454] = {
 		["type"] = "herbalism",
@@ -185457,7 +185457,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.485,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15455] = {
 		["type"] = "herbalism",
@@ -185469,7 +185469,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.429,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15456] = {
 		["type"] = "herbalism",
@@ -185481,7 +185481,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.435,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15457] = {
 		["type"] = "herbalism",
@@ -185493,7 +185493,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15458] = {
 		["type"] = "herbalism",
@@ -185505,7 +185505,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15459] = {
 		["type"] = "herbalism",
@@ -185517,7 +185517,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.481,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15460] = {
 		["type"] = "herbalism",
@@ -185529,7 +185529,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15461] = {
 		["type"] = "herbalism",
@@ -185541,7 +185541,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15462] = {
 		["type"] = "herbalism",
@@ -185553,7 +185553,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.469,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15463] = {
 		["type"] = "herbalism",
@@ -185565,7 +185565,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.682,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15464] = {
 		["type"] = "herbalism",
@@ -185577,7 +185577,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.667,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15465] = {
 		["type"] = "herbalism",
@@ -185589,7 +185589,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.699,
 		["posY"] = 0.593,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15466] = {
 		["type"] = "herbalism",
@@ -185601,7 +185601,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.457,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15467] = {
 		["type"] = "herbalism",
@@ -185613,7 +185613,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.42,
 		["posY"] = 0.586,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15468] = {
 		["type"] = "herbalism",
@@ -185625,7 +185625,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.476,
 		["posY"] = 0.572,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15469] = {
 		["type"] = "herbalism",
@@ -185637,7 +185637,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15470] = {
 		["type"] = "herbalism",
@@ -185649,7 +185649,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.691,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15471] = {
 		["type"] = "herbalism",
@@ -185661,7 +185661,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.413,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15472] = {
 		["type"] = "herbalism",
@@ -185673,7 +185673,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.227,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15473] = {
 		["type"] = "herbalism",
@@ -185685,7 +185685,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.792,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15474] = {
 		["type"] = "herbalism",
@@ -185697,7 +185697,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.722,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15475] = {
 		["type"] = "herbalism",
@@ -185709,7 +185709,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15476] = {
 		["type"] = "herbalism",
@@ -185721,7 +185721,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.406,
 		["posY"] = 0.52,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15477] = {
 		["type"] = "herbalism",
@@ -185733,7 +185733,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.208,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15478] = {
 		["type"] = "herbalism",
@@ -185745,7 +185745,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.774,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15479] = {
 		["type"] = "herbalism",
@@ -185757,7 +185757,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15480] = {
 		["type"] = "herbalism",
@@ -185769,7 +185769,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.436,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15481] = {
 		["type"] = "herbalism",
@@ -185781,7 +185781,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.453,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15482] = {
 		["type"] = "herbalism",
@@ -185793,7 +185793,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.442,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15483] = {
 		["type"] = "herbalism",
@@ -185805,7 +185805,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.695,
 		["posY"] = 0.486,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15484] = {
 		["type"] = "herbalism",
@@ -185817,7 +185817,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.286,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15485] = {
 		["type"] = "herbalism",
@@ -185829,7 +185829,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.476,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15486] = {
 		["type"] = "herbalism",
@@ -185841,7 +185841,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.655,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15487] = {
 		["type"] = "herbalism",
@@ -185853,7 +185853,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.605,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15488] = {
 		["type"] = "herbalism",
@@ -185865,7 +185865,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.755,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15489] = {
 		["type"] = "herbalism",
@@ -185877,7 +185877,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.748,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15490] = {
 		["type"] = "herbalism",
@@ -185889,7 +185889,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.498,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15491] = {
 		["type"] = "herbalism",
@@ -185901,7 +185901,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.753,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15492] = {
 		["type"] = "herbalism",
@@ -185913,7 +185913,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.744,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15493] = {
 		["type"] = "herbalism",
@@ -185925,7 +185925,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.631,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15494] = {
 		["type"] = "herbalism",
@@ -185937,7 +185937,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.618,
 		["posY"] = 0.434,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15495] = {
 		["type"] = "herbalism",
@@ -185949,7 +185949,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.512,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15496] = {
 		["type"] = "herbalism",
@@ -185961,7 +185961,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.313,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15497] = {
 		["type"] = "herbalism",
@@ -185973,7 +185973,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.742,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15498] = {
 		["type"] = "herbalism",
@@ -185985,7 +185985,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.773,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15499] = {
 		["type"] = "herbalism",
@@ -185997,7 +185997,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.74,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15500] = {
 		["type"] = "herbalism",
@@ -186009,7 +186009,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.73,
 		["posY"] = 0.409,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15501] = {
 		["type"] = "herbalism",
@@ -186021,7 +186021,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.63,
 		["posY"] = 0.409,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15502] = {
 		["type"] = "herbalism",
@@ -186033,7 +186033,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.417,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15503] = {
 		["type"] = "herbalism",
@@ -186045,7 +186045,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.277,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15504] = {
 		["type"] = "herbalism",
@@ -186057,7 +186057,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.272,
 		["posY"] = 0.392,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15505] = {
 		["type"] = "herbalism",
@@ -186069,7 +186069,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.279,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15506] = {
 		["type"] = "herbalism",
@@ -186081,7 +186081,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.688,
 		["posY"] = 0.388,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15507] = {
 		["type"] = "herbalism",
@@ -186093,7 +186093,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.7,
 		["posY"] = 0.387,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15508] = {
 		["type"] = "herbalism",
@@ -186105,7 +186105,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15509] = {
 		["type"] = "herbalism",
@@ -186117,7 +186117,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.274,
 		["posY"] = 0.385,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15510] = {
 		["type"] = "herbalism",
@@ -186129,7 +186129,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.733,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15511] = {
 		["type"] = "herbalism",
@@ -186141,7 +186141,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.649,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15512] = {
 		["type"] = "herbalism",
@@ -186153,7 +186153,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.559,
 		["posY"] = 0.379,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15513] = {
 		["type"] = "herbalism",
@@ -186165,7 +186165,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.611,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15514] = {
 		["type"] = "herbalism",
@@ -186177,7 +186177,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.694,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15515] = {
 		["type"] = "herbalism",
@@ -186189,7 +186189,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.717,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15516] = {
 		["type"] = "herbalism",
@@ -186201,7 +186201,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.75,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15517] = {
 		["type"] = "herbalism",
@@ -186213,7 +186213,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.366,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15518] = {
 		["type"] = "herbalism",
@@ -186225,7 +186225,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.416,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15519] = {
 		["type"] = "herbalism",
@@ -186237,7 +186237,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15520] = {
 		["type"] = "herbalism",
@@ -186249,7 +186249,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.73,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15521] = {
 		["type"] = "herbalism",
@@ -186261,7 +186261,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.395,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15522] = {
 		["type"] = "herbalism",
@@ -186273,7 +186273,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.297,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15523] = {
 		["type"] = "herbalism",
@@ -186285,7 +186285,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.465,
 		["posY"] = 0.342,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15524] = {
 		["type"] = "herbalism",
@@ -186297,7 +186297,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.415,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15525] = {
 		["type"] = "herbalism",
@@ -186309,7 +186309,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.283,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15526] = {
 		["type"] = "herbalism",
@@ -186321,7 +186321,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.62,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15527] = {
 		["type"] = "herbalism",
@@ -186333,7 +186333,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.751,
 		["posY"] = 0.331,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15528] = {
 		["type"] = "herbalism",
@@ -186345,7 +186345,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.729,
 		["posY"] = 0.312,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15529] = {
 		["type"] = "herbalism",
@@ -186357,7 +186357,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.474,
 		["posY"] = 0.309,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15530] = {
 		["type"] = "herbalism",
@@ -186369,7 +186369,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.751,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15531] = {
 		["type"] = "herbalism",
@@ -186381,7 +186381,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.74,
 		["posY"] = 0.291,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15532] = {
 		["type"] = "herbalism",
@@ -186393,7 +186393,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.329,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15533] = {
 		["type"] = "herbalism",
@@ -186405,7 +186405,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.462,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15534] = {
 		["type"] = "herbalism",
@@ -186417,7 +186417,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.61,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15535] = {
 		["type"] = "herbalism",
@@ -186429,7 +186429,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.577,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15536] = {
 		["type"] = "herbalism",
@@ -186441,7 +186441,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.749,
 		["posY"] = 0.471,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15537] = {
 		["type"] = "herbalism",
@@ -186453,7 +186453,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.812,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15538] = {
 		["type"] = "herbalism",
@@ -186465,7 +186465,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.208,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15539] = {
 		["type"] = "herbalism",
@@ -186477,7 +186477,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.717,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15540] = {
 		["type"] = "herbalism",
@@ -186489,7 +186489,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.74,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15541] = {
 		["type"] = "herbalism",
@@ -186501,7 +186501,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.47,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15542] = {
 		["type"] = "herbalism",
@@ -186513,7 +186513,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.661,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15543] = {
 		["type"] = "herbalism",
@@ -186525,7 +186525,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.32,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15544] = {
 		["type"] = "herbalism",
@@ -186537,7 +186537,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.632,
 		["posY"] = 0.245,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15545] = {
 		["type"] = "herbalism",
@@ -186549,7 +186549,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.377,
 		["posY"] = 0.944,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15546] = {
 		["type"] = "herbalism",
@@ -186561,7 +186561,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.334,
 		["posY"] = 0.895,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15547] = {
 		["type"] = "herbalism",
@@ -186573,7 +186573,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.356,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15548] = {
 		["type"] = "herbalism",
@@ -186585,7 +186585,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.823,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15549] = {
 		["type"] = "herbalism",
@@ -186597,7 +186597,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.266,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15550] = {
 		["type"] = "herbalism",
@@ -186609,7 +186609,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.258,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15551] = {
 		["type"] = "herbalism",
@@ -186621,7 +186621,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.246,
 		["posY"] = 0.725,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15552] = {
 		["type"] = "herbalism",
@@ -186633,7 +186633,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.268,
 		["posY"] = 0.715,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15553] = {
 		["type"] = "herbalism",
@@ -186645,7 +186645,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.573,
 		["posY"] = 0.711,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15554] = {
 		["type"] = "herbalism",
@@ -186657,7 +186657,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.272,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15555] = {
 		["type"] = "herbalism",
@@ -186669,7 +186669,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.256,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15556] = {
 		["type"] = "herbalism",
@@ -186681,7 +186681,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.291,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15557] = {
 		["type"] = "herbalism",
@@ -186693,7 +186693,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.37,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15558] = {
 		["type"] = "herbalism",
@@ -186705,7 +186705,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.267,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15559] = {
 		["type"] = "herbalism",
@@ -186717,7 +186717,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.329,
 		["posY"] = 0.669,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15560] = {
 		["type"] = "herbalism",
@@ -186729,7 +186729,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.459,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15561] = {
 		["type"] = "herbalism",
@@ -186741,7 +186741,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.751,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15562] = {
 		["type"] = "herbalism",
@@ -186753,7 +186753,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.76,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15563] = {
 		["type"] = "herbalism",
@@ -186765,7 +186765,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.555,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15564] = {
 		["type"] = "herbalism",
@@ -186777,7 +186777,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.579,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15565] = {
 		["type"] = "herbalism",
@@ -186789,7 +186789,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.359,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15566] = {
 		["type"] = "herbalism",
@@ -186801,7 +186801,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.715,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15567] = {
 		["type"] = "herbalism",
@@ -186813,7 +186813,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.39,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15568] = {
 		["type"] = "herbalism",
@@ -186825,7 +186825,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.477,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15569] = {
 		["type"] = "herbalism",
@@ -186837,7 +186837,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.244,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15570] = {
 		["type"] = "herbalism",
@@ -186849,7 +186849,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.571,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15571] = {
 		["type"] = "herbalism",
@@ -186861,7 +186861,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15572] = {
 		["type"] = "herbalism",
@@ -186873,7 +186873,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.375,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15573] = {
 		["type"] = "herbalism",
@@ -186885,7 +186885,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.48,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15574] = {
 		["type"] = "herbalism",
@@ -186897,7 +186897,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.278,
 		["posY"] = 0.6,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15575] = {
 		["type"] = "herbalism",
@@ -186909,7 +186909,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.473,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15576] = {
 		["type"] = "herbalism",
@@ -186921,7 +186921,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.664,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15577] = {
 		["type"] = "herbalism",
@@ -186933,7 +186933,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.584,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15578] = {
 		["type"] = "herbalism",
@@ -186945,7 +186945,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.273,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15579] = {
 		["type"] = "herbalism",
@@ -186957,7 +186957,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.453,
 		["posY"] = 0.55,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15580] = {
 		["type"] = "herbalism",
@@ -186969,7 +186969,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.721,
 		["posY"] = 0.543,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15581] = {
 		["type"] = "herbalism",
@@ -186981,7 +186981,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.42,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15582] = {
 		["type"] = "herbalism",
@@ -186993,7 +186993,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.703,
 		["posY"] = 0.541,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15583] = {
 		["type"] = "herbalism",
@@ -187005,7 +187005,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.709,
 		["posY"] = 0.53,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15584] = {
 		["type"] = "herbalism",
@@ -187017,7 +187017,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.638,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15585] = {
 		["type"] = "herbalism",
@@ -187029,7 +187029,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.28,
 		["posY"] = 0.513,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15586] = {
 		["type"] = "herbalism",
@@ -187041,7 +187041,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.56,
 		["posY"] = 0.509,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15587] = {
 		["type"] = "herbalism",
@@ -187053,7 +187053,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.7,
 		["posY"] = 0.499,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15588] = {
 		["type"] = "herbalism",
@@ -187065,7 +187065,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.598,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15589] = {
 		["type"] = "herbalism",
@@ -187077,7 +187077,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.642,
 		["posY"] = 0.495,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15590] = {
 		["type"] = "herbalism",
@@ -187089,7 +187089,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15591] = {
 		["type"] = "herbalism",
@@ -187101,7 +187101,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.671,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15592] = {
 		["type"] = "herbalism",
@@ -187113,7 +187113,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.597,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15593] = {
 		["type"] = "herbalism",
@@ -187125,7 +187125,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.321,
 		["posY"] = 0.471,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15594] = {
 		["type"] = "herbalism",
@@ -187137,7 +187137,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.25,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15595] = {
 		["type"] = "herbalism",
@@ -187149,7 +187149,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.65,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15596] = {
 		["type"] = "herbalism",
@@ -187161,7 +187161,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.396,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15597] = {
 		["type"] = "herbalism",
@@ -187173,7 +187173,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.37,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15598] = {
 		["type"] = "herbalism",
@@ -187185,7 +187185,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.417,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15599] = {
 		["type"] = "herbalism",
@@ -187197,7 +187197,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.422,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15600] = {
 		["type"] = "herbalism",
@@ -187209,7 +187209,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.341,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15601] = {
 		["type"] = "herbalism",
@@ -187221,7 +187221,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.256,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15602] = {
 		["type"] = "herbalism",
@@ -187233,7 +187233,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.353,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15603] = {
 		["type"] = "herbalism",
@@ -187245,7 +187245,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.346,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15604] = {
 		["type"] = "herbalism",
@@ -187257,7 +187257,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.34,
 		["posY"] = 0.389,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15605] = {
 		["type"] = "herbalism",
@@ -187269,7 +187269,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.449,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15606] = {
 		["type"] = "herbalism",
@@ -187281,7 +187281,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.811,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15607] = {
 		["type"] = "herbalism",
@@ -187293,7 +187293,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.837,
 		["posY"] = 0.786,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15608] = {
 		["type"] = "herbalism",
@@ -187305,7 +187305,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.829,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15609] = {
 		["type"] = "herbalism",
@@ -187317,7 +187317,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.584,
 		["posY"] = 0.768,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15610] = {
 		["type"] = "herbalism",
@@ -187329,7 +187329,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.594,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15611] = {
 		["type"] = "herbalism",
@@ -187341,7 +187341,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.695,
 		["posY"] = 0.741,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15612] = {
 		["type"] = "herbalism",
@@ -187353,7 +187353,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.518,
 		["posY"] = 0.735,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15613] = {
 		["type"] = "herbalism",
@@ -187365,7 +187365,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.734,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15614] = {
 		["type"] = "herbalism",
@@ -187377,7 +187377,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.856,
 		["posY"] = 0.733,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15615] = {
 		["type"] = "herbalism",
@@ -187389,7 +187389,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.726,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15616] = {
 		["type"] = "herbalism",
@@ -187401,7 +187401,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.85,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15617] = {
 		["type"] = "herbalism",
@@ -187413,7 +187413,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.5,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15618] = {
 		["type"] = "herbalism",
@@ -187425,7 +187425,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.465,
 		["posY"] = 0.713,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15619] = {
 		["type"] = "herbalism",
@@ -187437,7 +187437,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15620] = {
 		["type"] = "herbalism",
@@ -187449,7 +187449,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.698,
 		["posY"] = 0.66,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15621] = {
 		["type"] = "herbalism",
@@ -187461,7 +187461,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.396,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15622] = {
 		["type"] = "herbalism",
@@ -187473,7 +187473,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.447,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15623] = {
 		["type"] = "herbalism",
@@ -187485,7 +187485,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15624] = {
 		["type"] = "herbalism",
@@ -187497,7 +187497,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15625] = {
 		["type"] = "herbalism",
@@ -187509,7 +187509,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.236,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15626] = {
 		["type"] = "herbalism",
@@ -187521,7 +187521,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.7,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15627] = {
 		["type"] = "herbalism",
@@ -187533,7 +187533,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15628] = {
 		["type"] = "herbalism",
@@ -187545,7 +187545,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.692,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15629] = {
 		["type"] = "herbalism",
@@ -187557,7 +187557,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.675,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15630] = {
 		["type"] = "herbalism",
@@ -187569,7 +187569,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.477,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15631] = {
 		["type"] = "herbalism",
@@ -187581,7 +187581,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.684,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15632] = {
 		["type"] = "herbalism",
@@ -187593,7 +187593,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.199,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15633] = {
 		["type"] = "herbalism",
@@ -187605,7 +187605,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.473,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15634] = {
 		["type"] = "herbalism",
@@ -187617,7 +187617,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.369,
 		["posY"] = 0.579,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15635] = {
 		["type"] = "herbalism",
@@ -187629,7 +187629,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.463,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15636] = {
 		["type"] = "herbalism",
@@ -187641,7 +187641,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15637] = {
 		["type"] = "herbalism",
@@ -187653,7 +187653,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.683,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15638] = {
 		["type"] = "herbalism",
@@ -187665,7 +187665,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.456,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15639] = {
 		["type"] = "herbalism",
@@ -187677,7 +187677,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.705,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15640] = {
 		["type"] = "herbalism",
@@ -187689,7 +187689,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.405,
 		["posY"] = 0.505,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15641] = {
 		["type"] = "herbalism",
@@ -187701,7 +187701,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.726,
 		["posY"] = 0.481,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15642] = {
 		["type"] = "herbalism",
@@ -187713,7 +187713,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.472,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15643] = {
 		["type"] = "herbalism",
@@ -187725,7 +187725,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.636,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15644] = {
 		["type"] = "herbalism",
@@ -187737,7 +187737,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.279,
 		["posY"] = 0.444,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15645] = {
 		["type"] = "herbalism",
@@ -187749,7 +187749,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.599,
 		["posY"] = 0.439,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15646] = {
 		["type"] = "herbalism",
@@ -187761,7 +187761,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.303,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15647] = {
 		["type"] = "herbalism",
@@ -187773,7 +187773,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.558,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15648] = {
 		["type"] = "herbalism",
@@ -187785,7 +187785,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.735,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15649] = {
 		["type"] = "herbalism",
@@ -187797,7 +187797,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.308,
 		["posY"] = 0.427,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15650] = {
 		["type"] = "herbalism",
@@ -187809,7 +187809,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.716,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15651] = {
 		["type"] = "herbalism",
@@ -187821,7 +187821,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.311,
 		["posY"] = 0.42,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15652] = {
 		["type"] = "herbalism",
@@ -187833,7 +187833,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.28,
 		["posY"] = 0.412,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15653] = {
 		["type"] = "herbalism",
@@ -187845,7 +187845,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.57,
 		["posY"] = 0.411,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15654] = {
 		["type"] = "herbalism",
@@ -187857,7 +187857,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.613,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15655] = {
 		["type"] = "herbalism",
@@ -187869,7 +187869,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15656] = {
 		["type"] = "herbalism",
@@ -187881,7 +187881,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.298,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15657] = {
 		["type"] = "herbalism",
@@ -187893,7 +187893,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15658] = {
 		["type"] = "herbalism",
@@ -187905,7 +187905,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.721,
 		["posY"] = 0.392,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15659] = {
 		["type"] = "herbalism",
@@ -187917,7 +187917,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.693,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15660] = {
 		["type"] = "herbalism",
@@ -187929,7 +187929,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.744,
 		["posY"] = 0.38,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15661] = {
 		["type"] = "herbalism",
@@ -187941,7 +187941,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15662] = {
 		["type"] = "herbalism",
@@ -187953,7 +187953,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.734,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15663] = {
 		["type"] = "herbalism",
@@ -187965,7 +187965,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.615,
 		["posY"] = 0.359,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15664] = {
 		["type"] = "herbalism",
@@ -187977,7 +187977,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15665] = {
 		["type"] = "herbalism",
@@ -187989,7 +187989,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.354,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15666] = {
 		["type"] = "herbalism",
@@ -188001,7 +188001,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.708,
 		["posY"] = 0.352,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15667] = {
 		["type"] = "herbalism",
@@ -188013,7 +188013,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.404,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15668] = {
 		["type"] = "herbalism",
@@ -188025,7 +188025,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.729,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15669] = {
 		["type"] = "herbalism",
@@ -188037,7 +188037,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.459,
 		["posY"] = 0.334,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15670] = {
 		["type"] = "herbalism",
@@ -188049,7 +188049,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.803,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15671] = {
 		["type"] = "herbalism",
@@ -188061,7 +188061,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.449,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15672] = {
 		["type"] = "herbalism",
@@ -188073,7 +188073,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.351,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15673] = {
 		["type"] = "herbalism",
@@ -188085,7 +188085,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.799,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15674] = {
 		["type"] = "herbalism",
@@ -188097,7 +188097,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.318,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15675] = {
 		["type"] = "herbalism",
@@ -188109,7 +188109,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.334,
 		["posY"] = 0.249,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15676] = {
 		["type"] = "herbalism",
@@ -188121,7 +188121,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.596,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15677] = {
 		["type"] = "herbalism",
@@ -188133,7 +188133,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.398,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15678] = {
 		["type"] = "herbalism",
@@ -188145,7 +188145,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.804,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15679] = {
 		["type"] = "herbalism",
@@ -188157,7 +188157,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.668,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15680] = {
 		["type"] = "herbalism",
@@ -188169,7 +188169,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.619,
 		["posY"] = 0.382,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15681] = {
 		["type"] = "herbalism",
@@ -188181,7 +188181,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.261,
 		["posY"] = 0.349,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15682] = {
 		["type"] = "herbalism",
@@ -188193,7 +188193,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.615,
 		["posY"] = 0.175,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15683] = {
 		["type"] = "herbalism",
@@ -188205,7 +188205,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.453,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15684] = {
 		["type"] = "herbalism",
@@ -188217,7 +188217,7 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.598,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[15685] = {
 		["type"] = "herbalism",
@@ -188229,6 +188229,6 @@ GatherLite_localHerbNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.338,
 		["posY"] = 0.171,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 }

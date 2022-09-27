@@ -126,7 +126,6 @@ end
 
 local function createNodeThread(type)
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
-
     local t = GatherLiteTracker:ClosestNodes(type, x, y, instanceID, GatherLite.db.char.minimap.range, GatherLiteTracker.MinimapFilter);
 
     for key, node in pairs(t) do

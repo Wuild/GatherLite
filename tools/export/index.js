@@ -41,7 +41,7 @@ function node(type, object, incoming) {
 }
 
 function GetData(exp, data, type, site = "wowhead") {
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
         let jobs = [];
         for (let i = 0; i < data.length; i++) {
             let url;
@@ -99,7 +99,7 @@ function GetData(exp, data, type, site = "wowhead") {
             resolve(rows);
         }).catch((err) => {
             console.error(err);
-            resolve(rows);
+            reject(err);
         });
     });
 }
@@ -259,12 +259,12 @@ getTypeData("containers").then((nodes) => {
     writeDBFile("containers", out)
 });
 
-getTypeData("fishing").then((nodes) => {
-    console.log("fishing done!")
-    let out = "";
-    out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
-    writeDBFile("fishing", out)
-});
+// getTypeData("fishing").then((nodes) => {
+//     console.log("fishing done!")
+//     let out = "";
+//     out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
+//     writeDBFile("fishing", out)
+// });
 
 
 // console.log(Object.keys(expansions))

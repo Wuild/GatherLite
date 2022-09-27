@@ -135384,7 +135384,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.32,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11283] = {
 		["type"] = "mining",
@@ -135396,7 +135396,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.556,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11284] = {
 		["type"] = "mining",
@@ -135408,7 +135408,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.253,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11285] = {
 		["type"] = "mining",
@@ -135420,7 +135420,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.592,
 		["posY"] = 0.599,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11286] = {
 		["type"] = "mining",
@@ -135432,7 +135432,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.749,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11287] = {
 		["type"] = "mining",
@@ -135444,7 +135444,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.467,
 		["posY"] = 0.421,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11288] = {
 		["type"] = "mining",
@@ -135456,7 +135456,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.333,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11289] = {
 		["type"] = "mining",
@@ -135468,7 +135468,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.354,
 		["posY"] = 0.891,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11290] = {
 		["type"] = "mining",
@@ -135480,7 +135480,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.402,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11291] = {
 		["type"] = "mining",
@@ -135492,7 +135492,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.346,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11292] = {
 		["type"] = "mining",
@@ -135504,7 +135504,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.369,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11293] = {
 		["type"] = "mining",
@@ -135516,7 +135516,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.802,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11294] = {
 		["type"] = "mining",
@@ -135528,7 +135528,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.443,
 		["posY"] = 0.776,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11295] = {
 		["type"] = "mining",
@@ -135540,7 +135540,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11296] = {
 		["type"] = "mining",
@@ -135552,7 +135552,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.407,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11297] = {
 		["type"] = "mining",
@@ -135564,7 +135564,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11298] = {
 		["type"] = "mining",
@@ -135576,7 +135576,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11299] = {
 		["type"] = "mining",
@@ -135588,7 +135588,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.45,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11300] = {
 		["type"] = "mining",
@@ -135600,7 +135600,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.396,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11301] = {
 		["type"] = "mining",
@@ -135612,7 +135612,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11302] = {
 		["type"] = "mining",
@@ -135624,7 +135624,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.435,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11303] = {
 		["type"] = "mining",
@@ -135636,7 +135636,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.404,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11304] = {
 		["type"] = "mining",
@@ -135648,7 +135648,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.427,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11305] = {
 		["type"] = "mining",
@@ -135660,7 +135660,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.429,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11306] = {
 		["type"] = "mining",
@@ -135672,7 +135672,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11307] = {
 		["type"] = "mining",
@@ -135684,7 +135684,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11308] = {
 		["type"] = "mining",
@@ -135696,7 +135696,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.474,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11309] = {
 		["type"] = "mining",
@@ -135708,7 +135708,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.484,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11310] = {
 		["type"] = "mining",
@@ -135720,7 +135720,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.713,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11311] = {
 		["type"] = "mining",
@@ -135732,7 +135732,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.344,
 		["posY"] = 0.712,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11312] = {
 		["type"] = "mining",
@@ -135744,7 +135744,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.484,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11313] = {
 		["type"] = "mining",
@@ -135756,7 +135756,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.447,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11314] = {
 		["type"] = "mining",
@@ -135768,7 +135768,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11315] = {
 		["type"] = "mining",
@@ -135780,7 +135780,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.502,
 		["posY"] = 0.703,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11316] = {
 		["type"] = "mining",
@@ -135792,7 +135792,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.741,
 		["posY"] = 0.702,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11317] = {
 		["type"] = "mining",
@@ -135804,7 +135804,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.433,
 		["posY"] = 0.7,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11318] = {
 		["type"] = "mining",
@@ -135816,7 +135816,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.473,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11319] = {
 		["type"] = "mining",
@@ -135828,7 +135828,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.263,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11320] = {
 		["type"] = "mining",
@@ -135840,7 +135840,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.26,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11321] = {
 		["type"] = "mining",
@@ -135852,7 +135852,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.352,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11322] = {
 		["type"] = "mining",
@@ -135864,7 +135864,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.428,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11323] = {
 		["type"] = "mining",
@@ -135876,7 +135876,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.431,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11324] = {
 		["type"] = "mining",
@@ -135888,7 +135888,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.441,
 		["posY"] = 0.677,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11325] = {
 		["type"] = "mining",
@@ -135900,7 +135900,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.372,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11326] = {
 		["type"] = "mining",
@@ -135912,7 +135912,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.254,
 		["posY"] = 0.675,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11327] = {
 		["type"] = "mining",
@@ -135924,7 +135924,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.262,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11328] = {
 		["type"] = "mining",
@@ -135936,7 +135936,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.311,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11329] = {
 		["type"] = "mining",
@@ -135948,7 +135948,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.33,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11330] = {
 		["type"] = "mining",
@@ -135960,7 +135960,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.246,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11331] = {
 		["type"] = "mining",
@@ -135972,7 +135972,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11332] = {
 		["type"] = "mining",
@@ -135984,7 +135984,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.45,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11333] = {
 		["type"] = "mining",
@@ -135996,7 +135996,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.444,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11334] = {
 		["type"] = "mining",
@@ -136008,7 +136008,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.542,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11335] = {
 		["type"] = "mining",
@@ -136020,7 +136020,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.663,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11336] = {
 		["type"] = "mining",
@@ -136032,7 +136032,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.529,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11337] = {
 		["type"] = "mining",
@@ -136044,7 +136044,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.529,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11338] = {
 		["type"] = "mining",
@@ -136056,7 +136056,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.642,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11339] = {
 		["type"] = "mining",
@@ -136068,7 +136068,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.652,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11340] = {
 		["type"] = "mining",
@@ -136080,7 +136080,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.575,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11341] = {
 		["type"] = "mining",
@@ -136092,7 +136092,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.335,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11342] = {
 		["type"] = "mining",
@@ -136104,7 +136104,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.413,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11343] = {
 		["type"] = "mining",
@@ -136116,7 +136116,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.647,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11344] = {
 		["type"] = "mining",
@@ -136128,7 +136128,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11345] = {
 		["type"] = "mining",
@@ -136140,7 +136140,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.558,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11346] = {
 		["type"] = "mining",
@@ -136152,7 +136152,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11347] = {
 		["type"] = "mining",
@@ -136164,7 +136164,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.552,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11348] = {
 		["type"] = "mining",
@@ -136176,7 +136176,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.292,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11349] = {
 		["type"] = "mining",
@@ -136188,7 +136188,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.547,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11350] = {
 		["type"] = "mining",
@@ -136200,7 +136200,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.442,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11351] = {
 		["type"] = "mining",
@@ -136212,7 +136212,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.676,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11352] = {
 		["type"] = "mining",
@@ -136224,7 +136224,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.537,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11353] = {
 		["type"] = "mining",
@@ -136236,7 +136236,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.778,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11354] = {
 		["type"] = "mining",
@@ -136248,7 +136248,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.399,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11355] = {
 		["type"] = "mining",
@@ -136260,7 +136260,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.757,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11356] = {
 		["type"] = "mining",
@@ -136272,7 +136272,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.436,
 		["posY"] = 0.622,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11357] = {
 		["type"] = "mining",
@@ -136284,7 +136284,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.57,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11358] = {
 		["type"] = "mining",
@@ -136296,7 +136296,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.661,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11359] = {
 		["type"] = "mining",
@@ -136308,7 +136308,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.281,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11360] = {
 		["type"] = "mining",
@@ -136320,7 +136320,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.41,
 		["posY"] = 0.611,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11361] = {
 		["type"] = "mining",
@@ -136332,7 +136332,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11362] = {
 		["type"] = "mining",
@@ -136344,7 +136344,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.575,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11363] = {
 		["type"] = "mining",
@@ -136356,7 +136356,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.602,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11364] = {
 		["type"] = "mining",
@@ -136368,7 +136368,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.644,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11365] = {
 		["type"] = "mining",
@@ -136380,7 +136380,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.653,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11366] = {
 		["type"] = "mining",
@@ -136392,7 +136392,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.722,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11367] = {
 		["type"] = "mining",
@@ -136404,7 +136404,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.276,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11368] = {
 		["type"] = "mining",
@@ -136416,7 +136416,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.589,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11369] = {
 		["type"] = "mining",
@@ -136428,7 +136428,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.602,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11370] = {
 		["type"] = "mining",
@@ -136440,7 +136440,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11371] = {
 		["type"] = "mining",
@@ -136452,7 +136452,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.729,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11372] = {
 		["type"] = "mining",
@@ -136464,7 +136464,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.297,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11373] = {
 		["type"] = "mining",
@@ -136476,7 +136476,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.694,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11374] = {
 		["type"] = "mining",
@@ -136488,7 +136488,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.27,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11375] = {
 		["type"] = "mining",
@@ -136500,7 +136500,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.275,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11376] = {
 		["type"] = "mining",
@@ -136512,7 +136512,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.252,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11377] = {
 		["type"] = "mining",
@@ -136524,7 +136524,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.241,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11378] = {
 		["type"] = "mining",
@@ -136536,7 +136536,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.63,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11379] = {
 		["type"] = "mining",
@@ -136548,7 +136548,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.596,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11380] = {
 		["type"] = "mining",
@@ -136560,7 +136560,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.649,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11381] = {
 		["type"] = "mining",
@@ -136572,7 +136572,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.574,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11382] = {
 		["type"] = "mining",
@@ -136584,7 +136584,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.29,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11383] = {
 		["type"] = "mining",
@@ -136596,7 +136596,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11384] = {
 		["type"] = "mining",
@@ -136608,7 +136608,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.299,
 		["posY"] = 0.435,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11385] = {
 		["type"] = "mining",
@@ -136620,7 +136620,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11386] = {
 		["type"] = "mining",
@@ -136632,7 +136632,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.361,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11387] = {
 		["type"] = "mining",
@@ -136644,7 +136644,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.596,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11388] = {
 		["type"] = "mining",
@@ -136656,7 +136656,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.652,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11389] = {
 		["type"] = "mining",
@@ -136668,7 +136668,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.643,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11390] = {
 		["type"] = "mining",
@@ -136680,7 +136680,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.354,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11391] = {
 		["type"] = "mining",
@@ -136692,7 +136692,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.679,
 		["posY"] = 0.413,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11392] = {
 		["type"] = "mining",
@@ -136704,7 +136704,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.289,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11393] = {
 		["type"] = "mining",
@@ -136716,7 +136716,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.637,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11394] = {
 		["type"] = "mining",
@@ -136728,7 +136728,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.445,
 		["posY"] = 0.401,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11395] = {
 		["type"] = "mining",
@@ -136740,7 +136740,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.481,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11396] = {
 		["type"] = "mining",
@@ -136752,7 +136752,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.441,
 		["posY"] = 0.343,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11397] = {
 		["type"] = "mining",
@@ -136764,7 +136764,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.425,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11398] = {
 		["type"] = "mining",
@@ -136803,7 +136803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.56,
 		["posY"] = 0.906,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11402] = {
 		["type"] = "mining",
@@ -136815,7 +136815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.566,
 		["posY"] = 0.9,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11403] = {
 		["type"] = "mining",
@@ -136827,7 +136827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.542,
 		["posY"] = 0.89,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11404] = {
 		["type"] = "mining",
@@ -136839,7 +136839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.538,
 		["posY"] = 0.889,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11405] = {
 		["type"] = "mining",
@@ -136851,7 +136851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.54,
 		["posY"] = 0.888,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11406] = {
 		["type"] = "mining",
@@ -136863,7 +136863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.535,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11407] = {
 		["type"] = "mining",
@@ -136875,7 +136875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.504,
 		["posY"] = 0.879,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11408] = {
 		["type"] = "mining",
@@ -136887,7 +136887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.536,
 		["posY"] = 0.873,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11409] = {
 		["type"] = "mining",
@@ -136899,7 +136899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.515,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11410] = {
 		["type"] = "mining",
@@ -136911,7 +136911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.865,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11411] = {
 		["type"] = "mining",
@@ -136923,7 +136923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.571,
 		["posY"] = 0.861,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11412] = {
 		["type"] = "mining",
@@ -136935,7 +136935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.572,
 		["posY"] = 0.857,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11413] = {
 		["type"] = "mining",
@@ -136947,7 +136947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.508,
 		["posY"] = 0.857,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11414] = {
 		["type"] = "mining",
@@ -136959,7 +136959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.559,
 		["posY"] = 0.854,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11415] = {
 		["type"] = "mining",
@@ -136971,7 +136971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.558,
 		["posY"] = 0.849,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11416] = {
 		["type"] = "mining",
@@ -136983,7 +136983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.524,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11417] = {
 		["type"] = "mining",
@@ -136995,7 +136995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11418] = {
 		["type"] = "mining",
@@ -137007,7 +137007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11419] = {
 		["type"] = "mining",
@@ -137019,7 +137019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.845,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11420] = {
 		["type"] = "mining",
@@ -137031,7 +137031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.547,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11421] = {
 		["type"] = "mining",
@@ -137043,7 +137043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.551,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11422] = {
 		["type"] = "mining",
@@ -137055,7 +137055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11423] = {
 		["type"] = "mining",
@@ -137067,7 +137067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.467,
 		["posY"] = 0.83,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11424] = {
 		["type"] = "mining",
@@ -137079,7 +137079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.829,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11425] = {
 		["type"] = "mining",
@@ -137091,7 +137091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.564,
 		["posY"] = 0.828,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11426] = {
 		["type"] = "mining",
@@ -137103,7 +137103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.573,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11427] = {
 		["type"] = "mining",
@@ -137115,7 +137115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.496,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11428] = {
 		["type"] = "mining",
@@ -137127,7 +137127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.497,
 		["posY"] = 0.81,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11429] = {
 		["type"] = "mining",
@@ -137139,7 +137139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.763,
 		["posY"] = 0.785,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11430] = {
 		["type"] = "mining",
@@ -137151,7 +137151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.549,
 		["posY"] = 0.78,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11431] = {
 		["type"] = "mining",
@@ -137163,7 +137163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.547,
 		["posY"] = 0.779,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11432] = {
 		["type"] = "mining",
@@ -137175,7 +137175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.6,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11433] = {
 		["type"] = "mining",
@@ -137187,7 +137187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.566,
 		["posY"] = 0.712,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11434] = {
 		["type"] = "mining",
@@ -137199,7 +137199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.846,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11435] = {
 		["type"] = "mining",
@@ -137211,7 +137211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11436] = {
 		["type"] = "mining",
@@ -137223,7 +137223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.471,
 		["posY"] = 0.705,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11437] = {
 		["type"] = "mining",
@@ -137235,7 +137235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.782,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11438] = {
 		["type"] = "mining",
@@ -137247,7 +137247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.475,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11439] = {
 		["type"] = "mining",
@@ -137259,7 +137259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.671,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11440] = {
 		["type"] = "mining",
@@ -137271,7 +137271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.821,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11441] = {
 		["type"] = "mining",
@@ -137283,7 +137283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.308,
 		["posY"] = 0.701,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11442] = {
 		["type"] = "mining",
@@ -137295,7 +137295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.697,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11443] = {
 		["type"] = "mining",
@@ -137307,7 +137307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.522,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11444] = {
 		["type"] = "mining",
@@ -137319,7 +137319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.723,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11445] = {
 		["type"] = "mining",
@@ -137331,7 +137331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.707,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11446] = {
 		["type"] = "mining",
@@ -137343,7 +137343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.815,
 		["posY"] = 0.687,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11447] = {
 		["type"] = "mining",
@@ -137355,7 +137355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.823,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11448] = {
 		["type"] = "mining",
@@ -137367,7 +137367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.763,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11449] = {
 		["type"] = "mining",
@@ -137379,7 +137379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.701,
 		["posY"] = 0.685,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11450] = {
 		["type"] = "mining",
@@ -137391,7 +137391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.666,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11451] = {
 		["type"] = "mining",
@@ -137403,7 +137403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.669,
 		["posY"] = 0.675,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11452] = {
 		["type"] = "mining",
@@ -137415,7 +137415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.71,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11453] = {
 		["type"] = "mining",
@@ -137427,7 +137427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.811,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11454] = {
 		["type"] = "mining",
@@ -137439,7 +137439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11455] = {
 		["type"] = "mining",
@@ -137451,7 +137451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.361,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11456] = {
 		["type"] = "mining",
@@ -137463,7 +137463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.334,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11457] = {
 		["type"] = "mining",
@@ -137475,7 +137475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.758,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11458] = {
 		["type"] = "mining",
@@ -137487,7 +137487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11459] = {
 		["type"] = "mining",
@@ -137499,7 +137499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.77,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11460] = {
 		["type"] = "mining",
@@ -137511,7 +137511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.678,
 		["posY"] = 0.659,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11461] = {
 		["type"] = "mining",
@@ -137523,7 +137523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.656,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11462] = {
 		["type"] = "mining",
@@ -137535,7 +137535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11463] = {
 		["type"] = "mining",
@@ -137547,7 +137547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11464] = {
 		["type"] = "mining",
@@ -137559,7 +137559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.749,
 		["posY"] = 0.653,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11465] = {
 		["type"] = "mining",
@@ -137571,7 +137571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11466] = {
 		["type"] = "mining",
@@ -137583,7 +137583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.672,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11467] = {
 		["type"] = "mining",
@@ -137595,7 +137595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11468] = {
 		["type"] = "mining",
@@ -137607,7 +137607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.636,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11469] = {
 		["type"] = "mining",
@@ -137619,7 +137619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.775,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11470] = {
 		["type"] = "mining",
@@ -137631,7 +137631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.433,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11471] = {
 		["type"] = "mining",
@@ -137643,7 +137643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.657,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11472] = {
 		["type"] = "mining",
@@ -137655,7 +137655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.816,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11473] = {
 		["type"] = "mining",
@@ -137667,7 +137667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.495,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11474] = {
 		["type"] = "mining",
@@ -137679,7 +137679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.776,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11475] = {
 		["type"] = "mining",
@@ -137691,7 +137691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11476] = {
 		["type"] = "mining",
@@ -137703,7 +137703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.713,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11477] = {
 		["type"] = "mining",
@@ -137715,7 +137715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.438,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11478] = {
 		["type"] = "mining",
@@ -137727,7 +137727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.775,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11479] = {
 		["type"] = "mining",
@@ -137739,7 +137739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.4,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11480] = {
 		["type"] = "mining",
@@ -137751,7 +137751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.788,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11481] = {
 		["type"] = "mining",
@@ -137763,7 +137763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.688,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11482] = {
 		["type"] = "mining",
@@ -137775,7 +137775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.686,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11483] = {
 		["type"] = "mining",
@@ -137787,7 +137787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.796,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11484] = {
 		["type"] = "mining",
@@ -137799,7 +137799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.721,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11485] = {
 		["type"] = "mining",
@@ -137811,7 +137811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.49,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11486] = {
 		["type"] = "mining",
@@ -137823,7 +137823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11487] = {
 		["type"] = "mining",
@@ -137835,7 +137835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11488] = {
 		["type"] = "mining",
@@ -137847,7 +137847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.796,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11489] = {
 		["type"] = "mining",
@@ -137859,7 +137859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.52,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11490] = {
 		["type"] = "mining",
@@ -137871,7 +137871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.516,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11491] = {
 		["type"] = "mining",
@@ -137883,7 +137883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.746,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11492] = {
 		["type"] = "mining",
@@ -137895,7 +137895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.517,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11493] = {
 		["type"] = "mining",
@@ -137907,7 +137907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.474,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11494] = {
 		["type"] = "mining",
@@ -137919,7 +137919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11495] = {
 		["type"] = "mining",
@@ -137931,7 +137931,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.489,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11496] = {
 		["type"] = "mining",
@@ -137943,7 +137943,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.541,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11497] = {
 		["type"] = "mining",
@@ -137955,7 +137955,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.737,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11498] = {
 		["type"] = "mining",
@@ -137967,7 +137967,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.743,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11499] = {
 		["type"] = "mining",
@@ -137979,7 +137979,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.493,
 		["posY"] = 0.604,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11500] = {
 		["type"] = "mining",
@@ -137991,7 +137991,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.412,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11501] = {
 		["type"] = "mining",
@@ -138003,7 +138003,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11502] = {
 		["type"] = "mining",
@@ -138015,7 +138015,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.803,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11503] = {
 		["type"] = "mining",
@@ -138027,7 +138027,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.759,
 		["posY"] = 0.582,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11504] = {
 		["type"] = "mining",
@@ -138039,7 +138039,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.733,
 		["posY"] = 0.58,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11505] = {
 		["type"] = "mining",
@@ -138051,7 +138051,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.756,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11506] = {
 		["type"] = "mining",
@@ -138063,7 +138063,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.379,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11507] = {
 		["type"] = "mining",
@@ -138075,7 +138075,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11508] = {
 		["type"] = "mining",
@@ -138087,7 +138087,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.737,
 		["posY"] = 0.568,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11509] = {
 		["type"] = "mining",
@@ -138099,7 +138099,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.648,
 		["posY"] = 0.565,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11510] = {
 		["type"] = "mining",
@@ -138111,7 +138111,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.65,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11511] = {
 		["type"] = "mining",
@@ -138123,7 +138123,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.309,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11512] = {
 		["type"] = "mining",
@@ -138135,7 +138135,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11513] = {
 		["type"] = "mining",
@@ -138147,7 +138147,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11514] = {
 		["type"] = "mining",
@@ -138159,7 +138159,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.637,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11515] = {
 		["type"] = "mining",
@@ -138171,7 +138171,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.69,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11516] = {
 		["type"] = "mining",
@@ -138183,7 +138183,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11517] = {
 		["type"] = "mining",
@@ -138195,7 +138195,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.462,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11518] = {
 		["type"] = "mining",
@@ -138207,7 +138207,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.466,
 		["posY"] = 0.541,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11519] = {
 		["type"] = "mining",
@@ -138219,7 +138219,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.462,
 		["posY"] = 0.536,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11520] = {
 		["type"] = "mining",
@@ -138231,7 +138231,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11521] = {
 		["type"] = "mining",
@@ -138243,7 +138243,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11522] = {
 		["type"] = "mining",
@@ -138255,7 +138255,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.776,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11523] = {
 		["type"] = "mining",
@@ -138267,7 +138267,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11524] = {
 		["type"] = "mining",
@@ -138279,7 +138279,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.743,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11525] = {
 		["type"] = "mining",
@@ -138291,7 +138291,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.485,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11526] = {
 		["type"] = "mining",
@@ -138303,7 +138303,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.627,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11527] = {
 		["type"] = "mining",
@@ -138315,7 +138315,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.509,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11528] = {
 		["type"] = "mining",
@@ -138327,7 +138327,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.39,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11529] = {
 		["type"] = "mining",
@@ -138339,7 +138339,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.472,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11530] = {
 		["type"] = "mining",
@@ -138351,7 +138351,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11531] = {
 		["type"] = "mining",
@@ -138363,7 +138363,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.772,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11532] = {
 		["type"] = "mining",
@@ -138375,7 +138375,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.779,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11533] = {
 		["type"] = "mining",
@@ -138387,7 +138387,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.77,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11534] = {
 		["type"] = "mining",
@@ -138399,7 +138399,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.478,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11535] = {
 		["type"] = "mining",
@@ -138411,7 +138411,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11536] = {
 		["type"] = "mining",
@@ -138423,7 +138423,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11537] = {
 		["type"] = "mining",
@@ -138435,7 +138435,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.376,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11538] = {
 		["type"] = "mining",
@@ -138447,7 +138447,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.767,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11539] = {
 		["type"] = "mining",
@@ -138459,7 +138459,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11540] = {
 		["type"] = "mining",
@@ -138471,7 +138471,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.337,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11541] = {
 		["type"] = "mining",
@@ -138483,7 +138483,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.433,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11542] = {
 		["type"] = "mining",
@@ -138495,7 +138495,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.47,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11543] = {
 		["type"] = "mining",
@@ -138507,7 +138507,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11544] = {
 		["type"] = "mining",
@@ -138519,7 +138519,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.466,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11545] = {
 		["type"] = "mining",
@@ -138531,7 +138531,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.466,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11546] = {
 		["type"] = "mining",
@@ -138543,7 +138543,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11547] = {
 		["type"] = "mining",
@@ -138555,7 +138555,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11548] = {
 		["type"] = "mining",
@@ -138567,7 +138567,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.441,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11549] = {
 		["type"] = "mining",
@@ -138579,7 +138579,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.681,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11550] = {
 		["type"] = "mining",
@@ -138591,7 +138591,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.574,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11551] = {
 		["type"] = "mining",
@@ -138603,7 +138603,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11552] = {
 		["type"] = "mining",
@@ -138615,7 +138615,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.438,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11553] = {
 		["type"] = "mining",
@@ -138627,7 +138627,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.713,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11554] = {
 		["type"] = "mining",
@@ -138639,7 +138639,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.766,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11555] = {
 		["type"] = "mining",
@@ -138651,7 +138651,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.451,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11556] = {
 		["type"] = "mining",
@@ -138663,7 +138663,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.41,
 		["posY"] = 0.451,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11557] = {
 		["type"] = "mining",
@@ -138675,7 +138675,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.711,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11558] = {
 		["type"] = "mining",
@@ -138687,7 +138687,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.571,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11559] = {
 		["type"] = "mining",
@@ -138699,7 +138699,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.606,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11560] = {
 		["type"] = "mining",
@@ -138711,7 +138711,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.554,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11561] = {
 		["type"] = "mining",
@@ -138723,7 +138723,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.567,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11562] = {
 		["type"] = "mining",
@@ -138735,7 +138735,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.589,
 		["posY"] = 0.435,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11563] = {
 		["type"] = "mining",
@@ -138747,7 +138747,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.754,
 		["posY"] = 0.429,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11564] = {
 		["type"] = "mining",
@@ -138759,7 +138759,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11565] = {
 		["type"] = "mining",
@@ -138771,7 +138771,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11566] = {
 		["type"] = "mining",
@@ -138783,7 +138783,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11567] = {
 		["type"] = "mining",
@@ -138795,7 +138795,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.596,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11568] = {
 		["type"] = "mining",
@@ -138807,7 +138807,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.419,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11569] = {
 		["type"] = "mining",
@@ -138819,7 +138819,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.705,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11570] = {
 		["type"] = "mining",
@@ -138831,7 +138831,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11571] = {
 		["type"] = "mining",
@@ -138843,7 +138843,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.301,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11572] = {
 		["type"] = "mining",
@@ -138855,7 +138855,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.647,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11573] = {
 		["type"] = "mining",
@@ -138867,7 +138867,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.361,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11574] = {
 		["type"] = "mining",
@@ -138879,7 +138879,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.78,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11575] = {
 		["type"] = "mining",
@@ -138891,7 +138891,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.664,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11576] = {
 		["type"] = "mining",
@@ -138903,7 +138903,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.641,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11577] = {
 		["type"] = "mining",
@@ -138915,7 +138915,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11578] = {
 		["type"] = "mining",
@@ -138927,7 +138927,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11579] = {
 		["type"] = "mining",
@@ -138939,7 +138939,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.584,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11580] = {
 		["type"] = "mining",
@@ -138951,7 +138951,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.694,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11581] = {
 		["type"] = "mining",
@@ -138963,7 +138963,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.435,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11582] = {
 		["type"] = "mining",
@@ -138975,7 +138975,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.741,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11583] = {
 		["type"] = "mining",
@@ -138987,7 +138987,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.629,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11584] = {
 		["type"] = "mining",
@@ -138999,7 +138999,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11585] = {
 		["type"] = "mining",
@@ -139011,7 +139011,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11586] = {
 		["type"] = "mining",
@@ -139023,7 +139023,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.576,
 		["posY"] = 0.394,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11587] = {
 		["type"] = "mining",
@@ -139035,7 +139035,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.692,
 		["posY"] = 0.394,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11588] = {
 		["type"] = "mining",
@@ -139047,7 +139047,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.393,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11589] = {
 		["type"] = "mining",
@@ -139059,7 +139059,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.625,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11590] = {
 		["type"] = "mining",
@@ -139071,7 +139071,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.718,
 		["posY"] = 0.388,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11591] = {
 		["type"] = "mining",
@@ -139083,7 +139083,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.687,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11592] = {
 		["type"] = "mining",
@@ -139095,7 +139095,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.757,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11593] = {
 		["type"] = "mining",
@@ -139107,7 +139107,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.382,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11594] = {
 		["type"] = "mining",
@@ -139119,7 +139119,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.388,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11595] = {
 		["type"] = "mining",
@@ -139131,7 +139131,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.738,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11596] = {
 		["type"] = "mining",
@@ -139143,7 +139143,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.333,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11597] = {
 		["type"] = "mining",
@@ -139155,7 +139155,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.691,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11598] = {
 		["type"] = "mining",
@@ -139167,7 +139167,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.689,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11599] = {
 		["type"] = "mining",
@@ -139179,7 +139179,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.643,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11600] = {
 		["type"] = "mining",
@@ -139191,7 +139191,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.621,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11601] = {
 		["type"] = "mining",
@@ -139203,7 +139203,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.624,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11602] = {
 		["type"] = "mining",
@@ -139215,7 +139215,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.472,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11603] = {
 		["type"] = "mining",
@@ -139227,7 +139227,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.479,
 		["posY"] = 0.359,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11604] = {
 		["type"] = "mining",
@@ -139239,7 +139239,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.421,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11605] = {
 		["type"] = "mining",
@@ -139251,7 +139251,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.616,
 		["posY"] = 0.357,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11606] = {
 		["type"] = "mining",
@@ -139263,7 +139263,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11607] = {
 		["type"] = "mining",
@@ -139275,7 +139275,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.313,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11608] = {
 		["type"] = "mining",
@@ -139287,7 +139287,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.596,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11609] = {
 		["type"] = "mining",
@@ -139299,7 +139299,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.561,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11610] = {
 		["type"] = "mining",
@@ -139311,7 +139311,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.424,
 		["posY"] = 0.35,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11611] = {
 		["type"] = "mining",
@@ -139323,7 +139323,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.374,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11612] = {
 		["type"] = "mining",
@@ -139335,7 +139335,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.623,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11613] = {
 		["type"] = "mining",
@@ -139347,7 +139347,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.564,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11614] = {
 		["type"] = "mining",
@@ -139359,7 +139359,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.331,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11615] = {
 		["type"] = "mining",
@@ -139371,7 +139371,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.412,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11616] = {
 		["type"] = "mining",
@@ -139383,7 +139383,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.606,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11617] = {
 		["type"] = "mining",
@@ -139395,7 +139395,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11618] = {
 		["type"] = "mining",
@@ -139407,7 +139407,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.488,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11619] = {
 		["type"] = "mining",
@@ -139419,7 +139419,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.682,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11620] = {
 		["type"] = "mining",
@@ -139431,7 +139431,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.623,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11621] = {
 		["type"] = "mining",
@@ -139443,7 +139443,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.619,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11622] = {
 		["type"] = "mining",
@@ -139455,7 +139455,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.663,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11623] = {
 		["type"] = "mining",
@@ -139467,7 +139467,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.301,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11624] = {
 		["type"] = "mining",
@@ -139479,7 +139479,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.664,
 		["posY"] = 0.292,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11625] = {
 		["type"] = "mining",
@@ -139491,7 +139491,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.283,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11626] = {
 		["type"] = "mining",
@@ -139503,7 +139503,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.574,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11627] = {
 		["type"] = "mining",
@@ -139515,7 +139515,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.588,
 		["posY"] = 0.278,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11628] = {
 		["type"] = "mining",
@@ -139527,7 +139527,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.452,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11629] = {
 		["type"] = "mining",
@@ -139539,7 +139539,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.387,
 		["posY"] = 0.267,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11630] = {
 		["type"] = "mining",
@@ -139551,7 +139551,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.601,
 		["posY"] = 0.234,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11631] = {
 		["type"] = "mining",
@@ -139563,7 +139563,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11632] = {
 		["type"] = "mining",
@@ -139575,7 +139575,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11633] = {
 		["type"] = "mining",
@@ -139587,7 +139587,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11634] = {
 		["type"] = "mining",
@@ -139599,7 +139599,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.64,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11635] = {
 		["type"] = "mining",
@@ -139611,7 +139611,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.723,
 		["posY"] = 0.174,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11636] = {
 		["type"] = "mining",
@@ -139623,7 +139623,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.707,
 		["posY"] = 0.172,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11637] = {
 		["type"] = "mining",
@@ -139635,7 +139635,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.511,
 		["posY"] = 0.183,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11638] = {
 		["type"] = "mining",
@@ -139647,7 +139647,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.391,
 		["posY"] = 0.33,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11639] = {
 		["type"] = "mining",
@@ -139659,7 +139659,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.407,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11640] = {
 		["type"] = "mining",
@@ -139671,7 +139671,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.325,
 		["posY"] = 0.288,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11641] = {
 		["type"] = "mining",
@@ -139683,7 +139683,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.298,
 		["posY"] = 0.257,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11642] = {
 		["type"] = "mining",
@@ -139695,7 +139695,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.251,
 		["posY"] = 0.208,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11643] = {
 		["type"] = "mining",
@@ -139707,7 +139707,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.266,
 		["posY"] = 0.175,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11644] = {
 		["type"] = "mining",
@@ -139719,7 +139719,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.345,
 		["posY"] = 0.889,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11645] = {
 		["type"] = "mining",
@@ -139731,7 +139731,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.588,
 		["posY"] = 0.888,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11646] = {
 		["type"] = "mining",
@@ -139743,7 +139743,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.448,
 		["posY"] = 0.885,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11647] = {
 		["type"] = "mining",
@@ -139755,7 +139755,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.386,
 		["posY"] = 0.883,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11648] = {
 		["type"] = "mining",
@@ -139767,7 +139767,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.418,
 		["posY"] = 0.883,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11649] = {
 		["type"] = "mining",
@@ -139779,7 +139779,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11650] = {
 		["type"] = "mining",
@@ -139791,7 +139791,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.435,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11651] = {
 		["type"] = "mining",
@@ -139803,7 +139803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.478,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11652] = {
 		["type"] = "mining",
@@ -139815,7 +139815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11653] = {
 		["type"] = "mining",
@@ -139827,7 +139827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.237,
 		["posY"] = 0.858,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11654] = {
 		["type"] = "mining",
@@ -139839,7 +139839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.635,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11655] = {
 		["type"] = "mining",
@@ -139851,7 +139851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.266,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11656] = {
 		["type"] = "mining",
@@ -139863,7 +139863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.224,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11657] = {
 		["type"] = "mining",
@@ -139875,7 +139875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.541,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11658] = {
 		["type"] = "mining",
@@ -139887,7 +139887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.599,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11659] = {
 		["type"] = "mining",
@@ -139899,7 +139899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.597,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11660] = {
 		["type"] = "mining",
@@ -139911,7 +139911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.357,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11661] = {
 		["type"] = "mining",
@@ -139923,7 +139923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.631,
 		["posY"] = 0.79,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11662] = {
 		["type"] = "mining",
@@ -139935,7 +139935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.343,
 		["posY"] = 0.783,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11663] = {
 		["type"] = "mining",
@@ -139947,7 +139947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.782,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11664] = {
 		["type"] = "mining",
@@ -139959,7 +139959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.239,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11665] = {
 		["type"] = "mining",
@@ -139971,7 +139971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.578,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11666] = {
 		["type"] = "mining",
@@ -139983,7 +139983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.768,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11667] = {
 		["type"] = "mining",
@@ -139995,7 +139995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.552,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11668] = {
 		["type"] = "mining",
@@ -140007,7 +140007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11669] = {
 		["type"] = "mining",
@@ -140019,7 +140019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.335,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11670] = {
 		["type"] = "mining",
@@ -140031,7 +140031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.42,
 		["posY"] = 0.758,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11671] = {
 		["type"] = "mining",
@@ -140043,7 +140043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.594,
 		["posY"] = 0.755,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11672] = {
 		["type"] = "mining",
@@ -140055,7 +140055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.393,
 		["posY"] = 0.755,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11673] = {
 		["type"] = "mining",
@@ -140067,7 +140067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.526,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11674] = {
 		["type"] = "mining",
@@ -140079,7 +140079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.21,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11675] = {
 		["type"] = "mining",
@@ -140091,7 +140091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.623,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11676] = {
 		["type"] = "mining",
@@ -140103,7 +140103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.339,
 		["posY"] = 0.733,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11677] = {
 		["type"] = "mining",
@@ -140115,7 +140115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.72,
 		["posY"] = 0.729,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11678] = {
 		["type"] = "mining",
@@ -140127,7 +140127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.208,
 		["posY"] = 0.722,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11679] = {
 		["type"] = "mining",
@@ -140139,7 +140139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.343,
 		["posY"] = 0.719,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11680] = {
 		["type"] = "mining",
@@ -140151,7 +140151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.483,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11681] = {
 		["type"] = "mining",
@@ -140163,7 +140163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11682] = {
 		["type"] = "mining",
@@ -140175,7 +140175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11683] = {
 		["type"] = "mining",
@@ -140187,7 +140187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.741,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11684] = {
 		["type"] = "mining",
@@ -140199,7 +140199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.572,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11685] = {
 		["type"] = "mining",
@@ -140211,7 +140211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11686] = {
 		["type"] = "mining",
@@ -140223,7 +140223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.207,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11687] = {
 		["type"] = "mining",
@@ -140235,7 +140235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.579,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11688] = {
 		["type"] = "mining",
@@ -140247,7 +140247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.603,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11689] = {
 		["type"] = "mining",
@@ -140259,7 +140259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.631,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11690] = {
 		["type"] = "mining",
@@ -140271,7 +140271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.352,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11691] = {
 		["type"] = "mining",
@@ -140283,7 +140283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11692] = {
 		["type"] = "mining",
@@ -140295,7 +140295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.554,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11693] = {
 		["type"] = "mining",
@@ -140307,7 +140307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.463,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11694] = {
 		["type"] = "mining",
@@ -140319,7 +140319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.499,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11695] = {
 		["type"] = "mining",
@@ -140331,7 +140331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.587,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11696] = {
 		["type"] = "mining",
@@ -140343,7 +140343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.712,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11697] = {
 		["type"] = "mining",
@@ -140355,7 +140355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.513,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11698] = {
 		["type"] = "mining",
@@ -140367,7 +140367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.405,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11699] = {
 		["type"] = "mining",
@@ -140379,7 +140379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.553,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11700] = {
 		["type"] = "mining",
@@ -140391,7 +140391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.652,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11701] = {
 		["type"] = "mining",
@@ -140403,7 +140403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.321,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11702] = {
 		["type"] = "mining",
@@ -140415,7 +140415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.279,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11703] = {
 		["type"] = "mining",
@@ -140427,7 +140427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11704] = {
 		["type"] = "mining",
@@ -140439,7 +140439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11705] = {
 		["type"] = "mining",
@@ -140451,7 +140451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11706] = {
 		["type"] = "mining",
@@ -140463,7 +140463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.786,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11707] = {
 		["type"] = "mining",
@@ -140475,7 +140475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11708] = {
 		["type"] = "mining",
@@ -140487,7 +140487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.287,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11709] = {
 		["type"] = "mining",
@@ -140499,7 +140499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.769,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11710] = {
 		["type"] = "mining",
@@ -140511,7 +140511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.46,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11711] = {
 		["type"] = "mining",
@@ -140523,7 +140523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.71,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11712] = {
 		["type"] = "mining",
@@ -140535,7 +140535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.606,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11713] = {
 		["type"] = "mining",
@@ -140547,7 +140547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.557,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11714] = {
 		["type"] = "mining",
@@ -140559,7 +140559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.6,
 		["posY"] = 0.602,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11715] = {
 		["type"] = "mining",
@@ -140571,7 +140571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.749,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11716] = {
 		["type"] = "mining",
@@ -140583,7 +140583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.703,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11717] = {
 		["type"] = "mining",
@@ -140595,7 +140595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.677,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11718] = {
 		["type"] = "mining",
@@ -140607,7 +140607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.208,
 		["posY"] = 0.562,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11719] = {
 		["type"] = "mining",
@@ -140619,7 +140619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.741,
 		["posY"] = 0.56,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11720] = {
 		["type"] = "mining",
@@ -140631,7 +140631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.645,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11721] = {
 		["type"] = "mining",
@@ -140643,7 +140643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.336,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11722] = {
 		["type"] = "mining",
@@ -140655,7 +140655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.583,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11723] = {
 		["type"] = "mining",
@@ -140667,7 +140667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.305,
 		["posY"] = 0.554,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11724] = {
 		["type"] = "mining",
@@ -140679,7 +140679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.778,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11725] = {
 		["type"] = "mining",
@@ -140691,7 +140691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.319,
 		["posY"] = 0.552,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11726] = {
 		["type"] = "mining",
@@ -140703,7 +140703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.699,
 		["posY"] = 0.545,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11727] = {
 		["type"] = "mining",
@@ -140715,7 +140715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.751,
 		["posY"] = 0.539,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11728] = {
 		["type"] = "mining",
@@ -140727,7 +140727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.751,
 		["posY"] = 0.539,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11729] = {
 		["type"] = "mining",
@@ -140739,7 +140739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.302,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11730] = {
 		["type"] = "mining",
@@ -140751,7 +140751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.222,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11731] = {
 		["type"] = "mining",
@@ -140763,7 +140763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.787,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11732] = {
 		["type"] = "mining",
@@ -140775,7 +140775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.567,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11733] = {
 		["type"] = "mining",
@@ -140787,7 +140787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11734] = {
 		["type"] = "mining",
@@ -140799,7 +140799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.668,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11735] = {
 		["type"] = "mining",
@@ -140811,7 +140811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11736] = {
 		["type"] = "mining",
@@ -140823,7 +140823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.232,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11737] = {
 		["type"] = "mining",
@@ -140835,7 +140835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.542,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11738] = {
 		["type"] = "mining",
@@ -140847,7 +140847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.636,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11739] = {
 		["type"] = "mining",
@@ -140859,7 +140859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.478,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11740] = {
 		["type"] = "mining",
@@ -140871,7 +140871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.49,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11741] = {
 		["type"] = "mining",
@@ -140883,7 +140883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.475,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11742] = {
 		["type"] = "mining",
@@ -140895,7 +140895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.654,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11743] = {
 		["type"] = "mining",
@@ -140907,7 +140907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.754,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11744] = {
 		["type"] = "mining",
@@ -140919,7 +140919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.338,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11745] = {
 		["type"] = "mining",
@@ -140931,7 +140931,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.384,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11746] = {
 		["type"] = "mining",
@@ -140943,7 +140943,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.533,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11747] = {
 		["type"] = "mining",
@@ -140955,7 +140955,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.297,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11748] = {
 		["type"] = "mining",
@@ -140967,7 +140967,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.598,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11749] = {
 		["type"] = "mining",
@@ -140979,7 +140979,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.403,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11750] = {
 		["type"] = "mining",
@@ -140991,7 +140991,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.353,
 		["posY"] = 0.364,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11751] = {
 		["type"] = "mining",
@@ -141003,7 +141003,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.622,
 		["posY"] = 0.348,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11752] = {
 		["type"] = "mining",
@@ -141015,7 +141015,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11753] = {
 		["type"] = "mining",
@@ -141027,7 +141027,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.682,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11754] = {
 		["type"] = "mining",
@@ -141039,7 +141039,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11755] = {
 		["type"] = "mining",
@@ -141051,7 +141051,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.458,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11756] = {
 		["type"] = "mining",
@@ -141063,7 +141063,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.772,
 		["posY"] = 0.879,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11757] = {
 		["type"] = "mining",
@@ -141075,7 +141075,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.859,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11758] = {
 		["type"] = "mining",
@@ -141087,7 +141087,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.859,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11759] = {
 		["type"] = "mining",
@@ -141099,7 +141099,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11760] = {
 		["type"] = "mining",
@@ -141111,7 +141111,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.793,
 		["posY"] = 0.811,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11761] = {
 		["type"] = "mining",
@@ -141123,7 +141123,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.794,
 		["posY"] = 0.784,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11762] = {
 		["type"] = "mining",
@@ -141135,7 +141135,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.862,
 		["posY"] = 0.761,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11763] = {
 		["type"] = "mining",
@@ -141147,7 +141147,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.683,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11764] = {
 		["type"] = "mining",
@@ -141159,7 +141159,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.64,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11765] = {
 		["type"] = "mining",
@@ -141171,7 +141171,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.219,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11766] = {
 		["type"] = "mining",
@@ -141183,7 +141183,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.791,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11767] = {
 		["type"] = "mining",
@@ -141195,7 +141195,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.871,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11768] = {
 		["type"] = "mining",
@@ -141207,7 +141207,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.78,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11769] = {
 		["type"] = "mining",
@@ -141219,7 +141219,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.791,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11770] = {
 		["type"] = "mining",
@@ -141231,7 +141231,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.79,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11771] = {
 		["type"] = "mining",
@@ -141243,7 +141243,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.06,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11772] = {
 		["type"] = "mining",
@@ -141255,7 +141255,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.849,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11773] = {
 		["type"] = "mining",
@@ -141267,7 +141267,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.281,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11774] = {
 		["type"] = "mining",
@@ -141279,7 +141279,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.503,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11775] = {
 		["type"] = "mining",
@@ -141291,7 +141291,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.209,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11776] = {
 		["type"] = "mining",
@@ -141303,7 +141303,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.759,
 		["posY"] = 0.582,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11777] = {
 		["type"] = "mining",
@@ -141315,7 +141315,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.606,
 		["posY"] = 0.58,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11778] = {
 		["type"] = "mining",
@@ -141327,7 +141327,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.792,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11779] = {
 		["type"] = "mining",
@@ -141339,7 +141339,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.734,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11780] = {
 		["type"] = "mining",
@@ -141351,7 +141351,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.565,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11781] = {
 		["type"] = "mining",
@@ -141363,7 +141363,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.649,
 		["posY"] = 0.54,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11782] = {
 		["type"] = "mining",
@@ -141375,7 +141375,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.728,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11783] = {
 		["type"] = "mining",
@@ -141387,7 +141387,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.5,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11784] = {
 		["type"] = "mining",
@@ -141399,7 +141399,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.231,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11785] = {
 		["type"] = "mining",
@@ -141411,7 +141411,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.744,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11786] = {
 		["type"] = "mining",
@@ -141423,7 +141423,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.14,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11787] = {
 		["type"] = "mining",
@@ -141435,7 +141435,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.836,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11788] = {
 		["type"] = "mining",
@@ -141447,7 +141447,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.826,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11789] = {
 		["type"] = "mining",
@@ -141459,7 +141459,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.725,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11790] = {
 		["type"] = "mining",
@@ -141471,7 +141471,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.302,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11791] = {
 		["type"] = "mining",
@@ -141483,7 +141483,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.466,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11792] = {
 		["type"] = "mining",
@@ -141495,7 +141495,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.536,
 		["posY"] = 0.312,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11793] = {
 		["type"] = "mining",
@@ -141507,7 +141507,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.726,
 		["posY"] = 0.275,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11794] = {
 		["type"] = "mining",
@@ -141519,7 +141519,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.72,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11795] = {
 		["type"] = "mining",
@@ -141531,7 +141531,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.389,
 		["posY"] = 0.184,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11796] = {
 		["type"] = "mining",
@@ -141543,7 +141543,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.296,
 		["posY"] = 0.172,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11797] = {
 		["type"] = "mining",
@@ -141555,7 +141555,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.585,
 		["posY"] = 0.168,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11798] = {
 		["type"] = "mining",
@@ -141567,7 +141567,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.622,
 		["posY"] = 0.164,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11799] = {
 		["type"] = "mining",
@@ -141579,7 +141579,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.353,
 		["posY"] = 0.134,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11800] = {
 		["type"] = "mining",
@@ -141591,7 +141591,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.358,
 		["posY"] = 0.125,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11801] = {
 		["type"] = "mining",
@@ -141603,7 +141603,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.702,
 		["posY"] = 0.825,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11802] = {
 		["type"] = "mining",
@@ -141615,7 +141615,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.699,
 		["posY"] = 0.789,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11803] = {
 		["type"] = "mining",
@@ -141627,7 +141627,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.849,
 		["posY"] = 0.785,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11804] = {
 		["type"] = "mining",
@@ -141639,7 +141639,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.74,
 		["posY"] = 0.783,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11805] = {
 		["type"] = "mining",
@@ -141651,7 +141651,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.651,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11806] = {
 		["type"] = "mining",
@@ -141663,7 +141663,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.392,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11807] = {
 		["type"] = "mining",
@@ -141675,7 +141675,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.769,
 		["posY"] = 0.758,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11808] = {
 		["type"] = "mining",
@@ -141687,7 +141687,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.907,
 		["posY"] = 0.752,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11809] = {
 		["type"] = "mining",
@@ -141699,7 +141699,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.436,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11810] = {
 		["type"] = "mining",
@@ -141711,7 +141711,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.611,
 		["posY"] = 0.734,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11811] = {
 		["type"] = "mining",
@@ -141723,7 +141723,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.649,
 		["posY"] = 0.714,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11812] = {
 		["type"] = "mining",
@@ -141735,7 +141735,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.639,
 		["posY"] = 0.714,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11813] = {
 		["type"] = "mining",
@@ -141747,7 +141747,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.475,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11814] = {
 		["type"] = "mining",
@@ -141759,7 +141759,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.818,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11815] = {
 		["type"] = "mining",
@@ -141771,7 +141771,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.797,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11816] = {
 		["type"] = "mining",
@@ -141783,7 +141783,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.564,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11817] = {
 		["type"] = "mining",
@@ -141795,7 +141795,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.564,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11818] = {
 		["type"] = "mining",
@@ -141807,7 +141807,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.545,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11819] = {
 		["type"] = "mining",
@@ -141819,7 +141819,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.502,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11820] = {
 		["type"] = "mining",
@@ -141831,7 +141831,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.701,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11821] = {
 		["type"] = "mining",
@@ -141843,7 +141843,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.273,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11822] = {
 		["type"] = "mining",
@@ -141855,7 +141855,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.23,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11823] = {
 		["type"] = "mining",
@@ -141867,7 +141867,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.422,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11824] = {
 		["type"] = "mining",
@@ -141879,7 +141879,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.191,
 		["posY"] = 0.628,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11825] = {
 		["type"] = "mining",
@@ -141891,7 +141891,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.253,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11826] = {
 		["type"] = "mining",
@@ -141903,7 +141903,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.176,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11827] = {
 		["type"] = "mining",
@@ -141915,7 +141915,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.643,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11828] = {
 		["type"] = "mining",
@@ -141927,7 +141927,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.322,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11829] = {
 		["type"] = "mining",
@@ -141939,7 +141939,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.343,
 		["posY"] = 0.584,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11830] = {
 		["type"] = "mining",
@@ -141951,7 +141951,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.412,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11831] = {
 		["type"] = "mining",
@@ -141963,7 +141963,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.418,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11832] = {
 		["type"] = "mining",
@@ -141975,7 +141975,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.464,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11833] = {
 		["type"] = "mining",
@@ -141987,7 +141987,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.161,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11834] = {
 		["type"] = "mining",
@@ -141999,7 +141999,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.712,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11835] = {
 		["type"] = "mining",
@@ -142011,7 +142011,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.673,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11836] = {
 		["type"] = "mining",
@@ -142023,7 +142023,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.463,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11837] = {
 		["type"] = "mining",
@@ -142035,7 +142035,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.498,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11838] = {
 		["type"] = "mining",
@@ -142047,7 +142047,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.731,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11839] = {
 		["type"] = "mining",
@@ -142059,7 +142059,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.169,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11840] = {
 		["type"] = "mining",
@@ -142071,7 +142071,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.679,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11841] = {
 		["type"] = "mining",
@@ -142083,7 +142083,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.188,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11842] = {
 		["type"] = "mining",
@@ -142095,7 +142095,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.166,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11843] = {
 		["type"] = "mining",
@@ -142107,7 +142107,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.637,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11844] = {
 		["type"] = "mining",
@@ -142119,7 +142119,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.919,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11845] = {
 		["type"] = "mining",
@@ -142131,7 +142131,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.874,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11846] = {
 		["type"] = "mining",
@@ -142143,7 +142143,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.156,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11847] = {
 		["type"] = "mining",
@@ -142155,7 +142155,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.312,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11848] = {
 		["type"] = "mining",
@@ -142167,7 +142167,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.477,
 		["posY"] = 0.444,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11849] = {
 		["type"] = "mining",
@@ -142179,7 +142179,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.159,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11850] = {
 		["type"] = "mining",
@@ -142191,7 +142191,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.133,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11851] = {
 		["type"] = "mining",
@@ -142203,7 +142203,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.735,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11852] = {
 		["type"] = "mining",
@@ -142215,7 +142215,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.66,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11853] = {
 		["type"] = "mining",
@@ -142227,7 +142227,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.854,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11854] = {
 		["type"] = "mining",
@@ -142239,7 +142239,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.218,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11855] = {
 		["type"] = "mining",
@@ -142251,7 +142251,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.252,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11856] = {
 		["type"] = "mining",
@@ -142263,7 +142263,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.549,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11857] = {
 		["type"] = "mining",
@@ -142275,7 +142275,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.72,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11858] = {
 		["type"] = "mining",
@@ -142287,7 +142287,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.582,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11859] = {
 		["type"] = "mining",
@@ -142299,7 +142299,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.54,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11860] = {
 		["type"] = "mining",
@@ -142311,7 +142311,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.696,
 		["posY"] = 0.321,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11861] = {
 		["type"] = "mining",
@@ -142323,7 +142323,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.765,
 		["posY"] = 0.276,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11862] = {
 		["type"] = "mining",
@@ -142335,7 +142335,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.798,
 		["posY"] = 0.254,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11863] = {
 		["type"] = "mining",
@@ -142347,7 +142347,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.725,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11864] = {
 		["type"] = "mining",
@@ -142359,7 +142359,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.819,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11865] = {
 		["type"] = "mining",
@@ -142371,7 +142371,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.762,
 		["posY"] = 0.205,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11866] = {
 		["type"] = "mining",
@@ -142383,7 +142383,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.704,
 		["posY"] = 0.199,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11867] = {
 		["type"] = "mining",
@@ -142395,7 +142395,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.754,
 		["posY"] = 0.19,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11868] = {
 		["type"] = "mining",
@@ -142407,7 +142407,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.518,
 		["posY"] = 0.185,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11869] = {
 		["type"] = "mining",
@@ -142419,7 +142419,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.527,
 		["posY"] = 0.179,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11870] = {
 		["type"] = "mining",
@@ -142431,7 +142431,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.866,
 		["posY"] = 0.177,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11871] = {
 		["type"] = "mining",
@@ -142443,7 +142443,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.605,
 		["posY"] = 0.173,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11872] = {
 		["type"] = "mining",
@@ -142455,7 +142455,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.507,
 		["posY"] = 0.165,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11873] = {
 		["type"] = "mining",
@@ -142467,7 +142467,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.534,
 		["posY"] = 0.164,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11874] = {
 		["type"] = "mining",
@@ -142479,7 +142479,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.593,
 		["posY"] = 0.155,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11875] = {
 		["type"] = "mining",
@@ -142491,7 +142491,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.512,
 		["posY"] = 0.151,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11876] = {
 		["type"] = "mining",
@@ -142503,7 +142503,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.534,
 		["posY"] = 0.107,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11877] = {
 		["type"] = "mining",
@@ -142515,7 +142515,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.461,
 		["posY"] = 0.092,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11878] = {
 		["type"] = "mining",
@@ -142527,7 +142527,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.434,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11879] = {
 		["type"] = "mining",
@@ -142539,7 +142539,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.601,
 		["posY"] = 0.843,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11880] = {
 		["type"] = "mining",
@@ -142551,7 +142551,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.372,
 		["posY"] = 0.842,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11881] = {
 		["type"] = "mining",
@@ -142563,7 +142563,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.461,
 		["posY"] = 0.822,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11882] = {
 		["type"] = "mining",
@@ -142575,7 +142575,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.59,
 		["posY"] = 0.805,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11883] = {
 		["type"] = "mining",
@@ -142587,7 +142587,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.502,
 		["posY"] = 0.791,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11884] = {
 		["type"] = "mining",
@@ -142599,7 +142599,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.115,
 		["posY"] = 0.781,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11885] = {
 		["type"] = "mining",
@@ -142611,7 +142611,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.111,
 		["posY"] = 0.776,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11886] = {
 		["type"] = "mining",
@@ -142623,7 +142623,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.12,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11887] = {
 		["type"] = "mining",
@@ -142635,7 +142635,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.129,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11888] = {
 		["type"] = "mining",
@@ -142647,7 +142647,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.134,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11889] = {
 		["type"] = "mining",
@@ -142659,7 +142659,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.308,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11890] = {
 		["type"] = "mining",
@@ -142671,7 +142671,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.453,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11891] = {
 		["type"] = "mining",
@@ -142683,7 +142683,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.2,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11892] = {
 		["type"] = "mining",
@@ -142695,7 +142695,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.311,
 		["posY"] = 0.762,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11893] = {
 		["type"] = "mining",
@@ -142707,7 +142707,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.136,
 		["posY"] = 0.762,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11894] = {
 		["type"] = "mining",
@@ -142719,7 +142719,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.166,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11895] = {
 		["type"] = "mining",
@@ -142731,7 +142731,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.112,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11896] = {
 		["type"] = "mining",
@@ -142743,7 +142743,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.544,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11897] = {
 		["type"] = "mining",
@@ -142755,7 +142755,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.601,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11898] = {
 		["type"] = "mining",
@@ -142767,7 +142767,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.549,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11899] = {
 		["type"] = "mining",
@@ -142779,7 +142779,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.556,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11900] = {
 		["type"] = "mining",
@@ -142791,7 +142791,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.355,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11901] = {
 		["type"] = "mining",
@@ -142803,7 +142803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.353,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11902] = {
 		["type"] = "mining",
@@ -142815,7 +142815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.203,
 		["posY"] = 0.72,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11903] = {
 		["type"] = "mining",
@@ -142827,7 +142827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.523,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11904] = {
 		["type"] = "mining",
@@ -142839,7 +142839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.292,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11905] = {
 		["type"] = "mining",
@@ -142851,7 +142851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.506,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11906] = {
 		["type"] = "mining",
@@ -142863,7 +142863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.121,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11907] = {
 		["type"] = "mining",
@@ -142875,7 +142875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.788,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11908] = {
 		["type"] = "mining",
@@ -142887,7 +142887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.141,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11909] = {
 		["type"] = "mining",
@@ -142899,7 +142899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.284,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11910] = {
 		["type"] = "mining",
@@ -142911,7 +142911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.292,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11911] = {
 		["type"] = "mining",
@@ -142923,7 +142923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.532,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11912] = {
 		["type"] = "mining",
@@ -142935,7 +142935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.231,
 		["posY"] = 0.689,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11913] = {
 		["type"] = "mining",
@@ -142947,7 +142947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.314,
 		["posY"] = 0.687,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11914] = {
 		["type"] = "mining",
@@ -142959,7 +142959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.26,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11915] = {
 		["type"] = "mining",
@@ -142971,7 +142971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11916] = {
 		["type"] = "mining",
@@ -142983,7 +142983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.387,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11917] = {
 		["type"] = "mining",
@@ -142995,7 +142995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.143,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11918] = {
 		["type"] = "mining",
@@ -143007,7 +143007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.301,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11919] = {
 		["type"] = "mining",
@@ -143019,7 +143019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.135,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11920] = {
 		["type"] = "mining",
@@ -143031,7 +143031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.225,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11921] = {
 		["type"] = "mining",
@@ -143043,7 +143043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.347,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11922] = {
 		["type"] = "mining",
@@ -143055,7 +143055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.253,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11923] = {
 		["type"] = "mining",
@@ -143067,7 +143067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.592,
 		["posY"] = 0.599,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11924] = {
 		["type"] = "mining",
@@ -143079,7 +143079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.344,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11925] = {
 		["type"] = "mining",
@@ -143091,7 +143091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.614,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11926] = {
 		["type"] = "mining",
@@ -143103,7 +143103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.363,
 		["posY"] = 0.587,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11927] = {
 		["type"] = "mining",
@@ -143115,7 +143115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.569,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11928] = {
 		["type"] = "mining",
@@ -143127,7 +143127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.342,
 		["posY"] = 0.549,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11929] = {
 		["type"] = "mining",
@@ -143139,7 +143139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.133,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11930] = {
 		["type"] = "mining",
@@ -143151,7 +143151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.441,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11931] = {
 		["type"] = "mining",
@@ -143163,7 +143163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.728,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11932] = {
 		["type"] = "mining",
@@ -143175,7 +143175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.455,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11933] = {
 		["type"] = "mining",
@@ -143187,7 +143187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.554,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11934] = {
 		["type"] = "mining",
@@ -143199,7 +143199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11935] = {
 		["type"] = "mining",
@@ -143211,7 +143211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.712,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11936] = {
 		["type"] = "mining",
@@ -143223,7 +143223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.698,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11937] = {
 		["type"] = "mining",
@@ -143235,7 +143235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.749,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11938] = {
 		["type"] = "mining",
@@ -143247,7 +143247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.415,
 		["posY"] = 0.479,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11939] = {
 		["type"] = "mining",
@@ -143259,7 +143259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.73,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11940] = {
 		["type"] = "mining",
@@ -143271,7 +143271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.766,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11941] = {
 		["type"] = "mining",
@@ -143283,7 +143283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.357,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11942] = {
 		["type"] = "mining",
@@ -143295,7 +143295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.554,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11943] = {
 		["type"] = "mining",
@@ -143307,7 +143307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11944] = {
 		["type"] = "mining",
@@ -143319,7 +143319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.328,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11945] = {
 		["type"] = "mining",
@@ -143331,7 +143331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.467,
 		["posY"] = 0.421,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11946] = {
 		["type"] = "mining",
@@ -143343,7 +143343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.43,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11947] = {
 		["type"] = "mining",
@@ -143355,7 +143355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.399,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11948] = {
 		["type"] = "mining",
@@ -143367,7 +143367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.333,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11949] = {
 		["type"] = "mining",
@@ -143379,7 +143379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.415,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11950] = {
 		["type"] = "mining",
@@ -143391,7 +143391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.476,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11951] = {
 		["type"] = "mining",
@@ -143403,7 +143403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.319,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11952] = {
 		["type"] = "mining",
@@ -143415,7 +143415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.529,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11953] = {
 		["type"] = "mining",
@@ -143427,7 +143427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.547,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11954] = {
 		["type"] = "mining",
@@ -143439,7 +143439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.576,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11955] = {
 		["type"] = "mining",
@@ -143451,7 +143451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.732,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11956] = {
 		["type"] = "mining",
@@ -143463,7 +143463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.578,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11957] = {
 		["type"] = "mining",
@@ -143475,7 +143475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.709,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11958] = {
 		["type"] = "mining",
@@ -143487,7 +143487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.702,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11959] = {
 		["type"] = "mining",
@@ -143499,7 +143499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.72,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11960] = {
 		["type"] = "mining",
@@ -143511,7 +143511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.692,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11961] = {
 		["type"] = "mining",
@@ -143523,7 +143523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.727,
 		["posY"] = 0.291,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11962] = {
 		["type"] = "mining",
@@ -143535,7 +143535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.701,
 		["posY"] = 0.267,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11963] = {
 		["type"] = "mining",
@@ -143547,7 +143547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.737,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11964] = {
 		["type"] = "mining",
@@ -143559,7 +143559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.806,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11965] = {
 		["type"] = "mining",
@@ -143571,7 +143571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.769,
 		["posY"] = 0.247,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11966] = {
 		["type"] = "mining",
@@ -143583,7 +143583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.776,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11967] = {
 		["type"] = "mining",
@@ -143595,7 +143595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.44,
 		["posY"] = 0.874,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11968] = {
 		["type"] = "mining",
@@ -143607,7 +143607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.487,
 		["posY"] = 0.867,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11969] = {
 		["type"] = "mining",
@@ -143619,7 +143619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.747,
 		["posY"] = 0.727,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11970] = {
 		["type"] = "mining",
@@ -143631,7 +143631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.408,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11971] = {
 		["type"] = "mining",
@@ -143643,7 +143643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.6,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11972] = {
 		["type"] = "mining",
@@ -143655,7 +143655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.671,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11973] = {
 		["type"] = "mining",
@@ -143667,7 +143667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.633,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11974] = {
 		["type"] = "mining",
@@ -143679,7 +143679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.132,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11975] = {
 		["type"] = "mining",
@@ -143691,7 +143691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.726,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11976] = {
 		["type"] = "mining",
@@ -143703,7 +143703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.698,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11977] = {
 		["type"] = "mining",
@@ -143715,7 +143715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.126,
 		["posY"] = 0.604,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11978] = {
 		["type"] = "mining",
@@ -143727,7 +143727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.445,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11979] = {
 		["type"] = "mining",
@@ -143739,7 +143739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.788,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11980] = {
 		["type"] = "mining",
@@ -143751,7 +143751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.577,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11981] = {
 		["type"] = "mining",
@@ -143763,7 +143763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.296,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11982] = {
 		["type"] = "mining",
@@ -143775,7 +143775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.751,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11983] = {
 		["type"] = "mining",
@@ -143787,7 +143787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.131,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11984] = {
 		["type"] = "mining",
@@ -143799,7 +143799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.467,
 		["posY"] = 0.56,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11985] = {
 		["type"] = "mining",
@@ -143811,7 +143811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.773,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11986] = {
 		["type"] = "mining",
@@ -143823,7 +143823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.5,
 		["posY"] = 0.549,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11987] = {
 		["type"] = "mining",
@@ -143835,7 +143835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.293,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11988] = {
 		["type"] = "mining",
@@ -143847,7 +143847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11989] = {
 		["type"] = "mining",
@@ -143859,7 +143859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.294,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11990] = {
 		["type"] = "mining",
@@ -143871,7 +143871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.81,
 		["posY"] = 0.522,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11991] = {
 		["type"] = "mining",
@@ -143883,7 +143883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.469,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11992] = {
 		["type"] = "mining",
@@ -143895,7 +143895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.245,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11993] = {
 		["type"] = "mining",
@@ -143907,7 +143907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.507,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11994] = {
 		["type"] = "mining",
@@ -143919,7 +143919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.427,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11995] = {
 		["type"] = "mining",
@@ -143931,7 +143931,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.121,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11996] = {
 		["type"] = "mining",
@@ -143943,7 +143943,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.307,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11997] = {
 		["type"] = "mining",
@@ -143955,7 +143955,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11998] = {
 		["type"] = "mining",
@@ -143967,7 +143967,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.494,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[11999] = {
 		["type"] = "mining",
@@ -143979,7 +143979,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.77,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12000] = {
 		["type"] = "mining",
@@ -143991,7 +143991,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.104,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12001] = {
 		["type"] = "mining",
@@ -144003,7 +144003,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.545,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12002] = {
 		["type"] = "mining",
@@ -144015,7 +144015,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12003] = {
 		["type"] = "mining",
@@ -144027,7 +144027,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.351,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12004] = {
 		["type"] = "mining",
@@ -144039,7 +144039,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.252,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12005] = {
 		["type"] = "mining",
@@ -144051,7 +144051,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.543,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12006] = {
 		["type"] = "mining",
@@ -144063,7 +144063,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.667,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12007] = {
 		["type"] = "mining",
@@ -144075,7 +144075,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.149,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12008] = {
 		["type"] = "mining",
@@ -144087,7 +144087,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.49,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12009] = {
 		["type"] = "mining",
@@ -144099,7 +144099,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.169,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12010] = {
 		["type"] = "mining",
@@ -144111,7 +144111,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.385,
 		["posY"] = 0.374,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12011] = {
 		["type"] = "mining",
@@ -144123,7 +144123,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.513,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12012] = {
 		["type"] = "mining",
@@ -144135,7 +144135,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.737,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12013] = {
 		["type"] = "mining",
@@ -144147,7 +144147,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.247,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12014] = {
 		["type"] = "mining",
@@ -144159,7 +144159,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.703,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12015] = {
 		["type"] = "mining",
@@ -144171,7 +144171,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.23,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12016] = {
 		["type"] = "mining",
@@ -144183,7 +144183,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.736,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12017] = {
 		["type"] = "mining",
@@ -144195,7 +144195,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.657,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12018] = {
 		["type"] = "mining",
@@ -144207,7 +144207,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.502,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12019] = {
 		["type"] = "mining",
@@ -144219,7 +144219,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.54,
 		["posY"] = 0.25,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12020] = {
 		["type"] = "mining",
@@ -144231,7 +144231,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.545,
 		["posY"] = 0.224,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12021] = {
 		["type"] = "mining",
@@ -144243,7 +144243,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.655,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12022] = {
 		["type"] = "mining",
@@ -144255,7 +144255,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.719,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12023] = {
 		["type"] = "mining",
@@ -144267,7 +144267,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.53,
 		["posY"] = 0.21,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12024] = {
 		["type"] = "mining",
@@ -144279,7 +144279,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.529,
 		["posY"] = 0.198,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12025] = {
 		["type"] = "mining",
@@ -144291,7 +144291,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.641,
 		["posY"] = 0.196,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12026] = {
 		["type"] = "mining",
@@ -144303,7 +144303,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.59,
 		["posY"] = 0.181,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12027] = {
 		["type"] = "mining",
@@ -144315,7 +144315,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.656,
 		["posY"] = 0.166,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12028] = {
 		["type"] = "mining",
@@ -144327,7 +144327,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.677,
 		["posY"] = 0.16,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12029] = {
 		["type"] = "mining",
@@ -144339,7 +144339,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.702,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12030] = {
 		["type"] = "mining",
@@ -144351,7 +144351,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.708,
 		["posY"] = 0.13,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12031] = {
 		["type"] = "mining",
@@ -144363,7 +144363,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.594,
 		["posY"] = 0.809,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12032] = {
 		["type"] = "mining",
@@ -144375,7 +144375,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.362,
 		["posY"] = 0.779,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12033] = {
 		["type"] = "mining",
@@ -144387,7 +144387,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.335,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12034] = {
 		["type"] = "mining",
@@ -144399,7 +144399,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.589,
 		["posY"] = 0.752,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12035] = {
 		["type"] = "mining",
@@ -144411,7 +144411,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.339,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12036] = {
 		["type"] = "mining",
@@ -144423,7 +144423,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.713,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12037] = {
 		["type"] = "mining",
@@ -144435,7 +144435,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.683,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12038] = {
 		["type"] = "mining",
@@ -144447,7 +144447,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.52,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12039] = {
 		["type"] = "mining",
@@ -144459,7 +144459,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.458,
 		["posY"] = 0.716,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12040] = {
 		["type"] = "mining",
@@ -144471,7 +144471,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.749,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12041] = {
 		["type"] = "mining",
@@ -144483,7 +144483,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12042] = {
 		["type"] = "mining",
@@ -144495,7 +144495,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.731,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12043] = {
 		["type"] = "mining",
@@ -144507,7 +144507,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.716,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12044] = {
 		["type"] = "mining",
@@ -144519,7 +144519,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.313,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12045] = {
 		["type"] = "mining",
@@ -144531,7 +144531,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.472,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12046] = {
 		["type"] = "mining",
@@ -144543,7 +144543,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12047] = {
 		["type"] = "mining",
@@ -144555,7 +144555,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.656,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12048] = {
 		["type"] = "mining",
@@ -144567,7 +144567,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.451,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12049] = {
 		["type"] = "mining",
@@ -144579,7 +144579,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12050] = {
 		["type"] = "mining",
@@ -144591,7 +144591,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12051] = {
 		["type"] = "mining",
@@ -144603,7 +144603,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.627,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12052] = {
 		["type"] = "mining",
@@ -144615,7 +144615,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.724,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12053] = {
 		["type"] = "mining",
@@ -144627,7 +144627,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.76,
 		["posY"] = 0.596,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12054] = {
 		["type"] = "mining",
@@ -144639,7 +144639,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.672,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12055] = {
 		["type"] = "mining",
@@ -144651,7 +144651,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.548,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12056] = {
 		["type"] = "mining",
@@ -144663,7 +144663,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.697,
 		["posY"] = 0.577,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12057] = {
 		["type"] = "mining",
@@ -144675,7 +144675,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12058] = {
 		["type"] = "mining",
@@ -144687,7 +144687,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.3,
 		["posY"] = 0.565,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12059] = {
 		["type"] = "mining",
@@ -144699,7 +144699,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.749,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12060] = {
 		["type"] = "mining",
@@ -144711,7 +144711,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.379,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12061] = {
 		["type"] = "mining",
@@ -144723,7 +144723,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.481,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12062] = {
 		["type"] = "mining",
@@ -144735,7 +144735,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.52,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12063] = {
 		["type"] = "mining",
@@ -144747,7 +144747,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.363,
 		["posY"] = 0.547,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12064] = {
 		["type"] = "mining",
@@ -144759,7 +144759,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.27,
 		["posY"] = 0.54,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12065] = {
 		["type"] = "mining",
@@ -144771,7 +144771,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.654,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12066] = {
 		["type"] = "mining",
@@ -144783,7 +144783,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.342,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12067] = {
 		["type"] = "mining",
@@ -144795,7 +144795,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12068] = {
 		["type"] = "mining",
@@ -144807,7 +144807,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.479,
 		["posY"] = 0.521,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12069] = {
 		["type"] = "mining",
@@ -144819,7 +144819,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.456,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12070] = {
 		["type"] = "mining",
@@ -144831,7 +144831,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.337,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12071] = {
 		["type"] = "mining",
@@ -144843,7 +144843,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.77,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12072] = {
 		["type"] = "mining",
@@ -144855,7 +144855,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.789,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12073] = {
 		["type"] = "mining",
@@ -144867,7 +144867,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12074] = {
 		["type"] = "mining",
@@ -144879,7 +144879,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.632,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12075] = {
 		["type"] = "mining",
@@ -144891,7 +144891,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.621,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12076] = {
 		["type"] = "mining",
@@ -144903,7 +144903,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.596,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12077] = {
 		["type"] = "mining",
@@ -144915,7 +144915,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.484,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12078] = {
 		["type"] = "mining",
@@ -144927,7 +144927,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.635,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12079] = {
 		["type"] = "mining",
@@ -144939,7 +144939,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.543,
 		["posY"] = 0.363,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12080] = {
 		["type"] = "mining",
@@ -144951,7 +144951,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.807,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12081] = {
 		["type"] = "mining",
@@ -144963,7 +144963,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.767,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12082] = {
 		["type"] = "mining",
@@ -144975,7 +144975,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.527,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12083] = {
 		["type"] = "mining",
@@ -144987,7 +144987,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.571,
 		["posY"] = 0.345,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12084] = {
 		["type"] = "mining",
@@ -144999,7 +144999,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.493,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12085] = {
 		["type"] = "mining",
@@ -145011,7 +145011,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.805,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12086] = {
 		["type"] = "mining",
@@ -145023,7 +145023,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.708,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12087] = {
 		["type"] = "mining",
@@ -145035,7 +145035,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.399,
 		["posY"] = 0.322,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12088] = {
 		["type"] = "mining",
@@ -145047,7 +145047,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.418,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12089] = {
 		["type"] = "mining",
@@ -145059,7 +145059,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.265,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12090] = {
 		["type"] = "mining",
@@ -145071,7 +145071,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.507,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12091] = {
 		["type"] = "mining",
@@ -145083,7 +145083,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.377,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12092] = {
 		["type"] = "mining",
@@ -145095,7 +145095,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.263,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12093] = {
 		["type"] = "mining",
@@ -145107,7 +145107,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.687,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12094] = {
 		["type"] = "mining",
@@ -145119,7 +145119,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.22,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12095] = {
 		["type"] = "mining",
@@ -145131,7 +145131,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.72,
 		["posY"] = 0.265,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12096] = {
 		["type"] = "mining",
@@ -145143,7 +145143,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.597,
 		["posY"] = 0.261,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12097] = {
 		["type"] = "mining",
@@ -145155,7 +145155,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.704,
 		["posY"] = 0.243,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12098] = {
 		["type"] = "mining",
@@ -145167,7 +145167,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.621,
 		["posY"] = 0.241,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12099] = {
 		["type"] = "mining",
@@ -145179,7 +145179,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.64,
 		["posY"] = 0.231,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12100] = {
 		["type"] = "mining",
@@ -145191,7 +145191,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.207,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12101] = {
 		["type"] = "mining",
@@ -145203,7 +145203,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.188,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12102] = {
 		["type"] = "mining",
@@ -145215,7 +145215,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.279,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12103] = {
 		["type"] = "mining",
@@ -145227,7 +145227,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.257,
 		["posY"] = 0.209,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12104] = {
 		["type"] = "mining",
@@ -145239,7 +145239,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.223,
 		["posY"] = 0.201,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12105] = {
 		["type"] = "mining",
@@ -145251,7 +145251,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.737,
 		["posY"] = 0.195,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12106] = {
 		["type"] = "mining",
@@ -145263,7 +145263,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.382,
 		["posY"] = 0.188,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12107] = {
 		["type"] = "mining",
@@ -145275,7 +145275,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.236,
 		["posY"] = 0.176,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12108] = {
 		["type"] = "mining",
@@ -145287,7 +145287,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.236,
 		["posY"] = 0.161,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12109] = {
 		["type"] = "mining",
@@ -145299,7 +145299,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.278,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12110] = {
 		["type"] = "mining",
@@ -145311,7 +145311,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12111] = {
 		["type"] = "mining",
@@ -145323,7 +145323,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.413,
 		["posY"] = 0.152,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12112] = {
 		["type"] = "mining",
@@ -145335,7 +145335,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.268,
 		["posY"] = 0.151,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12113] = {
 		["type"] = "mining",
@@ -145347,7 +145347,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.553,
 		["posY"] = 0.148,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12114] = {
 		["type"] = "mining",
@@ -145359,7 +145359,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.384,
 		["posY"] = 0.144,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12115] = {
 		["type"] = "mining",
@@ -145371,7 +145371,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.514,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12116] = {
 		["type"] = "mining",
@@ -145383,7 +145383,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.532,
 		["posY"] = 0.139,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12117] = {
 		["type"] = "mining",
@@ -145395,7 +145395,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.226,
 		["posY"] = 0.135,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12118] = {
 		["type"] = "mining",
@@ -145407,7 +145407,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.456,
 		["posY"] = 0.133,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12119] = {
 		["type"] = "mining",
@@ -145419,7 +145419,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.285,
 		["posY"] = 0.132,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12120] = {
 		["type"] = "mining",
@@ -145431,7 +145431,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.266,
 		["posY"] = 0.131,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12121] = {
 		["type"] = "mining",
@@ -145443,7 +145443,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.417,
 		["posY"] = 0.131,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12122] = {
 		["type"] = "mining",
@@ -145455,7 +145455,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.727,
 		["posY"] = 0.124,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12123] = {
 		["type"] = "mining",
@@ -145467,7 +145467,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.374,
 		["posY"] = 0.119,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12124] = {
 		["type"] = "mining",
@@ -145479,7 +145479,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.448,
 		["posY"] = 0.104,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12125] = {
 		["type"] = "mining",
@@ -145491,7 +145491,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.289,
 		["posY"] = 0.103,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12126] = {
 		["type"] = "mining",
@@ -145503,7 +145503,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.692,
 		["posY"] = 0.095,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12127] = {
 		["type"] = "mining",
@@ -145515,7 +145515,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.434,
 		["posY"] = 0.095,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12128] = {
 		["type"] = "mining",
@@ -145527,7 +145527,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.384,
 		["posY"] = 0.073,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12129] = {
 		["type"] = "mining",
@@ -145539,7 +145539,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.296,
 		["posY"] = 0.061,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12130] = {
 		["type"] = "mining",
@@ -145551,7 +145551,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.277,
 		["posY"] = 0.049,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12131] = {
 		["type"] = "mining",
@@ -145563,7 +145563,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.935,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12132] = {
 		["type"] = "mining",
@@ -145575,7 +145575,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12133] = {
 		["type"] = "mining",
@@ -145587,7 +145587,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.521,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12134] = {
 		["type"] = "mining",
@@ -145599,7 +145599,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.365,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12135] = {
 		["type"] = "mining",
@@ -145611,7 +145611,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.415,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12136] = {
 		["type"] = "mining",
@@ -145623,7 +145623,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.539,
 		["posY"] = 0.7,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12137] = {
 		["type"] = "mining",
@@ -145635,7 +145635,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.422,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12138] = {
 		["type"] = "mining",
@@ -145647,7 +145647,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.35,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12139] = {
 		["type"] = "mining",
@@ -145659,7 +145659,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.558,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12140] = {
 		["type"] = "mining",
@@ -145671,7 +145671,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.503,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12141] = {
 		["type"] = "mining",
@@ -145683,7 +145683,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.47,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12142] = {
 		["type"] = "mining",
@@ -145695,7 +145695,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.467,
 		["posY"] = 0.628,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12143] = {
 		["type"] = "mining",
@@ -145707,7 +145707,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.599,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12144] = {
 		["type"] = "mining",
@@ -145719,7 +145719,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.458,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12145] = {
 		["type"] = "mining",
@@ -145731,7 +145731,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.588,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12146] = {
 		["type"] = "mining",
@@ -145743,7 +145743,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.285,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12147] = {
 		["type"] = "mining",
@@ -145755,7 +145755,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.514,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12148] = {
 		["type"] = "mining",
@@ -145767,7 +145767,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.56,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12149] = {
 		["type"] = "mining",
@@ -145779,7 +145779,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.593,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12150] = {
 		["type"] = "mining",
@@ -145791,7 +145791,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.574,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12151] = {
 		["type"] = "mining",
@@ -145803,7 +145803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.628,
 		["posY"] = 0.535,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12152] = {
 		["type"] = "mining",
@@ -145815,7 +145815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.58,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12153] = {
 		["type"] = "mining",
@@ -145827,7 +145827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.512,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12154] = {
 		["type"] = "mining",
@@ -145839,7 +145839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.623,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12155] = {
 		["type"] = "mining",
@@ -145851,7 +145851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.699,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12156] = {
 		["type"] = "mining",
@@ -145863,7 +145863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.72,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12157] = {
 		["type"] = "mining",
@@ -145875,7 +145875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.679,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12158] = {
 		["type"] = "mining",
@@ -145887,7 +145887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.834,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12159] = {
 		["type"] = "mining",
@@ -145899,7 +145899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.89,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12160] = {
 		["type"] = "mining",
@@ -145911,7 +145911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.487,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12161] = {
 		["type"] = "mining",
@@ -145923,7 +145923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.849,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12162] = {
 		["type"] = "mining",
@@ -145935,7 +145935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.511,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12163] = {
 		["type"] = "mining",
@@ -145947,7 +145947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.649,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12164] = {
 		["type"] = "mining",
@@ -145959,7 +145959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.74,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12165] = {
 		["type"] = "mining",
@@ -145971,7 +145971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.872,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12166] = {
 		["type"] = "mining",
@@ -145983,7 +145983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.791,
 		["posY"] = 0.442,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12167] = {
 		["type"] = "mining",
@@ -145995,7 +145995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.524,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12168] = {
 		["type"] = "mining",
@@ -146007,7 +146007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.409,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12169] = {
 		["type"] = "mining",
@@ -146019,7 +146019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.917,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12170] = {
 		["type"] = "mining",
@@ -146031,7 +146031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.716,
 		["posY"] = 0.413,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12171] = {
 		["type"] = "mining",
@@ -146043,7 +146043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.432,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12172] = {
 		["type"] = "mining",
@@ -146055,7 +146055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.498,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12173] = {
 		["type"] = "mining",
@@ -146067,7 +146067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.403,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12174] = {
 		["type"] = "mining",
@@ -146079,7 +146079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.931,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12175] = {
 		["type"] = "mining",
@@ -146091,7 +146091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.656,
 		["posY"] = 0.379,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12176] = {
 		["type"] = "mining",
@@ -146103,7 +146103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.707,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12177] = {
 		["type"] = "mining",
@@ -146115,7 +146115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.802,
 		["posY"] = 0.371,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12178] = {
 		["type"] = "mining",
@@ -146127,7 +146127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.507,
 		["posY"] = 0.364,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12179] = {
 		["type"] = "mining",
@@ -146139,7 +146139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.352,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12180] = {
 		["type"] = "mining",
@@ -146151,7 +146151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.518,
 		["posY"] = 0.344,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12181] = {
 		["type"] = "mining",
@@ -146163,7 +146163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.732,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12182] = {
 		["type"] = "mining",
@@ -146175,7 +146175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.259,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12183] = {
 		["type"] = "mining",
@@ -146187,7 +146187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.921,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12184] = {
 		["type"] = "mining",
@@ -146199,7 +146199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.945,
 		["posY"] = 0.33,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12185] = {
 		["type"] = "mining",
@@ -146211,7 +146211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.641,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12186] = {
 		["type"] = "mining",
@@ -146223,7 +146223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.227,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12187] = {
 		["type"] = "mining",
@@ -146235,7 +146235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.661,
 		["posY"] = 0.325,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12188] = {
 		["type"] = "mining",
@@ -146247,7 +146247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.495,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12189] = {
 		["type"] = "mining",
@@ -146259,7 +146259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.788,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12190] = {
 		["type"] = "mining",
@@ -146271,7 +146271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.209,
 		["posY"] = 0.302,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12191] = {
 		["type"] = "mining",
@@ -146283,7 +146283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.771,
 		["posY"] = 0.292,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12192] = {
 		["type"] = "mining",
@@ -146295,7 +146295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.377,
 		["posY"] = 0.288,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12193] = {
 		["type"] = "mining",
@@ -146307,7 +146307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.335,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12194] = {
 		["type"] = "mining",
@@ -146319,7 +146319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.685,
 		["posY"] = 0.284,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12195] = {
 		["type"] = "mining",
@@ -146331,7 +146331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.791,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12196] = {
 		["type"] = "mining",
@@ -146343,7 +146343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.734,
 		["posY"] = 0.276,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12197] = {
 		["type"] = "mining",
@@ -146355,7 +146355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.32,
 		["posY"] = 0.259,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12198] = {
 		["type"] = "mining",
@@ -146367,7 +146367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.37,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12199] = {
 		["type"] = "mining",
@@ -146379,7 +146379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.684,
 		["posY"] = 0.242,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12200] = {
 		["type"] = "mining",
@@ -146391,7 +146391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.587,
 		["posY"] = 0.238,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12201] = {
 		["type"] = "mining",
@@ -146403,7 +146403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.45,
 		["posY"] = 0.226,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12202] = {
 		["type"] = "mining",
@@ -146415,7 +146415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.773,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12203] = {
 		["type"] = "mining",
@@ -146427,7 +146427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.233,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12204] = {
 		["type"] = "mining",
@@ -146439,7 +146439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.371,
 		["posY"] = 0.215,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12205] = {
 		["type"] = "mining",
@@ -146451,7 +146451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.434,
 		["posY"] = 0.196,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12206] = {
 		["type"] = "mining",
@@ -146463,7 +146463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.606,
 		["posY"] = 0.189,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12207] = {
 		["type"] = "mining",
@@ -146475,7 +146475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.307,
 		["posY"] = 0.179,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12208] = {
 		["type"] = "mining",
@@ -146487,7 +146487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.716,
 		["posY"] = 0.174,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12209] = {
 		["type"] = "mining",
@@ -146499,7 +146499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.491,
 		["posY"] = 0.168,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12210] = {
 		["type"] = "mining",
@@ -146511,7 +146511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.422,
 		["posY"] = 0.16,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12211] = {
 		["type"] = "mining",
@@ -146523,7 +146523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.634,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12212] = {
 		["type"] = "mining",
@@ -146535,7 +146535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.41,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12213] = {
 		["type"] = "mining",
@@ -146547,7 +146547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.749,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12214] = {
 		["type"] = "mining",
@@ -146559,7 +146559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.56,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12215] = {
 		["type"] = "mining",
@@ -146571,7 +146571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.451,
 		["posY"] = 0.124,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12216] = {
 		["type"] = "mining",
@@ -146583,7 +146583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.629,
 		["posY"] = 0.122,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12217] = {
 		["type"] = "mining",
@@ -146595,7 +146595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.563,
 		["posY"] = 0.11,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12218] = {
 		["type"] = "mining",
@@ -146607,7 +146607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.609,
 		["posY"] = 0.106,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12219] = {
 		["type"] = "mining",
@@ -146619,7 +146619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.585,
 		["posY"] = 0.105,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12220] = {
 		["type"] = "mining",
@@ -146631,7 +146631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.547,
 		["posY"] = 0.101,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12221] = {
 		["type"] = "mining",
@@ -146643,7 +146643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.544,
 		["posY"] = 0.096,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12222] = {
 		["type"] = "mining",
@@ -146655,7 +146655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.559,
 		["posY"] = 0.093,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12223] = {
 		["type"] = "mining",
@@ -146667,7 +146667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.734,
 		["posY"] = 0.828,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12224] = {
 		["type"] = "mining",
@@ -146679,7 +146679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.702,
 		["posY"] = 0.825,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12225] = {
 		["type"] = "mining",
@@ -146691,7 +146691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.699,
 		["posY"] = 0.789,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12226] = {
 		["type"] = "mining",
@@ -146703,7 +146703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.849,
 		["posY"] = 0.785,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12227] = {
 		["type"] = "mining",
@@ -146715,7 +146715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.74,
 		["posY"] = 0.783,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12228] = {
 		["type"] = "mining",
@@ -146727,7 +146727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.651,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12229] = {
 		["type"] = "mining",
@@ -146739,7 +146739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.392,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12230] = {
 		["type"] = "mining",
@@ -146751,7 +146751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.769,
 		["posY"] = 0.758,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12231] = {
 		["type"] = "mining",
@@ -146763,7 +146763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.907,
 		["posY"] = 0.752,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12232] = {
 		["type"] = "mining",
@@ -146775,7 +146775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.436,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12233] = {
 		["type"] = "mining",
@@ -146787,7 +146787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.611,
 		["posY"] = 0.734,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12234] = {
 		["type"] = "mining",
@@ -146799,7 +146799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.649,
 		["posY"] = 0.714,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12235] = {
 		["type"] = "mining",
@@ -146811,7 +146811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.475,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12236] = {
 		["type"] = "mining",
@@ -146823,7 +146823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.818,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12237] = {
 		["type"] = "mining",
@@ -146835,7 +146835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.797,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12238] = {
 		["type"] = "mining",
@@ -146847,7 +146847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.564,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12239] = {
 		["type"] = "mining",
@@ -146859,7 +146859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.564,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12240] = {
 		["type"] = "mining",
@@ -146871,7 +146871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.545,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12241] = {
 		["type"] = "mining",
@@ -146883,7 +146883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.502,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12242] = {
 		["type"] = "mining",
@@ -146895,7 +146895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.701,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12243] = {
 		["type"] = "mining",
@@ -146907,7 +146907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.273,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12244] = {
 		["type"] = "mining",
@@ -146919,7 +146919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.23,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12245] = {
 		["type"] = "mining",
@@ -146931,7 +146931,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.23,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12246] = {
 		["type"] = "mining",
@@ -146943,7 +146943,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.422,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12247] = {
 		["type"] = "mining",
@@ -146955,7 +146955,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.191,
 		["posY"] = 0.628,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12248] = {
 		["type"] = "mining",
@@ -146967,7 +146967,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.253,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12249] = {
 		["type"] = "mining",
@@ -146979,7 +146979,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.176,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12250] = {
 		["type"] = "mining",
@@ -146991,7 +146991,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.643,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12251] = {
 		["type"] = "mining",
@@ -147003,7 +147003,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.322,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12252] = {
 		["type"] = "mining",
@@ -147015,7 +147015,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.343,
 		["posY"] = 0.584,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12253] = {
 		["type"] = "mining",
@@ -147027,7 +147027,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.412,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12254] = {
 		["type"] = "mining",
@@ -147039,7 +147039,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.418,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12255] = {
 		["type"] = "mining",
@@ -147051,7 +147051,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.464,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12256] = {
 		["type"] = "mining",
@@ -147063,7 +147063,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.161,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12257] = {
 		["type"] = "mining",
@@ -147075,7 +147075,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.673,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12258] = {
 		["type"] = "mining",
@@ -147087,7 +147087,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.463,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12259] = {
 		["type"] = "mining",
@@ -147099,7 +147099,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.498,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12260] = {
 		["type"] = "mining",
@@ -147111,7 +147111,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.731,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12261] = {
 		["type"] = "mining",
@@ -147123,7 +147123,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.169,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12262] = {
 		["type"] = "mining",
@@ -147135,7 +147135,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.188,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12263] = {
 		["type"] = "mining",
@@ -147147,7 +147147,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.166,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12264] = {
 		["type"] = "mining",
@@ -147159,7 +147159,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.637,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12265] = {
 		["type"] = "mining",
@@ -147171,7 +147171,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.919,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12266] = {
 		["type"] = "mining",
@@ -147183,7 +147183,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.874,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12267] = {
 		["type"] = "mining",
@@ -147195,7 +147195,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.156,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12268] = {
 		["type"] = "mining",
@@ -147207,7 +147207,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.312,
 		["posY"] = 0.452,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12269] = {
 		["type"] = "mining",
@@ -147219,7 +147219,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.477,
 		["posY"] = 0.444,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12270] = {
 		["type"] = "mining",
@@ -147231,7 +147231,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.159,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12271] = {
 		["type"] = "mining",
@@ -147243,7 +147243,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.133,
 		["posY"] = 0.428,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12272] = {
 		["type"] = "mining",
@@ -147255,7 +147255,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.735,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12273] = {
 		["type"] = "mining",
@@ -147267,7 +147267,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.66,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12274] = {
 		["type"] = "mining",
@@ -147279,7 +147279,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.854,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12275] = {
 		["type"] = "mining",
@@ -147291,7 +147291,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.218,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12276] = {
 		["type"] = "mining",
@@ -147303,7 +147303,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.252,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12277] = {
 		["type"] = "mining",
@@ -147315,7 +147315,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.549,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12278] = {
 		["type"] = "mining",
@@ -147327,7 +147327,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.72,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12279] = {
 		["type"] = "mining",
@@ -147339,7 +147339,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.582,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12280] = {
 		["type"] = "mining",
@@ -147351,7 +147351,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.54,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12281] = {
 		["type"] = "mining",
@@ -147363,7 +147363,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.696,
 		["posY"] = 0.321,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12282] = {
 		["type"] = "mining",
@@ -147375,7 +147375,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.765,
 		["posY"] = 0.276,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12283] = {
 		["type"] = "mining",
@@ -147387,7 +147387,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.798,
 		["posY"] = 0.254,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12284] = {
 		["type"] = "mining",
@@ -147399,7 +147399,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.819,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12285] = {
 		["type"] = "mining",
@@ -147411,7 +147411,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.762,
 		["posY"] = 0.205,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12286] = {
 		["type"] = "mining",
@@ -147423,7 +147423,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.704,
 		["posY"] = 0.199,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12287] = {
 		["type"] = "mining",
@@ -147435,7 +147435,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.754,
 		["posY"] = 0.19,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12288] = {
 		["type"] = "mining",
@@ -147447,7 +147447,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.518,
 		["posY"] = 0.185,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12289] = {
 		["type"] = "mining",
@@ -147459,7 +147459,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.527,
 		["posY"] = 0.179,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12290] = {
 		["type"] = "mining",
@@ -147471,7 +147471,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.866,
 		["posY"] = 0.177,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12291] = {
 		["type"] = "mining",
@@ -147483,7 +147483,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.605,
 		["posY"] = 0.173,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12292] = {
 		["type"] = "mining",
@@ -147495,7 +147495,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.507,
 		["posY"] = 0.165,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12293] = {
 		["type"] = "mining",
@@ -147507,7 +147507,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.534,
 		["posY"] = 0.164,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12294] = {
 		["type"] = "mining",
@@ -147519,7 +147519,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.593,
 		["posY"] = 0.155,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12295] = {
 		["type"] = "mining",
@@ -147531,7 +147531,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.512,
 		["posY"] = 0.151,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12296] = {
 		["type"] = "mining",
@@ -147543,7 +147543,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 115,
 		["posX"] = 0.534,
 		["posY"] = 0.107,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12297] = {
 		["type"] = "mining",
@@ -147555,7 +147555,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.434,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12298] = {
 		["type"] = "mining",
@@ -147567,7 +147567,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.601,
 		["posY"] = 0.843,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12299] = {
 		["type"] = "mining",
@@ -147579,7 +147579,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.372,
 		["posY"] = 0.842,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12300] = {
 		["type"] = "mining",
@@ -147591,7 +147591,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.461,
 		["posY"] = 0.822,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12301] = {
 		["type"] = "mining",
@@ -147603,7 +147603,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.59,
 		["posY"] = 0.805,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12302] = {
 		["type"] = "mining",
@@ -147615,7 +147615,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.502,
 		["posY"] = 0.791,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12303] = {
 		["type"] = "mining",
@@ -147627,7 +147627,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.115,
 		["posY"] = 0.781,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12304] = {
 		["type"] = "mining",
@@ -147639,7 +147639,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.111,
 		["posY"] = 0.776,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12305] = {
 		["type"] = "mining",
@@ -147651,7 +147651,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.12,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12306] = {
 		["type"] = "mining",
@@ -147663,7 +147663,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.129,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12307] = {
 		["type"] = "mining",
@@ -147675,7 +147675,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.134,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12308] = {
 		["type"] = "mining",
@@ -147687,7 +147687,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.308,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12309] = {
 		["type"] = "mining",
@@ -147699,7 +147699,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.453,
 		["posY"] = 0.764,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12310] = {
 		["type"] = "mining",
@@ -147711,7 +147711,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.2,
 		["posY"] = 0.763,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12311] = {
 		["type"] = "mining",
@@ -147723,7 +147723,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.311,
 		["posY"] = 0.762,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12312] = {
 		["type"] = "mining",
@@ -147735,7 +147735,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.136,
 		["posY"] = 0.762,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12313] = {
 		["type"] = "mining",
@@ -147747,7 +147747,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.166,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12314] = {
 		["type"] = "mining",
@@ -147759,7 +147759,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.112,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12315] = {
 		["type"] = "mining",
@@ -147771,7 +147771,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.544,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12316] = {
 		["type"] = "mining",
@@ -147783,7 +147783,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.601,
 		["posY"] = 0.748,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12317] = {
 		["type"] = "mining",
@@ -147795,7 +147795,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.549,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12318] = {
 		["type"] = "mining",
@@ -147807,7 +147807,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.355,
 		["posY"] = 0.73,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12319] = {
 		["type"] = "mining",
@@ -147819,7 +147819,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.353,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12320] = {
 		["type"] = "mining",
@@ -147831,7 +147831,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.203,
 		["posY"] = 0.72,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12321] = {
 		["type"] = "mining",
@@ -147843,7 +147843,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.523,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12322] = {
 		["type"] = "mining",
@@ -147855,7 +147855,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.292,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12323] = {
 		["type"] = "mining",
@@ -147867,7 +147867,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.506,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12324] = {
 		["type"] = "mining",
@@ -147879,7 +147879,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.121,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12325] = {
 		["type"] = "mining",
@@ -147891,7 +147891,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.788,
 		["posY"] = 0.706,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12326] = {
 		["type"] = "mining",
@@ -147903,7 +147903,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.141,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12327] = {
 		["type"] = "mining",
@@ -147915,7 +147915,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.284,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12328] = {
 		["type"] = "mining",
@@ -147927,7 +147927,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.292,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12329] = {
 		["type"] = "mining",
@@ -147939,7 +147939,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.532,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12330] = {
 		["type"] = "mining",
@@ -147951,7 +147951,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.231,
 		["posY"] = 0.689,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12331] = {
 		["type"] = "mining",
@@ -147963,7 +147963,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.314,
 		["posY"] = 0.687,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12332] = {
 		["type"] = "mining",
@@ -147975,7 +147975,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.26,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12333] = {
 		["type"] = "mining",
@@ -147987,7 +147987,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.334,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12334] = {
 		["type"] = "mining",
@@ -147999,7 +147999,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.387,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12335] = {
 		["type"] = "mining",
@@ -148011,7 +148011,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.143,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12336] = {
 		["type"] = "mining",
@@ -148023,7 +148023,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.301,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12337] = {
 		["type"] = "mining",
@@ -148035,7 +148035,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.135,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12338] = {
 		["type"] = "mining",
@@ -148047,7 +148047,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.225,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12339] = {
 		["type"] = "mining",
@@ -148059,7 +148059,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.347,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12340] = {
 		["type"] = "mining",
@@ -148071,7 +148071,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.344,
 		["posY"] = 0.592,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12341] = {
 		["type"] = "mining",
@@ -148083,7 +148083,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.614,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12342] = {
 		["type"] = "mining",
@@ -148095,7 +148095,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.363,
 		["posY"] = 0.587,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12343] = {
 		["type"] = "mining",
@@ -148107,7 +148107,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.569,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12344] = {
 		["type"] = "mining",
@@ -148119,7 +148119,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.342,
 		["posY"] = 0.549,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12345] = {
 		["type"] = "mining",
@@ -148131,7 +148131,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.133,
 		["posY"] = 0.527,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12346] = {
 		["type"] = "mining",
@@ -148143,7 +148143,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.441,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12347] = {
 		["type"] = "mining",
@@ -148155,7 +148155,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.728,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12348] = {
 		["type"] = "mining",
@@ -148167,7 +148167,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.455,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12349] = {
 		["type"] = "mining",
@@ -148179,7 +148179,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.554,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12350] = {
 		["type"] = "mining",
@@ -148191,7 +148191,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.51,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12351] = {
 		["type"] = "mining",
@@ -148203,7 +148203,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.712,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12352] = {
 		["type"] = "mining",
@@ -148215,7 +148215,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.698,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12353] = {
 		["type"] = "mining",
@@ -148227,7 +148227,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.415,
 		["posY"] = 0.479,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12354] = {
 		["type"] = "mining",
@@ -148239,7 +148239,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.73,
 		["posY"] = 0.473,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12355] = {
 		["type"] = "mining",
@@ -148251,7 +148251,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.766,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12356] = {
 		["type"] = "mining",
@@ -148263,7 +148263,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.357,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12357] = {
 		["type"] = "mining",
@@ -148275,7 +148275,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.554,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12358] = {
 		["type"] = "mining",
@@ -148287,7 +148287,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.528,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12359] = {
 		["type"] = "mining",
@@ -148299,7 +148299,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.328,
 		["posY"] = 0.436,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12360] = {
 		["type"] = "mining",
@@ -148311,7 +148311,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.43,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12361] = {
 		["type"] = "mining",
@@ -148323,7 +148323,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.399,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12362] = {
 		["type"] = "mining",
@@ -148335,7 +148335,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.415,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12363] = {
 		["type"] = "mining",
@@ -148347,7 +148347,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.476,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12364] = {
 		["type"] = "mining",
@@ -148359,7 +148359,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.319,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12365] = {
 		["type"] = "mining",
@@ -148371,7 +148371,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.529,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12366] = {
 		["type"] = "mining",
@@ -148383,7 +148383,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.547,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12367] = {
 		["type"] = "mining",
@@ -148395,7 +148395,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.576,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12368] = {
 		["type"] = "mining",
@@ -148407,7 +148407,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.732,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12369] = {
 		["type"] = "mining",
@@ -148419,7 +148419,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.578,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12370] = {
 		["type"] = "mining",
@@ -148431,7 +148431,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.709,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12371] = {
 		["type"] = "mining",
@@ -148443,7 +148443,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.702,
 		["posY"] = 0.332,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12372] = {
 		["type"] = "mining",
@@ -148455,7 +148455,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.72,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12373] = {
 		["type"] = "mining",
@@ -148467,7 +148467,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.692,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12374] = {
 		["type"] = "mining",
@@ -148479,7 +148479,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.727,
 		["posY"] = 0.291,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12375] = {
 		["type"] = "mining",
@@ -148491,7 +148491,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.701,
 		["posY"] = 0.267,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12376] = {
 		["type"] = "mining",
@@ -148503,7 +148503,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.737,
 		["posY"] = 0.263,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12377] = {
 		["type"] = "mining",
@@ -148515,7 +148515,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.806,
 		["posY"] = 0.256,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12378] = {
 		["type"] = "mining",
@@ -148527,7 +148527,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.769,
 		["posY"] = 0.247,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12379] = {
 		["type"] = "mining",
@@ -148539,7 +148539,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 121,
 		["posX"] = 0.776,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12380] = {
 		["type"] = "mining",
@@ -148551,7 +148551,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.44,
 		["posY"] = 0.874,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12381] = {
 		["type"] = "mining",
@@ -148563,7 +148563,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.487,
 		["posY"] = 0.867,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12382] = {
 		["type"] = "mining",
@@ -148575,7 +148575,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.747,
 		["posY"] = 0.727,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12383] = {
 		["type"] = "mining",
@@ -148587,7 +148587,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.408,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12384] = {
 		["type"] = "mining",
@@ -148599,7 +148599,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.6,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12385] = {
 		["type"] = "mining",
@@ -148611,7 +148611,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.671,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12386] = {
 		["type"] = "mining",
@@ -148623,7 +148623,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.633,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12387] = {
 		["type"] = "mining",
@@ -148635,7 +148635,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.132,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12388] = {
 		["type"] = "mining",
@@ -148647,7 +148647,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.726,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12389] = {
 		["type"] = "mining",
@@ -148659,7 +148659,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.698,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12390] = {
 		["type"] = "mining",
@@ -148671,7 +148671,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.126,
 		["posY"] = 0.604,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12391] = {
 		["type"] = "mining",
@@ -148683,7 +148683,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.445,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12392] = {
 		["type"] = "mining",
@@ -148695,7 +148695,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.788,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12393] = {
 		["type"] = "mining",
@@ -148707,7 +148707,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.577,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12394] = {
 		["type"] = "mining",
@@ -148719,7 +148719,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.296,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12395] = {
 		["type"] = "mining",
@@ -148731,7 +148731,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.751,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12396] = {
 		["type"] = "mining",
@@ -148743,7 +148743,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.131,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12397] = {
 		["type"] = "mining",
@@ -148755,7 +148755,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.467,
 		["posY"] = 0.56,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12398] = {
 		["type"] = "mining",
@@ -148767,7 +148767,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.773,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12399] = {
 		["type"] = "mining",
@@ -148779,7 +148779,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.5,
 		["posY"] = 0.549,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12400] = {
 		["type"] = "mining",
@@ -148791,7 +148791,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.293,
 		["posY"] = 0.538,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12401] = {
 		["type"] = "mining",
@@ -148803,7 +148803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.129,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12402] = {
 		["type"] = "mining",
@@ -148815,7 +148815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.294,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12403] = {
 		["type"] = "mining",
@@ -148827,7 +148827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.81,
 		["posY"] = 0.522,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12404] = {
 		["type"] = "mining",
@@ -148839,7 +148839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.469,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12405] = {
 		["type"] = "mining",
@@ -148851,7 +148851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.245,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12406] = {
 		["type"] = "mining",
@@ -148863,7 +148863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.507,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12407] = {
 		["type"] = "mining",
@@ -148875,7 +148875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.427,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12408] = {
 		["type"] = "mining",
@@ -148887,7 +148887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.121,
 		["posY"] = 0.488,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12409] = {
 		["type"] = "mining",
@@ -148899,7 +148899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.307,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12410] = {
 		["type"] = "mining",
@@ -148911,7 +148911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12411] = {
 		["type"] = "mining",
@@ -148923,7 +148923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.494,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12412] = {
 		["type"] = "mining",
@@ -148935,7 +148935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.77,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12413] = {
 		["type"] = "mining",
@@ -148947,7 +148947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.104,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12414] = {
 		["type"] = "mining",
@@ -148959,7 +148959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.545,
 		["posY"] = 0.453,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12415] = {
 		["type"] = "mining",
@@ -148971,7 +148971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.14,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12416] = {
 		["type"] = "mining",
@@ -148983,7 +148983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.351,
 		["posY"] = 0.404,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12417] = {
 		["type"] = "mining",
@@ -148995,7 +148995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.252,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12418] = {
 		["type"] = "mining",
@@ -149007,7 +149007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.543,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12419] = {
 		["type"] = "mining",
@@ -149019,7 +149019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.667,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12420] = {
 		["type"] = "mining",
@@ -149031,7 +149031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.149,
 		["posY"] = 0.39,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12421] = {
 		["type"] = "mining",
@@ -149043,7 +149043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.49,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12422] = {
 		["type"] = "mining",
@@ -149055,7 +149055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.169,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12423] = {
 		["type"] = "mining",
@@ -149067,7 +149067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.385,
 		["posY"] = 0.374,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12424] = {
 		["type"] = "mining",
@@ -149079,7 +149079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.513,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12425] = {
 		["type"] = "mining",
@@ -149091,7 +149091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.737,
 		["posY"] = 0.347,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12426] = {
 		["type"] = "mining",
@@ -149103,7 +149103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.247,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12427] = {
 		["type"] = "mining",
@@ -149115,7 +149115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.703,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12428] = {
 		["type"] = "mining",
@@ -149127,7 +149127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.23,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12429] = {
 		["type"] = "mining",
@@ -149139,7 +149139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.736,
 		["posY"] = 0.273,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12430] = {
 		["type"] = "mining",
@@ -149151,7 +149151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.657,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12431] = {
 		["type"] = "mining",
@@ -149163,7 +149163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.502,
 		["posY"] = 0.266,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12432] = {
 		["type"] = "mining",
@@ -149175,7 +149175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.54,
 		["posY"] = 0.25,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12433] = {
 		["type"] = "mining",
@@ -149187,7 +149187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.545,
 		["posY"] = 0.224,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12434] = {
 		["type"] = "mining",
@@ -149199,7 +149199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.655,
 		["posY"] = 0.223,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12435] = {
 		["type"] = "mining",
@@ -149211,7 +149211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.719,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12436] = {
 		["type"] = "mining",
@@ -149223,7 +149223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.53,
 		["posY"] = 0.21,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12437] = {
 		["type"] = "mining",
@@ -149235,7 +149235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.529,
 		["posY"] = 0.198,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12438] = {
 		["type"] = "mining",
@@ -149247,7 +149247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.641,
 		["posY"] = 0.196,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12439] = {
 		["type"] = "mining",
@@ -149259,7 +149259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.59,
 		["posY"] = 0.181,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12440] = {
 		["type"] = "mining",
@@ -149271,7 +149271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.656,
 		["posY"] = 0.166,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12441] = {
 		["type"] = "mining",
@@ -149283,7 +149283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.677,
 		["posY"] = 0.16,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12442] = {
 		["type"] = "mining",
@@ -149295,7 +149295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.702,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12443] = {
 		["type"] = "mining",
@@ -149307,7 +149307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.708,
 		["posY"] = 0.13,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12444] = {
 		["type"] = "mining",
@@ -149319,7 +149319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.594,
 		["posY"] = 0.809,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12445] = {
 		["type"] = "mining",
@@ -149331,7 +149331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.362,
 		["posY"] = 0.779,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12446] = {
 		["type"] = "mining",
@@ -149343,7 +149343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.335,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12447] = {
 		["type"] = "mining",
@@ -149355,7 +149355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.589,
 		["posY"] = 0.752,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12448] = {
 		["type"] = "mining",
@@ -149367,7 +149367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.339,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12449] = {
 		["type"] = "mining",
@@ -149379,7 +149379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.713,
 		["posY"] = 0.737,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12450] = {
 		["type"] = "mining",
@@ -149391,7 +149391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.683,
 		["posY"] = 0.724,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12451] = {
 		["type"] = "mining",
@@ -149403,7 +149403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.52,
 		["posY"] = 0.718,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12452] = {
 		["type"] = "mining",
@@ -149415,7 +149415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.458,
 		["posY"] = 0.716,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12453] = {
 		["type"] = "mining",
@@ -149427,7 +149427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.749,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12454] = {
 		["type"] = "mining",
@@ -149439,7 +149439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.696,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12455] = {
 		["type"] = "mining",
@@ -149451,7 +149451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.731,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12456] = {
 		["type"] = "mining",
@@ -149463,7 +149463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.716,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12457] = {
 		["type"] = "mining",
@@ -149475,7 +149475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.313,
 		["posY"] = 0.691,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12458] = {
 		["type"] = "mining",
@@ -149487,7 +149487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.472,
 		["posY"] = 0.668,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12459] = {
 		["type"] = "mining",
@@ -149499,7 +149499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.568,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12460] = {
 		["type"] = "mining",
@@ -149511,7 +149511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.656,
 		["posY"] = 0.649,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12461] = {
 		["type"] = "mining",
@@ -149523,7 +149523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.451,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12462] = {
 		["type"] = "mining",
@@ -149535,7 +149535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12463] = {
 		["type"] = "mining",
@@ -149547,7 +149547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12464] = {
 		["type"] = "mining",
@@ -149559,7 +149559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.627,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12465] = {
 		["type"] = "mining",
@@ -149571,7 +149571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.724,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12466] = {
 		["type"] = "mining",
@@ -149583,7 +149583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.76,
 		["posY"] = 0.596,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12467] = {
 		["type"] = "mining",
@@ -149595,7 +149595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.672,
 		["posY"] = 0.591,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12468] = {
 		["type"] = "mining",
@@ -149607,7 +149607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.548,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12469] = {
 		["type"] = "mining",
@@ -149619,7 +149619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.697,
 		["posY"] = 0.577,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12470] = {
 		["type"] = "mining",
@@ -149631,7 +149631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.567,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12471] = {
 		["type"] = "mining",
@@ -149643,7 +149643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.3,
 		["posY"] = 0.565,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12472] = {
 		["type"] = "mining",
@@ -149655,7 +149655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.749,
 		["posY"] = 0.561,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12473] = {
 		["type"] = "mining",
@@ -149667,7 +149667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.379,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12474] = {
 		["type"] = "mining",
@@ -149679,7 +149679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.481,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12475] = {
 		["type"] = "mining",
@@ -149691,7 +149691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.52,
 		["posY"] = 0.551,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12476] = {
 		["type"] = "mining",
@@ -149703,7 +149703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.363,
 		["posY"] = 0.547,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12477] = {
 		["type"] = "mining",
@@ -149715,7 +149715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.27,
 		["posY"] = 0.54,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12478] = {
 		["type"] = "mining",
@@ -149727,7 +149727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.654,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12479] = {
 		["type"] = "mining",
@@ -149739,7 +149739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.342,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12480] = {
 		["type"] = "mining",
@@ -149751,7 +149751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.62,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12481] = {
 		["type"] = "mining",
@@ -149763,7 +149763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.479,
 		["posY"] = 0.521,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12482] = {
 		["type"] = "mining",
@@ -149775,7 +149775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.456,
 		["posY"] = 0.515,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12483] = {
 		["type"] = "mining",
@@ -149787,7 +149787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.337,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12484] = {
 		["type"] = "mining",
@@ -149799,7 +149799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.77,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12485] = {
 		["type"] = "mining",
@@ -149811,7 +149811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.789,
 		["posY"] = 0.461,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12486] = {
 		["type"] = "mining",
@@ -149823,7 +149823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.733,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12487] = {
 		["type"] = "mining",
@@ -149835,7 +149835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.632,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12488] = {
 		["type"] = "mining",
@@ -149847,7 +149847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.621,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12489] = {
 		["type"] = "mining",
@@ -149859,7 +149859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.596,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12490] = {
 		["type"] = "mining",
@@ -149871,7 +149871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.484,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12491] = {
 		["type"] = "mining",
@@ -149883,7 +149883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.635,
 		["posY"] = 0.372,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12492] = {
 		["type"] = "mining",
@@ -149895,7 +149895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.543,
 		["posY"] = 0.363,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12493] = {
 		["type"] = "mining",
@@ -149907,7 +149907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.807,
 		["posY"] = 0.361,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12494] = {
 		["type"] = "mining",
@@ -149919,7 +149919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.767,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12495] = {
 		["type"] = "mining",
@@ -149931,7 +149931,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.527,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12496] = {
 		["type"] = "mining",
@@ -149943,7 +149943,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.571,
 		["posY"] = 0.345,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12497] = {
 		["type"] = "mining",
@@ -149955,7 +149955,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.493,
 		["posY"] = 0.341,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12498] = {
 		["type"] = "mining",
@@ -149967,7 +149967,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.805,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12499] = {
 		["type"] = "mining",
@@ -149979,7 +149979,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.708,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12500] = {
 		["type"] = "mining",
@@ -149991,7 +149991,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.399,
 		["posY"] = 0.322,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12501] = {
 		["type"] = "mining",
@@ -150003,7 +150003,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.418,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12502] = {
 		["type"] = "mining",
@@ -150015,7 +150015,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.265,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12503] = {
 		["type"] = "mining",
@@ -150027,7 +150027,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.507,
 		["posY"] = 0.308,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12504] = {
 		["type"] = "mining",
@@ -150039,7 +150039,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.377,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12505] = {
 		["type"] = "mining",
@@ -150051,7 +150051,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.263,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12506] = {
 		["type"] = "mining",
@@ -150063,7 +150063,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.687,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12507] = {
 		["type"] = "mining",
@@ -150075,7 +150075,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.22,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12508] = {
 		["type"] = "mining",
@@ -150087,7 +150087,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.72,
 		["posY"] = 0.265,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12509] = {
 		["type"] = "mining",
@@ -150099,7 +150099,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.597,
 		["posY"] = 0.261,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12510] = {
 		["type"] = "mining",
@@ -150111,7 +150111,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.704,
 		["posY"] = 0.243,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12511] = {
 		["type"] = "mining",
@@ -150123,7 +150123,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.621,
 		["posY"] = 0.241,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12512] = {
 		["type"] = "mining",
@@ -150135,7 +150135,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.64,
 		["posY"] = 0.231,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12513] = {
 		["type"] = "mining",
@@ -150147,7 +150147,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.207,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12514] = {
 		["type"] = "mining",
@@ -150159,7 +150159,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.188,
 		["posY"] = 0.229,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12515] = {
 		["type"] = "mining",
@@ -150171,7 +150171,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.279,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12516] = {
 		["type"] = "mining",
@@ -150183,7 +150183,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.257,
 		["posY"] = 0.209,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12517] = {
 		["type"] = "mining",
@@ -150195,7 +150195,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.223,
 		["posY"] = 0.201,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12518] = {
 		["type"] = "mining",
@@ -150207,7 +150207,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.737,
 		["posY"] = 0.195,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12519] = {
 		["type"] = "mining",
@@ -150219,7 +150219,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.382,
 		["posY"] = 0.188,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12520] = {
 		["type"] = "mining",
@@ -150231,7 +150231,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.236,
 		["posY"] = 0.176,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12521] = {
 		["type"] = "mining",
@@ -150243,7 +150243,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.236,
 		["posY"] = 0.161,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12522] = {
 		["type"] = "mining",
@@ -150255,7 +150255,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.278,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12523] = {
 		["type"] = "mining",
@@ -150267,7 +150267,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.668,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12524] = {
 		["type"] = "mining",
@@ -150279,7 +150279,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.413,
 		["posY"] = 0.152,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12525] = {
 		["type"] = "mining",
@@ -150291,7 +150291,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.268,
 		["posY"] = 0.151,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12526] = {
 		["type"] = "mining",
@@ -150303,7 +150303,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.553,
 		["posY"] = 0.148,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12527] = {
 		["type"] = "mining",
@@ -150315,7 +150315,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.384,
 		["posY"] = 0.144,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12528] = {
 		["type"] = "mining",
@@ -150327,7 +150327,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.514,
 		["posY"] = 0.142,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12529] = {
 		["type"] = "mining",
@@ -150339,7 +150339,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.532,
 		["posY"] = 0.139,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12530] = {
 		["type"] = "mining",
@@ -150351,7 +150351,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.226,
 		["posY"] = 0.135,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12531] = {
 		["type"] = "mining",
@@ -150363,7 +150363,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.456,
 		["posY"] = 0.133,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12532] = {
 		["type"] = "mining",
@@ -150375,7 +150375,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.285,
 		["posY"] = 0.132,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12533] = {
 		["type"] = "mining",
@@ -150387,7 +150387,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.266,
 		["posY"] = 0.131,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12534] = {
 		["type"] = "mining",
@@ -150399,7 +150399,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.417,
 		["posY"] = 0.131,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12535] = {
 		["type"] = "mining",
@@ -150411,7 +150411,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.727,
 		["posY"] = 0.124,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12536] = {
 		["type"] = "mining",
@@ -150423,7 +150423,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.374,
 		["posY"] = 0.119,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12537] = {
 		["type"] = "mining",
@@ -150435,7 +150435,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.448,
 		["posY"] = 0.104,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12538] = {
 		["type"] = "mining",
@@ -150447,7 +150447,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.289,
 		["posY"] = 0.103,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12539] = {
 		["type"] = "mining",
@@ -150459,7 +150459,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.692,
 		["posY"] = 0.095,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12540] = {
 		["type"] = "mining",
@@ -150471,7 +150471,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.434,
 		["posY"] = 0.095,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12541] = {
 		["type"] = "mining",
@@ -150483,7 +150483,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.384,
 		["posY"] = 0.073,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12542] = {
 		["type"] = "mining",
@@ -150495,7 +150495,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.296,
 		["posY"] = 0.061,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12543] = {
 		["type"] = "mining",
@@ -150507,7 +150507,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 117,
 		["posX"] = 0.277,
 		["posY"] = 0.049,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12544] = {
 		["type"] = "mining",
@@ -150519,7 +150519,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 127,
 		["posX"] = 0.935,
 		["posY"] = 0.616,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12545] = {
 		["type"] = "mining",
@@ -150531,7 +150531,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12546] = {
 		["type"] = "mining",
@@ -150543,7 +150543,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.521,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12547] = {
 		["type"] = "mining",
@@ -150555,7 +150555,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.365,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12548] = {
 		["type"] = "mining",
@@ -150567,7 +150567,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.415,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12549] = {
 		["type"] = "mining",
@@ -150579,7 +150579,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.539,
 		["posY"] = 0.7,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12550] = {
 		["type"] = "mining",
@@ -150591,7 +150591,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.422,
 		["posY"] = 0.699,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12551] = {
 		["type"] = "mining",
@@ -150603,7 +150603,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.35,
 		["posY"] = 0.684,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12552] = {
 		["type"] = "mining",
@@ -150615,7 +150615,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.558,
 		["posY"] = 0.645,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12553] = {
 		["type"] = "mining",
@@ -150627,7 +150627,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.503,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12554] = {
 		["type"] = "mining",
@@ -150639,7 +150639,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.47,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12555] = {
 		["type"] = "mining",
@@ -150651,7 +150651,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.467,
 		["posY"] = 0.628,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12556] = {
 		["type"] = "mining",
@@ -150663,7 +150663,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.599,
 		["posY"] = 0.618,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12557] = {
 		["type"] = "mining",
@@ -150675,7 +150675,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.458,
 		["posY"] = 0.598,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12558] = {
 		["type"] = "mining",
@@ -150687,7 +150687,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.588,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12559] = {
 		["type"] = "mining",
@@ -150699,7 +150699,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.285,
 		["posY"] = 0.559,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12560] = {
 		["type"] = "mining",
@@ -150711,7 +150711,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.514,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12561] = {
 		["type"] = "mining",
@@ -150723,7 +150723,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.56,
 		["posY"] = 0.555,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12562] = {
 		["type"] = "mining",
@@ -150735,7 +150735,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.593,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12563] = {
 		["type"] = "mining",
@@ -150747,7 +150747,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.574,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12564] = {
 		["type"] = "mining",
@@ -150759,7 +150759,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.628,
 		["posY"] = 0.535,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12565] = {
 		["type"] = "mining",
@@ -150771,7 +150771,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.58,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12566] = {
 		["type"] = "mining",
@@ -150783,7 +150783,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.497,
 		["posY"] = 0.512,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12567] = {
 		["type"] = "mining",
@@ -150795,7 +150795,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.623,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12568] = {
 		["type"] = "mining",
@@ -150807,7 +150807,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.699,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12569] = {
 		["type"] = "mining",
@@ -150819,7 +150819,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.72,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12570] = {
 		["type"] = "mining",
@@ -150831,7 +150831,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.679,
 		["posY"] = 0.465,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12571] = {
 		["type"] = "mining",
@@ -150843,7 +150843,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.834,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12572] = {
 		["type"] = "mining",
@@ -150855,7 +150855,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.89,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12573] = {
 		["type"] = "mining",
@@ -150867,7 +150867,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.487,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12574] = {
 		["type"] = "mining",
@@ -150879,7 +150879,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.849,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12575] = {
 		["type"] = "mining",
@@ -150891,7 +150891,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.511,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12576] = {
 		["type"] = "mining",
@@ -150903,7 +150903,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.649,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12577] = {
 		["type"] = "mining",
@@ -150915,7 +150915,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.74,
 		["posY"] = 0.447,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12578] = {
 		["type"] = "mining",
@@ -150927,7 +150927,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.872,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12579] = {
 		["type"] = "mining",
@@ -150939,7 +150939,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.791,
 		["posY"] = 0.442,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12580] = {
 		["type"] = "mining",
@@ -150951,7 +150951,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.524,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12581] = {
 		["type"] = "mining",
@@ -150963,7 +150963,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.409,
 		["posY"] = 0.426,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12582] = {
 		["type"] = "mining",
@@ -150975,7 +150975,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.917,
 		["posY"] = 0.419,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12583] = {
 		["type"] = "mining",
@@ -150987,7 +150987,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.716,
 		["posY"] = 0.413,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12584] = {
 		["type"] = "mining",
@@ -150999,7 +150999,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.432,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12585] = {
 		["type"] = "mining",
@@ -151011,7 +151011,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.498,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12586] = {
 		["type"] = "mining",
@@ -151023,7 +151023,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.403,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12587] = {
 		["type"] = "mining",
@@ -151035,7 +151035,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.931,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12588] = {
 		["type"] = "mining",
@@ -151047,7 +151047,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.656,
 		["posY"] = 0.379,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12589] = {
 		["type"] = "mining",
@@ -151059,7 +151059,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.707,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12590] = {
 		["type"] = "mining",
@@ -151071,7 +151071,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.802,
 		["posY"] = 0.371,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12591] = {
 		["type"] = "mining",
@@ -151083,7 +151083,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.507,
 		["posY"] = 0.364,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12592] = {
 		["type"] = "mining",
@@ -151095,7 +151095,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.535,
 		["posY"] = 0.352,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12593] = {
 		["type"] = "mining",
@@ -151107,7 +151107,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.518,
 		["posY"] = 0.344,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12594] = {
 		["type"] = "mining",
@@ -151119,7 +151119,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.732,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12595] = {
 		["type"] = "mining",
@@ -151131,7 +151131,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.259,
 		["posY"] = 0.338,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12596] = {
 		["type"] = "mining",
@@ -151143,7 +151143,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.921,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12597] = {
 		["type"] = "mining",
@@ -151155,7 +151155,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.945,
 		["posY"] = 0.33,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12598] = {
 		["type"] = "mining",
@@ -151167,7 +151167,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.641,
 		["posY"] = 0.328,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12599] = {
 		["type"] = "mining",
@@ -151179,7 +151179,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.227,
 		["posY"] = 0.327,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12600] = {
 		["type"] = "mining",
@@ -151191,7 +151191,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.661,
 		["posY"] = 0.325,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12601] = {
 		["type"] = "mining",
@@ -151203,7 +151203,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.495,
 		["posY"] = 0.318,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12602] = {
 		["type"] = "mining",
@@ -151215,7 +151215,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.788,
 		["posY"] = 0.317,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12603] = {
 		["type"] = "mining",
@@ -151227,7 +151227,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.209,
 		["posY"] = 0.302,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12604] = {
 		["type"] = "mining",
@@ -151239,7 +151239,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.771,
 		["posY"] = 0.292,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12605] = {
 		["type"] = "mining",
@@ -151251,7 +151251,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.377,
 		["posY"] = 0.288,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12606] = {
 		["type"] = "mining",
@@ -151263,7 +151263,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.335,
 		["posY"] = 0.286,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12607] = {
 		["type"] = "mining",
@@ -151275,7 +151275,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.685,
 		["posY"] = 0.284,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12608] = {
 		["type"] = "mining",
@@ -151287,7 +151287,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.791,
 		["posY"] = 0.282,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12609] = {
 		["type"] = "mining",
@@ -151299,7 +151299,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.734,
 		["posY"] = 0.276,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12610] = {
 		["type"] = "mining",
@@ -151311,7 +151311,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.32,
 		["posY"] = 0.259,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12611] = {
 		["type"] = "mining",
@@ -151323,7 +151323,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.37,
 		["posY"] = 0.255,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12612] = {
 		["type"] = "mining",
@@ -151335,7 +151335,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.684,
 		["posY"] = 0.242,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12613] = {
 		["type"] = "mining",
@@ -151347,7 +151347,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.587,
 		["posY"] = 0.238,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12614] = {
 		["type"] = "mining",
@@ -151359,7 +151359,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.45,
 		["posY"] = 0.226,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12615] = {
 		["type"] = "mining",
@@ -151371,7 +151371,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.773,
 		["posY"] = 0.225,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12616] = {
 		["type"] = "mining",
@@ -151383,7 +151383,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.233,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12617] = {
 		["type"] = "mining",
@@ -151395,7 +151395,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.371,
 		["posY"] = 0.215,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12618] = {
 		["type"] = "mining",
@@ -151407,7 +151407,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.434,
 		["posY"] = 0.196,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12619] = {
 		["type"] = "mining",
@@ -151419,7 +151419,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.606,
 		["posY"] = 0.189,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12620] = {
 		["type"] = "mining",
@@ -151431,7 +151431,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.307,
 		["posY"] = 0.179,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12621] = {
 		["type"] = "mining",
@@ -151443,7 +151443,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.716,
 		["posY"] = 0.174,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12622] = {
 		["type"] = "mining",
@@ -151455,7 +151455,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.491,
 		["posY"] = 0.168,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12623] = {
 		["type"] = "mining",
@@ -151467,7 +151467,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.422,
 		["posY"] = 0.16,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12624] = {
 		["type"] = "mining",
@@ -151479,7 +151479,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.634,
 		["posY"] = 0.158,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12625] = {
 		["type"] = "mining",
@@ -151491,7 +151491,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.41,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12626] = {
 		["type"] = "mining",
@@ -151503,7 +151503,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.749,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12627] = {
 		["type"] = "mining",
@@ -151515,7 +151515,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.56,
 		["posY"] = 0.138,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12628] = {
 		["type"] = "mining",
@@ -151527,7 +151527,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.451,
 		["posY"] = 0.124,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12629] = {
 		["type"] = "mining",
@@ -151539,7 +151539,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.629,
 		["posY"] = 0.122,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12630] = {
 		["type"] = "mining",
@@ -151551,7 +151551,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.563,
 		["posY"] = 0.11,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12631] = {
 		["type"] = "mining",
@@ -151563,7 +151563,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.609,
 		["posY"] = 0.106,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12632] = {
 		["type"] = "mining",
@@ -151575,7 +151575,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.585,
 		["posY"] = 0.105,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12633] = {
 		["type"] = "mining",
@@ -151587,7 +151587,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.547,
 		["posY"] = 0.101,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12634] = {
 		["type"] = "mining",
@@ -151599,7 +151599,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.544,
 		["posY"] = 0.096,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12635] = {
 		["type"] = "mining",
@@ -151611,7 +151611,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 114,
 		["posX"] = 0.559,
 		["posY"] = 0.093,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12636] = {
 		["type"] = "mining",
@@ -151623,7 +151623,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.354,
 		["posY"] = 0.891,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12637] = {
 		["type"] = "mining",
@@ -151635,7 +151635,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.402,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12638] = {
 		["type"] = "mining",
@@ -151647,7 +151647,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.346,
 		["posY"] = 0.887,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12639] = {
 		["type"] = "mining",
@@ -151659,7 +151659,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.369,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12640] = {
 		["type"] = "mining",
@@ -151671,7 +151671,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.802,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12641] = {
 		["type"] = "mining",
@@ -151683,7 +151683,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.443,
 		["posY"] = 0.776,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12642] = {
 		["type"] = "mining",
@@ -151695,7 +151695,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.775,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12643] = {
 		["type"] = "mining",
@@ -151707,7 +151707,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.407,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12644] = {
 		["type"] = "mining",
@@ -151719,7 +151719,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12645] = {
 		["type"] = "mining",
@@ -151731,7 +151731,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.765,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12646] = {
 		["type"] = "mining",
@@ -151743,7 +151743,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.45,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12647] = {
 		["type"] = "mining",
@@ -151755,7 +151755,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.396,
 		["posY"] = 0.759,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12648] = {
 		["type"] = "mining",
@@ -151767,7 +151767,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.382,
 		["posY"] = 0.749,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12649] = {
 		["type"] = "mining",
@@ -151779,7 +151779,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.435,
 		["posY"] = 0.747,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12650] = {
 		["type"] = "mining",
@@ -151791,7 +151791,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.404,
 		["posY"] = 0.745,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12651] = {
 		["type"] = "mining",
@@ -151803,7 +151803,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.427,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12652] = {
 		["type"] = "mining",
@@ -151815,7 +151815,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.429,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12653] = {
 		["type"] = "mining",
@@ -151827,7 +151827,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.742,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12654] = {
 		["type"] = "mining",
@@ -151839,7 +151839,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.74,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12655] = {
 		["type"] = "mining",
@@ -151851,7 +151851,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.474,
 		["posY"] = 0.726,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12656] = {
 		["type"] = "mining",
@@ -151863,7 +151863,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.484,
 		["posY"] = 0.717,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12657] = {
 		["type"] = "mining",
@@ -151875,7 +151875,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.713,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12658] = {
 		["type"] = "mining",
@@ -151887,7 +151887,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.344,
 		["posY"] = 0.712,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12659] = {
 		["type"] = "mining",
@@ -151899,7 +151899,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.484,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12660] = {
 		["type"] = "mining",
@@ -151911,7 +151911,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.447,
 		["posY"] = 0.709,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12661] = {
 		["type"] = "mining",
@@ -151923,7 +151923,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.432,
 		["posY"] = 0.707,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12662] = {
 		["type"] = "mining",
@@ -151935,7 +151935,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.502,
 		["posY"] = 0.703,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12663] = {
 		["type"] = "mining",
@@ -151947,7 +151947,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.741,
 		["posY"] = 0.702,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12664] = {
 		["type"] = "mining",
@@ -151959,7 +151959,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.433,
 		["posY"] = 0.7,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12665] = {
 		["type"] = "mining",
@@ -151971,7 +151971,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.473,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12666] = {
 		["type"] = "mining",
@@ -151983,7 +151983,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.263,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12667] = {
 		["type"] = "mining",
@@ -151995,7 +151995,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.26,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12668] = {
 		["type"] = "mining",
@@ -152007,7 +152007,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.352,
 		["posY"] = 0.679,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12669] = {
 		["type"] = "mining",
@@ -152019,7 +152019,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.428,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12670] = {
 		["type"] = "mining",
@@ -152031,7 +152031,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.431,
 		["posY"] = 0.678,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12671] = {
 		["type"] = "mining",
@@ -152043,7 +152043,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.441,
 		["posY"] = 0.677,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12672] = {
 		["type"] = "mining",
@@ -152055,7 +152055,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.372,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12673] = {
 		["type"] = "mining",
@@ -152067,7 +152067,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.254,
 		["posY"] = 0.675,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12674] = {
 		["type"] = "mining",
@@ -152079,7 +152079,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.262,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12675] = {
 		["type"] = "mining",
@@ -152091,7 +152091,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.311,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12676] = {
 		["type"] = "mining",
@@ -152103,7 +152103,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.33,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12677] = {
 		["type"] = "mining",
@@ -152115,7 +152115,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.246,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12678] = {
 		["type"] = "mining",
@@ -152127,7 +152127,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.368,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12679] = {
 		["type"] = "mining",
@@ -152139,7 +152139,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.45,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12680] = {
 		["type"] = "mining",
@@ -152151,7 +152151,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.444,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12681] = {
 		["type"] = "mining",
@@ -152163,7 +152163,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.542,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12682] = {
 		["type"] = "mining",
@@ -152175,7 +152175,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.663,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12683] = {
 		["type"] = "mining",
@@ -152187,7 +152187,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.529,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12684] = {
 		["type"] = "mining",
@@ -152199,7 +152199,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.529,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12685] = {
 		["type"] = "mining",
@@ -152211,7 +152211,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.642,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12686] = {
 		["type"] = "mining",
@@ -152223,7 +152223,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.652,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12687] = {
 		["type"] = "mining",
@@ -152235,7 +152235,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.575,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12688] = {
 		["type"] = "mining",
@@ -152247,7 +152247,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.335,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12689] = {
 		["type"] = "mining",
@@ -152259,7 +152259,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.413,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12690] = {
 		["type"] = "mining",
@@ -152271,7 +152271,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.647,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12691] = {
 		["type"] = "mining",
@@ -152283,7 +152283,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12692] = {
 		["type"] = "mining",
@@ -152295,7 +152295,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.558,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12693] = {
 		["type"] = "mining",
@@ -152307,7 +152307,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.415,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12694] = {
 		["type"] = "mining",
@@ -152319,7 +152319,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.552,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12695] = {
 		["type"] = "mining",
@@ -152331,7 +152331,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.292,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12696] = {
 		["type"] = "mining",
@@ -152343,7 +152343,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.547,
 		["posY"] = 0.637,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12697] = {
 		["type"] = "mining",
@@ -152355,7 +152355,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.442,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12698] = {
 		["type"] = "mining",
@@ -152367,7 +152367,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.676,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12699] = {
 		["type"] = "mining",
@@ -152379,7 +152379,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.537,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12700] = {
 		["type"] = "mining",
@@ -152391,7 +152391,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.778,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12701] = {
 		["type"] = "mining",
@@ -152403,7 +152403,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.399,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12702] = {
 		["type"] = "mining",
@@ -152415,7 +152415,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.757,
 		["posY"] = 0.625,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12703] = {
 		["type"] = "mining",
@@ -152427,7 +152427,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.436,
 		["posY"] = 0.622,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12704] = {
 		["type"] = "mining",
@@ -152439,7 +152439,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.57,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12705] = {
 		["type"] = "mining",
@@ -152451,7 +152451,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.661,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12706] = {
 		["type"] = "mining",
@@ -152463,7 +152463,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.281,
 		["posY"] = 0.613,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12707] = {
 		["type"] = "mining",
@@ -152475,7 +152475,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.41,
 		["posY"] = 0.611,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12708] = {
 		["type"] = "mining",
@@ -152487,7 +152487,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.669,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12709] = {
 		["type"] = "mining",
@@ -152499,7 +152499,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.575,
 		["posY"] = 0.609,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12710] = {
 		["type"] = "mining",
@@ -152511,7 +152511,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.77,
 		["posY"] = 0.602,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12711] = {
 		["type"] = "mining",
@@ -152523,7 +152523,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.644,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12712] = {
 		["type"] = "mining",
@@ -152535,7 +152535,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.653,
 		["posY"] = 0.59,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12713] = {
 		["type"] = "mining",
@@ -152547,7 +152547,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.722,
 		["posY"] = 0.588,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12714] = {
 		["type"] = "mining",
@@ -152559,7 +152559,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.276,
 		["posY"] = 0.585,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12715] = {
 		["type"] = "mining",
@@ -152571,7 +152571,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.589,
 		["posY"] = 0.581,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12716] = {
 		["type"] = "mining",
@@ -152583,7 +152583,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.602,
 		["posY"] = 0.575,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12717] = {
 		["type"] = "mining",
@@ -152595,7 +152595,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.451,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12718] = {
 		["type"] = "mining",
@@ -152607,7 +152607,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.729,
 		["posY"] = 0.526,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12719] = {
 		["type"] = "mining",
@@ -152619,7 +152619,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.297,
 		["posY"] = 0.516,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12720] = {
 		["type"] = "mining",
@@ -152631,7 +152631,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.694,
 		["posY"] = 0.511,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12721] = {
 		["type"] = "mining",
@@ -152643,7 +152643,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.27,
 		["posY"] = 0.504,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12722] = {
 		["type"] = "mining",
@@ -152655,7 +152655,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.275,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12723] = {
 		["type"] = "mining",
@@ -152667,7 +152667,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.252,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12724] = {
 		["type"] = "mining",
@@ -152679,7 +152679,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.241,
 		["posY"] = 0.483,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12725] = {
 		["type"] = "mining",
@@ -152691,7 +152691,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.63,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12726] = {
 		["type"] = "mining",
@@ -152703,7 +152703,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.596,
 		["posY"] = 0.46,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12727] = {
 		["type"] = "mining",
@@ -152715,7 +152715,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.649,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12728] = {
 		["type"] = "mining",
@@ -152727,7 +152727,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.574,
 		["posY"] = 0.441,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12729] = {
 		["type"] = "mining",
@@ -152739,7 +152739,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.29,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12730] = {
 		["type"] = "mining",
@@ -152751,7 +152751,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.437,
 		["posY"] = 0.437,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12731] = {
 		["type"] = "mining",
@@ -152763,7 +152763,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.299,
 		["posY"] = 0.435,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12732] = {
 		["type"] = "mining",
@@ -152775,7 +152775,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.314,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12733] = {
 		["type"] = "mining",
@@ -152787,7 +152787,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.361,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12734] = {
 		["type"] = "mining",
@@ -152799,7 +152799,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.596,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12735] = {
 		["type"] = "mining",
@@ -152811,7 +152811,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.652,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12736] = {
 		["type"] = "mining",
@@ -152823,7 +152823,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.643,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12737] = {
 		["type"] = "mining",
@@ -152835,7 +152835,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.354,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12738] = {
 		["type"] = "mining",
@@ -152847,7 +152847,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.679,
 		["posY"] = 0.413,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12739] = {
 		["type"] = "mining",
@@ -152859,7 +152859,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.289,
 		["posY"] = 0.403,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12740] = {
 		["type"] = "mining",
@@ -152871,7 +152871,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.637,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12741] = {
 		["type"] = "mining",
@@ -152883,7 +152883,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.445,
 		["posY"] = 0.401,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12742] = {
 		["type"] = "mining",
@@ -152895,7 +152895,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.481,
 		["posY"] = 0.37,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12743] = {
 		["type"] = "mining",
@@ -152907,7 +152907,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.441,
 		["posY"] = 0.343,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12744] = {
 		["type"] = "mining",
@@ -152919,7 +152919,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 120,
 		["posX"] = 0.425,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12745] = {
 		["type"] = "mining",
@@ -152958,7 +152958,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.56,
 		["posY"] = 0.906,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12749] = {
 		["type"] = "mining",
@@ -152970,7 +152970,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.566,
 		["posY"] = 0.9,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12750] = {
 		["type"] = "mining",
@@ -152982,7 +152982,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.542,
 		["posY"] = 0.89,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12751] = {
 		["type"] = "mining",
@@ -152994,7 +152994,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.538,
 		["posY"] = 0.889,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12752] = {
 		["type"] = "mining",
@@ -153006,7 +153006,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.54,
 		["posY"] = 0.888,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12753] = {
 		["type"] = "mining",
@@ -153018,7 +153018,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.535,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12754] = {
 		["type"] = "mining",
@@ -153030,7 +153030,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.504,
 		["posY"] = 0.879,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12755] = {
 		["type"] = "mining",
@@ -153042,7 +153042,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.536,
 		["posY"] = 0.873,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12756] = {
 		["type"] = "mining",
@@ -153054,7 +153054,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.515,
 		["posY"] = 0.87,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12757] = {
 		["type"] = "mining",
@@ -153066,7 +153066,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.865,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12758] = {
 		["type"] = "mining",
@@ -153078,7 +153078,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.571,
 		["posY"] = 0.861,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12759] = {
 		["type"] = "mining",
@@ -153090,7 +153090,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.572,
 		["posY"] = 0.857,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12760] = {
 		["type"] = "mining",
@@ -153102,7 +153102,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.508,
 		["posY"] = 0.857,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12761] = {
 		["type"] = "mining",
@@ -153114,7 +153114,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.559,
 		["posY"] = 0.854,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12762] = {
 		["type"] = "mining",
@@ -153126,7 +153126,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.558,
 		["posY"] = 0.849,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12763] = {
 		["type"] = "mining",
@@ -153138,7 +153138,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.524,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12764] = {
 		["type"] = "mining",
@@ -153150,7 +153150,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12765] = {
 		["type"] = "mining",
@@ -153162,7 +153162,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.846,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12766] = {
 		["type"] = "mining",
@@ -153174,7 +153174,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.845,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12767] = {
 		["type"] = "mining",
@@ -153186,7 +153186,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.547,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12768] = {
 		["type"] = "mining",
@@ -153198,7 +153198,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.551,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12769] = {
 		["type"] = "mining",
@@ -153210,7 +153210,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.563,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12770] = {
 		["type"] = "mining",
@@ -153222,7 +153222,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.467,
 		["posY"] = 0.83,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12771] = {
 		["type"] = "mining",
@@ -153234,7 +153234,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.483,
 		["posY"] = 0.829,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12772] = {
 		["type"] = "mining",
@@ -153246,7 +153246,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.564,
 		["posY"] = 0.828,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12773] = {
 		["type"] = "mining",
@@ -153258,7 +153258,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.573,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12774] = {
 		["type"] = "mining",
@@ -153270,7 +153270,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.496,
 		["posY"] = 0.82,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12775] = {
 		["type"] = "mining",
@@ -153282,7 +153282,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.497,
 		["posY"] = 0.81,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12776] = {
 		["type"] = "mining",
@@ -153294,7 +153294,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.763,
 		["posY"] = 0.785,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12777] = {
 		["type"] = "mining",
@@ -153306,7 +153306,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.549,
 		["posY"] = 0.78,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12778] = {
 		["type"] = "mining",
@@ -153318,7 +153318,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.547,
 		["posY"] = 0.779,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12779] = {
 		["type"] = "mining",
@@ -153330,7 +153330,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.6,
 		["posY"] = 0.732,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12780] = {
 		["type"] = "mining",
@@ -153342,7 +153342,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.566,
 		["posY"] = 0.712,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12781] = {
 		["type"] = "mining",
@@ -153354,7 +153354,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.846,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12782] = {
 		["type"] = "mining",
@@ -153366,7 +153366,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12783] = {
 		["type"] = "mining",
@@ -153378,7 +153378,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.471,
 		["posY"] = 0.705,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12784] = {
 		["type"] = "mining",
@@ -153390,7 +153390,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.782,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12785] = {
 		["type"] = "mining",
@@ -153402,7 +153402,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.475,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12786] = {
 		["type"] = "mining",
@@ -153414,7 +153414,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.671,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12787] = {
 		["type"] = "mining",
@@ -153426,7 +153426,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.821,
 		["posY"] = 0.704,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12788] = {
 		["type"] = "mining",
@@ -153438,7 +153438,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.308,
 		["posY"] = 0.701,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12789] = {
 		["type"] = "mining",
@@ -153450,7 +153450,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.697,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12790] = {
 		["type"] = "mining",
@@ -153462,7 +153462,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.522,
 		["posY"] = 0.695,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12791] = {
 		["type"] = "mining",
@@ -153474,7 +153474,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.723,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12792] = {
 		["type"] = "mining",
@@ -153486,7 +153486,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.707,
 		["posY"] = 0.69,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12793] = {
 		["type"] = "mining",
@@ -153498,7 +153498,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.815,
 		["posY"] = 0.687,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12794] = {
 		["type"] = "mining",
@@ -153510,7 +153510,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.823,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12795] = {
 		["type"] = "mining",
@@ -153522,7 +153522,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.763,
 		["posY"] = 0.686,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12796] = {
 		["type"] = "mining",
@@ -153534,7 +153534,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.701,
 		["posY"] = 0.685,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12797] = {
 		["type"] = "mining",
@@ -153546,7 +153546,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.666,
 		["posY"] = 0.68,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12798] = {
 		["type"] = "mining",
@@ -153558,7 +153558,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.669,
 		["posY"] = 0.675,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12799] = {
 		["type"] = "mining",
@@ -153570,7 +153570,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.71,
 		["posY"] = 0.674,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12800] = {
 		["type"] = "mining",
@@ -153582,7 +153582,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.811,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12801] = {
 		["type"] = "mining",
@@ -153594,7 +153594,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12802] = {
 		["type"] = "mining",
@@ -153606,7 +153606,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.361,
 		["posY"] = 0.667,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12803] = {
 		["type"] = "mining",
@@ -153618,7 +153618,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.334,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12804] = {
 		["type"] = "mining",
@@ -153630,7 +153630,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.758,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12805] = {
 		["type"] = "mining",
@@ -153642,7 +153642,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12806] = {
 		["type"] = "mining",
@@ -153654,7 +153654,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.77,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12807] = {
 		["type"] = "mining",
@@ -153666,7 +153666,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.678,
 		["posY"] = 0.659,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12808] = {
 		["type"] = "mining",
@@ -153678,7 +153678,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.656,
 		["posY"] = 0.658,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12809] = {
 		["type"] = "mining",
@@ -153690,7 +153690,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12810] = {
 		["type"] = "mining",
@@ -153702,7 +153702,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12811] = {
 		["type"] = "mining",
@@ -153714,7 +153714,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.749,
 		["posY"] = 0.653,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12812] = {
 		["type"] = "mining",
@@ -153726,7 +153726,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.65,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12813] = {
 		["type"] = "mining",
@@ -153738,7 +153738,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.672,
 		["posY"] = 0.648,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12814] = {
 		["type"] = "mining",
@@ -153750,7 +153750,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.646,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12815] = {
 		["type"] = "mining",
@@ -153762,7 +153762,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.636,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12816] = {
 		["type"] = "mining",
@@ -153774,7 +153774,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.775,
 		["posY"] = 0.643,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12817] = {
 		["type"] = "mining",
@@ -153786,7 +153786,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.433,
 		["posY"] = 0.641,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12818] = {
 		["type"] = "mining",
@@ -153798,7 +153798,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.657,
 		["posY"] = 0.64,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12819] = {
 		["type"] = "mining",
@@ -153810,7 +153810,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.816,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12820] = {
 		["type"] = "mining",
@@ -153822,7 +153822,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.495,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12821] = {
 		["type"] = "mining",
@@ -153834,7 +153834,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.776,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12822] = {
 		["type"] = "mining",
@@ -153846,7 +153846,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.673,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12823] = {
 		["type"] = "mining",
@@ -153858,7 +153858,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.713,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12824] = {
 		["type"] = "mining",
@@ -153870,7 +153870,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.438,
 		["posY"] = 0.639,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12825] = {
 		["type"] = "mining",
@@ -153882,7 +153882,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.775,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12826] = {
 		["type"] = "mining",
@@ -153894,7 +153894,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.4,
 		["posY"] = 0.636,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12827] = {
 		["type"] = "mining",
@@ -153906,7 +153906,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.788,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12828] = {
 		["type"] = "mining",
@@ -153918,7 +153918,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.688,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12829] = {
 		["type"] = "mining",
@@ -153930,7 +153930,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.686,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12830] = {
 		["type"] = "mining",
@@ -153942,7 +153942,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.796,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12831] = {
 		["type"] = "mining",
@@ -153954,7 +153954,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.721,
 		["posY"] = 0.63,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12832] = {
 		["type"] = "mining",
@@ -153966,7 +153966,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.49,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12833] = {
 		["type"] = "mining",
@@ -153978,7 +153978,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12834] = {
 		["type"] = "mining",
@@ -153990,7 +153990,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.627,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12835] = {
 		["type"] = "mining",
@@ -154002,7 +154002,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.796,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12836] = {
 		["type"] = "mining",
@@ -154014,7 +154014,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.52,
 		["posY"] = 0.624,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12837] = {
 		["type"] = "mining",
@@ -154026,7 +154026,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.516,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12838] = {
 		["type"] = "mining",
@@ -154038,7 +154038,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.746,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12839] = {
 		["type"] = "mining",
@@ -154050,7 +154050,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.517,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12840] = {
 		["type"] = "mining",
@@ -154062,7 +154062,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.474,
 		["posY"] = 0.62,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12841] = {
 		["type"] = "mining",
@@ -154074,7 +154074,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.765,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12842] = {
 		["type"] = "mining",
@@ -154086,7 +154086,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.489,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12843] = {
 		["type"] = "mining",
@@ -154098,7 +154098,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.541,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12844] = {
 		["type"] = "mining",
@@ -154110,7 +154110,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.737,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12845] = {
 		["type"] = "mining",
@@ -154122,7 +154122,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.743,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12846] = {
 		["type"] = "mining",
@@ -154134,7 +154134,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.493,
 		["posY"] = 0.604,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12847] = {
 		["type"] = "mining",
@@ -154146,7 +154146,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.412,
 		["posY"] = 0.595,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12848] = {
 		["type"] = "mining",
@@ -154158,7 +154158,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.289,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12849] = {
 		["type"] = "mining",
@@ -154170,7 +154170,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.803,
 		["posY"] = 0.594,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12850] = {
 		["type"] = "mining",
@@ -154182,7 +154182,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.759,
 		["posY"] = 0.582,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12851] = {
 		["type"] = "mining",
@@ -154194,7 +154194,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.733,
 		["posY"] = 0.58,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12852] = {
 		["type"] = "mining",
@@ -154206,7 +154206,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.756,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12853] = {
 		["type"] = "mining",
@@ -154218,7 +154218,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.379,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12854] = {
 		["type"] = "mining",
@@ -154230,7 +154230,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.574,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12855] = {
 		["type"] = "mining",
@@ -154242,7 +154242,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.737,
 		["posY"] = 0.568,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12856] = {
 		["type"] = "mining",
@@ -154254,7 +154254,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.648,
 		["posY"] = 0.565,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12857] = {
 		["type"] = "mining",
@@ -154266,7 +154266,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.65,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12858] = {
 		["type"] = "mining",
@@ -154278,7 +154278,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.309,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12859] = {
 		["type"] = "mining",
@@ -154290,7 +154290,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.564,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12860] = {
 		["type"] = "mining",
@@ -154302,7 +154302,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.556,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12861] = {
 		["type"] = "mining",
@@ -154314,7 +154314,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.637,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12862] = {
 		["type"] = "mining",
@@ -154326,7 +154326,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.69,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12863] = {
 		["type"] = "mining",
@@ -154338,7 +154338,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.468,
 		["posY"] = 0.546,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12864] = {
 		["type"] = "mining",
@@ -154350,7 +154350,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.462,
 		["posY"] = 0.542,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12865] = {
 		["type"] = "mining",
@@ -154362,7 +154362,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.466,
 		["posY"] = 0.541,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12866] = {
 		["type"] = "mining",
@@ -154374,7 +154374,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.462,
 		["posY"] = 0.536,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12867] = {
 		["type"] = "mining",
@@ -154386,7 +154386,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.529,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12868] = {
 		["type"] = "mining",
@@ -154398,7 +154398,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.414,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12869] = {
 		["type"] = "mining",
@@ -154410,7 +154410,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.776,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12870] = {
 		["type"] = "mining",
@@ -154422,7 +154422,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.626,
 		["posY"] = 0.524,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12871] = {
 		["type"] = "mining",
@@ -154434,7 +154434,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.743,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12872] = {
 		["type"] = "mining",
@@ -154446,7 +154446,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.485,
 		["posY"] = 0.523,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12873] = {
 		["type"] = "mining",
@@ -154458,7 +154458,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.627,
 		["posY"] = 0.518,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12874] = {
 		["type"] = "mining",
@@ -154470,7 +154470,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.509,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12875] = {
 		["type"] = "mining",
@@ -154482,7 +154482,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.39,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12876] = {
 		["type"] = "mining",
@@ -154494,7 +154494,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.472,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12877] = {
 		["type"] = "mining",
@@ -154506,7 +154506,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.386,
 		["posY"] = 0.501,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12878] = {
 		["type"] = "mining",
@@ -154518,7 +154518,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.772,
 		["posY"] = 0.498,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12879] = {
 		["type"] = "mining",
@@ -154530,7 +154530,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.779,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12880] = {
 		["type"] = "mining",
@@ -154542,7 +154542,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.77,
 		["posY"] = 0.494,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12881] = {
 		["type"] = "mining",
@@ -154554,7 +154554,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.478,
 		["posY"] = 0.489,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12882] = {
 		["type"] = "mining",
@@ -154566,7 +154566,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.777,
 		["posY"] = 0.487,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12883] = {
 		["type"] = "mining",
@@ -154578,7 +154578,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.411,
 		["posY"] = 0.485,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12884] = {
 		["type"] = "mining",
@@ -154590,7 +154590,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.376,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12885] = {
 		["type"] = "mining",
@@ -154602,7 +154602,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.767,
 		["posY"] = 0.48,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12886] = {
 		["type"] = "mining",
@@ -154614,7 +154614,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.478,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12887] = {
 		["type"] = "mining",
@@ -154626,7 +154626,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.337,
 		["posY"] = 0.477,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12888] = {
 		["type"] = "mining",
@@ -154638,7 +154638,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.433,
 		["posY"] = 0.469,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12889] = {
 		["type"] = "mining",
@@ -154650,7 +154650,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.47,
 		["posY"] = 0.468,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12890] = {
 		["type"] = "mining",
@@ -154662,7 +154662,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.467,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12891] = {
 		["type"] = "mining",
@@ -154674,7 +154674,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.466,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12892] = {
 		["type"] = "mining",
@@ -154686,7 +154686,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.466,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12893] = {
 		["type"] = "mining",
@@ -154698,7 +154698,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12894] = {
 		["type"] = "mining",
@@ -154710,7 +154710,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.464,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12895] = {
 		["type"] = "mining",
@@ -154722,7 +154722,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.441,
 		["posY"] = 0.463,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12896] = {
 		["type"] = "mining",
@@ -154734,7 +154734,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.681,
 		["posY"] = 0.458,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12897] = {
 		["type"] = "mining",
@@ -154746,7 +154746,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.574,
 		["posY"] = 0.457,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12898] = {
 		["type"] = "mining",
@@ -154758,7 +154758,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.506,
 		["posY"] = 0.456,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12899] = {
 		["type"] = "mining",
@@ -154770,7 +154770,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.438,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12900] = {
 		["type"] = "mining",
@@ -154782,7 +154782,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.713,
 		["posY"] = 0.455,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12901] = {
 		["type"] = "mining",
@@ -154794,7 +154794,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.766,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12902] = {
 		["type"] = "mining",
@@ -154806,7 +154806,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.725,
 		["posY"] = 0.451,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12903] = {
 		["type"] = "mining",
@@ -154818,7 +154818,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.41,
 		["posY"] = 0.451,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12904] = {
 		["type"] = "mining",
@@ -154830,7 +154830,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.711,
 		["posY"] = 0.449,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12905] = {
 		["type"] = "mining",
@@ -154842,7 +154842,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.571,
 		["posY"] = 0.448,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12906] = {
 		["type"] = "mining",
@@ -154854,7 +154854,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.606,
 		["posY"] = 0.445,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12907] = {
 		["type"] = "mining",
@@ -154866,7 +154866,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.554,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12908] = {
 		["type"] = "mining",
@@ -154878,7 +154878,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.567,
 		["posY"] = 0.438,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12909] = {
 		["type"] = "mining",
@@ -154890,7 +154890,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.589,
 		["posY"] = 0.435,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12910] = {
 		["type"] = "mining",
@@ -154902,7 +154902,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.754,
 		["posY"] = 0.429,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12911] = {
 		["type"] = "mining",
@@ -154914,7 +154914,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.423,
 		["posY"] = 0.424,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12912] = {
 		["type"] = "mining",
@@ -154926,7 +154926,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12913] = {
 		["type"] = "mining",
@@ -154938,7 +154938,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.583,
 		["posY"] = 0.423,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12914] = {
 		["type"] = "mining",
@@ -154950,7 +154950,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.596,
 		["posY"] = 0.422,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12915] = {
 		["type"] = "mining",
@@ -154962,7 +154962,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.419,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12916] = {
 		["type"] = "mining",
@@ -154974,7 +154974,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.705,
 		["posY"] = 0.418,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12917] = {
 		["type"] = "mining",
@@ -154986,7 +154986,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12918] = {
 		["type"] = "mining",
@@ -154998,7 +154998,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.301,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12919] = {
 		["type"] = "mining",
@@ -155010,7 +155010,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.647,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12920] = {
 		["type"] = "mining",
@@ -155022,7 +155022,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.361,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12921] = {
 		["type"] = "mining",
@@ -155034,7 +155034,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.78,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12922] = {
 		["type"] = "mining",
@@ -155046,7 +155046,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.664,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12923] = {
 		["type"] = "mining",
@@ -155058,7 +155058,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.641,
 		["posY"] = 0.408,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12924] = {
 		["type"] = "mining",
@@ -155070,7 +155070,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12925] = {
 		["type"] = "mining",
@@ -155082,7 +155082,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.579,
 		["posY"] = 0.405,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12926] = {
 		["type"] = "mining",
@@ -155094,7 +155094,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.584,
 		["posY"] = 0.402,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12927] = {
 		["type"] = "mining",
@@ -155106,7 +155106,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.694,
 		["posY"] = 0.398,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12928] = {
 		["type"] = "mining",
@@ -155118,7 +155118,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.435,
 		["posY"] = 0.397,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12929] = {
 		["type"] = "mining",
@@ -155130,7 +155130,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.741,
 		["posY"] = 0.396,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12930] = {
 		["type"] = "mining",
@@ -155142,7 +155142,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.629,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12931] = {
 		["type"] = "mining",
@@ -155154,7 +155154,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12932] = {
 		["type"] = "mining",
@@ -155166,7 +155166,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.443,
 		["posY"] = 0.395,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12933] = {
 		["type"] = "mining",
@@ -155178,7 +155178,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.576,
 		["posY"] = 0.394,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12934] = {
 		["type"] = "mining",
@@ -155190,7 +155190,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.692,
 		["posY"] = 0.394,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12935] = {
 		["type"] = "mining",
@@ -155202,7 +155202,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.702,
 		["posY"] = 0.393,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12936] = {
 		["type"] = "mining",
@@ -155214,7 +155214,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.625,
 		["posY"] = 0.391,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12937] = {
 		["type"] = "mining",
@@ -155226,7 +155226,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.718,
 		["posY"] = 0.388,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12938] = {
 		["type"] = "mining",
@@ -155238,7 +155238,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.687,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12939] = {
 		["type"] = "mining",
@@ -155250,7 +155250,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.757,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12940] = {
 		["type"] = "mining",
@@ -155262,7 +155262,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.382,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12941] = {
 		["type"] = "mining",
@@ -155274,7 +155274,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.388,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12942] = {
 		["type"] = "mining",
@@ -155286,7 +155286,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.738,
 		["posY"] = 0.381,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12943] = {
 		["type"] = "mining",
@@ -155298,7 +155298,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.333,
 		["posY"] = 0.378,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12944] = {
 		["type"] = "mining",
@@ -155310,7 +155310,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.691,
 		["posY"] = 0.377,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12945] = {
 		["type"] = "mining",
@@ -155322,7 +155322,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.689,
 		["posY"] = 0.376,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12946] = {
 		["type"] = "mining",
@@ -155334,7 +155334,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.643,
 		["posY"] = 0.375,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12947] = {
 		["type"] = "mining",
@@ -155346,7 +155346,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.621,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12948] = {
 		["type"] = "mining",
@@ -155358,7 +155358,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.624,
 		["posY"] = 0.367,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12949] = {
 		["type"] = "mining",
@@ -155370,7 +155370,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.472,
 		["posY"] = 0.362,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12950] = {
 		["type"] = "mining",
@@ -155382,7 +155382,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.479,
 		["posY"] = 0.359,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12951] = {
 		["type"] = "mining",
@@ -155394,7 +155394,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.421,
 		["posY"] = 0.358,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12952] = {
 		["type"] = "mining",
@@ -155406,7 +155406,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.616,
 		["posY"] = 0.357,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12953] = {
 		["type"] = "mining",
@@ -155418,7 +155418,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12954] = {
 		["type"] = "mining",
@@ -155430,7 +155430,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.313,
 		["posY"] = 0.356,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12955] = {
 		["type"] = "mining",
@@ -155442,7 +155442,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.596,
 		["posY"] = 0.355,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12956] = {
 		["type"] = "mining",
@@ -155454,7 +155454,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.561,
 		["posY"] = 0.351,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12957] = {
 		["type"] = "mining",
@@ -155466,7 +155466,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.424,
 		["posY"] = 0.35,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12958] = {
 		["type"] = "mining",
@@ -155478,7 +155478,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.374,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12959] = {
 		["type"] = "mining",
@@ -155490,7 +155490,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.623,
 		["posY"] = 0.346,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12960] = {
 		["type"] = "mining",
@@ -155502,7 +155502,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.564,
 		["posY"] = 0.34,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12961] = {
 		["type"] = "mining",
@@ -155514,7 +155514,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.58,
 		["posY"] = 0.331,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12962] = {
 		["type"] = "mining",
@@ -155526,7 +155526,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.412,
 		["posY"] = 0.329,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12963] = {
 		["type"] = "mining",
@@ -155538,7 +155538,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.606,
 		["posY"] = 0.323,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12964] = {
 		["type"] = "mining",
@@ -155550,7 +155550,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.635,
 		["posY"] = 0.311,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12965] = {
 		["type"] = "mining",
@@ -155562,7 +155562,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.488,
 		["posY"] = 0.306,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12966] = {
 		["type"] = "mining",
@@ -155574,7 +155574,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.682,
 		["posY"] = 0.305,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12967] = {
 		["type"] = "mining",
@@ -155586,7 +155586,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.623,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12968] = {
 		["type"] = "mining",
@@ -155598,7 +155598,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.619,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12969] = {
 		["type"] = "mining",
@@ -155610,7 +155610,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.663,
 		["posY"] = 0.303,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12970] = {
 		["type"] = "mining",
@@ -155622,7 +155622,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.66,
 		["posY"] = 0.301,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12971] = {
 		["type"] = "mining",
@@ -155634,7 +155634,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.664,
 		["posY"] = 0.292,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12972] = {
 		["type"] = "mining",
@@ -155646,7 +155646,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.668,
 		["posY"] = 0.283,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12973] = {
 		["type"] = "mining",
@@ -155658,7 +155658,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.574,
 		["posY"] = 0.281,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12974] = {
 		["type"] = "mining",
@@ -155670,7 +155670,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.588,
 		["posY"] = 0.278,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12975] = {
 		["type"] = "mining",
@@ -155682,7 +155682,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.452,
 		["posY"] = 0.271,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12976] = {
 		["type"] = "mining",
@@ -155694,7 +155694,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.387,
 		["posY"] = 0.267,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12977] = {
 		["type"] = "mining",
@@ -155706,7 +155706,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.601,
 		["posY"] = 0.234,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12978] = {
 		["type"] = "mining",
@@ -155718,7 +155718,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12979] = {
 		["type"] = "mining",
@@ -155730,7 +155730,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.638,
 		["posY"] = 0.227,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12980] = {
 		["type"] = "mining",
@@ -155742,7 +155742,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.662,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12981] = {
 		["type"] = "mining",
@@ -155754,7 +155754,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.64,
 		["posY"] = 0.203,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12982] = {
 		["type"] = "mining",
@@ -155766,7 +155766,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.723,
 		["posY"] = 0.174,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12983] = {
 		["type"] = "mining",
@@ -155778,7 +155778,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 118,
 		["posX"] = 0.707,
 		["posY"] = 0.172,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12984] = {
 		["type"] = "mining",
@@ -155790,7 +155790,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.345,
 		["posY"] = 0.889,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12985] = {
 		["type"] = "mining",
@@ -155802,7 +155802,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.588,
 		["posY"] = 0.888,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12986] = {
 		["type"] = "mining",
@@ -155814,7 +155814,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.448,
 		["posY"] = 0.885,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12987] = {
 		["type"] = "mining",
@@ -155826,7 +155826,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.386,
 		["posY"] = 0.883,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12988] = {
 		["type"] = "mining",
@@ -155838,7 +155838,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.418,
 		["posY"] = 0.883,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12989] = {
 		["type"] = "mining",
@@ -155850,7 +155850,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12990] = {
 		["type"] = "mining",
@@ -155862,7 +155862,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.435,
 		["posY"] = 0.88,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12991] = {
 		["type"] = "mining",
@@ -155874,7 +155874,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.478,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12992] = {
 		["type"] = "mining",
@@ -155886,7 +155886,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.878,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12993] = {
 		["type"] = "mining",
@@ -155898,7 +155898,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.237,
 		["posY"] = 0.858,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12994] = {
 		["type"] = "mining",
@@ -155910,7 +155910,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.635,
 		["posY"] = 0.844,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12995] = {
 		["type"] = "mining",
@@ -155922,7 +155922,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.266,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12996] = {
 		["type"] = "mining",
@@ -155934,7 +155934,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.224,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12997] = {
 		["type"] = "mining",
@@ -155946,7 +155946,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.541,
 		["posY"] = 0.834,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12998] = {
 		["type"] = "mining",
@@ -155958,7 +155958,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.599,
 		["posY"] = 0.827,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[12999] = {
 		["type"] = "mining",
@@ -155970,7 +155970,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.597,
 		["posY"] = 0.813,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13000] = {
 		["type"] = "mining",
@@ -155982,7 +155982,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.357,
 		["posY"] = 0.792,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13001] = {
 		["type"] = "mining",
@@ -155994,7 +155994,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.631,
 		["posY"] = 0.79,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13002] = {
 		["type"] = "mining",
@@ -156006,7 +156006,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.343,
 		["posY"] = 0.783,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13003] = {
 		["type"] = "mining",
@@ -156018,7 +156018,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.782,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13004] = {
 		["type"] = "mining",
@@ -156030,7 +156030,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.239,
 		["posY"] = 0.77,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13005] = {
 		["type"] = "mining",
@@ -156042,7 +156042,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.578,
 		["posY"] = 0.769,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13006] = {
 		["type"] = "mining",
@@ -156054,7 +156054,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.768,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13007] = {
 		["type"] = "mining",
@@ -156066,7 +156066,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.552,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13008] = {
 		["type"] = "mining",
@@ -156078,7 +156078,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.436,
 		["posY"] = 0.766,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13009] = {
 		["type"] = "mining",
@@ -156090,7 +156090,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.335,
 		["posY"] = 0.76,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13010] = {
 		["type"] = "mining",
@@ -156102,7 +156102,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.42,
 		["posY"] = 0.758,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13011] = {
 		["type"] = "mining",
@@ -156114,7 +156114,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.594,
 		["posY"] = 0.755,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13012] = {
 		["type"] = "mining",
@@ -156126,7 +156126,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.393,
 		["posY"] = 0.755,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13013] = {
 		["type"] = "mining",
@@ -156138,7 +156138,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.526,
 		["posY"] = 0.751,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13014] = {
 		["type"] = "mining",
@@ -156150,7 +156150,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.21,
 		["posY"] = 0.744,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13015] = {
 		["type"] = "mining",
@@ -156162,7 +156162,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.623,
 		["posY"] = 0.743,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13016] = {
 		["type"] = "mining",
@@ -156174,7 +156174,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.339,
 		["posY"] = 0.733,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13017] = {
 		["type"] = "mining",
@@ -156186,7 +156186,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.72,
 		["posY"] = 0.729,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13018] = {
 		["type"] = "mining",
@@ -156198,7 +156198,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.208,
 		["posY"] = 0.722,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13019] = {
 		["type"] = "mining",
@@ -156210,7 +156210,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.343,
 		["posY"] = 0.719,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13020] = {
 		["type"] = "mining",
@@ -156222,7 +156222,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.483,
 		["posY"] = 0.71,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13021] = {
 		["type"] = "mining",
@@ -156234,7 +156234,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.708,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13022] = {
 		["type"] = "mining",
@@ -156246,7 +156246,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.385,
 		["posY"] = 0.694,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13023] = {
 		["type"] = "mining",
@@ -156258,7 +156258,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.741,
 		["posY"] = 0.692,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13024] = {
 		["type"] = "mining",
@@ -156270,7 +156270,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.572,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13025] = {
 		["type"] = "mining",
@@ -156282,7 +156282,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13026] = {
 		["type"] = "mining",
@@ -156294,7 +156294,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.207,
 		["posY"] = 0.676,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13027] = {
 		["type"] = "mining",
@@ -156306,7 +156306,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.579,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13028] = {
 		["type"] = "mining",
@@ -156318,7 +156318,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.603,
 		["posY"] = 0.673,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13029] = {
 		["type"] = "mining",
@@ -156330,7 +156330,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.631,
 		["posY"] = 0.671,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13030] = {
 		["type"] = "mining",
@@ -156342,7 +156342,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.352,
 		["posY"] = 0.67,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13031] = {
 		["type"] = "mining",
@@ -156354,7 +156354,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.484,
 		["posY"] = 0.666,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13032] = {
 		["type"] = "mining",
@@ -156366,7 +156366,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.554,
 		["posY"] = 0.664,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13033] = {
 		["type"] = "mining",
@@ -156378,7 +156378,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.463,
 		["posY"] = 0.655,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13034] = {
 		["type"] = "mining",
@@ -156390,7 +156390,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.499,
 		["posY"] = 0.654,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13035] = {
 		["type"] = "mining",
@@ -156402,7 +156402,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.587,
 		["posY"] = 0.644,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13036] = {
 		["type"] = "mining",
@@ -156414,7 +156414,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.712,
 		["posY"] = 0.638,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13037] = {
 		["type"] = "mining",
@@ -156426,7 +156426,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.513,
 		["posY"] = 0.635,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13038] = {
 		["type"] = "mining",
@@ -156438,7 +156438,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.405,
 		["posY"] = 0.634,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13039] = {
 		["type"] = "mining",
@@ -156450,7 +156450,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.553,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13040] = {
 		["type"] = "mining",
@@ -156462,7 +156462,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.652,
 		["posY"] = 0.633,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13041] = {
 		["type"] = "mining",
@@ -156474,7 +156474,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.321,
 		["posY"] = 0.632,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13042] = {
 		["type"] = "mining",
@@ -156486,7 +156486,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.279,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13043] = {
 		["type"] = "mining",
@@ -156498,7 +156498,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.631,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13044] = {
 		["type"] = "mining",
@@ -156510,7 +156510,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.462,
 		["posY"] = 0.629,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13045] = {
 		["type"] = "mining",
@@ -156522,7 +156522,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.628,
 		["posY"] = 0.623,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13046] = {
 		["type"] = "mining",
@@ -156534,7 +156534,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.786,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13047] = {
 		["type"] = "mining",
@@ -156546,7 +156546,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.621,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13048] = {
 		["type"] = "mining",
@@ -156558,7 +156558,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.287,
 		["posY"] = 0.617,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13049] = {
 		["type"] = "mining",
@@ -156570,7 +156570,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.769,
 		["posY"] = 0.612,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13050] = {
 		["type"] = "mining",
@@ -156582,7 +156582,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.46,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13051] = {
 		["type"] = "mining",
@@ -156594,7 +156594,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.71,
 		["posY"] = 0.608,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13052] = {
 		["type"] = "mining",
@@ -156606,7 +156606,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.516,
 		["posY"] = 0.606,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13053] = {
 		["type"] = "mining",
@@ -156618,7 +156618,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.557,
 		["posY"] = 0.605,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13054] = {
 		["type"] = "mining",
@@ -156630,7 +156630,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.6,
 		["posY"] = 0.602,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13055] = {
 		["type"] = "mining",
@@ -156642,7 +156642,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.749,
 		["posY"] = 0.597,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13056] = {
 		["type"] = "mining",
@@ -156654,7 +156654,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.703,
 		["posY"] = 0.578,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13057] = {
 		["type"] = "mining",
@@ -156666,7 +156666,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.677,
 		["posY"] = 0.563,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13058] = {
 		["type"] = "mining",
@@ -156678,7 +156678,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.208,
 		["posY"] = 0.562,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13059] = {
 		["type"] = "mining",
@@ -156690,7 +156690,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.741,
 		["posY"] = 0.56,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13060] = {
 		["type"] = "mining",
@@ -156702,7 +156702,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.645,
 		["posY"] = 0.558,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13061] = {
 		["type"] = "mining",
@@ -156714,7 +156714,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.336,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13062] = {
 		["type"] = "mining",
@@ -156726,7 +156726,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.583,
 		["posY"] = 0.557,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13063] = {
 		["type"] = "mining",
@@ -156738,7 +156738,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.305,
 		["posY"] = 0.554,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13064] = {
 		["type"] = "mining",
@@ -156750,7 +156750,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.778,
 		["posY"] = 0.553,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13065] = {
 		["type"] = "mining",
@@ -156762,7 +156762,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.319,
 		["posY"] = 0.552,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13066] = {
 		["type"] = "mining",
@@ -156774,7 +156774,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.699,
 		["posY"] = 0.545,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13067] = {
 		["type"] = "mining",
@@ -156786,7 +156786,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.751,
 		["posY"] = 0.539,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13068] = {
 		["type"] = "mining",
@@ -156798,7 +156798,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.751,
 		["posY"] = 0.539,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13069] = {
 		["type"] = "mining",
@@ -156810,7 +156810,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.302,
 		["posY"] = 0.534,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13070] = {
 		["type"] = "mining",
@@ -156822,7 +156822,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.222,
 		["posY"] = 0.533,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13071] = {
 		["type"] = "mining",
@@ -156834,7 +156834,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.787,
 		["posY"] = 0.525,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13072] = {
 		["type"] = "mining",
@@ -156846,7 +156846,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.567,
 		["posY"] = 0.503,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13073] = {
 		["type"] = "mining",
@@ -156858,7 +156858,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.358,
 		["posY"] = 0.5,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13074] = {
 		["type"] = "mining",
@@ -156870,7 +156870,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.668,
 		["posY"] = 0.492,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13075] = {
 		["type"] = "mining",
@@ -156882,7 +156882,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.576,
 		["posY"] = 0.491,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13076] = {
 		["type"] = "mining",
@@ -156894,7 +156894,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.232,
 		["posY"] = 0.484,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13077] = {
 		["type"] = "mining",
@@ -156906,7 +156906,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.542,
 		["posY"] = 0.462,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13078] = {
 		["type"] = "mining",
@@ -156918,7 +156918,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.636,
 		["posY"] = 0.443,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13079] = {
 		["type"] = "mining",
@@ -156930,7 +156930,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.478,
 		["posY"] = 0.431,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13080] = {
 		["type"] = "mining",
@@ -156942,7 +156942,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.49,
 		["posY"] = 0.425,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13081] = {
 		["type"] = "mining",
@@ -156954,7 +156954,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.475,
 		["posY"] = 0.416,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13082] = {
 		["type"] = "mining",
@@ -156966,7 +156966,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.654,
 		["posY"] = 0.414,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13083] = {
 		["type"] = "mining",
@@ -156978,7 +156978,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.754,
 		["posY"] = 0.41,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13084] = {
 		["type"] = "mining",
@@ -156990,7 +156990,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.338,
 		["posY"] = 0.406,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13085] = {
 		["type"] = "mining",
@@ -157002,7 +157002,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.384,
 		["posY"] = 0.386,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13086] = {
 		["type"] = "mining",
@@ -157014,7 +157014,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.533,
 		["posY"] = 0.384,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13087] = {
 		["type"] = "mining",
@@ -157026,7 +157026,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.297,
 		["posY"] = 0.383,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13088] = {
 		["type"] = "mining",
@@ -157038,7 +157038,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.598,
 		["posY"] = 0.373,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13089] = {
 		["type"] = "mining",
@@ -157050,7 +157050,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.403,
 		["posY"] = 0.369,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13090] = {
 		["type"] = "mining",
@@ -157062,7 +157062,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.353,
 		["posY"] = 0.364,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13091] = {
 		["type"] = "mining",
@@ -157074,7 +157074,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.622,
 		["posY"] = 0.348,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13092] = {
 		["type"] = "mining",
@@ -157086,7 +157086,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.412,
 		["posY"] = 0.339,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13093] = {
 		["type"] = "mining",
@@ -157098,7 +157098,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.682,
 		["posY"] = 0.337,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13094] = {
 		["type"] = "mining",
@@ -157110,7 +157110,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.514,
 		["posY"] = 0.216,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13095] = {
 		["type"] = "mining",
@@ -157122,7 +157122,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 119,
 		["posX"] = 0.458,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13096] = {
 		["type"] = "mining",
@@ -157134,7 +157134,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.772,
 		["posY"] = 0.879,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13097] = {
 		["type"] = "mining",
@@ -157146,7 +157146,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.859,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13098] = {
 		["type"] = "mining",
@@ -157158,7 +157158,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.859,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13099] = {
 		["type"] = "mining",
@@ -157170,7 +157170,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.588,
 		["posY"] = 0.84,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13100] = {
 		["type"] = "mining",
@@ -157182,7 +157182,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.793,
 		["posY"] = 0.811,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13101] = {
 		["type"] = "mining",
@@ -157194,7 +157194,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.794,
 		["posY"] = 0.784,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13102] = {
 		["type"] = "mining",
@@ -157206,7 +157206,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.862,
 		["posY"] = 0.761,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13103] = {
 		["type"] = "mining",
@@ -157218,7 +157218,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.683,
 		["posY"] = 0.728,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13104] = {
 		["type"] = "mining",
@@ -157230,7 +157230,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.64,
 		["posY"] = 0.693,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13105] = {
 		["type"] = "mining",
@@ -157242,7 +157242,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.219,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13106] = {
 		["type"] = "mining",
@@ -157254,7 +157254,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.791,
 		["posY"] = 0.683,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13107] = {
 		["type"] = "mining",
@@ -157266,7 +157266,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.871,
 		["posY"] = 0.681,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13108] = {
 		["type"] = "mining",
@@ -157278,7 +157278,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.78,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13109] = {
 		["type"] = "mining",
@@ -157290,7 +157290,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.791,
 		["posY"] = 0.672,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13110] = {
 		["type"] = "mining",
@@ -157302,7 +157302,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.79,
 		["posY"] = 0.662,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13111] = {
 		["type"] = "mining",
@@ -157314,7 +157314,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.06,
 		["posY"] = 0.661,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13112] = {
 		["type"] = "mining",
@@ -157326,7 +157326,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.849,
 		["posY"] = 0.651,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13113] = {
 		["type"] = "mining",
@@ -157338,7 +157338,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.281,
 		["posY"] = 0.619,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13114] = {
 		["type"] = "mining",
@@ -157350,7 +157350,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.503,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13115] = {
 		["type"] = "mining",
@@ -157362,7 +157362,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.209,
 		["posY"] = 0.583,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13116] = {
 		["type"] = "mining",
@@ -157374,7 +157374,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.759,
 		["posY"] = 0.582,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13117] = {
 		["type"] = "mining",
@@ -157386,7 +157386,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.606,
 		["posY"] = 0.58,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13118] = {
 		["type"] = "mining",
@@ -157398,7 +157398,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.792,
 		["posY"] = 0.571,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13119] = {
 		["type"] = "mining",
@@ -157410,7 +157410,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.734,
 		["posY"] = 0.57,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13120] = {
 		["type"] = "mining",
@@ -157422,7 +157422,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.565,
 		["posY"] = 0.548,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13121] = {
 		["type"] = "mining",
@@ -157434,7 +157434,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.649,
 		["posY"] = 0.54,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13122] = {
 		["type"] = "mining",
@@ -157446,7 +157446,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.728,
 		["posY"] = 0.497,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13123] = {
 		["type"] = "mining",
@@ -157458,7 +157458,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.5,
 		["posY"] = 0.496,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13124] = {
 		["type"] = "mining",
@@ -157470,7 +157470,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.231,
 		["posY"] = 0.454,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13125] = {
 		["type"] = "mining",
@@ -157482,7 +157482,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.744,
 		["posY"] = 0.45,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13126] = {
 		["type"] = "mining",
@@ -157494,7 +157494,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.14,
 		["posY"] = 0.433,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13127] = {
 		["type"] = "mining",
@@ -157506,7 +157506,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.836,
 		["posY"] = 0.432,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13128] = {
 		["type"] = "mining",
@@ -157518,7 +157518,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.826,
 		["posY"] = 0.417,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13129] = {
 		["type"] = "mining",
@@ -157530,7 +157530,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.725,
 		["posY"] = 0.415,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13130] = {
 		["type"] = "mining",
@@ -157542,7 +157542,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.302,
 		["posY"] = 0.407,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13131] = {
 		["type"] = "mining",
@@ -157554,7 +157554,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.466,
 		["posY"] = 0.353,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13132] = {
 		["type"] = "mining",
@@ -157566,7 +157566,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.536,
 		["posY"] = 0.312,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13133] = {
 		["type"] = "mining",
@@ -157578,7 +157578,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.726,
 		["posY"] = 0.275,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13134] = {
 		["type"] = "mining",
@@ -157590,7 +157590,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.72,
 		["posY"] = 0.212,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13135] = {
 		["type"] = "mining",
@@ -157602,7 +157602,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.389,
 		["posY"] = 0.184,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13136] = {
 		["type"] = "mining",
@@ -157614,7 +157614,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.296,
 		["posY"] = 0.172,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13137] = {
 		["type"] = "mining",
@@ -157626,7 +157626,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.585,
 		["posY"] = 0.168,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13138] = {
 		["type"] = "mining",
@@ -157638,7 +157638,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.622,
 		["posY"] = 0.164,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13139] = {
 		["type"] = "mining",
@@ -157650,7 +157650,7 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.353,
 		["posY"] = 0.134,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 	[13140] = {
 		["type"] = "mining",
@@ -157662,6 +157662,6 @@ GatherLite_localOreNodes = {
 		["mapID"] = 123,
 		["posX"] = 0.358,
 		["posY"] = 0.125,
-		["instance"] = 10,
+		["instance"] = 571,
 	},
 }
