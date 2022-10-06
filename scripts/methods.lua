@@ -681,11 +681,7 @@ function GatherLite:Load()
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = true;
-            GatherLiteToggle:SetPoint('RIGHT', WorldMapFrameCloseButton, 'LEFT', -20, 0);
-
-            if Questie_Toggle then
-                GatherLiteToggle:SetPoint('RIGHT', Questie_Toggle, 'LEFT', 0, 0);
-            end
+            GatherLiteToggle:SetPoint('BOTTOMLEFT',  20, 40);
 
             if (GatherLite.db.char.worldmap.enabled) then
                 GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))

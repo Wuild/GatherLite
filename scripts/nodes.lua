@@ -163,6 +163,14 @@ _GatherLite.nodeDB = {
         levels = { 375, 400, 400, 400 }
     },
 
+   {
+       type = "ore",
+         id = {191133},
+           name = "titanium_vein",
+           icon = _GatherLite.iconPath .. "Ore\\Titanium",
+           levels = { 450, 450, 450, 450  }
+   },
+
 
     -- Herbalism
 
@@ -582,6 +590,66 @@ _GatherLite.nodeDB = {
         id = { 180656, 180663 },
         icon = _GatherLite.iconPath .. "Fish\\Fishhook",
         name = "fish_pool_sagefish"
-    }
+    },
+
+
+-- WOTLK Fishing
+    {
+        type = "fishing",
+        id = { 192046 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "musselback_sculpin_school"
+    },
+    {
+        type = "fishing",
+        id = { 192048 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "dragonfin_angelfish_school"
+    },
+    {
+        type = "fishing",
+        id = { 192049 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "fangtooth_herring_school"
+    },
+    {
+        type = "fishing",
+        id = { 192050 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "glacial_salmon_school"
+    },
+    {
+        type = "fishing",
+        id = { 192051 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "borean_man_o_war_school"
+    },
+    {
+        type = "fishing",
+        id = { 192052 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "imperial_manta_ray_school"
+    },
+    {
+        type = "fishing",
+        id = { 192053 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "deep_sea_monsterbelly_school"
+    },
+    {
+        type = "fishing",
+        id = { 192054 },
+        icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+        name = "moonglow_cuttlefish_school"
+    },
+     {
+         type = "fishing",
+         id = { 192057 },
+         icon = _GatherLite.iconPath .. "Fish\\Fishhook",
+         name = "nettlefish_school"
+     },
+
+
+
 
 }

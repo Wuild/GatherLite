@@ -46,14 +46,18 @@ function GetData(exp, data, type, site = "wowhead") {
         for (let i = 0; i < data.length; i++) {
             let url;
 
+            // url = `https://wotlkdb.com/?object=${data[i]}`;
+
             switch (site) {
                 default:
                     // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
-                    url = `https://wotlk-twinhead.twinstar.cz/?object=${data[i]}`;
+                    // url = `https://wotlkdb.com/object=${data[i]}`;
+                    url = `https://www.wowhead.com/wotlk/object=${data[i]}`;
                     break;
 
                 case "twinstar":
-                    url = `https://vanilla-twinhead.twinstar.cz/?object=${data[i]}`;
+                    // url = `https://vanilla-twinhead.twinstar.cz/?object=${data[i]}`;
+                    url = `https://wotlkdb.com/?object=${data[i]}`;
                     break;
             }
 
@@ -259,12 +263,12 @@ getTypeData("containers").then((nodes) => {
     writeDBFile("containers", out)
 });
 
-// getTypeData("fishing").then((nodes) => {
-//     console.log("fishing done!")
-//     let out = "";
-//     out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
-//     writeDBFile("fishing", out)
-// });
+getTypeData("fishing").then((nodes) => {
+    console.log("fishing done!")
+    let out = "";
+    out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
+    writeDBFile("fishing", out)
+});
 
 
 // console.log(Object.keys(expansions))

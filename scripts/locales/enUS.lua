@@ -127,6 +127,7 @@ L['node.saronite_deposit'] = "Saronite Deposit"
 L['node.rich_saronite_deposit'] = "Rich Saronite Deposit"
 L['node.cobalt_deposit'] = "Cobalt Deposit"
 L['node.rich_cobalt_deposit'] = "Rich Cobalt Deposit"
+L['node.titanium_vein'] = "Titanium Vein"
 
 -- WOTLK Herbs
 L['node.goldclover'] = "Goldclover"
@@ -137,3 +138,14 @@ L['node.frozen_herb'] = "Frozen Herb"
 L['node.adders_tongue'] = "Adder's Tongue"
 L['node.lichbloom'] = "Lichbloom"
 L['node.icethorn'] = "Icethorn"
+
+-- WOTLK Fish
+L['node.musselback_sculpin_school'] = "Musselback Sculpin School"
+L['node.dragonfin_angelfish_school'] = "Dragonfin Angelfish School"
+L['node.fangtooth_herring_school'] = "Fangtooth Herring School"
+L['node.glacial_salmon_school'] = "Glacial Salmon School"
+L['node.borean_man_o_war_school'] = "Borean Man O' War School"
+L['node.imperial_manta_ray_school'] = "Imperial Manta Ray School"
+L['node.deep_sea_monsterbelly_school'] = "Deep Sea Monsterbelly School"
+L['node.moonglow_cuttlefish_school'] = "Moonglow Cuttlefish School"
+L['node.nettlefish_school'] = "Nettlefish School"
