@@ -141,10 +141,10 @@ end
 
 function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
     local distance = ((((myPosX - nodePosX) ^ 2) + ((myPosY - nodePosY) ^ 2)) ^ 0.5)
-    return distance < 0.01
+    return distance < 0.0065
 end
 
-function GatherLite:findExistingNode(type, mapID, x, y)
+function GatherLite:FindExistingNode(type, mapID, x, y)
     for key, node in pairs(GatherLite.db.global.nodes[type]) do
         if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
@@ -188,8 +188,9 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
     node.instance = instance;
     table.insert(_GatherLite.nodes[type], node)
 
-    GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
+    GatherLite:SendMessage("GatherLiteNodeAdded", node)
 
+    GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 end
 
 function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
@@ -269,10 +270,8 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
         end
     end
 
-    local oldNode = GatherLite:findExistingNode(type, mapID, posX, posY);
+    local oldNode = GatherLite:FindExistingNode(type, mapID, posX, posY);
     if oldNode then
-
-
         oldNode.loot = node.loot;
         oldNode.coins = node.coins;
     end
@@ -334,19 +333,33 @@ function GatherLite:leadingZeros(value)
     return value;
 end
 
-function GatherLite:showTooltip(self)
-    local node = self.node
-    local object = self.object
+function GatherLite:GetCloseNodes(type, x, y)
 
-    GameTooltip:ClearLines();
-    GameTooltip:SetOwner(self, "ANCHOR_CURSOR");
-    GameTooltip:AddLine(GatherLite:translate("node." .. object.name));
-    if self.node.type and self.node.type ~= "containers" then
-        GameTooltip:AddLine(ucfirst(self.node.type), "gray")
+    local nodes = {}
+    local frames = GFrame.usedFrames;
+
+    for index, frame in pairs(frames) do
+        if frame.type == type and GatherLite:IsNodeInRange(x, y, frame.node.posX, frame.node.posY) then
+            table.insert(nodes, frame.node);
+        end
     end
-    GameTooltipTextLeft2:SetTextColor(190, 190, 190)
 
-    local type = self.node.type
+    return nodes;
+end
+
+function GatherLite:NodeTooltip(tooltipType, node)
+
+    local object = GatherLite:GetNodeObject(node.object)
+
+    GameTooltip:AddLine(GatherLite:translate("node." .. object.name));
+
+    if node.type and node.type ~= "containers" then
+        GameTooltip:AddLine(ucfirst(node.type), "gray")
+    end
+
+    --GameTooltipTextLeft2:SetTextColor(190, 190, 190)
+
+    local type = node.type
 
     if type == "herb" then
         type = "herbalism"
@@ -354,16 +367,16 @@ function GatherLite:showTooltip(self)
 
     local lootTable = false
 
-    if self.type == "minimap" then
+    if tooltipType == "minimap" then
         lootTable = GatherLite.db.char.minimap.loot;
-    elseif self.type == "worldmap" then
+    elseif tooltipType == "worldmap" then
         lootTable = GatherLite.db.char.worldmap.loot;
     end
 
     local coins = 0;
     local lastvisit;
 
-    local existingNode = GatherLite:findExistingNode(self.node.type, self.node.mapID, self.node.posX, self.node.posY);
+    local existingNode = GatherLite:FindExistingNode(node.type, node.mapID, node.posX, node.posY);
 
     if existingNode then
         coins = existingNode.coins;
@@ -383,9 +396,17 @@ function GatherLite:showTooltip(self)
     if lastvisit then
         GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(date(nil, time(lastvisit)), "white"));
     end
+end
 
-    if coins and coins > 0 then
-        SetTooltipMoney(GameTooltip, coins)
+function GatherLite:showTooltip(self)
+    --local node = self.node
+    local nodes = GatherLite:GetCloseNodes(self.type, self.node.posX, self.node.posY)
+
+    GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT");
+    GameTooltip:ClearLines();
+
+    for index, node in ipairs(nodes) do
+        GatherLite:NodeTooltip(self.type, node)
     end
 
     GameTooltip:Show();
@@ -410,7 +431,7 @@ function GatherLite:GetNodeObject(nodeID)
 end
 
 function GatherLite:createMinimapNode(node)
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 
@@ -446,7 +467,7 @@ function GatherLite:createMinimapNode(node)
 end
 
 function GatherLite:createWorldmapNode(node)
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 
@@ -572,7 +593,7 @@ function GatherLite:SetIgnored(object, value)
 end
 
 function GatherLite:ResetMinimap()
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 
@@ -632,24 +653,31 @@ end
 
 local isLoaded = false;
 
-function GatherLite:isLoaded()
+function GatherLite:IsLoaded()
     return isLoaded;
 end
 
-function TableConcat(t1, t2)
+local function TableConcat(t1, t2)
     for i = 1, #t2 do
         t1[#t1 + 1] = t2[i]
     end
     return t1
 end
 
+function GatherLite:GetNodes()
+    local nodes = {};
+
+    nodes = TableConcat(nodes, _GatherLite.nodes["mining"])
+    nodes = TableConcat(nodes, _GatherLite.nodes["herbalism"])
+
+    return nodes
+end
+
 function GatherLite:Load()
-
-
     if GatherLite.db.global.usePredefined then
         GatherLite:print("Loading predefined database, this may cause the game to lag for a few seconds!")
 
-        _GatherLite.nodes["mining"] = TableConcat(_GatherLite.nodes["mining"], GatherLite_localOreNodes)
+        _GatherLite.nodes["mining"] = GatherLite_localOreNodes
         _GatherLite.nodes["herbalism"] = GatherLite_localHerbNodes
         _GatherLite.nodes["containers"] = GatherLite_localContainerNodes
         _GatherLite.nodes["fishing"] = GatherLite_localFishingNodes
@@ -681,7 +709,7 @@ function GatherLite:Load()
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = true;
-            GatherLiteToggle:SetPoint('BOTTOMLEFT',  20, 40);
+            GatherLiteToggle:SetPoint('BOTTOMLEFT', 20, 40);
 
             if (GatherLite.db.char.worldmap.enabled) then
                 GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
@@ -720,7 +748,7 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
     end
 
     GatherLite:debug(_GatherLite.DEBUG_P2P, "Version check from", channel, sender, message)
-    
+
     local removeVersion = Semver:Parse(message);
     if not removeVersion then
         return
@@ -773,4 +801,8 @@ function GatherLite:GetProfessionLevel(name)
     end
 
     return 0
+end
+
+function GatherLite:MapLocalize(map)
+    return HBD:GetLocalizedMap(map)
 end

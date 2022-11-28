@@ -7,6 +7,12 @@ This addon is made for World of Warcraft:Classic
 
 ### Changelog
 
+#### 6.0.4
+* Updated the database
+* Added more api function to enable other addons to use the nodes data
+* Added node clusters (Nodes close to eachother will now use the same tooltip)
+* More optimizations for faster loading and less memory usage when in use
+
 #### 6.0.0
 * Added the first pass off northrend nodes
 
@@ -15,13 +21,6 @@ This addon is made for World of Warcraft:Classic
 * Restructured the codebase
 * Updated the predefined database
 
-#### Commands
-Use /gather or /gatherlite when using these commands
-
-Command | Arguments | description
----:| --- | ---|
-debugging | | Toggle debugging mode on or off
-Usage example **/gatherlite debugging**
 
 ### INSTALLATION
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "GathererLite" directory is a subdirectory of the "AddOns" directory.

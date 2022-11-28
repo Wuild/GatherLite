@@ -245,7 +245,7 @@ local threadIcon = coroutine.create(minimapIconThread)
 
 function GatherLiteTracker:Minimap(timeDelta, force)
 
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 
@@ -307,7 +307,7 @@ end
 
 function GatherLiteTracker:Worldmap()
 
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 
@@ -345,7 +345,7 @@ function GatherLiteTracker:Worldmap()
 end
 
 function GatherLiteTracker:OnUpdate(timeDelta)
-    if not GatherLite:isLoaded() then
+    if not GatherLite:IsLoaded() then
         return
     end
 

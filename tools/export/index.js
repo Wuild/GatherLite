@@ -5,6 +5,7 @@ const path = require("path");
 const jsdom = require("jsdom");
 const {VirtualConsole} = require("jsdom");
 const {JSDOM} = jsdom;
+const _ = require("lodash");
 
 const {CheckIDS, ConvertMapID2UIMapID, MapID2Instance} = require("./lib/zones")
 const {Objects2Lua} = require("./lib/lua");
@@ -15,23 +16,55 @@ const expansions = {
     "wotlk": require("./data/wotlk")
 };
 
+function IsNodeInRange(x, y, nodeX, nodeY) {
+
+    let a = new Three.Vector2(x, y);
+    let distance = a.distanceTo(new Three.Vector2(nodeX, nodeY));
+
+    // console.log(distance)
+
+    return distance < 0.0065
+
+    // let distance = ((((x - nodeX) ^ 2) + ((y - nodeY) ^ 2)) ^ 0.5);
+    // return distance < 0.01
+}
+
+function findExistingNode(list, type, mapID, x, y) {
+
+    let nodes = _.filter(list, function (node) {
+        return node.mapID === mapID && type === node.type;
+    });
+
+    for (let i = 0; i < nodes.length; i++) {
+        let node = nodes[i];
+        if (IsNodeInRange(x, y, node.posX, node.posY)) {
+            console.log("node is to close")
+            return true;
+        }
+    }
+    return false;
+}
+
 function node(type, object, incoming) {
     let data = [];
     for (let id in incoming) {
         if (incoming[id][0])
             for (let coord in incoming[id][0]["coords"]) {
                 let mapId = ConvertMapID2UIMapID(id);
+                let x = parseFloat((incoming[id][0]["coords"][coord][0] / 100).toFixed(3));
+                let y = parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3));
+                let objectID = CheckIDS(object);
 
-                if (mapId)
+                if (mapId && !findExistingNode(data, type, mapId, x, y))
                     data.push({
                         type: type,
-                        object: CheckIDS(object),
+                        object: objectID,
                         predefined: true,
                         loot: [],
                         coins: "0",
                         mapID: mapId,
-                        posX: parseFloat((incoming[id][0]["coords"][coord][0] / 100).toFixed(3)),
-                        posY: parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3)),
+                        posX: x,
+                        posY: y,
                         instance: MapID2Instance(id)
                     });
 
@@ -51,8 +84,8 @@ function GetData(exp, data, type, site = "wowhead") {
             switch (site) {
                 default:
                     // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
-                    // url = `https://wotlkdb.com/object=${data[i]}`;
-                    url = `https://www.wowhead.com/wotlk/object=${data[i]}`;
+                    url = `https://wotlkdb.com/?object=${data[i]}`;
+                    // url = `https://www.wowhead.com/wotlk/object=${data[i]}`;
                     break;
 
                 case "twinstar":

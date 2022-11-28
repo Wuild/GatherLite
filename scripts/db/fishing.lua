@@ -1411,23 +1411,11 @@ GatherLite_localFishingNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 1424,
-		["posX"] = 0.507,
-		["posY"] = 0.624,
-		["instance"] = 0,
-	},
-	[118] = {
-		["type"] = "fishing",
-		["object"] = 180657,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1424,
 		["posX"] = 0.401,
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[119] = {
+	[118] = {
 		["type"] = "fishing",
 		["object"] = 180657,
 		["predefined"] = True,
@@ -1439,7 +1427,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[120] = {
+	[119] = {
 		["type"] = "fishing",
 		["object"] = 180657,
 		["predefined"] = True,
@@ -1451,7 +1439,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.739,
 		["instance"] = 0,
 	},
-	[121] = {
+	[120] = {
 		["type"] = "fishing",
 		["object"] = 180657,
 		["predefined"] = True,
@@ -1463,7 +1451,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.632,
 		["instance"] = 0,
 	},
-	[122] = {
+	[121] = {
 		["type"] = "fishing",
 		["object"] = 180657,
 		["predefined"] = True,
@@ -1475,7 +1463,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.378,
 		["instance"] = 1,
 	},
-	[123] = {
+	[122] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1487,7 +1475,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.701,
 		["instance"] = 1,
 	},
-	[124] = {
+	[123] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1499,7 +1487,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.644,
 		["instance"] = 1,
 	},
-	[125] = {
+	[124] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1511,7 +1499,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.398,
 		["instance"] = 1,
 	},
-	[126] = {
+	[125] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1523,7 +1511,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.342,
 		["instance"] = 1,
 	},
-	[127] = {
+	[126] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1535,7 +1523,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.372,
 		["instance"] = 1,
 	},
-	[128] = {
+	[127] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1547,7 +1535,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.324,
 		["instance"] = 1,
 	},
-	[129] = {
+	[128] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1559,7 +1547,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.508,
 		["instance"] = 1,
 	},
-	[130] = {
+	[129] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1571,7 +1559,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.525,
 		["instance"] = 1,
 	},
-	[131] = {
+	[130] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1583,7 +1571,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.404,
 		["instance"] = 1,
 	},
-	[132] = {
+	[131] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1595,7 +1583,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.51,
 		["instance"] = 1,
 	},
-	[133] = {
+	[132] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1607,7 +1595,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.402,
 		["instance"] = 1,
 	},
-	[134] = {
+	[133] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1619,7 +1607,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.435,
 		["instance"] = 1,
 	},
-	[135] = {
+	[134] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1631,7 +1619,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[136] = {
+	[135] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1643,7 +1631,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[137] = {
+	[136] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1655,19 +1643,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.538,
 		["instance"] = 1,
 	},
-	[138] = {
-		["type"] = "fishing",
-		["object"] = 180752,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1444,
-		["posX"] = 0.44,
-		["posY"] = 0.401,
-		["instance"] = 1,
-	},
-	[139] = {
+	[137] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1679,7 +1655,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[140] = {
+	[138] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1691,7 +1667,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.465,
 		["instance"] = 1,
 	},
-	[141] = {
+	[139] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1703,7 +1679,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.535,
 		["instance"] = 1,
 	},
-	[142] = {
+	[140] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1715,7 +1691,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.451,
 		["instance"] = 1,
 	},
-	[143] = {
+	[141] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1727,7 +1703,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.257,
 		["instance"] = 1,
 	},
-	[144] = {
+	[142] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1739,7 +1715,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.234,
 		["instance"] = 1,
 	},
-	[145] = {
+	[143] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1751,7 +1727,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.194,
 		["instance"] = 1,
 	},
-	[146] = {
+	[144] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1763,7 +1739,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.562,
 		["instance"] = 1,
 	},
-	[147] = {
+	[145] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1775,7 +1751,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.23,
 		["instance"] = 1,
 	},
-	[148] = {
+	[146] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1787,7 +1763,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.249,
 		["instance"] = 1,
 	},
-	[149] = {
+	[147] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1799,7 +1775,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.182,
 		["instance"] = 1,
 	},
-	[150] = {
+	[148] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1811,7 +1787,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.395,
 		["instance"] = 1,
 	},
-	[151] = {
+	[149] = {
 		["type"] = "fishing",
 		["object"] = 180752,
 		["predefined"] = True,
@@ -1823,19 +1799,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.442,
 		["instance"] = 1,
 	},
-	[152] = {
-		["type"] = "fishing",
-		["object"] = 180752,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1446,
-		["posX"] = 0.727,
-		["posY"] = 0.439,
-		["instance"] = 1,
-	},
-	[153] = {
+	[150] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1847,7 +1811,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.594,
 		["instance"] = 1,
 	},
-	[154] = {
+	[151] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1859,7 +1823,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.408,
 		["instance"] = 1,
 	},
-	[155] = {
+	[152] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1871,7 +1835,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.531,
 		["instance"] = 1,
 	},
-	[156] = {
+	[153] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1883,7 +1847,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.465,
 		["instance"] = 1,
 	},
-	[157] = {
+	[154] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1895,7 +1859,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.401,
 		["instance"] = 1,
 	},
-	[158] = {
+	[155] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1907,7 +1871,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.493,
 		["instance"] = 1,
 	},
-	[159] = {
+	[156] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1919,7 +1883,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.363,
 		["instance"] = 1,
 	},
-	[160] = {
+	[157] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1931,7 +1895,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.435,
 		["instance"] = 1,
 	},
-	[161] = {
+	[158] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1943,7 +1907,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.338,
 		["instance"] = 1,
 	},
-	[162] = {
+	[159] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1955,7 +1919,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.402,
 		["instance"] = 1,
 	},
-	[163] = {
+	[160] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1967,7 +1931,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.324,
 		["instance"] = 1,
 	},
-	[164] = {
+	[161] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -1979,19 +1943,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.508,
 		["instance"] = 1,
 	},
-	[165] = {
-		["type"] = "fishing",
-		["object"] = 180750,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1444,
-		["posX"] = 0.443,
-		["posY"] = 0.404,
-		["instance"] = 1,
-	},
-	[166] = {
+	[162] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2003,7 +1955,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.525,
 		["instance"] = 1,
 	},
-	[167] = {
+	[163] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2015,7 +1967,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.451,
 		["instance"] = 1,
 	},
-	[168] = {
+	[164] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2027,7 +1979,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.398,
 		["instance"] = 1,
 	},
-	[169] = {
+	[165] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2039,7 +1991,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.353,
 		["instance"] = 1,
 	},
-	[170] = {
+	[166] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2051,7 +2003,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.342,
 		["instance"] = 1,
 	},
-	[171] = {
+	[167] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2063,7 +2015,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.538,
 		["instance"] = 1,
 	},
-	[172] = {
+	[168] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2075,7 +2027,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.523,
 		["instance"] = 1,
 	},
-	[173] = {
+	[169] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2087,7 +2039,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.182,
 		["instance"] = 1,
 	},
-	[174] = {
+	[170] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2099,7 +2051,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.514,
 		["instance"] = 1,
 	},
-	[175] = {
+	[171] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2111,7 +2063,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.357,
 		["instance"] = 1,
 	},
-	[176] = {
+	[172] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2123,7 +2075,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.249,
 		["instance"] = 1,
 	},
-	[177] = {
+	[173] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2135,7 +2087,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.295,
 		["instance"] = 1,
 	},
-	[178] = {
+	[174] = {
 		["type"] = "fishing",
 		["object"] = 180750,
 		["predefined"] = True,
@@ -2147,7 +2099,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.194,
 		["instance"] = 1,
 	},
-	[179] = {
+	[175] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2159,7 +2111,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 0,
 	},
-	[180] = {
+	[176] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2171,7 +2123,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.39,
 		["instance"] = 0,
 	},
-	[181] = {
+	[177] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2183,7 +2135,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.806,
 		["instance"] = 0,
 	},
-	[182] = {
+	[178] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2195,7 +2147,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.747,
 		["instance"] = 0,
 	},
-	[183] = {
+	[179] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2207,7 +2159,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.583,
 		["instance"] = 0,
 	},
-	[184] = {
+	[180] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2219,7 +2171,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.631,
 		["instance"] = 0,
 	},
-	[185] = {
+	[181] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2231,7 +2183,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.488,
 		["instance"] = 0,
 	},
-	[186] = {
+	[182] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2243,7 +2195,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.511,
 		["instance"] = 0,
 	},
-	[187] = {
+	[183] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2255,7 +2207,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.499,
 		["instance"] = 0,
 	},
-	[188] = {
+	[184] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2267,7 +2219,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.654,
 		["instance"] = 0,
 	},
-	[189] = {
+	[185] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2279,7 +2231,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.409,
 		["instance"] = 0,
 	},
-	[190] = {
+	[186] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2291,7 +2243,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.466,
 		["instance"] = 0,
 	},
-	[191] = {
+	[187] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2303,7 +2255,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.741,
 		["instance"] = 0,
 	},
-	[192] = {
+	[188] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2315,7 +2267,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.82,
 		["instance"] = 0,
 	},
-	[193] = {
+	[189] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2327,7 +2279,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.747,
 		["instance"] = 0,
 	},
-	[194] = {
+	[190] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2339,7 +2291,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.486,
 		["instance"] = 0,
 	},
-	[195] = {
+	[191] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2351,7 +2303,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.614,
 		["instance"] = 0,
 	},
-	[196] = {
+	[192] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2363,7 +2315,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.836,
 		["instance"] = 0,
 	},
-	[197] = {
+	[193] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2375,7 +2327,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.78,
 		["instance"] = 0,
 	},
-	[198] = {
+	[194] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2387,7 +2339,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.832,
 		["instance"] = 0,
 	},
-	[199] = {
+	[195] = {
 		["type"] = "fishing",
 		["object"] = 180900,
 		["predefined"] = True,
@@ -2399,7 +2351,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.825,
 		["instance"] = 0,
 	},
-	[200] = {
+	[196] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2411,7 +2363,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.292,
 		["instance"] = 1,
 	},
-	[201] = {
+	[197] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2423,7 +2375,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.141,
 		["instance"] = 1,
 	},
-	[202] = {
+	[198] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2435,7 +2387,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.258,
 		["instance"] = 1,
 	},
-	[203] = {
+	[199] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2447,7 +2399,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 1,
 	},
-	[204] = {
+	[200] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2459,7 +2411,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.189,
 		["instance"] = 1,
 	},
-	[205] = {
+	[201] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2471,7 +2423,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.239,
 		["instance"] = 1,
 	},
-	[206] = {
+	[202] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2483,7 +2435,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.275,
 		["instance"] = 1,
 	},
-	[207] = {
+	[203] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2495,7 +2447,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 1,
 	},
-	[208] = {
+	[204] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2507,7 +2459,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.143,
 		["instance"] = 1,
 	},
-	[209] = {
+	[205] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2519,7 +2471,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.578,
 		["instance"] = 1,
 	},
-	[210] = {
+	[206] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2531,7 +2483,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.561,
 		["instance"] = 1,
 	},
-	[211] = {
+	[207] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2543,7 +2495,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.569,
 		["instance"] = 1,
 	},
-	[212] = {
+	[208] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2555,7 +2507,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.127,
 		["instance"] = 0,
 	},
-	[213] = {
+	[209] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2567,7 +2519,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.226,
 		["instance"] = 0,
 	},
-	[214] = {
+	[210] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2579,7 +2531,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.199,
 		["instance"] = 0,
 	},
-	[215] = {
+	[211] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2591,7 +2543,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.214,
 		["instance"] = 0,
 	},
-	[216] = {
+	[212] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2603,7 +2555,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.198,
 		["instance"] = 0,
 	},
-	[217] = {
+	[213] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2615,7 +2567,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.243,
 		["instance"] = 0,
 	},
-	[218] = {
+	[214] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2627,7 +2579,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.256,
 		["instance"] = 0,
 	},
-	[219] = {
+	[215] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2639,7 +2591,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.203,
 		["instance"] = 0,
 	},
-	[220] = {
+	[216] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2651,7 +2603,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.196,
 		["instance"] = 0,
 	},
-	[221] = {
+	[217] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2663,7 +2615,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.211,
 		["instance"] = 0,
 	},
-	[222] = {
+	[218] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2675,7 +2627,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.168,
 		["instance"] = 0,
 	},
-	[223] = {
+	[219] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2687,7 +2639,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.149,
 		["instance"] = 0,
 	},
-	[224] = {
+	[220] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2699,7 +2651,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.184,
 		["instance"] = 0,
 	},
-	[225] = {
+	[221] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2711,7 +2663,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 0,
 	},
-	[226] = {
+	[222] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2723,7 +2675,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.315,
 		["instance"] = 0,
 	},
-	[227] = {
+	[223] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2735,7 +2687,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.19,
 		["instance"] = 0,
 	},
-	[228] = {
+	[224] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2747,7 +2699,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.186,
 		["instance"] = 0,
 	},
-	[229] = {
+	[225] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2759,7 +2711,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.796,
 		["instance"] = 1,
 	},
-	[230] = {
+	[226] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2771,7 +2723,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 1,
 	},
-	[231] = {
+	[227] = {
 		["type"] = "fishing",
 		["object"] = 180682,
 		["predefined"] = True,
@@ -2783,7 +2735,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 1,
 	},
-	[232] = {
+	[228] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2795,7 +2747,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.566,
 		["instance"] = 0,
 	},
-	[233] = {
+	[229] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2807,7 +2759,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.194,
 		["instance"] = 0,
 	},
-	[234] = {
+	[230] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2819,7 +2771,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.63,
 		["instance"] = 0,
 	},
-	[235] = {
+	[231] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2831,7 +2783,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.19,
 		["instance"] = 0,
 	},
-	[236] = {
+	[232] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2843,7 +2795,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[237] = {
+	[233] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2855,7 +2807,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 0,
 	},
-	[238] = {
+	[234] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2867,7 +2819,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.275,
 		["instance"] = 0,
 	},
-	[239] = {
+	[235] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2879,7 +2831,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.615,
 		["instance"] = 0,
 	},
-	[240] = {
+	[236] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2891,7 +2843,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.316,
 		["instance"] = 0,
 	},
-	[241] = {
+	[237] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2903,7 +2855,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.262,
 		["instance"] = 0,
 	},
-	[242] = {
+	[238] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2915,7 +2867,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.567,
 		["instance"] = 0,
 	},
-	[243] = {
+	[239] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2927,7 +2879,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.626,
 		["instance"] = 0,
 	},
-	[244] = {
+	[240] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2939,7 +2891,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.545,
 		["instance"] = 0,
 	},
-	[245] = {
+	[241] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2951,7 +2903,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.631,
 		["instance"] = 0,
 	},
-	[246] = {
+	[242] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2963,7 +2915,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.208,
 		["instance"] = 0,
 	},
-	[247] = {
+	[243] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2975,7 +2927,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.202,
 		["instance"] = 0,
 	},
-	[248] = {
+	[244] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2987,7 +2939,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.113,
 		["instance"] = 0,
 	},
-	[249] = {
+	[245] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -2999,7 +2951,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[250] = {
+	[246] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3011,7 +2963,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.173,
 		["instance"] = 0,
 	},
-	[251] = {
+	[247] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3023,7 +2975,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.438,
 		["instance"] = 0,
 	},
-	[252] = {
+	[248] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3035,7 +2987,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.584,
 		["instance"] = 0,
 	},
-	[253] = {
+	[249] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3047,7 +2999,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.335,
 		["instance"] = 0,
 	},
-	[254] = {
+	[250] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3059,7 +3011,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.361,
 		["instance"] = 0,
 	},
-	[255] = {
+	[251] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3071,7 +3023,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.124,
 		["instance"] = 0,
 	},
-	[256] = {
+	[252] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3083,7 +3035,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.632,
 		["instance"] = 0,
 	},
-	[257] = {
+	[253] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3095,7 +3047,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.624,
 		["instance"] = 0,
 	},
-	[258] = {
+	[254] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3107,7 +3059,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 0,
 	},
-	[259] = {
+	[255] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3119,7 +3071,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[260] = {
+	[256] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3131,7 +3083,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.652,
 		["instance"] = 0,
 	},
-	[261] = {
+	[257] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3143,7 +3095,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.739,
 		["instance"] = 0,
 	},
-	[262] = {
+	[258] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3155,7 +3107,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.683,
 		["instance"] = 0,
 	},
-	[263] = {
+	[259] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3167,7 +3119,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[264] = {
+	[260] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3179,7 +3131,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[265] = {
+	[261] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3191,7 +3143,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[266] = {
+	[262] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3203,7 +3155,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.649,
 		["instance"] = 0,
 	},
-	[267] = {
+	[263] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3215,7 +3167,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[268] = {
+	[264] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3227,7 +3179,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[269] = {
+	[265] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3239,7 +3191,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.78,
 		["instance"] = 0,
 	},
-	[270] = {
+	[266] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3251,7 +3203,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.833,
 		["instance"] = 0,
 	},
-	[271] = {
+	[267] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3263,7 +3215,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.75,
 		["instance"] = 0,
 	},
-	[272] = {
+	[268] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3275,7 +3227,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.799,
 		["instance"] = 0,
 	},
-	[273] = {
+	[269] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3287,7 +3239,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.857,
 		["instance"] = 0,
 	},
-	[274] = {
+	[270] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3299,19 +3251,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.688,
 		["instance"] = 0,
 	},
-	[275] = {
-		["type"] = "fishing",
-		["object"] = 180664,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1424,
-		["posX"] = 0.511,
-		["posY"] = 0.625,
-		["instance"] = 0,
-	},
-	[276] = {
+	[271] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3323,7 +3263,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.879,
 		["instance"] = 0,
 	},
-	[277] = {
+	[272] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3335,7 +3275,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.608,
 		["instance"] = 0,
 	},
-	[278] = {
+	[273] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3347,7 +3287,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.7,
 		["instance"] = 0,
 	},
-	[279] = {
+	[274] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3359,7 +3299,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.674,
 		["instance"] = 0,
 	},
-	[280] = {
+	[275] = {
 		["type"] = "fishing",
 		["object"] = 180664,
 		["predefined"] = True,
@@ -3371,7 +3311,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.378,
 		["instance"] = 1,
 	},
-	[281] = {
+	[276] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3383,7 +3323,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.457,
 		["instance"] = 1,
 	},
-	[282] = {
+	[277] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3395,7 +3335,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.477,
 		["instance"] = 1,
 	},
-	[283] = {
+	[278] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3407,7 +3347,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.38,
 		["instance"] = 1,
 	},
-	[284] = {
+	[279] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3419,7 +3359,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.368,
 		["instance"] = 1,
 	},
-	[285] = {
+	[280] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3431,7 +3371,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.528,
 		["instance"] = 1,
 	},
-	[286] = {
+	[281] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3443,31 +3383,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.388,
 		["instance"] = 1,
 	},
-	[287] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.648,
-		["posY"] = 0.473,
-		["instance"] = 1,
-	},
-	[288] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.532,
-		["instance"] = 1,
-	},
-	[289] = {
+	[282] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3479,7 +3395,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.501,
 		["instance"] = 1,
 	},
-	[290] = {
+	[283] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3491,7 +3407,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[291] = {
+	[284] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3503,7 +3419,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.387,
 		["instance"] = 1,
 	},
-	[292] = {
+	[285] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3515,31 +3431,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.434,
 		["instance"] = 1,
 	},
-	[293] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.385,
-		["instance"] = 1,
-	},
-	[294] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.63,
-		["posY"] = 0.524,
-		["instance"] = 1,
-	},
-	[295] = {
+	[286] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3551,7 +3443,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.362,
 		["instance"] = 1,
 	},
-	[296] = {
+	[287] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3563,19 +3455,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.431,
 		["instance"] = 1,
 	},
-	[297] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.634,
-		["posY"] = 0.382,
-		["instance"] = 1,
-	},
-	[298] = {
+	[288] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3587,7 +3467,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.437,
 		["instance"] = 0,
 	},
-	[299] = {
+	[289] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3599,7 +3479,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.356,
 		["instance"] = 0,
 	},
-	[300] = {
+	[290] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3611,7 +3491,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.195,
 		["instance"] = 0,
 	},
-	[301] = {
+	[291] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3623,7 +3503,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[302] = {
+	[292] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3635,7 +3515,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.344,
 		["instance"] = 0,
 	},
-	[303] = {
+	[293] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3647,7 +3527,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[304] = {
+	[294] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3659,7 +3539,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.42,
 		["instance"] = 0,
 	},
-	[305] = {
+	[295] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3671,7 +3551,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.141,
 		["instance"] = 0,
 	},
-	[306] = {
+	[296] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3683,7 +3563,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.676,
 		["instance"] = 0,
 	},
-	[307] = {
+	[297] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3695,7 +3575,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.348,
 		["instance"] = 0,
 	},
-	[308] = {
+	[298] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3707,7 +3587,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.231,
 		["instance"] = 0,
 	},
-	[309] = {
+	[299] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3719,7 +3599,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.628,
 		["instance"] = 0,
 	},
-	[310] = {
+	[300] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3731,7 +3611,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.468,
 		["instance"] = 0,
 	},
-	[311] = {
+	[301] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3743,7 +3623,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.269,
 		["instance"] = 0,
 	},
-	[312] = {
+	[302] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3755,7 +3635,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[313] = {
+	[303] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3767,7 +3647,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.389,
 		["instance"] = 0,
 	},
-	[314] = {
+	[304] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3779,7 +3659,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.369,
 		["instance"] = 0,
 	},
-	[315] = {
+	[305] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3791,7 +3671,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[316] = {
+	[306] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3803,7 +3683,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.54,
 		["instance"] = 0,
 	},
-	[317] = {
+	[307] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3815,7 +3695,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 0,
 	},
-	[318] = {
+	[308] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3827,7 +3707,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.498,
 		["instance"] = 0,
 	},
-	[319] = {
+	[309] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3839,7 +3719,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.172,
 		["instance"] = 0,
 	},
-	[320] = {
+	[310] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3851,7 +3731,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.79,
 		["instance"] = 0,
 	},
-	[321] = {
+	[311] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3863,7 +3743,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 0,
 	},
-	[322] = {
+	[312] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3875,7 +3755,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 0,
 	},
-	[323] = {
+	[313] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3887,7 +3767,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.175,
 		["instance"] = 0,
 	},
-	[324] = {
+	[314] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3899,7 +3779,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.207,
 		["instance"] = 0,
 	},
-	[325] = {
+	[315] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3911,7 +3791,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.075,
 		["instance"] = 0,
 	},
-	[326] = {
+	[316] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3923,7 +3803,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.596,
 		["instance"] = 0,
 	},
-	[327] = {
+	[317] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3935,7 +3815,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.493,
 		["instance"] = 0,
 	},
-	[328] = {
+	[318] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3947,7 +3827,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[329] = {
+	[319] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3959,7 +3839,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.661,
 		["instance"] = 0,
 	},
-	[330] = {
+	[320] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3971,7 +3851,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.345,
 		["instance"] = 0,
 	},
-	[331] = {
+	[321] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3983,7 +3863,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.715,
 		["instance"] = 0,
 	},
-	[332] = {
+	[322] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -3995,7 +3875,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.759,
 		["instance"] = 0,
 	},
-	[333] = {
+	[323] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4007,7 +3887,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[334] = {
+	[324] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4019,7 +3899,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.332,
 		["instance"] = 0,
 	},
-	[335] = {
+	[325] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4031,7 +3911,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.241,
 		["instance"] = 0,
 	},
-	[336] = {
+	[326] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4043,7 +3923,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.358,
 		["instance"] = 0,
 	},
-	[337] = {
+	[327] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4055,7 +3935,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[338] = {
+	[328] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4067,7 +3947,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.338,
 		["instance"] = 0,
 	},
-	[339] = {
+	[329] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4079,7 +3959,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.346,
 		["instance"] = 0,
 	},
-	[340] = {
+	[330] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4091,7 +3971,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.379,
 		["instance"] = 0,
 	},
-	[341] = {
+	[331] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4103,7 +3983,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 1,
 	},
-	[342] = {
+	[332] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4115,7 +3995,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.562,
 		["instance"] = 1,
 	},
-	[343] = {
+	[333] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4127,7 +4007,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.827,
 		["instance"] = 1,
 	},
-	[344] = {
+	[334] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4139,7 +4019,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.741,
 		["instance"] = 1,
 	},
-	[345] = {
+	[335] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4151,7 +4031,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 1,
 	},
-	[346] = {
+	[336] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4163,7 +4043,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.417,
 		["instance"] = 1,
 	},
-	[347] = {
+	[337] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4175,7 +4055,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.361,
 		["instance"] = 1,
 	},
-	[348] = {
+	[338] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4187,7 +4067,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[349] = {
+	[339] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4199,7 +4079,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.31,
 		["instance"] = 1,
 	},
-	[350] = {
+	[340] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4211,7 +4091,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[351] = {
+	[341] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4223,7 +4103,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.236,
 		["instance"] = 1,
 	},
-	[352] = {
+	[342] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4235,7 +4115,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.203,
 		["instance"] = 1,
 	},
-	[353] = {
+	[343] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4247,7 +4127,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.467,
 		["instance"] = 1,
 	},
-	[354] = {
+	[344] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4259,7 +4139,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.413,
 		["instance"] = 1,
 	},
-	[355] = {
+	[345] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4269,6 +4149,126 @@ GatherLite_localFishingNodes = {
 		["mapID"] = 1439,
 		["posX"] = 0.347,
 		["posY"] = 0.435,
+		["instance"] = 1,
+	},
+	[346] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.359,
+		["posY"] = 0.598,
+		["instance"] = 1,
+	},
+	[347] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.362,
+		["posY"] = 0.642,
+		["instance"] = 1,
+	},
+	[348] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.366,
+		["posY"] = 0.674,
+		["instance"] = 1,
+	},
+	[349] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.358,
+		["posY"] = 0.77,
+		["instance"] = 1,
+	},
+	[350] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.342,
+		["posY"] = 0.8,
+		["instance"] = 1,
+	},
+	[351] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.315,
+		["posY"] = 0.419,
+		["instance"] = 1,
+	},
+	[352] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.345,
+		["posY"] = 0.423,
+		["instance"] = 1,
+	},
+	[353] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.365,
+		["posY"] = 0.571,
+		["instance"] = 1,
+	},
+	[354] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.35,
+		["posY"] = 0.716,
+		["instance"] = 1,
+	},
+	[355] = {
+		["type"] = "fishing",
+		["object"] = 180582,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 1439,
+		["posX"] = 0.319,
+		["posY"] = 0.824,
 		["instance"] = 1,
 	},
 	[356] = {
@@ -4280,130 +4280,10 @@ GatherLite_localFishingNodes = {
 		["coins"] = 0,
 		["mapID"] = 1439,
 		["posX"] = 0.359,
-		["posY"] = 0.598,
-		["instance"] = 1,
-	},
-	[357] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.362,
-		["posY"] = 0.642,
-		["instance"] = 1,
-	},
-	[358] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.366,
-		["posY"] = 0.674,
-		["instance"] = 1,
-	},
-	[359] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.358,
-		["posY"] = 0.77,
-		["instance"] = 1,
-	},
-	[360] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.342,
-		["posY"] = 0.8,
-		["instance"] = 1,
-	},
-	[361] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.315,
-		["posY"] = 0.419,
-		["instance"] = 1,
-	},
-	[362] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.345,
-		["posY"] = 0.423,
-		["instance"] = 1,
-	},
-	[363] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.365,
-		["posY"] = 0.571,
-		["instance"] = 1,
-	},
-	[364] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.35,
-		["posY"] = 0.716,
-		["instance"] = 1,
-	},
-	[365] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.319,
-		["posY"] = 0.824,
-		["instance"] = 1,
-	},
-	[366] = {
-		["type"] = "fishing",
-		["object"] = 180582,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1439,
-		["posX"] = 0.359,
 		["posY"] = 0.515,
 		["instance"] = 1,
 	},
-	[367] = {
+	[357] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4415,7 +4295,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.819,
 		["instance"] = 1,
 	},
-	[368] = {
+	[358] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4427,7 +4307,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.838,
 		["instance"] = 1,
 	},
-	[369] = {
+	[359] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4439,7 +4319,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[370] = {
+	[360] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4451,7 +4331,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[371] = {
+	[361] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4463,7 +4343,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.619,
 		["instance"] = 1,
 	},
-	[372] = {
+	[362] = {
 		["type"] = "fishing",
 		["object"] = 180582,
 		["predefined"] = True,
@@ -4475,7 +4355,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.87,
 		["instance"] = "nil",
 	},
-	[373] = {
+	[363] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4487,7 +4367,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.457,
 		["instance"] = 1,
 	},
-	[374] = {
+	[364] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4499,7 +4379,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.528,
 		["instance"] = 1,
 	},
-	[375] = {
+	[365] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4511,7 +4391,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.388,
 		["instance"] = 1,
 	},
-	[376] = {
+	[366] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4523,7 +4403,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.501,
 		["instance"] = 1,
 	},
-	[377] = {
+	[367] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4535,7 +4415,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[378] = {
+	[368] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4547,7 +4427,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.477,
 		["instance"] = 1,
 	},
-	[379] = {
+	[369] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4559,7 +4439,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.38,
 		["instance"] = 1,
 	},
-	[380] = {
+	[370] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4571,31 +4451,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.368,
 		["instance"] = 1,
 	},
-	[381] = {
-		["type"] = "fishing",
-		["object"] = 180656,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.648,
-		["posY"] = 0.473,
-		["instance"] = 1,
-	},
-	[382] = {
-		["type"] = "fishing",
-		["object"] = 180656,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.532,
-		["instance"] = 1,
-	},
-	[383] = {
+	[371] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4607,7 +4463,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.387,
 		["instance"] = 1,
 	},
-	[384] = {
+	[372] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4619,31 +4475,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.434,
 		["instance"] = 1,
 	},
-	[385] = {
-		["type"] = "fishing",
-		["object"] = 180656,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.385,
-		["instance"] = 1,
-	},
-	[386] = {
-		["type"] = "fishing",
-		["object"] = 180656,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.63,
-		["posY"] = 0.524,
-		["instance"] = 1,
-	},
-	[387] = {
+	[373] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4655,7 +4487,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.362,
 		["instance"] = 1,
 	},
-	[388] = {
+	[374] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4667,19 +4499,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.431,
 		["instance"] = 1,
 	},
-	[389] = {
-		["type"] = "fishing",
-		["object"] = 180656,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.634,
-		["posY"] = 0.382,
-		["instance"] = 1,
-	},
-	[390] = {
+	[375] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4691,7 +4511,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.437,
 		["instance"] = 0,
 	},
-	[391] = {
+	[376] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4703,7 +4523,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.356,
 		["instance"] = 0,
 	},
-	[392] = {
+	[377] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4715,7 +4535,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.195,
 		["instance"] = 0,
 	},
-	[393] = {
+	[378] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4727,7 +4547,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[394] = {
+	[379] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4739,7 +4559,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.344,
 		["instance"] = 0,
 	},
-	[395] = {
+	[380] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4751,7 +4571,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[396] = {
+	[381] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4763,7 +4583,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.42,
 		["instance"] = 0,
 	},
-	[397] = {
+	[382] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4775,7 +4595,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.676,
 		["instance"] = 0,
 	},
-	[398] = {
+	[383] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4787,7 +4607,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.348,
 		["instance"] = 0,
 	},
-	[399] = {
+	[384] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4799,7 +4619,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.231,
 		["instance"] = 0,
 	},
-	[400] = {
+	[385] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4811,7 +4631,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.628,
 		["instance"] = 0,
 	},
-	[401] = {
+	[386] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4823,7 +4643,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.468,
 		["instance"] = 0,
 	},
-	[402] = {
+	[387] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4835,7 +4655,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.269,
 		["instance"] = 0,
 	},
-	[403] = {
+	[388] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4847,7 +4667,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[404] = {
+	[389] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4859,7 +4679,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.389,
 		["instance"] = 0,
 	},
-	[405] = {
+	[390] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4871,7 +4691,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.369,
 		["instance"] = 0,
 	},
-	[406] = {
+	[391] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4883,7 +4703,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[407] = {
+	[392] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4895,7 +4715,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.141,
 		["instance"] = 0,
 	},
-	[408] = {
+	[393] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4907,7 +4727,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 0,
 	},
-	[409] = {
+	[394] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4919,7 +4739,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.498,
 		["instance"] = 0,
 	},
-	[410] = {
+	[395] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4931,7 +4751,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.54,
 		["instance"] = 0,
 	},
-	[411] = {
+	[396] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4943,7 +4763,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.596,
 		["instance"] = 0,
 	},
-	[412] = {
+	[397] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4955,7 +4775,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.172,
 		["instance"] = 0,
 	},
-	[413] = {
+	[398] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4967,7 +4787,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.79,
 		["instance"] = 0,
 	},
-	[414] = {
+	[399] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4979,7 +4799,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.493,
 		["instance"] = 0,
 	},
-	[415] = {
+	[400] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -4991,7 +4811,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 0,
 	},
-	[416] = {
+	[401] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5003,7 +4823,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 0,
 	},
-	[417] = {
+	[402] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5015,7 +4835,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.175,
 		["instance"] = 0,
 	},
-	[418] = {
+	[403] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5027,7 +4847,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.207,
 		["instance"] = 0,
 	},
-	[419] = {
+	[404] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5039,7 +4859,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.075,
 		["instance"] = 0,
 	},
-	[420] = {
+	[405] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5051,7 +4871,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[421] = {
+	[406] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5063,7 +4883,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.661,
 		["instance"] = 0,
 	},
-	[422] = {
+	[407] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5075,7 +4895,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.338,
 		["instance"] = 0,
 	},
-	[423] = {
+	[408] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5087,7 +4907,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[424] = {
+	[409] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5099,7 +4919,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.358,
 		["instance"] = 0,
 	},
-	[425] = {
+	[410] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5111,7 +4931,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.346,
 		["instance"] = 0,
 	},
-	[426] = {
+	[411] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5123,7 +4943,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.379,
 		["instance"] = 0,
 	},
-	[427] = {
+	[412] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5135,7 +4955,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.345,
 		["instance"] = 0,
 	},
-	[428] = {
+	[413] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5147,7 +4967,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.759,
 		["instance"] = 0,
 	},
-	[429] = {
+	[414] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5159,7 +4979,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.715,
 		["instance"] = 0,
 	},
-	[430] = {
+	[415] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5171,7 +4991,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[431] = {
+	[416] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5183,7 +5003,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.332,
 		["instance"] = 0,
 	},
-	[432] = {
+	[417] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5195,7 +5015,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.241,
 		["instance"] = 0,
 	},
-	[433] = {
+	[418] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5207,7 +5027,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 1,
 	},
-	[434] = {
+	[419] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5219,7 +5039,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.562,
 		["instance"] = 1,
 	},
-	[435] = {
+	[420] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5231,7 +5051,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.827,
 		["instance"] = 1,
 	},
-	[436] = {
+	[421] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5243,7 +5063,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.741,
 		["instance"] = 1,
 	},
-	[437] = {
+	[422] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5255,7 +5075,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 1,
 	},
-	[438] = {
+	[423] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5267,7 +5087,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.515,
 		["instance"] = 1,
 	},
-	[439] = {
+	[424] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5279,7 +5099,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.417,
 		["instance"] = 1,
 	},
-	[440] = {
+	[425] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5291,7 +5111,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.361,
 		["instance"] = 1,
 	},
-	[441] = {
+	[426] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5303,7 +5123,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[442] = {
+	[427] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5315,7 +5135,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[443] = {
+	[428] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5327,7 +5147,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.31,
 		["instance"] = 1,
 	},
-	[444] = {
+	[429] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5339,7 +5159,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[445] = {
+	[430] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5351,7 +5171,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.236,
 		["instance"] = 1,
 	},
-	[446] = {
+	[431] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5363,7 +5183,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.203,
 		["instance"] = 1,
 	},
-	[447] = {
+	[432] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5375,7 +5195,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.467,
 		["instance"] = 1,
 	},
-	[448] = {
+	[433] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5387,7 +5207,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.413,
 		["instance"] = 1,
 	},
-	[449] = {
+	[434] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5399,7 +5219,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.435,
 		["instance"] = 1,
 	},
-	[450] = {
+	[435] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5411,7 +5231,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.598,
 		["instance"] = 1,
 	},
-	[451] = {
+	[436] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5423,7 +5243,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.642,
 		["instance"] = 1,
 	},
-	[452] = {
+	[437] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5435,7 +5255,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.619,
 		["instance"] = 1,
 	},
-	[453] = {
+	[438] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5447,7 +5267,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.674,
 		["instance"] = 1,
 	},
-	[454] = {
+	[439] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5459,7 +5279,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.77,
 		["instance"] = 1,
 	},
-	[455] = {
+	[440] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5471,7 +5291,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.8,
 		["instance"] = 1,
 	},
-	[456] = {
+	[441] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5483,7 +5303,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.419,
 		["instance"] = 1,
 	},
-	[457] = {
+	[442] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5495,7 +5315,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 1,
 	},
-	[458] = {
+	[443] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5507,7 +5327,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.571,
 		["instance"] = 1,
 	},
-	[459] = {
+	[444] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5519,7 +5339,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.716,
 		["instance"] = 1,
 	},
-	[460] = {
+	[445] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5531,7 +5351,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.824,
 		["instance"] = 1,
 	},
-	[461] = {
+	[446] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5543,7 +5363,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.819,
 		["instance"] = 1,
 	},
-	[462] = {
+	[447] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5555,7 +5375,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.838,
 		["instance"] = 1,
 	},
-	[463] = {
+	[448] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5567,7 +5387,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[464] = {
+	[449] = {
 		["type"] = "fishing",
 		["object"] = 180656,
 		["predefined"] = True,
@@ -5579,7 +5399,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.87,
 		["instance"] = "nil",
 	},
-	[465] = {
+	[450] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5591,7 +5411,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.741,
 		["instance"] = 0,
 	},
-	[466] = {
+	[451] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5603,7 +5423,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.781,
 		["instance"] = 0,
 	},
-	[467] = {
+	[452] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5615,7 +5435,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[468] = {
+	[453] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5627,7 +5447,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.354,
 		["instance"] = 0,
 	},
-	[469] = {
+	[454] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5639,7 +5459,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.393,
 		["instance"] = 0,
 	},
-	[470] = {
+	[455] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5651,7 +5471,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.407,
 		["instance"] = 0,
 	},
-	[471] = {
+	[456] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5663,7 +5483,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.509,
 		["instance"] = 0,
 	},
-	[472] = {
+	[457] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5675,7 +5495,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.478,
 		["instance"] = 0,
 	},
-	[473] = {
+	[458] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5687,7 +5507,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.319,
 		["instance"] = 0,
 	},
-	[474] = {
+	[459] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5699,7 +5519,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.341,
 		["instance"] = 0,
 	},
-	[475] = {
+	[460] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5711,7 +5531,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.204,
 		["instance"] = 0,
 	},
-	[476] = {
+	[461] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5723,7 +5543,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[477] = {
+	[462] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5735,7 +5555,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[478] = {
+	[463] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5747,7 +5567,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.263,
 		["instance"] = 0,
 	},
-	[479] = {
+	[464] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5759,7 +5579,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.425,
 		["instance"] = 0,
 	},
-	[480] = {
+	[465] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5771,7 +5591,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.322,
 		["instance"] = 0,
 	},
-	[481] = {
+	[466] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5783,7 +5603,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.566,
 		["instance"] = 0,
 	},
-	[482] = {
+	[467] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5795,7 +5615,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.563,
 		["instance"] = 1,
 	},
-	[483] = {
+	[468] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5807,7 +5627,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.464,
 		["instance"] = 1,
 	},
-	[484] = {
+	[469] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5819,7 +5639,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.535,
 		["instance"] = 1,
 	},
-	[485] = {
+	[470] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5831,7 +5651,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.497,
 		["instance"] = 1,
 	},
-	[486] = {
+	[471] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5843,7 +5663,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.703,
 		["instance"] = 1,
 	},
-	[487] = {
+	[472] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5855,7 +5675,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.543,
 		["instance"] = 1,
 	},
-	[488] = {
+	[473] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5867,7 +5687,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.667,
 		["instance"] = 1,
 	},
-	[489] = {
+	[474] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5879,7 +5699,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[490] = {
+	[475] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5891,7 +5711,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.685,
 		["instance"] = 1,
 	},
-	[491] = {
+	[476] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5903,7 +5723,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.456,
 		["instance"] = 1,
 	},
-	[492] = {
+	[477] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5915,7 +5735,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.525,
 		["instance"] = 1,
 	},
-	[493] = {
+	[478] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5927,7 +5747,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.69,
 		["instance"] = 1,
 	},
-	[494] = {
+	[479] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5939,7 +5759,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.693,
 		["instance"] = 1,
 	},
-	[495] = {
+	[480] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5951,19 +5771,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.463,
 		["instance"] = 1,
 	},
-	[496] = {
-		["type"] = "fishing",
-		["object"] = 180663,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1440,
-		["posX"] = 0.363,
-		["posY"] = 0.534,
-		["instance"] = 1,
-	},
-	[497] = {
+	[481] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5975,7 +5783,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.683,
 		["instance"] = 1,
 	},
-	[498] = {
+	[482] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5987,7 +5795,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.548,
 		["instance"] = 1,
 	},
-	[499] = {
+	[483] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -5999,7 +5807,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.475,
 		["instance"] = 1,
 	},
-	[500] = {
+	[484] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -6011,7 +5819,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.691,
 		["instance"] = 1,
 	},
-	[501] = {
+	[485] = {
 		["type"] = "fishing",
 		["object"] = 180663,
 		["predefined"] = True,
@@ -6023,7 +5831,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.383,
 		["instance"] = 1,
 	},
-	[502] = {
+	[486] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6035,7 +5843,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.528,
 		["instance"] = 1,
 	},
-	[503] = {
+	[487] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6047,7 +5855,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.388,
 		["instance"] = 1,
 	},
-	[504] = {
+	[488] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6059,7 +5867,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.501,
 		["instance"] = 1,
 	},
-	[505] = {
+	[489] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6071,7 +5879,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.416,
 		["instance"] = 1,
 	},
-	[506] = {
+	[490] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6083,7 +5891,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.387,
 		["instance"] = 1,
 	},
-	[507] = {
+	[491] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6095,19 +5903,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.434,
 		["instance"] = 1,
 	},
-	[508] = {
-		["type"] = "fishing",
-		["object"] = 180655,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.532,
-		["instance"] = 1,
-	},
-	[509] = {
+	[492] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6119,7 +5915,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.457,
 		["instance"] = 1,
 	},
-	[510] = {
+	[493] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6131,7 +5927,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.477,
 		["instance"] = 1,
 	},
-	[511] = {
+	[494] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6143,7 +5939,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.38,
 		["instance"] = 1,
 	},
-	[512] = {
+	[495] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6155,43 +5951,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.368,
 		["instance"] = 1,
 	},
-	[513] = {
-		["type"] = "fishing",
-		["object"] = 180655,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.648,
-		["posY"] = 0.473,
-		["instance"] = 1,
-	},
-	[514] = {
-		["type"] = "fishing",
-		["object"] = 180655,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.631,
-		["posY"] = 0.385,
-		["instance"] = 1,
-	},
-	[515] = {
-		["type"] = "fishing",
-		["object"] = 180655,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.63,
-		["posY"] = 0.524,
-		["instance"] = 1,
-	},
-	[516] = {
+	[496] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6203,7 +5963,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.362,
 		["instance"] = 1,
 	},
-	[517] = {
+	[497] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6215,19 +5975,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.431,
 		["instance"] = 1,
 	},
-	[518] = {
-		["type"] = "fishing",
-		["object"] = 180655,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1413,
-		["posX"] = 0.634,
-		["posY"] = 0.382,
-		["instance"] = 1,
-	},
-	[519] = {
+	[498] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6239,7 +5987,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.141,
 		["instance"] = 0,
 	},
-	[520] = {
+	[499] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6251,7 +5999,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.437,
 		["instance"] = 0,
 	},
-	[521] = {
+	[500] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6263,7 +6011,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.356,
 		["instance"] = 0,
 	},
-	[522] = {
+	[501] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6275,7 +6023,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.195,
 		["instance"] = 0,
 	},
-	[523] = {
+	[502] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6287,7 +6035,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[524] = {
+	[503] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6299,7 +6047,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.344,
 		["instance"] = 0,
 	},
-	[525] = {
+	[504] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6311,7 +6059,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.415,
 		["instance"] = 0,
 	},
-	[526] = {
+	[505] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6323,7 +6071,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.42,
 		["instance"] = 0,
 	},
-	[527] = {
+	[506] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6335,7 +6083,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.676,
 		["instance"] = 0,
 	},
-	[528] = {
+	[507] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6347,7 +6095,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.348,
 		["instance"] = 0,
 	},
-	[529] = {
+	[508] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6359,7 +6107,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.231,
 		["instance"] = 0,
 	},
-	[530] = {
+	[509] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6371,7 +6119,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.628,
 		["instance"] = 0,
 	},
-	[531] = {
+	[510] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6383,7 +6131,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.468,
 		["instance"] = 0,
 	},
-	[532] = {
+	[511] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6395,7 +6143,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.269,
 		["instance"] = 0,
 	},
-	[533] = {
+	[512] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6407,7 +6155,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[534] = {
+	[513] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6419,7 +6167,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.389,
 		["instance"] = 0,
 	},
-	[535] = {
+	[514] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6431,7 +6179,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.369,
 		["instance"] = 0,
 	},
-	[536] = {
+	[515] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6443,7 +6191,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.296,
 		["instance"] = 0,
 	},
-	[537] = {
+	[516] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6455,7 +6203,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.54,
 		["instance"] = 0,
 	},
-	[538] = {
+	[517] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6467,7 +6215,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 0,
 	},
-	[539] = {
+	[518] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6479,7 +6227,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.498,
 		["instance"] = 0,
 	},
-	[540] = {
+	[519] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6491,7 +6239,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.596,
 		["instance"] = 0,
 	},
-	[541] = {
+	[520] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6503,7 +6251,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.493,
 		["instance"] = 0,
 	},
-	[542] = {
+	[521] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6515,7 +6263,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.172,
 		["instance"] = 0,
 	},
-	[543] = {
+	[522] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6527,7 +6275,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.79,
 		["instance"] = 0,
 	},
-	[544] = {
+	[523] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6539,7 +6287,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 0,
 	},
-	[545] = {
+	[524] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6551,7 +6299,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 0,
 	},
-	[546] = {
+	[525] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6563,7 +6311,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.175,
 		["instance"] = 0,
 	},
-	[547] = {
+	[526] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6575,7 +6323,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.207,
 		["instance"] = 0,
 	},
-	[548] = {
+	[527] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6587,7 +6335,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.075,
 		["instance"] = 0,
 	},
-	[549] = {
+	[528] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6599,7 +6347,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[550] = {
+	[529] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6611,7 +6359,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.661,
 		["instance"] = 0,
 	},
-	[551] = {
+	[530] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6623,7 +6371,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.345,
 		["instance"] = 0,
 	},
-	[552] = {
+	[531] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6635,7 +6383,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.358,
 		["instance"] = 0,
 	},
-	[553] = {
+	[532] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6647,7 +6395,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.365,
 		["instance"] = 0,
 	},
-	[554] = {
+	[533] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6659,7 +6407,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.338,
 		["instance"] = 0,
 	},
-	[555] = {
+	[534] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6671,7 +6419,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.759,
 		["instance"] = 0,
 	},
-	[556] = {
+	[535] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6683,7 +6431,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.715,
 		["instance"] = 0,
 	},
-	[557] = {
+	[536] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6695,7 +6443,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.346,
 		["instance"] = 0,
 	},
-	[558] = {
+	[537] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6707,7 +6455,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.379,
 		["instance"] = 0,
 	},
-	[559] = {
+	[538] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6719,7 +6467,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.303,
 		["instance"] = 0,
 	},
-	[560] = {
+	[539] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6731,7 +6479,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.332,
 		["instance"] = 0,
 	},
-	[561] = {
+	[540] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6743,7 +6491,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.241,
 		["instance"] = 0,
 	},
-	[562] = {
+	[541] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6755,7 +6503,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.515,
 		["instance"] = 1,
 	},
-	[563] = {
+	[542] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6767,7 +6515,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.341,
 		["instance"] = 1,
 	},
-	[564] = {
+	[543] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6779,7 +6527,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.619,
 		["instance"] = 1,
 	},
-	[565] = {
+	[544] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6791,7 +6539,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.827,
 		["instance"] = 1,
 	},
-	[566] = {
+	[545] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6803,7 +6551,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 1,
 	},
-	[567] = {
+	[546] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6815,7 +6563,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 1,
 	},
-	[568] = {
+	[547] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6827,7 +6575,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.562,
 		["instance"] = 1,
 	},
-	[569] = {
+	[548] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6839,7 +6587,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.741,
 		["instance"] = 1,
 	},
-	[570] = {
+	[549] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6851,7 +6599,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 1,
 	},
-	[571] = {
+	[550] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6863,7 +6611,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.417,
 		["instance"] = 1,
 	},
-	[572] = {
+	[551] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6875,7 +6623,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.361,
 		["instance"] = 1,
 	},
-	[573] = {
+	[552] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6887,7 +6635,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[574] = {
+	[553] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6899,7 +6647,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.31,
 		["instance"] = 1,
 	},
-	[575] = {
+	[554] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6911,7 +6659,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.313,
 		["instance"] = 1,
 	},
-	[576] = {
+	[555] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6923,7 +6671,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.236,
 		["instance"] = 1,
 	},
-	[577] = {
+	[556] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6935,7 +6683,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.203,
 		["instance"] = 1,
 	},
-	[578] = {
+	[557] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6947,7 +6695,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.467,
 		["instance"] = 1,
 	},
-	[579] = {
+	[558] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6959,7 +6707,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.413,
 		["instance"] = 1,
 	},
-	[580] = {
+	[559] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6971,7 +6719,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.435,
 		["instance"] = 1,
 	},
-	[581] = {
+	[560] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6983,7 +6731,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.598,
 		["instance"] = 1,
 	},
-	[582] = {
+	[561] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -6995,7 +6743,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.642,
 		["instance"] = 1,
 	},
-	[583] = {
+	[562] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7007,7 +6755,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.674,
 		["instance"] = 1,
 	},
-	[584] = {
+	[563] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7019,7 +6767,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.77,
 		["instance"] = 1,
 	},
-	[585] = {
+	[564] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7031,7 +6779,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.8,
 		["instance"] = 1,
 	},
-	[586] = {
+	[565] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7043,7 +6791,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.419,
 		["instance"] = 1,
 	},
-	[587] = {
+	[566] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7055,7 +6803,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.571,
 		["instance"] = 1,
 	},
-	[588] = {
+	[567] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7067,7 +6815,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.716,
 		["instance"] = 1,
 	},
-	[589] = {
+	[568] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7079,7 +6827,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.824,
 		["instance"] = 1,
 	},
-	[590] = {
+	[569] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7091,7 +6839,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.819,
 		["instance"] = 1,
 	},
-	[591] = {
+	[570] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7103,7 +6851,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.838,
 		["instance"] = 1,
 	},
-	[592] = {
+	[571] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7115,7 +6863,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[593] = {
+	[572] = {
 		["type"] = "fishing",
 		["object"] = 180655,
 		["predefined"] = True,
@@ -7127,7 +6875,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.87,
 		["instance"] = "nil",
 	},
-	[594] = {
+	[573] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7139,7 +6887,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.206,
 		["instance"] = 1,
 	},
-	[595] = {
+	[574] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7151,7 +6899,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.159,
 		["instance"] = 1,
 	},
-	[596] = {
+	[575] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7163,7 +6911,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.382,
 		["instance"] = 1,
 	},
-	[597] = {
+	[576] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7175,7 +6923,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.399,
 		["instance"] = 1,
 	},
-	[598] = {
+	[577] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7187,7 +6935,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.189,
 		["instance"] = 1,
 	},
-	[599] = {
+	[578] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7199,7 +6947,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 1,
 	},
-	[600] = {
+	[579] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7211,7 +6959,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.258,
 		["instance"] = 1,
 	},
-	[601] = {
+	[580] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7223,7 +6971,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.096,
 		["instance"] = 0,
 	},
-	[602] = {
+	[581] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7235,7 +6983,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.153,
 		["instance"] = 0,
 	},
-	[603] = {
+	[582] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7247,7 +6995,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.162,
 		["instance"] = 0,
 	},
-	[604] = {
+	[583] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7259,7 +7007,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.118,
 		["instance"] = 0,
 	},
-	[605] = {
+	[584] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7271,7 +7019,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.065,
 		["instance"] = 0,
 	},
-	[606] = {
+	[585] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7283,31 +7031,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.087,
 		["instance"] = 0,
 	},
-	[607] = {
-		["type"] = "fishing",
-		["object"] = 180685,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1434,
-		["posX"] = 0.353,
-		["posY"] = 0.1,
-		["instance"] = 0,
-	},
-	[608] = {
-		["type"] = "fishing",
-		["object"] = 180685,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1434,
-		["posX"] = 0.358,
-		["posY"] = 0.094,
-		["instance"] = 0,
-	},
-	[609] = {
+	[586] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7319,7 +7043,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.178,
 		["instance"] = 0,
 	},
-	[610] = {
+	[587] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7331,7 +7055,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.252,
 		["instance"] = 0,
 	},
-	[611] = {
+	[588] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7343,7 +7067,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.226,
 		["instance"] = 0,
 	},
-	[612] = {
+	[589] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7355,7 +7079,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.088,
 		["instance"] = 0,
 	},
-	[613] = {
+	[590] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7367,19 +7091,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.125,
 		["instance"] = 0,
 	},
-	[614] = {
-		["type"] = "fishing",
-		["object"] = 180685,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1434,
-		["posX"] = 0.349,
-		["posY"] = 0.101,
-		["instance"] = 0,
-	},
-	[615] = {
+	[591] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7391,7 +7103,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.256,
 		["instance"] = 0,
 	},
-	[616] = {
+	[592] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7403,7 +7115,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.269,
 		["instance"] = 0,
 	},
-	[617] = {
+	[593] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7415,7 +7127,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.204,
 		["instance"] = 0,
 	},
-	[618] = {
+	[594] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7427,7 +7139,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.199,
 		["instance"] = 0,
 	},
-	[619] = {
+	[595] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7439,7 +7151,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.528,
 		["instance"] = 0,
 	},
-	[620] = {
+	[596] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7451,7 +7163,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.378,
 		["instance"] = 0,
 	},
-	[621] = {
+	[597] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7463,7 +7175,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.136,
 		["instance"] = 0,
 	},
-	[622] = {
+	[598] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7475,7 +7187,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[623] = {
+	[599] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7487,7 +7199,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.806,
 		["instance"] = 0,
 	},
-	[624] = {
+	[600] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7499,7 +7211,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.819,
 		["instance"] = 0,
 	},
-	[625] = {
+	[601] = {
 		["type"] = "fishing",
 		["object"] = 180685,
 		["predefined"] = True,
@@ -7511,7 +7223,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.742,
 		["instance"] = 1,
 	},
-	[626] = {
+	[602] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7523,7 +7235,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.202,
 		["instance"] = 0,
 	},
-	[627] = {
+	[603] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7535,7 +7247,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.113,
 		["instance"] = 0,
 	},
-	[628] = {
+	[604] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7547,7 +7259,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.566,
 		["instance"] = 0,
 	},
-	[629] = {
+	[605] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7559,7 +7271,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.438,
 		["instance"] = 0,
 	},
-	[630] = {
+	[606] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7571,7 +7283,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.194,
 		["instance"] = 0,
 	},
-	[631] = {
+	[607] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7583,7 +7295,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.63,
 		["instance"] = 0,
 	},
-	[632] = {
+	[608] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7595,7 +7307,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.208,
 		["instance"] = 0,
 	},
-	[633] = {
+	[609] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7607,7 +7319,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 0,
 	},
-	[634] = {
+	[610] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7619,7 +7331,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.155,
 		["instance"] = 0,
 	},
-	[635] = {
+	[611] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7631,7 +7343,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.173,
 		["instance"] = 0,
 	},
-	[636] = {
+	[612] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7643,7 +7355,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.19,
 		["instance"] = 0,
 	},
-	[637] = {
+	[613] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7655,7 +7367,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.615,
 		["instance"] = 0,
 	},
-	[638] = {
+	[614] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7667,7 +7379,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 0,
 	},
-	[639] = {
+	[615] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7679,7 +7391,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.275,
 		["instance"] = 0,
 	},
-	[640] = {
+	[616] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7691,7 +7403,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.316,
 		["instance"] = 0,
 	},
-	[641] = {
+	[617] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7703,7 +7415,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.262,
 		["instance"] = 0,
 	},
-	[642] = {
+	[618] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7715,7 +7427,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.567,
 		["instance"] = 0,
 	},
-	[643] = {
+	[619] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7727,7 +7439,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.626,
 		["instance"] = 0,
 	},
-	[644] = {
+	[620] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7739,7 +7451,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.545,
 		["instance"] = 0,
 	},
-	[645] = {
+	[621] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7751,7 +7463,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.631,
 		["instance"] = 0,
 	},
-	[646] = {
+	[622] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7763,7 +7475,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.584,
 		["instance"] = 0,
 	},
-	[647] = {
+	[623] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7775,7 +7487,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.335,
 		["instance"] = 0,
 	},
-	[648] = {
+	[624] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7787,7 +7499,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.361,
 		["instance"] = 0,
 	},
-	[649] = {
+	[625] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7799,7 +7511,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.124,
 		["instance"] = 0,
 	},
-	[650] = {
+	[626] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7811,7 +7523,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.833,
 		["instance"] = 0,
 	},
-	[651] = {
+	[627] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7823,7 +7535,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.625,
 		["instance"] = 0,
 	},
-	[652] = {
+	[628] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7835,7 +7547,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.75,
 		["instance"] = 0,
 	},
-	[653] = {
+	[629] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7847,7 +7559,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.7,
 		["instance"] = 0,
 	},
-	[654] = {
+	[630] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7859,7 +7571,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.683,
 		["instance"] = 0,
 	},
-	[655] = {
+	[631] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7871,7 +7583,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.739,
 		["instance"] = 0,
 	},
-	[656] = {
+	[632] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7883,7 +7595,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.688,
 		["instance"] = 0,
 	},
-	[657] = {
+	[633] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7895,7 +7607,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.78,
 		["instance"] = 0,
 	},
-	[658] = {
+	[634] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7907,7 +7619,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[659] = {
+	[635] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7919,7 +7631,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.799,
 		["instance"] = 0,
 	},
-	[660] = {
+	[636] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7931,7 +7643,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.649,
 		["instance"] = 0,
 	},
-	[661] = {
+	[637] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7943,7 +7655,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.707,
 		["instance"] = 0,
 	},
-	[662] = {
+	[638] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7955,7 +7667,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[663] = {
+	[639] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7967,7 +7679,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.736,
 		["instance"] = 0,
 	},
-	[664] = {
+	[640] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7979,7 +7691,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.879,
 		["instance"] = 0,
 	},
-	[665] = {
+	[641] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -7991,7 +7703,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.857,
 		["instance"] = 0,
 	},
-	[666] = {
+	[642] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8003,7 +7715,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.632,
 		["instance"] = 0,
 	},
-	[667] = {
+	[643] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8015,7 +7727,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.652,
 		["instance"] = 0,
 	},
-	[668] = {
+	[644] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8027,19 +7739,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.608,
 		["instance"] = 0,
 	},
-	[669] = {
-		["type"] = "fishing",
-		["object"] = 180662,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1424,
-		["posX"] = 0.507,
-		["posY"] = 0.624,
-		["instance"] = 0,
-	},
-	[670] = {
+	[645] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8051,7 +7751,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.672,
 		["instance"] = 0,
 	},
-	[671] = {
+	[646] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8063,7 +7763,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.704,
 		["instance"] = 0,
 	},
-	[672] = {
+	[647] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8075,7 +7775,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.674,
 		["instance"] = 0,
 	},
-	[673] = {
+	[648] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8087,7 +7787,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 0,
 	},
-	[674] = {
+	[649] = {
 		["type"] = "fishing",
 		["object"] = 180662,
 		["predefined"] = True,
@@ -8099,7 +7799,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.378,
 		["instance"] = 1,
 	},
-	[675] = {
+	[650] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8111,7 +7811,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.372,
 		["instance"] = 0,
 	},
-	[676] = {
+	[651] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8123,7 +7823,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.836,
 		["instance"] = 0,
 	},
-	[677] = {
+	[652] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8135,7 +7835,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 0,
 	},
-	[678] = {
+	[653] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8147,7 +7847,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.594,
 		["instance"] = 0,
 	},
-	[679] = {
+	[654] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8159,7 +7859,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.654,
 		["instance"] = 0,
 	},
-	[680] = {
+	[655] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8171,7 +7871,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.445,
 		["instance"] = 0,
 	},
-	[681] = {
+	[656] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8183,7 +7883,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.377,
 		["instance"] = 0,
 	},
-	[682] = {
+	[657] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8195,7 +7895,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.366,
 		["instance"] = 0,
 	},
-	[683] = {
+	[658] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8207,7 +7907,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.765,
 		["instance"] = 0,
 	},
-	[684] = {
+	[659] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8219,7 +7919,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.39,
 		["instance"] = 0,
 	},
-	[685] = {
+	[660] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8231,7 +7931,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.614,
 		["instance"] = 0,
 	},
-	[686] = {
+	[661] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8243,7 +7943,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.499,
 		["instance"] = 0,
 	},
-	[687] = {
+	[662] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8255,7 +7955,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.668,
 		["instance"] = 0,
 	},
-	[688] = {
+	[663] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8267,7 +7967,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.355,
 		["instance"] = 0,
 	},
-	[689] = {
+	[664] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8279,19 +7979,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.747,
 		["instance"] = 0,
 	},
-	[690] = {
-		["type"] = "fishing",
-		["object"] = 180901,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1434,
-		["posX"] = 0.279,
-		["posY"] = 0.76,
-		["instance"] = 0,
-	},
-	[691] = {
+	[665] = {
 		["type"] = "fishing",
 		["object"] = 180901,
 		["predefined"] = True,
@@ -8303,7 +7991,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.6,
 		["instance"] = 0,
 	},
-	[692] = {
+	[666] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8315,7 +8003,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.617,
 		["instance"] = 1,
 	},
-	[693] = {
+	[667] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8327,7 +8015,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.705,
 		["instance"] = 1,
 	},
-	[694] = {
+	[668] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8339,7 +8027,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.558,
 		["instance"] = 1,
 	},
-	[695] = {
+	[669] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8351,7 +8039,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.504,
 		["instance"] = 1,
 	},
-	[696] = {
+	[670] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8363,7 +8051,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.402,
 		["instance"] = 1,
 	},
-	[697] = {
+	[671] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8375,7 +8063,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.338,
 		["instance"] = 1,
 	},
-	[698] = {
+	[672] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8387,7 +8075,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.478,
 		["instance"] = 1,
 	},
-	[699] = {
+	[673] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8399,7 +8087,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.398,
 		["instance"] = 1,
 	},
-	[700] = {
+	[674] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8411,7 +8099,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.353,
 		["instance"] = 1,
 	},
-	[701] = {
+	[675] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8423,7 +8111,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.531,
 		["instance"] = 1,
 	},
-	[702] = {
+	[676] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8435,19 +8123,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.401,
 		["instance"] = 1,
 	},
-	[703] = {
-		["type"] = "fishing",
-		["object"] = 180751,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 1444,
-		["posX"] = 0.443,
-		["posY"] = 0.404,
-		["instance"] = 1,
-	},
-	[704] = {
+	[677] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8459,7 +8135,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.386,
 		["instance"] = 1,
 	},
-	[705] = {
+	[678] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8471,7 +8147,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.535,
 		["instance"] = 1,
 	},
-	[706] = {
+	[679] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8483,7 +8159,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.342,
 		["instance"] = 1,
 	},
-	[707] = {
+	[680] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8495,7 +8171,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.21,
 		["instance"] = 1,
 	},
-	[708] = {
+	[681] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8507,7 +8183,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.249,
 		["instance"] = 1,
 	},
-	[709] = {
+	[682] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8519,7 +8195,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.283,
 		["instance"] = 1,
 	},
-	[710] = {
+	[683] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8531,7 +8207,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.411,
 		["instance"] = 1,
 	},
-	[711] = {
+	[684] = {
 		["type"] = "fishing",
 		["object"] = 180751,
 		["predefined"] = True,
@@ -8543,7 +8219,499 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.182,
 		["instance"] = 1,
 	},
+	[685] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.51,
+		["posY"] = 0.342,
+		["instance"] = 571,
+	},
+	[686] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.55,
+		["posY"] = 0.117,
+		["instance"] = 571,
+	},
+	[687] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.494,
+		["posY"] = 0.441,
+		["instance"] = 571,
+	},
+	[688] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.508,
+		["posY"] = 0.432,
+		["instance"] = 571,
+	},
+	[689] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.743,
+		["posY"] = 0.44,
+		["instance"] = 571,
+	},
+	[690] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.609,
+		["posY"] = 0.483,
+		["instance"] = 571,
+	},
+	[691] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.606,
+		["posY"] = 0.553,
+		["instance"] = 571,
+	},
+	[692] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.536,
+		["posY"] = 0.431,
+		["instance"] = 571,
+	},
+	[693] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.519,
+		["posY"] = 0.476,
+		["instance"] = 571,
+	},
+	[694] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.469,
+		["posY"] = 0.598,
+		["instance"] = 571,
+	},
+	[695] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.463,
+		["posY"] = 0.594,
+		["instance"] = 571,
+	},
+	[696] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.516,
+		["posY"] = 0.335,
+		["instance"] = 571,
+	},
+	[697] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.607,
+		["posY"] = 0.56,
+		["instance"] = 571,
+	},
+	[698] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.556,
+		["posY"] = 0.121,
+		["instance"] = 571,
+	},
+	[699] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.723,
+		["posY"] = 0.432,
+		["instance"] = 571,
+	},
+	[700] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.612,
+		["posY"] = 0.489,
+		["instance"] = 571,
+	},
+	[701] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.485,
+		["posY"] = 0.431,
+		["instance"] = 571,
+	},
+	[702] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.499,
+		["posY"] = 0.451,
+		["instance"] = 571,
+	},
+	[703] = {
+		["type"] = "fishing",
+		["object"] = 192046,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 114,
+		["posX"] = 0.522,
+		["posY"] = 0.469,
+		["instance"] = 571,
+	},
+	[704] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.112,
+		["posY"] = 0.476,
+		["instance"] = 571,
+	},
+	[705] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.118,
+		["posY"] = 0.467,
+		["instance"] = 571,
+	},
+	[706] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.4,
+		["posY"] = 0.658,
+		["instance"] = 571,
+	},
+	[707] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.387,
+		["posY"] = 0.671,
+		["instance"] = 571,
+	},
+	[708] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.419,
+		["posY"] = 0.691,
+		["instance"] = 571,
+	},
+	[709] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.926,
+		["posY"] = 0.674,
+		["instance"] = 571,
+	},
+	[710] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.374,
+		["posY"] = 0.679,
+		["instance"] = 571,
+	},
+	[711] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.406,
+		["posY"] = 0.691,
+		["instance"] = 571,
+	},
 	[712] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.931,
+		["posY"] = 0.583,
+		["instance"] = 571,
+	},
+	[713] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.388,
+		["posY"] = 0.678,
+		["instance"] = 571,
+	},
+	[714] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.932,
+		["posY"] = 0.569,
+		["instance"] = 571,
+	},
+	[715] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.927,
+		["posY"] = 0.665,
+		["instance"] = 571,
+	},
+	[716] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.387,
+		["posY"] = 0.662,
+		["instance"] = 571,
+	},
+	[717] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.416,
+		["posY"] = 0.677,
+		["instance"] = 571,
+	},
+	[718] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.393,
+		["posY"] = 0.694,
+		["instance"] = 571,
+	},
+	[719] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.416,
+		["posY"] = 0.685,
+		["instance"] = 571,
+	},
+	[720] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.903,
+		["posY"] = 0.353,
+		["instance"] = 571,
+	},
+	[721] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.122,
+		["posY"] = 0.492,
+		["instance"] = 571,
+	},
+	[722] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.125,
+		["posY"] = 0.459,
+		["instance"] = 571,
+	},
+	[723] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.12,
+		["posY"] = 0.483,
+		["instance"] = 571,
+	},
+	[724] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.899,
+		["posY"] = 0.378,
+		["instance"] = 571,
+	},
+	[725] = {
+		["type"] = "fishing",
+		["object"] = 192048,
+		["predefined"] = True,
+		["loot"] = {
+		},
+		["coins"] = 0,
+		["mapID"] = 115,
+		["posX"] = 0.122,
+		["posY"] = 0.415,
+		["instance"] = 571,
+	},
+	[726] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8555,7 +8723,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.948,
 		["instance"] = 571,
 	},
-	[713] = {
+	[727] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8567,7 +8735,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.91,
 		["instance"] = 571,
 	},
-	[714] = {
+	[728] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8579,7 +8747,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.886,
 		["instance"] = 571,
 	},
-	[715] = {
+	[729] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8591,7 +8759,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.92,
 		["instance"] = 571,
 	},
-	[716] = {
+	[730] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8603,7 +8771,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.892,
 		["instance"] = 571,
 	},
-	[717] = {
+	[731] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8615,7 +8783,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.898,
 		["instance"] = 571,
 	},
-	[718] = {
+	[732] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8627,7 +8795,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.319,
 		["instance"] = 571,
 	},
-	[719] = {
+	[733] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8639,7 +8807,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.23,
 		["instance"] = 571,
 	},
-	[720] = {
+	[734] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8651,7 +8819,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.387,
 		["instance"] = 571,
 	},
-	[721] = {
+	[735] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8663,7 +8831,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.42,
 		["instance"] = 571,
 	},
-	[722] = {
+	[736] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8675,7 +8843,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.315,
 		["instance"] = 571,
 	},
-	[723] = {
+	[737] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8687,7 +8855,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.297,
 		["instance"] = 571,
 	},
-	[724] = {
+	[738] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8699,7 +8867,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.174,
 		["instance"] = 571,
 	},
-	[725] = {
+	[739] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8711,7 +8879,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.215,
 		["instance"] = 571,
 	},
-	[726] = {
+	[740] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8723,7 +8891,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.571,
 		["instance"] = 571,
 	},
-	[727] = {
+	[741] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8735,7 +8903,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.511,
 		["instance"] = 571,
 	},
-	[728] = {
+	[742] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8747,7 +8915,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.303,
 		["instance"] = 571,
 	},
-	[729] = {
+	[743] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8759,7 +8927,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.264,
 		["instance"] = 571,
 	},
-	[730] = {
+	[744] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8771,7 +8939,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.408,
 		["instance"] = 571,
 	},
-	[731] = {
+	[745] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8783,7 +8951,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.401,
 		["instance"] = 571,
 	},
-	[732] = {
+	[746] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8795,7 +8963,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.259,
 		["instance"] = 571,
 	},
-	[733] = {
+	[747] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8807,7 +8975,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.306,
 		["instance"] = 571,
 	},
-	[734] = {
+	[748] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8819,7 +8987,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.444,
 		["instance"] = 571,
 	},
-	[735] = {
+	[749] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8831,7 +8999,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.409,
 		["instance"] = 571,
 	},
-	[736] = {
+	[750] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8843,7 +9011,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.354,
 		["instance"] = 571,
 	},
-	[737] = {
+	[751] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8855,7 +9023,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.341,
 		["instance"] = 571,
 	},
-	[738] = {
+	[752] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8867,7 +9035,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.38,
 		["instance"] = 571,
 	},
-	[739] = {
+	[753] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8879,7 +9047,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.375,
 		["instance"] = 571,
 	},
-	[740] = {
+	[754] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8891,7 +9059,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.228,
 		["instance"] = 571,
 	},
-	[741] = {
+	[755] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8903,7 +9071,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.229,
 		["instance"] = 571,
 	},
-	[742] = {
+	[756] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8915,7 +9083,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.214,
 		["instance"] = 571,
 	},
-	[743] = {
+	[757] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8927,7 +9095,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.194,
 		["instance"] = 571,
 	},
-	[744] = {
+	[758] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8939,7 +9107,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.392,
 		["instance"] = 571,
 	},
-	[745] = {
+	[759] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8951,7 +9119,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.532,
 		["instance"] = 571,
 	},
-	[746] = {
+	[760] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8963,7 +9131,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.263,
 		["instance"] = 571,
 	},
-	[747] = {
+	[761] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8975,7 +9143,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.198,
 		["instance"] = 571,
 	},
-	[748] = {
+	[762] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8987,7 +9155,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.382,
 		["instance"] = 571,
 	},
-	[749] = {
+	[763] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -8999,7 +9167,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 571,
 	},
-	[750] = {
+	[764] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9011,7 +9179,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.224,
 		["instance"] = 571,
 	},
-	[751] = {
+	[765] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9023,7 +9191,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.192,
 		["instance"] = 571,
 	},
-	[752] = {
+	[766] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9035,7 +9203,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.585,
 		["instance"] = 571,
 	},
-	[753] = {
+	[767] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9047,7 +9215,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.365,
 		["instance"] = 571,
 	},
-	[754] = {
+	[768] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9059,7 +9227,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.193,
 		["instance"] = 571,
 	},
-	[755] = {
+	[769] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9071,31 +9239,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.254,
 		["instance"] = 571,
 	},
-	[756] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.48,
-		["posY"] = 0.307,
-		["instance"] = 571,
-	},
-	[757] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.645,
-		["posY"] = 0.179,
-		["instance"] = 571,
-	},
-	[758] = {
+	[770] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9107,7 +9251,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.389,
 		["instance"] = 571,
 	},
-	[759] = {
+	[771] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9119,7 +9263,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.644,
 		["instance"] = 571,
 	},
-	[760] = {
+	[772] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9131,7 +9275,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.6,
 		["instance"] = 571,
 	},
-	[761] = {
+	[773] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9143,7 +9287,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.275,
 		["instance"] = 571,
 	},
-	[762] = {
+	[774] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9155,7 +9299,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.564,
 		["instance"] = 571,
 	},
-	[763] = {
+	[775] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9167,7 +9311,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.514,
 		["instance"] = 571,
 	},
-	[764] = {
+	[776] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9179,7 +9323,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.487,
 		["instance"] = 571,
 	},
-	[765] = {
+	[777] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9191,19 +9335,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.372,
 		["instance"] = 571,
 	},
-	[766] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.411,
-		["posY"] = 0.228,
-		["instance"] = 571,
-	},
-	[767] = {
+	[778] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9215,43 +9347,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.635,
 		["instance"] = 571,
 	},
-	[768] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.608,
-		["posY"] = 0.64,
-		["instance"] = 571,
-	},
-	[769] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.609,
-		["posY"] = 0.63,
-		["instance"] = 571,
-	},
-	[770] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.607,
-		["posY"] = 0.641,
-		["instance"] = 571,
-	},
-	[771] = {
+	[779] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9263,19 +9359,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.183,
 		["instance"] = 571,
 	},
-	[772] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.378,
-		["posY"] = 0.372,
-		["instance"] = 571,
-	},
-	[773] = {
+	[780] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9287,7 +9371,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.556,
 		["instance"] = 571,
 	},
-	[774] = {
+	[781] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9299,7 +9383,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.3,
 		["instance"] = 571,
 	},
-	[775] = {
+	[782] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9311,7 +9395,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.415,
 		["instance"] = 571,
 	},
-	[776] = {
+	[783] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9323,7 +9407,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 571,
 	},
-	[777] = {
+	[784] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9335,7 +9419,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.362,
 		["instance"] = 571,
 	},
-	[778] = {
+	[785] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9347,7 +9431,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.187,
 		["instance"] = 571,
 	},
-	[779] = {
+	[786] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9359,7 +9443,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.61,
 		["instance"] = 571,
 	},
-	[780] = {
+	[787] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9371,7 +9455,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 571,
 	},
-	[781] = {
+	[788] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9383,31 +9467,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.196,
 		["instance"] = 571,
 	},
-	[782] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.68,
-		["posY"] = 0.568,
-		["instance"] = 571,
-	},
-	[783] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.606,
-		["posY"] = 0.638,
-		["instance"] = 571,
-	},
-	[784] = {
+	[789] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9419,19 +9479,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.566,
 		["instance"] = 571,
 	},
-	[785] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.666,
-		["posY"] = 0.197,
-		["instance"] = 571,
-	},
-	[786] = {
+	[790] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9443,7 +9491,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.207,
 		["instance"] = 571,
 	},
-	[787] = {
+	[791] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9455,7 +9503,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.323,
 		["instance"] = 571,
 	},
-	[788] = {
+	[792] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9467,7 +9515,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.544,
 		["instance"] = 571,
 	},
-	[789] = {
+	[793] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9479,7 +9527,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.486,
 		["instance"] = 571,
 	},
-	[790] = {
+	[794] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9491,7 +9539,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.329,
 		["instance"] = 571,
 	},
-	[791] = {
+	[795] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9503,7 +9551,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.473,
 		["instance"] = 571,
 	},
-	[792] = {
+	[796] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9515,19 +9563,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.387,
 		["instance"] = 571,
 	},
-	[793] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.673,
-		["posY"] = 0.218,
-		["instance"] = 571,
-	},
-	[794] = {
+	[797] = {
 		["type"] = "fishing",
 		["object"] = 192049,
 		["predefined"] = True,
@@ -9539,19 +9575,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.497,
 		["instance"] = 571,
 	},
-	[795] = {
-		["type"] = "fishing",
-		["object"] = 192049,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.308,
-		["posY"] = 0.379,
-		["instance"] = 571,
-	},
-	[796] = {
+	[798] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9563,7 +9587,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.985,
 		["instance"] = 571,
 	},
-	[797] = {
+	[799] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9575,7 +9599,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.979,
 		["instance"] = 571,
 	},
-	[798] = {
+	[800] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9587,7 +9611,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.985,
 		["instance"] = 571,
 	},
-	[799] = {
+	[801] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9599,7 +9623,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.982,
 		["instance"] = 571,
 	},
-	[800] = {
+	[802] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9611,7 +9635,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.977,
 		["instance"] = 571,
 	},
-	[801] = {
+	[803] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9623,7 +9647,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.53,
 		["instance"] = 571,
 	},
-	[802] = {
+	[804] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9635,7 +9659,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.527,
 		["instance"] = 571,
 	},
-	[803] = {
+	[805] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9647,7 +9671,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.473,
 		["instance"] = 571,
 	},
-	[804] = {
+	[806] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9659,7 +9683,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.52,
 		["instance"] = 571,
 	},
-	[805] = {
+	[807] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9671,7 +9695,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 571,
 	},
-	[806] = {
+	[808] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9683,7 +9707,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.499,
 		["instance"] = 571,
 	},
-	[807] = {
+	[809] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9695,7 +9719,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.456,
 		["instance"] = 571,
 	},
-	[808] = {
+	[810] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9707,7 +9731,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.508,
 		["instance"] = 571,
 	},
-	[809] = {
+	[811] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9719,7 +9743,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.382,
 		["instance"] = 571,
 	},
-	[810] = {
+	[812] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9731,7 +9755,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.39,
 		["instance"] = 571,
 	},
-	[811] = {
+	[813] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9743,7 +9767,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.346,
 		["instance"] = 571,
 	},
-	[812] = {
+	[814] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9755,7 +9779,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.339,
 		["instance"] = 571,
 	},
-	[813] = {
+	[815] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9767,7 +9791,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.342,
 		["instance"] = 571,
 	},
-	[814] = {
+	[816] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9779,7 +9803,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.769,
 		["instance"] = 571,
 	},
-	[815] = {
+	[817] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9791,7 +9815,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.68,
 		["instance"] = 571,
 	},
-	[816] = {
+	[818] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9803,7 +9827,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.604,
 		["instance"] = 571,
 	},
-	[817] = {
+	[819] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9815,7 +9839,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.541,
 		["instance"] = 571,
 	},
-	[818] = {
+	[820] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9827,7 +9851,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.52,
 		["instance"] = 571,
 	},
-	[819] = {
+	[821] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9839,7 +9863,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.385,
 		["instance"] = 571,
 	},
-	[820] = {
+	[822] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9851,7 +9875,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.376,
 		["instance"] = 571,
 	},
-	[821] = {
+	[823] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9863,7 +9887,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.418,
 		["instance"] = 571,
 	},
-	[822] = {
+	[824] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9875,7 +9899,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.433,
 		["instance"] = 571,
 	},
-	[823] = {
+	[825] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9887,7 +9911,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.454,
 		["instance"] = 571,
 	},
-	[824] = {
+	[826] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9899,7 +9923,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.404,
 		["instance"] = 571,
 	},
-	[825] = {
+	[827] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9911,7 +9935,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.418,
 		["instance"] = 571,
 	},
-	[826] = {
+	[828] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9923,7 +9947,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.646,
 		["instance"] = 571,
 	},
-	[827] = {
+	[829] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9935,7 +9959,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.601,
 		["instance"] = 571,
 	},
-	[828] = {
+	[830] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9947,7 +9971,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.559,
 		["instance"] = 571,
 	},
-	[829] = {
+	[831] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9959,7 +9983,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.401,
 		["instance"] = 571,
 	},
-	[830] = {
+	[832] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9971,7 +9995,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.518,
 		["instance"] = 571,
 	},
-	[831] = {
+	[833] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9983,7 +10007,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.513,
 		["instance"] = 571,
 	},
-	[832] = {
+	[834] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -9995,7 +10019,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.622,
 		["instance"] = 571,
 	},
-	[833] = {
+	[835] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10007,7 +10031,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.513,
 		["instance"] = 571,
 	},
-	[834] = {
+	[836] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10019,19 +10043,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.418,
 		["instance"] = 571,
 	},
-	[835] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.156,
-		["posY"] = 0.394,
-		["instance"] = 571,
-	},
-	[836] = {
+	[837] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10043,7 +10055,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.604,
 		["instance"] = 571,
 	},
-	[837] = {
+	[838] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10055,7 +10067,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.382,
 		["instance"] = 571,
 	},
-	[838] = {
+	[839] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10065,18 +10077,6 @@ GatherLite_localFishingNodes = {
 		["mapID"] = 116,
 		["posX"] = 0.407,
 		["posY"] = 0.342,
-		["instance"] = 571,
-	},
-	[839] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.415,
-		["posY"] = 0.351,
 		["instance"] = 571,
 	},
 	[840] = {
@@ -10243,35 +10243,11 @@ GatherLite_localFishingNodes = {
 		},
 		["coins"] = 0,
 		["mapID"] = 116,
-		["posX"] = 0.542,
-		["posY"] = 0.398,
-		["instance"] = 571,
-	},
-	[854] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.309,
-		["posY"] = 0.458,
-		["instance"] = 571,
-	},
-	[855] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
 		["posX"] = 0.334,
 		["posY"] = 0.434,
 		["instance"] = 571,
 	},
-	[856] = {
+	[854] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10283,7 +10259,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 571,
 	},
-	[857] = {
+	[855] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10295,43 +10271,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.381,
 		["instance"] = 571,
 	},
-	[858] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.334,
-		["posY"] = 0.389,
-		["instance"] = 571,
-	},
-	[859] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.4,
-		["posY"] = 0.345,
-		["instance"] = 571,
-	},
-	[860] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.384,
-		["posY"] = 0.337,
-		["instance"] = 571,
-	},
-	[861] = {
+	[856] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10343,7 +10283,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.416,
 		["instance"] = 571,
 	},
-	[862] = {
+	[857] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10355,19 +10295,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.404,
 		["instance"] = 571,
 	},
-	[863] = {
-		["type"] = "fishing",
-		["object"] = 192050,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.232,
-		["posY"] = 0.42,
-		["instance"] = 571,
-	},
-	[864] = {
+	[858] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10379,7 +10307,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.393,
 		["instance"] = 571,
 	},
-	[865] = {
+	[859] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10391,7 +10319,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.407,
 		["instance"] = 571,
 	},
-	[866] = {
+	[860] = {
 		["type"] = "fishing",
 		["object"] = 192050,
 		["predefined"] = True,
@@ -10403,7 +10331,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 571,
 	},
-	[867] = {
+	[861] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10415,7 +10343,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.764,
 		["instance"] = 571,
 	},
-	[868] = {
+	[862] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10427,7 +10355,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.487,
 		["instance"] = 571,
 	},
-	[869] = {
+	[863] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10439,7 +10367,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.474,
 		["instance"] = 571,
 	},
-	[870] = {
+	[864] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10451,7 +10379,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.464,
 		["instance"] = 571,
 	},
-	[871] = {
+	[865] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10463,7 +10391,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.524,
 		["instance"] = 571,
 	},
-	[872] = {
+	[866] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10475,7 +10403,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.491,
 		["instance"] = 571,
 	},
-	[873] = {
+	[867] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10487,7 +10415,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.167,
 		["instance"] = 571,
 	},
-	[874] = {
+	[868] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10499,7 +10427,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.78,
 		["instance"] = 571,
 	},
-	[875] = {
+	[869] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10511,7 +10439,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.147,
 		["instance"] = 571,
 	},
-	[876] = {
+	[870] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10523,7 +10451,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.509,
 		["instance"] = 571,
 	},
-	[877] = {
+	[871] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10535,7 +10463,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.509,
 		["instance"] = 571,
 	},
-	[878] = {
+	[872] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10547,7 +10475,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.479,
 		["instance"] = 571,
 	},
-	[879] = {
+	[873] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10559,7 +10487,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.427,
 		["instance"] = 571,
 	},
-	[880] = {
+	[874] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10571,7 +10499,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.764,
 		["instance"] = 571,
 	},
-	[881] = {
+	[875] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10583,7 +10511,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.486,
 		["instance"] = 571,
 	},
-	[882] = {
+	[876] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10595,7 +10523,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.651,
 		["instance"] = 571,
 	},
-	[883] = {
+	[877] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10607,7 +10535,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.179,
 		["instance"] = 571,
 	},
-	[884] = {
+	[878] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10619,7 +10547,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.153,
 		["instance"] = 571,
 	},
-	[885] = {
+	[879] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10631,7 +10559,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.502,
 		["instance"] = 571,
 	},
-	[886] = {
+	[880] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10643,7 +10571,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.14,
 		["instance"] = 571,
 	},
-	[887] = {
+	[881] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10655,7 +10583,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.538,
 		["instance"] = 571,
 	},
-	[888] = {
+	[882] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10667,7 +10595,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.215,
 		["instance"] = 571,
 	},
-	[889] = {
+	[883] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10679,7 +10607,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.514,
 		["instance"] = 571,
 	},
-	[890] = {
+	[884] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10691,7 +10619,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.492,
 		["instance"] = 571,
 	},
-	[891] = {
+	[885] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10703,7 +10631,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.564,
 		["instance"] = 571,
 	},
-	[892] = {
+	[886] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10715,7 +10643,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.488,
 		["instance"] = 571,
 	},
-	[893] = {
+	[887] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10727,7 +10655,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.473,
 		["instance"] = 571,
 	},
-	[894] = {
+	[888] = {
 		["type"] = "fishing",
 		["object"] = 192051,
 		["predefined"] = True,
@@ -10739,19 +10667,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.531,
 		["instance"] = 571,
 	},
-	[895] = {
-		["type"] = "fishing",
-		["object"] = 192051,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.791,
-		["posY"] = 0.518,
-		["instance"] = 571,
-	},
-	[896] = {
+	[889] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10763,7 +10679,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.72,
 		["instance"] = 571,
 	},
-	[897] = {
+	[890] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10775,7 +10691,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.699,
 		["instance"] = 571,
 	},
-	[898] = {
+	[891] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10787,7 +10703,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.676,
 		["instance"] = 571,
 	},
-	[899] = {
+	[892] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10799,7 +10715,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.66,
 		["instance"] = 571,
 	},
-	[900] = {
+	[893] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10811,7 +10727,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.729,
 		["instance"] = 571,
 	},
-	[901] = {
+	[894] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10823,7 +10739,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.773,
 		["instance"] = 571,
 	},
-	[902] = {
+	[895] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10835,7 +10751,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.771,
 		["instance"] = 571,
 	},
-	[903] = {
+	[896] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10847,7 +10763,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.66,
 		["instance"] = 571,
 	},
-	[904] = {
+	[897] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10859,7 +10775,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.79,
 		["instance"] = 571,
 	},
-	[905] = {
+	[898] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10871,7 +10787,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.659,
 		["instance"] = 571,
 	},
-	[906] = {
+	[899] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10883,7 +10799,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.653,
 		["instance"] = 571,
 	},
-	[907] = {
+	[900] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10895,7 +10811,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.625,
 		["instance"] = 571,
 	},
-	[908] = {
+	[901] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10907,7 +10823,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.762,
 		["instance"] = 571,
 	},
-	[909] = {
+	[902] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10919,7 +10835,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.811,
 		["instance"] = 571,
 	},
-	[910] = {
+	[903] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10931,7 +10847,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.802,
 		["instance"] = 571,
 	},
-	[911] = {
+	[904] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10943,7 +10859,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.783,
 		["instance"] = 571,
 	},
-	[912] = {
+	[905] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10955,7 +10871,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.617,
 		["instance"] = 571,
 	},
-	[913] = {
+	[906] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10967,7 +10883,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.685,
 		["instance"] = 571,
 	},
-	[914] = {
+	[907] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10979,7 +10895,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.779,
 		["instance"] = 571,
 	},
-	[915] = {
+	[908] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -10991,19 +10907,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.8,
 		["instance"] = 571,
 	},
-	[916] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.89,
-		["posY"] = 0.783,
-		["instance"] = 571,
-	},
-	[917] = {
+	[909] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11015,7 +10919,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.751,
 		["instance"] = 571,
 	},
-	[918] = {
+	[910] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11027,7 +10931,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.634,
 		["instance"] = 571,
 	},
-	[919] = {
+	[911] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11039,7 +10943,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.793,
 		["instance"] = 571,
 	},
-	[920] = {
+	[912] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11051,7 +10955,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.751,
 		["instance"] = 571,
 	},
-	[921] = {
+	[913] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11063,7 +10967,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.784,
 		["instance"] = 571,
 	},
-	[922] = {
+	[914] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11075,7 +10979,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.745,
 		["instance"] = 571,
 	},
-	[923] = {
+	[915] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11087,7 +10991,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.804,
 		["instance"] = 571,
 	},
-	[924] = {
+	[916] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11099,7 +11003,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.756,
 		["instance"] = 571,
 	},
-	[925] = {
+	[917] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11111,7 +11015,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.796,
 		["instance"] = 571,
 	},
-	[926] = {
+	[918] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11123,19 +11027,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.689,
 		["instance"] = 571,
 	},
-	[927] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.94,
-		["posY"] = 0.779,
-		["instance"] = 571,
-	},
-	[928] = {
+	[919] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11147,7 +11039,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.752,
 		["instance"] = 571,
 	},
-	[929] = {
+	[920] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11159,19 +11051,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.742,
 		["instance"] = 571,
 	},
-	[930] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.479,
-		["posY"] = 0.771,
-		["instance"] = 571,
-	},
-	[931] = {
+	[921] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11183,7 +11063,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.765,
 		["instance"] = 571,
 	},
-	[932] = {
+	[922] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11195,31 +11075,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.817,
 		["instance"] = 571,
 	},
-	[933] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.495,
-		["posY"] = 0.766,
-		["instance"] = 571,
-	},
-	[934] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.193,
-		["posY"] = 0.661,
-		["instance"] = 571,
-	},
-	[935] = {
+	[923] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11231,7 +11087,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.74,
 		["instance"] = 571,
 	},
-	[936] = {
+	[924] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11243,7 +11099,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.828,
 		["instance"] = 571,
 	},
-	[937] = {
+	[925] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11255,7 +11111,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.755,
 		["instance"] = 571,
 	},
-	[938] = {
+	[926] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11267,7 +11123,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.816,
 		["instance"] = 571,
 	},
-	[939] = {
+	[927] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11279,7 +11135,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.8,
 		["instance"] = 571,
 	},
-	[940] = {
+	[928] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11291,7 +11147,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.763,
 		["instance"] = 571,
 	},
-	[941] = {
+	[929] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11303,7 +11159,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.825,
 		["instance"] = 571,
 	},
-	[942] = {
+	[930] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11315,7 +11171,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.786,
 		["instance"] = 571,
 	},
-	[943] = {
+	[931] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11327,7 +11183,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.69,
 		["instance"] = 571,
 	},
-	[944] = {
+	[932] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11339,7 +11195,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.766,
 		["instance"] = 571,
 	},
-	[945] = {
+	[933] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11351,7 +11207,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.787,
 		["instance"] = 571,
 	},
-	[946] = {
+	[934] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11363,7 +11219,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.794,
 		["instance"] = 571,
 	},
-	[947] = {
+	[935] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11375,7 +11231,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.811,
 		["instance"] = 571,
 	},
-	[948] = {
+	[936] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11387,7 +11243,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.826,
 		["instance"] = 571,
 	},
-	[949] = {
+	[937] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11399,7 +11255,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.808,
 		["instance"] = 571,
 	},
-	[950] = {
+	[938] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11411,7 +11267,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.851,
 		["instance"] = 571,
 	},
-	[951] = {
+	[939] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11423,7 +11279,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.786,
 		["instance"] = 571,
 	},
-	[952] = {
+	[940] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11435,7 +11291,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.775,
 		["instance"] = 571,
 	},
-	[953] = {
+	[941] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11447,7 +11303,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.803,
 		["instance"] = 571,
 	},
-	[954] = {
+	[942] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11459,7 +11315,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.833,
 		["instance"] = 571,
 	},
-	[955] = {
+	[943] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11471,7 +11327,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.805,
 		["instance"] = 571,
 	},
-	[956] = {
+	[944] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11483,7 +11339,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.786,
 		["instance"] = 571,
 	},
-	[957] = {
+	[945] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11495,7 +11351,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.732,
 		["instance"] = 571,
 	},
-	[958] = {
+	[946] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11507,7 +11363,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.289,
 		["instance"] = 571,
 	},
-	[959] = {
+	[947] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11519,7 +11375,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.296,
 		["instance"] = 571,
 	},
-	[960] = {
+	[948] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11531,7 +11387,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.344,
 		["instance"] = 571,
 	},
-	[961] = {
+	[949] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11543,7 +11399,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.371,
 		["instance"] = 571,
 	},
-	[962] = {
+	[950] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11555,7 +11411,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.812,
 		["instance"] = 571,
 	},
-	[963] = {
+	[951] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11567,7 +11423,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.844,
 		["instance"] = 571,
 	},
-	[964] = {
+	[952] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11579,7 +11435,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.798,
 		["instance"] = 571,
 	},
-	[965] = {
+	[953] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11591,7 +11447,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.827,
 		["instance"] = 571,
 	},
-	[966] = {
+	[954] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11603,7 +11459,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.857,
 		["instance"] = 571,
 	},
-	[967] = {
+	[955] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11615,7 +11471,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.886,
 		["instance"] = 571,
 	},
-	[968] = {
+	[956] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11627,7 +11483,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.909,
 		["instance"] = 571,
 	},
-	[969] = {
+	[957] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11639,7 +11495,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.851,
 		["instance"] = 571,
 	},
-	[970] = {
+	[958] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11651,7 +11507,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.92,
 		["instance"] = 571,
 	},
-	[971] = {
+	[959] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11663,7 +11519,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.877,
 		["instance"] = 571,
 	},
-	[972] = {
+	[960] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11675,7 +11531,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.459,
 		["instance"] = 571,
 	},
-	[973] = {
+	[961] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11687,7 +11543,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.834,
 		["instance"] = 571,
 	},
-	[974] = {
+	[962] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11699,43 +11555,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.819,
 		["instance"] = 571,
 	},
-	[975] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.298,
-		["posY"] = 0.873,
-		["instance"] = 571,
-	},
-	[976] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.178,
-		["posY"] = 0.821,
-		["instance"] = 571,
-	},
-	[977] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.117,
-		["posY"] = 0.81,
-		["instance"] = 571,
-	},
-	[978] = {
+	[963] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11747,7 +11567,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.446,
 		["instance"] = 571,
 	},
-	[979] = {
+	[964] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11759,7 +11579,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.837,
 		["instance"] = 571,
 	},
-	[980] = {
+	[965] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11771,7 +11591,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.274,
 		["instance"] = 571,
 	},
-	[981] = {
+	[966] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11783,7 +11603,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.818,
 		["instance"] = 571,
 	},
-	[982] = {
+	[967] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11795,7 +11615,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.854,
 		["instance"] = 571,
 	},
-	[983] = {
+	[968] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11807,19 +11627,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.84,
 		["instance"] = 571,
 	},
-	[984] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.304,
-		["posY"] = 0.924,
-		["instance"] = 571,
-	},
-	[985] = {
+	[969] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11831,19 +11639,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.86,
 		["instance"] = 571,
 	},
-	[986] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.305,
-		["posY"] = 0.915,
-		["instance"] = 571,
-	},
-	[987] = {
+	[970] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11855,31 +11651,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.83,
 		["instance"] = 571,
 	},
-	[988] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.154,
-		["posY"] = 0.838,
-		["instance"] = 571,
-	},
-	[989] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.303,
-		["posY"] = 0.888,
-		["instance"] = 571,
-	},
-	[990] = {
+	[971] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11891,7 +11663,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.816,
 		["instance"] = 571,
 	},
-	[991] = {
+	[972] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11903,7 +11675,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.377,
 		["instance"] = 571,
 	},
-	[992] = {
+	[973] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11915,7 +11687,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.355,
 		["instance"] = 571,
 	},
-	[993] = {
+	[974] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11927,7 +11699,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.316,
 		["instance"] = 571,
 	},
-	[994] = {
+	[975] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11939,19 +11711,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.231,
 		["instance"] = 571,
 	},
-	[995] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.154,
-		["posY"] = 0.804,
-		["instance"] = 571,
-	},
-	[996] = {
+	[976] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11963,7 +11723,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.218,
 		["instance"] = 571,
 	},
-	[997] = {
+	[977] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11975,19 +11735,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.347,
 		["instance"] = 571,
 	},
-	[998] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 116,
-		["posX"] = 0.734,
-		["posY"] = 0.317,
-		["instance"] = 571,
-	},
-	[999] = {
+	[978] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -11999,7 +11747,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.671,
 		["instance"] = 571,
 	},
-	[1000] = {
+	[979] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12011,7 +11759,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.407,
 		["instance"] = 571,
 	},
-	[1001] = {
+	[980] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12023,7 +11771,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.262,
 		["instance"] = 571,
 	},
-	[1002] = {
+	[981] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12035,7 +11783,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.22,
 		["instance"] = 571,
 	},
-	[1003] = {
+	[982] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12047,7 +11795,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.362,
 		["instance"] = 571,
 	},
-	[1004] = {
+	[983] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12059,7 +11807,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.37,
 		["instance"] = 571,
 	},
-	[1005] = {
+	[984] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12071,7 +11819,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.771,
 		["instance"] = 571,
 	},
-	[1006] = {
+	[985] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12083,7 +11831,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.262,
 		["instance"] = 571,
 	},
-	[1007] = {
+	[986] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12095,7 +11843,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.764,
 		["instance"] = 571,
 	},
-	[1008] = {
+	[987] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12107,7 +11855,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.71,
 		["instance"] = 571,
 	},
-	[1009] = {
+	[988] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12119,7 +11867,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.773,
 		["instance"] = 571,
 	},
-	[1010] = {
+	[989] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12131,7 +11879,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.837,
 		["instance"] = 571,
 	},
-	[1011] = {
+	[990] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12143,7 +11891,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.61,
 		["instance"] = 571,
 	},
-	[1012] = {
+	[991] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12155,7 +11903,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.555,
 		["instance"] = 571,
 	},
-	[1013] = {
+	[992] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12167,7 +11915,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.481,
 		["instance"] = 571,
 	},
-	[1014] = {
+	[993] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12179,7 +11927,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.414,
 		["instance"] = 571,
 	},
-	[1015] = {
+	[994] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12191,19 +11939,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.824,
 		["instance"] = 571,
 	},
-	[1016] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.263,
-		["posY"] = 0.369,
-		["instance"] = 571,
-	},
-	[1017] = {
+	[995] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12215,7 +11951,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.326,
 		["instance"] = 571,
 	},
-	[1018] = {
+	[996] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12227,7 +11963,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.757,
 		["instance"] = 571,
 	},
-	[1019] = {
+	[997] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12239,7 +11975,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.82,
 		["instance"] = 571,
 	},
-	[1020] = {
+	[998] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12251,7 +11987,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.652,
 		["instance"] = 571,
 	},
-	[1021] = {
+	[999] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12263,7 +11999,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.718,
 		["instance"] = 571,
 	},
-	[1022] = {
+	[1000] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12275,7 +12011,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.549,
 		["instance"] = 571,
 	},
-	[1023] = {
+	[1001] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12287,7 +12023,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.69,
 		["instance"] = 571,
 	},
-	[1024] = {
+	[1002] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12299,7 +12035,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.589,
 		["instance"] = 571,
 	},
-	[1025] = {
+	[1003] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12311,7 +12047,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.731,
 		["instance"] = 571,
 	},
-	[1026] = {
+	[1004] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12323,7 +12059,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.776,
 		["instance"] = 571,
 	},
-	[1027] = {
+	[1005] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12335,7 +12071,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.625,
 		["instance"] = 571,
 	},
-	[1028] = {
+	[1006] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12347,7 +12083,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.738,
 		["instance"] = 571,
 	},
-	[1029] = {
+	[1007] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12359,19 +12095,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.405,
 		["instance"] = 571,
 	},
-	[1030] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.24,
-		["posY"] = 0.363,
-		["instance"] = 571,
-	},
-	[1031] = {
+	[1008] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12383,7 +12107,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.532,
 		["instance"] = 571,
 	},
-	[1032] = {
+	[1009] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12395,7 +12119,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.856,
 		["instance"] = 571,
 	},
-	[1033] = {
+	[1010] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12407,19 +12131,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.834,
 		["instance"] = 571,
 	},
-	[1034] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.786,
-		["posY"] = 0.761,
-		["instance"] = 571,
-	},
-	[1035] = {
+	[1011] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12431,7 +12143,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.367,
 		["instance"] = 571,
 	},
-	[1036] = {
+	[1012] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12443,19 +12155,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.397,
 		["instance"] = 571,
 	},
-	[1037] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.244,
-		["posY"] = 0.548,
-		["instance"] = 571,
-	},
-	[1038] = {
+	[1013] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12467,7 +12167,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.879,
 		["instance"] = 571,
 	},
-	[1039] = {
+	[1014] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12479,7 +12179,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.254,
 		["instance"] = 571,
 	},
-	[1040] = {
+	[1015] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12491,7 +12191,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.437,
 		["instance"] = 571,
 	},
-	[1041] = {
+	[1016] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12503,19 +12203,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.708,
 		["instance"] = 571,
 	},
-	[1042] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.236,
-		["posY"] = 0.614,
-		["instance"] = 571,
-	},
-	[1043] = {
+	[1017] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12527,19 +12215,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.561,
 		["instance"] = 571,
 	},
-	[1044] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.241,
-		["posY"] = 0.552,
-		["instance"] = 571,
-	},
-	[1045] = {
+	[1018] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12551,19 +12227,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.622,
 		["instance"] = 571,
 	},
-	[1046] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.265,
-		["posY"] = 0.402,
-		["instance"] = 571,
-	},
-	[1047] = {
+	[1019] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12575,7 +12239,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.733,
 		["instance"] = 571,
 	},
-	[1048] = {
+	[1020] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12587,7 +12251,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.795,
 		["instance"] = 571,
 	},
-	[1049] = {
+	[1021] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12599,7 +12263,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.754,
 		["instance"] = 571,
 	},
-	[1050] = {
+	[1022] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12611,7 +12275,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.503,
 		["instance"] = 571,
 	},
-	[1051] = {
+	[1023] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12623,7 +12287,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.701,
 		["instance"] = 571,
 	},
-	[1052] = {
+	[1024] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12635,7 +12299,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.822,
 		["instance"] = 571,
 	},
-	[1053] = {
+	[1025] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12647,7 +12311,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.755,
 		["instance"] = 571,
 	},
-	[1054] = {
+	[1026] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12659,7 +12323,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.822,
 		["instance"] = 571,
 	},
-	[1055] = {
+	[1027] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12671,7 +12335,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.873,
 		["instance"] = 571,
 	},
-	[1056] = {
+	[1028] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12683,7 +12347,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.813,
 		["instance"] = 571,
 	},
-	[1057] = {
+	[1029] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12695,7 +12359,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.774,
 		["instance"] = 571,
 	},
-	[1058] = {
+	[1030] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12707,7 +12371,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.448,
 		["instance"] = 571,
 	},
-	[1059] = {
+	[1031] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12719,7 +12383,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.374,
 		["instance"] = 571,
 	},
-	[1060] = {
+	[1032] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12731,7 +12395,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.514,
 		["instance"] = 571,
 	},
-	[1061] = {
+	[1033] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12743,19 +12407,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.814,
 		["instance"] = 571,
 	},
-	[1062] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.375,
-		["posY"] = 0.779,
-		["instance"] = 571,
-	},
-	[1063] = {
+	[1034] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12767,7 +12419,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.646,
 		["instance"] = 571,
 	},
-	[1064] = {
+	[1035] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12779,19 +12431,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.755,
 		["instance"] = 571,
 	},
-	[1065] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 117,
-		["posX"] = 0.344,
-		["posY"] = 0.833,
-		["instance"] = 571,
-	},
-	[1066] = {
+	[1036] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12803,7 +12443,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.779,
 		["instance"] = 571,
 	},
-	[1067] = {
+	[1037] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12815,7 +12455,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.747,
 		["instance"] = 571,
 	},
-	[1068] = {
+	[1038] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12827,7 +12467,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.598,
 		["instance"] = 571,
 	},
-	[1069] = {
+	[1039] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12839,7 +12479,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.662,
 		["instance"] = 571,
 	},
-	[1070] = {
+	[1040] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12851,7 +12491,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.809,
 		["instance"] = 571,
 	},
-	[1071] = {
+	[1041] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12863,7 +12503,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.552,
 		["instance"] = 571,
 	},
-	[1072] = {
+	[1042] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12875,7 +12515,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.774,
 		["instance"] = 571,
 	},
-	[1073] = {
+	[1043] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12887,7 +12527,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.128,
 		["instance"] = 571,
 	},
-	[1074] = {
+	[1044] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12899,7 +12539,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.486,
 		["instance"] = 571,
 	},
-	[1075] = {
+	[1045] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12911,7 +12551,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.489,
 		["instance"] = 571,
 	},
-	[1076] = {
+	[1046] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12923,7 +12563,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.518,
 		["instance"] = 571,
 	},
-	[1077] = {
+	[1047] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12935,7 +12575,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.246,
 		["instance"] = 571,
 	},
-	[1078] = {
+	[1048] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12947,7 +12587,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.479,
 		["instance"] = 571,
 	},
-	[1079] = {
+	[1049] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12959,7 +12599,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.328,
 		["instance"] = 571,
 	},
-	[1080] = {
+	[1050] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12971,19 +12611,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.531,
 		["instance"] = 571,
 	},
-	[1081] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.795,
-		["posY"] = 0.514,
-		["instance"] = 571,
-	},
-	[1082] = {
+	[1051] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -12995,7 +12623,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.444,
 		["instance"] = 571,
 	},
-	[1083] = {
+	[1052] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13007,7 +12635,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.87,
 		["instance"] = 571,
 	},
-	[1084] = {
+	[1053] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13019,7 +12647,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.816,
 		["instance"] = 571,
 	},
-	[1085] = {
+	[1054] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13031,7 +12659,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.623,
 		["instance"] = 571,
 	},
-	[1086] = {
+	[1055] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13043,7 +12671,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.502,
 		["instance"] = 571,
 	},
-	[1087] = {
+	[1056] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13055,19 +12683,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.491,
 		["instance"] = 571,
 	},
-	[1088] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.791,
-		["posY"] = 0.524,
-		["instance"] = 571,
-	},
-	[1089] = {
+	[1057] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13079,7 +12695,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.442,
 		["instance"] = 571,
 	},
-	[1090] = {
+	[1058] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13091,7 +12707,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.464,
 		["instance"] = 571,
 	},
-	[1091] = {
+	[1059] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13103,19 +12719,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.491,
 		["instance"] = 571,
 	},
-	[1092] = {
-		["type"] = "fishing",
-		["object"] = 192052,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.66,
-		["posY"] = 0.492,
-		["instance"] = 571,
-	},
-	[1093] = {
+	[1060] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13127,7 +12731,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.492,
 		["instance"] = 571,
 	},
-	[1094] = {
+	[1061] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13139,7 +12743,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.652,
 		["instance"] = 571,
 	},
-	[1095] = {
+	[1062] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13151,7 +12755,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.344,
 		["instance"] = 571,
 	},
-	[1096] = {
+	[1063] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13163,7 +12767,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.807,
 		["instance"] = 571,
 	},
-	[1097] = {
+	[1064] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13175,7 +12779,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.788,
 		["instance"] = 571,
 	},
-	[1098] = {
+	[1065] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13187,7 +12791,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.137,
 		["instance"] = 571,
 	},
-	[1099] = {
+	[1066] = {
 		["type"] = "fishing",
 		["object"] = 192052,
 		["predefined"] = True,
@@ -13199,7 +12803,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.756,
 		["instance"] = 571,
 	},
-	[1100] = {
+	[1067] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13211,7 +12815,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.874,
 		["instance"] = 571,
 	},
-	[1101] = {
+	[1068] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13223,7 +12827,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.847,
 		["instance"] = 571,
 	},
-	[1102] = {
+	[1069] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13235,7 +12839,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.546,
 		["instance"] = 571,
 	},
-	[1103] = {
+	[1070] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13247,7 +12851,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.834,
 		["instance"] = 571,
 	},
-	[1104] = {
+	[1071] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13259,7 +12863,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.609,
 		["instance"] = 571,
 	},
-	[1105] = {
+	[1072] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13271,7 +12875,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.559,
 		["instance"] = 571,
 	},
-	[1106] = {
+	[1073] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13283,7 +12887,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.573,
 		["instance"] = 571,
 	},
-	[1107] = {
+	[1074] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13295,7 +12899,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.591,
 		["instance"] = 571,
 	},
-	[1108] = {
+	[1075] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13307,7 +12911,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.579,
 		["instance"] = 571,
 	},
-	[1109] = {
+	[1076] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13319,7 +12923,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.581,
 		["instance"] = 571,
 	},
-	[1110] = {
+	[1077] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13331,7 +12935,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.571,
 		["instance"] = 571,
 	},
-	[1111] = {
+	[1078] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13343,7 +12947,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.573,
 		["instance"] = 571,
 	},
-	[1112] = {
+	[1079] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13355,43 +12959,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.599,
 		["instance"] = 571,
 	},
-	[1113] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.811,
-		["posY"] = 0.565,
-		["instance"] = 571,
-	},
-	[1114] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.817,
-		["posY"] = 0.584,
-		["instance"] = 571,
-	},
-	[1115] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.83,
-		["posY"] = 0.58,
-		["instance"] = 571,
-	},
-	[1116] = {
+	[1080] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13403,7 +12971,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.585,
 		["instance"] = 571,
 	},
-	[1117] = {
+	[1081] = {
 		["type"] = "fishing",
 		["object"] = 192053,
 		["predefined"] = True,
@@ -13415,127 +12983,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.576,
 		["instance"] = 571,
 	},
-	[1118] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.807,
-		["posY"] = 0.574,
-		["instance"] = 571,
-	},
-	[1119] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.837,
-		["posY"] = 0.583,
-		["instance"] = 571,
-	},
-	[1120] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.825,
-		["posY"] = 0.58,
-		["instance"] = 571,
-	},
-	[1121] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.815,
-		["posY"] = 0.576,
-		["instance"] = 571,
-	},
-	[1122] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.82,
-		["posY"] = 0.583,
-		["instance"] = 571,
-	},
-	[1123] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.816,
-		["posY"] = 0.565,
-		["instance"] = 571,
-	},
-	[1124] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.794,
-		["posY"] = 0.582,
-		["instance"] = 571,
-	},
-	[1125] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.812,
-		["posY"] = 0.573,
-		["instance"] = 571,
-	},
-	[1126] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.821,
-		["posY"] = 0.575,
-		["instance"] = 571,
-	},
-	[1127] = {
-		["type"] = "fishing",
-		["object"] = 192053,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.818,
-		["posY"] = 0.58,
-		["instance"] = 571,
-	},
-	[1128] = {
+	[1082] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13547,7 +12995,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.847,
 		["instance"] = 571,
 	},
-	[1129] = {
+	[1083] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13559,7 +13007,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.544,
 		["instance"] = 571,
 	},
-	[1130] = {
+	[1084] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13571,7 +13019,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.833,
 		["instance"] = 571,
 	},
-	[1131] = {
+	[1085] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13583,7 +13031,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.834,
 		["instance"] = 571,
 	},
-	[1132] = {
+	[1086] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13595,7 +13043,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.583,
 		["instance"] = 571,
 	},
-	[1133] = {
+	[1087] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13607,7 +13055,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.58,
 		["instance"] = 571,
 	},
-	[1134] = {
+	[1088] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13619,19 +13067,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.576,
 		["instance"] = 571,
 	},
-	[1135] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.798,
-		["posY"] = 0.579,
-		["instance"] = 571,
-	},
-	[1136] = {
+	[1089] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13643,7 +13079,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.571,
 		["instance"] = 571,
 	},
-	[1137] = {
+	[1090] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13655,19 +13091,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.573,
 		["instance"] = 571,
 	},
-	[1138] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.815,
-		["posY"] = 0.576,
-		["instance"] = 571,
-	},
-	[1139] = {
+	[1091] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13679,31 +13103,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.562,
 		["instance"] = 571,
 	},
-	[1140] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.82,
-		["posY"] = 0.583,
-		["instance"] = 571,
-	},
-	[1141] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.819,
-		["posY"] = 0.579,
-		["instance"] = 571,
-	},
-	[1142] = {
+	[1092] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13715,31 +13115,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.627,
 		["instance"] = 571,
 	},
-	[1143] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.816,
-		["posY"] = 0.565,
-		["instance"] = 571,
-	},
-	[1144] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.817,
-		["posY"] = 0.584,
-		["instance"] = 571,
-	},
-	[1145] = {
+	[1093] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13751,19 +13127,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.58,
 		["instance"] = 571,
 	},
-	[1146] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.811,
-		["posY"] = 0.565,
-		["instance"] = 571,
-	},
-	[1147] = {
+	[1094] = {
 		["type"] = "fishing",
 		["object"] = 192054,
 		["predefined"] = True,
@@ -13775,331 +13139,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.612,
 		["instance"] = 571,
 	},
-	[1148] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.821,
-		["posY"] = 0.575,
-		["instance"] = 571,
-	},
-	[1149] = {
-		["type"] = "fishing",
-		["object"] = 192054,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.827,
-		["posY"] = 0.579,
-		["instance"] = 571,
-	},
-	[1150] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.51,
-		["posY"] = 0.342,
-		["instance"] = 571,
-	},
-	[1151] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.55,
-		["posY"] = 0.117,
-		["instance"] = 571,
-	},
-	[1152] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.494,
-		["posY"] = 0.441,
-		["instance"] = 571,
-	},
-	[1153] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.508,
-		["posY"] = 0.432,
-		["instance"] = 571,
-	},
-	[1154] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.743,
-		["posY"] = 0.44,
-		["instance"] = 571,
-	},
-	[1155] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.609,
-		["posY"] = 0.483,
-		["instance"] = 571,
-	},
-	[1156] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.606,
-		["posY"] = 0.553,
-		["instance"] = 571,
-	},
-	[1157] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.536,
-		["posY"] = 0.431,
-		["instance"] = 571,
-	},
-	[1158] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.519,
-		["posY"] = 0.476,
-		["instance"] = 571,
-	},
-	[1159] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.469,
-		["posY"] = 0.598,
-		["instance"] = 571,
-	},
-	[1160] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.463,
-		["posY"] = 0.594,
-		["instance"] = 571,
-	},
-	[1161] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.516,
-		["posY"] = 0.335,
-		["instance"] = 571,
-	},
-	[1162] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.607,
-		["posY"] = 0.56,
-		["instance"] = 571,
-	},
-	[1163] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.556,
-		["posY"] = 0.121,
-		["instance"] = 571,
-	},
-	[1164] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.552,
-		["posY"] = 0.116,
-		["instance"] = 571,
-	},
-	[1165] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.723,
-		["posY"] = 0.432,
-		["instance"] = 571,
-	},
-	[1166] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.606,
-		["posY"] = 0.485,
-		["instance"] = 571,
-	},
-	[1167] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.513,
-		["posY"] = 0.333,
-		["instance"] = 571,
-	},
-	[1168] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.513,
-		["posY"] = 0.339,
-		["instance"] = 571,
-	},
-	[1169] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.467,
-		["posY"] = 0.593,
-		["instance"] = 571,
-	},
-	[1170] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.466,
-		["posY"] = 0.6,
-		["instance"] = 571,
-	},
-	[1171] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.612,
-		["posY"] = 0.489,
-		["instance"] = 571,
-	},
-	[1172] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.485,
-		["posY"] = 0.431,
-		["instance"] = 571,
-	},
-	[1173] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.499,
-		["posY"] = 0.451,
-		["instance"] = 571,
-	},
-	[1174] = {
-		["type"] = "fishing",
-		["object"] = 192046,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 114,
-		["posX"] = 0.522,
-		["posY"] = 0.469,
-		["instance"] = 571,
-	},
-	[1175] = {
+	[1095] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14111,7 +13151,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.38,
 		["instance"] = 571,
 	},
-	[1176] = {
+	[1096] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14123,7 +13163,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.6,
 		["instance"] = 571,
 	},
-	[1177] = {
+	[1097] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14135,7 +13175,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.582,
 		["instance"] = 571,
 	},
-	[1178] = {
+	[1098] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14147,7 +13187,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.816,
 		["instance"] = 571,
 	},
-	[1179] = {
+	[1099] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14159,7 +13199,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.423,
 		["instance"] = 571,
 	},
-	[1180] = {
+	[1100] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14171,7 +13211,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.47,
 		["instance"] = 571,
 	},
-	[1181] = {
+	[1101] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14183,7 +13223,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.625,
 		["instance"] = 571,
 	},
-	[1182] = {
+	[1102] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14195,7 +13235,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.409,
 		["instance"] = 571,
 	},
-	[1183] = {
+	[1103] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14207,7 +13247,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.609,
 		["instance"] = 571,
 	},
-	[1184] = {
+	[1104] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14219,7 +13259,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.451,
 		["instance"] = 571,
 	},
-	[1185] = {
+	[1105] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14231,7 +13271,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.51,
 		["instance"] = 571,
 	},
-	[1186] = {
+	[1106] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14243,7 +13283,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.859,
 		["instance"] = 571,
 	},
-	[1187] = {
+	[1107] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14255,7 +13295,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.413,
 		["instance"] = 571,
 	},
-	[1188] = {
+	[1108] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14267,7 +13307,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.638,
 		["instance"] = 571,
 	},
-	[1189] = {
+	[1109] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14279,7 +13319,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.609,
 		["instance"] = 571,
 	},
-	[1190] = {
+	[1110] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14291,7 +13331,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.346,
 		["instance"] = 571,
 	},
-	[1191] = {
+	[1111] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14303,7 +13343,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.573,
 		["instance"] = 571,
 	},
-	[1192] = {
+	[1112] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14315,7 +13355,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.727,
 		["instance"] = 571,
 	},
-	[1193] = {
+	[1113] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14327,7 +13367,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.647,
 		["instance"] = 571,
 	},
-	[1194] = {
+	[1114] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14339,7 +13379,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.614,
 		["instance"] = 571,
 	},
-	[1195] = {
+	[1115] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14351,7 +13391,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.629,
 		["instance"] = 571,
 	},
-	[1196] = {
+	[1116] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14363,7 +13403,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.4,
 		["instance"] = 571,
 	},
-	[1197] = {
+	[1117] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14375,7 +13415,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.618,
 		["instance"] = 571,
 	},
-	[1198] = {
+	[1118] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14387,7 +13427,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.618,
 		["instance"] = 571,
 	},
-	[1199] = {
+	[1119] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14399,7 +13439,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.597,
 		["instance"] = 571,
 	},
-	[1200] = {
+	[1120] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14411,7 +13451,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.854,
 		["instance"] = 571,
 	},
-	[1201] = {
+	[1121] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14423,7 +13463,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.712,
 		["instance"] = 571,
 	},
-	[1202] = {
+	[1122] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14435,7 +13475,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.641,
 		["instance"] = 571,
 	},
-	[1203] = {
+	[1123] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14447,7 +13487,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.495,
 		["instance"] = 571,
 	},
-	[1204] = {
+	[1124] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14459,7 +13499,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.504,
 		["instance"] = 571,
 	},
-	[1205] = {
+	[1125] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14471,7 +13511,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.522,
 		["instance"] = 571,
 	},
-	[1206] = {
+	[1126] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14483,7 +13523,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.633,
 		["instance"] = 571,
 	},
-	[1207] = {
+	[1127] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14495,7 +13535,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.65,
 		["instance"] = 571,
 	},
-	[1208] = {
+	[1128] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14507,19 +13547,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.621,
 		["instance"] = 571,
 	},
-	[1209] = {
-		["type"] = "fishing",
-		["object"] = 192057,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 119,
-		["posX"] = 0.482,
-		["posY"] = 0.653,
-		["instance"] = 571,
-	},
-	[1210] = {
+	[1129] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14531,7 +13559,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.554,
 		["instance"] = 571,
 	},
-	[1211] = {
+	[1130] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14543,7 +13571,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.394,
 		["instance"] = 571,
 	},
-	[1212] = {
+	[1131] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14555,7 +13583,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.646,
 		["instance"] = 571,
 	},
-	[1213] = {
+	[1132] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14567,7 +13595,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.607,
 		["instance"] = 571,
 	},
-	[1214] = {
+	[1133] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14579,7 +13607,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.403,
 		["instance"] = 571,
 	},
-	[1215] = {
+	[1134] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14591,7 +13619,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.806,
 		["instance"] = 571,
 	},
-	[1216] = {
+	[1135] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14603,7 +13631,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.742,
 		["instance"] = 571,
 	},
-	[1217] = {
+	[1136] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14615,7 +13643,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.635,
 		["instance"] = 571,
 	},
-	[1218] = {
+	[1137] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14627,19 +13655,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.609,
 		["instance"] = 571,
 	},
-	[1219] = {
-		["type"] = "fishing",
-		["object"] = 192057,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 119,
-		["posX"] = 0.477,
-		["posY"] = 0.65,
-		["instance"] = 571,
-	},
-	[1220] = {
+	[1138] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14651,7 +13667,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.698,
 		["instance"] = 571,
 	},
-	[1221] = {
+	[1139] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14663,7 +13679,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.46,
 		["instance"] = 571,
 	},
-	[1222] = {
+	[1140] = {
 		["type"] = "fishing",
 		["object"] = 192057,
 		["predefined"] = True,
@@ -14675,367 +13691,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.749,
 		["instance"] = 571,
 	},
-	[1223] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.112,
-		["posY"] = 0.476,
-		["instance"] = 571,
-	},
-	[1224] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.118,
-		["posY"] = 0.467,
-		["instance"] = 571,
-	},
-	[1225] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.4,
-		["posY"] = 0.658,
-		["instance"] = 571,
-	},
-	[1226] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.387,
-		["posY"] = 0.671,
-		["instance"] = 571,
-	},
-	[1227] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.419,
-		["posY"] = 0.691,
-		["instance"] = 571,
-	},
-	[1228] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.926,
-		["posY"] = 0.674,
-		["instance"] = 571,
-	},
-	[1229] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.395,
-		["posY"] = 0.662,
-		["instance"] = 571,
-	},
-	[1230] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.374,
-		["posY"] = 0.679,
-		["instance"] = 571,
-	},
-	[1231] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.406,
-		["posY"] = 0.691,
-		["instance"] = 571,
-	},
-	[1232] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.931,
-		["posY"] = 0.583,
-		["instance"] = 571,
-	},
-	[1233] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.388,
-		["posY"] = 0.678,
-		["instance"] = 571,
-	},
-	[1234] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.414,
-		["posY"] = 0.688,
-		["instance"] = 571,
-	},
-	[1235] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.402,
-		["posY"] = 0.69,
-		["instance"] = 571,
-	},
-	[1236] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.405,
-		["posY"] = 0.659,
-		["instance"] = 571,
-	},
-	[1237] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.932,
-		["posY"] = 0.569,
-		["instance"] = 571,
-	},
-	[1238] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.927,
-		["posY"] = 0.665,
-		["instance"] = 571,
-	},
-	[1239] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.387,
-		["posY"] = 0.662,
-		["instance"] = 571,
-	},
-	[1240] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.416,
-		["posY"] = 0.677,
-		["instance"] = 571,
-	},
-	[1241] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.393,
-		["posY"] = 0.694,
-		["instance"] = 571,
-	},
-	[1242] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.93,
-		["posY"] = 0.66,
-		["instance"] = 571,
-	},
-	[1243] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.396,
-		["posY"] = 0.696,
-		["instance"] = 571,
-	},
-	[1244] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.385,
-		["posY"] = 0.673,
-		["instance"] = 571,
-	},
-	[1245] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.416,
-		["posY"] = 0.685,
-		["instance"] = 571,
-	},
-	[1246] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.903,
-		["posY"] = 0.353,
-		["instance"] = 571,
-	},
-	[1247] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.107,
-		["posY"] = 0.479,
-		["instance"] = 571,
-	},
-	[1248] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.122,
-		["posY"] = 0.492,
-		["instance"] = 571,
-	},
-	[1249] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.125,
-		["posY"] = 0.459,
-		["instance"] = 571,
-	},
-	[1250] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.12,
-		["posY"] = 0.483,
-		["instance"] = 571,
-	},
-	[1251] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.899,
-		["posY"] = 0.378,
-		["instance"] = 571,
-	},
-	[1252] = {
-		["type"] = "fishing",
-		["object"] = 192048,
-		["predefined"] = True,
-		["loot"] = {
-		},
-		["coins"] = 0,
-		["mapID"] = 115,
-		["posX"] = 0.122,
-		["posY"] = 0.415,
-		["instance"] = 571,
-	},
-	[1253] = {
+	[1141] = {
 		["type"] = "fishing",
 		["object"] = 192059,
 		["predefined"] = True,
@@ -15047,7 +13703,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.584,
 		["instance"] = 571,
 	},
-	[1254] = {
+	[1142] = {
 		["type"] = "fishing",
 		["object"] = 192059,
 		["predefined"] = True,
@@ -15059,7 +13715,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.561,
 		["instance"] = 571,
 	},
-	[1255] = {
+	[1143] = {
 		["type"] = "fishing",
 		["object"] = 192059,
 		["predefined"] = True,
@@ -15071,7 +13727,7 @@ GatherLite_localFishingNodes = {
 		["posY"] = 0.558,
 		["instance"] = 571,
 	},
-	[1256] = {
+	[1144] = {
 		["type"] = "fishing",
 		["object"] = 192059,
 		["predefined"] = True,

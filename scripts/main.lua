@@ -88,64 +88,65 @@ function GatherLite:OnInitialize()
 end
 
 function GatherLite.ModifyTooltip()
-    local skillname, objname, linenum, req, object
 
-    skillname = GameTooltipTextLeft2:GetText()
-    objname = GameTooltipTextLeft1:GetText()
+    local lines = GameTooltip:NumLines();
 
-    if skillname == GatherLite:translate("mining") then
-        req = GatherLite:GetRequiredLevel(objname)
-    elseif skillname == GatherLite:translate("herbalism") then
-        req = GatherLite:GetRequiredLevel(objname)
-    elseif not skillname then
-        object = GatherLite:GetObject(objname)
+    for i = 1, lines do
+        local skillname, objname, linenum, req, object
+        skillname = _G['GameTooltipTextLeft' .. i]:GetText()
 
-        if object and object.type == "ore" then
-            skillname = GatherLite:translate("mining")
+        if skillname == GatherLite:translate("mining") then
+            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
+            req = GatherLite:GetRequiredLevel(objname)
+        elseif skillname == GatherLite:translate("herbalism") then
+            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
+            req = GatherLite:GetRequiredLevel(objname)
+        elseif not skillname then
+            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
+            object = GatherLite:GetObject(objname)
+
+            if object and object.type == "ore" then
+                skillname = GatherLite:translate("mining")
+            end
+            if object and object.type == "herb" then
+                skillname = GatherLite:translate("herbalism")
+            end
+
+            if skillname then
+                req = object.levels
+                GameTooltip:AddLine(skillname)
+            end
         end
-        if object and object.type == "herb" then
-            skillname = GatherLite:translate("herbalism")
-        end
 
-        if not skillname then
-            return
-        end
+        if req then
+            local newstr, required
+            newstr = _G['GameTooltipTextLeft' .. i]:GetText() .. " " .. req[1]
+            required = req[1]
 
-        req = object.levels
-        GameTooltip:AddLine(skillname)
-    else
-        return
+            local skill = GatherLite:GetProfessionLevel(skillname)
+
+            if skill then
+                if skill >= req[1] then
+                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 0.5, 0)
+                end
+                if skill >= req[2] then
+                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 1.0, 0)
+                end
+                if skill >= req[3] then
+                    _G['GameTooltipTextLeft' .. i]:SetTextColor(0.12, 1.0, 0)
+                end
+                if skill >= req[4] then
+                    _G['GameTooltipTextLeft' .. i]:SetTextColor(0.62, 0.62, 0.62)
+                end
+
+                if skill < req[1] then
+                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 0, 0)
+                end
+            end
+
+            _G['GameTooltipTextLeft' .. i]:SetText(newstr)
+        end
     end
 
-    if not req then
-        return
-    end
-
-    local newstr, required
-    newstr = _G["GameTooltipTextLeft2"]:GetText() .. " " .. req[1]
-    required = req[1]
-
-    local skill = GatherLite:GetProfessionLevel(skillname)
-
-    if skill then
-        if skill >= req[1] then
-            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 0.5, 0)
-        end
-        if skill >= req[2] then
-            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 1.0, 0)
-        end
-        if skill >= req[3] then
-            _G["GameTooltipTextLeft2"]:SetTextColor(0.12, 1.0, 0)
-        end
-        if skill >= req[4] then
-            _G["GameTooltipTextLeft2"]:SetTextColor(0.62, 0.62, 0.62)
-        end
-
-        if skill < req[1] then
-            _G["GameTooltipTextLeft2"]:SetTextColor(1.00, 0, 0)
-        end
-    end
-
-    _G["GameTooltipTextLeft2"]:SetText(newstr)
-    GameTooltip:Show()
+    --GameTooltip:Show()
 end
