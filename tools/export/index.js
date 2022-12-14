@@ -32,13 +32,12 @@ function IsNodeInRange(x, y, nodeX, nodeY) {
 function findExistingNode(list, type, mapID, x, y) {
 
     let nodes = _.filter(list, function (node) {
-        return node.mapID === mapID && type === node.type;
+        return node.mapID === mapID && type === node.object;
     });
 
     for (let i = 0; i < nodes.length; i++) {
         let node = nodes[i];
         if (IsNodeInRange(x, y, node.posX, node.posY)) {
-            console.log("node is to close")
             return true;
         }
     }
@@ -55,7 +54,7 @@ function node(type, object, incoming) {
                 let y = parseFloat((incoming[id][0]["coords"][coord][1] / 100).toFixed(3));
                 let objectID = CheckIDS(object);
 
-                if (mapId && !findExistingNode(data, type, mapId, x, y))
+                if (mapId && !findExistingNode(data, objectID, mapId, x, y))
                     data.push({
                         type: type,
                         object: objectID,
@@ -73,26 +72,18 @@ function node(type, object, incoming) {
     return data;
 }
 
-function GetData(exp, data, type, site = "wowhead") {
+function GetData(exp, data, type) {
     return new Promise((resolve, reject) => {
         let jobs = [];
         for (let i = 0; i < data.length; i++) {
             let url;
 
+            // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
             // url = `https://wotlkdb.com/?object=${data[i]}`;
+            url = `https://www.wowhead.com/wotlk/object=${data[i]}`;
 
-            switch (site) {
-                default:
-                    // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
-                    url = `https://wotlkdb.com/?object=${data[i]}`;
-                    // url = `https://www.wowhead.com/wotlk/object=${data[i]}`;
-                    break;
-
-                case "twinstar":
-                    // url = `https://vanilla-twinhead.twinstar.cz/?object=${data[i]}`;
-                    url = `https://wotlkdb.com/?object=${data[i]}`;
-                    break;
-            }
+            if (type === "fishing")
+                url = `https://wotlk-twinhead.twinstar.cz/?object=${data[i]}`;
 
             jobs.push(axios.get(url).then(res => {
                 return new Promise(pr => {
@@ -161,71 +152,6 @@ function CheckDistance(x, y, mapID, object, rows, unique) {
     return false;
 }
 
-
-function getExpansion(data = {}) {
-    let objects = [];
-    for (const type in data) {
-        objects.push(new Promise(res => {
-            console.log("Downloading", type)
-
-            GetData(data, type, type === "fishing" ? "twinstar" : undefined).then(rows => {
-
-                let nodes = [];
-
-                for (const arr in rows) {
-                    // nodes = nodes.concat(rows[arr]);
-
-                    for (let i = 0; i < rows[arr].length; i++) {
-                        // console.log(rows[arr][i]);
-                        let row = rows[arr][i];
-                        if (row !== undefined) {
-                            row.type = type;
-                            nodes.push(row)
-                            if (!CheckDistance(row.posX, row.posY, row.mapID, row.object, nodes, type !== "fishing")) {
-                                nodes.push(row)
-                            }
-                        }
-                    }
-                }
-
-                let out = "";
-
-
-                switch (type) {
-                    case "containers":
-                        out = Objects2Lua({GatherLite_localNodes: {container: Container}});
-                        break;
-                    case "mining":
-                        out = Objects2Lua({GatherLite_localOreNodes: nodes});
-                        break;
-
-                    case "herbalism":
-                        out = Objects2Lua({GatherLite_localHerbNodes: nodes});
-                        break;
-
-                    case "fishing":
-                        out = Objects2Lua({GatherLite_localFishingNodes: nodes});
-                        break;
-                }
-
-                if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp)))
-                    fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp));
-
-                fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', exp, `${type}.lua`), out, {
-                    encoding: 'utf8',
-                    flag: 'w'
-                });
-                console.log(type, "data complete")
-                res();
-            })
-        }));
-    }
-
-    Promise.all(objects).then(() => {
-        console.log("All data downloaded!")
-    })
-}
-
 function getTypeData(type) {
     let promises = [];
 
@@ -266,10 +192,10 @@ function getTypeData(type) {
 function writeDBFile(name, data) {
 
 
-    if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'scripts', 'db')))
-        fs.mkdirSync(path.resolve(__dirname, '..', '..', 'scripts', 'db'));
+    if (!fs.existsSync(path.resolve(__dirname, '..', '..', 'plugins', 'database', 'data')))
+        fs.mkdirSync(path.resolve(__dirname, '..', '..', 'plugins', 'database', 'data'));
 
-    fs.writeFileSync(path.resolve(__dirname, '..', '..', 'scripts', 'db', `${name}.lua`), data, {
+    fs.writeFileSync(path.resolve(__dirname, '..', '..', 'plugins', 'database', 'data', `${name}.lua`), data, {
         encoding: 'utf8',
         flag: 'w'
     });
@@ -278,28 +204,28 @@ function writeDBFile(name, data) {
 getTypeData("mining").then((nodes) => {
     console.log("mining done!")
     let out = "";
-    out = Objects2Lua({GatherLite_localOreNodes: nodes.flat()});
+    out = Objects2Lua({GatherLite_PluginsDatabaseMining: nodes.flat()});
     writeDBFile("mining", out)
 });
 
 getTypeData("herbalism").then((nodes) => {
     console.log("herbalism done!")
     let out = "";
-    out = Objects2Lua({GatherLite_localHerbNodes: nodes.flat()});
+    out = Objects2Lua({GatherLite_PluginsDatabaseHerbalism: nodes.flat()});
     writeDBFile("herbalism", out)
 });
 
 getTypeData("containers").then((nodes) => {
     console.log("containers done!")
     let out = "";
-    out = Objects2Lua({GatherLite_localContainerNodes: nodes.flat()});
+    out = Objects2Lua({GatherLite_PluginsDatabaseContainers: nodes.flat()});
     writeDBFile("containers", out)
 });
 
 getTypeData("fishing").then((nodes) => {
     console.log("fishing done!")
     let out = "";
-    out = Objects2Lua({GatherLite_localFishingNodes: nodes.flat()});
+    out = Objects2Lua({GatherLite_PluginsDatabaseFishing: nodes.flat()});
     writeDBFile("fishing", out)
 });
 

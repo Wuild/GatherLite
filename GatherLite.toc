@@ -8,3 +8,4 @@
 
 #embeds
 scripts\embeds.xml
+plugins\plugins.xml

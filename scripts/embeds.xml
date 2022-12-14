@@ -19,10 +19,6 @@
     <Script file="libraries\HereBeDragons\HereBeDragons-Migrate.lua"/>
     <Script file="libraries\HereBeDragons\HereBeDragons-Pins-2.0.lua"/>
 
-    <Script file="db\mining.lua"/>
-    <Script file="db\herbalism.lua"/>
-    <Script file="db\containers.lua"/>
-    <Script file="db\fishing.lua"/>
 
     <Script file="locales\enUS.lua"/>
     <Script file="locales\deDE.lua"/>
@@ -39,16 +35,8 @@
     <Script file="settings.lua"/>
     <Script file="main.lua"/>
 
-    <Script file="tracker.lua"/>
-
-    <Frame name="GatherLiteTracker" mixin="GatherLiteTracker">
-        <Scripts>
-            <OnLoad method="OnLoad"/>
-            <OnUpdate>
-                GatherLiteTracker:OnUpdate(elapsed)
-            </OnUpdate>
-        </Scripts>
-    </Frame>
+    <Script file="modules\worldmap.lua"/>
+    <Script file="modules\minimap.lua"/>
 
     <Button name="GatherLiteToggle" parent="WorldMapFrame" inherits="UIPanelButtonTemplate" text="Hide GatherLite">
         <Size>

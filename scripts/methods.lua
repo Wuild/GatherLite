@@ -417,8 +417,8 @@ function GatherLite:hideTooltip()
 end
 
 function GatherLite:GetNodeObject(nodeID)
-    for k = 1, #_GatherLite.nodeDB do
-        local node = _GatherLite.nodeDB[k];
+
+    for i, node in pairs(_GatherLite.nodeDB) do
         if type(node.id) == "table" then
             for k2 = 1, #node.id do
                 local id = node.id[k2];
@@ -428,86 +428,11 @@ function GatherLite:GetNodeObject(nodeID)
             end
         end
     end
-end
 
-function GatherLite:createMinimapNode(node)
-    if not GatherLite:IsLoaded() then
-        return
-    end
-
-    local object = GatherLite:GetNodeObject(node.object)
-    if not object then
-        return nil
-    end
-
-    GatherLite:debug(_GatherLite.DEBUG_NODE, "Create node of type", node.type);
-
-    local f = GFrame:getFrame("minimap");
-    f:SetAlpha(GatherLite.db.char.minimap.opacity);
-    f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
-
-    f.texture:SetTexture(object.icon)
-    f.node = node;
-    f.object = object
-    f.type = "minimap";
-
-    f:SetFrameStrata(Minimap:GetFrameStrata());
-    --f:SetFrameLevel(Minimap:GetFrameLevel() + 5);
-
-    f:SetScript("OnEnter", function(self)
-        GatherLite:showTooltip(self);
-    end)
-    f:SetScript("OnLeave", function()
-        GatherLite:hideTooltip()
-    end)
-
-    local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID)
-    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, GatherLite.db.char.minimap.edge)
-    return f;
-end
-
-function GatherLite:createWorldmapNode(node)
-    if not GatherLite:IsLoaded() then
-        return
-    end
-
-    local object = GatherLite:GetNodeObject(node.object)
-    if not object then
-        return nil
-    end
-
-    local f = GFrame:getFrame("worldmap");
-    f:SetAlpha(GatherLite.db.char.worldmap.opacity);
-    f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
-    f.texture:SetTexture(object.icon)
-    f.texture:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
-    --f:SetBackdropColor(1, 0, 0, 1);
-
-    f.node = node;
-    f.object = object
-    f.type = "worldmap";
-    f.TimeSinceLastUpdate = 0
-
-    f:SetFrameStrata("TOOLTIP");
-    --f:SetFrameLevel(0);
-
-    f:SetScript("OnUpdate", nil)
-
-    f:SetScript("OnEnter", function(self)
-        GatherLite:showTooltip(self);
-        --GatherLite:debug(_GatherLite.DEBUG_NODE, self.node.instance)
-    end)
-    f:SetScript("OnLeave", function()
-        GatherLite:hideTooltip()
-    end)
-
-    if not node.posX and not node.posY then
-        GatherLite:debug(_GatherLite.DEBUG_NODE, node.object, node.posX, node.posY)
-    else
-        Pins:AddWorldMapIconMap(_GatherLite.name, f, node.mapID, node.posX, node.posY);
-    end
-
-    return f;
+    --for k = 1, #_GatherLite.nodeDB do
+    --    local node = _GatherLite.nodeDB[k];
+    --
+    --end
 end
 
 function GatherLite:addContextItem(args)
@@ -537,8 +462,7 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.mining,
                 callback = function()
                     GatherLite.db.char.tracking.mining = not GatherLite.db.char.tracking.mining
-                    GatherLite:ResetMinimap()
-                    GatherLite:ResetWorldmap()
+                    GatherLite:Trigger("settings:update")
                 end
             })
 
@@ -548,8 +472,7 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.herbalism,
                 callback = function()
                     GatherLite.db.char.tracking.herbalism = not GatherLite.db.char.tracking.herbalism
-                    GatherLite:ResetMinimap()
-                    GatherLite:ResetWorldmap()
+                    GatherLite:Trigger("settings:update")
                 end
             })
 
@@ -559,8 +482,7 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.containers,
                 callback = function()
                     GatherLite.db.char.tracking.containers = not GatherLite.db.char.tracking.containers
-                    GatherLite:ResetMinimap()
-                    GatherLite:ResetWorldmap()
+                    GatherLite:Trigger("settings:update")
                 end
             })
 
@@ -570,16 +492,11 @@ function GatherLite:MinimapContextMenu()
                 checked = GatherLite.db.char.tracking.fishing,
                 callback = function()
                     GatherLite.db.char.tracking.fishing = not GatherLite.db.char.tracking.fishing
-                    GatherLite:ResetMinimap()
-                    GatherLite:ResetWorldmap()
+                    GatherLite:Trigger("settings:update")
                 end
             })
         end
     end
-end
-
-function GatherLite:LoadWorldmap()
-    GatherLite:Trigger("worldmap:update")
 end
 
 function GatherLite:IsIgnored(objectID)
@@ -592,42 +509,12 @@ function GatherLite:SetIgnored(object, value)
     end
 end
 
-function GatherLite:ResetMinimap()
-    if not GatherLite:IsLoaded() then
-        return
-    end
-
-    GatherLite:forEach(GFrame.usedFrames, function(frame)
-        if frame.type == "minimap" then
-            frame.node.loaded = false;
-            frame:Unload()
-        end
-    end)
-
-    GatherLite:LoadMinimap();
-end
-
-function GatherLite:ResetWorldmap()
-    GatherLite:forEach(GFrame.usedFrames, function(frame)
-        if frame.type == "worldmap" then
-            frame.node.loadedWorldmap = false;
-            frame:Unload()
-        end
-    end)
-
-    GatherLiteTracker:Worldmap()
-end
-
 function GatherLite:forEach(table, cb)
     if (GatherLite:tablelength(table) > 0) then
         for key in pairs(table) do
             cb(table[key]);
         end
     end
-end
-
-function GatherLite:LoadMinimap()
-    GatherLiteTracker:Minimap(0, true);
 end
 
 local function loadDatabase(type)
@@ -673,14 +560,17 @@ function GatherLite:GetNodes()
     return nodes
 end
 
-function GatherLite:Load()
-    if GatherLite.db.global.usePredefined then
-        GatherLite:print("Loading predefined database, this may cause the game to lag for a few seconds!")
+function GatherLite:LoadTable(type, source)
+    _GatherLite.nodes[type] = TableConcat(_GatherLite.nodes[type], source)
+end
 
-        _GatherLite.nodes["mining"] = GatherLite_localOreNodes
-        _GatherLite.nodes["herbalism"] = GatherLite_localHerbNodes
-        _GatherLite.nodes["containers"] = GatherLite_localContainerNodes
-        _GatherLite.nodes["fishing"] = GatherLite_localFishingNodes
+function GatherLite:Load()
+    for i, module in pairs(GatherLite.modules) do
+        module.setup();
+    end
+
+    for i, plugin in pairs(GatherLite.plugins) do
+        plugin.setup();
     end
 
     loadDatabase("mining");
@@ -688,21 +578,19 @@ function GatherLite:Load()
     loadDatabase("containers");
     loadDatabase("fishing");
 
-    GatherLite:ResetMinimap();
-    GatherLite:ResetWorldmap();
+    --GatherLite:ResetMinimap();
+    --GatherLite:ResetWorldmap();
 
     isLoaded = true;
 
     GatherLiteToggle:SetScript("OnClick", function()
         GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
-        GatherLite:LoadWorldmap();
-
         if (GatherLite.db.char.worldmap.enabled) then
             GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
-            GatherLite:ResetWorldmap()
+            GatherLite.modules.worldmap.reset();
         else
             GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
-            GatherLite:ResetWorldmap()
+            GatherLite.modules.worldmap.reset();
         end
     end);
 
@@ -723,6 +611,9 @@ function GatherLite:Load()
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "unload worldmap")
         end
     end)
+
+    --LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite: Profiles", LibStub("AceDBOptions-3.0"):GetOptionsTable(GatherLite.db))
+    --LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite: Profiles", "Profiles", "GatherLite");
 end
 
 function GatherLite:SendVersionCheck()

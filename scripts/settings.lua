@@ -39,8 +39,7 @@ tracking["toggleOres"] = {
                 GatherLite:SetIgnored(object, not ignored)
             end
         end
-        GatherLite:ResetMinimap();
-        GatherLite:ResetWorldmap();
+        GatherLite:Trigger("settings:update")
     end,
     get = function(info)
         return not checkAllIgnored("ore")
@@ -57,8 +56,7 @@ for index, object in pairs(_GatherLite.nodeDB) do
             order = 2,
             set = function(info, val)
                 GatherLite:SetIgnored(object, not GatherLite:IsIgnored(object.id[1]))
-                GatherLite:ResetMinimap();
-                GatherLite:ResetWorldmap();
+                GatherLite:Trigger("settings:update")
             end,
             get = function(info)
                 return not GatherLite:IsIgnored(object.id[1])
@@ -91,8 +89,7 @@ tracking["toggleHerbs"] = {
                 GatherLite:SetIgnored(object, not ignored)
             end
         end
-        GatherLite:ResetMinimap();
-        GatherLite:ResetWorldmap();
+        GatherLite:Trigger("settings:update")
     end,
     get = function(info)
         return not checkAllIgnored("herb")
@@ -109,8 +106,7 @@ for index, object in pairs(_GatherLite.nodeDB) do
             order = 5,
             set = function(info, val)
                 GatherLite:SetIgnored(object, not GatherLite:IsIgnored(object.id[1]))
-                GatherLite:ResetMinimap();
-                GatherLite:ResetWorldmap();
+                GatherLite:Trigger("settings:update")
             end,
             get = function(info)
                 return not GatherLite:IsIgnored(object.id[1])
@@ -143,8 +139,7 @@ tracking["toggleContainers"] = {
                 GatherLite:SetIgnored(object, not ignored)
             end
         end
-        GatherLite:ResetMinimap();
-        GatherLite:ResetWorldmap();
+        GatherLite:Trigger("settings:update")
     end,
     get = function(info)
         return not checkAllIgnored("container")
@@ -161,8 +156,7 @@ for index, object in pairs(_GatherLite.nodeDB) do
             order = 8,
             set = function(info, val)
                 GatherLite:SetIgnored(object, not GatherLite:IsIgnored(object.id[1]))
-                GatherLite:ResetMinimap();
-                GatherLite:ResetWorldmap();
+                GatherLite:Trigger("settings:update")
             end,
             get = function(info)
                 return not GatherLite:IsIgnored(object.id[1])
@@ -224,8 +218,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.char.minimap.enabled = val;
-                        GatherLite:ResetMinimap();
-                        GatherLite:ResetWorldmap();
+                        GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
                         return GatherLite.db.char.minimap.enabled;
@@ -241,8 +234,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.char.worldmap.enabled = val;
-                        GatherLite:ResetMinimap();
-                        GatherLite:ResetWorldmap();
+                        GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
                         return GatherLite.db.char.worldmap.enabled;
@@ -309,8 +301,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
 
                             set = function(info, val)
                                 GatherLite.db.char.tracking.mining = val;
-                                GatherLite:ResetMinimap();
-                                GatherLite:ResetWorldmap();
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.mining
@@ -325,8 +316,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 2,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.herbalism = val;
-                                GatherLite:ResetMinimap();
-                                GatherLite:ResetWorldmap();
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.herbalism
@@ -341,8 +331,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 2,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.containers = val;
-                                GatherLite:ResetMinimap();
-                                GatherLite:ResetWorldmap();
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.containers
@@ -357,8 +346,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             order = 2,
                             set = function(info, val)
                                 GatherLite.db.char.tracking.fishing = val;
-                                GatherLite:ResetMinimap();
-                                GatherLite:ResetWorldmap();
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.tracking.fishing
@@ -475,9 +463,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.char.minimap.edge = val;
-
-                        GatherLite:ResetMinimap()
-
+                        GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
                         return GatherLite.db.char.minimap.edge
@@ -515,7 +501,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.minimap.range = val;
-                                GatherLite:ResetMinimap()
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.minimap.range
@@ -523,7 +509,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         },
                         iconSize = {
                             name = function()
-                                return GatherLite:translate("settings.minimap.size");
+                                return GatherLite:Trigger("settings.minimap.size");
                             end,
                             type = "range",
                             min = 4,

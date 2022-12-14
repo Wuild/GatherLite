@@ -1,0 +1,7 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+    <Script file="data\mining.lua"/>
+    <Script file="data\herbalism.lua"/>
+    <Script file="data\containers.lua"/>
+    <Script file="data\fishing.lua"/>
+    <Script file="database.lua"/>
+</Ui>

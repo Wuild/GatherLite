@@ -73,10 +73,6 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("PLAYER_LOGIN", "EventHandler")
     GatherLite:RegisterEvent("ZONE_CHANGED", "EventHandler")
 
-    hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
-        GatherLite:ResetWorldmap();
-    end);
-
     GameTooltip:HookScript("OnShow", GatherLite.ModifyTooltip)
     GameTooltip:HookScript("OnUpdate", GatherLite.ModifyTooltip)
 
@@ -85,6 +81,9 @@ function GatherLite:OnInitialize()
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
+
+
+
 end
 
 function GatherLite.ModifyTooltip()

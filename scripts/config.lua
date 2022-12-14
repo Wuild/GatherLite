@@ -3,8 +3,10 @@ local events = {};
 
 GatherLite = LibStub("AceAddon-3.0"):NewAddon("GatherLite", "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0")
 
-function GatherLite:On(event, callback)
+GatherLite.modules = {}
+GatherLite.plugins = {}
 
+function GatherLite:On(event, callback)
     if not events[event] then
         events[event] = {}
     end
