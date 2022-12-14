@@ -697,3 +697,15 @@ end
 function GatherLite:MapLocalize(map)
     return HBD:GetLocalizedMap(map)
 end
+
+function GatherLite:Filter(t, filterIter)
+    local out = {}
+
+    for k, v in pairs(t) do
+        if filterIter(v, k, t) then
+            out[k] = v;
+        end
+    end
+
+    return out
+end

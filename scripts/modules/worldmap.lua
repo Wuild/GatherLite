@@ -34,9 +34,10 @@ local WorldmapFilter = function(node)
     return true;
 end
 
+
 -- Get nodes for current map id
 local function WorldmapNodes(list, mapID, filter)
-    return table.filter(list, function(node)
+    return GatherLite:Filter(list, function(node)
         return node.mapID == mapID and filter(node);
     end);
 end

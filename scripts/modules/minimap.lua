@@ -47,7 +47,7 @@ end
 
 local function ClosestNodes(type, posX, posY, instanceID, maxDist, filter)
 
-    local t = table.filter(_GatherLite.nodes[type], function(node)
+    local t = GatherLite:Filter(_GatherLite.nodes[type], function(node)
 
         if node.instance ~= instanceID then
             return false
@@ -153,7 +153,7 @@ local function minimapIconThread()
     local i = 0;
     local i2 = 0
 
-    local usedFrames = table.filter(Frames.usedFrames, function(frame)
+    local usedFrames = GatherLite:Filter(Frames.usedFrames, function(frame)
         return frame.type == "minimap"
     end);
 
