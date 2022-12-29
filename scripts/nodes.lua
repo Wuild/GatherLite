@@ -34,10 +34,10 @@ InsertObject("ore", { 181569 }, "rich_adamantite_deposit", "Ore\\Adamantite", { 
 InsertObject("ore", { 181557 }, "khorium_vein", "Ore\\Khorium", { 375, 400, 425, 475 })
 
 -- WOTLK
-InsertObject("ore", { 189980 }, "saronite_deposit", "Ore\\Saronite", { 400, 400, 400, 400 })
-InsertObject("ore", { 189981 }, "rich_saronite_deposit", "Ore\\Saronite", { 425, 425, 425, 425 })
-InsertObject("ore", { 189978 }, "cobalt_deposit", "Ore\\Cobalt", { 350, 400, 400, 400 })
-InsertObject("ore", { 189979 }, "rich_cobalt_deposit", "Ore\\Cobalt", { 375, 400, 400, 400 })
+InsertObject("ore", { 189980 }, "saronite_deposit", "Ore\\Saronite", { 400, 425, 450, 475 })
+InsertObject("ore", { 189981 }, "rich_saronite_deposit", "Ore\\Saronite", { 425, 450, 500, 500 })
+InsertObject("ore", { 189978 }, "cobalt_deposit", "Ore\\Cobalt", { 350, 375, 400, 450 })
+InsertObject("ore", { 189979 }, "rich_cobalt_deposit", "Ore\\Cobalt", { 375, 400, 425, 450 })
 InsertObject("ore", { 191133 }, "titanium_vein", "Ore\\Titanium", { 450, 450, 450, 450 })
 
 
@@ -85,14 +85,14 @@ InsertObject("herb", { 181276 }, "flame_cap", "Herb\\FlameCap", { 335, 360, 385,
 InsertObject("herb", { 181166 }, "bloodthistle", "Herb\\Stranglekelp", { 0, 0, 0, 0 })
 
 -- WOTLK
-InsertObject("herb", { 189973 }, "goldclover", "Herb\\GoldClover", { 335, 360, 385, 435 })
-InsertObject("herb", { 191303 }, "firethorn", "Herb\\FlameCap", { 335, 360, 385, 435 })
-InsertObject("herb", { 190169 }, "tiger_lily", "Herb\\TigerLily", { 335, 360, 385, 435 })
-InsertObject("herb", { 190170 }, "talandras_rose", "Herb\\TalandrasRose", { 335, 360, 385, 435 })
-InsertObject("herb", { 190173 }, "frozen_herb", "Herb\\FrostLotus", { 335, 360, 385, 435 })
-InsertObject("herb", { 191019 }, "adders_tongue", "Herb\\AddersTongue", { 335, 360, 385, 435 })
-InsertObject("herb", { 190171 }, "lichbloom", "Herb\\Lichbloom", { 335, 360, 385, 435 })
-InsertObject("herb", { 190172 }, "icethorn", "Herb\\Icethorn", { 335, 360, 385, 435 })
+InsertObject("herb", { 189973 }, "goldclover", "Herb\\GoldClover", { 350, 375, 400, 450 })
+InsertObject("herb", { 191303 }, "firethorn", "Herb\\FlameCap", { 360, 385, 410, 450 })
+InsertObject("herb", { 190169 }, "tiger_lily", "Herb\\TigerLily", { 375, 400, 425, 450 })
+InsertObject("herb", { 190170 }, "talandras_rose", "Herb\\TalandrasRose", { 385, 410, 435, 450 })
+InsertObject("herb", { 190173 }, "frozen_herb", "Herb\\FrostLotus", { 400, 425, 450, 500 })
+InsertObject("herb", { 191019 }, "adders_tongue", "Herb\\AddersTongue", { 400, 425, 450, 500 })
+InsertObject("herb", { 190171 }, "lichbloom", "Herb\\Lichbloom", { 425, 450, 500, 500 })
+InsertObject("herb", { 190172 }, "icethorn", "Herb\\Icethorn", { 435, 450, 500, 500 })
 
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)
