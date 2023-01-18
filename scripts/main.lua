@@ -81,9 +81,6 @@ function GatherLite:OnInitialize()
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
-
-
-
 end
 
 function GatherLite.ModifyTooltip()

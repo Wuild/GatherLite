@@ -22,7 +22,7 @@ local function FixScrollOnUpdate(frame)
 end
 
 --[[-----------------------------------------------------------------------------
-scripts
+Scripts
 -------------------------------------------------------------------------------]]
 local function ScrollFrame_OnMouseWheel(frame, value)
 	frame.obj:MoveScroll(value)

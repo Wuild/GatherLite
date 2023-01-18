@@ -90,7 +90,7 @@ function GatherLiteFrame:newFrame(frameId)
         end
     end
 
-    local texture = newFrame:CreateTexture(nil, "TOOLTIP", nil, 0)
+    local texture = newFrame:CreateTexture(nil, "BACKGROUND")
     texture:SetWidth(16)
     texture:SetHeight(16)
     texture:SetAllPoints(newFrame)
