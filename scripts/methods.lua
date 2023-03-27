@@ -265,6 +265,9 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
             if node.loot[exists].count == nil then
                 node.loot[exists].count = 0;
             end
+            if item.count == nil then
+                item.count = 0;
+            end
 
             node.loot[exists].count = node.loot[exists].count + item.count;
         end
