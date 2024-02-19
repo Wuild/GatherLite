@@ -1,4 +1,4 @@
-## Interface: 30400
+## Interface: 30403
 ## Title: GatherLite
 ## Author: Wuild
 ## Version: @project-version@
@@ -8,4 +8,6 @@
 
 #embeds
 scripts\embeds.xml
-plugins\plugins.xml
+plugins\database\database.lua
+plugins\database\data\wotlk.lua
+
