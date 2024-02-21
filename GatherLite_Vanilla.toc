@@ -1,7 +1,7 @@
 ## Interface: 11501
 ## Title: GatherLite
 ## Author: Wuild
-## Version: 7.0.1
+## Version: @project-version@
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
