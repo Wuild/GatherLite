@@ -1,0 +1,10 @@
+package-as: GatherLite
+
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown
+
+enable-nolib-creation: no
+
+ignore:
+    - tools

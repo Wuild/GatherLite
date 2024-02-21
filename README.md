@@ -5,25 +5,6 @@ This addon is made for World of Warcraft:Classic
 
 [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png "Buy Me A Coffee")](https://www.buymeacoffee.com/yuImx6KOY "Buy Me A Coffee")
 
-### Changelog
-#### 7.0.0
-* Addon now uses one codebase for all classic flavors
-* Updated the world map button to include filters
-
-#### 6.0.4
-* Updated the database
-* Added more api function to enable other addons to use the nodes data
-* Added node clusters (Nodes close to eachother will now use the same tooltip)
-* More optimizations for faster loading and less memory usage when in use
-
-#### 6.0.0
-* Added the first pass off northrend nodes
-
-#### 5.0.0
-* Fixed several bugs and performance issues
-* Restructured the codebase
-* Updated the predefined database
-
 
 ### INSTALLATION
 Extract the data to your "World of Warcraft/Interface/AddOns" directory so that the "GathererLite" directory is a subdirectory of the "AddOns" directory.
