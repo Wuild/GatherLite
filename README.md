@@ -6,6 +6,9 @@ This addon is made for World of Warcraft:Classic
 [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png "Buy Me A Coffee")](https://www.buymeacoffee.com/yuImx6KOY "Buy Me A Coffee")
 
 ### Changelog
+#### 7.0.0
+* Addon now uses one codebase for all classic flavors
+* Updated the world map button to include filters
 
 #### 6.0.4
 * Updated the database
