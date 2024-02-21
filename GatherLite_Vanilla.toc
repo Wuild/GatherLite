@@ -1,14 +1,12 @@
 ## Interface: 11501
 ## Title: GatherLite
 ## Author: Wuild
-## Version: @project-version@
+## Version: 7.0.1
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
 
 #embeds
 scripts\embeds.xml
-
 plugins\database\database.lua
 plugins\database\data\vanilla.lua
-

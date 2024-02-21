@@ -273,7 +273,7 @@ source.setup = function()
 
     GatherLite:On("settings:update", function()
 
-        print("Update settings")
+        GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Update settings")
 
         ResetMinimap()
         Update(0, true)

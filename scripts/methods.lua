@@ -583,26 +583,26 @@ function GatherLite:Load()
 
     isLoaded = true;
 
-    GatherLiteToggle:SetScript("OnClick", function()
-        GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
-        if (GatherLite.db.char.worldmap.enabled) then
-            GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
-            GatherLite.modules.worldmap.reset();
-        else
-            GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
-            GatherLite.modules.worldmap.reset();
-        end
-    end);
+    --GatherLiteToggle:SetScript("OnClick", function()
+    --    GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
+    --    if (GatherLite.db.char.worldmap.enabled) then
+    --        GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
+    --        GatherLite.modules.worldmap.reset();
+    --    else
+    --        GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
+    --        GatherLite.modules.worldmap.reset();
+    --    end
+    --end);
 
     _GatherLite.mainFrame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
             _GatherLite.WorldmapOpen = true;
-            GatherLiteToggle:SetPoint('BOTTOMLEFT', 20, 40);
+            --GatherLiteToggle:SetPoint('BOTTOMLEFT', 20, 40);
 
             if (GatherLite.db.char.worldmap.enabled) then
-                GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
+                --GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
             else
-                GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
+                --GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
             end
         end
 

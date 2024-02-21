@@ -2,6 +2,9 @@ local name, _GatherLite = ...;
 
 local GFrame = LibStub("GatherLiteFrame");
 
+local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
+UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
+
 local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinimapIcon", {
     type = "data source",
     text = "Gatherlite",
@@ -9,10 +12,9 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
 
     OnClick = function(self, button)
         if button == "LeftButton" then
-            local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
-            UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
             ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
         elseif button == "RightButton" then
+            CloseDropDownMenus(1)
             InterfaceOptionsFrame_OpenToCategory("GatherLite")
             InterfaceOptionsFrame_OpenToCategory("GatherLite") -- run it again to set the correct tab
         end

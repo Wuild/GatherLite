@@ -37,23 +37,4 @@
 
     <Script file="modules\worldmap.lua"/>
     <Script file="modules\minimap.lua"/>
-
-    <Button name="GatherLiteToggle" parent="WorldMapFrame" inherits="UIPanelButtonTemplate" text="Hide GatherLite">
-        <Size>
-            <AbsDimension x="140" y="20"/>
-        </Size>
-        <Anchors>
-            <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="WorldMapContinentDropDown">
-                <Offset>
-                    <AbsDimension x="0" y="0"/>
-                </Offset>
-            </Anchor>
-        </Anchors>
-        <Scripts>
-            <OnLoad>
-                self:SetFrameLevel(10);
-            </OnLoad>
-        </Scripts>
-    </Button>
-
 </Ui>

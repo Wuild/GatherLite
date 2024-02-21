@@ -142,11 +142,104 @@ local function ResetWorldmap()
     LoadWorldmap()
 end
 
+local defaultCoords = { 0, 1, 0, 1 }
+local function updateCoord(self)
+    local coords = defaultCoords
+    local deltaX, deltaY = 0, 0
+    if not self:GetParent().isMouseDown then
+        deltaX = (coords[2] - coords[1]) * 0.05
+        deltaY = (coords[4] - coords[3]) * 0.05
+    end
+    self:SetTexCoord(coords[1] + deltaX, coords[2] - deltaX, coords[3] + deltaY, coords[4] - deltaY)
+end
+
+local function getAnchors(frame)
+    local x, y = frame:GetCenter()
+    if not x or not y then
+        return "CENTER"
+    end
+    local hhalf = (x > UIParent:GetWidth() * 2 / 3) and "RIGHT" or (x < UIParent:GetWidth() / 3) and "LEFT" or ""
+    local vhalf = (y > UIParent:GetHeight() / 2) and "TOP" or "BOTTOM"
+    return vhalf .. hhalf, frame, (vhalf == "TOP" and "BOTTOM" or "TOP") .. hhalf
+end
+
+local tooltip = CreateFrame("GameTooltip", "GatherLiteIconTooltip", UIParent, "GameTooltipTemplate")
+local dropDown = CreateFrame("Frame", "GatherLiteWorldmapMenu", UIParent, "UIDropDownMenuTemplate")
+UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
+
+local function createButton()
+    local button = CreateFrame("Button", "GatherLiteWorldmapButton", WorldMapFrame)
+    button.dataObject = self
+    button:SetFrameStrata("MEDIUM")
+    button:SetSize(31, 31)
+    button:SetFrameLevel(8)
+    button:RegisterForClicks("anyUp")
+    button:RegisterForDrag("LeftButton")
+    button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
+    button:SetPoint('BOTTOMLEFT', 20, 40);
+
+    local overlay = button:CreateTexture(nil, "OVERLAY")
+    overlay:SetSize(53, 53)
+    overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
+    overlay:SetPoint("TOPLEFT")
+    local background = button:CreateTexture(nil, "BACKGROUND")
+    background:SetSize(20, 20)
+    background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
+    background:SetPoint("TOPLEFT", 7, -5)
+    local icon = button:CreateTexture(nil, "ARTWORK")
+    icon:SetSize(17, 17)
+    icon:SetTexture("Interface\\Icons\\inv_misc_spyglass_02")
+    icon:SetPoint("TOPLEFT", 7, -6)
+
+    local r, g, b = icon:GetVertexColor()
+    icon:SetVertexColor(r, g, b)
+
+    icon.UpdateCoord = updateCoord
+    icon:UpdateCoord()
+
+    button:SetScript("OnClick", function(self, button)
+        if button == "LeftButton" then
+            ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
+        elseif button == "RightButton" then
+            CloseDropDownMenus(1)
+            InterfaceOptionsFrame_OpenToCategory("GatherLite")
+            InterfaceOptionsFrame_OpenToCategory("GatherLite") -- run it again to set the correct tab
+        end
+    end);
+
+    button:SetScript("OnEnter", function(self)
+        tooltip:SetOwner(self, "ANCHOR_NONE")
+        tooltip:SetPoint(getAnchors(self))
+        tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.mining));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
+
+        if GatherLite.db.global.debug.enabled then
+            tooltip:AddLine(" ");
+            tooltip:AddLine("             -- Debugging --             ");
+            tooltip:AddDoubleLine(GatherLite:Colorize("Used frames", "white"), GatherLite:tablelength(GFrame.usedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("Unused frames", "white"), GatherLite:tablelength(GFrame.unusedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(GFrame.allFrames));
+        end
+
+        tooltip:AddLine(" ");
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.left_click_text"));
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.right_click_text"));
+        tooltip:Show()
+    end)
+
+    button:SetScript("OnLeave", function()
+        tooltip:Hide()
+    end)
+end
+
 -- Module setup
 source.setup = function()
     GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Loaded worldmap module")
 
     local frame = CreateFrame("Frame")
+
+    createButton();
 
     frame:SetScript("OnUpdate", function()
         if WorldMapFrame:IsVisible() and not worldmapOpen then
