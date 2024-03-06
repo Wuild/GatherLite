@@ -8,3 +8,9 @@ enable-nolib-creation: no
 
 ignore:
     - tools
+    - README.md
+    - package.json
+    - package-lock.json
+    - gatherlite-banner.jpg
+    - gatherlite-elwyn.jpg
+    - gatherlite-outlands.jpg
