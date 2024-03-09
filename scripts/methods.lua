@@ -618,6 +618,7 @@ function GatherLite:Load()
 
     --LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite: Profiles", LibStub("AceDBOptions-3.0"):GetOptionsTable(GatherLite.db))
     --LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite: Profiles", "Profiles", "GatherLite");
+
 end
 
 function GatherLite:SendVersionCheck()
@@ -625,10 +626,14 @@ function GatherLite:SendVersionCheck()
         GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "GUILD")
     end
 
-    if IsInGroup() and not IsActiveBattlefieldArena() then
+    local inInstance, instanceType = IsInInstance()
+
+    if instanceType == "pvp" then
+        GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "BATTLEGROUND")
+    else
         if IsInRaid() then
             GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "RAID")
-        else
+        elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
             GatherLite:SendCommMessage(_GatherLite.name .. "Ver", GatherLite:Serialize(_GatherLite.version), "PARTY")
         end
     end

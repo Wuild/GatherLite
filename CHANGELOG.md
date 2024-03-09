@@ -1,5 +1,5 @@
 ### Changelog
 
-#### 7.0.6
+#### 7.0.7
 
-* Updated database!
+* Hopefully Fixed "You aren't in a party." message appearing
