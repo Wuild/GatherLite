@@ -1,4 +1,4 @@
-const zoneData = require("./zoneData");
+import zoneData from "./zoneData.js"
 
 const idChanges = {
     3724: 1618,
@@ -95,7 +95,7 @@ const ZoneData = {
 
     //WOTLK
     "Borean Tundra": [114],
-    "Wintergrasp" : [123],
+    "Wintergrasp": [123],
     "Howling Fjord": [117],
 
     "Dragonblight": [115],
@@ -107,7 +107,12 @@ const ZoneData = {
     "Grizzly Hills": [116],
 
     "Crystalsong Forest": [127],
-    "Hrothgar's Landing": [170]
+    "Hrothgar's Landing": [170],
+
+    //CATACLYSM
+    // "Twilight Highlands": [241],
+    "Ruins of Gilneas": [217],
+    "The Cape of Stranglethorn": [210]
 };
 
 const ZoneDataClassic = {
@@ -225,6 +230,12 @@ const ZoneDataClassic = {
 
     2817: "Crystalsong Forest",
     4742: "Hrothgar's Landing",
+
+    199: "Southern Barrens",
+
+    // CATACLYSM
+    5287: "The Cape of Stranglethorn",
+    4714: "Ruins of Gilneas"
 };
 
 // "Wintergrasp" : [4197],
@@ -239,7 +250,7 @@ const ZoneDataClassic = {
 //     "Crystalsong Forest": [2817],
 //     "Hrothgar's Landing": [4742]
 
-function MapID2Instance(mapID) {
+export function MapID2Instance(mapID) {
 
     for (let i = 0; i < zoneData.zones.length; i++) {
         if (parseInt(zoneData.zones[i].id) === parseInt(mapID)) {
@@ -250,7 +261,7 @@ function MapID2Instance(mapID) {
     return "nil";
 }
 
-function ConvertMapID2UIMapID(old) {
+export function ConvertMapID2UIMapID(old) {
     if (!ZoneDataClassic[old])
         return null;
 
@@ -262,14 +273,14 @@ function ConvertMapID2UIMapID(old) {
     return ZoneData[map][0];
 }
 
-function CheckIDS(id) {
+export function CheckIDS(id) {
     if (idChanges[id])
         return idChanges[id];
 
     return id;
 }
 
-module.exports = {
+export default {
     idChanges,
     ZoneData,
     ZoneDataClassic,

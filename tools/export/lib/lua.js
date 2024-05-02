@@ -188,7 +188,7 @@ function addcslashes(str, charlist) {
     return target
 }
 
-function Objects2Lua(data = [], indent = "", top = false) {
+export function Objects2Lua(data = [], indent = "", top = false) {
     if (indent === "") {
         top = true;
     }
@@ -250,10 +250,4 @@ function Objects2Lua(data = [], indent = "", top = false) {
         }
     }
     return out;
-}
-
-module.exports = {
-    is_numeric,
-    addcslashes,
-    Objects2Lua,
 }

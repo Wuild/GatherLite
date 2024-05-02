@@ -1,18 +1,27 @@
-const axios = require("axios");
-const Three = require("three");
-const fs = require("fs");
-const path = require("path");
-const jsdom = require("jsdom");
-const {VirtualConsole} = require("jsdom");
-const {JSDOM} = jsdom;
-const _ = require("lodash");
+import axios from "axios";
+import * as Three from "three";
 
-const {CheckIDS, ConvertMapID2UIMapID, MapID2Instance} = require("./lib/zones")
-const {Objects2Lua} = require("./lib/lua");
+import fs from "node:fs";
+import path from "node:path";
+
+import jsdom from "jsdom";
+import {VirtualConsole} from "jsdom";
+import {vsprintf as sprintf} from "sprintf-js";
+
+import _ from "lodash";
+
+
+const {JSDOM} = jsdom;
+
+import {CheckIDS, ConvertMapID2UIMapID, MapID2Instance} from "./lib/zones.js"
+import {Objects2Lua} from "./lib/lua.js";
+
+import cataclysm from "./data/cataclysm.js";
 
 const expansions = {
-    "vanilla": require("./data/vanilla"),
-    "wotlk": require("./data/wotlk")
+    // "vanilla": require("./data/vanilla"),
+    // "wotlk": require("./data/wotlk"),
+    "cataclysm": cataclysm,
 };
 
 function createDirectories(pathStr) {
@@ -80,11 +89,14 @@ function node(type, object, incoming) {
     return data;
 }
 
-var sprintf = require('sprintf-js').vsprintf;
 
 function GetData(baseUrl, data, type) {
     return new Promise((resolve, reject) => {
         let jobs = [];
+
+        if (!data)
+            return resolve([]);
+
         for (let i = 0; i < data.length; i++) {
             // url = exp === "wotlk" ? `https://www.wowhead.com/wotlk/object=${data[i]}` : `https://tbc.wowhead.com/object=${data[i]}`;
             // url = `https://wotlkdb.com/?object=${data[i]}`;
@@ -205,7 +217,7 @@ function writeDBFile(name, data) {
 _.forEach(expansions, function (data, key) {
     console.log(key);
 
-    let p = (path.resolve(__dirname, '..', '..', 'plugins', 'database', 'data'));
+    let p = (path.resolve('.', 'plugins', 'database', 'data'));
 
     createDirectories(p)
 

@@ -583,7 +583,8 @@ const northrend = [
     }, {"category": 571, "expansion": 1, "id": 3477, "name": "Azjol-Nerub", "territory": 2, "popularity": 0}
 ];
 
-module.exports = {
-    zones: [...EasternKingdoms, ...Kalimdor, ...outland, ...northrend]
-}
+export const zones = [...EasternKingdoms, ...Kalimdor, ...outland, ...northrend]
 
+export default {
+    zones
+}

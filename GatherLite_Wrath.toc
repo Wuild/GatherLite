@@ -10,4 +10,3 @@
 scripts\embeds.xml
 plugins\database\database.lua
 plugins\database\data\wotlk.lua
-
