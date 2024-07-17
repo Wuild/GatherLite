@@ -211,20 +211,25 @@ local function createButton()
         tooltip:SetOwner(self, "ANCHOR_NONE")
         tooltip:SetPoint(getAnchors(self))
         tooltip:SetText(_GatherLite.name .. " |cFF00FF00" .. _GatherLite.version .. "|r");
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.mining));
-        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"), GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('mining'), "white"),
+            GatherLite:tablelength(GatherLite.db.global.nodes.mining));
+        tooltip:AddDoubleLine(GatherLite:Colorize(GatherLite:translate('herbalism'), "white"),
+            GatherLite:tablelength(GatherLite.db.global.nodes.herbalism));
 
         if GatherLite.db.global.debug.enabled then
             tooltip:AddLine(" ");
             tooltip:AddLine("             -- Debugging --             ");
             tooltip:AddDoubleLine(GatherLite:Colorize("Used frames", "white"), GatherLite:tablelength(GFrame.usedFrames));
-            tooltip:AddDoubleLine(GatherLite:Colorize("Unused frames", "white"), GatherLite:tablelength(GFrame.unusedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("Unused frames", "white"),
+                GatherLite:tablelength(GFrame.unusedFrames));
             tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(GFrame.allFrames));
         end
 
         tooltip:AddLine(" ");
-        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.left_click_text"));
-        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') .. ": " .. GatherLite:translate("settings.minimap.right_click_text"));
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') ..
+            ": " .. GatherLite:translate("settings.minimap.left_click_text"));
+        tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') ..
+            ": " .. GatherLite:translate("settings.minimap.right_click_text"));
         tooltip:Show()
     end)
 
@@ -257,6 +262,32 @@ source.setup = function()
         if worldmapOpen then
             if worldmapID ~= WorldMapFrame.mapID then
                 worldmapID = WorldMapFrame.mapID;
+
+                if not (worldmapID == 1415) then
+                    GatherLite:debug(_GatherLite.DEBUG_DEFAULT,
+                        worldmapID .. ":\"" .. C_Map.GetMapInfo(worldmapID).name .. "\",")
+                    --local continent = GetCurrentMapContinent();
+
+                    local instanceId = -1;
+                    if C_Map.GetMapInfo(worldmapID).parentMapID == 1415 then
+                        instanceId = 0;
+                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 1414 then
+                        instanceId = 1;
+                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 1945 then
+                        instanceId = 530;
+                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 113 then
+                        instanceId = 571;
+                    else
+                        --print(C_Map.GetMapInfo(worldmapID).parentMapID)
+                    end
+
+                    GatherLite.db.global.maps[worldmapID] = {
+                        id = worldmapID,
+                        name = C_Map.GetMapInfo(worldmapID).name,
+                        instance =
+                            instanceId
+                    };
+                end
                 ResetWorldmap()
             end
         end

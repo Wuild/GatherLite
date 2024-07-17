@@ -29,7 +29,6 @@ local MinimapFilter = function(node)
         return false
     end
 
-
     -- check if were using the predefined database
     if node.predefined then
         if not GatherLite.db.global.usePredefined then
@@ -41,13 +40,14 @@ local MinimapFilter = function(node)
     if GatherLite:IsIgnored(node.object) then
         return false
     end
-
     return true;
 end
 
 local function ClosestNodes(type, posX, posY, instanceID, maxDist, filter)
-
     local t = GatherLite:Filter(_GatherLite.nodes[type], function(node)
+        if not node.instance then
+            node.instance = 0
+        end
 
         if node.instance ~= instanceID then
             return false
@@ -126,7 +126,6 @@ local function createNodeThread(type)
             CreateMinimapNode(_GatherLite.nodes[type][key])
             _GatherLite.nodes[type][key].loaded = true;
         end
-        --print(key)
         coroutine.yield()
     end
 end
@@ -158,7 +157,6 @@ local function minimapIconThread()
     end);
 
     for key, frame in pairs(usedFrames) do
-
         if IsInInstance() then
             frame.node.loaded = false;
             frame:Unload();
@@ -234,7 +232,6 @@ local function Update(timeDelta, force)
         if coroutine.status(threadFishing) == "dead" then
             threadFishing = coroutine.create(fishingThread)
         end
-
     end
 
     if threadIcon ~= nil and coroutine.status(threadIcon) == "dead" then
@@ -272,7 +269,6 @@ source.setup = function()
     end)
 
     GatherLite:On("settings:update", function()
-
         GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Update settings")
 
         ResetMinimap()

@@ -149,3 +149,22 @@ L['node.imperial_manta_ray_school'] = "Imperial Manta Ray School"
 L['node.deep_sea_monsterbelly_school'] = "Deep Sea Monsterbelly School"
 L['node.moonglow_cuttlefish_school'] = "Moonglow Cuttlefish School"
 L['node.nettlefish_school'] = "Nettlefish School"
+
+
+-- CATA Ores
+L['node.obsidium_deposit'] = "Obsidium Deposit"
+L['node.rich_obsidium_deposit'] = "Obsidium Deposit"
+
+L['node.elementium_vein'] = "Elementium Vein"
+L['node.rich_elementium_vein'] = "Rich Elementium Vein"
+
+L['node.pyrite_deposit'] = "Pyrite Deposit"
+L['node.rich_pyrite_deposit'] = "Rich Pyrite Deposit"
+
+-- CATA Herbs
+L['node.cinderbloom'] = "Cinderbloom"
+L['node.stormvine'] = "Stormvine"
+L['node.azsharas_vail'] = "Azshara's Veil"
+L['node.heartblossom'] = "Heartblossom"
+L['node.whiptail'] = "Whiptail"
+L['node.twilight_jasmine'] = "Twilight Jasmine"

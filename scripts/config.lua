@@ -39,6 +39,7 @@ _GatherLite.debug = {
 
 _GatherLite.configsDefaults = {
     global = {
+        maps = {},
         nodes = {
             mining = {},
             herbalism = {},

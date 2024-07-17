@@ -40,6 +40,13 @@ InsertObject("ore", { 189978 }, "cobalt_deposit", "Ore\\Cobalt", { 350, 375, 400
 InsertObject("ore", { 189979 }, "rich_cobalt_deposit", "Ore\\Cobalt", { 375, 400, 425, 450 })
 InsertObject("ore", { 191133 }, "titanium_vein", "Ore\\Titanium", { 450, 450, 450, 450 })
 
+-- CATA
+InsertObject("ore", { 202736 }, "obsidium_deposit", "Ore\\Obsidian", { 450, 450, 450, 450 })
+InsertObject("ore", { 202739 }, "rich_obsidium_deposit", "Ore\\Obsidian", { 450, 450, 450, 450 })
+InsertObject("ore", { 202737 }, "pyrite_deposit", "Ore\\Pyrite", { 450, 450, 450, 450 })
+InsertObject("ore", { 202740 }, "rich_pyrite_deposit", "Ore\\Pyrite", { 450, 450, 450, 450 })
+InsertObject("ore", { 202738 }, "elementium_vein", "Ore\\Elementium", { 450, 450, 450, 450 })
+InsertObject("ore", { 202741 }, "rich_elementium_vein", "Ore\\Elementium", { 450, 450, 450, 450 })
 
 -- Herbs
 -- Classic
@@ -67,7 +74,8 @@ InsertObject("herb", { 142144 }, "ghost_mushroom", "Herb\\GhostMushroom", { 245,
 InsertObject("herb", { 142145, 176637 }, "gromsblood", "Herb\\Gromsblood", { 250, 275, 300, 350 })
 InsertObject("herb", { 176583, 176638, 180167 }, "golden_sansam", "Herb\\GoldenSansam", { 260, 285, 310, 360 })
 InsertObject("herb", { 176584, 176639, 180168 }, "dreamfoil", "Herb\\Dreamfoil", { 270, 295, 320, 370 })
-InsertObject("herb", { 176586, 176640, 180166 }, "mountain_silversage", "Herb\\MountainSilversage", { 280, 305, 330, 380 })
+InsertObject("herb", { 176586, 176640, 180166 }, "mountain_silversage", "Herb\\MountainSilversage",
+    { 280, 305, 330, 380 })
 InsertObject("herb", { 176587, 176641 }, "plaguebloom", "Herb\\Plaguebloom", { 285, 310, 335, 385 })
 InsertObject("herb", { 176588 }, "icecap", "Herb\\Icecap", { 290, 315, 340, 390 })
 InsertObject("herb", { 176589 }, "black_lotus", "Herb\\BlackLotus", { 300, 325, 350, 400 })
@@ -94,11 +102,22 @@ InsertObject("herb", { 191019 }, "adders_tongue", "Herb\\AddersTongue", { 400, 4
 InsertObject("herb", { 190171 }, "lichbloom", "Herb\\Lichbloom", { 425, 450, 500, 500 })
 InsertObject("herb", { 190172 }, "icethorn", "Herb\\Icethorn", { 435, 450, 500, 500 })
 
+
+-- CATA
+InsertObject("herb", { 202747 }, "cinderbloom", "Herb\\Cinderbloom", { 450, 450, 450, 450 })
+InsertObject("herb", { 202748 }, "stormvine", "Herb\\Stormvine", { 450, 450, 450, 450 })
+InsertObject("herb", { 202749 }, "azsharas_vail", "Herb\\AzsharasVeil", { 450, 450, 450, 450 })
+InsertObject("herb", { 202750 }, "heartblossom", "Herb\\Heartblossom", { 450, 450, 450, 450 })
+InsertObject("herb", { 202752 }, "whiptail", "Herb\\Whiptail", { 450, 450, 450, 450 })
+--InsertObject("herb", { 189973 }, "deathspore_pod", "Herb\\Cinderbloom", { 450, 450, 450, 450 })
+InsertObject("herb", { 202751 }, "twilight_jasmine", "Herb\\TwilightJasmine", { 450, 450, 450, 450 })
+
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)
 InsertObject("container", { 75293 }, "large_battered_chest", "Open\\Chest", nil)
 InsertObject("container", { 2850, 153453, 153454, 2855, 153451, 2852, 2857, 4149 }, "solid_chest", "Open\\Chest", nil)
-InsertObject("container", { 74448, 153464, 75300, 153463, 75299, 75298, 153462, 153461 }, "large_solid_chest", "Open\\Chest", nil)
+InsertObject("container", { 74448, 153464, 75300, 153463, 75299, 75298, 153462, 153461 }, "large_solid_chest",
+    "Open\\Chest", nil)
 InsertObject("container", { 2744, 19018, 19017 }, "giant_clam", "Open\\Clam", nil)
 InsertObject("container", { 157936 }, "ungoro_dirt_pile", "Soil", nil)
 
