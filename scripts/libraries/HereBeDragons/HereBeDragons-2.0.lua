@@ -1,6 +1,6 @@
 -- HereBeDragons is a data API for the World of Warcraft mapping system
 
-local MAJOR, MINOR = "HereBeDragons-2.0", 16
+local MAJOR, MINOR = "HereBeDragons-2.0", 27
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local HereBeDragons, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
@@ -17,6 +17,9 @@ HereBeDragons.callbacks        = HereBeDragons.callbacks or CBH:New(HereBeDragon
 
 local WoWClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 local WoWBC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
+local WoWWrath = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC)
+local WoWCata = (WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC)
+local TWW = select(4, GetBuildInfo()) >= 110002
 
 -- Data Constants
 local COSMIC_MAP_ID = 946
@@ -59,7 +62,6 @@ local instanceIDOverrides = {
     -- Legion
     [1478] = 1220, -- Temple of Elune Scenario (Val'Sharah)
     [1495] = 1220, -- Protection Paladin Artifact Scenario (Stormheim)
-    [1498] = 1220, -- Havoc Demon Hunter Artifact Scenario (Suramar)
     [1502] = 1220, -- Dalaran Underbelly
     [1533] = 0,    -- Karazhan Artifact Scenario
     [1539] = 0,    -- Arm Warrior Artifact Tirisfal Scenario
@@ -82,7 +84,7 @@ local function overrideInstance(instance) return instanceIDOverrides[instance] o
 HereBeDragons.___DIIDO = dynamicInstanceIDOverrides
 
 -- gather map info, but only if this isn't an upgrade (or the upgrade version forces a re-map)
-if not oldversion or oldversion < 16 then
+if not oldversion or oldversion < 27 then
     -- wipe old data, if required, otherwise the upgrade path isn't triggered
     if oldversion then
         wipe(mapData)
@@ -90,10 +92,23 @@ if not oldversion or oldversion < 16 then
         wipe(transforms)
     end
 
-    -- map transform data extracted from UIMapAssignment.db2 (see HereBeDragons-scripts on GitHub)
+    -- map transform data extracted from UIMapAssignment.db2 (see HereBeDragons-Scripts on GitHub)
     -- format: instanceID, newInstanceID, minY, maxY, minX, maxX, offsetY, offsetX
     local transformData
-    if WoWBC then
+    if WoWClassic then
+        transformData = {}
+    elseif WoWBC then
+        transformData = {
+            { 530, 0, 4800, 16000, -10133.3, -2666.67, -2400, 2662.8 },
+            { 530, 1, -6933.33, 533.33, -16000, -8000, 10339.7, 17600 },
+        }
+    elseif WoWWrath then
+        transformData = {
+            { 530, 0, 4800, 16000, -10133.3, -2666.67, -2400, 2662.8 },
+            { 530, 1, -6933.33, 533.33, -16000, -8000, 10339.7, 17600 },
+            { 609, 0, -10000, 10000, -10000, 10000, 0, 0 },
+        }
+    elseif WoWCata then
         transformData = {
             { 530, 0, 4800, 16000, -10133.3, -2666.67, -2400, 2662.8 },
             { 530, 1, -6933.33, 533.33, -16000, -8000, 10339.7, 17600 },
@@ -103,9 +118,12 @@ if not oldversion or oldversion < 16 then
             { 530, 1, -6933.33, 533.33, -16000, -8000, 9916, 17600 },
             { 530, 0, 4800, 16000, -10133.3, -2666.67, -2400, 2400 },
             { 732, 0, -3200, 533.3, -533.3, 2666.7, -611.8, 3904.3 },
+            { 1014, 870, 3200, 5333.3, 1066.7, 2666.7, 0, 0 },
             { 1064, 870, 5391, 8148, 3518, 7655, -2134.2, -2286.6 },
             { 1208, 1116, -2666, -2133, -2133, -1600, 10210.7, 2411.4 },
             { 1460, 1220, -1066.7, 2133.3, 0, 3200, -2333.9, 966.7 },
+            { 1498, 1220, -533.3, 2133.3, 3733.3, 5866.7, 0, 0 },
+            { 1545, 1220, -2666.7, 0, 4800, 8000, 0, -0 },
             { 1599, 1, 4800, 5866.7, -4266.7, -3200, -490.6, -0.4 },
             { 1609, 571, 6400, 8533.3, -1600, 533.3, 512.8, 545.3 },
         }
@@ -140,7 +158,12 @@ if not oldversion or oldversion < 16 then
     local vector00, vector05 = CreateVector2D(0, 0), CreateVector2D(0.5, 0.5)
     -- gather the data of one map (by uiMapID)
     local function processMap(id, data, parent)
-        if not id or not data or mapData[id] then return end
+        if not id or mapData[id] then return end
+
+        if not data then
+            data = C_Map.GetMapInfo(id)
+            if not data then return end
+        end
 
         if data.parentMapID and data.parentMapID ~= 0 then
             parent = data.parentMapID
@@ -149,13 +172,26 @@ if not oldversion or oldversion < 16 then
         end
 
         -- get two positions from the map, we use 0/0 and 0.5/0.5 to avoid issues on some maps where 1/1 is translated inaccurately
-        local instance, topLeft = C_Map.GetWorldPosFromMapPos(id, vector00)
-        local _, bottomRight = C_Map.GetWorldPosFromMapPos(id, vector05)
-        if topLeft and bottomRight then
-            local top, left = topLeft:GetXY()
-            local bottom, right = bottomRight:GetXY()
-            bottom = top + (bottom - top) * 2
-            right = left + (right - left) * 2
+        local instance, center = C_Map.GetWorldPosFromMapPos(id, vector05)
+        local width, height
+        if C_Map.GetMapWorldSize then
+            width, height = C_Map.GetMapWorldSize(id)
+        else
+            -- compat for classic... why does that not have GetMapWorldSize?
+            local _, topleft = C_Map.GetWorldPosFromMapPos(id, vector00)
+            if center and topleft then
+                local top, left = topleft:GetXY()
+                local bottom, right = center:GetXY()
+                width = (left - right) * 2
+                height = (top - bottom) * 2
+            end
+        end
+        if center and width and height then
+           local top, left = center:GetXY()
+           top = top + (height / 2)
+           local bottom = top - height
+           left = left + (width / 2)
+           local right = left - width
 
             instance, left, right, top, bottom = applyMapTransforms(instance, left, right, top, bottom)
             mapData[id] = {left - right, top - bottom, left, top, instance = instance, name = data.name, mapType = data.mapType, parent = parent }
@@ -182,7 +218,7 @@ if not oldversion or oldversion < 16 then
                             for k = 1, #groupMembers do
                                 local memberId = groupMembers[k].mapID
                                 if memberId and not mapData[memberId] then
-                                    processMap(memberId, C_Map.GetMapInfo(memberId), parent)
+                                    processMap(memberId, nil, parent)
                                     processMapChildrenRecursive(memberId)
                                 end
                             end
@@ -209,14 +245,34 @@ if not oldversion or oldversion < 16 then
         elseif WoWBC then
             worldMapData[0] = { 44688.53, 29791.24, 32681.47, 11479.44 }
             worldMapData[1] = { 44878.66, 29916.10,  8723.96, 14824.53 }
-        else
+        elseif WoWWrath then
+            worldMapData[0] = { 48033.24, 32020.8, 36867.97, 14848.84 }
+            worldMapData[1] = { 47908.72, 31935.28, 8552.61, 18467.83 }
+            worldMapData[571] = { 47662.7, 31772.19, 25198.53, 11072.07 }
+        elseif WoWCata then
+            worldMapData[0] = { 48033.24, 32020.8, 36867.97, 14848.84 }
+            worldMapData[1] = { 47908.72, 31935.28, 8552.61, 18467.83 }
+            worldMapData[571] = { 47662.7, 31772.19, 25198.53, 11072.07 }
+        elseif TWW then
             worldMapData[0] = { 76153.14, 50748.62, 65008.24, 23827.51 }
-            worldMapData[1] = { 77803.77, 51854.98, 13157.6, 28030.61 }
+            worldMapData[1] = { 77621.12, 51854.98, 12444.4, 28030.61 }
             worldMapData[571] = { 71773.64, 50054.05, 36205.94, 12366.81 }
             worldMapData[870] = { 67710.54, 45118.08, 33565.89, 38020.67 }
             worldMapData[1220] = { 82758.64, 55151.28, 52943.46, 24484.72 }
             worldMapData[1642] = { 77933.3, 51988.91, 44262.36, 32835.1 }
             worldMapData[1643] = { 76060.47, 50696.96, 55384.8, 25774.35 }
+            worldMapData[2444] = { 111420.37, 74283, 86088.21, 15682.4 }
+            worldMapData[2552] = { 82171.44, 54787.67, 21219.3, 47876.05 }
+            worldMapData[2601] = { 67929.29, 49267.42, 18325.63, 42233.06 }
+        else
+            worldMapData[0] = { 76153.14, 50748.62, 65008.24, 23827.51 }
+            worldMapData[1] = { 77621.13, 51854.98, 18576.47, 28030.61 }
+            worldMapData[571] = { 71773.64, 50054.05, 36205.94, 12366.81 }
+            worldMapData[870] = { 67710.54, 45118.08, 33565.89, 38020.67 }
+            worldMapData[1220] = { 82758.64, 55151.28, 52943.46, 24484.72 }
+            worldMapData[1642] = { 77933.3, 51988.91, 44262.36, 32835.1 }
+            worldMapData[1643] = { 76060.47, 50696.96, 55384.8, 25774.35 }
+            worldMapData[2444] = { 111420.37, 74283, 86088.21, 15682.4 }
         end
     end
 
@@ -234,7 +290,7 @@ if not oldversion or oldversion < 16 then
         fixupZones()
 
         -- try to fill in holes in the map list
-        for i = 1, 2000 do
+        for i = 1, 2500 do
             if not mapData[i] then
                 local mapInfo = C_Map.GetMapInfo(i)
                 if mapInfo and mapInfo.name then
@@ -320,11 +376,6 @@ HereBeDragons.eventFrame:RegisterEvent("ZONE_CHANGED")
 HereBeDragons.eventFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
 HereBeDragons.eventFrame:RegisterEvent("NEW_WMO_CHUNK")
 HereBeDragons.eventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
-
--- if we're loading after entering the world (ie. on demand), update position now
-if IsLoggedIn() then
-    UpdateCurrentPosition(true)
-end
 
 --- Return the localized zone name for a given uiMapID
 -- @param uiMapID uiMapID of the zone
@@ -566,4 +617,10 @@ function HereBeDragons:GetPlayerZonePosition(allowOutOfBounds)
         return x, y, currentPlayerUIMapID, currentPlayerUIMapType
     end
     return nil, nil, nil, nil
+end
+
+-- if we're loading after entering the world (ie. on demand), update position now
+-- This needs to remain at the bottom of the library to ensure all functions are loaded before they are needed
+if IsLoggedIn() then
+    UpdateCurrentPosition(true)
 end
