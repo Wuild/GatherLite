@@ -42,7 +42,11 @@ end
 
 -- print debug message
 function GatherLite:debug(type, ...)
-    if (GatherLite.db.global.debug.enabled) and GatherLite.db.global.debug.types[type] then
+    local db = GatherLite.db
+    if not db or not db.global or not db.global.debug or not db.global.debug.types then
+        return
+    end
+    if db.global.debug.enabled and db.global.debug.types[type] then
         print(GatherLite:Colorize("<" .. _GatherLite.name .. " - " .. (_GatherLite.debug[type] or _GatherLite.debug[_GatherLite.DEBUG_DEFAULT]) .. ">", "blue"), ...)
     end
 end
@@ -71,6 +75,10 @@ function GatherLite:tablelength(T)
 end
 
 function GatherLite:Colorize(str, color)
+    if not str then
+        return
+    end
+
     local c = '';
     if color == 'red' then
         c = '|cffff0000';
