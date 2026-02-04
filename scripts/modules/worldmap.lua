@@ -34,12 +34,54 @@ local WorldmapFilter = function(node)
     return true;
 end
 
+local function GetWorldmapRect()
+    if not WorldMapFrame or not WorldMapFrame.ScrollContainer then
+        return nil
+    end
+
+    local scroll = WorldMapFrame.ScrollContainer
+    if not scroll.GetNormalizedRect then
+        return nil
+    end
+
+    local left, right, top, bottom = scroll:GetNormalizedRect()
+    if left == nil or right == nil or top == nil or bottom == nil then
+        return nil
+    end
+
+    local minX = math.min(left, right)
+    local maxX = math.max(left, right)
+    local minY = math.min(bottom, top)
+    local maxY = math.max(bottom, top)
+
+    local padding = 0.02
+    minX = math.max(0, minX - padding)
+    maxX = math.min(1, maxX + padding)
+    minY = math.max(0, minY - padding)
+    maxY = math.min(1, maxY + padding)
+
+    return minX, maxX, minY, maxY
+end
 
 -- Get nodes for current map id
-local function WorldmapNodes(list, mapID, filter)
-    return GatherLite:Filter(list, function(node)
-        return node.mapID == mapID and filter(node);
-    end);
+local function WorldmapNodes(type, mapID, filter)
+    local left, right, bottom, top = GetWorldmapRect()
+    local nodes
+    if left then
+        nodes = GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
+    else
+        nodes = GatherLite:GetNodesForMap(type, mapID)
+    end
+    local out = {}
+
+    for i = 1, #nodes do
+        local node = nodes[i]
+        if node.mapID == mapID and filter(node) then
+            out[#out + 1] = node
+        end
+    end
+
+    return out
 end
 
 -- Unload worldmap nodes
@@ -114,24 +156,32 @@ local function LoadWorldmap()
     end);
 
     if worldmapOpen and worldmapID then
-        for key, node in pairs(WorldmapNodes(_GatherLite.nodes["mining"], worldmapID, WorldmapFilter)) do
-            _GatherLite.nodes["mining"][key].loadedWorldmap = true
-            CreateWorldmapNode(_GatherLite.nodes["mining"][key])
+        local miningNodes = WorldmapNodes("mining", worldmapID, WorldmapFilter)
+        for i = 1, #miningNodes do
+            local node = miningNodes[i]
+            node.loadedWorldmap = true
+            CreateWorldmapNode(node)
         end
 
-        for key, node in pairs(WorldmapNodes(_GatherLite.nodes["herbalism"], worldmapID, WorldmapFilter)) do
-            _GatherLite.nodes["herbalism"][key].loadedWorldmap = true
-            CreateWorldmapNode(_GatherLite.nodes["herbalism"][key])
+        local herbNodes = WorldmapNodes("herbalism", worldmapID, WorldmapFilter)
+        for i = 1, #herbNodes do
+            local node = herbNodes[i]
+            node.loadedWorldmap = true
+            CreateWorldmapNode(node)
         end
 
-        for key, node in pairs(WorldmapNodes(_GatherLite.nodes["containers"], worldmapID, WorldmapFilter)) do
-            _GatherLite.nodes["containers"][key].loadedWorldmap = true
-            CreateWorldmapNode(_GatherLite.nodes["containers"][key])
+        local containerNodes = WorldmapNodes("containers", worldmapID, WorldmapFilter)
+        for i = 1, #containerNodes do
+            local node = containerNodes[i]
+            node.loadedWorldmap = true
+            CreateWorldmapNode(node)
         end
 
-        for key, node in pairs(WorldmapNodes(_GatherLite.nodes["fishing"], worldmapID, WorldmapFilter)) do
-            _GatherLite.nodes["fishing"][key].loadedWorldmap = true
-            CreateWorldmapNode(_GatherLite.nodes["fishing"][key])
+        local fishingNodes = WorldmapNodes("fishing", worldmapID, WorldmapFilter)
+        for i = 1, #fishingNodes do
+            local node = fishingNodes[i]
+            node.loadedWorldmap = true
+            CreateWorldmapNode(node)
         end
     end
 end

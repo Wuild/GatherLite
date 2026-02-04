@@ -1,0 +1,13 @@
+## Interface: 50503
+## Title: GatherLite
+## Author: Wuild
+## Version: @project-version@
+## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
+## SavedVariables: GatherLiteSettings
+## SavedVariablesPerCharacter: GatherLiteConfigCharacter
+
+#embeds
+scripts\embeds.xml
+plugins\database\database.lua
+plugins\database\data\mop.lua
+

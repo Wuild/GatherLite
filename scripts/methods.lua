@@ -20,6 +20,36 @@ _GatherLite.nodes = {
     fishing = {},
 };
 
+local NODE_RANGE = 0.0065
+local NODE_CELL_INV = 1 / NODE_RANGE
+
+local function newNodeIndex()
+    return { byMap = {}, byCell = {}, byMapInstance = {} }
+end
+
+_GatherLite.nodeIndex = {
+    mining = newNodeIndex(),
+    herbalism = newNodeIndex(),
+    containers = newNodeIndex(),
+    fishing = newNodeIndex(),
+};
+
+_GatherLite.savedNodeIndex = {
+    mining = newNodeIndex(),
+    herbalism = newNodeIndex(),
+    containers = newNodeIndex(),
+    fishing = newNodeIndex(),
+};
+
+_GatherLite.mapInstanceCache = {
+    mining = {},
+    herbalism = {},
+    containers = {},
+    fishing = {},
+};
+
+_GatherLite.mapScaleCache = {}
+
 _GatherLite.WorldmapOpen = false;
 
 GatherLite.NewVersionExists = false;
@@ -72,6 +102,98 @@ function GatherLite:tablelength(T)
         end
     end
     return count
+end
+
+local function nodeCellCoords(posX, posY)
+    return math.floor(posX * NODE_CELL_INV), math.floor(posY * NODE_CELL_INV)
+end
+
+local function nodeCellKey(mapID, cellX, cellY)
+    return mapID .. ":" .. cellX .. ":" .. cellY
+end
+
+local function indexNodeInstance(index, node)
+    if not node or node.instance == nil or not node.mapID then
+        return
+    end
+
+    if not index.instanceIndexed then
+        index.instanceIndexed = setmetatable({}, { __mode = "k" })
+    end
+    if index.instanceIndexed[node] then
+        return
+    end
+
+    local mapBucket = index.byMapInstance[node.mapID]
+    if not mapBucket then
+        mapBucket = {}
+        index.byMapInstance[node.mapID] = mapBucket
+    end
+
+    local instanceBucket = mapBucket[node.instance]
+    if not instanceBucket then
+        instanceBucket = {}
+        mapBucket[node.instance] = instanceBucket
+    end
+
+    instanceBucket[#instanceBucket + 1] = node
+    index.instanceIndexed[node] = true
+end
+
+local function indexNode(index, node)
+    if not node or not node.mapID or not node.posX or not node.posY then
+        return
+    end
+
+    local mapBucket = index.byMap[node.mapID]
+    if not mapBucket then
+        mapBucket = {}
+        index.byMap[node.mapID] = mapBucket
+    end
+    mapBucket[#mapBucket + 1] = node
+
+    local cellX, cellY = nodeCellCoords(node.posX, node.posY)
+    local cellKey = nodeCellKey(node.mapID, cellX, cellY)
+    local cellBucket = index.byCell[cellKey]
+    if not cellBucket then
+        cellBucket = {}
+        index.byCell[cellKey] = cellBucket
+    end
+    cellBucket[#cellBucket + 1] = node
+
+    if node.instance ~= nil then
+        indexNodeInstance(index, node)
+    end
+end
+
+local function findIndexedNode(index, mapID, posX, posY)
+    if not index or not mapID or not posX or not posY then
+        return nil
+    end
+
+    local cellX, cellY = nodeCellCoords(posX, posY)
+    for dx = -1, 1 do
+        for dy = -1, 1 do
+            local cellKey = nodeCellKey(mapID, cellX + dx, cellY + dy)
+            local cellBucket = index.byCell[cellKey]
+            if cellBucket then
+                for i = 1, #cellBucket do
+                    local node = cellBucket[i]
+                    if node.mapID == mapID and GatherLite:IsNodeInRange(posX, posY, node.posX, node.posY) then
+                        return node
+                    end
+                end
+            end
+        end
+    end
+
+    return nil
+end
+
+function GatherLite:InvalidateNodeCache(type)
+    if _GatherLite.mapInstanceCache[type] then
+        _GatherLite.mapInstanceCache[type] = {}
+    end
 end
 
 function GatherLite:Colorize(str, color)
@@ -149,10 +271,237 @@ end
 
 function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
     local distance = ((((myPosX - nodePosX) ^ 2) + ((myPosY - nodePosY) ^ 2)) ^ 0.5)
-    return distance < 0.0065
+    return distance < NODE_RANGE
+end
+
+function GatherLite:EnsureNodeWorld(node)
+    if not node or (node.worldX and node.worldY and node.instance) then
+        return
+    end
+
+    local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+    node.worldX = x
+    node.worldY = y
+    node.instance = instance
+
+    local index = _GatherLite.nodeIndex[node.type]
+    if index then
+        indexNodeInstance(index, node)
+    end
+end
+
+function GatherLite:GetNodesForMap(type, mapID)
+    if not mapID then
+        return _GatherLite.nodes[type] or {}
+    end
+
+    local index = _GatherLite.nodeIndex[type]
+    if index and index.byMap[mapID] then
+        return index.byMap[mapID]
+    end
+
+    return _GatherLite.nodes[type] or {}
+end
+
+function GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
+    if not mapID or left == nil or right == nil or bottom == nil or top == nil then
+        return GatherLite:GetNodesForMap(type, mapID)
+    end
+
+    local index = _GatherLite.nodeIndex[type]
+    if not index then
+        return GatherLite:GetNodesForMap(type, mapID)
+    end
+
+    local minX = math.max(0, math.min(left, right))
+    local maxX = math.min(1, math.max(left, right))
+    local minY = math.max(0, math.min(bottom, top))
+    local maxY = math.min(1, math.max(bottom, top))
+
+    local cellMinX, cellMinY = nodeCellCoords(minX, minY)
+    local cellMaxX, cellMaxY = nodeCellCoords(maxX, maxY)
+
+    local out = {}
+    local seen = {}
+
+    for cellX = cellMinX, cellMaxX do
+        for cellY = cellMinY, cellMaxY do
+            local cellKey = nodeCellKey(mapID, cellX, cellY)
+            local bucket = index.byCell[cellKey]
+            if bucket then
+                for i = 1, #bucket do
+                    local node = bucket[i]
+                    if not seen[node] then
+                        seen[node] = true
+                        if node.posX >= minX and node.posX <= maxX and node.posY >= minY and node.posY <= maxY then
+                            out[#out + 1] = node
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return out
+end
+
+function GatherLite:GetNodeIndexStats()
+    local stats = {}
+    for type, index in pairs(_GatherLite.nodeIndex) do
+        local byMapCount = 0
+        local byCellCount = 0
+        local byMapInstanceCount = 0
+        local instanceBucketCount = 0
+
+        for _ in pairs(index.byMap or {}) do
+            byMapCount = byMapCount + 1
+        end
+        for _ in pairs(index.byCell or {}) do
+            byCellCount = byCellCount + 1
+        end
+        for _, mapBucket in pairs(index.byMapInstance or {}) do
+            byMapInstanceCount = byMapInstanceCount + 1
+            for _ in pairs(mapBucket) do
+                instanceBucketCount = instanceBucketCount + 1
+            end
+        end
+
+        local cacheMapCount = 0
+        local cacheInstanceCount = 0
+        local cache = _GatherLite.mapInstanceCache[type] or {}
+        for _, instanceBucket in pairs(cache) do
+            cacheMapCount = cacheMapCount + 1
+            for _ in pairs(instanceBucket) do
+                cacheInstanceCount = cacheInstanceCount + 1
+            end
+        end
+
+        stats[type] = {
+            nodes = #(_GatherLite.nodes[type] or {}),
+            byMap = byMapCount,
+            byCell = byCellCount,
+            byMapInstance = byMapInstanceCount,
+            instanceBuckets = instanceBucketCount,
+            cacheMaps = cacheMapCount,
+            cacheInstances = cacheInstanceCount,
+        }
+    end
+    return stats
+end
+
+function GatherLite:GetNodesForMapInstance(type, mapID, instanceID)
+    if not mapID or instanceID == nil then
+        return GatherLite:GetNodesForMap(type, mapID)
+    end
+
+    local index = _GatherLite.nodeIndex[type]
+    if index and index.byMapInstance[mapID] and index.byMapInstance[mapID][instanceID] then
+        return index.byMapInstance[mapID][instanceID]
+    end
+
+    local cache = _GatherLite.mapInstanceCache[type]
+    if cache[mapID] and cache[mapID][instanceID] then
+        return cache[mapID][instanceID]
+    end
+
+    local nodes = GatherLite:GetNodesForMap(type, mapID)
+    local out = {}
+    for i = 1, #nodes do
+        local node = nodes[i]
+        if not node.instance then
+            GatherLite:EnsureNodeWorld(node)
+        end
+        if node.instance == instanceID then
+            out[#out + 1] = node
+        end
+    end
+
+    if not cache[mapID] then
+        cache[mapID] = {}
+    end
+    cache[mapID][instanceID] = out
+
+    return out
+end
+
+function GatherLite:GetMapScale(mapID, instanceID, posX, posY)
+    if not mapID or not instanceID or not posX or not posY then
+        return nil
+    end
+
+    if _GatherLite.mapScaleCache[mapID] then
+        return _GatherLite.mapScaleCache[mapID]
+    end
+
+    local delta = NODE_RANGE
+    local posX2 = math.min(posX + delta, 1)
+    local posY2 = posY
+    if posX2 == posX then
+        posX2 = math.max(posX - delta, 0)
+    end
+
+    local wx1, wy1 = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
+    local wx2, wy2 = HBD:GetWorldCoordinatesFromZone(posX2, posY2, mapID)
+    if not wx1 or not wx2 then
+        return nil
+    end
+
+    local _, distance = HBD:GetWorldVector(instanceID, wx1, wy1, wx2, wy2)
+    if not distance or distance == 0 then
+        return nil
+    end
+
+    local scale = distance / math.abs(posX2 - posX)
+    _GatherLite.mapScaleCache[mapID] = scale
+    return scale
+end
+
+function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
+    if not mapID or not posX or not posY or not maxDist then
+        return GatherLite:GetNodesForMap(type, mapID)
+    end
+
+    local index = _GatherLite.nodeIndex[type]
+    if not index then
+        return GatherLite:GetNodesForMap(type, mapID)
+    end
+
+    local scale = GatherLite:GetMapScale(mapID, instanceID, posX, posY)
+    if not scale then
+        return GatherLite:GetNodesForMapInstance(type, mapID, instanceID)
+    end
+
+    local cellX, cellY = nodeCellCoords(posX, posY)
+    local cellRadius = math.ceil(maxDist / (scale * NODE_RANGE))
+    local out = {}
+    local seen = {}
+
+    for dx = -cellRadius, cellRadius do
+        for dy = -cellRadius, cellRadius do
+            local cellKey = nodeCellKey(mapID, cellX + dx, cellY + dy)
+            local bucket = index.byCell[cellKey]
+            if bucket then
+                for i = 1, #bucket do
+                    local node = bucket[i]
+                    if not seen[node] then
+                        seen[node] = true
+                        out[#out + 1] = node
+                    end
+                end
+            end
+        end
+    end
+
+    return out
 end
 
 function GatherLite:FindExistingNode(type, mapID, x, y)
+    local index = _GatherLite.savedNodeIndex[type]
+    local node = findIndexedNode(index, mapID, x, y)
+    if node then
+        return node
+    end
+
     for key, node in pairs(GatherLite.db.global.nodes[type]) do
         if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
@@ -162,6 +511,12 @@ function GatherLite:FindExistingNode(type, mapID, x, y)
 end
 
 function GatherLite:findExistingLocalNode(type, mapID, x, y)
+    local index = _GatherLite.nodeIndex[type]
+    local node = findIndexedNode(index, mapID, x, y)
+    if node then
+        return node
+    end
+
     for k, node in pairs(_GatherLite.nodes[type]) do
         if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
             return node;
@@ -195,6 +550,9 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
     local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
     node.instance = instance;
     table.insert(_GatherLite.nodes[type], node)
+    indexNode(_GatherLite.savedNodeIndex[type], node)
+    indexNode(_GatherLite.nodeIndex[type], node)
+    GatherLite:InvalidateNodeCache(type)
 
     GatherLite:SendMessage("GatherLiteNodeAdded", node)
 
@@ -522,15 +880,20 @@ function GatherLite:SetIgnored(object, value)
 end
 
 function GatherLite:forEach(table, cb)
-    if (GatherLite:tablelength(table) > 0) then
-        for key in pairs(table) do
-            cb(table[key]);
-        end
+    if not table then
+        return
+    end
+
+    for key in pairs(table) do
+        cb(table[key]);
     end
 end
 
 local function loadDatabase(type)
+    GatherLite:InvalidateNodeCache(type)
+
     GatherLite:forEach(GatherLite.db.global.nodes[type], function(node)
+        indexNode(_GatherLite.savedNodeIndex[type], node)
 
         --local localNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
         local existingNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
@@ -540,11 +903,14 @@ local function loadDatabase(type)
             existingNode.coins = node.coins;
             existingNode.lastvisit = node.lastvisit;
         else
-            local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
+            local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
             node.predefined = false;
             node.loaded = false;
+            node.worldX = x
+            node.worldY = y
             node.instance = instance;
             table.insert(_GatherLite.nodes[type], node)
+            indexNode(_GatherLite.nodeIndex[type], node)
         end
 
     end);
@@ -573,7 +939,14 @@ function GatherLite:GetNodes()
 end
 
 function GatherLite:LoadTable(type, source)
-    _GatherLite.nodes[type] = TableConcat(_GatherLite.nodes[type], source)
+    local list = _GatherLite.nodes[type]
+    local index = _GatherLite.nodeIndex[type]
+    for i = 1, #source do
+        local node = source[i]
+        list[#list + 1] = node
+        indexNode(index, node)
+    end
+    GatherLite:InvalidateNodeCache(type)
 end
 
 function GatherLite:Load()

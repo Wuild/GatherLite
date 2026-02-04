@@ -168,3 +168,19 @@ L['node.azsharas_vail'] = "Azshara's Veil"
 L['node.heartblossom'] = "Heartblossom"
 L['node.whiptail'] = "Whiptail"
 L['node.twilight_jasmine'] = "Twilight Jasmine"
+
+-- MOP Ores
+L['node.ghost_iron_deposit'] = "Ghost Iron Deposit"
+L['node.rich_ghost_iron_deposit'] = "Rich Ghost Iron Deposit"
+L['node.trillium_vein'] = "Trillium Vein"
+L['node.rich_trillium_vein'] = "Rich Trillium Vein"
+L['node.kyparite_deposit'] = "Kyparite Deposit"
+
+-- MOP Herbs
+L['node.green_tea_leaf'] = "Green Tea Leaf"
+L['node.silkweed'] = "Silkweed"
+L['node.snow_lily'] = "Snow Lily"
+L['node.fools_cap'] = "Fool's Cap"
+L['node.rain_poppy'] = "Rain Poppy"
+L['node.golden_lotus'] = "Golden Lotus"
+L['node.sha_touched_herb'] = "Sha-Touched Herb"

@@ -16,6 +16,14 @@ local threadFishing
 
 local threadIcon
 
+local debugState = {
+    lastNodesUpdate = 0,
+    lastIconsUpdate = 0,
+    lastForceUpdate = 0,
+    lastNodesTick = 0,
+    lastIconsTick = 0,
+}
+
 GatherLite.modules[SourceName] = {}
 local source = GatherLite.modules[SourceName]
 
@@ -43,27 +51,29 @@ local MinimapFilter = function(node)
     return true;
 end
 
-local function ClosestNodes(type, posX, posY, instanceID, maxDist, filter)
-    local t = GatherLite:Filter(_GatherLite.nodes[type], function(node)
+local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
+    local nodes = GatherLite:GetNearbyNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
+    local out = {}
+
+    for i = 1, #nodes do
+        local node = nodes[i]
         if not node.instance then
-            node.instance = 0
+            GatherLite:EnsureNodeWorld(node)
         end
 
-        if node.instance ~= instanceID then
-            return false
+        if node.instance == instanceID and filter(node) then
+            if not node.worldX or not node.worldY then
+                GatherLite:EnsureNodeWorld(node)
+            end
+
+            local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
+            if distance and distance < maxDist then
+                out[#out + 1] = node
+            end
         end
+    end
 
-        if not filter(node) then
-            return false
-        end
-
-        local x, y, _ = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
-        local _, distance = HBD:GetWorldVector(instanceID, posX, posY, x, y)
-
-        return distance and distance < maxDist;
-    end)
-
-    return t;
+    return out
 end
 
 -- Create minimap node
@@ -118,13 +128,16 @@ local function ResetMinimap()
 end
 
 local function createNodeThread(type)
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-    local t = ClosestNodes(type, x, y, instanceID, GatherLite.db.char.minimap.range, MinimapFilter);
+    local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
+    local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
+    local t = ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY,
+        GatherLite.db.char.minimap.range, MinimapFilter);
 
-    for key, node in pairs(t) do
-        if not _GatherLite.nodes[type][key].loaded then
-            CreateMinimapNode(_GatherLite.nodes[type][key])
-            _GatherLite.nodes[type][key].loaded = true;
+    for i = 1, #t do
+        local node = t[i]
+        if not node.loaded then
+            CreateMinimapNode(node)
+            node.loaded = true;
         end
         coroutine.yield()
     end
@@ -163,8 +176,11 @@ local function minimapIconThread()
             return
         end
 
-        local x2, y2, _ = HBD:GetWorldCoordinatesFromZone(frame.node.posX, frame.node.posY, frame.node.mapID);
-        local _, distance = HBD:GetWorldVector(instanceID, x, y, x2, y2)
+        if not frame.node.worldX or not frame.node.worldY then
+            GatherLite:EnsureNodeWorld(frame.node)
+        end
+
+        local _, distance = HBD:GetWorldVector(instanceID, x, y, frame.node.worldX, frame.node.worldY)
 
         if distance >= GatherLite.db.char.minimap.range then
             frame.node.loaded = false;
@@ -197,6 +213,7 @@ local function Update(timeDelta, force)
     if (force) then
         updateIcons = true
         updateNodes = true
+        debugState.lastForceUpdate = GetTime()
 
         threadMining = coroutine.create(miningThread)
         threadHerbalism = coroutine.create(herbalismThread)
@@ -217,6 +234,8 @@ local function Update(timeDelta, force)
     end
 
     if (updateNodes) then
+        debugState.lastNodesUpdate = GetTime()
+        debugState.lastNodesTick = timeDelta or 0
         if coroutine.status(threadMining) == "dead" then
             threadMining = coroutine.create(miningThread)
         end
@@ -238,6 +257,11 @@ local function Update(timeDelta, force)
         threadIcon = coroutine.create(minimapIconThread)
     end
 
+    if updateIcons then
+        debugState.lastIconsUpdate = GetTime()
+        debugState.lastIconsTick = timeDelta or 0
+    end
+
     coroutine.resume(threadMining)
     coroutine.resume(threadHerbalism)
     coroutine.resume(threadContainer)
@@ -253,6 +277,7 @@ end
 -- Module setup
 source.setup = function()
     GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Loaded minimap module")
+    GatherLite.minimapDebug = debugState
 
     threadMining = coroutine.create(miningThread)
     threadHerbalism = coroutine.create(herbalismThread)
