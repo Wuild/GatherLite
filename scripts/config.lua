@@ -23,12 +23,7 @@ function GatherLite:Trigger(event, ...)
 end
 
 _GatherLite.name = name;
-if type(GetAddOnMetadata) == "function" then
-    _GatherLite.version = GetAddOnMetadata(name, "version");
-else
-    _GatherLite.version = "unknown";
-end
-
+_GatherLite.version = C_AddOns.GetAddOnMetadata(name, "version");
 _GatherLite.DEBUG_DEFAULT = 1;
 _GatherLite.DEBUG_NODE = 2;
 _GatherLite.DEBUG_FRAME = 3;
