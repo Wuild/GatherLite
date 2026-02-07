@@ -252,8 +252,7 @@ local function createButton()
             ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
         elseif button == "RightButton" then
             CloseDropDownMenus(1)
-            InterfaceOptionsFrame_OpenToCategory("GatherLite")
-            InterfaceOptionsFrame_OpenToCategory("GatherLite") -- run it again to set the correct tab
+            GatherLite:ShowSettings()
         end
     end);
 
@@ -310,8 +309,19 @@ source.setup = function()
         end
 
         if worldmapOpen then
-            if worldmapID ~= WorldMapFrame.mapID then
-                worldmapID = WorldMapFrame.mapID;
+            local mapID = WorldMapFrame.mapID
+            if not mapID and WorldMapFrame.GetMapID then
+                mapID = WorldMapFrame:GetMapID()
+            end
+            if not mapID then
+                mapID = C_Map.GetBestMapForUnit("player")
+            end
+            if not mapID then
+                return
+            end
+
+            if worldmapID ~= mapID then
+                worldmapID = mapID;
 
                 if not (worldmapID == 1415) then
                     GatherLite:debug(_GatherLite.DEBUG_DEFAULT,

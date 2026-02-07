@@ -130,6 +130,13 @@ end
 local function createNodeThread(type)
     local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
     local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
+    if (worldX == nil or worldY == nil or instanceID == nil) and zoneX ~= nil and zoneY ~= nil and mapID then
+        worldX, worldY, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
+    end
+
+    if worldX == nil or worldY == nil or instanceID == nil or zoneX == nil or zoneY == nil or not mapID then
+        return
+    end
     local t = ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY,
         GatherLite.db.char.minimap.range, MinimapFilter);
 
@@ -161,6 +168,16 @@ end
 
 local function minimapIconThread()
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
+    if (x == nil or y == nil or instanceID == nil) then
+        local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
+        if zoneX ~= nil and zoneY ~= nil and mapID then
+            x, y, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
+        end
+    end
+
+    if x == nil or y == nil or instanceID == nil then
+        return
+    end
 
     local i = 0;
     local i2 = 0

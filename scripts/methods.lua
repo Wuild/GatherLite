@@ -457,7 +457,7 @@ function GatherLite:GetMapScale(mapID, instanceID, posX, posY)
 end
 
 function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
-    if not mapID or posX == nil or posY == nil or not maxDist or instanceID == nil then
+    if not mapID or posX == nil or posY == nil or not maxDist then
         return {}
     end
 
@@ -468,10 +468,10 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
 
     local scale = GatherLite:GetMapScale(mapID, instanceID, posX, posY)
     if not scale then
-        if index.byMapInstance[mapID] and index.byMapInstance[mapID][instanceID] then
-            return index.byMapInstance[mapID][instanceID]
+        if instanceID == nil then
+            return {}
         end
-        return {}
+        return GatherLite:GetNodesForMapInstance(type, mapID, instanceID)
     end
 
     local cellX, cellY = nodeCellCoords(posX, posY)

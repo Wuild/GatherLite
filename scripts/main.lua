@@ -16,8 +16,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
             ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
         elseif button == "RightButton" then
             CloseDropDownMenus(1)
-            InterfaceOptionsFrame_OpenToCategory("GatherLite")
-            InterfaceOptionsFrame_OpenToCategory("GatherLite") -- run it again to set the correct tab
+            GatherLite:ShowSettings()
         end
     end,
 
