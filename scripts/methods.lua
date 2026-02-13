@@ -66,6 +66,76 @@ local function ucfirst(str)
     return (str:gsub("^%l", string.upper))
 end
 
+local function canShowSupportButton()
+    return _GatherLite.supportUrl and _GatherLite.supportUrl ~= ""
+end
+
+function GatherLite:ShouldShowReleaseThanks()
+    local seen = GatherLite.db and GatherLite.db.global and GatherLite.db.global.lastSeenVersion
+    if not seen or seen == "" then
+        return true
+    end
+    if seen == _GatherLite.version then
+        return false
+    end
+
+    local current = Semver:Parse(_GatherLite.version)
+    local last = Semver:Parse(seen)
+    if current and last then
+        return current > last
+    end
+
+    return seen ~= _GatherLite.version
+end
+
+function GatherLite:ShowSupportUrl()
+    if not canShowSupportButton() then
+        return
+    end
+    if not StaticPopupDialogs["GATHERLITE_SUPPORT_URL"] then
+        StaticPopupDialogs["GATHERLITE_SUPPORT_URL"] = {
+            text = "Support on " .. (_GatherLite.supportLabel or "Patreon") .. ":\n%s",
+            button1 = "Close",
+            hasEditBox = true,
+            editBoxWidth = 260,
+            timeout = 0,
+            whileDead = 1,
+            hideOnEscape = 1,
+            OnShow = function(self, data)
+                self.editBox:SetText(data or "")
+                self.editBox:HighlightText()
+                self.editBox:SetFocus()
+            end
+        }
+    end
+    StaticPopup_Show("GATHERLITE_SUPPORT_URL", _GatherLite.supportUrl, nil, _GatherLite.supportUrl)
+end
+
+function GatherLite:ShowReleaseThanks()
+    if not GatherLite:ShouldShowReleaseThanks() then
+        return
+    end
+    GatherLite.db.global.lastSeenVersion = _GatherLite.version
+
+    if not StaticPopupDialogs["GATHERLITE_RELEASE_THANKS"] then
+        StaticPopupDialogs["GATHERLITE_RELEASE_THANKS"] = {
+            text = "Thank you for using " .. _GatherLite.name .. " v%s!\nYour support and feedback mean a lot and keep this addon growing.\nIf you enjoy it, please consider supporting my work on " .. (_GatherLite.supportLabel or "Patreon") .. ".",
+            button1 = "Thanks!",
+            button2 = canShowSupportButton() and (_GatherLite.supportLabel or "Patreon") or nil,
+            timeout = 0,
+            whileDead = 1,
+            hideOnEscape = 1,
+            OnCancel = function()
+                GatherLite:ShowSupportUrl()
+            end
+        }
+    end
+
+    C_Timer.After(2, function()
+        StaticPopup_Show("GATHERLITE_RELEASE_THANKS", _GatherLite.version)
+    end)
+end
+
 function GatherLite:print(...)
     print(GatherLite:Colorize("<" .. _GatherLite.name .. ">", "yellow"), ...)
 end
@@ -658,6 +728,7 @@ function GatherLite:EventHandler(event, ...)
 
         GatherLite:SendVersionCheck()
         GatherLite:Load();
+        GatherLite:ShowReleaseThanks();
 
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then

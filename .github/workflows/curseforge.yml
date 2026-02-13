@@ -1,0 +1,40 @@
+name: Publish to CurseForge
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          for toc in *.toc; do
+            if [[ -f "$toc" ]]; then
+              sed -i "s/@project-version@/${GITHUB_REF_NAME}/g" "$toc"
+            fi
+          done
+          addon_name="$(basename "$GITHUB_WORKSPACE")"
+          zip_path="$GITHUB_WORKSPACE/${GITHUB_REF_NAME}.zip"
+          cd "$GITHUB_WORKSPACE/.."
+          zip -r "$zip_path" "$addon_name" -x "$addon_name/.git/*" "$addon_name/.github/*"
+
+      - name: Publish
+        uses: itsmeow/curseforge-upload@v3
+        with:
+          token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project_id: "334918"
+          game_endpoint: "wow"
+          file_path: ${{ github.workspace }}/${{ github.ref_name }}.zip
+          display_name: ${{ github.ref_name }}
+          game_versions: "2.5.5,1.15.8,3.4.5,4.4.2,5.5.3"
+          release_type: release

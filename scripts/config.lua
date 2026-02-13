@@ -24,6 +24,8 @@ end
 
 _GatherLite.name = name;
 _GatherLite.version = C_AddOns.GetAddOnMetadata(name, "version");
+_GatherLite.supportLabel = "Patreon";
+_GatherLite.supportUrl = "https://www.patreon.com/c/Wuild";
 _GatherLite.DEBUG_DEFAULT = 1;
 _GatherLite.DEBUG_NODE = 2;
 _GatherLite.DEBUG_FRAME = 3;
@@ -39,6 +41,7 @@ _GatherLite.debug = {
 _GatherLite.configsDefaults = {
     global = {
         maps = {},
+        lastSeenVersion = nil,
         nodes = {
             mining = {},
             herbalism = {},
