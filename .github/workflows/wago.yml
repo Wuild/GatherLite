@@ -1,0 +1,35 @@
+name: Publish to Wago
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          for toc in *.toc; do
+            if [[ -f "$toc" ]]; then
+              sed -i "s/@project-version@/${GITHUB_REF_NAME}/g" "$toc"
+            fi
+          done
+          addon_name="$(basename "$GITHUB_WORKSPACE")"
+          zip_path="$GITHUB_WORKSPACE/${GITHUB_REF_NAME}.zip"
+          cd "$GITHUB_WORKSPACE/.."
+          zip -r "$zip_path" "$addon_name" -x "$addon_name/.git/*" "$addon_name/.github/*"
+          echo "WAGO_ZIP_PATH=$zip_path" >> "$GITHUB_ENV"
+
+      - name: Package and publish
+        uses: BigWigsMods/packager@v2
+        env:
+          WAGO_API_TOKEN: ${{ secrets.WAGO_TOKEN }}

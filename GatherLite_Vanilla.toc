@@ -2,6 +2,7 @@
 ## Title: GatherLite
 ## Author: Wuild
 ## Version: @project-version@
+## X-Wago-ID: O67jQPN3
 ## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
