@@ -495,12 +495,12 @@ function GatherLite:GetNodesForMapInstance(type, mapID, instanceID)
 end
 
 function GatherLite:GetMapScale(mapID, instanceID, posX, posY)
-    if not mapID or not instanceID or not posX or not posY then
-        return nil
-    end
-
     if _GatherLite.mapScaleCache[mapID] then
         return _GatherLite.mapScaleCache[mapID]
+    end
+
+    if not mapID or not posX or not posY then
+        return nil
     end
 
     local delta = NODE_RANGE
@@ -510,13 +510,18 @@ function GatherLite:GetMapScale(mapID, instanceID, posX, posY)
         posX2 = math.max(posX - delta, 0)
     end
 
-    local wx1, wy1 = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
-    local wx2, wy2 = HBD:GetWorldCoordinatesFromZone(posX2, posY2, mapID)
+    local wx1, wy1, mapInstance1 = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
+    local wx2, wy2, mapInstance2 = HBD:GetWorldCoordinatesFromZone(posX2, posY2, mapID)
     if not wx1 or not wx2 then
         return nil
     end
 
-    local _, distance = HBD:GetWorldVector(instanceID, wx1, wy1, wx2, wy2)
+    local instance = instanceID or mapInstance1 or mapInstance2
+    if not instance then
+        return nil
+    end
+
+    local _, distance = HBD:GetWorldVector(instance, wx1, wy1, wx2, wy2)
     if not distance or distance == 0 then
         return nil
     end
@@ -538,10 +543,7 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
 
     local scale = GatherLite:GetMapScale(mapID, instanceID, posX, posY)
     if not scale then
-        if instanceID == nil then
-            return {}
-        end
-        return GatherLite:GetNodesForMapInstance(type, mapID, instanceID)
+        return {}
     end
 
     local cellX, cellY = nodeCellCoords(posX, posY)
