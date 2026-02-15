@@ -548,6 +548,18 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
 
     local cellX, cellY = nodeCellCoords(posX, posY)
     local cellRadius = math.ceil(maxDist / (scale * NODE_RANGE))
+    if cellRadius >= NODE_CELL_INV then
+        local instance = instanceID
+        if instance == nil then
+            local _, _, mapInstance = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
+            instance = mapInstance
+        end
+
+        if instance == nil then
+            return GatherLite:GetNodesForMap(type, mapID)
+        end
+        return GatherLite:GetNodesForMapInstance(type, mapID, instance)
+    end
     local out = {}
     local seen = {}
 
