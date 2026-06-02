@@ -36,7 +36,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
                 if not GatherLite.db.char.minimap.enabled then
                     return false
                 end
-                if not GatherLite.db.char.tracking[node.type] then
+                if not GatherLite:GetNodeTracking("minimap", node.type) then
                     return false
                 end
                 if node.predefined and not GatherLite.db.global.usePredefined then

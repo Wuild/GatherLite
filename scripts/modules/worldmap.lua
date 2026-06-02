@@ -17,8 +17,8 @@ local WorldmapFilter = function(node)
         return false
     end
 
-    -- check if were tracking the type of node
-    if not GatherLite.db.char.tracking[node.type] then
+    -- check if this map target is tracking the type of node
+    if not GatherLite:GetNodeTracking("worldmap", node.type) then
         return false
     end
 
@@ -215,7 +215,7 @@ end
 
 local tooltip = CreateFrame("GameTooltip", "GatherLiteIconTooltip", UIParent, "GameTooltipTemplate")
 local dropDown = CreateFrame("Frame", "GatherLiteWorldmapMenu", UIParent, "UIDropDownMenuTemplate")
-UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
+UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu("worldmap"), "MENU")
 
 local function createButton()
     local button = CreateFrame("Button", "GatherLiteWorldmapButton", WorldMapFrame)

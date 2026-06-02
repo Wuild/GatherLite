@@ -32,8 +32,8 @@ local MinimapFilter = function(node)
         return false
     end
 
-    -- check if were tracking the type of node
-    if not GatherLite.db.char.tracking[node.type] then
+    -- check if this map target is tracking the type of node
+    if not GatherLite:GetNodeTracking("minimap", node.type) then
         return false
     end
 

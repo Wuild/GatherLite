@@ -77,7 +77,13 @@ _GatherLite.configsDefaults = {
             distance = 70,
             loot = true,
             edge = false,
-            neighbors = true
+            neighbors = true,
+            tracking = {
+                mining = true,
+                herbalism = true,
+                containers = true,
+                fishing = true
+            }
         },
         worldmap = {
             enabled = true,
@@ -85,7 +91,13 @@ _GatherLite.configsDefaults = {
             opacity = 1,
             loot = true,
             neighbors = true,
-            continent = false
+            continent = false,
+            tracking = {
+                mining = true,
+                herbalism = true,
+                containers = true,
+                fishing = true
+            }
         },
         p2p = {
             guild = true

@@ -905,7 +905,46 @@ function GatherLite:addContextItem(args)
     UIDropDownMenu_AddButton(info)
 end
 
-function GatherLite:MinimapContextMenu()
+local function ensureMapTracking(target)
+    local char = GatherLite.db and GatherLite.db.char
+    if not char then
+        return nil
+    end
+
+    char[target] = char[target] or {}
+    char[target].tracking = char[target].tracking or {}
+
+    for _, nodeType in ipairs({ "mining", "herbalism", "containers", "fishing" }) do
+        if char[target].tracking[nodeType] == nil then
+            if char.tracking and char.tracking[nodeType] ~= nil then
+                char[target].tracking[nodeType] = char.tracking[nodeType]
+            else
+                char[target].tracking[nodeType] = true
+            end
+        end
+    end
+
+    return char[target].tracking
+end
+
+function GatherLite:GetNodeTracking(target, nodeType)
+    local tracking = ensureMapTracking(target)
+    if not tracking then
+        return true
+    end
+    return tracking[nodeType] ~= false
+end
+
+function GatherLite:SetNodeTracking(target, nodeType, value)
+    local tracking = ensureMapTracking(target)
+    if tracking then
+        tracking[nodeType] = value and true or false
+    end
+end
+
+function GatherLite:MinimapContextMenu(target)
+    target = target or "minimap"
+
     return function(frame, level, menuList)
         if level == 1 then
             GatherLite:addContextItem({
@@ -917,9 +956,9 @@ function GatherLite:MinimapContextMenu()
             GatherLite:addContextItem({
                 text = GatherLite:translate('mining'),
                 icon = _GatherLite.iconPath .. "Ore/Copper",
-                checked = GatherLite.db.char.tracking.mining,
+                checked = GatherLite:GetNodeTracking(target, "mining"),
                 callback = function()
-                    GatherLite.db.char.tracking.mining = not GatherLite.db.char.tracking.mining
+                    GatherLite:SetNodeTracking(target, "mining", not GatherLite:GetNodeTracking(target, "mining"))
                     GatherLite:Trigger("settings:update")
                 end
             })
@@ -927,9 +966,9 @@ function GatherLite:MinimapContextMenu()
             GatherLite:addContextItem({
                 text = GatherLite:translate('herbalism'),
                 icon = _GatherLite.iconPath .. "Herb/Silverleaf",
-                checked = GatherLite.db.char.tracking.herbalism,
+                checked = GatherLite:GetNodeTracking(target, "herbalism"),
                 callback = function()
-                    GatherLite.db.char.tracking.herbalism = not GatherLite.db.char.tracking.herbalism
+                    GatherLite:SetNodeTracking(target, "herbalism", not GatherLite:GetNodeTracking(target, "herbalism"))
                     GatherLite:Trigger("settings:update")
                 end
             })
@@ -937,9 +976,9 @@ function GatherLite:MinimapContextMenu()
             GatherLite:addContextItem({
                 text = GatherLite:translate('containers'),
                 icon = _GatherLite.iconPath .. "Open/Chest",
-                checked = GatherLite.db.char.tracking.containers,
+                checked = GatherLite:GetNodeTracking(target, "containers"),
                 callback = function()
-                    GatherLite.db.char.tracking.containers = not GatherLite.db.char.tracking.containers
+                    GatherLite:SetNodeTracking(target, "containers", not GatherLite:GetNodeTracking(target, "containers"))
                     GatherLite:Trigger("settings:update")
                 end
             })
@@ -947,9 +986,9 @@ function GatherLite:MinimapContextMenu()
             GatherLite:addContextItem({
                 text = GatherLite:translate('fish'),
                 icon = _GatherLite.iconPath .. "Fish/Fishhook",
-                checked = GatherLite.db.char.tracking.fishing,
+                checked = GatherLite:GetNodeTracking(target, "fishing"),
                 callback = function()
-                    GatherLite.db.char.tracking.fishing = not GatherLite.db.char.tracking.fishing
+                    GatherLite:SetNodeTracking(target, "fishing", not GatherLite:GetNodeTracking(target, "fishing"))
                     GatherLite:Trigger("settings:update")
                 end
             })
