@@ -1,0 +1,26 @@
+name: Lua compatibility
+
+on:
+  push:
+  pull_request:
+  workflow_call:
+
+jobs:
+  compatibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.1
+        run: sudo apt-get update && sudo apt-get install -y lua5.1
+      - name: Check Lua syntax
+        run: find scripts plugins tools -name '*.lua' -print0 | xargs -0 -n1 luac5.1 -p
+      - name: Test Forever compatibility
+        run: lua5.1 tools/test_compat.lua
+      - name: Test predefined databases
+        run: lua5.1 tools/test_database.lua
+      - name: Test map tracking toggles
+        run: lua5.1 tools/test_tracking.lua
+      - name: Test grouped tooltips
+        run: lua5.1 tools/test_tooltips.lua
+      - name: Test importer and release packaging offline
+        run: python3 -m unittest discover -s tools -p 'test_*.py'

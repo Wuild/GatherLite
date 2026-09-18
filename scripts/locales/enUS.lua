@@ -27,7 +27,8 @@ L["settings.minimap.loot"] = "Show loot on node tooltip"
 L["settings.minimap.size"] = "Icon size"
 L["settings.minimap.opacity"] = "Icon opacity"
 L["settings.minimap.threshold"] = "show nodes closer then %d units"
-L["settings.minimap.range"] = "hide nodes closer then %d units"
+L["settings.minimap.range"] = "Show nodes as circles within %d yards"
+L["settings.minimap.range.description"] = "Circles mark known locations, whether or not a node is currently there. Set to 0 to always show normal icons."
 L["settings.minimap.left_click"] = "Left Click"
 L["settings.minimap.left_click_text"] = "Open tracker menu"
 L["settings.minimap.right_click"] = "Right Click"
@@ -38,6 +39,7 @@ L["settings.tracking.toggle_all_herbs"] = "Toggle all herbs"
 L["settings.tracking.toggle_all_containers"] = "Toggle all containers"
 
 L['tooltip.last_visit'] = "Last visit:"
+L['tooltip.nearby_nodes'] = "%d nearby nodes"
 L['tooltip.found_by'] = "Found by:"
 
 L["settings.debugging"] = "Debugging"
@@ -54,6 +56,16 @@ L['node.truesilver_deposit'] = "Truesilver Deposit"
 L['node.dark_iron_deposit'] = "Dark Iron Deposit"
 L['node.small_thorium_vein'] = "Small Thorium Vein"
 L['node.rich_thorium_vein'] = "Rich Thorium Vein"
+L['node.cold_iron_deposit'] = "Cold Iron Deposit"
+L['node.fools_gold_vein'] = "Fool's Gold Vein"
+L['node.starsilver_vein'] = "Starsilver Vein"
+L['node.greater_moonstone_formation'] = "Greater Moonstone Formation"
+L['node.incendicite_mineral_vein'] = "Incendicite Mineral Vein"
+L['node.lesser_bloodstone_deposit'] = "Lesser Bloodstone Deposit"
+L['node.indurium_mineral_vein'] = "Indurium Mineral Vein"
+L['node.hakkari_thorium_vein'] = "Hakkari Thorium Vein"
+L['node.small_obsidian_chunk'] = "Small Obsidian Chunk"
+L['node.large_obsidian_chunk'] = "Large Obsidian Chunk"
 
 
 -- Herbs
@@ -85,6 +97,10 @@ L['node.mountain_silversage'] = "Mountain Silversage"
 L['node.plaguebloom'] = "Plaguebloom"
 L['node.icecap'] = "Icecap"
 L['node.black_lotus'] = "Black Lotus"
+L['node.nightmare_moss'] = "Nightmare Moss"
+L['node.dreamroot'] = "Dreamroot"
+L['node.moonroot'] = "Moonroot"
+L['node.star_lotus'] = "Star Lotus"
 
 -- Open
 L['node.battered_chest'] = "Battered chest"
@@ -93,9 +109,15 @@ L['node.solid_chest'] = "Solid chest"
 L['node.large_solid_chest'] = "Large solid chest"
 L['node.giant_clam'] = "Giant Clam"
 L['node.ungoro_dirt_pile'] = "Un'Goro Soil"
+L['node.practice_lockbox'] = "Practice Lockbox"
+L['node.buccaneers_strongbox'] = "Buccaneer's Strongbox"
+L['node.battered_footlocker'] = "Battered Footlocker"
+L['node.waterlogged_footlocker'] = "Waterlogged Footlocker"
+L['node.dented_footlocker'] = "Dented Footlocker"
+L['node.mossy_footlocker'] = "Mossy Footlocker"
+L['node.scarlet_footlocker'] = "Scarlet Footlocker"
 
 -- Fish
-L['node.fish_pool_firefin'] = "Firefin Snapper School"
 L['node.fish_pool_debris'] = "Floating Debris"
 L['node.fish_pool_wreckage'] = "Floating Wreckage"
 L['node.fish_pool_oily_blackmouth'] = "Oily Blackmouth School"
@@ -103,84 +125,24 @@ L['node.fish_pool_sagefish'] = "Sagefish School"
 
 
 -- TBC Ores
-L['node.fel_iron_deposit'] = "Fel Iron Deposit"
-L['node.adamantite_deposit'] = "Adamantite Deposit"
-L['node.rich_adamantite_deposit'] = "Rich Adamantite Deposit"
-L['node.khorium_vein'] = "Khorium Vein"
 
 -- TBC Herbs
-L['node.felweed'] = "Felweed"
-L['node.dreaming_glory'] = "Dreaming Glory"
-L['node.ragveil'] = "Ragveil"
-L['node.terocone'] = "Terocone"
-L['node.ancient_lichen'] = "Ancient Lichen"
-L['node.netherbloom'] = "Netherbloom"
-L['node.nightmare_vine'] = "Nightmare Vine"
-L['node.mana_thistle'] = "Mana Thistle"
-L['node.flame_cap'] = "Flame Cap"
-L['node.bloodthistle'] = "Bloodthistle"
 
 
 
 -- WOTLK Ores
-L['node.saronite_deposit'] = "Saronite Deposit"
-L['node.rich_saronite_deposit'] = "Rich Saronite Deposit"
-L['node.cobalt_deposit'] = "Cobalt Deposit"
-L['node.rich_cobalt_deposit'] = "Rich Cobalt Deposit"
-L['node.titanium_vein'] = "Titanium Vein"
 
 -- WOTLK Herbs
-L['node.goldclover'] = "Goldclover"
-L['node.firethorn'] = "Firethorn"
-L['node.tiger_lily'] = "Tiger Lily"
-L['node.talandras_rose'] = "Talandra's Rose"
-L['node.frozen_herb'] = "Frozen Herb"
-L['node.adders_tongue'] = "Adder's Tongue"
-L['node.lichbloom'] = "Lichbloom"
-L['node.icethorn'] = "Icethorn"
 
 -- WOTLK Fish
-L['node.musselback_sculpin_school'] = "Musselback Sculpin School"
-L['node.dragonfin_angelfish_school'] = "Dragonfin Angelfish School"
-L['node.fangtooth_herring_school'] = "Fangtooth Herring School"
-L['node.glacial_salmon_school'] = "Glacial Salmon School"
-L['node.borean_man_o_war_school'] = "Borean Man O' War School"
-L['node.imperial_manta_ray_school'] = "Imperial Manta Ray School"
-L['node.deep_sea_monsterbelly_school'] = "Deep Sea Monsterbelly School"
-L['node.moonglow_cuttlefish_school'] = "Moonglow Cuttlefish School"
-L['node.nettlefish_school'] = "Nettlefish School"
 
 
 -- CATA Ores
-L['node.obsidium_deposit'] = "Obsidium Deposit"
-L['node.rich_obsidium_deposit'] = "Obsidium Deposit"
 
-L['node.elementium_vein'] = "Elementium Vein"
-L['node.rich_elementium_vein'] = "Rich Elementium Vein"
 
-L['node.pyrite_deposit'] = "Pyrite Deposit"
-L['node.rich_pyrite_deposit'] = "Rich Pyrite Deposit"
 
 -- CATA Herbs
-L['node.cinderbloom'] = "Cinderbloom"
-L['node.stormvine'] = "Stormvine"
-L['node.azsharas_vail'] = "Azshara's Veil"
-L['node.heartblossom'] = "Heartblossom"
-L['node.whiptail'] = "Whiptail"
-L['node.twilight_jasmine'] = "Twilight Jasmine"
 
 -- MOP Ores
-L['node.ghost_iron_deposit'] = "Ghost Iron Deposit"
-L['node.rich_ghost_iron_deposit'] = "Rich Ghost Iron Deposit"
-L['node.trillium_vein'] = "Trillium Vein"
-L['node.rich_trillium_vein'] = "Rich Trillium Vein"
-L['node.kyparite_deposit'] = "Kyparite Deposit"
 
 -- MOP Herbs
-L['node.green_tea_leaf'] = "Green Tea Leaf"
-L['node.silkweed'] = "Silkweed"
-L['node.snow_lily'] = "Snow Lily"
-L['node.fools_cap'] = "Fool's Cap"
-L['node.rain_poppy'] = "Rain Poppy"
-L['node.golden_lotus'] = "Golden Lotus"
-L['node.sha_touched_herb'] = "Sha-Touched Herb"

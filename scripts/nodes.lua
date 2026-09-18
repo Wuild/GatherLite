@@ -9,13 +9,13 @@ local function InsertObject(type, ids, name, icon, levels)
         type = type,
         id = ids,
         name = name,
-        icon = _GatherLite.iconPath .. icon,
+        icon = icon:match("^Interface\\") and icon or (_GatherLite.iconPath .. icon),
         levels = levels
     })
 end
 
 -- Ores
--- Classic
+-- Forever
 InsertObject("ore", { 1731, 2055, 3763, 103713, 103714 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 })
 InsertObject("ore", { 1732, 3764, 2054, 103711, 103709 }, "tin_vein", "Ore\\tin", { 65, 90, 115, 165 })
 InsertObject("ore", { 1733, 105569, 73940 }, "silver_vein", "Ore\\silver", { 75, 100, 125, 175 })
@@ -27,36 +27,21 @@ InsertObject("ore", { 165658 }, "dark_iron_deposit", "Ore\\darkiron", { 230, 255
 InsertObject("ore", { 324, 150082, 176643, 123848 }, "small_thorium_vein", "Ore\\thorium", { 245, 270, 295, 345 })
 InsertObject("ore", { 175404, 176644, 177388 }, "rich_thorium_vein", "Ore\\rich_thorium", { 275, 290, 300, 350 })
 
--- TBC
-InsertObject("ore", { 181555 }, "fel_iron_deposit", "Ore\\feliron", { 300, 325, 350, 400 })
-InsertObject("ore", { 181556 }, "adamantite_deposit", "Ore\\adamantium", { 325, 350, 375, 425 })
-InsertObject("ore", { 181569 }, "rich_adamantite_deposit", "Ore\\rich_adamantium", { 350, 375, 400, 450 })
-InsertObject("ore", { 181557 }, "khorium_vein", "Ore\\khorium", { 375, 400, 425, 475 })
-
--- WOTLK
-InsertObject("ore", { 189980 }, "saronite_deposit", "Ore\\saronite", { 400, 425, 450, 475 })
-InsertObject("ore", { 189981 }, "rich_saronite_deposit", "Ore\\saronite", { 425, 450, 500, 500 })
-InsertObject("ore", { 189978 }, "cobalt_deposit", "Ore\\cobalt", { 350, 375, 400, 450 })
-InsertObject("ore", { 189979 }, "rich_cobalt_deposit", "Ore\\cobalt", { 375, 400, 425, 450 })
-InsertObject("ore", { 191133 }, "titanium_vein", "Ore\\titanium", { 450, 450, 450, 450 })
-
--- CATA
-InsertObject("ore", { 202736 }, "obsidium_deposit", "Ore\\obsidian", { 450, 450, 450, 450 })
-InsertObject("ore", { 202739 }, "rich_obsidium_deposit", "Ore\\obsidian", { 450, 450, 450, 450 })
-InsertObject("ore", { 202737 }, "pyrite_deposit", "Ore\\pyrite", { 450, 450, 450, 450 })
-InsertObject("ore", { 202740 }, "rich_pyrite_deposit", "Ore\\pyrite", { 450, 450, 450, 450 })
-InsertObject("ore", { 202738 }, "elementium_vein", "Ore\\elementium", { 450, 450, 450, 450 })
-InsertObject("ore", { 202741 }, "rich_elementium_vein", "Ore\\elementium", { 450, 450, 450, 450 })
-
--- MOP
-InsertObject("ore", { 209311 }, "ghost_iron_deposit", "Ore\\ghostiron", { 500, 525, 550, 575 })
-InsertObject("ore", { 209312 }, "rich_ghost_iron_deposit", "Ore\\ghostiron", { 500, 525, 550, 575 })
-InsertObject("ore", { 209328 }, "trillium_vein", "Ore\\black_trillium", { 500, 525, 550, 575 })
-InsertObject("ore", { 209329 }, "rich_trillium_vein", "Ore\\white_trillium", { 500, 525, 550, 575 })
-InsertObject("ore", { 214547 }, "kyparite_deposit", "Ore\\kyparite", { 500, 525, 550, 575 })
+-- Additional Forever objects verified against Wowhead's mineral-vein listing.
+-- Only the minimum skill is published for these nodes; do not invent skill-up tiers.
+InsertObject("ore", { 439558 }, "cold_iron_deposit", "Interface\\Icons\\inv_ore_mithril_01", { 125 })
+InsertObject("ore", { 439628 }, "fools_gold_vein", "Interface\\Icons\\inv_misc_dust_01", { 175 })
+InsertObject("ore", { 439778 }, "starsilver_vein", "Interface\\Icons\\inv_ore_platinum_01", { 245 })
+InsertObject("ore", { 439815 }, "greater_moonstone_formation", "Interface\\Icons\\inv_misc_apexis_crystal", { 245 })
+InsertObject("ore", { 1610, 1667 }, "incendicite_mineral_vein", "Interface\\Icons\\inv_ore_thorium_01", { 65 })
+InsertObject("ore", { 2653 }, "lesser_bloodstone_deposit", "Interface\\Icons\\inv_ore_thorium_01", { 75 })
+InsertObject("ore", { 19903 }, "indurium_mineral_vein", "Interface\\Icons\\inv_ore_mithril_01", { 150 })
+InsertObject("ore", { 180215 }, "hakkari_thorium_vein", "Ore\\rich_thorium", { 275 })
+InsertObject("ore", { 181068 }, "small_obsidian_chunk", "Interface\\Icons\\inv_misc_stonetablet_01", { 305 })
+InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Interface\\Icons\\inv_stone_15", { 305 })
 
 -- Herbs
--- Classic
+-- Forever
 InsertObject("herb", { 1617, 3725 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 })
 InsertObject("herb", { 1618, 3724 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 })
 InsertObject("herb", { 1619, 3726 }, "earthroot", "Herb\\earthroot", { 15, 40, 65, 115 })
@@ -86,47 +71,10 @@ InsertObject("herb", { 176586, 176640, 180166 }, "mountain_silversage", "Herb\\m
 InsertObject("herb", { 176587, 176641 }, "plaguebloom", "Herb\\plaguebloom", { 285, 310, 335, 385 })
 InsertObject("herb", { 176588 }, "icecap", "Herb\\icecap", { 290, 315, 340, 390 })
 InsertObject("herb", { 176589 }, "black_lotus", "Herb\\black_lotus", { 300, 325, 350, 400 })
-
--- TBC
-InsertObject("herb", { 181270 }, "felweed", "Herb\\felweed", { 300, 325, 350, 400 })
-InsertObject("herb", { 181271, 183045 }, "dreaming_glory", "Herb\\dreaming_glory", { 315, 340, 365, 415 })
-InsertObject("herb", { 181275 }, "ragveil", "Herb\\ragveil", { 325, 350, 375, 425 })
-InsertObject("herb", { 181277 }, "terocone", "Herb\\terocone", { 325, 350, 375, 425 })
-InsertObject("herb", { 181278 }, "ancient_lichen", "Herb\\ancient_lichen", { 340, 365, 390, 440 })
-InsertObject("herb", { 181279 }, "netherbloom", "Herb\\netherbloom", { 350, 375, 400, 450 })
-InsertObject("herb", { 181280 }, "nightmare_vine", "Herb\\nightmare_vine", { 365, 390, 415, 465 })
-InsertObject("herb", { 181281 }, "mana_thistle", "Herb\\mana_thistle", { 375, 400, 425, 475 })
-InsertObject("herb", { 181276 }, "flame_cap", "Herb\\flame_cap", { 335, 360, 385, 435 })
-InsertObject("herb", { 181166 }, "bloodthistle", "Herb\\stranglekelp", { 0, 0, 0, 0 })
-
--- WOTLK
-InsertObject("herb", { 189973 }, "goldclover", "Herb\\goldclover", { 350, 375, 400, 450 })
-InsertObject("herb", { 191303 }, "firethorn", "Herb\\flame_cap", { 360, 385, 410, 450 })
-InsertObject("herb", { 190169 }, "tiger_lily", "Herb\\tigerlily", { 375, 400, 425, 450 })
-InsertObject("herb", { 190170 }, "talandras_rose", "Herb\\trose", { 385, 410, 435, 450 })
-InsertObject("herb", { 190173 }, "frozen_herb", "Herb\\frostlotus", { 400, 425, 450, 500 })
-InsertObject("herb", { 191019 }, "adders_tongue", "Herb\\evergreen", { 400, 425, 450, 500 })
-InsertObject("herb", { 190171 }, "lichbloom", "Herb\\whispervine", { 425, 450, 500, 500 })
-InsertObject("herb", { 190172 }, "icethorn", "Herb\\icethorn", { 435, 450, 500, 500 })
-
-
--- CATA
-InsertObject("herb", { 202747 }, "cinderbloom", "Herb\\cinderbloom", { 450, 450, 450, 450 })
-InsertObject("herb", { 202748 }, "stormvine", "Herb\\stormvine", { 450, 450, 450, 450 })
-InsertObject("herb", { 202749 }, "azsharas_vail", "Herb\\azsharasveil", { 450, 450, 450, 450 })
-InsertObject("herb", { 202750 }, "heartblossom", "Herb\\heartblossom", { 450, 450, 450, 450 })
-InsertObject("herb", { 202752 }, "whiptail", "Herb\\whiptail", { 450, 450, 450, 450 })
---InsertObject("herb", { 189973 }, "deathspore_pod", "Herb\\cinderbloom", { 450, 450, 450, 450 })
-InsertObject("herb", { 202751 }, "twilight_jasmine", "Herb\\twilightjasmine", { 450, 450, 450, 450 })
-
--- MOP
-InsertObject("herb", { 209349 }, "green_tea_leaf", "Herb\\green_tea_leaf", { 500, 525, 550, 575 })
-InsertObject("herb", { 209350 }, "silkweed", "Herb\\silkweed", { 500, 525, 550, 575 })
-InsertObject("herb", { 209351 }, "snow_lily", "Herb\\snow_lily", { 500, 525, 550, 575 })
-InsertObject("herb", { 209353 }, "fools_cap", "Herb\\fools_cap", { 500, 525, 550, 575 })
-InsertObject("herb", { 209354 }, "rain_poppy", "Herb\\rain_poppy", { 500, 525, 550, 575 })
-InsertObject("herb", { 209355 }, "golden_lotus", "Herb\\golden_lotus", { 500, 525, 550, 575 })
-InsertObject("herb", { 214510 }, "sha_touched_herb", "Herb\\shaherb", { 500, 525, 550, 575 })
+InsertObject("herb", { 439557 }, "nightmare_moss", "Interface\\Icons\\inv_misc_dust_05", { 125 })
+InsertObject("herb", { 439627 }, "dreamroot", "Interface\\Icons\\ability_creature_poison_04", { 205 })
+InsertObject("herb", { 439810 }, "moonroot", "Interface\\Icons\\inv_misc_herb_06", { 250 })
+InsertObject("herb", { 439762 }, "star_lotus", "Interface\\Icons\\inv_misc_herb_fellotus", { 250 })
 
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)
@@ -137,22 +85,20 @@ InsertObject("container", { 74448, 153464, 75300, 153463, 75299, 75298, 153462, 
 InsertObject("container", { 2744, 19018, 19017 }, "giant_clam", "Open\\Clam", nil)
 InsertObject("container", { 157936 }, "ungoro_dirt_pile", "Open\\Soil", nil)
 
+-- Rogue lockpicking practice chests and outdoor training footlockers.
+InsertObject("container", { 178244, 178245, 178246 }, "practice_lockbox", "Open\\Chest", nil)
+InsertObject("container", { 123330, 123331, 123332, 123333 }, "buccaneers_strongbox", "Open\\Chest", nil)
+InsertObject("container", { 179486, 179488, 179490 }, "battered_footlocker", "Open\\Chest", nil)
+InsertObject("container", { 179487, 179489, 179491 }, "waterlogged_footlocker", "Open\\Chest", nil)
+InsertObject("container", { 179492, 179494, 179496 }, "dented_footlocker", "Open\\Chest", nil)
+InsertObject("container", { 179493, 179497 }, "mossy_footlocker", "Open\\Chest", nil)
+InsertObject("container", { 179498 }, "scarlet_footlocker", "Open\\Chest", nil)
+
 -- Fishing
 
--- Classic
+-- Forever
 InsertObject("fishing", { 180902, 180683, 180657, 180752 }, "battered_chest", "Fish\\Fishhook", nil)
 InsertObject("fishing", { 180655 }, "fish_pool_debris", "Fish\\Fishhook", nil)
 InsertObject("fishing", { 180685, 180662, 180901, 180751 }, "fish_pool_wreckage", "Fish\\Fishhook", nil)
 InsertObject("fishing", { 180750, 180900, 180682, 180664, 180582 }, "fish_pool_oily_blackmouth", "Fish\\Fishhook", nil)
 InsertObject("fishing", { 180656, 180663 }, "fish_pool_sagefish", "Fish\\Fishhook", nil)
-
--- WOTLK
-InsertObject("fishing", { 192046 }, "musselback_sculpin_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192048 }, "dragonfin_angelfish_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192049 }, "fangtooth_herring_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192050 }, "glacial_salmon_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192051 }, "borean_man_o_war_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192052 }, "imperial_manta_ray_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192053 }, "deep_sea_monsterbelly_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192054 }, "moonglow_cuttlefish_school", "Fish\\Fishhook", nil)
-InsertObject("fishing", { 192057 }, "nettlefish_school", "Fish\\Fishhook", nil)

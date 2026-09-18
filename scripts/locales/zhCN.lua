@@ -7,6 +7,15 @@ L["tracking"] = "追踪类型"
 L["mining"] = "矿石"
 L["herbalism"] = "草药"
 L["fish"] = "鱼群"
+-- Names verified from Wowhead Forever. Untranslated new nodes use enUS fallback.
+L['node.fools_gold_vein'] = "愚人金矿脉"
+L['node.incendicite_mineral_vein'] = "火岩矿脉"
+L['node.lesser_bloodstone_deposit'] = "次级血石矿脉"
+L['node.indurium_mineral_vein'] = "精铁矿脉"
+L['node.hakkari_thorium_vein'] = "哈卡莱瑟银矿脉"
+L['node.small_obsidian_chunk'] = "小型黑曜石碎块"
+L['node.large_obsidian_chunk'] = "大型黑曜石碎块"
+L['node.dreamroot'] = "梦之根"
 L["containers"] = "箱子"
 
 L["worldmap.show"] = "显示 GatherLite"
@@ -30,7 +39,8 @@ L["settings.minimap.loot"] = "显示采集点提示框中的拾取记录"
 L["settings.minimap.size"] = "图标大小"
 L["settings.minimap.opacity"] = "图标透明度"
 L["settings.minimap.threshold"] = "显示自身 %d 码以内的采集点图标"
-L["settings.minimap.range"] = "隐藏自身 %d 码以内的采集点图标"
+L["settings.minimap.range"] = "将自身 %d 码以内的采集点显示为圆圈"
+L["settings.minimap.range.description"] = "圆圈标记已知位置，不代表当前有采集点。设为 0 可始终显示普通图标。"
 L["settings.minimap.left_click"] = "点击左键"
 L["settings.minimap.left_click_text"] = "打开追踪类型菜单"
 L["settings.minimap.right_click"] = "点击右键"
@@ -41,13 +51,22 @@ L["settings.tracking.toggle_all_herbs"] = "切换显示全部草药"
 L["settings.tracking.toggle_all_containers"] = "切换显示全部箱子"
 
 L['tooltip.last_visit'] = "最近采集:"
+L['tooltip.nearby_nodes'] = "附近的节点：%d"
 L['tooltip.found_by'] = "发现者:"
+
+-- Rogue training chests, verified against Wowhead Forever object names.
+L['node.practice_lockbox'] = "练习用保险箱"
+L['node.buccaneers_strongbox'] = "海盗的保险箱"
+L['node.battered_footlocker'] = "破碎的提箱"
+L['node.waterlogged_footlocker'] = "浸水的提箱"
+L['node.dented_footlocker'] = "被砸过的箱子"
+L['node.mossy_footlocker'] = "生苔的提箱"
+L['node.scarlet_footlocker'] = "血色十字军提箱"
 
 L["settings.debugging"] = "Debugging"
 
 
 -- Ores
-L['node.mining'] = "矿石"
 L['node.copper_vein'] = "铜矿"
 L['node.tin_vein'] = "锡矿"
 L['node.silver_vein'] = "银矿"
@@ -60,7 +79,6 @@ L['node.small_thorium_vein'] = "瑟银矿"
 L['node.rich_thorium_vein'] = "富瑟银矿"
 
 -- Herbs
-L['node.herbalism'] = "草药"
 L['node.silverleaf'] = "银叶草"
 L['node.peacebloom'] = "宁神花"
 L['node.earthroot'] = "地根草"
@@ -99,7 +117,6 @@ L['node.giant_clam'] = "巨型蚌壳"
 L['node.ungoro_dirt_pile'] = "安戈洛的泥土"
 
 -- Fish
-L['node.fish_pool_firefin'] = "火鳞鳝鱼群"
 L['node.fish_pool_debris'] = "漂浮的碎片"
 L['node.fish_pool_wreckage'] = "漂浮的残骸"
 L['node.fish_pool_oily_blackmouth'] = "黑口鱼群"

@@ -1,68 +1,42 @@
-local GatherLite = LibStub("AceAddon-3.0"):GetAddon("GatherLite", 1)
-if not GatherLite then
-    return
+local _, addon = ...
+local GatherLite = LibStub("AceAddon-3.0"):GetAddon("GatherLite", true)
+if not GatherLite then return end
+
+local source = {}
+GatherLite.plugins.Database = source
+local kinds = { ore = "mining", herb = "herbalism", container = "containers", fishing = "fishing" }
+
+local function loadEnabled()
+    if not GatherLite.db.global.usePredefined or not addon.predefined then return end
+
+    for objectID, maps in pairs(addon.predefined) do
+        local object = GatherLite:GetNodeObject(objectID)
+        local kind = object and kinds[object.type]
+        if kind and (GatherLite:GetNodeTracking("minimap", kind) or GatherLite:GetNodeTracking("worldmap", kind)) then
+            for mapID, coords in pairs(maps) do
+                -- Share immutable metadata across every point on this object/map.
+                -- No empty loot tables, coins, dates, or instance IDs in the data.
+                local defaults = { __index = { object = objectID, mapID = mapID, type = kind, predefined = true } }
+                local nodes = {}
+                for i = 1, #coords, 2 do
+                    local x, y = coords[i], coords[i + 1]
+                    -- A saved gathered node already represents this position.
+                    if not GatherLite:FindExistingNode(kind, mapID, x, y, objectID) then
+                        local node = setmetatable({ posX = x, posY = y }, defaults)
+                        GatherLite:EnsureNodeWorld(node)
+                        nodes[#nodes + 1] = node
+                    end
+                end
+                GatherLite:LoadTable(kind, nodes)
+            end
+            -- Release compressed coordinates once their runtime nodes are indexed.
+            addon.predefined[objectID] = nil
+        end
+    end
+    if not next(addon.predefined) then addon.predefined = nil end
 end
 
-local SourceName = "Database"
-
-GatherLite.plugins[SourceName] = {}
-local source = GatherLite.plugins[SourceName]
-
-local loaded = {
-    mining = false,
-    herbalism = false,
-    containers = false,
-    fishing = false,
-}
-
-local predefinedTables = {
-    mining = "GatherLite_PluginsDatabaseMining",
-    herbalism = "GatherLite_PluginsDatabaseHerbalism",
-    containers = "GatherLite_PluginsDatabaseContainers",
-    fishing = "GatherLite_PluginsDatabaseFishing",
-}
-
-local function loadType(type)
-    if loaded[type] then
-        return
-    end
-
-    local tableName = predefinedTables[type]
-    local data = tableName and _G[tableName] or nil
-    if not data then
-        return
-    end
-
-    GatherLite:print("Loading", type, "database:", GatherLite:tablelength(data), "nodes")
-    GatherLite:LoadTable(type, data)
-    loaded[type] = true
+function source.setup()
+    loadEnabled()
+    GatherLite:On("settings:update", loadEnabled, true)
 end
-
-local function ensurePredefinedLoaded()
-    if not GatherLite.db.global.usePredefined then
-        return
-    end
-
-    if GatherLite.db.char.tracking.mining then
-        loadType("mining")
-    end
-    if GatherLite.db.char.tracking.herbalism then
-        loadType("herbalism")
-    end
-    if GatherLite.db.char.tracking.containers then
-        loadType("containers")
-    end
-    if GatherLite.db.char.tracking.fishing then
-        loadType("fishing")
-    end
-end
-
-local function Setup()
-    ensurePredefinedLoaded()
-
-    GatherLite:On("settings:update", function()
-        ensurePredefinedLoaded()
-    end)
-end
-
-source.setup = Setup;

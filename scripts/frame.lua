@@ -1,5 +1,5 @@
 local name, _GatherLite = ...
-local MAJOR, MINOR = "GatherLiteFrame", 9
+local MAJOR, MINOR = "GatherLiteFrame", 10
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local GatherLiteFrame, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
@@ -59,7 +59,9 @@ function GatherLiteFrame:newFrame(frameId)
     newFrame:SetWidth(16) -- Set these to whatever height/width is needed
     newFrame:SetHeight(16) -- for your Texture
     newFrame:SetPoint("CENTER", -8, -8)
-    newFrame:EnableMouse(true)
+    -- Pins only use hover tooltips. They must not swallow clicks on menus or maps.
+    newFrame:SetMouseClickEnabled(false)
+    newFrame:SetMouseMotionEnabled(true)
 
     function newFrame:FakeHide()
         if not self.hidden then

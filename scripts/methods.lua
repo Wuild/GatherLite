@@ -4,6 +4,7 @@ local Pins = LibStub("HereBeDragons-Pins-2.0");
 local L = LibStub("AceLocale-3.0"):GetLocale("GatherLite", true)
 local GFrame = LibStub("GatherLiteFrame");
 local Semver = LibStub("Semver");
+local API = _GatherLite.API
 
 local tracker = {
     nodeID = nil,
@@ -12,6 +13,12 @@ local tracker = {
     target = nil,
     ended = nil
 };
+
+local function resetTracker()
+    for key in pairs(tracker) do
+        tracker[key] = nil
+    end
+end
 
 _GatherLite.nodes = {
     mining = {},
@@ -50,17 +57,16 @@ _GatherLite.mapInstanceCache = {
 
 _GatherLite.mapScaleCache = {}
 
-_GatherLite.WorldmapOpen = false;
 
 GatherLite.NewVersionExists = false;
 
 local spellIDs = {
-    [GetSpellInfo(2575)] = "mining", -- Mining
-    [GetSpellInfo(2366)] = "herbalism", -- Herbalism
-    [GetSpellInfo(3365)] = "containers", -- chest
+    [2575] = "mining",
+    [2366] = "herbalism",
+    [3365] = "containers",
+    [1804] = "containers", -- Pick Lock: record outdoor training chests on success.
 };
 
-_GatherLite.mainFrame = CreateFrame("Frame", nil, UIParent)
 
 local function ucfirst(str)
     return (str:gsub("^%l", string.upper))
@@ -102,9 +108,10 @@ function GatherLite:ShowSupportUrl()
             whileDead = 1,
             hideOnEscape = 1,
             OnShow = function(self, data)
-                self.editBox:SetText(data or "")
-                self.editBox:HighlightText()
-                self.editBox:SetFocus()
+                local editBox = self.GetEditBox and self:GetEditBox() or self.editBox or self.EditBox
+                editBox:SetText(data or "")
+                editBox:HighlightText()
+                editBox:SetFocus()
             end
         }
     end
@@ -236,7 +243,7 @@ local function indexNode(index, node)
     end
 end
 
-local function findIndexedNode(index, mapID, posX, posY)
+local function findIndexedNode(index, mapID, posX, posY, objectID)
     if not index or not mapID or not posX or not posY then
         return nil
     end
@@ -249,7 +256,8 @@ local function findIndexedNode(index, mapID, posX, posY)
             if cellBucket then
                 for i = 1, #cellBucket do
                     local node = cellBucket[i]
-                    if node.mapID == mapID and GatherLite:IsNodeInRange(posX, posY, node.posX, node.posY) then
+                    if node.mapID == mapID and (not objectID or node.object == objectID)
+                        and GatherLite:IsNodeInRange(posX, posY, node.posX, node.posY) then
                         return node
                     end
                 end
@@ -293,17 +301,23 @@ function GatherLite:Colorize(str, color)
 end
 
 function GatherLite:findSpellType(spell)
-    local spellInfo = GetSpellInfo(spell);
-
-    -- see if spell is in our list
-    for k, s in pairs(spellIDs) do
-        if k == spellInfo then
-            return s;
+    if API.IsSecret(spell) or spell == nil then
+        return nil
+    end
+    if spellIDs[spell] then
+        return spellIDs[spell]
+    end
+    -- Higher ranks share the localized profession name. Resolve lazily so
+    -- missing spell data cannot break addon loading with a nil table key.
+    local spellName = API.GetSpellName(spell)
+    if API.IsSecret(spellName) or not spellName then
+        return nil
+    end
+    for id, spellType in pairs(spellIDs) do
+        if API.GetSpellName(id) == spellName then
+            return spellType
         end
-    end ;
-
-    -- spell was not found
-    return nil;
+    end
 end
 
 function dump(o)
@@ -582,44 +596,27 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
     return out
 end
 
-function GatherLite:FindExistingNode(type, mapID, x, y)
-    local index = _GatherLite.savedNodeIndex[type]
-    local node = findIndexedNode(index, mapID, x, y)
-    if node then
-        return node
-    end
-
-    for key, node in pairs(GatherLite.db.global.nodes[type]) do
-        if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
-            return node;
-        end
-    end
-    return nil;
+function GatherLite:FindExistingNode(type, mapID, x, y, objectID)
+    return findIndexedNode(_GatherLite.savedNodeIndex[type], mapID, x, y, objectID)
 end
 
-function GatherLite:findExistingLocalNode(type, mapID, x, y)
-    local index = _GatherLite.nodeIndex[type]
-    local node = findIndexedNode(index, mapID, x, y)
-    if node then
-        return node
-    end
-
-    for k, node in pairs(_GatherLite.nodes[type]) do
-        if node.mapID == mapID and type == node.type and GatherLite:IsNodeInRange(x, y, node.posX, node.posY, type) then
-            return node;
-        end
-    end
-    return nil;
+function GatherLite:findExistingLocalNode(type, mapID, x, y, objectID)
+    return findIndexedNode(_GatherLite.nodeIndex[type], mapID, x, y, objectID)
 end
 
 function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
+    if not mapID or not posX or not posY then
+        return
+    end
     if (IsInInstance()) then
         return
     end
 
-    if (GatherLite:findExistingLocalNode(type, mapID, posX, posY)) then
+    if GatherLite:FindExistingNode(type, mapID, posX, posY, nodeID) then
         return
     end
+
+    local predefined = GatherLite:findExistingLocalNode(type, mapID, posX, posY, nodeID)
 
     local node = {
         type = type,
@@ -636,17 +633,24 @@ function GatherLite:RegisterNode(type, nodeID, mapID, posX, posY, loot, coin)
 
     local _, _, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID);
     node.instance = instance;
-    table.insert(_GatherLite.nodes[type], node)
     indexNode(_GatherLite.savedNodeIndex[type], node)
-    indexNode(_GatherLite.nodeIndex[type], node)
+    if predefined then
+        -- Keep one visible pin while persisting a plain gathered-history record.
+        predefined.predefined = false
+    else
+        table.insert(_GatherLite.nodes[type], node)
+        indexNode(_GatherLite.nodeIndex[type], node)
+    end
     GatherLite:InvalidateNodeCache(type)
 
     GatherLite:SendMessage("GatherLiteNodeAdded", node)
 
-    GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
 end
 
 function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
+    if not mapID or not posX or not posY then
+        return
+    end
     local loot = {};
     local coin = 0;
     local count = GetNumLootItems()
@@ -655,7 +659,7 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
         return
     end
 
-    local node = GatherLite:findExistingLocalNode(type, mapID, posX, posY);
+    local node = GatherLite:findExistingLocalNode(type, mapID, posX, posY, nodeID);
 
     if not node then
         return
@@ -669,7 +673,7 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
     end
 
     for i = 1, count do
-        local lIcon, lName, lQuantity, lQuality, locked, isQuestItem = GetLootSlotInfo(i)
+        local lIcon, lName, lQuantity, currencyID, lQuality, locked, isQuestItem = GetLootSlotInfo(i)
         local slotType = GetLootSlotType(i)
         local lLink = GetLootSlotLink(i)
         if not isQuestItem then
@@ -704,7 +708,8 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
         end
     end
 
-    node.coins = node.coins + coin;
+    node.coins = (node.coins or 0) + coin;
+    node.loot = node.loot or {}
 
     for k, item in pairs(loot) do
         local exists = GatherLite:findLoot(node.loot, item.name);
@@ -727,10 +732,11 @@ function GatherLite:UpdateNode(type, nodeID, mapID, posX, posY)
         end
     end
 
-    local oldNode = GatherLite:FindExistingNode(type, mapID, posX, posY);
+    local oldNode = GatherLite:FindExistingNode(type, mapID, posX, posY, nodeID);
     if oldNode then
         oldNode.loot = node.loot;
         oldNode.coins = node.coins;
+        oldNode.date = node.date;
     end
     GatherLite:debug(_GatherLite.DEBUG_NODE, "Node loot updated")
 end
@@ -746,39 +752,58 @@ function GatherLite:EventHandler(event, ...)
 
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then
-            if (IsInInstance()) then
+            if not IsInInstance() then
+                GatherLite:UpdateNode(tracker.spellType, tracker.nodeID, tracker.mapID, tracker.x, tracker.y)
+            end
+        end
+        resetTracker()
+    elseif (event == "UNIT_SPELLCAST_SENT") or (event == "UNIT_SPELLCAST_SUCCEEDED") or (event == "UNIT_SPELLCAST_INTERRUPTED") or (event == "UNIT_SPELLCAST_FAILED") then
+        local unit = ...
+        if API.IsSecret(unit) or unit ~= "player" then
+            return
+        end
+
+        if event == "UNIT_SPELLCAST_SENT" then
+            resetTracker()
+            local _, target, castGUID, spell = ...
+            if API.IsSecret(target) or API.IsSecret(castGUID) or API.IsSecret(spell) then
                 return
             end
-
-            local x, y, mapID = HBD:GetPlayerZonePosition()
-            GatherLite:UpdateNode(tracker.spellType, tracker.nodeID, mapID, x, y);
-            tracker.nodeID = nil;
-            tracker.target = nil;
-            tracker.spellID = nil;
-            tracker.spellType = nil;
-        end
-    elseif (event == "UNIT_SPELLCAST_SENT") or (event == "UNIT_SPELLCAST_SUCCEEDED") or (event == "UNIT_SPELLCAST_INTERRUPTED") or (event == "UNIT_SPELLCAST_FAILED") then
-        local spell = select(4, ...)
-        local target = select(2, ...)
-        local spellType = GatherLite:findSpellType(spell)
-
-        if (event == "UNIT_SPELLCAST_SENT" and target and spellType) then
+            local spellType = GatherLite:findSpellType(spell)
+            if not target or not castGUID or not spellType then
+                return
+            end
             local nodeID = GatherLite:findNodeType(target)
-            if (nodeID) then
+            if nodeID and not IsInInstance() then
                 local x, y, mapID = HBD:GetPlayerZonePosition()
-                GatherLite:RegisterNode(spellType, nodeID, mapID, x, y)
+                if not x or not y or not mapID then
+                    return
+                end
                 tracker.nodeID = nodeID
                 tracker.target = target
                 tracker.spellID = spell
                 tracker.spellType = spellType
+                tracker.castGUID = castGUID
+                tracker.x, tracker.y, tracker.mapID = x, y, mapID
             end
-        elseif (event == "UNIT_SPELLCAST_SUCCEEDED") then
-            tracker.ended = GetTime()
-        elseif ((event == "UNIT_SPELLCAST_INTERRUPTED") or (event == "UNIT_SPELLCAST_FAILED")) then
-            tracker.nodeID = nil
-            tracker.target = nil
-            tracker.spellID = nil
-            tracker.spellType = nil
+        else
+            -- SENT has four arguments; completion/failure has the spell in
+            -- argument three. Other units and unrelated casts must not finish
+            -- or clear a gathering operation.
+            local _, castGUID, spell = ...
+            if API.IsSecret(castGUID) or API.IsSecret(spell) then
+                resetTracker()
+                return
+            end
+            if not tracker.castGUID or castGUID ~= tracker.castGUID or spell ~= tracker.spellID then
+                return
+            end
+            if event == "UNIT_SPELLCAST_SUCCEEDED" then
+                tracker.ended = GetTime()
+                GatherLite:RegisterNode(tracker.spellType, tracker.nodeID, tracker.mapID, tracker.x, tracker.y)
+            else
+                resetTracker()
+            end
         end
     end
 end
@@ -791,13 +816,14 @@ function GatherLite:leadingZeros(value)
     return value;
 end
 
-function GatherLite:GetCloseNodes(type, x, y)
+function GatherLite:GetCloseNodes(type, x, y, mapID)
 
     local nodes = {}
     local frames = GFrame.usedFrames;
 
     for index, frame in pairs(frames) do
-        if frame.type == type and GatherLite:IsNodeInRange(x, y, frame.node.posX, frame.node.posY) then
+        if frame.type == type and (not mapID or frame.node.mapID == mapID)
+            and GatherLite:IsNodeInRange(x, y, frame.node.posX, frame.node.posY) then
             table.insert(nodes, frame.node);
         end
     end
@@ -805,69 +831,95 @@ function GatherLite:GetCloseNodes(type, x, y)
     return nodes;
 end
 
-function GatherLite:NodeTooltip(tooltipType, node)
-
-    local object = GatherLite:GetNodeObject(node.object)
-
-    GameTooltip:AddLine(GatherLite:translate("node." .. object.name));
-
-    if node.type and node.type ~= "containers" then
-        GameTooltip:AddLine(ucfirst(node.type), "gray")
-    end
-
-    --GameTooltipTextLeft2:SetTextColor(190, 190, 190)
-
-    local type = node.type
-
-    if type == "herb" then
-        type = "herbalism"
-    end
-
-    local lootTable = false
-
-    if tooltipType == "minimap" then
-        lootTable = GatherLite.db.char.minimap.loot;
-    elseif tooltipType == "worldmap" then
-        lootTable = GatherLite.db.char.worldmap.loot;
-    end
-
-    local coins = 0;
-    local lastvisit;
-
-    local existingNode = GatherLite:FindExistingNode(node.type, node.mapID, node.posX, node.posY);
-
-    if existingNode then
-        coins = existingNode.coins;
-        lastvisit = existingNode.date;
-
-        if existingNode.loot and lootTable then
-            for k, item in pairs(existingNode.loot) do
-                if item.count > 0 then
-                    GameTooltip:AddDoubleLine(item.link, "x" .. item.count);
-                else
-                    GameTooltip:AddDoubleLine(item.link, "");
+local function addTooltipHistory(tooltipType, nodes, grouped)
+    local lootEnabled = GatherLite.db.char[tooltipType].loot
+    local loot, seen, lastVisit = {}, {}, nil
+    for _, node in ipairs(nodes) do
+        local saved = GatherLite:FindExistingNode(node.type, node.mapID, node.posX, node.posY, node.object)
+        if saved and not seen[saved] then
+            seen[saved] = true
+            if saved.date then
+                local visited = time(saved.date)
+                if not lastVisit or visited > lastVisit then lastVisit = visited end
+            end
+            if lootEnabled then
+                for _, item in ipairs(saved.loot or {}) do
+                    if item.link then
+                        loot[item.link] = (loot[item.link] or 0) + math.max(item.count or 0, 0)
+                    end
                 end
             end
         end
     end
-
-    if lastvisit then
-        GameTooltip:AddDoubleLine("Last visit:", GatherLite:Colorize(date(nil, time(lastvisit)), "white"));
+    local links = {}
+    for link in pairs(loot) do links[#links + 1] = link end
+    table.sort(links)
+    local indent = grouped and "    " or ""
+    for _, link in ipairs(links) do
+        local count = loot[link]
+        GameTooltip:AddDoubleLine(indent .. link, count > 0 and ("x" .. count) or "",
+            1, 1, 1, 0.75, 0.75, 0.75)
+    end
+    if lastVisit then
+        GameTooltip:AddDoubleLine(indent .. GatherLite:translate("tooltip.last_visit"), date(nil, lastVisit),
+            0.6, 0.6, 0.6, 0.75, 0.75, 0.75)
     end
 end
 
-function GatherLite:showTooltip(self)
-    --local node = self.node
-    local nodes = GatherLite:GetCloseNodes(self.type, self.node.posX, self.node.posY)
-
-    GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT");
-    GameTooltip:ClearLines();
-
-    for index, node in ipairs(nodes) do
-        GatherLite:NodeTooltip(self.type, node)
+function GatherLite:NodeTooltip(tooltipType, node)
+    local object = GatherLite:GetNodeObject(node.object)
+    if not object then return end
+    GameTooltip:AddLine("|T" .. object.icon .. ":16:16|t " .. GatherLite:translate("node." .. object.name), 1, 0.82, 0)
+    if node.type and node.type ~= "containers" then
+        local label = node.type == "fishing" and "fish" or node.type
+        GameTooltip:AddLine(GatherLite:translate(label), 0.6, 0.6, 0.6)
     end
+    addTooltipHistory(tooltipType, { node }, false)
+end
 
-    GameTooltip:Show();
+function GatherLite:showTooltip(frame)
+    local nearby = GatherLite:GetCloseNodes(frame.type, frame.node.posX, frame.node.posY, frame.node.mapID)
+    local groups, byObject, seen, total = {}, {}, {}, 0
+    local function addNode(node)
+        if seen[node] then return end
+        seen[node] = true
+        local object = GatherLite:GetNodeObject(node.object)
+        if not object then return end
+        local id = object.id[1] -- Catalog aliases share one display row.
+        local group = byObject[id]
+        if not group then
+            group = { object = object, name = GatherLite:translate("node." .. object.name), nodes = {} }
+            byObject[id] = group
+            groups[#groups + 1] = group
+        end
+        group.nodes[#group.nodes + 1] = node
+        total = total + 1
+    end
+    addNode(frame.node)
+    local hovered = groups[1]
+    for _, node in ipairs(nearby) do addNode(node) end
+    table.sort(groups, function(a, b)
+        if a == b then return false end
+        if a == hovered then return true end
+        if b == hovered then return false end
+        if a.name == b.name then return a.object.id[1] < b.object.id[1] end
+        return a.name < b.name
+    end)
+
+    GameTooltip:SetOwner(frame, "ANCHOR_TOPRIGHT")
+    GameTooltip:ClearLines()
+    if total <= 1 then
+        GatherLite:NodeTooltip(frame.type, frame.node)
+    else
+        GameTooltip:AddLine(GatherLite:translate("tooltip.nearby_nodes", total), 1, 0.82, 0)
+        GameTooltip:AddLine(" ")
+        for _, group in ipairs(groups) do
+            GameTooltip:AddDoubleLine("|T" .. group.object.icon .. ":16:16|t " .. group.name,
+                "×" .. #group.nodes, 1, 1, 1, 0.75, 0.75, 0.75)
+            addTooltipHistory(frame.type, group.nodes, true)
+        end
+    end
+    GameTooltip:Show()
 end
 
 function GatherLite:hideTooltip()
@@ -891,18 +943,6 @@ function GatherLite:GetNodeObject(nodeID)
     --    local node = _GatherLite.nodeDB[k];
     --
     --end
-end
-
-function GatherLite:addContextItem(args)
-    local info = UIDropDownMenu_CreateInfo()
-    info.text = args.text;
-    info.checked = args.checked;
-    info.func = args.callback;
-    info.icon = args.icon;
-    info.isTitle = args.isTitle;
-    info.disabled = args.disabled;
-    info.notCheckable = args.notCheckable;
-    UIDropDownMenu_AddButton(info)
 end
 
 local function ensureMapTracking(target)
@@ -939,61 +979,25 @@ function GatherLite:SetNodeTracking(target, nodeType, value)
     local tracking = ensureMapTracking(target)
     if tracking then
         tracking[nodeType] = value and true or false
+        GatherLite:Trigger("settings:update")
+        LibStub("AceConfigRegistry-3.0"):NotifyChange("GatherLite")
     end
 end
 
-function GatherLite:MinimapContextMenu(target)
-    target = target or "minimap"
-
-    return function(frame, level, menuList)
-        if level == 1 then
-            GatherLite:addContextItem({
-                text = _GatherLite.name,
-                isTitle = true,
-                notCheckable = true
-            });
-
-            GatherLite:addContextItem({
-                text = GatherLite:translate('mining'),
-                icon = _GatherLite.iconPath .. "Ore/Copper",
-                checked = GatherLite:GetNodeTracking(target, "mining"),
-                callback = function()
-                    GatherLite:SetNodeTracking(target, "mining", not GatherLite:GetNodeTracking(target, "mining"))
-                    GatherLite:Trigger("settings:update")
-                end
-            })
-
-            GatherLite:addContextItem({
-                text = GatherLite:translate('herbalism'),
-                icon = _GatherLite.iconPath .. "Herb/Silverleaf",
-                checked = GatherLite:GetNodeTracking(target, "herbalism"),
-                callback = function()
-                    GatherLite:SetNodeTracking(target, "herbalism", not GatherLite:GetNodeTracking(target, "herbalism"))
-                    GatherLite:Trigger("settings:update")
-                end
-            })
-
-            GatherLite:addContextItem({
-                text = GatherLite:translate('containers'),
-                icon = _GatherLite.iconPath .. "Open/Chest",
-                checked = GatherLite:GetNodeTracking(target, "containers"),
-                callback = function()
-                    GatherLite:SetNodeTracking(target, "containers", not GatherLite:GetNodeTracking(target, "containers"))
-                    GatherLite:Trigger("settings:update")
-                end
-            })
-
-            GatherLite:addContextItem({
-                text = GatherLite:translate('fish'),
-                icon = _GatherLite.iconPath .. "Fish/Fishhook",
-                checked = GatherLite:GetNodeTracking(target, "fishing"),
-                callback = function()
-                    GatherLite:SetNodeTracking(target, "fishing", not GatherLite:GetNodeTracking(target, "fishing"))
-                    GatherLite:Trigger("settings:update")
-                end
-            })
+function GatherLite:OpenTrackingMenu(owner, target)
+    return MenuUtil.CreateContextMenu(owner, function(_, root)
+        root:CreateTitle(_GatherLite.name)
+        local function isSelected(nodeType)
+            return GatherLite:GetNodeTracking(target, nodeType)
         end
-    end
+        local function toggle(nodeType)
+            GatherLite:SetNodeTracking(target, nodeType, not isSelected(nodeType))
+        end
+        root:CreateCheckbox(GatherLite:translate("mining"), isSelected, toggle, "mining")
+        root:CreateCheckbox(GatherLite:translate("herbalism"), isSelected, toggle, "herbalism")
+        root:CreateCheckbox(GatherLite:translate("containers"), isSelected, toggle, "containers")
+        root:CreateCheckbox(GatherLite:translate("fish"), isSelected, toggle, "fishing")
+    end)
 end
 
 function GatherLite:IsIgnored(objectID)
@@ -1022,8 +1026,7 @@ local function loadDatabase(type)
     GatherLite:forEach(GatherLite.db.global.nodes[type], function(node)
         indexNode(_GatherLite.savedNodeIndex[type], node)
 
-        --local localNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
-        local existingNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY);
+        local existingNode = GatherLite:findExistingLocalNode(type, node.mapID, node.posX, node.posY, node.object);
 
         if existingNode then
             existingNode.loot = node.loot;
@@ -1077,6 +1080,13 @@ function GatherLite:LoadTable(type, source)
 end
 
 function GatherLite:Load()
+    -- Index personal history first so predefined loading can skip saved pins
+    -- using spatial buckets instead of scanning all saved nodes per point.
+    loadDatabase("mining");
+    loadDatabase("herbalism");
+    loadDatabase("containers");
+    loadDatabase("fishing");
+
     for i, module in pairs(GatherLite.modules) do
         module.setup();
     end
@@ -1085,47 +1095,7 @@ function GatherLite:Load()
         plugin.setup();
     end
 
-    loadDatabase("mining");
-    loadDatabase("herbalism");
-    loadDatabase("containers");
-    loadDatabase("fishing");
-
-    --GatherLite:ResetMinimap();
-    --GatherLite:ResetWorldmap();
-
     isLoaded = true;
-
-    --GatherLiteToggle:SetScript("OnClick", function()
-    --    GatherLite.db.char.worldmap.enabled = not GatherLite.db.char.worldmap.enabled;
-    --    if (GatherLite.db.char.worldmap.enabled) then
-    --        GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
-    --        GatherLite.modules.worldmap.reset();
-    --    else
-    --        GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
-    --        GatherLite.modules.worldmap.reset();
-    --    end
-    --end);
-
-    _GatherLite.mainFrame:SetScript("OnUpdate", function()
-        if WorldMapFrame:IsVisible() and not _GatherLite.WorldmapOpen then
-            _GatherLite.WorldmapOpen = true;
-            --GatherLiteToggle:SetPoint('BOTTOMLEFT', 20, 40);
-
-            if (GatherLite.db.char.worldmap.enabled) then
-                --GatherLiteToggle:SetText(GatherLite:translate("worldmap.hide"))
-            else
-                --GatherLiteToggle:SetText(GatherLite:translate("worldmap.show"))
-            end
-        end
-
-        if not WorldMapFrame:IsVisible() and _GatherLite.WorldmapOpen then
-            _GatherLite.WorldmapOpen = false;
-            GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "unload worldmap")
-        end
-    end)
-
-    --LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite: Profiles", LibStub("AceDBOptions-3.0"):GetOptionsTable(GatherLite.db))
-    --LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite: Profiles", "Profiles", "GatherLite");
 
 end
 
@@ -1200,15 +1170,7 @@ function GatherLite:GetObject(name)
 end
 
 function GatherLite:GetProfessionLevel(name)
-    local numSkills = GetNumSkillLines();
-    for i = 1, numSkills do
-        local skillname, _, _, skillrank, _, skillmodifier = GetSkillLineInfo(i)
-        if skillname:lower() == name:lower() then
-            return (skillrank or 0 + skillmodifier or 0)
-        end
-    end
-
-    return 0
+    return API.GetProfessionLevel(name)
 end
 
 function GatherLite:MapLocalize(map)

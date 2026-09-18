@@ -118,7 +118,9 @@ local function CreateWorldmapNode(node)
     f.type = "worldmap";
     f.TimeSinceLastUpdate = 0
 
-    f:SetFrameStrata("TOOLTIP");
+    -- TOOLTIP is above the dropdown's FULLSCREEN_DIALOG layer, so pins there
+    -- can intercept clicks intended for the tracking menu.
+    f:SetFrameStrata(WorldMapFrame:GetFrameStrata());
     --f:SetFrameLevel(0);
 
     f:SetScript("OnUpdate", nil)
@@ -214,8 +216,6 @@ local function getAnchors(frame)
 end
 
 local tooltip = CreateFrame("GameTooltip", "GatherLiteIconTooltip", UIParent, "GameTooltipTemplate")
-local dropDown = CreateFrame("Frame", "GatherLiteWorldmapMenu", UIParent, "UIDropDownMenuTemplate")
-UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu("worldmap"), "MENU")
 
 local function createButton()
     local button = CreateFrame("Button", "GatherLiteWorldmapButton", WorldMapFrame)
@@ -249,9 +249,9 @@ local function createButton()
 
     button:SetScript("OnClick", function(self, button)
         if button == "LeftButton" then
-            ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
+            GatherLite:OpenTrackingMenu(self, "worldmap")
         elseif button == "RightButton" then
-            CloseDropDownMenus(1)
+            Menu.GetManager():CloseMenus()
             GatherLite:ShowSettings()
         end
     end);
@@ -323,31 +323,6 @@ source.setup = function()
             if worldmapID ~= mapID then
                 worldmapID = mapID;
 
-                if not (worldmapID == 1415) then
-                    GatherLite:debug(_GatherLite.DEBUG_DEFAULT,
-                        worldmapID .. ":\"" .. C_Map.GetMapInfo(worldmapID).name .. "\",")
-                    --local continent = GetCurrentMapContinent();
-
-                    local instanceId = -1;
-                    if C_Map.GetMapInfo(worldmapID).parentMapID == 1415 then
-                        instanceId = 0;
-                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 1414 then
-                        instanceId = 1;
-                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 1945 then
-                        instanceId = 530;
-                    elseif C_Map.GetMapInfo(worldmapID).parentMapID == 113 then
-                        instanceId = 571;
-                    else
-                        --print(C_Map.GetMapInfo(worldmapID).parentMapID)
-                    end
-
-                    GatherLite.db.global.maps[worldmapID] = {
-                        id = worldmapID,
-                        name = C_Map.GetMapInfo(worldmapID).name,
-                        instance =
-                            instanceId
-                    };
-                end
                 ResetWorldmap()
             end
         end

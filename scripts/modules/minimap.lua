@@ -3,6 +3,7 @@ local name, _GatherLite = ...;
 local Frames = LibStub("GatherLiteFrame");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local HBD = LibStub("HereBeDragons-2.0");
+local nearbyIcon = "Interface\\AddOns\\" .. name .. "\\icons\\track_circle"
 
 local SourceName = "Minimap"
 
@@ -94,6 +95,7 @@ local function CreateMinimapNode(node)
     f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
 
     f.texture:SetTexture(object.icon)
+    f.nearby = false
     f.node = node;
     f.object = object
     f.type = "minimap";
@@ -211,10 +213,12 @@ local function minimapIconThread()
             return
         end
 
-        if distance < GatherLite.db.char.minimap.distance and frame:IsVisible() then
-            frame:FakeHide();
-        elseif distance >= GatherLite.db.char.minimap.distance and not frame:IsVisible() then
-            frame:FakeShow();
+        -- Keep the expected location visible without covering a live tracking dot.
+        -- Presence of a spawned resource is not available to this addon.
+        local nearby = distance < GatherLite.db.char.minimap.distance
+        if frame.nearby ~= nearby then
+            frame.nearby = nearby
+            frame.texture:SetTexture(nearby and nearbyIcon or frame.object.icon)
         end
     end
 end

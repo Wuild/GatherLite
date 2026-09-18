@@ -3,6 +3,23 @@ local name, _GatherLite = ...
 local needReload = false;
 local GFrame = LibStub("GatherLiteFrame");
 
+local function mapTrackingOptions(target)
+    local group = {
+        type = "group", name = GatherLite:translate("tracking"),
+        inline = true, order = 8, args = {},
+    }
+    for order, kind in ipairs({ "mining", "herbalism", "containers", "fishing" }) do
+        local nodeType = kind
+        group.args[nodeType] = {
+            name = GatherLite:translate(nodeType == "fishing" and "fish" or nodeType),
+            type = "toggle", order = order, width = "full",
+            set = function(_, value) GatherLite:SetNodeTracking(target, nodeType, value) end,
+            get = function() return GatherLite:GetNodeTracking(target, nodeType) end,
+        }
+    end
+    return group
+end
+
 local tracking = {
     header = {
         name = function()
@@ -286,75 +303,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     name = " ",
                     fontSize = "large",
                 },
-                tracking = {
-                    type = "group",
-                    name = GatherLite:translate('tracking'),
-                    inline = true,
-                    order = 8,
-                    args = {
-                        mining = {
-                            name = function()
-                                return GatherLite:translate('mining');
-                            end,
-                            type = "toggle",
-                            order = 1,
 
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.mining = val;
-                                GatherLite:Trigger("settings:update")
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.mining
-                            end,
-                            width = "full",
-                        },
-                        herbalism = {
-                            name = function()
-                                return GatherLite:translate('herbalism');
-                            end,
-                            type = "toggle",
-                            order = 2,
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.herbalism = val;
-                                GatherLite:Trigger("settings:update")
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.herbalism
-                            end,
-                            width = "full",
-                        },
-                        containers = {
-                            name = function()
-                                return GatherLite:translate('containers');
-                            end,
-                            type = "toggle",
-                            order = 2,
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.containers = val;
-                                GatherLite:Trigger("settings:update")
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.containers
-                            end,
-                            width = "full",
-                        },
-                        fishing = {
-                            name = function()
-                                return GatherLite:translate('fish');
-                            end,
-                            type = "toggle",
-                            order = 2,
-                            set = function(info, val)
-                                GatherLite.db.char.tracking.fishing = val;
-                                GatherLite:Trigger("settings:update")
-                            end,
-                            get = function(info)
-                                return GatherLite.db.char.tracking.fishing
-                            end,
-                            width = "full",
-                        }
-                    }
-                }
             }
         },
         worldmap = {
@@ -364,6 +313,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
             type = "group",
             order = 2,
             args = {
+                tracking = mapTrackingOptions("worldmap"),
                 header = {
                     name = function()
                         return GatherLite:translate("settings.map");
@@ -446,6 +396,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
             type = "group",
             order = 3,
             args = {
+                tracking = mapTrackingOptions("minimap"),
                 header = {
                     name = function()
                         return GatherLite:translate("settings.minimap");
@@ -554,6 +505,9 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         iconRange = {
                             name = function()
                                 return GatherLite:translate("settings.minimap.range", GatherLite.db.char.minimap.distance);
+                            end,
+                            desc = function()
+                                return GatherLite:translate("settings.minimap.range.description");
                             end,
                             type = "range",
                             min = 0,

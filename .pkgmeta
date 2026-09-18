@@ -7,10 +7,12 @@ manual-changelog:
 enable-nolib-creation: no
 
 ignore:
+    - .github
+    - dist
+    - VERSION
+    - RELEASE.md
     - tools
+    - .wowhead-cache
     - README.md
-    - package.json
-    - package-lock.json
     - gatherlite-banner.jpg
     - gatherlite-elwyn.jpg
-    - gatherlite-outlands.jpg

@@ -6,12 +6,17 @@ GatherLite = LibStub("AceAddon-3.0"):NewAddon("GatherLite", "AceConsole-3.0", "A
 GatherLite.modules = {}
 GatherLite.plugins = {}
 
-function GatherLite:On(event, callback)
+function GatherLite:On(event, callback, runFirst)
     if not events[event] then
         events[event] = {}
     end
 
-    events[event][GatherLite:tablelength(events[event]) + 1] = callback;
+    -- Data preparation must finish before map listeners redraw their pins.
+    if runFirst then
+        table.insert(events[event], 1, callback)
+    else
+        table.insert(events[event], callback)
+    end
 end
 
 function GatherLite:Trigger(event, ...)
@@ -40,7 +45,6 @@ _GatherLite.debug = {
 
 _GatherLite.configsDefaults = {
     global = {
-        maps = {},
         lastSeenVersion = nil,
         nodes = {
             mining = {},

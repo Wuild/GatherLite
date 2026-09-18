@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "*"
+      - "!*-forever.*"
 
 jobs:
   publish:
@@ -26,7 +27,7 @@ jobs:
           addon_name="$(basename "$GITHUB_WORKSPACE")"
           zip_path="$GITHUB_WORKSPACE/${GITHUB_REF_NAME}.zip"
           cd "$GITHUB_WORKSPACE/.."
-          zip -r "$zip_path" "$addon_name" -x "$addon_name/.git/*" "$addon_name/.github/*"
+          zip -r "$zip_path" "$addon_name" -x "$addon_name/.git/*" "$addon_name/.github/*" "$addon_name/tools/*" "$addon_name/.wowhead-cache/*"
           echo "WAGO_ZIP_PATH=$zip_path" >> "$GITHUB_ENV"
 
       - name: Package and publish

@@ -3,9 +3,6 @@ local name, _GatherLite = ...;
 local GFrame = LibStub("GatherLiteFrame");
 local HBD = LibStub("HereBeDragons-2.0");
 
-local dropDown = CreateFrame("Frame", "GatherLiteContextMenu", UIParent, "UIDropDownMenuTemplate")
-UIDropDownMenu_Initialize(dropDown, GatherLite:MinimapContextMenu(), "MENU")
-
 local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinimapIcon", {
     type = "data source",
     text = "Gatherlite",
@@ -13,9 +10,9 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
 
     OnClick = function(self, button)
         if button == "LeftButton" then
-            ToggleDropDownMenu(1, nil, dropDown, "cursor", 3, -3)
+            GatherLite:OpenTrackingMenu(self, "minimap")
         elseif button == "RightButton" then
-            CloseDropDownMenus(1)
+            Menu.GetManager():CloseMenus()
             GatherLite:ShowSettings()
         end
     end,
@@ -168,65 +165,49 @@ function GatherLite:OnInitialize()
 end
 
 function GatherLite.ModifyTooltip()
-
-    local lines = GameTooltip:NumLines();
-
-    for i = 1, lines do
-        local skillname, objname, linenum, req, object
-        skillname = _G['GameTooltipTextLeft' .. i]:GetText()
-
-        if skillname == GatherLite:translate("mining") then
-            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
-            req = GatherLite:GetRequiredLevel(objname)
-        elseif skillname == GatherLite:translate("herbalism") then
-            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
-            req = GatherLite:GetRequiredLevel(objname)
-        elseif not skillname then
-            objname = _G['GameTooltipTextLeft' .. (i - 1)]:GetText()
-            object = GatherLite:GetObject(objname)
-
-            if object and object.type == "ore" then
-                skillname = GatherLite:translate("mining")
-            end
-            if object and object.type == "herb" then
-                skillname = GatherLite:translate("herbalism")
-            end
-
-            if skillname then
-                req = object.levels
-                GameTooltip:AddLine(skillname)
-            end
-        end
-
-        if req then
-            local newstr, required
-            newstr = _G['GameTooltipTextLeft' .. i]:GetText() .. " " .. req[1]
-            required = req[1]
-
-            local skill = GatherLite:GetProfessionLevel(skillname)
-
-            if skill then
-                if skill >= req[1] then
-                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 0.5, 0)
-                end
-                if skill >= req[2] then
-                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 1.0, 0)
-                end
-                if skill >= req[3] then
-                    _G['GameTooltipTextLeft' .. i]:SetTextColor(0.12, 1.0, 0)
-                end
-                if skill >= req[4] then
-                    _G['GameTooltipTextLeft' .. i]:SetTextColor(0.62, 0.62, 0.62)
-                end
-
-                if skill < req[1] then
-                    _G['GameTooltipTextLeft' .. i]:SetTextColor(1.00, 0, 0)
-                end
-            end
-
-            _G['GameTooltipTextLeft' .. i]:SetText(newstr)
-        end
+    local API = _GatherLite.API
+    if GameTooltip.IsForbidden and GameTooltip:IsForbidden() then
+        return
     end
 
-    --GameTooltip:Show()
+    -- Only inspect known gathering objects. Unit/combat tooltips can contain
+    -- secret strings on Forever, which must not be compared or concatenated.
+    local title = _G.GameTooltipTextLeft1
+    local objectName = title and title:GetText()
+    if API.IsSecret(objectName) or not objectName then
+        return
+    end
+    local object = GatherLite:GetObject(objectName)
+    if not object or not object.levels then
+        return
+    end
+    local profession
+    if object.type == "ore" then
+        profession = GatherLite:translate("mining")
+    elseif object.type == "herb" then
+        profession = GatherLite:translate("herbalism")
+    else
+        return
+    end
+
+    local req = object.levels
+    for i = 2, GameTooltip:NumLines() do
+        local line = _G["GameTooltipTextLeft" .. i]
+        local text = line and line:GetText()
+        if not API.IsSecret(text) and text == profession then
+            local rank = GatherLite:GetProfessionLevel(profession)
+            if rank < req[1] then
+                line:SetTextColor(1, 0, 0)
+            elseif req[4] and rank >= req[4] then
+                line:SetTextColor(0.62, 0.62, 0.62)
+            elseif req[3] and rank >= req[3] then
+                line:SetTextColor(0.12, 1, 0)
+            elseif req[2] and rank >= req[2] then
+                line:SetTextColor(1, 1, 0)
+            elseif req[2] then
+                line:SetTextColor(1, 0.5, 0)
+            end
+            line:SetText(profession .. " " .. req[1])
+        end
+    end
 end
