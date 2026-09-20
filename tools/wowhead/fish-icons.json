@@ -1,0 +1,90 @@
+{
+  "inv_misc_fish_01": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_01.jpg",
+    "sha256": "7b54ae904f7012d24ff9dca88207c729ad27a9667e33b26bc782ea64140dd510"
+  },
+  "inv_misc_fish_02": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_02.jpg",
+    "sha256": "99eabd43ab202880a034da7c423f83bc8d33659b211966b551082aa964f284c1"
+  },
+  "inv_misc_fish_03": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_03.jpg",
+    "sha256": "da91e93e700421c7dd22bbc864111b64fa145a6beb2b353d3e24515b786b8453"
+  },
+  "inv_misc_fish_04": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_04.jpg",
+    "sha256": "0c8d85e7a7ed4b9e14bc519fefc9c2062c67c0066a8082cc1bfbdcdaad99551e"
+  },
+  "inv_misc_fish_06": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_06.jpg",
+    "sha256": "a6537afc23f4009a59f7c11a4ee934e5108ada8fa0f25effa225e16c9b90c814"
+  },
+  "inv_misc_fish_08": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_08.jpg",
+    "sha256": "661bd68574640303f6a91fe1c7f57ea968d277e0406910fbc6008b4869aad393"
+  },
+  "inv_misc_fish_11": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_11.jpg",
+    "sha256": "0cac2fc4f474222c10bd91e05f8b1800b8d8d6791d6a8cc1e77ff4901c7d13bd"
+  },
+  "inv_misc_fish_12": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_12.jpg",
+    "sha256": "435a7ac848d0f91b0e30fa5179db6f7bf3e7e0e8997e2bf357923da4b994e5e9"
+  },
+  "inv_misc_fish_13": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_13.jpg",
+    "sha256": "a8937c68247958b533622aa3c5e46f6edba25165123f62947a28be3a1efa666c"
+  },
+  "inv_misc_fish_14": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_14.jpg",
+    "sha256": "073c0e4acb8a586d745f01ab1a20e08c22d73195f14c4d65099f34dc539367fc"
+  },
+  "inv_misc_fish_19": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_19.jpg",
+    "sha256": "833ed9846d615aab8adc74cef308f54da4416f193a487ca2d0dd257fe951e968"
+  },
+  "inv_misc_fish_20": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_20.jpg",
+    "sha256": "b02d62c41ffd1f6288a0865da8bbd08e66f282a133ec66b2cb4d6886b4d4660c"
+  },
+  "inv_misc_fish_21": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_21.jpg",
+    "sha256": "7f6a73d242540a27cfb5ba03aa5178776c23d41ae0cd52c07c6d62b7d659f59f"
+  },
+  "inv_misc_fish_23": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_23.jpg",
+    "sha256": "4f13d5a7e0f804787028799b78fad49481fd70011d7a6f91eef079b23b2ef2fc"
+  },
+  "inv_misc_fish_24": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_24.jpg",
+    "sha256": "0d0c5d61dd8d6d9e0600cb856257c7f3bca1930c559bb39e8195ed1afdefedda"
+  },
+  "inv_misc_fish_25": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_25.jpg",
+    "sha256": "4d844caf353c63201d35e1ceaa211dfdc2e3f520a98e4c828a2b054868a7ad1f"
+  },
+  "inv_misc_fish_30": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_30.jpg",
+    "sha256": "dcad6bee59dad144761a4d6b671a8b623619c5495ec28197edc612ae28dc84c6"
+  },
+  "inv_misc_fish_32": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_fish_32.jpg",
+    "sha256": "ebf1ebb0d731102463e7c66bad9c3663ef328a099470aa374bae34c8504ee9e8"
+  },
+  "inv_misc_monsterhead_01": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterhead_01.jpg",
+    "sha256": "ad12f70a9ce4b372dba1e8b0659c687c05b825ac6b66ddcf36ec49dd8d4fbbd8"
+  },
+  "inv_misc_monsterhead_02": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterhead_02.jpg",
+    "sha256": "46e860109805c0419a1e1d2ec06efd7e46ae1ebaac9d671205423019f6ea6f04"
+  },
+  "inv_misc_monsterhead_03": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterhead_03.jpg",
+    "sha256": "df0800b8dcd22da956e9012f75dbcc45cfcc1564010438ba316017eecaa230a2"
+  },
+  "inv_misc_monsterhead_04": {
+    "source": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_monsterhead_04.jpg",
+    "sha256": "2d87c80607e43574d2562212da53e1b7c361b3516e9396e6db96d0a85d1d7725"
+  }
+}

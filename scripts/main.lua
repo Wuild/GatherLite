@@ -139,6 +139,7 @@ end
 function GatherLite:OnInitialize()
     self.db = LibStub("AceDB-3.0"):New("GatherLiteSettings", _GatherLite.configsDefaults, true)
     self.minimap = LibStub("LibDBIcon-1.0")
+    self:RegisterSettingsLauncher()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");

@@ -12,3 +12,14 @@
 scripts\embeds.xml
 plugins\database\database.lua
 plugins\database\data\forever.lua
+plugins\routes\planner.lua
+plugins\routes\routes.lua
+plugins\routes\overlays.lua
+plugins\fishing\data.lua
+plugins\fishing\maps.lua
+scripts\ui.lua
+scripts\maps\reveal-data.lua
+scripts\maps\reveal.lua
+scripts\maps\zoom.lua
+scripts\map.xml
+scripts\window.lua

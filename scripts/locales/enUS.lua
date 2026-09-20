@@ -146,3 +146,7 @@ L['node.fish_pool_sagefish'] = "Sagefish School"
 -- MOP Ores
 
 -- MOP Herbs
+
+L["settings.map.zone_tooltip"] = "Show tracked zone nodes in a list on the map"
+L["tooltip.zone_nodes"] = "Known tracked nodes"
+L["tooltip.zone_empty"] = "No tracked nodes known in this zone."

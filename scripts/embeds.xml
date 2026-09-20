@@ -5,10 +5,10 @@
     <Include file="libraries\AceEvent-3.0\AceEvent-3.0.xml"/>
     <Include file="libraries\AceTimer-3.0\AceTimer-3.0.xml"/>
     <Include file="libraries\AceDB-3.0\AceDB-3.0.xml"/>
-    <Include file="libraries\AceLocale-3.0\AceLocale-3.0.xml"/>
-    <Include file="libraries\AceConsole-3.0\AceConsole-3.0.xml"/>
     <Include file="libraries\AceGUI-3.0\AceGUI-3.0.xml"/>
     <Include file="libraries\AceConfig-3.0\AceConfig-3.0.xml"/>
+    <Include file="libraries\AceLocale-3.0\AceLocale-3.0.xml"/>
+    <Include file="libraries\AceConsole-3.0\AceConsole-3.0.xml"/>
     <Include file="libraries\AceComm-3.0\AceComm-3.0.xml"/>
     <Include file="libraries\AceSerializer-3.0\AceSerializer-3.0.xml"/>
     <Include file="libraries\Semver\Semver.xml"/>

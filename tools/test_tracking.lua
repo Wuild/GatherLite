@@ -91,6 +91,7 @@ for _, path in ipairs({ "scripts/locales/enUS.lua", "scripts/compat.lua", "scrip
     "scripts/modules/worldmap.lua", "scripts/modules/minimap.lua", "plugins/database/database.lua" }) do
     assert(loadfile(path))("GatherLite", addon)
 end
+options = addon.SettingsOptions
 GatherLite.db = addon.configsDefaults
 GatherLite.debug = noop
 local kinds = { "mining", "herbalism", "containers", "fishing" }
@@ -284,6 +285,107 @@ assert(#GatherLite:GetNearbyNodes("mining", 999, 0, 0.5, 0.5, 2000) == #points)
 local rect = GatherLite:GetNodesForMapRect("mining", 999, 0.01, 0, 0.01, 0)
 assert(#rect == 3, "reversed map rectangle returned incorrect points")
 print("Memory regressions passed: timer cadence, frame recycling, stale pins and spatial queries")
+
+-- Zone hover uses the world-map filters, groups aliases, and caches the hovered zone.
+do
+    local source = GatherLite.modules.worldmap
+    local originalNodes, originalIgnored = GatherLite.GetNodesForMap, GatherLite.IsIgnored
+    local originalTracking = GatherLite.db.char.worldmap.tracking
+    local originalPredefined = GatherLite.db.global.usePredefined
+    local ignored, scans = {}, 0
+    local testNodes = {
+        mining = {
+            { object = 1731, type = "mining", mapID = 1429 },
+            { object = 2055, type = "mining", mapID = 1429 },
+            { object = 1732, type = "mining", mapID = 1429, predefined = true },
+        },
+        herbalism = { { object = 1617, type = "herbalism", mapID = 1429 } },
+    }
+    GatherLite.GetNodesForMap = function(_, kind, mapID)
+        scans = scans + 1
+        return mapID == 1429 and (testNodes[kind] or {}) or {}
+    end
+    GatherLite.IsIgnored = function(_, id) return ignored[id] end
+    GatherLite.db.char.worldmap.enabled = true
+    GatherLite.db.char.worldmap.zoneTooltip = true
+    GatherLite.db.char.worldmap.tracking = { mining = true, herbalism = false, containers = false, fishing = false }
+    GatherLite.db.global.usePredefined = true
+    assert(#source.GetZoneNodes(1429) == 2, "zone summary duplicated aliases or included disabled herbs")
+    GatherLite.db.global.usePredefined = false
+    assert(#source.GetZoneNodes(1429) == 1, "zone summary ignored predefined toggle")
+    ignored[1731], ignored[2055] = true, true
+    assert(#source.GetZoneNodes(1429) == 0, "zone summary included ignored objects")
+    assert(#source.GetZoneNodes(1431) == 0, "zone summary leaked another map")
+    ignored = {}
+    local originalCreate = CreateFrame
+    CreateFrame = function(kind, name, parent, template)
+        local frame = originalCreate(kind, name, parent, template)
+        local originalTexture = frame.CreateTexture
+        frame.CreateTexture = function(self)
+            local texture = originalTexture(self)
+            texture.SetColorTexture = noop
+            return texture
+        end
+        frame.CreateFontString = function()
+            local label = makeFrame()
+            label.SetText = function(self, text) self.text = text end
+            label.SetJustifyH, label.SetWordWrap, label.ClearAllPoints = noop, noop, noop
+            return label
+        end
+        frame.EnableMouse = function(self, enabled) self.mouseEnabled = enabled end
+        return frame
+    end
+    WorldMapFrame:Show()
+    local focus, zone = true, { mapID = 1429, mapType = 3, name = "Elwynn Forest" }
+    WorldMapFrame.IsCanvasMouseFocus = function() return focus end
+    WorldMapFrame.GetNormalizedCursorPosition = function() return 0.5, 0.5 end
+    local originalMapID = WorldMapFrame.mapID
+    WorldMapFrame.mapID = 1415
+    local originalMapInfo = C_Map.GetMapInfo
+    C_Map.GetMapInfo = function(id) return { mapType = id == 1415 and 2 or 3 } end
+    C_Map.GetMapInfoAtPosition = function() return zone end
+    source.UpdateZoneList(0.2)
+    assert(GatherLiteZoneList:IsShown() and GatherLiteZoneList.title.text == "Elwynn Forest")
+    assert(GatherLiteZoneList:GetParent() == (WorldMapFrame.ScrollContainer or WorldMapFrame), "zone list must be inside map")
+    assert(GatherLiteZoneList.mouseEnabled == false, "zone list must not block map interactions")
+    assert(GatherLiteZoneList.rows[1].text:find("Copper Vein", 1, true), "inline list missed node name")
+    local previousScans = scans
+    source.UpdateZoneList(0.2)
+    assert(scans == previousScans, "unchanged hover rescanned zone nodes")
+    WorldMapFrame.mapID = 1431 -- A zone map hovering a different, neighboring zone.
+    source.UpdateZoneList(0.2)
+    assert(not GatherLiteZoneList:IsShown(), "zone map showed the neighboring zone list")
+    assert(scans == previousScans, "zone map scanned neighboring zone nodes")
+    WorldMapFrame.mapID = 1415
+    source.UpdateZoneList(0.2)
+    assert(GatherLiteZoneList:IsShown(), "returning to continent did not restore list")
+    focus = false
+    source.UpdateZoneList(0.2)
+    assert(not GatherLiteZoneList:IsShown(), "tooltip hid pin or menu hover")
+    focus = true
+    zone = nil
+    source.UpdateZoneList(0.2)
+    assert(not GatherLiteZoneList:IsShown(), "tooltip remained over ocean")
+    zone = { mapID = 1429, mapType = 3, name = "Elwynn Forest" }
+    source.UpdateZoneList(0.2)
+    GatherLite.db.char.worldmap.zoneTooltip = false
+    source.UpdateZoneList(0.01)
+    assert(not GatherLiteZoneList:IsShown(), "disabled zone tooltip remained visible")
+    GatherLite.db.char.worldmap.zoneTooltip = true
+    source.UpdateZoneList(0.2)
+    WorldMapFrame:Hide()
+    source.UpdateZoneList(0.01)
+    assert(not GatherLiteZoneList:IsShown(), "closed world map left zone tooltip visible")
+    CreateFrame = originalCreate
+    GatherLite.GetNodesForMap, GatherLite.IsIgnored = originalNodes, originalIgnored
+    GatherLite.db.char.worldmap.tracking = originalTracking
+    GatherLite.db.global.usePredefined = originalPredefined
+    WorldMapFrame.mapID = originalMapID
+    WorldMapFrame.IsCanvasMouseFocus = nil
+    C_Map.GetMapInfoAtPosition = nil
+    C_Map.GetMapInfo = originalMapInfo
+end
+print("Zone hover checks passed: tracking, aliases, predefined data, ignored nodes, caching and tooltip lifecycle")
 
 -- Optional allocation benchmark; collection is paused only in this test runtime.
 if arg and arg[1] == "--benchmark" then

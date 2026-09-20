@@ -27,18 +27,19 @@ InsertObject("ore", { 165658 }, "dark_iron_deposit", "Ore\\darkiron", { 230, 255
 InsertObject("ore", { 324, 150082, 176643, 123848 }, "small_thorium_vein", "Ore\\thorium", { 245, 270, 295, 345 })
 InsertObject("ore", { 175404, 176644, 177388 }, "rich_thorium_vein", "Ore\\rich_thorium", { 275, 290, 300, 350 })
 
+-- Use bundled transparent map icons so these objects do not depend on client icon availability.
 -- Additional Forever objects verified against Wowhead's mineral-vein listing.
 -- Only the minimum skill is published for these nodes; do not invent skill-up tiers.
-InsertObject("ore", { 439558 }, "cold_iron_deposit", "Interface\\Icons\\inv_ore_mithril_01", { 125 })
-InsertObject("ore", { 439628 }, "fools_gold_vein", "Interface\\Icons\\inv_misc_dust_01", { 175 })
-InsertObject("ore", { 439778 }, "starsilver_vein", "Interface\\Icons\\inv_ore_platinum_01", { 245 })
-InsertObject("ore", { 439815 }, "greater_moonstone_formation", "Interface\\Icons\\inv_misc_apexis_crystal", { 245 })
-InsertObject("ore", { 1610, 1667 }, "incendicite_mineral_vein", "Interface\\Icons\\inv_ore_thorium_01", { 65 })
-InsertObject("ore", { 2653 }, "lesser_bloodstone_deposit", "Interface\\Icons\\inv_ore_thorium_01", { 75 })
-InsertObject("ore", { 19903 }, "indurium_mineral_vein", "Interface\\Icons\\inv_ore_mithril_01", { 150 })
+InsertObject("ore", { 439558 }, "cold_iron_deposit", "Ore\\iron", { 125 })
+InsertObject("ore", { 439628 }, "fools_gold_vein", "Ore\\gold", { 175 })
+InsertObject("ore", { 439778 }, "starsilver_vein", "Ore\\truesilver", { 245 })
+InsertObject("ore", { 439815 }, "greater_moonstone_formation", "Ore\\silver", { 245 })
+InsertObject("ore", { 1610, 1667 }, "incendicite_mineral_vein", "Ore\\mithril", { 65 })
+InsertObject("ore", { 2653 }, "lesser_bloodstone_deposit", "Ore\\copper", { 75 })
+InsertObject("ore", { 19903 }, "indurium_mineral_vein", "Ore\\mithril", { 150 })
 InsertObject("ore", { 180215 }, "hakkari_thorium_vein", "Ore\\rich_thorium", { 275 })
-InsertObject("ore", { 181068 }, "small_obsidian_chunk", "Interface\\Icons\\inv_misc_stonetablet_01", { 305 })
-InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Interface\\Icons\\inv_stone_15", { 305 })
+InsertObject("ore", { 181068 }, "small_obsidian_chunk", "Ore\\darkiron", { 305 })
+InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Ore\\darkiron", { 305 })
 
 -- Herbs
 -- Forever
@@ -71,10 +72,10 @@ InsertObject("herb", { 176586, 176640, 180166 }, "mountain_silversage", "Herb\\m
 InsertObject("herb", { 176587, 176641 }, "plaguebloom", "Herb\\plaguebloom", { 285, 310, 335, 385 })
 InsertObject("herb", { 176588 }, "icecap", "Herb\\icecap", { 290, 315, 340, 390 })
 InsertObject("herb", { 176589 }, "black_lotus", "Herb\\black_lotus", { 300, 325, 350, 400 })
-InsertObject("herb", { 439557 }, "nightmare_moss", "Interface\\Icons\\inv_misc_dust_05", { 125 })
-InsertObject("herb", { 439627 }, "dreamroot", "Interface\\Icons\\ability_creature_poison_04", { 205 })
-InsertObject("herb", { 439810 }, "moonroot", "Interface\\Icons\\inv_misc_herb_06", { 250 })
-InsertObject("herb", { 439762 }, "star_lotus", "Interface\\Icons\\inv_misc_herb_fellotus", { 250 })
+InsertObject("herb", { 439557 }, "nightmare_moss", "Herb\\grave_moss", { 125 })
+InsertObject("herb", { 439627 }, "dreamroot", "Herb\\earthroot", { 205 })
+InsertObject("herb", { 439810 }, "moonroot", "Herb\\dreamfoil", { 250 })
+InsertObject("herb", { 439762 }, "star_lotus", "Herb\\black_lotus", { 250 })
 
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)

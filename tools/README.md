@@ -60,8 +60,23 @@ lua tools/test_compat.lua
 lua tools/test_database.lua
 lua tools/test_tracking.lua
 lua tools/test_tooltips.lua
+lua tools/test_routes.lua
+lua tools/test_map_reveal.lua
+lua tools/test_map_zoom.lua
 ```
 
 Publisher tests mock HTTP. Packaging tests use temporary test archives. For allocation measurements with mocked game APIs, run `lua tools/test_tracking.lua --benchmark`.
 
 In-game checks: enable `/console scriptErrors 1`, reload, test both map menus, gathering/lockpicking, tooltips, nearby circles, and saved history after reload.
+
+
+For routing/window changes, also check in game: /gather opens World Map; scroll, drag, click a zone and right-click back; toggle Find to expand the map; search and browse resources; calculate and cancel with visible progress; hide/clear a route; open the game world map and zoom/pan with the same circuit visible above terrain; check a rotating minimap; reload to restore the selected route. Verify every Settings category and control, including persistence after reload. Lua mocks cover logic and wiring, not rendering.
+
+
+Fish reference checks are included in test_routes.lua and test_fish_import.py.
+In game, enable Fishing separately for the world map and minimap with the
+predefined database enabled. Verify catch markers without a selected fish, switch
+zones, search a fish to narrow the overlay, then hide and clear it. Hover clustered
+markers to inspect all reported fish. Check a zone-only fish (for example Raw
+Longjaw Mud Snapper) shows zone information without invented pins, and check
+Herbalism/Mining requirements in the resource list, details and pin tooltips.

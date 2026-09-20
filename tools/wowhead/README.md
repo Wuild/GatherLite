@@ -27,7 +27,7 @@ Selected-object imports preserve the other records. Updates are additive: missin
 
 ## Data format
 
-* `plugins/database/data/forever.lua` is the only packaged location database. It stores `[objectID][uiMapID] = { x, y, ... }` with normalized 0–1 coordinates and no per-location tables or metadata.
+* `plugins/database/data/forever.lua` is the only packaged location database. It stores `[objectID][uiMapID] = { x, y, ... }` with normalized 0Ã¢â‚¬â€œ1 coordinates and no per-location tables or metadata.
 * `tools/wowhead/forever.json` is the authoritative schema-2 import state. Its `nodes` object has the same grouping, with integer millionths instead of floating point coordinates. Source URLs, HTML hashes, counts, and warnings are stored once per imported object outside the packaged addon. Commit it with the generated Lua.
 * `.wowhead-cache/forever/<objectID>.html` is an ignored local cache. Pages are reused unless `--refresh` is specified. Manually saved page source can be imported using `--offline`.
 
@@ -100,3 +100,40 @@ The refresh includes five unique Practice Lockbox locations, three Buccaneer's S
 The initial run stopped at object 181109 with HTTP 403 after 135 successful pages. Those refreshed pages were applied from cache. A later retry of the remaining nine sources at ten-second intervals completed successfully and added no further locations. All 144 source records are now refreshed. The successful retry is consistent with a temporary access restriction; the response alone does not establish rate limiting as the cause.
 
 For a slower refresh, use `--delay 10` (seconds between requests). The normal default remains two seconds.
+
+## Fish catch reference
+
+Run python tools/update_fish_wowhead.py to import a separate catalog of 25
+Classic-world fish/ingredients from Forever **item** pages. Use --refresh to
+refetch, --offline to parse the cache, --items <ids> to update selected items,
+or --generate-only to regenerate packaged Lua from committed state.
+Requests are sequential with a minimum one-second delay (default two seconds).
+
+tools/wowhead/fish.json retains source URLs, hashes, integer-millionth catch
+coordinates, fishing-zone names and area-to-UI-map mappings. The generated addon
+data is plugins/fishing/data.lua; it never enters the gathering-node database.
+Only a mapper explicitly labeled **Fishing Locations** supplies catch coordinates.
+A vendor mapper can resolve zone IDs but cannot supply catch pins. The
+**fished-in** list supplies zone-only entries. Unknown zone mappings are retained
+in source state; they are not replaced with guessed coordinates. Battleground and
+dungeon maps are outside this browser's outdoor scope.
+
+Initial import: 25 fish, 8,324 catch positions, September 20, 2026. Raw Longjaw Mud
+Snapper, Raw Slitherskin Mackerel, Raw Bristle Whisker Catfish, Raw Rockscale Cod and
+Raw Spotted Yellowtail have zone information but no fishing-coordinate mapper on
+their published pages. Availability can depend on waters, season and time; these
+conditions and numeric Fishing requirements are not inferred from catch reports.
+
+### Transparent fish icons
+
+Run python tools/prepare_fish_icons.py (requires Pillow) to download the 22 source
+icons and build 64x64 RGBA textures under icons/Fish. The script preserves the
+original fish artwork, removes edge-connected black backgrounds, softens the JPEG
+fringe, and uses a traced silhouette for Lightning Eel's colored backdrop.
+Source URLs and download hashes are recorded in tools/wowhead/fish-icons.json.
+Originals are cached outside the release in .wowhead-cache/fish-icons; an existing
+download directory can be passed with --source-dir.
+
+The fish data generator references these bundled textures, so regenerating catch
+data does not restore opaque inventory icons. The importer tests check every
+referenced texture's dimensions, alpha channel and transparent borders.

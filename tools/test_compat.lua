@@ -176,7 +176,7 @@ C_SkillInfo = nil
 tooltipText, skillText = "Cold Iron Deposit", "Mining"
 GatherLite.ModifyTooltip()
 check(changedColor, "below minimum gathering skill still turns red")
-check(GatherLite:GetObject("Cold Iron Deposit").icon == "Interface\\Icons\\inv_ore_mithril_01", "native icon path is not prefixed with addon path")
+check(GatherLite:GetObject("Cold Iron Deposit").icon == "Interface\\AddOns\\GatherLite\\icons\\Ore\\iron", "Forever nodes use bundled transparent icons")
 local newOres = { [439558] = "Cold Iron Deposit", [439628] = "Fool's Gold Vein",
     [439778] = "Starsilver Vein", [439815] = "Greater Moonstone Formation" }
 local newHerbs = { [439557] = "Nightmare Moss", [439627] = "Dreamroot",

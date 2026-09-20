@@ -91,6 +91,7 @@ _GatherLite.configsDefaults = {
         },
         worldmap = {
             enabled = true,
+            zoneTooltip = true,
             size = 12,
             opacity = 1,
             loot = true,

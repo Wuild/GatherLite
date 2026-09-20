@@ -19,6 +19,12 @@ jobs:
         run: lua5.1 tools/test_database.lua
       - name: Test map tracking toggles
         run: lua5.1 tools/test_tracking.lua
+      - name: Test map zoom
+        run: lua5.1 tools/test_map_zoom.lua
+      - name: Test map reveal
+        run: lua5.1 tools/test_map_reveal.lua
+      - name: Test routes and custom window
+        run: lua5.1 tools/test_routes.lua
       - name: Test grouped tooltips
         run: lua5.1 tools/test_tooltips.lua
       - name: Test importer and release packaging offline

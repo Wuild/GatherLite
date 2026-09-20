@@ -974,7 +974,7 @@ function GatherLite:SetNodeTracking(target, nodeType, value)
     if tracking then
         tracking[nodeType] = value and true or false
         GatherLite:Trigger("settings:update")
-        LibStub("AceConfigRegistry-3.0"):NotifyChange("GatherLite")
+        if _GatherLite.Window then _GatherLite.Window:RefreshSettings() end
     end
 end
 
@@ -1140,7 +1140,7 @@ function GatherLite:VersionCheck(event, msg, channel, sender)
 end
 
 function GatherLite:ShowSettings()
-    LibStub("AceConfigDialog-3.0"):Open("GatherLite", GatherLite.OptionsPanel)
+    if _GatherLite.Window then _GatherLite.Window:Show() end
 end
 
 function GatherLite:GetRequiredLevel(name)

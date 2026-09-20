@@ -1,0 +1,18 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="GatherLiteMapCanvasTemplate" inherits="MapCanvasFrameTemplate" virtual="true">
+        <Frames>
+            <ScrollFrame parentKey="ScrollContainer" inherits="MapCanvasFrameScrollContainerTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+            </ScrollFrame>
+            <Frame parentKey="BorderFrame" enableMouse="false">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+    </Frame>
+</Ui>

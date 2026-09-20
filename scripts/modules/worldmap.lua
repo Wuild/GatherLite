@@ -287,6 +287,125 @@ local function createButton()
     end)
 end
 
+-- Zone summaries use the existing per-map index and allocate only on zone changes.
+local zoneList
+local zoneListHeight
+local hoveredZoneID
+local zoneElapsed = 0
+local zoneKinds = { "mining", "herbalism", "containers", "fishing" }
+
+function source.GetZoneNodes(mapID)
+    local rows, seen, objects = {}, {}, {}
+    if not mapID or not GatherLite.db.char.worldmap.enabled then return rows end
+    for _, kind in ipairs(zoneKinds) do
+        if GatherLite:GetNodeTracking("worldmap", kind) then
+            for _, node in ipairs(GatherLite:GetNodesForMap(kind, mapID)) do
+                if WorldmapFilter(node) then
+                    local object = objects[node.object]
+                    if object == nil then
+                        object = GatherLite:GetNodeObject(node.object) or false
+                        objects[node.object] = object
+                    end
+                    if object and not seen[object.id[1]] then
+                        seen[object.id[1]] = true
+                        rows[#rows + 1] = {
+                            name = GatherLite:translate("node." .. object.name), icon = object.icon, object = object,
+                        }
+                    end
+                end
+            end
+        end
+    end
+    table.sort(rows, function(a, b) return a.name < b.name end)
+    return rows
+end
+
+local function HideZoneList()
+    hoveredZoneID = nil
+    if zoneList then zoneList:Hide() end
+end
+
+function source.UpdateZoneList(elapsed)
+    if not GatherLite:IsLoaded() or not GatherLite.db.char.worldmap.enabled
+        or not GatherLite.db.char.worldmap.zoneTooltip or not WorldMapFrame:IsVisible() then
+        HideZoneList()
+        return
+    end
+    zoneElapsed = zoneElapsed + (elapsed or 0)
+    if zoneElapsed < 0.15 then return end
+    zoneElapsed = 0
+    -- Require canvas focus so menus and individual pin tooltips take priority.
+    if not WorldMapFrame.IsCanvasMouseFocus or not WorldMapFrame:IsCanvasMouseFocus()
+        or not WorldMapFrame.GetNormalizedCursorPosition or not C_Map.GetMapInfoAtPosition then
+        HideZoneList()
+        return
+    end
+    local mapID = WorldMapFrame.GetMapID and WorldMapFrame:GetMapID() or WorldMapFrame.mapID
+    -- Neighboring zones are also hit-testable on zone maps; require a continent view.
+    local mapInfo = mapID and C_Map.GetMapInfo and C_Map.GetMapInfo(mapID)
+    if not mapInfo or mapInfo.mapType ~= 2 then
+        HideZoneList()
+        return
+    end
+    local x, y = WorldMapFrame:GetNormalizedCursorPosition()
+    if not mapID or not x or not y or x < 0 or x > 1 or y < 0 or y > 1 then
+        HideZoneList()
+        return
+    end
+    local info = C_Map.GetMapInfoAtPosition(mapID, x, y)
+    -- Only child zones: a zoomed-in zone keeps its normal node tooltips.
+    if not info or not info.mapID or info.mapID == mapID or info.mapType ~= 3 then
+        HideZoneList()
+        return
+    end
+    local parent = WorldMapFrame.ScrollContainer or WorldMapFrame
+    local height = parent.GetHeight and parent:GetHeight() or 668
+    if hoveredZoneID == info.mapID and zoneListHeight == height then return end
+    hoveredZoneID, zoneListHeight = info.mapID, height
+    if not zoneList then
+        zoneList = CreateFrame("Frame", "GatherLiteZoneList", parent)
+        zoneList:SetPoint("TOPLEFT", parent, "TOPLEFT", 12, -36)
+        zoneList:EnableMouse(false)
+        zoneList:SetFrameStrata(WorldMapFrame:GetFrameStrata())
+        if parent.GetFrameLevel then zoneList:SetFrameLevel(parent:GetFrameLevel() + 10) end
+        zoneList.title = zoneList:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        zoneList.title:SetPoint("TOPLEFT", 10, -10)
+        zoneList.title:SetJustifyH("LEFT")
+        zoneList.subtitle = zoneList:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        zoneList.subtitle:SetPoint("TOPLEFT", 10, -30)
+        zoneList.rows = {}
+    end
+    zoneList.title:SetText(info.name or "")
+    zoneList.subtitle:SetText(GatherLite:translate("tooltip.zone_nodes"))
+    local rows = source.GetZoneNodes(info.mapID)
+    -- Keep the list compact even on tall maps; balance entries across columns.
+    local maxRows = math.max(1, math.min(12, math.floor((height - 120) / 18)))
+    local count = math.max(1, #rows)
+    local columns = math.ceil(count / maxRows)
+    local perColumn = math.ceil(count / columns)
+    zoneList:SetSize(columns * 220 + 20, math.min(count, perColumn) * 18 + 56)
+    zoneList.title:SetWidth(columns * 220)
+    for index = 1, count do
+        local label = zoneList.rows[index]
+        if not label then
+            label = zoneList:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+            label:SetJustifyH("LEFT")
+            label:SetWordWrap(false)
+            label:SetSize(216, 18)
+            zoneList.rows[index] = label
+        end
+        label:ClearAllPoints()
+        label:SetPoint("TOPLEFT", 10 + math.floor((index - 1) / perColumn) * 220,
+            -48 - ((index - 1) % perColumn) * 18)
+        local row = rows[index]
+        label:SetText(row and ("|T" .. row.icon .. ":16:16|t " .. row.name)
+            or GatherLite:translate("tooltip.zone_empty"))
+        label:Show()
+    end
+    for index = count + 1, #zoneList.rows do zoneList.rows[index]:Hide() end
+    zoneList:Show()
+end
+
 -- Module setup
 source.setup = function()
     GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Loaded worldmap module")
@@ -295,7 +414,8 @@ source.setup = function()
 
     createButton();
 
-    frame:SetScript("OnUpdate", function()
+    frame:SetScript("OnUpdate", function(_, elapsed)
+        source.UpdateZoneList(elapsed)
         if WorldMapFrame:IsVisible() and not worldmapOpen then
             worldmapOpen = true;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "open worldmap", worldmapID)
@@ -329,6 +449,7 @@ source.setup = function()
     end)
 
     GatherLite:On("settings:update", function()
+        HideZoneList()
         if worldmapOpen then
             ResetWorldmap()
         end

@@ -1,6 +1,5 @@
 local name, _GatherLite = ...
 
-local needReload = false;
 local GFrame = LibStub("GatherLiteFrame");
 
 local function mapTrackingOptions(target)
@@ -182,7 +181,7 @@ for index, object in pairs(_GatherLite.nodeDB) do
     end
 end
 
-LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
+_GatherLite.SettingsOptions = {
     type = "group",
     childGroups = "tab",
     args = {
@@ -219,7 +218,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     width = "full",
                     set = function(info, val)
                         GatherLite.db.global.usePredefined = val;
-                        needReload = true;
+                        GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
                         return GatherLite.db.global.usePredefined
@@ -255,20 +254,6 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                     end,
                     get = function(info)
                         return GatherLite.db.char.worldmap.enabled;
-                    end
-                },
-
-                reloadUI = {
-                    name = function()
-                        return "reload ui";
-                    end,
-                    type = "execute",
-                    order = 4,
-                    hidden = function()
-                        return not needReload
-                    end,
-                    func = function()
-                        ReloadUI();
                     end
                 },
 
@@ -314,6 +299,17 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
             order = 2,
             args = {
                 tracking = mapTrackingOptions("worldmap"),
+                zoneTooltip = {
+                    name = function() return GatherLite:translate("settings.map.zone_tooltip") end,
+                    type = "toggle",
+                    order = 4,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.worldmap.zoneTooltip = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.worldmap.zoneTooltip end,
+                },
                 header = {
                     name = function()
                         return GatherLite:translate("settings.map");
@@ -460,7 +456,7 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
                         },
                         iconSize = {
                             name = function()
-                                return GatherLite:Trigger("settings.minimap.size");
+                                return GatherLite:translate("settings.minimap.size");
                             end,
                             type = "range",
                             min = 4,
@@ -597,5 +593,31 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
             }
         },
     }
-})
-LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite", "GatherLite");
+}
+
+-- Keep the Blizzard addon-settings entry as a launcher for the custom window.
+function GatherLite:RegisterSettingsLauncher()
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
+        type = "group",
+        name = "GatherLite",
+        args = {
+            openSettings = {
+                type = "execute",
+                name = "Open GatherLite settings",
+                desc = "Open the GatherLite window to configure your gathering preferences.",
+                order = 1,
+                width = "full",
+                func = function()
+                    local window = _GatherLite.Window
+                    if not window then return end
+                    window:Show()
+                    if window.ready then
+                        window:SelectTab(2)
+                        if SettingsPanel then HideUIPanel(SettingsPanel) end
+                    end
+                end,
+            },
+        },
+    })
+    LibStub("AceConfigDialog-3.0"):AddToBlizOptions("GatherLite", "GatherLite")
+end

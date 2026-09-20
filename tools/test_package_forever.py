@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import json
+import re
 import tempfile
 import unittest
 import zipfile
@@ -144,6 +145,16 @@ class PackageTests(unittest.TestCase):
             self.write("package-rules.json", rules)
             with self.subTest(rules=rules), self.assertRaises(ValueError):
                 prepare_package(self.root, VERSION)
+
+    def test_catalog_icons_are_bundled(self):
+        payload, _, _ = prepare_package(REPOSITORY, VERSION)
+        catalog = payload["scripts/nodes.lua"].decode("utf-8")
+        icons = re.findall(r'InsertObject\([^\n]+?, "[^"]+", "([^"]+)"', catalog)
+        self.assertGreaterEqual(len(icons), 60)
+        for icon in icons:
+            self.assertFalse(icon.startswith("Interface"), icon)
+            path = "icons/" + icon.replace("\\\\", "/")
+            self.assertTrue(any(path + ext in payload for ext in (".tga", ".blp")), path)
 
     def test_actual_addon_packages_with_all_load_dependencies(self):
         archive, version, _, _ = build_package(REPOSITORY, self.output, VERSION)
