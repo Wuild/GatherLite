@@ -2,9 +2,10 @@
 
 Track herbs, ore, containers, and fishing locations on your world map and minimap in **WoW Forever**. Includes over **26,000 known locations** and saves your own gathering history.
 
-GatherLite now supports Forever only. Support for older WoW clients has ended.
 
-![Gathering markers and a Silverleaf tooltip on the Elwynn Forest map](./gatherlite-elwynn-forever.png)
+[![Support me on Patreon](https://img.shields.io/badge/Support_me_on-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/c/Wuild)
+
+![Gathering markers and a Silverleaf tooltip on the Elwynn Forest map](https://raw.githubusercontent.com/wuild/gatherlite/master/gatherlite-elwynn-forever.png)
 
 ## Installation
 
@@ -23,6 +24,4 @@ Markers show known locations, not whether a resource is currently present. Rogue
 
 ## Support
 
-[Report an issue](https://github.com/wuild/gatherlite/issues) · [Support the author](https://www.buymeacoffee.com/yuImx6KOY)
-
-For publishing, database updates, and tests, see the [maintainer guide](tools/README.md).
+[Report an issue](https://github.com/wuild/gatherlite/issues)
