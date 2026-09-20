@@ -185,8 +185,14 @@ local function nodeCellCoords(posX, posY)
     return math.floor(posX * NODE_CELL_INV), math.floor(posY * NODE_CELL_INV)
 end
 
-local function nodeCellKey(mapID, cellX, cellY)
-    return mapID .. ":" .. cellX .. ":" .. cellY
+-- Normalized coordinates occupy cells 0..153. Reject out-of-map neighbors
+-- so numeric keys cannot alias an adjacent row. Keep map IDs separate.
+local NODE_CELL_STRIDE = math.floor(NODE_CELL_INV) + 1
+local function nodeCellKey(cellX, cellY)
+    if cellX < 0 or cellY < 0 or cellX >= NODE_CELL_STRIDE or cellY >= NODE_CELL_STRIDE then
+        return nil
+    end
+    return cellX * NODE_CELL_STRIDE + cellY
 end
 
 local function indexNodeInstance(index, node)
@@ -230,11 +236,17 @@ local function indexNode(index, node)
     mapBucket[#mapBucket + 1] = node
 
     local cellX, cellY = nodeCellCoords(node.posX, node.posY)
-    local cellKey = nodeCellKey(node.mapID, cellX, cellY)
-    local cellBucket = index.byCell[cellKey]
+    local cellKey = nodeCellKey(cellX, cellY)
+    if not cellKey then return end
+    local cells = index.byCell[node.mapID]
+    if not cells then
+        cells = {}
+        index.byCell[node.mapID] = cells
+    end
+    local cellBucket = cells[cellKey]
     if not cellBucket then
         cellBucket = {}
-        index.byCell[cellKey] = cellBucket
+        cells[cellKey] = cellBucket
     end
     cellBucket[#cellBucket + 1] = node
 
@@ -248,11 +260,13 @@ local function findIndexedNode(index, mapID, posX, posY, objectID)
         return nil
     end
 
+    local cells = index.byCell[mapID]
+    if not cells then return nil end
     local cellX, cellY = nodeCellCoords(posX, posY)
     for dx = -1, 1 do
         for dy = -1, 1 do
-            local cellKey = nodeCellKey(mapID, cellX + dx, cellY + dy)
-            local cellBucket = index.byCell[cellKey]
+            local cellKey = nodeCellKey(cellX + dx, cellY + dy)
+            local cellBucket = cells[cellKey]
             if cellBucket then
                 for i = 1, #cellBucket do
                     local node = cellBucket[i]
@@ -384,7 +398,7 @@ function GatherLite:GetNodesForMap(type, mapID)
         return index.byMap[mapID]
     end
 
-    return _GatherLite.nodes[type] or {}
+    return {}
 end
 
 function GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
@@ -402,27 +416,14 @@ function GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
     local minY = math.max(0, math.min(bottom, top))
     local maxY = math.min(1, math.max(bottom, top))
 
-    local cellMinX, cellMinY = nodeCellCoords(minX, minY)
-    local cellMaxX, cellMaxY = nodeCellCoords(maxX, maxY)
-
+    -- A zone has far fewer nodes than the ~24,000 cells in its full rectangle.
+    -- Each node occurs once in byMap, so a separate seen table is unnecessary.
+    local nodes = index.byMap[mapID] or {}
     local out = {}
-    local seen = {}
-
-    for cellX = cellMinX, cellMaxX do
-        for cellY = cellMinY, cellMaxY do
-            local cellKey = nodeCellKey(mapID, cellX, cellY)
-            local bucket = index.byCell[cellKey]
-            if bucket then
-                for i = 1, #bucket do
-                    local node = bucket[i]
-                    if not seen[node] then
-                        seen[node] = true
-                        if node.posX >= minX and node.posX <= maxX and node.posY >= minY and node.posY <= maxY then
-                            out[#out + 1] = node
-                        end
-                    end
-                end
-            end
+    for i = 1, #nodes do
+        local node = nodes[i]
+        if node.posX >= minX and node.posX <= maxX and node.posY >= minY and node.posY <= maxY then
+            out[#out + 1] = node
         end
     end
 
@@ -440,8 +441,8 @@ function GatherLite:GetNodeIndexStats()
         for _ in pairs(index.byMap or {}) do
             byMapCount = byMapCount + 1
         end
-        for _ in pairs(index.byCell or {}) do
-            byCellCount = byCellCount + 1
+        for _, cells in pairs(index.byCell or {}) do
+            for _ in pairs(cells) do byCellCount = byCellCount + 1 end
         end
         for _, mapBucket in pairs(index.byMapInstance or {}) do
             byMapInstanceCount = byMapInstanceCount + 1
@@ -575,20 +576,13 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
         return GatherLite:GetNodesForMapInstance(type, mapID, instance)
     end
     local out = {}
-    local seen = {}
-
-    for dx = -cellRadius, cellRadius do
-        for dy = -cellRadius, cellRadius do
-            local cellKey = nodeCellKey(mapID, cellX + dx, cellY + dy)
-            local bucket = index.byCell[cellKey]
+    local cells = index.byCell[mapID]
+    if not cells then return out end
+    for cx = math.max(0, cellX - cellRadius), math.min(NODE_CELL_STRIDE - 1, cellX + cellRadius) do
+        for cy = math.max(0, cellY - cellRadius), math.min(NODE_CELL_STRIDE - 1, cellY + cellRadius) do
+            local bucket = cells[nodeCellKey(cx, cy)]
             if bucket then
-                for i = 1, #bucket do
-                    local node = bucket[i]
-                    if not seen[node] then
-                        seen[node] = true
-                        out[#out + 1] = node
-                    end
-                end
+                for i = 1, #bucket do out[#out + 1] = bucket[i] end
             end
         end
     end

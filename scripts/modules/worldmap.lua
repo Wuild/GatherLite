@@ -268,10 +268,10 @@ local function createButton()
         if GatherLite.db.global.debug.enabled then
             tooltip:AddLine(" ");
             tooltip:AddLine("             -- Debugging --             ");
-            tooltip:AddDoubleLine(GatherLite:Colorize("Used frames", "white"), GatherLite:tablelength(GFrame.usedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("Used frames", "white"), GatherLite:tablelength(Frames.usedFrames));
             tooltip:AddDoubleLine(GatherLite:Colorize("Unused frames", "white"),
-                GatherLite:tablelength(GFrame.unusedFrames));
-            tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(GFrame.allFrames));
+                GatherLite:tablelength(Frames.unusedFrames));
+            tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(Frames.allFrames));
         end
 
         tooltip:AddLine(" ");

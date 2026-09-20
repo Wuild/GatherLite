@@ -111,6 +111,7 @@ function GatherLiteFrame:newFrame(frameId)
 end
 
 function GatherLiteFrame:recycleFrame(frame)
+    if GatherLiteFrame.usedFrames[frame.frameId] ~= frame then return end
     GatherLiteFrame.usedFrames[frame.frameId] = nil
     tinsert(GatherLiteFrame.unusedFrames, frame)
 
@@ -118,6 +119,7 @@ function GatherLiteFrame:recycleFrame(frame)
 end
 
 function _frame:unload()
+    if GatherLiteFrame.usedFrames[self.frameId] ~= self then return end
     --self:SetFrameStrata("TOOLTIP");
     --self:SetFrameLevel(0);
 
@@ -134,7 +136,11 @@ function _frame:unload()
         self.node.loadedWorldmap = false
     end
 
-    self.node = {}
+    self:SetScript("OnEnter", nil)
+    self:SetScript("OnLeave", nil)
+    self.node = nil
+    self.object = nil
+    self.nearby = nil
     self.type = nil
     self:Hide()
 

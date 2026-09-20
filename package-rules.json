@@ -1,0 +1,13 @@
+{
+  "include": [
+    "GatherLite.toc",
+    "LICENSE",
+    "scripts/**/*",
+    "plugins/**/*",
+    "icons/**/*"
+  ],
+  "exclude": [
+    "**/__pycache__/**",
+    "**/*.pyc"
+  ]
+}

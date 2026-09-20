@@ -3,7 +3,6 @@ name: Lua compatibility
 on:
   push:
   pull_request:
-  workflow_call:
 
 jobs:
   compatibility:

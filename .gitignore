@@ -4,3 +4,8 @@ node_modules
 .wowhead-cache/
 __pycache__/
 dist/
+
+# Local publishing credentials
+.env
+.env.*
+!.env.example

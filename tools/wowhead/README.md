@@ -78,7 +78,7 @@ The [Forever chest listing](https://www.wowhead.com/forever/objects/chests) was 
 | Mossy Footlocker | 179493, 179497 |
 | Scarlet Footlocker | 179498 |
 
-The first ID in each row is canonical. The fresh Forever pages supplied 262 unique footlocker positions after alias deduplication, bringing the database to 26,183 locations and 144 source IDs. Practice Lockboxes and Buccaneer's Strongboxes explicitly report unknown locations, so no coordinates were invented or borrowed from another client. All 19 IDs remain in import state and are refreshed by normal scheduled updates. `--discover` still discovers mining/herb IDs; chest discovery is a separate catalog audit.
+The first ID in each row is canonical. The fresh Forever pages supplied 262 unique footlocker positions after alias deduplication, bringing the database to 26,183 locations and 144 source IDs. At that initial import, Practice Lockboxes and Buccaneer's Strongboxes reported unknown locations; their newly published coordinates were added in the September 20 refresh below. All 19 IDs remain in import state and are refreshed by normal scheduled updates. `--discover` still discovers mining/herb IDs; chest discovery is a separate catalog audit.
 
 Pick Lock ([spell 1804](https://www.wowhead.com/forever/spell=1804/pick-lock)) records supported world-object names on successful casts, even without loot. Failed casts and inventory lockboxes do not create pins. Chinese names are verified from the corresponding Forever `cn/object=<id>` pages. Lockpicking thresholds are not inferred from the chest listing's generic `skill: 1` field.
 
@@ -90,3 +90,13 @@ lua tools/test_tracking.lua
 ```
 
 Tests cover offline parsing, invalid input, additive updates, deterministic generation, the complete grouped database, lazy loading and release, shared runtime metadata, and gathering history for predefined nodes. CI runs the same checks.
+
+### Database refresh: September 20, 2026
+
+Refreshed all 144 source object pages and added **311 unique locations**, for **26,494 total**. All previously stored locations were preserved. The mining/herb listing check still found 99 IDs, no uncatalogued gathering objects, and seven excluded quest pickups.
+
+The refresh includes five unique Practice Lockbox locations, three Buccaneer's Strongbox locations, and 16 additional footlocker locations (278 footlocker locations total). Alias coordinates are deduplicated before counting.
+
+The initial run stopped at object 181109 with HTTP 403 after 135 successful pages. Those refreshed pages were applied from cache. A later retry of the remaining nine sources at ten-second intervals completed successfully and added no further locations. All 144 source records are now refreshed. The successful retry is consistent with a temporary access restriction; the response alone does not establish rate limiting as the cause.
+
+For a slower refresh, use `--delay 10` (seconds between requests). The normal default remains two seconds.

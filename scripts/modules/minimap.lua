@@ -15,8 +15,6 @@ local threadHerbalism
 local threadContainer
 local threadFishing
 
-local threadIcon
-
 local debugState = {
     lastNodesUpdate = 0,
     lastIconsUpdate = 0,
@@ -130,6 +128,8 @@ local function ResetMinimap()
 end
 
 local function createNodeThread(type)
+    if not GatherLite.db.char.minimap.enabled or not GatherLite:GetNodeTracking("minimap", type)
+        or IsInInstance() then return end
     local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
     local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
     if (worldX == nil or worldY == nil or instanceID == nil) and zoneX ~= nil and zoneY ~= nil and mapID then
@@ -145,8 +145,7 @@ local function createNodeThread(type)
     for i = 1, #t do
         local node = t[i]
         if not node.loaded then
-            CreateMinimapNode(node)
-            node.loaded = true;
+            if CreateMinimapNode(node) then node.loaded = true end
         end
         coroutine.yield()
     end
@@ -168,7 +167,7 @@ local function fishingThread()
     createNodeThread("fishing")
 end
 
-local function minimapIconThread()
+local function UpdateMinimapIcons()
     local x, y, instanceID = HBD:GetPlayerWorldPosition()
     if (x == nil or y == nil or instanceID == nil) then
         local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
@@ -181,44 +180,29 @@ local function minimapIconThread()
         return
     end
 
-    local i = 0;
-    local i2 = 0
-
-    local usedFrames = GatherLite:Filter(Frames.usedFrames, function(frame)
-        return frame.type == "minimap"
-    end);
-
-    for key, frame in pairs(usedFrames) do
-        if IsInInstance() then
-            frame.node.loaded = false;
-            frame:Unload();
-            return
-        end
-
-        if not frame.node.worldX or not frame.node.worldY then
-            GatherLite:EnsureNodeWorld(frame.node)
-        end
-
-        local _, distance = HBD:GetWorldVector(instanceID, x, y, frame.node.worldX, frame.node.worldY)
-
-        if distance >= GatherLite.db.char.minimap.range then
-            frame.node.loaded = false;
-            frame:Unload();
-            return
-        end
-
-        if not MinimapFilter(frame.node) then
-            frame.node.loaded = false;
-            frame:Unload();
-            return
-        end
-
-        -- Keep the expected location visible without covering a live tracking dot.
-        -- Presence of a spawned resource is not available to this addon.
-        local nearby = distance < GatherLite.db.char.minimap.distance
-        if frame.nearby ~= nearby then
-            frame.nearby = nearby
-            frame.texture:SetTexture(nearby and nearbyIcon or frame.object.icon)
+    local inInstance = IsInInstance()
+    -- Removing the current entry during pairs is safe; no snapshot is needed.
+    for _, frame in pairs(Frames.usedFrames) do
+        if frame.type == "minimap" then
+            local node = frame.node
+            if not node.worldX or not node.worldY then
+                GatherLite:EnsureNodeWorld(node)
+            end
+            local distance
+            if node.instance == instanceID and node.worldX and node.worldY then
+                local _
+                _, distance = HBD:GetWorldVector(instanceID, x, y, node.worldX, node.worldY)
+            end
+            if inInstance or not distance or distance >= GatherLite.db.char.minimap.range
+                or not MinimapFilter(node) then
+                frame:Unload()
+            else
+                local nearby = distance < GatherLite.db.char.minimap.distance
+                if frame.nearby ~= nearby then
+                    frame.nearby = nearby
+                    frame.texture:SetTexture(nearby and nearbyIcon or frame.object.icon)
+                end
+            end
         end
     end
 end
@@ -241,14 +225,15 @@ local function Update(timeDelta, force)
         threadContainer = coroutine.create(containerThread)
         threadFishing = coroutine.create(fishingThread)
 
-        threadIcon = coroutine.create(minimapIconThread)
+        checkDiff, timeDiff = 0, 0
     else
         checkDiff = checkDiff + timeDelta
         timeDiff = timeDiff + timeDelta
         if (checkDiff > 5) then
             updateNodes = true
             checkDiff = 0
-        elseif (timeDiff > 1) then
+        end
+        if (timeDiff >= 1) then
             updateIcons = true
             timeDiff = 0
         end
@@ -274,21 +259,18 @@ local function Update(timeDelta, force)
         end
     end
 
-    if threadIcon ~= nil and coroutine.status(threadIcon) == "dead" then
-        threadIcon = coroutine.create(minimapIconThread)
-    end
-
     if updateIcons then
         debugState.lastIconsUpdate = GetTime()
         debugState.lastIconsTick = timeDelta or 0
     end
 
-    coroutine.resume(threadMining)
-    coroutine.resume(threadHerbalism)
-    coroutine.resume(threadContainer)
-    coroutine.resume(threadFishing)
+    -- Only active node workers need resuming between their five-second scans.
+    if coroutine.status(threadMining) ~= "dead" then coroutine.resume(threadMining) end
+    if coroutine.status(threadHerbalism) ~= "dead" then coroutine.resume(threadHerbalism) end
+    if coroutine.status(threadContainer) ~= "dead" then coroutine.resume(threadContainer) end
+    if coroutine.status(threadFishing) ~= "dead" then coroutine.resume(threadFishing) end
 
-    coroutine.resume(threadIcon)
+    if updateIcons then UpdateMinimapIcons() end
 end
 
 local function LoadMinimap()
@@ -304,8 +286,6 @@ source.setup = function()
     threadHerbalism = coroutine.create(herbalismThread)
     threadContainer = coroutine.create(containerThread)
     threadFishing = coroutine.create(fishingThread)
-
-    threadIcon = coroutine.create(minimapIconThread)
 
     LoadMinimap();
 

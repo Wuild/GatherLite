@@ -3,7 +3,7 @@ local addon, libraries, frames, menu, options, minimapButton = {}, {}, {}, {}, n
 local function noop() end
 local resume = coroutine.resume
 coroutine.resume = function(thread, ...)
-    if coroutine.status(thread) == "dead" then return false, "cannot resume dead coroutine" end
+    assert(coroutine.status(thread) ~= "dead", "resuming a completed minimap worker")
     local ok, err = resume(thread, ...)
     assert(ok, err)
     return ok, err
@@ -105,9 +105,9 @@ for i, kind in ipairs(kinds) do
     addon.predefined[objects[i]] = { [1429] = { 0.6, 0.6 } }
 end
 GatherLite:Load()
-local function tick()
+local function tick(elapsed)
     for _, f in ipairs(frames) do
-        if f.scripts.OnUpdate then f.scripts.OnUpdate(f, 0.1) end
+        if f.scripts.OnUpdate then f.scripts.OnUpdate(f, elapsed or 0.1) end
     end
 end
 WorldMapFrame:Show()
@@ -182,15 +182,15 @@ for i, kind in ipairs(kinds) do
     assert(pin.scripts.OnEnter and pin.motionEnabled, "circle lost its tooltip")
 
     playerY = 530 -- Exactly at the configured 70-yard boundary.
-    tick()
+    tick(1.1)
     assert(pins.minimap[pin] and pin.texture.texturePath == icon, "moving away must restore the same pin's icon")
     playerY = 600
-    tick()
+    tick(1.1)
     assert(pin:IsShown() and pin.texture.texturePath == circle, "standing on a location must retain its circle")
 
     pin:Hide() -- Simulate visibility controlled by HereBeDragons (e.g. clipping).
     playerY = 500
-    tick()
+    tick(1.1)
     assert(not pin:IsShown() and pin.texture.texturePath == icon, "distance updates must respect map visibility")
     pin:Show()
     playerY = 600
@@ -198,7 +198,7 @@ for i, kind in ipairs(kinds) do
     tick()
     assert(pin.texture.texturePath == icon, "zero circle distance must preserve normal icons")
     distanceOption.set(nil, 70)
-    tick()
+    tick(1.1)
     assert(pin.texture.texturePath == circle, "changing circle distance must update existing pins")
 
     click("minimap", i)
@@ -219,3 +219,98 @@ minimapButton.OnClick(Minimap, "RightButton")
 GatherLiteWorldmapButton.scripts.OnClick(GatherLiteWorldmapButton, "RightButton")
 assert(closedMenus == 2 and settingsOpened == 2, "right-click must close native menus and open settings")
 print("Tracking integration passed: all four categories, both maps, lazy loading, settings and nearby circles")
+
+-- Icon checks must obey their timer and must not copy the frame registry.
+click("minimap", 1)
+local vectorCalls = 0
+local hbd = libraries["HereBeDragons-2.0"]
+local originalVector = hbd.GetWorldVector
+hbd.GetWorldVector = function(...)
+    vectorCalls = vectorCalls + 1
+    return originalVector(...)
+end
+local originalFilter = GatherLite.Filter
+GatherLite.Filter = function() error("minimap allocated a frame-list copy") end
+for i = 1, 30 do tick(1 / 60) end
+assert(vectorCalls == 0, "icon distances calculated before the one-second timer")
+tick(0.6)
+assert(vectorCalls > 0, "icon timer failed to run")
+GatherLite.Filter = originalFilter
+hbd.GetWorldVector = originalVector
+click("minimap", 1)
+
+-- One update must remove all stale pins, even after a cross-instance move.
+for i = 1, #kinds do click("minimap", i) end
+local pool = libraries.GatherLiteFrame
+local stale = {}
+for pin in pairs(pins.minimap) do stale[#stale + 1] = pin; pin.node.instance = 1 end
+tick(1.1)
+assert(next(pins.minimap) == nil, "stale minimap pins survived the cleanup pass")
+local unused = #pool.unusedFrames
+for _, pin in ipairs(stale) do
+    assert(pin.node == nil and pin.object == nil, "recycled frame retained node metadata")
+    assert(pin.scripts.OnEnter == nil and pin.scripts.OnLeave == nil, "recycled frame retained hover handlers")
+    pin:Unload()
+end
+assert(#pool.unusedFrames == unused, "double unload inserted duplicate free frames")
+for _, kind in ipairs(kinds) do
+    for _, node in ipairs(addon.nodes[kind]) do node.instance = 0 end
+end
+for i = 1, #kinds do click("minimap", i) end
+
+-- Compare spatial queries against a brute-force search, including map edges.
+local points = {}
+for _, pos in ipairs({ {0, 0}, {1, 1}, {0.0064, 0.0064}, {0.0066, 0.0066}, {0.5, 0.5} }) do
+    points[#points + 1] = { type = "mining", object = 1731, mapID = 999,
+        posX = pos[1], posY = pos[2], instance = 0 }
+end
+GatherLite:LoadTable("mining", points)
+assert(#GatherLite:GetNodesForMap("mining", 998) == 0, "empty map returned other zones")
+assert(#GatherLite:GetNodesForMapRect("mining", 999, 0, 1, 0, 1) == #points)
+for _, pos in ipairs({ {0, 0}, {1, 1}, {0.0065, 0.0065}, {0.5, 0.5} }) do
+    local candidates = GatherLite:GetNearbyNodes("mining", 999, 0, pos[1], pos[2], 10)
+    local seen = {}
+    for _, node in ipairs(candidates) do
+        assert(node.mapID == 999 and not seen[node], "spatial query returned a duplicate or wrong map")
+        seen[node] = true
+    end
+    for _, node in ipairs(points) do
+        local distance = math.sqrt((node.posX-pos[1])^2 + (node.posY-pos[2])^2) * 1000
+        if distance <= 10 then assert(seen[node], "spatial query missed an edge node") end
+    end
+    assert(GatherLite:findExistingLocalNode("mining", 999, pos[1], pos[2], 1731), "node lookup missed neighboring cell")
+end
+assert(#GatherLite:GetNearbyNodes("mining", 999, 0, 0.5, 0.5, 2000) == #points)
+local rect = GatherLite:GetNodesForMapRect("mining", 999, 0.01, 0, 0.01, 0)
+assert(#rect == 3, "reversed map rectangle returned incorrect points")
+print("Memory regressions passed: timer cadence, frame recycling, stale pins and spatial queries")
+
+-- Optional allocation benchmark; collection is paused only in this test runtime.
+if arg and arg[1] == "--benchmark" then
+    -- Full database and hot-path allocation benchmark with mocked game APIs.
+    WorldMapFrame:Hide()
+    GatherLite.db.global.usePredefined = true
+    for _, kind in ipairs(kinds) do
+        GatherLite.db.char.minimap.tracking[kind] = true
+        GatherLite.db.char.worldmap.tracking[kind] = true
+    end
+    assert(loadfile("plugins/database/data/forever.lua"))("GatherLite", addon)
+    GatherLite:Trigger("settings:update")
+    for i = 1, 300 do tick() end
+    collectgarbage("collect")
+    print(string.format("Full database retained: %.1f KiB", collectgarbage("count")))
+    collectgarbage("stop")
+    local before = collectgarbage("count")
+    local start = os.clock()
+    for i = 1, 600 do tick() end
+    print(string.format("600 frames: %.1f KiB allocated, %.3f seconds", collectgarbage("count") - before, os.clock() - start))
+    collectgarbage("restart")
+    collectgarbage("collect")
+    collectgarbage("stop")
+    before, start = collectgarbage("count"), os.clock()
+    for i = 1, 10 do
+        for _, kind in ipairs(kinds) do GatherLite:GetNodesForMapRect(kind, 1429, 0, 1, 0, 1) end
+    end
+    print(string.format("10 full-map queries: %.1f KiB allocated, %.3f seconds", collectgarbage("count") - before, os.clock() - start))
+    collectgarbage("restart")
+end

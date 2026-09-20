@@ -1,18 +1,14 @@
 package-as: GatherLite
 
-manual-changelog:
-    filename: CHANGELOG.md
-    markup-type: markdown
-
 enable-nolib-creation: no
 
 ignore:
+    - .env
+    - .env.*
     - .github
     - dist
-    - VERSION
-    - RELEASE.md
     - tools
     - .wowhead-cache
     - README.md
     - gatherlite-banner.jpg
-    - gatherlite-elwyn.jpg
+    - gatherlite-elwynn-forever.png
