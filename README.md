@@ -4,7 +4,7 @@ Find herbs, ore, containers, fishing pools, and fish in **WoW Forever**. Include
 
 [![Support me on Patreon](https://img.shields.io/badge/Support_me_on-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/c/Wuild)
 
-![GatherLite's map window with resource search, profession requirements, and farming route controls](https://raw.githubusercontent.com/wuild/gatherlite/master/gatherlite-worldmap-window.png)
+![GatherLite's map window with resource search, profession requirements, and farming route controls](https://raw.githubusercontent.com/wuild/gatherlite/master/gatherlite-elwynn-forever.png)
 
 ![GatherLite planning a Copper Vein farming route through Elwynn Forest](https://raw.githubusercontent.com/wuild/gatherlite/master/gatherlite-farming-route.png)
 
