@@ -58,6 +58,9 @@ libraries["HereBeDragons-2.0"] = {
     GetWorldCoordinatesFromZone = function(_, x, y) return x * 1000, y * 1000, 0 end,
     GetWorldVector = function(_, _, x1, y1, x2, y2) return 0, math.sqrt((x2-x1)^2 + (y2-y1)^2) end,
     GetZoneSize = function() return 1000, 1000 end,
+    GetZoneCoordinatesFromWorldInstance = function(_, x, y, instance)
+        if instance == 0 then return x / 1000, y / 1000 end
+    end,
 }
 local locale = {}
 libraries["AceLocale-3.0"] = { NewLocale = function() return locale end, GetLocale = function() return locale end }
@@ -87,7 +90,7 @@ MenuUtil = {
 local closedMenus = 0
 Menu = { GetManager = function() return { CloseMenus = function() closedMenus = closedMenus + 1 end } end }
 for _, path in ipairs({ "scripts/locales/enUS.lua", "scripts/compat.lua", "scripts/config.lua",
-    "scripts/nodes.lua", "scripts/frame.lua", "scripts/methods.lua", "scripts/settings.lua", "scripts/main.lua",
+    "scripts/nodes.lua", "scripts/frame.lua", "scripts/methods.lua", "scripts/maps/zone-neighbors.lua", "scripts/zones.lua", "scripts/settings.lua", "scripts/main.lua",
     "scripts/modules/worldmap.lua", "scripts/modules/minimap.lua", "plugins/database/database.lua" }) do
     assert(loadfile(path))("GatherLite", addon)
 end
@@ -181,6 +184,16 @@ for i, kind in ipairs(kinds) do
     local icon = GatherLite:GetNodeObject(objects[i]).icon
     assert(pin:IsShown() and pin.texture.texturePath == circle, "nearby " .. kind .. " must start as a visible circle")
     assert(pin.scripts.OnEnter and pin.motionEnabled, "circle lost its tooltip")
+    local circlesOption = options.args.minimap.args.nearbyCircles
+    assert(circlesOption.get(), "nearby circles must default to enabled")
+    circlesOption.set(nil, false)
+    tick(1.1)
+    pin = assert(next(pins.minimap))
+    assert(pin:IsShown() and pin.texture.texturePath == icon, "disabled circles must preserve nearby resource icons")
+    circlesOption.set(nil, true)
+    tick(1.1)
+    pin = assert(next(pins.minimap))
+    assert(pin.texture.texturePath == circle, "re-enabling circles must refresh nearby pins")
 
     playerY = 530 -- Exactly at the configured 70-yard boundary.
     tick(1.1)
@@ -416,3 +429,78 @@ if arg and arg[1] == "--benchmark" then
     print(string.format("10 full-map queries: %.1f KiB allocated, %.3f seconds", collectgarbage("count") - before, os.clock() - start))
     collectgarbage("restart")
 end
+-- A neighbor's overlapping map area must contribute pins to the selected zone.
+do
+    local hbd = libraries["HereBeDragons-2.0"]
+    function hbd:GetWorldCoordinatesFromZone(x, y, map)
+        return x * 1000 + (map == 1431 and 500 or 0), y * 1000, 0
+    end
+    function hbd:GetZoneCoordinatesFromWorldInstance(x, y, instance, map, allow)
+        if instance ~= 0 then return end
+        x, y = (x - (map == 1431 and 500 or 0)) / 1000, y / 1000
+        if allow or (x >= 0 and x <= 1 and y >= 0 and y <= 1) then return x, y end
+    end
+    function pins:AddWorldMapIconMap(_, frame, map, x, y)
+        self.worldmap[frame] = { map = map, x = x, y = y }; frame:Show()
+    end
+    local visible = { type = "mining", mapID = 1431, posX = .2, posY = .4, object = 1731, instance = 0 }
+    local outside = { type = "mining", mapID = 1431, posX = .8, posY = .4, object = 1731, instance = 0 }
+    GatherLite:LoadTable("mining", { visible, outside })
+    GatherLite.db.char.worldmap.enabled = true
+    GatherLite.db.char.worldmap.zoneTooltip = false
+    GatherLite.db.char.worldmap.tracking.mining = true
+    local view = { 0, .2, .3, .5 } -- Neighbor starts outside the viewport.
+    WorldMapFrame.ScrollContainer = { GetNormalizedRect = function() return unpack(view) end }
+    local queries = 0
+    local originalQuery = GatherLite.GetWorldMapNodesForRect
+    GatherLite.GetWorldMapNodesForRect = function(self, ...)
+        queries = queries + 1
+        return originalQuery(self, ...)
+    end
+    WorldMapFrame.mapID = 1429
+    WorldMapFrame:Show()
+    tick(.2)
+    GatherLite.modules.worldmap.reset()
+    local function find(node)
+        for frame, coords in pairs(pins.worldmap) do if frame.node == node then return frame, coords end end
+    end
+    assert(GatherLite.db.char.worldmap.neighbors==false,"neighbor pins must default off")
+    assert(not find(visible),"default must exclude neighbor pins")
+    GatherLite.db.char.worldmap.neighbors=true
+    GatherLite:Trigger("settings:update")
+    local frame, coords = find(visible)
+    assert(frame and coords.map == 1429 and math.abs(coords.x - .7) < .000001 and coords.y == .4,
+        "neighbor must be registered on viewed map with projected coordinates")
+    assert(visible.mapID == 1431 and visible.posX == .2 and frame.node == visible,
+        "projection must preserve source data for tooltips")
+    assert(not find(outside), "neighbor outside selected map must not render")
+    GatherLite.db.char.worldmap.neighbors=false
+    GatherLite:Trigger("settings:update")
+    assert(not find(visible),"turning neighbors off must remove existing pins")
+    GatherLite.db.char.worldmap.neighbors=true
+    GatherLite:Trigger("settings:update")
+    frame=find(visible)
+    local loadedQueries = queries
+    view = { .6, .8, .3, .5 }; tick(.2)
+    assert(find(visible) == frame and visible.loadedWorldmap, "pan must retain the existing neighbor pin")
+    view = { 0, 1, 0, 1 }; tick(.2)
+    assert(find(visible) == frame and queries == loadedQueries, "pan/zoom must not requery or recreate pins")
+    GatherLite.db.char.worldmap.tracking.mining = false
+    GatherLite:Trigger("settings:update")
+    assert(not find(visible), "neighbor pins must respect tracking")
+    GatherLite.db.char.worldmap.tracking.mining = true
+    GatherLite:Trigger("settings:update")
+    assert(find(visible))
+    -- Even a node explicitly stored under an overview ID must stay hidden.
+    GatherLite:LoadTable("mining", { { type = "mining", mapID = 1415, posX = .5, posY = .5, object = 1731, instance = 0 } })
+    WorldMapFrame.mapID = 1415; tick(.2)
+    assert(next(pins.worldmap) == nil, "continent overview must not display any node pins")
+    WorldMapFrame.mapID = 947; tick(.2)
+    assert(next(pins.worldmap) == nil, "world overview must not display any node pins")
+    WorldMapFrame.mapID = 1429; tick(.2)
+    assert(find(visible), "return to zone must restore visible neighbor")
+    WorldMapFrame:Hide(); tick(.2)
+    assert(not find(visible) and not visible.loadedWorldmap, "closing map must unload neighbor")
+    GatherLite.GetWorldMapNodesForRect = originalQuery
+end
+print("World-map neighbors passed: projected pins, source identity, no pan/zoom reload, tracking, map changes and cleanup")

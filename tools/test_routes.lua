@@ -26,7 +26,7 @@ local function node(kind, name, parent)
     frames[#frames+1]=f
     return f
 end
-for _, key in ipairs({"SetJustifyH","SetFontObject","SetHitRectInsets","SetColorTexture","SetTexture",
+for _, key in ipairs({"EnableGamePadButton","EnableGamePadStick","SetWordWrap","SetJustifyH","SetFontObject","SetHitRectInsets","SetColorTexture","SetTexture",
     "SetAllPoints","SetTexCoord","SetHorizTile","SetVertTile","SetVertexColor","SetHighlightTexture","SetThickness","SetScale","SetFrameStrata",
     "SetShadowOffset","SetShadowColor","SetAlpha","SetClampRectInsets","SetToplevel","EnableMouse","SetTitle","SetPortraitToAsset","SetMovable","SetClampedToScreen",
     "RegisterForDrag","StartMoving","StopMovingOrSizing","SetAutoFocus","SetMaxLetters","ClearFocus",
@@ -47,11 +47,18 @@ function methods:Show()
     self.shown=true
     if changed and self.scripts.OnShow then self.scripts.OnShow(self) end
 end
-function methods:Hide() self.shown=false end
+function methods:Hide()
+    local changed=self.shown
+    self.shown=false
+    if changed and self.scripts.OnHide then self.scripts.OnHide(self) end
+end
+function methods:RegisterEvent(event) self.events=self.events or {}; self.events[event]=true end
+function methods:UnregisterEvent(event) if self.events then self.events[event]=nil end end
 function methods:SetShown(v) if v then self:Show() else self:Hide() end end
 function methods:IsShown() return self.shown end
 function methods:IsVisible() return self.shown and (not self.parent or self.parent:IsVisible()) end
 function methods:SetEnabled(v) self.enabled=v end
+function methods:IsEnabled() return self.enabled~=false end
 function methods:SetChecked(v) self.checked=v end
 function methods:GetChecked() return self.checked end
 function methods:SetID(v) self.id=v end
@@ -63,6 +70,7 @@ function methods:SetEndPoint(_,x,y) self.finish={x,y} end
 function methods:SetScrollChild(child) self.content=child end
 function methods:SetVerticalScroll(v) self.scroll=v end
 function methods:GetVerticalScroll() return self.scroll or 0 end
+function methods:GetStringHeight() return math.ceil(#(self.text or "")/110)*16 end
 function methods:GetVerticalScrollRange() return math.max(0,self.content.height-self.height) end
 function methods:Init(v) self.value=v end
 function methods:SetValue(v) self.value=v; if self.callback then self.callback(self,v) end end
@@ -74,6 +82,16 @@ function methods:GetFrameStrata() return "DIALOG" end
 function methods:GetCanvas() return self.ScrollContainer.Child end
 function methods:GetCanvasScale() return self.canvasScale or 1 end
 function methods:GetHorizontalScroll() return self.scrollX or 0 end
+-- Forever MapCanvasMixin's inherited focus contract (including line 982).
+function methods:IsMouseMotionFocus() return self.mouseMotionFocus or false end
+function methods:IsCanvasMouseFocus()
+    if InputUtil.IsGamepadUIEnabled() then return self:IsMapFocused() end
+    return self.ScrollContainer:IsMouseMotionFocus()
+end
+function methods:IsCanvasMouseFocusOrPinFocus()
+    if InputUtil.IsGamepadUIEnabled() then return self:IsMapFocused() end
+    return self.ScrollContainer:IsMouseMotionFocus()
+end
 function methods:OnMapChanged() end
 function methods:GetMapID() return self.mapID end
 function methods:SetMapID(id) self.mapID=id; self:OnMapChanged() end
@@ -100,11 +118,22 @@ MapExplorationDataProviderMixin={}
 MapHighlightDataProviderMixin={}
 MAP_CANVAS_MOUSE_WHEEL_ZOOM_BEHAVIOR_SMOOTH=1
 
-local templates={ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,
+local templates={HelpTipTemplate=true,NavBarTemplate=true,ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,
     CheckboxWithLabelTemplate=true,MinimalSliderWithSteppersTemplate=true,MinimalScrollBar=true,InputBoxTemplate=true,GatherLiteMapCanvasTemplate=true}
 function CreateFrame(kind,name,parent,template)
     assert(not template or templates[template], tostring(template))
     local f=node(kind,name,parent)
+    if template=="MinimalSliderWithSteppersTemplate" then
+        f.Slider=node("Slider",nil,f); f.Back=node("Button",nil,f); f.Forward=node("Button",nil,f)
+    end
+    if template=="HelpTipTemplate" then
+        f.OkayButton=node("Button",nil,f); f.CloseButton=node("Button",nil,f)
+        function f:Reset() self.info=nil; self.OkayButton:Hide(); self.CloseButton:Hide() end
+        function f:Init(owner,info,target) self.info=info; self.relativeRegion=target end
+        function f:Layout() self.OkayButton:Show() end
+        f:SetScript("OnHide",function() f:Close() end)
+    end
+    if template=="NavBarTemplate" then f.home=node("Button",nil,f); f.overflow=node("DropdownButton",nil,f) end
     if template=="ButtonFrameTemplate" then f.Inset=node("Frame",nil,f); f.CloseButton=node("Button",nil,f) end
     if template=="CheckboxWithLabelTemplate" then f.Text=node("FontString",nil,f) end
     if template=="GatherLiteMapCanvasTemplate" then
@@ -126,6 +155,13 @@ WorldMapFrame.ScrollContainer:SetSize(1000,1000)
 WorldMapFrame.ScrollContainer.Child=node("Frame",nil,WorldMapFrame.ScrollContainer)
 WorldMapFrame.ScrollContainer.Child:SetSize(1000,1000)
 
+function NavBar_Initialize(bar, template, homeData, home, overflow)
+    assert(template=="NavButtonTemplate" and home and overflow)
+    bar.homeData=homeData; bar.buttons={}
+end
+function NavBar_Reset(bar) bar.buttons={} end
+function NavBar_AddButton(bar, data) bar.buttons[#bar.buttons+1]=data end
+function NavBar_CheckLength() end
 function ButtonFrameTemplate_HideButtonBar() end
 function PanelTemplates_SetNumTabs() end
 function PanelTemplates_TabResize() end
@@ -227,7 +263,12 @@ load("scripts/ui.lua")
 load("scripts/maps/reveal-data.lua")
 load("scripts/maps/reveal.lua")
 load("scripts/maps/zoom.lua")
+load("scripts/maps/controller-input.lua")
+load("scripts/maps/controller.lua")
 load("scripts/window.lua")
+HelpTip={width=226,ButtonStyle={GotIt=4,Next=5},Alignment={Center=2},
+    Point={LeftEdgeCenter=11,BottomEdgeCenter=5,RightEdgeCenter=8,TopEdgeCenter=2}}
+load("scripts/maps/onboarding.lua")
 local W=addon.Window
 W:Show()
 assert(W.frame:GetWidth()==1160 and W.selectedTab==1)
@@ -240,6 +281,10 @@ W.search:SetText("silverleaf"); W.search.scripts.OnTextChanged()
 assert(W.rows[1].object==addon.nodeDB[2] and not W.rows[2]:IsShown())
 W.rows[1].scripts.OnClick(W.rows[1])
 assert(W.zoneLabel.text:find("No known locations",1,true))
+addon.nodeDB[1].aliases={"weak_copper_vein"}
+W.search:SetText("weak"); W.search.scripts.OnTextChanged()
+assert(W.rows[1].object==addon.nodeDB[1] and not W.rows[2]:IsShown(), "variant search must return its base resource once")
+addon.nodeDB[1].aliases=nil
 W.search:SetText("["); W.search.scripts.OnTextChanged()
 assert(W.noResults:IsShown(),"search interpreted pattern syntax")
 W.search:SetText(""); W.search.scripts.OnTextChanged()
@@ -378,12 +423,35 @@ assert(#Pins.world==0 and #Pins.mini==2,"world-map Fishing filter affected the m
 GatherLite.db.char.minimap.fishing=false; F:Refresh()
 assert(#Pins.world==0 and #Pins.mini==0)
 GatherLite.db.char.worldmap.fishing=true; GatherLite.db.char.minimap.fishing=true
+WorldMapFrame:Hide()
+local refresh=F.Refresh
+local refreshes=0
+F.Refresh=function(self) refreshes=refreshes+1; return refresh(self) end
 F.setup()
 local watcher=frames[#frames]
+watcher.scripts.OnUpdate(watcher,.01)
+assert(#Pins.world==0 and #Pins.mini==2 and refreshes==1,"initial fish pins waited for polling or refreshed twice")
+WorldMapFrame:Show()
+watcher.scripts.OnUpdate(watcher,.01)
+assert(#Pins.world==2 and refreshes==2,"opening world map delayed fish pins")
+watcher.scripts.OnUpdate(watcher,.01)
+assert(refreshes==2,"unchanged world map rebuilt fish pins")
+WorldMapFrame.mapID=2
+watcher.scripts.OnUpdate(watcher,.01)
+assert(#Pins.world==1 and Pins.world[1].mapID==2 and refreshes==3,"browsing zones delayed fish pins")
+WorldMapFrame:Hide()
+watcher.scripts.OnUpdate(watcher,.01)
+assert(#Pins.world==0 and #Pins.mini==2,"closing world map left stale fish pins")
+WorldMapFrame:Show()
+watcher.scripts.OnUpdate(watcher,.01)
+assert(#Pins.world==1 and Pins.world[1].mapID==2,"reopening world map delayed fish pins")
+local beforeRefresh=refreshes
+playerMap=2
 watcher.scripts.OnUpdate(watcher,.3)
-playerMap=2; WorldMapFrame.mapID=2
+assert(#Pins.world==1 and #Pins.mini==1 and refreshes==beforeRefresh+1,"fish pins did not follow player-zone changes")
 watcher.scripts.OnUpdate(watcher,.3)
-assert(#Pins.world==1 and #Pins.mini==1 and Pins.world[1].mapID==2,"fish pins did not follow map/zone changes")
+assert(refreshes==beforeRefresh+1,"idle player polling rebuilt fish pins")
+F.Refresh=refresh
 GatherLite.db.global.usePredefined=false; F:Refresh()
 assert(#Pins.world==0 and #Pins.mini==0,"automatic reference pins ignored predefined-data toggle")
 -- A dense shoreline stays readable and keeps the same geographic anchors at every zoom.
@@ -427,3 +495,203 @@ for _,pin in ipairs(Pins.world) do native[string.format("%.6f:%.6f",pin.u,pin.v)
 for _,point in ipairs(anchors[1]) do assert(native[string.format("%.6f:%.6f",point.u,point.v)]) end
 assert(#Pins.mini<10,"minimap catch markers remain overcrowded")
 print("Fishing filters on both maps, grouped species, zone refresh and marker-density checks passed")
+
+-- Native breadcrumbs follow the full map hierarchy and offer sibling dropdowns.
+do
+    local originalInfo, originalChildren = C_Map.GetMapInfo, C_Map.GetMapChildrenInfo
+    local maps = {
+        [947]={mapID=947,name="Azeroth",mapType=1,parentMapID=0},
+        [1415]={mapID=1415,name="Eastern Kingdoms",mapType=2,parentMapID=947},
+        [1453]={mapID=1453,name="Stormwind City",mapType=3,parentMapID=1415},
+        [1429]={mapID=1429,name="Elwynn Forest",mapType=3,parentMapID=1415},
+    }
+    C_Map.GetMapInfo=function(id) return maps[id] or originalInfo(id) end
+    C_Map.GetMapChildrenInfo=function(id)
+        local children={}; for _,info in pairs(maps) do if info.parentMapID==id then children[#children+1]=info end end
+        return children
+    end
+    W:SetMap(1453)
+    local crumbs=W.breadcrumb.buttons
+    assert(#crumbs==2 and crumbs[1].id==1415 and crumbs[2].id==1453,"full breadcrumb hierarchy")
+    local siblings=crumbs[2].listFunc()
+    assert(#siblings==2 and siblings[1].id==1429,"sorted zone dropdown")
+    siblings[1].func(nil,1429); assert(W.mapID==1429,"dropdown did not navigate")
+    W.breadcrumb.buttons[1].OnClick(); assert(W.mapID==1415,"continent breadcrumb did not navigate")
+    local childZones=W.breadcrumb.buttons[1].listFunc()
+    assert(#childZones==2 and childZones[1].id==1429,"continent dropdown must let controller enter a zone")
+    W.breadcrumb.homeData.OnClick()
+    for _,pin in ipairs(W.pins) do assert(not pin:IsShown(),"overview resource pin leaked") end
+    for _,line in ipairs(W.mapOverlay.lines) do assert(not line:IsShown(),"overview route leaked") end
+    assert(W.mapID==947 and #W.breadcrumb.buttons==0,"world breadcrumb")
+    W.sidebar:Hide(); W:LayoutMap()
+    assert(W.sidebar:IsShown() and W.map.point[4]==-280,"sidebar must always reserve its width")
+    for _,f in ipairs(frames) do assert(f:GetText()~="Find","sidebar toggle still exists") end
+    C_Map.GetMapInfo, C_Map.GetMapChildrenInfo=originalInfo,originalChildren
+    W:SetMap(1)
+end
+
+-- Controller input must never mutate Blizzard's shared binding stack.
+do
+    local enabled=false
+    InputUtil={IsGamepadUIEnabled=function() return enabled end}
+    local function forbidden() error("shared controller stack used") end
+    GamepadMode={FrameControlsManager={FrameShown=forbidden,FrameHidden=forbidden,GetActiveFrame=function() return nil end},
+        CreateBindingGroup=forbidden,ActivateBindingGroup=forbidden,DeactivateBindingGroup=forbidden}
+    SmartNavigation=setmetatable({}, {__index=function() return forbidden end})
+    GAMEPAD_STICK_LEFT="PADLSTICKAXIS"; GAMEPAD_STICK_RIGHT="PADRSTICKAXIS"
+    GAMEPAD_SHOULDER_LEFT="PADLSHOULDER"; GAMEPAD_SHOULDER_RIGHT="PADRSHOULDER"
+    GAMEPAD_DPAD_LEFT="PADDLEFT"; GAMEPAD_DPAD_RIGHT="PADDRIGHT"
+    GAMEPAD_FACE_BOTTOM="PAD1"; GAMEPAD_FACE_RIGHT="PAD2"; GAMEPAD_BUTTON_ANY_DOWN_OR_UP={}
+    W.frame.scripts.OnEvent(W.frame,"ADDON_LOADED")
+    W:Show(); enabled=true
+    W.frame.scripts.OnUpdate(W.frame,.02)
+    local input=W.controllerInput
+    assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
+    W:SelectTab(2); W.settingsButtons.worldmap:GetScript("OnClick")()
+    local slider
+    for _,control in ipairs(W.settingsPanels.worldmap.controls) do if control.AdjustBy then slider=control; break end end
+    W:SetControllerTarget(slider)
+    local initial=slider.value
+    input.scripts.OnGamePadButtonDown(input,"PADDRIGHT")
+    input.scripts.OnGamePadButtonUp(input,"PADDRIGHT")
+    assert(slider.value>initial and not W.editSlider,"D-pad must adjust without Confirm")
+    local increased=slider.value
+    input.scripts.OnGamePadStick(input,"Movement",-.8,0)
+    input.scripts.OnGamePadStick(input,"Movement",0,0)
+    assert(slider.value<increased,"left stick must adjust focused slider")
+    input.scripts.OnGamePadStick(input,"Movement",.8,0)
+    local beforeRepeat=slider.value
+    input.scripts.OnGamePadStick(input,"Camera",0,0)
+    input.scripts.OnUpdate(input,.4)
+    assert(slider.value>beforeRepeat,"held left stick must repeat adjustment")
+    input.scripts.OnGamePadStick(input,"Movement",0,0)
+    local released=slider.value
+    input.scripts.OnUpdate(input,.4)
+    assert(slider.value==released,"released stick kept changing slider")
+    input.scripts.OnGamePadButtonDown(input,"PAD2")
+    assert(W.controllerNavigation:GetCurrentButton()==W.settingsButtons.worldmap,"Back must return to categories")
+    W:SetControllerTarget(slider)
+    input.scripts.OnGamePadButtonDown(input,"PAD1")
+    assert(W.editSlider==slider)
+    local old=slider.value
+    input.scripts.OnGamePadButtonDown(input,"PADDRIGHT")
+    input.scripts.OnGamePadButtonUp(input,"PADDRIGHT")
+    assert(slider.value>old)
+    input.scripts.OnGamePadButtonDown(input,"PAD2")
+    assert(not W.editSlider and W.frame:IsShown())
+    W:SelectTab(1)
+    W.rows[1]:GetScript("OnClick")(W.rows[1])
+    assert(W.controllerNavigation:GetCurrentButton()==W.generate or W.controllerNavigation:GetCurrentButton()==W.open)
+    local oldInfoAtPosition=C_Map.GetMapInfoAtPosition
+    C_Map.GetMapInfoAtPosition=function(id,x,y)
+        assert(x>=0 and x<=1 and y>=0 and y<=1)
+        return {mapID=2}
+    end
+    W:SetMap(1); W:SetControllerTarget(W.search)
+    assert(not W.mapCursor:IsShown(),"map cursor should hide when navigating controls")
+    input.scripts.OnGamePadStick(input,"Movement",.8,0)
+    assert(W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown(),"stick must enter map focus")
+    local beforeX=W.mapCursorX
+    W.frame.scripts.OnUpdate(W.frame,.02)
+    assert(W.mapCursorX>beforeX,"stick must move the visible cursor")
+    input.scripts.OnGamePadStick(input,"Movement",0,0)
+    local pan=addon.MapZoom.Pan
+    local edgePan=0
+    addon.MapZoom.Pan=function(_,x,y) assert(x>0); edgePan=edgePan+1 end
+    W:MoveControllerMapCursor(2,0)
+    assert(edgePan==1 and W.mapCursorX<1,"cursor must pan at edge and stay visible")
+    addon.MapZoom.Pan=pan
+    assert(W.mapCursor:IsShown())
+    input.scripts.OnGamePadButtonDown(input,"PAD1")
+    assert(W.mapID==2,"controller confirm failed to enter zone")
+    local originalCursor=W.map.ScrollContainer.GetNormalizedCursorPosition
+    W.map.ScrollContainer.GetNormalizedCursorPosition=function() return .2,.3 end
+    local x,y=W.map:GetNormalizedCursorPosition()
+    assert(x==.2 and y==.3,"mouse must not use Blizzard's unrelated soft cursor")
+    W.map.ScrollContainer.GetNormalizedCursorPosition=originalCursor
+    C_Map.GetMapInfoAtPosition=oldInfoAtPosition
+    W:SelectTab(3)
+    assert(W.pages[3]:IsShown() and not W.pages[1]:IsShown() and not W.pages[2]:IsShown())
+    assert(W.controllerNavigation:GetCurrentButton()==W.tabs[3] and not W.mapCursor:IsShown())
+    assert(W.controllerNavigation.scroll==W.changelogScroll,"release notes must own controller scrolling")
+    W.changelogScroll:SetVerticalScroll(0)
+    input.scripts.OnGamePadStick(input,"Camera",0,-1)
+    input.scripts.OnUpdate(input,.1)
+    assert(W.changelogScroll:GetVerticalScroll()>0,"right stick must scroll release notes")
+    W:SetControllerTarget(W.tabs[1])
+    input.scripts.OnGamePadButtonDown(input,"PAD1")
+    assert(W.selectedTab==1 and W.frame:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map)
+    assert(W.controllerNavigation.scrollSpeed==0,"tab switch must stop held scrolling")
+    W:ShowOnboarding(); assert(W.controllerNavigation:GetCurrentButton()==W.guide.next)
+    assert(W.guide.info.text:find("Search by resource",1,true) and W.guide.info.text:find("Controller",1,true),"controller tip replaced feature explanation")
+    input.scripts.OnGamePadButtonDown(input,"PAD2"); assert(not W.helpStep)
+    input.scripts.OnGamePadButtonDown(input,"PAD2"); assert(not W.frame:IsShown() and not input:IsShown())
+    W:Show(); enabled=false; W.frame.scripts.OnUpdate(W.frame,.02); assert(not input:IsShown() and not W.mapCursor:IsShown())
+end
+print("Addon-owned controller input and forbidden shared-stack regression passed")
+
+-- Auto-open only once, and allow replay without changing the saved flag.
+W.frame:Hide(); GatherLite.db.global.controlsGuideSeen=nil
+W:ShowFirstLogin()
+assert(W.frame:IsShown() and W.helpStep==1 and GatherLite.db.global.controlsGuideSeen)
+local targets={W.search,W.generate:IsShown() and W.generate or W.routeCard,W.breadcrumb,W.map.ScrollContainer,W.tabs[2]}
+for i=1,5 do
+    assert(W.guide.relativeRegion==targets[i],"tip must point at the explained control")
+    assert(W.guide.info.targetPoint and not W.guide.info.hideArrow,"native arrow missing")
+    W.guide.next:GetScript("OnClick")()
+end
+assert(not W.helpStep and not W.pages[1].smartNavigationIgnored)
+W.frame:Hide(); W:ShowFirstLogin(); assert(not W.frame:IsShown(),"guide reopened on subsequent login")
+W:Show(); W.help:GetScript("OnClick")(); assert(W.helpStep==1)
+W.guide.CloseButton:GetScript("OnClick")()
+assert(not W.helpStep and not W.guide:IsShown(),"native close must dismiss the tour")
+W:ShowOnboarding(); W:SelectTab(2)
+assert(not W.helpStep,"switching away must not leave tips on hidden map controls")
+W:SelectTab(1)
+print("Controller shortcuts, map input lifecycle and first-login onboarding passed")
+
+W.frame:Hide(); GatherLite:ToggleWindow(); assert(W.frame:IsShown())
+GatherLite:ToggleWindow(); assert(not W.frame:IsShown())
+assert(BINDING_NAME_GATHERLITE_TOGGLE=="Toggle GatherLite window")
+print("Assignable main-window key binding passed")
+
+W:Show(); W:SelectTab(2)
+W.settingsButtons.debugging:GetScript("OnClick")()
+local reset=addon.SettingsOptions.args.debugging.args.resetOnboarding
+assert(reset and reset.type=="execute")
+reset.func()
+assert(W.selectedTab==1 and W.helpStep==1 and GatherLite.db.global.controlsGuideSeen,"reset must replay onboarding")
+W:CloseOnboarding()
+print("Controller settings sliders, category focus and onboarding reset passed")
+
+-- Resource switches must clear old circuits, including suspended calculations.
+GatherLite.db.global.usePredefined=true
+W.map.canvasScale=1; W.map.ScrollContainer.scrollX=0; W.map.ScrollContainer:SetVerticalScroll(0)
+W:Show(); W:SelectObject(addon.nodeDB[1])
+GatherLite.db.char.routeVisible=true
+R:Generate(addon.nodeDB[1]); while R.worker do R:Tick() end
+assert(W.mapOverlay.lines[1]:IsShown())
+local route=R.active
+W:SelectObject(addon.nodeDB[1])
+assert(R.byMap and R.object==addon.nodeDB[1],"reselecting same resource discarded routes")
+W:SelectObject(addon.nodeDB[2])
+assert(not R.active and not R.byMap and not R.worker and not GatherLite.db.char.routeObject)
+for _,line in ipairs(W.mapOverlay.lines) do assert(not line:IsShown(),"old resource route remained visible") end
+R:Generate(addon.nodeDB[1])
+assert(R.object==addon.nodeDB[1] and R.worker,"pending route must retain its owner")
+W:SelectObject(addon.nodeDB[2]); local chosenMap=W.mapID
+R:Tick()
+assert(not R.worker and W.object==addon.nodeDB[2] and W.mapID==chosenMap,"cancelled generation stole selection")
+-- Defend every render path even if a stale active route is supplied.
+R.active=route; R.byMap=nil
+W:SetMap(route.mapID)
+R:DrawOnCanvas(W.mapOverlay,W.map,addon.nodeDB[2])
+for _,line in ipairs(W.mapOverlay.lines) do assert(not line:IsShown(),"renderer ignored resource mismatch") end
+W:SetMap(777)
+R:DrawOnCanvas(W.mapOverlay,W.map)
+for _,line in ipairs(W.mapOverlay.lines) do assert(not line:IsShown(),"active fallback projected into wrong map") end
+W:SetMap(route.mapID)
+R:DrawOnCanvas(W.mapOverlay,W.map,route.object)
+assert(W.mapOverlay.lines[1]:IsShown(),"matching resource/zone route must render")
+R:Clear()
+print("Route ownership passed: resource switches, same-resource retention, cancellation and map isolation")

@@ -7,3 +7,5 @@ gatherlite-banner.jpg export-ignore
 gatherlite-elwyn.jpg export-ignore
 
 *.lua text
+# Pinned client exports are hashed byte-for-byte.
+tools/maps/**/*.csv text eol=lf

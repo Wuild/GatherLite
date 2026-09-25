@@ -183,6 +183,21 @@ function UI.SettingsGroup(parent, group, name)
     scroll:SetPoint("TOPLEFT", 204, -76)
     scroll:SetPoint("BOTTOMRIGHT", -28, 12)
     local content, cursor, column, refresh = scroll.content, 0, 0, {}
+    scroll.controls={}
+    local function control(frame,x,y)
+        frame.settingsX,frame.settingsY=x,y
+        scroll.controls[#scroll.controls+1]=frame
+        frame.OnSmartNavSelect=function()
+            local top=frame.settingsY
+            local bottom=top+frame:GetHeight()+8
+            local offset=scroll:GetVerticalScroll()
+            if top<offset then offset=top
+            elseif bottom>offset+scroll:GetHeight() then offset=bottom-scroll:GetHeight() end
+            scroll:SetVerticalScroll(math.max(0,math.min(scroll:GetVerticalScrollRange(),offset)))
+            local navigation=addon.Window and addon.Window.controllerNavigation
+            if navigation then navigation:SetScrollFrameForFrame(addon.Window.frame,scroll) end
+        end
+    end
     local function flush()
         if column > 0 then cursor = cursor + 30; column = 0 end
     end
@@ -245,6 +260,7 @@ function UI.SettingsGroup(parent, group, name)
                     end)
                     check:SetScript("OnLeave",function() GameTooltip:Hide() end)
                 end
+                control(check,x,cursor)
                 check:SetScript("OnClick",function(self)
                     option.set(nil,self:GetChecked() and true or false)
                     if addon.Window then addon.Window:RefreshSettings() end
@@ -254,6 +270,17 @@ function UI.SettingsGroup(parent, group, name)
                     column=column+1
                     if column==3 then column=0; cursor=cursor+30 end
                 else cursor=cursor+height+4 end
+            elseif option.type=="execute" then
+                flush()
+                local button=UI.Button(content,value(option.name),240,function() option.func() end)
+                button:SetPoint("TOPLEFT",8,-cursor)
+                control(button,0,cursor)
+                local description=value(option.desc)
+                if description then
+                    local hint=UI.InkText(content,description,"GameFontHighlightSmall")
+                    hint:SetPoint("TOPLEFT",8,-cursor-30); hint:SetWidth(880)
+                end
+                cursor=cursor+(description and 64 or 38)
             elseif option.type=="range" then
                 flush()
                 local label=UI.InkText(content,value(option.name),"GameFontHighlight")
@@ -261,6 +288,21 @@ function UI.SettingsGroup(parent, group, name)
                 label:SetTextColor(.20,.12,.055)
                 local slider=CreateFrame("Frame",nil,content,"MinimalSliderWithSteppersTemplate")
                 slider:SetPoint("TOPLEFT",16,-cursor-32); slider:SetWidth(535)
+                control(slider,0,cursor+32)
+                slider.smartNavigationCanFocus=true
+                for _,child in ipairs({slider.Slider,slider.Back,slider.Forward}) do child.smartNavigationIgnored=true end
+                slider.OnSmartNavClick=function()
+                    if addon.Window and addon.Window.BeginSliderEdit then addon.Window:BeginSliderEdit(slider) end
+                end
+                slider.OnSmartNavDeselect=function()
+                    if addon.Window and addon.Window.editSlider==slider then addon.Window:EndSliderEdit() end
+                end
+                slider.AdjustBy=function(_,direction)
+                    local current=option.get()
+                    local steps=math.floor((current-option.min)/option.step+.5)+direction
+                    local nextValue=math.max(option.min,math.min(option.max,option.min+steps*option.step))
+                    if math.abs(nextValue-current)>option.step*.001 then slider:SetValue(nextValue) end
+                end
                 local updating=false
                 slider:Init(option.get(),option.min,option.max,math.floor((option.max-option.min)/option.step+.5),{
                     [MinimalSliderWithSteppersMixin.Label.Right]=function(v) return string.format("%.1f",v) end,

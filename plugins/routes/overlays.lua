@@ -48,9 +48,14 @@ end
 
 -- Draw in viewport coordinates above exploration art. Canvas children can be
 -- buried beneath Blizzard's exploration pin, and their scale changes on zoom.
-function Routes:DrawOnCanvas(frame, map)
-    local route, count = (self.byMap and self.byMap[map:GetMapID()]) or self.active, 0
-    if route and GatherLite.db.char.routeVisible ~= false then
+function Routes:DrawOnCanvas(frame, map, object)
+    local mapID=map:GetMapID()
+    local route, count = (self.byMap and self.byMap[mapID]) or self.active, 0
+    local info=mapID and C_Map.GetMapInfo(mapID)
+    -- Routes belong to one resource in one zone. Never project a fallback
+    -- circuit into another map, including adjacent zones with overlapping art.
+    if route and route.mapID==mapID and (object==nil or route.object==object)
+        and info and info.mapType==3 and GatherLite.db.char.routeVisible ~= false then
         local scroll = map.ScrollContainer
         local left, right, top, bottom = self:GetViewport(map)
         if left and right and top and bottom then

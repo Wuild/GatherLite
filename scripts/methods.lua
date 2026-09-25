@@ -358,13 +358,19 @@ function GatherLite:findLoot(list, name)
 end
 
 function GatherLite:findNodeType(target)
-    for index, object in pairs(_GatherLite.nodeDB) do
-        if (string.lower(target) == string.lower(GatherLite:translate("node." .. object.name))) then
-            return object.id[1];
+    if API.IsSecret(target) or type(target) ~= "string" then return nil end
+    local lowered = string.lower(target)
+    for _, object in ipairs(_GatherLite.nodeDB) do
+        if lowered == string.lower(GatherLite:translate("node." .. object.name)) then
+            return object.id[1]
+        end
+        for _, alias in ipairs(object.aliases or {}) do
+            if lowered == string.lower(GatherLite:translate("node." .. alias)) then
+                return object.id[1]
+            end
         end
     end
-
-    return nil;
+    return nil
 end
 
 function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
@@ -562,8 +568,15 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
     end
 
     local cellX, cellY = nodeCellCoords(posX, posY)
-    local cellRadius = math.ceil(maxDist / (scale * NODE_RANGE))
-    if cellRadius >= NODE_CELL_INV then
+    -- Map height can differ from width. Use separate radii so vertical
+    -- border queries do not miss nodes on rectangular maps.
+    local width, height
+    if HBD.GetZoneSize then width, height = HBD:GetZoneSize(mapID) end
+    width = width and width > 0 and width or scale
+    height = height and height > 0 and height or scale
+    local radiusX = math.ceil(maxDist / (width * NODE_RANGE))
+    local radiusY = math.ceil(maxDist / (height * NODE_RANGE))
+    if radiusX >= NODE_CELL_INV and radiusY >= NODE_CELL_INV then
         local instance = instanceID
         if instance == nil then
             local _, _, mapInstance = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
@@ -578,8 +591,8 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
     local out = {}
     local cells = index.byCell[mapID]
     if not cells then return out end
-    for cx = math.max(0, cellX - cellRadius), math.min(NODE_CELL_STRIDE - 1, cellX + cellRadius) do
-        for cy = math.max(0, cellY - cellRadius), math.min(NODE_CELL_STRIDE - 1, cellY + cellRadius) do
+    for cx = math.max(0, cellX - radiusX), math.min(NODE_CELL_STRIDE - 1, cellX + radiusX) do
+        for cy = math.max(0, cellY - radiusY), math.min(NODE_CELL_STRIDE - 1, cellY + radiusY) do
             local bucket = cells[nodeCellKey(cx, cy)]
             if bucket then
                 for i = 1, #bucket do out[#out + 1] = bucket[i] end
@@ -742,7 +755,11 @@ function GatherLite:EventHandler(event, ...)
 
         GatherLite:SendVersionCheck()
         GatherLite:Load();
-        GatherLite:ShowReleaseThanks();
+        if _GatherLite.Window and not GatherLite.db.global.controlsGuideSeen then
+            C_Timer.After(3, function() _GatherLite.Window:ShowFirstLogin() end)
+        else
+            GatherLite:ShowReleaseThanks();
+        end
 
     elseif event == "LOOT_OPENED" then
         if (tracker.spellID and tracker.ended and GetTime() - tracker.ended < 1) then

@@ -28,7 +28,7 @@ After reviewing changes and running tests, build and upload:
 python tools/publish.py --version 8.0.1
 ```
 
-Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the numeric version for each release.
+Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the minor version for new features and reserve patch increments for database updates. Always update the main window's What's New highlights before publishing (see `AGENT.md`).
 
 The publisher validates the addon load paths, resolves the exact CurseForge game-version IDs for all configured game versions, and uploads a Release to the configured project. The ZIP and checksum are created under `dist/`; the source TOC's `@project-version@` is replaced inside the package only. Uncommitted changes are included. Tests, commits, and tags are not run or created by the publisher.
 
@@ -70,7 +70,7 @@ Publisher tests mock HTTP. Packaging tests use temporary test archives. For allo
 In-game checks: enable `/console scriptErrors 1`, reload, test both map menus, gathering/lockpicking, tooltips, nearby circles, and saved history after reload.
 
 
-For routing/window changes, also check in game: /gather opens World Map; scroll, drag, click a zone and right-click back; toggle Find to expand the map; search and browse resources; calculate and cancel with visible progress; hide/clear a route; open the game world map and zoom/pan with the same circuit visible above terrain; check a rotating minimap; reload to restore the selected route. Verify every Settings category and control, including persistence after reload. Lua mocks cover logic and wiring, not rendering.
+For routing/window changes, also check in game: /gather opens World Map; scroll, drag, click a zone and right-click back; use breadcrumb dropdowns and the permanent sidebar; search and browse resources; calculate and cancel with visible progress; hide/clear a route; open the game world map and zoom/pan with the same circuit visible above terrain; check a rotating minimap; reload to restore the selected route. Verify every Settings category and control, including persistence after reload. Lua mocks cover logic and wiring, not rendering.
 
 
 Fish reference checks are included in test_routes.lua and test_fish_import.py.
@@ -80,3 +80,12 @@ zones, search a fish to narrow the overlay, then hide and clear it. Hover cluste
 markers to inspect all reported fish. Check a zone-only fish (for example Raw
 Longjaw Mud Snapper) shows zone information without invented pins, and check
 Herbalism/Mining requirements in the resource list, details and pin tooltips.
+
+## Static zone neighbors
+
+The addon reads a checked-in neighbor table covering all 60 UI maps in Forever
+build 1.60.1.70009. Rebuild it offline from the pinned client exports with
+`python tools/build_zone_neighbors.py`, or validate it with
+`python tools/build_zone_neighbors.py --check`.
+See [the map audit](../docs/zone-neighbors.md) for source provenance, the definition
+of a spatial neighbor, supported range and build-update instructions.

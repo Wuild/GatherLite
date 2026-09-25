@@ -73,7 +73,7 @@ function Fishing:Refresh()
     for _,fish in ipairs(selected and {selected} or addon.fishDB) do
         for mapID,coords in pairs(fish.maps) do
             local info=C_Map.GetMapInfo(mapID)
-            local showWorld=worldEnabled and (selected or worldMap==mapID or
+            local showWorld=worldEnabled and worldInfo and worldInfo.mapType==3 and (selected or worldMap==mapID or
                 (worldInfo and worldInfo.mapType<3 and worldOptions.continent))
             local showMini=miniEnabled and mapID==playerMap
             if info and info.mapType==3 and (showWorld or showMini) then
@@ -116,6 +116,7 @@ function Fishing:Refresh()
         end
         frame.mapID,frame.u,frame.v,frame.fish=mapID,group.u,group.v,group.fish
         frame.icon:SetTexture(group.fish[1].icon)
+        if addon.MapHover then addon.MapHover:Register(frame, not mini) end
         if mini then
             Pins:AddMinimapIconMap(self,frame,mapID,group.u,group.v,false,false)
         else
@@ -138,21 +139,32 @@ function Fishing.setup()
     local frame,elapsedTotal,restored,lastWorld,lastPlayer=CreateFrame("Frame"),0,false
     frame:SetScript("OnUpdate",function(_,elapsed)
         if not GatherLite:IsLoaded() then return end
-        elapsedTotal=elapsedTotal+elapsed
-        if elapsedTotal<.25 then return end
-        elapsedTotal=0
+        local refresh=false
         if not restored then
             restored=true
             for _,fish in ipairs(addon.fishDB) do
                 if fish.itemID==GatherLite.db.char.fishItem then Fishing.object=fish; break end
             end
-            Fishing:Refresh()
+            local _,_,player=HBD:GetPlayerZonePosition()
+            lastPlayer=player
+            refresh=true
         end
+        -- Match gathering pins: opening, closing and browsing maps react next frame.
         local world=WorldMapFrame and WorldMapFrame:IsShown() and WorldMapFrame:GetMapID()
-        local _,_,player=HBD:GetPlayerZonePosition()
-        if world~=lastWorld or player~=lastPlayer then
-            lastWorld,lastPlayer=world,player
-            Fishing:Refresh()
+        if world~=lastWorld then
+            lastWorld=world
+            refresh=true
         end
+        -- Player-zone polling stays throttled; unchanged maps never rebuild pins.
+        elapsedTotal=elapsedTotal+elapsed
+        if elapsedTotal>=.25 then
+            elapsedTotal=0
+            local _,_,player=HBD:GetPlayerZonePosition()
+            if player~=lastPlayer then
+                lastPlayer=player
+                refresh=true
+            end
+        end
+        if refresh then Fishing:Refresh() end
     end)
 end

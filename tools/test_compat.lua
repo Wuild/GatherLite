@@ -240,4 +240,32 @@ for _, id in ipairs({ 178244, 178245, 178246, 123330, 123331, 123332, 123333,
     179486, 179488, 179490, 179487, 179489, 179491, 179492, 179494, 179496, 179493, 179497, 179498 }) do
     check(GatherLite:GetNodeObject(id).type == "container", "training chest alias has a container definition")
 end
+-- Gathering-name aliases work even when the source uses a different canonical name.
+local aliasX = 0.45
+for _, variant in ipairs({
+    { "Weak Copper Vein", 2575, "mining", 1731 },
+    { "Wilted Peacebloom", 2366, "herbalism", 1618 },
+    { "Poor Copper Vein", 2575, "mining", 1731 },
+    { "Ooze Covered Silver Vein", 2575, "mining", 1733 },
+    { "Ooze Covered Gold Vein", 2575, "mining", 1734 },
+    { "Ooze Covered Mithril Deposit", 2575, "mining", 2040 },
+    { "Ooze Covered Truesilver Deposit", 2575, "mining", 2047 },
+    { "Ooze Covered Thorium Vein", 2575, "mining", 324 },
+    { "Ooze Covered Rich Thorium Vein", 2575, "mining", 175404 },
+}) do
+    local title, spell, kind, id = unpack(variant)
+    aliasX = aliasX + 0.02
+    position = { aliasX, 0.42, 1429 }
+    check(GatherLite:findNodeType(string.upper(title)) == id, "starter alias matches case-insensitively")
+    event("UNIT_SPELLCAST_SENT", "player", title, "starter-failed", spell)
+    event("UNIT_SPELLCAST_FAILED", "player", "starter-failed", spell)
+    event("UNIT_SPELLCAST_SUCCEEDED", "player", "starter-failed", spell)
+    check(not GatherLite:FindExistingNode(kind, 1429, aliasX, 0.42, id), "failed starter gather ignored")
+    event("UNIT_SPELLCAST_SENT", "player", title, "starter-success", spell)
+    event("UNIT_SPELLCAST_SUCCEEDED", "player", "starter-success", spell)
+    check(GatherLite:FindExistingNode(kind, 1429, aliasX, 0.42, id) ~= nil, "starter gather saved under base resource")
+    check(GatherLite:GetObject(title) == nil, "unverified starter requirements must not override native tooltip")
+end
+check(GatherLite:findNodeType("Imaginary Copper Vein") == nil, "unknown variants must not match by substring")
+check(GatherLite:findNodeType(secret) == nil, "restricted gathering names ignored")
 print("Passed " .. tests .. " Forever checks")

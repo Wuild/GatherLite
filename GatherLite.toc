@@ -22,4 +22,7 @@ scripts\maps\reveal-data.lua
 scripts\maps\reveal.lua
 scripts\maps\zoom.lua
 scripts\map.xml
+scripts\maps\controller-input.lua
+scripts\maps\controller.lua
 scripts\window.lua
+scripts\maps\onboarding.lua

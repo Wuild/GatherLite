@@ -32,9 +32,12 @@
     <Script file="nodes.lua"/>
     <Script file="frame.lua"/>
     <Script file="methods.lua"/>
+    <Script file="maps\zone-neighbors.lua"/>
+    <Script file="zones.lua"/>
     <Script file="settings.lua"/>
     <Script file="main.lua"/>
 
+    <Script file="maps\hover.lua"/>
     <Script file="modules\worldmap.lua"/>
     <Script file="modules\minimap.lua"/>
 </Ui>

@@ -137,3 +137,56 @@ download directory can be passed with --source-dir.
 The fish data generator references these bundled textures, so regenerating catch
 data does not restore opaque inventory icons. The importer tests check every
 referenced texture's dimensions, alpha channel and transparent borders.
+
+### Player-reported starter variants: September 23, 2026
+
+Weak Copper Vein and Wilted Peacebloom were reported in Northshire Valley, Elwynn
+Forest. Fresh Forever herb/mineral listings and general object name searches do
+not expose these variants. The listing audit therefore establishes coverage of
+Wowhead's published entries only, not every gathering object in the game.
+
+Explicit localized name aliases now record successful gathers under Copper Vein
+and Peacebloom and make those resources searchable by the variant names. No
+variant object IDs, preset coordinates, or skill requirements are inferred. The
+native variant tooltip is left intact. Separate variant definitions and other
+starter variants still need verified IDs and names; unknown prefixes are not
+automatically stripped.
+
+The wider name audit also found six published names whose IDs were already
+grouped in the catalog but whose gathering names were not recognized: Ooze
+Covered Silver Vein (73940), Gold Vein (73941), Mithril Deposit (123310),
+Truesilver Deposit (123309), Thorium Vein (123848), and Rich Thorium Vein (177388).
+All six now have explicit name aliases. Their existing predefined coordinates
+remain unchanged.
+
+[Recorded Tirisfal gathers](https://warcraftforever.games/maps/tirisfal-glades)
+also identify **Poor Copper Vein**, with Copper Ore and Rough Stone loot; its
+name is supported as another Copper Vein alias. The six starter-zone pages
+(Elwynn, Tirisfal, Dun Morogh, Durotar, Mulgore, Teldrassil) have uneven recorder
+coverage, so they cannot establish a complete list of starter variants.
+
+### Database refresh: September 23, 2026
+
+Applied 130 freshly downloaded Wowhead Forever object pages and regenerated
+`plugins/database/data/forever.lua` from `tools/wowhead/forever.json`. Added
+**286 unique locations**, increasing the total from **26,494 to 26,780**; an
+exact set comparison confirmed that all prior coordinates were preserved.
+There are 10 new Elwynn positions (four Copper Vein, four Silverleaf, two
+Earthroot). Across all zones, Copper Vein gained 96 and Peacebloom gained 37.
+All six Ooze Covered ore pages were refreshed; they supplied no new unique
+locations beyond the existing database.
+
+The source run stopped with HTTP 403 at object 180901 after 130 successful
+pages. A retry of the remaining IDs with `--delay 10` also received 403 on its
+first request. An offline import applied the refreshed cache and retained the
+previously cached data for these 14 sources: 180901, 180902, 181068, 181069,
+181108, 181109, 439557, 439558, 439627, 439628, 439762, 439778, 439810, 439815.
+Those 14 sources were not freshly verified in this run.
+
+Fresh herb/mineral listings still contain 99 IDs, with seven excluded quest
+pickups and no uncatalogued IDs. General Forever object searches for `wilt`,
+`weak`, and `poor` returned no objects. Consequently this refresh adds verified
+locations for published resources, but does **not** establish preset spawns for
+Wilted Peacebloom, Weak Copper Vein, or Poor Copper Vein. Their gathering-name
+aliases remain supported; ordinary Copper/Peacebloom coordinates are not claimed
+to be starter-variant spawns.

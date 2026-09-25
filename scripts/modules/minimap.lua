@@ -51,7 +51,7 @@ local MinimapFilter = function(node)
 end
 
 local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
-    local nodes = GatherLite:GetNearbyNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
+    local nodes = GatherLite:GetNearbyZoneNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
     local out = {}
 
     for i = 1, #nodes do
@@ -197,7 +197,8 @@ local function UpdateMinimapIcons()
                 or not MinimapFilter(node) then
                 frame:Unload()
             else
-                local nearby = distance < GatherLite.db.char.minimap.distance
+                local nearby = GatherLite.db.char.minimap.nearbyCircles ~= false
+                    and distance < GatherLite.db.char.minimap.distance
                 if frame.nearby ~= nearby then
                     frame.nearby = nearby
                     frame.texture:SetTexture(nearby and nearbyIcon or frame.object.icon)

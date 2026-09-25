@@ -1,0 +1,5 @@
+<Bindings>
+    <Binding name="GATHERLITE_TOGGLE" header="GATHERLITE">
+        GatherLite:ToggleWindow()
+    </Binding>
+</Bindings>

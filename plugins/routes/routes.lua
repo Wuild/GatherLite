@@ -85,6 +85,9 @@ end
 function Routes:Generate(object, preferredMapID)
     if object.type=="fish" then return end
     self:Clear()
+    -- Track ownership while the coroutine is still running, so a resource
+    -- switch can cancel it before it publishes a route or changes the map.
+    self.object = object
     self.status = "Reading known locations..."
     self.progress = 0
     self:Notify()

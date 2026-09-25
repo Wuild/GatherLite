@@ -38,6 +38,19 @@ function Zoom.Step(map, delta, atCursor)
     scroll:InstantPanAndZoom(scale, x, y, true)
 end
 
+-- Move in viewport fractions, so speed stays consistent at every zoom level.
+function Zoom.Pan(map, dx, dy)
+    local scroll, canvas = map.ScrollContainer, map:GetCanvas()
+    if not scroll:HasZoomLevels() then return end
+    local scale = scroll:GetCanvasScale()
+    local width, height = canvas:GetWidth()*scale, canvas:GetHeight()*scale
+    if width<=0 or height<=0 then return end
+    local x=clampCenter(scroll:GetNormalizedHorizontalScroll()+dx*scroll:GetWidth()/width,scroll:GetWidth()/width)
+    local y=clampCenter(scroll:GetNormalizedVerticalScroll()+dy*scroll:GetHeight()/height,scroll:GetHeight()/height)
+    scroll.zoomTarget=scale
+    scroll:InstantPanAndZoom(scale,x,y,true)
+end
+
 function Zoom.Attach(map)
     local scroll = map.ScrollContainer
     local originalExtents = scroll.CalculateScrollExtentsAtScale

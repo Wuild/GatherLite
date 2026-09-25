@@ -299,6 +299,16 @@ _GatherLite.SettingsOptions = {
             order = 2,
             args = {
                 tracking = mapTrackingOptions("worldmap"),
+                neighbors = {
+                    name = "Show neighboring zone nodes",
+                    desc = "Include nodes from adjacent zones on selected zone maps. Overview maps remain clear.",
+                    type = "toggle", order = 5, width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.worldmap.neighbors = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.worldmap.neighbors end,
+                },
                 zoneTooltip = {
                     name = function() return GatherLite:translate("settings.map.zone_tooltip") end,
                     type = "toggle",
@@ -393,6 +403,18 @@ _GatherLite.SettingsOptions = {
             order = 3,
             args = {
                 tracking = mapTrackingOptions("minimap"),
+                nearbyCircles = {
+                    name = "Show nearby node circles",
+                    desc = "Replace node icons with empty circles when you are close to a gathering location. Disable to keep the normal resource icons.",
+                    type = "toggle",
+                    order = 4,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.minimap.nearbyCircles = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.minimap.nearbyCircles ~= false end,
+                },
                 header = {
                     name = function()
                         return GatherLite:translate("settings.minimap");
@@ -529,6 +551,14 @@ _GatherLite.SettingsOptions = {
             type = "group",
             order = 6,
             args = {
+                resetOnboarding = {
+                    name = "Reset onboarding", type = "execute", order = 4,
+                    desc = "Clear the saved onboarding state and restart the guided help tips.",
+                    func = function()
+                        GatherLite.db.global.controlsGuideSeen=nil
+                        if _GatherLite.Window then _GatherLite.Window:ShowFirstLogin() end
+                    end,
+                },
                 enabled = {
                     name = function()
                         return "Enable debugging"

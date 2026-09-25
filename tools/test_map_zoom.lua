@@ -51,3 +51,12 @@ close(scroll.scale,.8); close(scroll.cx,.5); close(scroll.cy,.5)
 local l,r,t,b=scroll:CalculateScrollExtentsAtScale(.1)
 close(l,.5); close(r,.5); close(t,.5); close(b,.5)
 print("Map zoom checks passed: cursor anchoring, reverse zoom, edge clamping, bounds, wheel/buttons and resize reset")
+
+scroll.scale,scroll.cx,scroll.cy=2,.5,.5
+Z.Pan(map,.1,-.1)
+close(scroll.cx,.54); close(scroll.cy,.5-50/1336)
+Z.Pan(map,100,-100)
+close(scroll.cx,.8); close(scroll.cy,250/1336)
+scroll.scale=.1; Z.Pan(map,1,1)
+close(scroll.cx,.5); close(scroll.cy,.5)
+print("Controller pan speed, edge clamping and letterboxing passed")

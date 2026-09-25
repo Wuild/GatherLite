@@ -17,8 +17,12 @@ jobs:
         run: lua5.1 tools/test_compat.lua
       - name: Test predefined databases
         run: lua5.1 tools/test_database.lua
+      - name: Test static zone neighbors
+        run: lua5.1 tools/test_zones.lua
       - name: Test map tracking toggles
         run: lua5.1 tools/test_tracking.lua
+      - name: Test controller map cursor
+        run: lua5.1 tools/test_map_hover.lua
       - name: Test map zoom
         run: lua5.1 tools/test_map_zoom.lua
       - name: Test map reveal

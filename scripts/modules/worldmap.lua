@@ -34,49 +34,23 @@ local WorldmapFilter = function(node)
     return true;
 end
 
-local function GetWorldmapRect()
-    if not WorldMapFrame or not WorldMapFrame.ScrollContainer then
-        return nil
-    end
-
-    local scroll = WorldMapFrame.ScrollContainer
-    if not scroll.GetNormalizedRect then
-        return nil
-    end
-
-    local left, right, top, bottom = scroll:GetNormalizedRect()
-    if left == nil or right == nil or top == nil or bottom == nil then
-        return nil
-    end
-
-    local minX = math.min(left, right)
-    local maxX = math.max(left, right)
-    local minY = math.min(bottom, top)
-    local maxY = math.max(bottom, top)
-
-    local padding = 0.02
-    minX = math.max(0, minX - padding)
-    maxX = math.min(1, maxX + padding)
-    minY = math.max(0, minY - padding)
-    maxY = math.min(1, maxY + padding)
-
-    return minX, maxX, minY, maxY
-end
-
 -- Get nodes for current map id
 local function WorldmapNodes(type, mapID, filter)
-    local left, right, bottom, top = GetWorldmapRect()
+    if not GatherLite.db.char.worldmap.enabled or not GatherLite:GetNodeTracking("worldmap", type) then
+        return {}
+    end
+    -- Load the full selected zone once; the map canvas handles pan/zoom clipping.
     local nodes
-    if left then
-        nodes = GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
+    if GatherLite.db.char.worldmap.neighbors then
+        nodes = GatherLite:GetWorldMapNodesForRect(type, mapID, 0, 1, 0, 1)
     else
-        nodes = GatherLite:GetNodesForMap(type, mapID)
+        nodes = GatherLite:GetNodesForMapRect(type, mapID, 0, 1, 0, 1)
     end
     local out = {}
 
     for i = 1, #nodes do
         local node = nodes[i]
-        if node.mapID == mapID and filter(node) then
+        if filter(node) then
             out[#out + 1] = node
         end
     end
@@ -106,6 +80,9 @@ local function CreateWorldmapNode(node)
         return nil
     end
 
+    local x, y = GatherLite:ProjectNodeToMap(node, worldmapID)
+    if not x or not y or x < 0 or x > 1 or y < 0 or y > 1 then return nil end
+
     local f = Frames:getFrame("worldmap");
     f:SetAlpha(GatherLite.db.char.worldmap.opacity);
     f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
@@ -133,11 +110,9 @@ local function CreateWorldmapNode(node)
         GatherLite:hideTooltip()
     end)
 
-    if not node.posX and not node.posY then
-        GatherLite:debug(_GatherLite.DEBUG_NODE, node.object, node.posX, node.posY)
-    else
-        Pins:AddWorldMapIconMap(_GatherLite.name, f, node.mapID, node.posX, node.posY);
-    end
+    -- Register against the viewed map: HBD otherwise hides sibling-zone pins.
+    Pins:AddWorldMapIconMap(_GatherLite.name, f, worldmapID, x, y);
+    if _GatherLite.MapHover then _GatherLite.MapHover:Register(f, true) end
 
     GatherLite:SendMessage("nodes:load")
 
@@ -157,33 +132,33 @@ local function LoadWorldmap()
         end
     end);
 
-    if worldmapOpen and worldmapID then
+    local info = worldmapID and C_Map.GetMapInfo and C_Map.GetMapInfo(worldmapID)
+    local zone = worldmapID and GatherLite:GetZoneTree()[worldmapID]
+    local mapType = info and info.mapType or (zone and zone.mapType)
+    -- Overview/taxi maps must never display gathering pins.
+    if worldmapOpen and worldmapID and mapType == 3 and (not zone or zone.system == 0) then
         local miningNodes = WorldmapNodes("mining", worldmapID, WorldmapFilter)
         for i = 1, #miningNodes do
             local node = miningNodes[i]
-            node.loadedWorldmap = true
-            CreateWorldmapNode(node)
+            node.loadedWorldmap = CreateWorldmapNode(node) ~= nil
         end
 
         local herbNodes = WorldmapNodes("herbalism", worldmapID, WorldmapFilter)
         for i = 1, #herbNodes do
             local node = herbNodes[i]
-            node.loadedWorldmap = true
-            CreateWorldmapNode(node)
+            node.loadedWorldmap = CreateWorldmapNode(node) ~= nil
         end
 
         local containerNodes = WorldmapNodes("containers", worldmapID, WorldmapFilter)
         for i = 1, #containerNodes do
             local node = containerNodes[i]
-            node.loadedWorldmap = true
-            CreateWorldmapNode(node)
+            node.loadedWorldmap = CreateWorldmapNode(node) ~= nil
         end
 
         local fishingNodes = WorldmapNodes("fishing", worldmapID, WorldmapFilter)
         for i = 1, #fishingNodes do
             local node = fishingNodes[i]
-            node.loadedWorldmap = true
-            CreateWorldmapNode(node)
+            node.loadedWorldmap = CreateWorldmapNode(node) ~= nil
         end
     end
 end
@@ -445,6 +420,7 @@ source.setup = function()
 
                 ResetWorldmap()
             end
+
         end
     end)
 

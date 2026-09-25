@@ -35,6 +35,11 @@ class PackageTests(unittest.TestCase):
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
 
+    def test_native_keybindings_ship(self):
+        payload, _, _ = prepare_package(REPOSITORY, VERSION)
+        self.assertIn("Bindings.xml", payload)
+        self.assertIn(b"GatherLite:ToggleWindow()", payload["Bindings.xml"])
+
     def test_clean_versioned_repeatable_package(self):
         for junk in ("tools/update.py", ".wowhead-cache/page.html", ".github/workflow.yml",
                      ".git/config", "dist/old.zip", "GatherLite_Vanilla.toc",

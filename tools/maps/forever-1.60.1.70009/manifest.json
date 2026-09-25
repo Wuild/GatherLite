@@ -1,0 +1,15 @@
+{
+  "build": "1.60.1.70009",
+  "retrieved": "2026-09-25",
+  "max_range_yards": 1000,
+  "sources": {
+    "UiMap.csv": {
+      "url": "https://wago.tools/db2/UiMap/csv?build=1.60.1.70009",
+      "sha256": "1f4aac70eaac015b1d2d0ea0faf6e3d7fb2cf7afdf45e5bb6772d9b80a72346b"
+    },
+    "UiMapAssignment.csv": {
+      "url": "https://wago.tools/db2/UiMapAssignment/csv?build=1.60.1.70009",
+      "sha256": "79267e8be8034e47daab14350411b3acc0b1f64e86efc9d821a217497254ca0a"
+    }
+  }
+}

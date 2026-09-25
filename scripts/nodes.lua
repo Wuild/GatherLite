@@ -4,28 +4,33 @@ _GatherLite.iconPath = "Interface\\AddOns\\" .. _GatherLite.name .. "\\icons\\"
 
 _GatherLite.nodeDB = {}
 
-local function InsertObject(type, ids, name, icon, levels)
+local function InsertObject(type, ids, name, icon, levels, aliases)
     table.insert(_GatherLite.nodeDB, {
         type = type,
         id = ids,
         name = name,
         icon = icon:match("^Interface\\") and icon or (_GatherLite.iconPath .. icon),
-        levels = levels
+        levels = levels,
+        aliases = aliases
     })
 end
 
+-- Name aliases include player-reported Northshire starter variants whose IDs are
+-- not published in the Forever source. Group observed gathers with the base resource.
+-- These aliases do not establish variant spawn locations or skill requirements.
+
 -- Ores
 -- Forever
-InsertObject("ore", { 1731, 2055, 3763, 103713, 103714 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 })
+InsertObject("ore", { 1731, 2055, 3763, 103713, 103714 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 }, { "weak_copper_vein", "poor_copper_vein" })
 InsertObject("ore", { 1732, 3764, 2054, 103711, 103709 }, "tin_vein", "Ore\\tin", { 65, 90, 115, 165 })
-InsertObject("ore", { 1733, 105569, 73940 }, "silver_vein", "Ore\\silver", { 75, 100, 125, 175 })
+InsertObject("ore", { 1733, 105569, 73940 }, "silver_vein", "Ore\\silver", { 75, 100, 125, 175 }, { "ooze_covered_silver_vein" })
 InsertObject("ore", { 1735, 103710, 103712, 73939 }, "iron_deposit", "Ore\\iron", { 125, 150, 175, 225 })
-InsertObject("ore", { 1734, 150080, 181109, 73941 }, "gold_vein", "Ore\\gold", { 155, 180, 205, 255 })
-InsertObject("ore", { 2040, 150079, 176645, 123310 }, "mithril_deposit", "Ore\\mithril", { 175, 200, 225, 275 })
-InsertObject("ore", { 2047, 150081, 181108, 123309 }, "truesilver_deposit", "Ore\\truesilver", { 230, 255, 280, 330 })
+InsertObject("ore", { 1734, 150080, 181109, 73941 }, "gold_vein", "Ore\\gold", { 155, 180, 205, 255 }, { "ooze_covered_gold_vein" })
+InsertObject("ore", { 2040, 150079, 176645, 123310 }, "mithril_deposit", "Ore\\mithril", { 175, 200, 225, 275 }, { "ooze_covered_mithril_deposit" })
+InsertObject("ore", { 2047, 150081, 181108, 123309 }, "truesilver_deposit", "Ore\\truesilver", { 230, 255, 280, 330 }, { "ooze_covered_truesilver_deposit" })
 InsertObject("ore", { 165658 }, "dark_iron_deposit", "Ore\\darkiron", { 230, 255, 280, 330 })
-InsertObject("ore", { 324, 150082, 176643, 123848 }, "small_thorium_vein", "Ore\\thorium", { 245, 270, 295, 345 })
-InsertObject("ore", { 175404, 176644, 177388 }, "rich_thorium_vein", "Ore\\rich_thorium", { 275, 290, 300, 350 })
+InsertObject("ore", { 324, 150082, 176643, 123848 }, "small_thorium_vein", "Ore\\thorium", { 245, 270, 295, 345 }, { "ooze_covered_thorium_vein" })
+InsertObject("ore", { 175404, 176644, 177388 }, "rich_thorium_vein", "Ore\\rich_thorium", { 275, 290, 300, 350 }, { "ooze_covered_rich_thorium_vein" })
 
 -- Use bundled transparent map icons so these objects do not depend on client icon availability.
 -- Additional Forever objects verified against Wowhead's mineral-vein listing.
@@ -44,7 +49,7 @@ InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Ore\\darkiron", { 305 }
 -- Herbs
 -- Forever
 InsertObject("herb", { 1617, 3725 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 })
-InsertObject("herb", { 1618, 3724 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 })
+InsertObject("herb", { 1618, 3724 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 }, { "wilted_peacebloom" })
 InsertObject("herb", { 1619, 3726 }, "earthroot", "Herb\\earthroot", { 15, 40, 65, 115 })
 InsertObject("herb", { 1620, 3727 }, "mageroyal", "Herb\\mageroyal", { 50, 75, 100, 150 })
 InsertObject("herb", { 1621, 3729 }, "briarthorn", "Herb\\briarthorn", { 70, 95, 120, 170 })

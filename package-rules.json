@@ -1,6 +1,7 @@
 {
   "include": [
     "GatherLite.toc",
+    "Bindings.xml",
     "LICENSE",
     "scripts/**/*",
     "plugins/**/*",

@@ -55,6 +55,8 @@ def package_sources(root):
     rules_path = root / "package-rules.json"
     if not rules_path.exists():
         sources = {root / path for path in ROOT_FILES}
+        if (root / "Bindings.xml").is_file():
+            sources.add(root / "Bindings.xml")
         for directory in RUNTIME_DIRS:
             sources.update(path for path in (root / directory).rglob("*")
                            if path.is_file() and path.suffix.lower() in RUNTIME_EXTENSIONS)
