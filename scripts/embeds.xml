@@ -36,6 +36,7 @@
     <Script file="zones.lua"/>
     <Script file="settings.lua"/>
     <Script file="main.lua"/>
+    <Script file="tracking.lua"/>
 
     <Script file="maps\hover.lua"/>
     <Script file="modules\worldmap.lua"/>

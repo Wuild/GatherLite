@@ -987,6 +987,7 @@ function GatherLite:GetNodeTracking(target, nodeType)
 end
 
 function GatherLite:SetNodeTracking(target, nodeType, value)
+    if self.db and self.db.char then self.db.char.professionTrackingManual=true end
     local tracking = ensureMapTracking(target)
     if tracking then
         tracking[nodeType] = value and true or false

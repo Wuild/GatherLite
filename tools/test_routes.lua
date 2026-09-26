@@ -19,6 +19,13 @@ a,b,c,d = P.ClipSquare(-2,.9,2,.9)
 assert(math.abs(a+.96)<.001 and math.abs(c-.96)<.001 and b==.9)
 assert(not P.ClipSquare(2,-2,2,2))
 
+GameTooltip={
+    SetOwner=function(self,owner) self.owner=owner end,
+    SetText=function(self,text) self.text=text end,
+    Show=function(self) self.shown=true end,
+    Hide=function(self) self.shown=false; self.owner=nil end,
+    IsOwned=function(self,owner) return self.owner==owner end,
+}
 local methods, frames = {}, {}
 local function node(kind, name, parent)
     local f = setmetatable({kind=kind,name=name,parent=parent,scripts={},shown=true,width=100,height=100}, {__index=methods})
@@ -172,7 +179,19 @@ ScrollUtil={InitScrollFrameWithScrollBar=function(scroll,bar)
     scroll.SetPanExtent=function(self,value) self.panExtent=value end
     scroll:SetScript("OnScrollRangeChanged",function() end)
 end}
-function ShowUIPanel(f) f:Show() end
+UIPanelWindows={}
+local nativePanel
+function ShowUIPanel(f)
+    if UIPanelWindows[f.name] then
+        if nativePanel and nativePanel~=f then nativePanel:Hide() end
+        nativePanel=f
+    end
+    f:Show()
+end
+function HideUIPanel(f)
+    if nativePanel==f then nativePanel=nil end
+    f:Hide()
+end
 MinimalSliderWithSteppersMixin={Label={Right=1}}
 C_Texture={GetAtlasInfo=function() return true end}
 local playerMap, facing, rotation, shape=1,0,"0","ROUND"
@@ -272,11 +291,18 @@ load("scripts/maps/onboarding.lua")
 local W=addon.Window
 W:Show()
 assert(W.frame:GetWidth()==1160 and W.selectedTab==1)
+assert(UIPanelWindows.GatherLiteWindow.area=="left" and nativePanel==W.frame)
+assert(W.frame.useCustomNavigation and not W.frame.scripts.OnDragStart)
+W.frame.CloseButton:GetScript("OnClick")()
+assert(not nativePanel and not W.frame:IsShown(), "close button must release the native panel")
+W:Show()
 local savedMap=W.map
 W.frame:Hide(); W.ready=false; W.map=nil
 W:Show()
 assert(not W.frame:IsShown(),"partially created windows must not open")
 W.ready=true; W.map=savedMap; W:Show()
+assert(W.zoneOnly and W.zoneFilter:GetChecked(), "zone filtering should default on")
+W.zoneFilter:SetChecked(false); W.zoneFilter:GetScript("OnClick")(W.zoneFilter)
 W.search:SetText("silverleaf"); W.search.scripts.OnTextChanged()
 assert(W.rows[1].object==addon.nodeDB[2] and not W.rows[2]:IsShown())
 W.rows[1].scripts.OnClick(W.rows[1])
@@ -312,7 +338,9 @@ assert(W.frame:GetWidth()==1160 and W.frame:GetHeight()==710,"switching tabs mus
 for _,button in pairs(W.settingsButtons) do button.scripts.OnClick() end
 for _,f in ipairs(frames) do
     if f.callback then f.callback(f,f.value) end
-    if f.kind=="CheckButton" then f:SetChecked(true); f.scripts.OnClick(f) end
+    local parent=f.parent
+    while parent and parent~=W.pages[2] do parent=parent.parent end
+    if f.kind=="CheckButton" and parent then f:SetChecked(true); f.scripts.OnClick(f) end
 end
 W:SelectTab(1)
 WorldMapFrame.mapID=2; playerMap=2
@@ -546,6 +574,16 @@ do
     W:Show(); enabled=true
     W.frame.scripts.OnUpdate(W.frame,.02)
     local input=W.controllerInput
+    GamepadMode.FrameControlsManager.GetActiveFrame=function() return W.frame end
+    assert(W.controllerInput:IsShown())
+    W:SetControllerTarget(W.categoryButtons[2])
+    input.scripts.OnGamePadButtonDown(input,"PAD1")
+    assert(W.resourceCategory=="ore", "category must activate with native panel focus")
+    assert(GameTooltip.owner==W.categoryButtons[2] and GameTooltip.text=="Mining",
+        "controller category focus must identify the icon")
+    W.categoryButtons[1]:GetScript("OnClick")()
+    W:SetControllerTarget(W.map)
+    GamepadMode.FrameControlsManager.GetActiveFrame=function() return nil end
     assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
     W:SelectTab(2); W.settingsButtons.worldmap:GetScript("OnClick")()
     local slider
@@ -695,3 +733,86 @@ R:DrawOnCanvas(W.mapOverlay,W.map,route.object)
 assert(W.mapOverlay.lines[1]:IsShown(),"matching resource/zone route must render")
 R:Clear()
 print("Route ownership passed: resource switches, same-resource retention, cancellation and map isolation")
+
+-- Category filters combine with search and preserve the selected route/resource.
+do
+    local nodes,fish=addon.nodeDB,addon.fishDB
+    addon.nodeDB={{type="ore",name="ore",icon="ore"},{type="herb",name="herb",icon="herb"},
+        {type="container",name="container",icon="container"},{type="fishing",name="pool",icon="pool"}}
+    addon.fishDB={{type="fish",name="catch",icon="fish"}}
+    local selected=W.object
+    W.search:SetText("")
+    for i,button in ipairs(W.categoryButtons) do
+        button:GetScript("OnClick")()
+        local count=0
+        for _,row in ipairs(W.rows) do
+            if row:IsShown() then
+                count=count+1
+                assert(i==1 or row.object.type==button.category or (i==5 and row.object.type=="fish"))
+            end
+        end
+        assert(count==(i==1 and 5 or i==5 and 2 or 1))
+        assert(button.selected:IsShown() and W.object==selected)
+    end
+    W.search:SetText("catch"); W:RefreshList()
+    assert(W.rows[1].object.type=="fish" and not W.rows[2]:IsShown())
+    W.categoryButtons[2]:GetScript("OnClick")()
+    assert(W.noResults:IsShown(), "search must combine with category filtering")
+    addon.nodeDB,addon.fishDB=nodes,fish
+    W.search:SetText(""); W.categoryButtons[1]:GetScript("OnClick")()
+end
+print("Native panel lifecycle and resource category filters passed")
+
+-- Zone-first browsing and a combined selection use one deduplicated circuit.
+do
+    local copper,herb=addon.nodeDB[1],addon.nodeDB[2]
+    local previousHerbs=addon.predefined[3]
+    addon.predefined[3]={[1]={.1,.1,.5,.5,.7,.5}}
+    GatherLite.db.global.usePredefined=true
+    W:SelectObject(copper)
+    W.zoneFilter:SetChecked(true); W.zoneFilter:GetScript("OnClick")(W.zoneFilter)
+    W:SetMap(1)
+    W.categoryButtons[3]:GetScript("OnClick")()
+    assert(W.rows[1].object==herb and not W.rows[2]:IsShown(),"zone and herb category must combine")
+    W.rows[1]:GetScript("OnClick")(W.rows[1])
+    assert(W.mapID==1 and #W.selectedObjects==2 and W.object.objects,"checking a second resource must retain the map and first selection")
+    assert(W.rows[1].check:GetChecked(),"selected herb checkbox is not checked")
+    assert(#W.locations[1]==6,"combined collection must deduplicate shared coordinates")
+    local herbPin=false
+    for _,pin in ipairs(W.pins) do if pin:IsShown() and pin.object==herb then herbPin=true end end
+    assert(herbPin,"combined map lost resource-specific pins")
+    W.generate:GetScript("OnClick")()
+    while R.worker do R:Tick() end
+    assert(R.byMap[1] and not R.byMap[2] and #R.active.points==6,"zone generation escaped the chosen zone or omitted resources")
+    assert(#GatherLite.db.char.routeObjects==2 and GatherLite.db.char.routeOnlyMapID==1,"combined route was not saved")
+    -- Restore the saved multi-resource route through the actual startup path.
+    R.setup()
+    local watcher=frames[#frames]
+    watcher:GetScript("OnUpdate")(watcher,.01)
+    while R.worker do R:Tick() end
+    assert(R.object.objects and #R.object.objects==2 and R.byMap[1] and not R.byMap[2],"reload dropped selected resources or zone scope")
+    W:SetMap(2)
+    assert(W.noResults:IsShown(),"resources from a different zone leaked into the list")
+    assert(#W.selectedObjects==2,"browsing a zone silently changed checked resources")
+    W:SetMap(1)
+    W:ToggleObject(herb)
+    assert(W.object==copper and not R.byMap,"unchecking did not invalidate combined route")
+    R:Generate(copper)
+    W:ToggleObject(herb)
+    R:Tick()
+    assert(not R.worker and W.object.objects,"selection change failed to cancel pending calculation")
+    W:ToggleObject(herb); W:ToggleObject(copper)
+    assert(not W.object and not W.generate:IsShown(),"last unchecked resource left stale selection")
+    GatherLite.db.global.usePredefined=false
+    W:RefreshList()
+    assert(W.noResults:IsShown(),"zone availability ignored predefined-data setting")
+    addon.nodes.herbalism={{object=3,mapID=1,posX=.3,posY=.3}}
+    W:RefreshList()
+    assert(W.rows[1]:IsShown() and W.rows[1].object==herb,"recorded herb missing with predefined data off")
+    W.search:SetText("copper"); W:RefreshList()
+    assert(W.noResults:IsShown(),"search did not combine with category and zone")
+    addon.nodes.herbalism=nil; addon.predefined[3]=previousHerbs
+    GatherLite.db.global.usePredefined=true
+    W.search:SetText(""); W.categoryButtons[1]:GetScript("OnClick")()
+end
+print("Combined route selection, per-resource pins, zone filtering, saved restoration and cancellation passed")

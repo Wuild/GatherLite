@@ -403,9 +403,31 @@ _GatherLite.SettingsOptions = {
             order = 3,
             args = {
                 tracking = mapTrackingOptions("minimap"),
+                autoGatherTracking = {
+                    name = "Automatically enable gathering tracking",
+                    desc = "Check every 5 seconds and restore learned Find Minerals or Find Herbs outside combat. Selecting Mining or Herbalism chooses the tracking spell; otherwise keep the active gathering mode.",
+                    type = "toggle", order = 5.5, width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.autoGatherTracking = value
+                        if _GatherLite.GatheringTracking then _GatherLite.GatheringTracking:Schedule() end
+                    end,
+                    get = function() return GatherLite.db.char.autoGatherTracking ~= false end,
+                },
+                hideNearbyNodes = {
+                    name = "Hide nearby nodes without circles",
+                    desc = "When Show nearby node circles is off, hide nodes within the nearby distance. Otherwise keep their resource icons visible.",
+                    type = "toggle",
+                    order = 5,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.minimap.hideNearbyNodes = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.minimap.hideNearbyNodes == true end,
+                },
                 nearbyCircles = {
                     name = "Show nearby node circles",
-                    desc = "Replace node icons with empty circles when you are close to a gathering location. Disable to keep the normal resource icons.",
+                    desc = "Replace node icons with empty circles when you are close to a gathering location. When disabled, keep resource icons or use Hide nearby nodes without circles below.",
                     type = "toggle",
                     order = 4,
                     width = "full",
@@ -535,6 +557,7 @@ _GatherLite.SettingsOptions = {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.minimap.distance = val;
+                                GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
                                 return GatherLite.db.char.minimap.distance

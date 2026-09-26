@@ -132,6 +132,17 @@ function addon.WindowController.Attach(window)
         local jump, dir = SmartNavigation_AddJumpNavigationOverride, SMART_NAV_INPUT_DIRECTION
         if jump and dir then
             settingsJumps(jump,dir)
+            for i,button in ipairs(self.categoryButtons or {}) do
+                jump(button,dir.LEFT,self.categoryButtons[i-1] or self.map)
+                jump(button,dir.RIGHT,self.categoryButtons[i+1] or action)
+                jump(button,dir.UP,self.search)
+                jump(button,dir.DOWN,self.zoneFilter or resource)
+            end
+            if self.zoneFilter then
+                jump(self.zoneFilter,dir.UP,self.categoryButtons[1])
+                jump(self.zoneFilter,dir.DOWN,resource)
+            end
+            jump(self.search,dir.DOWN,self.categoryButtons and self.categoryButtons[1])
             jump(self.map,dir.RIGHT,resource)
             jump(self.map,dir.UP,function() return self.breadcrumb.homeButton end)
             for _, row in ipairs(self.rows) do
@@ -198,7 +209,7 @@ function addon.WindowController.Attach(window)
     end
     frame.SmartNavigationCloseHandler = function()
         if window.editSlider then window:EndSliderEdit()
-        elseif window.helpStep then window:CloseOnboarding() else frame:Hide() end
+        elseif window.helpStep then window:CloseOnboarding() else window:Hide() end
         return true
     end
     frame:HookScript("OnShow", shown)

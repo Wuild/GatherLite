@@ -19,6 +19,8 @@ jobs:
         run: lua5.1 tools/test_database.lua
       - name: Test static zone neighbors
         run: lua5.1 tools/test_zones.lua
+      - name: Test automatic gathering tracking
+        run: lua5.1 tools/test_gathering_tracking.lua
       - name: Test map tracking toggles
         run: lua5.1 tools/test_tracking.lua
       - name: Test controller map cursor

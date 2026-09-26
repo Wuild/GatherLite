@@ -137,13 +137,23 @@ function GatherLite:GatherSlash(input)
 end
 
 function GatherLite:OnInitialize()
+    -- AceDB removes default values on logout. Non-default saved filter values
+    -- are existing user overrides and must survive the profession-based defaults.
+    local key=UnitName("player").." - "..GetRealmName()
+    local saved=GatherLiteSettings and GatherLiteSettings.char and GatherLiteSettings.char[key]
+    local savedOverrides=saved and (next(saved.tracking or {})
+        or next(saved.minimap and saved.minimap.tracking or {})
+        or next(saved.worldmap and saved.worldmap.tracking or {}))
     self.db = LibStub("AceDB-3.0"):New("GatherLiteSettings", _GatherLite.configsDefaults, true)
+    if savedOverrides and not self.db.char.professionTrackingInitialized then
+        self.db.char.professionTrackingManual=true
+    end
     self.minimap = LibStub("LibDBIcon-1.0")
     self:RegisterSettingsLauncher()
 
     GatherLite:print(GatherLite:Colorize(_GatherLite.version, "blue"), "has been loaded");
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
-    GatherLite:print("Keep this addon alive by donating a coffee at " .. GatherLite:Colorize("https://www.buymeacoffee.com/yuImx6KOY", "cyan"));
+    GatherLite:print("Support GatherLite on " .. _GatherLite.supportLabel .. ": " .. GatherLite:Colorize(_GatherLite.supportUrl, "cyan"));
 
     GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
 

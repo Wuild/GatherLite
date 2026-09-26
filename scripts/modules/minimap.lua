@@ -50,6 +50,12 @@ local MinimapFilter = function(node)
     return true;
 end
 
+local function HideNearbyNode(distance)
+    local settings = GatherLite.db.char.minimap
+    return settings.nearbyCircles == false and settings.hideNearbyNodes == true
+        and distance < settings.distance
+end
+
 local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
     local nodes = GatherLite:GetNearbyZoneNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
     local out = {}
@@ -66,7 +72,7 @@ local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zone
             end
 
             local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
-            if distance and distance < maxDist then
+            if distance and distance < maxDist and not HideNearbyNode(distance) then
                 out[#out + 1] = node
             end
         end
@@ -194,7 +200,7 @@ local function UpdateMinimapIcons()
                 _, distance = HBD:GetWorldVector(instanceID, x, y, node.worldX, node.worldY)
             end
             if inInstance or not distance or distance >= GatherLite.db.char.minimap.range
-                or not MinimapFilter(node) then
+                or not MinimapFilter(node) or HideNearbyNode(distance) then
                 frame:Unload()
             else
                 local nearby = GatherLite.db.char.minimap.nearbyCircles ~= false

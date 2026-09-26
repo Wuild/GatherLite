@@ -5,6 +5,7 @@ addon.UI = UI
 -- Keep the map requirement tied to the same catalog values as node tooltips.
 function UI.Requirement(object)
     if not object then return "" end
+    if object.objects then return "Combined gathering route" end
     if object.type=="fish" then return "Fishing | Reported catches" end
     local profession=({ore="Mining",herb="Herbalism",fishing="Fishing",container="Lockpicking"})[object.type]
     local level=object.levels and object.levels[1]

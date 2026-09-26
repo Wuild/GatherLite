@@ -8,13 +8,50 @@ local function finite(value)
     return type(value) == "number" and value == value and math.abs(value) < math.huge
 end
 
+-- A selection uses the existing collector, including its coordinate deduplication.
+function Routes:Combine(objects)
+    if #objects==0 then return nil end
+    if #objects==1 then return objects[1] end
+    local selection={type="selection",name=#objects.." resources selected",icon="Interface\\Icons\\INV_Misc_Map_01",id={},objects=objects}
+    local seen={}
+    for _,object in ipairs(objects) do
+        for _,id in ipairs(object.id) do
+            if not seen[id] then seen[id]=true; selection.id[#selection.id+1]=id end
+        end
+    end
+    return selection
+end
+
+-- Build availability once per list refresh, without expanding every resource's locations.
+function Routes:ZoneResources(mapID)
+    local ids={}
+    local function add(id,u,v)
+        if finite(u) and finite(v) and u>=0 and u<=1 and v>=0 and v<=1 then ids[id]=true end
+    end
+    for _,nodes in pairs(addon.nodes) do
+        for _,node in ipairs(nodes) do
+            if node.mapID==mapID and (not node.predefined or GatherLite.db.global.usePredefined) then
+                add(node.object,node.posX,node.posY)
+            end
+        end
+    end
+    if GatherLite.db.global.usePredefined then
+        for id,maps in pairs(addon.predefined or {}) do
+            local coords=maps[mapID] or {}
+            for i=1,#coords,2 do add(id,coords[i],coords[i+1]); if ids[id] then break end end
+        end
+    end
+    return ids
+end
+
 -- Combine unloaded compressed data and indexed nodes without changing tracking.
-function Routes:Collect(object, checkpoint)
+function Routes:Collect(object, checkpoint, onlyMapID)
     local maps, seen, ids = {}, {}, {}
     checkpoint = checkpoint or function() end
     for _, id in ipairs(object.id) do ids[id] = true end
-    local function add(mapID, u, v)
+    local function add(mapID, u, v, id)
         checkpoint()
+        if onlyMapID and mapID~=onlyMapID then return end
         if not finite(mapID) or not finite(u) or not finite(v) or u < 0 or u > 1 or v < 0 or v > 1 then return end
         local info = C_Map.GetMapInfo(mapID)
         if not info or info.mapType ~= 3 then return end
@@ -25,7 +62,7 @@ function Routes:Collect(object, checkpoint)
         if seen[mapID][key] then return end
         seen[mapID][key] = true
         maps[mapID] = maps[mapID] or {}
-        maps[mapID][#maps[mapID] + 1] = { u = u, v = v, x = x, y = y, instance = instance }
+        maps[mapID][#maps[mapID] + 1] = { u = u, v = v, x = x, y = y, instance = instance, object = id }
     end
     if object.type=="fish" then
         for mapID,coords in pairs(object.maps) do
@@ -40,14 +77,14 @@ function Routes:Collect(object, checkpoint)
     for _, nodes in pairs(addon.nodes) do
         for _, node in ipairs(nodes) do
             if ids[node.object] and (not node.predefined or GatherLite.db.global.usePredefined) then
-                add(node.mapID, node.posX, node.posY)
+                add(node.mapID, node.posX, node.posY, node.object)
             else checkpoint() end
         end
     end
     if GatherLite.db.global.usePredefined then
         for id in pairs(ids) do
             for mapID, coords in pairs((addon.predefined or {})[id] or {}) do
-                for i = 1, #coords, 2 do add(mapID, coords[i], coords[i + 1]) end
+                for i = 1, #coords, 2 do add(mapID, coords[i], coords[i + 1], id) end
             end
         end
     end
@@ -61,6 +98,8 @@ end
 function Routes:Clear()
     self.worker, self.active, self.progress = nil, nil, nil
     self.byMap, self.bestMapID, self.object = nil, nil, nil
+    self.onlyMapID = nil
+    GatherLite.db.char.routeObjects, GatherLite.db.char.routeOnlyMapID = nil, nil
     GatherLite.db.char.routeObject, GatherLite.db.char.routeMapID = nil, nil
     self.status = "Route cleared. Select a resource to create another."
     self:Notify()
@@ -70,6 +109,10 @@ function Routes:SelectMap(mapID)
     if not self.byMap then return end
     self.active = self.byMap[mapID]
     GatherLite.db.char.routeObject = self.object.id[1]
+    local ids={}
+    for _,object in ipairs(self.object.objects or {self.object}) do ids[#ids+1]=object.id[1] end
+    GatherLite.db.char.routeObjects = ids
+    GatherLite.db.char.routeOnlyMapID = self.onlyMapID
     GatherLite.db.char.routeMapID = self.active and mapID or nil
     if self.active then
         local route = self.active
@@ -82,12 +125,13 @@ function Routes:SelectMap(mapID)
     self:Notify()
 end
 
-function Routes:Generate(object, preferredMapID)
+function Routes:Generate(object, preferredMapID, onlyMapID)
     if object.type=="fish" then return end
     self:Clear()
     -- Track ownership while the coroutine is still running, so a resource
     -- switch can cancel it before it publishes a route or changes the map.
     self.object = object
+    self.onlyMapID = onlyMapID
     self.status = "Reading known locations..."
     self.progress = 0
     self:Notify()
@@ -97,7 +141,7 @@ function Routes:Generate(object, preferredMapID)
             work = work + 1
             if work >= 1500 then work = 0; coroutine.yield() end
         end
-        local maps, mapIDs = self:Collect(object, checkpoint), {}
+        local maps, mapIDs = self:Collect(object, checkpoint, onlyMapID), {}
         for mapID in pairs(maps) do mapIDs[#mapIDs + 1] = mapID end
         table.sort(mapIDs)
         local best, byMap = nil, {}
@@ -148,8 +192,13 @@ function Routes.setup()
         if not GatherLite:IsLoaded() then return end
         if not restored then
             restored = true
-            local object = GatherLite:GetNodeObject(GatherLite.db.char.routeObject)
-            if object then Routes:Generate(object, GatherLite.db.char.routeMapID) end
+            local objects={}
+            for _,id in ipairs(GatherLite.db.char.routeObjects or {GatherLite.db.char.routeObject}) do
+                local object=GatherLite:GetNodeObject(id)
+                if object then objects[#objects+1]=object end
+            end
+            local object=Routes:Combine(objects)
+            if object then Routes:Generate(object, GatherLite.db.char.routeMapID, GatherLite.db.char.routeOnlyMapID) end
         end
         Routes:Tick()
         Routes:Draw(elapsed)
@@ -158,9 +207,9 @@ function Routes.setup()
     GatherLite:On("settings:update", function()
         if Routes.predefined ~= GatherLite.db.global.usePredefined then
             Routes.predefined = GatherLite.db.global.usePredefined
-            local object, mapID = Routes.object, GatherLite.db.char.routeMapID
+            local object, mapID, onlyMapID = Routes.object, GatherLite.db.char.routeMapID, Routes.onlyMapID
             Routes:Clear()
-            if object then Routes:Generate(object, mapID) end
+            if object then Routes:Generate(object, mapID, onlyMapID) end
         end
     end)
     GatherLite:RegisterChatCommand("gatherroutes", function() GatherLite:ShowSettings() end)

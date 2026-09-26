@@ -190,7 +190,30 @@ for i, kind in ipairs(kinds) do
     tick(1.1)
     pin = assert(next(pins.minimap))
     assert(pin:IsShown() and pin.texture.texturePath == icon, "disabled circles must preserve nearby resource icons")
+    local hideOption = options.args.minimap.args.hideNearbyNodes
+    assert(not hideOption.get(), "nearby hiding must default to off")
+    hideOption.set(nil, true)
+    tick(5.1)
+    assert(count("minimap", objects[i]) == 0, "hidden nearby nodes must not have interactive pins")
+    distanceOption.set(nil, 10)
+    assert(next(pins.minimap), "reducing hide distance must immediately restore a node outside it")
+    distanceOption.set(nil, 70)
+    assert(count("minimap", objects[i]) == 0, "increasing hide distance must immediately hide nearby nodes")
+    playerY = 530
+    tick(5.1)
+    pin = assert(next(pins.minimap), "moving away must restore hidden nodes")
+    assert(pin.texture.texturePath == icon, "restored node must use resource icon")
+    playerY = 600
+    tick(1.1)
+    assert(count("minimap", objects[i]) == 0, "approaching node must hide an existing pin")
+    distanceOption.set(nil, 0)
+    tick(5.1)
+    assert(next(pins.minimap), "zero nearby distance must preserve nodes")
+    distanceOption.set(nil, 70)
     circlesOption.set(nil, true)
+    tick(1.1)
+    assert(next(pins.minimap), "circles must take precedence over hiding")
+    hideOption.set(nil, false)
     tick(1.1)
     pin = assert(next(pins.minimap))
     assert(pin.texture.texturePath == circle, "re-enabling circles must refresh nearby pins")
@@ -227,6 +250,7 @@ for i, kind in ipairs(kinds) do
     assert(reused.texture.texturePath == icon, "recycled minimap pin retained its circle")
     click("minimap", i)
 end
+assert(GatherLite.db.char.professionTrackingManual, "manual filter changes must disable profession automation")
 local settingsOpened = 0
 GatherLite.ShowSettings = function() settingsOpened = settingsOpened + 1 end
 minimapButton.OnClick(Minimap, "RightButton")

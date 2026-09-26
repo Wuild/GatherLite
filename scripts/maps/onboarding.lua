@@ -2,10 +2,10 @@ local _, addon = ...
 local Window = addon.Window
 local steps = {
     {title="Find a resource", target=function(w) return w.search end, point="LeftEdgeCenter",
-        text="Search by resource name or type to narrow the list. Select a resource to show its known locations and available zones.",
+        text="Search by resource name or type to narrow the list. Only this zone shows resources known in the map zone. Check multiple resources to combine their locations.",
         controller="Use the D-pad to move and Confirm to select. Selection jumps to the route controls."},
     {title="Plan a route", target=function(w) return w.generate:IsShown() and w.generate or w.routeCard end, point="LeftEdgeCenter",
-        text="Generate zone routes connects known gathering locations into farming circuits. Compare zones with the arrows, hide or clear a route, or open it on the world map. Fish show reported catches instead of routes.",
+        text="Generate zone route connects checked resources in the displayed zone. Uncheck Only this zone to generate circuits across their known zones. Hide or clear routes, or open the world map. Fish show reported catches instead of routes.",
         controller="Right from a resource jumps here. Left from an action returns to your resource."},
     {title="Choose a zone", target=function(w) return w.breadcrumb end, point="BottomEdgeCenter",
         text="These breadcrumbs show where you are: World > Continent > Zone. Select a name to go back to that level, or use its dropdown to choose another continent or zone.",

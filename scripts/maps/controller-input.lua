@@ -15,10 +15,11 @@ function addon.WindowInput.Create(window)
     addon.UI.Border(highlight)
     highlight:Hide()
     local function usable()
+        local nativeFrame=GamepadMode and GamepadMode.FrameControlsManager
+            and GamepadMode.FrameControlsManager:GetActiveFrame()
         return owner:IsShown() and InputUtil and InputUtil.IsGamepadUIEnabled()
             and not (InCombatLockdown and InCombatLockdown())
-            and not (GamepadMode and GamepadMode.FrameControlsManager
-                and GamepadMode.FrameControlsManager:GetActiveFrame())
+            and (not nativeFrame or nativeFrame==owner)
     end
     local function enabled(button)
         return button and button:IsVisible() and (not button.IsEnabled or button:IsEnabled())
@@ -53,7 +54,8 @@ function addon.WindowInput.Create(window)
         for _,tab in ipairs(window.tabs) do add(tab) end
         if window.helpStep then add(window.guide.OkayButton); add(window.guide.CloseButton) end
         if window.selectedTab==1 then
-            add(window.search); add(window.map)
+            add(window.search); add(window.map); add(window.zoneFilter)
+            for _,button in ipairs(window.categoryButtons or {}) do add(button) end
             for _,row in ipairs(window.rows) do add(row) end
             for _,button in ipairs({window.generate,window.previous,window.next,window.visibility,window.clear,window.open}) do add(button) end
             for _,crumb in ipairs(window.breadcrumb.navList or {}) do

@@ -65,6 +65,7 @@ _GatherLite.configsDefaults = {
     },
     char = {
         debugging = false,
+        autoGatherTracking = true,
         ignore = {},
         tracking = {
             mining = true,
@@ -80,6 +81,7 @@ _GatherLite.configsDefaults = {
             opacity = 1,
             distance = 70,
             nearbyCircles = true,
+            hideNearbyNodes = false,
             loot = true,
             edge = false,
             neighbors = true,
