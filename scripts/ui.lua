@@ -5,12 +5,12 @@ addon.UI = UI
 -- Keep the map requirement tied to the same catalog values as node tooltips.
 function UI.Requirement(object)
     if not object then return "" end
-    if object.objects then return "Combined gathering route" end
-    if object.type=="fish" then return "Fishing | Reported catches" end
-    local profession=({ore="Mining",herb="Herbalism",fishing="Fishing",container="Lockpicking"})[object.type]
+    if object.objects then return GatherLite:translate("window.requirement.combined") end
+    if object.type=="fish" then return GatherLite:translate("window.requirement.fish") end
+    local profession=({ore="mining",herb="herbalism",fishing="fishing",container="window.resource.lockpicking"})[object.type]
     local level=object.levels and object.levels[1]
-    if profession and level then return profession.." "..level end
-    return object.type=="fishing" and "Fishing | Pool locations" or "No skill requirement recorded"
+    if profession and level then return GatherLite:translate("window.requirement.skill", GatherLite:translate(profession), level) end
+    return object.type=="fishing" and GatherLite:translate("window.requirement.fishing_pool") or GatherLite:translate("window.requirement.none")
 end
 
 function UI.Text(parent, text, font)
@@ -170,14 +170,14 @@ local function value(v)
     return v
 end
 local help = {
-    predefined = "Include bundled gathering locations alongside your personal discoveries.",
-    nodeMinimap = "Display known gathering locations near your character.",
-    nodeWorldmap = "Display gathering markers on the game world map.",
-    minimap = "Keep the GatherLite button beside your minimap.",
-    zoneTooltip = "Preview a zone's tracked resources while hovering the continent map.",
-    loot = "Include recorded loot and visit history in marker tooltips.",
-    edge = "Keep out-of-range markers at the edge of the minimap.",
-    enabled = "Record diagnostic messages for troubleshooting.",
+    predefined = "settings.help.predefined",
+    nodeMinimap = "settings.help.node_minimap",
+    nodeWorldmap = "settings.help.node_worldmap",
+    minimap = "settings.help.minimap",
+    zoneTooltip = "settings.help.zone_tooltip",
+    loot = "settings.help.loot",
+    edge = "settings.help.edge",
+    enabled = "settings.help.enabled",
 }
 function UI.SettingsGroup(parent, group, name)
     local scroll = UI.Scroll(parent, name, 904)
@@ -231,7 +231,8 @@ function UI.SettingsGroup(parent, group, name)
                 local index=tonumber(key:match("^node_(%d+)$"))
                 local object=index and addon.nodeDB[index]
                 if not object then flush() end
-                local description=value(option.desc) or help[key]
+                local description=value(option.desc)
+                if not description and help[key] then description=GatherLite:translate(help[key]) end
                 local height=not object and description and 46 or 30
                 local width=object and 296 or 904
                 local x=object and column*304 or 0

@@ -72,6 +72,14 @@ assert(#calls==3 and calls[3]==1,"preferred mode must restore after combat")
 entries={{spellID=2383,active=false}}; tracking:Check()
 assert(#calls==4 and entries[1].active,"unlearned preference must fall back to an available gathering spell")
 entries={{spellID=999,active=false}}; tracking:Check(); assert(#calls==4)
+
+-- Never override another active tracker, such as a hunter's tracking ability.
+entries={{spellID=999,active=true},{spellID=2580,active=false}}
+local beforeOtherTracker=#calls
+tracking:Check(); assert(#calls==beforeOtherTracker,"active non-gathering trackers must be preserved")
+entries={{spellID=2580,active=false}}
+tracking:Check(); assert(#calls==beforeOtherTracker+1 and entries[1].active,
+    "gathering tracking may resume once the other tracker is cleared")
 print("Gathering tracking passed: profession defaults, learning/unlearning, manual overrides, activation, combat deferral and event coalescing")
 
 local logs={}

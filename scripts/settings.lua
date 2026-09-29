@@ -300,8 +300,8 @@ _GatherLite.SettingsOptions = {
             args = {
                 tracking = mapTrackingOptions("worldmap"),
                 neighbors = {
-                    name = "Show neighboring zone nodes",
-                    desc = "Include nodes from adjacent zones on selected zone maps. Overview maps remain clear.",
+                    name = function() return GatherLite:translate("settings.map.neighbors") end,
+                    desc = function() return GatherLite:translate("settings.map.neighbors.description") end,
                     type = "toggle", order = 5, width = "full",
                     set = function(_, value)
                         GatherLite.db.char.worldmap.neighbors = value
@@ -404,8 +404,8 @@ _GatherLite.SettingsOptions = {
             args = {
                 tracking = mapTrackingOptions("minimap"),
                 autoGatherTracking = {
-                    name = "Automatically enable gathering tracking",
-                    desc = "Check every 5 seconds and restore learned Find Minerals or Find Herbs outside combat. Selecting Mining or Herbalism chooses the tracking spell; otherwise keep the active gathering mode.",
+                    name = function() return GatherLite:translate("settings.minimap.auto_tracking") end,
+                    desc = function() return GatherLite:translate("settings.minimap.auto_tracking.description") end,
                     type = "toggle", order = 5.5, width = "full",
                     set = function(_, value)
                         GatherLite.db.char.autoGatherTracking = value
@@ -414,8 +414,8 @@ _GatherLite.SettingsOptions = {
                     get = function() return GatherLite.db.char.autoGatherTracking ~= false end,
                 },
                 hideNearbyNodes = {
-                    name = "Hide nearby nodes without circles",
-                    desc = "When Show nearby node circles is off, hide nodes within the nearby distance. Otherwise keep their resource icons visible.",
+                    name = function() return GatherLite:translate("settings.minimap.hide_nearby") end,
+                    desc = function() return GatherLite:translate("settings.minimap.hide_nearby.description") end,
                     type = "toggle",
                     order = 5,
                     width = "full",
@@ -426,8 +426,8 @@ _GatherLite.SettingsOptions = {
                     get = function() return GatherLite.db.char.minimap.hideNearbyNodes == true end,
                 },
                 nearbyCircles = {
-                    name = "Show nearby node circles",
-                    desc = "Replace node icons with empty circles when you are close to a gathering location. When disabled, keep resource icons or use Hide nearby nodes without circles below.",
+                    name = function() return GatherLite:translate("settings.minimap.nearby_circles") end,
+                    desc = function() return GatherLite:translate("settings.minimap.nearby_circles.description") end,
                     type = "toggle",
                     order = 4,
                     width = "full",
@@ -575,17 +575,15 @@ _GatherLite.SettingsOptions = {
             order = 6,
             args = {
                 resetOnboarding = {
-                    name = "Reset onboarding", type = "execute", order = 4,
-                    desc = "Clear the saved onboarding state and restart the guided help tips.",
+                    name = function() return GatherLite:translate("settings.debugging.reset_onboarding") end, type = "execute", order = 4,
+                    desc = function() return GatherLite:translate("settings.debugging.reset_onboarding.description") end,
                     func = function()
                         GatherLite.db.global.controlsGuideSeen=nil
                         if _GatherLite.Window then _GatherLite.Window:ShowFirstLogin() end
                     end,
                 },
                 enabled = {
-                    name = function()
-                        return "Enable debugging"
-                    end,
+                    name = function() return GatherLite:translate("settings.debugging.enable") end,
                     type = "toggle",
                     order = 3,
                     set = function(info, val)
@@ -598,14 +596,12 @@ _GatherLite.SettingsOptions = {
 
                 debugging = {
                     type = "group",
-                    name = "Debugging",
+                    name = function() return GatherLite:translate("settings.debugging") end,
                     inline = true,
                     order = 7,
                     args = {
                         nodes = {
-                            name = function()
-                                return "Nodes"
-                            end,
+                            name = function() return GatherLite:translate("settings.debugging.nodes") end,
                             type = "toggle",
                             order = 3,
                             set = function(info, val)
@@ -616,9 +612,7 @@ _GatherLite.SettingsOptions = {
                             end
                         },
                         frames = {
-                            name = function()
-                                return "Frames"
-                            end,
+                            name = function() return GatherLite:translate("settings.debugging.frames") end,
                             type = "toggle",
                             order = 3,
                             set = function(info, val)

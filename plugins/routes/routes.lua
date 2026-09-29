@@ -1,6 +1,7 @@
 local _, addon = ...
 local HBD = LibStub("HereBeDragons-2.0")
-local Routes = { status = "Select a resource to explore its known locations." }
+local function T(key, ...) return GatherLite:translate(key, ...) end
+local Routes = { status = T("window.route.status.select") }
 GatherLite.plugins.Routes = Routes
 addon.Routes = Routes
 
@@ -101,7 +102,7 @@ function Routes:Clear()
     self.onlyMapID = nil
     GatherLite.db.char.routeObjects, GatherLite.db.char.routeOnlyMapID = nil, nil
     GatherLite.db.char.routeObject, GatherLite.db.char.routeMapID = nil, nil
-    self.status = "Route cleared. Select a resource to create another."
+    self.status = T("window.route.status.cleared")
     self:Notify()
 end
 
@@ -120,7 +121,7 @@ function Routes:SelectMap(mapID)
             C_Map.GetMapInfo(mapID).name, mapID == self.bestMapID and " (recommended)" or "",
             #route.points, route.length * 0.0009144)
     else
-        self.status = "No circuit in this zone: at least 3 distinct stops are needed. Browse another zone."
+        self.status = T("window.route.status.no_circuit")
     end
     self:Notify()
 end
@@ -132,7 +133,7 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
     -- switch can cancel it before it publishes a route or changes the map.
     self.object = object
     self.onlyMapID = onlyMapID
-    self.status = "Reading known locations..."
+    self.status = T("window.route.status.reading")
     self.progress = 0
     self:Notify()
     self.worker = coroutine.create(function()
@@ -146,7 +147,7 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
         table.sort(mapIDs)
         local best, byMap = nil, {}
         for index, mapID in ipairs(mapIDs) do
-            self.status = string.format("Comparing zone %d of %d: %s", index, #mapIDs, C_Map.GetMapInfo(mapID).name)
+            self.status = T("window.route.status.comparing", index, #mapIDs, C_Map.GetMapInfo(mapID).name)
             self.progress = 5 + 95 * (index - 1) / #mapIDs
             local candidate = addon.RoutePlanner.Build(maps[mapID], checkpoint, function(fraction)
                 self.progress = 5 + 95 * (index - 1 + fraction) / #mapIDs
@@ -163,7 +164,7 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
             self:SelectMap(byMap[preferredMapID] and preferredMapID or best.mapID)
             if addon.Window then addon.Window:ShowRoute(self.active) end
         else
-            self.status = "Not enough known locations: a route needs 3 distinct stops in one zone."
+            self.status = T("window.route.status.not_enough")
             self:Notify()
         end
     end)
@@ -175,7 +176,7 @@ function Routes:Tick()
     if not ok then
         self.worker = nil
         self.progress = nil
-        self.status = "Route generation failed. Try another resource."
+        self.status = T("window.route.status.failed")
         self:Notify()
         geterrorhandler()(err)
     elseif coroutine.status(self.worker) == "dead" then

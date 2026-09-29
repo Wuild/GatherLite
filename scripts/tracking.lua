@@ -62,12 +62,17 @@ function Tracking:Check()
         debugState("spells","Tracking API unavailable")
         return
     end
-    local available, active = {}, nil
+    local available, active, otherActive = {}, nil, nil
     for index=1,C_Minimap.GetNumTrackingTypes() do
         local info=C_Minimap.GetTrackingInfo(index)
-        if info and (info.spellID==2580 or info.spellID==2383) then
-            available[info.spellID]={index=index,active=info.active}
-            if info.active then active=info.spellID end
+        if info then
+            if info.active and info.spellID~=2580 and info.spellID~=2383 then
+                otherActive=info
+            end
+            if info.spellID==2580 or info.spellID==2383 then
+                available[info.spellID]={index=index,active=info.active}
+                if info.active then active=info.spellID end
+            end
         end
     end
     for _,id in ipairs({2580,2383}) do
@@ -76,6 +81,10 @@ function Tracking:Check()
     end
     if settings.autoGatherTracking==false then
         debugState("spell action","Automatic activation disabled")
+        return
+    end
+    if otherActive then
+        debugState("spell action","Preserving active non-gathering tracker")
         return
     end
     if InCombatLockdown() then debugState("spell action","Deferred until combat ends"); return end
