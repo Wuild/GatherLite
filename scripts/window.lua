@@ -44,7 +44,7 @@ function Window:RefreshRoute()
     self.routeSummary:SetText(Routes.progress and T("window.status.planning") or
         (route and string.format("%d stops  |  %.1f km%s",#route.points,route.length*.0009144,
             self.mapID==Routes.bestMapID and T("window.route.best") or "") or
-        (self.object and T("window.status.browse_zones") or T("window.status.choose_resource")))
+        (self.object and T("window.status.browse_zones") or T("window.status.choose_resource"))))
     self.visibility:SetEnabled(fish or Routes.byMap~=nil)
     if fish then
         local count=#((self.locations or {})[self.mapID] or {})
