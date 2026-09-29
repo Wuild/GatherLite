@@ -215,7 +215,16 @@ local HBD={
     GetPlayerWorldPosition=function() return -500,-500,0 end,
     GetPlayerZonePosition=function() return .5,.5,playerMap end,
 }
-LibStub=function(key) if key=="HereBeDragons-2.0" then return HBD end; return {allFrames={}} end
+local localeTable = {}
+LibStub=function(key)
+    if key=="AceLocale-3.0" then
+        return {NewLocale=function() return localeTable end, GetLocale=function() return localeTable end}
+    elseif key=="HereBeDragons-2.0" then
+        return HBD
+    end
+    return {allFrames={}}
+end
+load("scripts/locales/enUS.lua")
 local events={}
 GatherLite={plugins={},db={global={usePredefined=true,debug={types={}}},char={
     minimap={enabled=true,range=400,size=12,opacity=1,distance=70,loot=true},
@@ -225,7 +234,13 @@ function GatherLite:On(event,fn) events[event]=events[event] or {}; table.insert
 function GatherLite:Trigger(event) for _,fn in ipairs(events[event] or {}) do fn() end end
 function GatherLite:IsLoaded() return true end
 function GatherLite:RegisterChatCommand() end
-function GatherLite:translate(key) return key end
+function GatherLite:translate(key, ...)
+    local val = localeTable[key] or key
+    if select("#", ...) > 0 then
+        return string.format(val, ...)
+    end
+    return val
+end
 function GatherLite:GetNodeTracking(target,kind) return self.db.char[target][kind]~=false end
 function GatherLite:SetNodeTracking(target,kind,v) self.db.char[target][kind]=v; self:Trigger("settings:update") end
 function GatherLite:IsIgnored(id) return self.db.char[id]==true end

@@ -63,7 +63,7 @@ L['node.dented_footlocker'] = "被砸过的箱子"
 L['node.mossy_footlocker'] = "生苔的提箱"
 L['node.scarlet_footlocker'] = "血色十字军提箱"
 
-L["settings.debugging"] = "Debugging"
+L["settings.debugging"] = "调试"
 
 
 -- Ores

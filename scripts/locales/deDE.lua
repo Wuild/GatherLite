@@ -1,31 +1,220 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("GatherLite", "deDE")
-if not L then return end
+if not L then
+    return
+end
 
-L["tracking"]="Verfolgung"; L["mining"]="Bergbau"; L["herbalism"]="Kräuterkunde"; L["fish"]="Fische"; L["containers"]="Behälter"
-L["worldmap.show"]="GatherLite anzeigen"; L["worldmap.hide"]="GatherLite ausblenden"
-L["settings.node"]="Ressourceneinstellungen"; L["settings.node.predefined"]="Vordefinierte Datenbank verwenden"; L["settings.node.minimap"]="Ressourcen auf der Minikarte anzeigen"; L["settings.node.worldmap"]="Ressourcen auf der Weltkarte anzeigen"
-L["settings.general"]="Allgemeine Einstellungen"; L["settings.general.minimap"]="Minikarten-Schaltfläche anzeigen"; L["settings.map"]="Karteneinstellungen"; L["settings.minimap"]="Minikarteneinstellungen"; L["settings.tracking"]="Verfolgung"; L["settings.debugging"]="Fehlersuche"
-L["settings.map.loot"]="Beute im Ressourcentooltip anzeigen"; L["settings.map.size"]="Symbolgröße"; L["settings.map.opacity"]="Symboltransparenz"; L["settings.minimap.edge"]="Ressourcen am Rand der Minikarte halten"; L["settings.minimap.loot"]="Beute im Ressourcentooltip anzeigen"; L["settings.minimap.size"]="Symbolgröße"; L["settings.minimap.opacity"]="Symboltransparenz"
-L["settings.minimap.threshold"]="Ressourcen näher als %d Einheiten anzeigen"; L["settings.minimap.range"]="Entfernung naher Ressourcen: %d Meter"; L["settings.minimap.range.description"]="Ressourcen innerhalb dieser Entfernung werden als Kreise angezeigt oder ausgeblendet, wenn Kreise deaktiviert sind. Standard in Classic: 70 Meter. Bei 0 bleiben normale Symbole erhalten."
-L["settings.minimap.left_click"]="Linksklick"; L["settings.minimap.left_click_text"]="Verfolgungsmenü öffnen"; L["settings.minimap.right_click"]="Rechtsklick"; L["settings.minimap.right_click_text"]="Einstellungen öffnen"; L["settings.tracking.toggle_all_ores"]="Alle Erze umschalten"; L["settings.tracking.toggle_all_herbs"]="Alle Kräuter umschalten"; L["settings.tracking.toggle_all_containers"]="Alle Behälter umschalten"
-L["tooltip.last_visit"]="Letzter Besuch:"; L["tooltip.nearby_nodes"]="%d Ressourcen in der Nähe"; L["tooltip.found_by"]="Gefunden von:"; L["settings.map.zone_tooltip"]="Verfolgte Ressourcen einer Zone auf der Karte auflisten"; L["tooltip.zone_nodes"]="Bekannte verfolgte Ressourcen"; L["tooltip.zone_empty"]="Keine verfolgten Ressourcen in dieser Zone bekannt."
+L["tracking"] = "Verfolgung";
+L["mining"] = "Bergbau";
+L["herbalism"] = "Kräuterkunde";
+L["fish"] = "Fische";
+L["containers"] = "Behälter"
+L["worldmap.show"] = "GatherLite anzeigen";
+L["worldmap.hide"] = "GatherLite ausblenden"
+L["settings.node"] = "Ressourceneinstellungen";
+L["settings.node.predefined"] = "Vordefinierte Datenbank verwenden";
+L["settings.node.minimap"] = "Ressourcen auf der Minikarte anzeigen";
+L["settings.node.worldmap"] = "Ressourcen auf der Weltkarte anzeigen"
+L["settings.general"] = "Allgemeine Einstellungen";
+L["settings.general.minimap"] = "Minikarten-Schaltfläche anzeigen";
+L["settings.map"] = "Karteneinstellungen";
+L["settings.minimap"] = "Minikarteneinstellungen";
+L["settings.tracking"] = "Verfolgung";
+L["settings.debugging"] = "Fehlersuche"
+L["settings.map.loot"] = "Beute im Ressourcentooltip anzeigen";
+L["settings.map.size"] = "Symbolgröße";
+L["settings.map.opacity"] = "Symboltransparenz";
+L["settings.minimap.edge"] = "Ressourcen am Rand der Minikarte halten";
+L["settings.minimap.loot"] = "Beute im Ressourcentooltip anzeigen";
+L["settings.minimap.size"] = "Symbolgröße";
+L["settings.minimap.opacity"] = "Symboltransparenz"
+L["settings.minimap.threshold"] = "Ressourcen näher als %d Einheiten anzeigen";
+L["settings.minimap.range"] = "Entfernung naher Ressourcen: %d Meter";
+L["settings.minimap.range.description"] = "Ressourcen innerhalb dieser Entfernung werden als Kreise angezeigt oder ausgeblendet, wenn Kreise deaktiviert sind. Standard in Classic: 70 Meter. Bei 0 bleiben normale Symbole erhalten."
+L["settings.minimap.left_click"] = "Linksklick";
+L["settings.minimap.left_click_text"] = "Verfolgungsmenü öffnen";
+L["settings.minimap.right_click"] = "Rechtsklick";
+L["settings.minimap.right_click_text"] = "Einstellungen öffnen";
+L["settings.tracking.toggle_all_ores"] = "Alle Erze umschalten";
+L["settings.tracking.toggle_all_herbs"] = "Alle Kräuter umschalten";
+L["settings.tracking.toggle_all_containers"] = "Alle Behälter umschalten"
+L["tooltip.last_visit"] = "Letzter Besuch:";
+L["tooltip.nearby_nodes"] = "%d Ressourcen in der Nähe";
+L["tooltip.found_by"] = "Gefunden von:";
+L["settings.map.zone_tooltip"] = "Verfolgte Ressourcen einer Zone auf der Karte auflisten";
+L["tooltip.zone_nodes"] = "Bekannte verfolgte Ressourcen";
+L["tooltip.zone_empty"] = "Keine verfolgten Ressourcen in dieser Zone bekannt."
 
 -- Resource nodes and aliases.
-L["node.copper_vein"]="Kupfervorkommen"; L["node.weak_copper_vein"]="Schwaches Kupfervorkommen"; L["node.poor_copper_vein"]="Mageres Kupfervorkommen"; L["node.tin_vein"]="Zinnvorkommen"; L["node.silver_vein"]="Silbervorkommen"; L["node.iron_deposit"]="Eisenerzvorkommen"; L["node.gold_vein"]="Goldvorkommen"; L["node.mithril_deposit"]="Mithrilvorkommen"; L["node.truesilver_deposit"]="Echtsilbervorkommen"; L["node.dark_iron_deposit"]="Dunkeleisenvorkommen"; L["node.small_thorium_vein"]="Kleines Thoriumvorkommen"; L["node.rich_thorium_vein"]="Reiches Thoriumvorkommen"
-L["node.cold_iron_deposit"]="Kaltmetallvorkommen"; L["node.fools_gold_vein"]="Narrengoldvorkommen"; L["node.starsilver_vein"]="Sternsilbervorkommen"; L["node.greater_moonstone_formation"]="Größere Mondsteinformation"; L["node.incendicite_mineral_vein"]="Incendicit-Mineralader"; L["node.lesser_bloodstone_deposit"]="Kleines Blutsteinvorkommen"; L["node.indurium_mineral_vein"]="Indurium-Mineralader"; L["node.hakkari_thorium_vein"]="Hakkari-Thoriumvorkommen"; L["node.small_obsidian_chunk"]="Kleines Obsidianfragment"; L["node.large_obsidian_chunk"]="Großes Obsidianfragment"
-L["node.ooze_covered_silver_vein"]="Schleimbedecktes Silbervorkommen"; L["node.ooze_covered_gold_vein"]="Schleimbedecktes Goldvorkommen"; L["node.ooze_covered_mithril_deposit"]="Schleimbedecktes Mithrilvorkommen"; L["node.ooze_covered_truesilver_deposit"]="Schleimbedecktes Echtsilbervorkommen"; L["node.ooze_covered_thorium_vein"]="Schleimbedecktes Thoriumvorkommen"; L["node.ooze_covered_rich_thorium_vein"]="Schleimbedecktes reiches Thoriumvorkommen"
-L["node.silverleaf"]="Silberblatt"; L["node.peacebloom"]="Friedensblume"; L["node.wilted_peacebloom"]="Verwelkte Friedensblume"; L["node.earthroot"]="Erdwurzel"; L["node.mageroyal"]="Maguskönigskraut"; L["node.briarthorn"]="Wilddornrose"; L["node.stranglekelp"]="Würgetang"; L["node.bruiseweed"]="Beulengras"; L["node.wild_steelbloom"]="Wildstahlblume"; L["node.grave_moss"]="Grabmoos"; L["node.kingsblood"]="Königsblut"; L["node.liferoot"]="Lebenswurz"; L["node.fadeleaf"]="Blindkraut"; L["node.goldthorn"]="Goldener Sansam"; L["node.khadgars_whisker"]="Khadgars Schnurrbart"; L["node.wintersbite"]="Winterbiss"; L["node.firebloom"]="Feuerblüte"; L["node.purple_lotus"]="Lila Lotus"; L["node.arthas_tears"]="Arthas' Tränen"; L["node.sungrass"]="Sonnengras"; L["node.blindweed"]="Blindkraut"; L["node.ghost_mushroom"]="Geisterpilz"; L["node.gromsblood"]="Gromsblut"; L["node.golden_sansam"]="Goldener Sansam"; L["node.dreamfoil"]="Traumblatt"; L["node.mountain_silversage"]="Bergsilbersalbei"; L["node.plaguebloom"]="Pestblüte"; L["node.icecap"]="Eisenschuppe"; L["node.black_lotus"]="Schwarzer Lotus"; L["node.nightmare_moss"]="Alptraummoos"; L["node.dreamroot"]="Traumwurzel"; L["node.moonroot"]="Mondwurzel"; L["node.star_lotus"]="Sternlotus"
-L["node.battered_chest"]="Ramponierte Truhe"; L["node.large_battered_chest"]="Große ramponierte Truhe"; L["node.solid_chest"]="Massive Truhe"; L["node.large_solid_chest"]="Große massive Truhe"; L["node.giant_clam"]="Riesenmuschel"; L["node.ungoro_dirt_pile"]="Un'Goro-Erde"; L["node.practice_lockbox"]="Übungsschließkassette"; L["node.buccaneers_strongbox"]="Schließkassette der Bukaniere"; L["node.battered_footlocker"]="Ramponierte Truhe"; L["node.waterlogged_footlocker"]="Wasserdurchtränkte Truhe"; L["node.dented_footlocker"]="Verbeulte Truhe"; L["node.mossy_footlocker"]="Moosbedeckte Truhe"; L["node.scarlet_footlocker"]="Truhe der Scharlachroten"
-L["node.fish_pool_debris"]="Treibende Trümmer"; L["node.fish_pool_wreckage"]="Treibendes Wrackgut"; L["node.fish_pool_oily_blackmouth"]="Schwarm öliger Schwarzmäuler"; L["node.fish_pool_sagefish"]="Schwarm Weisenfische"
+L["node.copper_vein"] = "Kupfervorkommen";
+L["node.weak_copper_vein"] = "Schwaches Kupfervorkommen";
+L["node.poor_copper_vein"] = "Mageres Kupfervorkommen";
+L["node.tin_vein"] = "Zinnvorkommen";
+L["node.silver_vein"] = "Silbervorkommen";
+L["node.iron_deposit"] = "Eisenerzvorkommen";
+L["node.gold_vein"] = "Goldvorkommen";
+L["node.mithril_deposit"] = "Mithrilvorkommen";
+L["node.truesilver_deposit"] = "Echtsilbervorkommen";
+L["node.dark_iron_deposit"] = "Dunkeleisenvorkommen";
+L["node.small_thorium_vein"] = "Kleines Thoriumvorkommen";
+L["node.rich_thorium_vein"] = "Reiches Thoriumvorkommen"
+L["node.cold_iron_deposit"] = "Kaltmetallvorkommen";
+L["node.fools_gold_vein"] = "Narrengoldvorkommen";
+L["node.starsilver_vein"] = "Sternsilbervorkommen";
+L["node.greater_moonstone_formation"] = "Größere Mondsteinformation";
+L["node.incendicite_mineral_vein"] = "Incendicit-Mineralader";
+L["node.lesser_bloodstone_deposit"] = "Kleines Blutsteinvorkommen";
+L["node.indurium_mineral_vein"] = "Indurium-Mineralader";
+L["node.hakkari_thorium_vein"] = "Hakkari-Thoriumvorkommen";
+L["node.small_obsidian_chunk"] = "Kleines Obsidianfragment";
+L["node.large_obsidian_chunk"] = "Großes Obsidianfragment"
+L["node.ooze_covered_silver_vein"] = "Schleimbedecktes Silbervorkommen";
+L["node.ooze_covered_gold_vein"] = "Schleimbedecktes Goldvorkommen";
+L["node.ooze_covered_mithril_deposit"] = "Schleimbedecktes Mithrilvorkommen";
+L["node.ooze_covered_truesilver_deposit"] = "Schleimbedecktes Echtsilbervorkommen";
+L["node.ooze_covered_thorium_vein"] = "Schleimbedecktes Thoriumvorkommen";
+L["node.ooze_covered_rich_thorium_vein"] = "Schleimbedecktes reiches Thoriumvorkommen"
+L["node.silverleaf"] = "Silberblatt";
+L["node.peacebloom"] = "Friedensblume";
+L["node.wilted_peacebloom"] = "Verwelkte Friedensblume";
+L["node.earthroot"] = "Erdwurzel";
+L["node.mageroyal"] = "Maguskönigskraut";
+L["node.briarthorn"] = "Wilddornrose";
+L["node.stranglekelp"] = "Würgetang";
+L["node.bruiseweed"] = "Beulengras";
+L["node.wild_steelbloom"] = "Wildstahlblume";
+L["node.grave_moss"] = "Grabmoos";
+L["node.kingsblood"] = "Königsblut";
+L["node.liferoot"] = "Lebenswurz";
+L["node.fadeleaf"] = "Blindkraut";
+L["node.goldthorn"] = "Goldener Sansam";
+L["node.khadgars_whisker"] = "Khadgars Schnurrbart";
+L["node.wintersbite"] = "Winterbiss";
+L["node.firebloom"] = "Feuerblüte";
+L["node.purple_lotus"] = "Lila Lotus";
+L["node.arthas_tears"] = "Arthas' Tränen";
+L["node.sungrass"] = "Sonnengras";
+L["node.blindweed"] = "Blindkraut";
+L["node.ghost_mushroom"] = "Geisterpilz";
+L["node.gromsblood"] = "Gromsblut";
+L["node.golden_sansam"] = "Goldener Sansam";
+L["node.dreamfoil"] = "Traumblatt";
+L["node.mountain_silversage"] = "Bergsilbersalbei";
+L["node.plaguebloom"] = "Pestblüte";
+L["node.icecap"] = "Eisenschuppe";
+L["node.black_lotus"] = "Schwarzer Lotus";
+L["node.nightmare_moss"] = "Alptraummoos";
+L["node.dreamroot"] = "Traumwurzel";
+L["node.moonroot"] = "Mondwurzel";
+L["node.star_lotus"] = "Sternlotus"
+L["node.battered_chest"] = "Ramponierte Truhe";
+L["node.large_battered_chest"] = "Große ramponierte Truhe";
+L["node.solid_chest"] = "Massive Truhe";
+L["node.large_solid_chest"] = "Große massive Truhe";
+L["node.giant_clam"] = "Riesenmuschel";
+L["node.ungoro_dirt_pile"] = "Un'Goro-Erde";
+L["node.practice_lockbox"] = "Übungsschließkassette";
+L["node.buccaneers_strongbox"] = "Schließkassette der Bukaniere";
+L["node.battered_footlocker"] = "Ramponierte Truhe";
+L["node.waterlogged_footlocker"] = "Wasserdurchtränkte Truhe";
+L["node.dented_footlocker"] = "Verbeulte Truhe";
+L["node.mossy_footlocker"] = "Moosbedeckte Truhe";
+L["node.scarlet_footlocker"] = "Truhe der Scharlachroten"
+L["node.fish_pool_debris"] = "Treibende Trümmer";
+L["node.fish_pool_wreckage"] = "Treibendes Wrackgut";
+L["node.fish_pool_oily_blackmouth"] = "Schwarm öliger Schwarzmäuler";
+L["node.fish_pool_sagefish"] = "Schwarm Weisenfische"
 
 -- Tracker window, route messages, and settings.
-L["window.binding.toggle"]="GatherLite-Fenster umschalten"
-L["window.requirement.combined"]="Kombinierte Sammelroute"; L["window.requirement.fish"]="Angeln | Gemeldete Fänge"; L["window.requirement.skill"]="%s %d"; L["window.requirement.fishing_pool"]="Angeln | Fischschwarmpositionen"; L["window.requirement.none"]="Keine Fähigkeitsanforderung aufgezeichnet"; L["window.resource.all"]="Alle Ressourcen"; L["window.resource.fishing"]="Angeln"; L["window.resource.fishing_pools"]="Fischschwärme"; L["window.resource.fish_catches"]="Gemeldete Fänge"; L["window.resource.lockpicking"]="Schlossknacken"
-L["window.search"]="Ressourcen suchen"; L["window.filter.only_zone"]="Nur diese Zone"; L["window.results.none"]="Keine passenden Ressourcen."; L["window.results.count"]="%d Ressourcen%s"; L["window.results.in_zone"]=" in %s"; L["window.results.found"]=" gefunden"; L["window.results.to_discover"]=" zu entdecken"; L["window.card.farming_route"]="SAMMELROUTE"; L["window.card.fishing_locations"]="FISCHSCHWÄRME"; L["window.selection.resource"]="Ressource auswählen"; L["window.selection.resources"]="Ressourcen auswählen"
-L["window.action.restart"]="Berechnung neu starten"; L["window.action.generate_zone"]="Zonenroute erstellen"; L["window.action.generate_zones"]="Zonenrouten erstellen"; L["window.action.choose_zone"]="Zone auf der Karte auswählen"; L["window.action.cancel"]="Abbrechen"; L["window.action.clear"]="Löschen"; L["window.action.show_route"]="Route anzeigen"; L["window.action.hide_route"]="Route ausblenden"; L["window.action.catch_locations_shown"]="Fangorte angezeigt"; L["window.action.zone_information_only"]="Nur Zoneninformationen"; L["window.action.hide_catches"]="Fänge ausblenden"; L["window.action.show_catches"]="Fänge anzeigen"; L["window.action.open_world_map"]="Weltkarte öffnen"; L["window.action.help"]="Hilfe"
-L["window.status.fishing"]="Fischschwarmpositionen | Gemeldete Fänge sind mögliche, nicht garantierte Vorkommen."; L["window.status.planning"]="Sammelrouten werden geplant …"; L["window.status.browse_zones"]="Zonen durchsuchen und Routen erstellen."; L["window.status.choose_resource"]="Ressource auswählen, um eine Route zu planen."; L["window.status.reported_catches"]="Gemeldete Fänge; die Verfügbarkeit kann abweichen."; L["window.status.fishing_zone"]="Bekannte Angelzone; genaue Fangpositionen sind nicht veröffentlicht."; L["window.route.best"]="  |  Beste"; L["window.tooltip.reported_catch"]="Gemeldeter Fangort, kein garantiertes Fischvorkommen."
-L["window.zone.no_locations"]="Keine bekannten Positionen"; L["window.zone.locations"]="%d Positionen in dieser Zone"; L["window.zone.select_resource"]="Ressource oben auswählen"; L["window.zone.reported_catches"]="%d gemeldete Fangorte"; L["window.zone.fishing_no_pins"]="Angelzone (keine genauen Markierungen)"; L["window.zone.no_catches"]="Keine bekannten Fänge in dieser Zone"; L["window.settings.preferences"]="EINSTELLUNGEN"; L["window.settings.world_map"]="Weltkarte"; L["window.settings.resources"]="Ressourcen"; L["window.settings.general.description"]="Wähle, wo GatherLite Sammelpositionen anzeigt."; L["window.settings.world_map.description"]="Ressourcenmarkierungen und Tooltips auf der Weltkarte anpassen."; L["window.settings.minimap.description"]="Nahe Markierungen, Verfolgungsreichweite und Minikartenanzeige anpassen."; L["window.settings.resources.description"]="Wähle, welche Ressourcen in deinen normalen Sammelanzeigen erscheinen."; L["window.settings.debugging.description"]="Diagnoseoptionen zur Untersuchung von Addon-Problemen."; L["window.settings.autosave"]="Änderungen werden automatisch gespeichert."
-L["window.tab.world_map"]="Weltkarte"; L["window.tab.settings"]="Einstellungen"; L["window.tab.changelog"]="Neuigkeiten"; L["window.footer.map"]="Scrollen zum Zoomen  |  Ziehen zum Verschieben  |  Zone anklicken zum Betreten  |  Rechtsklick zum Zurückkehren"; L["window.footer.changelog"]="Versionshinweise  |  Zum Weiterlesen scrollen"; L["window.footer.settings"]="Einstellungen werden automatisch gespeichert. Die vordefinierte Datenbank ist geteilt; Karteneinstellungen gelten pro Charakter."
-L["window.route.status.select"]="Ressource auswählen, um bekannte Positionen zu erkunden."; L["window.route.status.cleared"]="Route gelöscht. Ressource auswählen, um eine neue zu erstellen."; L["window.route.status.no_circuit"]="Keine Route in dieser Zone: Mindestens 3 verschiedene Positionen werden benötigt. Andere Zone durchsuchen."; L["window.route.status.reading"]="Bekannte Positionen werden gelesen …"; L["window.route.status.comparing"]="Zone %d von %d wird verglichen: %s"; L["window.route.status.not_enough"]="Nicht genügend bekannte Positionen: Eine Route benötigt 3 verschiedene Positionen in einer Zone."; L["window.route.status.failed"]="Routenerstellung fehlgeschlagen. Andere Ressource versuchen."
-L["settings.help.predefined"]="Integrierte Sammelpositionen zusätzlich zu deinen eigenen Entdeckungen anzeigen."; L["settings.help.node_minimap"]="Bekannte Sammelpositionen in der Nähe deines Charakters anzeigen."; L["settings.help.node_worldmap"]="Sammelmarkierungen auf der Weltkarte anzeigen."; L["settings.help.minimap"]="Die GatherLite-Schaltfläche neben der Minikarte anzeigen."; L["settings.help.zone_tooltip"]="Beim Überfahren der Kontinentkarte die verfolgten Ressourcen einer Zone anzeigen."; L["settings.help.loot"]="Aufgezeichnete Beute und Besuchsverlauf in Markierungstooltips anzeigen."; L["settings.help.edge"]="Markierungen außerhalb der Reichweite am Rand der Minikarte halten."; L["settings.help.enabled"]="Diagnosemeldungen zur Fehlerbehebung aufzeichnen."
-L["settings.map.neighbors"]="Ressourcen benachbarter Zonen anzeigen"; L["settings.map.neighbors.description"]="Ressourcen angrenzender Zonen auf ausgewählten Zonenkarten einbeziehen. Übersichtskarten bleiben übersichtlich."; L["settings.minimap.auto_tracking"]="Sammelverfolgung automatisch aktivieren"; L["settings.minimap.auto_tracking.description"]="Alle 5 Sekunden prüfen und außerhalb des Kampfes erlerntes Erz- oder Kräutersuchen wiederherstellen. Die Auswahl von Bergbau oder Kräuterkunde wählt den entsprechenden Verfolgungszauber."; L["settings.minimap.hide_nearby"]="Nahe Ressourcen ohne Kreise ausblenden"; L["settings.minimap.hide_nearby.description"]="Wenn Kreise für nahe Ressourcen deaktiviert sind, Ressourcen innerhalb der nahen Entfernung ausblenden. Andernfalls ihre Symbole behalten."; L["settings.minimap.nearby_circles"]="Kreise für nahe Ressourcen anzeigen"; L["settings.minimap.nearby_circles.description"]="Ressourcensymbole in der Nähe durch leere Kreise ersetzen. Bei Deaktivierung Symbole behalten oder die Option zum Ausblenden verwenden."; L["settings.debugging.reset_onboarding"]="Einführung zurücksetzen"; L["settings.debugging.reset_onboarding.description"]="Gespeicherten Einführungsstatus löschen und die Hilfetipps neu starten."; L["settings.debugging.enable"]="Fehlersuche aktivieren"; L["settings.debugging.nodes"]="Ressourcen"; L["settings.debugging.frames"]="Rahmen"
+L["window.binding.toggle"] = "GatherLite-Fenster umschalten"
+L["window.requirement.combined"] = "Kombinierte Sammelroute";
+L["window.requirement.fish"] = "Angeln | Gemeldete Fänge";
+L["window.requirement.skill"] = "%s %d";
+L["window.requirement.fishing_pool"] = "Angeln | Fischschwarmpositionen";
+L["window.requirement.none"] = "Keine Fähigkeitsanforderung aufgezeichnet";
+L["window.resource.all"] = "Alle Ressourcen";
+L["window.resource.fishing"] = "Angeln";
+L["window.resource.fishing_pools"] = "Fischschwärme";
+L["window.resource.fish_catches"] = "Gemeldete Fänge";
+L["window.resource.lockpicking"] = "Schlossknacken"
+L["window.search"] = "Ressourcen suchen";
+L["window.filter.only_zone"] = "Nur diese Zone";
+L["window.results.none"] = "Keine passenden Ressourcen.";
+L["window.results.count"] = "%d Ressourcen%s";
+L["window.results.in_zone"] = " in %s";
+L["window.results.found"] = " gefunden";
+L["window.results.to_discover"] = " zu entdecken";
+L["window.card.farming_route"] = "SAMMELROUTE";
+L["window.card.fishing_locations"] = "FISCHSCHWÄRME";
+L["window.selection.resource"] = "Ressource auswählen";
+L["window.selection.resources"] = "Ressourcen auswählen"
+L["window.action.restart"] = "Berechnung neu starten";
+L["window.action.generate_zone"] = "Zonenroute erstellen";
+L["window.action.generate_zones"] = "Zonenrouten erstellen";
+L["window.action.choose_zone"] = "Zone auf der Karte auswählen";
+L["window.action.cancel"] = "Abbrechen";
+L["window.action.clear"] = "Löschen";
+L["window.action.show_route"] = "Route anzeigen";
+L["window.action.hide_route"] = "Route ausblenden";
+L["window.action.catch_locations_shown"] = "Fangorte angezeigt";
+L["window.action.zone_information_only"] = "Nur Zoneninformationen";
+L["window.action.hide_catches"] = "Fänge ausblenden";
+L["window.action.show_catches"] = "Fänge anzeigen";
+L["window.action.open_world_map"] = "Weltkarte öffnen";
+L["window.action.help"] = "Hilfe"
+L["window.status.fishing"] = "Fischschwarmpositionen | Gemeldete Fänge sind mögliche, nicht garantierte Vorkommen.";
+L["window.status.planning"] = "Sammelrouten werden geplant …";
+L["window.status.browse_zones"] = "Zonen durchsuchen und Routen erstellen.";
+L["window.status.choose_resource"] = "Ressource auswählen, um eine Route zu planen.";
+L["window.status.reported_catches"] = "Gemeldete Fänge; die Verfügbarkeit kann abweichen.";
+L["window.status.fishing_zone"] = "Bekannte Angelzone; genaue Fangpositionen sind nicht veröffentlicht.";
+L["window.route.best"] = "  |  Beste";
+L["window.tooltip.reported_catch"] = "Gemeldeter Fangort, kein garantiertes Fischvorkommen."
+L["window.zone.no_locations"] = "Keine bekannten Positionen";
+L["window.zone.locations"] = "%d Positionen in dieser Zone";
+L["window.zone.select_resource"] = "Ressource oben auswählen";
+L["window.zone.reported_catches"] = "%d gemeldete Fangorte";
+L["window.zone.fishing_no_pins"] = "Angelzone (keine genauen Markierungen)";
+L["window.zone.no_catches"] = "Keine bekannten Fänge in dieser Zone";
+L["window.settings.preferences"] = "EINSTELLUNGEN";
+L["window.settings.world_map"] = "Weltkarte";
+L["window.settings.resources"] = "Ressourcen";
+L["window.settings.general.description"] = "Wähle, wo GatherLite Sammelpositionen anzeigt.";
+L["window.settings.world_map.description"] = "Ressourcenmarkierungen und Tooltips auf der Weltkarte anpassen.";
+L["window.settings.minimap.description"] = "Nahe Markierungen, Verfolgungsreichweite und Minikartenanzeige anpassen.";
+L["window.settings.resources.description"] = "Wähle, welche Ressourcen in deinen normalen Sammelanzeigen erscheinen.";
+L["window.settings.debugging.description"] = "Diagnoseoptionen zur Untersuchung von Addon-Problemen.";
+L["window.settings.autosave"] = "Änderungen werden automatisch gespeichert."
+L["window.tab.world_map"] = "Weltkarte";
+L["window.tab.settings"] = "Einstellungen";
+L["window.tab.changelog"] = "Neuigkeiten";
+L["window.footer.map"] = "Scrollen zum Zoomen  |  Ziehen zum Verschieben  |  Zone anklicken zum Betreten  |  Rechtsklick zum Zurückkehren";
+L["window.footer.changelog"] = "Versionshinweise  |  Zum Weiterlesen scrollen";
+L["window.footer.settings"] = "Einstellungen werden automatisch gespeichert. Die vordefinierte Datenbank ist geteilt; Karteneinstellungen gelten pro Charakter."
+L["window.route.status.select"] = "Ressource auswählen, um bekannte Positionen zu erkunden.";
+L["window.route.status.cleared"] = "Route gelöscht. Ressource auswählen, um eine neue zu erstellen.";
+L["window.route.status.no_circuit"] = "Keine Route in dieser Zone: Mindestens 3 verschiedene Positionen werden benötigt. Andere Zone durchsuchen.";
+L["window.route.status.reading"] = "Bekannte Positionen werden gelesen …";
+L["window.route.status.comparing"] = "Zone %d von %d wird verglichen: %s";
+L["window.route.status.not_enough"] = "Nicht genügend bekannte Positionen: Eine Route benötigt 3 verschiedene Positionen in einer Zone.";
+L["window.route.status.failed"] = "Routenerstellung fehlgeschlagen. Andere Ressource versuchen."
+L["settings.help.predefined"] = "Integrierte Sammelpositionen zusätzlich zu deinen eigenen Entdeckungen anzeigen.";
+L["settings.help.node_minimap"] = "Bekannte Sammelpositionen in der Nähe deines Charakters anzeigen.";
+L["settings.help.node_worldmap"] = "Sammelmarkierungen auf der Weltkarte anzeigen.";
+L["settings.help.minimap"] = "Die GatherLite-Schaltfläche neben der Minikarte anzeigen.";
+L["settings.help.zone_tooltip"] = "Beim Überfahren der Kontinentkarte die verfolgten Ressourcen einer Zone anzeigen.";
+L["settings.help.loot"] = "Aufgezeichnete Beute und Besuchsverlauf in Markierungstooltips anzeigen.";
+L["settings.help.edge"] = "Markierungen außerhalb der Reichweite am Rand der Minikarte halten.";
+L["settings.help.enabled"] = "Diagnosemeldungen zur Fehlerbehebung aufzeichnen."
+L["settings.map.neighbors"] = "Ressourcen benachbarter Zonen anzeigen";
+L["settings.map.neighbors.description"] = "Ressourcen angrenzender Zonen auf ausgewählten Zonenkarten einbeziehen. Übersichtskarten bleiben übersichtlich.";
+L["settings.minimap.auto_tracking"] = "Sammelverfolgung automatisch aktivieren";
+L["settings.minimap.auto_tracking.description"] = "Alle 5 Sekunden prüfen und außerhalb des Kampfes erlerntes Erz- oder Kräutersuchen wiederherstellen. Die Auswahl von Bergbau oder Kräuterkunde wählt den entsprechenden Verfolgungszauber.";
+L["settings.minimap.hide_nearby"] = "Nahe Ressourcen ohne Kreise ausblenden";
+L["settings.minimap.hide_nearby.description"] = "Wenn Kreise für nahe Ressourcen deaktiviert sind, Ressourcen innerhalb der nahen Entfernung ausblenden. Andernfalls ihre Symbole behalten.";
+L["settings.minimap.nearby_circles"] = "Kreise für nahe Ressourcen anzeigen";
+L["settings.minimap.nearby_circles.description"] = "Ressourcensymbole in der Nähe durch leere Kreise ersetzen. Bei Deaktivierung Symbole behalten oder die Option zum Ausblenden verwenden.";
+L["settings.debugging.reset_onboarding"] = "Einführung zurücksetzen";
+L["settings.debugging.reset_onboarding.description"] = "Gespeicherten Einführungsstatus löschen und die Hilfetipps neu starten.";
+L["settings.debugging.enable"] = "Fehlersuche aktivieren";
+L["settings.debugging.nodes"] = "Ressourcen";
+L["settings.debugging.frames"] = "Rahmen"

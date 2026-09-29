@@ -56,7 +56,7 @@ char.minimap.tracking.mining=false
 skills={}; tracking:UpdateProfessionFilters()
 assert(not char.minimap.tracking.mining and char.worldmap.tracking.mining,
     "profession changes must preserve manual per-map filters")
-entries={{spellID=2580,active=false},{spellID=2383,active=false},{spellID=123,active=true}}
+entries={{spellID=2580,active=false},{spellID=2383,active=false},{spellID=123,active=false}}
 char.autoGatherTracking=false; tracking:Check(); assert(#calls==0,"explicitly disabled tracking must stay disabled")
 char.autoGatherTracking=nil -- Missing preference uses the enabled default.
 combat=true; tracking:Check(); assert(#calls==0)
