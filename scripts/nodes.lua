@@ -15,9 +15,8 @@ local function InsertObject(type, ids, name, icon, levels, aliases)
     })
 end
 
--- Name aliases include player-reported Northshire starter variants whose IDs are
--- not published in the Forever source. Group observed gathers with the base resource.
--- These aliases do not establish variant spawn locations or skill requirements.
+-- Name aliases group observed starter variants with their base resource.
+-- Only variants with verified Forever object IDs contribute predefined coordinates.
 
 -- Ores
 -- Forever
@@ -48,8 +47,8 @@ InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Ore\\darkiron", { 305 }
 
 -- Herbs
 -- Forever
-InsertObject("herb", { 1617, 3725 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 })
-InsertObject("herb", { 1618, 3724 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 }, { "wilted_peacebloom" })
+InsertObject("herb", { 1617, 3725, 656161 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 }, { "stunted_silverleaf" })
+InsertObject("herb", { 1618, 3724, 656160 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 }, { "wilted_peacebloom" })
 InsertObject("herb", { 1619, 3726 }, "earthroot", "Herb\\earthroot", { 15, 40, 65, 115 })
 InsertObject("herb", { 1620, 3727 }, "mageroyal", "Herb\\mageroyal", { 50, 75, 100, 150 })
 InsertObject("herb", { 1621, 3729 }, "briarthorn", "Herb\\briarthorn", { 70, 95, 120, 170 })

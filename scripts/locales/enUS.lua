@@ -72,6 +72,7 @@ L['node.large_obsidian_chunk'] = "Large Obsidian Chunk"
 
 -- Herbs
 L['node.silverleaf'] = "Silverleaf"
+L['node.stunted_silverleaf'] = "Stunted Silverleaf"
 L['node.peacebloom'] = "Peacebloom"
 L['node.wilted_peacebloom'] = "Wilted Peacebloom"
 L['node.earthroot'] = "Earthroot"

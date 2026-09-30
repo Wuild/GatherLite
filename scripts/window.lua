@@ -617,37 +617,25 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.1.0. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.1.5. Keep these aligned with the packaged database.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.1 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.5 release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"COMBINED FARMING ROUTES",{
-            "Check multiple herbs, ores, or pools to connect their known locations into one farming circuit. Shared locations are counted once.",
-            "Pick a zone on the map to see its known resources. Only this zone is enabled by default; turn it off to browse all resources and generate routes across zones.",
-            "Search and resource categories work together with the zone filter. Saved routes restore the selected resources and zone scope after reload.",
+        {"STARTER HERB LOCATIONS",{
+            "Added 265 Wilted Peacebloom and 274 Stunted Silverleaf locations across six starter zones.",
+            "These variants appear with Peacebloom and Silverleaf in resource browsing and gathering tracking.",
         }},
-        {"MAP OVERLAY & RESOURCE BROWSING",{
-            "The selected-resource panel now sits in the bottom-right corner of the map, leaving the full sidebar height available for the resource list.",
-            "Route controls stay in place while you pan or zoom. Calculation progress appears above the panel, and combined map pins retain each resource's icon and details.",
-            "Mining, Herbalism, Containers, and Fishing categories help narrow the list. Controller navigation includes categories and the zone filter.",
-        }},
-        {"GATHERING TRACKING & MINIMAP",{
-            "Learned professions set initial map tracking filters while existing manual choices are preserved.",
-            "Automatic gathering tracking restores learned Find Minerals or Find Herbs outside combat. Selecting Mining or Herbalism chooses the preferred mode; disable this in Minimap settings if desired.",
-            "When nearby circles are off, a new option can hide nearby nodes instead of retaining their icons. Nearby distance changes apply immediately.",
-        }},
-        {"WINDOW & CONTROLLER FIXES",{
-            "The main window now uses native panel opening and closing behavior, including controller Back and the world-map action.",
-            "Controller input remains available when GatherLite owns the native panel focus. Category icons show their names when focused.",
+        {"FOREVER DATABASE",{
+            "The bundled gathering database now includes 28,113 unique locations. Every location from the previous release remains available.",
         }},
     }
     local y=0
