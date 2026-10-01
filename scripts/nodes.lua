@@ -20,7 +20,7 @@ end
 
 -- Ores
 -- Forever
-InsertObject("ore", { 1731, 2055, 3763, 103713, 103714 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 }, { "weak_copper_vein", "poor_copper_vein" })
+InsertObject("ore", { 1731, 2055, 3763, 103713, 103714, 562111 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 }, { "weak_copper_vein", "poor_copper_vein" })
 InsertObject("ore", { 1732, 3764, 2054, 103711, 103709 }, "tin_vein", "Ore\\tin", { 65, 90, 115, 165 })
 InsertObject("ore", { 1733, 105569, 73940 }, "silver_vein", "Ore\\silver", { 75, 100, 125, 175 }, { "ooze_covered_silver_vein" })
 InsertObject("ore", { 1735, 103710, 103712, 73939 }, "iron_deposit", "Ore\\iron", { 125, 150, 175, 225 })
