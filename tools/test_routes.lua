@@ -306,10 +306,11 @@ load("scripts/maps/onboarding.lua")
 local W=addon.Window
 W:Show()
 assert(W.frame:GetWidth()==1160 and W.selectedTab==1)
-assert(UIPanelWindows.GatherLiteWindow.area=="left" and nativePanel==W.frame)
-assert(W.frame.useCustomNavigation and not W.frame.scripts.OnDragStart)
+assert(not UIPanelWindows.GatherLiteWindow and not nativePanel,
+    "addon window must not enter Blizzard's protected controller panel manager")
+assert(UISpecialFrames[#UISpecialFrames]=="GatherLiteWindow" and not W.frame.scripts.OnDragStart)
 W.frame.CloseButton:GetScript("OnClick")()
-assert(not nativePanel and not W.frame:IsShown(), "close button must release the native panel")
+assert(not nativePanel and not W.frame:IsShown(), "close button must hide the addon window")
 W:Show()
 local savedMap=W.map
 W.frame:Hide(); W.ready=false; W.map=nil
@@ -589,16 +590,14 @@ do
     W:Show(); enabled=true
     W.frame.scripts.OnUpdate(W.frame,.02)
     local input=W.controllerInput
-    GamepadMode.FrameControlsManager.GetActiveFrame=function() return W.frame end
     assert(W.controllerInput:IsShown())
     W:SetControllerTarget(W.categoryButtons[2])
     input.scripts.OnGamePadButtonDown(input,"PAD1")
-    assert(W.resourceCategory=="ore", "category must activate with native panel focus")
+    assert(W.resourceCategory=="ore", "category must activate without native panel focus")
     assert(GameTooltip.owner==W.categoryButtons[2] and GameTooltip.text=="Mining",
         "controller category focus must identify the icon")
     W.categoryButtons[1]:GetScript("OnClick")()
     W:SetControllerTarget(W.map)
-    GamepadMode.FrameControlsManager.GetActiveFrame=function() return nil end
     assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
     W:SelectTab(2); W.settingsButtons.worldmap:GetScript("OnClick")()
     local slider
@@ -776,7 +775,7 @@ do
     addon.nodeDB,addon.fishDB=nodes,fish
     W.search:SetText(""); W.categoryButtons[1]:GetScript("OnClick")()
 end
-print("Native panel lifecycle and resource category filters passed")
+print("Protected-panel isolation and resource category filters passed")
 
 -- Zone-first browsing and a combined selection use one deduplicated circuit.
 do

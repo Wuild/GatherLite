@@ -42,14 +42,17 @@ assert(not H.current and GameTooltip.owner==decoration,"native POI tooltip was s
 GameTooltip.owner=nil
 WorldMapFrame.currentPoIPins={}; H:Update(); assert(H.current==a)
 a.type="minimap"; H:Update(); assert(not H.current,"recycled minimap pin got world-map hover")
-a.type="worldmap"; H:Update(); WorldMapFrame.scripts.OnHide(); assert(not H.current)
+a.type="worldmap"; H:Update()
+assert(not WorldMapFrame.scripts.OnHide,"world map OnHide hook can taint protected controller cleanup")
+WorldMapFrame.visible=false; H:Update(); assert(not H.current)
+WorldMapFrame.visible=true
 H:Register(a,false); H:Update(); assert(not H.current)
 print("Controller map cursor passed: nearest visible pin, mouse transition, native POI priority, recycling and cleanup")
 
--- Cursor and pins at different effective scales must still hit at the same pixels.
+-- Blizzard's GetGamepadCursorPosition uses the same UI coordinates as pin centers.
 H:Register(a,true); a.x,a.y=50,50
 function a:GetEffectiveScale() return 2 end
-x,y=100,100; H:Update(); assert(H.current==a,"mixed UI scale missed node")
+x,y=50,50; H:Update(); assert(H.current==a,"native gamepad coordinates missed node")
 local before=entered
 GameTooltip.owner=nil; H:Update(); assert(entered==before+1,"lost tooltip never recovered")
 H:Clear()
@@ -58,6 +61,7 @@ local map={}
 local w={map=map,object={},pins={b},mapOverlay={},mapCursor=SoftCursor,
     controllerNavigation={GetCurrentButton=function() return map end}}
 b.shown=true; b.node=nil; b.x,b.y=100,100
+x,y=100,100
 H:UpdateWindow(w); assert(H.windowState.current==b and GameTooltip.owner==b)
 b.point={}; before=entered; H:UpdateWindow(w)
 assert(entered==before+1,"reused pin must refresh tooltip data")

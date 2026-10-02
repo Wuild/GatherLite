@@ -9,7 +9,7 @@ function GatherLite:ToggleWindow()
     if Window.frame and Window.frame:IsShown() then Window:Hide() else Window:Show() end
 end
 function Window:Hide()
-    if self.frame then HideUIPanel(self.frame) end
+    if self.frame then self.frame:Hide() end
 end
 local function objectName(object) return (object.type=="fish" or object.objects) and object.name or GatherLite:translate("node." .. object.name) end
 local resourceKinds={ore="mining",herb="herbalism",container="containers",fishing="window.resource.fishing_pools",fish="window.resource.fish_catches"}
@@ -646,8 +646,8 @@ function Window:CreateChangelog(page)
             "When nearby circles are off, a new option can hide nearby nodes instead of retaining their icons. Nearby distance changes apply immediately.",
         }},
         {"WINDOW & CONTROLLER FIXES",{
-            "The main window now uses native panel opening and closing behavior, including controller Back and the world-map action.",
-            "Controller input remains available when GatherLite owns the native panel focus. Category icons show their names when focused.",
+            "The main window now stays outside Blizzard's protected controller panel manager, preventing forbidden-action errors when native panels open or close.",
+            "World-map node tooltips now follow the controller map cursor without hooking the protected map-close transition. Category icons show their names when focused.",
         }},
     }
     local y=0
@@ -696,9 +696,10 @@ function Window:Create()
     ButtonFrameTemplate_HideButtonBar(frame)
     frame.Inset:ClearAllPoints(); frame.Inset:SetPoint("TOPLEFT",4,-66); frame.Inset:SetPoint("BOTTOMRIGHT",-6,27)
     frame:SetClampedToScreen(true)
-    -- Let the native panel manager place, close, and coordinate this wide window.
-    UIPanelWindows.GatherLiteWindow={area="left",pushable=0,whileDead=1,allowOtherPanels=0}
-    frame.useCustomNavigation=true
+    -- This window owns its controller input. Registering it as a UIPanel makes
+    -- Blizzard's FrameControlsManager call addon callbacks during protected
+    -- binding-stack transitions (including SetPreferredGamepadInteractTarget).
+    table.insert(UISpecialFrames,"GatherLiteWindow")
     frame.CloseButton:SetScript("OnClick",function() self:Hide() end)
     self.pages,self.tabs={},{}
     for i,key in ipairs({"window.tab.world_map","window.tab.settings","window.tab.changelog"}) do
@@ -758,7 +759,7 @@ end
 function Window:Show()
     if not GatherLite:IsLoaded() then return end
     if not self:Create() then return end
-    ShowUIPanel(self.frame); self:SelectTab(1)
+    self.frame:Show(); self:SelectTab(1)
     local selectedRoute=Routes.active
     if not self.object and addon.Fishing then self.object=addon.Fishing.object end
     if self.object then self:SelectObject(self.object) end
