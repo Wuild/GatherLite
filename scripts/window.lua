@@ -617,25 +617,24 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.1.6. Keep these aligned with the packaged database.
+-- Bundled highlights for release 8.1.7. Keep these aligned with the packaged database.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.6 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.7 release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"STARTER MINING LOCATIONS",{
-            "Added 266 Poor Copper Vein locations across five starter zones.",
-            "Poor Copper Vein appears with Copper Vein in resource browsing and gathering tracking.",
+        {"HERB AND ORE LOCATIONS",{
+            "Added 471 herb locations and 248 ore locations, including new Silverleaf, Peacebloom, and Copper Vein positions.",
         }},
         {"FOREVER DATABASE",{
-            "Added 12 footlocker locations. The database now has 28,391 unique locations; every location from the previous release remains available.",
+            "Added 98 container locations. The database now has 29,208 unique locations; every location from the previous release remains available.",
         }},
     }
     local y=0
