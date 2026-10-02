@@ -97,6 +97,25 @@ end
 options = addon.SettingsOptions
 GatherLite.db = addon.configsDefaults
 GatherLite.debug = noop
+
+-- Current AceDB uses the globally unique Forever name. Migrate the previous
+-- ruleset key once, retaining values already written under the new key.
+local migrated = {
+    char = {
+        ["Miner - PvP"] = { minimap = { size = 18, tracking = { mining = false } }, routeMapID = 7 },
+        ["Miner Stone"] = { minimap = { size = 14 } },
+    },
+    profileKeys = { ["Miner - PvP"] = "Custom", ["Miner Stone"] = "Default" },
+}
+assert(addon.MigrateCharacterSettings(migrated, "Miner Stone", "Miner - PvP") == "Custom")
+assert(not migrated.char["Miner - PvP"] and not migrated.profileKeys["Miner - PvP"],
+    "legacy character keys must be removed after migration")
+assert(migrated.char["Miner Stone"].minimap.size == 14
+    and migrated.char["Miner Stone"].minimap.tracking.mining == false
+    and migrated.char["Miner Stone"].routeMapID == 7,
+    "migration must retain new values and fill missing legacy settings")
+assert(migrated.profileKeys["Miner Stone"] == "Custom", "legacy profile selection must migrate")
+
 local kinds = { "mining", "herbalism", "containers", "fishing" }
 local objects = { 1731, 1617, 106319, 180750 }
 addon.predefined = {}
@@ -177,6 +196,12 @@ end
 -- Moving toward a known location leaves an outline; moving away restores its icon.
 local circle = "Interface\\AddOns\\GatherLite\\icons\\track_circle"
 local distanceOption = options.args.minimap.args.sliders.args.iconRange
+local circlesOption = options.args.minimap.args.nearbyCircles
+local hideOption = options.args.minimap.args.hideNearbyNodes
+assert(not circlesOption.get(), "nearby circles must default to disabled")
+assert(hideOption.get(), "nearby hiding must default to enabled")
+circlesOption.set(nil, true)
+hideOption.set(nil, false)
 for i, kind in ipairs(kinds) do
     playerX, playerY = 600, 580
     click("minimap", i)
@@ -184,14 +209,12 @@ for i, kind in ipairs(kinds) do
     local icon = GatherLite:GetNodeObject(objects[i]).icon
     assert(pin:IsShown() and pin.texture.texturePath == circle, "nearby " .. kind .. " must start as a visible circle")
     assert(pin.scripts.OnEnter and pin.motionEnabled, "circle lost its tooltip")
-    local circlesOption = options.args.minimap.args.nearbyCircles
-    assert(circlesOption.get(), "nearby circles must default to enabled")
+    assert(circlesOption.get(), "nearby circles must remain enabled during the behavior test")
     circlesOption.set(nil, false)
     tick(1.1)
     pin = assert(next(pins.minimap))
     assert(pin:IsShown() and pin.texture.texturePath == icon, "disabled circles must preserve nearby resource icons")
-    local hideOption = options.args.minimap.args.hideNearbyNodes
-    assert(not hideOption.get(), "nearby hiding must default to off")
+    assert(not hideOption.get(), "nearby hiding must be disabled before testing it")
     hideOption.set(nil, true)
     tick(5.1)
     assert(count("minimap", objects[i]) == 0, "hidden nearby nodes must not have interactive pins")
