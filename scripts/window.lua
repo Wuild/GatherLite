@@ -617,13 +617,13 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.1.11. Keep these aligned with the packaged database.
+-- Bundled highlights for release 8.1.12. Keep these aligned with the packaged database.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.11 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.12 release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
@@ -631,10 +631,10 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"HERB AND ORE LOCATIONS",{
-            "Added 80 herb locations and 50 ore locations, including new Peacebloom, Silverleaf, and Copper Vein positions.",
+            "Added 30 herb locations and 22 ore locations, including new Peacebloom, Silverleaf, and Copper Vein positions.",
         }},
         {"FOREVER DATABASE",{
-            "Added 26 container locations. The database now has 29,834 unique locations; every location from the previous release remains available.",
+            "Added 23 container locations. The database now has 29,909 unique locations; every location from the previous release remains available.",
         }},
     }
     local y=0
