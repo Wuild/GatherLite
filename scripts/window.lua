@@ -623,7 +623,7 @@ function Window:CreateChangelog(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.15 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.16 release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
@@ -631,10 +631,10 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"HERB AND ORE LOCATIONS",{
-            "Added 42 herb locations and 15 ore locations, including thirteen Peacebloom, twelve Silverleaf, and nine Copper Vein positions.",
+            "Added 21 herb locations and three Copper Vein locations, including thirteen Peacebloom and eight Silverleaf positions.",
         }},
         {"FOREVER DATABASE",{
-            "Added 15 container locations, including five Battered Footlocker positions. The database now has 30,080 unique locations; every location from the previous release remains available.",
+            "Added 25 container locations, including seventeen Battered Footlocker positions. The database now has 30,129 unique locations; every location from the previous release remains available.",
         }},
     }
     local y=0
