@@ -3,6 +3,20 @@ local Tracking = {}
 addon.GatheringTracking = Tracking
 local spells = {ore=2580, herb=2383}
 local spellNames = {[2580]="Find Minerals",[2383]="Find Herbs"}
+local function trackingSpell(index, info)
+    if info.spellID then return info.spellID end
+    local filter=C_Minimap.GetTrackingFilter and C_Minimap.GetTrackingFilter(index)
+    if filter and filter.spellID then return filter.spellID end
+    -- Some Forever entries omit spellID. Match client-localized spell data,
+    -- never English names, and never mistake a normal minimap filter for a spell.
+    if info.type=="spell" and C_Spell then
+        for _,id in ipairs({2580,2383}) do
+            local name=C_Spell.GetSpellName and C_Spell.GetSpellName(id)
+            local texture=C_Spell.GetSpellTexture and C_Spell.GetSpellTexture(id)
+            if (name and info.name==name) or (texture and info.texture==texture) then return id end
+        end
+    end
+end
 local function debugState(topic, text)
     local debug=GatherLite.db and GatherLite.db.global and GatherLite.db.global.debug
     if not debug or not debug.enabled or not debug.types or not debug.types[addon.DEBUG_DEFAULT] then return end
@@ -66,12 +80,13 @@ function Tracking:Check()
     for index=1,C_Minimap.GetNumTrackingTypes() do
         local info=C_Minimap.GetTrackingInfo(index)
         if info then
-            if info.active and info.spellID~=2580 and info.spellID~=2383 then
+            local id=trackingSpell(index,info)
+            if info.active and (info.type=="spell" or id) and id~=2580 and id~=2383 then
                 otherActive=info
             end
-            if info.spellID==2580 or info.spellID==2383 then
-                available[info.spellID]={index=index,active=info.active}
-                if info.active then active=info.spellID end
+            if id==2580 or id==2383 then
+                available[id]={index=index,active=info.active}
+                if info.active then active=id end
             end
         end
     end

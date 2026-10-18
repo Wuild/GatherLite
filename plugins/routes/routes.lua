@@ -98,6 +98,7 @@ end
 
 function Routes:Clear()
     self.worker, self.active, self.progress = nil, nil, nil
+    if addon.GroundNavigation and addon.GroundNavigation.Release then addon.GroundNavigation:Release() end
     self.byMap, self.bestMapID, self.object = nil, nil, nil
     self.onlyMapID = nil
     GatherLite.db.char.routeObjects, GatherLite.db.char.routeOnlyMapID = nil, nil
@@ -117,9 +118,12 @@ function Routes:SelectMap(mapID)
     GatherLite.db.char.routeMapID = self.active and mapID or nil
     if self.active then
         local route = self.active
-        self.status = string.format("%s%s | %d stops | %.1f km circuit",
+        self.status = string.format("%s%s | %d stops | %.1f km | %s",
             C_Map.GetMapInfo(mapID).name, mapID == self.bestMapID and " (recommended)" or "",
-            #route.points, route.length * 0.0009144)
+            #route.points, route.length * 0.0009144, T("window.route.ground"))
+        if route.omitted and route.omitted > 0 then
+            self.status = self.status .. " | " .. T("window.route.omitted", route.omitted)
+        end
     else
         self.status = T("window.route.status.no_circuit")
     end
@@ -145,13 +149,14 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
         local maps, mapIDs = self:Collect(object, checkpoint, onlyMapID), {}
         for mapID in pairs(maps) do mapIDs[#mapIDs + 1] = mapID end
         table.sort(mapIDs)
-        local best, byMap = nil, {}
+        local best, byMap, failure = nil, {}, nil
         for index, mapID in ipairs(mapIDs) do
             self.status = T("window.route.status.comparing", index, #mapIDs, C_Map.GetMapInfo(mapID).name)
             self.progress = 5 + 95 * (index - 1) / #mapIDs
-            local candidate = addon.RoutePlanner.Build(maps[mapID], checkpoint, function(fraction)
+            local candidate, reason = addon.GroundNavigation:Build(maps[mapID], mapID, checkpoint, function(fraction)
                 self.progress = 5 + 95 * (index - 1 + fraction) / #mapIDs
             end)
+            failure = reason or failure
             if candidate then
                 candidate.mapID, candidate.object = mapID, object
                 byMap[mapID] = candidate
@@ -164,7 +169,10 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
             self:SelectMap(byMap[preferredMapID] and preferredMapID or best.mapID)
             if addon.Window then addon.Window:ShowRoute(self.active) end
         else
-            self.status = T("window.route.status.not_enough")
+            self.status = T(failure == "unavailable" and "window.route.status.no_decoder"
+                or failure == "nodata" and "window.route.status.no_terrain"
+                or failure == "unreachable" and "window.route.status.no_ground"
+                or "window.route.status.not_enough")
             self:Notify()
         end
     end)
@@ -172,7 +180,9 @@ end
 
 function Routes:Tick()
     if not self.worker then return end
+    if addon.GroundNavigation.BeginSlice then addon.GroundNavigation:BeginSlice() end
     local ok, err = coroutine.resume(self.worker)
+    if addon.GroundNavigation.EndSlice then addon.GroundNavigation:EndSlice() end
     if not ok then
         self.worker = nil
         self.progress = nil
@@ -185,6 +195,7 @@ function Routes:Tick()
     else
         self:Notify()
     end
+    if not self.worker and addon.GroundNavigation.Release then addon.GroundNavigation:Release() end
 end
 
 function Routes.setup()

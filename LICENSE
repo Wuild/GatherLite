@@ -19,3 +19,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Bundled navigation notice
+-------------------------
+The MIT permission above applies to GatherLite's original code. The combined
+distribution now includes GPL-3.0-or-later navigation code and terrain data from
+Shortest Path Forever, by Cillian Berragan and contributors. Distribute the
+combined addon under GPL-3.0-or-later, retaining the MIT notices above. The
+imported components are not relicensed under MIT. Their full GPL license and
+source provenance are included in plugins/routes/navigation/vendor/LICENSE and
+plugins/routes/navigation/vendor/THIRD_PARTY.md; integration details and source
+modifications are documented in plugins/routes/navigation/README.md.

@@ -58,4 +58,10 @@ frames.usedFrames = { hovered }
 GatherLite:showTooltip(hovered)
 assert(lines[1][1]:find("Copper Vein", 1, true) and lines[2][1] == "Mining", "single node lost its detailed tooltip")
 assert(lines[2][3] == 0.6 and lines[2][4] == 0.6 and lines[2][5] == 0.6, "profession color must use numeric RGB")
+hovered.type="minimap"
+hovered.clusterNodes={chest}
+GatherLite:showTooltip(hovered)
+assert(lines[1][1]=="2 nearby nodes" and lines[5][1]:find("Battered chest",1,true),
+    "suppressed minimap markers must remain discoverable in the representative tooltip")
+assert(lines[#lines][1]==locale["tooltip.known_location"],"minimap tooltip must explain live tracking dots")
 print("Tooltip checks passed: grouping, aliases, counts, map isolation, loot, latest visit and single nodes")

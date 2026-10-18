@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Import Wowhead Forever map coordinates without executing page JavaScript.
+"""Import validated Wowhead Forever map coordinates into an additive database.
 
-Python 3.10+, standard library only. Updates merge into the Forever database.
+Python 3.10+; optional browser fetching requires Playwright and Chromium.
 """
 from __future__ import annotations
 
 import argparse
+from contextlib import ExitStack
 import hashlib
 from html.parser import HTMLParser
 import json
@@ -159,7 +160,13 @@ def parse_listing(html, category):
     return found
 
 
-def discover_objects(catalog, cache, offline, refresh, delay, last_request):
+def request_html(url):
+    request = Request(url, headers={"User-Agent": "GatherLite-WowheadImporter/1.0", "Accept": "text/html"})
+    with urlopen(request, timeout=30) as response:
+        return response.read().decode("utf-8-sig"), response.geturl()
+
+
+def discover_objects(catalog, cache, offline, refresh, delay, last_request, fetch_html=None):
     found = {}
     for category in GATHERING_LISTS:
         path = cache / f"{category}.html"
@@ -171,10 +178,9 @@ def discover_objects(catalog, cache, offline, refresh, delay, last_request):
             time.sleep(max(0, delay - (time.monotonic() - last_request[0])))
             url = SOURCE + "objects/" + category
             last_request[0] = time.monotonic()
-            with urlopen(Request(url, headers={"User-Agent": "GatherLite-WowheadImporter/1.0"}), timeout=30) as response:
-                if response.geturl() != url:
-                    raise ImportError(f"Gathering listing redirected to {response.geturl()}")
-                html = response.read().decode("utf-8-sig")
+            html, final_url = (fetch_html or request_html)(url)
+            if final_url != url:
+                raise ImportError(f"Gathering listing redirected to {final_url}")
             parse_listing(html, category)
             cache.mkdir(parents=True, exist_ok=True)
             path.write_text(html, encoding="utf-8")
@@ -260,7 +266,7 @@ def render_lua(nodes):
     return "\n".join(lines) + "\n"
 
 
-def fetch_page(object_id, cache, offline, refresh, delay, last_request):
+def fetch_page(object_id, cache, offline, refresh, delay, last_request, fetch_html=None):
     path = cache / f"{object_id}.html"
     if path.exists() and (offline or not refresh):
         return path.read_text(encoding="utf-8-sig")
@@ -268,14 +274,11 @@ def fetch_page(object_id, cache, offline, refresh, delay, last_request):
         raise ImportError(f"Missing cached page: {path}")
     time.sleep(max(0, delay - (time.monotonic() - last_request[0])))
     url = f"{SOURCE}object={object_id}"
-    request = Request(url, headers={"User-Agent": "GatherLite-WowheadImporter/1.0", "Accept": "text/html"})
     last_request[0] = time.monotonic()
-    with urlopen(request, timeout=30) as response:
-        validate_url(response.geturl(), object_id)
-        html = response.read().decode("utf-8-sig")
+    html, final_url = (fetch_html or request_html)(url)
+    validate_url(final_url, object_id)
     # Validate before caching, including challenge pages returned with HTTP 200.
-    page = Page(html)
-    validate_url(page.canonical, object_id)
+    parse_page(html, object_id, object_id)
     cache.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
     return html
@@ -294,6 +297,8 @@ def main(argv=None):
     parser.add_argument("--cache-dir", type=Path, default=ROOT / ".wowhead-cache/forever")
     parser.add_argument("--offline", action="store_true", help="Only read saved <objectID>.html pages")
     parser.add_argument("--refresh", action="store_true", help="Re-download cached pages")
+    parser.add_argument("--browser", action="store_true", help="Fetch with optional Playwright Chromium instead of HTTP; cached/offline pages need no browser")
+    parser.add_argument("--browser-headed", action="store_true", help="Use a minimized graphical Chromium window (requires --browser and a graphical session)")
     parser.add_argument("--discover", action="store_true", help="Check complete mining/herb listings, import known IDs, report new unmapped IDs")
     parser.add_argument("--delay", type=float, default=2, help="Seconds between requests (minimum 1)")
     parser.add_argument("--state", type=Path, default=ROOT / "tools/wowhead/forever.json")
@@ -303,6 +308,10 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if not math.isfinite(args.delay) or args.delay < 1:
         parser.error("--delay must be at least 1 second")
+    if args.browser_headed and not args.browser:
+        parser.error("--browser-headed requires --browser")
+    if args.browser:
+        args.delay = max(10, args.delay)
     if args.offline and args.refresh:
         parser.error("--offline and --refresh cannot be combined")
     if args.generate_only and (args.objects or args.refresh or args.discover):
@@ -314,7 +323,12 @@ def main(argv=None):
     protected = {ROOT / "scripts/nodes.lua"}
     if args.output.resolve() in protected or args.state.resolve() in protected:
         parser.error("Output paths must not overwrite the node catalog")
+    resources = ExitStack()
     try:
+        transport = {}
+        if args.browser and not (args.offline or args.generate_only):
+            from wowhead_browser import BrowserFetcher
+            transport["fetch_html"] = resources.enter_context(BrowserFetcher(headless=not args.browser_headed))
         catalog = read_catalog(ROOT / "scripts/nodes.lua")
         if args.generate_only and not args.state.exists():
             raise ImportError("--generate-only requires an existing import state")
@@ -331,11 +345,11 @@ def main(argv=None):
         last_request = [0.0]
         if args.discover:
             discovered, state["discovery"] = discover_objects(
-                catalog, args.cache_dir, args.offline, args.refresh, args.delay, last_request)
+                catalog, args.cache_dir, args.offline, args.refresh, args.delay, last_request, **transport)
             objects = sorted(set(objects) | discovered)
         for index, object_id in enumerate(objects, 1):
             kind, canonical_id = catalog[object_id]
-            html = fetch_page(object_id, args.cache_dir, args.offline, args.refresh, args.delay, last_request)
+            html = fetch_page(object_id, args.cache_dir, args.offline, args.refresh, args.delay, last_request, **transport)
             warnings = []
             imported = parse_page(html, object_id, canonical_id, warnings)
             nodes.update(imported)
@@ -361,6 +375,8 @@ def main(argv=None):
     except (ImportError, OSError, HTTPError, URLError, json.JSONDecodeError) as exc:
         print(f"Import stopped: {exc}", file=sys.stderr)
         return 1
+    finally:
+        resources.close()
 
 
 if __name__ == "__main__":

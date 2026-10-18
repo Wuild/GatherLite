@@ -421,6 +421,7 @@ _GatherLite.SettingsOptions = {
                     width = "full",
                     set = function(_, value)
                         GatherLite.db.char.minimap.hideNearbyNodes = value
+                        if value then GatherLite.db.char.minimap.nearbyCircles = false end
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function() return GatherLite.db.char.minimap.hideNearbyNodes == true end,
@@ -433,9 +434,10 @@ _GatherLite.SettingsOptions = {
                     width = "full",
                     set = function(_, value)
                         GatherLite.db.char.minimap.nearbyCircles = value
+                        if value then GatherLite.db.char.minimap.hideNearbyNodes = false end
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.nearbyCircles ~= false end,
+                    get = function() return GatherLite.db.char.minimap.nearbyCircles == true end,
                 },
                 header = {
                     name = function()

@@ -11,6 +11,8 @@ python tools/update_forever_wowhead.py --offline
 python tools/update_forever_wowhead.py --refresh
 # Also check the full mining/herb listings for missing IDs and known aliases.
 python tools/update_forever_wowhead.py --discover --refresh
+# Optional installed Playwright/Chromium transport; reuse cached successes.
+python tools/update_forever_wowhead.py --browser --browser-headed --discover --delay 10 --dry-run
 # Regenerate the Lua from committed state; no network or HTML cache needed.
 python tools/update_forever_wowhead.py --generate-only
 ```
@@ -24,6 +26,16 @@ python tools/update_forever_wowhead.py --objects 1731 1617 --refresh
 By default, all previously imported source IDs are refreshed. An entirely new database starts with the IDs in `scripts/nodes.lua`. `--discover` additionally reads the full [mineral-vein](https://www.wowhead.com/forever/objects/mineral-veins) and [herb](https://www.wowhead.com/forever/objects/herbs) listings, imports listed IDs already in the catalog, and reports unknown IDs with their names and minimum skills. It rejects truncated listings. Seven quest pickups in the herb listing are explicitly excluded; these are not Herbalism nodes. The discovery report is stored in `forever.json` so scheduled runs can detect newly unmapped objects without repeating old alerts. Discovery supports cached/offline pages and cannot be combined with `--objects` or `--generate-only`.
 
 Selected-object imports preserve the other records. Updates are additive: missing spawns and empty responses do not erase known locations.
+
+`--browser` uses one isolated headless Chromium session for missing pages. Install
+the optional dependency as described in [the tools guide](../README.md). It uses
+the same canonical URL, listing and coordinate checks before saving HTML. Browser
+requests can still be refused; a working interactive browser does not prove that
+standalone headless Chromium will be accepted. No cookies are copied from your
+personal browser. Offline and generate-only modes need no browser dependency.
+For a minimized graphical browser, add `--browser-headed` (requires a desktop
+session). The fetcher waits for the actual page data before validation and caching;
+intermediate HTTP 202 documents and challenge pages are never accepted as data.
 
 ## Data format
 

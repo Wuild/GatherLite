@@ -256,6 +256,13 @@ addon.nodes={mining={{object=1,mapID=1,posX=.1,posY=.1},{object=2,mapID=1,posX=.
 addon.predefined={[2]={[1]={.1,.1,.9,.1,.9,.9,.1,.9},[2]={.4,.4,.6,.4,.6,.6,.4,.6}}}
 load("plugins/routes/routes.lua")
 load("plugins/routes/overlays.lua")
+-- UI/controller fixtures use a flat world. Actual bundled terrain and the
+-- adapter are exercised separately by test_ground_routes.lua.
+addon.GroundNavigation={Build=function(_,points,_,checkpoint,progress)
+    local route=P.Build(points,checkpoint,progress)
+    if route then route.terrainAware=true end
+    return route
+end}
 local R=addon.Routes
 local maps=R:Collect(addon.nodeDB[1])
 assert(#maps[1]==4 and #maps[2]==4 and not maps[99], "aliases, duplicates, invalid positions or dungeons leaked")
@@ -306,10 +313,11 @@ load("scripts/maps/onboarding.lua")
 local W=addon.Window
 W:Show()
 assert(W.frame:GetWidth()==1160 and W.selectedTab==1)
-assert(UIPanelWindows.GatherLiteWindow.area=="left" and nativePanel==W.frame)
-assert(W.frame.useCustomNavigation and not W.frame.scripts.OnDragStart)
+assert(not UIPanelWindows.GatherLiteWindow and not nativePanel,
+    "addon window must not enter Blizzard's protected controller panel manager")
+assert(UISpecialFrames[#UISpecialFrames]=="GatherLiteWindow" and not W.frame.scripts.OnDragStart)
 W.frame.CloseButton:GetScript("OnClick")()
-assert(not nativePanel and not W.frame:IsShown(), "close button must release the native panel")
+assert(not nativePanel and not W.frame:IsShown(), "close button must hide the addon window")
 W:Show()
 local savedMap=W.map
 W.frame:Hide(); W.ready=false; W.map=nil
@@ -336,7 +344,34 @@ W.generate.scripts.OnClick()
 assert(W.progress:IsShown() and R.progress==0)
 while R.worker do R:Tick() end
 assert(W.mapID==2 and #W.mapOverlay.lines==4)
+assert(W.routeSummary.text==localeTable["window.route.ground"] and
+    R.status:find(localeTable["window.route.ground"],1,true),
+    "terrain route status must reach the selected route card")
 assert(W.clear.enabled and not W.progress:IsShown())
+-- Full ground geometry must reach both overlays, including a non-straight
+-- return leg. Rendering the stops again would silently reintroduce shortcuts.
+do
+    local active=R.active
+    local p=active.points
+    active.geometry={p[1],{u=.5,v=.2,x=-500,y=-200,instance=0},p[2],p[3],
+        {u=.3,v=.7,x=-300,y=-700,instance=0},p[4],p[1]}
+    local function assertGeometry(frame)
+        local visible=0
+        for _,line in ipairs(frame.lines) do if line:IsShown() then visible=visible+1 end end
+        assert(visible==6,"overlay replaced ground geometry with straight stop-to-stop segments")
+    end
+    R:DrawOnCanvas(W.mapOverlay,W.map,W.object)
+    assertGeometry(W.mapOverlay)
+    WorldMapFrame.mapID=2; playerMap=2
+    R:Draw(.1)
+    local found=false
+    for _,frame in ipairs(frames) do
+        if frame.parent==Minimap and frame.lines then assertGeometry(frame); found=true end
+    end
+    assert(found,"terrain minimap overlay was not drawn")
+    active.geometry=nil
+    W:DrawMap()
+end
 W.previous.scripts.OnClick()
 assert(W.mapID==1 and R.active.mapID==1 and GatherLite.db.char.routeMapID==1,"zone arrows did not switch routes")
 W.next.scripts.OnClick()
@@ -589,16 +624,14 @@ do
     W:Show(); enabled=true
     W.frame.scripts.OnUpdate(W.frame,.02)
     local input=W.controllerInput
-    GamepadMode.FrameControlsManager.GetActiveFrame=function() return W.frame end
     assert(W.controllerInput:IsShown())
     W:SetControllerTarget(W.categoryButtons[2])
     input.scripts.OnGamePadButtonDown(input,"PAD1")
-    assert(W.resourceCategory=="ore", "category must activate with native panel focus")
+    assert(W.resourceCategory=="ore", "category must activate without native panel focus")
     assert(GameTooltip.owner==W.categoryButtons[2] and GameTooltip.text=="Mining",
         "controller category focus must identify the icon")
     W.categoryButtons[1]:GetScript("OnClick")()
     W:SetControllerTarget(W.map)
-    GamepadMode.FrameControlsManager.GetActiveFrame=function() return nil end
     assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
     W:SelectTab(2); W.settingsButtons.worldmap:GetScript("OnClick")()
     local slider
@@ -776,7 +809,7 @@ do
     addon.nodeDB,addon.fishDB=nodes,fish
     W.search:SetText(""); W.categoryButtons[1]:GetScript("OnClick")()
 end
-print("Native panel lifecycle and resource category filters passed")
+print("Protected-panel isolation and resource category filters passed")
 
 -- Zone-first browsing and a combined selection use one deduplicated circuit.
 do

@@ -1,6 +1,6 @@
 # Maintainer tools
 
-Run commands from the repository root with Python 3.10 or newer. No third-party Python packages are required. GitHub Actions runs tests only.
+Run commands from the repository root with Python 3.10 or newer. The default tools need no third-party Python packages. Optional browser fetching requires Playwright and Chromium. GitHub Actions runs tests only.
 
 ## Publish to CurseForge
 
@@ -51,6 +51,30 @@ python tools/update_forever_wowhead.py --discover --refresh --delay 10
 ```
 
 See the [importer guide](wowhead/README.md) for selected-object refreshes, offline generation, and source details.
+
+To fetch with a real background Chromium browser, install the optional dependency
+in a virtual environment and use `--browser`:
+
+```sh
+python -m venv .wowhead-cache/browser-venv
+.wowhead-cache/browser-venv/bin/python -m pip install -r tools/requirements-browser.txt
+.wowhead-cache/browser-venv/bin/python -m playwright install chromium
+.wowhead-cache/browser-venv/bin/python tools/update_forever_wowhead.py --browser --browser-headed --discover --delay 10 --dry-run
+python tools/update_forever_wowhead.py --discover --offline
+```
+
+Use a fresh cycle cache directory with `--cache-dir` for a new daily refresh.
+The example reuses existing pages, fetching only missing ones; `--refresh`
+explicitly fetches them again. Browser fetching preserves validation, cache rules
+and request pacing. It stops on refused or invalid pages and does not solve
+challenges or guarantee access. HTTP errors retain their status and Retry-After
+for callers managing backoff. Offline import never needs Playwright installed.
+
+If headless Chromium is refused but ordinary browser navigation works, use
+`--browser --browser-headed` in a graphical desktop session. Chromium starts
+minimized and waits for the actual listing/mapper document, including pages that
+initially respond with HTTP 202. Both browser modes enforce at least ten seconds
+between navigations. They do not interact with CAPTCHA controls.
 
 ## Validate changes
 

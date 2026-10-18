@@ -18,23 +18,26 @@ local function clear(state)
 end
 function Hover:Clear() clear(self) end
 function Hover:ClearWindow() clear(self.windowState) end
-local function update(state,pins,cursor,viewport,world,object)
-    local x,y=center(cursor)
+local function update(state,pins,cursor,viewport,world,object,nativeGamepadCursor)
+    local x,y
+    if nativeGamepadCursor then x,y=cursor:GetGamepadCursorPosition() else x,y=center(cursor) end
     if not x then clear(state); return end
     if viewport.GetRect then
         local left,bottom,width,height=viewport:GetRect()
         if not left then clear(state); return end
-        local s=scale(viewport)
+        local s=nativeGamepadCursor and 1 or scale(viewport)
         if x<left*s or x>(left+width)*s or y<bottom*s or y>(bottom+height)*s then clear(state); return end
     end
     local nearest,distance=nil,math.huge
     for key,value in pairs(pins) do
         local pin=type(key)=="number" and value or key
         if pin:IsVisible() and (not world or not pin.node or pin.type=="worldmap") then
-            local px,py=center(pin)
+            local px,py
+            if nativeGamepadCursor then px,py=pin:GetCenter() else px,py=center(pin) end
             if px then
                 local d=(px-x)^2+(py-y)^2
-                local radius=math.max(18*scale(cursor),pin:GetWidth()*scale(pin)/2)
+                local radius=math.max(18*(nativeGamepadCursor and 1 or scale(cursor)),
+                    pin:GetWidth()*(nativeGamepadCursor and 1 or scale(pin))/2)
                 if d<=radius*radius and d<distance then nearest,distance=pin,d end
             end
         end
@@ -52,9 +55,10 @@ local function update(state,pins,cursor,viewport,world,object)
 end
 function Hover:Update()
     local map=WorldMapFrame
+    local scroll=map.ScrollContainer
     if not map:IsVisible() or not InputUtil or not InputUtil.IsGamepadUIEnabled()
         or not map.IsMapFocused or not map:IsMapFocused()
-        or not SoftCursor or not SoftCursor:IsVisible() then
+        or not scroll or not scroll.GetGamepadCursorPosition then
         self:Clear(); return
     end
     -- Decorative/highlight/player pins also appear in currentPoIPins. Only
@@ -62,7 +66,7 @@ function Hover:Update()
     for _,pin in ipairs(map.currentPoIPins or {}) do
         if GameTooltip:IsOwned(pin) then self:Clear(); return end
     end
-    update(self,self.pins,SoftCursor,map.ScrollContainer,true)
+    update(self,self.pins,scroll,scroll,true,nil,true)
 end
 function Hover:UpdateWindow(window)
     if not window.mapCursor or not window.mapCursor:IsVisible()
@@ -82,6 +86,5 @@ function Hover:Register(pin,world)
             elapsedTotal=elapsedTotal+elapsed
             if elapsedTotal>=.05 then elapsedTotal=0; self:Update() end
         end)
-        WorldMapFrame:HookScript("OnHide",function() self:Clear() end)
     end
 end

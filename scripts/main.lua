@@ -136,15 +136,71 @@ function GatherLite:GatherSlash(input)
     end
 end
 
+local function mergeMissingSettings(target, source)
+    for key, value in pairs(source) do
+        if target[key] == nil then
+            target[key] = value
+        elseif type(target[key]) == "table" and type(value) == "table" then
+            mergeMissingSettings(target[key], value)
+        end
+    end
+end
+
+local function migrateCharacterSettings(storage, currentKey, legacyKey)
+    if not storage or not legacyKey or legacyKey == currentKey then return nil end
+    local characters = storage.char
+    local legacy = characters and characters[legacyKey]
+    if legacy then
+        if characters[currentKey] then
+            mergeMissingSettings(characters[currentKey], legacy)
+        else
+            characters[currentKey] = legacy
+        end
+        characters[legacyKey] = nil
+    end
+    local profiles = storage.profileKeys
+    local legacyProfile = profiles and profiles[legacyKey]
+    if legacyProfile then
+        profiles[currentKey] = legacyProfile
+        profiles[legacyKey] = nil
+    end
+    return legacyProfile
+end
+
+_GatherLite.MigrateCharacterSettings = migrateCharacterSettings
+
+local function legacyForeverCharacterKey()
+    if not RegionalUniqueNamesEnabled or not RegionalUniqueNamesEnabled() then return nil end
+    local ruleset
+    if C_GameRules.IsGameRuleActive(Enum.GameRule.HardcoreRuleset) then
+        ruleset = "Hardcore"
+    elseif C_GameRules.IsGameRuleActive(Enum.GameRule.RPRuleset) then
+        ruleset = "RP"
+    elseif C_GameRules.IsGameRuleActive(Enum.GameRule.PvPRuleset) then
+        ruleset = "PvP"
+    else
+        ruleset = "PvE"
+    end
+    return UnitName("player") .. " - " .. ruleset
+end
+
 function GatherLite:OnInitialize()
     -- AceDB removes default values on logout. Non-default saved filter values
     -- are existing user overrides and must survive the profession-based defaults.
-    local key=UnitName("player").." - "..GetRealmName()
-    local saved=GatherLiteSettings and GatherLiteSettings.char and GatherLiteSettings.char[key]
+    -- Ask AceDB for its character key before registering defaults; Forever
+    -- uses a ruleset/global-name key rather than the literal realm name.
+    self.db = LibStub("AceDB-3.0"):New("GatherLiteSettings", nil, true)
+    local legacyProfile = migrateCharacterSettings(GatherLiteSettings, self.db.keys.char,
+        legacyForeverCharacterKey())
+    if legacyProfile and legacyProfile ~= self.db.keys.profile then
+        self.db:SetProfile(legacyProfile)
+    end
+    local saved=GatherLiteSettings and GatherLiteSettings.char
+        and GatherLiteSettings.char[self.db.keys.char]
     local savedOverrides=saved and (next(saved.tracking or {})
         or next(saved.minimap and saved.minimap.tracking or {})
         or next(saved.worldmap and saved.worldmap.tracking or {}))
-    self.db = LibStub("AceDB-3.0"):New("GatherLiteSettings", _GatherLite.configsDefaults, true)
+    self.db:RegisterDefaults(_GatherLite.configsDefaults)
     if savedOverrides and not self.db.char.professionTrackingInitialized then
         self.db.char.professionTrackingManual=true
     end

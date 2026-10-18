@@ -9,7 +9,7 @@ function GatherLite:ToggleWindow()
     if Window.frame and Window.frame:IsShown() then Window:Hide() else Window:Show() end
 end
 function Window:Hide()
-    if self.frame then HideUIPanel(self.frame) end
+    if self.frame then self.frame:Hide() end
 end
 local function objectName(object) return (object.type=="fish" or object.objects) and object.name or GatherLite:translate("node." .. object.name) end
 local resourceKinds={ore="mining",herb="herbalism",container="containers",fishing="window.resource.fishing_pools",fish="window.resource.fish_catches"}
@@ -42,8 +42,7 @@ function Window:RefreshRoute()
     self.routeIcon:SetTexture(self.object and self.object.icon or "Interface\\Icons\\INV_Misc_Map_01")
     local route=Routes.object==self.object and Routes.byMap and Routes.byMap[self.mapID]
     self.routeSummary:SetText(Routes.progress and T("window.status.planning") or
-        (route and string.format("%d stops  |  %.1f km%s",#route.points,route.length*.0009144,
-            self.mapID==Routes.bestMapID and T("window.route.best") or "") or
+        (route and T("window.route.ground") or
         (self.object and T("window.status.browse_zones") or T("window.status.choose_resource"))))
     self.visibility:SetEnabled(fish or Routes.byMap~=nil)
     if fish then
@@ -617,24 +616,22 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.1.13. Keep these aligned with the packaged database.
+-- Bundled highlights for release 8.1.0. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.18 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.2.0 release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"HERB AND ORE LOCATIONS",{
-            "Added 106 herb locations and 72 ore locations, including 48 Copper Vein, 33 Silverleaf and 29 Peacebloom positions.",
-        }},
-        {"FOREVER DATABASE",{
-            "Added 35 container locations, including 16 Battered Footlocker and ten Waterlogged Footlocker positions. The database now has 30,459 unique locations; every previous location remains available.",
+        {"GATHERLITE 8.2.0",{
+            "Fixed a bug where fish names were not localized.",
+            "Added world path data for route generation.",
         }},
     }
     local y=0
@@ -683,9 +680,10 @@ function Window:Create()
     ButtonFrameTemplate_HideButtonBar(frame)
     frame.Inset:ClearAllPoints(); frame.Inset:SetPoint("TOPLEFT",4,-66); frame.Inset:SetPoint("BOTTOMRIGHT",-6,27)
     frame:SetClampedToScreen(true)
-    -- Let the native panel manager place, close, and coordinate this wide window.
-    UIPanelWindows.GatherLiteWindow={area="left",pushable=0,whileDead=1,allowOtherPanels=0}
-    frame.useCustomNavigation=true
+    -- This window owns its controller input. Registering it as a UIPanel makes
+    -- Blizzard's FrameControlsManager call addon callbacks during protected
+    -- binding-stack transitions (including SetPreferredGamepadInteractTarget).
+    table.insert(UISpecialFrames,"GatherLiteWindow")
     frame.CloseButton:SetScript("OnClick",function() self:Hide() end)
     self.pages,self.tabs={},{}
     for i,key in ipairs({"window.tab.world_map","window.tab.settings","window.tab.changelog"}) do
@@ -745,7 +743,7 @@ end
 function Window:Show()
     if not GatherLite:IsLoaded() then return end
     if not self:Create() then return end
-    ShowUIPanel(self.frame); self:SelectTab(1)
+    self.frame:Show(); self:SelectTab(1)
     local selectedRoute=Routes.active
     if not self.object and addon.Fishing then self.object=addon.Fishing.object end
     if self.object then self:SelectObject(self.object) end

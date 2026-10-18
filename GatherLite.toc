@@ -2,6 +2,7 @@
 ## Title: GatherLite
 ## Notes: Gathering history for World of Warcraft: Forever
 ## Author: Wuild
+## X-License: GPL-3.0-or-later distribution; includes MIT-licensed original code
 ## Version: @project-version@
 ## X-Curse-Project-ID: 334918
 ## X-Wago-ID: O67jQPN3
@@ -13,9 +14,15 @@ scripts\embeds.xml
 plugins\database\database.lua
 plugins\database\data\forever.lua
 plugins\routes\planner.lua
+plugins\routes\navigation\bootstrap.lua
+plugins\routes\navigation\vendor\Nav\Nav.xml
+plugins\routes\navigation\vendor\Routing\PathGrid.lua
+plugins\routes\navigation\vendor\Routing\Path.lua
+plugins\routes\navigation\ground.lua
 plugins\routes\routes.lua
 plugins\routes\overlays.lua
 plugins\fishing\data.lua
+plugins\fishing\names.lua
 plugins\fishing\maps.lua
 scripts\ui.lua
 scripts\maps\reveal-data.lua

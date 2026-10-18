@@ -19,7 +19,7 @@ function addon.WindowInput.Create(window)
             and GamepadMode.FrameControlsManager:GetActiveFrame()
         return owner:IsShown() and InputUtil and InputUtil.IsGamepadUIEnabled()
             and not (InCombatLockdown and InCombatLockdown())
-            and (not nativeFrame or nativeFrame==owner)
+            and not nativeFrame
     end
     local function enabled(button)
         return button and button:IsVisible() and (not button.IsEnabled or button:IsEnabled())

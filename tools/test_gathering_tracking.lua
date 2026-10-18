@@ -116,3 +116,29 @@ tracking:Schedule(); ticker.tick(); assert(#calls==before+1,"interval must yield
 flush(); assert(#calls==before+2)
 assert(not char.minimap.tracking.mining,"periodic spell checks must preserve manual filters")
 print("Periodic tracking passed: five-second recovery, disabled setting, combat/death, active spells and single ticker")
+
+-- Forever's ordinary filters coexist with profession tracking. They must not
+-- suppress recovery after resurrection on a character with Mining only.
+entries={{name="Townsfolk",type="other",active=true},{spellID=2580,type="spell",active=false}}
+local beforeFilters=#calls
+dead=true; ticker.tick(); assert(#calls==beforeFilters)
+dead=false; events.dispatch(nil,"PLAYER_UNGHOST"); flush()
+assert(#calls==beforeFilters+1 and calls[#calls]==2,
+    "ordinary active minimap filters blocked Mining restoration after death")
+
+-- spellID is nullable in Forever. Exercise both filter metadata and localized
+-- spell information rather than assuming the ID is always present.
+C_Minimap.GetTrackingFilter=function(i) return i==2 and {spellID=2580} or {filterID=1} end
+entries={{type="other",active=true},{type="spell",active=false}}
+tracking:Check(); assert(calls[#calls]==2 and entries[2].active)
+C_Minimap.GetTrackingFilter=nil
+C_Spell={GetSpellName=function(id) return id==2580 and "Поиск минералов" or "Поиск трав" end,
+    GetSpellTexture=function(id) return id+1000 end}
+entries={{name="Поиск минералов",type="spell",active=false},{type="other",active=true}}
+tracking:Check(); assert(calls[#calls]==1 and entries[1].active)
+entries={{name="localized variant",texture=3580,type="spell",active=false}}
+tracking:Check(); assert(entries[1].active)
+entries={{name="Track Beasts",type="spell",active=true},{spellID=2580,type="spell",active=false}}
+local beforeSpell=#calls
+tracking:Check(); assert(#calls==beforeSpell,"a competing tracking spell must still be preserved")
+print("Forever tracking passed: ordinary filters, Mining-only resurrection and nullable spell IDs")

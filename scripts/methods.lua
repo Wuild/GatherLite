@@ -908,6 +908,7 @@ function GatherLite:showTooltip(frame)
     end
     addNode(frame.node)
     local hovered = groups[1]
+    for _,node in ipairs(frame.clusterNodes or {}) do addNode(node) end
     for _, node in ipairs(nearby) do addNode(node) end
     table.sort(groups, function(a, b)
         if a == b then return false end
@@ -929,6 +930,9 @@ function GatherLite:showTooltip(frame)
                 "×" .. #group.nodes, 1, 1, 1, 0.75, 0.75, 0.75)
             addTooltipHistory(frame.type, group.nodes, true)
         end
+    end
+    if frame.type=="minimap" then
+        GameTooltip:AddLine(GatherLite:translate("tooltip.known_location"), .8, .8, .8, true)
     end
     GameTooltip:Show()
 end

@@ -8,10 +8,13 @@ visible and reserves 280 pixels; the Find/collapse toggle has been removed.
 
 ## Controller navigation
 
-Controller input and focus are owned by GatherLite frames. The addon does not
-register with Blizzard's FrameControlsManager, change its binding stack, or
-mutate SmartNavigation. Those shared transitions synchronously update protected
-action-bar interaction targets and can cause ADDON_ACTION_FORBIDDEN.
+Controller input and focus are owned by GatherLite frames. The window is not a
+native UIPanel: ShowUIPanel automatically registers panels with Blizzard's
+FrameControlsManager even when an addon never calls that manager directly. The
+addon therefore uses direct frame visibility and does not register with the
+manager, change its binding stack, or mutate SmartNavigation. Those shared
+transitions synchronously update protected action-bar interaction targets and
+can cause ADDON_ACTION_FORBIDDEN.
 
 Input stops while another native panel owns controller focus or during combat.
 Local bindings release on tab changes, lost focus, input-mode changes and closing.

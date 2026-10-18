@@ -26,6 +26,8 @@ function GatherLiteFrame:getFrame(type)
     end
 
     returnFrame.type = type;
+    returnFrame.texture:Show()
+    returnFrame:SetMouseMotionEnabled(true)
 
     GatherLiteFrame.usedFrames[returnFrame.frameId] = returnFrame
 
@@ -141,6 +143,7 @@ function _frame:unload()
     self.node = nil
     self.object = nil
     self.nearby = nil
+    self.clusterNodes = nil
     self.type = nil
     self:Hide()
 

@@ -400,6 +400,9 @@ source.setup = function()
         if not WorldMapFrame:IsVisible() and worldmapOpen then
             worldmapOpen = false;
             GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "close worldmap")
+            -- Clear on this addon-owned update frame, not from a WorldMapFrame
+            -- OnHide hook inside Blizzard's protected controller transition.
+            if _GatherLite.MapHover then _GatherLite.MapHover:Clear() end
             UnloadWorldmap()
         end
 

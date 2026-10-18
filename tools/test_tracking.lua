@@ -23,6 +23,7 @@ local function makeFrame(parent)
     f.IsVisible = f.IsShown
     function f:GetParent() return self.parent end
     function f:GetVertexColor() return 1, 1, 1 end
+    function f:GetWidth() return 140 end
     function f:SetFrameStrata(strata) self.strata = strata end
     function f:SetMouseClickEnabled(enabled) self.clickEnabled = enabled end
     function f:SetMouseMotionEnabled(enabled) self.motionEnabled = enabled end
@@ -97,6 +98,25 @@ end
 options = addon.SettingsOptions
 GatherLite.db = addon.configsDefaults
 GatherLite.debug = noop
+
+-- Current AceDB uses the globally unique Forever name. Migrate the previous
+-- ruleset key once, retaining values already written under the new key.
+local migrated = {
+    char = {
+        ["Miner - PvP"] = { minimap = { size = 18, tracking = { mining = false } }, routeMapID = 7 },
+        ["Miner Stone"] = { minimap = { size = 14 } },
+    },
+    profileKeys = { ["Miner - PvP"] = "Custom", ["Miner Stone"] = "Default" },
+}
+assert(addon.MigrateCharacterSettings(migrated, "Miner Stone", "Miner - PvP") == "Custom")
+assert(not migrated.char["Miner - PvP"] and not migrated.profileKeys["Miner - PvP"],
+    "legacy character keys must be removed after migration")
+assert(migrated.char["Miner Stone"].minimap.size == 14
+    and migrated.char["Miner Stone"].minimap.tracking.mining == false
+    and migrated.char["Miner Stone"].routeMapID == 7,
+    "migration must retain new values and fill missing legacy settings")
+assert(migrated.profileKeys["Miner Stone"] == "Custom", "legacy profile selection must migrate")
+
 local kinds = { "mining", "herbalism", "containers", "fishing" }
 local objects = { 1731, 1617, 106319, 180750 }
 addon.predefined = {}
@@ -133,7 +153,7 @@ local function click(target, index)
     for _, registry in pairs({ pins.worldmap, pins.minimap }) do
         for frame in pairs(registry) do
             assert(frame.clickEnabled == false, "gathering pin can intercept menu clicks")
-            assert(frame.motionEnabled == true, "gathering pin lost hover tooltips")
+            assert(frame.motionEnabled == frame.texture:IsShown(), "only visible gathering pins should receive hover")
         end
     end
     button.func(button)
@@ -177,6 +197,12 @@ end
 -- Moving toward a known location leaves an outline; moving away restores its icon.
 local circle = "Interface\\AddOns\\GatherLite\\icons\\track_circle"
 local distanceOption = options.args.minimap.args.sliders.args.iconRange
+local circlesOption = options.args.minimap.args.nearbyCircles
+local hideOption = options.args.minimap.args.hideNearbyNodes
+assert(not circlesOption.get(), "nearby circles must default to disabled")
+assert(hideOption.get(), "nearby hiding must default to enabled")
+circlesOption.set(nil, true)
+hideOption.set(nil, false)
 for i, kind in ipairs(kinds) do
     playerX, playerY = 600, 580
     click("minimap", i)
@@ -184,14 +210,12 @@ for i, kind in ipairs(kinds) do
     local icon = GatherLite:GetNodeObject(objects[i]).icon
     assert(pin:IsShown() and pin.texture.texturePath == circle, "nearby " .. kind .. " must start as a visible circle")
     assert(pin.scripts.OnEnter and pin.motionEnabled, "circle lost its tooltip")
-    local circlesOption = options.args.minimap.args.nearbyCircles
-    assert(circlesOption.get(), "nearby circles must default to enabled")
+    assert(circlesOption.get(), "nearby circles must remain enabled during the behavior test")
     circlesOption.set(nil, false)
     tick(1.1)
     pin = assert(next(pins.minimap))
     assert(pin:IsShown() and pin.texture.texturePath == icon, "disabled circles must preserve nearby resource icons")
-    local hideOption = options.args.minimap.args.hideNearbyNodes
-    assert(not hideOption.get(), "nearby hiding must default to off")
+    assert(not hideOption.get(), "nearby hiding must be disabled before testing it")
     hideOption.set(nil, true)
     tick(5.1)
     assert(count("minimap", objects[i]) == 0, "hidden nearby nodes must not have interactive pins")
@@ -212,7 +236,7 @@ for i, kind in ipairs(kinds) do
     distanceOption.set(nil, 70)
     circlesOption.set(nil, true)
     tick(1.1)
-    assert(next(pins.minimap), "circles must take precedence over hiding")
+    assert(next(pins.minimap) and not hideOption.get(), "enabling circles must disable nearby hiding")
     hideOption.set(nil, false)
     tick(1.1)
     pin = assert(next(pins.minimap))
@@ -251,6 +275,32 @@ for i, kind in ipairs(kinds) do
     click("minimap", i)
 end
 assert(GatherLite.db.char.professionTrackingManual, "manual filter changes must disable profession automation")
+
+-- Nearby alternatives and mixed gathering categories must not stack rings.
+playerX,playerY=600,600
+circlesOption.set(nil,true)
+for i=1,#kinds do click("minimap",i) end
+tick(1.1)
+local visible,hidden=0,0
+for frame in pairs(pins.minimap) do
+    assert(frame.texture.texturePath==circle,"a newly loaded nearby pin flashed its resource icon")
+    if frame.texture:IsShown() then
+        visible=visible+1
+        assert(#frame.clusterNodes==3,"representative tooltip lost suppressed resource types")
+    else
+        hidden=hidden+1
+        assert(not frame.motionEnabled,"suppressed marker retained hover interception")
+    end
+end
+assert(visible==1 and hidden==3,"coincident circles across categories must share one visible marker")
+-- Existing saved settings can contain both flags: explicit hiding wins.
+GatherLite.db.char.minimap.hideNearbyNodes=true
+tick(1.1)
+assert(not next(pins.minimap),"old conflicting settings must not cover live tracking dots")
+GatherLite.db.char.minimap.hideNearbyNodes=false
+for i=1,#kinds do click("minimap",i) end
+playerX,playerY=500,500
+
 local settingsOpened = 0
 GatherLite.ShowSettings = function() settingsOpened = settingsOpened + 1 end
 minimapButton.OnClick(Minimap, "RightButton")
