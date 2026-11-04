@@ -389,6 +389,22 @@ source.setup = function()
 
     createButton();
 
+    GatherLite:On("nodes:added", function(node)
+        HideZoneList()
+        if not node or node.loadedWorldmap or not worldmapOpen or not WorldmapFilter(node) then return end
+        local zone = worldmapID and GatherLite:GetZoneTree()[worldmapID]
+        local info = worldmapID and C_Map.GetMapInfo and C_Map.GetMapInfo(worldmapID)
+        local mapType = info and info.mapType or (zone and zone.mapType)
+        if mapType ~= 3 or (zone and zone.system ~= 0) then return end
+        local allowed = node.mapID == worldmapID
+        if not allowed and GatherLite.db.char.worldmap.neighbors and zone then
+            for _, mapID in ipairs(zone.neighbors) do
+                if node.mapID == mapID then allowed = true; break end
+            end
+        end
+        if allowed then node.loadedWorldmap = CreateWorldmapNode(node) ~= nil end
+    end)
+
     frame:SetScript("OnUpdate", function(_, elapsed)
         source.UpdateZoneList(elapsed)
         if WorldMapFrame:IsVisible() and not worldmapOpen then

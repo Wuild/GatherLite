@@ -1,6 +1,6 @@
 # Maintainer tools
 
-Run commands from the repository root with Python 3.10 or newer. No third-party Python packages are required. GitHub Actions runs tests only.
+Run commands from the repository root with Python 3.10 or newer. Online node database updates require Playwright, Chromium and a graphical desktop session. Offline generation needs no third-party Python packages. GitHub Actions runs tests only.
 
 ## Publish to CurseForge
 
@@ -52,6 +52,35 @@ python tools/update_forever_wowhead.py --discover --refresh --delay 10
 
 See the [importer guide](wowhead/README.md) for selected-object refreshes, offline generation, and source details.
 
+Online node updates always use a real graphical Chromium browser, started
+minimized. Install the browser dependency in a virtual environment:
+
+```sh
+python -m venv .wowhead-cache/browser-venv
+.wowhead-cache/browser-venv/bin/python -m pip install -r tools/requirements-browser.txt
+.wowhead-cache/browser-venv/bin/python -m playwright install chromium
+.wowhead-cache/browser-venv/bin/python tools/update_forever_wowhead.py --discover --refresh --delay 10 --dry-run
+python tools/update_forever_wowhead.py --discover --offline
+```
+
+On Linux/WSL, install Chromium's system libraries with
+`.wowhead-cache/browser-venv/bin/python -m playwright install-deps chromium`.
+On Windows, the virtual environment's Python is under `Scripts/python.exe`
+instead of `bin/python`. WSL needs a working graphical session (for example WSLg).
+
+Use a fresh cycle cache directory with `--cache-dir` for a new daily refresh.
+Without `--refresh`, existing pages are reused and only missing ones are fetched.
+Browser fetching preserves validation, cache rules
+and request pacing. It stops on refused or invalid pages and does not solve
+challenges or guarantee access. HTTP errors retain their status and Retry-After
+for callers managing backoff. Offline import never needs Playwright installed.
+
+Chromium waits for the actual listing/mapper document, including pages that
+initially respond with HTTP 202. All online updates enforce at least ten seconds
+between navigations. There is no direct HTTP or headless fallback. The browser
+does not interact with CAPTCHA controls. The old `--browser` and
+`--browser-headed` flags remain accepted for compatibility and are unnecessary.
+
 ## Validate changes
 
 ```sh
@@ -68,6 +97,14 @@ lua tools/test_map_zoom.lua
 Publisher tests mock HTTP. Packaging tests use temporary test archives. For allocation measurements with mocked game APIs, run `lua tools/test_tracking.lua --benchmark`.
 
 In-game checks: enable `/console scriptErrors 1`, reload, test both map menus, gathering/lockpicking, tooltips, nearby circles, and saved history after reload.
+
+For self-found nodes, disable the predefined database and gather a herb, ore,
+and outdoor chest with the world map or GatherLite window open. New locations
+must appear immediately in the open map and selected resource's locations.
+Disable nearby hiding when checking a minimap pin at your feet; otherwise move
+beyond the hide distance. Check repeated gathers update loot without duplicate
+pins, toggle predefined data on/off, then reload and verify personal pins and
+history remain. Map category filters must hide pins without preventing recording.
 
 
 For routing/window changes, also check in game: /gather opens World Map; scroll, drag, click a zone and right-click back; use breadcrumb dropdowns and the permanent sidebar; search and browse resources; calculate and cancel with visible progress; hide/clear a route; open the game world map and zoom/pan with the same circuit visible above terrain; check a rotating minimap; reload to restore the selected route. Verify every Settings category and control, including persistence after reload. Lua mocks cover logic and wiring, not rendering.

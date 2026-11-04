@@ -40,6 +40,18 @@ class PackageTests(unittest.TestCase):
         self.assertIn("Bindings.xml", payload)
         self.assertIn(b"GatherLite:ToggleWindow()", payload["Bindings.xml"])
 
+    def test_standalone_navigation_and_license_ship(self):
+        payload, _, _ = prepare_package(REPOSITORY, VERSION)
+        prefix = "plugins/routes/navigation/"
+        for path in ("ground.lua", "vendor/LICENSE", "vendor/THIRD_PARTY.md",
+                     "vendor/manifest.json", "vendor/Nav/Nav.xml",
+                     "vendor/Nav/Nav0_1.lua", "vendor/Nav/Nav1_1.lua",
+                     "vendor/Nav/Nav2991_1.lua", "vendor/Routing/Path.lua"):
+            self.assertIn(prefix + path, payload)
+        toc = payload["GatherLite.toc"].decode()
+        self.assertNotIn("OptionalDeps: ShortestPathForever", toc)
+        self.assertLess(toc.index("navigation\\bootstrap.lua"), toc.index("navigation\\ground.lua"))
+
     def test_clean_versioned_repeatable_package(self):
         for junk in ("tools/update.py", ".wowhead-cache/page.html", ".github/workflow.yml",
                      ".git/config", "dist/old.zip", "GatherLite_Vanilla.toc",

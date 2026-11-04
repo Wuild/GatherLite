@@ -1,0 +1,135 @@
+{
+  "repository": "https://github.com/cjber/shortest-path-forever",
+  "revision": "01559975bff0320a9fd2be496a774e20978aa807",
+  "license": "GPL-3.0-or-later",
+  "files": {
+    "LICENSE": {
+      "upstream_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "vendored_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "Nav/Nav.xml": {
+      "upstream_sha256": "f5de52f5588b4cea14236a2a7d39e12a7a81fd0d6420882a6cf65b53b13f818e",
+      "vendored_sha256": "f5de52f5588b4cea14236a2a7d39e12a7a81fd0d6420882a6cf65b53b13f818e"
+    },
+    "Nav/Nav0.lua": {
+      "upstream_sha256": "2888fc7d5bb68b62375f99f78a33ee8c8dbf72f191e0f17e53fade8e98a41e29",
+      "vendored_sha256": "4b15c883c735879d417cf513287cb8fee2e8b51d4f192807d9bcb7f746589032"
+    },
+    "Nav/Nav0_1.lua": {
+      "upstream_sha256": "799e738f1e00f08b99f236d9ee683bc37d2dfaedcf15ca143e8aa1c8425bcebe",
+      "vendored_sha256": "97001258d3bf830843421d8f3024e6bd30a752b9be4eb87078f15e51c1517023"
+    },
+    "Nav/Nav0_10.lua": {
+      "upstream_sha256": "a5bdf789cf59edba7c58a864798e05983c7203fee9adddc79775ddf26518d2c0",
+      "vendored_sha256": "2dc789fcfc8ae6cd0876643190fbb2507be44a42de162e7a200cda57ee945c79"
+    },
+    "Nav/Nav0_2.lua": {
+      "upstream_sha256": "9e5c7798f72ae029dad3fdd46f3ae30fa92fe4860c1c1a7eb0f4b17923fdb6d8",
+      "vendored_sha256": "9e26741269ead83b51d3542a6e08c9dd1787e376ae5226ed91acfc7354c2af47"
+    },
+    "Nav/Nav0_3.lua": {
+      "upstream_sha256": "5500de041eb8f48b35c29ae7cdcf9c214e3cae80b994eb4914a101622b02abf9",
+      "vendored_sha256": "7f77e8265f644e225b718060411a2d9e10558a0eed5a8945180e636a876e8b87"
+    },
+    "Nav/Nav0_4.lua": {
+      "upstream_sha256": "be010dd83cd51a21141332f3d8d9a80b782791bcd1d369494d3113bd26567347",
+      "vendored_sha256": "7a31cbd1449594f5191b1a149de6eec5f8d5772df9c81169e8d8d455e6d13915"
+    },
+    "Nav/Nav0_5.lua": {
+      "upstream_sha256": "dce4ae1a7af0c7ff27b5a7cc87b26778e7144625d7602a15bc3a7f2b48f7a064",
+      "vendored_sha256": "a0b67999db9059f5f614bfaa4252ea33923aab776436e1133d3e28aa766fab30"
+    },
+    "Nav/Nav0_6.lua": {
+      "upstream_sha256": "f20186e63be1bf55df56e3ab3c708e0b9e511c1e91303f465c2e3c82a0884e85",
+      "vendored_sha256": "d6ea2953e5abdb87a3b21891a8c8a2f32701021b372251bf9c3b8df9dcea2a11"
+    },
+    "Nav/Nav0_7.lua": {
+      "upstream_sha256": "771d1a43e3fe722f31d4da31645f9d26156cdec45c94eac5fe5e8f580e908127",
+      "vendored_sha256": "ff230db7e89748dce8a9ddb7a071aa99b99d1a064111c6a5db1c29bfd67ace84"
+    },
+    "Nav/Nav0_8.lua": {
+      "upstream_sha256": "a593a5ba0e1bfba423f5e6179c86c66e62adcae4a3c02c7f9fbab4d987aed19e",
+      "vendored_sha256": "62da28643b26b9dca34d808b4ad196c05860425c6c7f1ded08e2cb59417675b9"
+    },
+    "Nav/Nav0_9.lua": {
+      "upstream_sha256": "5a316e78a3997c671ee1dce21001184505bfe150bf13f8eb54a2aa22b684c92e",
+      "vendored_sha256": "35a6bbf3e65131f5bbe8dbaaee1ca65f81bd04919d04f8b69de53fba03979185"
+    },
+    "Nav/Nav1.lua": {
+      "upstream_sha256": "6cfa39cc18134f8efbbb398d2934b36b8bd958131d7ff138188ed03e1aa4c3e6",
+      "vendored_sha256": "0e013f5c1fca90096968e70f5b48b8b204dd726af0952590eafae14648edc2c2"
+    },
+    "Nav/Nav1_1.lua": {
+      "upstream_sha256": "31e70dd8d67968ae0cfc388937d6c46a92628fb85ee12ae916fd51ad4cdd0632",
+      "vendored_sha256": "dce37f885c977ef081a4f58e67e189682415b60b69ff0ff934a79f6c5b406421"
+    },
+    "Nav/Nav1_10.lua": {
+      "upstream_sha256": "bf3a49401505ff6e3d01707adb4826142a785bd8d3532347c88f6b7c9d2bf0f0",
+      "vendored_sha256": "07e6a25c702be66b2287bf6efd9f6ad9e0d397c05a097264fbe8e97c24859245"
+    },
+    "Nav/Nav1_11.lua": {
+      "upstream_sha256": "377023c211fe87e017e5b75782f973ca49acf647f52ba3fdbc323ff76d38e25c",
+      "vendored_sha256": "3c4806c89803e679372d3a29a767e03cf7a509edfa715b7a1b4ddd6b14806331"
+    },
+    "Nav/Nav1_12.lua": {
+      "upstream_sha256": "737685c66d25a43a92b7d8ab7e6a36fcdb97c6f5200c92d2476914268d9bf929",
+      "vendored_sha256": "a5fd58ce476777a8ef4c82be66940e0ab0c31c5559cc8bc2515a9d437a673a68"
+    },
+    "Nav/Nav1_13.lua": {
+      "upstream_sha256": "50f8f697b9de387f545db6cc1c23a6d9f20fe87f8ed00b0a64dee2031f21dd23",
+      "vendored_sha256": "98cb46fd83f345fac34a099868eb514bc39be06419d7633c2ed4f102a9c74b1a"
+    },
+    "Nav/Nav1_2.lua": {
+      "upstream_sha256": "5929ff93f194158b01eebe9dffb435249cfccf65901f7f8e414cebd19e749ab5",
+      "vendored_sha256": "d062a6fa634ac04bd50f861f289d2962a2bf9dfa6a03c3615e323eb35855ed54"
+    },
+    "Nav/Nav1_3.lua": {
+      "upstream_sha256": "fc745609c910f99666798df93f2e6aef866f43388e65f27988ae9ec85c408a5f",
+      "vendored_sha256": "056f7c4efbc6c475305dc0ee955e79ab34cd83572e14ebd5d8a671fe042456f1"
+    },
+    "Nav/Nav1_4.lua": {
+      "upstream_sha256": "835156f0eb2701e59e8f6c47ea7107bfe553fceeb3bd318e2d9f7979f2777f5d",
+      "vendored_sha256": "8a18c6ebd8dbe4f21db0eb42fb33041fa73e21d2400c331f4d452263a2b088f5"
+    },
+    "Nav/Nav1_5.lua": {
+      "upstream_sha256": "6a3afb5fb9031a286c28fa649e5d8de5b4b552fd42184b535eb8ae15e95d7f0c",
+      "vendored_sha256": "b81ba82b22832f80d1ead95e12f8a4c7f0fec948d18c9bc5eb68e29c00e0517a"
+    },
+    "Nav/Nav1_6.lua": {
+      "upstream_sha256": "1c73d6d1d706ef71cd5f4125a54f1e82591381ccf7f17b9843bfd4998351031a",
+      "vendored_sha256": "ccf74715e9c4cc9f5876b8d5aed38752fe0edac7c469b3a79776fd3b2eb35a09"
+    },
+    "Nav/Nav1_7.lua": {
+      "upstream_sha256": "d2c02d01ff4021da4d5c2c686a955f2cf8ca42ce94405d7ff262843433f586c8",
+      "vendored_sha256": "99ea452c9bd5a35a5784e355afca2eab3ef5367c42ad2a2e5764e56d30294ea4"
+    },
+    "Nav/Nav1_8.lua": {
+      "upstream_sha256": "89cb5e5943190aa1c18100e38dfeffcbf6b2a96a08470e0bded350ea55bfc5b1",
+      "vendored_sha256": "8f53fa66a0223f4594c21afb85b0467232b5281215f549c52650e1ccfe8ab8d8"
+    },
+    "Nav/Nav1_9.lua": {
+      "upstream_sha256": "dcd9bd186f7b2dd8f80fe07e47c2cccc739842373294be79dab0d5cdecc95d13",
+      "vendored_sha256": "bb1c4c0cc75d3746f700ff243a964c56b3032020ae1ba67c3fc2583ab88d9c2c"
+    },
+    "Nav/Nav2991.lua": {
+      "upstream_sha256": "d7c4881be68cbc15c1ffdf6d3121ceaa90ded50b706a6ca485b49c01fb056c37",
+      "vendored_sha256": "db3bb728317fdd387e3f3fc54cf3a93f3fd37ec351ebce9f5f4f0b246159c940"
+    },
+    "Nav/Nav2991_1.lua": {
+      "upstream_sha256": "26ba31c035bd7d9958c152c0ab061c116e07aae04bfba677b951aad256fba74f",
+      "vendored_sha256": "331f28efebec3062cc2f7c8c321d7f209a2895fa9deeb9910504d1e5b92ed267"
+    },
+    "Routing/Path.lua": {
+      "upstream_sha256": "40429e5e11699bdfaf7f56aeb80934ea4749c616c1201a692ae9b1781d897264",
+      "vendored_sha256": "ecba9cff528362aeb3aeea1685858d887928d4a184149f4e835785d3f9f4061a"
+    },
+    "Routing/PathGrid.lua": {
+      "upstream_sha256": "55e19303764b61ea30f59f2c86cb1397864521151415cc02a362dac708f71103",
+      "vendored_sha256": "b10d060ec2c06cab18b2d0ddb16186c06f4bc2950632e6e2ec30620688b7e6f6"
+    },
+    "THIRD_PARTY.md": {
+      "upstream_sha256": "3c51756c412b722593b38c254b42804eff71505bdc652670a3538303ffb982ca",
+      "vendored_sha256": "3c51756c412b722593b38c254b42804eff71505bdc652670a3538303ffb982ca"
+    }
+  }
+}

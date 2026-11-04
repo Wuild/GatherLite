@@ -74,3 +74,27 @@ w.mapOverlay.GetRect=function() return 0,0,50,50 end
 H:UpdateWindow(w); assert(not H.windowState.current,"cursor outside viewport triggered tooltip")
 w.mapOverlay.GetRect=nil; cursorShown=false
 H:UpdateWindow(w); assert(not H.windowState.current,"hidden cursor triggered tooltip")
+
+-- Some clients expose InputUtil without the gamepad API.
+cursorShown=true
+local inputUtil=InputUtil
+for _,missing in ipairs({{},false}) do
+    InputUtil=inputUtil
+    x,y=50,50; H:Update(); assert(H.current==a)
+    local worldLeft=left
+    InputUtil=missing or nil
+    WorldMapFrame.scripts.OnUpdate(nil,.05)
+    assert(not H.current and not GameTooltip.owner and left==worldLeft+1,
+        "missing gamepad API must clear world-map hover")
+    InputUtil=inputUtil
+    x,y=100,100; H:UpdateWindow(w); assert(H.windowState.current==b)
+    local windowLeft=left
+    InputUtil=missing or nil
+    H:UpdateWindow(w)
+    assert(not H.windowState.current and not GameTooltip.owner and left==windowLeft+1,
+        "missing gamepad API must clear window hover")
+end
+InputUtil=inputUtil
+H:UpdateWindow(w); assert(H.windowState.current==b,"hover did not recover when gamepad API returned")
+H:ClearWindow()
+print("Missing gamepad API passed: world-map update hook, window hover, cleanup and recovery")

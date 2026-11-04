@@ -1,5 +1,13 @@
 # GatherLite repository instructions
 
+## Database updates
+
+Run `python tools/update_forever_wowhead.py --discover --refresh` to check for
+new gathering objects and locations. Online updates must use real graphical
+Chromium, started minimized; this is the updater's default and only online mode.
+Do not use direct HTTP or headless fetching. Install Playwright and Chromium as
+described in `tools/README.md` when needed. Offline imports remain supported.
+
 ## Publishing a new version
 
 Always update the main window's **What's New** content before publishing a new version.

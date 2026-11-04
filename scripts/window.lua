@@ -42,8 +42,7 @@ function Window:RefreshRoute()
     self.routeIcon:SetTexture(self.object and self.object.icon or "Interface\\Icons\\INV_Misc_Map_01")
     local route=Routes.object==self.object and Routes.byMap and Routes.byMap[self.mapID]
     self.routeSummary:SetText(Routes.progress and T("window.status.planning") or
-        (route and string.format("%d stops  |  %.1f km%s",#route.points,route.length*.0009144,
-            self.mapID==Routes.bestMapID and T("window.route.best") or "") or
+        (route and T("window.route.ground") or
         (self.object and T("window.status.browse_zones") or T("window.status.choose_resource"))))
     self.visibility:SetEnabled(fish or Routes.byMap~=nil)
     if fish then
@@ -617,37 +616,35 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.1.0. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.2.2. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
     title:SetPoint("TOPLEFT",28,-22)
     local version=addon.version
-    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | 8.1.1 release highlights"
+    local subtitle=UI.InkText(page,version=="@project-version@" and "Development build | Upcoming release highlights"
         or ("Installed version "..(version or "unknown").." | Release highlights"),"GameFontHighlight")
     subtitle:SetPoint("TOPLEFT",28,-54)
     local scroll=UI.Scroll(page,"GatherLiteChangelogScroll",1040)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"COMBINED FARMING ROUTES",{
-            "Check multiple herbs, ores, or pools to connect their known locations into one farming circuit. Shared locations are counted once.",
-            "Pick a zone on the map to see its known resources. Only this zone is enabled by default; turn it off to browse all resources and generate routes across zones.",
-            "Search and resource categories work together with the zone filter. Saved routes restore the selected resources and zone scope after reload.",
+        {"UPDATED GATHERING LOCATIONS",{
+            "The Forever database now includes 30,544 gathering locations, 85 more than 8.2.0, while preserving all previously known positions and starter resource variants.",
+            "Added Heavy Thorium Vein, Chunk of Amber, Large Chunk of Amber, Hyjal Silphium and Tomb Weed to the resource catalog.",
         }},
-        {"MAP OVERLAY & RESOURCE BROWSING",{
-            "The selected-resource panel now sits in the bottom-right corner of the map, leaving the full sidebar height available for the resource list.",
-            "Route controls stay in place while you pan or zoom. Calculation progress appears above the panel, and combined map pins retain each resource's icon and details.",
-            "Mining, Herbalism, Containers, and Fishing categories help narrow the list. Controller navigation includes categories and the zone filter.",
+        {"FASTER ROUTE RESTORATION",{
+            "Completed farming routes now save their ground geometry and restore after login or reload without running the terrain planner again.",
+            "Saved geometry is checked against the addon version, game build, selected resources, zone scope and predefined-data setting before reuse.",
+            "Older saves without geometry rebuild only the selected zone instead of calculating routes for every zone.",
         }},
-        {"GATHERING TRACKING & MINIMAP",{
-            "Learned professions set initial map tracking filters while existing manual choices are preserved.",
-            "Automatic gathering tracking restores learned Find Minerals or Find Herbs outside combat. Selecting Mining or Herbalism chooses the preferred mode; disable this in Minimap settings if desired.",
-            "When nearby circles are off, a new option can hide nearby nodes instead of retaining their icons. Nearby distance changes apply immediately.",
+        {"LESS ROUTE CALCULATION WORK",{
+            "Ground routes evaluate up to 32 representative stops instead of 64, reducing terrain-search work in dense gathering areas.",
+            "Zone-only browsing and route collection use indexed locations for that zone, avoiding scans of unrelated gathering history.",
         }},
-        {"WINDOW & CONTROLLER FIXES",{
-            "The main window now stays outside Blizzard's protected controller panel manager, preventing forbidden-action errors when native panels open or close.",
-            "World-map node tooltips now follow the controller map cursor without hooking the protected map-close transition. Category icons show their names when focused.",
+        {"MAP HOVER COMPATIBILITY",{
+            "Map hover updates safely skip controller handling when the client does not provide the gamepad API, preventing repeated Lua errors.",
+            "Newly gathered locations appear immediately in open maps and resource lists. Nearby minimap markers can be hidden or shown as circles, and overlapping markers share a tooltip.",
         }},
     }
     local y=0
@@ -748,6 +745,22 @@ function Window:Create()
             self:MapChanged()
         end
         self:RefreshSettings()
+    end)
+    GatherLite:On("nodes:added",function(node)
+        if not node or not self.frame:IsShown() then return end
+        local selected=false
+        if self.object and self.object.type~="fish" then
+            for _,id in ipairs(self.object.id) do
+                if id==node.object then selected=true; break end
+            end
+        end
+        if selected then
+            self:CollectLocations()
+            self:MapChanged()
+        elseif self.zoneOnly and self.mapID==node.mapID then
+            -- A new resource can enter the zone's list without changing the selection.
+            self:RefreshList()
+        end
     end)
     self.help=UI.Button(frame,T("window.action.help"),54,function() self:ShowOnboarding() end)
     self.help:SetPoint("TOPRIGHT",-32,-30)

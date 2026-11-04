@@ -56,7 +56,8 @@ end
 function Hover:Update()
     local map=WorldMapFrame
     local scroll=map.ScrollContainer
-    if not map:IsVisible() or not InputUtil or not InputUtil.IsGamepadUIEnabled()
+    if not map:IsVisible() or not InputUtil or not InputUtil.IsGamepadUIEnabled
+        or not InputUtil.IsGamepadUIEnabled()
         or not map.IsMapFocused or not map:IsMapFocused()
         or not scroll or not scroll.GetGamepadCursorPosition then
         self:Clear(); return
@@ -71,7 +72,8 @@ end
 function Hover:UpdateWindow(window)
     if not window.mapCursor or not window.mapCursor:IsVisible()
         or not window.controllerNavigation or window.controllerNavigation:GetCurrentButton()~=window.map
-        or not InputUtil or not InputUtil.IsGamepadUIEnabled() then
+        or not InputUtil or not InputUtil.IsGamepadUIEnabled
+        or not InputUtil.IsGamepadUIEnabled() then
         self:ClearWindow(); return
     end
     update(self.windowState,window.pins,window.mapCursor,window.mapOverlay,false,window.object)

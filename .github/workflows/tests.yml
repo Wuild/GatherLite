@@ -21,6 +21,8 @@ jobs:
         run: lua5.1 tools/test_zones.lua
       - name: Test automatic gathering tracking
         run: lua5.1 tools/test_gathering_tracking.lua
+      - name: Test client-localized fish names
+        run: lua5.1 tools/test_fish_names.lua
       - name: Test map tracking toggles
         run: lua5.1 tools/test_tracking.lua
       - name: Test controller map cursor
@@ -31,6 +33,8 @@ jobs:
         run: lua5.1 tools/test_map_reveal.lua
       - name: Test routes and custom window
         run: lua5.1 tools/test_routes.lua
+      - name: Test standalone ground routing
+        run: lua5.1 tools/test_ground_routes.lua
       - name: Test grouped tooltips
         run: lua5.1 tools/test_tooltips.lua
       - name: Test importer and release packaging offline

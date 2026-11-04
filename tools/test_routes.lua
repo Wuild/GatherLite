@@ -231,7 +231,7 @@ GatherLite={plugins={},db={global={usePredefined=true,debug={types={}}},char={
     worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true},
 },profile={minimap={}}}}
 function GatherLite:On(event,fn) events[event]=events[event] or {}; table.insert(events[event],fn) end
-function GatherLite:Trigger(event) for _,fn in ipairs(events[event] or {}) do fn() end end
+function GatherLite:Trigger(event,...) for _,fn in ipairs(events[event] or {}) do fn(...) end end
 function GatherLite:IsLoaded() return true end
 function GatherLite:RegisterChatCommand() end
 function GatherLite:translate(key, ...)
@@ -253,9 +253,27 @@ function GatherLite:GetNodeObject(id)
 end
 addon.nodes={mining={{object=1,mapID=1,posX=.1,posY=.1},{object=2,mapID=1,posX=.1,posY=.1},
     {object=1,mapID=99,posX=.5,posY=.5},{object=1,mapID=1,posX=0/0,posY=.1}}}
+function GatherLite:GetNodesForMap(kind,mapID)
+    local nodes={}
+    for _,node in ipairs(addon.nodes[kind] or {}) do
+        if node.mapID==mapID then nodes[#nodes+1]=node end
+    end
+    return nodes
+end
 addon.predefined={[2]={[1]={.1,.1,.9,.1,.9,.9,.1,.9},[2]={.4,.4,.6,.4,.6,.6,.4,.6}}}
 load("plugins/routes/routes.lua")
 load("plugins/routes/overlays.lua")
+-- UI/controller fixtures use a flat world. Actual bundled terrain and the
+-- adapter are exercised separately by test_ground_routes.lua.
+addon.GroundNavigation={Build=function(_,points,_,checkpoint,progress)
+    local route=P.Build(points,checkpoint,progress)
+    if route then
+        route.terrainAware=true
+        route.geometry={unpack(route.points)}
+        route.geometry[#route.geometry+1]=route.points[1]
+    end
+    return route
+end}
 local R=addon.Routes
 local maps=R:Collect(addon.nodeDB[1])
 assert(#maps[1]==4 and #maps[2]==4 and not maps[99], "aliases, duplicates, invalid positions or dungeons leaked")
@@ -337,7 +355,34 @@ W.generate.scripts.OnClick()
 assert(W.progress:IsShown() and R.progress==0)
 while R.worker do R:Tick() end
 assert(W.mapID==2 and #W.mapOverlay.lines==4)
+assert(W.routeSummary.text==localeTable["window.route.ground"] and
+    R.status:find(localeTable["window.route.ground"],1,true),
+    "terrain route status must reach the selected route card")
 assert(W.clear.enabled and not W.progress:IsShown())
+-- Full ground geometry must reach both overlays, including a non-straight
+-- return leg. Rendering the stops again would silently reintroduce shortcuts.
+do
+    local active=R.active
+    local p=active.points
+    active.geometry={p[1],{u=.5,v=.2,x=-500,y=-200,instance=0},p[2],p[3],
+        {u=.3,v=.7,x=-300,y=-700,instance=0},p[4],p[1]}
+    local function assertGeometry(frame)
+        local visible=0
+        for _,line in ipairs(frame.lines) do if line:IsShown() then visible=visible+1 end end
+        assert(visible==6,"overlay replaced ground geometry with straight stop-to-stop segments")
+    end
+    R:DrawOnCanvas(W.mapOverlay,W.map,W.object)
+    assertGeometry(W.mapOverlay)
+    WorldMapFrame.mapID=2; playerMap=2
+    R:Draw(.1)
+    local found=false
+    for _,frame in ipairs(frames) do
+        if frame.parent==Minimap and frame.lines then assertGeometry(frame); found=true end
+    end
+    assert(found,"terrain minimap overlay was not drawn")
+    active.geometry=nil
+    W:DrawMap()
+end
 W.previous.scripts.OnClick()
 assert(W.mapID==1 and R.active.mapID==1 and GatherLite.db.char.routeMapID==1,"zone arrows did not switch routes")
 W.next.scripts.OnClick()
@@ -800,17 +845,45 @@ do
     assert(R.byMap[1] and not R.byMap[2] and #R.active.points==6,"zone generation escaped the chosen zone or omitted resources")
     assert(#GatherLite.db.char.routeObjects==2 and GatherLite.db.char.routeOnlyMapID==1,"combined route was not saved")
     -- Restore the saved multi-resource route through the actual startup path.
+    local cache=assert(GatherLite.db.char.savedRoute,"completed geometry was not persisted")
+    assert(not cache.byMap[1].object,"saved routes retained a live resource object")
+    local originalBuild=addon.GroundNavigation.Build
+    addon.GroundNavigation.Build=function() error("reload recalculated saved geometry") end
+    R.worker,R.active,R.object,R.byMap,R.bestMapID=nil,nil,nil,nil,nil
     R.setup()
     local watcher=frames[#frames]
     watcher:GetScript("OnUpdate")(watcher,.01)
     while R.worker do R:Tick() end
     assert(R.object.objects and #R.object.objects==2 and R.byMap[1] and not R.byMap[2],"reload dropped selected resources or zone scope")
+    assert(not R.worker and R.active.geometry and R.active.geometry~=cache.byMap[1].geometry,
+        "reload did not restore an independent terrain circuit immediately")
+    addon.GroundNavigation.Build=originalBuild
+    local object=R.object
+    cache.schema=0
+    assert(not R:Restore(object,1,1),"outdated planner cache was accepted")
+    cache.schema=1
+    local version,build,id=cache.version,cache.build,cache.ids[1]
+    cache.version="outdated-version"
+    assert(not R:Restore(object,1,1),"different addon version reused saved geometry")
+    cache.version=version; cache.build=-1
+    assert(not R:Restore(object,1,1),"different client build reused saved geometry")
+    cache.build=build; cache.ids[1]=-1
+    assert(not R:Restore(object,1,1),"different resource selection reused saved geometry")
+    cache.ids[1]=id; cache.predefined=false
+    assert(not R:Restore(object,1,1),"reference-data setting change kept stale geometry")
+    cache.predefined=true
+    local x=cache.byMap[1].geometry[1].x
+    cache.byMap[1].geometry[1].x=0/0
+    assert(not R:Restore(object,1,1),"malformed cached geometry was accepted")
+    cache.byMap[1].geometry[1].x=x
+    assert(not R:Restore(object,2,2),"different zone scope reused a saved circuit")
     W:SetMap(2)
     assert(W.noResults:IsShown(),"resources from a different zone leaked into the list")
     assert(#W.selectedObjects==2,"browsing a zone silently changed checked resources")
     W:SetMap(1)
     W:ToggleObject(herb)
     assert(W.object==copper and not R.byMap,"unchecking did not invalidate combined route")
+    assert(not GatherLite.db.char.savedRoute,"clearing a route retained saved geometry")
     R:Generate(copper)
     W:ToggleObject(herb)
     R:Tick()
@@ -821,8 +894,19 @@ do
     W:RefreshList()
     assert(W.noResults:IsShown(),"zone availability ignored predefined-data setting")
     addon.nodes.herbalism={{object=3,mapID=1,posX=.3,posY=.3}}
-    W:RefreshList()
+    GatherLite:Trigger("nodes:added",addon.nodes.herbalism[1])
     assert(W.rows[1]:IsShown() and W.rows[1].object==herb,"recorded herb missing with predefined data off")
+    W:SelectObject(herb)
+    assert(#W.locations[1]==1)
+    addon.nodes.herbalism[2]={object=3,mapID=1,posX=.7,posY=.7}
+    GatherLite:Trigger("nodes:added",addon.nodes.herbalism[2])
+    assert(#W.locations[1]==2 and W.mapID==1,"new self-found location did not refresh selected resource")
+    local visible=0
+    for _,pin in ipairs(W.pins) do if pin:IsShown() then visible=visible+1 end end
+    assert(visible==2,"new self-found location did not refresh window pins")
+    local locations=W.locations
+    GatherLite:Trigger("nodes:added",{object=1,mapID=1})
+    assert(W.locations==locations,"unrelated gather recollected the selected resource")
     W.search:SetText("copper"); W:RefreshList()
     assert(W.noResults:IsShown(),"search did not combine with category and zone")
     addon.nodes.herbalism=nil; addon.predefined[3]=previousHerbs
@@ -830,3 +914,66 @@ do
     W.search:SetText(""); W.categoryButtons[1]:GetScript("OnClick")()
 end
 print("Combined route selection, per-resource pins, zone filtering, saved restoration and cancellation passed")
+
+-- Zone browsing and zone-only route input must stay independent of the size
+-- of other zones. Use prebuilt buckets, as GetNodesForMap does in the addon.
+do
+    local originalNodes, originalQuery = addon.nodes, GatherLite.GetNodesForMap
+    local originalPredefined = GatherLite.db.global.usePredefined
+    local target = {
+        {object=1,mapID=1,posX=.1,posY=.1},
+        {object=1,mapID=1,posX=.9,posY=.1},
+        {object=1,mapID=1,posX=.9,posY=.9},
+        {object=1,mapID=1,posX=.1,posY=.9},
+    }
+    local all, offMapReads = {}, 0
+    for _,node in ipairs(target) do all[#all+1]=node end
+    for i=1,50000 do
+        all[#all+1]=setmetatable({object=1,posX=.5,posY=.5}, {__index=function(_,key)
+            if key=="mapID" then offMapReads=offMapReads+1; return 2 end
+        end})
+    end
+    addon.nodes={mining=all}
+    GatherLite.db.global.usePredefined=false
+    local queries=0
+    function GatherLite:GetNodesForMap(kind,mapID)
+        queries=queries+1
+        assert(kind=="mining" and mapID==1)
+        return target
+    end
+    assert(R:ZoneResources(1)[1] and offMapReads==0 and queries==1,
+        "resource browsing scanned unrelated zones")
+    local checkpoints=0
+    local collected=R:Collect(addon.nodeDB[1],function() checkpoints=checkpoints+1 end,1)
+    assert(#collected[1]==4 and not collected[2] and checkpoints==4 and offMapReads==0,
+        "zone-only routes scanned unrelated zones or lost target locations")
+    -- Compare against the previous whole-database availability scan.
+    local available={}
+    for _,node in ipairs(all) do
+        if node.mapID==1 then available[node.object]=true end
+    end
+    assert(available[1] and offMapReads==50000)
+    addon.nodes, GatherLite.GetNodesForMap = originalNodes, originalQuery
+    GatherLite.db.global.usePredefined=originalPredefined
+end
+print("Indexed zone browsing: 4 candidate nodes instead of 50,004; zone-only route collection visits 4 candidates")
+
+do
+    local originalGenerate=R.Generate
+    local restoredScope
+    GatherLite.db.char.savedRoute=nil
+    GatherLite.db.char.routeObjects={1}
+    GatherLite.db.char.routeMapID=1
+    GatherLite.db.char.routeOnlyMapID=nil
+    R.worker=nil
+    function R:Generate(object,mapID,onlyMapID)
+        assert(object==addon.nodeDB[1] and mapID==1)
+        restoredScope=onlyMapID
+    end
+    R.setup()
+    local watcher=frames[#frames]
+    watcher:GetScript("OnUpdate")(watcher,.01)
+    assert(restoredScope==1,"legacy reload rebuilt every zone instead of the saved farming zone")
+    R.Generate=originalGenerate
+end
+print("Legacy route restoration rebuilds only the saved zone")

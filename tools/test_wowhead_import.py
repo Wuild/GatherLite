@@ -138,7 +138,7 @@ class DiscoveryTests(unittest.TestCase):
             quest = {"id": 176753, "name": "Doom Weed", "skill": 1, "type": -3}
             (cache / "herbs.html").write_text(listing([self.herb, quest], "herbs"))
             catalog = {439558: ("mining", 439558)}
-            with patch.object(importer, "urlopen", side_effect=AssertionError("network called")):
+            with patch.object(importer, "request_html", side_effect=AssertionError("network called")):
                 with patch("sys.stdout", new_callable=io.StringIO):
                     ids, report = importer.discover_objects(catalog, cache, True, False, 2, [0])
             self.assertEqual(ids, {439558})
@@ -201,7 +201,7 @@ class CommandTests(unittest.TestCase):
         self.assertEqual(json.loads(self.state.read_text())["discovery"], report)
 
     def test_missing_offline_cache_does_not_fetch(self):
-        with patch.object(importer, "urlopen", side_effect=AssertionError("network called")):
+        with patch.object(importer, "request_html", side_effect=AssertionError("network called")):
             self.assertEqual(importer.main(self.args + ["--objects", "1732"]), 1)
 
     def test_malformed_state_does_not_write(self):

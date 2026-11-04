@@ -15,13 +15,12 @@ local function InsertObject(type, ids, name, icon, levels, aliases)
     })
 end
 
--- Name aliases include player-reported Northshire starter variants whose IDs are
--- not published in the Forever source. Group observed gathers with the base resource.
--- These aliases do not establish variant spawn locations or skill requirements.
+-- Name aliases group observed starter variants with their base resource.
+-- Only variants with verified Forever object IDs contribute predefined coordinates.
 
 -- Ores
 -- Forever
-InsertObject("ore", { 1731, 2055, 3763, 103713, 103714 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 }, { "weak_copper_vein", "poor_copper_vein" })
+InsertObject("ore", { 1731, 2055, 3763, 103713, 103714, 562111 }, "copper_vein", "Ore\\copper", { 1, 25, 50, 100 }, { "weak_copper_vein", "poor_copper_vein" })
 InsertObject("ore", { 1732, 3764, 2054, 103711, 103709 }, "tin_vein", "Ore\\tin", { 65, 90, 115, 165 })
 InsertObject("ore", { 1733, 105569, 73940 }, "silver_vein", "Ore\\silver", { 75, 100, 125, 175 }, { "ooze_covered_silver_vein" })
 InsertObject("ore", { 1735, 103710, 103712, 73939 }, "iron_deposit", "Ore\\iron", { 125, 150, 175, 225 })
@@ -45,11 +44,16 @@ InsertObject("ore", { 19903 }, "indurium_mineral_vein", "Ore\\mithril", { 150 })
 InsertObject("ore", { 180215 }, "hakkari_thorium_vein", "Ore\\rich_thorium", { 275 })
 InsertObject("ore", { 181068 }, "small_obsidian_chunk", "Ore\\darkiron", { 305 })
 InsertObject("ore", { 181069 }, "large_obsidian_chunk", "Ore\\darkiron", { 305 })
+-- Forever additions: keep distinct names and published minimum skills.
+-- Amber nodes yield Copper Ore; Heavy Thorium shares the rich-thorium model.
+InsertObject("ore", { 566779 }, "heavy_thorium_vein", "Ore\\rich_thorium", { 300 })
+InsertObject("ore", { 656332 }, "chunk_of_amber", "Ore\\copper", { 1 })
+InsertObject("ore", { 656333 }, "large_chunk_of_amber", "Ore\\copper", { 1 })
 
 -- Herbs
 -- Forever
-InsertObject("herb", { 1617, 3725 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 })
-InsertObject("herb", { 1618, 3724 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 }, { "wilted_peacebloom" })
+InsertObject("herb", { 1617, 3725, 656161 }, "silverleaf", "Herb\\silverleaf", { 1, 25, 50, 100 }, { "stunted_silverleaf" })
+InsertObject("herb", { 1618, 3724, 656160 }, "peacebloom", "Herb\\peacebloom", { 1, 25, 50, 100 }, { "wilted_peacebloom" })
 InsertObject("herb", { 1619, 3726 }, "earthroot", "Herb\\earthroot", { 15, 40, 65, 115 })
 InsertObject("herb", { 1620, 3727 }, "mageroyal", "Herb\\mageroyal", { 50, 75, 100, 150 })
 InsertObject("herb", { 1621, 3729 }, "briarthorn", "Herb\\briarthorn", { 70, 95, 120, 170 })
@@ -81,6 +85,9 @@ InsertObject("herb", { 439557 }, "nightmare_moss", "Herb\\grave_moss", { 125 })
 InsertObject("herb", { 439627 }, "dreamroot", "Herb\\earthroot", { 205 })
 InsertObject("herb", { 439810 }, "moonroot", "Herb\\dreamfoil", { 250 })
 InsertObject("herb", { 439762 }, "star_lotus", "Herb\\black_lotus", { 250 })
+-- Object pages supply no icon metadata; reuse bundled herb map icons.
+InsertObject("herb", { 654624 }, "hyjal_silphium", "Herb\\peacebloom", { 1 })
+InsertObject("herb", { 694732 }, "tomb_weed", "Herb\\grave_moss", { 1 })
 
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)

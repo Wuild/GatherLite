@@ -23,6 +23,7 @@ local function makeFrame(parent)
     f.IsVisible = f.IsShown
     function f:GetParent() return self.parent end
     function f:GetVertexColor() return 1, 1, 1 end
+    function f:GetWidth() return 140 end
     function f:SetFrameStrata(strata) self.strata = strata end
     function f:SetMouseClickEnabled(enabled) self.clickEnabled = enabled end
     function f:SetMouseMotionEnabled(enabled) self.motionEnabled = enabled end
@@ -46,10 +47,11 @@ GetTime = function() return 100 end
 IsInInstance = function() return false end
 tinsert, tremove = table.insert, table.remove
 local pins = { minimap = {}, worldmap = {} }
-function pins:AddMinimapIconWorld(_, frame) self.minimap[frame] = true; frame:Show() end
-function pins:AddWorldMapIconMap(_, frame) self.worldmap[frame] = true; frame:Show() end
-function pins:RemoveMinimapIcon(_, frame) self.minimap[frame] = nil end
-function pins:RemoveWorldMapIcon(_, frame) self.worldmap[frame] = nil end
+local pinAdds, pinRemoves = 0, 0
+function pins:AddMinimapIconWorld(_, frame) pinAdds=pinAdds+1; self.minimap[frame] = true; frame:Show() end
+function pins:AddWorldMapIconMap(_, frame) pinAdds=pinAdds+1; self.worldmap[frame] = true; frame:Show() end
+function pins:RemoveMinimapIcon(_, frame) pinRemoves=pinRemoves+1; self.minimap[frame] = nil end
+function pins:RemoveWorldMapIcon(_, frame) pinRemoves=pinRemoves+1; self.worldmap[frame] = nil end
 libraries["HereBeDragons-Pins-2.0"] = pins
 local playerX, playerY = 500, 500
 libraries["HereBeDragons-2.0"] = {
@@ -152,7 +154,7 @@ local function click(target, index)
     for _, registry in pairs({ pins.worldmap, pins.minimap }) do
         for frame in pairs(registry) do
             assert(frame.clickEnabled == false, "gathering pin can intercept menu clicks")
-            assert(frame.motionEnabled == true, "gathering pin lost hover tooltips")
+            assert(frame.motionEnabled == frame.texture:IsShown(), "only visible gathering pins should receive hover")
         end
     end
     button.func(button)
@@ -235,7 +237,7 @@ for i, kind in ipairs(kinds) do
     distanceOption.set(nil, 70)
     circlesOption.set(nil, true)
     tick(1.1)
-    assert(next(pins.minimap), "circles must take precedence over hiding")
+    assert(next(pins.minimap) and not hideOption.get(), "enabling circles must disable nearby hiding")
     hideOption.set(nil, false)
     tick(1.1)
     pin = assert(next(pins.minimap))
@@ -274,6 +276,32 @@ for i, kind in ipairs(kinds) do
     click("minimap", i)
 end
 assert(GatherLite.db.char.professionTrackingManual, "manual filter changes must disable profession automation")
+
+-- Nearby alternatives and mixed gathering categories must not stack rings.
+playerX,playerY=600,600
+circlesOption.set(nil,true)
+for i=1,#kinds do click("minimap",i) end
+tick(1.1)
+local visible,hidden=0,0
+for frame in pairs(pins.minimap) do
+    assert(frame.texture.texturePath==circle,"a newly loaded nearby pin flashed its resource icon")
+    if frame.texture:IsShown() then
+        visible=visible+1
+        assert(#frame.clusterNodes==3,"representative tooltip lost suppressed resource types")
+    else
+        hidden=hidden+1
+        assert(not frame.motionEnabled,"suppressed marker retained hover interception")
+    end
+end
+assert(visible==1 and hidden==3,"coincident circles across categories must share one visible marker")
+-- Existing saved settings can contain both flags: explicit hiding wins.
+GatherLite.db.char.minimap.hideNearbyNodes=true
+tick(1.1)
+assert(not next(pins.minimap),"old conflicting settings must not cover live tracking dots")
+GatherLite.db.char.minimap.hideNearbyNodes=false
+for i=1,#kinds do click("minimap",i) end
+playerX,playerY=500,500
+
 local settingsOpened = 0
 GatherLite.ShowSettings = function() settingsOpened = settingsOpened + 1 end
 minimapButton.OnClick(Minimap, "RightButton")
@@ -488,6 +516,7 @@ do
         if allow or (x >= 0 and x <= 1 and y >= 0 and y <= 1) then return x, y end
     end
     function pins:AddWorldMapIconMap(_, frame, map, x, y)
+        pinAdds=pinAdds+1
         self.worldmap[frame] = { map = map, x = x, y = y }; frame:Show()
     end
     local visible = { type = "mining", mapID = 1431, posX = .2, posY = .4, object = 1731, instance = 0 }
@@ -551,3 +580,86 @@ do
     GatherLite.GetWorldMapNodesForRect = originalQuery
 end
 print("World-map neighbors passed: projected pins, source identity, no pan/zoom reload, tracking, map changes and cleanup")
+
+-- Gathering must refresh open maps without relying on reference pins, movement,
+-- reopening the map, or the next five-second minimap scan.
+do
+    date = os.date
+    GatherLite.db.global.usePredefined = false
+    GatherLite.db.char.minimap.hideNearbyNodes = false
+    GatherLite.db.char.worldmap.neighbors = false
+    playerX, playerY = 500, 500
+    WorldMapFrame.mapID = 1429
+    WorldMapFrame:Show()
+    for _, kind in ipairs(kinds) do
+        GatherLite.db.char.minimap.tracking[kind] = true
+        GatherLite.db.char.worldmap.tracking[kind] = true
+    end
+    GatherLite:Trigger("settings:update")
+    tick(.1)
+    for step = 1, 10 do tick(.01) end
+    tick(1.1) -- Finish discovery and retire stale pins before measuring a gather.
+    for i, kind in ipairs(kinds) do
+        local saved = #GatherLite.db.global.nodes[kind]
+        local mini, world = count("minimap", objects[i]), count("worldmap", objects[i])
+        local cached = #GatherLite:GetNodesForMapInstance(kind, 1429, 0)
+        local added, removed = pinAdds, pinRemoves
+        local rectQuery, nearbyQuery = GatherLite.GetNodesForMapRect, GatherLite.GetNearbyZoneNodes
+        GatherLite.GetNodesForMapRect = function() error("gather rescanned world-map nodes") end
+        GatherLite.GetNearbyZoneNodes = function() error("gather restarted minimap discovery") end
+        GatherLite:RegisterNode(kind, objects[i], 1429, .5, .5)
+        GatherLite.GetNodesForMapRect, GatherLite.GetNearbyZoneNodes = rectQuery, nearbyQuery
+        assert(pinAdds == added + 2 and pinRemoves == removed,
+            string.format("gather %s must add only its two pins without rebuilding existing pins (adds=%d, removes=%d)",
+                kind, pinAdds-added, pinRemoves-removed))
+        assert(#GatherLite.db.global.nodes[kind] == saved + 1, "new personal node was not saved")
+        assert(count("worldmap", objects[i]) == world + 1, "registration must refresh the open world map")
+        assert(#GatherLite:GetNodesForMapInstance(kind, 1429, 0) == cached + 1,
+            "new personal node was omitted from the map/instance index")
+        -- Allow coroutine workers to finish without triggering their periodic scan.
+        for step = 1, 10 do tick(.01) end
+        assert(count("minimap", objects[i]) == mini + 1, "registration must refresh the minimap immediately")
+        GatherLite:RegisterNode(kind, objects[i], 1429, .5, .5)
+        assert(#GatherLite.db.global.nodes[kind] == saved + 1, "repeat gather duplicated personal history")
+        assert(count("worldmap", objects[i]) == world + 1, "repeat gather duplicated the world map pin")
+    end
+
+    -- Promotion of an already visible reference node keeps its runtime identity.
+    GatherLite.db.global.usePredefined = true
+    GatherLite:Trigger("settings:update")
+    for step = 1, 10 do tick(.01) end
+    local reference = GatherLite:findExistingLocalNode("herbalism", 1429, .6, .6, objects[2])
+    local added, removed = pinAdds, pinRemoves
+    GatherLite:RegisterNode("herbalism", objects[2], 1429, .6, .6)
+    assert(reference.predefined == false and reference.loaded and reference.loadedWorldmap,
+        "promotion lost the indexed runtime node")
+    assert(pinAdds == added and pinRemoves == removed, "visible reference promotion duplicated or rebuilt pins")
+
+    -- Turning reference data back on/off must retain the same personal pins.
+    GatherLite.db.global.usePredefined = true
+    GatherLite:Trigger("settings:update")
+    GatherLite.db.global.usePredefined = false
+    GatherLite:Trigger("settings:update")
+    for i, kind in ipairs(kinds) do
+        assert(count("worldmap", objects[i]) >= 1, "database toggle hid personal " .. kind)
+    end
+
+    -- A gather at an already loaded reference location becomes personal history
+    -- even while reference pins are hidden; it must appear without a duplicate.
+    local before = count("worldmap", objects[1])
+    GatherLite:RegisterNode("mining", objects[1], 1429, .6, .6)
+    assert(count("worldmap", objects[1]) == before + 1, "hidden reference node was not promoted to a personal pin")
+
+    -- Tracking filters affect visibility, never whether a successful gather saves.
+    WorldMapFrame:Hide(); tick(.01)
+    GatherLite.db.char.minimap.tracking.mining = false
+    GatherLite:Trigger("settings:update")
+    GatherLite:RegisterNode("mining", objects[1], 1429, .55, .55)
+    assert(GatherLite:FindExistingNode("mining", 1429, .55, .55, objects[1]), "disabled map filter blocked personal history")
+    assert(count("minimap", objects[1]) == 0 and next(pins.worldmap) == nil,
+        "registration bypassed a map filter or reopened a closed map")
+    WorldMapFrame:Show(); tick(.01)
+    assert(count("worldmap", objects[1]) == before + 2, "reopening map lost nodes gathered while closed")
+end
+print("Personal node registration passed: predefined disabled, immediate map refresh and repeat gathers")
+print("Gather refresh work: two pin additions, zero removals, zero map/discovery rescans; visible promotion reuses both pins")

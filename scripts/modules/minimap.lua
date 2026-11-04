@@ -52,8 +52,7 @@ end
 
 local function HideNearbyNode(distance)
     local settings = GatherLite.db.char.minimap
-    return settings.nearbyCircles == false and settings.hideNearbyNodes == true
-        and distance < settings.distance
+    return settings.hideNearbyNodes == true and distance < settings.distance
 end
 
 local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
@@ -82,7 +81,7 @@ local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zone
 end
 
 -- Create minimap node
-local function CreateMinimapNode(node)
+local function CreateMinimapNode(node, worldX, worldY, instanceID)
     if not GatherLite:IsLoaded() then
         return
     end
@@ -98,8 +97,10 @@ local function CreateMinimapNode(node)
     f:SetAlpha(GatherLite.db.char.minimap.opacity);
     f:SetSize(GatherLite.db.char.minimap.size, GatherLite.db.char.minimap.size)
 
-    f.texture:SetTexture(object.icon)
-    f.nearby = false
+    local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
+    f.nearby = GatherLite.db.char.minimap.nearbyCircles == true
+        and distance and distance < GatherLite.db.char.minimap.distance or false
+    f.texture:SetTexture(f.nearby and nearbyIcon or object.icon)
     f.node = node;
     f.object = object
     f.type = "minimap";
@@ -151,7 +152,7 @@ local function createNodeThread(type)
     for i = 1, #t do
         local node = t[i]
         if not node.loaded then
-            if CreateMinimapNode(node) then node.loaded = true end
+            if CreateMinimapNode(node, worldX, worldY, instanceID) then node.loaded = true end
         end
         coroutine.yield()
     end
@@ -187,6 +188,7 @@ local function UpdateMinimapIcons()
     end
 
     local inInstance = IsInInstance()
+    local visible = {}
     -- Removing the current entry during pairs is safe; no snapshot is needed.
     for _, frame in pairs(Frames.usedFrames) do
         if frame.type == "minimap" then
@@ -203,13 +205,51 @@ local function UpdateMinimapIcons()
                 or not MinimapFilter(node) or HideNearbyNode(distance) then
                 frame:Unload()
             else
-                local nearby = GatherLite.db.char.minimap.nearbyCircles ~= false
+                local nearby = GatherLite.db.char.minimap.nearbyCircles == true
                     and distance < GatherLite.db.char.minimap.distance
                 if frame.nearby ~= nearby then
                     frame.nearby = nearby
                     frame.texture:SetTexture(nearby and nearbyIcon or frame.object.icon)
                 end
+                visible[#visible + 1] = {frame=frame, distance=distance}
             end
+        end
+    end
+    -- Spawn alternatives and different resource types can occupy the same
+    -- minimap pixels. Keep the closest representative without changing history
+    -- or hiding the client's live tracking dots. Hide only our texture so HBD
+    -- continues to own pin visibility, clipping and edge placement.
+    table.sort(visible,function(a,b)
+        return a.distance < b.distance or (a.distance == b.distance and a.frame.frameId < b.frame.frameId)
+    end)
+    local radius=C_Minimap and C_Minimap.GetViewRadius and C_Minimap.GetViewRadius() or 233.333
+    if radius<=0 then radius=233.333 end
+    if Minimap:GetWidth()<=0 then return end
+    local spacing=2 * radius * (GatherLite.db.char.minimap.size + 2) / Minimap:GetWidth()
+    local cells={}
+    for _,entry in ipairs(visible) do
+        local frame=entry.frame
+        frame.clusterNodes={}
+        local cx,cy=math.floor(frame.node.worldX/spacing),math.floor(frame.node.worldY/spacing)
+        local overlap=false
+        for dx=-1,1 do
+            for dy=-1,1 do
+                for _,other in ipairs(cells[(cx+dx)..":"..(cy+dy)] or {}) do
+                    if (other.node.worldX-frame.node.worldX)^2+(other.node.worldY-frame.node.worldY)^2 < spacing^2 then
+                        overlap=overlap or other
+                    end
+                end
+            end
+        end
+        frame:SetMouseMotionEnabled(not overlap)
+        if overlap then
+            frame.texture:Hide()
+            overlap.clusterNodes[#overlap.clusterNodes+1]=frame.node
+        else
+            frame.texture:Show()
+            local key=cx..":"..cy
+            cells[key]=cells[key] or {}
+            if frame:IsShown() then cells[key][#cells[key]+1]=frame end
         end
     end
 end
@@ -295,6 +335,31 @@ source.setup = function()
     threadFishing = coroutine.create(fishingThread)
 
     LoadMinimap();
+
+    GatherLite:On("nodes:added", function(node)
+        if not node or node.loaded or not MinimapFilter(node) or IsInInstance() then return end
+        local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
+        local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
+        if (worldX == nil or worldY == nil or instanceID == nil) and zoneX ~= nil and zoneY ~= nil and mapID then
+            worldX, worldY, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
+        end
+        if worldX == nil or worldY == nil or instanceID == nil or not mapID then return end
+        local allowed = node.mapID == mapID
+        local zone = GatherLite:GetZoneTree()[mapID]
+        if not allowed and zone then
+            for _, neighbor in ipairs(zone.neighbors) do
+                if node.mapID == neighbor then allowed = true; break end
+            end
+        end
+        if not allowed then return end
+        GatherLite:EnsureNodeWorld(node)
+        if node.instance ~= instanceID or not node.worldX or not node.worldY then return end
+        local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
+        if not distance or distance >= GatherLite.db.char.minimap.range or HideNearbyNode(distance) then return end
+        node.loaded = CreateMinimapNode(node, worldX, worldY, instanceID) ~= nil
+        -- Recluster visible icons, retaining the existing discovery workers and timers.
+        if node.loaded then UpdateMinimapIcons() end
+    end)
 
     local frame = CreateFrame("Frame")
     frame:SetScript("OnUpdate", function(self, elapsed)

@@ -1,6 +1,26 @@
 # Updating the Forever database
 
-Requires Python 3.10+; standard library only. Run from the repository root:
+### Database refresh for 8.2.2: November 4, 2026
+
+Refreshed all 152 source object pages with graphical Chromium. The complete
+mining/herb listings contain 107 IDs: 100 catalogued gathering objects and seven
+excluded quest pickups, with no uncatalogued IDs. The database contains **30,544
+unique locations**, **85 more than 8.2.0**. An exact coordinate-set comparison
+confirmed that every previously released location was retained.
+
+The additions are 21 Chunk of Amber, 44 Large Chunk of Amber and 20 Tomb Weed
+locations. Heavy Thorium Vein and Hyjal Silphium are also registered in the
+catalog, but their pages still report unknown locations. Previously shipped
+Poor Copper Vein, Wilted Peacebloom and Stunted Silverleaf IDs and locations are
+preserved and freshly verified.
+
+The first browser session was refused with HTTP 405 after 29 successful object
+pages. One retry at twenty-second intervals reused those validated downloads
+and completed the remaining pages. No direct HTTP or headless transport was used
+for this completed refresh.
+
+Requires Python 3.10+. Online updates require Playwright, Chromium and a graphical
+desktop session; offline imports use only the standard library. Run from the repository root:
 
 ```sh
 # Preview a fresh import; writes the HTML cache only.
@@ -11,6 +31,8 @@ python tools/update_forever_wowhead.py --offline
 python tools/update_forever_wowhead.py --refresh
 # Also check the full mining/herb listings for missing IDs and known aliases.
 python tools/update_forever_wowhead.py --discover --refresh
+# Preview with graphical Chromium; reuse cached successes.
+python tools/update_forever_wowhead.py --discover --delay 10 --dry-run
 # Regenerate the Lua from committed state; no network or HTML cache needed.
 python tools/update_forever_wowhead.py --generate-only
 ```
@@ -24,6 +46,16 @@ python tools/update_forever_wowhead.py --objects 1731 1617 --refresh
 By default, all previously imported source IDs are refreshed. An entirely new database starts with the IDs in `scripts/nodes.lua`. `--discover` additionally reads the full [mineral-vein](https://www.wowhead.com/forever/objects/mineral-veins) and [herb](https://www.wowhead.com/forever/objects/herbs) listings, imports listed IDs already in the catalog, and reports unknown IDs with their names and minimum skills. It rejects truncated listings. Seven quest pickups in the herb listing are explicitly excluded; these are not Herbalism nodes. The discovery report is stored in `forever.json` so scheduled runs can detect newly unmapped objects without repeating old alerts. Discovery supports cached/offline pages and cannot be combined with `--objects` or `--generate-only`.
 
 Selected-object imports preserve the other records. Updates are additive: missing spawns and empty responses do not erase known locations.
+
+Online updates always use one isolated graphical Chromium session, started
+minimized. Install the dependency as described in [the tools guide](../README.md).
+There is no direct HTTP or headless mode. The old `--browser` and
+`--browser-headed` flags remain accepted for compatibility and are unnecessary.
+Canonical URL, listing and coordinate checks run before saving HTML. Browser
+requests can still be refused. No cookies are copied from your personal browser.
+Offline and generate-only modes need no browser dependency.
+The fetcher waits for the actual page data before validation and caching;
+intermediate HTTP 202 documents and challenge pages are never accepted as data.
 
 ## Data format
 
@@ -39,7 +71,7 @@ The importer reads pages under `https://www.wowhead.com/forever/`, for example [
 
 Aliases are normalized to the catalog's first object ID. Duplicate object/map/coordinate combinations are removed; nearby positions remain separate. The runtime resolves world coordinates and instances with HereBeDragons. Personal saved nodes are indexed first so predefined loading can avoid duplicate pins.
 
-Requests are sequential, two seconds apart by default (`--delay`, minimum one). HTTP errors, wrong-client pages, malformed JSON, invalid coordinates, or missing map IDs stop the import before generated output is changed. Explicit unknown-location pages, empty mapper arrays on registered Forever object pages, and unmapped `[0, 0]` placeholders are reported and skipped. Empty mapper arrays can occur when Wowhead lists a dungeon but no pin coordinates. A Forever URL identifies Wowhead's selected database, but does not establish that every spawn was newly verified in the client.
+Requests are sequential, at least ten seconds apart (`--delay` can increase this). HTTP errors, wrong-client pages, malformed JSON, invalid coordinates, or missing map IDs stop the import before generated output is changed. Explicit unknown-location pages, empty mapper arrays on registered Forever object pages, and unmapped `[0, 0]` placeholders are reported and skipped. Empty mapper arrays can occur when Wowhead lists a dungeon but no pin coordinates. A Forever URL identifies Wowhead's selected database, but does not establish that every spawn was newly verified in the client.
 
 ## New objects and checks
 
@@ -99,7 +131,8 @@ The refresh includes five unique Practice Lockbox locations, three Buccaneer's S
 
 The initial run stopped at object 181109 with HTTP 403 after 135 successful pages. Those refreshed pages were applied from cache. A later retry of the remaining nine sources at ten-second intervals completed successfully and added no further locations. All 144 source records are now refreshed. The successful retry is consistent with a temporary access restriction; the response alone does not establish rate limiting as the cause.
 
-For a slower refresh, use `--delay 10` (seconds between requests). The normal default remains two seconds.
+Online node refreshes now default to at least ten seconds between requests. Use
+`--delay` with a larger value for a slower refresh.
 
 ## Fish catch reference
 

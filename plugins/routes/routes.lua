@@ -29,9 +29,9 @@ function Routes:ZoneResources(mapID)
     local function add(id,u,v)
         if finite(u) and finite(v) and u>=0 and u<=1 and v>=0 and v<=1 then ids[id]=true end
     end
-    for _,nodes in pairs(addon.nodes) do
-        for _,node in ipairs(nodes) do
-            if node.mapID==mapID and (not node.predefined or GatherLite.db.global.usePredefined) then
+    for kind in pairs(addon.nodes) do
+        for _,node in ipairs(GatherLite:GetNodesForMap(kind,mapID)) do
+            if not node.predefined or GatherLite.db.global.usePredefined then
                 add(node.object,node.posX,node.posY)
             end
         end
@@ -75,7 +75,8 @@ function Routes:Collect(object, checkpoint, onlyMapID)
         end
         return maps
     end
-    for _, nodes in pairs(addon.nodes) do
+    for kind, allNodes in pairs(addon.nodes) do
+        local nodes = onlyMapID and GatherLite:GetNodesForMap(kind, onlyMapID) or allNodes
         for _, node in ipairs(nodes) do
             if ids[node.object] and (not node.predefined or GatherLite.db.global.usePredefined) then
                 add(node.mapID, node.posX, node.posY, node.object)
@@ -96,12 +97,82 @@ function Routes:Notify()
     if addon.Window then addon.Window:RefreshRoute() end
 end
 
+-- Save only scalar route geometry, never live resource objects, coroutines or
+-- decoded terrain. Bump the schema when planner/terrain semantics change.
+local CACHE_SCHEMA = 1
+local function copyPoints(points, minimum, maximum)
+    if type(points)~="table" or #points<minimum or #points>maximum then return end
+    local copy={}
+    for i,point in ipairs(points) do
+        if type(point)~="table" or not finite(point.x) or not finite(point.y)
+            or not finite(point.u) or not finite(point.v) or not finite(point.instance)
+            or (point.z~=nil and not finite(point.z)) then return end
+        copy[i]={x=point.x,y=point.y,u=point.u,v=point.v,z=point.z,instance=point.instance}
+    end
+    return copy
+end
+local function copyRoute(route, mapID)
+    if type(route)~="table" or route.terrainAware~=true or not finite(route.length)
+        or route.length<=0 or not finite(route.score) or route.score<0 then return end
+    local points=copyPoints(route.points,3,64)
+    local geometry=copyPoints(route.geometry,2,50000)
+    if not points or not geometry then return end
+    local first,last=geometry[1],geometry[#geometry]
+    if first.x~=last.x or first.y~=last.y or first.instance~=last.instance then return end
+    if route.omitted~=nil and (not finite(route.omitted) or route.omitted<0) then return end
+    return {mapID=mapID,points=points,geometry=geometry,length=route.length,
+        score=route.score,omitted=route.omitted,terrainAware=true}
+end
+local function clientBuild()
+    return GetBuildInfo and select(4,GetBuildInfo()) or nil
+end
+function Routes:Save()
+    local saved={schema=CACHE_SCHEMA,version=addon.version,build=clientBuild(),
+        predefined=not not GatherLite.db.global.usePredefined,
+        onlyMapID=self.onlyMapID,bestMapID=self.bestMapID,ids={},byMap={}}
+    for _,object in ipairs(self.object.objects or {self.object}) do
+        saved.ids[#saved.ids+1]=object.id[1]
+    end
+    for mapID,route in pairs(self.byMap) do
+        local copy=copyRoute(route,mapID)
+        if not copy then GatherLite.db.char.savedRoute=nil; return end
+        saved.byMap[mapID]=copy
+    end
+    GatherLite.db.char.savedRoute=saved
+end
+function Routes:Restore(object, preferredMapID, onlyMapID)
+    local saved=GatherLite.db.char.savedRoute
+    if type(saved)~="table" or saved.schema~=CACHE_SCHEMA or saved.version~=addon.version
+        or saved.build~=clientBuild() or saved.predefined~=(not not GatherLite.db.global.usePredefined)
+        or saved.onlyMapID~=onlyMapID or type(saved.ids)~="table" or type(saved.byMap)~="table" then return false end
+    local objects=object.objects or {object}
+    if #saved.ids~=#objects then return false end
+    for i,resource in ipairs(objects) do if saved.ids[i]~=resource.id[1] then return false end end
+    local byMap,count={},0
+    for mapID,route in pairs(saved.byMap) do
+        count=count+1
+        if count>100 or not finite(mapID) or (onlyMapID and mapID~=onlyMapID)
+            or not C_Map.GetMapInfo(mapID) then return false end
+        local copy=copyRoute(route,mapID)
+        if not copy then return false end
+        copy.object=object; byMap[mapID]=copy
+    end
+    if not byMap[saved.bestMapID] then return false end
+    self.worker,self.progress=nil,nil
+    self.object,self.onlyMapID,self.byMap,self.bestMapID=object,onlyMapID,byMap,saved.bestMapID
+    self:SelectMap(byMap[preferredMapID] and preferredMapID or saved.bestMapID)
+    if addon.Window then addon.Window:ShowRoute(self.active) end
+    return true
+end
+
 function Routes:Clear()
     self.worker, self.active, self.progress = nil, nil, nil
+    if addon.GroundNavigation and addon.GroundNavigation.Release then addon.GroundNavigation:Release() end
     self.byMap, self.bestMapID, self.object = nil, nil, nil
     self.onlyMapID = nil
     GatherLite.db.char.routeObjects, GatherLite.db.char.routeOnlyMapID = nil, nil
     GatherLite.db.char.routeObject, GatherLite.db.char.routeMapID = nil, nil
+    GatherLite.db.char.savedRoute = nil
     self.status = T("window.route.status.cleared")
     self:Notify()
 end
@@ -117,9 +188,12 @@ function Routes:SelectMap(mapID)
     GatherLite.db.char.routeMapID = self.active and mapID or nil
     if self.active then
         local route = self.active
-        self.status = string.format("%s%s | %d stops | %.1f km circuit",
+        self.status = string.format("%s%s | %d stops | %.1f km | %s",
             C_Map.GetMapInfo(mapID).name, mapID == self.bestMapID and " (recommended)" or "",
-            #route.points, route.length * 0.0009144)
+            #route.points, route.length * 0.0009144, T("window.route.ground"))
+        if route.omitted and route.omitted > 0 then
+            self.status = self.status .. " | " .. T("window.route.omitted", route.omitted)
+        end
     else
         self.status = T("window.route.status.no_circuit")
     end
@@ -145,13 +219,14 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
         local maps, mapIDs = self:Collect(object, checkpoint, onlyMapID), {}
         for mapID in pairs(maps) do mapIDs[#mapIDs + 1] = mapID end
         table.sort(mapIDs)
-        local best, byMap = nil, {}
+        local best, byMap, failure = nil, {}, nil
         for index, mapID in ipairs(mapIDs) do
             self.status = T("window.route.status.comparing", index, #mapIDs, C_Map.GetMapInfo(mapID).name)
             self.progress = 5 + 95 * (index - 1) / #mapIDs
-            local candidate = addon.RoutePlanner.Build(maps[mapID], checkpoint, function(fraction)
+            local candidate, reason = addon.GroundNavigation:Build(maps[mapID], mapID, checkpoint, function(fraction)
                 self.progress = 5 + 95 * (index - 1 + fraction) / #mapIDs
             end)
+            failure = reason or failure
             if candidate then
                 candidate.mapID, candidate.object = mapID, object
                 byMap[mapID] = candidate
@@ -162,9 +237,13 @@ function Routes:Generate(object, preferredMapID, onlyMapID)
         self.progress = nil
         if best then
             self:SelectMap(byMap[preferredMapID] and preferredMapID or best.mapID)
+            self:Save()
             if addon.Window then addon.Window:ShowRoute(self.active) end
         else
-            self.status = T("window.route.status.not_enough")
+            self.status = T(failure == "unavailable" and "window.route.status.no_decoder"
+                or failure == "nodata" and "window.route.status.no_terrain"
+                or failure == "unreachable" and "window.route.status.no_ground"
+                or "window.route.status.not_enough")
             self:Notify()
         end
     end)
@@ -172,7 +251,9 @@ end
 
 function Routes:Tick()
     if not self.worker then return end
+    if addon.GroundNavigation.BeginSlice then addon.GroundNavigation:BeginSlice() end
     local ok, err = coroutine.resume(self.worker)
+    if addon.GroundNavigation.EndSlice then addon.GroundNavigation:EndSlice() end
     if not ok then
         self.worker = nil
         self.progress = nil
@@ -185,6 +266,7 @@ function Routes:Tick()
     else
         self:Notify()
     end
+    if not self.worker and addon.GroundNavigation.Release then addon.GroundNavigation:Release() end
 end
 
 function Routes.setup()
@@ -199,7 +281,15 @@ function Routes.setup()
                 if object then objects[#objects+1]=object end
             end
             local object=Routes:Combine(objects)
-            if object then Routes:Generate(object, GatherLite.db.char.routeMapID, GatherLite.db.char.routeOnlyMapID) end
+            if object then
+                local mapID,onlyMapID=GatherLite.db.char.routeMapID,GatherLite.db.char.routeOnlyMapID
+                local legacy=GatherLite.db.char.savedRoute==nil
+                if not Routes:Restore(object,mapID,onlyMapID) then
+                    -- Old saves contained only a selected map/resource. Avoid
+                    -- rebuilding every zone just to show that map after login.
+                    Routes:Generate(object,mapID,onlyMapID or (legacy and mapID or nil))
+                end
+            else GatherLite.db.char.savedRoute=nil end
         end
         Routes:Tick()
         Routes:Draw(elapsed)

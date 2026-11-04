@@ -52,8 +52,9 @@ local libraries = {
 }
 LibStub = function(name) return assert(libraries[name], name) end
 CreateFrame = function() return {} end
-GatherLite = { db = { global = { nodes = { mining = {}, herbalism = {}, containers = {}, fishing = {} } } } }
+GatherLite = { db = { global = { usePredefined = false, nodes = { mining = {}, herbalism = {}, containers = {}, fishing = {} } } } }
 GatherLite.SendMessage = function() end
+GatherLite.Trigger = function() end
 UIDropDownMenu_Initialize = function() end
 assert(loadfile("scripts/locales/enUS.lua"))("GatherLite", addon)
 assert(loadfile("scripts/nodes.lua"))("GatherLite", addon)
@@ -268,4 +269,39 @@ for _, variant in ipairs({
 end
 check(GatherLite:findNodeType("Imaginary Copper Vein") == nil, "unknown variants must not match by substring")
 check(GatherLite:findNodeType(secret) == nil, "restricted gathering names ignored")
+
+-- Recreate runtime state as on a UI reload, retaining only personal saved data.
+local personal = GatherLite.db.global.nodes
+local visits, totals = {}, {}
+for kind, nodes in pairs(personal) do
+    totals[kind] = #nodes
+    for _, saved in ipairs(nodes) do
+        visits[saved] = { date = saved.date, loot = saved.loot, coins = saved.coins }
+        -- Only persisted fields should be needed to reconstruct the indexes.
+        saved.worldX, saved.worldY, saved.instance = nil, nil, nil
+        saved.loaded, saved.loadedWorldmap = nil, nil
+    end
+end
+assert(loadfile("scripts/methods.lua"))("GatherLite", addon)
+GatherLite.modules, GatherLite.plugins = {}, {}
+GatherLite:Load()
+for kind, nodes in pairs(personal) do
+    check(#addon.nodes[kind] == totals[kind], "reload restores personal " .. kind .. " without predefined data")
+    for _, saved in ipairs(nodes) do
+        check(GatherLite:FindExistingNode(kind, saved.mapID, saved.posX, saved.posY, saved.object) == saved,
+            "reload restores saved spatial index")
+        check(GatherLite:findExistingLocalNode(kind, saved.mapID, saved.posX, saved.posY, saved.object) == saved,
+            "reload restores visible spatial index")
+        check(saved.predefined == false and saved.worldX and saved.worldY and saved.instance == 0,
+            "reload resolves personal world coordinates and origin")
+        check(saved.date == visits[saved].date and saved.loot == visits[saved].loot and saved.coins == visits[saved].coins,
+            "reload retains loot, coins and visit history")
+        GatherLite:RegisterNode(kind, saved.object, saved.mapID, saved.posX, saved.posY)
+    end
+    check(#nodes == totals[kind], "post-reload gather does not duplicate history")
+end
+position = { .5, .5, 1429 }
+GetNumLootItems = function() return 1 end
+sent("after-reload"); succeeded("after-reload"); event("LOOT_OPENED")
+check(personal.mining[1].loot[1].count == 4, "post-reload gather continues existing loot history")
 print("Passed " .. tests .. " Forever checks")

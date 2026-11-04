@@ -8,9 +8,11 @@ local function distance(a, b)
     return math.sqrt((a.x - b.x)^2 + (a.y - b.y)^2)
 end
 
-function Planner.Build(points, checkpoint, progress)
+function Planner.Stops(points, checkpoint, limit)
     checkpoint = checkpoint or function() end
-    progress = progress or function() end
+    local copy = {}
+    for i, point in ipairs(points) do copy[i] = point end
+    points = copy
     table.sort(points, function(a, b)
         return a.x < b.x or (a.x == b.x and a.y < b.y)
     end)
@@ -28,7 +30,16 @@ function Planner.Build(points, checkpoint, progress)
             checkpoint()
         end
         size = size * 1.5
-    until #stops <= 250
+    until #stops <= (limit or 250)
+    return stops
+end
+
+function Planner.Build(points, checkpoint, progress, options)
+    checkpoint = checkpoint or function() end
+    progress = progress or function() end
+    options = options or {}
+    local stops = options.prepared and {unpack(points)} or Planner.Stops(points, checkpoint)
+    local distance = options.cost or distance
     if #stops < 3 then return nil end
 
     local total = #stops

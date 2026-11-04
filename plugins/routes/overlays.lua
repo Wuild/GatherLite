@@ -63,8 +63,10 @@ function Routes:DrawOnCanvas(frame, map, object)
             top, bottom = math.min(top, bottom), math.max(top, bottom)
             local width, height = frame:GetWidth(), frame:GetHeight()
             if right > left and bottom > top then
-                for i, a in ipairs(route.points) do
-                    local b = route.points[i % #route.points + 1]
+                local geometry = route.geometry or route.points
+                local segments = route.geometry and #geometry - 1 or #geometry
+                for i = 1, segments do
+                    local a, b = geometry[i], geometry[i % #geometry + 1]
                     local x1, y1 = self:Project(a, route.mapID, map:GetMapID())
                     local x2, y2 = self:Project(b, route.mapID, map:GetMapID())
                     if x1 and y1 and x2 and y2 then
@@ -123,9 +125,12 @@ function Routes:Draw(elapsed)
     mini:Show()
     local width, height, count = Minimap:GetWidth()/2, Minimap:GetHeight()/2, 0
     local clip = GetMinimapShape and GetMinimapShape() == "SQUARE" and Planner.ClipSquare or Planner.ClipCircle
-    for i, point in ipairs(route.points) do
+    local geometry = route.geometry or route.points
+    local segments = route.geometry and #geometry - 1 or #geometry
+    for i = 1, segments do
+        local point = geometry[i]
         local x1, y1 = project(point)
-        local x2, y2 = project(route.points[i % #route.points + 1])
+        local x2, y2 = project(geometry[i % #geometry + 1])
         x1, y1, x2, y2 = clip(x1, y1, x2, y2)
         if x1 then
             count = count + 1
