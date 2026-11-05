@@ -1522,7 +1522,7 @@ do
     sidebar.visibility:GetScript("OnClick")()
     assert(GatherLite.db.char.routeVisible)
 
-    local stitched, zoom, stitchedZone, now = false, 6, 2, 0
+    local stitched, zoom, stitchedZone, now = false, 8, 2, 0
     GetTime = function() return now end
     local focus
     OpenMapAPI = { major=1, IsStitched=function() return stitched end,
@@ -1553,6 +1553,7 @@ do
     assert(sidebar.hud:IsVisible() and sidebar.zoneName:GetText() == "Zone 2" and #sidebar:GetSelection() == 2 and findRow(remote),
         "the zone HUD must follow the stitched view while retaining the selection and catalog")
     assert(scroll.zoomLevels[1].scale == scroll:GetWidth()/1002, "leave stitched-map zoom levels to OpenMap")
+    zoom = 6
     sidebar.previous:GetScript("OnClick")()
     assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 7, "zone HUD must open at pin visibility zoom")
     zoom = 8
