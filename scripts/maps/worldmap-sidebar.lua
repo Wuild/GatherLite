@@ -344,7 +344,18 @@ function Sidebar.setup()
     end
     if self.leatrix then
         local function refreshChrome() self.chromeDirty = true end
-        map:HookScript("OnShow", refreshChrome)
+        local function restoreOpenChrome()
+            -- Reuse the docked inset before the map is drawn. Leatrix may also
+            -- refresh its pixel edges on the next frame.
+            if self.inset > 0 and map:IsShown() and not IsMouseButtonDown("LeftButton") then
+                self:FitLeatrixChrome(InCombatLockdown())
+            end
+            refreshChrome()
+        end
+        map:HookScript("OnShow", restoreOpenChrome)
+        if map.SynchronizeDisplayState then
+            hooksecurefunc(map, "SynchronizeDisplayState", restoreOpenChrome)
+        end
         hooksecurefunc(map, "OnFrameSizeChanged", refreshChrome)
         local questLog = map.QuestLog
         if questLog then

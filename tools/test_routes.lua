@@ -1364,6 +1364,9 @@ do
     trackAnchors(close, { {"RIGHT", title, "RIGHT", -2, 0} })
     footer.back, footer.t = {}, {}
     function world:GetChildren() return self.ScrollContainer, title, footer end
+    function world:SynchronizeDisplayState()
+        footerAnchors[1][4] = 0
+    end
     C_AddOns = { IsAddOnLoaded=function(name) return name == "Leatrix_Maps" end }
     R:Clear()
     W:Hide()
@@ -1396,6 +1399,8 @@ do
     assert(refits == 1 and windowRefits == 0, "docking must refit the canvas without resizing the outer map")
     world.BorderFrame = { CloseButton = close }
     world:Hide(); world:Show()
+    assert(titleAnchors[1][4] == -254 and footerAnchors[1][4] == -254,
+        "the open hook must wrap the dock before the first update")
     update()
     assert(titleAnchors[1][4] == -254 and footerAnchors[1][4] == -254 and titleAnchors[2][4] == 333,
         "Leatrix must enclose the pane while keeping the right-side quest width")
@@ -1404,6 +1409,9 @@ do
     update()
     assert(titleAnchors[1][4] == -254 and refits == 1 and windowRefits == 0 and artFits == 1,
         "reopening the Leatrix map must restore chrome without resetting the canvas or window")
+    world:SynchronizeDisplayState()
+    assert(footerAnchors[1][4] == -254 and refits == 1 and windowRefits == 0,
+        "display-state changes must restore Leatrix chrome without touching the canvas or window size")
     baseLeft, baseWidth = 10, 470
     scroll:GetScript("OnSizeChanged")()
     dragging = true
@@ -1420,9 +1428,9 @@ do
     scroll.protected = true
     titleAnchors[1][4], footerAnchors[1][4] = 0, 0
     world:Hide(); world:Show()
-    update()
     assert(inset() == 220 and titleAnchors[1][4] == -220 and footerAnchors[1][4] == -220 and refits == 2,
-        "reopening in combat must restore Leatrix chrome without resizing the protected viewport")
+        "reopening in combat must restore Leatrix chrome immediately without resizing the protected viewport")
+    update()
     local function leatrixEvent(event)
         assert(sidebar.driver.events[event])
         sidebar.driver:GetScript("OnEvent")(sidebar.driver, event)
