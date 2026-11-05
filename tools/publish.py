@@ -174,6 +174,11 @@ def main(argv=None):
         print(f"Uploading {archive.name} for game-version IDs {', '.join(map(str, version_ids))}...")
         link = upload(archive, version, notes, version_ids, token, project_id)
         print(f"Upload accepted: {link}")
+        try:
+            archive.unlink(missing_ok=True)
+            archive.with_suffix(".zip.sha256").unlink(missing_ok=True)
+        except OSError as exc:
+            print(f"Warning: Upload succeeded, but local package cleanup failed: {exc}", file=sys.stderr)
         print("Check file approval and Forever classification in the CurseForge author dashboard.")
         return 0
     except (ValueError, OSError) as exc:

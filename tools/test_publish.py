@@ -200,8 +200,10 @@ class PublishTests(unittest.TestCase):
 
     def test_complete_publish_flow_with_mock_api(self):
         self.env.write_text("CURSEFORGE_TOKEN=private-token", encoding="utf-8")
-        archive = self.root / "release.fixture"
+        archive = self.root / "GatherLite-8.0.1.zip"
         archive.write_bytes(b"test archive")
+        checksum = archive.with_suffix(".zip.sha256")
+        checksum.write_text("checksum", encoding="utf-8")
         output = StringIO()
         with patch("publish.api_json", side_effect=[
                 [{"name": "1.60.1", "id": 42}], {"id": 12345}]) as api, \
@@ -217,6 +219,21 @@ class PublishTests(unittest.TestCase):
         self.assertNotIn(b"private-token", body)
         self.assertIn("/gatherlite/files/12345", output.getvalue())
         self.assertNotIn("private-token", output.getvalue())
+        self.assertFalse(archive.exists())
+        self.assertFalse(checksum.exists())
+
+    def test_uncertain_publish_keeps_package_and_checksum(self):
+        self.env.write_text("CURSEFORGE_TOKEN=private-token", encoding="utf-8")
+        archive = self.root / "GatherLite-8.0.1.zip"
+        archive.write_bytes(b"test archive")
+        checksum = archive.with_suffix(".zip.sha256")
+        checksum.write_text("checksum", encoding="utf-8")
+        with patch("publish.api_json", side_effect=[[{"name": "1.60.1", "id": 42}], {}]), \
+                patch("publish.build_package", return_value=(archive, "8.0.1", "notes", 1)), \
+                redirect_stdout(StringIO()), redirect_stderr(StringIO()):
+            self.assertEqual(publish.main(["--version", "8.0.1", "--env-file", str(self.env)]), 1)
+        self.assertTrue(archive.exists())
+        self.assertTrue(checksum.exists())
 
     def test_uncertain_upload_is_not_retried(self):
         archive = self.root / "release.fixture"

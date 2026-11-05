@@ -28,9 +28,11 @@ After reviewing changes and running tests, build and upload:
 python tools/publish.py --version 8.0.1
 ```
 
-Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the minor version for new features and reserve patch increments for database updates. Always update the main window's What's New highlights before publishing (see `AGENT.md`).
+Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the minor version for new features and reserve patch increments for database updates. Always update the main window's What's New highlights before publishing (see `AGENTS.md`).
 
 The publisher validates the addon load paths, resolves the exact CurseForge game-version IDs for all configured game versions, and uploads a Release to the configured project. The ZIP and checksum are created under `dist/`; the source TOC's `@project-version@` is replaced inside the package only. Uncommitted changes are included. Tests, commits, and tags are not run or created by the publisher.
+
+After CurseForge confirms the upload, the publisher deletes the local ZIP and checksum. Package-only runs and uploads with a failed or uncertain outcome keep both files.
 
 Success prints the accepted file link. Approval and public visibility still depend on CurseForge. Uploads are never retried automatically: after an error or timeout, check the author dashboard before retrying to avoid duplicate files. Tokens and raw API error bodies are not printed.
 
@@ -92,6 +94,7 @@ lua tools/test_tooltips.lua
 lua tools/test_routes.lua
 lua tools/test_map_reveal.lua
 lua tools/test_map_zoom.lua
+lua tools/test_openmap.lua
 ```
 
 Publisher tests mock HTTP. Packaging tests use temporary test archives. For allocation measurements with mocked game APIs, run `lua tools/test_tracking.lua --benchmark`.

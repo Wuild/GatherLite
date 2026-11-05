@@ -1,3 +1,25 @@
-# Agent instructions
+# GatherLite repository instructions
 
-Read and follow [AGENT.md](AGENT.md) for repository guidance, including the mandatory What's New update before publishing each new version.
+## Database updates
+
+Run `python tools/update_forever_wowhead.py --discover --refresh` to check for
+new gathering objects and locations. Online updates must use real graphical
+Chromium, started minimized; this is the updater's default and only online mode.
+Do not use direct HTTP or headless fetching. Install Playwright and Chromium as
+described in `tools/README.md` when needed. Offline imports remain supported.
+
+## Publishing a new version
+
+Always update the main window's **What's New** content before publishing a new version.
+
+- Edit the bundled release highlights in `Window:CreateChangelog` in `scripts/window.lua`.
+- Describe the actual user-facing features, improvements, and fixes included in that version. Keep the wording concise and group related changes.
+- Remove outdated highlights and do not describe unreleased or planned work as shipped.
+- Keep the notes consistent with the version being published and any external release notes. The displayed installed version comes from addon metadata.
+- Include the updated highlights in the release package before publishing. Do not publish a new version with stale What's New content.
+- Run the relevant UI/controller checks after changing the changelog view or its navigation.
+- Remove the local release ZIP and its checksum after CurseForge confirms the upload. Keep both files if the upload fails or its outcome is uncertain.
+
+## Version numbering
+
+Use `MAJOR.MINOR.PATCH`. Increase MINOR and reset PATCH to zero when releasing new features (for example, `8.1.0`). Reserve PATCH increments for database updates (for example, `8.1.1`).

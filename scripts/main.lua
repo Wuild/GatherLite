@@ -258,23 +258,37 @@ function GatherLite.ModifyTooltip()
     end
 
     local req = object.levels
+    local requirement = (ITEM_MIN_SKILL or "Requires %s (%d)"):format(profession, req[1])
+    local hasProfessionLine = false
     for i = 2, GameTooltip:NumLines() do
-        local line = _G["GameTooltipTextLeft" .. i]
+        local line = GameTooltip.GetLeftLine and GameTooltip:GetLeftLine(i) or _G["GameTooltipTextLeft" .. i]
         local text = line and line:GetText()
-        if not API.IsSecret(text) and text == profession then
-            local rank = GatherLite:GetProfessionLevel(profession)
-            if rank < req[1] then
-                line:SetTextColor(1, 0, 0)
-            elseif req[4] and rank >= req[4] then
-                line:SetTextColor(0.62, 0.62, 0.62)
-            elseif req[3] and rank >= req[3] then
-                line:SetTextColor(0.12, 1, 0)
-            elseif req[2] and rank >= req[2] then
-                line:SetTextColor(1, 1, 0)
-            elseif req[2] then
-                line:SetTextColor(1, 0.5, 0)
+        if not API.IsSecret(text) then
+            if text == requirement then
+                return
+            elseif text == profession then
+                hasProfessionLine = true
             end
-            line:SetText(profession .. " " .. req[1])
         end
     end
+    if not hasProfessionLine then
+        return
+    end
+
+    local rank = GatherLite:GetProfessionLevel(profession)
+    local r, g, b = 1, 1, 1
+    if rank < req[1] then
+        r, g, b = 1, 0, 0
+    elseif req[4] and rank >= req[4] then
+        r, g, b = 0.62, 0.62, 0.62
+    elseif req[3] and rank >= req[3] then
+        r, g, b = 0.12, 1, 0
+    elseif req[2] and rank >= req[2] then
+        r, g, b = 1, 1, 0
+    elseif req[2] then
+        r, g, b = 1, 0.5, 0
+    end
+
+    GameTooltip:AddLine(requirement, r, g, b)
+    GameTooltip:Show()
 end

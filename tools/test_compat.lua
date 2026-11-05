@@ -146,37 +146,54 @@ event("LOOT_OPENED")
 check(#GatherLite.db.global.nodes.mining[4].loot == 0, "expired gathering does not collect unrelated loot")
 
 local tooltipText, skillText = secret, "Mining"
-GameTooltip = { NumLines = function() return 2 end }
-GameTooltipTextLeft1 = { GetText = function() return tooltipText end }
-GameTooltipTextLeft2 = {
-    GetText = function() return skillText end,
-    SetText = function(_, text) skillText = text end,
-    SetTextColor = function() end,
+local bodyLines, tooltipLayoutCount, laidOutBodyLine = {}, 0, nil
+GameTooltip = {
+    NumLines = function() return 2 + #bodyLines end,
+    GetLeftLine = function(_, index) return bodyLines[index - 2] end,
+    AddLine = function(_, text, r, g, b)
+        bodyLines[#bodyLines + 1] = { GetText = function() return text end, color = { r, g, b } }
+    end,
+    Show = function()
+        tooltipLayoutCount = tooltipLayoutCount + 1
+        laidOutBodyLine = bodyLines[#bodyLines]
+    end,
 }
+GameTooltipTextLeft1 = { GetText = function() return tooltipText end }
+GameTooltipTextLeft2 = { GetText = function() return skillText end }
 GatherLite.ModifyTooltip()
-check(skillText == "Mining", "restricted tooltip title ignored")
+check(#bodyLines == 0, "restricted tooltip title ignored")
 tooltipText, skillText = "Copper Vein", secret
 GatherLite.ModifyTooltip()
-check(rawequal(skillText, secret), "restricted tooltip skill ignored")
+check(#bodyLines == 0 and tooltipLayoutCount == 0, "restricted tooltip skill ignored")
 skillText = "Mining"
 GatherLite.ModifyTooltip()
-check(skillText == "Mining 1", "gathering requirement displayed")
+check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Mining (1)", "gathering requirement added to the body")
+check(tooltipLayoutCount == 1 and laidOutBodyLine == bodyLines[1], "tooltip resizes after adding the requirement")
 GatherLite.ModifyTooltip()
-check(skillText == "Mining 1", "tooltip update is idempotent")
-local changedColor = false
-GameTooltipTextLeft2.SetTextColor = function() changedColor = true end
+check(#bodyLines == 1 and tooltipLayoutCount == 1, "tooltip update is idempotent")
+bodyLines = {}
+GatherLite.ModifyTooltip()
+check(#bodyLines == 1 and tooltipLayoutCount == 2, "rebuilt tooltip gets the requirement again")
 C_SkillInfo = {
     GetNumSkillLines = function() return 0 end,
     GetSkillLineInfo = function() end,
     GetSkillLineInfoByID = function() return { name = "Mining", rank = 300 } end,
 }
-tooltipText, skillText = "Cold Iron Deposit", "Mining"
+ITEM_MIN_SKILL = "%s skill needed (%d)"
+tooltipText, bodyLines = "Cold Iron Deposit", {}
 GatherLite.ModifyTooltip()
-check(skillText == "Mining 125" and not changedColor, "unknown skill-up tiers preserve native tooltip color")
+check(bodyLines[1]:GetText() == "Mining skill needed (125)", "uses the client requirement format")
+local color = bodyLines[1].color
+check(color[1] == 1 and color[2] == 1 and color[3] == 1, "unknown skill-up tiers use normal body text color")
+ITEM_MIN_SKILL = nil
 C_SkillInfo = nil
-tooltipText, skillText = "Cold Iron Deposit", "Mining"
+bodyLines = {}
 GatherLite.ModifyTooltip()
-check(changedColor, "below minimum gathering skill still turns red")
+color = bodyLines[1].color
+check(color[1] == 1 and color[2] == 0 and color[3] == 0, "below minimum gathering skill still turns red")
+tooltipText, skillText, bodyLines = "Peacebloom", "Herbalism", {}
+GatherLite.ModifyTooltip()
+check(bodyLines[1]:GetText() == "Requires Herbalism (1)", "herbalism requirement added to the body")
 check(GatherLite:GetObject("Cold Iron Deposit").icon == "Interface\\AddOns\\GatherLite\\icons\\Ore\\iron", "Forever nodes use bundled transparent icons")
 local newOres = { [439558] = "Cold Iron Deposit", [439628] = "Fool's Gold Vein",
     [439778] = "Starsilver Vein", [439815] = "Greater Moonstone Formation" }
