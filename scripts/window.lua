@@ -616,7 +616,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.2.2. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.2.3. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -629,22 +629,10 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"UPDATED GATHERING LOCATIONS",{
-            "The Forever database now includes 30,544 gathering locations, 85 more than 8.2.0, while preserving all previously known positions and starter resource variants.",
-            "Added Heavy Thorium Vein, Chunk of Amber, Large Chunk of Amber, Hyjal Silphium and Tomb Weed to the resource catalog.",
-        }},
-        {"FASTER ROUTE RESTORATION",{
-            "Completed farming routes now save their ground geometry and restore after login or reload without running the terrain planner again.",
-            "Saved geometry is checked against the addon version, game build, selected resources, zone scope and predefined-data setting before reuse.",
-            "Older saves without geometry rebuild only the selected zone instead of calculating routes for every zone.",
-        }},
-        {"LESS ROUTE CALCULATION WORK",{
-            "Ground routes evaluate up to 32 representative stops instead of 64, reducing terrain-search work in dense gathering areas.",
-            "Zone-only browsing and route collection use indexed locations for that zone, avoiding scans of unrelated gathering history.",
-        }},
-        {"MAP HOVER COMPATIBILITY",{
-            "Map hover updates safely skip controller handling when the client does not provide the gamepad API, preventing repeated Lua errors.",
-            "Newly gathered locations appear immediately in open maps and resource lists. Nearby minimap markers can be hidden or shown as circles, and overlapping markers share a tooltip.",
+        {"FOREVER DATABASE REFRESH",{
+            "Added 17 known gathering locations across 11 resources. The database now contains 30,561 locations.",
+            "All 30,544 locations from 8.2.2 were preserved.",
+            "Checked the mining and herbalism listings. No uncatalogued gathering objects were found.",
         }},
     }
     local y=0
