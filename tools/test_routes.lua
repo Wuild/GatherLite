@@ -1522,7 +1522,7 @@ do
     sidebar.visibility:GetScript("OnClick")()
     assert(GatherLite.db.char.routeVisible)
 
-    local stitched, zoom, stitchedZone, now = false, 8, 2, 0
+    local stitched, zoom, stitchedZone, now = false, 6, 2, 0
     GetTime = function() return now end
     local focus
     OpenMapAPI = { major=1, IsStitched=function() return stitched end,
@@ -1555,11 +1555,13 @@ do
     assert(scroll.zoomLevels[1].scale == scroll:GetWidth()/1002, "leave stitched-map zoom levels to OpenMap")
     sidebar.previous:GetScript("OnClick")()
     assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 7, "zone HUD must open at pin visibility zoom")
+    zoom = 8
     local remoteRow = assert(findRow(remote))
     remoteRow:GetScript("OnClick")(remoteRow)
     local recommended = sidebar.zones[1]
     assert(sidebar.zoneIndex == 1 and focus[1] == (recommended - 1) * .5 + .25,
         "selection must immediately show the recommendation and start an OpenMap glide")
+    assert(focus[3] == 8, "the OpenMap glide must preserve zoom above the pin visibility threshold")
     stitchedZone = recommended == 1 and 2 or 1
     now = .2
     update()
