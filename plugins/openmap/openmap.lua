@@ -1,5 +1,5 @@
 local _, addon = ...
-local OpenMap = { minPinZoom = 9, pins = {}, pool = {}, rects = {}, cells = {} }
+local OpenMap = { minPinZoom = 7, pins = {}, pool = {}, rects = {}, cells = {} }
 addon.OpenMap = OpenMap
 
 local kinds = { "mining", "herbalism", "containers", "fishing" }

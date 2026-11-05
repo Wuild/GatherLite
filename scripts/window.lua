@@ -617,7 +617,7 @@ function Window:CreateChangelog(page)
             "Leatrix Maps wraps its frame around the docked pane when reopening the map, including during combat when the frame permits changes.",
         }},
         {"OPENMAP",{
-            "Gathering pins load within the visible stitched map at 9× zoom and closer, including neighboring zones. Pins are reused as you pan.",
+            "Gathering pins load within the visible stitched map at 7× zoom and closer, including neighboring zones. Pins are reused as you pan.",
             "Route lines stay aligned across stitched zones while you pan or zoom.",
         }},
     }
