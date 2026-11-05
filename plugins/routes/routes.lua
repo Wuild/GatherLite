@@ -47,20 +47,23 @@ end
 
 -- Combine unloaded compressed data and indexed nodes without changing tracking.
 function Routes:Collect(object, checkpoint, onlyMapID)
-    local maps, seen, ids = {}, {}, {}
+    local maps, seen, ids, zoneTypes = {}, {}, {}, {}
     checkpoint = checkpoint or function() end
     for _, id in ipairs(object.id) do ids[id] = true end
     local function add(mapID, u, v, id)
         checkpoint()
         if onlyMapID and mapID~=onlyMapID then return end
         if not finite(mapID) or not finite(u) or not finite(v) or u < 0 or u > 1 or v < 0 or v > 1 then return end
-        local info = C_Map.GetMapInfo(mapID)
-        if not info or info.mapType ~= 3 then return end
-        local x, y, instance = HBD:GetWorldCoordinatesFromZone(u, v, mapID)
-        if not finite(x) or not finite(y) or instance == nil then return end
+        if zoneTypes[mapID] == nil then
+            local info = C_Map.GetMapInfo(mapID)
+            zoneTypes[mapID] = info ~= nil and info.mapType == 3
+        end
+        if not zoneTypes[mapID] then return end
         seen[mapID] = seen[mapID] or {}
         local key = string.format("%.4f:%.4f", u, v)
         if seen[mapID][key] then return end
+        local x, y, instance = HBD:GetWorldCoordinatesFromZone(u, v, mapID)
+        if not finite(x) or not finite(y) or instance == nil then return end
         seen[mapID][key] = true
         maps[mapID] = maps[mapID] or {}
         maps[mapID][#maps[mapID] + 1] = { u = u, v = v, x = x, y = y, instance = instance, object = id }
@@ -85,16 +88,55 @@ function Routes:Collect(object, checkpoint, onlyMapID)
     end
     if GatherLite.db.global.usePredefined then
         for id in pairs(ids) do
-            for mapID, coords in pairs((addon.predefined or {})[id] or {}) do
-                for i = 1, #coords, 2 do add(mapID, coords[i], coords[i + 1], id) end
+            local reference = (addon.predefined or {})[id] or {}
+            if onlyMapID then
+                local coords = reference[onlyMapID] or {}
+                for i = 1, #coords, 2 do add(onlyMapID, coords[i], coords[i + 1], id) end
+            else
+                for mapID, coords in pairs(reference) do
+                    for i = 1, #coords, 2 do add(mapID, coords[i], coords[i + 1], id) end
+                end
             end
         end
     end
     return maps
 end
 
+function Routes:SortedZones(locations, scores)
+    local zones = {}
+    for id in pairs(locations) do zones[#zones + 1] = id end
+    table.sort(zones, function(a, b)
+        local scoreA, scoreB = scores and scores[a], scores and scores[b]
+        if scoreA and scoreB then return scoreA > scoreB or (scoreA == scoreB and a < b) end
+        if scoreA or scoreB then return scoreA ~= nil end
+        local x, y = #locations[a], #locations[b]
+        return x > y or (x == y and a < b)
+    end)
+    return zones
+end
+
+function Routes:RecommendedZones(locations, completed)
+    local scores = {}
+    local planner = addon.RoutePlanner
+    local path = addon.GroundNavigation and addon.GroundNavigation.Path
+    for id, points in pairs(locations) do
+        local route
+        if completed then
+            route = completed[id]
+        elseif #points >= 3 and (not path or path.HasData(points[1].instance)) then
+            -- Estimate stops per distance with a quick tour. Only the chosen zone needs terrain searches.
+            local stops = planner.Stops(points, nil, 32)
+            route = planner.Build(stops, nil, nil, { prepared = true, optimizationPasses = 0 })
+        end
+        if route then scores[id] = route.score end
+    end
+    return self:SortedZones(locations, scores)
+end
+
 function Routes:Notify()
     if addon.Window then addon.Window:RefreshRoute() end
+    local sidebar = GatherLite.modules and GatherLite.modules.worldMapSidebar
+    if sidebar then sidebar:RefreshProgress() end
 end
 
 -- Save only scalar route geometry, never live resource objects, coroutines or

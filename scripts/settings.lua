@@ -19,6 +19,28 @@ local function mapTrackingOptions(target)
     return group
 end
 
+local function hudRange(key, min, max, step, order)
+    return {
+        name = function() return GatherLite:translate("settings.hud." .. key) end,
+        type = "range", min = min, max = max, step = step, order = order, width = "full",
+        set = function(_, value) GatherLite.db.char.hud[key] = value end,
+        get = function() return GatherLite.db.char.hud[key] end,
+    }
+end
+
+local function hudToggle(key, order, description)
+    return {
+        name = function() return GatherLite:translate("settings.hud." .. key) end,
+        desc = description and function() return GatherLite:translate("settings.hud." .. key .. ".description") end,
+        type = "toggle", order = order, width = "full",
+        set = function(_, value)
+            GatherLite.db.char.hud[key] = value
+            GatherLite:Trigger("settings:update")
+        end,
+        get = function() return GatherLite.db.char.hud[key] end,
+    }
+end
+
 local tracking = {
     header = {
         name = function()
@@ -569,6 +591,67 @@ _GatherLite.SettingsOptions = {
                 }
             }
         },
+        hud = {
+            name = function() return GatherLite:translate("settings.hud") end,
+            type = "group",
+            order = 4,
+            args = {
+                enabled = hudToggle("enabled", 1, true),
+                mirrorMinimap = hudToggle("mirrorMinimap", 1.5, true),
+                move = {
+                    name = function() return GatherLite:translate("settings.hud.move") end,
+                    type = "execute", order = 2, width = "full",
+                    func = function() GatherLite.modules.HUD:ToggleMove() end,
+                },
+                reset = {
+                    name = function() return GatherLite:translate("settings.hud.reset") end,
+                    type = "execute", order = 3, width = "full",
+                    func = function()
+                        local options, defaults = GatherLite.db.char.hud, _GatherLite.configsDefaults.char.hud
+                        options.x, options.y = defaults.x, defaults.y
+                        GatherLite:Trigger("settings:update")
+                    end,
+                },
+                range = hudRange("range", 50, 600, 25, 4),
+                width = hudRange("width", 240, 700, 10, 5),
+                fullWidth = hudToggle("fullWidth", 5.5),
+                height = hudRange("height", 16, 48, 1, 5.75),
+                pinSize = hudRange("pinSize", 8, 32, 1, 5.875),
+                opacity = hudRange("opacity", 0.2, 1, 0.1, 6),
+                backgroundColor = {
+                    name = function() return GatherLite:translate("settings.hud.backgroundColor") end,
+                    type = "execute", order = 7, width = "full",
+                    func = function()
+                        local picker = ColorPickerFrame
+                        if not picker or not picker.SetupColorPickerAndShow then return end
+                        local color = GatherLite.db.char.hud.backgroundColor
+                        local r, g, b = color.r, color.g, color.b
+                        local function setColor(red, green, blue)
+                            color.r, color.g, color.b = red, green, blue
+                            GatherLite.modules.HUD:UpdateAppearance()
+                        end
+                        picker:Hide()
+                        picker:SetFrameStrata("FULLSCREEN_DIALOG")
+                        picker:SetupColorPickerAndShow({
+                            r = r, g = g, b = b,
+                            swatchFunc = function() setColor(picker:GetColorRGB()) end,
+                            cancelFunc = function() setColor(r, g, b) end,
+                        })
+                    end,
+                },
+                backgroundOpacity = hudRange("backgroundOpacity", 0, 1, 0.1, 7.5),
+                showBorder = hudToggle("showBorder", 7.75),
+                visibility = {
+                    name = function() return GatherLite:translate("settings.hud.visibility") end,
+                    type = "group", inline = true, order = 9,
+                    args = {
+                        hideInInstances = hudToggle("hideInInstances", 1),
+                        hideInCombat = hudToggle("hideInCombat", 2),
+                        hideOnWorldMap = hudToggle("hideOnWorldMap", 3),
+                    },
+                },
+            }
+        },
         debugging = {
             name = function()
                 return GatherLite:translate("settings.debugging");
@@ -652,18 +735,13 @@ function GatherLite:RegisterSettingsLauncher()
         args = {
             openSettings = {
                 type = "execute",
-                name = "Open GatherLite settings",
+                name = GatherLite:translate("window.action.open_settings"),
                 desc = "Open the GatherLite window to configure your gathering preferences.",
                 order = 1,
                 width = "full",
                 func = function()
                     local window = _GatherLite.Window
-                    if not window then return end
-                    window:Show()
-                    if window.ready then
-                        window:SelectTab(2)
-                        if SettingsPanel then HideUIPanel(SettingsPanel) end
-                    end
+                    if window and window:ShowSettings() and SettingsPanel then HideUIPanel(SettingsPanel) end
                 end,
             },
         },

@@ -9,10 +9,12 @@ local kinds = { ore = "mining", herb = "herbalism", container = "containers", fi
 local function loadEnabled()
     if not GatherLite.db.global.usePredefined or not addon.predefined then return end
 
+    local hud = GatherLite.db.char.hud
     for objectID, maps in pairs(addon.predefined) do
         local object = GatherLite:GetNodeObject(objectID)
         local kind = object and kinds[object.type]
-        if kind and (GatherLite:GetNodeTracking("minimap", kind) or GatherLite:GetNodeTracking("worldmap", kind)) then
+        if kind and (GatherLite:GetNodeTracking("minimap", kind) or GatherLite:GetNodeTracking("worldmap", kind)
+            or (hud and hud.enabled and not hud.mirrorMinimap and GatherLite:GetNodeTracking("hud", kind))) then
             for mapID, coords in pairs(maps) do
                 -- Share immutable metadata across every point on this object/map.
                 -- No empty loot tables, coins, dates, or instance IDs in the data.

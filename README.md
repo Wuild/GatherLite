@@ -27,7 +27,9 @@ Open the window with **/gather**, **/gatherlite**, or **/gatherroutes**.
 - **Hide / Show route** toggles route lines; **Clear** removes them.
 - **Settings** adjusts map markers, resource filters, and other preferences. Changes save automatically.
 
-On the game maps, **left-click the GatherLite button** to change that map's category filters. **Right-click** opens the GatherLite window. Hover markers for details and gathering history.
+On the world map, **left-click** the GatherLite button below the map pin to toggle the resource pane. **Right-click** it for map tracking filters. On the minimap, **left-click** opens minimap tracking filters and **right-click** opens the GatherLite window. Hover markers for details and gathering history.
+
+Select resources to show the zone arrows at the bottom left of the world map. **Generate zone route** calculates a route for the zone shown there. With OpenMap, gathering pins load from the visible area, including neighboring zones, at 8× zoom and closer.
 
 Minimap markers show known gathering locations. Nearby markers are hidden by default so the game's live tracking dots can show through. In Minimap settings, choose nearby hiding or empty circles; overlapping markers share one visible marker whose tooltip lists the grouped resources. Neither a resource icon nor a circle confirms an active spawn.
 

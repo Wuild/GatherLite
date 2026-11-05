@@ -55,7 +55,7 @@ function Planner.Build(points, checkpoint, progress, options)
         progress(.3 * #route / total)
     end
     -- Bounded 2-opt removes crossings and shortens the closed circuit.
-    for pass = 1, 4 do
+    for pass = 1, options.optimizationPasses or 4 do
         local changed = false
         for i = 1, #route - 2 do
             progress(.3 + .7 * ((pass - 1) + i / #route) / 4)

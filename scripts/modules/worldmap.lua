@@ -192,16 +192,52 @@ end
 
 local tooltip = CreateFrame("GameTooltip", "GatherLiteIconTooltip", UIParent, "GameTooltipTemplate")
 
+local function mapPinButton(map)
+    local onLoad = WorldMapTrackingPinButtonMixin and WorldMapTrackingPinButtonMixin.OnLoad
+    for _, frame in ipairs(map.overlayFrames or {}) do
+        if onLoad and frame.OnLoad == onLoad then return frame end
+    end
+end
+
 local function createButton()
-    local button = CreateFrame("Button", "GatherLiteWorldmapButton", WorldMapFrame)
-    button.dataObject = self
-    button:SetFrameStrata("MEDIUM")
-    button:SetSize(31, 31)
-    button:SetFrameLevel(8)
-    button:RegisterForClicks("anyUp")
-    button:RegisterForDrag("LeftButton")
+    local map = WorldMapFrame
+    local viewport = map.ScrollContainer or map
+    local button = CreateFrame("Button", "GatherLiteWorldmapButton", map)
+    button:SetFrameStrata("HIGH")
+    button:SetSize(32, 32)
+    -- Blizzard adds 500 to the context menu owner's level for its backdrop.
+    button:SetFrameLevel(math.min(viewport:GetFrameLevel() + 9000, 9200))
+    button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
     button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
-    button:SetPoint('BOTTOMLEFT', 20, 40);
+    local lastAnchor, elapsed = nil, 0
+    local function placeButton()
+        local anchor = mapPinButton(map)
+        local stack = LibStub("Krowi_WorldMapButtons-1.4", true)
+        -- Follow the visible stack, including addons that register after login.
+        -- Questie can remove the native pin from the shared list on Forever.
+        if stack and stack.IsForever and stack.Buttons then
+            for i = #stack.Buttons, 1, -1 do
+                local peer = stack.Buttons[i]
+                if peer:IsShown() then anchor = peer; break end
+            end
+        end
+        anchor = anchor or viewport
+        if anchor == lastAnchor then return end
+        lastAnchor = anchor
+        if anchor == viewport then
+            button:SetPoint("TOPLEFT", viewport, "TOPLEFT", 3, -32)
+        else
+            button:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, 0)
+        end
+    end
+    placeButton()
+    button:SetScript("OnUpdate", function(_, delta)
+        elapsed = elapsed + delta
+        if elapsed >= .15 and not InCombatLockdown() then
+            elapsed = 0
+            placeButton()
+        end
+    end)
 
     local overlay = button:CreateTexture(nil, "OVERLAY")
     overlay:SetSize(53, 53)
@@ -224,10 +260,10 @@ local function createButton()
 
     button:SetScript("OnClick", function(self, button)
         if button == "LeftButton" then
-            GatherLite:OpenTrackingMenu(self, "worldmap")
+            local sidebar = GatherLite.modules.worldMapSidebar
+            if sidebar then sidebar:Toggle() end
         elseif button == "RightButton" then
-            Menu.GetManager():CloseMenus()
-            GatherLite:ShowSettings()
+            GatherLite:OpenTrackingMenu(self, "worldmap")
         end
     end);
 
@@ -251,9 +287,9 @@ local function createButton()
 
         tooltip:AddLine(" ");
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') ..
-            ": " .. GatherLite:translate("settings.minimap.left_click_text"));
+            ": " .. GatherLite:translate("window.worldmap.toggle_pane"));
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') ..
-            ": " .. GatherLite:translate("settings.minimap.right_click_text"));
+            ": " .. GatherLite:translate("settings.minimap.left_click_text"));
         tooltip:Show()
     end)
 
@@ -386,11 +422,13 @@ source.setup = function()
     GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Loaded worldmap module")
 
     local frame = CreateFrame("Frame")
+    local stitchedWasOpen = false
 
     createButton();
 
     GatherLite:On("nodes:added", function(node)
         HideZoneList()
+        if stitchedWasOpen then _GatherLite.OpenMap.dirty = true; return end
         if not node or node.loadedWorldmap or not worldmapOpen or not WorldmapFilter(node) then return end
         local zone = worldmapID and GatherLite:GetZoneTree()[worldmapID]
         local info = worldmapID and C_Map.GetMapInfo and C_Map.GetMapInfo(worldmapID)
@@ -406,6 +444,21 @@ source.setup = function()
     end)
 
     frame:SetScript("OnUpdate", function(_, elapsed)
+        local openMap = _GatherLite.OpenMap
+        if openMap and WorldMapFrame:IsVisible() and openMap:IsStitched() then
+            if not stitchedWasOpen then
+                HideZoneList()
+                if _GatherLite.MapHover then _GatherLite.MapHover:Clear() end
+                if worldmapOpen then UnloadWorldmap() end
+                worldmapOpen, stitchedWasOpen = false, true
+            end
+            openMap:Update(elapsed)
+            return
+        end
+        if stitchedWasOpen then
+            openMap:Clear()
+            stitchedWasOpen = false
+        end
         source.UpdateZoneList(elapsed)
         if WorldMapFrame:IsVisible() and not worldmapOpen then
             worldmapOpen = true;
@@ -445,6 +498,7 @@ source.setup = function()
 
     GatherLite:On("settings:update", function()
         HideZoneList()
+        if stitchedWasOpen then _GatherLite.OpenMap.dirty = true end
         if worldmapOpen then
             ResetWorldmap()
         end

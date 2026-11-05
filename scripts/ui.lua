@@ -2,6 +2,44 @@ local _, addon = ...
 local UI = {}
 addon.UI = UI
 
+function UI.ResourceName(object)
+    if object.type == "fish" or object.objects then return object.name end
+    return GatherLite:translate("node." .. object.name)
+end
+
+function UI.ResourceList(query, category, mapID)
+    local available = mapID and addon.Routes:ZoneResources(mapID)
+    local objects, names = {}, {}
+    local function add(catalog)
+        for _, object in ipairs(catalog) do
+            if category == "all" or object.type == category or (category == "fishing" and object.type == "fish") then
+                local inZone = not mapID or (object.type == "fish" and object.maps[mapID] ~= nil)
+                if available and object.type ~= "fish" then
+                    for _, id in ipairs(object.id or {}) do
+                        if available[id] then inZone = true; break end
+                    end
+                end
+                if inZone then
+                    local name = UI.ResourceName(object)
+                    local matches = query == "" or name:lower():find(query, 1, true) or object.type:find(query, 1, true)
+                    for _, alias in ipairs(object.aliases or {}) do
+                        if matches then break end
+                        matches = GatherLite:translate("node." .. alias):lower():find(query, 1, true)
+                    end
+                    if matches then
+                        objects[#objects + 1] = object
+                        names[object] = name
+                    end
+                end
+            end
+        end
+    end
+    add(addon.nodeDB)
+    add(addon.fishDB or {})
+    table.sort(objects, function(a, b) return names[a] < names[b] end)
+    return objects
+end
+
 -- Keep the map requirement tied to the same catalog values as node tooltips.
 function UI.Requirement(object)
     if not object then return "" end

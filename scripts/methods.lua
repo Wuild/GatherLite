@@ -421,16 +421,31 @@ function GatherLite:GetNodesForMapRect(type, mapID, left, right, bottom, top)
     local maxX = math.min(1, math.max(left, right))
     local minY = math.max(0, math.min(bottom, top))
     local maxY = math.min(1, math.max(bottom, top))
+    if minX > maxX or minY > maxY then return {} end
 
     -- A zone has far fewer nodes than the ~24,000 cells in its full rectangle.
     -- Each node occurs once in byMap, so a separate seen table is unnecessary.
     local nodes = index.byMap[mapID] or {}
     local out = {}
-    for i = 1, #nodes do
-        local node = nodes[i]
-        if node.posX >= minX and node.posX <= maxX and node.posY >= minY and node.posY <= maxY then
-            out[#out + 1] = node
+    local function collect(bucket)
+        for _, node in ipairs(bucket) do
+            if node.posX >= minX and node.posX <= maxX and node.posY >= minY and node.posY <= maxY then
+                out[#out + 1] = node
+            end
         end
+    end
+    local x1, y1 = nodeCellCoords(minX, minY)
+    local x2, y2 = nodeCellCoords(maxX, maxY)
+    local cells = index.byCell[mapID]
+    if cells and (x2 - x1 + 1) * (y2 - y1 + 1) < #nodes then
+        for x = x1, x2 do
+            for y = y1, y2 do
+                local bucket = cells[nodeCellKey(x, y)]
+                if bucket then collect(bucket) end
+            end
+        end
+    else
+        collect(nodes)
     end
 
     return out
@@ -994,7 +1009,7 @@ function GatherLite:GetNodeTracking(target, nodeType)
 end
 
 function GatherLite:SetNodeTracking(target, nodeType, value)
-    if self.db and self.db.char then self.db.char.professionTrackingManual=true end
+    if target ~= "hud" and self.db and self.db.char then self.db.char.professionTrackingManual=true end
     local tracking = ensureMapTracking(target)
     if tracking then
         tracking[nodeType] = value and true or false
@@ -1016,6 +1031,12 @@ function GatherLite:OpenTrackingMenu(owner, target)
         root:CreateCheckbox(GatherLite:translate("herbalism"), isSelected, toggle, "herbalism")
         root:CreateCheckbox(GatherLite:translate("containers"), isSelected, toggle, "containers")
         root:CreateCheckbox(GatherLite:translate("fish"), isSelected, toggle, "fishing")
+        if target == "worldmap" then
+            root:CreateDivider()
+            root:CreateButton(GatherLite:translate("window.action.open_settings"), function()
+                if _GatherLite.Window then _GatherLite.Window:ShowSettings() end
+            end)
+        end
     end)
 end
 

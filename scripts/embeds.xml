@@ -45,4 +45,5 @@
     <Script file="maps\hover.lua"/>
     <Script file="modules\worldmap.lua"/>
     <Script file="modules\minimap.lua"/>
+    <Script file="modules\hud.lua"/>
 </Ui>

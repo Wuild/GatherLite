@@ -24,6 +24,9 @@ local function makeFrame(parent)
     function f:GetParent() return self.parent end
     function f:GetVertexColor() return 1, 1, 1 end
     function f:GetWidth() return 140 end
+    function f:GetFrameLevel() return self.level or 8 end
+    function f:SetFrameLevel(level) self.level = level end
+    function f:SetPoint(...) self.point = {...} end
     function f:SetFrameStrata(strata) self.strata = strata end
     function f:SetMouseClickEnabled(enabled) self.clickEnabled = enabled end
     function f:SetMouseMotionEnabled(enabled) self.motionEnabled = enabled end
@@ -41,6 +44,13 @@ UIParent, WorldMapFrame, Minimap = makeFrame(), makeFrame(), makeFrame()
 WorldMapFrame:SetFrameStrata("HIGH")
 WorldMapFrame.mapID = 1429
 WorldMapFrame:Hide()
+WorldMapFrame.ScrollContainer = makeFrame(WorldMapFrame)
+WorldMapFrame.ScrollContainer:SetFrameLevel(1800)
+WorldMapTrackingPinButtonMixin = { OnLoad = noop }
+local mapPin = makeFrame(WorldMapFrame)
+mapPin.OnLoad = WorldMapTrackingPinButtonMixin.OnLoad
+WorldMapFrame.overlayFrames = { mapPin }
+InCombatLockdown = function() return false end
 C_AddOns = { GetAddOnMetadata = function() return "test" end }
 C_Map = { GetBestMapForUnit = function() return 1429 end }
 GetTime = function() return 100 end
@@ -73,7 +83,10 @@ libraries["AceConfigRegistry-3.0"] = { NotifyChange = noop }
 libraries["LibDataBroker-1.1"] = { NewDataObject = function(_, _, object) minimapButton = object; return object end }
 libraries.Semver = {}
 LibStub = setmetatable({ NewLibrary = function(_, name) libraries[name] = {}; return libraries[name] end },
-    { __call = function(_, name) return assert(libraries[name], name) end })
+    { __call = function(_, name, silent)
+        if silent then return libraries[name] end
+        return assert(libraries[name], name)
+    end })
 local menuOwner
 MenuUtil = {
     CreateContextMenu = function(owner, generator)
@@ -85,6 +98,8 @@ MenuUtil = {
                     checked = function() return isSelected(data) end,
                     func = function() onSelect(data) end }
             end,
+            CreateDivider = function() menu[#menu + 1] = { divider = true } end,
+            CreateButton = function(_, text, func) menu[#menu + 1] = { text = text, func = func } end,
         }
         generator(owner, root)
     end,
@@ -137,13 +152,26 @@ local function tick(elapsed)
 end
 WorldMapFrame:Show()
 tick()
+local worldButton = GatherLiteWorldmapButton
+assert(worldButton:GetFrameLevel() + 500 < 10000, "the world map menu needs frame-level headroom for its text")
+assert(worldButton.point[2] == mapPin and worldButton.point[3] == "BOTTOMLEFT", "standalone button must follow the map pin")
+local questie, rareScanner = makeFrame(WorldMapFrame), makeFrame(WorldMapFrame)
+libraries["Krowi_WorldMapButtons-1.4"] = { IsForever = true, Buttons = { questie, rareScanner } }
+tick(.16)
+assert(worldButton.point[2] == rareScanner, "button must follow other addons that join the map stack after login")
+rareScanner:Hide()
+tick(.16)
+assert(worldButton.point[2] == questie, "hidden peers must leave no gap")
+questie:Hide()
+tick(.16)
+assert(worldButton.point[2] == mapPin, "return to the native pin when all peers are hidden")
 local function click(target, index)
     menu = {}
     if target == "minimap" then
         minimapButton.OnClick(Minimap, "LeftButton")
         assert(menuOwner == Minimap, "minimap menu lost its button owner")
     else
-        GatherLiteWorldmapButton.scripts.OnClick(GatherLiteWorldmapButton, "LeftButton")
+        GatherLiteWorldmapButton.scripts.OnClick(GatherLiteWorldmapButton, "RightButton")
         assert(menuOwner == GatherLiteWorldmapButton, "worldmap menu lost its button owner")
     end
     local button = menu[index + 1]
@@ -305,8 +333,19 @@ playerX,playerY=500,500
 local settingsOpened = 0
 GatherLite.ShowSettings = function() settingsOpened = settingsOpened + 1 end
 minimapButton.OnClick(Minimap, "RightButton")
-GatherLiteWorldmapButton.scripts.OnClick(GatherLiteWorldmapButton, "RightButton")
-assert(closedMenus == 2 and settingsOpened == 2, "right-click must close native menus and open settings")
+local toggled = 0
+GatherLite.modules.worldMapSidebar = { Toggle = function() toggled = toggled + 1 end }
+worldButton.scripts.OnClick(worldButton, "LeftButton")
+GatherLite.modules.worldMapSidebar = nil
+assert(closedMenus == 1 and settingsOpened == 1 and toggled == 1,
+    "minimap right-click opens settings and world map left-click toggles the pane")
+addon.Window = { ShowSettings = function() settingsOpened = settingsOpened + 1 end }
+menu = {}
+worldButton.scripts.OnClick(worldButton, "RightButton")
+assert(menu[6].divider and menu[7].text == "Open GatherLite settings")
+menu[7].func()
+assert(settingsOpened == 2, "the map tracking menu shortcut must open the settings tab")
+addon.Window = nil
 print("Tracking integration passed: all four categories, both maps, lazy loading, settings and nearby circles")
 
 -- Icon checks must obey their timer and must not copy the frame registry.

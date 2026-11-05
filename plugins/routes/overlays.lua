@@ -35,10 +35,19 @@ function Routes:Project(point, sourceMapID, targetMapID)
     return HBD:GetZoneCoordinatesFromWorldInstance(point.x, point.y, point.instance, targetMapID, true)
 end
 
-function Routes:GetViewport(map)
+function Routes:GetViewport(map, stitched)
     local scroll, canvas = map.ScrollContainer, map:GetCanvas()
-    local scale = map:GetCanvasScale()
     local width, height = canvas:GetWidth(), canvas:GetHeight()
+    if stitched then
+        -- OpenMap anchors the host canvas as it pans, including beyond its bounds.
+        local scale = scroll:GetEffectiveScale() / canvas:GetEffectiveScale()
+        local scrollLeft, scrollTop, canvasLeft, canvasTop = scroll:GetLeft(), scroll:GetTop(), canvas:GetLeft(), canvas:GetTop()
+        if not (scrollLeft and scrollTop and canvasLeft and canvasTop) or width <= 0 or height <= 0 then return end
+        local left = (scrollLeft * scale - canvasLeft) / width
+        local top = (canvasTop - scrollTop * scale) / height
+        return left, left + scroll:GetWidth() * scale / width, top, top + scroll:GetHeight() * scale / height
+    end
+    local scale = map:GetCanvasScale()
     if not scale or scale <= 0 or width <= 0 or height <= 0 then return end
     local left = scroll:GetHorizontalScroll() / width
     local top = scroll:GetVerticalScroll() / height
@@ -46,42 +55,62 @@ function Routes:GetViewport(map)
         top, top + scroll:GetHeight() / (height * scale)
 end
 
+local function stitchedProjection(api, zone, host)
+    local u1, v1 = api.WorldFromMap(zone, 0, 0)
+    local u2, v2 = api.WorldFromMap(zone, 1, 1)
+    if not (u1 and u2) then return end
+    local x1, y1 = api.MapFromWorld(host, u1, v1)
+    local x2, y2 = api.MapFromWorld(host, u2, v2)
+    if not (x1 and x2) then return end
+    return function(point) return x1 + point.u * (x2 - x1), y1 + point.v * (y2 - y1) end
+end
+
 -- Draw in viewport coordinates above exploration art. Canvas children can be
 -- buried beneath Blizzard's exploration pin, and their scale changes on zoom.
-function Routes:DrawOnCanvas(frame, map, object)
+function Routes:DrawOnCanvas(frame, map, object, stitched)
     local mapID=map:GetMapID()
     local route, count = (self.byMap and self.byMap[mapID]) or self.active, 0
-    local info=mapID and C_Map.GetMapInfo(mapID)
-    -- Routes belong to one resource in one zone. Never project a fallback
-    -- circuit into another map, including adjacent zones with overlapping art.
-    if route and route.mapID==mapID and (object==nil or route.object==object)
+    local info=route and C_Map.GetMapInfo(route.mapID)
+    local rendered = false
+    -- A stitched view can show the active zone's route even when another zone hosts the canvas.
+    if route and (stitched or route.mapID==mapID) and (object==nil or route.object==object)
         and info and info.mapType==3 and GatherLite.db.char.routeVisible ~= false then
-        local scroll = map.ScrollContainer
-        local left, right, top, bottom = self:GetViewport(map)
-        if left and right and top and bottom then
-            left, right = math.min(left, right), math.max(left, right)
-            top, bottom = math.min(top, bottom), math.max(top, bottom)
+        local left, right, top, bottom = self:GetViewport(map, stitched)
+        if left and right > left and bottom > top then
             local width, height = frame:GetWidth(), frame:GetHeight()
-            if right > left and bottom > top then
-                local geometry = route.geometry or route.points
+            local geometry = route.geometry or route.points
+            local state = frame.routeDrawState
+            if state and state.route == route and state.geometry == geometry and state.mapID == mapID
+                and state.stitched == stitched and state.left == left and state.right == right
+                and state.top == top and state.bottom == bottom and state.width == width and state.height == height then return end
+            local project
+            if stitched and route.mapID ~= mapID then
+                project = stitchedProjection(stitched, route.mapID, mapID)
+            else
+                project = function(point) return point.u, point.v end
+            end
+            if project then
+                state = state or {}
+                state.route, state.geometry, state.mapID, state.stitched = route, geometry, mapID, stitched
+                state.left, state.right, state.top, state.bottom = left, right, top, bottom
+                state.width, state.height = width, height
+                frame.routeDrawState, rendered = state, true
+                local sx, sy = width / (right - left), height / (bottom - top)
                 local segments = route.geometry and #geometry - 1 or #geometry
+                local x1, y1 = project(geometry[1])
                 for i = 1, segments do
-                    local a, b = geometry[i], geometry[i % #geometry + 1]
-                    local x1, y1 = self:Project(a, route.mapID, map:GetMapID())
-                    local x2, y2 = self:Project(b, route.mapID, map:GetMapID())
-                    if x1 and y1 and x2 and y2 then
-                        x1, y1, x2, y2 = Planner.ClipRect(x1, y1, x2, y2, left, right, top, bottom)
-                        if x1 then
-                            count = count + 1
-                            self:DrawLine(frame, count,
-                                (x1-left)/(right-left)*width, -(y1-top)/(bottom-top)*height,
-                                (x2-left)/(right-left)*width, -(y2-top)/(bottom-top)*height)
-                        end
+                    local x2, y2 = project(geometry[i % #geometry + 1])
+                    local a, b, c, d = Planner.ClipRect(x1, y1, x2, y2, left, right, top, bottom)
+                    if a then
+                        count = count + 1
+                        self:DrawLine(frame, count, (a - left) * sx, -(b - top) * sy, (c - left) * sx, -(d - top) * sy)
                     end
+                    x1, y1 = x2, y2
                 end
             end
         end
     end
+    if not rendered then frame.routeDrawState = nil end
     self:FinishLines(frame, count)
 end
 
@@ -89,17 +118,23 @@ local outdoor = { [0] = 466 + 2/3, 400, 333 + 1/3, 266 + 2/6, 200, 133 + 1/3 }
 local indoor = { [0] = 300, 240, 180, 120, 80, 50 }
 
 function Routes:Draw(elapsed)
-    elapsedTotal = (elapsedTotal or 0) + elapsed
-    if elapsedTotal < .03 then return end
-    elapsedTotal = 0
     local route = self.active or (self.byMap and self.byMap[self.bestMapID])
     if not route or GatherLite.db.char.routeVisible == false then hide(world); hide(mini); return end
     if WorldMapFrame:IsShown() then
-        world = world or overlay(WorldMapFrame.ScrollContainer)
+        local scroll, api = WorldMapFrame.ScrollContainer, OpenMapAPI
+        local stitched = api and api.major == 1 and api.IsStitched() and api or nil
+        world = world or overlay(scroll)
+        local art = stitched and stitched.ArtTopLevel and stitched.ArtTopLevel()
+        local level = math.max(scroll:GetFrameLevel() + 100, (art or 0) + 1)
+        if world:GetFrameLevel() ~= level and not InCombatLockdown() then world:SetFrameLevel(level) end
         world:Show()
-        self:DrawOnCanvas(world, WorldMapFrame)
+        self:DrawOnCanvas(world, WorldMapFrame, nil, stitched)
     else hide(world) end
 
+    -- The world map follows the canvas every frame. Keep the minimap's slower cadence.
+    elapsedTotal = (elapsedTotal or 0) + elapsed
+    if elapsedTotal < .03 then return end
+    elapsedTotal = 0
     local px, py, instance = HBD:GetPlayerWorldPosition()
     local _, _, mapID = HBD:GetPlayerZonePosition()
     route = (self.byMap and self.byMap[mapID]) or route

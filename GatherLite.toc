@@ -6,13 +6,14 @@
 ## Version: @project-version@
 ## X-Curse-Project-ID: 334918
 ## X-Wago-ID: O67jQPN3
-## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB
+## OptionalDeps: Ace3, LibStub, LibDataBroker-1.1, LibDBIcon-1.0, HereBeDragons, MBB, OpenMap, Leatrix_Maps
 ## SavedVariables: GatherLiteSettings
 ## SavedVariablesPerCharacter: GatherLiteConfigCharacter
 
 scripts\embeds.xml
 plugins\database\database.lua
 plugins\database\data\forever.lua
+plugins\openmap\openmap.lua
 plugins\routes\planner.lua
 plugins\routes\navigation\bootstrap.lua
 plugins\routes\navigation\vendor\Nav\Nav.xml
@@ -32,4 +33,5 @@ scripts\map.xml
 scripts\maps\controller-input.lua
 scripts\maps\controller.lua
 scripts\window.lua
+scripts\maps\worldmap-sidebar.lua
 scripts\maps\onboarding.lua

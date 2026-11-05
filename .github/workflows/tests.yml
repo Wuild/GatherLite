@@ -25,6 +25,8 @@ jobs:
         run: lua5.1 tools/test_fish_names.lua
       - name: Test map tracking toggles
         run: lua5.1 tools/test_tracking.lua
+      - name: Test OpenMap viewport loading
+        run: lua5.1 tools/test_openmap.lua
       - name: Test controller map cursor
         run: lua5.1 tools/test_map_hover.lua
       - name: Test map zoom
