@@ -86,7 +86,8 @@ function Sidebar:FocusZone(mapID)
     if api and api.ShowWorld then
         local u, v = api.WorldFromMap(mapID, .5, .5)
         local _, _, zoom = api.GetView()
-        if u and api.ShowWorld(u, v, math.max(8, zoom or 8)) then
+        local minZoom = addon.OpenMap.minPinZoom
+        if u and api.ShowWorld(u, v, math.max(minZoom, zoom or minZoom)) then
             self.glidingUntil = GetTime() + .5
             return
         end

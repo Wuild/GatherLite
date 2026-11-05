@@ -53,7 +53,7 @@ WorldMapFrame.ScrollContainer=scroll
 WorldMapFrame.mapID=1
 function WorldMapFrame:GetMapID() return self.mapID end
 function WorldMapFrame:GetCanvas() return canvas end
-local stitched,zoom,combat=true,7,false
+local stitched,zoom,combat=true,8,false
 InCombatLockdown=function() return combat end
 local rects={ [1]={0,.1,0,.1}, [2]={.1,.2,0,.1}, [3]={.7,.8,0,.1}, [4]={0,.1,0,.1} }
 local function world(id,x,y)
@@ -120,7 +120,7 @@ local queries=0
 function GatherLite:GetNodesForMapRect(...) queries=queries+1; return query(self,...) end
 tick()
 assert(next(O.pins)==nil and queries==0 and not O.layer,"zoomed-out map must allocate/query no pins")
-zoom=8
+zoom=9
 -- View covers the first zone and half its neighbor, with the first as host.
 canvas.width=1000; scroll.width=1500
 tick()
@@ -174,7 +174,7 @@ function WorldMapFrame:IsMapFocused() return true end
 function scroll:GetGamepadCursorPosition() return 1000,250 end
 tick(); assert(O.hoverFrame.node==neighbor,"controller hover uses texture spatial buckets")
 InputUtil=nil
-zoom=7.99; tick()
+zoom=8.99; tick()
 assert(next(O.pins)==nil and not neighbor.loadedWorldmap and not GameTooltip.owner,"zoom-out cleanup/tooltip")
 count=queries; tick(); assert(queries==count,"overview must not query nodes")
 -- Filters, reference setting, and newly gathered nodes refresh in the same view.

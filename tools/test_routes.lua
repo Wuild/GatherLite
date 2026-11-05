@@ -1301,6 +1301,7 @@ do
 end
 
 do
+    load("plugins/openmap/openmap.lua")
     load("scripts/maps/worldmap-sidebar.lua")
     local sidebar = GatherLite.modules.worldMapSidebar
     local world = WorldMapFrame
@@ -1553,7 +1554,7 @@ do
         "the zone HUD must follow the stitched view while retaining the selection and catalog")
     assert(scroll.zoomLevels[1].scale == scroll:GetWidth()/1002, "leave stitched-map zoom levels to OpenMap")
     sidebar.previous:GetScript("OnClick")()
-    assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 8, "zone HUD must navigate through OpenMap")
+    assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 9, "zone HUD must open at pin visibility zoom")
     local remoteRow = assert(findRow(remote))
     remoteRow:GetScript("OnClick")(remoteRow)
     local recommended = sidebar.zones[1]
