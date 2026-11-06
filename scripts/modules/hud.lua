@@ -96,15 +96,13 @@ local function sameCoords(a, b)
     return true
 end
 
-local function refreshExternal(worldX, worldY, instance)
-    pinScan = pinScan + 1
+local function refreshLibraryPins(library, worldX, worldY, instance, limit)
     local changed = false
-    local active = worldX and (options.externalPins or options.mirrorMinimap) and Pins and Pins.activeMinimapPins
+    local active = library and library.activeMinimapPins
     if active then
-        local registry = Pins.minimapPinRegistry or {}
+        local registry = library.minimapPinRegistry or {}
         local own, fish = registry[addon.name], registry[addon.Fishing]
-        local limit = (options.range + queryPadding)^2
-        -- Only copy the shared library's currently visible pins. Never run another addon's scripts.
+        -- Read the library's visible pins without running another addon's scripts.
         for pin, data in pairs(active) do
             local fishPin = fish and fish[pin]
             if type(data) == "table" and data.instanceID == instance
@@ -130,6 +128,50 @@ local function refreshExternal(worldX, worldY, instance)
                     end
                     item.scan = pinScan
                 end
+            end
+        end
+    end
+    return changed
+end
+
+local function refreshVignette(guid, worldX, worldY, mapID, instance, limit)
+    if addon.API.IsSecret(guid) then return end
+    local info = C_VignetteInfo.GetVignetteInfo(guid)
+    if not info or addon.API.IsSecret(info.onMinimap) or not info.onMinimap then return end
+    local atlas = info.atlasName
+    if addon.API.IsSecret(atlas) or type(atlas) ~= "string" or atlas == "" then return end
+    local position = C_VignetteInfo.GetVignettePosition(guid, mapID)
+    if not position then return end
+    local x, y = position:GetXY()
+    if addon.API.IsSecret(x) or addon.API.IsSecret(y) or not x or not y then return end
+    local pinX, pinY, pinInstance = HBD:GetWorldCoordinatesFromZone(x, y, mapID)
+    if not pinX or not pinY or pinInstance ~= instance or (pinX - worldX)^2 + (pinY - worldY)^2 > limit then return end
+
+    local title = info.name
+    if addon.API.IsSecret(title) then title = nil end
+    local item = external[guid]
+    if item and item.worldX == pinX and item.worldY == pinY and item.title == title and item.atlas == atlas then
+        item.scan = pinScan
+        return
+    end
+    external[guid] = { key = guid, worldX = pinX, worldY = pinY, title = title, external = true, atlas = atlas, scan = pinScan }
+    return true
+end
+
+local function refreshExternal(worldX, worldY, mapID, instance)
+    pinScan = pinScan + 1
+    local changed = false
+    if worldX and (options.externalPins or options.mirrorMinimap) then
+        local limit = (options.range + queryPadding)^2
+        changed = refreshLibraryPins(Pins, worldX, worldY, instance, limit)
+        local questiePins = LibStub("HereBeDragonsQuestie-Pins-2.0", true)
+        if questiePins ~= Pins and refreshLibraryPins(questiePins, worldX, worldY, instance, limit) then
+            changed = true
+        end
+        local api = C_VignetteInfo
+        if options.mirrorMinimap and mapID and api and api.GetVignettes and api.GetVignetteInfo and api.GetVignettePosition then
+            for _, guid in ipairs(api.GetVignettes() or {}) do
+                if refreshVignette(guid, worldX, worldY, mapID, instance, limit) then changed = true end
             end
         end
     end
@@ -201,7 +243,11 @@ local function setArt(marker, item)
     else
         icon:SetTexture(item.object and item.object.icon or item.texture)
     end
-    if item.coords then icon:SetTexCoord(unpack(item.coords)) else icon:SetTexCoord(0, 1, 0, 1) end
+    if item.coords then
+        icon:SetTexCoord(unpack(item.coords))
+    elseif not item.atlas then
+        icon:SetTexCoord(0, 1, 0, 1)
+    end
     icon:SetVertexColor(item.r or 1, item.g or 1, item.b or 1)
     marker.item = item
 end
@@ -295,7 +341,7 @@ local function update(_, elapsed)
     local mirrorPins = options.externalPins or options.mirrorMinimap
     if dirty or locationChanged or (mirrorPins and pinTime >= .2) then
         pinTime = 0
-        if refreshExternal(worldX, worldY, instance) then drawFacing = nil end
+        if refreshExternal(worldX, worldY, mapID, instance) then drawFacing = nil end
     end
     if dirty or locationChanged
         or (worldX and (not queryX or (worldX - queryX)^2 + (worldY - queryY)^2 >= queryStep^2)) then

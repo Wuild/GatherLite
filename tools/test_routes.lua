@@ -1022,6 +1022,38 @@ do
         "mirror mode must include addon, GatherLite and fish pins")
     own:Show()
     assert(#drawHud(0,.21)==4,"a visible GatherLite minimap pin must not duplicate the indexed HUD pin")
+
+    local questie=mockPin("QuestieQuest","Questie Quest")
+    questie.texture,questie.IconTexture=questie.IconTexture,nil
+    local questiePins={activeMinimapPins={[questie]={instanceID=0,x=-506,y=-460}}}
+    local originalLibStub=LibStub
+    LibStub=function(key, silent)
+        if key=="HereBeDragonsQuestie-Pins-2.0" then return questiePins end
+        return originalLibStub(key, silent)
+    end
+    local vignette={name="Blizzard event",atlasName="VignetteEvent",onMinimap=true}
+    local originalVignetteInfo=C_VignetteInfo
+    C_VignetteInfo={
+        GetVignettes=function() return {"visible","worldmap-only"} end,
+        GetVignetteInfo=function(guid) return guid=="visible" and vignette or {onMinimap=false} end,
+        GetVignettePosition=function(guid)
+            assert(guid=="visible","world-map-only vignettes must be skipped")
+            return {GetXY=function() return .49,.46 end}
+        end,
+    }
+    pins=drawHud(0,.21)
+    assert(#pins==6,"late-loaded Questie pins and Blizzard minimap vignettes must both appear")
+    local externalArt={}
+    for _,mark in ipairs(pins) do
+        if mark.item.external then externalArt[mark.item.title]=mark.icon.atlas end
+    end
+    assert(externalArt["Questie Quest"]=="QuestieQuest" and externalArt["Blizzard event"]=="VignetteEvent",
+        "both new sources must retain their icon and name")
+    questiePins.activeMinimapPins[questie]=nil
+    vignette.onMinimap=false
+    assert(#drawHud(0,.21)==4,"pins removed from either source must clear from the compass")
+    LibStub,C_VignetteInfo=originalLibStub,originalVignetteInfo
+
     mini.hideNearbyNodes,mini.herbalism=previousHide,previousHerb
     hudOptions.mirrorMinimap.set(nil,false)
     pins=drawHud(0,.01)
