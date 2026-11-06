@@ -391,6 +391,13 @@ _GatherLite.SettingsOptions = {
                                 return GatherLite.db.char.worldmap.size
                             end
                         },
+                        openMapPinZoom = {
+                            name = function() return GatherLite:translate("settings.map.openmap_pin_zoom") end,
+                            hidden = function() return not (OpenMapAPI and OpenMapAPI.major == 1) end,
+                            type = "range", min = 1, max = 16, step = 1, order = 7, width = "full",
+                            set = function(_, value) GatherLite.db.char.worldmap.openMapPinZoom = value end,
+                            get = function() return GatherLite.db.char.worldmap.openMapPinZoom end,
+                        },
                         iconOpacity = {
                             name = function()
                                 return GatherLite:translate("settings.map.opacity");

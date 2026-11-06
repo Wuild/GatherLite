@@ -94,6 +94,7 @@ _GatherLite.configsDefaults = {
         },
         worldmap = {
             enabled = true,
+            openMapPinZoom = 7,
             zoneTooltip = true,
             size = 12,
             opacity = 1,

@@ -245,7 +245,7 @@ load("scripts/locales/enUS.lua")
 local events={}
 GatherLite={modules={},plugins={},db={global={usePredefined=true,debug={types={}}},char={
     minimap={enabled=true,range=400,size=12,opacity=1,distance=70,loot=true},
-    worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true},
+    worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true,openMapPinZoom=7},
     hud={enabled=false,range=250,width=300,height=20,pinSize=14,opacity=.9,x=0,y=-72,
         backgroundColor={r=.035,g=.03,b=.025},backgroundOpacity=.8,showBorder=true,hideInInstances=true},
 },profile={minimap={}}}}
@@ -1420,6 +1420,22 @@ do
     update()
     assert(sidebar.panel:IsVisible() and not sidebar.hud:IsShown() and not sidebar.generate:IsEnabled())
     assert(not sidebar.zoneFilter and not sidebar.toggle and findRow(remote), "the sidebar must use one map button and a global list")
+    local all, mining, herbalism, containers, fishing = unpack(sidebar.categoryButtons)
+    assert(all.selected:IsShown() and mining.category == "ore" and herbalism.category == "herb"
+        and containers.category == "container" and fishing.category == "fishing", "the sidebar must show every resource category")
+    assert(all:GetWidth() == 42 and fishing:GetWidth() == 42 and fishing.point[2] + fishing:GetWidth() == 234,
+        "equal-width categories must fill the docked panel between its side margins")
+    mining:GetScript("OnClick")()
+    assert(mining.selected:IsShown() and not all.selected:IsShown() and findRow(remote) and not findRow(addon.nodeDB[2]),
+        "the category must filter the global list, including resources outside the current zone")
+    sidebar.search:SetText("herb")
+    sidebar.search:GetScript("OnTextChanged")()
+    assert(sidebar.empty:IsShown(), "search must combine with the category")
+    herbalism:GetScript("OnClick")()
+    assert(findRow(addon.nodeDB[2]) and not sidebar.empty:IsShown(), "a category change must keep the search text")
+    sidebar.search:SetText("")
+    sidebar.search:GetScript("OnTextChanged")()
+    all:GetScript("OnClick")()
     assert(not sidebar.status and sidebar.list.point[1] == "BOTTOMRIGHT" and sidebar.list.point[3] == 65,
         "the resource list must extend to the route buttons")
     assert(sidebar.panel.point[1] == "BOTTOMRIGHT" and sidebar.panel.point[2] == scroll
@@ -1454,6 +1470,9 @@ do
     update()
     assert(inset() == 220 and sidebar.panel.width == 216 and scroll:GetWidth() == 250,
         "narrow maps must shrink the resource pane before shrinking the map below its minimum")
+    assert(all:GetWidth() < 42 and all:GetWidth() == fishing:GetWidth()
+        and math.abs(fishing.point[2] + fishing:GetWidth() - 200) < .001,
+        "category buttons must resize evenly with the narrowed resource pane")
     assert(anchors[2][4] == 220 and anchors[3][4] == -3, "resize both left anchors and leave the quest pane side alone")
     update()
     assert(refits == 2 and artFits == 1, "Leatrix owns canvas zoom and a settled layout must not resize again")
@@ -1521,6 +1540,11 @@ do
         and sidebar.hud.point[1] == "BOTTOMLEFT" and sidebar.hud.point[2] == scroll
         and sidebar.hud.point[4] == 0 and sidebar.hud.point[5] == 0 and sidebar.zoneName:GetText() == "Zone 1",
         "combined resources must show a bottom-left zone HUD")
+    mining:GetScript("OnClick")()
+    assert(not findRow(addon.nodeDB[2]) and #sidebar:GetSelection() == 2 and sidebar.generate:IsEnabled(),
+        "filtering out a selected resource must preserve the route selection")
+    all:GetScript("OnClick")()
+    assert(findRow(addon.nodeDB[2]).check:GetChecked(), "restoring the category must show the selected resource as checked")
     sidebar.next:GetScript("OnClick")()
     assert(world:GetMapID() == 2 and sidebar.zoneName:GetText() == "Zone 2" and findRow(remote),
         "next zone must move the map while leaving the list global")
@@ -1620,6 +1644,20 @@ do
     while R.worker do R:Tick() end
     assert(R.active and R.active.mapID == 2 and R.onlyMapID == 2 and world:GetMapID() == 1 and focus[1] == .75,
         "a resource outside the view must generate only in the HUD's destination zone")
+
+    local worldMapOptions = addon.SettingsOptions.args.worldmap
+    local withOpenMap = addon.UI.SettingsGroup(W.pages[2], worldMapOptions, "OpenMapSettingsTest")
+    assert(#withOpenMap.controls == #W.settingsPanels.worldmap.controls + 1,
+        "the World Map settings must add the zoom slider only when the OpenMap API is available")
+    local pinZoomSlider
+    for _, control in ipairs(withOpenMap.controls) do
+        if control.AdjustBy and control.value == 7 then pinZoomSlider = control end
+    end
+    assert(pinZoomSlider, "the zoom slider must start at the saved value")
+    pinZoomSlider:AdjustBy(1)
+    assert(GatherLite.db.char.worldmap.openMapPinZoom == 8, "changing the slider must save the zoom")
+    sidebar:FocusZone(2)
+    assert(focus[3] == 8, "zone navigation must use the saved visibility zoom")
     toggle()
     assert(not sidebar.panel:IsShown() and GatherLite.db.char.worldMapSidebarCollapsed)
     toggle()

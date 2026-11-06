@@ -187,6 +187,13 @@ assert(not O.pins[reference] and not O.pins[herb] and O.pins[own])
 local fresh=node(2,.2)
 GatherLite:LoadTable("mining",{fresh}); events["nodes:added"](fresh); tick()
 assert(O.pins[fresh],"new visible gathers must appear without reopening/panning")
+GatherLite.db.char.worldmap.openMapPinZoom=10
+tick(); assert(next(O.pins)==nil,"raising the saved cutoff must hide pins at the current zoom")
+zoom=10; tick()
+assert(O.pins[own],"pins must appear at the configured zoom")
+zoom=9
+GatherLite.db.char.worldmap.openMapPinZoom=8
+tick(); assert(O.pins[own],"lowering the saved cutoff must show pins without reopening the map")
 -- Invalid geometry and closed maps release pooled frames.
 canvas.width=0; tick(); assert(next(O.pins)==nil)
 canvas.width=1000; tick(); assert(O.pins[own])

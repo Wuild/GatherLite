@@ -6,6 +6,7 @@ GatherLite.modules.worldMapSidebar = Sidebar
 local WIDTH, ROW_HEIGHT = 250, 25
 local MIN_PANE_WIDTH, MIN_VIEW_WIDTH, MIN_VIEW_HEIGHT = 190, 250, 200
 local LEFT_PADDING = 4
+local CATEGORY_PADDING = 8
 local function T(key, ...) return GatherLite:translate(key, ...) end
 
 local function stitchedMap()
@@ -86,7 +87,7 @@ function Sidebar:FocusZone(mapID)
     if api and api.ShowWorld then
         local u, v = api.WorldFromMap(mapID, .5, .5)
         local _, _, zoom = api.GetView()
-        local minZoom = addon.OpenMap.minPinZoom
+        local minZoom = addon.OpenMap:GetMinPinZoom()
         if u and api.ShowWorld(u, v, math.max(minZoom, zoom or minZoom)) then
             self.glidingUntil = GetTime() + .5
             return
@@ -119,7 +120,7 @@ end
 function Sidebar:RefreshList()
     local query = (self.search:GetText() or ""):lower()
     self.searchHint:SetShown(query == "")
-    local objects = UI.ResourceList(query, "all")
+    local objects = UI.ResourceList(query, self.resourceCategory)
     for i, object in ipairs(objects) do
         local row = self.rows[i]
         if not row then
@@ -293,6 +294,7 @@ function Sidebar:UpdateDock()
         if inset == 0 then self.anchors = nil end
         if expanded then
             self.panel:SetWidth(width)
+            self.categoryBar:ResizeButtons(width - 2 * CATEGORY_PADDING)
             self.list.content:SetWidth(width - 36)
         end
         -- Refit only the canvas. Leatrix uses the window callback to reset its position.
@@ -386,16 +388,23 @@ function Sidebar.setup()
     panel:SetScript("OnHide", function() self.search:ClearFocus() end)
     self.searchHint = UI.Text(self.search, T("window.search"), "GameFontDisableSmall")
     self.searchHint:SetPoint("LEFT", 3, 0)
-    self.list = UI.Scroll(panel, "GatherLiteWorldMapResources", WIDTH - 36)
-    self.list:SetPoint("TOPLEFT", 8, -40)
-    self.list:SetPoint("BOTTOMRIGHT", -28, 65)
-    self.empty = UI.Text(panel, T("window.results.none"), "GameFontDisableSmall")
-    self.empty:SetPoint("TOPLEFT", 10, -47)
-    self.search:SetScript("OnTextChanged", function()
+    local function refreshFilters()
         self.list:SetVerticalScroll(0)
         self:RefreshList()
         self:RefreshActions()
+    end
+    self.resourceCategory = "all"
+    self.categoryBar, self.categoryButtons = UI.ResourceCategories(panel, WIDTH - 2 * CATEGORY_PADDING, 32, 6, function(key)
+        self.resourceCategory = key
+        refreshFilters()
     end)
+    self.categoryBar:SetPoint("TOPLEFT", CATEGORY_PADDING, -38)
+    self.list = UI.Scroll(panel, "GatherLiteWorldMapResources", WIDTH - 36)
+    self.list:SetPoint("TOPLEFT", 8, -77)
+    self.list:SetPoint("BOTTOMRIGHT", -28, 65)
+    self.empty = UI.Text(panel, T("window.results.none"), "GameFontDisableSmall")
+    self.empty:SetPoint("TOPLEFT", 10, -84)
+    self.search:SetScript("OnTextChanged", refreshFilters)
 
     self.generate = UI.Button(panel, T("window.action.generate_zone"), WIDTH - 20, function()
         self:RefreshZones()

@@ -317,57 +317,15 @@ function Window:CreateMap(page)
         self.search:SetText(""); self.search:ClearFocus()
     end)
     resetSearch:SetPoint("RIGHT",-7,0)
-    self.categoryButtons={}
     self.resourceCategory="all"
-    local categories={
-        {"all","window.resource.all","INV_Misc_Bag_10"},
-        {"ore","mining","Trade_Mining"},
-        {"herb","herbalism","Trade_Herbalism"},
-        {"container","containers"},
-        {"fishing","window.resource.fishing","Trade_Fishing"},
-    }
-    for i,category in ipairs(categories) do
-        local key,label=category[1],category[2]
-        local button=CreateFrame("Button",nil,sidebar)
-        button:SetSize(44,36)
-        button:SetScript("OnClick",function()
-            self.resourceCategory=key
-            if addon.GatheringTracking then addon.GatheringTracking:Prefer(key) end
-            self.list:SetVerticalScroll(0)
-            for _,item in ipairs(self.categoryButtons) do
-                item.selected:SetShown(item.category==key)
-            end
-            self:RefreshList()
-        end)
-        button:SetPoint("TOPLEFT",10+(i-1)*51,-40)
-        UI.Background(button,.09,.07,.04,1)
-        UI.Border(button)
-        button.icon=button:CreateTexture(nil,"ARTWORK")
-        button.icon:SetSize(28,28); button.icon:SetPoint("CENTER")
-        button.icon:SetTexture(key=="container" and "Interface\\AddOns\\GatherLite\\icons\\Open\\Chest"
-            or ("Interface\\Icons\\"..category[3]))
-        button:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square","ADD")
-        local function showTip()
-            GameTooltip:SetOwner(button,"ANCHOR_LEFT")
-            GameTooltip:SetText(T(label))
-            GameTooltip:Show()
-        end
-        local function hideTip()
-            if GameTooltip:IsOwned(button) then GameTooltip:Hide() end
-        end
-        button:SetScript("OnEnter",showTip)
-        button:SetScript("OnLeave",hideTip)
-        button:SetScript("OnHide",hideTip)
-        button.OnSmartNavSelect=showTip
-        button.OnSmartNavDeselect=hideTip
-        button.category=key
-        button.selected=button:CreateTexture(nil,"OVERLAY")
-        button.selected:SetColorTexture(1,.72,.15,1)
-        button.selected:SetHeight(3)
-        button.selected:SetPoint("BOTTOMLEFT",3,1); button.selected:SetPoint("BOTTOMRIGHT",-3,1)
-        button.selected:SetShown(key=="all")
-        self.categoryButtons[i]=button
-    end
+    local categoryBar, categoryButtons=UI.ResourceCategories(sidebar,248,36,7,function(key)
+        self.resourceCategory=key
+        if addon.GatheringTracking then addon.GatheringTracking:Prefer(key) end
+        self.list:SetVerticalScroll(0)
+        self:RefreshList()
+    end)
+    categoryBar:SetPoint("TOPLEFT",10,-40)
+    self.categoryButtons=categoryButtons
     self.zoneOnly=true
     self.zoneFilter=CreateFrame("CheckButton",nil,sidebar,"CheckboxWithLabelTemplate")
     self.zoneFilter:SetSize(24,24); self.zoneFilter:SetPoint("TOPLEFT",10,-79)
@@ -617,7 +575,7 @@ function Window:CreateChangelog(page)
             "Leatrix Maps wraps its frame around the docked pane when reopening the map, including during combat when the frame permits changes.",
         }},
         {"OPENMAP",{
-            "Gathering pins load within the visible stitched map at 7× zoom and closer, including neighboring zones. Pins are reused as you pan.",
+            "Gathering pins load within the visible stitched map, including neighboring zones. Set the minimum zoom in World Map settings. It defaults to 7×.",
             "Route lines stay aligned across stitched zones while you pan or zoom.",
         }},
     }
