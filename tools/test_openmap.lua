@@ -207,6 +207,25 @@ local api=OpenMapAPI
 OpenMapAPI.major=2; tick()
 assert(next(O.pins)==nil and next(native.worldmap),"unsupported API must fall back safely")
 OpenMapAPI=nil; tick()
+WorldMapFrame:Hide(); tick()
+InputUtil={IsGamepadUIEnabled=function() return true end}
+WorldMapFrame:Show(); tick()
+local privatePin
+for _, pin in pairs(libraries.GatherLiteFrame.usedFrames) do
+    if pin.node==own then privatePin=pin; break end
+end
+assert(privatePin and privatePin.parent.parent==scroll and privatePin.parent.clips
+    and next(native.worldmap)==nil, "gamepad gathering pins must bypass Blizzard's pin pools")
+local offset=privatePin.point[4]
+canvas.scale=canvas.scale*2
+tick()
+assert(privatePin.point[4]==offset*2 and privatePin.width==16,
+    "private pins must follow canvas zoom at a constant icon size")
+WorldMapFrame:Hide(); tick()
+assert(not privatePin:IsShown() and privatePin.parent==UIParent and not own.loadedWorldmap,
+    "closing the map must detach private pins on the addon update frame")
+InputUtil=nil
+WorldMapFrame:Show()
 print("OpenMap checks passed: zoom cutoff, viewport/neighbor queries, persistent pins, host switches, filters, cleanup and native fallback")
 
 -- Dense small-rectangle queries must use buckets without changing results.

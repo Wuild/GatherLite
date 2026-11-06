@@ -1,6 +1,7 @@
 local _, addon = ...
 local Pins = LibStub("HereBeDragons-Pins-2.0")
 local HBD = LibStub("HereBeDragons-2.0")
+local WorldMap = GatherLite.modules.worldmap
 local Fishing = { visible=true, frames={} }
 addon.Fishing = Fishing
 GatherLite.plugins.Fishing = Fishing
@@ -37,7 +38,9 @@ end
 function Fishing:ClearPins()
     Pins:RemoveAllWorldMapIcons(self)
     Pins:RemoveAllMinimapIcons(self)
-    for _,frame in ipairs(self.frames) do frame:Hide() end
+    for _,frame in ipairs(self.frames) do
+        if not WorldMap:RemovePrivatePin(frame) then frame:Hide() end
+    end
 end
 function Fishing:Select(object)
     self.object=object
@@ -59,6 +62,7 @@ function Fishing:Refresh()
     if not worldEnabled and not miniEnabled then return end
     local worldMap=WorldMapFrame and WorldMapFrame:IsShown() and WorldMapFrame:GetMapID()
     local worldInfo=worldMap and C_Map.GetMapInfo(worldMap)
+    local privatePins=WorldMap:UsesPrivatePins()
     local _,_,playerMap=HBD:GetPlayerZonePosition()
     local groups={}
     local function add(fish,mapID,u,v,target,x,y)
@@ -119,6 +123,21 @@ function Fishing:Refresh()
         if addon.MapHover then addon.MapHover:Register(frame, not mini) end
         if mini then
             Pins:AddMinimapIconMap(self,frame,mapID,group.u,group.v,false,false)
+        elseif privatePins then
+            if mapID==worldMap then
+                WorldMap:AddPrivatePin(frame,group.u,group.v)
+            else
+                -- Match HBD's SHOW_PARENT rule for selected fish on parent zones.
+                local info=C_Map.GetMapInfo(mapID)
+                while info and info.parentMapID and info.parentMapID>0 do
+                    if info.parentMapID==worldMap then
+                        local x,y=HBD:TranslateZoneCoordinates(group.u,group.v,mapID,worldMap)
+                        if x and y then WorldMap:AddPrivatePin(frame,x,y) end
+                        break
+                    end
+                    info=C_Map.GetMapInfo(info.parentMapID)
+                end
+            end
         else
             Pins:AddWorldMapIconMap(self,frame,mapID,group.u,group.v,1)
         end

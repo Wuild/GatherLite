@@ -278,7 +278,7 @@ function Sidebar:UpdateDock()
     local viewport = self.map.ScrollContainer
     local width = math.min(WIDTH, math.floor(viewport:GetWidth() + self.inset - MIN_VIEW_WIDTH - LEFT_PADDING))
     local fits = width >= MIN_PANE_WIDTH and viewport:GetHeight() >= MIN_VIEW_HEIGHT
-    local expanded = fits and not GatherLite.db.char.worldMapSidebarCollapsed
+    local expanded = fits and GatherLite.db.char.worldMapSidebarCollapsed == false
     local inset = expanded and width + LEFT_PADDING or 0
     if inset > 0 and self.inset == 0 then
         self.anchors = leftAnchors(viewport)
@@ -301,7 +301,10 @@ function Sidebar:UpdateDock()
         viewport:OnCanvasSizeChanged()
         self.chromeDirty = true
     end
-    if toggled then self.panel:SetShown(expanded) end
+    if toggled then
+        self.panel:SetShown(expanded)
+        if not expanded then self.search:ClearFocus() end
+    end
 end
 
 function Sidebar:Update()
@@ -385,7 +388,6 @@ function Sidebar.setup()
     self.search:SetMaxLetters(80)
     self.search:SetScript("OnEscapePressed", function(edit) edit:ClearFocus() end)
     self.search:SetScript("OnEnterPressed", function(edit) edit:ClearFocus() end)
-    panel:SetScript("OnHide", function() self.search:ClearFocus() end)
     self.searchHint = UI.Text(self.search, T("window.search"), "GameFontDisableSmall")
     self.searchHint:SetPoint("LEFT", 3, 0)
     local function refreshFilters()
@@ -503,7 +505,7 @@ function Sidebar.setup()
     progress.text:SetPoint("CENTER")
     self:RefreshProgress()
 
-    local driver = CreateFrame("Frame", nil, map)
+    local driver = CreateFrame("Frame")
     self.driver = driver
     if self.leatrix then
         -- Leatrix also lays out its frame directly in these event handlers.
@@ -512,8 +514,15 @@ function Sidebar.setup()
         driver:RegisterEvent("DISPLAY_SIZE_CHANGED")
         driver:SetScript("OnEvent", function() self.chromeDirty = true end)
     end
-    local elapsed = .15
+    local elapsed, wasVisible = .15, false
     driver:SetScript("OnUpdate", function(_, delta)
+        if not map:IsVisible() then
+            -- Avoid releasing edit-box focus inside Blizzard's gamepad close handler.
+            if wasVisible then self.search:ClearFocus() end
+            wasVisible = false
+            return
+        end
+        wasVisible = true
         elapsed = elapsed + delta
         if elapsed < .15 or not GatherLite:IsLoaded() then return end
         elapsed = 0

@@ -147,7 +147,10 @@ function _frame:unload()
     self.type = nil
     self:Hide()
 
-    Pins:RemoveMinimapIcon(_GatherLite.name, self)
-    Pins:RemoveWorldMapIcon(_GatherLite.name, self)
+    local worldmap = GatherLite.modules.worldmap
+    if not worldmap or not worldmap:RemovePrivatePin(self) then
+        Pins:RemoveMinimapIcon(_GatherLite.name, self)
+        Pins:RemoveWorldMapIcon(_GatherLite.name, self)
+    end
     GatherLiteFrame:recycleFrame(self)
 end

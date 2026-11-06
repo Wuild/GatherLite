@@ -102,6 +102,9 @@ function methods:RegisterCallback(_,fn) self.callback=fn end
 function methods:GetZoom() return 0 end
 function methods:GetFrameLevel() return self.level or 1 end
 function methods:SetFrameLevel(level) self.level=level end
+function methods:SetParent(parent) self.parent=parent end
+function methods:SetClipsChildren(enabled) self.clipsChildren=enabled end
+function methods:GetEffectiveScale() return self.scale or 1 end
 function methods:GetFrameStrata() return "DIALOG" end
 function methods:GetCanvas() return self.ScrollContainer.Child end
 function methods:GetCanvasScale() return self.canvasScale or 1 end
@@ -142,7 +145,7 @@ MapExplorationDataProviderMixin={}
 MapHighlightDataProviderMixin={}
 MAP_CANVAS_MOUSE_WHEEL_ZOOM_BEHAVIOR_SMOOTH=1
 
-local templates={HelpTipTemplate=true,NavBarTemplate=true,ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,
+local templates={HelpTipTemplate=true,NavBarTemplate=true,ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,GameTooltipTemplate=true,
     CheckboxWithLabelTemplate=true,MinimalSliderWithSteppersTemplate=true,MinimalScrollBar=true,InputBoxTemplate=true,GatherLiteMapCanvasTemplate=true}
 function CreateFrame(kind,name,parent,template)
     assert(not template or templates[template], tostring(template))
@@ -486,6 +489,7 @@ function Pins:AddMinimapIconMap(_,frame,mapID,u,v)
 end
 local previousLibStub=LibStub
 LibStub=function(key) return key=="HereBeDragons-Pins-2.0" and Pins or previousLibStub(key) end
+load("scripts/modules/worldmap.lua")
 load("plugins/fishing/data.lua")
 assert(#addon.fishDB==25)
 local fish={type="fish",id={},itemID=6291,name="Raw Brilliant Smallfish",icon="fish",
@@ -504,6 +508,20 @@ assert(W.rows[1].object==fish and not W.rows[2]:IsShown())
 W:SelectObject(fish)
 assert(F.object==fish and GatherLite.db.char.fishItem==6291)
 assert(#Pins.world==2 and #Pins.mini==2,"catch pins depend on gather tracking or fail to group close reports")
+local originalInputUtil=InputUtil
+InputUtil={IsGamepadUIEnabled=function() return true end}
+F:Refresh()
+local privateFish=0
+for _, frame in ipairs(F.frames) do
+    if frame.parent and frame.parent.parent==WorldMapFrame.ScrollContainer then
+        assert(frame.parent.clipsChildren and frame:IsVisible() and frame.point[2]==WorldMapFrame:GetCanvas())
+        privateFish=privateFish+1
+    end
+end
+assert(privateFish==2 and #Pins.world==0 and #Pins.mini==2,
+    "gamepad catch pins must stay outside the native map pin pools without changing the minimap")
+InputUtil=originalInputUtil
+F:Refresh()
 assert(W.generate.enabled==false and not R.worker and not R.active,"fish search generated a land circuit")
 assert(W.requirement:GetText()=="Fishing | Reported catches")
 W:SetMap(2)
@@ -1418,6 +1436,10 @@ do
         end
     end
     update()
+    assert(not sidebar.panel:IsShown() and inset() == 0 and refits == 0,
+        "the resource pane must default closed and leave the map at full width")
+    toggle()
+    assert(GatherLite.db.char.worldMapSidebarCollapsed == false, "opening the pane must save the expanded preference")
     assert(sidebar.panel:IsVisible() and not sidebar.hud:IsShown() and not sidebar.generate:IsEnabled())
     assert(not sidebar.zoneFilter and not sidebar.toggle and findRow(remote), "the sidebar must use one map button and a global list")
     local all, mining, herbalism, containers, fishing = unpack(sidebar.categoryButtons)
@@ -1662,7 +1684,13 @@ do
     assert(not sidebar.panel:IsShown() and GatherLite.db.char.worldMapSidebarCollapsed)
     toggle()
     assert(sidebar.panel:IsShown())
+    local focusClears = 0
+    function sidebar.search:ClearFocus() focusClears = focusClears + 1 end
+    assert(not sidebar.panel:GetScript("OnHide"), "closing the map must not run search focus cleanup inline")
     world:Hide()
     assert(not sidebar.panel:IsVisible(), "closing the world map must hide the sidebar")
+    assert(focusClears == 0)
+    update()
+    assert(focusClears == 1, "the independent update must clear search focus after the map closes")
 end
 print("World map sidebar passed: docking, global resources, bottom-left zone HUD, scoped routes and OpenMap alignment")

@@ -564,19 +564,13 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"HUD GPS",{
-            "Added an on-by-default compass at the top center of the screen. It shows nearby gathering nodes and compatible minimap pins from other addons as you turn.",
-            "Hover a pin to see its name and live distance. GatherLite nodes stay visible on the compass at close range, even when hidden on the minimap.",
-            "Move the compass or adjust its range, width, height, pin size, background, border, and visibility in HUD GPS settings.",
+        {"DISPLAY DEFAULTS",{
+            "The world map resource pane starts closed by default. Left-click the GatherLite map button to open it.",
+            "HUD GPS is off by default. Enable Show HUD GPS under Settings > HUD GPS to display the compass.",
+            "Removed the donation popup that appeared on login after an update.",
         }},
-        {"WORLD MAP AND ROUTES",{
-            "Added a searchable GatherLite resource pane to the world map. Left-click the GatherLite map button to toggle it or right-click for map filters and settings.",
-            "Select multiple resources, browse recommended zones, and generate a ground route for the selected zone. The map shows calculation progress and the pane lets you cancel.",
-            "Leatrix Maps wraps its frame around the docked pane when reopening the map, including during combat when the frame permits changes.",
-        }},
-        {"OPENMAP",{
-            "Gathering pins load within the visible stitched map, including neighboring zones. Set the minimum zoom in World Map settings. It defaults to 7×.",
-            "Route lines stay aligned across stitched zones while you pan or zoom.",
+        {"WORLD MAP CONTROLLER SUPPORT",{
+            "Improved gamepad compatibility when closing the world map with gathering or fishing pins visible or the resource search focused.",
         }},
     }
     local y=0

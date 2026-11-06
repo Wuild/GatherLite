@@ -45,7 +45,6 @@ _GatherLite.debug = {
 
 _GatherLite.configsDefaults = {
     global = {
-        lastSeenVersion = nil,
         nodes = {
             mining = {},
             herbalism = {},
@@ -109,7 +108,7 @@ _GatherLite.configsDefaults = {
             }
         },
         hud = {
-            enabled = true,
+            enabled = false,
             range = 250,
             width = 700,
             fullWidth = false,

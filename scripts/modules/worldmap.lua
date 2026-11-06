@@ -11,6 +11,66 @@ local source = GatherLite.modules[SourceName]
 local worldmapOpen = false;
 local worldmapID = nil;
 
+local privateLayer, pinWidth, pinHeight, pinCanvas
+local privatePins = {}
+
+function source:UsesPrivatePins()
+    return InputUtil and InputUtil.IsGamepadUIEnabled and InputUtil.IsGamepadUIEnabled()
+end
+
+local function anchorPrivatePin(pin, point)
+    pin:SetPoint("CENTER", pinCanvas, "TOPLEFT", point.x * pinWidth, -point.y * pinHeight)
+end
+
+local function updatePrivatePins()
+    if not privateLayer then return end
+    local map = WorldMapFrame
+    local canvas = map:GetCanvas()
+    local openMap = _GatherLite.OpenMap
+    local api = openMap and openMap:IsStitched() and OpenMapAPI
+    local artLevel = api and api.ArtTopLevel and api.ArtTopLevel() or 0
+    local level = math.max(map.ScrollContainer:GetFrameLevel() + 101, artLevel + 2)
+    if privateLayer:GetFrameLevel() ~= level and not InCombatLockdown() then
+        privateLayer:SetFrameLevel(level)
+        for pin in pairs(privatePins) do pin:SetFrameLevel(level + 1) end
+    end
+    local scale = canvas:GetEffectiveScale() / privateLayer:GetEffectiveScale()
+    local width, height = canvas:GetWidth() * scale, canvas:GetHeight() * scale
+    if canvas ~= pinCanvas or width ~= pinWidth or height ~= pinHeight then
+        pinCanvas, pinWidth, pinHeight = canvas, width, height
+        for pin, point in pairs(privatePins) do anchorPrivatePin(pin, point) end
+    end
+end
+
+function source:AddPrivatePin(pin, x, y)
+    if not privateLayer then
+        local viewport = WorldMapFrame.ScrollContainer
+        privateLayer = CreateFrame("Frame", nil, viewport)
+        privateLayer:SetAllPoints()
+        privateLayer:SetClipsChildren(true)
+        privateLayer:EnableMouse(false)
+        privateLayer:SetFrameLevel(viewport:GetFrameLevel() + 101)
+    end
+    -- These pins have their own hover handling and never enter Blizzard's gamepad pin list.
+    updatePrivatePins()
+    local point = { x = x, y = y }
+    privatePins[pin] = point
+    pin:SetParent(privateLayer)
+    pin:SetFrameLevel(privateLayer:GetFrameLevel() + 1)
+    pin:ClearAllPoints()
+    anchorPrivatePin(pin, point)
+    pin:Show()
+end
+
+function source:RemovePrivatePin(pin)
+    if not privatePins[pin] then return false end
+    privatePins[pin] = nil
+    pin:Hide()
+    pin:ClearAllPoints()
+    pin:SetParent(UIParent)
+    return true
+end
+
 -- Filter used on the worldmap
 local WorldmapFilter = function(node)
     if not GatherLite.db.char.worldmap.enabled then
@@ -110,8 +170,12 @@ local function CreateWorldmapNode(node)
         GatherLite:hideTooltip()
     end)
 
-    -- Register against the viewed map: HBD otherwise hides sibling-zone pins.
-    Pins:AddWorldMapIconMap(_GatherLite.name, f, worldmapID, x, y);
+    if source:UsesPrivatePins() then
+        source:AddPrivatePin(f, x, y)
+    else
+        -- Register against the viewed map: HBD otherwise hides sibling-zone pins.
+        Pins:AddWorldMapIconMap(_GatherLite.name, f, worldmapID, x, y)
+    end
     if _GatherLite.MapHover then _GatherLite.MapHover:Register(f, true) end
 
     GatherLite:SendMessage("nodes:load")
@@ -445,6 +509,7 @@ source.setup = function()
 
     frame:SetScript("OnUpdate", function(_, elapsed)
         local openMap = _GatherLite.OpenMap
+        if next(privatePins) and WorldMapFrame:IsVisible() then updatePrivatePins() end
         if openMap and WorldMapFrame:IsVisible() and openMap:IsStitched() then
             if not stitchedWasOpen then
                 HideZoneList()
