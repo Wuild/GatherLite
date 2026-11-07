@@ -9,6 +9,7 @@ local SourceName = "Minimap"
 
 local timeDiff = 0
 local checkDiff = 0
+local lastMapID, lastInstanceID
 
 local threadMining
 local threadHerbalism
@@ -55,21 +56,26 @@ local function HideNearbyNode(distance)
     return settings.hideNearbyNodes == true and distance < settings.distance
 end
 
+local function GetPlayerLocation()
+    local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
+    local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition(true)
+    if (worldX == nil or worldY == nil or instanceID == nil) and zoneX and zoneY and mapID then
+        worldX, worldY, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
+    end
+    return worldX, worldY, instanceID, zoneX, zoneY, mapID
+end
+
 local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
     local nodes = GatherLite:GetNearbyZoneNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
     local out = {}
 
     for i = 1, #nodes do
         local node = nodes[i]
-        if not node.instance then
+        if not node.instance or not node.worldX or not node.worldY then
             GatherLite:EnsureNodeWorld(node)
         end
 
-        if node.instance == instanceID and filter(node) then
-            if not node.worldX or not node.worldY then
-                GatherLite:EnsureNodeWorld(node)
-            end
-
+        if node.instance == instanceID and node.worldX and node.worldY and filter(node) then
             local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
             if distance and distance < maxDist and not HideNearbyNode(distance) then
                 out[#out + 1] = node
@@ -115,8 +121,7 @@ local function CreateMinimapNode(node, worldX, worldY, instanceID)
         GatherLite:hideTooltip()
     end)
 
-    local x, y, instance = HBD:GetWorldCoordinatesFromZone(node.posX, node.posY, node.mapID)
-    Pins:AddMinimapIconWorld(_GatherLite.name, f, instance, x, y, GatherLite.db.char.minimap.edge)
+    Pins:AddMinimapIconWorld(_GatherLite.name, f, node.instance, node.worldX, node.worldY, GatherLite.db.char.minimap.edge)
     return f;
 end
 
@@ -137,11 +142,7 @@ end
 local function createNodeThread(type)
     if not GatherLite.db.char.minimap.enabled or not GatherLite:GetNodeTracking("minimap", type)
         or IsInInstance() then return end
-    local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
-    local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
-    if (worldX == nil or worldY == nil or instanceID == nil) and zoneX ~= nil and zoneY ~= nil and mapID then
-        worldX, worldY, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
-    end
+    local worldX, worldY, instanceID, zoneX, zoneY, mapID = GetPlayerLocation()
 
     if worldX == nil or worldY == nil or instanceID == nil or zoneX == nil or zoneY == nil or not mapID then
         return
@@ -174,15 +175,14 @@ local function fishingThread()
     createNodeThread("fishing")
 end
 
-local function UpdateMinimapIcons()
-    local x, y, instanceID = HBD:GetPlayerWorldPosition()
-    if (x == nil or y == nil or instanceID == nil) then
-        local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
-        if zoneX ~= nil and zoneY ~= nil and mapID then
-            x, y, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
-        end
-    end
+local function RestartNodeWorkers()
+    threadMining = coroutine.create(miningThread)
+    threadHerbalism = coroutine.create(herbalismThread)
+    threadContainer = coroutine.create(containerThread)
+    threadFishing = coroutine.create(fishingThread)
+end
 
+local function UpdateMinimapIcons(x, y, instanceID)
     if x == nil or y == nil or instanceID == nil then
         return
     end
@@ -267,10 +267,7 @@ local function Update(timeDelta, force)
         updateNodes = true
         debugState.lastForceUpdate = GetTime()
 
-        threadMining = coroutine.create(miningThread)
-        threadHerbalism = coroutine.create(herbalismThread)
-        threadContainer = coroutine.create(containerThread)
-        threadFishing = coroutine.create(fishingThread)
+        RestartNodeWorkers()
 
         checkDiff, timeDiff = 0, 0
     else
@@ -284,6 +281,27 @@ local function Update(timeDelta, force)
             updateIcons = true
             timeDiff = 0
         end
+    end
+
+    local worldX, worldY, instanceID
+    if updateIcons then
+        local zoneX, zoneY, mapID
+        worldX, worldY, instanceID, zoneX, zoneY, mapID = GetPlayerLocation()
+        if not worldX or not worldY or not instanceID or not zoneX or not zoneY or IsInInstance() then
+            mapID = nil
+        end
+        local mapInstance = mapID and instanceID
+        if mapID ~= lastMapID or mapInstance ~= lastInstanceID then
+            lastMapID, lastInstanceID = mapID, mapInstance
+            if mapID then
+                -- Recover from loading screens and discard unfinished scans of the previous zone.
+                if not force then RestartNodeWorkers() end
+                updateNodes = true
+                checkDiff = 0
+            end
+        end
+        debugState.lastIconsUpdate = GetTime()
+        debugState.lastIconsTick = timeDelta or 0
     end
 
     if (updateNodes) then
@@ -306,22 +324,13 @@ local function Update(timeDelta, force)
         end
     end
 
-    if updateIcons then
-        debugState.lastIconsUpdate = GetTime()
-        debugState.lastIconsTick = timeDelta or 0
-    end
-
     -- Only active node workers need resuming between their five-second scans.
     if coroutine.status(threadMining) ~= "dead" then coroutine.resume(threadMining) end
     if coroutine.status(threadHerbalism) ~= "dead" then coroutine.resume(threadHerbalism) end
     if coroutine.status(threadContainer) ~= "dead" then coroutine.resume(threadContainer) end
     if coroutine.status(threadFishing) ~= "dead" then coroutine.resume(threadFishing) end
 
-    if updateIcons then UpdateMinimapIcons() end
-end
-
-local function LoadMinimap()
-    Update(0, true)
+    if updateIcons then UpdateMinimapIcons(worldX, worldY, instanceID) end
 end
 
 -- Module setup
@@ -329,20 +338,11 @@ source.setup = function()
     GatherLite:debug(_GatherLite.DEBUG_DEFAULT, "Loaded minimap module")
     GatherLite.minimapDebug = debugState
 
-    threadMining = coroutine.create(miningThread)
-    threadHerbalism = coroutine.create(herbalismThread)
-    threadContainer = coroutine.create(containerThread)
-    threadFishing = coroutine.create(fishingThread)
-
-    LoadMinimap();
+    RestartNodeWorkers()
 
     GatherLite:On("nodes:added", function(node)
         if not node or node.loaded or not MinimapFilter(node) or IsInInstance() then return end
-        local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
-        local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
-        if (worldX == nil or worldY == nil or instanceID == nil) and zoneX ~= nil and zoneY ~= nil and mapID then
-            worldX, worldY, instanceID = HBD:GetWorldCoordinatesFromZone(zoneX, zoneY, mapID)
-        end
+        local worldX, worldY, instanceID, _, _, mapID = GetPlayerLocation()
         if worldX == nil or worldY == nil or instanceID == nil or not mapID then return end
         local allowed = node.mapID == mapID
         local zone = GatherLite:GetZoneTree()[mapID]
@@ -358,7 +358,7 @@ source.setup = function()
         if not distance or distance >= GatherLite.db.char.minimap.range or HideNearbyNode(distance) then return end
         node.loaded = CreateMinimapNode(node, worldX, worldY, instanceID) ~= nil
         -- Recluster visible icons, retaining the existing discovery workers and timers.
-        if node.loaded then UpdateMinimapIcons() end
+        if node.loaded then UpdateMinimapIcons(worldX, worldY, instanceID) end
     end)
 
     local frame = CreateFrame("Frame")

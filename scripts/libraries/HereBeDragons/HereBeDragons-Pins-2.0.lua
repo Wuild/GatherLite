@@ -127,6 +127,7 @@ local indoors = GetCVar("minimapZoom")+0 == pins.Minimap:GetZoom() and "outdoor"
 local minimapPinCount, queueFullUpdate = 0, false
 local minimapScale, minimapShape, mapRadius, minimapWidth, minimapHeight, mapSin, mapCos
 local lastZoom, lastFacing, lastXY, lastYY
+local lastMapID, lastInstanceID
 
 local function drawMinimapPin(pin, data)
     local xDist, yDist = lastXY - data.x, lastYY - data.y
@@ -202,7 +203,10 @@ local function UpdateMinimapPins(force)
 
     -- get data from the API for calculations
     local zoom = pins.Minimap:GetZoom()
-    local diffZoom = zoom ~= lastZoom
+    local scale = pins.Minimap:GetScale()
+    local shape = GetMinimapShape and minimap_shapes[GetMinimapShape() or "ROUND"]
+    local width, height = pins.Minimap:GetWidth() / 2, pins.Minimap:GetHeight() / 2
+    local radius = MinimapRadiusAPI and MinimapRadiusAPI() or minimap_size[indoors][zoom] / 2
 
     -- for rotating minimap support
     local facing
@@ -212,8 +216,10 @@ local function UpdateMinimapPins(force)
         facing = lastFacing
     end
 
-    -- check for all values to be available (starting with 7.1.0, instances don't report coordinates)
-    if not x or not y or (rotateMinimap and not facing) then
+    if not x or not y or not instanceID or (rotateMinimap and not facing)
+        or radius <= 0 or width <= 0 or height <= 0 then
+        -- Redraw registered pins when the map is ready, even without movement.
+        lastXY, lastYY = nil, nil
         minimapPinCount = 0
         for pin in pairs(activeMinimapPins) do
             pin:Hide()
@@ -222,24 +228,14 @@ local function UpdateMinimapPins(force)
         return
     end
 
-    local newScale = pins.Minimap:GetScale()
-    if minimapScale ~= newScale then
-        minimapScale = newScale
-        force = true
-    end
-
-    if x ~= lastXY or y ~= lastYY or diffZoom or facing ~= lastFacing or force then
-        -- minimap information
-        minimapShape = GetMinimapShape and minimap_shapes[GetMinimapShape() or "ROUND"]
-        minimapWidth = pins.Minimap:GetWidth() / 2
-        minimapHeight = pins.Minimap:GetHeight() / 2
-        if MinimapRadiusAPI then
-            mapRadius = C_Minimap.GetViewRadius()
-        else
-            mapRadius = minimap_size[indoors][zoom] / 2
-        end
+    local layoutChanged = zoom ~= lastZoom or scale ~= minimapScale or shape ~= minimapShape
+        or width ~= minimapWidth or height ~= minimapHeight or radius ~= mapRadius
+    if force or layoutChanged or mapID ~= lastMapID or instanceID ~= lastInstanceID
+        or x ~= lastXY or y ~= lastYY or facing ~= lastFacing then
+        minimapScale, minimapShape, mapRadius, minimapWidth, minimapHeight = scale, shape, radius, width, height
 
         -- update upvalues for icon placement
+        lastMapID, lastInstanceID = mapID, instanceID
         lastZoom = zoom
         lastFacing = facing
         lastXY, lastYY = x, y
@@ -285,7 +281,7 @@ local function UpdateMinimapIconPosition()
     -- we have no active minimap pins, just return early
     if minimapPinCount == 0 then return end
 
-    local x, y = HBD:GetPlayerWorldPosition()
+    local x, y, instanceID = HBD:GetPlayerWorldPosition()
 
     -- for rotating minimap support
     local facing
@@ -296,25 +292,13 @@ local function UpdateMinimapIconPosition()
     end
 
     -- check for all values to be available (starting with 7.1.0, instances don't report coordinates)
-    if not x or not y or (rotateMinimap and not facing) then
+    if not x or not y or (rotateMinimap and not facing)
+        or instanceID ~= lastInstanceID or pins.Minimap:GetScale() ~= minimapScale then
         UpdateMinimapPins()
         return
     end
 
-    local refresh
-    local newScale = pins.Minimap:GetScale()
-    if minimapScale ~= newScale then
-        minimapScale = newScale
-        refresh = true
-    end
-
-    if x ~= lastXY or y ~= lastYY or facing ~= lastFacing or refresh then
-        -- update radius of the map
-        if MinimapRadiusAPI then
-            mapRadius = C_Minimap.GetViewRadius()
-        else
-            mapRadius = minimap_size[indoors][zoom] / 2
-        end
+    if x ~= lastXY or y ~= lastYY or facing ~= lastFacing then
         -- update upvalues for icon placement
         lastXY, lastYY = x, y
         lastFacing = facing

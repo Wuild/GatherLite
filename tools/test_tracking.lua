@@ -58,7 +58,12 @@ IsInInstance = function() return false end
 tinsert, tremove = table.insert, table.remove
 local pins = { minimap = {}, worldmap = {} }
 local pinAdds, pinRemoves = 0, 0
-function pins:AddMinimapIconWorld(_, frame) pinAdds=pinAdds+1; self.minimap[frame] = true; frame:Show() end
+function pins:AddMinimapIconWorld(_, frame, instance, x, y)
+    assert(type(instance) == "number" and type(x) == "number" and type(y) == "number", "invalid minimap pin position")
+    pinAdds = pinAdds + 1
+    self.minimap[frame] = true
+    frame:Show()
+end
 function pins:AddWorldMapIconMap(_, frame) pinAdds=pinAdds+1; self.worldmap[frame] = true; frame:Show() end
 function pins:RemoveMinimapIcon(_, frame) pinRemoves=pinRemoves+1; self.minimap[frame] = nil end
 function pins:RemoveWorldMapIcon(_, frame) pinRemoves=pinRemoves+1; self.worldmap[frame] = nil end
@@ -666,8 +671,12 @@ do
     -- Promotion of an already visible reference node keeps its runtime identity.
     GatherLite.db.global.usePredefined = true
     GatherLite:Trigger("settings:update")
-    for step = 1, 10 do tick(.01) end
     local reference = GatherLite:findExistingLocalNode("herbalism", 1429, .6, .6, objects[2])
+    for step = 1, 600 do
+        if reference.loaded and reference.loadedWorldmap then break end
+        tick(0)
+    end
+    assert(reference.loaded and reference.loadedWorldmap, "reference pin must be visible before promotion")
     local added, removed = pinAdds, pinRemoves
     GatherLite:RegisterNode("herbalism", objects[2], 1429, .6, .6)
     assert(reference.predefined == false and reference.loaded and reference.loadedWorldmap,
@@ -702,3 +711,144 @@ do
 end
 print("Personal node registration passed: predefined disabled, immediate map refresh and repeat gathers")
 print("Gather refresh work: two pin additions, zero removals, zero map/discovery rescans; visible promotion reuses both pins")
+
+do
+    WorldMapFrame:Hide()
+    tick(.01)
+    local hbd = libraries["HereBeDragons-2.0"]
+    local originalWorld, originalZone = hbd.GetPlayerWorldPosition, hbd.GetPlayerZonePosition
+    local originalProjection = hbd.GetWorldCoordinatesFromZone
+    local hasPosition, mapID = false, 1429
+    hbd.GetPlayerWorldPosition = function()
+        if hasPosition then return mapID == 998 and 1010 or 500, 500, 0 end
+    end
+    hbd.GetPlayerZonePosition = function(_, allowOutOfBounds)
+        if not hasPosition then return end
+        if mapID == 998 then
+            if allowOutOfBounds then return 1.01, .5, mapID end
+        else
+            return .5, .5, mapID
+        end
+    end
+    GatherLite.db.char.minimap.tracking.mining = true
+    GatherLite:Trigger("settings:update")
+    tick(.1)
+    assert(count("minimap", 1731) == 0, "no pins should be discovered without a position")
+
+    hasPosition = true
+    tick(1.1)
+    assert(count("minimap", 1731) > 0, "first position should trigger discovery before the five-second scan")
+
+    local destination = { type = "mining", object = 1731, mapID = 998, posX = .99, posY = .5,
+        worldX = 990, worldY = 500, instance = 0 }
+    GatherLite:LoadTable("mining", { destination })
+    hbd.GetWorldCoordinatesFromZone = function(self, x, y, zone)
+        if zone == 998 and x == destination.posX and y == destination.posY then return end
+        return originalProjection(self, x, y, zone)
+    end
+    mapID = 998
+    tick(1.1)
+    assert(destination.loaded, "discovery should recover at a zone edge and reuse valid cached pin coordinates")
+    hbd.GetPlayerWorldPosition, hbd.GetPlayerZonePosition = originalWorld, originalZone
+    hbd.GetWorldCoordinatesFromZone = originalProjection
+end
+
+-- Exercise the bundled renderer as well as the mock registry used above.
+do
+    local hasPosition = true
+    local instance, width, radius = 0, 140, 100
+    local mapID, shape, facing = 1429, "ROUND", 0
+    local hbd = libraries["HereBeDragons-2.0"]
+    hbd.GetPlayerWorldPosition = function()
+        if hasPosition then return 500, 500, instance end
+    end
+    hbd.GetPlayerZone = function() return mapID end
+    hbd.RegisterCallback = noop
+    GetCVar = function() return "0" end
+    C_Minimap = { GetViewRadius = function() return radius end }
+    Minimap.GetZoom = function() return 0 end
+    Minimap.GetScale = function() return 1 end
+    Minimap.GetWidth = function() return width end
+    Minimap.GetHeight = function() return 140 end
+    GetMinimapShape = function() return shape end
+    GetPlayerFacing = function() return facing end
+    WorldMapFrame.GetCanvas = function(self) return self end
+    WorldMapFrame.AddDataProvider = noop
+    WorldMapFrame.pinPools = {}
+    local updateFrame = makeFrame()
+    updateFrame.UnregisterAllEvents = noop
+    updateFrame.RegisterEvent = noop
+    CreateFrame = function() return updateFrame end
+    CreateFramePool = function() return {} end
+    CreateFromMixins = function() return {} end
+
+    assert(loadfile("scripts/libraries/HereBeDragons/HereBeDragons-Pins-2.0.lua"))()
+    local library = LibStub("HereBeDragons-Pins-2.0")
+    local function makePin()
+        local pin = makeFrame()
+        pin.SetParent = function(self, parent) self.parent = parent end
+        pin.ClearAllPoints = noop
+        pin:Hide()
+        return pin
+    end
+    local pin = makePin()
+    library:AddMinimapIconWorld("GatherLite", pin, 0, 575, 500)
+    local update = updateFrame.scripts.OnUpdate
+    update(updateFrame, .1)
+    assert(pin:IsShown(), "registered pin should start visible")
+
+    hasPosition = false
+    update(updateFrame, .1)
+    assert(not pin:IsShown(), "pin should hide while the player position is unavailable")
+    hasPosition = true
+    update(updateFrame, 1.1)
+    assert(pin:IsShown(), "registered pin should recover without movement or zoom changes")
+
+    local offset = pin.point[4]
+    width = width * 2
+    update(updateFrame, 1.1)
+    assert(pin.point[4] == offset * 2, "resizing the minimap must update stationary pin offsets")
+
+    radius = 80
+    update(updateFrame, 1.1)
+    assert(not pin:IsShown(), "a smaller radius must clip a pin even at the same zoom")
+    radius = 100
+    update(updateFrame, 1.1)
+    assert(pin:IsShown(), "restoring the radius must show the pin again")
+
+    instance = 1
+    update(updateFrame, .1)
+    assert(not pin:IsShown(), "an instance change must hide pins even at identical coordinates")
+    instance = 0
+    update(updateFrame, 1.1)
+    assert(pin:IsShown(), "returning to the original instance must restore its pins")
+
+    local zonePin, cornerPin = makePin(), makePin()
+    library:AddMinimapIconMap("GatherLite", zonePin, 1429, .55, .5)
+    library:AddMinimapIconWorld("GatherLite", cornerPin, 0, 575, 575)
+    update(updateFrame, .1)
+    assert(zonePin:IsShown() and not cornerPin:IsShown(), "round minimap should clip corner pins")
+    mapID = 1431
+    update(updateFrame, 1.1)
+    assert(not zonePin:IsShown(), "map-scoped pins should hide after a stationary map change")
+    shape = "SQUARE"
+    update(updateFrame, 1.1)
+    assert(cornerPin:IsShown(), "square minimap should show corner pins")
+    shape = "ROUND"
+    update(updateFrame, 1.1)
+    assert(not cornerPin:IsShown(), "returning to round minimap should clip corner pins again")
+    mapID = 1429
+    update(updateFrame, 1.1)
+    assert(zonePin:IsShown(), "returning to the original map should restore map-scoped pins")
+
+    updateFrame.scripts.OnEvent(updateFrame, "CVAR_UPDATE", "rotateMinimap", "1")
+    update(updateFrame, .1)
+    assert(pin:IsShown())
+    facing = nil
+    update(updateFrame, .1)
+    assert(not pin:IsShown(), "rotating minimap must wait for facing data")
+    facing = 0
+    update(updateFrame, 1.1)
+    assert(pin:IsShown(), "rotating minimap should recover when the same facing returns")
+end
+print("Minimap pins recover after position loss, geometry changes and instance transitions")

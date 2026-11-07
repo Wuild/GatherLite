@@ -564,13 +564,10 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"DISPLAY DEFAULTS",{
-            "The world map resource pane starts closed by default. Left-click the GatherLite map button to open it.",
-            "HUD GPS is off by default. Enable Show HUD GPS under Settings > HUD GPS to display the compass.",
-            "Removed the donation popup that appeared on login after an update.",
-        }},
-        {"WORLD MAP CONTROLLER SUPPORT",{
-            "Improved gamepad compatibility when closing the world map with gathering or fishing pins visible or the resource search focused.",
+        {"MINIMAP",{
+            "Gathering pins reappear after the game briefly loses your position, even while you stand still.",
+            "Nearby gathering locations load sooner after login or a zone change.",
+            "Pins stay aligned when the minimap changes size, shape, or visible range.",
         }},
     }
     local y=0
