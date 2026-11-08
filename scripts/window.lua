@@ -117,7 +117,6 @@ function Window:SelectObject(object, keepMap)
     end
     self.object=object
     self.selectedObjects=object.type=="fish" and {} or object.objects or {object}
-    if addon.GatheringTracking then addon.GatheringTracking:Prefer(object.type) end
     self:CollectLocations()
     self.selection:SetText(objectName(object))
     self:SetMap(keepMap and self.mapID or self.zones[1] or C_Map.GetBestMapForUnit("player"))
@@ -320,7 +319,6 @@ function Window:CreateMap(page)
     self.resourceCategory="all"
     local categoryBar, categoryButtons=UI.ResourceCategories(sidebar,248,36,7,function(key)
         self.resourceCategory=key
-        if addon.GatheringTracking then addon.GatheringTracking:Prefer(key) end
         self.list:SetVerticalScroll(0)
         self:RefreshList()
     end)

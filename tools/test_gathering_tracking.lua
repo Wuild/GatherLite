@@ -18,17 +18,23 @@ local skills,ready={},true
 C_SkillInfo={GetNumSkillLines=function() return ready and 5 or 0 end,
     GetSkillLineInfoByID=function(id) return skills[id] and {rank=skills[id]} end}
 local entries,calls={},{}
+local exclusive=true
 C_Minimap={GetNumTrackingTypes=function() return #entries end,
     GetTrackingInfo=function(i) return entries[i] end,
     SetTracking=function(i,on)
         assert(not combat and not dead)
         calls[#calls+1]=i
-        for _,entry in ipairs(entries) do entry.active=false end
+        if on and exclusive then
+            for _,entry in ipairs(entries) do
+                if entry.type~="other" then entry.active=false end
+            end
+        end
         entries[i].active=on
     end}
 local refreshes=0
 GatherLite={db={char={minimap={tracking={}},worldmap={tracking={}}}},
-    Trigger=function() refreshes=refreshes+1 end}
+    Trigger=function() refreshes=refreshes+1 end,
+    GetNodeTracking=function(self,target,kind) return self.db.char[target].tracking[kind]~=false end}
 assert(loadfile("scripts/tracking.lua"))("GatherLite",addon)
 local tracking=addon.GatheringTracking
 local function flush()
@@ -57,20 +63,25 @@ skills={}; tracking:UpdateProfessionFilters()
 assert(not char.minimap.tracking.mining and char.worldmap.tracking.mining,
     "profession changes must preserve manual per-map filters")
 entries={{spellID=2580,active=false},{spellID=2383,active=false},{spellID=123,active=false}}
+char.gatherTrackingKind="ore" -- Legacy preference must never override the minimap filters.
 char.autoGatherTracking=false; tracking:Check(); assert(#calls==0,"explicitly disabled tracking must stay disabled")
 char.autoGatherTracking=nil -- Missing preference uses the enabled default.
 combat=true; tracking:Check(); assert(#calls==0)
 combat=false; dead=true; tracking:Check(); assert(#calls==0)
-dead=false; tracking:Check(); assert(#calls==1 and calls[1]==1)
-tracking:Check(); assert(#calls==1,"active mode must not be reactivated")
-tracking:Prefer("herb"); tracking:Schedule(); assert(#timers==1,"events must coalesce")
-flush(); assert(#calls==2 and calls[2]==2)
-tracking:Check(); assert(#calls==2,"mutually exclusive modes must not alternate")
-combat=true; tracking:Prefer("ore"); flush(); assert(#calls==2)
+dead=false; tracking:Check(); assert(#calls==1 and calls[1]==2 and entries[2].active,
+    "auto tracking must follow the minimap even when the world map and legacy preference differ")
+tracking:Check(true); assert(#calls==1,"an unchecked spell must stay off on the ticker")
+char.minimap.tracking.herbalism=false
+tracking:Schedule(); tracking:Schedule(); assert(#timers==1,"events must coalesce")
+flush(); assert(#calls==2 and not entries[2].active,"unchecking an active tracker must turn it off")
+tracking:Check(true); assert(#calls==2,"when both boxes are unchecked, neither spell may be restored")
+char.minimap.tracking.mining=true
+combat=true; tracking:Schedule(); flush(); assert(#calls==2)
 combat=false; events.dispatch(nil,"PLAYER_REGEN_ENABLED"); flush()
-assert(#calls==3 and calls[3]==1,"preferred mode must restore after combat")
+assert(#calls==3 and calls[3]==1 and entries[1].active,"checked mode must restore after combat")
+char.minimap.tracking.herbalism=true
 entries={{spellID=2383,active=false}}; tracking:Check()
-assert(#calls==4 and entries[1].active,"unlearned preference must fall back to an available gathering spell")
+assert(#calls==4 and entries[1].active,"a checked but unavailable spell must not block the other tracker")
 entries={{spellID=999,active=false}}; tracking:Check(); assert(#calls==4)
 
 -- Never override another active tracker, such as a hunter's tracking ability.
@@ -103,7 +114,6 @@ events.dispatch(nil,"PLAYER_ENTERING_WORLD",false,false); flush()
 assert(#tickers==1,"zone changes must not create duplicate tickers")
 local ticker=tickers[1]
 entries={{spellID=2580,active=false}}
-char.gatherTrackingKind="ore"
 local before=#calls
 ticker.tick(); assert(#calls==before,"disabled automation must not activate on interval")
 char.autoGatherTracking=true
@@ -114,8 +124,35 @@ ticker.tick(); assert(#calls==before+1,"interval must leave active tracking alon
 entries[1].active=false
 tracking:Schedule(); ticker.tick(); assert(#calls==before+1,"interval must yield to a pending event check")
 flush(); assert(#calls==before+2)
-assert(not char.minimap.tracking.mining,"periodic spell checks must preserve manual filters")
+assert(char.minimap.tracking.mining and char.minimap.tracking.herbalism,
+    "periodic spell checks must preserve manual filters")
 print("Periodic tracking passed: five-second recovery, disabled setting, combat/death, active spells and single ticker")
+
+entries={{spellID=2580,active=true},{spellID=2383,active=false}}
+before=#calls
+events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush()
+assert(#calls==before,"tracking events must leave the current checked tracker active")
+ticker.tick()
+assert(#calls==before+1 and entries[2].active and not entries[1].active,
+    "exclusive trackers must give Herbalism a turn on the ticker")
+events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush()
+assert(#calls==before+1 and entries[2].active,"a switch must not cause an immediate switch back")
+ticker.tick()
+assert(#calls==before+2 and entries[1].active and not entries[2].active,
+    "exclusive trackers must give Mining a turn on the ticker")
+
+exclusive=false
+ticker.tick()
+assert(#calls==before+3 and entries[1].active and entries[2].active,
+    "both checked trackers must stay active when the client allows it")
+ticker.tick()
+assert(#calls==before+3,"concurrent active trackers must be left alone")
+char.minimap.tracking.herbalism=false
+tracking:Schedule(); flush(); ticker.tick()
+assert(#calls==before+4 and entries[1].active and not entries[2].active,
+    "disabling one concurrent tracker must leave the other active")
+exclusive=true
+print("Dual tracking passed: rotation, event stability, concurrent tracking and independent toggles")
 
 -- Forever's ordinary filters coexist with profession tracking. They must not
 -- suppress recovery after resurrection on a character with Mining only.

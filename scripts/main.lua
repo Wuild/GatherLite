@@ -8,9 +8,10 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
     text = "Gatherlite",
     icon = "Interface\\Icons\\inv_misc_spyglass_02",
 
-    OnClick = function(self, button)
+    OnClick = function(_, button)
         if button == "LeftButton" then
-            GatherLite:OpenTrackingMenu(self, "minimap")
+            -- Button drawers can hide the launcher before the menu receives the click.
+            GatherLite:OpenTrackingMenu(UIParent, "minimap")
         elseif button == "RightButton" then
             Menu.GetManager():CloseMenus()
             GatherLite:ShowSettings()

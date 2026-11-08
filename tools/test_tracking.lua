@@ -170,11 +170,20 @@ assert(worldButton.point[2] == questie, "hidden peers must leave no gap")
 questie:Hide()
 tick(.16)
 assert(worldButton.point[2] == mapPin, "return to the native pin when all peers are hidden")
+local minimapDrawer = makeFrame(UIParent)
+local groupedMinimapButton = makeFrame(minimapDrawer)
 local function click(target, index)
     menu = {}
     if target == "minimap" then
-        minimapButton.OnClick(Minimap, "LeftButton")
-        assert(menuOwner == Minimap, "minimap menu lost its button owner")
+        minimapDrawer:Show()
+        minimapButton.OnClick(groupedMinimapButton, "LeftButton")
+        -- Minimap drawers can hide on mouse-down, before the menu receives mouse-up.
+        minimapDrawer:Hide()
+        local owner = menuOwner
+        while owner do
+            assert(owner:IsShown(), "minimap menu closes before the checkbox receives the click")
+            owner = owner:GetParent()
+        end
     else
         GatherLiteWorldmapButton.scripts.OnClick(GatherLiteWorldmapButton, "RightButton")
         assert(menuOwner == GatherLiteWorldmapButton, "worldmap menu lost its button owner")
@@ -200,12 +209,19 @@ local function count(target, object)
     end
     return n
 end
+local gatheringChecks = 0
+addon.GatheringTracking = { Schedule = function() gatheringChecks = gatheringChecks + 1 end }
 for i, kind in ipairs(kinds) do
+    local checksBefore = gatheringChecks
+    local changesGatheringSpell = kind == "mining" or kind == "herbalism"
     click("worldmap", i)
+    assert(gatheringChecks == checksBefore, "world map filter must not change live gathering tracking")
     assert(GatherLite:GetNodeTracking("worldmap", kind), "menu failed to enable " .. kind)
     assert(count("worldmap", objects[i]) == 1, "enabling lazy " .. kind .. " must draw a worldmap pin immediately")
     assert(not GatherLite:GetNodeTracking("minimap", kind), "worldmap menu changed minimap preference")
     click("minimap", i)
+    assert(gatheringChecks == checksBefore + (changesGatheringSpell and 1 or 0),
+        "minimap menu must promptly check live tracking for Mining and Herbalism only")
     assert(count("minimap", objects[i]) == 1, "minimap menu did not draw " .. kind)
     click("worldmap", i)
     assert(count("worldmap", objects[i]) == 0, "worldmap pin remained after disabling " .. kind)
@@ -227,7 +243,10 @@ for i, kind in ipairs(kinds) do
     assert(count("minimap", objects[i]) == 0 and count("worldmap", objects[i]) == 1,
         "per-map settings are not independent")
     worldOption.set(nil, false)
+    assert(gatheringChecks == checksBefore + (changesGatheringSpell and 4 or 0),
+        "both the minimap menu and the settings panel must schedule live gathering changes")
 end
+addon.GatheringTracking = nil
 -- Moving toward a known location leaves an outline; moving away restores its icon.
 local circle = "Interface\\AddOns\\GatherLite\\icons\\track_circle"
 local distanceOption = options.args.minimap.args.sliders.args.iconRange

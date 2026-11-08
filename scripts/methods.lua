@@ -940,6 +940,10 @@ function GatherLite:SetNodeTracking(target, nodeType, value)
     local tracking = ensureMapTracking(target)
     if tracking then
         tracking[nodeType] = value and true or false
+        if target == "minimap" and (nodeType == "mining" or nodeType == "herbalism")
+            and _GatherLite.GatheringTracking then
+            _GatherLite.GatheringTracking:Schedule()
+        end
         GatherLite:Trigger("settings:update")
         if _GatherLite.Window then _GatherLite.Window:RefreshSettings() end
     end
