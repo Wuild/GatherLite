@@ -22,4 +22,4 @@ Always update the main window's **What's New** content before publishing a new v
 
 ## Version numbering
 
-Use `MAJOR.MINOR.PATCH`. Increase MINOR and reset PATCH to zero when releasing new features (for example, `8.1.0`). Reserve PATCH increments for database updates (for example, `8.1.1`).
+Use `MAJOR.MINOR.PATCH`. Increase PATCH for every release unless the user explicitly requests a different version or increment.

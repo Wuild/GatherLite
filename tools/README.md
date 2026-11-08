@@ -28,7 +28,7 @@ After reviewing changes and running tests, build and upload:
 python tools/publish.py --version 8.0.1
 ```
 
-Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the minor version for new features and reserve patch increments for database updates. Always update the main window's What's New highlights before publishing (see `AGENTS.md`).
+Use `--changelog /path/to/notes.md` for optional Markdown release notes and `--env-file /path/to/credentials.env` for a different configuration file. Without notes, the publisher uses a short version/client description. Increase the patch version unless the user explicitly requests a different version or increment. Always update the main window's What's New highlights before publishing (see `AGENTS.md`).
 
 The publisher validates the addon load paths, resolves the exact CurseForge game-version IDs for all configured game versions, and uploads a Release to the configured project. The ZIP and checksum are created under `dist/`; the source TOC's `@project-version@` is replaced inside the package only. Uncommitted changes are included. Tests, commits, and tags are not run or created by the publisher.
 
