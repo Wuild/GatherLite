@@ -6,6 +6,7 @@ local spells = {
     [2580]={kind="mining",name="Find Minerals"},
     [2383]={kind="herbalism",name="Find Herbs"},
 }
+local requested = {}
 local function trackingSpell(index, info)
     if info.spellID then return info.spellID end
     local filter=C_Minimap.GetTrackingFilter and C_Minimap.GetTrackingFilter(index)
@@ -69,7 +70,18 @@ function Tracking:UpdateProfessionFilters()
     end
 end
 
-function Tracking:Check(allowSwitch)
+local function requestTracking(id, entry, enabled)
+    -- Wait for the client to report the change before sending another request.
+    if requested[id]==enabled then return end
+    requested[id]=enabled
+    local name=spells[id].name
+    debugState("spell action",(enabled and "Turning on " or "Turning off ")..name)
+    C_Minimap.SetTracking(entry.index,enabled)
+    local result=C_Minimap.GetTrackingInfo(entry.index)
+    if result and result.active==enabled then requested[id]=nil end
+end
+
+function Tracking:Check()
     local settings = GatherLite.db and GatherLite.db.char
     if not settings then return end
     debugState("spell preference","automatic="..tostring(settings.autoGatherTracking~=false))
@@ -84,7 +96,7 @@ function Tracking:Check(allowSwitch)
         if info then
             local id=trackingSpell(index,info)
             if spells[id] then
-                available[id]={name=spells[id].name,index=index,active=info.active}
+                available[id]={index=index,active=info.active}
             elseif info.active and (info.type=="spell" or id) then
                 otherActive=true
             end
@@ -92,6 +104,7 @@ function Tracking:Check(allowSwitch)
     end
     for _,id in ipairs(spellIDs) do
         local entry=available[id]
+        if not entry or entry.active==requested[id] then requested[id]=nil end
         debugState("spell "..id,spells[id].name..": "..(entry and (entry.active and "active" or "available, inactive") or "not available"))
     end
     if settings.autoGatherTracking==false then
@@ -100,37 +113,35 @@ function Tracking:Check(allowSwitch)
     end
     if InCombatLockdown() then debugState("spell action","Deferred until combat ends"); return end
     if UnitIsDeadOrGhost("player") then debugState("spell action","Deferred while dead or a ghost"); return end
-    local hasActive, nextSpell = false, nil
+    local active, candidate
+    local previous=settings.lastGatherTrackingSpell
     for _,id in ipairs(spellIDs) do
         local entry=available[id]
         if entry then
             if not GatherLite:GetNodeTracking("minimap",spells[id].kind) then
                 if entry.active then
-                    debugState("spell action","Turning off unchecked "..entry.name)
-                    C_Minimap.SetTracking(entry.index,false)
+                    requestTracking(id,entry,false)
                 end
             elseif entry.active then
-                hasActive=true
-            elseif not nextSpell then
-                nextSpell=entry
+                if not active or id==previous then active=id end
+            elseif not candidate or id==previous then
+                candidate=id
             end
         end
     end
+    if active then settings.lastGatherTrackingSpell=active end
     if otherActive then
         debugState("spell action","Preserving active non-gathering tracker")
         return
     end
-    -- Switch only on the ticker. The resulting tracking event must not switch
-    -- right back on clients that can only keep one gathering spell active.
-    if not nextSpell or (hasActive and not allowSwitch) then return end
-    local name=nextSpell.name
-    debugState("spell action","Requesting activation: "..name.." (index "..nextSpell.index..")")
-    C_Minimap.SetTracking(nextSpell.index,true)
-    local result=C_Minimap.GetTrackingInfo(nextSpell.index)
-    debugState("activation result",name..": "..(result and result.active and "active" or "awaiting tracking update"))
+    -- Forever switches tracking spells on the global cooldown. Keep any
+    -- checked tracker already active and restore only when tracking is lost.
+    if active or not candidate then return end
+    requestTracking(candidate,available[candidate],true)
 end
 
-function Tracking:Schedule()
+function Tracking:Schedule(preserveRequests)
+    if not preserveRequests then requested={} end
     if self.pending then return end
     self.pending=true
     C_Timer.After(.2,function()
@@ -147,7 +158,7 @@ function Tracking:StartInterval()
     self.ticker=C_Timer.NewTicker(5,function()
         local settings=GatherLite.db and GatherLite.db.char
         if settings and settings.autoGatherTracking~=false and not self.pending then
-            self:Check(true)
+            self:Check()
         end
     end)
 end
@@ -163,5 +174,6 @@ events:SetScript("OnEvent",function(_,event,initialLogin,reloadingUI)
         Tracking.debugState=nil
         debugState("startup",reloadingUI and "UI reload: checking professions and tracking spells" or "Login: checking professions and tracking spells")
     end
-    Tracking:Schedule()
+    local preserveRequests=event=="MINIMAP_UPDATE_TRACKING" or event=="SPELLS_CHANGED" or event=="SKILL_LINES_CHANGED"
+    Tracking:Schedule(preserveRequests)
 end)

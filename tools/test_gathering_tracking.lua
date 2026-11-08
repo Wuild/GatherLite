@@ -18,13 +18,14 @@ local skills,ready={},true
 C_SkillInfo={GetNumSkillLines=function() return ready and 5 or 0 end,
     GetSkillLineInfoByID=function(id) return skills[id] and {rank=skills[id]} end}
 local entries,calls={},{}
-local exclusive=true
+local ignoreRequests=false
 C_Minimap={GetNumTrackingTypes=function() return #entries end,
     GetTrackingInfo=function(i) return entries[i] end,
     SetTracking=function(i,on)
         assert(not combat and not dead)
         calls[#calls+1]=i
-        if on and exclusive then
+        if ignoreRequests then return end
+        if on then
             for _,entry in ipairs(entries) do
                 if entry.type~="other" then entry.active=false end
             end
@@ -70,11 +71,11 @@ combat=true; tracking:Check(); assert(#calls==0)
 combat=false; dead=true; tracking:Check(); assert(#calls==0)
 dead=false; tracking:Check(); assert(#calls==1 and calls[1]==2 and entries[2].active,
     "auto tracking must follow the minimap even when the world map and legacy preference differ")
-tracking:Check(true); assert(#calls==1,"an unchecked spell must stay off on the ticker")
+tracking:Check(); assert(#calls==1,"an unchecked spell must stay off on later checks")
 char.minimap.tracking.herbalism=false
 tracking:Schedule(); tracking:Schedule(); assert(#timers==1,"events must coalesce")
 flush(); assert(#calls==2 and not entries[2].active,"unchecking an active tracker must turn it off")
-tracking:Check(true); assert(#calls==2,"when both boxes are unchecked, neither spell may be restored")
+tracking:Check(); assert(#calls==2,"when both boxes are unchecked, neither spell may be restored")
 char.minimap.tracking.mining=true
 combat=true; tracking:Schedule(); flush(); assert(#calls==2)
 combat=false; events.dispatch(nil,"PLAYER_REGEN_ENABLED"); flush()
@@ -130,29 +131,42 @@ print("Periodic tracking passed: five-second recovery, disabled setting, combat/
 
 entries={{spellID=2580,active=true},{spellID=2383,active=false}}
 before=#calls
-events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush()
-assert(#calls==before,"tracking events must leave the current checked tracker active")
-ticker.tick()
-assert(#calls==before+1 and entries[2].active and not entries[1].active,
-    "exclusive trackers must give Herbalism a turn on the ticker")
-events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush()
-assert(#calls==before+1 and entries[2].active,"a switch must not cause an immediate switch back")
-ticker.tick()
-assert(#calls==before+2 and entries[1].active and not entries[2].active,
-    "exclusive trackers must give Mining a turn on the ticker")
+for _=1,3 do
+    events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush(); ticker.tick()
+end
+assert(#calls==before and entries[1].active and not entries[2].active,
+    "with both boxes checked, periodic checks must not switch spells and trigger the global cooldown")
 
-exclusive=false
+-- Simulate manually selecting Herbs from WoW's tracking menu, then dying.
+entries[1].active,entries[2].active=false,true
+events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush(); ticker.tick()
+assert(#calls==before and entries[2].active,"a manual switch must stay in effect")
+entries[2].active=false
+events.dispatch(nil,"PLAYER_UNGHOST"); flush(); ticker.tick()
+assert(#calls==before+1 and entries[2].active and not entries[1].active,
+    "restore the last active checked tracker once after resurrection")
+
+entries[1].active=true
 ticker.tick()
-assert(#calls==before+3 and entries[1].active and entries[2].active,
-    "both checked trackers must stay active when the client allows it")
-ticker.tick()
-assert(#calls==before+3,"concurrent active trackers must be left alone")
+assert(#calls==before+1 and entries[1].active and entries[2].active,
+    "concurrent active trackers must be left alone")
 char.minimap.tracking.herbalism=false
 tracking:Schedule(); flush(); ticker.tick()
-assert(#calls==before+4 and entries[1].active and not entries[2].active,
+assert(#calls==before+2 and entries[1].active and not entries[2].active,
     "disabling one concurrent tracker must leave the other active")
-exclusive=true
-print("Dual tracking passed: rotation, event stability, concurrent tracking and independent toggles")
+print("Dual tracking passed: stable tracking, manual selection, restoration and independent toggles")
+
+entries={{spellID=2580,active=false},{spellID=2383,active=false}}
+before=#calls
+ignoreRequests=true
+ticker.tick()
+for _=1,3 do
+    events.dispatch(nil,"MINIMAP_UPDATE_TRACKING"); flush(); ticker.tick()
+end
+assert(#calls==before+1,"unconfirmed tracking requests must not repeat on feedback events or timer ticks")
+ignoreRequests=false
+events.dispatch(nil,"PLAYER_REGEN_ENABLED"); flush(); ticker.tick()
+assert(#calls==before+2 and entries[1].active,"a new recovery event can retry a refused request")
 
 -- Forever's ordinary filters coexist with profession tracking. They must not
 -- suppress recovery after resurrection on a character with Mining only.

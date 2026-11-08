@@ -549,7 +549,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.2. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.3. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -563,10 +563,8 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"MINIMAP TRACKING",{
-            "The GatherLite tracking menu stays open when a minimap button drawer closes.",
-            "Automatic tracking follows the Mining and Herbalism minimap checkboxes. Uncheck either to turn off its tracking spell.",
-            "With both boxes checked, both learned spells stay active where supported. If the game allows only one, they alternate every five seconds outside combat.",
-            "Browsing resources no longer changes the active tracking spell.",
+            "Keeps your active gathering spell selected, fixing the repeated cooldowns and messages caused by switching between Find Minerals and Find Herbs.",
+            "Restores your last active gathering spell when tracking is lost, as long as its minimap checkbox is checked.",
         }},
     }
     local y=0
