@@ -551,7 +551,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.3.0. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.1. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -564,10 +564,9 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"MINIMAP",{
-            "Gathering pins reappear after the game briefly loses your position, even while you stand still.",
-            "Nearby gathering locations load sooner after login or a zone change.",
-            "Pins stay aligned when the minimap changes size, shape, or visible range.",
+        {"FOREVER GATHERING DATABASE",{
+            "Added 897 gathering locations across 26 resources, bringing the Forever database to 31,458 locations.",
+            "All 30,561 gathering locations from 8.4.0 are still available.",
         }},
     }
     local y=0
