@@ -549,7 +549,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.3.0. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.2. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -562,10 +562,11 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"MINIMAP",{
-            "Gathering pins reappear after the game briefly loses your position, even while you stand still.",
-            "Nearby gathering locations load sooner after login or a zone change.",
-            "Pins stay aligned when the minimap changes size, shape, or visible range.",
+        {"MINIMAP TRACKING",{
+            "The GatherLite tracking menu stays open when a minimap button drawer closes.",
+            "Automatic tracking follows the Mining and Herbalism minimap checkboxes. Uncheck either to turn off its tracking spell.",
+            "With both boxes checked, both learned spells stay active where supported. If the game allows only one, they alternate every five seconds outside combat.",
+            "Browsing resources no longer changes the active tracking spell.",
         }},
     }
     local y=0
