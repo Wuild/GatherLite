@@ -432,16 +432,6 @@ _GatherLite.SettingsOptions = {
             order = 3,
             args = {
                 tracking = mapTrackingOptions("minimap"),
-                autoGatherTracking = {
-                    name = function() return GatherLite:translate("settings.minimap.auto_tracking") end,
-                    desc = function() return GatherLite:translate("settings.minimap.auto_tracking.description") end,
-                    type = "toggle", order = 5.5, width = "full",
-                    set = function(_, value)
-                        GatherLite.db.char.autoGatherTracking = value
-                        if _GatherLite.GatheringTracking then _GatherLite.GatheringTracking:Schedule() end
-                    end,
-                    get = function() return GatherLite.db.char.autoGatherTracking ~= false end,
-                },
                 hideNearbyNodes = {
                     name = function() return GatherLite:translate("settings.minimap.hide_nearby") end,
                     desc = function() return GatherLite:translate("settings.minimap.hide_nearby.description") end,

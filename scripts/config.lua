@@ -64,7 +64,6 @@ _GatherLite.configsDefaults = {
     },
     char = {
         debugging = false,
-        autoGatherTracking = true,
         ignore = {},
         tracking = {
             mining = true,

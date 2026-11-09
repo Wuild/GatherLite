@@ -1,36 +1,14 @@
 local _, addon = ...
-local Tracking = {}
-addon.GatheringTracking = Tracking
-local spellIDs = {2580,2383}
-local spells = {
-    [2580]={kind="mining",name="Find Minerals"},
-    [2383]={kind="herbalism",name="Find Herbs"},
-}
-local requested = {}
-local function trackingSpell(index, info)
-    if info.spellID then return info.spellID end
-    local filter=C_Minimap.GetTrackingFilter and C_Minimap.GetTrackingFilter(index)
-    if filter and filter.spellID then return filter.spellID end
-    -- Some Forever entries omit spellID. Match client-localized spell data,
-    -- never English names, and never mistake a normal minimap filter for a spell.
-    if info.type=="spell" and C_Spell then
-        for _,id in ipairs(spellIDs) do
-            local name=C_Spell.GetSpellName and C_Spell.GetSpellName(id)
-            local texture=C_Spell.GetSpellTexture and C_Spell.GetSpellTexture(id)
-            if (name and info.name==name) or (texture and info.texture==texture) then return id end
-        end
-    end
-end
+local diagnostics = {}
 local function debugState(topic, text)
     local debug=GatherLite.db and GatherLite.db.global and GatherLite.db.global.debug
     if not debug or not debug.enabled or not debug.types or not debug.types[addon.DEBUG_DEFAULT] then return end
-    Tracking.debugState=Tracking.debugState or {}
-    if Tracking.debugState[topic]==text then return end
-    Tracking.debugState[topic]=text
+    if diagnostics[topic]==text then return end
+    diagnostics[topic]=text
     GatherLite:debug(addon.DEBUG_DEFAULT,"Gathering checks - "..topic..": "..text)
 end
 
-function Tracking:UpdateProfessionFilters()
+local function updateProfessionFilters()
     local settings=GatherLite.db and GatherLite.db.char
     if not settings then return end
     if not C_SkillInfo or not C_SkillInfo.GetSkillLineInfoByID or not C_SkillInfo.GetNumSkillLines
@@ -70,110 +48,171 @@ function Tracking:UpdateProfessionFilters()
     end
 end
 
-local function requestTracking(id, entry, enabled)
-    -- Wait for the client to report the change before sending another request.
-    if requested[id]==enabled then return end
-    requested[id]=enabled
-    local name=spells[id].name
-    debugState("spell action",(enabled and "Turning on " or "Turning off ")..name)
-    C_Minimap.SetTracking(entry.index,enabled)
-    local result=C_Minimap.GetTrackingInfo(entry.index)
-    if result and result.active==enabled then requested[id]=nil end
+local gatheringKinds = { [2580] = "mining", [2383] = "herbalism" }
+local function trackingSpellID(index, info)
+    if info.spellID then return info.spellID end
+    local filter = C_Minimap.GetTrackingFilter and C_Minimap.GetTrackingFilter(index)
+    if filter and filter.spellID then return filter.spellID end
+    -- Forever can omit the spell ID. Use client-localized spell data as a fallback.
+    if info.type == "spell" and C_Spell then
+        for id in pairs(gatheringKinds) do
+            local name = C_Spell.GetSpellName and C_Spell.GetSpellName(id)
+            local texture = C_Spell.GetSpellTexture and C_Spell.GetSpellTexture(id)
+            if (name and info.name == name) or (texture and info.texture == texture) then return id end
+        end
+    end
 end
 
-function Tracking:Check()
+local dismissed
+local function trackingChoices()
     local settings = GatherLite.db and GatherLite.db.char
-    if not settings then return end
-    debugState("spell preference","automatic="..tostring(settings.autoGatherTracking~=false))
-    if not C_Minimap or not C_Minimap.GetNumTrackingTypes or not C_Minimap.GetTrackingInfo
+    if dismissed or not settings or not settings.minimap or not settings.minimap.enabled or not Minimap
+        or IsInInstance() or UnitIsDeadOrGhost("player") or InCombatLockdown()
+        or not C_Minimap or not C_Minimap.GetNumTrackingTypes or not C_Minimap.GetTrackingInfo
         or not C_Minimap.SetTracking then
-        debugState("spells","Tracking API unavailable")
         return
     end
-    local available, otherActive = {}, false
-    for index=1,C_Minimap.GetNumTrackingTypes() do
-        local info=C_Minimap.GetTrackingInfo(index)
+    local choices, seen = {}, {}
+    local canTrack = false
+    for index = 1, C_Minimap.GetNumTrackingTypes() do
+        local info = C_Minimap.GetTrackingInfo(index)
         if info then
-            local id=trackingSpell(index,info)
-            if spells[id] then
-                available[id]={index=index,active=info.active}
-            elseif info.active and (info.type=="spell" or id) then
-                otherActive=true
+            local id = trackingSpellID(index, info)
+            -- Respect any active spell the player chose, including non-gathering trackers.
+            if info.active and (info.type == "spell" or id) then return end
+            local kind = gatheringKinds[id]
+            if kind and not seen[id] then
+                seen[id] = true
+                choices[#choices + 1] = { id = id, index = index, name = info.name or GatherLite:translate(kind) }
+                canTrack = canTrack or GatherLite:GetNodeTracking("minimap", kind)
             end
         end
     end
-    for _,id in ipairs(spellIDs) do
-        local entry=available[id]
-        if not entry or entry.active==requested[id] then requested[id]=nil end
-        debugState("spell "..id,spells[id].name..": "..(entry and (entry.active and "active" or "available, inactive") or "not available"))
+    if canTrack then return choices end
+end
+
+local function enableTracker(id)
+    -- A tracking entry can move or disappear while the menu is open.
+    for _, choice in ipairs(trackingChoices() or {}) do
+        if choice.id == id then
+            C_Minimap.SetTracking(choice.index, true)
+            return
+        end
     end
-    if settings.autoGatherTracking==false then
-        debugState("spell action","Automatic activation disabled")
-        return
-    end
-    if InCombatLockdown() then debugState("spell action","Deferred until combat ends"); return end
-    if UnitIsDeadOrGhost("player") then debugState("spell action","Deferred while dead or a ghost"); return end
-    local active, candidate
-    local previous=settings.lastGatherTrackingSpell
-    for _,id in ipairs(spellIDs) do
-        local entry=available[id]
-        if entry then
-            if not GatherLite:GetNodeTracking("minimap",spells[id].kind) then
-                if entry.active then
-                    requestTracking(id,entry,false)
-                end
-            elseif entry.active then
-                if not active or id==previous then active=id end
-            elseif not candidate or id==previous then
-                candidate=id
+end
+
+local function openTrackingChoices(owner)
+    local choices = trackingChoices()
+    if not choices then return end
+    if #choices == 1 then
+        enableTracker(choices[1].id)
+    else
+        MenuUtil.CreateContextMenu(owner, function(_, root)
+            root:CreateTitle(GatherLite:translate("tracking"))
+            for _, choice in ipairs(choices) do
+                root:CreateButton(choice.name, enableTracker, choice.id)
             end
-        end
+        end)
     end
-    if active then settings.lastGatherTrackingSpell=active end
-    if otherActive then
-        debugState("spell action","Preserving active non-gathering tracker")
+end
+
+local function positionReminder(frame)
+    local mapX = Minimap:GetCenter()
+    local screenX = UIParent:GetCenter()
+    local opensRight = mapX and screenX and mapX * Minimap:GetEffectiveScale() < screenX * UIParent:GetEffectiveScale()
+    local point = opensRight and "LEFT" or "RIGHT"
+    if frame.side == point then return end
+    frame.side = point
+    frame:ClearAllPoints()
+    frame:SetPoint(point, Minimap, opensRight and "RIGHT" or "LEFT", opensRight and 10 or -10, 0)
+end
+
+local reminder
+local function updateReminder()
+    if not trackingChoices() then
+        if reminder then reminder:Hide() end
         return
     end
-    -- Forever switches tracking spells on the global cooldown. Keep any
-    -- checked tracker already active and restore only when tracking is lost.
-    if active or not candidate then return end
-    requestTracking(candidate,available[candidate],true)
+    if not reminder then
+        local UI = addon.UI
+        reminder = CreateFrame("Button", nil, Minimap)
+        reminder:SetFrameStrata("DIALOG")
+        reminder:SetClampedToScreen(true)
+        reminder:RegisterForClicks("LeftButtonUp")
+        reminder:SetScript("OnClick", openTrackingChoices)
+        UI.Background(reminder, .075, .085, .095, .98)
+        UI.Border(reminder)
+
+        local highlight = reminder:CreateTexture(nil, "HIGHLIGHT")
+        highlight:SetAllPoints()
+        highlight:SetColorTexture(1, .69, .18, .10)
+
+        local accent = reminder:CreateTexture(nil, "ARTWORK")
+        accent:SetColorTexture(1, .69, .18)
+        accent:SetPoint("TOPLEFT", 1, -6)
+        accent:SetPoint("BOTTOMLEFT", 1, 6)
+        accent:SetWidth(3)
+
+        local icon = reminder:CreateTexture(nil, "ARTWORK")
+        icon:SetTexture("Interface\\Icons\\inv_misc_spyglass_02")
+        icon:SetSize(32, 32)
+        icon:SetPoint("TOPLEFT", 13, -12)
+
+        local title = UI.Text(reminder, GatherLite:translate("minimap.tracking_reminder"), "GameFontNormalLarge")
+        title:SetPoint("TOPLEFT", 56, -11)
+        title:SetWidth(190)
+        title:SetWordWrap(true)
+        local hint = UI.Text(reminder, GatherLite:translate("minimap.tracking_reminder.hint"), "GameFontHighlight")
+        hint:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
+        hint:SetWidth(212)
+        hint:SetWordWrap(true)
+        reminder:SetSize(280, math.max(72, title:GetStringHeight() + hint:GetStringHeight() + 27))
+
+        local close = CreateFrame("Button", nil, reminder, "UIPanelCloseButton")
+        close:SetSize(24, 24)
+        close:SetPoint("TOPRIGHT", -4, -4)
+        close:SetScript("OnClick", function()
+            dismissed = true
+            reminder:Hide()
+        end)
+
+        local positionElapsed = 0
+        reminder:SetScript("OnUpdate", function(frame, elapsed)
+            positionElapsed = positionElapsed + elapsed
+            if positionElapsed < .2 then return end
+            positionElapsed = 0
+            positionReminder(frame)
+        end)
+    end
+    positionReminder(reminder)
+    reminder:Show()
 end
 
-function Tracking:Schedule(preserveRequests)
-    if not preserveRequests then requested={} end
-    if self.pending then return end
-    self.pending=true
-    C_Timer.After(.2,function()
-        self.pending=nil
-        self:UpdateProfessionFilters()
-        self:Check()
-    end)
-end
+GatherLite:On("settings:update", updateReminder)
 
--- Event checks stay responsive; this single ticker recovers missed changes
--- without repeatedly scanning professions or rebuilding node filters.
-function Tracking:StartInterval()
-    if self.ticker then return end
-    self.ticker=C_Timer.NewTicker(5,function()
-        local settings=GatherLite.db and GatherLite.db.char
-        if settings and settings.autoGatherTracking~=false and not self.pending then
-            self:Check()
-        end
-    end)
-end
-
+-- Profession defaults apply to GatherLite pins. Spell changes require a click.
 local events=CreateFrame("Frame")
-for _,event in ipairs({"PLAYER_ENTERING_WORLD","MINIMAP_UPDATE_TRACKING","SPELLS_CHANGED",
-    "PLAYER_REGEN_ENABLED","PLAYER_ALIVE","PLAYER_UNGHOST","SKILL_LINES_CHANGED"}) do
+for _,event in ipairs({"PLAYER_ENTERING_WORLD","SPELLS_CHANGED","SKILL_LINES_CHANGED"}) do
     events:RegisterEvent(event)
 end
+local reminderEvents = { MINIMAP_UPDATE_TRACKING = true, PLAYER_DEAD = true, PLAYER_ALIVE = true, PLAYER_UNGHOST = true,
+    PLAYER_REGEN_DISABLED = true, PLAYER_REGEN_ENABLED = true }
+for event in pairs(reminderEvents) do events:RegisterEvent(event) end
+local pending
 events:SetScript("OnEvent",function(_,event,initialLogin,reloadingUI)
-    if event=="PLAYER_ENTERING_WORLD" then Tracking:StartInterval() end
-    if event=="PLAYER_ENTERING_WORLD" and (initialLogin or reloadingUI) then
-        Tracking.debugState=nil
-        debugState("startup",reloadingUI and "UI reload: checking professions and tracking spells" or "Login: checking professions and tracking spells")
+    if reminderEvents[event] then
+        updateReminder()
+        return
     end
-    local preserveRequests=event=="MINIMAP_UPDATE_TRACKING" or event=="SPELLS_CHANGED" or event=="SKILL_LINES_CHANGED"
-    Tracking:Schedule(preserveRequests)
+    if event=="PLAYER_ENTERING_WORLD" and (initialLogin or reloadingUI) then
+        diagnostics={}
+        debugState("startup",reloadingUI and "UI reload: checking gathering professions" or "Login: checking gathering professions")
+    end
+    if pending then return end
+    pending=true
+    C_Timer.After(.2,function()
+        pending=nil
+        updateProfessionFilters()
+        updateReminder()
+    end)
 end)

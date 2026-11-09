@@ -53,6 +53,7 @@ WorldMapFrame.overlayFrames = { mapPin }
 InCombatLockdown = function() return false end
 C_AddOns = { GetAddOnMetadata = function() return "test" end }
 C_Map = { GetBestMapForUnit = function() return 1429 end }
+C_Minimap = { SetTracking = function() error("map pin filters must never change WoW tracking spells") end }
 GetTime = function() return 100 end
 IsInInstance = function() return false end
 tinsert, tremove = table.insert, table.remove
@@ -209,19 +210,13 @@ local function count(target, object)
     end
     return n
 end
-local gatheringChecks = 0
-addon.GatheringTracking = { Schedule = function() gatheringChecks = gatheringChecks + 1 end }
+assert(options.args.minimap.args.autoGatherTracking == nil, "native tracking automation must be unavailable")
 for i, kind in ipairs(kinds) do
-    local checksBefore = gatheringChecks
-    local changesGatheringSpell = kind == "mining" or kind == "herbalism"
     click("worldmap", i)
-    assert(gatheringChecks == checksBefore, "world map filter must not change live gathering tracking")
     assert(GatherLite:GetNodeTracking("worldmap", kind), "menu failed to enable " .. kind)
     assert(count("worldmap", objects[i]) == 1, "enabling lazy " .. kind .. " must draw a worldmap pin immediately")
     assert(not GatherLite:GetNodeTracking("minimap", kind), "worldmap menu changed minimap preference")
     click("minimap", i)
-    assert(gatheringChecks == checksBefore + (changesGatheringSpell and 1 or 0),
-        "minimap menu must promptly check live tracking for Mining and Herbalism only")
     assert(count("minimap", objects[i]) == 1, "minimap menu did not draw " .. kind)
     click("worldmap", i)
     assert(count("worldmap", objects[i]) == 0, "worldmap pin remained after disabling " .. kind)
@@ -243,10 +238,7 @@ for i, kind in ipairs(kinds) do
     assert(count("minimap", objects[i]) == 0 and count("worldmap", objects[i]) == 1,
         "per-map settings are not independent")
     worldOption.set(nil, false)
-    assert(gatheringChecks == checksBefore + (changesGatheringSpell and 4 or 0),
-        "both the minimap menu and the settings panel must schedule live gathering changes")
 end
-addon.GatheringTracking = nil
 -- Moving toward a known location leaves an outline; moving away restores its icon.
 local circle = "Interface\\AddOns\\GatherLite\\icons\\track_circle"
 local distanceOption = options.args.minimap.args.sliders.args.iconRange
