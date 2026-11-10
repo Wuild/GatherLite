@@ -549,7 +549,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.4. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.5. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -562,10 +562,9 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"MINIMAP TRACKING",{
-            "Replaced automatic spell changes with a reminder, so you can choose your own WoW tracking spell.",
-            "The reminder opens on the side of the minimap with more room. Close it to hide it until your next UI reload.",
-            "Click the reminder to enable your only learned gathering tracker or choose between Find Minerals and Find Herbs.",
+        {"FOREVER GATHERING DATABASE",{
+            "Added 607 gathering locations across 33 resources, bringing the Forever database to 32,065 locations.",
+            "All 31,458 gathering locations from 8.4.4 are still available.",
         }},
     }
     local y=0
