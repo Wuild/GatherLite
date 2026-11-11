@@ -62,6 +62,9 @@ L['node.waterlogged_footlocker'] = "浸水的提箱"
 L['node.dented_footlocker'] = "被砸过的箱子"
 L['node.mossy_footlocker'] = "生苔的提箱"
 L['node.scarlet_footlocker'] = "血色十字军提箱"
+L["node.alliance_strongbox"] = "联盟保险箱";
+L["node.large_mithril_bound_chest"] = "大型秘银储物箱";
+L["node.dented_chest"] = "凹陷的箱子";
 
 L["settings.debugging"] = "调试"
 
@@ -70,12 +73,14 @@ L["settings.debugging"] = "调试"
 L['node.copper_vein'] = "铜矿"
 L['node.tin_vein'] = "锡矿"
 L['node.silver_vein'] = "银矿"
-L['node.iron_deposit'] = "铁矿"
-L['node.gold_vein'] = "金矿"
-L['node.mithril_deposit'] = "秘银矿"
-L['node.truesilver_deposit'] = "真银矿"
-L['node.dark_iron_deposit'] = "黑铁矿"
-L['node.small_thorium_vein'] = "瑟银矿"
+L['node.iron_deposit'] = "铁矿石"
+L['node.gold_vein'] = "金矿石"
+L["node.gold_vein.alternate"] = "金矿";
+L['node.mithril_deposit'] = "秘银矿脉"
+L['node.truesilver_deposit'] = "真银矿石"
+L["node.truesilver_deposit.alternate"] = "真银矿脉";
+L['node.dark_iron_deposit'] = "黑铁矿脉"
+L['node.small_thorium_vein'] = "瑟银矿脉"
 L['node.rich_thorium_vein'] = "富瑟银矿"
 
 -- Herbs
@@ -114,7 +119,7 @@ L['node.large_battered_chest'] = "破碎的大箱子"
 L['node.solid_chest'] = "坚固的箱子"
 L['node.large_solid_chest'] = "坚固的大箱子"
 L['node.giant_clam'] = "巨型蚌壳"
-L['node.ungoro_dirt_pile'] = "安戈洛的泥土"
+L['node.ungoro_dirt_pile'] = "安戈洛土堆"
 
 -- Fish
 L['node.fish_pool_debris'] = "漂浮的碎片"
@@ -124,7 +129,7 @@ L['node.fish_pool_sagefish'] = "鼠尾鱼群"
 
 -- Newer Forever catalog entries and aliases.
 L['node.weak_copper_vein'] = "贫瘠的铜矿脉"
-L['node.poor_copper_vein'] = "低劣的铜矿脉"
+L['node.poor_copper_vein'] = "劣质铜矿"
 L['node.wilted_peacebloom'] = "枯萎的宁神花"
 L['node.cold_iron_deposit'] = "冷铁矿"
 L['node.starsilver_vein'] = "星银矿脉"
@@ -133,11 +138,11 @@ L['node.nightmare_moss'] = "梦魇苔"
 L['node.moonroot'] = "月根草"
 L['node.star_lotus'] = "星莲"
 L['node.ooze_covered_silver_vein'] = "被软泥覆盖的银矿脉"
-L['node.ooze_covered_gold_vein'] = "被软泥覆盖的金矿脉"
-L['node.ooze_covered_mithril_deposit'] = "被软泥覆盖的秘银矿脉"
-L['node.ooze_covered_truesilver_deposit'] = "被软泥覆盖的真银矿脉"
-L['node.ooze_covered_thorium_vein'] = "被软泥覆盖的瑟银矿脉"
-L['node.ooze_covered_rich_thorium_vein'] = "被软泥覆盖的富瑟银矿脉"
+L['node.ooze_covered_gold_vein'] = "软泥覆盖的金矿脉"
+L['node.ooze_covered_mithril_deposit'] = "软泥覆盖的秘银矿脉"
+L['node.ooze_covered_truesilver_deposit'] = "软泥覆盖的真银矿脉"
+L['node.ooze_covered_thorium_vein'] = "软泥覆盖的瑟银矿脉"
+L['node.ooze_covered_rich_thorium_vein'] = "软泥覆盖的富瑟银矿脉"
 
 -- Tracker window and settings.
 L["window.binding.toggle"] = "切换 GatherLite 窗口"
@@ -237,3 +242,8 @@ L["settings.debugging.reset_onboarding.description"] = "清除已保存的引导
 L["settings.debugging.enable"] = "启用调试"
 L["settings.debugging.nodes"] = "采集点"
 L["settings.debugging.frames"] = "框体"
+
+L["node.chunk_of_amber"] = "琥珀块";
+L["node.large_chunk_of_amber"] = "大块琥珀";
+L["node.stunted_silverleaf"] = "矮小的银叶草";
+L["node.tomb_weed"] = "墓穴杂草";

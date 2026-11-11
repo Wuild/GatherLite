@@ -4,14 +4,15 @@ _GatherLite.iconPath = "Interface\\AddOns\\" .. _GatherLite.name .. "\\icons\\"
 
 _GatherLite.nodeDB = {}
 
-local function InsertObject(type, ids, name, icon, levels, aliases)
+local function InsertObject(type, ids, name, icon, levels, aliases, nameMatchMapID)
     table.insert(_GatherLite.nodeDB, {
         type = type,
         id = ids,
         name = name,
         icon = icon:match("^Interface\\") and icon or (_GatherLite.iconPath .. icon),
         levels = levels,
-        aliases = aliases
+        aliases = aliases,
+        nameMatchMapID = nameMatchMapID
     })
 end
 
@@ -88,6 +89,7 @@ InsertObject("herb", { 439762 }, "star_lotus", "Herb\\black_lotus", { 250 })
 -- Object pages supply no icon metadata; reuse bundled herb map icons.
 InsertObject("herb", { 654624 }, "hyjal_silphium", "Herb\\peacebloom", { 1 })
 InsertObject("herb", { 694732 }, "tomb_weed", "Herb\\grave_moss", { 1 })
+InsertObject("herb", { 566786 }, "demonsage", "Herb\\mountain_silversage", { 300 })
 
 -- Containers
 InsertObject("container", { 106319, 2843, 106318, 2849 }, "battered_chest", "Open\\Chest", nil)
@@ -106,6 +108,13 @@ InsertObject("container", { 179487, 179489, 179491 }, "waterlogged_footlocker", 
 InsertObject("container", { 179492, 179494, 179496 }, "dented_footlocker", "Open\\Chest", nil)
 InsertObject("container", { 179493, 179497 }, "mossy_footlocker", "Open\\Chest", nil)
 InsertObject("container", { 179498 }, "scarlet_footlocker", "Open\\Chest", nil)
+
+-- World chests verified from Forever object pages.
+InsertObject("container", { 3714, 105570 }, "alliance_strongbox", "Open\\Chest", nil)
+InsertObject("container", { 153468, 131978, 153469 }, "large_mithril_bound_chest", "Open\\Chest", nil)
+
+-- Both chests share a Korean name. The Dented Chest is found on Zephras Isle.
+InsertObject("container", { 626718, 626752 }, "dented_chest", "Open\\Chest", nil, nil, 2521)
 
 -- Fishing
 

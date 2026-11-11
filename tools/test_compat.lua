@@ -287,6 +287,66 @@ end
 check(GatherLite:findNodeType("Imaginary Copper Vein") == nil, "unknown variants must not match by substring")
 check(GatherLite:findNodeType(secret) == nil, "restricted gathering names ignored")
 
+local function loadGatheringLocale(code)
+    for key in pairs(locale) do locale[key] = nil end
+    assert(loadfile("scripts/locales/enUS.lua"))("GatherLite", addon)
+    if code ~= "enUS" then
+        assert(loadfile("scripts/locales/" .. code .. ".lua"))("GatherLite", addon)
+    end
+end
+
+-- Use client object names so a bad translation cannot also change the expected result.
+for index, example in ipairs({
+    { "enUS", "Buccaneer’s Strongbox", 1804, "containers", 123330 },
+    { "deDE", "Robuste Truhe", 3365, "containers", 2850 },
+    { "deDE", "Golddorn", 2366, "herbalism", 2046 },
+    { "deDE", "Goldener Sansam", 2366, "herbalism", 176583 },
+    { "esES", "FILÓN DE COBRE", 2575, "mining", 1731 },
+    { "esMX", "Mostacho de Khadgar", 2366, "herbalism", 2043 },
+    { "frFR", "Coffre endommagé", 3365, "containers", 106319 },
+    { "frFR", "Calot de glace", 2366, "herbalism", 176588 },
+    { "frFR", "Tombeline", 2366, "herbalism", 1628 },
+    { "frFR", "ÉGLANTINE", 2366, "herbalism", 1621 },
+    { "frFR", "Eglantine", 2366, "herbalism", 1621 },
+    { "frFR", "Étouffante", 2366, "herbalism", 2045 },
+    { "frFR", "Etouffante", 2366, "herbalism", 2045 },
+    { "frFR", "Doulourante", 2366, "herbalism", 1622 },
+    { "frFR", "Pâlerette", 2366, "herbalism", 2042 },
+    { "frFR", "Pacifique", 2366, "herbalism", 1618 },
+    { "frFR", "Terrestrine", 2366, "herbalism", 1619 },
+    { "itIT", "Fogliargenta", 2366, "herbalism", 1617 },
+    { "itIT", "Foglia Eterea", 2366, "herbalism", 2042 },
+    { "itIT", "Erbalivida", 2366, "herbalism", 1622 },
+    { "itIT", "Erbacieca", 2366, "herbalism", 142143 },
+    { "frFR", "Demonsage", 2366, "herbalism", 566786 },
+    { "frFR", "Coffre de l’Alliance", 3365, "containers", 3714 },
+    { "ruRU", "Большой сундук, окованный мифрилом", 3365, "containers", 153468 },
+    { "koKR", "찌그러진 궤짝", 3365, "containers", 626718, 2521 },
+    { "koKR", "찌그러진 궤짝", 3365, "containers", 106319 },
+    { "koKR", "대합", 3365, "containers", 2744 },
+    { "koKR", "황금가시", 2366, "herbalism", 2046 },
+    { "ptBR", "Veio de Ouro de Tolo", 2575, "mining", 439628 },
+    { "ruRU", "МЕДНАЯ ЖИЛА", 2575, "mining", 1731 },
+    { "zhCN", "愚人金矿脉", 2575, "mining", 439628 },
+    { "deDE", "Mithrilablagerung", 2575, "mining", 2040 },
+    { "zhCN", "真银矿脉", 2575, "mining", 2047 },
+    { "zhTW", "愚人的黃金礦脈", 2575, "mining", 439628 },
+    { "zhTW", "堅固的大箱子", 3365, "containers", 74448 },
+    { "zhTW", "被砸過的箱子", 1804, "containers", 179492 },
+}) do
+    local code, title, spell, kind, id, mapID = unpack(example)
+    loadGatheringLocale(code)
+    local guid = "localized-" .. index
+    local x, y = 0.1 + index * 0.02, 0.67
+    mapID = mapID or 1429
+    position = { x, y, mapID }
+    check(GatherLite:findNodeType(title, mapID) == id, code .. " resolves " .. title)
+    event("UNIT_SPELLCAST_SENT", "player", title, guid, spell)
+    event("UNIT_SPELLCAST_SUCCEEDED", "player", guid, spell)
+    check(GatherLite:FindExistingNode(kind, mapID, x, y, id), code .. " records " .. title)
+end
+loadGatheringLocale("enUS")
+
 -- Recreate runtime state as on a UI reload, retaining only personal saved data.
 local personal = GatherLite.db.global.nodes
 local visits, totals = {}, {}

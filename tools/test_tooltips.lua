@@ -36,7 +36,7 @@ assert(lines[1][1] == "3 nearby nodes", "duplicate frames or another map inflate
 assert(lines[3][1]:find("Copper Vein", 1, true) and lines[3][2] == "×2", "aliases must share one hovered row")
 assert(lines[4][1]:find(oreLink, 1, true) and lines[4][2] == "x3", "shared saved history was counted twice")
 assert(lines[5][1]:find("Last visit:", 1, true), "gathering history was lost")
-assert(lines[6][1]:find("Battered chest", 1, true) and lines[6][2] == "×1", "mixed categories were merged")
+assert(lines[6][1]:find("Battered Chest", 1, true) and lines[6][2] == "×1", "mixed categories were merged")
 assert(#lines == 6, "grouped tooltip repeated a profession or node heading")
 
 local otherHistory = { loot = { { link = oreLink, count = 5 } }, date = { year = 2026, month = 9, day = 19, hour = 12 } }
@@ -52,7 +52,7 @@ for _, line in ipairs(lines) do assert(not line[1]:find(oreLink, 1, true), "disa
 
 hovered.node = chest
 GatherLite:showTooltip(hovered)
-assert(lines[3][1]:find("Battered chest", 1, true), "hovered type must come first")
+assert(lines[3][1]:find("Battered Chest", 1, true), "hovered type must come first")
 hovered.node = copper
 frames.usedFrames = { hovered }
 GatherLite:showTooltip(hovered)
@@ -61,7 +61,7 @@ assert(lines[2][3] == 0.6 and lines[2][4] == 0.6 and lines[2][5] == 0.6, "profes
 hovered.type="minimap"
 hovered.clusterNodes={chest}
 GatherLite:showTooltip(hovered)
-assert(lines[1][1]=="2 nearby nodes" and lines[5][1]:find("Battered chest",1,true),
+assert(lines[1][1]=="2 nearby nodes" and lines[5][1]:find("Battered Chest",1,true),
     "suppressed minimap markers must remain discoverable in the representative tooltip")
 assert(lines[#lines][1]==locale["tooltip.known_location"],"minimap tooltip must explain live tracking dots")
 print("Tooltip checks passed: grouping, aliases, counts, map isolation, loot, latest visit and single nodes")

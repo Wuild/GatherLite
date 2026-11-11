@@ -111,14 +111,15 @@ L['node.chunk_of_amber'] = "Chunk of Amber"
 L['node.large_chunk_of_amber'] = "Large Chunk of Amber"
 L['node.hyjal_silphium'] = "Hyjal Silphium"
 L['node.tomb_weed'] = "Tomb Weed"
+L['node.demonsage'] = "Demonsage"
 
 -- Open
-L['node.battered_chest'] = "Battered chest"
-L['node.large_battered_chest'] = "Large battered chest"
-L['node.solid_chest'] = "Solid chest"
-L['node.large_solid_chest'] = "Large solid chest"
+L['node.battered_chest'] = "Battered Chest"
+L['node.large_battered_chest'] = "Large Battered Chest"
+L['node.solid_chest'] = "Solid Chest"
+L['node.large_solid_chest'] = "Large Solid Chest"
 L['node.giant_clam'] = "Giant Clam"
-L['node.ungoro_dirt_pile'] = "Un'Goro Soil"
+L['node.ungoro_dirt_pile'] = "Un'Goro Dirt Pile"
 L['node.practice_lockbox'] = "Practice Lockbox"
 L['node.buccaneers_strongbox'] = "Buccaneer's Strongbox"
 L['node.battered_footlocker'] = "Battered Footlocker"
@@ -126,6 +127,9 @@ L['node.waterlogged_footlocker'] = "Waterlogged Footlocker"
 L['node.dented_footlocker'] = "Dented Footlocker"
 L['node.mossy_footlocker'] = "Mossy Footlocker"
 L['node.scarlet_footlocker'] = "Scarlet Footlocker"
+L["node.alliance_strongbox"] = "Alliance Strongbox";
+L["node.large_mithril_bound_chest"] = "Large Mithril Bound Chest";
+L["node.dented_chest"] = "Dented Chest";
 
 -- Fish
 L['node.fish_pool_debris'] = "Floating Debris"

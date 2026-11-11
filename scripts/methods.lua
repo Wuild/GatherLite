@@ -286,20 +286,45 @@ function GatherLite:findLoot(list, name)
     end
 end
 
-function GatherLite:findNodeType(target)
+local function normalizeNodeName(name)
+    -- Lua 5.1 lowercases ASCII only. Fold Latin-1 and Russian uppercase letters used
+    -- by localized object names and accept either form of apostrophe.
+    name = name:gsub("\195[\128-\150\152-\158]", function(letter)
+        return "\195" .. string.char(letter:byte(2) + 32)
+    end)
+    name = name:gsub("\208[\144-\175]", function(letter)
+        local byte = letter:byte(2)
+        if byte < 160 then return "\208" .. string.char(byte + 32) end
+        return "\209" .. string.char(byte - 32)
+    end)
+    return name:gsub("Ё", "ё"):gsub("Œ", "œ"):gsub("ẞ", "ß"):gsub("’", "'"):lower()
+end
+
+function GatherLite:findNodeType(target, mapID)
     if API.IsSecret(target) or type(target) ~= "string" then return nil end
-    local lowered = string.lower(target)
+    local normalized = normalizeNodeName(target)
+    local found
     for _, object in ipairs(_GatherLite.nodeDB) do
-        if lowered == string.lower(GatherLite:translate("node." .. object.name)) then
-            return object.id[1]
-        end
-        for _, alias in ipairs(object.aliases or {}) do
-            if lowered == string.lower(GatherLite:translate("node." .. alias)) then
-                return object.id[1]
+        local key = "node." .. object.name
+        local alternate = rawget(L, key .. ".alternate")
+        local matches = normalized == normalizeNodeName(GatherLite:translate(key))
+            or (alternate and normalized == normalizeNodeName(alternate))
+        if not matches then
+            for _, alias in ipairs(object.aliases or {}) do
+                if normalized == normalizeNodeName(GatherLite:translate("node." .. alias)) then
+                    matches = true
+                    break
+                end
             end
         end
+        if matches then
+            if not mapID or object.nameMatchMapID == mapID then
+                return object.id[1]
+            end
+            found = found or object.id[1]
+        end
     end
-    return nil
+    return found
 end
 
 function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
@@ -726,15 +751,15 @@ function GatherLite:EventHandler(event, ...)
                 return
             end
             local spellType = GatherLite:findSpellType(spell)
-            if not target or not castGUID or not spellType then
+            if not target or not castGUID or not spellType or IsInInstance() then
                 return
             end
-            local nodeID = GatherLite:findNodeType(target)
-            if nodeID and not IsInInstance() then
-                local x, y, mapID = HBD:GetPlayerZonePosition()
-                if not x or not y or not mapID then
-                    return
-                end
+            local x, y, mapID = HBD:GetPlayerZonePosition()
+            if not x or not y or not mapID then
+                return
+            end
+            local nodeID = GatherLite:findNodeType(target, mapID)
+            if nodeID then
                 tracker.nodeID = nodeID
                 tracker.target = target
                 tracker.spellID = spell
