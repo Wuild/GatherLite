@@ -549,7 +549,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.6. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.7. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -562,14 +562,11 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"GATHERING NAMES",{
-            "Corrected localized gathering names so successful gathers record the intended herb, vein, or chest.",
-            "Improved matching for accented letters, Cyrillic capitalization, and curly apostrophes. Korean chest names that overlap are resolved by map.",
-        }},
         {"GATHERING DATABASE",{
-            "Added 1,373 gathering locations and kept all 32,065 previously published locations.",
-            "Added Demonsage to the herb catalog with seven locations in Mount Hyjal and a 300 Herbalism requirement.",
-            "Added 48 chest locations for Alliance Strongbox, Large Mithril Bound Chest, and Dented Chest.",
+            "Added 176 gathering locations, bringing the Forever database to 33,614.",
+            "The additions include 81 herb, 67 mineral vein and 28 container locations.",
+            "Added the first six Hyjal Silphium locations in Mount Hyjal.",
+            "Retained all 33,438 locations from 8.4.6.",
         }},
     }
     local y=0
