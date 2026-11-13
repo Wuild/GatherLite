@@ -970,7 +970,23 @@ function GatherLite:SetNodeTracking(target, nodeType, value)
     end
 end
 
+-- True while Forever's gamepad interface style is active. Evaluated on every
+-- call because the style is a setting the player can switch at any time.
+function GatherLite:IsGamepadUI()
+    return InputUtil ~= nil and InputUtil.IsGamepadUIEnabled ~= nil and InputUtil.IsGamepadUIEnabled() == true
+end
+
 function GatherLite:OpenTrackingMenu(owner, target)
+    if GatherLite:IsGamepadUI() then
+        -- A Blizzard menu opened from this addon's click handler registers its
+        -- controller bindings from addon code. Closing it later makes Blizzard's
+        -- own binding stack call SetPreferredGamepadInteractTarget() as
+        -- GatherLite (ADDON_ACTION_FORBIDDEN) and controller input stays broken
+        -- until /reload. The same filters live on the addon-owned settings page.
+        local window = _GatherLite.Window
+        if window then window:ShowSettings(target) end
+        return
+    end
     return MenuUtil.CreateContextMenu(owner, function(_, root)
         root:CreateTitle(_GatherLite.name)
         local function isSelected(nodeType)

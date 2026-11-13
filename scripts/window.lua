@@ -701,9 +701,11 @@ function Window:Show()
     self:RefreshRoute()
 end
 
-function Window:ShowSettings()
+function Window:ShowSettings(category)
     self:Show()
     if not self.ready then return end
     self:SelectTab(2)
+    local button = category and self.settingsButtons[category]
+    if button then button:GetScript("OnClick")() end
     return true
 end

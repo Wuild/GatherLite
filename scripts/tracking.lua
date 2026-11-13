@@ -83,7 +83,7 @@ local function trackingChoices()
             local kind = gatheringKinds[id]
             if kind and not seen[id] then
                 seen[id] = true
-                choices[#choices + 1] = { id = id, index = index, name = info.name or GatherLite:translate(kind) }
+                choices[#choices + 1] = { id = id, index = index, kind = kind, name = info.name or GatherLite:translate(kind) }
                 canTrack = canTrack or GatherLite:GetNodeTracking("minimap", kind)
             end
         end
@@ -106,6 +106,16 @@ local function openTrackingChoices(owner)
     if not choices then return end
     if #choices == 1 then
         enableTracker(choices[1].id)
+    elseif GatherLite:IsGamepadUI() then
+        -- No Blizzard menu from addon code in the gamepad UI (it taints the
+        -- controller binding stack). Enable the first tracker the minimap
+        -- filters show; the native tracking menu still switches it.
+        for _, choice in ipairs(choices) do
+            if GatherLite:GetNodeTracking("minimap", choice.kind) then
+                enableTracker(choice.id)
+                return
+            end
+        end
     else
         MenuUtil.CreateContextMenu(owner, function(_, root)
             root:CreateTitle(GatherLite:translate("tracking"))

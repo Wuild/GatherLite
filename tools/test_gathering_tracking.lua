@@ -73,7 +73,8 @@ GatherLite={db={char={autoGatherTracking=true,minimap={enabled=true,tracking={}}
     On=function(_,event,callback) assert(event=="settings:update"); settingsChanged=callback end,
     Trigger=function(_,event) assert(event=="settings:update"); refreshes=refreshes+1; settingsChanged() end,
     GetNodeTracking=function(self,target,kind) return self.db.char[target].tracking[kind] end,
-    translate=function(_,key) return key end}
+    translate=function(_,key) return key end,
+    IsGamepadUI=function() return InputUtil~=nil and InputUtil.IsGamepadUIEnabled()==true end}
 assert(loadfile("scripts/ui.lua"))("GatherLite",addon)
 assert(loadfile("scripts/tracking.lua"))("GatherLite",addon)
 local function fire(event,...)
@@ -151,6 +152,22 @@ trackers[3]={spellID=2383,name="Find Herbs",type="spell",active=false}
 click(badge.OnClick,badge)
 assert(#activated==1 and #menuItems==2 and menuItems[1].name=="Find Minerals" and menuItems[2].name=="Find Herbs",
     "two learned trackers must open a choice without activating a spell or depending on pin filters")
+-- Gamepad UI: no Blizzard menu from addon code; enable the first tracker the filters show.
+menuItems=nil
+InputUtil={IsGamepadUIEnabled=function() return true end}
+char.minimap.tracking.mining=false; char.minimap.tracking.herbalism=true
+click(badge.OnClick,badge)
+assert(not menuItems and #activated==2 and activated[2]==3,
+    "the gamepad UI must enable the first filtered-in tracker instead of opening a menu")
+trackers[3].active=false; activated[2]=nil
+char.minimap.tracking.mining=true; char.minimap.tracking.herbalism=false
+click(badge.OnClick,badge)
+assert(not menuItems and #activated==2 and activated[2]==2,
+    "the gamepad UI must enable the first tracker when the filters allow it")
+trackers[2].active=false; activated[2]=nil
+InputUtil=nil
+click(badge.OnClick,badge)
+assert(#menuItems==2,"the mouse and keyboard UI keeps the native choice menu")
 trackers[2],trackers[3]=trackers[3],trackers[2]
 click(menuItems[2].click)
 assert(#activated==2 and activated[2]==2 and trackers[2].active and not trackers[3].active,
