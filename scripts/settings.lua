@@ -440,7 +440,10 @@ _GatherLite.SettingsOptions = {
                     width = "full",
                     set = function(_, value)
                         GatherLite.db.char.minimap.hideNearbyNodes = value
-                        if value then GatherLite.db.char.minimap.nearbyCircles = false end
+                        if value then
+                            GatherLite.db.char.minimap.nearbyCircles = false
+                            GatherLite.db.char.minimap.ringMarkers = false
+                        end
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function() return GatherLite.db.char.minimap.hideNearbyNodes == true end,
@@ -453,10 +456,53 @@ _GatherLite.SettingsOptions = {
                     width = "full",
                     set = function(_, value)
                         GatherLite.db.char.minimap.nearbyCircles = value
-                        if value then GatherLite.db.char.minimap.hideNearbyNodes = false end
+                        if value then
+                            GatherLite.db.char.minimap.hideNearbyNodes = false
+                            GatherLite.db.char.minimap.ringMarkers = false
+                        end
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function() return GatherLite.db.char.minimap.nearbyCircles == true end,
+                },
+                ringMarkers = {
+                    name = function() return GatherLite:translate("settings.minimap.ring_markers") end,
+                    desc = function() return GatherLite:translate("settings.minimap.ring_markers.description") end,
+                    type = "toggle",
+                    order = 4.5,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.minimap.ringMarkers = value
+                        if value then
+                            GatherLite.db.char.minimap.hideNearbyNodes = false
+                            GatherLite.db.char.minimap.nearbyCircles = false
+                        end
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.minimap.ringMarkers == true end,
+                },
+                ringDifficultyColors = {
+                    name = function() return GatherLite:translate("settings.minimap.ring_difficulty") end,
+                    desc = function() return GatherLite:translate("settings.minimap.ring_difficulty.description") end,
+                    type = "toggle",
+                    order = 4.6,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.minimap.ringDifficultyColors = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.minimap.ringDifficultyColors == true end,
+                },
+                ringShowIcon = {
+                    name = function() return GatherLite:translate("settings.minimap.ring_icon") end,
+                    desc = function() return GatherLite:translate("settings.minimap.ring_icon.description") end,
+                    type = "toggle",
+                    order = 4.7,
+                    width = "full",
+                    set = function(_, value)
+                        GatherLite.db.char.minimap.ringShowIcon = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.char.minimap.ringShowIcon ~= false end,
                 },
                 header = {
                     name = function()
@@ -531,14 +577,37 @@ _GatherLite.SettingsOptions = {
                             width = "full",
                             set = function(info, val)
                                 GatherLite.db.char.minimap.size = val;
+                                local applyLayout = GatherLite.modules.Minimap and GatherLite.modules.Minimap.ApplyLayout
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
-                                        frame:SetSize(val, val)
+                                        if applyLayout then applyLayout(frame) else frame:SetSize(val, val) end
                                     end
                                 end
                             end,
                             get = function(info)
                                 return GatherLite.db.char.minimap.size
+                            end
+                        },
+                        ringSize = {
+                            name = function()
+                                return GatherLite:translate("settings.minimap.ring_size");
+                            end,
+                            type = "range",
+                            min = 8,
+                            max = 40,
+                            step = 1,
+                            order = 5.5,
+                            width = "full",
+                            set = function(info, val)
+                                GatherLite.db.char.minimap.ringSize = val;
+                                local applyLayout = GatherLite.modules.Minimap and GatherLite.modules.Minimap.ApplyLayout
+                                if not applyLayout then return end
+                                for i, frame in ipairs(GFrame.allFrames) do
+                                    if frame.type == "minimap" then applyLayout(frame) end
+                                end
+                            end,
+                            get = function(info)
+                                return GatherLite.db.char.minimap.ringSize or 18
                             end
                         },
                         iconOpacity = {

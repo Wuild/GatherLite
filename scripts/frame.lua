@@ -26,7 +26,11 @@ function GatherLiteFrame:getFrame(type)
     end
 
     returnFrame.type = type;
+    returnFrame.texture:ClearAllPoints()
+    returnFrame.texture:SetAllPoints(returnFrame)
     returnFrame.texture:Show()
+    returnFrame.ring:Hide()
+    returnFrame:SetHitRectInsets(0, 0, 0, 0)
     returnFrame:SetMouseMotionEnabled(true)
 
     GatherLiteFrame.usedFrames[returnFrame.frameId] = returnFrame
@@ -103,6 +107,15 @@ function GatherLiteFrame:newFrame(frameId)
 
     newFrame.texture = texture;
 
+    -- Optional hollow ring centred on the node. Minimap ring mode shows it so the
+    -- game's tracking dot stays visible inside while the icon sits below.
+    local ring = newFrame:CreateTexture(nil, "BORDER")
+    ring:SetAllPoints(newFrame)
+    ring:SetTexelSnappingBias(0)
+    ring:SetSnapToPixelGrid(false)
+    ring:Hide()
+    newFrame.ring = ring
+
     newFrame.Unload = _frame.unload
 
     newFrame:Hide()
@@ -129,6 +142,14 @@ function _frame:unload()
     self:SetScript("OnShow", nil)
     self:SetScript("OnHide", nil)
     self.texture:SetVertexColor(1, 1, 1, 1)
+    self.texture:ClearAllPoints()
+    self.texture:SetAllPoints(self)
+    self.ring:Hide()
+    self.ring:SetVertexColor(1, 1, 1, 1)
+    self:SetHitRectInsets(0, 0, 0, 0)
+    self.ringLayout = nil
+    self.clustered = nil
+    self.onEdge = nil
 
     if self.type == "minimap" and self.node.loaded then
         self.node.loaded = false
