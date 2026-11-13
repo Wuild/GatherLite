@@ -440,6 +440,20 @@ function Window:CreateMap(page)
     map:Show()
 end
 
+-- The breadcrumb arrows are Blizzard dropdown buttons. In the gamepad UI a
+-- mouse click on one opens a Blizzard menu from this addon's button, which
+-- taints the controller binding stack (ADDON_ACTION_FORBIDDEN on close). The
+-- controller opens the addon-owned menu instead, so the arrows ignore the mouse.
+function Window:UpdateBreadcrumbMenus()
+    local bar = self.breadcrumb
+    if not bar then return end
+    local mouse = not (InputUtil and InputUtil.IsGamepadUIEnabled and InputUtil.IsGamepadUIEnabled() == true)
+    local function set(button) if button and button.EnableMouse then button:EnableMouse(mouse) end end
+    set(bar.overflowButton)
+    set(bar.homeButton and bar.homeButton.MenuArrowButton)
+    for _, crumb in ipairs(bar.navList or {}) do set(crumb.MenuArrowButton) end
+end
+
 -- Use the same native arrow-shaped breadcrumb templates as Blizzard's map.
 function Window:RefreshBreadcrumbs()
     local hierarchy, seen = {}, {}
@@ -473,6 +487,7 @@ function Window:RefreshBreadcrumbs()
             end,
         })
     end
+    self:UpdateBreadcrumbMenus()
 end
 
 function Window:CreateNavigation(page)
