@@ -671,6 +671,28 @@ do
     W:SetMap(1)
 end
 
+-- Gamepad UI: breadcrumb arrows must not open Blizzard dropdowns by mouse.
+do
+    local saved=InputUtil
+    local function arrow() local a={mouse=true}; function a:EnableMouse(v) self.mouse=v end; return a end
+    local home,one,two,overflow=arrow(),arrow(),arrow(),arrow()
+    local savedBar={navList=W.breadcrumb.navList,homeButton=W.breadcrumb.homeButton,overflowButton=W.breadcrumb.overflowButton}
+    W.breadcrumb.navList={{MenuArrowButton=one},{MenuArrowButton=two},{}}
+    W.breadcrumb.homeButton={MenuArrowButton=home}; W.breadcrumb.overflowButton=overflow
+    InputUtil={IsGamepadUIEnabled=function() return true end}
+    W:UpdateBreadcrumbMenus()
+    assert(not home.mouse and not one.mouse and not two.mouse and not overflow.mouse,
+        "gamepad UI breadcrumb arrows must not open Blizzard dropdowns")
+    InputUtil={IsGamepadUIEnabled=function() return false end}
+    W:UpdateBreadcrumbMenus()
+    assert(home.mouse and one.mouse and two.mouse and overflow.mouse,
+        "mouse and keyboard UI keeps the native breadcrumb dropdowns")
+    InputUtil=nil; W:UpdateBreadcrumbMenus()
+    assert(home.mouse and overflow.mouse,"a client without InputUtil keeps the native breadcrumb dropdowns")
+    W.breadcrumb.navList,W.breadcrumb.homeButton,W.breadcrumb.overflowButton=savedBar.navList,savedBar.homeButton,savedBar.overflowButton
+    InputUtil=saved
+end
+
 -- Controller input must never mutate Blizzard's shared binding stack.
 do
     local enabled=false

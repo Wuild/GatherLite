@@ -13,7 +13,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
             -- Button drawers can hide the launcher before the menu receives the click.
             GatherLite:OpenTrackingMenu(UIParent, "minimap")
         elseif button == "RightButton" then
-            Menu.GetManager():CloseMenus()
+            if not GatherLite:IsGamepadUI() then Menu.GetManager():CloseMenus() end
             GatherLite:ShowSettings()
         end
     end,

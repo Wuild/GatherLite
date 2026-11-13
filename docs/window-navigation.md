@@ -16,6 +16,14 @@ manager, change its binding stack, or mutate SmartNavigation. Those shared
 transitions synchronously update protected action-bar interaction targets and
 can cause ADDON_ACTION_FORBIDDEN.
 
+The same rule covers Blizzard's dropdown menus. A menu opened from an addon click
+handler registers its controller bindings from addon code, and closing it later makes
+Blizzard's binding stack call `SetPreferredGamepadInteractTarget()` as GatherLite. In the
+gamepad UI the minimap and world map tracking shortcuts therefore open the matching
+settings category in this window instead, and the minimap tracker reminder enables the
+first tracker the minimap filters show instead of asking. Mouse and keyboard play keeps
+the native menus.
+
 Input stops while another native panel owns controller focus or during combat.
 Local bindings release on tab changes, lost focus, input-mode changes and closing.
 Resource selection jumps to route actions; directional shortcuts connect the

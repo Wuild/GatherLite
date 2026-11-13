@@ -362,6 +362,30 @@ assert(menu[6].divider and menu[7].text == "Open GatherLite settings")
 menu[7].func()
 assert(settingsOpened == 2, "the map tracking menu shortcut must open the settings tab")
 addon.Window = nil
+
+-- Gamepad UI: a Blizzard menu opened from addon code taints the controller
+-- binding stack, so the tracking shortcuts open the addon-owned settings page.
+local shownCategories = {}
+addon.Window = { ShowSettings = function(_, category) shownCategories[#shownCategories + 1] = category; return true end }
+InputUtil = { IsGamepadUIEnabled = function() return true end }
+menu, menuOwner = {}, nil
+local closedBefore = closedMenus
+worldButton.scripts.OnClick(worldButton, "RightButton")
+minimapButton.OnClick(groupedMinimapButton, "LeftButton")
+minimapButton.OnClick(Minimap, "RightButton")
+assert(menuOwner == nil and #menu == 0, "the gamepad UI must not open a Blizzard menu from addon code")
+assert(closedMenus == closedBefore, "the gamepad UI must not call Blizzard's menu manager from addon code")
+assert(shownCategories[1] == "worldmap" and shownCategories[2] == "minimap" and #shownCategories == 2,
+    "the tracking shortcuts must open the matching settings category")
+-- A client without the function, or another input style, keeps the native menu.
+InputUtil = { IsGamepadUIEnabled = function() return false end }
+worldButton.scripts.OnClick(worldButton, "RightButton")
+assert(menuOwner == worldButton, "the mouse and keyboard UI keeps the native tracking menu")
+InputUtil = {}
+menuOwner = nil
+worldButton.scripts.OnClick(worldButton, "RightButton")
+assert(menuOwner == worldButton, "a client without InputUtil.IsGamepadUIEnabled keeps the native tracking menu")
+InputUtil, addon.Window = nil, nil
 print("Tracking integration passed: all four categories, both maps, lazy loading, settings and nearby circles")
 
 -- Icon checks must obey their timer and must not copy the frame registry.
