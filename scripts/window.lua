@@ -549,7 +549,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.7. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.8. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -563,10 +563,9 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"GATHERING DATABASE",{
-            "Added 176 gathering locations, bringing the Forever database to 33,614.",
-            "The additions include 81 herb, 67 mineral vein and 28 container locations.",
-            "Added the first six Hyjal Silphium locations in Mount Hyjal.",
-            "Retained all 33,438 locations from 8.4.6.",
+            "Added 402 gathering locations, bringing the Forever database to 34,016.",
+            "The additions include 138 herb, 204 mineral vein and 60 container locations.",
+            "Retained all 33,614 locations from 8.4.7.",
         }},
     }
     local y=0
