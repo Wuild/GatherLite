@@ -813,7 +813,7 @@ function GatherLite:GetCloseNodes(type, x, y, mapID)
 end
 
 local function addTooltipHistory(tooltipType, nodes, grouped)
-    local lootEnabled = GatherLite.db.char[tooltipType].loot
+    local lootEnabled = GatherLite.db.profile[tooltipType].loot
     local loot, seen, lastVisit = {}, {}, nil
     for _, node in ipairs(nodes) do
         local saved = GatherLite:FindExistingNode(node.type, node.mapID, node.posX, node.posY, node.object)
@@ -847,11 +847,40 @@ local function addTooltipHistory(tooltipType, nodes, grouped)
     end
 end
 
+function GatherLite:GetNodeSkillRequirement(object)
+    local level = object.levels and object.levels[1]
+    if not level then return end
+
+    local profession
+    if object.type == "ore" then
+        profession = GatherLite:translate("mining")
+    elseif object.type == "herb" then
+        profession = GatherLite:translate("herbalism")
+    end
+    if profession then
+        return (ITEM_MIN_SKILL or "Requires %s (%d)"):format(profession, level), profession
+    end
+end
+
+function GatherLite:GetNodeSkillRequirementColor(object, profession)
+    local rank = GatherLite:GetProfessionLevel(profession)
+    local levels = object.levels
+    if rank < levels[1] then return 1, 0, 0 end
+    if levels[4] and rank >= levels[4] then return 0.62, 0.62, 0.62 end
+    if levels[3] and rank >= levels[3] then return 0.12, 1, 0 end
+    if levels[2] and rank >= levels[2] then return 1, 1, 0 end
+    if levels[2] then return 1, 0.5, 0 end
+    return 1, 1, 1
+end
+
 function GatherLite:NodeTooltip(tooltipType, node)
     local object = GatherLite:GetNodeObject(node.object)
     if not object then return end
     GameTooltip:AddLine("|T" .. object.icon .. ":16:16|t " .. GatherLite:translate("node." .. object.name), 1, 0.82, 0)
-    if node.type and node.type ~= "containers" then
+    local requirement, profession = GatherLite:GetNodeSkillRequirement(object)
+    if requirement then
+        GameTooltip:AddLine(requirement, GatherLite:GetNodeSkillRequirementColor(object, profession))
+    elseif node.type and node.type ~= "containers" then
         local label = node.type == "fishing" and "fish" or node.type
         GameTooltip:AddLine(GatherLite:translate(label), 0.6, 0.6, 0.6)
     end
@@ -898,6 +927,10 @@ function GatherLite:showTooltip(frame)
         for _, group in ipairs(groups) do
             GameTooltip:AddDoubleLine("|T" .. group.object.icon .. ":16:16|t " .. group.name,
                 "×" .. #group.nodes, 1, 1, 1, 0.75, 0.75, 0.75)
+            local requirement, profession = GatherLite:GetNodeSkillRequirement(group.object)
+            if requirement then
+                GameTooltip:AddLine("  " .. requirement, GatherLite:GetNodeSkillRequirementColor(group.object, profession))
+            end
             addTooltipHistory(frame.type, group.nodes, true)
         end
     end
@@ -961,7 +994,9 @@ function GatherLite:GetNodeTracking(target, nodeType)
 end
 
 function GatherLite:SetNodeTracking(target, nodeType, value)
-    if target ~= "hud" and self.db and self.db.char then self.db.char.professionTrackingManual=true end
+    if target ~= "hud" and self.db and self.db.char then
+        self.db.char.professionTrackingManual = true
+    end
     local tracking = ensureMapTracking(target)
     if tracking then
         tracking[nodeType] = value and true or false

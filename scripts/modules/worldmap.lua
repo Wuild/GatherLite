@@ -73,7 +73,7 @@ end
 
 -- Filter used on the worldmap
 local WorldmapFilter = function(node)
-    if not GatherLite.db.char.worldmap.enabled then
+    if not GatherLite.db.profile.worldmap.enabled then
         return false
     end
 
@@ -96,12 +96,12 @@ end
 
 -- Get nodes for current map id
 local function WorldmapNodes(type, mapID, filter)
-    if not GatherLite.db.char.worldmap.enabled or not GatherLite:GetNodeTracking("worldmap", type) then
+    if not GatherLite.db.profile.worldmap.enabled or not GatherLite:GetNodeTracking("worldmap", type) then
         return {}
     end
     -- Load the full selected zone once; the map canvas handles pan/zoom clipping.
     local nodes
-    if GatherLite.db.char.worldmap.neighbors then
+    if GatherLite.db.profile.worldmap.neighbors then
         nodes = GatherLite:GetWorldMapNodesForRect(type, mapID, 0, 1, 0, 1)
     else
         nodes = GatherLite:GetNodesForMapRect(type, mapID, 0, 1, 0, 1)
@@ -144,10 +144,10 @@ local function CreateWorldmapNode(node)
     if not x or not y or x < 0 or x > 1 or y < 0 or y > 1 then return nil end
 
     local f = Frames:getFrame("worldmap");
-    f:SetAlpha(GatherLite.db.char.worldmap.opacity);
-    f:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
+    f:SetAlpha(GatherLite.db.profile.worldmap.opacity);
+    f:SetSize(GatherLite.db.profile.worldmap.size, GatherLite.db.profile.worldmap.size)
     f.texture:SetTexture(object.icon)
-    f.texture:SetSize(GatherLite.db.char.worldmap.size, GatherLite.db.char.worldmap.size)
+    f.texture:SetSize(GatherLite.db.profile.worldmap.size, GatherLite.db.profile.worldmap.size)
     --f:SetBackdropColor(1, 0, 0, 1);
 
     f.node = node;
@@ -371,7 +371,7 @@ local zoneKinds = { "mining", "herbalism", "containers", "fishing" }
 
 function source.GetZoneNodes(mapID)
     local rows, seen, objects = {}, {}, {}
-    if not mapID or not GatherLite.db.char.worldmap.enabled then return rows end
+    if not mapID or not GatherLite.db.profile.worldmap.enabled then return rows end
     for _, kind in ipairs(zoneKinds) do
         if GatherLite:GetNodeTracking("worldmap", kind) then
             for _, node in ipairs(GatherLite:GetNodesForMap(kind, mapID)) do
@@ -401,8 +401,8 @@ local function HideZoneList()
 end
 
 function source.UpdateZoneList(elapsed)
-    if not GatherLite:IsLoaded() or not GatherLite.db.char.worldmap.enabled
-        or not GatherLite.db.char.worldmap.zoneTooltip or not WorldMapFrame:IsVisible() then
+    if not GatherLite:IsLoaded() or not GatherLite.db.profile.worldmap.enabled
+        or not GatherLite.db.profile.worldmap.zoneTooltip or not WorldMapFrame:IsVisible() then
         HideZoneList()
         return
     end
@@ -499,7 +499,7 @@ source.setup = function()
         local mapType = info and info.mapType or (zone and zone.mapType)
         if mapType ~= 3 or (zone and zone.system ~= 0) then return end
         local allowed = node.mapID == worldmapID
-        if not allowed and GatherLite.db.char.worldmap.neighbors and zone then
+        if not allowed and GatherLite.db.profile.worldmap.neighbors and zone then
             for _, mapID in ipairs(zone.neighbors) do
                 if node.mapID == mapID then allowed = true; break end
             end

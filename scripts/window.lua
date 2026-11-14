@@ -165,13 +165,18 @@ function Window:DrawMap()
     local left,right,top,bottom=Routes:GetViewport(map)
     if not left or right<=left or bottom<=top then return end
     local width,height=overlay:GetWidth(),overlay:GetHeight()
-    local state={map:GetMapID(),left,right,top,bottom,width,height,self.locations,Routes.active,GatherLite.db.char.routeVisible,addon.Fishing and addon.Fishing.visible,GatherLite.db.char.worldmap.neighbors}
+    local fish=self.object and self.object.type=="fish"
+    local options=GatherLite.db.profile.worldmap
+    local pinSize=fish and options.size or 14
+    local pinOpacity=fish and options.opacity or 1
+    local inset=pinSize/2
+    local state={map:GetMapID(),left,right,top,bottom,width,height,self.locations,Routes.active,
+        GatherLite.db.char.routeVisible,addon.Fishing and addon.Fishing.visible,options.neighbors,pinSize,pinOpacity}
     local same=self.lastDraw~=nil
-    if same then for i=1,12 do if state[i]~=self.lastDraw[i] then same=false; break end end end
+    if same then for i=1,14 do if state[i]~=self.lastDraw[i] then same=false; break end end end
     if same then return end
     self.lastDraw=state
     local count,cells=0,{}
-    local fish=self.object and self.object.type=="fish"
     local spacing=10
     local function occupied(x,y)
         local cx,cy=math.floor(x/spacing),math.floor(y/spacing)
@@ -190,7 +195,7 @@ function Window:DrawMap()
     local locations=(fish and self.displayLocations or self.locations) or {}
     if self.object and self.object.type=="fish" and not addon.Fishing.visible then locations={} end
     local allowed={[map:GetMapID()]=true}
-    if GatherLite.db.char.worldmap.neighbors and GatherLite.GetZoneTree then
+    if GatherLite.db.profile.worldmap.neighbors and GatherLite.GetZoneTree then
         local zone=GatherLite:GetZoneTree()[map:GetMapID()]
         for _,id in ipairs(zone and zone.neighbors or {}) do allowed[id]=true end
     end
@@ -204,7 +209,7 @@ function Window:DrawMap()
                     local pin=self.pins[count]
                     if not pin then
                         pin=CreateFrame("Frame",nil,overlay)
-                        pin:SetSize(14,14); pin:EnableMouse(false)
+                        pin:EnableMouse(false)
                         pin:SetMouseMotionEnabled(true); pin:SetMouseClickEnabled(false)
                         pin.icon=pin:CreateTexture(nil,"OVERLAY"); pin.icon:SetAllPoints()
                         pin:SetScript("OnEnter",function(p)
@@ -222,10 +227,12 @@ function Window:DrawMap()
                     end
                     pin.point,pin.mapID=point,sourceMap
                     pin.object=point.object and GatherLite:GetNodeObject(point.object) or self.object
+                    pin:SetSize(pinSize,pinSize)
+                    pin:SetAlpha(pinOpacity)
                     pin.icon:SetTexture(pin.object.icon)
                     pin:ClearAllPoints(); pin:SetPoint("CENTER",overlay,"TOPLEFT",x,-y)
                     -- Keep complete icons inside the map viewport.
-                    pin:SetShown(x>=7 and x<=width-7 and y>=7 and y<=height-7)
+                    pin:SetShown(x>=inset and x<=width-inset and y>=inset and y<=height-inset)
                 end
             end
         end
@@ -525,10 +532,10 @@ function Window:CreateSettings(page)
     rail:SetPoint("TOPLEFT"); rail:SetPoint("BOTTOMLEFT"); rail:SetWidth(184)
     UI.Background(rail,.19,.125,.065,1); UI.Border(rail)
     UI.Text(rail,T("window.settings.preferences"),"GameFontNormalSmall"):SetPoint("TOPLEFT",12,-16)
-    local groups={"general","worldmap","minimap","hud","tracking","debugging"}
-    local labels={"settings.general","window.settings.world_map","settings.minimap","settings.hud","window.settings.resources","settings.debugging"}
+    local groups={"general","worldmap","minimap","hud","tracking","debugging","profiles"}
+    local labels={"settings.general","window.settings.world_map","settings.minimap","settings.hud","window.settings.resources","settings.debugging","settings.profiles.title"}
     local icons={"Interface\\Icons\\inv_misc_spyglass_02","Interface\\Icons\\INV_Misc_Map_01",
-        "compass","compass","Interface\\Icons\\INV_Ore_Copper_01","Interface\\Icons\\Trade_Engineering"}
+        "compass","compass","Interface\\Icons\\INV_Ore_Copper_01","Interface\\Icons\\Trade_Engineering","Interface\\Icons\\INV_Misc_Book_09"}
     local descriptions={
         "window.settings.general.description",
         "window.settings.world_map.description",
@@ -536,6 +543,7 @@ function Window:CreateSettings(page)
         "settings.hud.description",
         "window.settings.resources.description",
         "window.settings.debugging.description",
+        "settings.profiles.description",
     }
     self.settingsTitle=UI.InkText(page,"","GameFontNormalLarge")
     self.settingsTitle:SetPoint("TOPLEFT",204,-18)
@@ -564,7 +572,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.8. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.9. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -577,10 +585,24 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
+        {"PROFILES",{
+            "Create, switch, copy, reset, and delete display profiles from Settings. Resource tracking stays per character.",
+        }},
+        {"MINIMAP MARKERS",{
+            "Show known gathering locations as hollow rings so the game's tracking dots stay visible inside them.",
+            "Adjust ring size, show or hide the resource icon, and choose colors by resource type or gathering difficulty.",
+        }},
+        {"MAP MARKERS AND TOOLTIPS",{
+            "Node tooltips on both maps and in the world color the skill requirement by gathering difficulty.",
+            "Nearby minimap markers are visible by default. You can still hide them in Minimap settings.",
+            "Fishing pins now follow the icon size and opacity settings on each map.",
+        }},
         {"GATHERING DATABASE",{
-            "Added 402 gathering locations, bringing the Forever database to 34,016.",
-            "The additions include 138 herb, 204 mineral vein and 60 container locations.",
-            "Retained all 33,614 locations from 8.4.7.",
+            "Added two Wild Steelbloom locations in Stonetalon Mountains and Riverglades.",
+        }},
+        {"CONTROLLER FIXES",{
+            "Fixed a controller issue where closing a tracking menu could trigger a blocked-action error.",
+            "In gamepad mode, minimap and world map tracking shortcuts now open the matching GatherLite settings.",
         }},
     }
     local y=0

@@ -375,9 +375,90 @@ function UI.SettingsGroup(parent, group, name)
                     column=column+1
                     if column==3 then column=0; cursor=cursor+30 end
                 else cursor=cursor+height+4 end
+            elseif option.type=="description" and value(option.name):match("%S") then
+                flush()
+                local label=UI.InkText(content,value(option.name),"GameFontHighlight")
+                label:SetPoint("TOPLEFT",8,-cursor)
+                label:SetWidth(880)
+                refresh[#refresh+1]=function() label:SetText(value(option.name)) end
+                cursor=cursor+30
+            elseif option.type=="input" then
+                flush()
+                UI.InkText(content,value(option.name),"GameFontHighlight"):SetPoint("TOPLEFT",8,-cursor)
+                local edit=CreateFrame("EditBox",nil,content,"InputBoxTemplate")
+                edit:SetSize(300,24)
+                edit:SetPoint("TOPLEFT",12,-cursor-22)
+                edit:SetAutoFocus(false)
+                edit:SetMaxLetters(50)
+                local errorText=UI.InkText(content,"","GameFontHighlightSmall")
+                errorText:SetPoint("TOPLEFT",8,-cursor-53)
+                local function save()
+                    local name=edit:GetText()
+                    local valid=option.validate(nil,name)
+                    if valid ~= true then errorText:SetText(valid); return end
+                    option.set(nil,name)
+                    edit:SetText("")
+                    edit:ClearFocus()
+                    errorText:SetText("")
+                    if addon.Window then addon.Window:RefreshSettings() end
+                end
+                local submit=UI.Button(content,GatherLite:translate("settings.profiles.add"),115,save)
+                submit:SetPoint("LEFT",edit,"RIGHT",8,0)
+                edit:SetScript("OnEnterPressed",save)
+                edit:SetScript("OnEscapePressed",function() edit:ClearFocus() end)
+                edit.OnSmartNavClick=function() edit:SetFocus() end
+                edit.smartNavigationCanFocus=true
+                control(edit,0,cursor+22)
+                control(submit,320,cursor+22)
+                cursor=cursor+76
+            elseif option.type=="select" then
+                flush()
+                UI.InkText(content,value(option.name),"GameFontHighlight"):SetPoint("TOPLEFT",8,-cursor)
+                local label=UI.InkText(content,"","GameFontHighlight")
+                label:SetPoint("TOPLEFT",44,-cursor-26)
+                label:SetWidth(258)
+                local function cycle(direction)
+                    local keys={}
+                    for key in pairs(value(option.values)) do keys[#keys+1]=key end
+                    table.sort(keys)
+                    local selected=option.get()
+                    for index,key in ipairs(keys) do
+                        if key==selected then
+                            option.set(nil,keys[(index-1+direction)%#keys+1])
+                            if addon.Window then addon.Window:RefreshSettings() end
+                            return
+                        end
+                    end
+                end
+                for _,direction in ipairs({-1,1}) do
+                    local button=UI.Button(content,direction<0 and "<" or ">",28,function() cycle(direction) end)
+                    local x=direction<0 and 8 or 310
+                    button:SetPoint("TOPLEFT",x,-cursor-22)
+                    control(button,x,cursor+22)
+                end
+                refresh[#refresh+1]=function()
+                    local values=value(option.values)
+                    label:SetText(values[option.get()] or "")
+                end
+                cursor=cursor+62
             elseif option.type=="execute" then
                 flush()
-                local button=UI.Button(content,value(option.name),240,function() option.func() end)
+                local button=UI.Button(content,value(option.name),240,function()
+                    if value(option.disabled) then return end
+                    if option.confirm then
+                        StaticPopupDialogs.GATHERLITE_CONFIRM_SETTING = {
+                            text = value(option.confirm), button1 = ACCEPT, button2 = CANCEL,
+                            timeout = 0, whileDead = true, hideOnEscape = true,
+                            OnAccept = function(_, action) action() end,
+                        }
+                        StaticPopup_Show("GATHERLITE_CONFIRM_SETTING",nil,nil,option.func)
+                    else
+                        option.func()
+                    end
+                end)
+                if option.disabled then
+                    refresh[#refresh+1]=function() button:SetEnabled(not value(option.disabled)) end
+                end
                 button:SetPoint("TOPLEFT",8,-cursor)
                 control(button,0,cursor)
                 local description=value(option.desc)

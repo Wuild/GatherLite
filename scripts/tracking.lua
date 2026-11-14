@@ -65,7 +65,7 @@ end
 
 local dismissed
 local function trackingChoices()
-    local settings = GatherLite.db and GatherLite.db.char
+    local settings = GatherLite.db and GatherLite.db.profile
     if dismissed or not settings or not settings.minimap or not settings.minimap.enabled or not Minimap
         or IsInInstance() or UnitIsDeadOrGhost("player") or InCombatLockdown()
         or not C_Minimap or not C_Minimap.GetNumTrackingTypes or not C_Minimap.GetTrackingInfo

@@ -52,7 +52,7 @@ function Fishing:Refresh()
     self:ClearPins()
     local selected=self.object
     if selected and not self.visible then return end
-    local worldOptions,miniOptions=GatherLite.db.char.worldmap,GatherLite.db.char.minimap
+    local worldOptions,miniOptions=GatherLite.db.profile.worldmap,GatherLite.db.profile.minimap
     -- Explicit searches show the chosen fish. Otherwise use each map's Fishing filter.
     local reference=selected or GatherLite.db.global.usePredefined
     local worldEnabled=reference and worldOptions.enabled and
@@ -100,7 +100,6 @@ function Fishing:Refresh()
         local frame=self.frames[count]
         if not frame then
             frame=CreateFrame("Frame",nil,UIParent)
-            frame:SetSize(16,16)
             frame:EnableMouse(false)
             frame:SetMouseMotionEnabled(true); frame:SetMouseClickEnabled(false)
             frame.icon=frame:CreateTexture(nil,"ARTWORK"); frame.icon:SetAllPoints()
@@ -118,6 +117,9 @@ function Fishing:Refresh()
             frame:SetScript("OnLeave",function() GameTooltip:Hide() end)
             self.frames[count]=frame
         end
+        local options = mini and miniOptions or worldOptions
+        frame:SetSize(options.size, options.size)
+        frame:SetAlpha(options.opacity)
         frame.mapID,frame.u,frame.v,frame.fish=mapID,group.u,group.v,group.fish
         frame.icon:SetTexture(group.fish[1].icon)
         if addon.MapHover then addon.MapHover:Register(frame, not mini) end

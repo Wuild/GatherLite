@@ -1,6 +1,7 @@
 -- Exercise actual menu callbacks, map modules, frame recycling, and lazy loading.
 local addon, libraries, frames, menu, options, minimapButton = {}, {}, {}, {}, nil, nil
 local function noop() end
+strlenutf8 = string.len
 local resume = coroutine.resume
 coroutine.resume = function(thread, ...)
     assert(coroutine.status(thread) ~= "dead", "resuming a completed minimap worker")
@@ -16,14 +17,23 @@ local function makeFrame(parent)
         f[method] = noop
     end
     function f:SetScript(event, fn) self.scripts[event] = fn end
+    function f:RegisterEvent(event)
+        self.events = self.events or {}
+        self.events[event] = true
+    end
     function f:SetTexture(path) self.texturePath = path end
     function f:Show() self.shown = true end
     function f:Hide() self.shown = false end
     function f:IsShown() return self.shown end
     f.IsVisible = f.IsShown
     function f:GetParent() return self.parent end
-    function f:GetVertexColor() return 1, 1, 1 end
-    function f:GetWidth() return 140 end
+    function f:SetVertexColor(...) self.color = {...} end
+    function f:GetVertexColor() return unpack(self.color or {1, 1, 1, 1}) end
+    function f:SetSize(width, height) self.width, self.height = width, height end
+    function f:GetWidth() return self.width or 140 end
+    function f:SetAllPoints(frame) self.point = {"ALL", frame} end
+    function f:ClearAllPoints() self.point = nil end
+    function f:SetHitRectInsets(...) self.hitInsets = {...} end
     function f:GetFrameLevel() return self.level or 8 end
     function f:SetFrameLevel(level) self.level = level end
     function f:SetPoint(...) self.point = {...} end
@@ -139,6 +149,82 @@ assert(migrated.char["Miner Stone"].minimap.size == 14
     "migration must retain new values and fill missing legacy settings")
 assert(migrated.profileKeys["Miner Stone"] == "Custom", "legacy profile selection must migrate")
 
+-- Exercise the real AceDB profile storage using the existing client fixture.
+do
+    local env=setmetatable({
+        LibStub=false, strlenutf8=string.len,
+        UnitFactionGroup=function() return "Alliance" end,
+        UnitClass=function() return "Druid", "DRUID" end,
+        UnitRace=function() return "Night Elf", "NightElf" end,
+        GetLocale=function() return "enUS" end,
+        GetRealmName=function() return "Forever" end,
+        UnitNameUnmodified=function() return "Miner" end,
+        GetCurrentRegionName=function() return "EU" end,
+        GetCurrentRegion=function() return 3 end,
+        RegionalUniqueNamesEnabled=function() return false end,
+        securecallfunction=function(fn, ...) return fn(...) end,
+    },{__index=_G})
+    env._G=env
+    for _,file in ipairs({
+        "LibStub/LibStub.lua", "CallbackHandler-1.0/CallbackHandler-1.0.lua", "AceDB-3.0/AceDB-3.0.lua",
+        "AceConfig-3.0/AceConfigRegistry-3.0/AceConfigRegistry-3.0.lua",
+    }) do
+        setfenv(assert(loadfile("scripts/libraries/"..file)),env)()
+    end
+    local ace=env.LibStub("AceDB-3.0")
+    env.LibStub("AceConfigRegistry-3.0"):ValidateOptionsTable(addon.SettingsOptions.args.profiles, "Profiles")
+    local storage={
+        profiles={Default={minimap={hide=true, minimapPos=37}}},
+        char={["Miner - Forever"]={minimap={size=17, tracking={mining=false}}, routeMapID=7}},
+        global={nodes={mining={{object=1731}}}},
+    }
+    local db=ace:New(storage,nil,true)
+    addon.MigrateProfileSettings(db)
+    db:RegisterDefaults(addon.configsDefaults)
+    local migratedName=db:GetCurrentProfile()
+    assert(migratedName~="Default" and db.profile.minimap.size==17 and not db.char.minimap.tracking.mining)
+    assert(db.char.professionTrackingManual and db.profile.minimapIcon.hide and db.profile.minimapIcon.minimapPos==37)
+    assert(db.char.routeMapID==7 and not db.char.minimap.size and not db.profile.minimap.tracking
+        and db.global.nodes.mining[1].object==1731)
+    addon.MigrateProfileSettings(db)
+    assert(db:GetCurrentProfile()==migratedName, "migration must be idempotent")
+    db.char.ignore[1731] = true
+    db:SetProfile("New")
+    assert(db.char.ignore[1731] and not db.char.minimap.tracking.mining)
+    assert(db.profile.minimap.size==12 and not db.profile.minimapIcon.hide, "new profile must use defaults")
+    db.char.minimap.tracking.mining = true
+    db:CopyProfile(migratedName)
+    assert(db.char.ignore[1731] and db.char.minimap.tracking.mining and not db.profile.minimap.tracking)
+    assert(db.profile.minimap.size==17 and db.profile.minimapIcon.hide, "copy must include gathered preferences")
+    db:ResetProfile()
+    assert(db.char.ignore[1731] and db.char.minimap.tracking.mining and db.char.professionTrackingManual)
+    assert(db.profile.minimap.size==12 and db.char.routeMapID==7 and db.global.nodes.mining[1].object==1731)
+    db:SetProfile(migratedName)
+    assert(db.profile.minimap.size==17 and db.char.minimap.tracking.mining)
+
+    local earlier = {
+        profileKeys = { ["Miner - Forever"]="Shared", Herbalist="Shared" },
+        profiles = { Shared = {
+            minimap = { size=19, tracking={ mining=false } },
+            worldmap = { tracking={ herbalism=false } }, hud = { tracking={ fishing=false } },
+            ignore = { [1731]=true }, professionTrackingManual = true,
+        }},
+        char = { ["Miner - Forever"] = {
+            profileSettingsMigrated=true, minimap={ tracking={ mining=true } },
+        }},
+    }
+    db=ace:New(earlier,nil,true)
+    addon.MigrateProfileSettings(db)
+    db:RegisterDefaults(addon.configsDefaults)
+    assert(db:GetCurrentProfile()=="Shared" and db.profile.minimap.size==19 and not db.profile.minimap.tracking)
+    assert(not db.profile.ignore and not db.profile.professionTrackingManual)
+    assert(db.char.minimap.tracking.mining and not db.char.worldmap.tracking.herbalism
+        and not db.char.hud.tracking.fishing and db.char.ignore[1731] and db.char.professionTrackingManual)
+    assert(earlier.char.Herbalist.minimap.tracking.mining==false and earlier.char.Herbalist.ignore[1731])
+    db.char.ignore[1731] = false
+    assert(earlier.char.Herbalist.ignore[1731], "migrated character filters must not share a table")
+end
+
 local kinds = { "mining", "herbalism", "containers", "fishing" }
 local objects = { 1731, 1617, 106319, 180750 }
 addon.predefined = {}
@@ -245,7 +331,7 @@ local distanceOption = options.args.minimap.args.sliders.args.iconRange
 local circlesOption = options.args.minimap.args.nearbyCircles
 local hideOption = options.args.minimap.args.hideNearbyNodes
 assert(not circlesOption.get(), "nearby circles must default to disabled")
-assert(hideOption.get(), "nearby hiding must default to enabled")
+assert(not hideOption.get(), "nearby pins must be visible by default")
 circlesOption.set(nil, true)
 hideOption.set(nil, false)
 for i, kind in ipairs(kinds) do
@@ -339,10 +425,10 @@ for frame in pairs(pins.minimap) do
 end
 assert(visible==1 and hidden==3,"coincident circles across categories must share one visible marker")
 -- Existing saved settings can contain both flags: explicit hiding wins.
-GatherLite.db.char.minimap.hideNearbyNodes=true
+GatherLite.db.profile.minimap.hideNearbyNodes=true
 tick(1.1)
 assert(not next(pins.minimap),"old conflicting settings must not cover live tracking dots")
-GatherLite.db.char.minimap.hideNearbyNodes=false
+GatherLite.db.profile.minimap.hideNearbyNodes=false
 for i=1,#kinds do click("minimap",i) end
 playerX,playerY=500,500
 
@@ -473,8 +559,8 @@ do
         return mapID == 1429 and (testNodes[kind] or {}) or {}
     end
     GatherLite.IsIgnored = function(_, id) return ignored[id] end
-    GatherLite.db.char.worldmap.enabled = true
-    GatherLite.db.char.worldmap.zoneTooltip = true
+    GatherLite.db.profile.worldmap.enabled = true
+    GatherLite.db.profile.worldmap.zoneTooltip = true
     GatherLite.db.char.worldmap.tracking = { mining = true, herbalism = false, containers = false, fishing = false }
     GatherLite.db.global.usePredefined = true
     assert(#source.GetZoneNodes(1429) == 2, "zone summary duplicated aliases or included disabled herbs")
@@ -535,10 +621,10 @@ do
     assert(not GatherLiteZoneList:IsShown(), "tooltip remained over ocean")
     zone = { mapID = 1429, mapType = 3, name = "Elwynn Forest" }
     source.UpdateZoneList(0.2)
-    GatherLite.db.char.worldmap.zoneTooltip = false
+    GatherLite.db.profile.worldmap.zoneTooltip = false
     source.UpdateZoneList(0.01)
     assert(not GatherLiteZoneList:IsShown(), "disabled zone tooltip remained visible")
-    GatherLite.db.char.worldmap.zoneTooltip = true
+    GatherLite.db.profile.worldmap.zoneTooltip = true
     source.UpdateZoneList(0.2)
     WorldMapFrame:Hide()
     source.UpdateZoneList(0.01)
@@ -601,8 +687,8 @@ do
     local visible = { type = "mining", mapID = 1431, posX = .2, posY = .4, object = 1731, instance = 0 }
     local outside = { type = "mining", mapID = 1431, posX = .8, posY = .4, object = 1731, instance = 0 }
     GatherLite:LoadTable("mining", { visible, outside })
-    GatherLite.db.char.worldmap.enabled = true
-    GatherLite.db.char.worldmap.zoneTooltip = false
+    GatherLite.db.profile.worldmap.enabled = true
+    GatherLite.db.profile.worldmap.zoneTooltip = false
     GatherLite.db.char.worldmap.tracking.mining = true
     local view = { 0, .2, .3, .5 } -- Neighbor starts outside the viewport.
     WorldMapFrame.ScrollContainer = { GetNormalizedRect = function() return unpack(view) end }
@@ -619,9 +705,9 @@ do
     local function find(node)
         for frame, coords in pairs(pins.worldmap) do if frame.node == node then return frame, coords end end
     end
-    assert(GatherLite.db.char.worldmap.neighbors==false,"neighbor pins must default off")
+    assert(GatherLite.db.profile.worldmap.neighbors==false,"neighbor pins must default off")
     assert(not find(visible),"default must exclude neighbor pins")
-    GatherLite.db.char.worldmap.neighbors=true
+    GatherLite.db.profile.worldmap.neighbors=true
     GatherLite:Trigger("settings:update")
     local frame, coords = find(visible)
     assert(frame and coords.map == 1429 and math.abs(coords.x - .7) < .000001 and coords.y == .4,
@@ -629,10 +715,10 @@ do
     assert(visible.mapID == 1431 and visible.posX == .2 and frame.node == visible,
         "projection must preserve source data for tooltips")
     assert(not find(outside), "neighbor outside selected map must not render")
-    GatherLite.db.char.worldmap.neighbors=false
+    GatherLite.db.profile.worldmap.neighbors=false
     GatherLite:Trigger("settings:update")
     assert(not find(visible),"turning neighbors off must remove existing pins")
-    GatherLite.db.char.worldmap.neighbors=true
+    GatherLite.db.profile.worldmap.neighbors=true
     GatherLite:Trigger("settings:update")
     frame=find(visible)
     local loadedQueries = queries
@@ -665,8 +751,8 @@ print("World-map neighbors passed: projected pins, source identity, no pan/zoom 
 do
     date = os.date
     GatherLite.db.global.usePredefined = false
-    GatherLite.db.char.minimap.hideNearbyNodes = false
-    GatherLite.db.char.worldmap.neighbors = false
+    GatherLite.db.profile.minimap.hideNearbyNodes = false
+    GatherLite.db.profile.worldmap.neighbors = false
     playerX, playerY = 500, 500
     WorldMapFrame.mapID = 1429
     WorldMapFrame:Show()

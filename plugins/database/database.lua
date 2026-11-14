@@ -9,7 +9,7 @@ local kinds = { ore = "mining", herb = "herbalism", container = "containers", fi
 local function loadEnabled()
     if not GatherLite.db.global.usePredefined or not addon.predefined then return end
 
-    local hud = GatherLite.db.char.hud
+    local hud = GatherLite.db.profile.hud
     for objectID, maps in pairs(addon.predefined) do
         local object = GatherLite:GetNodeObject(objectID)
         local kind = object and kinds[object.type]

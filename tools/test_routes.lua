@@ -246,12 +246,41 @@ LibStub=function(key)
 end
 load("scripts/locales/enUS.lua")
 local events={}
-GatherLite={modules={},plugins={},db={global={usePredefined=true,debug={types={}}},char={
+GatherLite={modules={},plugins={},db={global={usePredefined=true,debug={types={}}},char={minimap={},worldmap={},hud={}},profile={
     minimap={enabled=true,range=400,size=12,opacity=1,distance=70,loot=true},
     worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true,openMapPinZoom=7},
     hud={enabled=false,range=250,width=300,height=20,pinSize=14,opacity=.9,x=0,y=-72,
         backgroundColor={r=.035,g=.03,b=.025},backgroundOpacity=.8,showBorder=true,hideInInstances=true},
-},profile={minimap={}}}}
+    minimapIcon={},
+}}}
+local activeProfile, profiles = "Default", {Default=GatherLite.db.profile}
+function GatherLite.db:GetCurrentProfile() return activeProfile end
+function GatherLite.db:GetProfiles()
+    local names = {}
+    for name in pairs(profiles) do names[#names+1]=name end
+    return names
+end
+function GatherLite.db:SetProfile(name)
+    if not profiles[name] then
+        local profile = {}
+        for key,value in pairs(profiles.Default) do profile[key]=value end
+        profiles[name]=profile
+    end
+    activeProfile, self.profile = name, profiles[name]
+end
+function GatherLite.db:CopyProfile(name) self.profile.minimap.size = profiles[name].minimap.size end
+function GatherLite.db:DeleteProfile(name) profiles[name]=nil end
+strlenutf8 = string.len
+local originalLibStub = LibStub
+LibStub = function(name)
+    if name == "AceConfigRegistry-3.0" then return { NotifyChange = function() end } end
+    return originalLibStub(name)
+end
+StaticPopupDialogs, ACCEPT, CANCEL = {}, "Accept", "Cancel"
+local confirmation
+StaticPopup_Show = function(key, _, _, data)
+    confirmation=function() StaticPopupDialogs[key].OnAccept(nil,data) end
+end
 function GatherLite:On(event,fn) events[event]=events[event] or {}; table.insert(events[event],fn) end
 function GatherLite:Trigger(event,...) for _,fn in ipairs(events[event] or {}) do fn(...) end end
 function GatherLite:IsLoaded() return true end
@@ -426,6 +455,21 @@ for _,f in ipairs(frames) do
     while parent and parent~=W.pages[2] do parent=parent.parent end
     if f.kind=="CheckButton" and parent then f:SetChecked(true); f.scripts.OnClick(f) end
 end
+W.settingsButtons.profiles.scripts.OnClick()
+local profileControls=W.settingsPanels.profiles.controls
+assert(not profileControls[5]:IsEnabled() and not profileControls[8]:IsEnabled(),
+    "active profile must not be a switch or delete target")
+profileControls[1]:SetText("  Farming  ")
+profileControls[1].scripts.OnEnterPressed()
+assert(GatherLite.db:GetCurrentProfile()=="Farming", "creating a profile must select it")
+profileControls[3].scripts.OnClick()
+profileControls[5].scripts.OnClick()
+assert(GatherLite.db:GetCurrentProfile()=="Default", "saved profile selection must switch profiles")
+profileControls[4].scripts.OnClick()
+profileControls[8].scripts.OnClick()
+assert(confirmation and profiles.Farming, "deleting a profile must await confirmation")
+confirmation()
+assert(not profiles.Farming, "confirmation must delete only the selected profile")
 W:SelectTab(1)
 WorldMapFrame.mapID=2; playerMap=2
 R:Draw(.1)
@@ -499,7 +543,7 @@ playerMap=1; WorldMapFrame.mapID=1
 load("plugins/fishing/maps.lua")
 local F=addon.Fishing
 GatherLite.db.global.usePredefined=false
-GatherLite.db.char.worldmap.enabled=true; GatherLite.db.char.minimap.enabled=true
+GatherLite.db.profile.worldmap.enabled=true; GatherLite.db.profile.minimap.enabled=true
 GatherLite.db.char.worldmap.fishing=false; GatherLite.db.char.minimap.fishing=false
 local collected=R:Collect(fish)
 assert(#collected[1]==3 and #collected[2]==0 and not collected[99])
@@ -515,6 +559,9 @@ local privateFish=0
 for _, frame in ipairs(F.frames) do
     if frame.parent and frame.parent.parent==WorldMapFrame.ScrollContainer then
         assert(frame.parent.clipsChildren and frame:IsVisible() and frame.point[2]==WorldMapFrame:GetCanvas())
+        local display=GatherLite.db.profile.worldmap
+        assert(frame:GetWidth()==display.size and frame:GetAlpha()==display.opacity,
+            "private fishing pins must use the world map display settings")
         privateFish=privateFish+1
     end
 end
@@ -531,7 +578,7 @@ W.visibility.scripts.OnClick()
 assert(#Pins.world==0 and #Pins.mini==0 and not F.visible)
 W.visibility.scripts.OnClick()
 assert(#Pins.world==2 and #Pins.mini==2 and F.visible)
-GatherLite.db.char.minimap.enabled=false; F:Refresh()
+GatherLite.db.profile.minimap.enabled=false; F:Refresh()
 assert(#Pins.world==2 and #Pins.mini==0,"minimap master toggle ignored")
 W.clear.scripts.OnClick()
 assert(#Pins.world==0 and not W.object and not GatherLite.db.char.fishItem)
@@ -551,7 +598,7 @@ local otherFish={type="fish",id={},itemID=6289,name="Raw Longjaw Mud Snapper",ic
 addon.fishDB={fish,otherFish}
 F:Select(nil)
 GatherLite.db.global.usePredefined=true
-GatherLite.db.char.worldmap.enabled=true; GatherLite.db.char.minimap.enabled=true
+GatherLite.db.profile.worldmap.enabled=true; GatherLite.db.profile.minimap.enabled=true
 GatherLite.db.char.worldmap.fishing=true; GatherLite.db.char.minimap.fishing=true
 WorldMapFrame.mapID=1; WorldMapFrame.canvasScale=1; playerMap=1
 F:Refresh()
@@ -593,6 +640,19 @@ assert(#Pins.world==1 and #Pins.mini==1 and refreshes==beforeRefresh+1,"fish pin
 watcher.scripts.OnUpdate(watcher,.3)
 assert(refreshes==beforeRefresh+1,"idle player polling rebuilt fish pins")
 F.Refresh=refresh
+local worldDisplay, minimapDisplay=GatherLite.db.profile.worldmap,GatherLite.db.profile.minimap
+local worldSize, worldAlpha=worldDisplay.size,worldDisplay.opacity
+local miniSize, miniAlpha=minimapDisplay.size,minimapDisplay.opacity
+local worldFish, miniFish=Pins.world[1].frame,Pins.mini[1].frame
+worldDisplay.size,worldDisplay.opacity=8,.2
+minimapDisplay.size,minimapDisplay.opacity=6,.3
+GatherLite:Trigger("settings:update")
+assert(worldFish:GetWidth()==8 and worldFish:GetHeight()==8 and worldFish:GetAlpha()==.2,
+    "existing world map fish pins must follow size and opacity changes")
+assert(miniFish:GetWidth()==6 and miniFish:GetHeight()==6 and miniFish:GetAlpha()==.3,
+    "existing minimap fish pins must follow their own display settings")
+worldDisplay.size,worldDisplay.opacity=worldSize,worldAlpha
+minimapDisplay.size,minimapDisplay.opacity=miniSize,miniAlpha
 GatherLite.db.global.usePredefined=false; F:Refresh()
 assert(#Pins.world==0 and #Pins.mini==0,"automatic reference pins ignored predefined-data toggle")
 -- A dense shoreline stays readable and keeps the same geographic anchors at every zoom.
@@ -607,6 +667,12 @@ W:SelectObject(dense)
 local visible={}
 for _,pin in ipairs(W.pins) do if pin:IsShown() then visible[#visible+1]=pin end end
 assert(#visible>1 and #visible<10,"farming map still shows an icon for every catch report")
+worldDisplay.size,worldDisplay.opacity=9,.4
+W:DrawMap()
+assert(visible[1]:GetWidth()==9 and visible[1]:GetAlpha()==.4,
+    "existing farming map fish pins must follow world map display changes")
+worldDisplay.size,worldDisplay.opacity=worldSize,worldAlpha
+W:DrawMap()
 for i,a in ipairs(visible) do
     for j=i+1,#visible do
         local b=visible[j]
@@ -864,7 +930,7 @@ function HBD:GetPlayerZone() return playerMap end
 local hudOptions=addon.SettingsOptions.args.hud.args
 local visibility=hudOptions.visibility.args
 local function setHudExternalPins(enabled)
-    GatherLite.db.char.hud.externalPins=enabled
+    GatherLite.db.profile.hud.externalPins=enabled
     GatherLite:Trigger("settings:update")
 end
 assert(not hudOptions.tracking and hudOptions.mirrorMinimap.type=="toggle")
@@ -931,7 +997,7 @@ hudPlayerX=-499
 assert(drawHud(0,.5)[1].point[4]>0,"walking must update node bearings between index scans")
 assert(hudQueries==queries,"turning and small movements must not rescan the node index")
 
-local cfg=GatherLite.db.char.hud
+local cfg=GatherLite.db.profile.hud
 assert(hud.strata=="BACKGROUND" and not hud.mouseEnabled)
 hudOptions.move.func()
 assert(hud.strata=="DIALOG" and hud.mouseEnabled,"move mode must raise the drag handle above settings")
@@ -1041,9 +1107,10 @@ do
     own.object={name="copper"}
     Pins.activeMinimapPins[fish]={instanceID=0,x=-520,y=-459}
     Pins.minimapPinRegistry[addon.Fishing]={[fish]=true}
-    local mini=GatherLite.db.char.minimap
-    local previousHide,previousHerb=mini.hideNearbyNodes,mini.herbalism
-    mini.hideNearbyNodes,mini.herbalism=true,false
+    local mini=GatherLite.db.profile.minimap
+    local filters=GatherLite.db.char.minimap
+    local previousHide,previousHerb=mini.hideNearbyNodes,filters.herbalism
+    mini.hideNearbyNodes,filters.herbalism=true,false
     own:Hide()
     hudOptions.mirrorMinimap.set(nil,true)
     pins=drawHud(0,.01)
@@ -1094,7 +1161,7 @@ do
     assert(#drawHud(0,.21)==4,"pins removed from either source must clear from the compass")
     LibStub,C_VignetteInfo=originalLibStub,originalVignetteInfo
 
-    mini.hideNearbyNodes,mini.herbalism=previousHide,previousHerb
+    mini.hideNearbyNodes,filters.herbalism=previousHide,previousHerb
     hudOptions.mirrorMinimap.set(nil,false)
     pins=drawHud(0,.01)
     assert(#pins==3 and not pins[1].item.external,
@@ -1699,7 +1766,7 @@ do
     end
     assert(pinZoomSlider, "the zoom slider must start at the saved value")
     pinZoomSlider:AdjustBy(1)
-    assert(GatherLite.db.char.worldmap.openMapPinZoom == 8, "changing the slider must save the zoom")
+    assert(GatherLite.db.profile.worldmap.openMapPinZoom == 8, "changing the slider must save the zoom")
     sidebar:FocusZone(2)
     assert(focus[3] == 8, "zone navigation must use the saved visibility zoom")
     toggle()

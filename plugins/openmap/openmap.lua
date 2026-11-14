@@ -3,7 +3,7 @@ local OpenMap = { pins = {}, pool = {}, rects = {}, cells = {} }
 addon.OpenMap = OpenMap
 
 function OpenMap:GetMinPinZoom()
-    return GatherLite.db.char.worldmap.openMapPinZoom or 7
+    return GatherLite.db.profile.worldmap.openMapPinZoom or 7
 end
 
 local kinds = { "mining", "herbalism", "containers", "fishing" }
@@ -185,7 +185,7 @@ function OpenMap:Update()
         self:Clear()
         self.api, self.rects = OpenMapAPI, {}
     end
-    local options = GatherLite.db.char.worldmap
+    local options = GatherLite.db.profile.worldmap
     local _, _, zoom = OpenMapAPI.GetView()
     if not options.enabled or not zoom or zoom < self:GetMinPinZoom() then
         if self.bounds then self:Clear() end

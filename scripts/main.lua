@@ -31,7 +31,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
             tooltip:AddDoubleLine(GatherLite:Colorize("All frames", "white"), GatherLite:tablelength(GFrame.allFrames));
 
             local function minimapFilter(node)
-                if not GatherLite.db.char.minimap.enabled then
+                if not GatherLite.db.profile.minimap.enabled then
                     return false
                 end
                 if not GatherLite:GetNodeTracking("minimap", node.type) then
@@ -48,7 +48,7 @@ local minimapIcon = LibStub("LibDataBroker-1.1"):NewDataObject("GatherLiteMinima
 
             local worldX, worldY, instanceID = HBD:GetPlayerWorldPosition()
             local zoneX, zoneY, mapID = HBD:GetPlayerZonePosition()
-            local range = GatherLite.db.char.minimap.range
+            local range = GatherLite.db.profile.minimap.range
             local types = { "mining", "herbalism", "containers", "fishing" }
             local totalInRange = 0
 
@@ -139,10 +139,11 @@ end
 
 local function mergeMissingSettings(target, source)
     for key, value in pairs(source) do
-        if target[key] == nil then
+        if type(value) == "table" then
+            if target[key] == nil then target[key] = {} end
+            if type(target[key]) == "table" then mergeMissingSettings(target[key], value) end
+        elseif target[key] == nil then
             target[key] = value
-        elseif type(target[key]) == "table" and type(value) == "table" then
-            mergeMissingSettings(target[key], value)
         end
     end
 end
@@ -170,6 +171,108 @@ end
 
 _GatherLite.MigrateCharacterSettings = migrateCharacterSettings
 
+local trackingKeys = { "ignore", "tracking", "professionTrackingInitialized", "professionTrackingManual" }
+local displayGroups = { "minimap", "worldmap", "hud" }
+
+-- Recover tracking from the character's active profile if an earlier build saved it there.
+local function migrateProfileTracking(db)
+    for character, name in pairs(db.sv.profileKeys) do
+        local profile = db.profiles[name]
+        if profile then
+            local tracking = {}
+            for _, key in ipairs(trackingKeys) do tracking[key] = profile[key] end
+            for _, group in ipairs(displayGroups) do
+                if profile[group] and profile[group].tracking then
+                    tracking[group] = { tracking = profile[group].tracking }
+                end
+            end
+            if next(tracking) then
+                db.sv.char = db.sv.char or {}
+                db.sv.char[character] = db.sv.char[character] or {}
+                mergeMissingSettings(db.sv.char[character], tracking)
+            end
+        end
+    end
+    for _, profile in pairs(db.profiles) do
+        for _, key in ipairs(trackingKeys) do profile[key] = nil end
+        for _, group in ipairs(displayGroups) do
+            if profile[group] then profile[group].tracking = nil end
+        end
+    end
+end
+
+-- Preserve legacy display preferences separately for each existing character.
+local function migrateProfileSettings(db, saved)
+    if not saved.professionTrackingInitialized and (next(saved.tracking or {})
+        or next(saved.minimap and saved.minimap.tracking or {})
+        or next(saved.worldmap and saved.worldmap.tracking or {})) then
+        saved.professionTrackingManual = true
+    end
+    if saved.profileSettingsMigrated then return end
+
+    local preferences = {}
+    for _, group in ipairs(displayGroups) do
+        local settings = saved[group]
+        if settings then
+            local display = {}
+            for key, value in pairs(settings) do
+                if key ~= "tracking" then display[key] = value end
+            end
+            if next(display) then
+                preferences[group] = display
+                saved[group] = settings.tracking and { tracking = settings.tracking } or nil
+            end
+        end
+    end
+    if next(preferences) then
+        local previous = db:GetCurrentProfile()
+        local baseName = db.keys.char
+        if strlenutf8(baseName) > 40 then
+            baseName = GatherLite:translate("settings.profiles.character")
+        end
+        local profile = baseName
+        local existing = db.profiles
+        local suffix = 2
+        while existing[profile] or profile == previous do
+            profile = baseName .. " (" .. suffix .. ")"
+            suffix = suffix + 1
+        end
+        db:SetProfile(profile)
+        if existing[previous] then db:CopyProfile(previous) end
+        for key, value in pairs(preferences) do
+            db.profile[key] = value
+        end
+    end
+    saved.profileSettingsMigrated = true
+end
+
+-- Earlier releases stored the launcher state under profile.minimap.
+local function migrateMinimapIcons(db)
+    for _, profile in pairs(db.profiles) do
+        local minimap = profile.minimap
+        if profile.minimapIcon == nil and minimap then
+            local icon = { hide = minimap.hide, minimapPos = minimap.minimapPos, lock = minimap.lock }
+            if next(icon) then
+                profile.minimapIcon = icon
+                minimap.hide, minimap.minimapPos, minimap.lock = nil, nil, nil
+                if not next(minimap) then profile.minimap = nil end
+            end
+        end
+    end
+end
+
+function _GatherLite.MigrateProfileSettings(db)
+    migrateMinimapIcons(db)
+    migrateProfileTracking(db)
+    migrateProfileSettings(db, db.char)
+end
+
+function GatherLite:RefreshProfile()
+    self.minimap:Refresh("GatherLiteMinimapIcon", self.db.profile.minimapIcon)
+    self:Trigger("settings:update")
+    LibStub("AceConfigRegistry-3.0"):NotifyChange("GatherLite")
+end
+
 local function legacyForeverCharacterKey()
     if not RegionalUniqueNamesEnabled or not RegionalUniqueNamesEnabled() then return nil end
     local ruleset
@@ -196,15 +299,8 @@ function GatherLite:OnInitialize()
     if legacyProfile and legacyProfile ~= self.db.keys.profile then
         self.db:SetProfile(legacyProfile)
     end
-    local saved=GatherLiteSettings and GatherLiteSettings.char
-        and GatherLiteSettings.char[self.db.keys.char]
-    local savedOverrides=saved and (next(saved.tracking or {})
-        or next(saved.minimap and saved.minimap.tracking or {})
-        or next(saved.worldmap and saved.worldmap.tracking or {}))
+    _GatherLite.MigrateProfileSettings(self.db)
     self.db:RegisterDefaults(_GatherLite.configsDefaults)
-    if savedOverrides and not self.db.char.professionTrackingInitialized then
-        self.db.char.professionTrackingManual=true
-    end
     self.minimap = LibStub("LibDBIcon-1.0")
     self:RegisterSettingsLauncher()
 
@@ -212,7 +308,10 @@ function GatherLite:OnInitialize()
     GatherLite:print("use |cFF00FF00/gather|r or |cFF00FF00/gatherlite|r to access addon settings");
     GatherLite:print("Support GatherLite on " .. _GatherLite.supportLabel .. ": " .. GatherLite:Colorize(_GatherLite.supportUrl, "cyan"));
 
-    GatherLite.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimap);
+    self.minimap:Register("GatherLiteMinimapIcon", minimapIcon, self.db.profile.minimapIcon)
+    self.db.RegisterCallback(self, "OnProfileChanged", "RefreshProfile")
+    self.db.RegisterCallback(self, "OnProfileCopied", "RefreshProfile")
+    self.db.RegisterCallback(self, "OnProfileReset", "RefreshProfile")
 
     GatherLite:RegisterEvent("UNIT_SPELLCAST_SENT", "EventHandler")
     GatherLite:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED", "EventHandler")
@@ -246,26 +345,20 @@ function GatherLite.ModifyTooltip()
         return
     end
     local object = GatherLite:GetObject(objectName)
-    if not object or not object.levels then
-        return
-    end
-    local profession
-    if object.type == "ore" then
-        profession = GatherLite:translate("mining")
-    elseif object.type == "herb" then
-        profession = GatherLite:translate("herbalism")
-    else
-        return
-    end
-
-    local req = object.levels
-    local requirement = (ITEM_MIN_SKILL or "Requires %s (%d)"):format(profession, req[1])
+    if not object then return end
+    local requirement, profession = GatherLite:GetNodeSkillRequirement(object)
+    if not requirement then return end
     local hasProfessionLine = false
     for i = 2, GameTooltip:NumLines() do
         local line = GameTooltip.GetLeftLine and GameTooltip:GetLeftLine(i) or _G["GameTooltipTextLeft" .. i]
         local text = line and line:GetText()
         if not API.IsSecret(text) then
             if text == requirement then
+                if line.SetTextColor then
+                    local r, g, b = GatherLite:GetNodeSkillRequirementColor(object, profession)
+                    -- Preserve client difficulty colors when only the minimum is known.
+                    if g ~= 1 or b ~= 1 then line:SetTextColor(r, g, b) end
+                end
                 return
             elseif text == profession then
                 hasProfessionLine = true
@@ -276,20 +369,6 @@ function GatherLite.ModifyTooltip()
         return
     end
 
-    local rank = GatherLite:GetProfessionLevel(profession)
-    local r, g, b = 1, 1, 1
-    if rank < req[1] then
-        r, g, b = 1, 0, 0
-    elseif req[4] and rank >= req[4] then
-        r, g, b = 0.62, 0.62, 0.62
-    elseif req[3] and rank >= req[3] then
-        r, g, b = 0.12, 1, 0
-    elseif req[2] and rank >= req[2] then
-        r, g, b = 1, 1, 0
-    elseif req[2] then
-        r, g, b = 1, 0.5, 0
-    end
-
-    GameTooltip:AddLine(requirement, r, g, b)
+    GameTooltip:AddLine(requirement, GatherLite:GetNodeSkillRequirementColor(object, profession))
     GameTooltip:Show()
 end

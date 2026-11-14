@@ -30,7 +30,7 @@ local function refreshNodes(worldX, worldY, mapID, instance)
     if not worldX or not mapID then return end
     -- Read our nodes from the index so the HUD controls their visibility and size.
     local target = options.mirrorMinimap and "minimap" or "hud"
-    if options.mirrorMinimap and (not GatherLite.db.char.minimap.enabled or IsInInstance()) then return end
+    if options.mirrorMinimap and (not GatherLite.db.profile.minimap.enabled or IsInInstance()) then return end
     local x, y = HBD:GetZoneCoordinatesFromWorldInstance(worldX, worldY, instance, mapID, true)
     if not x or not y then return end
     local range = options.range + queryPadding
@@ -450,7 +450,7 @@ local function create()
 end
 
 local function applySettings()
-    options = GatherLite.db.char.hud
+    options = GatherLite.db.profile.hud
     if not options.enabled and not moving then
         if frame then
             stopDrag()

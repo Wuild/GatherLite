@@ -171,6 +171,18 @@ check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Mining (1)", "gath
 check(tooltipLayoutCount == 1 and laidOutBodyLine == bodyLines[1], "tooltip resizes after adding the requirement")
 GatherLite.ModifyTooltip()
 check(#bodyLines == 1 and tooltipLayoutCount == 1, "tooltip update is idempotent")
+local nativeColor
+bodyLines[1].SetTextColor = function(_, ...) nativeColor = {...} end
+C_SkillInfo = {
+    GetNumSkillLines = function() return 0 end,
+    GetSkillLineInfo = function() end,
+    GetSkillLineInfoByID = function(id)
+        if id == 186 then return { name = "Mining", rank = 45, modifier = 5 } end
+    end,
+}
+GatherLite.ModifyTooltip()
+check(#bodyLines == 1 and nativeColor[1] == 0.12 and nativeColor[2] == 1 and nativeColor[3] == 0,
+    "existing world requirement uses effective gathering skill without adding a duplicate")
 bodyLines = {}
 GatherLite.ModifyTooltip()
 check(#bodyLines == 1 and tooltipLayoutCount == 2, "rebuilt tooltip gets the requirement again")

@@ -64,6 +64,7 @@ _GatherLite.configsDefaults = {
     },
     char = {
         debugging = false,
+        p2p = { guild = true },
         ignore = {},
         tracking = {
             mining = true,
@@ -71,6 +72,32 @@ _GatherLite.configsDefaults = {
             containers = true,
             fishing = true
         },
+        minimap = {
+            tracking = {
+                mining = true,
+                herbalism = true,
+                containers = true,
+                fishing = true
+            }
+        },
+        worldmap = {
+            tracking = {
+                mining = true,
+                herbalism = true,
+                containers = true,
+                fishing = true
+            }
+        },
+        hud = {
+            tracking = {
+                mining = true,
+                herbalism = true,
+                containers = true,
+                fishing = true
+            }
+        },
+    },
+    profile = {
         minimap = {
             enabled = true,
             hide = false,
@@ -83,16 +110,10 @@ _GatherLite.configsDefaults = {
             ringSize = 18,
             ringDifficultyColors = false,
             ringShowIcon = true,
-            hideNearbyNodes = true,
+            hideNearbyNodes = false,
             loot = true,
             edge = false,
-            neighbors = true,
-            tracking = {
-                mining = true,
-                herbalism = true,
-                containers = true,
-                fishing = true
-            }
+            neighbors = true
         },
         worldmap = {
             enabled = true,
@@ -102,13 +123,7 @@ _GatherLite.configsDefaults = {
             opacity = 1,
             loot = true,
             neighbors = false,
-            continent = false,
-            tracking = {
-                mining = true,
-                herbalism = true,
-                containers = true,
-                fishing = true
-            }
+            continent = false
         },
         hud = {
             enabled = false,
@@ -127,21 +142,8 @@ _GatherLite.configsDefaults = {
             externalPins = false,
             mirrorMinimap = true,
             x = 0,
-            y = 0,
-            tracking = {
-                mining = true,
-                herbalism = true,
-                containers = true,
-                fishing = true
-            }
+            y = 0
         },
-        p2p = {
-            guild = true
-        }
+        minimapIcon = { hide = false },
     },
-    profile = {
-        minimap = {
-            hide = false
-        }
-    }
 }

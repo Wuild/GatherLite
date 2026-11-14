@@ -25,7 +25,7 @@ assert(total > 25000, "database lost locations")
 local loaded, callbacks = {}, {}
 local enabled = { mining = true }
 local gather = {
-    plugins = {}, db = { global = { usePredefined = false }, char = { hud = { enabled = false } } },
+    plugins = {}, db = { global = { usePredefined = false }, profile = { hud = { enabled = false } } },
     GetNodeObject = function(_, id) return byID[id] end,
     GetNodeTracking = function(_, target, kind)
         return (target == "minimap" and enabled[kind]) or (target == "hud" and kind == "herbalism")
@@ -61,7 +61,7 @@ assert(not loaded.herbalism and addon.predefined, "disabled types loaded eagerly
 for id in pairs(addon.predefined) do assert(byID[id].type ~= "ore", "loaded coordinate arrays retained") end
 callbacks["settings:update"]()
 assert(#loaded.mining == expected.mining - 1, "nodes loaded twice")
-gather.db.char.hud.enabled = true
+gather.db.profile.hud.enabled = true
 callbacks["settings:update"]()
 assert(#loaded.herbalism == expected.herbalism, "HUD-only tracking must load predefined nodes")
 enabled.herbalism, enabled.containers, enabled.fishing = true, true, true

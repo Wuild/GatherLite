@@ -23,8 +23,8 @@ local function hudRange(key, min, max, step, order)
     return {
         name = function() return GatherLite:translate("settings.hud." .. key) end,
         type = "range", min = min, max = max, step = step, order = order, width = "full",
-        set = function(_, value) GatherLite.db.char.hud[key] = value end,
-        get = function() return GatherLite.db.char.hud[key] end,
+        set = function(_, value) GatherLite.db.profile.hud[key] = value end,
+        get = function() return GatherLite.db.profile.hud[key] end,
     }
 end
 
@@ -34,10 +34,10 @@ local function hudToggle(key, order, description)
         desc = description and function() return GatherLite:translate("settings.hud." .. key .. ".description") end,
         type = "toggle", order = order, width = "full",
         set = function(_, value)
-            GatherLite.db.char.hud[key] = value
+            GatherLite.db.profile.hud[key] = value
             GatherLite:Trigger("settings:update")
         end,
-        get = function() return GatherLite.db.char.hud[key] end,
+        get = function() return GatherLite.db.profile.hud[key] end,
     }
 end
 
@@ -255,11 +255,11 @@ _GatherLite.SettingsOptions = {
                     order = 2,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.char.minimap.enabled = val;
+                        GatherLite.db.profile.minimap.enabled = val;
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
-                        return GatherLite.db.char.minimap.enabled;
+                        return GatherLite.db.profile.minimap.enabled;
                     end
                 },
 
@@ -271,11 +271,11 @@ _GatherLite.SettingsOptions = {
                     order = 2,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.char.worldmap.enabled = val;
+                        GatherLite.db.profile.worldmap.enabled = val;
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
-                        return GatherLite.db.char.worldmap.enabled;
+                        return GatherLite.db.profile.worldmap.enabled;
                     end
                 },
 
@@ -293,15 +293,15 @@ _GatherLite.SettingsOptions = {
                     type = "toggle",
                     order = 6,
                     set = function(info, val)
-                        GatherLite.db.profile.minimap.hide = not val;
-                        if GatherLite.db.profile.minimap.hide then
+                        GatherLite.db.profile.minimapIcon.hide = not val;
+                        if GatherLite.db.profile.minimapIcon.hide then
                             GatherLite.minimap:Hide("GatherLiteMinimapIcon");
                         else
                             GatherLite.minimap:Show("GatherLiteMinimapIcon");
                         end
                     end,
                     get = function(info)
-                        return not GatherLite.db.profile.minimap.hide
+                        return not GatherLite.db.profile.minimapIcon.hide
                     end
                 },
                 Spacer_1 = {
@@ -326,10 +326,10 @@ _GatherLite.SettingsOptions = {
                     desc = function() return GatherLite:translate("settings.map.neighbors.description") end,
                     type = "toggle", order = 5, width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.worldmap.neighbors = value
+                        GatherLite.db.profile.worldmap.neighbors = value
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.worldmap.neighbors end,
+                    get = function() return GatherLite.db.profile.worldmap.neighbors end,
                 },
                 zoneTooltip = {
                     name = function() return GatherLite:translate("settings.map.zone_tooltip") end,
@@ -337,10 +337,10 @@ _GatherLite.SettingsOptions = {
                     order = 4,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.worldmap.zoneTooltip = value
+                        GatherLite.db.profile.worldmap.zoneTooltip = value
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.worldmap.zoneTooltip end,
+                    get = function() return GatherLite.db.profile.worldmap.zoneTooltip end,
                 },
                 header = {
                     name = function()
@@ -357,10 +357,10 @@ _GatherLite.SettingsOptions = {
                     order = 3,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.char.worldmap.loot = val;
+                        GatherLite.db.profile.worldmap.loot = val;
                     end,
                     get = function(info)
-                        return GatherLite.db.char.worldmap.loot
+                        return GatherLite.db.profile.worldmap.loot
                     end
                 },
                 sliders = {
@@ -380,7 +380,7 @@ _GatherLite.SettingsOptions = {
                             order = 5,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.worldmap.size = val;
+                                GatherLite.db.profile.worldmap.size = val;
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "worldmap" then
                                         frame:SetSize(val, val)
@@ -388,15 +388,15 @@ _GatherLite.SettingsOptions = {
                                 end
                             end,
                             get = function(info)
-                                return GatherLite.db.char.worldmap.size
+                                return GatherLite.db.profile.worldmap.size
                             end
                         },
                         openMapPinZoom = {
                             name = function() return GatherLite:translate("settings.map.openmap_pin_zoom") end,
                             hidden = function() return not (OpenMapAPI and OpenMapAPI.major == 1) end,
                             type = "range", min = 1, max = 16, step = 1, order = 7, width = "full",
-                            set = function(_, value) GatherLite.db.char.worldmap.openMapPinZoom = value end,
-                            get = function() return GatherLite.db.char.worldmap.openMapPinZoom end,
+                            set = function(_, value) GatherLite.db.profile.worldmap.openMapPinZoom = value end,
+                            get = function() return GatherLite.db.profile.worldmap.openMapPinZoom end,
                         },
                         iconOpacity = {
                             name = function()
@@ -409,7 +409,7 @@ _GatherLite.SettingsOptions = {
                             order = 6,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.worldmap.opacity = val;
+                                GatherLite.db.profile.worldmap.opacity = val;
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "worldmap" then
                                         frame:SetAlpha(val)
@@ -417,7 +417,7 @@ _GatherLite.SettingsOptions = {
                                 end
                             end,
                             get = function(info)
-                                return GatherLite.db.char.worldmap.opacity
+                                return GatherLite.db.profile.worldmap.opacity
                             end
                         }
                     }
@@ -439,14 +439,14 @@ _GatherLite.SettingsOptions = {
                     order = 5,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.minimap.hideNearbyNodes = value
+                        GatherLite.db.profile.minimap.hideNearbyNodes = value
                         if value then
-                            GatherLite.db.char.minimap.nearbyCircles = false
-                            GatherLite.db.char.minimap.ringMarkers = false
+                            GatherLite.db.profile.minimap.nearbyCircles = false
+                            GatherLite.db.profile.minimap.ringMarkers = false
                         end
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.hideNearbyNodes == true end,
+                    get = function() return GatherLite.db.profile.minimap.hideNearbyNodes == true end,
                 },
                 nearbyCircles = {
                     name = function() return GatherLite:translate("settings.minimap.nearby_circles") end,
@@ -455,14 +455,14 @@ _GatherLite.SettingsOptions = {
                     order = 4,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.minimap.nearbyCircles = value
+                        GatherLite.db.profile.minimap.nearbyCircles = value
                         if value then
-                            GatherLite.db.char.minimap.hideNearbyNodes = false
-                            GatherLite.db.char.minimap.ringMarkers = false
+                            GatherLite.db.profile.minimap.hideNearbyNodes = false
+                            GatherLite.db.profile.minimap.ringMarkers = false
                         end
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.nearbyCircles == true end,
+                    get = function() return GatherLite.db.profile.minimap.nearbyCircles == true end,
                 },
                 ringMarkers = {
                     name = function() return GatherLite:translate("settings.minimap.ring_markers") end,
@@ -471,14 +471,14 @@ _GatherLite.SettingsOptions = {
                     order = 4.5,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.minimap.ringMarkers = value
+                        GatherLite.db.profile.minimap.ringMarkers = value
                         if value then
-                            GatherLite.db.char.minimap.hideNearbyNodes = false
-                            GatherLite.db.char.minimap.nearbyCircles = false
+                            GatherLite.db.profile.minimap.hideNearbyNodes = false
+                            GatherLite.db.profile.minimap.nearbyCircles = false
                         end
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.ringMarkers == true end,
+                    get = function() return GatherLite.db.profile.minimap.ringMarkers == true end,
                 },
                 ringDifficultyColors = {
                     name = function() return GatherLite:translate("settings.minimap.ring_difficulty") end,
@@ -487,10 +487,10 @@ _GatherLite.SettingsOptions = {
                     order = 4.6,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.minimap.ringDifficultyColors = value
+                        GatherLite.db.profile.minimap.ringDifficultyColors = value
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.ringDifficultyColors == true end,
+                    get = function() return GatherLite.db.profile.minimap.ringDifficultyColors == true end,
                 },
                 ringShowIcon = {
                     name = function() return GatherLite:translate("settings.minimap.ring_icon") end,
@@ -499,10 +499,10 @@ _GatherLite.SettingsOptions = {
                     order = 4.7,
                     width = "full",
                     set = function(_, value)
-                        GatherLite.db.char.minimap.ringShowIcon = value
+                        GatherLite.db.profile.minimap.ringShowIcon = value
                         GatherLite:Trigger("settings:update")
                     end,
-                    get = function() return GatherLite.db.char.minimap.ringShowIcon ~= false end,
+                    get = function() return GatherLite.db.profile.minimap.ringShowIcon ~= false end,
                 },
                 header = {
                     name = function()
@@ -520,11 +520,11 @@ _GatherLite.SettingsOptions = {
                     order = 2,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.char.minimap.edge = val;
+                        GatherLite.db.profile.minimap.edge = val;
                         GatherLite:Trigger("settings:update")
                     end,
                     get = function(info)
-                        return GatherLite.db.char.minimap.edge
+                        return GatherLite.db.profile.minimap.edge
                     end
                 },
                 loot = {
@@ -535,10 +535,10 @@ _GatherLite.SettingsOptions = {
                     order = 3,
                     width = "full",
                     set = function(info, val)
-                        GatherLite.db.char.minimap.loot = val;
+                        GatherLite.db.profile.minimap.loot = val;
                     end,
                     get = function(info)
-                        return GatherLite.db.char.minimap.loot
+                        return GatherLite.db.profile.minimap.loot
                     end
                 },
                 sliders = {
@@ -549,7 +549,7 @@ _GatherLite.SettingsOptions = {
                     args = {
                         nodeRange = {
                             name = function()
-                                return GatherLite:translate("settings.minimap.threshold", GatherLite.db.char.minimap.range);
+                                return GatherLite:translate("settings.minimap.threshold", GatherLite.db.profile.minimap.range);
                             end,
                             type = "range",
                             min = 200,
@@ -558,11 +558,11 @@ _GatherLite.SettingsOptions = {
                             order = 4,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.minimap.range = val;
+                                GatherLite.db.profile.minimap.range = val;
                                 GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
-                                return GatherLite.db.char.minimap.range
+                                return GatherLite.db.profile.minimap.range
                             end
                         },
                         iconSize = {
@@ -576,7 +576,7 @@ _GatherLite.SettingsOptions = {
                             order = 5,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.minimap.size = val;
+                                GatherLite.db.profile.minimap.size = val;
                                 local applyLayout = GatherLite.modules.Minimap and GatherLite.modules.Minimap.ApplyLayout
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
@@ -585,7 +585,7 @@ _GatherLite.SettingsOptions = {
                                 end
                             end,
                             get = function(info)
-                                return GatherLite.db.char.minimap.size
+                                return GatherLite.db.profile.minimap.size
                             end
                         },
                         ringSize = {
@@ -599,7 +599,7 @@ _GatherLite.SettingsOptions = {
                             order = 5.5,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.minimap.ringSize = val;
+                                GatherLite.db.profile.minimap.ringSize = val;
                                 local applyLayout = GatherLite.modules.Minimap and GatherLite.modules.Minimap.ApplyLayout
                                 if not applyLayout then return end
                                 for i, frame in ipairs(GFrame.allFrames) do
@@ -607,7 +607,7 @@ _GatherLite.SettingsOptions = {
                                 end
                             end,
                             get = function(info)
-                                return GatherLite.db.char.minimap.ringSize or 18
+                                return GatherLite.db.profile.minimap.ringSize or 18
                             end
                         },
                         iconOpacity = {
@@ -621,7 +621,7 @@ _GatherLite.SettingsOptions = {
                             order = 6,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.minimap.opacity = val;
+                                GatherLite.db.profile.minimap.opacity = val;
                                 for i, frame in ipairs(GFrame.allFrames) do
                                     if frame.type == "minimap" then
                                         frame:SetAlpha(val)
@@ -629,12 +629,12 @@ _GatherLite.SettingsOptions = {
                                 end
                             end,
                             get = function(info)
-                                return GatherLite.db.char.minimap.opacity
+                                return GatherLite.db.profile.minimap.opacity
                             end
                         },
                         iconRange = {
                             name = function()
-                                return GatherLite:translate("settings.minimap.range", GatherLite.db.char.minimap.distance);
+                                return GatherLite:translate("settings.minimap.range", GatherLite.db.profile.minimap.distance);
                             end,
                             desc = function()
                                 return GatherLite:translate("settings.minimap.range.description");
@@ -646,11 +646,11 @@ _GatherLite.SettingsOptions = {
                             order = 7,
                             width = "full",
                             set = function(info, val)
-                                GatherLite.db.char.minimap.distance = val;
+                                GatherLite.db.profile.minimap.distance = val;
                                 GatherLite:Trigger("settings:update")
                             end,
                             get = function(info)
-                                return GatherLite.db.char.minimap.distance
+                                return GatherLite.db.profile.minimap.distance
                             end
                         }
                     }
@@ -673,7 +673,7 @@ _GatherLite.SettingsOptions = {
                     name = function() return GatherLite:translate("settings.hud.reset") end,
                     type = "execute", order = 3, width = "full",
                     func = function()
-                        local options, defaults = GatherLite.db.char.hud, _GatherLite.configsDefaults.char.hud
+                        local options, defaults = GatherLite.db.profile.hud, _GatherLite.configsDefaults.profile.hud
                         options.x, options.y = defaults.x, defaults.y
                         GatherLite:Trigger("settings:update")
                     end,
@@ -690,7 +690,7 @@ _GatherLite.SettingsOptions = {
                     func = function()
                         local picker = ColorPickerFrame
                         if not picker or not picker.SetupColorPickerAndShow then return end
-                        local color = GatherLite.db.char.hud.backgroundColor
+                        local color = GatherLite.db.profile.hud.backgroundColor
                         local r, g, b = color.r, color.g, color.b
                         local function setColor(red, green, blue)
                             color.r, color.g, color.b = red, green, blue
@@ -793,12 +793,97 @@ _GatherLite.SettingsOptions = {
     }
 }
 
--- Keep the Blizzard addon-settings entry as a launcher for the custom window.
+local function profileValues()
+    local values = {}
+    for _, name in ipairs(GatherLite.db:GetProfiles()) do values[name] = name end
+    return values
+end
+
+local selectedProfile
+local function getSelectedProfile()
+    local current = GatherLite.db:GetCurrentProfile()
+    local values = profileValues()
+    if not values[selectedProfile] then selectedProfile = current end
+    return selectedProfile
+end
+
+local function canUseOtherProfile()
+    return getSelectedProfile() ~= GatherLite.db:GetCurrentProfile()
+end
+
+local function validateProfileName(_, value)
+    local name = value:match("^%s*(.-)%s*$")
+    if name == "" or strlenutf8(name) > 50 or name:find("[%c|]") then
+        return GatherLite:translate("settings.profiles.invalid")
+    end
+    if profileValues()[name] then return GatherLite:translate("settings.profiles.exists") end
+    return true
+end
+
+local function profileLabel(key)
+    return function() return GatherLite:translate("settings.profiles." .. key) end
+end
+
+_GatherLite.SettingsOptions.args.profiles = {
+    type = "group", name = profileLabel("title"), order = 7,
+    args = {
+        current = {
+            type = "description", order = 1, width = "full",
+            name = function()
+                return GatherLite:translate("settings.profiles.current", GatherLite.db:GetCurrentProfile())
+            end,
+        },
+        create = {
+            type = "input", name = profileLabel("create"), order = 2, width = "full",
+            get = function() return "" end,
+            validate = validateProfileName,
+            set = function(_, value)
+                local name = value:match("^%s*(.-)%s*$")
+                selectedProfile = name
+                GatherLite.db:SetProfile(name)
+            end,
+        },
+        selection = {
+            type = "select", name = profileLabel("selection"), order = 3, width = "full",
+            values = profileValues, get = getSelectedProfile,
+            set = function(_, value) selectedProfile = value end,
+        },
+        switch = {
+            type = "execute", name = profileLabel("switch"), order = 4,
+            disabled = function() return not canUseOtherProfile() end,
+            func = function() GatherLite.db:SetProfile(getSelectedProfile()) end,
+        },
+        copy = {
+            type = "execute", name = profileLabel("copy"), order = 5,
+            disabled = function() return not canUseOtherProfile() end,
+            confirm = profileLabel("confirm_copy"),
+            func = function() GatherLite.db:CopyProfile(getSelectedProfile()) end,
+        },
+        reset = {
+            type = "execute", name = profileLabel("reset"), order = 6,
+            confirm = profileLabel("confirm_reset"),
+            func = function() GatherLite.db:ResetProfile() end,
+        },
+        delete = {
+            type = "execute", name = profileLabel("delete"), order = 7,
+            disabled = function() return not canUseOtherProfile() end,
+            confirm = profileLabel("confirm_delete"),
+            func = function()
+                GatherLite.db:DeleteProfile(getSelectedProfile())
+                if _GatherLite.Window then _GatherLite.Window:RefreshSettings() end
+                LibStub("AceConfigRegistry-3.0"):NotifyChange("GatherLite")
+            end,
+        },
+    },
+}
+
+-- Keep the Blizzard launcher and expose the same profile options there.
 function GatherLite:RegisterSettingsLauncher()
     LibStub("AceConfig-3.0"):RegisterOptionsTable("GatherLite", {
         type = "group",
         name = "GatherLite",
         args = {
+            profiles = _GatherLite.SettingsOptions.args.profiles,
             openSettings = {
                 type = "execute",
                 name = GatherLite:translate("window.action.open_settings"),

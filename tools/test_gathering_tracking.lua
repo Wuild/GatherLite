@@ -69,8 +69,8 @@ C_SkillInfo={GetNumSkillLines=function() return ready and 5 or 0 end,
     GetSkillLineInfoByID=function(id) return skills[id] and {rank=skills[id]} end}
 local refreshes,settingsChanged=0,nil
 -- An opt-in saved by a previous version must leave native tracking alone.
-GatherLite={db={char={autoGatherTracking=true,minimap={enabled=true,tracking={}},worldmap={tracking={}}}},
-    On=function(_,event,callback) assert(event=="settings:update"); settingsChanged=callback end,
+GatherLite={db={profile={minimap={enabled=true}},char={autoGatherTracking=true,minimap={tracking={}},worldmap={tracking={}}}},
+    On=function(_,event,callback) if event=="settings:update" then settingsChanged=callback end end,
     Trigger=function(_,event) assert(event=="settings:update"); refreshes=refreshes+1; settingsChanged() end,
     GetNodeTracking=function(self,target,kind) return self.db.char[target].tracking[kind] end,
     translate=function(_,key) return key end,
@@ -188,8 +188,8 @@ dead=true; fire("PLAYER_DEAD"); assert(not badge.shown)
 dead=false; fire("PLAYER_UNGHOST"); assert(badge.shown)
 inInstance=true; fire("PLAYER_ENTERING_WORLD"); flush(); assert(not badge.shown)
 inInstance=false; fire("PLAYER_ENTERING_WORLD"); flush(); assert(badge.shown)
-char.minimap.enabled=false; settingsChanged(); assert(not badge.shown)
-char.minimap.enabled=true; settingsChanged(); assert(badge.shown)
+GatherLite.db.profile.minimap.enabled=false; settingsChanged(); assert(not badge.shown)
+GatherLite.db.profile.minimap.enabled=true; settingsChanged(); assert(badge.shown)
 
 trackers={{type="other",active=true}}
 fire("MINIMAP_UPDATE_TRACKING")

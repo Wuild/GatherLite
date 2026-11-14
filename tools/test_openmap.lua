@@ -7,7 +7,7 @@ local function frame(parent)
     local f = { parent=parent, shown=true, scripts={}, width=1000, height=500, scale=1, left=0, top=500, level=10 }
     for _, method in ipairs({ "RegisterForClicks", "RegisterForDrag", "SetHighlightTexture",
         "SetMouseClickEnabled", "SetMouseMotionEnabled", "SetTexelSnappingBias", "SetSnapToPixelGrid",
-        "SetVertexColor", "SetTexCoord", "EnableMouse" }) do f[method]=noop end
+        "SetVertexColor", "SetTexCoord", "SetHitRectInsets", "EnableMouse" }) do f[method]=noop end
     function f:SetSize(w,h) self.width,self.height=w,h end
     function f:SetWidth(w) self.width=w end
     function f:SetHeight(h) self.height=h end
@@ -76,8 +76,8 @@ LibStub=setmetatable({NewLibrary=function(_,name) libraries[name]={}; return lib
     {__call=function(_,name) return libraries[name] or {} end})
 tinsert,tremove=table.insert,table.remove
 GameTooltip={IsOwned=function(self,pin) return self.owner==pin end}
-GatherLite={modules={},plugins={},db={char={worldmap={enabled=true,size=16,opacity=.8,
-    tracking={mining=true,herbalism=true,containers=true,fishing=true}}},global={usePredefined=true}}}
+GatherLite={modules={},plugins={},db={profile={worldmap={enabled=true,size=16,opacity=.8}},
+    char={worldmap={tracking={mining=true,herbalism=true,containers=true,fishing=true}}},global={usePredefined=true}}}
 function GatherLite:SendMessage() end
 function GatherLite:On(event,fn) events[event]=fn end
 function GatherLite:hideTooltip() GameTooltip.owner=nil end
@@ -187,12 +187,12 @@ assert(not O.pins[reference] and not O.pins[herb] and O.pins[own])
 local fresh=node(2,.2)
 GatherLite:LoadTable("mining",{fresh}); events["nodes:added"](fresh); tick()
 assert(O.pins[fresh],"new visible gathers must appear without reopening/panning")
-GatherLite.db.char.worldmap.openMapPinZoom=10
+GatherLite.db.profile.worldmap.openMapPinZoom=10
 tick(); assert(next(O.pins)==nil,"raising the saved cutoff must hide pins at the current zoom")
 zoom=10; tick()
 assert(O.pins[own],"pins must appear at the configured zoom")
 zoom=9
-GatherLite.db.char.worldmap.openMapPinZoom=8
+GatherLite.db.profile.worldmap.openMapPinZoom=8
 tick(); assert(O.pins[own],"lowering the saved cutoff must show pins without reopening the map")
 -- Invalid geometry and closed maps release pooled frames.
 canvas.width=0; tick(); assert(next(O.pins)==nil)

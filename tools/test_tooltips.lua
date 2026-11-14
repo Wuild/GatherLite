@@ -7,9 +7,17 @@ local libraries = {
     ["HereBeDragons-2.0"] = {}, ["HereBeDragons-Pins-2.0"] = {}, Semver = {},
 }
 LibStub = function(name) return assert(libraries[name], name) end
-GatherLite = { db = { char = { worldmap = { loot = true }, minimap = { loot = false } } } }
+GatherLite = { db = { profile = { worldmap = { loot = true }, minimap = { loot = false } } } }
 date, time = os.date, os.time
-for _, path in ipairs({ "scripts/locales/enUS.lua", "scripts/nodes.lua", "scripts/methods.lua" }) do
+local rank = 25
+C_SkillInfo = {
+    GetNumSkillLines = function() return 0 end,
+    GetSkillLineInfo = function() end,
+    GetSkillLineInfoByID = function(id)
+        return { name = id == 186 and "Mining" or "Herbalism", rank = rank }
+    end,
+}
+for _, path in ipairs({ "scripts/locales/enUS.lua", "scripts/compat.lua", "scripts/nodes.lua", "scripts/methods.lua" }) do
     assert(loadfile(path))("GatherLite", addon)
 end
 local lines = {}
@@ -34,19 +42,21 @@ GatherLite.FindExistingNode = function(_, kind) return kind == "mining" and hist
 GatherLite:showTooltip(hovered)
 assert(lines[1][1] == "3 nearby nodes", "duplicate frames or another map inflated the count")
 assert(lines[3][1]:find("Copper Vein", 1, true) and lines[3][2] == "×2", "aliases must share one hovered row")
-assert(lines[4][1]:find(oreLink, 1, true) and lines[4][2] == "x3", "shared saved history was counted twice")
-assert(lines[5][1]:find("Last visit:", 1, true), "gathering history was lost")
-assert(lines[6][1]:find("Battered Chest", 1, true) and lines[6][2] == "×1", "mixed categories were merged")
-assert(#lines == 6, "grouped tooltip repeated a profession or node heading")
+assert(lines[4][1] == "  Requires Mining (1)", "grouped pins must show the resource requirement")
+assert(lines[4][3] == 1 and lines[4][4] == 1 and lines[4][5] == 0, "grouped requirements must use skill color")
+assert(lines[5][1]:find(oreLink, 1, true) and lines[5][2] == "x3", "shared saved history was counted twice")
+assert(lines[6][1]:find("Last visit:", 1, true), "gathering history was lost")
+assert(lines[7][1]:find("Battered Chest", 1, true) and lines[7][2] == "×1", "mixed categories were merged")
+assert(#lines == 7, "grouped tooltip repeated a profession or node heading")
 
 local otherHistory = { loot = { { link = oreLink, count = 5 } }, date = { year = 2026, month = 9, day = 19, hour = 12 } }
 GatherLite.FindExistingNode = function(_, kind, _, x)
     if kind == "mining" then return x == copper.posX and history or otherHistory end
 end
 GatherLite:showTooltip(hovered)
-assert(lines[4][2] == "x8", "distinct gathering histories must be combined")
-assert(lines[5][2] == date(nil, time(otherHistory.date)), "latest visit was not selected")
-GatherLite.db.char.worldmap.loot = false
+assert(lines[5][2] == "x8", "distinct gathering histories must be combined")
+assert(lines[6][2] == date(nil, time(otherHistory.date)), "latest visit was not selected")
+GatherLite.db.profile.worldmap.loot = false
 GatherLite:showTooltip(hovered)
 for _, line in ipairs(lines) do assert(not line[1]:find(oreLink, 1, true), "disabled loot setting ignored") end
 
@@ -56,12 +66,25 @@ assert(lines[3][1]:find("Battered Chest", 1, true), "hovered type must come firs
 hovered.node = copper
 frames.usedFrames = { hovered }
 GatherLite:showTooltip(hovered)
-assert(lines[1][1]:find("Copper Vein", 1, true) and lines[2][1] == "Mining", "single node lost its detailed tooltip")
-assert(lines[2][3] == 0.6 and lines[2][4] == 0.6 and lines[2][5] == 0.6, "profession color must use numeric RGB")
+assert(lines[1][1]:find("Copper Vein", 1, true) and lines[2][1] == "Requires Mining (1)", "single node lost its detailed tooltip")
+for _, example in ipairs({
+    { 0, 1, 0, 0 }, { 1, 1, 0.5, 0 }, { 25, 1, 1, 0 },
+    { 50, 0.12, 1, 0 }, { 100, 0.62, 0.62, 0.62 },
+}) do
+    rank = example[1]
+    GatherLite:showTooltip(hovered)
+    assert(lines[2][3] == example[2] and lines[2][4] == example[3] and lines[2][5] == example[4],
+        "incorrect requirement color at skill " .. rank)
+end
 hovered.type="minimap"
+hovered.node=node(1623,"herbalism",0.5)
+GatherLite:showTooltip(hovered)
+assert(lines[2][1]=="Requires Herbalism (115)", "minimap herb pins must show their skill requirement")
+assert(lines[2][3]==1 and lines[2][4]==0 and lines[2][5]==0, "minimap must show insufficient skill in red")
+hovered.node=copper
 hovered.clusterNodes={chest}
 GatherLite:showTooltip(hovered)
-assert(lines[1][1]=="2 nearby nodes" and lines[5][1]:find("Battered Chest",1,true),
+assert(lines[1][1]=="2 nearby nodes" and lines[6][1]:find("Battered Chest",1,true),
     "suppressed minimap markers must remain discoverable in the representative tooltip")
 assert(lines[#lines][1]==locale["tooltip.known_location"],"minimap tooltip must explain live tracking dots")
 print("Tooltip checks passed: grouping, aliases, counts, map isolation, loot, latest visit and single nodes")
