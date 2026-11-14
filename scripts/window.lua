@@ -556,6 +556,7 @@ function Window:CreateSettings(page)
         local group=addon.SettingsOptions.args[key]
         local button=UI.NavButton(rail,T(labels[i]),168,function()
             if self.EndSliderEdit then self:EndSliderEdit() end
+            if self.CloseSettingsMenu then self:CloseSettingsMenu() end
             self.settingsCategory=key
             if not self.settingsPanels[key] then self.settingsPanels[key]=UI.SettingsGroup(page,group,"GatherLiteSettings_"..key) end
             for id,panel in pairs(self.settingsPanels) do panel:SetShown(id==key) end
@@ -586,7 +587,7 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"PROFILES",{
-            "Create, switch, copy, reset, and delete display profiles from Settings. Resource tracking stays per character.",
+            "Use the Profiles dropdown to select a saved display profile. Resource tracking stays per character.",
         }},
         {"MINIMAP MARKERS",{
             "Show known gathering locations as hollow rings so the game's tracking dots stay visible inside them.",
@@ -598,7 +599,11 @@ function Window:CreateChangelog(page)
             "Fishing pins now follow the icon size and opacity settings on each map.",
         }},
         {"GATHERING DATABASE",{
+            "Added 310 gathering locations, bringing the Forever database to 34,326. All 34,016 previously published locations were retained.",
             "Added two Wild Steelbloom locations in Stonetalon Mountains and Riverglades.",
+        }},
+        {"WINDOW",{
+            "Drag the main GatherLite window by its title bar.",
         }},
         {"CONTROLLER FIXES",{
             "Fixed a controller issue where closing a tracking menu could trigger a blocked-action error.",
@@ -621,6 +626,7 @@ function Window:CreateChangelog(page)
 
 end
 function Window:SelectTab(index)
+    if self.CloseSettingsMenu then self:CloseSettingsMenu() end
     if self.controllerNavigation then self.controllerNavigation:ClearDirectionInput() end
     if self.EndSliderEdit then self:EndSliderEdit() end
     if index~=1 and self.helpStep then self:CloseOnboarding() end
@@ -651,6 +657,17 @@ function Window:Create()
     ButtonFrameTemplate_HideButtonBar(frame)
     frame.Inset:ClearAllPoints(); frame.Inset:SetPoint("TOPLEFT",4,-66); frame.Inset:SetPoint("BOTTOMRIGHT",-6,27)
     frame:SetClampedToScreen(true)
+    frame:SetMovable(true)
+    local titleDrag=CreateFrame("Frame",nil,frame)
+    titleDrag:SetPoint("TOPLEFT",frame,"TOPLEFT",65,-3)
+    titleDrag:SetPoint("TOPRIGHT",frame.CloseButton,"TOPLEFT",-6,0)
+    titleDrag:SetHeight(26)
+    titleDrag:EnableMouse(true)
+    titleDrag:RegisterForDrag("LeftButton")
+    titleDrag:SetScript("OnDragStart",function() frame:StartMoving() end)
+    titleDrag:SetScript("OnDragStop",function() frame:StopMovingOrSizing() end)
+    titleDrag:SetScript("OnHide",function() frame:StopMovingOrSizing() end)
+    self.titleDrag=titleDrag
     -- This window owns its controller input. Registering it as a UIPanel makes
     -- Blizzard's FrameControlsManager call addon callbacks during protected
     -- binding-stack transitions (including SetPreferredGamepadInteractTarget).

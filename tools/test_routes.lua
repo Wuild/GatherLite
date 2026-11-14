@@ -379,6 +379,17 @@ assert(W.frame:GetWidth()==1160 and W.selectedTab==1)
 assert(not UIPanelWindows.GatherLiteWindow and not nativePanel,
     "addon window must not enter Blizzard's protected controller panel manager")
 assert(UISpecialFrames[#UISpecialFrames]=="GatherLiteWindow" and not W.frame.scripts.OnDragStart)
+local dragging=false
+W.frame.StartMoving=function() dragging=true end
+W.frame.StopMovingOrSizing=function() dragging=false end
+assert(W.titleDrag.parent==W.frame and W.titleDrag:GetScript("OnDragStart"))
+W.titleDrag:GetScript("OnDragStart")()
+assert(dragging,"the title bar must move the main window")
+W.titleDrag:GetScript("OnDragStop")()
+assert(not dragging,"releasing the title bar must stop the drag")
+W.titleDrag:GetScript("OnDragStart")()
+W.titleDrag:GetScript("OnHide")()
+assert(not dragging,"hiding the window during a drag must stop it")
 W.frame.CloseButton:GetScript("OnClick")()
 assert(not nativePanel and not W.frame:IsShown(), "close button must hide the addon window")
 W:Show()
@@ -457,16 +468,21 @@ for _,f in ipairs(frames) do
 end
 W.settingsButtons.profiles.scripts.OnClick()
 local profileControls=W.settingsPanels.profiles.controls
-assert(not profileControls[5]:IsEnabled() and not profileControls[8]:IsEnabled(),
+assert(not profileControls[4]:IsEnabled() and not profileControls[7]:IsEnabled(),
     "active profile must not be a switch or delete target")
 profileControls[1]:SetText("  Farming  ")
 profileControls[1].scripts.OnEnterPressed()
 assert(GatherLite.db:GetCurrentProfile()=="Farming", "creating a profile must select it")
-profileControls[3].scripts.OnClick()
-profileControls[5].scripts.OnClick()
-assert(GatherLite.db:GetCurrentProfile()=="Default", "saved profile selection must switch profiles")
+local dropdown=profileControls[3]
+dropdown.scripts.OnClick()
+assert(W.controllerMenu and W.controllerMenu.returnTarget==dropdown, "profile dropdown must open")
+W.controllerMenu.buttons[1].scripts.OnClick()
+assert(not W.controllerMenu and dropdown:GetText():find("Default",1,true), "dropdown must show the chosen profile")
 profileControls[4].scripts.OnClick()
-profileControls[8].scripts.OnClick()
+assert(GatherLite.db:GetCurrentProfile()=="Default", "saved profile selection must switch profiles")
+dropdown.scripts.OnClick()
+W.controllerMenu.buttons[2].scripts.OnClick()
+profileControls[7].scripts.OnClick()
 assert(confirmation and profiles.Farming, "deleting a profile must await confirmation")
 confirmation()
 assert(not profiles.Farming, "confirmation must delete only the selected profile")
@@ -784,6 +800,13 @@ do
     W.categoryButtons[1]:GetScript("OnClick")()
     W:SetControllerTarget(W.map)
     assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
+    W:SelectTab(2); W.settingsButtons.profiles:GetScript("OnClick")()
+    local dropdown=W.settingsPanels.profiles.controls[3]
+    W:SetControllerTarget(dropdown)
+    input.scripts.OnGamePadButtonDown(input,"PAD1")
+    assert(W.controllerMenu and W.controllerNavigation:GetCurrentButton()==W.controllerMenu.buttons[1])
+    input.scripts.OnGamePadButtonDown(input,"PAD2")
+    assert(not W.controllerMenu and W.controllerNavigation:GetCurrentButton()==dropdown)
     W:SelectTab(2); W.settingsButtons.worldmap:GetScript("OnClick")()
     local slider
     for _,control in ipairs(W.settingsPanels.worldmap.controls) do if control.AdjustBy then slider=control; break end end

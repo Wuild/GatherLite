@@ -63,7 +63,7 @@ function addon.WindowInput.Create(window)
             end
             add(window.breadcrumb.overflowButton)
         elseif window.selectedTab==2 then
-            for _,key in ipairs({"general","worldmap","minimap","tracking","debugging"}) do add(window.settingsButtons[key]) end
+            for _,key in ipairs({"general","worldmap","minimap","hud","tracking","debugging","profiles"}) do add(window.settingsButtons[key]) end
             local panel=window.settingsPanels[window.settingsCategory]
             for _,control in ipairs(panel and panel.controls or {}) do add(control) end
         end
@@ -112,41 +112,52 @@ function addon.WindowInput.Create(window)
         end
         if button==window.breadcrumb.overflowButton then return button end
     end
+    function window:CloseSettingsMenu()
+        closeMenu()
+    end
+    function window:OpenChoiceMenu(button, anchor, entries)
+        if self.controllerMenu and self.controllerMenu.returnTarget==button then
+            closeMenu()
+            return
+        end
+        if #entries==0 then return end
+        local menu=window.controllerMenuFrame or CreateFrame("Frame",nil,owner)
+        window.controllerMenuFrame=menu
+        for _,old in ipairs(menu.buttons or {}) do old:Hide() end
+        menu:SetSize(270,math.min(400,#entries*30+12))
+        menu:ClearAllPoints()
+        menu:SetPoint("TOPLEFT",anchor,"BOTTOMLEFT",0,-4)
+        menu:SetFrameLevel(input:GetFrameLevel()+1)
+        highlight:SetFrameLevel(menu:GetFrameLevel()+5)
+        if not menu.scroll then addon.UI.Background(menu,.04,.03,.02,1); addon.UI.Border(menu) end
+        menu.returnTarget=button; menu.buttons=menu.buttons or {}
+        local scroll=menu.scroll or addon.UI.Scroll(menu,nil,240)
+        menu.scroll=scroll
+        scroll:SetPoint("TOPLEFT",6,-6); scroll:SetPoint("BOTTOMRIGHT",-24,6)
+        for i,entry in ipairs(entries) do
+            local item=menu.buttons[i] or addon.UI.Button(scroll.content,entry.text,236,function() end)
+            item:SetText(entry.text); item:Show()
+            item:SetScript("OnClick",function() closeMenu(); entry.func(nil,entry.id) end)
+            item:SetPoint("TOPLEFT",0,-(i-1)*30)
+            item.gatherliteNavigation={}
+            item.OnSmartNavSelect=function()
+                scroll:SetVerticalScroll(math.max(0,math.min(scroll:GetVerticalScrollRange(),(i-1)*30)))
+                navigation.scroll=scroll
+            end
+            menu.buttons[i]=item
+        end
+        scroll.content:SetHeight(#entries*30)
+        scroll:SetVerticalScroll(0)
+        menu:Show()
+        window.controllerMenu=menu
+        navigation:RefreshButtonGroups(); select(menu.buttons[1])
+    end
     local function click()
         if not enabled(current) then return end
         local button=current
         local crumb=menuFor(button)
         if crumb and crumb.listFunc then
-            local entries=crumb:listFunc() or {}
-            if #entries==0 then return end
-            local menu=window.controllerMenuFrame or CreateFrame("Frame",nil,owner)
-            window.controllerMenuFrame=menu
-            for _,old in ipairs(menu.buttons or {}) do old:Hide() end
-            menu:SetSize(270,math.min(400,#entries*30+12))
-            menu:SetPoint("TOPLEFT",window.breadcrumb,"BOTTOMLEFT",0,-4)
-            menu:SetFrameLevel(input:GetFrameLevel()+1)
-            highlight:SetFrameLevel(menu:GetFrameLevel()+5)
-            if not menu.scroll then addon.UI.Background(menu,.04,.03,.02,1); addon.UI.Border(menu) end
-            menu.returnTarget=button; menu.buttons=menu.buttons or {}
-            local scroll=menu.scroll or addon.UI.Scroll(menu,nil,240)
-            menu.scroll=scroll
-            scroll:SetPoint("TOPLEFT",6,-6); scroll:SetPoint("BOTTOMRIGHT",-24,6)
-            for i,entry in ipairs(entries) do
-                local item=menu.buttons[i] or addon.UI.Button(scroll.content,entry.text,236,function() end)
-                item:SetText(entry.text); item:Show()
-                item:SetScript("OnClick",function() closeMenu(); entry.func(nil,entry.id) end)
-                item:SetPoint("TOPLEFT",0,-(i-1)*30)
-                item.gatherliteNavigation={}
-                item.OnSmartNavSelect=function()
-                    scroll:SetVerticalScroll(math.max(0,math.min(scroll:GetVerticalScrollRange(),(i-1)*30)))
-                    navigation.scroll=scroll
-                end
-                menu.buttons[i]=item
-            end
-            scroll.content:SetHeight(#entries*30)
-            menu:Show()
-            window.controllerMenu=menu
-            navigation:RefreshButtonGroups(); select(menu.buttons[1])
+            window:OpenChoiceMenu(button,window.breadcrumb,crumb:listFunc() or {})
         elseif button.OnSmartNavClick then button:OnSmartNavClick()
         elseif button.SetFocus and button==window.search then button:SetFocus()
         elseif button.Click then button:Click("LeftButton")

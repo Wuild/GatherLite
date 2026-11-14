@@ -414,31 +414,30 @@ function UI.SettingsGroup(parent, group, name)
             elseif option.type=="select" then
                 flush()
                 UI.InkText(content,value(option.name),"GameFontHighlight"):SetPoint("TOPLEFT",8,-cursor)
-                local label=UI.InkText(content,"","GameFontHighlight")
-                label:SetPoint("TOPLEFT",44,-cursor-26)
-                label:SetWidth(258)
-                local function cycle(direction)
-                    local keys={}
-                    for key in pairs(value(option.values)) do keys[#keys+1]=key end
-                    table.sort(keys)
+                local button
+                button=UI.Button(content,"",330,function()
+                    local entries={}
                     local selected=option.get()
-                    for index,key in ipairs(keys) do
-                        if key==selected then
-                            option.set(nil,keys[(index-1+direction)%#keys+1])
-                            if addon.Window then addon.Window:RefreshSettings() end
-                            return
-                        end
+                    for key,label in pairs(value(option.values)) do
+                        entries[#entries+1]={
+                            id=key, text=label,
+                            func=function(_, id)
+                                option.set(nil,id)
+                                addon.Window:RefreshSettings()
+                            end,
+                        }
                     end
-                end
-                for _,direction in ipairs({-1,1}) do
-                    local button=UI.Button(content,direction<0 and "<" or ">",28,function() cycle(direction) end)
-                    local x=direction<0 and 8 or 310
-                    button:SetPoint("TOPLEFT",x,-cursor-22)
-                    control(button,x,cursor+22)
-                end
+                    table.sort(entries,function(a,b) return a.text<b.text end)
+                    for _,entry in ipairs(entries) do
+                        if entry.id==selected then entry.text=entry.text.."  ✓" end
+                    end
+                    addon.Window:OpenChoiceMenu(button,button,entries)
+                end)
+                button:SetPoint("TOPLEFT",8,-cursor-22)
+                control(button,8,cursor+22)
                 refresh[#refresh+1]=function()
                     local values=value(option.values)
-                    label:SetText(values[option.get()] or "")
+                    button:SetText((values[option.get()] or "").."  ▾")
                 end
                 cursor=cursor+62
             elseif option.type=="execute" then
