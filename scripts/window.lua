@@ -451,7 +451,9 @@ end
 -- mouse click on one opens a Blizzard menu from this addon's button, which
 -- taints the controller binding stack (ADDON_ACTION_FORBIDDEN on close). The
 -- controller opens the addon-owned menu instead, so the arrows ignore the mouse.
-function Window:UpdateBreadcrumbMenus()
+function Window:UpdateDropdownInput()
+    local profiles = self.settingsPanels and self.settingsPanels.profiles
+    if profiles then profiles:UpdateDropdownInput() end
     local bar = self.breadcrumb
     if not bar then return end
     local mouse = not (InputUtil and InputUtil.IsGamepadUIEnabled and InputUtil.IsGamepadUIEnabled() == true)
@@ -494,7 +496,7 @@ function Window:RefreshBreadcrumbs()
             end,
         })
     end
-    self:UpdateBreadcrumbMenus()
+    self:UpdateDropdownInput()
 end
 
 function Window:CreateNavigation(page)
@@ -558,7 +560,10 @@ function Window:CreateSettings(page)
             if self.EndSliderEdit then self:EndSliderEdit() end
             if self.CloseSettingsMenu then self:CloseSettingsMenu() end
             self.settingsCategory=key
-            if not self.settingsPanels[key] then self.settingsPanels[key]=UI.SettingsGroup(page,group,"GatherLiteSettings_"..key) end
+            if not self.settingsPanels[key] then
+                local create = key == "profiles" and UI.ProfileSettings or UI.SettingsGroup
+                self.settingsPanels[key] = create(page, group, "GatherLiteSettings_" .. key)
+            end
             for id,panel in pairs(self.settingsPanels) do panel:SetShown(id==key) end
             for id,tab in pairs(self.settingsButtons) do tab:Select(id==key) end
             self.settingsTitle:SetText(T(labels[i])); self.settingsDescription:SetText(T(descriptions[i]))
@@ -573,7 +578,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.9. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.10. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -586,28 +591,12 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"PROFILES",{
-            "Use the Profiles dropdown to select a saved display profile. Resource tracking stays per character.",
+        {"DISPLAY PROFILES",{
+            "The Profiles page now uses WoW's native dropdown for mouse input and groups the controls for switching, copying, deleting, and creating profiles.",
         }},
         {"MINIMAP MARKERS",{
-            "Show known gathering locations as hollow rings so the game's tracking dots stay visible inside them.",
-            "Adjust ring size, show or hide the resource icon, and choose colors by resource type or gathering difficulty.",
-        }},
-        {"MAP MARKERS AND TOOLTIPS",{
-            "Node tooltips on both maps and in the world color the skill requirement by gathering difficulty.",
-            "Nearby minimap markers are visible by default. You can still hide them in Minimap settings.",
-            "Fishing pins now follow the icon size and opacity settings on each map.",
-        }},
-        {"GATHERING DATABASE",{
-            "Added 310 gathering locations, bringing the Forever database to 34,326. All 34,016 previously published locations were retained.",
-            "Added two Wild Steelbloom locations in Stonetalon Mountains and Riverglades.",
-        }},
-        {"WINDOW",{
-            "Drag the main GatherLite window by its title bar.",
-        }},
-        {"CONTROLLER FIXES",{
-            "Fixed a controller issue where closing a tracking menu could trigger a blocked-action error.",
-            "In gamepad mode, minimap and world map tracking shortcuts now open the matching GatherLite settings.",
+            "Nearby node markers hide within 70 yards by default so you can see the game's live tracking dots.",
+            "Ring mode uses a centered resource icon when a marker is placed on the minimap rim, including on shaped or rotating minimaps.",
         }},
     }
     local y=0

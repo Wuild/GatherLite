@@ -280,26 +280,45 @@ local help = {
     edge = "settings.help.edge",
     enabled = "settings.help.enabled",
 }
-function UI.SettingsGroup(parent, group, name)
+local function settingsScroll(parent, name)
     local scroll = UI.Scroll(parent, name, 904)
     scroll:SetPoint("TOPLEFT", 204, -76)
     scroll:SetPoint("BOTTOMRIGHT", -28, 12)
-    local content, cursor, column, refresh = scroll.content, 0, 0, {}
-    scroll.controls={}
-    local function control(frame,x,y)
-        frame.settingsX,frame.settingsY=x,y
-        scroll.controls[#scroll.controls+1]=frame
-        frame.OnSmartNavSelect=function()
-            local top=frame.settingsY
-            local bottom=top+frame:GetHeight()+8
-            local offset=scroll:GetVerticalScroll()
-            if top<offset then offset=top
-            elseif bottom>offset+scroll:GetHeight() then offset=bottom-scroll:GetHeight() end
-            scroll:SetVerticalScroll(math.max(0,math.min(scroll:GetVerticalScrollRange(),offset)))
-            local navigation=addon.Window and addon.Window.controllerNavigation
-            if navigation then navigation:SetScrollFrameForFrame(addon.Window.frame,scroll) end
+    scroll.controls = {}
+    return scroll
+end
+
+local function settingsControl(scroll, frame, x, y)
+    frame.settingsX, frame.settingsY = x, y
+    scroll.controls[#scroll.controls + 1] = frame
+    frame.OnSmartNavSelect = function()
+        local bottom = y + frame:GetHeight() + 8
+        local offset = scroll:GetVerticalScroll()
+        if y < offset then offset = y
+        elseif bottom > offset + scroll:GetHeight() then offset = bottom - scroll:GetHeight() end
+        scroll:SetVerticalScroll(math.max(0, math.min(scroll:GetVerticalScrollRange(), offset)))
+        local window = addon.Window
+        if window and window.controllerNavigation then
+            window.controllerNavigation:SetScrollFrameForFrame(window.frame, scroll)
         end
     end
+end
+
+local function executeSetting(option)
+    if value(option.disabled) then return end
+    if not option.confirm then option.func(); return end
+    StaticPopupDialogs.GATHERLITE_CONFIRM_SETTING = {
+        text = value(option.confirm), button1 = ACCEPT, button2 = CANCEL,
+        timeout = 0, whileDead = true, hideOnEscape = true,
+        OnAccept = function(_, action) action() end,
+    }
+    StaticPopup_Show("GATHERLITE_CONFIRM_SETTING", nil, nil, option.func)
+end
+
+function UI.SettingsGroup(parent, group, name)
+    local scroll = settingsScroll(parent, name)
+    local content, cursor, column, refresh = scroll.content, 0, 0, {}
+    local function control(frame, x, y) settingsControl(scroll, frame, x, y) end
     local function flush()
         if column > 0 then cursor = cursor + 30; column = 0 end
     end
@@ -375,86 +394,9 @@ function UI.SettingsGroup(parent, group, name)
                     column=column+1
                     if column==3 then column=0; cursor=cursor+30 end
                 else cursor=cursor+height+4 end
-            elseif option.type=="description" and value(option.name):match("%S") then
-                flush()
-                local label=UI.InkText(content,value(option.name),"GameFontHighlight")
-                label:SetPoint("TOPLEFT",8,-cursor)
-                label:SetWidth(880)
-                refresh[#refresh+1]=function() label:SetText(value(option.name)) end
-                cursor=cursor+30
-            elseif option.type=="input" then
-                flush()
-                UI.InkText(content,value(option.name),"GameFontHighlight"):SetPoint("TOPLEFT",8,-cursor)
-                local edit=CreateFrame("EditBox",nil,content,"InputBoxTemplate")
-                edit:SetSize(300,24)
-                edit:SetPoint("TOPLEFT",12,-cursor-22)
-                edit:SetAutoFocus(false)
-                edit:SetMaxLetters(50)
-                local errorText=UI.InkText(content,"","GameFontHighlightSmall")
-                errorText:SetPoint("TOPLEFT",8,-cursor-53)
-                local function save()
-                    local name=edit:GetText()
-                    local valid=option.validate(nil,name)
-                    if valid ~= true then errorText:SetText(valid); return end
-                    option.set(nil,name)
-                    edit:SetText("")
-                    edit:ClearFocus()
-                    errorText:SetText("")
-                    if addon.Window then addon.Window:RefreshSettings() end
-                end
-                local submit=UI.Button(content,GatherLite:translate("settings.profiles.add"),115,save)
-                submit:SetPoint("LEFT",edit,"RIGHT",8,0)
-                edit:SetScript("OnEnterPressed",save)
-                edit:SetScript("OnEscapePressed",function() edit:ClearFocus() end)
-                edit.OnSmartNavClick=function() edit:SetFocus() end
-                edit.smartNavigationCanFocus=true
-                control(edit,0,cursor+22)
-                control(submit,320,cursor+22)
-                cursor=cursor+76
-            elseif option.type=="select" then
-                flush()
-                UI.InkText(content,value(option.name),"GameFontHighlight"):SetPoint("TOPLEFT",8,-cursor)
-                local button
-                button=UI.Button(content,"",330,function()
-                    local entries={}
-                    local selected=option.get()
-                    for key,label in pairs(value(option.values)) do
-                        entries[#entries+1]={
-                            id=key, text=label,
-                            func=function(_, id)
-                                option.set(nil,id)
-                                addon.Window:RefreshSettings()
-                            end,
-                        }
-                    end
-                    table.sort(entries,function(a,b) return a.text<b.text end)
-                    for _,entry in ipairs(entries) do
-                        if entry.id==selected then entry.text=entry.text.."  ✓" end
-                    end
-                    addon.Window:OpenChoiceMenu(button,button,entries)
-                end)
-                button:SetPoint("TOPLEFT",8,-cursor-22)
-                control(button,8,cursor+22)
-                refresh[#refresh+1]=function()
-                    local values=value(option.values)
-                    button:SetText((values[option.get()] or "").."  ▾")
-                end
-                cursor=cursor+62
             elseif option.type=="execute" then
                 flush()
-                local button=UI.Button(content,value(option.name),240,function()
-                    if value(option.disabled) then return end
-                    if option.confirm then
-                        StaticPopupDialogs.GATHERLITE_CONFIRM_SETTING = {
-                            text = value(option.confirm), button1 = ACCEPT, button2 = CANCEL,
-                            timeout = 0, whileDead = true, hideOnEscape = true,
-                            OnAccept = function(_, action) action() end,
-                        }
-                        StaticPopup_Show("GATHERLITE_CONFIRM_SETTING",nil,nil,option.func)
-                    else
-                        option.func()
-                    end
-                end)
+                local button=UI.Button(content,value(option.name),240,function() executeSetting(option) end)
                 if option.disabled then
                     refresh[#refresh+1]=function() button:SetEnabled(not value(option.disabled)) end
                 end
@@ -509,5 +451,137 @@ function UI.SettingsGroup(parent, group, name)
     content:SetHeight(math.max(cursor,1))
     scroll.Refresh=function() for _,fn in ipairs(refresh) do fn() end end
     scroll:HookScript("OnShow",scroll.Refresh); scroll:Hide()
+    return scroll
+end
+
+function UI.ProfileSettings(parent, group, name)
+    local scroll = settingsScroll(parent, name)
+    local options = group.args
+    local function card(x, y, width, height)
+        local panel = CreateFrame("Frame", nil, scroll.content)
+        panel:SetPoint("TOPLEFT", x, -y)
+        panel:SetSize(width, height)
+        UI.Background(panel, .92, .83, .63, .5)
+        UI.Border(panel)
+        return panel
+    end
+    local function label(panel, text, x, y, font, width)
+        local line = UI.InkText(panel, text, font)
+        line:SetPoint("TOPLEFT", x, -y)
+        if width then line:SetWidth(width) end
+        return line
+    end
+    local function action(panel, option, width, x, y, row, column)
+        local button = UI.Button(panel, value(option.name), width, function() executeSetting(option) end)
+        button:SetPoint("TOPLEFT", x, -y)
+        settingsControl(scroll, button, column, row)
+        return button
+    end
+
+    local saved = card(8, 6, 760, 158)
+    local active = label(saved, "", 18, 14, "GameFontNormalLarge", 724)
+    label(saved, value(options.selection.name), 18, 52, "GameFontHighlightSmall")
+    local dropdown = CreateFrame("DropdownButton", nil, saved, "WowStyle1DropdownTemplate")
+    dropdown:SetSize(436, 30)
+    dropdown:SetPoint("TOPLEFT", 18, -72)
+
+    local function profileEntries()
+        local entries = {}
+        local current = GatherLite.db:GetCurrentProfile()
+        for id, text in pairs(value(options.selection.values)) do
+            if id == current then text = GatherLite:translate("settings.profiles.current", text) end
+            entries[#entries + 1] = { id = id, text = text }
+        end
+        table.sort(entries, function(a, b) return a.id < b.id end)
+        return entries
+    end
+
+    local function isSelected(id)
+        return options.selection.get() == id
+    end
+
+    local function selectNative(id)
+        options.selection.set(nil, id)
+        scroll:Refresh(true)
+    end
+
+    dropdown:SetSelectionTranslator(function(selection) return selection.data end)
+    dropdown:SetupMenu(function(_, root)
+        for _, entry in ipairs(profileEntries()) do
+            root:CreateRadio(entry.text, isSelected, selectNative, entry.id)
+        end
+    end)
+
+    -- Controller navigation uses the window's private menu to avoid Blizzard's shared bindings.
+    local function selectWithController(_, id)
+        options.selection.set(nil, id)
+        addon.Window:RefreshSettings()
+    end
+
+    dropdown.OnSmartNavClick = function()
+        local entries = profileEntries()
+        for _, entry in ipairs(entries) do
+            entry.selected = isSelected(entry.id)
+            entry.func = selectWithController
+        end
+        addon.Window:OpenChoiceMenu(dropdown, dropdown, entries, dropdown:GetWidth())
+    end
+
+    function scroll:UpdateDropdownInput()
+        dropdown:EnableMouse(not (InputUtil and InputUtil.IsGamepadUIEnabled and InputUtil.IsGamepadUIEnabled() == true))
+    end
+
+    settingsControl(scroll, dropdown, 26, 78)
+    local switch = action(saved, options.switch, 184, 466, 74, 78, 474)
+    local copy = action(saved, options.copy, 210, 18, 116, 122, 26)
+    local delete = action(saved, options.delete, 210, 238, 116, 122, 246)
+
+    local create = card(8, 182, 466, 124)
+    label(create, value(options.create.name), 18, 15, "GameFontNormal")
+    local edit = CreateFrame("EditBox", nil, create, "InputBoxTemplate")
+    edit:SetSize(288, 26)
+    edit:SetPoint("TOPLEFT", 22, -44)
+    edit:SetAutoFocus(false)
+    edit:SetMaxLetters(50)
+    local errorText = label(create, "", 18, 80, "GameFontHighlightSmall", 424)
+    errorText:SetTextColor(.54, .12, .08)
+    errorText:SetWordWrap(true)
+    local function save()
+        local text = edit:GetText()
+        local valid = options.create.validate(nil, text)
+        if valid ~= true then errorText:SetText(valid); return end
+        options.create.set(nil, text)
+        edit:SetText("")
+        edit:ClearFocus()
+        errorText:SetText("")
+        addon.Window:RefreshSettings()
+    end
+    local submit = UI.Button(create, GatherLite:translate("settings.profiles.add"), 106, save)
+    submit:SetPoint("LEFT", edit, "RIGHT", 10, 0)
+    edit:SetScript("OnEnterPressed", save)
+    edit:SetScript("OnEscapePressed", function() edit:ClearFocus() end)
+    edit:SetScript("OnTextChanged", function() errorText:SetText("") end)
+    edit.OnSmartNavClick = function() edit:SetFocus() end
+    edit.smartNavigationCanFocus = true
+    settingsControl(scroll, edit, 30, 226)
+    settingsControl(scroll, submit, 328, 226)
+
+    local reset = card(490, 182, 278, 124)
+    local resetHint = label(reset, GatherLite:translate("settings.profiles.confirm_reset"), 18, 17,
+        "GameFontHighlightSmall", 242)
+    resetHint:SetWordWrap(true)
+    action(reset, options.reset, 242, 18, 64, 246, 508)
+
+    scroll.content:SetHeight(318)
+    function scroll:Refresh(nativeSelection)
+        active:SetText(value(options.current.name))
+        self:UpdateDropdownInput()
+        if not nativeSelection then dropdown:GenerateMenu() end
+        switch:SetEnabled(not value(options.switch.disabled))
+        copy:SetEnabled(not value(options.copy.disabled))
+        delete:SetEnabled(not value(options.delete.disabled))
+    end
+    scroll:HookScript("OnShow", scroll.Refresh)
+    scroll:Hide()
     return scroll
 end

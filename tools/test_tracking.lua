@@ -78,6 +78,7 @@ end
 function pins:AddWorldMapIconMap(_, frame) pinAdds=pinAdds+1; self.worldmap[frame] = true; frame:Show() end
 function pins:RemoveMinimapIcon(_, frame) pinRemoves=pinRemoves+1; self.minimap[frame] = nil end
 function pins:RemoveWorldMapIcon(_, frame) pinRemoves=pinRemoves+1; self.worldmap[frame] = nil end
+function pins:IsMinimapIconOnEdge(frame) return frame.mockOnEdge end
 libraries["HereBeDragons-Pins-2.0"] = pins
 local playerX, playerY = 500, 500
 libraries["HereBeDragons-2.0"] = {
@@ -174,7 +175,12 @@ do
     local ace=env.LibStub("AceDB-3.0")
     env.LibStub("AceConfigRegistry-3.0"):ValidateOptionsTable(addon.SettingsOptions.args.profiles, "Profiles")
     local storage={
-        profiles={Default={minimap={hide=true, minimapPos=37}}},
+        profiles={
+            Default={minimap={hide=true, minimapPos=37}},
+            Circles={minimap={nearbyCircles=true}},
+            Rings={minimap={ringMarkers=true}},
+            Visible={minimap={hideNearbyNodes=false}},
+        },
         char={["Miner - Forever"]={minimap={size=17, tracking={mining=false}}, routeMapID=7}},
         global={nodes={mining={{object=1731}}}},
     }
@@ -182,6 +188,14 @@ do
     addon.MigrateProfileSettings(db)
     db:RegisterDefaults(addon.configsDefaults)
     local migratedName=db:GetCurrentProfile()
+    assert(db.profile.minimap.hideNearbyNodes, "existing profiles without an override must use the new default")
+    db:SetProfile("Circles")
+    assert(db.profile.minimap.nearbyCircles and not db.profile.minimap.hideNearbyNodes)
+    db:SetProfile("Rings")
+    assert(db.profile.minimap.ringMarkers and not db.profile.minimap.hideNearbyNodes)
+    db:SetProfile("Visible")
+    assert(not db.profile.minimap.hideNearbyNodes, "explicit saved overrides must survive")
+    db:SetProfile(migratedName)
     assert(migratedName~="Default" and db.profile.minimap.size==17 and not db.char.minimap.tracking.mining)
     assert(db.char.professionTrackingManual and db.profile.minimapIcon.hide and db.profile.minimapIcon.minimapPos==37)
     assert(db.char.routeMapID==7 and not db.char.minimap.size and not db.profile.minimap.tracking
@@ -191,7 +205,8 @@ do
     db.char.ignore[1731] = true
     db:SetProfile("New")
     assert(db.char.ignore[1731] and not db.char.minimap.tracking.mining)
-    assert(db.profile.minimap.size==12 and not db.profile.minimapIcon.hide, "new profile must use defaults")
+    assert(db.profile.minimap.size==12 and not db.profile.minimapIcon.hide and db.profile.minimap.hideNearbyNodes,
+        "new profile must use defaults")
     db.char.minimap.tracking.mining = true
     db:CopyProfile(migratedName)
     assert(db.char.ignore[1731] and db.char.minimap.tracking.mining and not db.profile.minimap.tracking)
@@ -331,7 +346,19 @@ local distanceOption = options.args.minimap.args.sliders.args.iconRange
 local circlesOption = options.args.minimap.args.nearbyCircles
 local hideOption = options.args.minimap.args.hideNearbyNodes
 assert(not circlesOption.get(), "nearby circles must default to disabled")
-assert(not hideOption.get(), "nearby pins must be visible by default")
+assert(hideOption.get(), "nearby pins must hide by default")
+for i = 1, #kinds do
+    playerX, playerY = 600, 500
+    click("minimap", i)
+    assert(count("minimap", objects[i]) == 1, "default hiding must keep distant markers visible")
+    playerY = 580
+    tick(1.1)
+    assert(count("minimap", objects[i]) == 0, "approaching a node must hide its marker by default")
+    playerY = 500
+    tick(5.1)
+    assert(count("minimap", objects[i]) == 1, "moving away must restore the marker")
+    click("minimap", i)
+end
 circlesOption.set(nil, true)
 hideOption.set(nil, false)
 for i, kind in ipairs(kinds) do
@@ -431,6 +458,54 @@ assert(not next(pins.minimap),"old conflicting settings must not cover live trac
 GatherLite.db.profile.minimap.hideNearbyNodes=false
 for i=1,#kinds do click("minimap",i) end
 playerX,playerY=500,500
+
+-- Ring layout, sliders, skill changes and the library's edge placement.
+do
+    local minimapOptions = options.args.minimap.args
+    local sliders = minimapOptions.sliders.args
+    local settings = GatherLite.db.profile.minimap
+    local oldSize, oldRingSize = settings.size, settings.ringSize
+    settings.edge = true
+    click("minimap", 1)
+    minimapOptions.ringMarkers.set(nil, true)
+    assert(not circlesOption.get() and not hideOption.get(), "ring mode must disable other nearby modes")
+    local pin = assert(next(pins.minimap))
+    local icon = GatherLite:GetNodeObject(objects[1]).icon
+    assert(pin.ring:IsShown() and pin.ring.texturePath == circle and pin.texture.texturePath == icon)
+    assert(pin.texture.point[1] == "TOP" and pin.texture.point[3] == "BOTTOM", "icon must sit below the ring")
+    sliders.ringSize.set(nil, 24)
+    sliders.iconSize.set(nil, 12)
+    assert(pin.width == 24 and pin.texture.width == 12 and pin.hitInsets[4] == -13, "sliders must resize the displayed pin")
+
+    local miningRank = 0
+    C_SkillInfo = { GetSkillLineInfoByID = function() return {rank = miningRank} end }
+    minimapOptions.ringDifficultyColors.set(nil, true)
+    pin = assert(next(pins.minimap))
+    assert(pin.ring.color[2] == 0.1, "an ungatherable node must have a red ring")
+    miningRank = 50
+    for _, f in ipairs(frames) do
+        if f.events and f.events.SKILL_LINES_CHANGED then f.scripts.OnEvent(f, "SKILL_LINES_CHANGED") end
+    end
+    assert(pin.ring.color[2] == 0.75, "skill changes must recolour the displayed ring")
+    minimapOptions.ringShowIcon.set(nil, false)
+    pin = assert(next(pins.minimap))
+    assert(pin.ring:IsShown() and not pin.texture:IsShown() and pin.motionEnabled and pin.hitInsets[4] == 0)
+
+    pin.mockOnEdge = true
+    tick(1.1)
+    assert(not pin.ring:IsShown() and pin.texture:IsShown() and pin.texture.point[1] == "ALL",
+        "a pin placed on the rim must show a centred resource icon")
+    pin.mockOnEdge = nil
+    tick(1.1)
+    assert(pin.ring:IsShown() and not pin.texture:IsShown(), "returning from the rim must restore the ring")
+
+    C_SkillInfo = nil
+    settings.ringDifficultyColors, settings.ringShowIcon, settings.edge = false, true, false
+    sliders.iconSize.set(nil, oldSize)
+    sliders.ringSize.set(nil, oldRingSize)
+    minimapOptions.ringMarkers.set(nil, false)
+    click("minimap", 1)
+end
 
 local settingsOpened = 0
 GatherLite.ShowSettings = function() settingsOpened = settingsOpened + 1 end

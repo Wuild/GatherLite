@@ -156,12 +156,6 @@ local function MinimapViewRadius()
     return radius
 end
 
--- A node beyond the minimap's radius is drawn on the rim (edge mode). No live
--- tracking dot can be there, so the ring would be meaningless.
-local function IsOnEdge(distance)
-    return GatherLite.db.profile.minimap.edge == true and distance ~= nil and distance > MinimapViewRadius()
-end
-
 local function RingSize()
     return GatherLite.db.profile.minimap.ringSize or DEFAULT_RING_SIZE
 end
@@ -224,7 +218,7 @@ local function CreateMinimapNode(node, worldX, worldY, instanceID)
     f.node = node;
     f.object = object
     f.type = "minimap";
-    ApplyMinimapLayout(f, IsOnEdge(distance))
+    ApplyMinimapLayout(f)
 
     f:SetFrameStrata(Minimap:GetFrameStrata());
     --f:SetFrameLevel(Minimap:GetFrameLevel() + 5);
@@ -323,7 +317,8 @@ local function UpdateMinimapIcons(x, y, instanceID)
                 local nearby = GatherLite.db.profile.minimap.ringMarkers ~= true
                     and GatherLite.db.profile.minimap.nearbyCircles == true
                     and distance < GatherLite.db.profile.minimap.distance
-                local onEdge = IsOnEdge(distance)
+                -- Use the library's placement, which accounts for minimap shape and rotation.
+                local onEdge = GatherLite.db.profile.minimap.edge == true and Pins:IsMinimapIconOnEdge(frame) == true
                 if frame.nearby ~= nearby or frame.onEdge ~= onEdge then
                     frame.nearby = nearby
                     ApplyMinimapLayout(frame, onEdge)

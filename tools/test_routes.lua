@@ -145,11 +145,28 @@ MapExplorationDataProviderMixin={}
 MapHighlightDataProviderMixin={}
 MAP_CANVAS_MOUSE_WHEEL_ZOOM_BEHAVIOR_SMOOTH=1
 
-local templates={HelpTipTemplate=true,NavBarTemplate=true,ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,GameTooltipTemplate=true,
+local templates={WowStyle1DropdownTemplate=true,HelpTipTemplate=true,NavBarTemplate=true,ButtonFrameTemplate=true,PanelTabButtonTemplate=true,UIPanelButtonTemplate=true,GameTooltipTemplate=true,
     CheckboxWithLabelTemplate=true,MinimalSliderWithSteppersTemplate=true,MinimalScrollBar=true,InputBoxTemplate=true,GatherLiteMapCanvasTemplate=true}
 function CreateFrame(kind,name,parent,template)
     assert(not template or templates[template], tostring(template))
     local f=node(kind,name,parent)
+    if template=="WowStyle1DropdownTemplate" then
+        assert(kind=="DropdownButton")
+        function f:SetSelectionTranslator(translator) self.selectionTranslator=translator end
+        function f:SetupMenu(generator) self.menuGenerator=generator end
+        function f:GenerateMenu()
+            self.menuRadios={}
+            local root={}
+            function root:CreateRadio(text,isSelected,select,id)
+                f.menuRadios[#f.menuRadios+1]={text=text,data=id,pick=function()
+                    select(id)
+                    f:GenerateMenu()
+                end}
+                if isSelected(id) then f:SetText(f.selectionTranslator({data=id})) end
+            end
+            self.menuGenerator(self,root)
+        end
+    end
     if template=="MinimalSliderWithSteppersTemplate" then
         f.Slider=node("Slider",nil,f); f.Back=node("Button",nil,f); f.Forward=node("Button",nil,f)
     end
@@ -468,21 +485,22 @@ for _,f in ipairs(frames) do
 end
 W.settingsButtons.profiles.scripts.OnClick()
 local profileControls=W.settingsPanels.profiles.controls
-assert(not profileControls[4]:IsEnabled() and not profileControls[7]:IsEnabled(),
+assert(not profileControls[2]:IsEnabled() and not profileControls[4]:IsEnabled(),
     "active profile must not be a switch or delete target")
-profileControls[1]:SetText("  Farming  ")
-profileControls[1].scripts.OnEnterPressed()
+profileControls[5]:SetText("  Farming  ")
+profileControls[5].scripts.OnEnterPressed()
 assert(GatherLite.db:GetCurrentProfile()=="Farming", "creating a profile must select it")
-local dropdown=profileControls[3]
-dropdown.scripts.OnClick()
-assert(W.controllerMenu and W.controllerMenu.returnTarget==dropdown, "profile dropdown must open")
-W.controllerMenu.buttons[1].scripts.OnClick()
-assert(not W.controllerMenu and dropdown:GetText():find("Default",1,true), "dropdown must show the chosen profile")
-profileControls[4].scripts.OnClick()
+local dropdown=profileControls[1]
+assert(dropdown.kind=="DropdownButton" and dropdown.mouseEnabled and dropdown:GetText()=="Farming",
+    "Profiles must expose Blizzard's dropdown with the selected profile")
+assert(dropdown.menuRadios[1].text=="Default" and dropdown.menuRadios[2].text:find("Farming",1,true))
+dropdown.menuRadios[1].pick()
+assert(dropdown:GetText()=="Default" and addon.SettingsOptions.args.profiles.args.selection.get()=="Default",
+    "the native dropdown must show the chosen profile")
+profileControls[2].scripts.OnClick()
 assert(GatherLite.db:GetCurrentProfile()=="Default", "saved profile selection must switch profiles")
-dropdown.scripts.OnClick()
-W.controllerMenu.buttons[2].scripts.OnClick()
-profileControls[7].scripts.OnClick()
+dropdown.menuRadios[2].pick()
+profileControls[4].scripts.OnClick()
 assert(confirmation and profiles.Farming, "deleting a profile must await confirmation")
 confirmation()
 assert(not profiles.Farming, "confirmation must delete only the selected profile")
@@ -762,14 +780,14 @@ do
     W.breadcrumb.navList={{MenuArrowButton=one},{MenuArrowButton=two},{}}
     W.breadcrumb.homeButton={MenuArrowButton=home}; W.breadcrumb.overflowButton=overflow
     InputUtil={IsGamepadUIEnabled=function() return true end}
-    W:UpdateBreadcrumbMenus()
+    W:UpdateDropdownInput()
     assert(not home.mouse and not one.mouse and not two.mouse and not overflow.mouse,
         "gamepad UI breadcrumb arrows must not open Blizzard dropdowns")
     InputUtil={IsGamepadUIEnabled=function() return false end}
-    W:UpdateBreadcrumbMenus()
+    W:UpdateDropdownInput()
     assert(home.mouse and one.mouse and two.mouse and overflow.mouse,
         "mouse and keyboard UI keeps the native breadcrumb dropdowns")
-    InputUtil=nil; W:UpdateBreadcrumbMenus()
+    InputUtil=nil; W:UpdateDropdownInput()
     assert(home.mouse and overflow.mouse,"a client without InputUtil keeps the native breadcrumb dropdowns")
     W.breadcrumb.navList,W.breadcrumb.homeButton,W.breadcrumb.overflowButton=savedBar.navList,savedBar.homeButton,savedBar.overflowButton
     InputUtil=saved
@@ -801,7 +819,8 @@ do
     W:SetControllerTarget(W.map)
     assert(input:IsShown() and W.controllerNavigation:GetCurrentButton()==W.map and W.mapCursor:IsShown())
     W:SelectTab(2); W.settingsButtons.profiles:GetScript("OnClick")()
-    local dropdown=W.settingsPanels.profiles.controls[3]
+    local dropdown=W.settingsPanels.profiles.controls[1]
+    assert(not dropdown.mouseEnabled, "gamepad UI must disable the native profile menu's mouse input")
     W:SetControllerTarget(dropdown)
     input.scripts.OnGamePadButtonDown(input,"PAD1")
     assert(W.controllerMenu and W.controllerNavigation:GetCurrentButton()==W.controllerMenu.buttons[1])

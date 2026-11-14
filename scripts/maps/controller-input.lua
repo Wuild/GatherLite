@@ -115,7 +115,7 @@ function addon.WindowInput.Create(window)
     function window:CloseSettingsMenu()
         closeMenu()
     end
-    function window:OpenChoiceMenu(button, anchor, entries)
+    function window:OpenChoiceMenu(button, anchor, entries, width)
         if self.controllerMenu and self.controllerMenu.returnTarget==button then
             closeMenu()
             return
@@ -124,7 +124,8 @@ function addon.WindowInput.Create(window)
         local menu=window.controllerMenuFrame or CreateFrame("Frame",nil,owner)
         window.controllerMenuFrame=menu
         for _,old in ipairs(menu.buttons or {}) do old:Hide() end
-        menu:SetSize(270,math.min(400,#entries*30+12))
+        width=width or 270
+        menu:SetSize(width,math.min(400,#entries*30+12))
         menu:ClearAllPoints()
         menu:SetPoint("TOPLEFT",anchor,"BOTTOMLEFT",0,-4)
         menu:SetFrameLevel(input:GetFrameLevel()+1)
@@ -136,7 +137,8 @@ function addon.WindowInput.Create(window)
         scroll:SetPoint("TOPLEFT",6,-6); scroll:SetPoint("BOTTOMRIGHT",-24,6)
         for i,entry in ipairs(entries) do
             local item=menu.buttons[i] or addon.UI.Button(scroll.content,entry.text,236,function() end)
-            item:SetText(entry.text); item:Show()
+            item:SetWidth(width-34)
+            item:SetText(entry.selected and "|cffffd36b"..entry.text.."|r" or entry.text); item:Show()
             item:SetScript("OnClick",function() closeMenu(); entry.func(nil,entry.id) end)
             item:SetPoint("TOPLEFT",0,-(i-1)*30)
             item.gatherliteNavigation={}
@@ -146,7 +148,7 @@ function addon.WindowInput.Create(window)
             end
             menu.buttons[i]=item
         end
-        scroll.content:SetHeight(#entries*30)
+        scroll.content:SetSize(width-30,#entries*30)
         scroll:SetVerticalScroll(0)
         menu:Show()
         window.controllerMenu=menu

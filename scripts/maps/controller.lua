@@ -186,11 +186,11 @@ function addon.WindowController.Attach(window)
         if not initialized or not frame:IsShown() or not InputUtil.IsGamepadUIEnabled() then return end
         manager = GamepadMode.FrameControlsManager
         manager:FrameShown(frame)
-        window:UpdateBreadcrumbMenus()
+        window:UpdateDropdownInput()
         window:RefreshController()
     end
     local function hidden()
-        window:UpdateBreadcrumbMenus()
+        window:UpdateDropdownInput()
         releaseBindings()
         window:EndSliderEdit()
         if manager then
