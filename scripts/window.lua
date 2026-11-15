@@ -578,7 +578,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.10. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.11. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -591,12 +591,10 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"DISPLAY PROFILES",{
-            "The Profiles page now uses WoW's native dropdown for mouse input and groups the controls for switching, copying, deleting, and creating profiles.",
-        }},
-        {"MINIMAP MARKERS",{
-            "Nearby node markers hide within 70 yards by default so you can see the game's live tracking dots.",
-            "Ring mode uses a centered resource icon when a marker is placed on the minimap rim, including on shaped or rotating minimaps.",
+        {"GATHERING DATABASE",{
+            "Added 555 unique gathering locations to the Forever database.",
+            "The database contains 34,881 locations. All 34,326 previously published locations were retained.",
+            "Location additions include Iron Deposit (+56), Silver Vein (+34), Copper Vein (+30).",
         }},
     }
     local y=0
