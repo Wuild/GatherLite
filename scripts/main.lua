@@ -329,8 +329,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterEvent("PLAYER_LOGIN", "EventHandler")
     GatherLite:RegisterEvent("ZONE_CHANGED", "EventHandler")
 
-    GameTooltip:HookScript("OnShow", GatherLite.ModifyTooltip)
-    GameTooltip:HookScript("OnUpdate", GatherLite.ModifyTooltip)
+    self:RegisterGatheringTooltipHooks()
 
     GatherLite:RegisterChatCommand("gather", "GatherSlash")
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
@@ -339,44 +338,104 @@ function GatherLite:OnInitialize()
     GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
 end
 
-function GatherLite.ModifyTooltip()
-    local API = _GatherLite.API
-    if GameTooltip.IsForbidden and GameTooltip:IsForbidden() then
-        return
-    end
+local function tooltipLeftLine(tooltip, index)
+    return (tooltip.GetLeftLine and tooltip:GetLeftLine(index)) or _G["GameTooltipTextLeft" .. index]
+end
 
-    -- Only inspect known gathering objects. Unit/combat tooltips can contain
-    -- secret strings on Forever, which must not be compared or concatenated.
-    local title = _G.GameTooltipTextLeft1
-    local objectName = title and title:GetText()
-    if API.IsSecret(objectName) or not objectName then
-        return
+local function uncoloredTooltipText(text)
+    return text:match("^|c%x%x%x%x%x%x%x%x(.+)|r$") or text
+end
+
+function GatherLite:RegisterGatheringTooltipHooks()
+    local types = Enum and Enum.TooltipDataType
+    if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall
+        and types and types.MinimapMouseover and types.Object then
+        local function onNativeTooltip(tooltip, data)
+            if tooltip == GameTooltip then GatherLite.ModifyTooltip(tooltip, data) end
+        end
+        -- The client rebuilds tracking tooltips on minimap updates.
+        TooltipDataProcessor.AddTooltipPostCall(types.MinimapMouseover, onNativeTooltip)
+        TooltipDataProcessor.AddTooltipPostCall(types.Object, onNativeTooltip)
+        if hooksecurefunc and GameTooltip.SetMinimapMouseover then
+            -- Use the finished tooltip as well when the native setter does not
+            -- deliver a matching data callback or its title is only rendered.
+            hooksecurefunc(GameTooltip, "SetMinimapMouseover", function(tooltip)
+                if tooltip:IsShown() and GatherLite.ModifyTooltip(tooltip, nil, true) then
+                    tooltip:Show()
+                end
+            end)
+        end
+    else
+        GameTooltip:HookScript("OnShow", GatherLite.ModifyTooltip)
+        GameTooltip:HookScript("OnUpdate", function(tooltip) GatherLite.ModifyTooltip(tooltip) end)
     end
-    local object = GatherLite:GetObject(objectName)
+end
+
+local lastTooltipName, lastTooltipObject
+
+function GatherLite.ModifyTooltip(tooltip, data, nativeHover)
+    tooltip = tooltip or GameTooltip
+    local API = _GatherLite.API
+    if tooltip.IsForbidden and tooltip:IsForbidden() then return end
+
+    if API.IsSecret(data) then return end
+    local name
+    if data then
+        local lines = data.lines
+        if API.IsSecret(lines) or not lines then return end
+        local title = lines[1]
+        if API.IsSecret(title) or not title then return end
+        name = title.leftText
+    else
+        local title = tooltipLeftLine(tooltip, 1)
+        name = title and title:GetText()
+    end
+    if API.IsSecret(name) or type(name) ~= "string" then return end
+    if name ~= lastTooltipName then
+        lastTooltipName = name
+        -- Tracking names can include an above/below indicator as an inline atlas.
+        local plainName = name:gsub("|A.-|a", ""):gsub("|T.-|t", "")
+            :gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|cn[%w_]+:", ""):gsub("|r", "")
+        local id = GatherLite:findNodeType(plainName:match("^%s*(.-)%s*$"))
+        lastTooltipObject = id and GatherLite:GetNodeObject(id)
+    end
+    local object = lastTooltipObject
     if not object then return end
     local requirement, profession = GatherLite:GetNodeSkillRequirement(object)
     if not requirement then return end
-    local hasProfessionLine = false
-    for i = 2, GameTooltip:NumLines() do
-        local line = GameTooltip.GetLeftLine and GameTooltip:GetLeftLine(i) or _G["GameTooltipTextLeft" .. i]
+
+    local deferLayout = data ~= nil or nativeHover
+    nativeHover = deferLayout
+    if not nativeHover then
+        local owner = tooltip.GetOwner and tooltip:GetOwner()
+        nativeHover = not API.IsSecret(owner) and owner
+            and (owner == Minimap or owner == WorldFrame or owner == UIParent)
+    end
+    local hasProfessionLine, hasRestrictedLine = false, false
+    for i = 2, tooltip:NumLines() do
+        local line = tooltipLeftLine(tooltip, i)
         local text = line and line:GetText()
-        if not API.IsSecret(text) then
-            if text == requirement then
-                if line.SetTextColor then
-                    local r, g, b = GatherLite:GetNodeSkillRequirementColor(object, profession)
-                    -- Preserve client difficulty colors when only the minimum is known.
-                    if g ~= 1 or b ~= 1 then line:SetTextColor(r, g, b) end
+        if API.IsSecret(text) then
+            hasRestrictedLine = true
+        elseif type(text) == "string" then
+            local plain = uncoloredTooltipText(text)
+            if plain == requirement then
+                local r, g, b = GatherLite:GetNodeSkillRequirementColor(object, profession)
+                -- Preserve client difficulty colors when only the minimum is known.
+                if (g ~= 1 or b ~= 1) and line.SetTextColor then
+                    if plain ~= text and line.SetText then line:SetText(plain) end
+                    line:SetTextColor(r, g, b)
                 end
                 return
-            elseif text == profession then
+            elseif plain == profession then
                 hasProfessionLine = true
             end
         end
     end
-    if not hasProfessionLine then
-        return
-    end
+    if hasRestrictedLine or not (hasProfessionLine or nativeHover) then return end
 
-    GameTooltip:AddLine(requirement, GatherLite:GetNodeSkillRequirementColor(object, profession))
-    GameTooltip:Show()
+    tooltip:AddLine(requirement, GatherLite:GetNodeSkillRequirementColor(object, profession))
+    -- The tooltip processor shows and lays out its native tooltip after post-calls.
+    if not deferLayout then tooltip:Show() end
+    return true
 end

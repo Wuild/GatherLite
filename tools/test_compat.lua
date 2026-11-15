@@ -147,9 +147,14 @@ check(#GatherLite.db.global.nodes.mining[4].loot == 0, "expired gathering does n
 
 local tooltipText, skillText = secret, "Mining"
 local bodyLines, tooltipLayoutCount, laidOutBodyLine = {}, 0, nil
+local owner
+Minimap, WorldFrame, UIParent = {}, {}, {}
 GameTooltip = {
-    NumLines = function() return 2 + #bodyLines end,
-    GetLeftLine = function(_, index) return bodyLines[index - 2] end,
+    NumLines = function() return (skillText and 2 or 1) + #bodyLines end,
+    GetLeftLine = function(_, index)
+        if index > (skillText and 2 or 1) then return bodyLines[index - (skillText and 2 or 1)] end
+    end,
+    GetOwner = function() return owner end,
     AddLine = function(_, text, r, g, b)
         bodyLines[#bodyLines + 1] = { GetText = function() return text end, color = { r, g, b } }
     end,
@@ -206,6 +211,86 @@ check(color[1] == 1 and color[2] == 0 and color[3] == 0, "below minimum gatherin
 tooltipText, skillText, bodyLines = "Peacebloom", "Herbalism", {}
 GatherLite.ModifyTooltip()
 check(bodyLines[1]:GetText() == "Requires Herbalism (1)", "herbalism requirement added to the body")
+
+for _, context in ipairs({ Minimap, WorldFrame, UIParent }) do
+    owner, tooltipText, skillText, bodyLines = context, "|cffffff00Poor Copper Vein|r", nil, {}
+    GatherLite.ModifyTooltip(GameTooltip)
+    check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Mining (1)",
+        "native title-only hover recognizes a gathering alias and adds its requirement")
+    GatherLite.ModifyTooltip(GameTooltip)
+    check(#bodyLines == 1, "native title-only hover does not duplicate the requirement")
+end
+owner, skillText, bodyLines = Minimap, secret, {}
+GatherLite.ModifyTooltip(GameTooltip)
+check(#bodyLines == 0, "native hover with a restricted body is ignored")
+owner, skillText = {}, nil
+GatherLite.ModifyTooltip(GameTooltip)
+check(#bodyLines == 0, "unrelated title-only tooltip is ignored")
+owner, tooltipText = WorldFrame, "Unrecognized Object"
+GatherLite.ModifyTooltip(GameTooltip)
+check(#bodyLines == 0, "unrecognized world objects are ignored")
+
+owner, tooltipText, skillText = WorldFrame, "Copper Vein", "|cff00ff00Requires Mining (1)|r"
+local worldLine = GameTooltipTextLeft2
+worldLine.SetText = function(_, value) skillText = value end
+worldLine.SetTextColor = function(_, ...) nativeColor = {...} end
+GatherLite.ModifyTooltip(GameTooltip)
+check(#bodyLines == 0 and skillText == "Requires Mining (1)"
+    and nativeColor[1] == 1 and nativeColor[2] == 0 and nativeColor[3] == 0,
+    "embedded colors on existing world requirements are updated without adding a second line")
+
+local callbacks = {}
+local previousEnum = Enum
+Enum = { TooltipDataType = { Object = 0, MinimapMouseover = 21 } }
+TooltipDataProcessor = {
+    AddTooltipPostCall = function(kind, callback) callbacks[kind] = callback end,
+}
+local setterPostHook
+local tooltipVisible = true
+GameTooltip.IsShown = function() return tooltipVisible end
+GameTooltip.SetMinimapMouseover = function() end
+hooksecurefunc = function(target, method, callback)
+    check(target == GameTooltip and method == "SetMinimapMouseover", "hook the native minimap setter")
+    setterPostHook = callback
+end
+GatherLite:RegisterGatheringTooltipHooks()
+local trackingPostCall = assert(callbacks[Enum.TooltipDataType.MinimapMouseover])
+local objectPostCall = assert(callbacks[Enum.TooltipDataType.Object])
+local trackingData = { lines = { { leftText = "|A:TrackingAbove:12:12|a |cffffff00Tin Vein|r" } } }
+owner, tooltipText, skillText = {}, nil, nil
+local layoutBefore = tooltipLayoutCount
+for _ = 1, 2 do
+    bodyLines = {}
+    trackingPostCall(GameTooltip, trackingData)
+    check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Mining (65)" and bodyLines[1].color[2] == 0,
+        "native minimap rebuild adds the Tin Vein requirement even with an inline atlas")
+    trackingPostCall(GameTooltip, trackingData)
+    check(#bodyLines == 1, "reprocessing the same minimap lines must not duplicate the requirement")
+end
+check(tooltipLayoutCount == layoutBefore, "native post-calls leave layout to Blizzard")
+bodyLines = {}
+objectPostCall(GameTooltip, { lines = { { leftText = "Peacebloom" } } })
+check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Herbalism (1)",
+    "native world object post-call adds the gathering requirement")
+bodyLines = {}
+trackingPostCall(GameTooltip, { lines = { { leftText = secret } } })
+objectPostCall(GameTooltip, secret)
+trackingPostCall({}, trackingData)
+check(#bodyLines == 0, "restricted native data and other tooltip frames are ignored")
+local layoutBeforeSetter = tooltipLayoutCount
+tooltipText = "Iron Deposit"
+setterPostHook(GameTooltip)
+check(#bodyLines == 1 and bodyLines[1]:GetText() == "Requires Mining (125)"
+    and tooltipLayoutCount == layoutBeforeSetter + 1,
+    "finished native minimap tooltip gets a requirement even when no data callback fired")
+setterPostHook(GameTooltip)
+check(#bodyLines == 1 and tooltipLayoutCount == layoutBeforeSetter + 1,
+    "setter hook leaves an existing requirement alone")
+bodyLines = {}
+tooltipVisible = false
+setterPostHook(GameTooltip)
+check(#bodyLines == 0, "setter hook cannot reopen a hidden tooltip")
+Enum, TooltipDataProcessor, hooksecurefunc = previousEnum, nil, nil
 check(GatherLite:GetObject("Cold Iron Deposit").icon == "Interface\\AddOns\\GatherLite\\icons\\Ore\\iron", "Forever nodes use bundled transparent icons")
 local newOres = { [439558] = "Cold Iron Deposit", [439628] = "Fool's Gold Vein",
     [439778] = "Starsilver Vein", [439815] = "Greater Moonstone Formation" }
