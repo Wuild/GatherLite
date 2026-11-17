@@ -578,7 +578,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.12. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.13. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -591,9 +591,10 @@ function Window:CreateChangelog(page)
     scroll:SetPoint("TOPLEFT",28,-90); scroll:SetPoint("BOTTOMRIGHT",-42,20)
     self.changelogScroll=scroll
     local sections={
-        {"GATHERING TOOLTIPS",{
-            "Hover herbs and mineral veins in the world to see their color-coded gathering skill requirements.",
-            "Tooltips recognize supported localized node names and aliases, including starter variants.",
+        {"GATHERING DATABASE",{
+            "Added 812 gathering locations to the Forever database, bringing the total to 35,693.",
+            "Expanded herb, ore and container coverage, including 68 Iron Deposit, 56 Silver Vein and 50 Copper Vein locations.",
+            "Refreshed all 160 source pages and checked the herb and mineral-vein listings. All previously published locations were retained.",
         }},
     }
     local y=0
