@@ -24,6 +24,19 @@ class BrowserFetcher:
                 self._runtime.stop()
             self._runtime = self._browser = self._page = None
 
+    def _minimize_window(self):
+        # Chromium's launch flag can be ignored for Playwright's new window.
+        # Minimize the actual page window before sending it to Wowhead.
+        session = self._page.context.new_cdp_session(self._page)
+        try:
+            window = session.send("Browser.getWindowForTarget")
+            session.send("Browser.setWindowBounds", {
+                "windowId": window["windowId"],
+                "bounds": {"windowState": "minimized"},
+            })
+        finally:
+            session.detach()
+
     def __call__(self, url):
         try:
             from playwright.sync_api import Error, TimeoutError as BrowserTimeout, sync_playwright
@@ -36,6 +49,7 @@ class BrowserFetcher:
                 self._browser = self._runtime.chromium.launch(
                     headless=False, channel="chromium", args=["--start-minimized"])
                 self._page = self._browser.new_page()
+                self._minimize_window()
             response = self._page.goto(url, wait_until="domcontentloaded", timeout=30000)
             if response is None:
                 raise OSError("Browser navigation returned no document response")

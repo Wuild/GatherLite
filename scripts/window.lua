@@ -578,7 +578,7 @@ function Window:CreateSettings(page)
     local note=UI.Text(rail,T("window.settings.autosave"),"GameFontDisableSmall")
     note:SetPoint("BOTTOMLEFT",12,16); note:SetWidth(160)
 end
--- Bundled highlights for release 8.4.13. Update these alongside user-facing changes.
+-- Bundled highlights for release 8.4.14. Update these alongside user-facing changes.
 function Window:CreateChangelog(page)
     UI.Parchment(page)
     local title=UI.InkText(page,T("window.tab.changelog"),"GameFontNormalHuge")
@@ -592,9 +592,17 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"GATHERING DATABASE",{
-            "Added 812 gathering locations to the Forever database, bringing the total to 35,693.",
-            "Expanded herb, ore and container coverage, including 68 Iron Deposit, 56 Silver Vein and 50 Copper Vein locations.",
-            "Refreshed all 160 source pages and checked the herb and mineral-vein listings. All previously published locations were retained.",
+            "Added 240 gathering locations to the Forever database, bringing the total to 35,933.",
+        }},
+        {"WORLD MAP",{
+            "Shift-click the GatherLite map button to hide or restore gathering markers without changing your resource filters.",
+            "OpenMap loads dense views in batches and keeps individual markers aligned and the same size while you zoom. Change the default 7× cutoff in World Map settings.",
+            "OpenMap reuses prepared markers when you reopen the same view or zoom back past the marker cutoff, reducing flicker.",
+        }},
+        {"MINIMAP",{
+            "Adjust ring opacity separately from the icons below the rings, and optionally choose a custom ring color.",
+            "Turn off GatherLite pin tooltips in Minimap settings to keep the markers visible without hover popups.",
+            "Nearby marker hiding defaults to 150 yards. The upgrade turns hiding back on once for profiles using regular icons and keeps custom distances and ring or circle modes.",
         }},
     }
     local y=0

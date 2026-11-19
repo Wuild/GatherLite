@@ -80,7 +80,7 @@ function pins:RemoveMinimapIcon(_, frame) pinRemoves=pinRemoves+1; self.minimap[
 function pins:RemoveWorldMapIcon(_, frame) pinRemoves=pinRemoves+1; self.worldmap[frame] = nil end
 function pins:IsMinimapIconOnEdge(frame) return frame.mockOnEdge end
 libraries["HereBeDragons-Pins-2.0"] = pins
-local playerX, playerY = 500, 500
+local playerX, playerY = 480, 480
 libraries["HereBeDragons-2.0"] = {
     GetPlayerZonePosition = function() return playerX / 1000, playerY / 1000, 1429 end,
     GetPlayerWorldPosition = function() return playerX, playerY, 0 end,
@@ -180,6 +180,7 @@ do
             Circles={minimap={nearbyCircles=true}},
             Rings={minimap={ringMarkers=true}},
             Visible={minimap={hideNearbyNodes=false}},
+            CustomDistance={minimap={hideNearbyNodes=false, distance=90}},
         },
         char={["Miner - Forever"]={minimap={size=17, tracking={mining=false}}, routeMapID=7}},
         global={nodes={mining={{object=1731}}}},
@@ -194,7 +195,12 @@ do
     db:SetProfile("Rings")
     assert(db.profile.minimap.ringMarkers and not db.profile.minimap.hideNearbyNodes)
     db:SetProfile("Visible")
-    assert(not db.profile.minimap.hideNearbyNodes, "explicit saved overrides must survive")
+    assert(db.profile.minimap.hideNearbyNodes and db.profile.minimap.distance == 150,
+        "legacy off state must inherit nearby hiding at the new default distance")
+    db.profile.minimap.hideNearbyNodes = false
+    db:SetProfile("CustomDistance")
+    assert(db.profile.minimap.hideNearbyNodes and db.profile.minimap.distance == 90,
+        "the migration must preserve a custom distance")
     db:SetProfile(migratedName)
     assert(migratedName~="Default" and db.profile.minimap.size==17 and not db.char.minimap.tracking.mining)
     assert(db.char.professionTrackingManual and db.profile.minimapIcon.hide and db.profile.minimapIcon.minimapPos==37)
@@ -202,6 +208,9 @@ do
         and db.global.nodes.mining[1].object==1731)
     addon.MigrateProfileSettings(db)
     assert(db:GetCurrentProfile()==migratedName, "migration must be idempotent")
+    db:SetProfile("Visible")
+    assert(not db.profile.minimap.hideNearbyNodes, "turning nearby hiding back off must survive the migration")
+    db:SetProfile(migratedName)
     db.char.ignore[1731] = true
     db:SetProfile("New")
     assert(db.char.ignore[1731] and not db.char.minimap.tracking.mining)
@@ -347,18 +356,20 @@ local circlesOption = options.args.minimap.args.nearbyCircles
 local hideOption = options.args.minimap.args.hideNearbyNodes
 assert(not circlesOption.get(), "nearby circles must default to disabled")
 assert(hideOption.get(), "nearby pins must hide by default")
+assert(distanceOption.get() == 150, "nearby hiding must default to 150 yards")
 for i = 1, #kinds do
-    playerX, playerY = 600, 500
+    playerX, playerY = 600, 430
     click("minimap", i)
     assert(count("minimap", objects[i]) == 1, "default hiding must keep distant markers visible")
-    playerY = 580
+    playerY = 460
     tick(1.1)
     assert(count("minimap", objects[i]) == 0, "approaching a node must hide its marker by default")
-    playerY = 500
+    playerY = 430
     tick(5.1)
     assert(count("minimap", objects[i]) == 1, "moving away must restore the marker")
     click("minimap", i)
 end
+distanceOption.set(nil, 70)
 circlesOption.set(nil, true)
 hideOption.set(nil, false)
 for i, kind in ipairs(kinds) do
@@ -473,6 +484,21 @@ do
     local icon = GatherLite:GetNodeObject(objects[1]).icon
     assert(pin.ring:IsShown() and pin.ring.texturePath == circle and pin.texture.texturePath == icon)
     assert(pin.texture.point[1] == "TOP" and pin.texture.point[3] == "BOTTOM", "icon must sit below the ring")
+    sliders.ringOpacity.set(nil, 0.25)
+    assert(pin.ring.color[4] == 0.25 and pin.texture:IsShown(), "ring opacity must leave the icon visible")
+    settings.ringColor = { r = 0.2, g = 0.4, b = 0.8 }
+    minimapOptions.ringCustomColor.set(nil, true)
+    assert(pin.ring.color[1] == 0.2 and pin.ring.color[3] == 0.8 and pin.ring.color[4] == 0.25)
+    minimapOptions.ringCustomColor.set(nil, false)
+    sliders.ringOpacity.set(nil, 1)
+    minimapOptions.tooltips.set(nil, false)
+    tick(1.1)
+    pin = assert(next(pins.minimap))
+    assert(pin.ring:IsShown() and pin.texture:IsShown() and not pin.motionEnabled,
+        "disabling minimap tooltips must keep icons and rings visible without intercepting hover")
+    minimapOptions.tooltips.set(nil, true)
+    pin = assert(next(pins.minimap))
+    assert(pin.motionEnabled, "re-enabling minimap tooltips must restore hover")
     sliders.ringSize.set(nil, 24)
     sliders.iconSize.set(nil, 12)
     assert(pin.width == 24 and pin.texture.width == 12 and pin.hitInsets[4] == -13, "sliders must resize the displayed pin")
@@ -513,6 +539,17 @@ minimapButton.OnClick(Minimap, "RightButton")
 local toggled = 0
 GatherLite.modules.worldMapSidebar = { Toggle = function() toggled = toggled + 1 end }
 worldButton.scripts.OnClick(worldButton, "LeftButton")
+click("worldmap", 1)
+click("minimap", 1)
+IsShiftKeyDown = function() return true end
+worldButton.scripts.OnClick(worldButton, "LeftButton")
+assert(count("worldmap", objects[1]) == 0 and count("minimap", objects[1]) == 1)
+assert(GatherLite:GetNodeTracking("worldmap", kinds[1]), "hiding all pins must preserve category filters")
+worldButton.scripts.OnClick(worldButton, "LeftButton")
+assert(count("worldmap", objects[1]) == 1, "shift-click must restore the selected pins")
+IsShiftKeyDown = nil
+click("worldmap", 1)
+click("minimap", 1)
 GatherLite.modules.worldMapSidebar = nil
 assert(closedMenus == 1 and settingsOpened == 1 and toggled == 1,
     "minimap right-click opens settings and world map left-click toggles the pane")

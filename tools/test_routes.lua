@@ -265,7 +265,7 @@ load("scripts/locales/enUS.lua")
 local events={}
 GatherLite={modules={},plugins={},db={global={usePredefined=true,debug={types={}}},char={minimap={},worldmap={},hud={}},profile={
     minimap={enabled=true,range=400,size=12,opacity=1,distance=70,loot=true},
-    worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true,openMapPinZoom=7},
+    worldmap={enabled=true,size=12,opacity=1,loot=true,zoneTooltip=true},
     hud={enabled=false,range=250,width=300,height=20,pinSize=14,opacity=.9,x=0,y=-72,
         backgroundColor={r=.035,g=.03,b=.025},backgroundOpacity=.8,showBorder=true,hideInInstances=true},
     minimapIcon={},
@@ -1764,14 +1764,14 @@ do
     assert(scroll.zoomLevels[1].scale == scroll:GetWidth()/1002, "leave stitched-map zoom levels to OpenMap")
     zoom = 6
     sidebar.previous:GetScript("OnClick")()
-    assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 7, "zone HUD must open at pin visibility zoom")
+    assert(focus and focus[1] == .25 and focus[2] == .5 and focus[3] == 7, "zone HUD must focus at the minimum marker zoom")
     zoom = 8
     local remoteRow = assert(findRow(remote))
     remoteRow:GetScript("OnClick")(remoteRow)
     local recommended = sidebar.zones[1]
     assert(sidebar.zoneIndex == 1 and focus[1] == (recommended - 1) * .5 + .25,
         "selection must immediately show the recommendation and start an OpenMap glide")
-    assert(focus[3] == 8, "the OpenMap glide must preserve zoom above the pin visibility threshold")
+    assert(focus[3] == 8, "the OpenMap glide must preserve zoom")
     stitchedZone = recommended == 1 and 2 or 1
     now = .2
     update()
@@ -1798,19 +1798,6 @@ do
     assert(R.active and R.active.mapID == 2 and R.onlyMapID == 2 and world:GetMapID() == 1 and focus[1] == .75,
         "a resource outside the view must generate only in the HUD's destination zone")
 
-    local worldMapOptions = addon.SettingsOptions.args.worldmap
-    local withOpenMap = addon.UI.SettingsGroup(W.pages[2], worldMapOptions, "OpenMapSettingsTest")
-    assert(#withOpenMap.controls == #W.settingsPanels.worldmap.controls + 1,
-        "the World Map settings must add the zoom slider only when the OpenMap API is available")
-    local pinZoomSlider
-    for _, control in ipairs(withOpenMap.controls) do
-        if control.AdjustBy and control.value == 7 then pinZoomSlider = control end
-    end
-    assert(pinZoomSlider, "the zoom slider must start at the saved value")
-    pinZoomSlider:AdjustBy(1)
-    assert(GatherLite.db.profile.worldmap.openMapPinZoom == 8, "changing the slider must save the zoom")
-    sidebar:FocusZone(2)
-    assert(focus[3] == 8, "zone navigation must use the saved visibility zoom")
     toggle()
     assert(not sidebar.panel:IsShown() and GatherLite.db.char.worldMapSidebarCollapsed)
     toggle()

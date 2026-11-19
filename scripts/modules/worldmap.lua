@@ -323,7 +323,11 @@ local function createButton()
     icon:UpdateCoord()
 
     button:SetScript("OnClick", function(self, button)
-        if button == "LeftButton" then
+        if button == "LeftButton" and IsShiftKeyDown and IsShiftKeyDown() then
+            local settings = GatherLite.db.profile.worldmap
+            settings.enabled = not settings.enabled
+            GatherLite:Trigger("settings:update")
+        elseif button == "LeftButton" then
             local sidebar = GatherLite.modules.worldMapSidebar
             if sidebar then sidebar:Toggle() end
         elseif button == "RightButton" then
@@ -352,6 +356,7 @@ local function createButton()
         tooltip:AddLine(" ");
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.left_click"), 'gray') ..
             ": " .. GatherLite:translate("window.worldmap.toggle_pane"));
+        tooltip:AddLine(GatherLite:translate("window.worldmap.toggle_markers"));
         tooltip:AddLine(GatherLite:Colorize(GatherLite:translate("settings.minimap.right_click"), 'gray') ..
             ": " .. GatherLite:translate("settings.minimap.left_click_text"));
         tooltip:Show()
@@ -521,6 +526,10 @@ source.setup = function()
             return
         end
         if stitchedWasOpen then
+            if not WorldMapFrame:IsVisible() then
+                openMap:Park()
+                return
+            end
             openMap:Clear()
             stitchedWasOpen = false
         end

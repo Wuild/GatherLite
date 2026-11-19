@@ -266,13 +266,20 @@ function _GatherLite.MigrateProfileSettings(db)
     migrateProfileTracking(db)
     migrateProfileSettings(db, db.char)
 
-    -- AceDB omitted the old false default even for profiles using circles or rings.
+    local migrateNearbyHiding = not db.global.nearbyHidingMigrated
     for _, profile in pairs(db.profiles) do
         local minimap = profile.minimap
-        if minimap and minimap.hideNearbyNodes == nil and (minimap.nearbyCircles or minimap.ringMarkers) then
-            minimap.hideNearbyNodes = false
+        if minimap then
+            if minimap.nearbyCircles or minimap.ringMarkers then
+                -- AceDB omitted the old false default for these alternate marker modes.
+                if minimap.hideNearbyNodes == nil then minimap.hideNearbyNodes = false end
+            elseif migrateNearbyHiding and minimap.hideNearbyNodes == false then
+                -- Reset the old off state so these profiles inherit the enabled default.
+                minimap.hideNearbyNodes = nil
+            end
         end
     end
+    db.global.nearbyHidingMigrated = true
 end
 
 function GatherLite:RefreshProfile()

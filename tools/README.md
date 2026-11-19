@@ -55,7 +55,9 @@ python tools/update_forever_wowhead.py --discover --refresh --delay 10
 See the [importer guide](wowhead/README.md) for selected-object refreshes, offline generation, and source details.
 
 Online node updates always use a real graphical Chromium browser, started
-minimized. Install the browser dependency in a virtual environment:
+minimized. The updater also minimizes the page window before navigating, since
+Chromium can ignore the startup flag for a new Playwright window. Install the
+browser dependency in a virtual environment:
 
 ```sh
 python -m venv .wowhead-cache/browser-venv

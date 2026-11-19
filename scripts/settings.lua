@@ -2,6 +2,14 @@ local name, _GatherLite = ...
 
 local GFrame = LibStub("GatherLiteFrame");
 
+local function refreshMinimapPinLayout()
+    local minimap = GatherLite.modules.Minimap
+    if not minimap or not minimap.ApplyLayout then return end
+    for _, frame in pairs(GFrame.usedFrames) do
+        if frame.type == "minimap" then minimap.ApplyLayout(frame) end
+    end
+end
+
 local function mapTrackingOptions(target)
     local group = {
         type = "group", name = GatherLite:translate("tracking"),
@@ -504,6 +512,46 @@ _GatherLite.SettingsOptions = {
                     end,
                     get = function() return GatherLite.db.profile.minimap.ringShowIcon ~= false end,
                 },
+                ringCustomColor = {
+                    name = function() return GatherLite:translate("settings.minimap.ring_custom_color") end,
+                    desc = function() return GatherLite:translate("settings.minimap.ring_custom_color.description") end,
+                    type = "toggle", order = 4.8, width = "full",
+                    set = function(_, value)
+                        GatherLite.db.profile.minimap.ringCustomColor = value
+                        refreshMinimapPinLayout()
+                    end,
+                    get = function() return GatherLite.db.profile.minimap.ringCustomColor == true end,
+                },
+                ringColor = {
+                    name = function() return GatherLite:translate("settings.minimap.ring_color") end,
+                    type = "execute", order = 4.9, width = "full",
+                    func = function()
+                        local picker = ColorPickerFrame
+                        if not picker or not picker.SetupColorPickerAndShow then return end
+                        local color = GatherLite.db.profile.minimap.ringColor
+                        local r, g, b = color.r, color.g, color.b
+                        local function setColor(red, green, blue)
+                            color.r, color.g, color.b = red, green, blue
+                            refreshMinimapPinLayout()
+                        end
+                        picker:Hide()
+                        picker:SetFrameStrata("FULLSCREEN_DIALOG")
+                        picker:SetupColorPickerAndShow({
+                            r = r, g = g, b = b,
+                            swatchFunc = function() setColor(picker:GetColorRGB()) end,
+                            cancelFunc = function() setColor(r, g, b) end,
+                        })
+                    end,
+                },
+                tooltips = {
+                    name = function() return GatherLite:translate("settings.minimap.tooltips") end,
+                    type = "toggle", order = 5.5, width = "full",
+                    set = function(_, value)
+                        GatherLite.db.profile.minimap.tooltips = value
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.profile.minimap.tooltips ~= false end,
+                },
                 header = {
                     name = function()
                         return GatherLite:translate("settings.minimap");
@@ -631,6 +679,15 @@ _GatherLite.SettingsOptions = {
                             get = function(info)
                                 return GatherLite.db.profile.minimap.opacity
                             end
+                        },
+                        ringOpacity = {
+                            name = function() return GatherLite:translate("settings.minimap.ring_opacity") end,
+                            type = "range", min = 0, max = 1, step = 0.05, order = 6.5, width = "full",
+                            set = function(_, value)
+                                GatherLite.db.profile.minimap.ringOpacity = value
+                                refreshMinimapPinLayout()
+                            end,
+                            get = function() return GatherLite.db.profile.minimap.ringOpacity or 1 end,
                         },
                         iconRange = {
                             name = function()

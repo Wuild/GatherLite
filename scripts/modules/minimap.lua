@@ -129,11 +129,18 @@ local function DifficultyColor(frame)
 end
 
 local function RingColor(frame)
-    if GatherLite.db.profile.minimap.ringDifficultyColors == true then
-        local color = DifficultyColor(frame)
-        if color then return color end
+    local settings = GatherLite.db.profile.minimap
+    if settings.ringCustomColor and settings.ringColor then
+        local color = settings.ringColor
+        return color.r, color.g, color.b
     end
-    return ringColors[frame.node and frame.node.type] or { 1, 1, 1 }
+    if settings.ringDifficultyColors == true then
+        local color = DifficultyColor(frame)
+        if color then return unpack(color) end
+    end
+    local color = ringColors[frame.node and frame.node.type]
+    if color then return unpack(color) end
+    return 1, 1, 1
 end
 
 -- Show the parts of a pin that its layout and overlap state allow.
@@ -174,8 +181,8 @@ local function ApplyMinimapLayout(frame, onEdge)
         local ringSize = RingSize()
         frame:SetSize(ringSize, ringSize)
         frame.ring:SetTexture(nearbyIcon)
-        local color = RingColor(frame)
-        frame.ring:SetVertexColor(color[1], color[2], color[3], 1)
+        local r, g, b = RingColor(frame)
+        frame.ring:SetVertexColor(r, g, b, settings.ringOpacity or 1)
         frame.texture:SetSize(size, size)
         frame.texture:SetPoint("TOP", frame, "BOTTOM", 0, -RING_GAP)
         frame.texture:SetTexture(frame.object.icon)
@@ -223,11 +230,12 @@ local function CreateMinimapNode(node, worldX, worldY, instanceID)
     f:SetFrameStrata(Minimap:GetFrameStrata());
     --f:SetFrameLevel(Minimap:GetFrameLevel() + 5);
 
+    f:SetMouseMotionEnabled(GatherLite.db.profile.minimap.tooltips ~= false)
     f:SetScript("OnEnter", function(self)
         GatherLite:showTooltip(self);
     end)
-    f:SetScript("OnLeave", function()
-        GatherLite:hideTooltip()
+    f:SetScript("OnLeave", function(self)
+        if GameTooltip:IsOwned(self) then GatherLite:hideTooltip() end
     end)
 
     Pins:AddMinimapIconWorld(_GatherLite.name, f, node.instance, node.worldX, node.worldY, GatherLite.db.profile.minimap.edge)
@@ -242,6 +250,7 @@ local function ResetMinimap()
 
     GatherLite:forEach(Frames.usedFrames, function(frame)
         if frame.type == "minimap" then
+            if GameTooltip and GameTooltip:IsOwned(frame) then GatherLite:hideTooltip() end
             frame.node.loaded = false;
             frame:Unload()
         end
@@ -355,7 +364,7 @@ local function UpdateMinimapIcons(x, y, instanceID)
                 end
             end
         end
-        frame:SetMouseMotionEnabled(not overlap)
+        frame:SetMouseMotionEnabled(not overlap and GatherLite.db.profile.minimap.tooltips ~= false)
         frame.clustered = overlap and true or false
         UpdatePinVisibility(frame)
         if overlap then

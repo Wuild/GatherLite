@@ -30,6 +30,8 @@ class BrowserTests(unittest.TestCase):
         self.runtime = self.api.sync_playwright.return_value.start.return_value
         self.browser = self.runtime.chromium.launch.return_value
         self.page = self.browser.new_page.return_value
+        self.cdp = self.page.context.new_cdp_session.return_value
+        self.cdp.send.return_value = {"windowId": 42}
         self.page.goto.return_value.status = 200
         self.page.content.return_value = '<html>browser document</html>'
         self.page.url = importer.SOURCE + 'object=1731'
@@ -63,11 +65,18 @@ class BrowserTests(unittest.TestCase):
 
     def test_graphical_mode_minimizes_and_waits_for_document(self):
         self.page.goto.return_value.status = 202
+        def check_window_before_navigation(*args, **kwargs):
+            self.cdp.send.assert_called_with("Browser.setWindowBounds", {
+                "windowId": 42, "bounds": {"windowState": "minimized"},
+            })
+            return self.page.goto.return_value
+        self.page.goto.side_effect = check_window_before_navigation
         with BrowserFetcher() as fetch:
             fetch(self.page.url)
         self.runtime.chromium.launch.assert_called_once_with(
             headless=False, channel='chromium', args=['--start-minimized'])
         self.page.wait_for_function.assert_called_once()
+        self.cdp.detach.assert_called_once()
 
     def test_intermediate_document_timeout_is_not_returned(self):
         self.page.goto.return_value.status = 202
