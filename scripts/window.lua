@@ -592,8 +592,8 @@ function Window:CreateChangelog(page)
     self.changelogScroll=scroll
     local sections={
         {"GATHERING DATABASE",{
-            "Added 412 gathering locations to the Forever database, bringing the total to 36,756.",
-            "The new locations include 185 ore deposits, 156 herb nodes, and 71 containers.",
+            "Added 738 gathering locations to the Forever database, bringing the total to 37,494.",
+            "The new locations include 282 ore deposits, 334 herb nodes, and 122 containers.",
         }},
     }
     local y=0
