@@ -8,6 +8,12 @@ if not GatherLiteFrame then
 end
 
 local Pins = LibStub("HereBeDragons-Pins-2.0");
+local wipe = wipe or function(t)
+    for k in pairs(t) do
+        t[k] = nil
+    end
+    return t
+end
 
 GatherLiteFrame.numberOfFrames = 0;
 GatherLiteFrame.unusedFrames = {}
@@ -30,8 +36,12 @@ function GatherLiteFrame:getFrame(type)
     returnFrame.texture:SetAllPoints(returnFrame)
     returnFrame.texture:Show()
     returnFrame.ring:Hide()
+    if returnFrame.label then
+        returnFrame.label:Hide()
+    end
     returnFrame:SetHitRectInsets(0, 0, 0, 0)
     returnFrame:SetMouseMotionEnabled(true)
+    returnFrame.mouseEnabled = true
 
     GatherLiteFrame.usedFrames[returnFrame.frameId] = returnFrame
 
@@ -116,6 +126,25 @@ function GatherLiteFrame:newFrame(frameId)
     ring:Hide()
     newFrame.ring = ring
 
+    if newFrame.CreateFontString then
+        local label = newFrame:CreateFontString(nil, "OVERLAY")
+        if GameFontNormalSmall and GameFontNormalSmall.GetFont then
+            local fontPath, fontSize = GameFontNormalSmall:GetFont()
+            if fontPath then
+                label:SetFont(fontPath, math.max(8, (fontSize or 10) - 2), "OUTLINE")
+            elseif label.SetFontObject then
+                label:SetFontObject(GameFontNormalSmall)
+            end
+        elseif label.SetFontObject then
+            label:SetFontObject(GameFontNormalSmall)
+        end
+        label:SetTextColor(0.95, 0.95, 0.95, 0.85)
+        label:SetPoint("LEFT", newFrame, "RIGHT", 2, 0)
+        label:SetJustifyH("LEFT")
+        label:Hide()
+        newFrame.label = label
+    end
+
     newFrame.Unload = _frame.unload
 
     newFrame:Hide()
@@ -146,7 +175,16 @@ function _frame:unload()
     self.texture:SetAllPoints(self)
     self.ring:Hide()
     self.ring:SetVertexColor(1, 1, 1, 1)
+    if self.label then
+        self.label:Hide()
+        self.label:SetText("")
+        self.label:SetTextColor(0.95, 0.95, 0.95, 0.85)
+    end
+    self.labelText = nil
+    self.labelColor = nil
     self:SetHitRectInsets(0, 0, 0, 0)
+    self:SetMouseMotionEnabled(false)
+    self.mouseEnabled = nil
     self.ringLayout = nil
     self.clustered = nil
     self.onEdge = nil
@@ -164,7 +202,9 @@ function _frame:unload()
     self.node = nil
     self.object = nil
     self.nearby = nil
-    self.clusterNodes = nil
+    if self.clusterNodes then
+        wipe(self.clusterNodes)
+    end
     self.type = nil
     self:Hide()
 

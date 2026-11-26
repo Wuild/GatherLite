@@ -4,12 +4,38 @@ local Frames = LibStub("GatherLiteFrame");
 local Pins = LibStub("HereBeDragons-Pins-2.0");
 local HBD = LibStub("HereBeDragons-2.0");
 local nearbyIcon = "Interface\\AddOns\\" .. name .. "\\icons\\track_circle"
+local wipe = wipe or function(t)
+    for k in pairs(t) do
+        t[k] = nil
+    end
+    return t
+end
 
 local SourceName = "Minimap"
 
 local timeDiff = 0
 local checkDiff = 0
 local lastMapID, lastInstanceID
+local lastIconsX, lastIconsY, lastIconsInstanceID, lastIconsMapID, lastIconsZoom, lastIconsInInstance
+local lastIconsRadius, lastIconsWidth, lastShowLabels, lastRingMarkers, lastPinSize, lastRingSize
+local lastScanX, lastScanY, lastScanInstanceID, lastScanMapID
+local iconsDirty = true
+local scanDirty = true
+
+local PROFESSION_REFRESH_SEC = 5
+local MAX_CREATE_PER_FRAME = 16
+local MAX_SCAN_PER_FRAME = 128
+
+local professionRankCache = {}
+local professionRankTime = 0
+local nodeLabelCache = {}
+local seenLabelObjects = {}
+local defaultLabelColor = { 0.95, 0.95, 0.95 }
+local defaultColor = { 1, 1, 1 }
+local clusterCells = {}
+local activeClusterBuckets = {}
+local visibleFrames = {}
+local frameDistances = {}
 
 local threadMining
 local threadHerbalism
@@ -65,9 +91,36 @@ local function GetPlayerLocation()
     return worldX, worldY, instanceID, zoneX, zoneY, mapID
 end
 
+local function DistanceSq(x1, y1, x2, y2)
+    local dx, dy = x1 - x2, y1 - y2
+    return dx * dx + dy * dy
+end
+
+local function HasMovedEnough(x1, y1, instance1, map1, x2, y2, instance2, map2, thresholdSq)
+    if x1 == nil or y1 == nil or instance1 == nil or map1 == nil then return true end
+    if x2 == nil or y2 == nil or instance2 == nil or map2 == nil then return true end
+    if instance1 ~= instance2 or map1 ~= map2 then return true end
+    return DistanceSq(x1, y1, x2, y2) >= thresholdSq
+end
+
+local function MinimapViewRadius()
+    local radius = C_Minimap and C_Minimap.GetViewRadius and C_Minimap.GetViewRadius() or 233.333
+    if not radius or radius <= 0 then radius = 233.333 end
+    return radius
+end
+
+local function EffectiveLoadRange()
+    local settings = GatherLite.db.profile.minimap
+    if settings.edge == true then
+        return settings.range
+    end
+    return math.min(settings.range, MinimapViewRadius() + 80)
+end
+
 local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY, maxDist, filter)
     local nodes = GatherLite:GetNearbyZoneNodes(type, mapID, instanceID, zoneX, zoneY, maxDist)
     local out = {}
+    local maxDistSq = maxDist * maxDist
 
     for i = 1, #nodes do
         local node = nodes[i]
@@ -76,8 +129,8 @@ local function ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zone
         end
 
         if node.instance == instanceID and node.worldX and node.worldY and filter(node) then
-            local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
-            if distance and distance < maxDist and not HideNearbyNode(distance) then
+            local distSq = DistanceSq(worldX, worldY, node.worldX, node.worldY)
+            if distSq < maxDistSq and not HideNearbyNode(math.sqrt(distSq)) then
                 out[#out + 1] = node
             end
         end
@@ -106,11 +159,27 @@ local difficultyColors = {
 }
 local professionSkillLines = { mining = 186, herbalism = 182 }
 
+local function InvalidateProfessionCache()
+    wipe(professionRankCache)
+    professionRankTime = 0
+end
+
 local function ProfessionRank(nodeType)
     local skillLine = professionSkillLines[nodeType]
     if not skillLine or not C_SkillInfo or not C_SkillInfo.GetSkillLineInfoByID then return nil end
+    local now = GetTime()
+    if now - professionRankTime > PROFESSION_REFRESH_SEC then
+        wipe(professionRankCache)
+        professionRankTime = now
+    end
+    local cached = professionRankCache[nodeType]
+    if cached ~= nil then
+        return cached
+    end
     local info = C_SkillInfo.GetSkillLineInfoByID(skillLine)
-    return info and info.rank or 0
+    local rank = info and info.rank or 0
+    professionRankCache[nodeType] = rank
+    return rank
 end
 
 -- levels = { orange, yellow, green, grey } minimum skills. Some nodes publish only
@@ -133,7 +202,67 @@ local function RingColor(frame)
         local color = DifficultyColor(frame)
         if color then return color end
     end
-    return ringColors[frame.node and frame.node.type] or { 1, 1, 1 }
+    return ringColors[frame.node and frame.node.type] or defaultColor
+end
+
+local function GetObjectLabel(object)
+    if not object or not object.name then return "" end
+    local label = nodeLabelCache[object]
+    if label == nil then
+        label = GatherLite:translate("node." .. object.name)
+        nodeLabelCache[object] = label
+    end
+    return label
+end
+
+local function UpdatePinLabel(frame)
+    if not frame.label then return end
+    local settings = GatherLite.db.profile.minimap
+    if settings.showLabels ~= true or frame.clustered or frame.onEdge or not frame.object then
+        if frame.labelText ~= nil then
+            frame.label:Hide()
+            frame.labelText = nil
+        end
+        return
+    end
+
+    local primaryName = GetObjectLabel(frame.object)
+    local text = primaryName
+    local clusterNodes = frame.clusterNodes
+    if clusterNodes and #clusterNodes > 0 then
+        wipe(seenLabelObjects)
+        seenLabelObjects[frame.object] = true
+        local extraCount = 0
+        local secondName
+        for i = 1, #clusterNodes do
+            local extraObj = GatherLite:GetNodeObject(clusterNodes[i].object)
+            if extraObj and not seenLabelObjects[extraObj] then
+                seenLabelObjects[extraObj] = true
+                extraCount = extraCount + 1
+                if extraCount == 1 then
+                    secondName = GetObjectLabel(extraObj)
+                end
+            end
+        end
+        if extraCount == 1 then
+            text = primaryName .. " / " .. secondName
+        elseif extraCount > 1 then
+            text = primaryName .. " +" .. extraCount
+        end
+    end
+
+    if frame.labelText ~= text then
+        frame.label:SetText(text)
+        frame.labelText = text
+    end
+
+    local color = DifficultyColor(frame) or defaultLabelColor
+    if frame.labelColor ~= color then
+        frame.label:SetTextColor(color[1], color[2], color[3], 0.85)
+        frame.labelColor = color
+    end
+
+    frame.label:Show()
 end
 
 -- Show the parts of a pin that its layout and overlap state allow.
@@ -148,12 +277,7 @@ local function UpdatePinVisibility(frame)
         frame.texture:Show()
         frame.ring:Hide()
     end
-end
-
-local function MinimapViewRadius()
-    local radius = C_Minimap and C_Minimap.GetViewRadius and C_Minimap.GetViewRadius() or 233.333
-    if not radius or radius <= 0 then radius = 233.333 end
-    return radius
+    UpdatePinLabel(frame)
 end
 
 local function RingSize()
@@ -195,6 +319,14 @@ local function ApplyMinimapLayout(frame, onEdge)
 end
 source.ApplyLayout = ApplyMinimapLayout
 
+local function OnPinEnter(self)
+    GatherLite:showTooltip(self)
+end
+
+local function OnPinLeave()
+    GatherLite:hideTooltip()
+end
+
 -- Create minimap node
 local function CreateMinimapNode(node, worldX, worldY, instanceID)
     if not GatherLite:IsLoaded() then
@@ -209,12 +341,13 @@ local function CreateMinimapNode(node, worldX, worldY, instanceID)
     GatherLite:debug(_GatherLite.DEBUG_NODE, "Create node of type", node.type);
 
     local f = Frames:getFrame("minimap");
-    f:SetAlpha(GatherLite.db.profile.minimap.opacity);
+    local settings = GatherLite.db.profile.minimap
+    f:SetAlpha(settings.opacity);
 
-    local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
-    f.nearby = GatherLite.db.profile.minimap.ringMarkers ~= true
-        and GatherLite.db.profile.minimap.nearbyCircles == true
-        and distance and distance < GatherLite.db.profile.minimap.distance or false
+    local distance = math.sqrt(DistanceSq(worldX, worldY, node.worldX, node.worldY))
+    f.nearby = settings.ringMarkers ~= true
+        and settings.nearbyCircles == true
+        and distance < settings.distance or false
     f.node = node;
     f.object = object
     f.type = "minimap";
@@ -223,14 +356,10 @@ local function CreateMinimapNode(node, worldX, worldY, instanceID)
     f:SetFrameStrata(Minimap:GetFrameStrata());
     --f:SetFrameLevel(Minimap:GetFrameLevel() + 5);
 
-    f:SetScript("OnEnter", function(self)
-        GatherLite:showTooltip(self);
-    end)
-    f:SetScript("OnLeave", function()
-        GatherLite:hideTooltip()
-    end)
+    f:SetScript("OnEnter", OnPinEnter)
+    f:SetScript("OnLeave", OnPinLeave)
 
-    Pins:AddMinimapIconWorld(_GatherLite.name, f, node.instance, node.worldX, node.worldY, GatherLite.db.profile.minimap.edge)
+    Pins:AddMinimapIconWorld(_GatherLite.name, f, node.instance, node.worldX, node.worldY, settings.edge)
     return f;
 end
 
@@ -239,6 +368,11 @@ local function ResetMinimap()
     if not GatherLite:IsLoaded() then
         return
     end
+
+    iconsDirty = true
+    scanDirty = true
+    wipe(clusterCells)
+    wipe(activeClusterBuckets)
 
     GatherLite:forEach(Frames.usedFrames, function(frame)
         if frame.type == "minimap" then
@@ -257,14 +391,25 @@ local function createNodeThread(type)
         return
     end
     local t = ClosestNodes(type, worldX, worldY, instanceID, mapID, zoneX, zoneY,
-        GatherLite.db.profile.minimap.range, MinimapFilter);
+        EffectiveLoadRange(), MinimapFilter);
 
+    local created = 0
+    local scanned = 0
     for i = 1, #t do
         local node = t[i]
         if not node.loaded then
-            if CreateMinimapNode(node, worldX, worldY, instanceID) then node.loaded = true end
+            if CreateMinimapNode(node, worldX, worldY, instanceID) then
+                node.loaded = true
+                created = created + 1
+                iconsDirty = true
+            end
         end
-        coroutine.yield()
+        scanned = scanned + 1
+        if created >= MAX_CREATE_PER_FRAME or scanned >= MAX_SCAN_PER_FRAME then
+            created = 0
+            scanned = 0
+            coroutine.yield()
+        end
     end
 end
 
@@ -291,13 +436,42 @@ local function RestartNodeWorkers()
     threadFishing = coroutine.create(fishingThread)
 end
 
-local function UpdateMinimapIcons(x, y, instanceID)
+local function compareVisibleFrames(a, b)
+    local da, db = frameDistances[a], frameDistances[b]
+    return da < db or (da == db and a.frameId < b.frameId)
+end
+
+local function UpdateMinimapIcons(x, y, instanceID, mapID, force)
     if x == nil or y == nil or instanceID == nil then
         return
     end
 
+    local settings = GatherLite.db.profile.minimap
     local inInstance = IsInInstance()
-    local visible = {}
+    local zoom = Minimap and Minimap.GetZoom and Minimap:GetZoom() or nil
+    local radius = MinimapViewRadius()
+    local minimapWidth = Minimap and Minimap:GetWidth() or 0
+    local loadRange = EffectiveLoadRange()
+    local unloadRange = settings.edge == true and settings.range or math.min(settings.range, loadRange + 20)
+    local ringMarkers = settings.ringMarkers == true
+    local pinSize = settings.size
+    local ringSize = ringMarkers and RingSize() or 0
+    local showLabels = settings.showLabels == true
+
+    local moved = HasMovedEnough(x, y, instanceID, mapID, lastIconsX, lastIconsY, lastIconsInstanceID, lastIconsMapID, 4)
+    local changed = force or iconsDirty or moved
+        or lastIconsInInstance ~= inInstance
+        or lastIconsZoom ~= zoom
+        or lastIconsRadius ~= radius
+        or lastIconsWidth ~= minimapWidth
+        or lastShowLabels ~= showLabels
+        or lastRingMarkers ~= ringMarkers
+        or lastPinSize ~= pinSize
+        or lastRingSize ~= ringSize
+
+    wipe(visibleFrames)
+    wipe(frameDistances)
+
     -- Removing the current entry during pairs is safe; no snapshot is needed.
     for _, frame in pairs(Frames.usedFrames) do
         if frame.type == "minimap" then
@@ -307,64 +481,124 @@ local function UpdateMinimapIcons(x, y, instanceID)
             end
             local distance
             if node.instance == instanceID and node.worldX and node.worldY then
-                local _
-                _, distance = HBD:GetWorldVector(instanceID, x, y, node.worldX, node.worldY)
+                distance = math.sqrt(DistanceSq(x, y, node.worldX, node.worldY))
             end
-            if inInstance or not distance or distance >= GatherLite.db.profile.minimap.range
+            if inInstance or not distance or distance >= unloadRange
                 or not MinimapFilter(node) or HideNearbyNode(distance) then
                 frame:Unload()
+                changed = true
+                scanDirty = true
             else
-                local nearby = GatherLite.db.profile.minimap.ringMarkers ~= true
-                    and GatherLite.db.profile.minimap.nearbyCircles == true
-                    and distance < GatherLite.db.profile.minimap.distance
+                local nearby = not ringMarkers
+                    and settings.nearbyCircles == true
+                    and distance < settings.distance
                 -- Use the library's placement, which accounts for minimap shape and rotation.
-                local onEdge = GatherLite.db.profile.minimap.edge == true and Pins:IsMinimapIconOnEdge(frame) == true
+                local onEdge = settings.edge == true and Pins:IsMinimapIconOnEdge(frame) == true
                 if frame.nearby ~= nearby or frame.onEdge ~= onEdge then
                     frame.nearby = nearby
                     ApplyMinimapLayout(frame, onEdge)
+                    changed = true
                 end
-                visible[#visible + 1] = {frame=frame, distance=distance}
+                visibleFrames[#visibleFrames + 1] = frame
+                frameDistances[frame] = distance
             end
         end
     end
+
+    if moved then
+        scanDirty = true
+    end
+    if #visibleFrames == 0 then
+        lastIconsX, lastIconsY, lastIconsInstanceID, lastIconsMapID = x, y, instanceID, mapID
+        lastIconsZoom, lastIconsInInstance = zoom, inInstance
+        lastIconsRadius, lastIconsWidth = radius, minimapWidth
+        lastShowLabels, lastRingMarkers, lastPinSize, lastRingSize = showLabels, ringMarkers, pinSize, ringSize
+        iconsDirty = false
+        return
+    end
+    if minimapWidth <= 0 then
+        iconsDirty = true
+        return
+    end
+    if not changed then
+        return
+    end
+
+    iconsDirty = false
+    lastIconsX, lastIconsY, lastIconsInstanceID, lastIconsMapID = x, y, instanceID, mapID
+    lastIconsZoom, lastIconsInInstance = zoom, inInstance
+    lastIconsRadius, lastIconsWidth = radius, minimapWidth
+    lastShowLabels, lastRingMarkers, lastPinSize, lastRingSize = showLabels, ringMarkers, pinSize, ringSize
+
     -- Spawn alternatives and different resource types can occupy the same
     -- minimap pixels. Keep the closest representative without changing history
     -- or hiding the client's live tracking dots. Hide only our texture so HBD
     -- continues to own pin visibility, clipping and edge placement.
-    table.sort(visible,function(a,b)
-        return a.distance < b.distance or (a.distance == b.distance and a.frame.frameId < b.frame.frameId)
-    end)
-    local radius=MinimapViewRadius()
-    if Minimap:GetWidth()<=0 then return end
+    table.sort(visibleFrames, compareVisibleFrames)
+
+    for i = 1, #activeClusterBuckets do
+        wipe(activeClusterBuckets[i])
+    end
+    wipe(activeClusterBuckets)
+
     -- Ring markers are taller (ring plus icon below), so give them more room.
-    local footprint=GatherLite.db.profile.minimap.size
-    if GatherLite.db.profile.minimap.ringMarkers == true then footprint=math.max(footprint, RingSize()) end
-    local spacing=2 * radius * (footprint + 2) / Minimap:GetWidth()
-    local cells={}
-    for _,entry in ipairs(visible) do
-        local frame=entry.frame
-        frame.clusterNodes={}
-        local cx,cy=math.floor(frame.node.worldX/spacing),math.floor(frame.node.worldY/spacing)
-        local overlap=false
-        for dx=-1,1 do
-            for dy=-1,1 do
-                for _,other in ipairs(cells[(cx+dx)..":"..(cy+dy)] or {}) do
-                    if (other.node.worldX-frame.node.worldX)^2+(other.node.worldY-frame.node.worldY)^2 < spacing^2 then
-                        overlap=overlap or other
+    local footprint = pinSize
+    if ringMarkers then footprint = math.max(footprint, ringSize) end
+    local spacing = 2 * radius * (footprint + 2) / minimapWidth
+    local spacingSq = spacing * spacing
+
+    for i = 1, #visibleFrames do
+        local frame = visibleFrames[i]
+        frame.clusterNodes = frame.clusterNodes or {}
+        wipe(frame.clusterNodes)
+        local fx, fy = frame.node.worldX, frame.node.worldY
+        local cx, cy = math.floor(fx / spacing), math.floor(fy / spacing)
+        local overlap = false
+        for dx = -1, 1 do
+            local col = clusterCells[cx + dx]
+            if col then
+                for dy = -1, 1 do
+                    local bucket = col[cy + dy]
+                    if bucket then
+                        for j = 1, #bucket do
+                            local other = bucket[j]
+                            if not overlap and DistanceSq(other.node.worldX, other.node.worldY, fx, fy) < spacingSq then
+                                overlap = other
+                            end
+                        end
                     end
                 end
             end
         end
-        frame:SetMouseMotionEnabled(not overlap)
         frame.clustered = overlap and true or false
-        UpdatePinVisibility(frame)
         if overlap then
-            overlap.clusterNodes[#overlap.clusterNodes+1]=frame.node
-        else
-            local key=cx..":"..cy
-            cells[key]=cells[key] or {}
-            if frame:IsShown() then cells[key][#cells[key]+1]=frame end
+            overlap.clusterNodes[#overlap.clusterNodes + 1] = frame.node
+        elseif frame:IsShown() then
+            local col = clusterCells[cx]
+            if not col then
+                col = {}
+                clusterCells[cx] = col
+            end
+            local bucket = col[cy]
+            if not bucket then
+                bucket = {}
+                col[cy] = bucket
+            end
+            if #bucket == 0 then
+                activeClusterBuckets[#activeClusterBuckets + 1] = bucket
+            end
+            bucket[#bucket + 1] = frame
         end
+    end
+
+    for i = 1, #visibleFrames do
+        local frame = visibleFrames[i]
+        local wantMouse = not frame.clustered
+        if frame.mouseEnabled ~= wantMouse then
+            frame:SetMouseMotionEnabled(wantMouse)
+            frame.mouseEnabled = wantMouse
+        end
+        UpdatePinVisibility(frame)
     end
 end
 
@@ -379,6 +613,8 @@ local function Update(timeDelta, force)
     if (force) then
         updateIcons = true
         updateNodes = true
+        iconsDirty = true
+        scanDirty = true
         debugState.lastForceUpdate = GetTime()
 
         RestartNodeWorkers()
@@ -397,9 +633,8 @@ local function Update(timeDelta, force)
         end
     end
 
-    local worldX, worldY, instanceID
-    if updateIcons then
-        local zoneX, zoneY, mapID
+    local worldX, worldY, instanceID, zoneX, zoneY, mapID
+    if updateIcons or updateNodes then
         worldX, worldY, instanceID, zoneX, zoneY, mapID = GetPlayerLocation()
         if not worldX or not worldY or not instanceID or not zoneX or not zoneY or IsInInstance() then
             mapID = nil
@@ -407,6 +642,10 @@ local function Update(timeDelta, force)
         local mapInstance = mapID and instanceID
         if mapID ~= lastMapID or mapInstance ~= lastInstanceID then
             lastMapID, lastInstanceID = mapID, mapInstance
+            iconsDirty = true
+            scanDirty = true
+            wipe(clusterCells)
+            wipe(activeClusterBuckets)
             if mapID then
                 -- Recover from loading screens and discard unfinished scans of the previous zone.
                 if not force then RestartNodeWorkers() end
@@ -414,27 +653,33 @@ local function Update(timeDelta, force)
                 checkDiff = 0
             end
         end
-        debugState.lastIconsUpdate = GetTime()
-        debugState.lastIconsTick = timeDelta or 0
+        if updateIcons then
+            debugState.lastIconsUpdate = GetTime()
+            debugState.lastIconsTick = timeDelta or 0
+        end
     end
 
-    if (updateNodes) then
-        debugState.lastNodesUpdate = GetTime()
-        debugState.lastNodesTick = timeDelta or 0
-        if coroutine.status(threadMining) == "dead" then
-            threadMining = coroutine.create(miningThread)
-        end
+    if (updateNodes) and mapID then
+        if force or scanDirty or HasMovedEnough(worldX, worldY, instanceID, mapID, lastScanX, lastScanY, lastScanInstanceID, lastScanMapID, 100) then
+            lastScanX, lastScanY, lastScanInstanceID, lastScanMapID = worldX, worldY, instanceID, mapID
+            scanDirty = false
+            debugState.lastNodesUpdate = GetTime()
+            debugState.lastNodesTick = timeDelta or 0
+            if coroutine.status(threadMining) == "dead" then
+                threadMining = coroutine.create(miningThread)
+            end
 
-        if coroutine.status(threadHerbalism) == "dead" then
-            threadHerbalism = coroutine.create(herbalismThread)
-        end
+            if coroutine.status(threadHerbalism) == "dead" then
+                threadHerbalism = coroutine.create(herbalismThread)
+            end
 
-        if coroutine.status(threadContainer) == "dead" then
-            threadContainer = coroutine.create(containerThread)
-        end
+            if coroutine.status(threadContainer) == "dead" then
+                threadContainer = coroutine.create(containerThread)
+            end
 
-        if coroutine.status(threadFishing) == "dead" then
-            threadFishing = coroutine.create(fishingThread)
+            if coroutine.status(threadFishing) == "dead" then
+                threadFishing = coroutine.create(fishingThread)
+            end
         end
     end
 
@@ -444,7 +689,7 @@ local function Update(timeDelta, force)
     if coroutine.status(threadContainer) ~= "dead" then coroutine.resume(threadContainer) end
     if coroutine.status(threadFishing) ~= "dead" then coroutine.resume(threadFishing) end
 
-    if updateIcons then UpdateMinimapIcons(worldX, worldY, instanceID) end
+    if updateIcons then UpdateMinimapIcons(worldX, worldY, instanceID, mapID, force) end
 end
 
 -- Module setup
@@ -468,24 +713,40 @@ source.setup = function()
         if not allowed then return end
         GatherLite:EnsureNodeWorld(node)
         if node.instance ~= instanceID or not node.worldX or not node.worldY then return end
-        local _, distance = HBD:GetWorldVector(instanceID, worldX, worldY, node.worldX, node.worldY)
-        if not distance or distance >= GatherLite.db.profile.minimap.range or HideNearbyNode(distance) then return end
+        local distance = math.sqrt(DistanceSq(worldX, worldY, node.worldX, node.worldY))
+        if distance >= EffectiveLoadRange() or HideNearbyNode(distance) then return end
         node.loaded = CreateMinimapNode(node, worldX, worldY, instanceID) ~= nil
         -- Recluster visible icons, retaining the existing discovery workers and timers.
-        if node.loaded then UpdateMinimapIcons(worldX, worldY, instanceID) end
+        if node.loaded then
+            iconsDirty = true
+            UpdateMinimapIcons(worldX, worldY, instanceID, mapID, true)
+        end
     end)
 
     local frame = CreateFrame("Frame")
     frame:SetScript("OnUpdate", function(self, elapsed)
         Update(elapsed)
     end)
-    -- Recolour difficulty rings as gathering skill rises.
+    -- Recolour difficulty rings and labels as gathering skill rises.
     frame:RegisterEvent("SKILL_LINES_CHANGED")
-    frame:SetScript("OnEvent", function()
-        local settings = GatherLite.db.profile.minimap
-        if settings.ringMarkers ~= true or settings.ringDifficultyColors ~= true then return end
-        for _, pin in pairs(Frames.usedFrames) do
-            if pin.type == "minimap" then ApplyMinimapLayout(pin) end
+    frame:RegisterEvent("MINIMAP_UPDATE_ZOOM")
+    frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+    frame:SetScript("OnEvent", function(_, event)
+        if event == "SKILL_LINES_CHANGED" then
+            InvalidateProfessionCache()
+            local settings = GatherLite.db.profile.minimap
+            if settings.ringMarkers == true and settings.ringDifficultyColors == true then
+                for _, pin in pairs(Frames.usedFrames) do
+                    if pin.type == "minimap" then ApplyMinimapLayout(pin) end
+                end
+            elseif settings.showLabels == true then
+                for _, pin in pairs(Frames.usedFrames) do
+                    if pin.type == "minimap" then UpdatePinLabel(pin) end
+                end
+            end
+        elseif event == "MINIMAP_UPDATE_ZOOM" or event == "PLAYER_ENTERING_WORLD" then
+            iconsDirty = true
+            scanDirty = true
         end
     end)
 

@@ -42,9 +42,20 @@ local function makeFrame(parent)
     function f:SetMouseMotionEnabled(enabled) self.motionEnabled = enabled end
     function f:GetFrameStrata() return self.strata or (self.parent and self.parent:GetFrameStrata()) or "MEDIUM" end
     function f:CreateTexture() return makeFrame(self) end
+    function f:CreateFontString()
+        local fs = makeFrame(self)
+        function fs:SetFont(...) self.font = {...} end
+        function fs:SetFontObject(obj) self.fontObject = obj end
+        function fs:SetTextColor(...) self.textColor = {...} end
+        function fs:SetJustifyH(j) self.justify = j end
+        function fs:SetText(t) self.text = t end
+        function fs:GetText() return self.text or "" end
+        return fs
+    end
     frames[#frames + 1] = f
     return f
 end
+GameFontNormalSmall = { GetFont = function() return "Fonts\\FRIZQT__.TTF", 10, "" end }
 CreateFrame = function(_, name, parent)
     local f = makeFrame(parent)
     if name then _G[name] = f end
@@ -551,21 +562,20 @@ print("Tracking integration passed: all four categories, both maps, lazy loading
 
 -- Icon checks must obey their timer and must not copy the frame registry.
 click("minimap", 1)
-local vectorCalls = 0
-local hbd = libraries["HereBeDragons-2.0"]
-local originalVector = hbd.GetWorldVector
-hbd.GetWorldVector = function(...)
-    vectorCalls = vectorCalls + 1
-    return originalVector(...)
+local iconChecks = 0
+local originalIgnored = GatherLite.IsIgnored
+GatherLite.IsIgnored = function(...)
+    iconChecks = iconChecks + 1
+    return originalIgnored(...)
 end
 local originalFilter = GatherLite.Filter
 GatherLite.Filter = function() error("minimap allocated a frame-list copy") end
 for i = 1, 30 do tick(1 / 60) end
-assert(vectorCalls == 0, "icon distances calculated before the one-second timer")
+assert(iconChecks == 0, "icon distances calculated before the one-second timer")
 tick(0.6)
-assert(vectorCalls > 0, "icon timer failed to run")
+assert(iconChecks > 0, "icon timer failed to run")
 GatherLite.Filter = originalFilter
-hbd.GetWorldVector = originalVector
+GatherLite.IsIgnored = originalIgnored
 click("minimap", 1)
 
 -- One update must remove all stale pins, even after a cross-instance move.
@@ -948,6 +958,108 @@ do
     hbd.GetPlayerWorldPosition, hbd.GetPlayerZonePosition = originalWorld, originalZone
     hbd.GetWorldCoordinatesFromZone = originalProjection
 end
+
+-- Minimap node labels toggle, formatting, difficulty colouring, edge hiding and stationary skip.
+do
+    local minimapOptions = options.args.minimap.args
+    local settings = GatherLite.db.profile.minimap
+    local prevShow, prevHide, prevRings, prevCircles, prevEdge =
+        settings.showLabels, settings.hideNearbyNodes, settings.ringMarkers, settings.nearbyCircles, settings.edge
+    local prevX, prevY = playerX, playerY
+
+    settings.showLabels = false
+    settings.hideNearbyNodes = true
+    settings.ringMarkers = false
+    settings.nearbyCircles = true
+    settings.edge = false
+
+    minimapOptions.showLabels.set(nil, true)
+    assert(settings.showLabels == true and not settings.hideNearbyNodes
+        and settings.ringMarkers and not settings.nearbyCircles,
+        "enabling showLabels while nearby nodes are hidden must enable hollow rings")
+
+    playerX, playerY = 150, 150
+    local function addTestNode(kind, objectID, wx, wy)
+        local n = {
+            type = kind,
+            object = objectID,
+            mapID = 1429,
+            posX = wx / 1000,
+            posY = wy / 1000,
+            worldX = wx,
+            worldY = wy,
+            instance = 0,
+        }
+        GatherLite:LoadTable(kind, { n })
+        return n
+    end
+    addTestNode("mining", 1731, 200, 150)
+    addTestNode("herbalism", 1618, 200.1, 150)
+    addTestNode("herbalism", 1621, 200.2, 150)
+    addTestNode("herbalism", 1617, 150, 220)
+    addTestNode("herbalism", 1618, 510, 150)
+    for _, kind in ipairs(kinds) do GatherLite.db.char.minimap.tracking[kind] = true end
+    GatherLite:Trigger("settings:update")
+    tick(0.05)
+    tick(1.1)
+
+    local copperPin, silverSolo, farPin
+    for frame in pairs(pins.minimap) do
+        if frame.node.worldX == 200 and frame.node.worldY == 150 then copperPin = frame
+        elseif frame.node.worldX == 150 and frame.node.worldY == 220 then silverSolo = frame
+        elseif frame.node.worldX == 510 and frame.node.worldY == 150 then farPin = frame end
+    end
+    assert(farPin == nil, "node outside MinimapViewRadius + 80 should not load when edge is false")
+    assert(copperPin and copperPin.label:IsShown() and copperPin.label:GetText() == "Copper Vein +2",
+        "expected clustered 3-type label 'Copper Vein +2', got '" .. tostring(copperPin and copperPin.label:GetText()) .. "'")
+    assert(silverSolo and silverSolo.label:IsShown() and silverSolo.label:GetText() == "Silverleaf")
+
+    local now = 200
+    GetTime = function() return now end
+    local rank = 0
+    C_SkillInfo = { GetSkillLineInfoByID = function() return { rank = rank } end }
+    for _, f in ipairs(frames) do
+        if f.events and f.events.SKILL_LINES_CHANGED then f.scripts.OnEvent(f, "SKILL_LINES_CHANGED") end
+    end
+    assert(copperPin.label.textColor[1] == 1 and copperPin.label.textColor[2] == 0.1,
+        "mining skill 0 vs copper must colour label red")
+    rank = 150
+    for _, f in ipairs(frames) do
+        if f.events and f.events.SKILL_LINES_CHANGED then f.scripts.OnEvent(f, "SKILL_LINES_CHANGED") end
+    end
+    assert(silverSolo.label.textColor[1] == 0.5, "SKILL_LINES_CHANGED must recolour labels via updated rank")
+
+    copperPin.mockOnEdge = true
+    settings.edge = true
+    tick(1.1)
+    assert(not copperPin.label:IsShown(), "on-edge pin must hide its label")
+    copperPin.mockOnEdge = nil
+    settings.edge = false
+
+    -- Stationary 5-second worker scan must be skipped until the player moves >= 10 yards.
+    GatherLite:Trigger("settings:update")
+    tick(0.05)
+    local beforeScan = GatherLite.minimapDebug.lastNodesUpdate
+    now = now + 6
+    tick(6)
+    assert(GatherLite.minimapDebug.lastNodesUpdate == beforeScan, "stationary 5s scan must skip restarting workers")
+    playerX = playerX + 12
+    now = now + 6
+    tick(6)
+    assert(GatherLite.minimapDebug.lastNodesUpdate == now, "moving >= 10 yards must restart node scan")
+
+    minimapOptions.showLabels.set(nil, false)
+    tick(1.1)
+    for frame in pairs(pins.minimap) do
+        assert(not frame.label:IsShown(), "labels must hide when showLabels is false")
+    end
+    C_SkillInfo = nil
+    GetTime = function() return 100 end
+    settings.showLabels, settings.hideNearbyNodes, settings.ringMarkers, settings.nearbyCircles, settings.edge =
+        prevShow, prevHide, prevRings, prevCircles, prevEdge
+    playerX, playerY = prevX, prevY
+end
+print("Label and performance checks passed: showLabels, cluster labels, skill colours, edge hiding and stationary skip")
 
 -- Exercise the bundled renderer as well as the mock registry used above.
 do

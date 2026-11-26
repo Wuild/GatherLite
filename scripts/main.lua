@@ -335,7 +335,7 @@ function GatherLite:OnInitialize()
     GatherLite:RegisterChatCommand("gatherlite", "GatherSlash")
 
     GatherLite:RegisterComm(_GatherLite.name .. "Ver", "VersionCheck")
-    GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 10)
+    GatherLite:ScheduleRepeatingTimer("SendVersionCheck", 300)
 end
 
 local function tooltipLeftLine(tooltip, index)
