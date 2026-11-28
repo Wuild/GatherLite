@@ -2,6 +2,7 @@ local _, addon = ...
 local Routes, Planner = addon.Routes, addon.RoutePlanner
 local HBD = LibStub("HereBeDragons-2.0")
 local world, mini, elapsedTotal
+local miniState = {}
 
 local function overlay(parent)
     local frame = CreateFrame("Frame", nil, parent)
@@ -11,7 +12,12 @@ local function overlay(parent)
     frame.lines = {}
     return frame
 end
-local function hide(frame) if frame then frame:Hide() end end
+local function hide(frame)
+    if frame then
+        if frame == mini then miniState.route = nil end
+        frame:Hide()
+    end
+end
 
 function Routes:DrawLine(frame, index, x1, y1, x2, y2)
     local line = frame.lines[index]
@@ -151,9 +157,25 @@ function Routes:Draw(elapsed)
         facing = GetPlayerFacing()
         if not facing then hide(mini); return end
     end
+    local geometry = route.geometry or route.points
+    local width, height = Minimap:GetWidth()/2, Minimap:GetHeight()/2
+    local isSquare = GetMinimapShape and GetMinimapShape() == "SQUARE" or false
+    if mini and mini:IsShown()
+        and miniState.route == route and miniState.geometry == geometry
+        and miniState.px == px and miniState.py == py
+        and miniState.instance == instance and miniState.mapID == mapID
+        and miniState.facing == facing and miniState.radius == radius
+        and miniState.width == width and miniState.height == height
+        and miniState.square == isSquare then
+        return
+    end
     mini = mini or overlay(Minimap)
     mini:Show()
-    local clip = GetMinimapShape and GetMinimapShape() == "SQUARE" and Planner.ClipSquare or Planner.ClipCircle
+    miniState.route, miniState.geometry = route, geometry
+    miniState.px, miniState.py, miniState.instance, miniState.mapID = px, py, instance, mapID
+    miniState.facing, miniState.radius = facing, radius
+    miniState.width, miniState.height, miniState.square = width, height, isSquare
+    local clip = isSquare and Planner.ClipSquare or Planner.ClipCircle
     self:DrawNearby(mini, Minimap, route, px, py, radius, facing, clip)
 end
 

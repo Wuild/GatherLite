@@ -552,6 +552,24 @@ _GatherLite.SettingsOptions = {
                     end,
                     get = function() return GatherLite.db.profile.minimap.tooltips ~= false end,
                 },
+                showLabels = {
+                    name = function() return GatherLite:translate("settings.minimap.show_labels") end,
+                    desc = function() return GatherLite:translate("settings.minimap.show_labels.description") end,
+                    type = "toggle",
+                    order = 5.25,
+                    width = "full",
+                    set = function(_, value)
+                        local minimap = GatherLite.db.profile.minimap
+                        minimap.showLabels = value
+                        if value and minimap.hideNearbyNodes == true then
+                            minimap.hideNearbyNodes = false
+                            minimap.nearbyCircles = false
+                            minimap.ringMarkers = true
+                        end
+                        GatherLite:Trigger("settings:update")
+                    end,
+                    get = function() return GatherLite.db.profile.minimap.showLabels == true end,
+                },
                 header = {
                     name = function()
                         return GatherLite:translate("settings.minimap");

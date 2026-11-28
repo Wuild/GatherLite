@@ -88,16 +88,21 @@ function GatherLite:debug(type, ...)
 end
 
 function GatherLite:translate(key, ...)
-    local arg = { ... };
-
-    if L[key] == nil then
+    local text = L[key]
+    if text == nil then
         return key
     end
 
-    for i, v in ipairs(arg) do
-        arg[i] = tostring(v);
+    local count = select("#", ...)
+    if count == 0 then
+        return text
     end
-    return string.format(L[key], unpack(arg))
+
+    local arg = { ... }
+    for i = 1, count do
+        arg[i] = tostring(arg[i])
+    end
+    return string.format(text, unpack(arg, 1, count))
 end
 
 function GatherLite:tablelength(T)
@@ -300,31 +305,80 @@ local function normalizeNodeName(name)
     return name:gsub("Ё", "ё"):gsub("Œ", "œ"):gsub("ẞ", "ß"):gsub("’", "'"):lower()
 end
 
-function GatherLite:findNodeType(target, mapID)
-    if API.IsSecret(target) or type(target) ~= "string" then return nil end
-    local normalized = normalizeNodeName(target)
-    local found
-    for _, object in ipairs(_GatherLite.nodeDB) do
-        local key = "node." .. object.name
-        local alternate = rawget(L, key .. ".alternate")
-        local matches = normalized == normalizeNodeName(GatherLite:translate(key))
-            or (alternate and normalized == normalizeNodeName(alternate))
-        if not matches then
-            for _, alias in ipairs(object.aliases or {}) do
-                if normalized == normalizeNodeName(GatherLite:translate("node." .. alias)) then
-                    matches = true
-                    break
+local nodeNameIndex
+local nodeNameIndexCount = -1
+local nodeNameIndexSample1
+local nodeNameIndexSample2
+
+local function addNodeNameEntry(index, nameKey, objectID, mapID)
+    if not nameKey or nameKey == "" then
+        return
+    end
+    local entry = index[nameKey]
+    if not entry then
+        index[nameKey] = {
+            default = objectID,
+            byMap = mapID and { [mapID] = objectID } or nil,
+        }
+        return
+    end
+    if mapID then
+        if not entry.byMap then
+            entry.byMap = {}
+        end
+        if not entry.byMap[mapID] then
+            entry.byMap[mapID] = objectID
+        end
+    end
+end
+
+local function getNodeNameIndex()
+    local db = _GatherLite.nodeDB
+    local count = db and #db or 0
+    local sample1 = rawget(L, "node.copper_vein")
+    local sample2 = rawget(L, "settings.minimap.ring_icon.description")
+    if nodeNameIndex and nodeNameIndexCount == count
+        and nodeNameIndexSample1 == sample1 and nodeNameIndexSample2 == sample2 then
+        return nodeNameIndex
+    end
+
+    nodeNameIndex = {}
+    nodeNameIndexCount = count
+    nodeNameIndexSample1 = sample1
+    nodeNameIndexSample2 = sample2
+    if not db then
+        return nodeNameIndex
+    end
+
+    for _, object in ipairs(db) do
+        local objectID = object.id and object.id[1]
+        if objectID then
+            local key = "node." .. object.name
+            addNodeNameEntry(nodeNameIndex, normalizeNodeName(GatherLite:translate(key)), objectID, object.nameMatchMapID)
+
+            local alternate = rawget(L, key .. ".alternate")
+            if alternate then
+                addNodeNameEntry(nodeNameIndex, normalizeNodeName(alternate), objectID, object.nameMatchMapID)
+            end
+
+            if object.aliases then
+                for i = 1, #object.aliases do
+                    addNodeNameEntry(nodeNameIndex, normalizeNodeName(GatherLite:translate("node." .. object.aliases[i])), objectID, object.nameMatchMapID)
                 end
             end
         end
-        if matches then
-            if not mapID or object.nameMatchMapID == mapID then
-                return object.id[1]
-            end
-            found = found or object.id[1]
-        end
     end
-    return found
+    return nodeNameIndex
+end
+
+function GatherLite:findNodeType(target, mapID)
+    if API.IsSecret(target) or type(target) ~= "string" then return nil end
+    local entry = getNodeNameIndex()[normalizeNodeName(target)]
+    if not entry then return nil end
+    if mapID and entry.byMap and entry.byMap[mapID] then
+        return entry.byMap[mapID]
+    end
+    return entry.default
 end
 
 function GatherLite:IsNodeInRange(myPosX, myPosY, nodePosX, nodePosY, spellType)
@@ -531,6 +585,11 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
         return {}
     end
 
+    local mapNodes = index.byMap[mapID]
+    if not mapNodes or #mapNodes == 0 then
+        return {}
+    end
+
     local scale = GatherLite:GetMapScale(mapID, instanceID, posX, posY)
     if not scale then
         return {}
@@ -545,7 +604,17 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
     height = height and height > 0 and height or scale
     local radiusX = math.ceil(maxDist / (width * NODE_RANGE))
     local radiusY = math.ceil(maxDist / (height * NODE_RANGE))
-    if radiusX >= NODE_CELL_INV and radiusY >= NODE_CELL_INV then
+    local minX = math.max(0, cellX - radiusX)
+    local maxX = math.min(NODE_CELL_STRIDE - 1, cellX + radiusX)
+    local minY = math.max(0, cellY - radiusY)
+    local maxY = math.min(NODE_CELL_STRIDE - 1, cellY + radiusY)
+    local cells = index.byCell[mapID]
+    local fullMap = radiusX >= NODE_CELL_INV and radiusY >= NODE_CELL_INV
+    if not fullMap and (maxX < minX or maxY < minY or not cells) then
+        return {}
+    end
+    local cellCount = (maxX - minX + 1) * (maxY - minY + 1)
+    if fullMap or cellCount >= #mapNodes then
         local instance = instanceID
         if instance == nil then
             local _, _, mapInstance = HBD:GetWorldCoordinatesFromZone(posX, posY, mapID)
@@ -553,16 +622,15 @@ function GatherLite:GetNearbyNodes(type, mapID, instanceID, posX, posY, maxDist)
         end
 
         if instance == nil then
-            return GatherLite:GetNodesForMap(type, mapID)
+            return mapNodes
         end
         return GatherLite:GetNodesForMapInstance(type, mapID, instance)
     end
     local out = {}
-    local cells = index.byCell[mapID]
-    if not cells then return out end
-    for cx = math.max(0, cellX - radiusX), math.min(NODE_CELL_STRIDE - 1, cellX + radiusX) do
-        for cy = math.max(0, cellY - radiusY), math.min(NODE_CELL_STRIDE - 1, cellY + radiusY) do
-            local bucket = cells[nodeCellKey(cx, cy)]
+    for cx = minX, maxX do
+        local rowBase = cx * NODE_CELL_STRIDE
+        for cy = minY, maxY do
+            local bucket = cells[rowBase + cy]
             if bucket then
                 for i = 1, #bucket do out[#out + 1] = bucket[i] end
             end
@@ -944,24 +1012,43 @@ function GatherLite:hideTooltip()
     GameTooltip:Hide();
 end
 
-function GatherLite:GetNodeObject(nodeID)
+local nodeObjectByID
+local nodeObjectDBCount = -1
 
-    for i, node in pairs(_GatherLite.nodeDB) do
+local function getNodeObjectByID()
+    local db = _GatherLite.nodeDB
+    local count = db and #db or 0
+    if nodeObjectByID and nodeObjectDBCount == count then
+        return nodeObjectByID
+    end
+
+    nodeObjectByID = {}
+    nodeObjectDBCount = count
+    if not db then
+        return nodeObjectByID
+    end
+
+    for _, node in pairs(db) do
         if type(node.id) == "table" then
             for k2 = 1, #node.id do
-                local id = node.id[k2];
-                if id == nodeID then
-                    return node
+                local id = node.id[k2]
+                if id ~= nil and nodeObjectByID[id] == nil then
+                    nodeObjectByID[id] = node
                 end
             end
         end
     end
-
-    --for k = 1, #_GatherLite.nodeDB do
-    --    local node = _GatherLite.nodeDB[k];
-    --
-    --end
+    return nodeObjectByID
 end
+
+function GatherLite:GetNodeObject(nodeID)
+    if nodeID == nil then
+        return nil
+    end
+    return getNodeObjectByID()[nodeID]
+end
+
+local TRACKING_NODE_TYPES = { "mining", "herbalism", "containers", "fishing" }
 
 local function ensureMapTracking(target)
     local char = GatherLite.db and GatherLite.db.char
@@ -972,7 +1059,8 @@ local function ensureMapTracking(target)
     char[target] = char[target] or {}
     char[target].tracking = char[target].tracking or {}
 
-    for _, nodeType in ipairs({ "mining", "herbalism", "containers", "fishing" }) do
+    for i = 1, #TRACKING_NODE_TYPES do
+        local nodeType = TRACKING_NODE_TYPES[i]
         if char[target].tracking[nodeType] == nil then
             if char.tracking and char.tracking[nodeType] ~= nil then
                 char[target].tracking[nodeType] = char.tracking[nodeType]
@@ -986,7 +1074,13 @@ local function ensureMapTracking(target)
 end
 
 function GatherLite:GetNodeTracking(target, nodeType)
-    local tracking = ensureMapTracking(target)
+    local char = GatherLite.db and GatherLite.db.char
+    local targetTable = char and char[target]
+    local tracking = targetTable and targetTable.tracking
+    if tracking and tracking[nodeType] ~= nil then
+        return tracking[nodeType] ~= false
+    end
+    tracking = ensureMapTracking(target)
     if not tracking then
         return true
     end

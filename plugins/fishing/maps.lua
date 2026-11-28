@@ -10,16 +10,25 @@ GatherLite.plugins.Fishing = Fishing
 function Fishing:Cluster(cells,x,y,u,v)
     local cx,cy=math.floor(x),math.floor(y)
     for dx=-1,1 do
-        for dy=-1,1 do
-            for _,candidate in ipairs(cells[(cx+dx)..":"..(cy+dy)] or {}) do
-                if (candidate.x-x)^2+(candidate.y-y)^2<1 then return candidate,false end
+        local col=cells[cx+dx]
+        if col then
+            for dy=-1,1 do
+                local bucket=col[cy+dy]
+                if bucket then
+                    for i=1,#bucket do
+                        local candidate=bucket[i]
+                        if (candidate.x-x)^2+(candidate.y-y)^2<1 then return candidate,false end
+                    end
+                end
             end
         end
     end
     local group={u=u,v=v,x=x,y=y,fish={},ids={}}
-    local key=cx..":"..cy
-    cells[key]=cells[key] or {}
-    cells[key][#cells[key]+1]=group
+    local col=cells[cx]
+    if not col then col={}; cells[cx]=col end
+    local bucket=col[cy]
+    if not bucket then bucket={}; col[cy]=bucket end
+    bucket[#bucket+1]=group
     return group,true
 end
 function Fishing:ThinLocations(locations)
@@ -61,7 +70,16 @@ function Fishing:Refresh()
         (selected or GatherLite:GetNodeTracking("minimap","fishing"))
     if not worldEnabled and not miniEnabled then return end
     local worldMap=WorldMapFrame and WorldMapFrame:IsShown() and WorldMapFrame:GetMapID()
-    local worldInfo=worldMap and C_Map.GetMapInfo(worldMap)
+    local mapInfoCache={}
+    local function getMapInfo(id)
+        local cached=mapInfoCache[id]
+        if cached==nil then
+            cached=C_Map.GetMapInfo(id) or false
+            mapInfoCache[id]=cached
+        end
+        return cached or nil
+    end
+    local worldInfo=worldMap and getMapInfo(worldMap)
     local privatePins=WorldMap:UsesPrivatePins()
     local _,_,playerMap=HBD:GetPlayerZonePosition()
     local groups={}
@@ -76,7 +94,7 @@ function Fishing:Refresh()
     end
     for _,fish in ipairs(selected and {selected} or addon.fishDB) do
         for mapID,coords in pairs(fish.maps) do
-            local info=C_Map.GetMapInfo(mapID)
+            local info=getMapInfo(mapID)
             local showWorld=worldEnabled and worldInfo and worldInfo.mapType==3 and (selected or worldMap==mapID or
                 (worldInfo and worldInfo.mapType<3 and worldOptions.continent))
             local showMini=miniEnabled and mapID==playerMap
@@ -130,14 +148,14 @@ function Fishing:Refresh()
                 WorldMap:AddPrivatePin(frame,group.u,group.v)
             else
                 -- Match HBD's SHOW_PARENT rule for selected fish on parent zones.
-                local info=C_Map.GetMapInfo(mapID)
+                local info=getMapInfo(mapID)
                 while info and info.parentMapID and info.parentMapID>0 do
                     if info.parentMapID==worldMap then
                         local x,y=HBD:TranslateZoneCoordinates(group.u,group.v,mapID,worldMap)
                         if x and y then WorldMap:AddPrivatePin(frame,x,y) end
                         break
                     end
-                    info=C_Map.GetMapInfo(info.parentMapID)
+                    info=getMapInfo(info.parentMapID)
                 end
             end
         else
@@ -146,10 +164,13 @@ function Fishing:Refresh()
     end
     for mapID,targets in pairs(groups) do
         for target,cells in pairs(targets) do
-            for _,bucket in pairs(cells) do
-                for _,group in ipairs(bucket) do
-                    table.sort(group.fish,function(a,b) return a.name<b.name end)
-                    pin(mapID,group,target=="mini")
+            for _,col in pairs(cells) do
+                for _,bucket in pairs(col) do
+                    for i=1,#bucket do
+                        local group=bucket[i]
+                        table.sort(group.fish,function(a,b) return a.name<b.name end)
+                        pin(mapID,group,target=="mini")
+                    end
                 end
             end
         end
@@ -174,7 +195,10 @@ function Fishing.setup()
         local world=WorldMapFrame and WorldMapFrame:IsShown() and WorldMapFrame:GetMapID()
         if world~=lastWorld then
             lastWorld=world
-            refresh=true
+            local showWorld=(Fishing.object~=nil) or (GatherLite.db.global.usePredefined
+                and GatherLite.db.profile.worldmap.enabled
+                and GatherLite:GetNodeTracking("worldmap","fishing"))
+            if showWorld then refresh=true end
         end
         -- Player-zone polling stays throttled; unchanged maps never rebuild pins.
         elapsedTotal=elapsedTotal+elapsed

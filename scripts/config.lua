@@ -115,6 +115,7 @@ _GatherLite.configsDefaults = {
             ringDifficultyColors = false,
             ringShowIcon = true,
             hideNearbyNodes = true,
+            showLabels = false,
             loot = true,
             edge = false,
             neighbors = true
