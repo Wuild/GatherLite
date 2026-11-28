@@ -436,6 +436,7 @@ for i, kind in ipairs(kinds) do
     click("worldmap", i)
     local worldPin = assert(next(pins.worldmap))
     assert(worldPin.texture.texturePath == icon, "recycled circle leaked into the world map")
+    assert(not worldPin.label, "world pin allocated a minimap label with labels off")
     click("worldmap", i)
     playerX, playerY = 500, 500
     click("minimap", i)
@@ -998,6 +999,9 @@ do
     addTestNode("herbalism", 1621, 200.2, 150)
     addTestNode("herbalism", 1617, 150, 220)
     addTestNode("herbalism", 1618, 510, 150)
+    local widerPinNode = addTestNode("herbalism", 1618, 340, 150)
+    local oldViewRadius = C_Minimap.GetViewRadius
+    C_Minimap.GetViewRadius = function() return 70 end
     for _, kind in ipairs(kinds) do GatherLite.db.char.minimap.tracking[kind] = true end
     GatherLite:Trigger("settings:update")
     tick(0.05)
@@ -1013,6 +1017,15 @@ do
     assert(copperPin and copperPin.label:IsShown() and copperPin.label:GetText() == "Copper Vein +2",
         "expected clustered 3-type label 'Copper Vein +2', got '" .. tostring(copperPin and copperPin.label:GetText()) .. "'")
     assert(silverSolo and silverSolo.label:IsShown() and silverSolo.label:GetText() == "Silverleaf")
+
+    assert(not widerPinNode.loaded, "nearest zoom must skip distant pins")
+    C_Minimap.GetViewRadius = function() return 220 end
+    for _, f in ipairs(frames) do
+        if f.events and f.events.MINIMAP_UPDATE_ZOOM then f.scripts.OnEvent(f, "MINIMAP_UPDATE_ZOOM") end
+    end
+    tick(.05)
+    assert(widerPinNode.loaded, "zooming out must discover newly visible pins on the next update")
+    C_Minimap.GetViewRadius = oldViewRadius
 
     local now = 200
     GetTime = function() return now end

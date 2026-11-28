@@ -52,6 +52,27 @@ function GatherLiteFrame:getFrame(type)
     return returnFrame
 end
 
+function GatherLiteFrame:EnsureLabel(frame)
+    if frame.CreateFontString and not frame.label then
+        local label = frame:CreateFontString(nil, "OVERLAY")
+        if GameFontNormalSmall and GameFontNormalSmall.GetFont then
+            local fontPath, fontSize = GameFontNormalSmall:GetFont()
+            if fontPath then
+                label:SetFont(fontPath, math.max(8, (fontSize or 10) - 2), "OUTLINE")
+            elseif label.SetFontObject then
+                label:SetFontObject(GameFontNormalSmall)
+            end
+        elseif label.SetFontObject then
+            label:SetFontObject(GameFontNormalSmall)
+        end
+        label:SetTextColor(0.95, 0.95, 0.95, 0.85)
+        label:SetPoint("LEFT", frame, "RIGHT", 2, 0)
+        label:SetJustifyH("LEFT")
+        label:Hide()
+        frame.label = label
+    end
+end
+
 function GatherLiteFrame:createFrame()
     GatherLiteFrame.numberOfFrames = GatherLiteFrame.numberOfFrames + 1
 
@@ -125,25 +146,6 @@ function GatherLiteFrame:newFrame(frameId)
     ring:SetSnapToPixelGrid(false)
     ring:Hide()
     newFrame.ring = ring
-
-    if newFrame.CreateFontString then
-        local label = newFrame:CreateFontString(nil, "OVERLAY")
-        if GameFontNormalSmall and GameFontNormalSmall.GetFont then
-            local fontPath, fontSize = GameFontNormalSmall:GetFont()
-            if fontPath then
-                label:SetFont(fontPath, math.max(8, (fontSize or 10) - 2), "OUTLINE")
-            elseif label.SetFontObject then
-                label:SetFontObject(GameFontNormalSmall)
-            end
-        elseif label.SetFontObject then
-            label:SetFontObject(GameFontNormalSmall)
-        end
-        label:SetTextColor(0.95, 0.95, 0.95, 0.85)
-        label:SetPoint("LEFT", newFrame, "RIGHT", 2, 0)
-        label:SetJustifyH("LEFT")
-        label:Hide()
-        newFrame.label = label
-    end
 
     newFrame.Unload = _frame.unload
 

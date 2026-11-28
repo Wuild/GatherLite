@@ -21,6 +21,7 @@ local lastIconsRadius, lastIconsWidth, lastShowLabels, lastRingMarkers, lastPinS
 local lastScanX, lastScanY, lastScanInstanceID, lastScanMapID
 local iconsDirty = true
 local scanDirty = true
+local rescanSoon
 
 local PROFESSION_REFRESH_SEC = 5
 local MAX_CREATE_PER_FRAME = 16
@@ -216,16 +217,17 @@ local function GetObjectLabel(object)
 end
 
 local function UpdatePinLabel(frame)
-    if not frame.label then return end
     local settings = GatherLite.db.profile.minimap
     if settings.showLabels ~= true or frame.clustered or frame.onEdge or not frame.object then
-        if frame.labelText ~= nil then
+        if frame.label and frame.labelText ~= nil then
             frame.label:Hide()
             frame.labelText = nil
         end
         return
     end
 
+    if not frame.label then Frames:EnsureLabel(frame) end
+    if not frame.label then return end
     local primaryName = GetObjectLabel(frame.object)
     local text = primaryName
     local clusterNodes = frame.clusterNodes
@@ -633,6 +635,13 @@ local function Update(timeDelta, force)
         end
     end
 
+    if rescanSoon then
+        rescanSoon = false
+        if not force then RestartNodeWorkers() end
+        checkDiff, timeDiff = 0, 0
+        updateIcons, updateNodes = true, true
+    end
+
     local worldX, worldY, instanceID, zoneX, zoneY, mapID
     if updateIcons or updateNodes then
         worldX, worldY, instanceID, zoneX, zoneY, mapID = GetPlayerLocation()
@@ -747,6 +756,7 @@ source.setup = function()
         elseif event == "MINIMAP_UPDATE_ZOOM" or event == "PLAYER_ENTERING_WORLD" then
             iconsDirty = true
             scanDirty = true
+            rescanSoon = true
         end
     end)
 
