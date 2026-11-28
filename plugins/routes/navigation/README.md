@@ -26,7 +26,8 @@ verified that terrain against every Forever build. See upstream's
 `python tools/vendor_navigation.py` downloads only an explicitly pinned revision.
 It changes the data global to `GatherLiteGroundPathData`, puts search state in
 GatherLite's private `GroundNavigation` namespace, and disables the search's
-endpoint relocation retries. No upstream UI, journey, transport, API or player
+endpoint relocation retries. It also skips entrance edges with an infinite cost
+so a zone route can exclude terrain graph entrances outside its map. No upstream UI, journey, transport, API or player
 movement code is included. `ground.lua` supplies GatherLite's scheduler adapter,
 bounded circuit planning, coordinate conversion and strict endpoint selection.
 
@@ -43,7 +44,8 @@ the containing walkable cell (about eight yards wide). Unsupported cells and
 overlapping floors with no known resource elevation are omitted rather than
 snapped across a wall or cliff. Swimming is allowed at its terrain cost; flying,
 flight paths, teleports and transports are never used. All route legs, including
-the return, are drawn from ground geometry, with no straight-line fallback.
+the return, are drawn from ground geometry. A circuit that crosses the selected
+map's rectangular bounds is rejected, with no straight-line fallback.
 
 Completed route geometry is saved per character and restored without another
 terrain search when the addon version, client build, selected resources, zone

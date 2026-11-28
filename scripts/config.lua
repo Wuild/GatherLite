@@ -131,6 +131,8 @@ _GatherLite.configsDefaults = {
         },
         hud = {
             enabled = false,
+            circular = false,
+            circleSize = 260,
             range = 250,
             width = 700,
             fullWidth = false,

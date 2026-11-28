@@ -977,6 +977,7 @@ local function setHudExternalPins(enabled)
 end
 assert(not hudOptions.tracking and hudOptions.mirrorMinimap.type=="toggle")
 hudOptions.enabled.set(nil,false)
+hudOptions.circular.set(nil,false)
 hudOptions.fullWidth.set(nil,false)
 setHudExternalPins(false)
 hudOptions.mirrorMinimap.set(nil,false)
@@ -1239,6 +1240,32 @@ assert(#drawHud(0)==2,"closing the map must restore the HUD")
 WorldMapFrame:SetShown(mapWasShown)
 visibility.hideOnWorldMap.set(nil,false)
 assert(#drawHud(nil)==0,"unavailable facing must clear markers")
+do
+    local previous, maps, visible = R.active, R.byMap, GatherLite.db.char.routeVisible
+    hudOptions.circleSize.set(nil, 260)
+    hudOptions.circular.set(nil, true)
+    local first = {x=hudPlayerX,y=hudPlayerY,instance=0}
+    local bend = {x=hudPlayerX-25,y=hudPlayerY+25,instance=0}
+    local finish = {x=hudPlayerX,y=hudPlayerY+50,instance=0}
+    R.active = {mapID=playerMap,points={first,finish},geometry={first,bend,finish,first}}
+    R.byMap, GatherLite.db.char.routeVisible = nil, true
+    drawHud(0)
+    assert(hud.point[1]=="CENTER" and hud:GetWidth()==260 and hud:GetHeight()==260,
+        "circular HUD must be centered and square")
+    local lines = {}
+    for _, region in ipairs(frames) do
+        if region.kind=="Line" and region.parent.parent.parent==hud and region:IsVisible() then
+            lines[#lines+1]=region
+        end
+    end
+    assert(#lines==3 and lines[1].finish[1]>lines[1].start[1],
+        "HUD must render intermediate terrain bends")
+    GatherLite.db.char.routeVisible=false
+    drawHud(0)
+    for _, line in ipairs(lines) do assert(not line:IsVisible(),"stationary HUD must honor Hide route") end
+    R.active, R.byMap, GatherLite.db.char.routeVisible = previous, maps, visible
+    hudOptions.circular.set(nil,false)
+end
 hudOptions.enabled.set(nil,false)
 assert(not hud:IsShown(),"disabling the HUD must stop drawing")
 HBD.GetPlayerWorldPosition=originalPlayerPosition

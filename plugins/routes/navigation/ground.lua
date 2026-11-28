@@ -39,9 +39,9 @@ function Ground:Endpoint(point)
     return {map=point.instance, x=x, y=y, z=state.z[k][cell + 1]}
 end
 
-function Ground:Search(map, from, to, targets)
+function Ground:Search(map, from, to, targets, hazards)
     return self.PathSearch.start({map=map, from=from, to=to, targets=targets,
-        costs=targets and {}, revision=0, radius=0, waterWalking=false})
+        costs=targets and {}, revision=0, radius=0, waterWalking=false, hazards=hazards})
 end
 
 -- At most 32 representative stops bound endpoint work. One multi-target
@@ -54,10 +54,26 @@ function Ground:Build(points, mapID, checkpoint, progress)
     if #stops < 3 then return nil, "insufficient" end
     local map = stops[1].instance
     if not self.Path.HasData(map) then return nil, "nodata" end
+    -- The terrain graph covers the entire continent. Exclude entrances
+    -- outside the selected UI map in both terrain searches.
+    local function project(x, y)
+        return HBD:GetZoneCoordinatesFromWorldInstance(y, x, map, mapID, true)
+    end
+    local function within(u, v)
+        return u and v and u >= 0 and u <= 1 and v >= 0 and v <= 1
+    end
+    local hazards = {
+        key = "gatherlite-zone-" .. mapID,
+        Point = function(_, x, y)
+            local u, v = project(x, y)
+            return within(u, v) and 1 or math.huge
+        end,
+        Near = function() return false end,
+    }
     local valid, endpoints = {}, {}
     for _, point in ipairs(stops) do
         local endpoint = point.instance == map and self:Endpoint(point)
-        if endpoint then
+        if endpoint and within(project(endpoint.x, endpoint.y)) then
             valid[#valid + 1] = point
             endpoints[#endpoints + 1] = endpoint
         end
@@ -67,7 +83,7 @@ function Ground:Build(points, mapID, checkpoint, progress)
     local rows, indices = {}, {}
     for i, point in ipairs(valid) do
         indices[point] = i
-        rows[i] = self:Search(map, endpoints[i], nil, endpoints)
+        rows[i] = self:Search(map, endpoints[i], nil, endpoints, hazards)
         if not rows[i] then return nil, "unreachable" end
         progress(.7 * i / #valid)
         checkpoint()
@@ -103,13 +119,15 @@ function Ground:Build(points, mapID, checkpoint, progress)
     local geometry, length = {}, 0
     for i, point in ipairs(best.points) do
         local nextPoint = best.points[i % #best.points + 1]
-        local line = self:Search(map, endpoints[indices[point]], endpoints[indices[nextPoint]])
+        local line = self:Search(map, endpoints[indices[point]], endpoints[indices[nextPoint]], nil, hazards)
         if not line or #line < 2 then return nil, "unreachable" end
         for j, position in ipairs(line) do
             if i == 1 or j > 1 then
                 local x, y = position.y, position.x
-                local u, v = HBD:GetZoneCoordinatesFromWorldInstance(x, y, map, mapID, true)
-                if not u or not v then return nil, "outside" end
+                local u, v = project(position.x, position.y)
+                -- A precomputed path within one terrain cluster can still
+                -- cross the map's edge between two valid entrances.
+                if not within(u, v) then return nil, "unreachable" end
                 local previous = geometry[#geometry]
                 if previous then length=length + math.sqrt((previous.x-x)^2 + (previous.y-y)^2) end
                 geometry[#geometry + 1] = {x=x, y=y, z=position.z, u=u, v=v, instance=map}

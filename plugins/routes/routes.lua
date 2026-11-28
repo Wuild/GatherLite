@@ -141,7 +141,7 @@ end
 
 -- Save only scalar route geometry, never live resource objects, coroutines or
 -- decoded terrain. Bump the schema when planner/terrain semantics change.
-local CACHE_SCHEMA = 1
+local CACHE_SCHEMA = 2
 local function copyPoints(points, minimum, maximum)
     if type(points)~="table" or #points<minimum or #points>maximum then return end
     local copy={}

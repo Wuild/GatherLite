@@ -12,7 +12,7 @@ Find herbs, ore, containers, fishing pools, and fish in **WoW Forever**. Include
 
 Download from [CurseForge](https://www.curseforge.com/wow/addons/gatherlite/files) and place the **GatherLite** folder in **Interface/AddOns**.
 
-Open the window with **/gather**, **/gatherlite**, or **/gatherroutes**.
+Open the window with **/gather**, **/gatherlite**, or **/gatherroutes**. In **Settings → HUD GPS**, enable the HUD and select **Use circular route view** to see nearby nodes and the active route in a transparent circle centered on your character.
 
 1. **Search and select a resource** in the sidebar to see its known locations and profession requirement.
 2. **Browse zones** with the arrows in the lower panel.

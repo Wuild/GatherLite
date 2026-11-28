@@ -151,15 +151,22 @@ function Routes:Draw(elapsed)
         facing = GetPlayerFacing()
         if not facing then hide(mini); return end
     end
+    mini = mini or overlay(Minimap)
+    mini:Show()
+    local clip = GetMinimapShape and GetMinimapShape() == "SQUARE" and Planner.ClipSquare or Planner.ClipCircle
+    self:DrawNearby(mini, Minimap, route, px, py, radius, facing, clip)
+end
+
+-- Minimap and HUD share the same world projection and clipped route geometry.
+function Routes:DrawNearby(frame, viewport, route, px, py, radius, facing, clip)
+    if not route then self:FinishLines(frame, 0); return end
+    clip = clip or Planner.ClipCircle
     local cos, sin = math.cos(facing), math.sin(facing)
     local function project(point)
         local dx, dy = (px - point.x) / radius, (py - point.y) / radius
         return dx * cos - dy * sin, dx * sin + dy * cos
     end
-    mini = mini or overlay(Minimap)
-    mini:Show()
-    local width, height, count = Minimap:GetWidth()/2, Minimap:GetHeight()/2, 0
-    local clip = GetMinimapShape and GetMinimapShape() == "SQUARE" and Planner.ClipSquare or Planner.ClipCircle
+    local width, height, count = viewport:GetWidth()/2, viewport:GetHeight()/2, 0
     local geometry = route.geometry or route.points
     local segments = route.geometry and #geometry - 1 or #geometry
     for i = 1, segments do
@@ -169,8 +176,8 @@ function Routes:Draw(elapsed)
         x1, y1, x2, y2 = clip(x1, y1, x2, y2)
         if x1 then
             count = count + 1
-            self:DrawLine(mini, count, width*(1+x1), -height*(1+y1), width*(1+x2), -height*(1+y2))
+            self:DrawLine(frame, count, width*(1+x1), -height*(1+y1), width*(1+x2), -height*(1+y2))
         end
     end
-    self:FinishLines(mini, count)
+    self:FinishLines(frame, count)
 end

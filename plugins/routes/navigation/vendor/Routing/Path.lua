@@ -557,7 +557,7 @@ local function run(map, from, to, waterWalking, costOnly, hz)
 						nodesOf(st, floor(v / 4096))
 						local yards = adj[e + cost2]
 						local factor = hz and hazard(st, hz, u, v) or 1
-						relax(v, gu + yards * factor, ru + yards, u)
+						if factor < huge then relax(v, gu + yards * factor, ru + yards, u) end
 					end
 				end
 			end
@@ -858,7 +858,7 @@ local function runMany(map, from, targets, waterWalking, reverse, job, hz)
 					if not closed[v] then
 						local yards = adj[e + cost2]
 						local factor = hz and hazard(st, hz, u, v) or 1
-						relax(v, dist[u] + yards * factor, real[u] + yards)
+						if factor < huge then relax(v, dist[u] + yards * factor, real[u] + yards) end
 					end
 				end
 			end

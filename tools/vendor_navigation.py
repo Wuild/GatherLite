@@ -32,6 +32,12 @@ def adapt(path, source):
             # Farming endpoints must not jump from an isolated ledge to a
             # nearby connected surface. Unsupported stops are omitted instead.
             source = source.replace(b"local RETRIES = 8", b"local RETRIES = 0")
+            # Infinite hazard costs mark entrances outside the selected map.
+            for line in (
+                b"relax(v, gu + yards * factor, ru + yards, u)",
+                b"relax(v, dist[u] + yards * factor, real[u] + yards)",
+            ):
+                source = source.replace(line, b"if factor < huge then " + line + b" end")
     return source
 
 

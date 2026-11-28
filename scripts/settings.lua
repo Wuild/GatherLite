@@ -721,6 +721,7 @@ _GatherLite.SettingsOptions = {
             args = {
                 enabled = hudToggle("enabled", 1, true),
                 mirrorMinimap = hudToggle("mirrorMinimap", 1.5, true),
+                circular = hudToggle("circular", 1.75, true),
                 move = {
                     name = function() return GatherLite:translate("settings.hud.move") end,
                     type = "execute", order = 2, width = "full",
@@ -732,11 +733,13 @@ _GatherLite.SettingsOptions = {
                     func = function()
                         local options, defaults = GatherLite.db.profile.hud, _GatherLite.configsDefaults.profile.hud
                         options.x, options.y = defaults.x, defaults.y
+                        options.circleX, options.circleY = nil, nil
                         GatherLite:Trigger("settings:update")
                     end,
                 },
                 range = hudRange("range", 50, 600, 25, 4),
                 width = hudRange("width", 240, 700, 10, 5),
+                circleSize = hudRange("circleSize", 160, 500, 10, 5.25),
                 fullWidth = hudToggle("fullWidth", 5.5),
                 height = hudRange("height", 16, 48, 1, 5.75),
                 pinSize = hudRange("pinSize", 8, 32, 1, 5.875),

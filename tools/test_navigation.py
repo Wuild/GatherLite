@@ -93,6 +93,7 @@ class NavigationTests(unittest.TestCase):
                 cwd=ROOT, capture_output=True, text=True, timeout=120)
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("Bundled Elwynn terrain passed:", result.stdout)
+            self.assertIn("Bundled Eastern Plaguelands terrain passed:", result.stdout)
 
 
 if __name__ == "__main__":

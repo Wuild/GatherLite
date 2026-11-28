@@ -3,9 +3,8 @@
 unpack = unpack or table.unpack
 local addon = {}
 local function load(path) assert(loadfile(path))("GatherLite", addon) end
-LibStub = function()
-    return {GetZoneCoordinatesFromWorldInstance=function(_,x,y) return x/20000,y/20000 end}
-end
+local HBD = {GetZoneCoordinatesFromWorldInstance=function(_,x,y) return x/20000,y/20000 end}
+LibStub = function() return HBD end
 C_EncodingUtil = {DecodeBase64=function() error("fixture should already be decoded") end,
     DecompressString=function() error("fixture should already be decoded") end}
 Enum = {CompressionMethod={Zlib=1}}
@@ -43,10 +42,10 @@ local cs = (1600/3)/8
 local function point(x,y)
     return {x=(y+.5)*cs,y=(x+.5)*cs,instance=0,u=y/8,v=x/8}
 end
-local function build(points)
+local function build(points, mapID)
     local result, reason
     local co = coroutine.create(function()
-        result,reason = G:Build(points,1429,function() G.Path.Checkpoint() end,function() end)
+        result,reason = G:Build(points,mapID or 1429,function() G.Path.Checkpoint() end,function() end)
     end)
     local slices=0
     repeat
@@ -137,11 +136,21 @@ print("Ground routing passed: terrain detours, closure, disconnected stops, stri
 if arg and arg[1] then
     G:Release()
     assert(loadfile(arg[1]))()
-    -- Elwynn's pinned UI-map assignment, converted through the same HBD axes.
-    local function elwynn(u,v)
-        return {x=1535.4166259766-u*3470.8332519532,
-            y=-7939.5830078125-v*2314.5830078125,instance=0,u=u,v=v}
+    -- Pinned Forever UI-map assignments, using the same axes as HereBeDragons.
+    local maps = {
+        [1429] = {1535.4166259766, -7939.5830078125, 3470.8332519532, 2314.5830078125},
+        [1423] = {-2256.25, 3691.6669921875, 4302.083984375, 2866.6669921875},
+    }
+    function HBD.GetZoneCoordinatesFromWorldInstance(_, x, y, instance, mapID)
+        local m = assert(maps[mapID])
+        assert(instance == 0)
+        return (m[1] - x) / m[3], (m[2] - y) / m[4]
     end
+    local function world(mapID, u, v)
+        local m = maps[mapID]
+        return {x=m[1]-u*m[3],y=m[2]-v*m[4],instance=0,u=u,v=v}
+    end
+    local function elwynn(u,v) return world(1429,u,v) end
     local points={elwynn(.43,.65),elwynn(.49,.66),elwynn(.48,.60),elwynn(.38,.61)}
     local real,reason,slices=build(points)
     assert(real,reason)
@@ -149,8 +158,26 @@ if arg and arg[1] then
     assert(real.length>0 and slices>1,"real terrain search should be sliced across frames")
     print(string.format("Bundled Elwynn terrain passed: %d stops, %d geometry points, %d frame slices, %.0f yards",
         #real.points,#real.geometry,slices,real.length))
+
+    load("plugins/database/data/forever.lua")
+    local herbs = {}
+    for _, id in ipairs({176589, 176584, 176586, 176587}) do
+        local coords = assert(addon.predefined[id][1423])
+        for i=1,#coords,2 do
+            local location = world(1423,coords[i],coords[i+1])
+            location.object = id
+            herbs[#herbs+1] = location
+        end
+    end
+    local plaguelands, failure = build(herbs,1423)
+    assert(plaguelands and #plaguelands.points>=3, failure)
+    for _, location in ipairs(plaguelands.geometry) do
+        assert(location.u>=0 and location.u<=1 and location.v>=0 and location.v<=1,
+            "Eastern Plaguelands herb circuit left the selected map")
+    end
+    print(string.format("Bundled Eastern Plaguelands terrain passed: %d stops, %.0f yards",
+        #plaguelands.points,plaguelands.length))
     if arg[2]=="--benchmark" then
-        load("plugins/database/data/forever.lua")
         local copper={}
         for _,id in ipairs({1731,2055,3763,103713,103714}) do
             local coords=(addon.predefined[id] or {})[1429] or {}

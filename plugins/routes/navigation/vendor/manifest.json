@@ -121,7 +121,7 @@
     },
     "Routing/Path.lua": {
       "upstream_sha256": "40429e5e11699bdfaf7f56aeb80934ea4749c616c1201a692ae9b1781d897264",
-      "vendored_sha256": "ecba9cff528362aeb3aeea1685858d887928d4a184149f4e835785d3f9f4061a"
+      "vendored_sha256": "989e8628bcbe0cf61e8a196fc0be412069c973c63fc412d2c6889bf0199763db"
     },
     "Routing/PathGrid.lua": {
       "upstream_sha256": "55e19303764b61ea30f59f2c86cb1397864521151415cc02a362dac708f71103",

@@ -1,4 +1,4 @@
-local _, addon = ...
+local name, addon = ...
 local HBD = LibStub("HereBeDragons-2.0")
 local Pins = LibStub("HereBeDragons-Pins-2.0", true)
 local HUD = {}
@@ -8,14 +8,14 @@ local kinds = { "mining", "herbalism", "containers", "fishing" }
 local directions = { "N", "W", "S", "E" }
 local halfArc, circle = math.pi / 2, 2 * math.pi
 local queryStep, queryPadding = 16, 32
-local frame, bar, compass, background, moveHint, options
+local frame, bar, compass, background, moveHint, options, ring, routeLayer
 local ticks, borders, markers, spareMarkers, objects = {}, {}, {}, {}, {}
 local candidates, projected = {}, {}
 local external = {}
 local pinTime, pinScan = 0, 0
 local dirty, moving, dragging
 local queryX, queryY, queryMap, queryInstance
-local drawX, drawY, drawFacing, displayedFacing
+local drawX, drawY, drawFacing, displayedFacing, drawnRoute
 local generation = 0
 local hoveredMarker
 
@@ -219,16 +219,20 @@ local function createMarker()
     return marker
 end
 
-local function project(items, worldX, worldY, sin, cos, limit, span)
+local function project(items, worldX, worldY, sin, cos, limit, span, scale)
     for _, item in pairs(items) do
         local dx, dy = item.worldX - worldX, item.worldY - worldY
         local distanceSq = dx * dx + dy * dy
         local forward = dx * sin + dy * cos
-        if distanceSq <= limit and forward >= 0 then
+        if distanceSq <= limit and scale then
+            item.x, item.y = (dy * sin - dx * cos) * scale, forward * scale
+            item.distanceSq, item.edgeAlpha = distanceSq, 1
+            projected[#projected + 1] = item
+        elseif distanceSq <= limit and forward >= 0 then
             local angle = math.atan2(dy * sin - dx * cos, forward)
             local fade = math.min(1, (halfArc - math.abs(angle)) / .12)
             if fade > 0 then
-                item.x, item.distanceSq, item.edgeAlpha = angle * span, distanceSq, fade
+                item.x, item.y, item.distanceSq, item.edgeAlpha = angle * span, 0, distanceSq, fade
                 projected[#projected + 1] = item
             end
         end
@@ -252,16 +256,18 @@ local function setArt(marker, item)
     marker.item = item
 end
 
-local function draw(worldX, worldY, facing)
+local function draw(worldX, worldY, facing, route)
     local iconSize = options.pinSize
     local span = (frame:GetWidth() / 2 - math.max(10, iconSize / 2 + 2)) / halfArc
     local range, cos, sin = options.range, math.cos(facing), math.sin(facing)
     local limit = range * range
+    local scale = options.circular and frame:GetWidth() / (2 * range)
     wipe(projected)
     if worldX then
-        project(candidates, worldX, worldY, sin, cos, limit, span)
-        project(external, worldX, worldY, sin, cos, limit, span)
+        project(candidates, worldX, worldY, sin, cos, limit, span, scale)
+        project(external, worldX, worldY, sin, cos, limit, span, scale)
     end
+    if options.circular then addon.Routes:DrawNearby(routeLayer, frame, route, worldX, worldY, range, facing) end
     -- Keep the same hover target as a node moves across the compass.
     generation = generation + 1
     for _, item in ipairs(projected) do
@@ -273,9 +279,9 @@ local function draw(worldX, worldY, facing)
         setArt(marker, item)
         if marker:GetWidth() ~= iconSize then marker:SetSize(iconSize, iconSize) end
         marker.generation, marker.distance = generation, math.sqrt(item.distanceSq)
-        if marker.offset ~= item.x then
-            marker:SetPoint("CENTER", compass, "CENTER", item.x, 0)
-            marker.offset = item.x
+        if marker.offset ~= item.x or marker.y ~= item.y then
+            marker:SetPoint("CENTER", compass, "CENTER", item.x, item.y)
+            marker.offset, marker.y = item.x, item.y
         end
         if marker.edgeAlpha ~= item.edgeAlpha then
             marker:SetAlpha(item.edgeAlpha)
@@ -299,7 +305,7 @@ local function draw(worldX, worldY, facing)
 
     for i, tick in ipairs(ticks) do
         local angle = angleDelta(facing, (i - 1) * circle / #ticks)
-        local visible = math.abs(angle) < halfArc
+        local visible = not options.circular and math.abs(angle) < halfArc
         tick:SetShown(visible)
         if visible then
             local x = angle * span
@@ -312,15 +318,17 @@ end
 
 local function updateWidth()
     local screenWidth = UIParent:GetWidth()
-    local width = options.fullWidth and screenWidth or math.min(options.width, screenWidth)
+    local width = math.min(options.circular and options.circleSize or options.width, screenWidth)
+    if options.fullWidth and not options.circular then width = screenWidth end
     if width > 20 and frame:GetWidth() ~= width then
         frame:SetWidth(width)
         drawFacing = nil
     end
+    if options.circular and width > 20 and frame:GetHeight() ~= width then frame:SetHeight(width) end
 end
 
 local function update(_, elapsed)
-    if options.fullWidth then updateWidth() end
+    if options.fullWidth or options.circular then updateWidth() end
     if moving then return end
     local facing = GetPlayerFacing and GetPlayerFacing()
     local hidden = (options.hideInInstances and IsInInstance())
@@ -357,25 +365,44 @@ local function update(_, elapsed)
     else
         displayedFacing = facing
     end
-    if displayedFacing ~= drawFacing or worldX ~= drawX or worldY ~= drawY then
-        draw(worldX, worldY, displayedFacing)
+    local route
+    if options.circular and worldX and GatherLite.db.char.routeVisible ~= false then
+        local routes = addon.Routes
+        route = routes.byMap and routes.byMap[mapID] or routes.active
+        if route and (route.mapID ~= mapID or route.points[1].instance ~= instance) then route = nil end
+    end
+    if displayedFacing ~= drawFacing or worldX ~= drawX or worldY ~= drawY or route ~= drawnRoute then
+        draw(worldX, worldY, displayedFacing, route)
         drawX, drawY, drawFacing = worldX, worldY, displayedFacing
+        drawnRoute = route
     end
 end
 
 local function anchor()
     frame:ClearAllPoints()
-    frame:SetPoint("TOP", UIParent, "TOP", options.fullWidth and 0 or options.x, options.y)
+    if options.circular then
+        frame:SetPoint("CENTER", UIParent, "CENTER", options.circleX or 0, options.circleY or 0)
+    else
+        frame:SetPoint("TOP", UIParent, "TOP", options.fullWidth and 0 or options.x, options.y)
+    end
 end
 
 local function stopDrag()
     if not dragging then return end
     dragging = false
     frame:StopMovingOrSizing()
-    local x, y = frame:GetCenter(), frame:GetTop()
-    if x and y then
-        if not options.fullWidth then options.x = x - UIParent:GetCenter() end
-        options.y = y - UIParent:GetTop()
+    local x, y = frame:GetCenter()
+    if options.circular then
+        local screenX, screenY = UIParent:GetCenter()
+        if x and y and screenX and screenY then
+            options.circleX, options.circleY = x - screenX, y - screenY
+        end
+    else
+        local top = frame:GetTop()
+        if x and top then
+            if not options.fullWidth then options.x = x - UIParent:GetCenter() end
+            options.y = top - UIParent:GetTop()
+        end
     end
     frame:SetUserPlaced(false)
     anchor()
@@ -386,7 +413,9 @@ function HUD:UpdateAppearance()
     local color = options.backgroundColor
     local alpha = moving and math.max(.72, options.backgroundOpacity) or options.backgroundOpacity
     background:SetColorTexture(color.r, color.g, color.b, alpha)
-    for _, border in ipairs(borders) do border:SetShown(options.showBorder) end
+    background:SetShown(not options.circular)
+    for _, border in ipairs(borders) do border:SetShown(not options.circular and options.showBorder) end
+    if ring then ring:SetShown(options.circular == true) end
     frame:SetAlpha(moving and 1 or options.opacity)
 end
 
@@ -449,6 +478,18 @@ local function create()
     moveHint:SetText(GatherLite:translate("settings.hud.move_hint"))
 end
 
+local function createCircle()
+    ring = bar:CreateTexture(nil, "BACKGROUND")
+    ring:SetAllPoints()
+    ring:SetTexture("Interface\\AddOns\\" .. name .. "\\icons\\track_circle")
+    ring:SetVertexColor(.25, 1, .38, .7)
+    routeLayer = CreateFrame("Frame", nil, bar)
+    routeLayer:SetAllPoints()
+    routeLayer:EnableMouse(false)
+    routeLayer.lines = {}
+    compass:SetFrameLevel(routeLayer:GetFrameLevel() + 1)
+end
+
 local function applySettings()
     options = GatherLite.db.profile.hud
     if not options.enabled and not moving then
@@ -460,14 +501,16 @@ local function applySettings()
     end
 
     if not frame then create() end
+    if options.circular and not ring then createCircle() end
     if not dragging then anchor() end
     updateWidth()
-    frame:SetHeight(options.height)
+    if not options.circular then frame:SetHeight(options.height) end
     HUD:UpdateAppearance()
     frame:SetFrameStrata(moving and "DIALOG" or "BACKGROUND")
     frame:EnableMouse(moving or false)
     moveHint:SetShown(moving or false)
     compass:SetShown(not moving)
+    if routeLayer then routeLayer:SetShown(options.circular == true and not moving) end
     if moving then bar:Show() end
     dirty, displayedFacing, drawFacing = true, nil, nil
     frame:Show()
